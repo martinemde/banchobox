@@ -1,0 +1,3052 @@
+[
+  {
+    "name": "Hyalonema Tuna Sashimi",
+    "unlockCondition": "Glacial Seaweed Cave",
+    "dlc": "",
+    "finalLevel": 5,
+    "finalTaste": 265,
+    "initialPrice": 765,
+    "finalPrice": 1683,
+    "servings": 1
+  },
+  {
+    "name": "Chirashi Sushi",
+    "unlockCondition": "mxmtoon Collab",
+    "dlc": "mxmtoon",
+    "finalLevel": 5,
+    "finalTaste": 274,
+    "initialPrice": 690,
+    "finalPrice": 1518,
+    "servings": 2
+  },
+  {
+    "name": "Hot Pepper Tuna",
+    "unlockCondition": "Jango VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 350,
+    "initialPrice": 395,
+    "finalPrice": 1461,
+    "servings": 7
+  },
+  {
+    "name": "Bluefin Tuna Rice Bowl",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 360,
+    "finalPrice": 1332,
+    "servings": 9
+  },
+  {
+    "name": "Lobster Platter",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 375,
+    "initialPrice": 435,
+    "finalPrice": 1609,
+    "servings": 6
+  },
+  {
+    "name": "Yellowfin Tuna Steak",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 332,
+    "initialPrice": 305,
+    "finalPrice": 1128,
+    "servings": 9
+  },
+  {
+    "name": "Truffle Blue Lobster Tail Sushi",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 5,
+    "finalTaste": 282,
+    "initialPrice": 780,
+    "finalPrice": 1716,
+    "servings": 2
+  },
+  {
+    "name": "Seasoned Waptia Fieldensis",
+    "unlockCondition": "Cucumber Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 425,
+    "finalPrice": 1572,
+    "servings": 7
+  },
+  {
+    "name": "Green Sea Urchin & Cucumber Salad",
+    "unlockCondition": "Jango",
+    "dlc": "mxmtoon",
+    "finalLevel": 5,
+    "finalTaste": 282,
+    "initialPrice": 700,
+    "finalPrice": 1540,
+    "servings": 2
+  },
+  {
+    "name": "Stir-fried Habanero Lobster",
+    "unlockCondition": "Jango VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 320,
+    "initialPrice": 390,
+    "finalPrice": 1443,
+    "servings": 6
+  },
+  {
+    "name": "Steamed Eastern Rock Lobster & Egg",
+    "unlockCondition": "Lobster Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 455,
+    "initialPrice": 380,
+    "finalPrice": 1406,
+    "servings": 7
+  },
+  {
+    "name": "Hawaiian Poke",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 348,
+    "initialPrice": 265,
+    "finalPrice": 980,
+    "servings": 9
+  },
+  {
+    "name": "Godzilla vs. Ebirah Curry",
+    "unlockCondition": "Godzilla DLC",
+    "dlc": "Godzilla DLC",
+    "finalLevel": 10,
+    "finalTaste": 365,
+    "initialPrice": 370,
+    "finalPrice": 1369,
+    "servings": 9
+  },
+  {
+    "name": "Crystal Lobster Roll",
+    "unlockCondition": "Lobster Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 305,
+    "initialPrice": 370,
+    "finalPrice": 1369,
+    "servings": 9
+  },
+  {
+    "name": "Ebirah Chasing Sashimi",
+    "unlockCondition": "Godzilla DLC",
+    "dlc": "Godzilla DLC",
+    "finalLevel": 10,
+    "finalTaste": 382,
+    "initialPrice": 340,
+    "finalPrice": 1258,
+    "servings": 9
+  },
+  {
+    "name": "Boiled Sailfish and Seaweed",
+    "unlockCondition": "Marlin Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 300,
+    "initialPrice": 425,
+    "finalPrice": 1572,
+    "servings": 9
+  },
+  {
+    "name": "Humboldt Ink Pasta",
+    "unlockCondition": "Italian Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 375,
+    "initialPrice": 420,
+    "finalPrice": 1554,
+    "servings": 10
+  },
+  {
+    "name": "Falcatus Soybean Paste Soup",
+    "unlockCondition": "Kronosaurus",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 382,
+    "initialPrice": 420,
+    "finalPrice": 1554,
+    "servings": 7
+  },
+  {
+    "name": "Truffle Sailfish Tartare",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 5,
+    "finalTaste": 295,
+    "initialPrice": 785,
+    "finalPrice": 1727,
+    "servings": 2
+  },
+  {
+    "name": "Truffle Shark Sandwich",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 5,
+    "finalTaste": 273,
+    "initialPrice": 775,
+    "finalPrice": 1705,
+    "servings": 2
+  },
+  {
+    "name": "Great Spider Crab and Cucumber Sushi",
+    "unlockCondition": "Cucumber Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 385,
+    "initialPrice": 324,
+    "finalPrice": 1199,
+    "servings": 1
+  },
+  {
+    "name": "Wrasse Curry",
+    "unlockCondition": "Jandi lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 6
+  },
+  {
+    "name": "Great Spider Crab Curry",
+    "unlockCondition": "Charlie lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Rice with White Shrimp Meat",
+    "unlockCondition": "Kyoko lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Crimson Fish Roll",
+    "unlockCondition": "Billy lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 258,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Ice Fish Curry",
+    "unlockCondition": "Drae lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 317,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Shark Karaage",
+    "unlockCondition": "Itsuki lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 380,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Seasoned Jellyfish",
+    "unlockCondition": "James lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 298,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 6
+  },
+  {
+    "name": "Boiled Porbeagle Shark",
+    "unlockCondition": "Raul lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 332,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 7
+  },
+  {
+    "name": "Sea Toad and Cucumber Gunkan Sushi",
+    "unlockCondition": "Cucumber Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 367,
+    "initialPrice": 320,
+    "finalPrice": 1184,
+    "servings": 1
+  },
+  {
+    "name": "Deep Fish Tempura",
+    "unlockCondition": "British Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 320,
+    "initialPrice": 395,
+    "finalPrice": 1461,
+    "servings": 7
+  },
+  {
+    "name": "Pickled Vegetables",
+    "unlockCondition": "Cucumber Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 364,
+    "initialPrice": 316,
+    "finalPrice": 1169,
+    "servings": 3
+  },
+  {
+    "name": "Roasted Capelin",
+    "unlockCondition": "Drae lvl 10",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 345,
+    "initialPrice": 390,
+    "finalPrice": 1443,
+    "servings": 7
+  },
+  {
+    "name": "Trevally Sandwich",
+    "unlockCondition": "Cucumber Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 260,
+    "initialPrice": 312,
+    "finalPrice": 1154,
+    "servings": 7
+  },
+  {
+    "name": "Deep-Fried Vegetables",
+    "unlockCondition": "Cucumber Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 396,
+    "initialPrice": 312,
+    "finalPrice": 1154,
+    "servings": 3
+  },
+  {
+    "name": "Cold Jellyfish & Green Sea Urchin Salad",
+    "unlockCondition": "mxmtoon Collab",
+    "dlc": "mxmtoon",
+    "finalLevel": 5,
+    "finalTaste": 277,
+    "initialPrice": 685,
+    "finalPrice": 1507,
+    "servings": 2
+  },
+  {
+    "name": "Atlantic Bonito Curry",
+    "unlockCondition": "Platinum Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 389,
+    "initialPrice": 380,
+    "finalPrice": 1406,
+    "servings": 7
+  },
+  {
+    "name": "Marlin and Soybean Paste Roast",
+    "unlockCondition": "Marlin Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 272,
+    "initialPrice": 380,
+    "finalPrice": 1406,
+    "servings": 9
+  },
+  {
+    "name": "Humphead Parrotfish Curry",
+    "unlockCondition": "Platinum Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 347,
+    "initialPrice": 375,
+    "finalPrice": 1387,
+    "servings": 6
+  },
+  {
+    "name": "Mianbao Xia",
+    "unlockCondition": "Chinese Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 305,
+    "initialPrice": 375,
+    "finalPrice": 1387,
+    "servings": 10
+  },
+  {
+    "name": "Special Fried Shrimp Sushi",
+    "unlockCondition": "Drae lvl 5",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 317,
+    "initialPrice": 380,
+    "finalPrice": 1406,
+    "servings": 1
+  },
+  {
+    "name": "Lusca Neck Tadaki",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 250,
+    "initialPrice": 1350,
+    "finalPrice": 1350,
+    "servings": 10
+  },
+  {
+    "name": "Deepsea Kaiju Ramen",
+    "unlockCondition": "Godzilla DLC",
+    "dlc": "Godzilla DLC",
+    "finalLevel": 10,
+    "finalTaste": 410,
+    "initialPrice": 350,
+    "finalPrice": 1295,
+    "servings": 6
+  },
+  {
+    "name": "Bluefin Tuna Ootoro Sushi",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 135,
+    "finalPrice": 499,
+    "servings": 1
+  },
+  {
+    "name": "Boiled and Deep-Fried White Shrimp",
+    "unlockCondition": "Raptor lvl 5",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 225,
+    "finalPrice": 832,
+    "servings": 10
+  },
+  {
+    "name": "Seagrapes Jellyfish Sushi",
+    "unlockCondition": "Vincent VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 280,
+    "initialPrice": 225,
+    "finalPrice": 832,
+    "servings": 1
+  },
+  {
+    "name": "Stingray Sashimi Cold Noodles",
+    "unlockCondition": "Ichiban DLC VIP",
+    "dlc": "Ichiban DLC",
+    "finalLevel": 10,
+    "finalTaste": 331,
+    "initialPrice": 430,
+    "finalPrice": 1591,
+    "servings": 9
+  },
+  {
+    "name": "Yellowfin Tuna Ootoro Sushi",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 315,
+    "initialPrice": 125,
+    "finalPrice": 462,
+    "servings": 1
+  },
+  {
+    "name": "Warm Atlantic Mackerel Soba",
+    "unlockCondition": "Hamako lvl 15 (Ichiban)",
+    "dlc": "Ichiban DLC",
+    "finalLevel": 10,
+    "finalTaste": 260,
+    "initialPrice": 425,
+    "finalPrice": 1572,
+    "servings": 9
+  },
+  {
+    "name": "Soy Sauce Marinated Crab",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 505,
+    "initialPrice": 435,
+    "finalPrice": 1609,
+    "servings": 6
+  },
+  {
+    "name": "Eggplant Soba Oyaki",
+    "unlockCondition": "Etsuko lvl 15 (Ichiban)",
+    "dlc": "Ichiban DLC",
+    "finalLevel": 10,
+    "finalTaste": 236,
+    "initialPrice": 425,
+    "finalPrice": 1572,
+    "servings": 9
+  },
+  {
+    "name": "Great Barracuda Canape",
+    "unlockCondition": "Diamond Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 372,
+    "initialPrice": 425,
+    "finalPrice": 1572,
+    "servings": 6
+  },
+  {
+    "name": "Spear Squid Soba Futomaki",
+    "unlockCondition": "Chitose lvl 15 (Ichiban)",
+    "dlc": "Ichiban DLC",
+    "finalLevel": 10,
+    "finalTaste": 292,
+    "initialPrice": 425,
+    "finalPrice": 1572,
+    "servings": 9
+  },
+  {
+    "name": "Grilled Eel with Habanero",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 335,
+    "initialPrice": 425,
+    "finalPrice": 1572,
+    "servings": 9
+  },
+  {
+    "name": "Pufferfish Dumpling Soup",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 420,
+    "finalPrice": 1554,
+    "servings": 9
+  },
+  {
+    "name": "Dumbo Takoyaki",
+    "unlockCondition": "Diamond Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 390,
+    "initialPrice": 420,
+    "finalPrice": 1554,
+    "servings": 9
+  },
+  {
+    "name": "Pikaia Ramen",
+    "unlockCondition": "Kronosaurus",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 420,
+    "finalPrice": 1554,
+    "servings": 10
+  },
+  {
+    "name": "Nasu Dengaku",
+    "unlockCondition": "Diamond Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 317,
+    "initialPrice": 415,
+    "finalPrice": 1535,
+    "servings": 4
+  },
+  {
+    "name": "Fried Habanero Fangtooth",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 410,
+    "finalPrice": 1517,
+    "servings": 7
+  },
+  {
+    "name": "Rice with Great Spider Crab Meat",
+    "unlockCondition": "Diamond Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 410,
+    "finalPrice": 1517,
+    "servings": 7
+  },
+  {
+    "name": "Peacock Squid Ripieni",
+    "unlockCondition": "Italian Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 410,
+    "finalPrice": 1517,
+    "servings": 7
+  },
+  {
+    "name": "Arctic Cod Risotto",
+    "unlockCondition": "Italian Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 377,
+    "initialPrice": 408,
+    "finalPrice": 1509,
+    "servings": 9
+  },
+  {
+    "name": "Moonlight Bladderwrack Roll",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 405,
+    "finalPrice": 1498,
+    "servings": 9
+  },
+  {
+    "name": "Steamed Hyalonema Angler Fish",
+    "unlockCondition": "Glacial Seaweed Cave",
+    "dlc": "",
+    "finalLevel": 5,
+    "finalTaste": 248,
+    "initialPrice": 750,
+    "finalPrice": 1650,
+    "servings": 1
+  },
+  {
+    "name": "Haddock Acqua Pazza",
+    "unlockCondition": "Italian Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 405,
+    "finalPrice": 1498,
+    "servings": 9
+  },
+  {
+    "name": "Roasted Tropical Fish and Garlic",
+    "unlockCondition": "Tohoku lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 236,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Antarctic Octopus Carpaccio",
+    "unlockCondition": "Italian Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 408,
+    "initialPrice": 405,
+    "finalPrice": 1498,
+    "servings": 7
+  },
+  {
+    "name": "Seahorse Salad",
+    "unlockCondition": "Yone lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 295,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 6
+  },
+  {
+    "name": "Mackerel Scad Hotdog",
+    "unlockCondition": "Cohh lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 340,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 6
+  },
+  {
+    "name": "Batfish Ricebowl",
+    "unlockCondition": "Mitchell lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 447,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 7
+  },
+  {
+    "name": "Seaweed Rolled Omelet",
+    "unlockCondition": "Pai lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 300,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Fried Onion Cuttlefish",
+    "unlockCondition": "Raptor lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 7
+  },
+  {
+    "name": "Trevally Nanbanzuke",
+    "unlockCondition": "Maki lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 343,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 7
+  },
+  {
+    "name": "Latok Omelet",
+    "unlockCondition": "Masayoshi lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 260,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 9
+  },
+  {
+    "name": "Dusky Grouper Steak",
+    "unlockCondition": "El Nino lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 328,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 7
+  },
+  {
+    "name": "Narwhal Miso Soup",
+    "unlockCondition": "Davina lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 12
+  },
+  {
+    "name": "Three-Colored Squid Roast",
+    "unlockCondition": "Liu lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 335,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 12
+  },
+  {
+    "name": "Deep-Fried Eggplant Shrimp Meatballs",
+    "unlockCondition": "Yusuke lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 460,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 7
+  },
+  {
+    "name": "Dried Stingray",
+    "unlockCondition": "Carolina lvl 15",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 225,
+    "initialPrice": 400,
+    "finalPrice": 1480,
+    "servings": 12
+  },
+  {
+    "name": "Sweet and Sour Stargazer",
+    "unlockCondition": "Chinese Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 395,
+    "initialPrice": 390,
+    "finalPrice": 1443,
+    "servings": 6
+  },
+  {
+    "name": "Deep-Fried Red Lionfish",
+    "unlockCondition": "Cohh lvl 10",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 366,
+    "initialPrice": 390,
+    "finalPrice": 1443,
+    "servings": 4
+  },
+  {
+    "name": "Comber Sandwich",
+    "unlockCondition": "British Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 390,
+    "finalPrice": 1443,
+    "servings": 6
+  },
+  {
+    "name": "Fried Tomato and Snailfish",
+    "unlockCondition": "Chinese Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 335,
+    "initialPrice": 390,
+    "finalPrice": 1443,
+    "servings": 12
+  },
+  {
+    "name": "Narrow-Barred Spanish Mackerel Arancini",
+    "unlockCondition": "Italian Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 364,
+    "initialPrice": 390,
+    "finalPrice": 1443,
+    "servings": 7
+  },
+  {
+    "name": "Roasted Helicoprion Tail",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 170,
+    "initialPrice": 710,
+    "finalPrice": 710,
+    "servings": 10
+  },
+  {
+    "name": "Smoked Atlantic Mackerel Scramble",
+    "unlockCondition": "British Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 460,
+    "initialPrice": 387,
+    "finalPrice": 1431,
+    "servings": 6
+  },
+  {
+    "name": "Black Vinegar Braised Parrotfish",
+    "unlockCondition": "Platinum Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 406,
+    "initialPrice": 385,
+    "finalPrice": 1424,
+    "servings": 6
+  },
+  {
+    "name": "Fried Rice with Sally Lightfood Crab",
+    "unlockCondition": "Chinese Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 305,
+    "initialPrice": 385,
+    "finalPrice": 1424,
+    "servings": 10
+  },
+  {
+    "name": "Plotosid Pie",
+    "unlockCondition": "British Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 385,
+    "finalPrice": 1424,
+    "servings": 7
+  },
+  {
+    "name": "Rice with Purple Sea Urchin Sushi",
+    "unlockCondition": "Raptor lvl 10",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 320,
+    "initialPrice": 385,
+    "finalPrice": 1424,
+    "servings": 4
+  },
+  {
+    "name": "Deep-fried Sea Urchin",
+    "unlockCondition": "mxmtoon Collab",
+    "dlc": "mxmtoon",
+    "finalLevel": 5,
+    "finalTaste": 275,
+    "initialPrice": 690,
+    "finalPrice": 1518,
+    "servings": 2
+  },
+  {
+    "name": "Phantom Jellyfish Jelly",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 165,
+    "initialPrice": 700,
+    "finalPrice": 700,
+    "servings": 10
+  },
+  {
+    "name": "Tomato Egg Soup",
+    "unlockCondition": "Chinese Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 309,
+    "initialPrice": 380,
+    "finalPrice": 1406,
+    "servings": 12
+  },
+  {
+    "name": "Sailfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 195,
+    "finalPrice": 721,
+    "servings": 1
+  },
+  {
+    "name": "Tropical Fish Sushi Set",
+    "unlockCondition": "Michael Bang VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 346,
+    "initialPrice": 375,
+    "finalPrice": 1387,
+    "servings": 9
+  },
+  {
+    "name": "Seahorse Udon",
+    "unlockCondition": "Platinum Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 353,
+    "initialPrice": 375,
+    "finalPrice": 1387,
+    "servings": 4
+  },
+  {
+    "name": "Blobfish Spring Roll",
+    "unlockCondition": "Chinese Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 322,
+    "initialPrice": 375,
+    "finalPrice": 1387,
+    "servings": 10
+  },
+  {
+    "name": "Pelican Eel Jelly",
+    "unlockCondition": "British Chef VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 439,
+    "initialPrice": 373,
+    "finalPrice": 1380,
+    "servings": 9
+  },
+  {
+    "name": "Blanched Lusca Tentacle",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 250,
+    "initialPrice": 1350,
+    "finalPrice": 1350,
+    "servings": 10
+  },
+  {
+    "name": "Vegetable Sushi",
+    "unlockCondition": "DJ Sammy VIP",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 390,
+    "initialPrice": 375,
+    "finalPrice": 1387,
+    "servings": 1
+  },
+  {
+    "name": "Boiled Asian Sheepshead Wrasse & Truffle",
+    "unlockCondition": "Jango VIP",
+    "dlc": "",
+    "finalLevel": 5,
+    "finalTaste": 280,
+    "initialPrice": 755,
+    "finalPrice": 1661,
+    "servings": 2
+  },
+  {
+    "name": "Grilled Antarctic Octopus & Truffle",
+    "unlockCondition": "Jango Shop",
+    "dlc": "",
+    "finalLevel": 5,
+    "finalTaste": 338,
+    "initialPrice": 770,
+    "finalPrice": 1694,
+    "servings": 2
+  },
+  {
+    "name": "White Shark Omelet",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 150,
+    "initialPrice": 650,
+    "finalPrice": 650,
+    "servings": 10
+  },
+  {
+    "name": "Gazing Shark Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 3,
+    "initialPrice": 1250,
+    "finalPrice": 1250,
+    "servings": 1
+  },
+  {
+    "name": "Translucent Sturgeon Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 3,
+    "initialPrice": 1235,
+    "finalPrice": 1235,
+    "servings": 1
+  },
+  {
+    "name": "Bloodskin Shark Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 4,
+    "initialPrice": 1225,
+    "finalPrice": 1225,
+    "servings": 1
+  },
+  {
+    "name": "Goblin Shark Belly Roast",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 135,
+    "initialPrice": 600,
+    "finalPrice": 600,
+    "servings": 10
+  },
+  {
+    "name": "Bluefin Tuna Chutoro Sushi",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 241,
+    "initialPrice": 95,
+    "finalPrice": 351,
+    "servings": 1
+  },
+  {
+    "name": "Rainbow Cap Eel Skewers",
+    "unlockCondition": "Jango",
+    "dlc": "Potion Craft",
+    "finalLevel": 5,
+    "finalTaste": 295,
+    "initialPrice": 730,
+    "finalPrice": 1606,
+    "servings": 2
+  },
+  {
+    "name": "Rainbow Cap Triggerfish Fishcake",
+    "unlockCondition": "Potion Craft Collab",
+    "dlc": "Potion Craft",
+    "finalLevel": 5,
+    "finalTaste": 268,
+    "initialPrice": 705,
+    "finalPrice": 1551,
+    "servings": 2
+  },
+  {
+    "name": "Rainbow Cap Pacific Fanfish Ochazuke",
+    "unlockCondition": "Jango",
+    "dlc": "Potion Craft",
+    "finalLevel": 5,
+    "finalTaste": 290,
+    "initialPrice": 710,
+    "finalPrice": 1562,
+    "servings": 2
+  },
+  {
+    "name": "Yellowfin Tuna Chutoro Sushi",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 238,
+    "initialPrice": 90,
+    "finalPrice": 333,
+    "servings": 1
+  },
+  {
+    "name": "Skewered Cucumber",
+    "unlockCondition": "Cucumber Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 340,
+    "initialPrice": 320,
+    "finalPrice": 1184,
+    "servings": 1
+  },
+  {
+    "name": "Sprouting Eel Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 4,
+    "initialPrice": 1040,
+    "finalPrice": 1040,
+    "servings": 1
+  },
+  {
+    "name": "Bluefin Tuna Akami Sushi",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 240,
+    "initialPrice": 80,
+    "finalPrice": 296,
+    "servings": 1
+  },
+  {
+    "name": "Sallow Sailfish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 5,
+    "initialPrice": 1000,
+    "finalPrice": 1000,
+    "servings": 1
+  },
+  {
+    "name": "Withered Ray Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 5,
+    "initialPrice": 995,
+    "finalPrice": 995,
+    "servings": 1
+  },
+  {
+    "name": "Marlin Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 370,
+    "initialPrice": 135,
+    "finalPrice": 499,
+    "servings": 1
+  },
+  {
+    "name": "Imperious Lobster Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 3,
+    "initialPrice": 945,
+    "finalPrice": 945,
+    "servings": 1
+  },
+  {
+    "name": "Yellowfin Tuna Akami Sushi",
+    "unlockCondition": "Tuna Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 235,
+    "initialPrice": 73,
+    "finalPrice": 270,
+    "servings": 1
+  },
+  {
+    "name": "Malignant Pincer Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 3,
+    "initialPrice": 880,
+    "finalPrice": 880,
+    "servings": 1
+  },
+  {
+    "name": "Fried Seahorses",
+    "unlockCondition": "Cohh lvl 5",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 363,
+    "initialPrice": 220,
+    "finalPrice": 814,
+    "servings": 4
+  },
+  {
+    "name": "Stellate Puffer Special Sushi",
+    "unlockCondition": "Gold Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 340,
+    "initialPrice": 220,
+    "finalPrice": 814,
+    "servings": 1
+  },
+  {
+    "name": "Yawie Steamed Meat",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 180,
+    "initialPrice": 750,
+    "finalPrice": 750,
+    "servings": 10
+  },
+  {
+    "name": "Cortex Decorator Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 2,
+    "initialPrice": 740,
+    "finalPrice": 740,
+    "servings": 1
+  },
+  {
+    "name": "Steamed Kronosaurus Tongue",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 180,
+    "initialPrice": 724,
+    "finalPrice": 724,
+    "servings": 10
+  },
+  {
+    "name": "Seagrapes Special Sushi",
+    "unlockCondition": "Gold Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 390,
+    "initialPrice": 200,
+    "finalPrice": 740,
+    "servings": 1
+  },
+  {
+    "name": "Dunkleosteus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 210,
+    "finalPrice": 777,
+    "servings": 1
+  },
+  {
+    "name": "Moray Eel Curry",
+    "unlockCondition": "Silver Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 273,
+    "initialPrice": 95,
+    "finalPrice": 351,
+    "servings": 6
+  },
+  {
+    "name": "Big-Eyed Scad and Soybean Paste Roast",
+    "unlockCondition": "Gold Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 348,
+    "initialPrice": 185,
+    "finalPrice": 684,
+    "servings": 7
+  },
+  {
+    "name": "Stellate Puffer Nicogori",
+    "unlockCondition": "Any Staff lvl 5",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 381,
+    "initialPrice": 180,
+    "finalPrice": 666,
+    "servings": 7
+  },
+  {
+    "name": "Seasoned Long-spine Porcupinefish Skin",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 410,
+    "initialPrice": 180,
+    "finalPrice": 666,
+    "servings": 7
+  },
+  {
+    "name": "Boiled Mantis Shrimp with Soy Paste",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 150,
+    "initialPrice": 650,
+    "finalPrice": 650,
+    "servings": 10
+  },
+  {
+    "name": "Trout Sea Grapes Ricebowl",
+    "unlockCondition": "Gold Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 175,
+    "finalPrice": 647,
+    "servings": 7
+  },
+  {
+    "name": "Greenland Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 370,
+    "initialPrice": 186,
+    "finalPrice": 688,
+    "servings": 1
+  },
+  {
+    "name": "Bony Wreckfish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 620,
+    "finalPrice": 620,
+    "servings": 1
+  },
+  {
+    "name": "Host Eel Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 610,
+    "finalPrice": 610,
+    "servings": 1
+  },
+  {
+    "name": "Snub-Nosed Spiny Eel Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 390,
+    "initialPrice": 180,
+    "finalPrice": 666,
+    "servings": 1
+  },
+  {
+    "name": "Pelican Eel Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 180,
+    "finalPrice": 666,
+    "servings": 1
+  },
+  {
+    "name": "Shattered Wreckfish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 2,
+    "initialPrice": 560,
+    "finalPrice": 560,
+    "servings": 1
+  },
+  {
+    "name": "Porbeagle Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 380,
+    "initialPrice": 165,
+    "finalPrice": 610,
+    "servings": 1
+  },
+  {
+    "name": "Tokummia Katalepsis Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 460,
+    "initialPrice": 165,
+    "finalPrice": 610,
+    "servings": 1
+  },
+  {
+    "name": "Smallspotted Dart Kajime Soup",
+    "unlockCondition": "Any Staff lvl 5",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 367,
+    "initialPrice": 150,
+    "finalPrice": 555,
+    "servings": 7
+  },
+  {
+    "name": "Steamed Wolf Eel",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 120,
+    "initialPrice": 550,
+    "finalPrice": 550,
+    "servings": 10
+  },
+  {
+    "name": "Stir-Fried Hermit Crab and Seaweed",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 150,
+    "initialPrice": 550,
+    "finalPrice": 550,
+    "servings": 10
+  },
+  {
+    "name": "Clione Queen Soup",
+    "unlockCondition": "Carve Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 135,
+    "initialPrice": 550,
+    "finalPrice": 550,
+    "servings": 10
+  },
+  {
+    "name": "Whole-Roasted Shark Head",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 295,
+    "initialPrice": 75,
+    "finalPrice": 277,
+    "servings": 7
+  },
+  {
+    "name": "Xenacanthus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 430,
+    "initialPrice": 160,
+    "finalPrice": 592,
+    "servings": 1
+  },
+  {
+    "name": "Thresher Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 390,
+    "initialPrice": 159,
+    "finalPrice": 588,
+    "servings": 1
+  },
+  {
+    "name": "Bursting Anglerfish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 530,
+    "finalPrice": 530,
+    "servings": 1
+  },
+  {
+    "name": "Voltaic Grouper",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 7,
+    "initialPrice": 515,
+    "finalPrice": 515,
+    "servings": 1
+  },
+  {
+    "name": "Cerebral Crab Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 2,
+    "initialPrice": 515,
+    "finalPrice": 515,
+    "servings": 1
+  },
+  {
+    "name": "Entangled Crab Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 2,
+    "initialPrice": 510,
+    "finalPrice": 510,
+    "servings": 1
+  },
+  {
+    "name": "Horsehair Crab Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 450,
+    "initialPrice": 150,
+    "finalPrice": 555,
+    "servings": 1
+  },
+  {
+    "name": "Drepanaspis Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 150,
+    "finalPrice": 555,
+    "servings": 1
+  },
+  {
+    "name": "Barbed Eel Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 2,
+    "initialPrice": 500,
+    "finalPrice": 500,
+    "servings": 1
+  },
+  {
+    "name": "Humboldt Squid Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 350,
+    "initialPrice": 145,
+    "finalPrice": 536,
+    "servings": 1
+  },
+  {
+    "name": "Crystal Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 340,
+    "initialPrice": 141,
+    "finalPrice": 521,
+    "servings": 1
+  },
+  {
+    "name": "Blue Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 320,
+    "initialPrice": 141,
+    "finalPrice": 521,
+    "servings": 1
+  },
+  {
+    "name": "Smooth Hammerhead Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 390,
+    "initialPrice": 141,
+    "finalPrice": 521,
+    "servings": 1
+  },
+  {
+    "name": "Eastern Rock Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 390,
+    "initialPrice": 141,
+    "finalPrice": 521,
+    "servings": 1
+  },
+  {
+    "name": "Narwhal Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 140,
+    "finalPrice": 518,
+    "servings": 1
+  },
+  {
+    "name": "Megalograptus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 140,
+    "finalPrice": 518,
+    "servings": 1
+  },
+  {
+    "name": "Concertina Barracuda Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 470,
+    "finalPrice": 470,
+    "servings": 1
+  },
+  {
+    "name": "Enthralled Stonefish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 465,
+    "finalPrice": 465,
+    "servings": 1
+  },
+  {
+    "name": "Seizing Snailfish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 3,
+    "initialPrice": 455,
+    "finalPrice": 455,
+    "servings": 1
+  },
+  {
+    "name": "Devil Scorpionfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 350,
+    "initialPrice": 135,
+    "finalPrice": 499,
+    "servings": 1
+  },
+  {
+    "name": "Tropical Rock Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 300,
+    "initialPrice": 135,
+    "finalPrice": 499,
+    "servings": 1
+  },
+  {
+    "name": "Alaska Pollock Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 380,
+    "initialPrice": 135,
+    "finalPrice": 499,
+    "servings": 1
+  },
+  {
+    "name": "Dollocaris Ingens Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 460,
+    "initialPrice": 135,
+    "finalPrice": 499,
+    "servings": 1
+  },
+  {
+    "name": "Golden King Crab Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 370,
+    "initialPrice": 135,
+    "finalPrice": 499,
+    "servings": 1
+  },
+  {
+    "name": "Many Eyed Mackerel Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 453,
+    "finalPrice": 453,
+    "servings": 1
+  },
+  {
+    "name": "Three-Headed Cod Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 450,
+    "finalPrice": 450,
+    "servings": 1
+  },
+  {
+    "name": "Savage Barracuda Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 440,
+    "finalPrice": 440,
+    "servings": 1
+  },
+  {
+    "name": "Falcatus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 380,
+    "initialPrice": 130,
+    "finalPrice": 481,
+    "servings": 1
+  },
+  {
+    "name": "Starry Skate Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 130,
+    "finalPrice": 481,
+    "servings": 1
+  },
+  {
+    "name": "American Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 129,
+    "finalPrice": 477,
+    "servings": 1
+  },
+  {
+    "name": "Tusked Grouper Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 2,
+    "initialPrice": 425,
+    "finalPrice": 425,
+    "servings": 1
+  },
+  {
+    "name": "Gnashing Perch Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 420,
+    "finalPrice": 420,
+    "servings": 1
+  },
+  {
+    "name": "Allenypterus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 125,
+    "finalPrice": 462,
+    "servings": 1
+  },
+  {
+    "name": "Splintered Crab Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 3,
+    "initialPrice": 405,
+    "finalPrice": 405,
+    "servings": 1
+  },
+  {
+    "name": "Blobfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 310,
+    "initialPrice": 120,
+    "finalPrice": 444,
+    "servings": 1
+  },
+  {
+    "name": "Arctic Telescope Fish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 350,
+    "initialPrice": 120,
+    "finalPrice": 444,
+    "servings": 1
+  },
+  {
+    "name": "Snow Crab Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 420,
+    "initialPrice": 120,
+    "finalPrice": 444,
+    "servings": 1
+  },
+  {
+    "name": "Antarctic Octopus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 120,
+    "finalPrice": 444,
+    "servings": 1
+  },
+  {
+    "name": "Lumpfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 370,
+    "initialPrice": 120,
+    "finalPrice": 444,
+    "servings": 1
+  },
+  {
+    "name": "Qingmendous Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 380,
+    "initialPrice": 120,
+    "finalPrice": 444,
+    "servings": 1
+  },
+  {
+    "name": "Perished Loosejaw Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 395,
+    "finalPrice": 395,
+    "servings": 1
+  },
+  {
+    "name": "Parhelion Jellyfish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 5,
+    "initialPrice": 390,
+    "finalPrice": 390,
+    "servings": 1
+  },
+  {
+    "name": "Pikaia Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 115,
+    "finalPrice": 425,
+    "servings": 1
+  },
+  {
+    "name": "Gelatinous Stonefish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 6,
+    "initialPrice": 385,
+    "finalPrice": 385,
+    "servings": 1
+  },
+  {
+    "name": "Vampire Squid Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 340,
+    "initialPrice": 115,
+    "finalPrice": 425,
+    "servings": 1
+  },
+  {
+    "name": "Grotesque Mackerel Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 4,
+    "initialPrice": 383,
+    "finalPrice": 383,
+    "servings": 1
+  },
+  {
+    "name": "Fanged Cod Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 6,
+    "initialPrice": 380,
+    "finalPrice": 380,
+    "servings": 1
+  },
+  {
+    "name": "Scouring Bass Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 1,
+    "initialPrice": 375,
+    "finalPrice": 375,
+    "servings": 1
+  },
+  {
+    "name": "Haddock Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 340,
+    "initialPrice": 110,
+    "finalPrice": 407,
+    "servings": 1
+  },
+  {
+    "name": "Radiant Squid Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 8,
+    "initialPrice": 365,
+    "finalPrice": 365,
+    "servings": 1
+  },
+  {
+    "name": "Zebra Shark Sushi",
+    "unlockCondition": "Shark Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 108,
+    "finalPrice": 399,
+    "servings": 1
+  },
+  {
+    "name": "Seadragon Onigiri",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 470,
+    "initialPrice": 105,
+    "finalPrice": 388,
+    "servings": 1
+  },
+  {
+    "name": "Waptia Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 400,
+    "initialPrice": 103,
+    "finalPrice": 381,
+    "servings": 1
+  },
+  {
+    "name": "Shortfin Mako Sushi",
+    "unlockCondition": "Shark Party",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 360,
+    "initialPrice": 105,
+    "finalPrice": 388,
+    "servings": 1
+  },
+  {
+    "name": "Aurora Jellyfish Sushi",
+    "unlockCondition": "Dredge DLC",
+    "dlc": "Dredge DLC",
+    "finalLevel": 1,
+    "finalTaste": 6,
+    "initialPrice": 345,
+    "finalPrice": 345,
+    "servings": 1
+  },
+  {
+    "name": "White Trevally Kombu Ochazuke",
+    "unlockCondition": "Silver Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 266,
+    "initialPrice": 93,
+    "finalPrice": 344,
+    "servings": 7
+  },
+  {
+    "name": "Megamouth Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 300,
+    "initialPrice": 95,
+    "finalPrice": 351,
+    "servings": 1
+  },
+  {
+    "name": "Arctic Cod Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 340,
+    "initialPrice": 95,
+    "finalPrice": 351,
+    "servings": 1
+  },
+  {
+    "name": "Ice Fish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 320,
+    "initialPrice": 95,
+    "finalPrice": 351,
+    "servings": 1
+  },
+  {
+    "name": "Polar Eelpout Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 320,
+    "initialPrice": 90,
+    "finalPrice": 333,
+    "servings": 1
+  },
+  {
+    "name": "Rhinochimaeridae Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 90,
+    "finalPrice": 333,
+    "servings": 1
+  },
+  {
+    "name": "Marbled Electric Ray Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 300,
+    "initialPrice": 90,
+    "finalPrice": 333,
+    "servings": 1
+  },
+  {
+    "name": "Striped Red Mullet Tangle Roll",
+    "unlockCondition": "Silver Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 270,
+    "initialPrice": 80,
+    "finalPrice": 296,
+    "servings": 7
+  },
+  {
+    "name": "Frilled Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 280,
+    "initialPrice": 85,
+    "finalPrice": 314,
+    "servings": 1
+  },
+  {
+    "name": "Gelatinous Snailfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 85,
+    "finalPrice": 314,
+    "servings": 1
+  },
+  {
+    "name": "Dumbo Octopus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 80,
+    "finalPrice": 296,
+    "servings": 1
+  },
+  {
+    "name": "Cookiecutter Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 270,
+    "initialPrice": 75,
+    "finalPrice": 277,
+    "servings": 1
+  },
+  {
+    "name": "Norway Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 75,
+    "finalPrice": 277,
+    "servings": 1
+  },
+  {
+    "name": "Red-banded Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 75,
+    "finalPrice": 277,
+    "servings": 1
+  },
+  {
+    "name": "Peacock Squid Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 75,
+    "finalPrice": 277,
+    "servings": 1
+  },
+  {
+    "name": "Threetooth Puffer Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 70,
+    "finalPrice": 259,
+    "servings": 1
+  },
+  {
+    "name": "European Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 69,
+    "finalPrice": 255,
+    "servings": 1
+  },
+  {
+    "name": "Barreleye Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 70,
+    "finalPrice": 259,
+    "servings": 1
+  },
+  {
+    "name": "Fan Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 300,
+    "initialPrice": 66,
+    "finalPrice": 244,
+    "servings": 1
+  },
+  {
+    "name": "California Spiny Lobster Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 280,
+    "initialPrice": 66,
+    "finalPrice": 244,
+    "servings": 1
+  },
+  {
+    "name": "Copper Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 280,
+    "initialPrice": 65,
+    "finalPrice": 240,
+    "servings": 1
+  },
+  {
+    "name": "Pacific Fanfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 240,
+    "initialPrice": 65,
+    "finalPrice": 240,
+    "servings": 1
+  },
+  {
+    "name": "Purple Sea Urchin Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 270,
+    "initialPrice": 60,
+    "finalPrice": 222,
+    "servings": 1
+  },
+  {
+    "name": "Blackfin Barracuda Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 280,
+    "initialPrice": 60,
+    "finalPrice": 222,
+    "servings": 1
+  },
+  {
+    "name": "Blacktip Reefshark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 270,
+    "initialPrice": 60,
+    "finalPrice": 222,
+    "servings": 1
+  },
+  {
+    "name": "Salmon Snailfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 230,
+    "initialPrice": 60,
+    "finalPrice": 222,
+    "servings": 1
+  },
+  {
+    "name": "Agar Tokoroten",
+    "unlockCondition": "Bronze Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 266,
+    "initialPrice": 51,
+    "finalPrice": 189,
+    "servings": 7
+  },
+  {
+    "name": "Box Jellyfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 270,
+    "initialPrice": 55,
+    "finalPrice": 203,
+    "servings": 1
+  },
+  {
+    "name": "Bluespotted Stargazer Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 380,
+    "initialPrice": 55,
+    "finalPrice": 203,
+    "servings": 1
+  },
+  {
+    "name": "Sea Toad Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 230,
+    "initialPrice": 55,
+    "finalPrice": 203,
+    "servings": 1
+  },
+  {
+    "name": "Boiled  Fusilier",
+    "unlockCondition": "Bronze Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 255,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 7
+  },
+  {
+    "name": "Seasoned Kajime",
+    "unlockCondition": "Bronze Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 245,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 6
+  },
+  {
+    "name": "White Shrimp Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 280,
+    "initialPrice": 53,
+    "finalPrice": 196,
+    "servings": 1
+  },
+  {
+    "name": "Salt-grilled Redtoothed Triggerfish",
+    "unlockCondition": "Bronze Rank",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 241,
+    "initialPrice": 48,
+    "finalPrice": 178,
+    "servings": 6
+  },
+  {
+    "name": "Spear Squid Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 300,
+    "initialPrice": 51,
+    "finalPrice": 188,
+    "servings": 1
+  },
+  {
+    "name": "Stingray Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 260,
+    "initialPrice": 51,
+    "finalPrice": 188,
+    "servings": 1
+  },
+  {
+    "name": "Blood-belly Comb Jelly Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 1
+  },
+  {
+    "name": "Moray Eel Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 1
+  },
+  {
+    "name": "Tiger Shark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 1
+  },
+  {
+    "name": "Spider Crab Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 1
+  },
+  {
+    "name": "Raw Black Tiger Shrimp Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 240,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 1
+  },
+  {
+    "name": "Sally Lightfoot Crab Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 320,
+    "initialPrice": 50,
+    "finalPrice": 185,
+    "servings": 1
+  },
+  {
+    "name": "Comb Jelly Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 45,
+    "finalPrice": 166,
+    "servings": 1
+  },
+  {
+    "name": "Capelin Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 330,
+    "initialPrice": 45,
+    "finalPrice": 166,
+    "servings": 1
+  },
+  {
+    "name": "Fangtooth Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 260,
+    "initialPrice": 45,
+    "finalPrice": 166,
+    "servings": 1
+  },
+  {
+    "name": "Young Anomalocaris Sushi",
+    "unlockCondition": "Final Boss",
+    "dlc": "",
+    "finalLevel": 1,
+    "finalTaste": 125,
+    "initialPrice": 224,
+    "finalPrice": 224,
+    "servings": 1
+  },
+  {
+    "name": "Cooked Whiteleg Shrimp Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 220,
+    "initialPrice": 35,
+    "finalPrice": 129,
+    "servings": 1
+  },
+  {
+    "name": "Longnose Sawshark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 290,
+    "initialPrice": 35,
+    "finalPrice": 129,
+    "servings": 1
+  },
+  {
+    "name": "Chambered Nautilus Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 220,
+    "initialPrice": 35,
+    "finalPrice": 129,
+    "servings": 1
+  },
+  {
+    "name": "Red bream Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 270,
+    "initialPrice": 35,
+    "finalPrice": 129,
+    "servings": 1
+  },
+  {
+    "name": "Atlantic Anglerfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 240,
+    "initialPrice": 33,
+    "finalPrice": 122,
+    "servings": 1
+  },
+  {
+    "name": "Seahorse Skewers",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 220,
+    "initialPrice": 30,
+    "finalPrice": 111,
+    "servings": 1
+  },
+  {
+    "name": "Clione Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 220,
+    "initialPrice": 35,
+    "finalPrice": 129,
+    "servings": 1
+  },
+  {
+    "name": "Giant Trevally Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 30,
+    "finalPrice": 111,
+    "servings": 1
+  },
+  {
+    "name": "Narrow-Barred Spanish Mackerel Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 190,
+    "initialPrice": 30,
+    "finalPrice": 111,
+    "servings": 1
+  },
+  {
+    "name": "Dusky Grouper Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 200,
+    "initialPrice": 30,
+    "finalPrice": 111,
+    "servings": 1
+  },
+  {
+    "name": "Clearfin Lionfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 250,
+    "initialPrice": 24,
+    "finalPrice": 88,
+    "servings": 1
+  },
+  {
+    "name": "Whitetip Reefshark Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 270,
+    "initialPrice": 24,
+    "finalPrice": 88,
+    "servings": 1
+  },
+  {
+    "name": "White Trevally Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 190,
+    "initialPrice": 22,
+    "finalPrice": 81,
+    "servings": 1
+  },
+  {
+    "name": "Atlantic Mackerel Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 190,
+    "initialPrice": 21,
+    "finalPrice": 77,
+    "servings": 1
+  },
+  {
+    "name": "Atlantic Bonito Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 180,
+    "initialPrice": 21,
+    "finalPrice": 77,
+    "servings": 1
+  },
+  {
+    "name": "Great Barracuda Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 220,
+    "initialPrice": 20,
+    "finalPrice": 74,
+    "servings": 1
+  },
+  {
+    "name": "Cuttlefish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 200,
+    "initialPrice": 20,
+    "finalPrice": 74,
+    "servings": 1
+  },
+  {
+    "name": "Bigeye Trevally Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 170,
+    "initialPrice": 19,
+    "finalPrice": 70,
+    "servings": 1
+  },
+  {
+    "name": "Coral Trout Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 170,
+    "initialPrice": 18,
+    "finalPrice": 66,
+    "servings": 1
+  },
+  {
+    "name": "Harlequin Hind Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 180,
+    "initialPrice": 18,
+    "finalPrice": 66,
+    "servings": 1
+  },
+  {
+    "name": "White Spotted Jellyfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 180,
+    "initialPrice": 18,
+    "finalPrice": 66,
+    "servings": 1
+  },
+  {
+    "name": "Bigeye Scad Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 140,
+    "initialPrice": 17,
+    "finalPrice": 62,
+    "servings": 1
+  },
+  {
+    "name": "Grey Triggerfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 170,
+    "initialPrice": 17,
+    "finalPrice": 62,
+    "servings": 1
+  },
+  {
+    "name": "Painted Comber Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 140,
+    "initialPrice": 17,
+    "finalPrice": 62,
+    "servings": 1
+  },
+  {
+    "name": "Green Humphead Parrotfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 230,
+    "initialPrice": 16,
+    "finalPrice": 59,
+    "servings": 1
+  },
+  {
+    "name": "Striped Red Mullet Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 140,
+    "initialPrice": 16,
+    "finalPrice": 59,
+    "servings": 1
+  },
+  {
+    "name": "Barrel Jellyfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 160,
+    "initialPrice": 15,
+    "finalPrice": 55,
+    "servings": 1
+  },
+  {
+    "name": "Titan Triggerfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 200,
+    "initialPrice": 15,
+    "finalPrice": 55,
+    "servings": 1
+  },
+  {
+    "name": "Fried Egg Jellyfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 160,
+    "initialPrice": 15,
+    "finalPrice": 55,
+    "servings": 1
+  },
+  {
+    "name": "Bluehead Tilefish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 140,
+    "initialPrice": 15,
+    "finalPrice": 55,
+    "servings": 1
+  },
+  {
+    "name": "Mackerel Scad Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 150,
+    "initialPrice": 15,
+    "finalPrice": 55,
+    "servings": 1
+  },
+  {
+    "name": "Clown Frogfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 150,
+    "initialPrice": 15,
+    "finalPrice": 55,
+    "servings": 1
+  },
+  {
+    "name": "Sheepshead Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 240,
+    "initialPrice": 15,
+    "finalPrice": 55,
+    "servings": 1
+  },
+  {
+    "name": "Mediterranean Parrotfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 140,
+    "initialPrice": 10,
+    "finalPrice": 37,
+    "servings": 1
+  },
+  {
+    "name": "Emperor Angelfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 150,
+    "initialPrice": 10,
+    "finalPrice": 37,
+    "servings": 1
+  },
+  {
+    "name": "Red Lionfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 200,
+    "initialPrice": 10,
+    "finalPrice": 37,
+    "servings": 1
+  },
+  {
+    "name": "Longfin Batfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 130,
+    "initialPrice": 10,
+    "finalPrice": 37,
+    "servings": 1
+  },
+  {
+    "name": "B&W Snapper Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 150,
+    "initialPrice": 9,
+    "finalPrice": 33,
+    "servings": 1
+  },
+  {
+    "name": "Redtoothed Triggerfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 150,
+    "initialPrice": 9,
+    "finalPrice": 33,
+    "servings": 1
+  },
+  {
+    "name": "Longspine Squirrelfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 260,
+    "initialPrice": 9,
+    "finalPrice": 33,
+    "servings": 1
+  },
+  {
+    "name": "Ornate Wrasse Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 130,
+    "initialPrice": 8,
+    "finalPrice": 29,
+    "servings": 1
+  },
+  {
+    "name": "Smallspotted Dart Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 120,
+    "initialPrice": 8,
+    "finalPrice": 29,
+    "servings": 1
+  },
+  {
+    "name": "Reef Triggerfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 120,
+    "initialPrice": 7,
+    "finalPrice": 25,
+    "servings": 1
+  },
+  {
+    "name": "Yellowback Fusilier Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 120,
+    "initialPrice": 7,
+    "finalPrice": 25,
+    "servings": 1
+  },
+  {
+    "name": "Rainbow Wrasse Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 130,
+    "initialPrice": 6,
+    "finalPrice": 22,
+    "servings": 1
+  },
+  {
+    "name": "Blue Tang Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 110,
+    "initialPrice": 6,
+    "finalPrice": 22,
+    "servings": 1
+  },
+  {
+    "name": "Striped Catfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 260,
+    "initialPrice": 5,
+    "finalPrice": 18,
+    "servings": 1
+  },
+  {
+    "name": "Orbicular Batfish Fry",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 110,
+    "initialPrice": 5,
+    "finalPrice": 18,
+    "servings": 1
+  },
+  {
+    "name": "Salema Porgy Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 110,
+    "initialPrice": 5,
+    "finalPrice": 18,
+    "servings": 1
+  },
+  {
+    "name": "Flame Angelfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 150,
+    "initialPrice": 5,
+    "finalPrice": 18,
+    "servings": 1
+  },
+  {
+    "name": "Yellow Tang Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 100,
+    "initialPrice": 4,
+    "finalPrice": 14,
+    "servings": 1
+  },
+  {
+    "name": "Pyramid Butterflyfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 100,
+    "initialPrice": 4,
+    "finalPrice": 14,
+    "servings": 1
+  },
+  {
+    "name": "Sea Goldie Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 130,
+    "initialPrice": 3,
+    "finalPrice": 11,
+    "servings": 1
+  },
+  {
+    "name": "Cardinalfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 100,
+    "initialPrice": 3,
+    "finalPrice": 11,
+    "servings": 1
+  },
+  {
+    "name": "Clownfish Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 120,
+    "initialPrice": 2,
+    "finalPrice": 7,
+    "servings": 1
+  },
+  {
+    "name": "Comber Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 140,
+    "initialPrice": 2,
+    "finalPrice": 7,
+    "servings": 1
+  },
+  {
+    "name": "Wasabi Sushi",
+    "unlockCondition": "",
+    "dlc": "",
+    "finalLevel": 10,
+    "finalTaste": 1,
+    "initialPrice": 1,
+    "finalPrice": 1,
+    "servings": 1
+  }
+]
