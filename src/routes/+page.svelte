@@ -324,24 +324,18 @@
     font-weight: 600;
   }
 
-  .parties-list, .dishes-list {
+  .parties-list {
     font-size: 0.875rem;
     color: #64748b;
   }
 
-  .party-tag, .dish-tag {
+  .party-tag {
     background-color: #e0e7ff;
     color: #3b82f6;
     padding: 0.25rem 0.5rem;
     border-radius: 0.375rem;
     margin-right: 0.25rem;
     font-weight: 500;
-  }
-
-  .dishes-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
   }
 
   .parties-container {

@@ -15,7 +15,7 @@ function processPartyDishes() {
   for (let i = 1; i < lines.length; i++) {
     const values = lines[i].split(',');
 
-    if (values.length >= 2 && values[0] && values[1]) {
+    if (values.length >= 2 && values[0] && values[1] && values[1].trim()) {
       const party = values[0].trim();
       const dish = values[1].trim();
 
