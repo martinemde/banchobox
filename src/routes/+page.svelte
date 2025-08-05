@@ -62,6 +62,7 @@
                 <th>Initial Price</th>
                 <th>Final Price</th>
                 <th>Servings</th>
+                <th>Party Bonuses</th>
               </tr>
             </thead>
             <tbody>
@@ -75,6 +76,15 @@
                   <td class="price">{dish.initialPrice}</td>
                   <td class="price">{dish.finalPrice}</td>
                   <td class="servings">{dish.servings}</td>
+                  <td class="parties-list">
+                    {#if dish.parties.length > 0}
+                      {#each dish.parties as party, i}
+                        <span class="party-tag">{party}</span>{#if i < dish.parties.length - 1}, {/if}
+                      {/each}
+                    {:else}
+                      —
+                    {/if}
+                  </td>
                 </tr>
               {/each}
             </tbody>
@@ -124,6 +134,7 @@
               <tr>
                 <th>Party Name</th>
                 <th>Bonus Multiplier</th>
+                <th>Dishes ({parties.reduce((sum, p) => sum + p.dishes.length, 0)} total)</th>
               </tr>
             </thead>
             <tbody>
@@ -131,6 +142,17 @@
                 <tr>
                   <td class="party-name">{party.name}</td>
                   <td class="bonus">{party.bonus}×</td>
+                  <td class="dishes-list">
+                    {#if party.dishes.length > 0}
+                      <div class="dishes-container">
+                        {#each party.dishes as dish, i}
+                          <span class="dish-tag">{dish}</span>{#if i < party.dishes.length - 1}, {/if}
+                        {/each}
+                      </div>
+                    {:else}
+                      —
+                    {/if}
+                  </td>
                 </tr>
               {/each}
             </tbody>
@@ -275,6 +297,26 @@
     text-align: center;
     color: #059669;
     font-weight: 600;
+  }
+
+  .parties-list, .dishes-list {
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+
+  .party-tag, .dish-tag {
+    background-color: #e0e7ff;
+    color: #3b82f6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    margin-right: 0.25rem;
+    font-weight: 500;
+  }
+
+  .dishes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
   }
 
   @media (max-width: 768px) {

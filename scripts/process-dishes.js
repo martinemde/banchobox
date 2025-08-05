@@ -5,7 +5,31 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-function processDishes() {
+function processPartyDishes() {
+  const csvPath = join(__dirname, '..', 'data', 'party-dishes.csv');
+  const csvContent = readFileSync(csvPath, 'utf-8');
+
+  const lines = csvContent.trim().split('\n');
+  const partyDishes = new Map();
+
+  for (let i = 1; i < lines.length; i++) {
+    const values = lines[i].split(',');
+
+    if (values.length >= 2 && values[0] && values[1]) {
+      const party = values[0].trim();
+      const dish = values[1].trim();
+
+      if (!partyDishes.has(party)) {
+        partyDishes.set(party, []);
+      }
+      partyDishes.get(party).push(dish);
+    }
+  }
+
+  return partyDishes;
+}
+
+function processDishes(partyDishMap) {
   const csvPath = join(__dirname, '..', 'data', 'dishes.csv');
   const csvContent = readFileSync(csvPath, 'utf-8');
 
@@ -16,15 +40,26 @@ function processDishes() {
     const values = lines[i].split(',');
 
     if (values.length >= 8 && values[0]) {
+      const dishName = values[0];
+      const parties = [];
+
+      // Find which parties this dish belongs to
+      for (const [party, dishList] of partyDishMap.entries()) {
+        if (dishList.includes(dishName)) {
+          parties.push(party);
+        }
+      }
+
       const dish = {
-        name: values[0] || '',
+        name: dishName || '',
         unlockCondition: values[1] || '',
         dlc: values[2] || '',
         finalLevel: parseInt(values[3]) || 0,
         finalTaste: parseInt(values[4]) || 0,
         initialPrice: parseInt(values[5]) || 0,
         finalPrice: parseInt(values[6]) || 0,
-        servings: parseInt(values[7]) || 0
+        servings: parseInt(values[7]) || 0,
+        parties: parties
       };
 
       dishes.push(dish);
@@ -70,7 +105,7 @@ function processIngredients() {
   return ingredients;
 }
 
-function processParties() {
+function processParties(partyDishMap) {
   const csvPath = join(__dirname, '..', 'data', 'parties.csv');
   const csvContent = readFileSync(csvPath, 'utf-8');
 
@@ -81,9 +116,13 @@ function processParties() {
     const values = lines[i].split(',');
 
     if (values.length >= 2 && values[0]) {
+      const partyName = values[0];
+      const dishes = partyDishMap.get(partyName) || [];
+
       const party = {
-        name: values[0] || '',
-        bonus: parseFloat(values[1]) || 0
+        name: partyName || '',
+        bonus: parseFloat(values[1]) || 0,
+        dishes: dishes
       };
 
       parties.push(party);
@@ -97,6 +136,8 @@ function processParties() {
   return parties;
 }
 
-processDishes();
+// Process party-dish relationships first, then use them in other processing
+const partyDishMap = processPartyDishes();
+processDishes(partyDishMap);
 processIngredients();
-processParties();
+processParties(partyDishMap);

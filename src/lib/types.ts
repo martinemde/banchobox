@@ -7,6 +7,7 @@ export interface Dish {
   initialPrice: number;
   finalPrice: number;
   servings: number;
+  parties: string[];
 }
 
 export interface Ingredient {
@@ -22,4 +23,5 @@ export interface Ingredient {
 export interface Party {
   name: string;
   bonus: number;
+  dishes: string[];
 }

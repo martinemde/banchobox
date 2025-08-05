@@ -1,34 +1,112 @@
 [
   {
     "name": "Cucumber",
-    "bonus": 2.5
+    "bonus": 2.5,
+    "dishes": [
+      "Seasoned Waptia Fieldensis",
+      "Green Sea Urchin & Cucumber Salad",
+      "Great Spider Crab and Cucumber Sushi",
+      "Sea Toad and Cucumber Gunkan Sushi",
+      "Pickled Vegetables",
+      "Deep-Fried Vegetables",
+      "Trevally Sandwich"
+    ]
   },
   {
     "name": "Jellyfish",
-    "bonus": 2
+    "bonus": 2,
+    "dishes": [
+      "Cold Jellyfish & Green Sea Urchin Salad",
+      "Seasoned Jellyfish",
+      "Deepsea Kaiju Ramen",
+      "Seagrapes Jellyfish Sushi",
+      "Phantom Jellyfish Jelly"
+    ]
   },
   {
     "name": "Curry",
-    "bonus": 2
+    "bonus": 2,
+    "dishes": [
+      "Great Spider Crab Curry",
+      "Ice Fish Curry",
+      "Wrasse Curry",
+      "Roasted Capelin",
+      "Atlantic Bonito Curry",
+      "Humphead Parrotfish Curry",
+      "Godzilla vs. Ebirah Curry",
+      "Moray Eel Curry"
+    ]
   },
   {
     "name": "Tuna",
-    "bonus": 3.5
+    "bonus": 3.5,
+    "dishes": [
+      "Hyalonema Tuna Sashimi",
+      "Chirashi Sushi",
+      "Hot Pepper Tuna",
+      "Bluefin Tuna Rice Bowl",
+      "Yellowfin Tuna Steak",
+      "Hawaiian Poke",
+      "Bluefin Tuna Ootoro Sushi",
+      "Yellowfin Tuna Ootoro Sushi",
+      "Bluefin Tuna Chutoro Sushi",
+      "Yellowfin Tuna Chutoro Sushi",
+      "Bluefin Tuna Akami Sushi",
+      "Yellowfin Tuna Akami Sushi"
+    ]
   },
   {
     "name": "Marlin",
-    "bonus": 2
+    "bonus": 2,
+    "dishes": [
+      "Truffle Sailfish Tartare",
+      "Boiled Sailfish and Seaweed",
+      "Marlin and Soybean Paste Roast",
+      "Sailfish Sushi",
+      "Marlin Sushi"
+    ]
   },
   {
     "name": "Shark",
-    "bonus": 2
+    "bonus": 2,
+    "dishes": [
+      "Truffle Shark Sandwich",
+      "Falcatus Soybean Paste Soup",
+      "Shark Karaage",
+      "Crimson Fish Roll",
+      "Boiled Porbeagle Shark",
+      "Deep Fish Tempura",
+      "Lusca Neck Tadaki",
+      "Roasted Helicoprion Tail",
+      "White Shark Omelet",
+      "Goblin Shark Belly Roast",
+      "Whole-Roasted Shark Head",
+      ""
+    ]
   },
   {
     "name": "Shrimp",
-    "bonus": 2
+    "bonus": 2,
+    "dishes": [
+      "Seasoned Waptia Fieldensis",
+      "Humboldt Ink Pasta",
+      "Rice with White Shrimp Meat",
+      "Special Fried Shrimp Sushi",
+      "Mianbao Xia",
+      "Boiled and Deep-Fried White Shrimp"
+    ]
   },
   {
     "name": "Lobster",
-    "bonus": 2.5
+    "bonus": 2.5,
+    "dishes": [
+      "Truffle Blue Lobster Tail Sushi",
+      "Lobster Platter",
+      "Stir-fried Habanero Lobster",
+      "Steamed Eastern Rock Lobster & Egg",
+      "Crystal Lobster Roll",
+      "Godzilla vs. Ebirah Curry",
+      "Ebirah Chasing Sashimi"
+    ]
   }
 ]

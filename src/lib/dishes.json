@@ -7,7 +7,10 @@
     "finalTaste": 265,
     "initialPrice": 765,
     "finalPrice": 1683,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Chirashi Sushi",
@@ -17,7 +20,10 @@
     "finalTaste": 274,
     "initialPrice": 690,
     "finalPrice": 1518,
-    "servings": 2
+    "servings": 2,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Hot Pepper Tuna",
@@ -27,7 +33,10 @@
     "finalTaste": 350,
     "initialPrice": 395,
     "finalPrice": 1461,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Bluefin Tuna Rice Bowl",
@@ -37,7 +46,10 @@
     "finalTaste": 400,
     "initialPrice": 360,
     "finalPrice": 1332,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Lobster Platter",
@@ -47,7 +59,10 @@
     "finalTaste": 375,
     "initialPrice": 435,
     "finalPrice": 1609,
-    "servings": 6
+    "servings": 6,
+    "parties": [
+      "Lobster"
+    ]
   },
   {
     "name": "Yellowfin Tuna Steak",
@@ -57,7 +72,10 @@
     "finalTaste": 332,
     "initialPrice": 305,
     "finalPrice": 1128,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Truffle Blue Lobster Tail Sushi",
@@ -67,7 +85,10 @@
     "finalTaste": 282,
     "initialPrice": 780,
     "finalPrice": 1716,
-    "servings": 2
+    "servings": 2,
+    "parties": [
+      "Lobster"
+    ]
   },
   {
     "name": "Seasoned Waptia Fieldensis",
@@ -77,7 +98,11 @@
     "finalTaste": 420,
     "initialPrice": 425,
     "finalPrice": 1572,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Cucumber",
+      "Shrimp"
+    ]
   },
   {
     "name": "Green Sea Urchin & Cucumber Salad",
@@ -87,7 +112,10 @@
     "finalTaste": 282,
     "initialPrice": 700,
     "finalPrice": 1540,
-    "servings": 2
+    "servings": 2,
+    "parties": [
+      "Cucumber"
+    ]
   },
   {
     "name": "Stir-fried Habanero Lobster",
@@ -97,7 +125,10 @@
     "finalTaste": 320,
     "initialPrice": 390,
     "finalPrice": 1443,
-    "servings": 6
+    "servings": 6,
+    "parties": [
+      "Lobster"
+    ]
   },
   {
     "name": "Steamed Eastern Rock Lobster & Egg",
@@ -107,7 +138,10 @@
     "finalTaste": 455,
     "initialPrice": 380,
     "finalPrice": 1406,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Lobster"
+    ]
   },
   {
     "name": "Hawaiian Poke",
@@ -117,7 +151,10 @@
     "finalTaste": 348,
     "initialPrice": 265,
     "finalPrice": 980,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Godzilla vs. Ebirah Curry",
@@ -127,7 +164,11 @@
     "finalTaste": 365,
     "initialPrice": 370,
     "finalPrice": 1369,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Curry",
+      "Lobster"
+    ]
   },
   {
     "name": "Crystal Lobster Roll",
@@ -137,7 +178,10 @@
     "finalTaste": 305,
     "initialPrice": 370,
     "finalPrice": 1369,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Lobster"
+    ]
   },
   {
     "name": "Ebirah Chasing Sashimi",
@@ -147,7 +191,10 @@
     "finalTaste": 382,
     "initialPrice": 340,
     "finalPrice": 1258,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Lobster"
+    ]
   },
   {
     "name": "Boiled Sailfish and Seaweed",
@@ -157,7 +204,10 @@
     "finalTaste": 300,
     "initialPrice": 425,
     "finalPrice": 1572,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Marlin"
+    ]
   },
   {
     "name": "Humboldt Ink Pasta",
@@ -167,7 +217,10 @@
     "finalTaste": 375,
     "initialPrice": 420,
     "finalPrice": 1554,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Shrimp"
+    ]
   },
   {
     "name": "Falcatus Soybean Paste Soup",
@@ -177,7 +230,10 @@
     "finalTaste": 382,
     "initialPrice": 420,
     "finalPrice": 1554,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Truffle Sailfish Tartare",
@@ -187,7 +243,10 @@
     "finalTaste": 295,
     "initialPrice": 785,
     "finalPrice": 1727,
-    "servings": 2
+    "servings": 2,
+    "parties": [
+      "Marlin"
+    ]
   },
   {
     "name": "Truffle Shark Sandwich",
@@ -197,7 +256,10 @@
     "finalTaste": 273,
     "initialPrice": 775,
     "finalPrice": 1705,
-    "servings": 2
+    "servings": 2,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Great Spider Crab and Cucumber Sushi",
@@ -207,7 +269,10 @@
     "finalTaste": 385,
     "initialPrice": 324,
     "finalPrice": 1199,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Cucumber"
+    ]
   },
   {
     "name": "Wrasse Curry",
@@ -217,7 +282,10 @@
     "finalTaste": 330,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 6
+    "servings": 6,
+    "parties": [
+      "Curry"
+    ]
   },
   {
     "name": "Great Spider Crab Curry",
@@ -227,7 +295,10 @@
     "finalTaste": 290,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Curry"
+    ]
   },
   {
     "name": "Rice with White Shrimp Meat",
@@ -237,7 +308,10 @@
     "finalTaste": 400,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Shrimp"
+    ]
   },
   {
     "name": "Crimson Fish Roll",
@@ -247,7 +321,10 @@
     "finalTaste": 258,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Ice Fish Curry",
@@ -257,7 +334,10 @@
     "finalTaste": 317,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Curry"
+    ]
   },
   {
     "name": "Shark Karaage",
@@ -267,7 +347,10 @@
     "finalTaste": 380,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Seasoned Jellyfish",
@@ -277,7 +360,10 @@
     "finalTaste": 298,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 6
+    "servings": 6,
+    "parties": [
+      "Jellyfish"
+    ]
   },
   {
     "name": "Boiled Porbeagle Shark",
@@ -287,7 +373,10 @@
     "finalTaste": 332,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Sea Toad and Cucumber Gunkan Sushi",
@@ -297,7 +386,10 @@
     "finalTaste": 367,
     "initialPrice": 320,
     "finalPrice": 1184,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Cucumber"
+    ]
   },
   {
     "name": "Deep Fish Tempura",
@@ -307,7 +399,10 @@
     "finalTaste": 320,
     "initialPrice": 395,
     "finalPrice": 1461,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Pickled Vegetables",
@@ -317,7 +412,10 @@
     "finalTaste": 364,
     "initialPrice": 316,
     "finalPrice": 1169,
-    "servings": 3
+    "servings": 3,
+    "parties": [
+      "Cucumber"
+    ]
   },
   {
     "name": "Roasted Capelin",
@@ -327,7 +425,10 @@
     "finalTaste": 345,
     "initialPrice": 390,
     "finalPrice": 1443,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Curry"
+    ]
   },
   {
     "name": "Trevally Sandwich",
@@ -337,7 +438,10 @@
     "finalTaste": 260,
     "initialPrice": 312,
     "finalPrice": 1154,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Cucumber"
+    ]
   },
   {
     "name": "Deep-Fried Vegetables",
@@ -347,7 +451,10 @@
     "finalTaste": 396,
     "initialPrice": 312,
     "finalPrice": 1154,
-    "servings": 3
+    "servings": 3,
+    "parties": [
+      "Cucumber"
+    ]
   },
   {
     "name": "Cold Jellyfish & Green Sea Urchin Salad",
@@ -357,7 +464,10 @@
     "finalTaste": 277,
     "initialPrice": 685,
     "finalPrice": 1507,
-    "servings": 2
+    "servings": 2,
+    "parties": [
+      "Jellyfish"
+    ]
   },
   {
     "name": "Atlantic Bonito Curry",
@@ -367,7 +477,10 @@
     "finalTaste": 389,
     "initialPrice": 380,
     "finalPrice": 1406,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Curry"
+    ]
   },
   {
     "name": "Marlin and Soybean Paste Roast",
@@ -377,7 +490,10 @@
     "finalTaste": 272,
     "initialPrice": 380,
     "finalPrice": 1406,
-    "servings": 9
+    "servings": 9,
+    "parties": [
+      "Marlin"
+    ]
   },
   {
     "name": "Humphead Parrotfish Curry",
@@ -387,7 +503,10 @@
     "finalTaste": 347,
     "initialPrice": 375,
     "finalPrice": 1387,
-    "servings": 6
+    "servings": 6,
+    "parties": [
+      "Curry"
+    ]
   },
   {
     "name": "Mianbao Xia",
@@ -397,7 +516,10 @@
     "finalTaste": 305,
     "initialPrice": 375,
     "finalPrice": 1387,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Shrimp"
+    ]
   },
   {
     "name": "Special Fried Shrimp Sushi",
@@ -407,7 +529,10 @@
     "finalTaste": 317,
     "initialPrice": 380,
     "finalPrice": 1406,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Shrimp"
+    ]
   },
   {
     "name": "Lusca Neck Tadaki",
@@ -417,7 +542,10 @@
     "finalTaste": 250,
     "initialPrice": 1350,
     "finalPrice": 1350,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Deepsea Kaiju Ramen",
@@ -427,7 +555,10 @@
     "finalTaste": 410,
     "initialPrice": 350,
     "finalPrice": 1295,
-    "servings": 6
+    "servings": 6,
+    "parties": [
+      "Jellyfish"
+    ]
   },
   {
     "name": "Bluefin Tuna Ootoro Sushi",
@@ -437,7 +568,10 @@
     "finalTaste": 330,
     "initialPrice": 135,
     "finalPrice": 499,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Boiled and Deep-Fried White Shrimp",
@@ -447,7 +581,10 @@
     "finalTaste": 330,
     "initialPrice": 225,
     "finalPrice": 832,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Shrimp"
+    ]
   },
   {
     "name": "Seagrapes Jellyfish Sushi",
@@ -457,7 +594,10 @@
     "finalTaste": 280,
     "initialPrice": 225,
     "finalPrice": 832,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Jellyfish"
+    ]
   },
   {
     "name": "Stingray Sashimi Cold Noodles",
@@ -467,7 +607,8 @@
     "finalTaste": 331,
     "initialPrice": 430,
     "finalPrice": 1591,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Yellowfin Tuna Ootoro Sushi",
@@ -477,7 +618,10 @@
     "finalTaste": 315,
     "initialPrice": 125,
     "finalPrice": 462,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Warm Atlantic Mackerel Soba",
@@ -487,7 +631,8 @@
     "finalTaste": 260,
     "initialPrice": 425,
     "finalPrice": 1572,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Soy Sauce Marinated Crab",
@@ -497,7 +642,8 @@
     "finalTaste": 505,
     "initialPrice": 435,
     "finalPrice": 1609,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Eggplant Soba Oyaki",
@@ -507,7 +653,8 @@
     "finalTaste": 236,
     "initialPrice": 425,
     "finalPrice": 1572,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Great Barracuda Canape",
@@ -517,7 +664,8 @@
     "finalTaste": 372,
     "initialPrice": 425,
     "finalPrice": 1572,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Spear Squid Soba Futomaki",
@@ -527,7 +675,8 @@
     "finalTaste": 292,
     "initialPrice": 425,
     "finalPrice": 1572,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Grilled Eel with Habanero",
@@ -537,7 +686,8 @@
     "finalTaste": 335,
     "initialPrice": 425,
     "finalPrice": 1572,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Pufferfish Dumpling Soup",
@@ -547,7 +697,8 @@
     "finalTaste": 420,
     "initialPrice": 420,
     "finalPrice": 1554,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Dumbo Takoyaki",
@@ -557,7 +708,8 @@
     "finalTaste": 390,
     "initialPrice": 420,
     "finalPrice": 1554,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Pikaia Ramen",
@@ -567,7 +719,8 @@
     "finalTaste": 360,
     "initialPrice": 420,
     "finalPrice": 1554,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Nasu Dengaku",
@@ -577,7 +730,8 @@
     "finalTaste": 317,
     "initialPrice": 415,
     "finalPrice": 1535,
-    "servings": 4
+    "servings": 4,
+    "parties": []
   },
   {
     "name": "Fried Habanero Fangtooth",
@@ -587,7 +741,8 @@
     "finalTaste": 420,
     "initialPrice": 410,
     "finalPrice": 1517,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Rice with Great Spider Crab Meat",
@@ -597,7 +752,8 @@
     "finalTaste": 330,
     "initialPrice": 410,
     "finalPrice": 1517,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Peacock Squid Ripieni",
@@ -607,7 +763,8 @@
     "finalTaste": 360,
     "initialPrice": 410,
     "finalPrice": 1517,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Arctic Cod Risotto",
@@ -617,7 +774,8 @@
     "finalTaste": 377,
     "initialPrice": 408,
     "finalPrice": 1509,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Moonlight Bladderwrack Roll",
@@ -627,7 +785,8 @@
     "finalTaste": 360,
     "initialPrice": 405,
     "finalPrice": 1498,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Steamed Hyalonema Angler Fish",
@@ -637,7 +796,8 @@
     "finalTaste": 248,
     "initialPrice": 750,
     "finalPrice": 1650,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Haddock Acqua Pazza",
@@ -647,7 +807,8 @@
     "finalTaste": 400,
     "initialPrice": 405,
     "finalPrice": 1498,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Roasted Tropical Fish and Garlic",
@@ -657,7 +818,8 @@
     "finalTaste": 236,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Antarctic Octopus Carpaccio",
@@ -667,7 +829,8 @@
     "finalTaste": 408,
     "initialPrice": 405,
     "finalPrice": 1498,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Seahorse Salad",
@@ -677,7 +840,8 @@
     "finalTaste": 295,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Mackerel Scad Hotdog",
@@ -687,7 +851,8 @@
     "finalTaste": 340,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Batfish Ricebowl",
@@ -697,7 +862,8 @@
     "finalTaste": 447,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Seaweed Rolled Omelet",
@@ -707,7 +873,8 @@
     "finalTaste": 300,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Fried Onion Cuttlefish",
@@ -717,7 +884,8 @@
     "finalTaste": 360,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Trevally Nanbanzuke",
@@ -727,7 +895,8 @@
     "finalTaste": 343,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Latok Omelet",
@@ -737,7 +906,8 @@
     "finalTaste": 260,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Dusky Grouper Steak",
@@ -747,7 +917,8 @@
     "finalTaste": 328,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Narwhal Miso Soup",
@@ -757,7 +928,8 @@
     "finalTaste": 420,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 12
+    "servings": 12,
+    "parties": []
   },
   {
     "name": "Three-Colored Squid Roast",
@@ -767,7 +939,8 @@
     "finalTaste": 335,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 12
+    "servings": 12,
+    "parties": []
   },
   {
     "name": "Deep-Fried Eggplant Shrimp Meatballs",
@@ -777,7 +950,8 @@
     "finalTaste": 460,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Dried Stingray",
@@ -787,7 +961,8 @@
     "finalTaste": 225,
     "initialPrice": 400,
     "finalPrice": 1480,
-    "servings": 12
+    "servings": 12,
+    "parties": []
   },
   {
     "name": "Sweet and Sour Stargazer",
@@ -797,7 +972,8 @@
     "finalTaste": 395,
     "initialPrice": 390,
     "finalPrice": 1443,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Deep-Fried Red Lionfish",
@@ -807,7 +983,8 @@
     "finalTaste": 366,
     "initialPrice": 390,
     "finalPrice": 1443,
-    "servings": 4
+    "servings": 4,
+    "parties": []
   },
   {
     "name": "Comber Sandwich",
@@ -817,7 +994,8 @@
     "finalTaste": 420,
     "initialPrice": 390,
     "finalPrice": 1443,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Fried Tomato and Snailfish",
@@ -827,7 +1005,8 @@
     "finalTaste": 335,
     "initialPrice": 390,
     "finalPrice": 1443,
-    "servings": 12
+    "servings": 12,
+    "parties": []
   },
   {
     "name": "Narrow-Barred Spanish Mackerel Arancini",
@@ -837,7 +1016,8 @@
     "finalTaste": 364,
     "initialPrice": 390,
     "finalPrice": 1443,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Roasted Helicoprion Tail",
@@ -847,7 +1027,10 @@
     "finalTaste": 170,
     "initialPrice": 710,
     "finalPrice": 710,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Smoked Atlantic Mackerel Scramble",
@@ -857,7 +1040,8 @@
     "finalTaste": 460,
     "initialPrice": 387,
     "finalPrice": 1431,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Black Vinegar Braised Parrotfish",
@@ -867,7 +1051,8 @@
     "finalTaste": 406,
     "initialPrice": 385,
     "finalPrice": 1424,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Fried Rice with Sally Lightfoot Crab",
@@ -877,7 +1062,8 @@
     "finalTaste": 305,
     "initialPrice": 385,
     "finalPrice": 1424,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Plotosid Pie",
@@ -887,7 +1073,8 @@
     "finalTaste": 420,
     "initialPrice": 385,
     "finalPrice": 1424,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Rice with Purple Sea Urchin Sushi",
@@ -897,7 +1084,8 @@
     "finalTaste": 320,
     "initialPrice": 385,
     "finalPrice": 1424,
-    "servings": 4
+    "servings": 4,
+    "parties": []
   },
   {
     "name": "Deep-fried Sea Urchin",
@@ -907,7 +1095,8 @@
     "finalTaste": 275,
     "initialPrice": 690,
     "finalPrice": 1518,
-    "servings": 2
+    "servings": 2,
+    "parties": []
   },
   {
     "name": "Phantom Jellyfish Jelly",
@@ -917,7 +1106,10 @@
     "finalTaste": 165,
     "initialPrice": 700,
     "finalPrice": 700,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Jellyfish"
+    ]
   },
   {
     "name": "Tomato Egg Soup",
@@ -927,7 +1119,8 @@
     "finalTaste": 309,
     "initialPrice": 380,
     "finalPrice": 1406,
-    "servings": 12
+    "servings": 12,
+    "parties": []
   },
   {
     "name": "Sailfish Sushi",
@@ -937,7 +1130,10 @@
     "finalTaste": 400,
     "initialPrice": 195,
     "finalPrice": 721,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Marlin"
+    ]
   },
   {
     "name": "Tropical Fish Sushi Set",
@@ -947,7 +1143,8 @@
     "finalTaste": 346,
     "initialPrice": 375,
     "finalPrice": 1387,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Seahorse Udon",
@@ -957,7 +1154,8 @@
     "finalTaste": 353,
     "initialPrice": 375,
     "finalPrice": 1387,
-    "servings": 4
+    "servings": 4,
+    "parties": []
   },
   {
     "name": "Blobfish Spring Roll",
@@ -967,7 +1165,8 @@
     "finalTaste": 322,
     "initialPrice": 375,
     "finalPrice": 1387,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Pelican Eel Jelly",
@@ -977,7 +1176,8 @@
     "finalTaste": 439,
     "initialPrice": 373,
     "finalPrice": 1380,
-    "servings": 9
+    "servings": 9,
+    "parties": []
   },
   {
     "name": "Blanched Lusca Tentacle",
@@ -987,7 +1187,8 @@
     "finalTaste": 250,
     "initialPrice": 1350,
     "finalPrice": 1350,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Vegetable Sushi",
@@ -997,7 +1198,8 @@
     "finalTaste": 390,
     "initialPrice": 375,
     "finalPrice": 1387,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Boiled Asian Sheepshead Wrasse & Truffle",
@@ -1007,7 +1209,8 @@
     "finalTaste": 280,
     "initialPrice": 755,
     "finalPrice": 1661,
-    "servings": 2
+    "servings": 2,
+    "parties": []
   },
   {
     "name": "Grilled Antarctic Octopus & Truffle",
@@ -1017,7 +1220,8 @@
     "finalTaste": 338,
     "initialPrice": 770,
     "finalPrice": 1694,
-    "servings": 2
+    "servings": 2,
+    "parties": []
   },
   {
     "name": "White Shark Omelet",
@@ -1027,7 +1231,10 @@
     "finalTaste": 150,
     "initialPrice": 650,
     "finalPrice": 650,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Gazing Shark Sushi",
@@ -1037,7 +1244,8 @@
     "finalTaste": 3,
     "initialPrice": 1250,
     "finalPrice": 1250,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Translucent Sturgeon Sushi",
@@ -1047,7 +1255,8 @@
     "finalTaste": 3,
     "initialPrice": 1235,
     "finalPrice": 1235,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bloodskin Shark Sushi",
@@ -1057,7 +1266,8 @@
     "finalTaste": 4,
     "initialPrice": 1225,
     "finalPrice": 1225,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Goblin Shark Belly Roast",
@@ -1067,7 +1277,10 @@
     "finalTaste": 135,
     "initialPrice": 600,
     "finalPrice": 600,
-    "servings": 10
+    "servings": 10,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Bluefin Tuna Chutoro Sushi",
@@ -1077,7 +1290,10 @@
     "finalTaste": 241,
     "initialPrice": 95,
     "finalPrice": 351,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Rainbow Cap Eel Skewers",
@@ -1087,7 +1303,8 @@
     "finalTaste": 295,
     "initialPrice": 730,
     "finalPrice": 1606,
-    "servings": 2
+    "servings": 2,
+    "parties": []
   },
   {
     "name": "Rainbow Cap Triggerfish Fishcake",
@@ -1097,7 +1314,8 @@
     "finalTaste": 268,
     "initialPrice": 705,
     "finalPrice": 1551,
-    "servings": 2
+    "servings": 2,
+    "parties": []
   },
   {
     "name": "Rainbow Cap Pacific Fanfish Ochazuke",
@@ -1107,7 +1325,8 @@
     "finalTaste": 290,
     "initialPrice": 710,
     "finalPrice": 1562,
-    "servings": 2
+    "servings": 2,
+    "parties": []
   },
   {
     "name": "Yellowfin Tuna Chutoro Sushi",
@@ -1117,7 +1336,10 @@
     "finalTaste": 238,
     "initialPrice": 90,
     "finalPrice": 333,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Skewered Cucumber",
@@ -1127,7 +1349,8 @@
     "finalTaste": 340,
     "initialPrice": 320,
     "finalPrice": 1184,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Sprouting Eel Sushi",
@@ -1137,7 +1360,8 @@
     "finalTaste": 4,
     "initialPrice": 1040,
     "finalPrice": 1040,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bluefin Tuna Akami Sushi",
@@ -1147,7 +1371,10 @@
     "finalTaste": 240,
     "initialPrice": 80,
     "finalPrice": 296,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Sallow Sailfish Sushi",
@@ -1157,7 +1384,8 @@
     "finalTaste": 5,
     "initialPrice": 1000,
     "finalPrice": 1000,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Withered Ray Sushi",
@@ -1167,7 +1395,8 @@
     "finalTaste": 5,
     "initialPrice": 995,
     "finalPrice": 995,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Marlin Sushi",
@@ -1177,7 +1406,10 @@
     "finalTaste": 370,
     "initialPrice": 135,
     "finalPrice": 499,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Marlin"
+    ]
   },
   {
     "name": "Imperious Lobster Sushi",
@@ -1187,7 +1419,8 @@
     "finalTaste": 3,
     "initialPrice": 945,
     "finalPrice": 945,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Yellowfin Tuna Akami Sushi",
@@ -1197,7 +1430,10 @@
     "finalTaste": 235,
     "initialPrice": 73,
     "finalPrice": 270,
-    "servings": 1
+    "servings": 1,
+    "parties": [
+      "Tuna"
+    ]
   },
   {
     "name": "Malignant Pincer Sushi",
@@ -1207,7 +1443,8 @@
     "finalTaste": 3,
     "initialPrice": 880,
     "finalPrice": 880,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Fried Seahorses",
@@ -1217,7 +1454,8 @@
     "finalTaste": 363,
     "initialPrice": 220,
     "finalPrice": 814,
-    "servings": 4
+    "servings": 4,
+    "parties": []
   },
   {
     "name": "Stellate Puffer Special Sushi",
@@ -1227,7 +1465,8 @@
     "finalTaste": 340,
     "initialPrice": 220,
     "finalPrice": 814,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Yawie Steamed Meat",
@@ -1237,7 +1476,8 @@
     "finalTaste": 180,
     "initialPrice": 750,
     "finalPrice": 750,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Cortex Decorator Sushi",
@@ -1247,7 +1487,8 @@
     "finalTaste": 2,
     "initialPrice": 740,
     "finalPrice": 740,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Steamed Kronosaurus Tongue",
@@ -1257,7 +1498,8 @@
     "finalTaste": 180,
     "initialPrice": 724,
     "finalPrice": 724,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Seagrapes Special Sushi",
@@ -1267,7 +1509,8 @@
     "finalTaste": 390,
     "initialPrice": 200,
     "finalPrice": 740,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Dunkleosteus Sushi",
@@ -1277,7 +1520,8 @@
     "finalTaste": 420,
     "initialPrice": 210,
     "finalPrice": 777,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Moray Eel Curry",
@@ -1287,7 +1531,10 @@
     "finalTaste": 273,
     "initialPrice": 95,
     "finalPrice": 351,
-    "servings": 6
+    "servings": 6,
+    "parties": [
+      "Curry"
+    ]
   },
   {
     "name": "Big-Eyed Scad and Soybean Paste Roast",
@@ -1297,7 +1544,8 @@
     "finalTaste": 348,
     "initialPrice": 185,
     "finalPrice": 684,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Stellate Puffer Nicogori",
@@ -1307,7 +1555,8 @@
     "finalTaste": 381,
     "initialPrice": 180,
     "finalPrice": 666,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Seasoned Long-spine Porcupinefish Skin",
@@ -1317,7 +1566,8 @@
     "finalTaste": 410,
     "initialPrice": 180,
     "finalPrice": 666,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Boiled Mantis Shrimp with Soy Paste",
@@ -1327,7 +1577,8 @@
     "finalTaste": 150,
     "initialPrice": 650,
     "finalPrice": 650,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Trout Sea Grapes Ricebowl",
@@ -1337,7 +1588,8 @@
     "finalTaste": 290,
     "initialPrice": 175,
     "finalPrice": 647,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Greenland Shark Sushi",
@@ -1347,7 +1599,8 @@
     "finalTaste": 370,
     "initialPrice": 186,
     "finalPrice": 688,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bony Wreckfish Sushi",
@@ -1357,7 +1610,8 @@
     "finalTaste": 1,
     "initialPrice": 620,
     "finalPrice": 620,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Host Eel Sushi",
@@ -1367,7 +1621,8 @@
     "finalTaste": 1,
     "initialPrice": 610,
     "finalPrice": 610,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Snub-Nosed Spiny Eel Sushi",
@@ -1377,7 +1632,8 @@
     "finalTaste": 390,
     "initialPrice": 180,
     "finalPrice": 666,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Pelican Eel Sushi",
@@ -1387,7 +1643,8 @@
     "finalTaste": 360,
     "initialPrice": 180,
     "finalPrice": 666,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Shattered Wreckfish Sushi",
@@ -1397,7 +1654,8 @@
     "finalTaste": 2,
     "initialPrice": 560,
     "finalPrice": 560,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Porbeagle Shark Sushi",
@@ -1407,7 +1665,8 @@
     "finalTaste": 380,
     "initialPrice": 165,
     "finalPrice": 610,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Tokummia Katalepsis Sushi",
@@ -1417,7 +1676,8 @@
     "finalTaste": 460,
     "initialPrice": 165,
     "finalPrice": 610,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Smallspotted Dart Kajime Soup",
@@ -1427,7 +1687,8 @@
     "finalTaste": 367,
     "initialPrice": 150,
     "finalPrice": 555,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Steamed Wolf Eel",
@@ -1437,7 +1698,8 @@
     "finalTaste": 120,
     "initialPrice": 550,
     "finalPrice": 550,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Stir-Fried Hermit Crab and Seaweed",
@@ -1447,7 +1709,8 @@
     "finalTaste": 150,
     "initialPrice": 550,
     "finalPrice": 550,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Clione Queen Soup",
@@ -1457,7 +1720,8 @@
     "finalTaste": 135,
     "initialPrice": 550,
     "finalPrice": 550,
-    "servings": 10
+    "servings": 10,
+    "parties": []
   },
   {
     "name": "Whole-Roasted Shark Head",
@@ -1467,7 +1731,10 @@
     "finalTaste": 295,
     "initialPrice": 75,
     "finalPrice": 277,
-    "servings": 7
+    "servings": 7,
+    "parties": [
+      "Shark"
+    ]
   },
   {
     "name": "Xenacanthus Sushi",
@@ -1477,7 +1744,8 @@
     "finalTaste": 430,
     "initialPrice": 160,
     "finalPrice": 592,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Thresher Shark Sushi",
@@ -1487,7 +1755,8 @@
     "finalTaste": 390,
     "initialPrice": 159,
     "finalPrice": 588,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bursting Anglerfish Sushi",
@@ -1497,7 +1766,8 @@
     "finalTaste": 1,
     "initialPrice": 530,
     "finalPrice": 530,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Voltaic Grouper",
@@ -1507,7 +1777,8 @@
     "finalTaste": 7,
     "initialPrice": 515,
     "finalPrice": 515,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Cerebral Crab Sushi",
@@ -1517,7 +1788,8 @@
     "finalTaste": 2,
     "initialPrice": 515,
     "finalPrice": 515,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Entangled Crab Sushi",
@@ -1527,7 +1799,8 @@
     "finalTaste": 2,
     "initialPrice": 510,
     "finalPrice": 510,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Horsehair Crab Sushi",
@@ -1537,7 +1810,8 @@
     "finalTaste": 450,
     "initialPrice": 150,
     "finalPrice": 555,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Drepanaspis Sushi",
@@ -1547,7 +1821,8 @@
     "finalTaste": 400,
     "initialPrice": 150,
     "finalPrice": 555,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Barbed Eel Sushi",
@@ -1557,7 +1832,8 @@
     "finalTaste": 2,
     "initialPrice": 500,
     "finalPrice": 500,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Humboldt Squid Sushi",
@@ -1567,7 +1843,8 @@
     "finalTaste": 350,
     "initialPrice": 145,
     "finalPrice": 536,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Crystal Lobster Sushi",
@@ -1577,7 +1854,8 @@
     "finalTaste": 340,
     "initialPrice": 141,
     "finalPrice": 521,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Blue Lobster Sushi",
@@ -1587,7 +1865,8 @@
     "finalTaste": 320,
     "initialPrice": 141,
     "finalPrice": 521,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Smooth Hammerhead Sushi",
@@ -1597,7 +1876,8 @@
     "finalTaste": 390,
     "initialPrice": 141,
     "finalPrice": 521,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Eastern Rock Lobster Sushi",
@@ -1607,7 +1887,8 @@
     "finalTaste": 390,
     "initialPrice": 141,
     "finalPrice": 521,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Narwhal Sushi",
@@ -1617,7 +1898,8 @@
     "finalTaste": 400,
     "initialPrice": 140,
     "finalPrice": 518,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Megalograptus Sushi",
@@ -1627,7 +1909,8 @@
     "finalTaste": 400,
     "initialPrice": 140,
     "finalPrice": 518,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Concertina Barracuda Sushi",
@@ -1637,7 +1920,8 @@
     "finalTaste": 1,
     "initialPrice": 470,
     "finalPrice": 470,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Enthralled Stonefish Sushi",
@@ -1647,7 +1931,8 @@
     "finalTaste": 1,
     "initialPrice": 465,
     "finalPrice": 465,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Seizing Snailfish Sushi",
@@ -1657,7 +1942,8 @@
     "finalTaste": 3,
     "initialPrice": 455,
     "finalPrice": 455,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Devil Scorpionfish Sushi",
@@ -1667,7 +1953,8 @@
     "finalTaste": 350,
     "initialPrice": 135,
     "finalPrice": 499,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Tropical Rock Lobster Sushi",
@@ -1677,7 +1964,8 @@
     "finalTaste": 300,
     "initialPrice": 135,
     "finalPrice": 499,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Alaska Pollock Sushi",
@@ -1687,7 +1975,8 @@
     "finalTaste": 380,
     "initialPrice": 135,
     "finalPrice": 499,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Dollocaris Ingens Sushi",
@@ -1697,7 +1986,8 @@
     "finalTaste": 460,
     "initialPrice": 135,
     "finalPrice": 499,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Golden King Crab Sushi",
@@ -1707,7 +1997,8 @@
     "finalTaste": 370,
     "initialPrice": 135,
     "finalPrice": 499,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Many Eyed Mackerel Sushi",
@@ -1717,7 +2008,8 @@
     "finalTaste": 1,
     "initialPrice": 453,
     "finalPrice": 453,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Three-Headed Cod Sushi",
@@ -1727,7 +2019,8 @@
     "finalTaste": 1,
     "initialPrice": 450,
     "finalPrice": 450,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Savage Barracuda Sushi",
@@ -1737,7 +2030,8 @@
     "finalTaste": 1,
     "initialPrice": 440,
     "finalPrice": 440,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Falcatus Sushi",
@@ -1747,7 +2041,8 @@
     "finalTaste": 380,
     "initialPrice": 130,
     "finalPrice": 481,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Starry Skate Sushi",
@@ -1757,7 +2052,8 @@
     "finalTaste": 360,
     "initialPrice": 130,
     "finalPrice": 481,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "American Lobster Sushi",
@@ -1767,7 +2063,8 @@
     "finalTaste": 290,
     "initialPrice": 129,
     "finalPrice": 477,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Tusked Grouper Sushi",
@@ -1777,7 +2074,8 @@
     "finalTaste": 2,
     "initialPrice": 425,
     "finalPrice": 425,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Gnashing Perch Sushi",
@@ -1787,7 +2085,8 @@
     "finalTaste": 1,
     "initialPrice": 420,
     "finalPrice": 420,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Allenypterus Sushi",
@@ -1797,7 +2096,8 @@
     "finalTaste": 360,
     "initialPrice": 125,
     "finalPrice": 462,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Splintered Crab Sushi",
@@ -1807,7 +2107,8 @@
     "finalTaste": 3,
     "initialPrice": 405,
     "finalPrice": 405,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Blobfish Sushi",
@@ -1817,7 +2118,8 @@
     "finalTaste": 310,
     "initialPrice": 120,
     "finalPrice": 444,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Arctic Telescope Fish Sushi",
@@ -1827,7 +2129,8 @@
     "finalTaste": 350,
     "initialPrice": 120,
     "finalPrice": 444,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Snow Crab Sushi",
@@ -1837,7 +2140,8 @@
     "finalTaste": 420,
     "initialPrice": 120,
     "finalPrice": 444,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Antarctic Octopus Sushi",
@@ -1847,7 +2151,8 @@
     "finalTaste": 360,
     "initialPrice": 120,
     "finalPrice": 444,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Lumpfish Sushi",
@@ -1857,7 +2162,8 @@
     "finalTaste": 370,
     "initialPrice": 120,
     "finalPrice": 444,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Qingmendous Sushi",
@@ -1867,7 +2173,8 @@
     "finalTaste": 380,
     "initialPrice": 120,
     "finalPrice": 444,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Perished Loosejaw Sushi",
@@ -1877,7 +2184,8 @@
     "finalTaste": 1,
     "initialPrice": 395,
     "finalPrice": 395,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Parhelion Jellyfish Sushi",
@@ -1887,7 +2195,8 @@
     "finalTaste": 5,
     "initialPrice": 390,
     "finalPrice": 390,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Pikaia Sushi",
@@ -1897,7 +2206,8 @@
     "finalTaste": 360,
     "initialPrice": 115,
     "finalPrice": 425,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Gelatinous Stonefish Sushi",
@@ -1907,7 +2217,8 @@
     "finalTaste": 6,
     "initialPrice": 385,
     "finalPrice": 385,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Vampire Squid Sushi",
@@ -1917,7 +2228,8 @@
     "finalTaste": 340,
     "initialPrice": 115,
     "finalPrice": 425,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Grotesque Mackerel Sushi",
@@ -1927,7 +2239,8 @@
     "finalTaste": 4,
     "initialPrice": 383,
     "finalPrice": 383,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Fanged Cod Sushi",
@@ -1937,7 +2250,8 @@
     "finalTaste": 6,
     "initialPrice": 380,
     "finalPrice": 380,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Scouring Bass Sushi",
@@ -1947,7 +2261,8 @@
     "finalTaste": 1,
     "initialPrice": 375,
     "finalPrice": 375,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Haddock Sushi",
@@ -1957,7 +2272,8 @@
     "finalTaste": 340,
     "initialPrice": 110,
     "finalPrice": 407,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Radiant Squid Sushi",
@@ -1967,7 +2283,8 @@
     "finalTaste": 8,
     "initialPrice": 365,
     "finalPrice": 365,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Zebra Shark Sushi",
@@ -1977,7 +2294,8 @@
     "finalTaste": 360,
     "initialPrice": 108,
     "finalPrice": 399,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Seadragon Onigiri",
@@ -1987,7 +2305,8 @@
     "finalTaste": 470,
     "initialPrice": 105,
     "finalPrice": 388,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Waptia Sushi",
@@ -1997,7 +2316,8 @@
     "finalTaste": 400,
     "initialPrice": 103,
     "finalPrice": 381,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Shortfin Mako Sushi",
@@ -2007,7 +2327,8 @@
     "finalTaste": 360,
     "initialPrice": 105,
     "finalPrice": 388,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Aurora Jellyfish Sushi",
@@ -2017,7 +2338,8 @@
     "finalTaste": 6,
     "initialPrice": 345,
     "finalPrice": 345,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "White Trevally Kombu Ochazuke",
@@ -2027,7 +2349,8 @@
     "finalTaste": 266,
     "initialPrice": 93,
     "finalPrice": 344,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Megamouth Shark Sushi",
@@ -2037,7 +2360,8 @@
     "finalTaste": 300,
     "initialPrice": 95,
     "finalPrice": 351,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Arctic Cod Sushi",
@@ -2047,7 +2371,8 @@
     "finalTaste": 340,
     "initialPrice": 95,
     "finalPrice": 351,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Ice Fish Sushi",
@@ -2057,7 +2382,8 @@
     "finalTaste": 320,
     "initialPrice": 95,
     "finalPrice": 351,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Polar Eelpout Sushi",
@@ -2067,7 +2393,8 @@
     "finalTaste": 320,
     "initialPrice": 90,
     "finalPrice": 333,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Rhinochimaeridae Sushi",
@@ -2077,7 +2404,8 @@
     "finalTaste": 290,
     "initialPrice": 90,
     "finalPrice": 333,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Marbled Electric Ray Sushi",
@@ -2087,7 +2415,8 @@
     "finalTaste": 300,
     "initialPrice": 90,
     "finalPrice": 333,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Striped Red Mullet Tangle Roll",
@@ -2097,7 +2426,8 @@
     "finalTaste": 270,
     "initialPrice": 80,
     "finalPrice": 296,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Frilled Shark Sushi",
@@ -2107,7 +2437,8 @@
     "finalTaste": 280,
     "initialPrice": 85,
     "finalPrice": 314,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Gelatinous Snailfish Sushi",
@@ -2117,7 +2448,8 @@
     "finalTaste": 330,
     "initialPrice": 85,
     "finalPrice": 314,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Dumbo Octopus Sushi",
@@ -2127,7 +2459,8 @@
     "finalTaste": 330,
     "initialPrice": 80,
     "finalPrice": 296,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Cookiecutter Shark Sushi",
@@ -2137,7 +2470,8 @@
     "finalTaste": 270,
     "initialPrice": 75,
     "finalPrice": 277,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Norway Lobster Sushi",
@@ -2147,7 +2481,8 @@
     "finalTaste": 330,
     "initialPrice": 75,
     "finalPrice": 277,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Red-banded Lobster Sushi",
@@ -2157,7 +2492,8 @@
     "finalTaste": 250,
     "initialPrice": 75,
     "finalPrice": 277,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Peacock Squid Sushi",
@@ -2167,7 +2503,8 @@
     "finalTaste": 290,
     "initialPrice": 75,
     "finalPrice": 277,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Threetooth Puffer Sushi",
@@ -2177,7 +2514,8 @@
     "finalTaste": 250,
     "initialPrice": 70,
     "finalPrice": 259,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "European Lobster Sushi",
@@ -2187,7 +2525,8 @@
     "finalTaste": 250,
     "initialPrice": 69,
     "finalPrice": 255,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Barreleye Sushi",
@@ -2197,7 +2536,8 @@
     "finalTaste": 250,
     "initialPrice": 70,
     "finalPrice": 259,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Fan Lobster Sushi",
@@ -2207,7 +2547,8 @@
     "finalTaste": 300,
     "initialPrice": 66,
     "finalPrice": 244,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "California Spiny Lobster Sushi",
@@ -2217,7 +2558,8 @@
     "finalTaste": 280,
     "initialPrice": 66,
     "finalPrice": 244,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Copper Shark Sushi",
@@ -2227,7 +2569,8 @@
     "finalTaste": 280,
     "initialPrice": 65,
     "finalPrice": 240,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Pacific Fanfish Sushi",
@@ -2237,7 +2580,8 @@
     "finalTaste": 240,
     "initialPrice": 65,
     "finalPrice": 240,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Purple Sea Urchin Sushi",
@@ -2247,7 +2591,8 @@
     "finalTaste": 270,
     "initialPrice": 60,
     "finalPrice": 222,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Blackfin Barracuda Sushi",
@@ -2257,7 +2602,8 @@
     "finalTaste": 280,
     "initialPrice": 60,
     "finalPrice": 222,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Blacktip Reefshark Sushi",
@@ -2267,7 +2613,8 @@
     "finalTaste": 270,
     "initialPrice": 60,
     "finalPrice": 222,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Salmon Snailfish Sushi",
@@ -2277,7 +2624,8 @@
     "finalTaste": 230,
     "initialPrice": 60,
     "finalPrice": 222,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Agar Tokoroten",
@@ -2287,7 +2635,8 @@
     "finalTaste": 266,
     "initialPrice": 51,
     "finalPrice": 189,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Box Jellyfish Sushi",
@@ -2297,7 +2646,8 @@
     "finalTaste": 270,
     "initialPrice": 55,
     "finalPrice": 203,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bluespotted Stargazer Sushi",
@@ -2307,7 +2657,8 @@
     "finalTaste": 380,
     "initialPrice": 55,
     "finalPrice": 203,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Sea Toad Sushi",
@@ -2317,7 +2668,8 @@
     "finalTaste": 230,
     "initialPrice": 55,
     "finalPrice": 203,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Boiled  Fusilier",
@@ -2327,7 +2679,8 @@
     "finalTaste": 255,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 7
+    "servings": 7,
+    "parties": []
   },
   {
     "name": "Seasoned Kajime",
@@ -2337,7 +2690,8 @@
     "finalTaste": 245,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "White Shrimp Sushi",
@@ -2347,7 +2701,8 @@
     "finalTaste": 280,
     "initialPrice": 53,
     "finalPrice": 196,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Salt-grilled Redtoothed Triggerfish",
@@ -2357,7 +2712,8 @@
     "finalTaste": 241,
     "initialPrice": 48,
     "finalPrice": 178,
-    "servings": 6
+    "servings": 6,
+    "parties": []
   },
   {
     "name": "Spear Squid Sushi",
@@ -2367,7 +2723,8 @@
     "finalTaste": 300,
     "initialPrice": 51,
     "finalPrice": 188,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Stingray Sushi",
@@ -2377,7 +2734,8 @@
     "finalTaste": 260,
     "initialPrice": 51,
     "finalPrice": 188,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Blood-belly Comb Jelly Sushi",
@@ -2387,7 +2745,8 @@
     "finalTaste": 250,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Moray Eel Sushi",
@@ -2397,7 +2756,8 @@
     "finalTaste": 250,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Tiger Shark Sushi",
@@ -2407,7 +2767,8 @@
     "finalTaste": 290,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Spider Crab Sushi",
@@ -2417,7 +2778,8 @@
     "finalTaste": 290,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Raw Black Tiger Shrimp Sushi",
@@ -2427,7 +2789,8 @@
     "finalTaste": 240,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Sally Lightfoot Crab Sushi",
@@ -2437,7 +2800,8 @@
     "finalTaste": 320,
     "initialPrice": 50,
     "finalPrice": 185,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Comb Jelly Sushi",
@@ -2447,7 +2811,8 @@
     "finalTaste": 250,
     "initialPrice": 45,
     "finalPrice": 166,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Capelin Sushi",
@@ -2457,7 +2822,8 @@
     "finalTaste": 330,
     "initialPrice": 45,
     "finalPrice": 166,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Fangtooth Sushi",
@@ -2467,7 +2833,8 @@
     "finalTaste": 260,
     "initialPrice": 45,
     "finalPrice": 166,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Young Anomalocaris Sushi",
@@ -2477,7 +2844,8 @@
     "finalTaste": 125,
     "initialPrice": 224,
     "finalPrice": 224,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Cooked Whiteleg Shrimp Sushi",
@@ -2487,7 +2855,8 @@
     "finalTaste": 220,
     "initialPrice": 35,
     "finalPrice": 129,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Longnose Sawshark Sushi",
@@ -2497,7 +2866,8 @@
     "finalTaste": 290,
     "initialPrice": 35,
     "finalPrice": 129,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Chambered Nautilus Sushi",
@@ -2507,7 +2877,8 @@
     "finalTaste": 220,
     "initialPrice": 35,
     "finalPrice": 129,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Red bream Sushi",
@@ -2517,7 +2888,8 @@
     "finalTaste": 270,
     "initialPrice": 35,
     "finalPrice": 129,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Atlantic Anglerfish Sushi",
@@ -2527,7 +2899,8 @@
     "finalTaste": 240,
     "initialPrice": 33,
     "finalPrice": 122,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Seahorse Skewers",
@@ -2537,7 +2910,8 @@
     "finalTaste": 220,
     "initialPrice": 30,
     "finalPrice": 111,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Clione Sushi",
@@ -2547,7 +2921,8 @@
     "finalTaste": 220,
     "initialPrice": 35,
     "finalPrice": 129,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Giant Trevally Sushi",
@@ -2557,7 +2932,8 @@
     "finalTaste": 250,
     "initialPrice": 30,
     "finalPrice": 111,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Narrow-Barred Spanish Mackerel Sushi",
@@ -2567,7 +2943,8 @@
     "finalTaste": 190,
     "initialPrice": 30,
     "finalPrice": 111,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Dusky Grouper Sushi",
@@ -2577,7 +2954,8 @@
     "finalTaste": 200,
     "initialPrice": 30,
     "finalPrice": 111,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Clearfin Lionfish Sushi",
@@ -2587,7 +2965,8 @@
     "finalTaste": 250,
     "initialPrice": 24,
     "finalPrice": 88,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Whitetip Reefshark Sushi",
@@ -2597,7 +2976,8 @@
     "finalTaste": 270,
     "initialPrice": 24,
     "finalPrice": 88,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "White Trevally Sushi",
@@ -2607,7 +2987,8 @@
     "finalTaste": 190,
     "initialPrice": 22,
     "finalPrice": 81,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Atlantic Mackerel Sushi",
@@ -2617,7 +2998,8 @@
     "finalTaste": 190,
     "initialPrice": 21,
     "finalPrice": 77,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Atlantic Bonito Sushi",
@@ -2627,7 +3009,8 @@
     "finalTaste": 180,
     "initialPrice": 21,
     "finalPrice": 77,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Great Barracuda Sushi",
@@ -2637,7 +3020,8 @@
     "finalTaste": 220,
     "initialPrice": 20,
     "finalPrice": 74,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Cuttlefish Sushi",
@@ -2647,7 +3031,8 @@
     "finalTaste": 200,
     "initialPrice": 20,
     "finalPrice": 74,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bigeye Trevally Sushi",
@@ -2657,7 +3042,8 @@
     "finalTaste": 170,
     "initialPrice": 19,
     "finalPrice": 70,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Coral Trout Sushi",
@@ -2667,7 +3053,8 @@
     "finalTaste": 170,
     "initialPrice": 18,
     "finalPrice": 66,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Harlequin Hind Sushi",
@@ -2677,7 +3064,8 @@
     "finalTaste": 180,
     "initialPrice": 18,
     "finalPrice": 66,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "White Spotted Jellyfish Sushi",
@@ -2687,7 +3075,8 @@
     "finalTaste": 180,
     "initialPrice": 18,
     "finalPrice": 66,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bigeye Scad Sushi",
@@ -2697,7 +3086,8 @@
     "finalTaste": 140,
     "initialPrice": 17,
     "finalPrice": 62,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Grey Triggerfish Sushi",
@@ -2707,7 +3097,8 @@
     "finalTaste": 170,
     "initialPrice": 17,
     "finalPrice": 62,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Painted Comber Sushi",
@@ -2717,7 +3108,8 @@
     "finalTaste": 140,
     "initialPrice": 17,
     "finalPrice": 62,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Green Humphead Parrotfish Sushi",
@@ -2727,7 +3119,8 @@
     "finalTaste": 230,
     "initialPrice": 16,
     "finalPrice": 59,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Striped Red Mullet Sushi",
@@ -2737,7 +3130,8 @@
     "finalTaste": 140,
     "initialPrice": 16,
     "finalPrice": 59,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Barrel Jellyfish Sushi",
@@ -2747,7 +3141,8 @@
     "finalTaste": 160,
     "initialPrice": 15,
     "finalPrice": 55,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Titan Triggerfish Sushi",
@@ -2757,7 +3152,8 @@
     "finalTaste": 200,
     "initialPrice": 15,
     "finalPrice": 55,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Fried Egg Jellyfish Sushi",
@@ -2767,7 +3163,8 @@
     "finalTaste": 160,
     "initialPrice": 15,
     "finalPrice": 55,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Bluehead Tilefish Sushi",
@@ -2777,7 +3174,8 @@
     "finalTaste": 140,
     "initialPrice": 15,
     "finalPrice": 55,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Mackerel Scad Sushi",
@@ -2787,7 +3185,8 @@
     "finalTaste": 150,
     "initialPrice": 15,
     "finalPrice": 55,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Clown Frogfish Sushi",
@@ -2797,7 +3196,8 @@
     "finalTaste": 150,
     "initialPrice": 15,
     "finalPrice": 55,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Sheepshead Sushi",
@@ -2807,7 +3207,8 @@
     "finalTaste": 240,
     "initialPrice": 15,
     "finalPrice": 55,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Mediterranean Parrotfish Sushi",
@@ -2817,7 +3218,8 @@
     "finalTaste": 140,
     "initialPrice": 10,
     "finalPrice": 37,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Emperor Angelfish Sushi",
@@ -2827,7 +3229,8 @@
     "finalTaste": 150,
     "initialPrice": 10,
     "finalPrice": 37,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Red Lionfish Sushi",
@@ -2837,7 +3240,8 @@
     "finalTaste": 200,
     "initialPrice": 10,
     "finalPrice": 37,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Longfin Batfish Sushi",
@@ -2847,7 +3251,8 @@
     "finalTaste": 130,
     "initialPrice": 10,
     "finalPrice": 37,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "B&W Snapper Sushi",
@@ -2857,7 +3262,8 @@
     "finalTaste": 150,
     "initialPrice": 9,
     "finalPrice": 33,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Redtoothed Triggerfish Sushi",
@@ -2867,7 +3273,8 @@
     "finalTaste": 150,
     "initialPrice": 9,
     "finalPrice": 33,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Longspine Squirrelfish Sushi",
@@ -2877,7 +3284,8 @@
     "finalTaste": 260,
     "initialPrice": 9,
     "finalPrice": 33,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Ornate Wrasse Sushi",
@@ -2887,7 +3295,8 @@
     "finalTaste": 130,
     "initialPrice": 8,
     "finalPrice": 29,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Smallspotted Dart Sushi",
@@ -2897,7 +3306,8 @@
     "finalTaste": 120,
     "initialPrice": 8,
     "finalPrice": 29,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Reef Triggerfish Sushi",
@@ -2907,7 +3317,8 @@
     "finalTaste": 120,
     "initialPrice": 7,
     "finalPrice": 25,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Yellowback Fusilier Sushi",
@@ -2917,7 +3328,8 @@
     "finalTaste": 120,
     "initialPrice": 7,
     "finalPrice": 25,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Rainbow Wrasse Sushi",
@@ -2927,7 +3339,8 @@
     "finalTaste": 130,
     "initialPrice": 6,
     "finalPrice": 22,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Blue Tang Sushi",
@@ -2937,7 +3350,8 @@
     "finalTaste": 110,
     "initialPrice": 6,
     "finalPrice": 22,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Striped Catfish Sushi",
@@ -2947,7 +3361,8 @@
     "finalTaste": 260,
     "initialPrice": 5,
     "finalPrice": 18,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Orbicular Batfish Fry",
@@ -2957,7 +3372,8 @@
     "finalTaste": 110,
     "initialPrice": 5,
     "finalPrice": 18,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Salema Porgy Sushi",
@@ -2967,7 +3383,8 @@
     "finalTaste": 110,
     "initialPrice": 5,
     "finalPrice": 18,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Flame Angelfish Sushi",
@@ -2977,7 +3394,8 @@
     "finalTaste": 150,
     "initialPrice": 5,
     "finalPrice": 18,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Yellow Tang Sushi",
@@ -2987,7 +3405,8 @@
     "finalTaste": 100,
     "initialPrice": 4,
     "finalPrice": 14,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Pyramid Butterflyfish Sushi",
@@ -2997,7 +3416,8 @@
     "finalTaste": 100,
     "initialPrice": 4,
     "finalPrice": 14,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Sea Goldie Sushi",
@@ -3007,7 +3427,8 @@
     "finalTaste": 130,
     "initialPrice": 3,
     "finalPrice": 11,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Cardinalfish Sushi",
@@ -3017,7 +3438,8 @@
     "finalTaste": 100,
     "initialPrice": 3,
     "finalPrice": 11,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Clownfish Sushi",
@@ -3027,7 +3449,8 @@
     "finalTaste": 120,
     "initialPrice": 2,
     "finalPrice": 7,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Comber Sushi",
@@ -3037,7 +3460,8 @@
     "finalTaste": 140,
     "initialPrice": 2,
     "finalPrice": 7,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   },
   {
     "name": "Wasabi Sushi",
@@ -3047,6 +3471,7 @@
     "finalTaste": 1,
     "initialPrice": 1,
     "finalPrice": 1,
-    "servings": 1
+    "servings": 1,
+    "parties": []
   }
 ]
