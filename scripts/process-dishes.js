@@ -35,6 +35,40 @@ function processDishes() {
   writeFileSync(outputPath, JSON.stringify(dishes, null, 2));
 
   console.log(`Processed ${dishes.length} dishes to ${outputPath}`);
+  return dishes;
+}
+
+function processIngredients() {
+  const csvPath = join(__dirname, '..', 'data', 'ingredients.csv');
+  const csvContent = readFileSync(csvPath, 'utf-8');
+
+  const lines = csvContent.trim().split('\n');
+  const ingredients = [];
+
+  for (let i = 1; i < lines.length; i++) {
+    const values = lines[i].split(',');
+
+    if (values.length >= 7 && values[0]) {
+      const ingredient = {
+        name: values[0] || '',
+        source: values[1] || '',
+        type: values[2] || '',
+        drone: values[3] === 'checked',
+        kg: parseFloat(values[4]) || 0,
+        maxMeats: parseInt(values[5]) || 0,
+        cost: parseInt(values[6]) || 0
+      };
+
+      ingredients.push(ingredient);
+    }
+  }
+
+  const outputPath = join(__dirname, '..', 'src', 'lib', 'ingredients.json');
+  writeFileSync(outputPath, JSON.stringify(ingredients, null, 2));
+
+  console.log(`Processed ${ingredients.length} ingredients to ${outputPath}`);
+  return ingredients;
 }
 
 processDishes();
+processIngredients();

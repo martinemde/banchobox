@@ -1,0 +1,230 @@
+Ingredient,Source,Type,Drone,kg,Max Meats,Cost
+Aurora Jellyfish,Jellyfish Basin,Aberration,,5.0,5,
+Barbed Eel,Fog Coast,Aberration,,6.0,,
+Bloodskin Shark,Fog Coast,Aberration,checked,11.5,5,
+Bony Wreckfish,Black Cliff,Aberration,checked,8.0,,
+Bursting Anglerfish,Jellyfish Basin,Aberration,,6.0,5,
+Concertina Barracuda,Jellyfish Basin,Aberration,,6.5,5,
+Enthralled Stonefish,Black Cliff,Aberration,,8.0,,
+Fanged Cod,Fog Coast,Aberration,,3.5,,
+Gazing Shark,Jellyfish Basin,Aberration,checked,11.0,5,
+Gelatinous Stonefish,Black Cliff,Aberration,,7.5,,
+Gnashing Perch,Black Cliff,Aberration,,4.5,,
+Grotesque Mackerel,Fog Coast,Aberration,,3.0,,
+Host Eel,Fog Coast,Aberration,,5.5,,
+Malignant Pincer,Fog Coast,Aberration,,2.5,,
+Many Eyed Mackerel,Fog Coast,Aberration,,2.5,,
+Parhelion Jellyfish,Jellyfish Basin,Aberration,,5.0,5,
+Perished Loosejaw,Jellyfish Basin,Aberration,,3.0,5,
+Radiant Squid,Jellyfish Basin,Aberration,,4.5,3,
+Sallow Sailfish,Fog Coast,Aberration,checked,9.5,5,
+Savage Barracuda,Jellyfish Basin,Aberration,,7.0,5,
+Scouring Bass,Black Cliff,Aberration,,3.5,,
+Seizing Snailfish,Jellyfish Basin,Aberration,,5.0,3,
+Shattered Wreckfish,Black Cliff,Aberration,,6.5,5,
+Sprouting Eel,Black Cliff,Aberration,checked,7.0,5,
+Three-Headed Cod,Fog Coast,Aberration,,6.0,,
+Translucent Sturgeon,Black Cliff,Aberration,checked,8.0,5,
+Tusked Grouper,Fog Coast,Aberration,,5.0,,
+Voltaic Grouper,Fog Coast,Aberration,,6.0,,
+Withered Ray,Black Cliff,Aberration,checked,8.5,5,
+Cerebral Crab,Fog Coast,Aberration Crab,,2.0,,
+Cortex Decorator,Black Cliff,Aberration Crab,,2.5,,
+Entangled Crab,Jellyfish Basin,Aberration Crab,,2.5,3,
+Imperious Lobster,Jellyfish Basin,Aberration Crab,,3.0,,
+Splintered Crab,Black Cliff,Aberration Crab,,3.5,,
+Clione Queen's Tentacle,130-250m,Boss,,1.0,1,
+Goblin Shark's Fatty Meat,130-250m,Boss,,1.0,1,
+Helicoprion Tail,3rd Glacial Cave,Boss,,1.0,1,
+Klaus's Fin,0-50m Night,Boss,,1.0,1,
+Kronosaurus Tongue,Hydrothermal Vents,Boss,,1.0,1,
+Lusca Neck Meat,50-130m Night,Boss,,1.0,1,
+Lusca Tentacle,50-130m Night,Boss,,1.0,1,
+Mantis Shrimp Meat,0-50m Night,Boss,,1.0,1,
+Phantom Jellyfish Meat,Second Glacial Cave,Boss,,1.0,1,
+Truck Hermit Crab Legs,0-50m Night,Boss,,1.0,1,
+Wolf Eel Tail Meat,130-250m,Boss,,1.0,1,
+Yawie's Inner Flesh,Divine Tree Control Room,Boss,,1.0,1,
+American Lobster,0-50m,Crab trap,,1.0,3,43
+Blue Lobster,0-50m Night,Crab trap,,1.0,3,47
+California Spiny Lobster,50-130m,Crab trap,,1.5,3,22
+Crystal Lobster,50-130m Night,Crab trap,,1.5,3,47
+Dollocaris Ingens,Hydrothermal Vents,Crab trap,,1.5,3,45
+Eastern Rock Lobster,130-250m,Crab trap,,2.5,3,47
+European Lobster,0-50m,Crab trap,,1.0,3,23
+Fan Lobster,50-130m Night,Crab trap,,0.2,3,22
+Horsehair Crab,Glacial Area,Crab trap,,1.5,3,50
+Norway Lobster,130-250m,Crab trap,,0.2,3,25
+Red-banded Lobster,0-50m Night,Crab trap,,0.1,3,25
+Snow Crab,Glacial Area,Crab trap,,2.0,3,40
+Tokummia Katalepsis,Hydrothermal Vents,Crab trap,,2.0,3,55
+Tropical Rock Lobster,50-130m,Crab trap,,1.2,3,45
+Default,,Default,,,,
+Alaska Pollock,Glacial Area,Fish,,7.0,5,45
+Allenypterus,Hydrothermal Vents,Fish,,4.0,3,42
+Anomalocaris,Hydrothermal Vents,Fish,,4.0,3,75
+Antarctic Octopus,Glacial Area,Fish,,7.5,5,40
+Arctic Cod,Glacial Area,Fish,,5.0,3,32
+Arctic Telescope Fish,Glacial Area,Fish,,3.0,3,40
+Atlantic Anglerfish,Limestone Cave,Fish,,5.5,5,11
+Atlantic Bonito,50-130m,Fish,,4.0,3,7
+Atlantic Mackerel,50-130m,Fish,,3.5,3,7
+Barrel Jellyfish,0-50m,Fish,,1.0,3,5
+Barreleye,Glacial Passage,Fish,,3.0,3,35
+Bigeye Scad,50-130m,Fish,,0.6,3,6
+Bigeye Trevally,50-130m,Fish,,3.0,5,6
+Black and White Snapper,0-50m,Fish,,1.0,5,3
+Blackfin Barracuda,50-130m Night,Fish,,5.5,5,20
+Blacktip Shark Meat,0-50m Night,Fish,checked,2.5,5,20
+Blobfish,Glacial Passage,Fish,,7.5,5,40
+Blood-Belly Comb Jelly,130-250m,Fish,,7.0,3,17
+Blue Tang,0-50m,Fish,,0.5,3,2
+Bluefin Tuna Akami,0-130m,Fish,checked,8.0,5,27
+Bluefin Tuna Chutoro,0-130m,Fish,checked,8.0,5,32
+Bluefin Tuna Ootoro,0-130m,Fish,checked,,9,45
+Bluehead Tilefish,50-130m,Fish,,0.2,2,5
+Bluespotted Stargazer,130-250m,Fish,,5.0,0,18
+Box Jellyfish,0-50m Night,Fish,,5.0,3,18
+Capelin,Glacial Area,Fish,,0.5,3,15
+Cardinalfish,0-50m,Fish,,0.2,3,1
+Clearfin Lionfish,0-50m Night,Fish,,1.7,3,8
+Clown Frogfish,50-130m,Fish,,0.3,3,5
+Clownfish,0-50m,Fish,,0.2,2,1
+Comb Jelly,130-250m,Fish,,7.0,3,14
+Comber,0-50m,Fish,,0.2,2,1
+Cookiecutter Shark,130-250m,Fish,,5.0,3,25
+Copper Shark Meat,0-50m Night,Fish,checked,4.0,5,22
+Coral Trout,50-130m,Fish,,3.0,5,6
+Cuttlefish,50-130m,Fish,,4.0,3,6
+Devil Scorpionfish,50-130m Night,Fish,,3.0,3,45
+Drepanaspis Meat,Hydrothermal Vents,Fish,checked,8.5,5,50
+Dumbo Octopus,Glacial Passage,Fish,,4.0,3,38
+Dunkleosteus Meat,Hydrothermal Vents,Fish,checked,19.5,5,70
+Dusky Grouper,50-130m,Fish,,9.0,5,10
+Emperor Angelfish,0-50m,Fish,,0.4,0,3
+Falcatus,Hydrothermal Vents,Fish,,6.0,3,43
+Fangtooth,130-250m,Fish,,3.0,3,15
+Flame Angelfish,0-50m,Fish,,0.2,0,2
+Fried Egg Jellyfish,0-50m,Fish,,1.0,3,5
+Frilled Shark Meat,130-250m,Fish,checked,8.5,5,28
+Gelatinous Snailfish,Glacial Area,Fish,,2.0,3,28
+Giant Trevally Meat,50-130m,Fish,checked,5.0,5,10
+Golden King Crab,Glacial Area,Fish,,8.0,5,45
+Great Barracuda,50-130m,Fish,,7.0,5,6
+Green Humphead Parrotfish,0-50m,Fish,checked,1.8,5,5
+Greenland Shark Meat,Glacial Area,Fish,checked,20.0,5,62
+Grey Triggerfish,50-130m,Fish,,3.5,5,6
+Haddock,Glacial Area,Fish,,6.0,5,37
+Hammerhead Meat,50-130m,Fish,checked,13.0,5,47
+Harlequin Hind,50-130m,Fish,,1.1,5,6
+Humboldt Squid Meat,50-130m Night,Fish,checked,7.5,5,48
+Ice Fish,Glacial Area,Fish,,5.5,3,32
+Lagoon Triggerfish,0-50m,Fish,,0.7,2,2
+Long-Snouted Seahorse,0-50m,Fish,,0.5,0,2
+Longfin Batfish,0-50m,Fish,,0.8,5,3
+Longnose Sawshark Meat,50-130m Day or Night,Fish,checked,6.5,5,12
+Longspine Porcupinefish,0-50m Night,Fish,,3.5,3,26
+Longspine Squirrelfish,0-50m Night,Fish,,0.4,3,3
+Lumpfish,Hydrothermal Vents,Fish,,5.0,3,40
+Mackerel Scad,50-130m,Fish,,0.8,2,5
+Mako Meat,0-50m,Fish,checked,9.0,5,43
+Marbled Electric Ray Meat,0-50m,Fish,checked,3.5,5,30
+Marlin Meat,0-50m,Fish,checked,7.5,5,45
+Mediterranean Parrotfish,0-50m,Fish,,2.0,5,3
+Megalograptus,Divine Tree Control Room,Fish,,8.0,5,46
+Megamouth Shark Meat,130-250m,Fish,checked,11.5,5,31
+Moray Eel,0-50m Night,Fish,,9.0,0,17
+Narrow-Barred Spanish Mackerel,50-130m,Fish,,9.0,5,10
+Narwhal Meat,Glacial Area,Fish,checked,9.5,5,46
+Orbicular Batfish,0-50m,Fish,,0.3,2,2
+Ornate Wrasse,0-50m,Fish,,0.5,2,2
+Pacific Fanfish,130-250m,Fish,,5.0,3,22
+Painted Comber,50-130m,Fish,,0.4,3,6
+Peacock Squid,Glacial Passage,Fish,,3.5,3,36
+Pelican Eel,Glacial Passage,Fish,,8.0,5,60
+Pikaia,Hydrothermal Vents,Fish,,4.5,3,38
+Polar Eelpout,Glacial Area,Fish,,3.0,3,30
+Porbeagle Shark Meat,Glacial Area,Fish,checked,13.5,5,55
+Pyramid Butterflyfish,0-50m,Fish,,0.4,2,1
+Qingmendous,Hydrothermal Vents,Fish,,6.0,0,40
+Rainbow Wrasse,0-50m,Fish,,0.6,2,2
+Red Bream,130-250m,Fish,,3.0,3,12
+Red Lionfish,0-50m,Fish,,1.5,3,3
+Redtoothed Triggerfish,0-50m,Fish,,1.0,5,3
+Rhinochimaeridae Meat,130-250m,Fish,checked,5.0,7,30
+Sailfish Meat,Shipwreck Interior,Fish,checked,9.0,5,65
+Salema Porgy,0-50m,Fish,,0.4,3,2
+Sally Lightfoot Crab,Shipwreck Interior,Fish,,4.0,5,18
+Salmon Snailfish,130-250m,Fish,,5.0,3,20
+Sea Goldie,0-50m,Fish,,0.3,2,1
+Sea Toad,130-250m,Fish,,5.0,3,18
+Sheepshead Meat,0-50m,Fish,checked,1.8,5,10
+Small Spotted Dart,0-50m,Fish,,0.8,3,2
+Snub-Nosed Spiny Eel,3rd Glacial Cave,Fish,,6.5,5,60
+Spear Squid,50-130m Night,Fish,,4.6,3,17
+Spider Crab,130-250m,Fish,,7.5,5,17
+Starry Puffer,0-50m,Fish,,3.0,3,15
+Starry Skate,Glacial Area,Fish,checked,5.5,5,44
+Stingray Meat,0-50m,Fish,checked,3.0,5,17
+Striped Catfish,0-50m,Fish,,0.3,0,2
+Striped Red Mullet,50-130m,Fish,,0.7,0,5
+Threetooth Puffer,130-250m,Fish,,5.0,3,23
+Thresher Shark Meat,0-50m,Fish,checked,8.5,5,53
+Tiger Shark Meat,50-130m Day or Night,Fish,checked,15.0,5,17
+Titan Triggerfish,0-50m,Fish,,3.8,5,5
+Vampire Squid,Glacial Passage,Fish,,6.0,5,41
+White Spotted Jellyfish,50-130m,Fish,,1.0,3,6
+White Trevally,50-130m,Fish,,6.0,5,7
+Whitetip Reefshark Head,0-50m Day and Night,Fish,checked,2.5,1,40
+Whitetip Reefshark Meat,0-50m Day and Night,Fish,checked,2.5,5,8
+Xenacanthus Meat,Hydrothermal Vents,Fish,checked,5.5,5,53
+Yellow Tang,0-50m,Fish,,0.4,2,1
+Yellowback Fusilier,0-50m,Fish,,0.8,2,2
+Yellowfin Tuna Akami,0-130m,Fish,checked,6.0,5,24
+Yellowfin Tuna Chutoro,0-130m,Fish,checked,6.0,5,30
+Yellowfin Tuna Ootoro,0-130m,Fish,checked,,9,42
+Zebra Shark Meat,0-50m Night,Fish,checked,10.5,5,42
+Rainbow Cap,Jango,Jango,,,,750
+Truffle,Jango,Jango,,,,650
+Black Tiger Shrimp,50-130m,Net,,0.1,5,17
+Chambered Nautilus,130-250m,Net,,1.0,3,12
+Clione,130-250m,Net,,0.1,4,25
+Seadragon,Hydrothermal Vents,Net,,0.5,4,35
+Waptia Fieldensis,Hydrothermal Vents,Net,,0.4,5,34
+White Shrimp,0-130m Day and Night,Net,,0.1,5,17
+Whiteleg Shrimp,0-50m,Net,,0.1,0,11
+Black Pepper,Dispatch & Cooking Pots,Procure,,0.1,1,6
+Black Vinegar,Dispatch & Cooking Pots,Procure,,0.1,1,5
+Curry Block,Dispatch & Cooking Pots,Procure,,0.1,1,6
+Mayonnaise,Dispatch & Cooking Pots,Procure,,0.1,1,7
+Miso,Dispatch & Cooking Pots,Procure,,0.1,1,8
+Olive Oil,Dispatch & Cooking Pots,Procure,,0.1,1,6
+Salt,Dispatch & Cooking Pots,Procure,,0.1,1,8
+Sesame Seed,Dispatch & Cooking Pots,Procure,,0.1,1,8
+Soy Sauce,Dispatch & Cooking Pots,Procure,,0.1,1,6
+Turmeric,Dispatch & Cooking Pots,Procure,,0.1,1,5
+Agar,0-50m,Sea Plant,,0.1,1,3
+Buckbean,Glacial Area,Sea Plant,,0.1,1,9
+Sea Grape,Limestone Cave,Sea Plant,,0.1,1,6
+Black Coral,Glacial Area,Sea plant,,0.1,1,8
+Bladderwrack,Glacial Seaweed Cave,Sea plant,,0.1,1,10
+Hyalonema,Glacial Seaweed Cave,Sea plant,,0.1,1,65
+Kajime,0-130m,Sea plant,,0.1,1,7
+Kelp,50-130m,Sea plant,,0.1,1,6
+Seaweed,50-130m,Sea plant,,0.1,1,5
+Southern Bull Kelp,Glacial Area,Sea plant,,0.1,1,8
+Green Sea Urchin,0-50m Day and Night,Urchin,,1.0,1,90
+Purple Sea Urchin,0-50m Day or Night,Urchin,,1.0,1,20
+Bean,Vegetable Farm,Vegetable Farm,,,,20
+Buckwheat,Vegetable Farm,Vegetable Farm,,,,18
+Carrot,Vegetable Farm,Vegetable Farm,,,,25
+Cherry Tomato,Vegetable Farm,Vegetable Farm,,,,17
+Cucumber,Vegetable Farm,Vegetable Farm,,,,20
+Egg,Vegetable Farm,Vegetable Farm,,,,15
+Eggplant,Vegetable Farm,Vegetable Farm,,,,21
+Garlic,Vegetable Farm,Vegetable Farm,,,,19
+Grade A Egg,Vegetable Farm,Vegetable Farm,,,,90
+Habanero,Vegetable Farm,Vegetable Farm,,,,16
+Onion,Vegetable Farm,Vegetable Farm,,,,20
+Rice,Vegetable Farm,Vegetable Farm,,,,15
+Wheat,Vegetable Farm,Vegetable Farm,,,,19

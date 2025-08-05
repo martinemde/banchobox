@@ -8,3 +8,13 @@ export interface Dish {
   finalPrice: number;
   servings: number;
 }
+
+export interface Ingredient {
+  name: string;
+  source: string;
+  type: string;
+  drone: boolean;
+  kg: number;
+  maxMeats: number;
+  cost: number;
+}

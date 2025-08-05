@@ -1,0 +1,2063 @@
+[
+  {
+    "name": "Aurora Jellyfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Barbed Eel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 6,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Bloodskin Shark",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 11.5,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Bony Wreckfish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 8,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Bursting Anglerfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Concertina Barracuda",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 6.5,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Enthralled Stonefish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 8,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Fanged Cod",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 3.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Gazing Shark",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 11,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Gelatinous Stonefish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 7.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Gnashing Perch",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 4.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Grotesque Mackerel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Host Eel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 5.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Malignant Pincer",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 2.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Many Eyed Mackerel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 2.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Parhelion Jellyfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Perished Loosejaw",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Radiant Squid",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 4.5,
+    "maxMeats": 3,
+    "cost": 0
+  },
+  {
+    "name": "Sallow Sailfish",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 9.5,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Savage Barracuda",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 7,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Scouring Bass",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 3.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Seizing Snailfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 0
+  },
+  {
+    "name": "Shattered Wreckfish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 6.5,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Sprouting Eel",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 7,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Three-Headed Cod",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Translucent Sturgeon",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 8,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Tusked Grouper",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Voltaic Grouper",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Withered Ray",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": true,
+    "kg": 8.5,
+    "maxMeats": 5,
+    "cost": 0
+  },
+  {
+    "name": "Cerebral Crab",
+    "source": "Fog Coast",
+    "type": "Aberration Crab",
+    "drone": false,
+    "kg": 2,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Cortex Decorator",
+    "source": "Black Cliff",
+    "type": "Aberration Crab",
+    "drone": false,
+    "kg": 2.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Entangled Crab",
+    "source": "Jellyfish Basin",
+    "type": "Aberration Crab",
+    "drone": false,
+    "kg": 2.5,
+    "maxMeats": 3,
+    "cost": 0
+  },
+  {
+    "name": "Imperious Lobster",
+    "source": "Jellyfish Basin",
+    "type": "Aberration Crab",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Splintered Crab",
+    "source": "Black Cliff",
+    "type": "Aberration Crab",
+    "drone": false,
+    "kg": 3.5,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Clione Queen's Tentacle",
+    "source": "130-250m",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Goblin Shark's Fatty Meat",
+    "source": "130-250m",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Helicoprion Tail",
+    "source": "3rd Glacial Cave",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Klaus's Fin",
+    "source": "0-50m Night",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Kronosaurus Tongue",
+    "source": "Hydrothermal Vents",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Lusca Neck Meat",
+    "source": "50-130m Night",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Lusca Tentacle",
+    "source": "50-130m Night",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Mantis Shrimp Meat",
+    "source": "0-50m Night",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Phantom Jellyfish Meat",
+    "source": "Second Glacial Cave",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Truck Hermit Crab Legs",
+    "source": "0-50m Night",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Wolf Eel Tail Meat",
+    "source": "130-250m",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "Yawie's Inner Flesh",
+    "source": "Divine Tree Control Room",
+    "type": "Boss",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 0
+  },
+  {
+    "name": "American Lobster",
+    "source": "0-50m",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 3,
+    "cost": 43
+  },
+  {
+    "name": "Blue Lobster",
+    "source": "0-50m Night",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 3,
+    "cost": 47
+  },
+  {
+    "name": "California Spiny Lobster",
+    "source": "50-130m",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1.5,
+    "maxMeats": 3,
+    "cost": 22
+  },
+  {
+    "name": "Crystal Lobster",
+    "source": "50-130m Night",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1.5,
+    "maxMeats": 3,
+    "cost": 47
+  },
+  {
+    "name": "Dollocaris Ingens",
+    "source": "Hydrothermal Vents",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1.5,
+    "maxMeats": 3,
+    "cost": 45
+  },
+  {
+    "name": "Eastern Rock Lobster",
+    "source": "130-250m",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 2.5,
+    "maxMeats": 3,
+    "cost": 47
+  },
+  {
+    "name": "European Lobster",
+    "source": "0-50m",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 3,
+    "cost": 23
+  },
+  {
+    "name": "Fan Lobster",
+    "source": "50-130m Night",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 0.2,
+    "maxMeats": 3,
+    "cost": 22
+  },
+  {
+    "name": "Horsehair Crab",
+    "source": "Glacial Area",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1.5,
+    "maxMeats": 3,
+    "cost": 50
+  },
+  {
+    "name": "Norway Lobster",
+    "source": "130-250m",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 0.2,
+    "maxMeats": 3,
+    "cost": 25
+  },
+  {
+    "name": "Red-banded Lobster",
+    "source": "0-50m Night",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 3,
+    "cost": 25
+  },
+  {
+    "name": "Snow Crab",
+    "source": "Glacial Area",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 2,
+    "maxMeats": 3,
+    "cost": 40
+  },
+  {
+    "name": "Tokummia Katalepsis",
+    "source": "Hydrothermal Vents",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 2,
+    "maxMeats": 3,
+    "cost": 55
+  },
+  {
+    "name": "Tropical Rock Lobster",
+    "source": "50-130m",
+    "type": "Crab trap",
+    "drone": false,
+    "kg": 1.2,
+    "maxMeats": 3,
+    "cost": 45
+  },
+  {
+    "name": "Default",
+    "source": "",
+    "type": "Default",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 0
+  },
+  {
+    "name": "Alaska Pollock",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 7,
+    "maxMeats": 5,
+    "cost": 45
+  },
+  {
+    "name": "Allenypterus",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4,
+    "maxMeats": 3,
+    "cost": 42
+  },
+  {
+    "name": "Anomalocaris",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4,
+    "maxMeats": 3,
+    "cost": 75
+  },
+  {
+    "name": "Antarctic Octopus",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 7.5,
+    "maxMeats": 5,
+    "cost": 40
+  },
+  {
+    "name": "Arctic Cod",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 32
+  },
+  {
+    "name": "Arctic Telescope Fish",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 3,
+    "cost": 40
+  },
+  {
+    "name": "Atlantic Anglerfish",
+    "source": "Limestone Cave",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5.5,
+    "maxMeats": 5,
+    "cost": 11
+  },
+  {
+    "name": "Atlantic Bonito",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4,
+    "maxMeats": 3,
+    "cost": 7
+  },
+  {
+    "name": "Atlantic Mackerel",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3.5,
+    "maxMeats": 3,
+    "cost": 7
+  },
+  {
+    "name": "Barrel Jellyfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 3,
+    "cost": 5
+  },
+  {
+    "name": "Barreleye",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 3,
+    "cost": 35
+  },
+  {
+    "name": "Bigeye Scad",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.6,
+    "maxMeats": 3,
+    "cost": 6
+  },
+  {
+    "name": "Bigeye Trevally",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 5,
+    "cost": 6
+  },
+  {
+    "name": "Black and White Snapper",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 5,
+    "cost": 3
+  },
+  {
+    "name": "Blackfin Barracuda",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5.5,
+    "maxMeats": 5,
+    "cost": 20
+  },
+  {
+    "name": "Blacktip Shark Meat",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 2.5,
+    "maxMeats": 5,
+    "cost": 20
+  },
+  {
+    "name": "Blobfish",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": false,
+    "kg": 7.5,
+    "maxMeats": 5,
+    "cost": 40
+  },
+  {
+    "name": "Blood-Belly Comb Jelly",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 7,
+    "maxMeats": 3,
+    "cost": 17
+  },
+  {
+    "name": "Blue Tang",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.5,
+    "maxMeats": 3,
+    "cost": 2
+  },
+  {
+    "name": "Bluefin Tuna Akami",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 8,
+    "maxMeats": 5,
+    "cost": 27
+  },
+  {
+    "name": "Bluefin Tuna Chutoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 8,
+    "maxMeats": 5,
+    "cost": 32
+  },
+  {
+    "name": "Bluefin Tuna Ootoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 0,
+    "maxMeats": 9,
+    "cost": 45
+  },
+  {
+    "name": "Bluehead Tilefish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.2,
+    "maxMeats": 2,
+    "cost": 5
+  },
+  {
+    "name": "Bluespotted Stargazer",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 0,
+    "cost": 18
+  },
+  {
+    "name": "Box Jellyfish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 18
+  },
+  {
+    "name": "Capelin",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.5,
+    "maxMeats": 3,
+    "cost": 15
+  },
+  {
+    "name": "Cardinalfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.2,
+    "maxMeats": 3,
+    "cost": 1
+  },
+  {
+    "name": "Clearfin Lionfish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1.7,
+    "maxMeats": 3,
+    "cost": 8
+  },
+  {
+    "name": "Clown Frogfish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.3,
+    "maxMeats": 3,
+    "cost": 5
+  },
+  {
+    "name": "Clownfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.2,
+    "maxMeats": 2,
+    "cost": 1
+  },
+  {
+    "name": "Comb Jelly",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 7,
+    "maxMeats": 3,
+    "cost": 14
+  },
+  {
+    "name": "Comber",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.2,
+    "maxMeats": 2,
+    "cost": 1
+  },
+  {
+    "name": "Cookiecutter Shark",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 25
+  },
+  {
+    "name": "Copper Shark Meat",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 4,
+    "maxMeats": 5,
+    "cost": 22
+  },
+  {
+    "name": "Coral Trout",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 5,
+    "cost": 6
+  },
+  {
+    "name": "Cuttlefish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4,
+    "maxMeats": 3,
+    "cost": 6
+  },
+  {
+    "name": "Devil Scorpionfish",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 3,
+    "cost": 45
+  },
+  {
+    "name": "Drepanaspis Meat",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": true,
+    "kg": 8.5,
+    "maxMeats": 5,
+    "cost": 50
+  },
+  {
+    "name": "Dumbo Octopus",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4,
+    "maxMeats": 3,
+    "cost": 38
+  },
+  {
+    "name": "Dunkleosteus Meat",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": true,
+    "kg": 19.5,
+    "maxMeats": 5,
+    "cost": 70
+  },
+  {
+    "name": "Dusky Grouper",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 9,
+    "maxMeats": 5,
+    "cost": 10
+  },
+  {
+    "name": "Emperor Angelfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.4,
+    "maxMeats": 0,
+    "cost": 3
+  },
+  {
+    "name": "Falcatus",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 3,
+    "cost": 43
+  },
+  {
+    "name": "Fangtooth",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 3,
+    "cost": 15
+  },
+  {
+    "name": "Flame Angelfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.2,
+    "maxMeats": 0,
+    "cost": 2
+  },
+  {
+    "name": "Fried Egg Jellyfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 3,
+    "cost": 5
+  },
+  {
+    "name": "Frilled Shark Meat",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 8.5,
+    "maxMeats": 5,
+    "cost": 28
+  },
+  {
+    "name": "Gelatinous Snailfish",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 2,
+    "maxMeats": 3,
+    "cost": 28
+  },
+  {
+    "name": "Giant Trevally Meat",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 5,
+    "maxMeats": 5,
+    "cost": 10
+  },
+  {
+    "name": "Golden King Crab",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 8,
+    "maxMeats": 5,
+    "cost": 45
+  },
+  {
+    "name": "Great Barracuda",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 7,
+    "maxMeats": 5,
+    "cost": 6
+  },
+  {
+    "name": "Green Humphead Parrotfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 1.8,
+    "maxMeats": 5,
+    "cost": 5
+  },
+  {
+    "name": "Greenland Shark Meat",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": true,
+    "kg": 20,
+    "maxMeats": 5,
+    "cost": 62
+  },
+  {
+    "name": "Grey Triggerfish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3.5,
+    "maxMeats": 5,
+    "cost": 6
+  },
+  {
+    "name": "Haddock",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 5,
+    "cost": 37
+  },
+  {
+    "name": "Hammerhead Meat",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 13,
+    "maxMeats": 5,
+    "cost": 47
+  },
+  {
+    "name": "Harlequin Hind",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1.1,
+    "maxMeats": 5,
+    "cost": 6
+  },
+  {
+    "name": "Humboldt Squid Meat",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 7.5,
+    "maxMeats": 5,
+    "cost": 48
+  },
+  {
+    "name": "Ice Fish",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5.5,
+    "maxMeats": 3,
+    "cost": 32
+  },
+  {
+    "name": "Lagoon Triggerfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.7,
+    "maxMeats": 2,
+    "cost": 2
+  },
+  {
+    "name": "Long-Snouted Seahorse",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.5,
+    "maxMeats": 0,
+    "cost": 2
+  },
+  {
+    "name": "Longfin Batfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.8,
+    "maxMeats": 5,
+    "cost": 3
+  },
+  {
+    "name": "Longnose Sawshark Meat",
+    "source": "50-130m Day or Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 6.5,
+    "maxMeats": 5,
+    "cost": 12
+  },
+  {
+    "name": "Longspine Porcupinefish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3.5,
+    "maxMeats": 3,
+    "cost": 26
+  },
+  {
+    "name": "Longspine Squirrelfish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.4,
+    "maxMeats": 3,
+    "cost": 3
+  },
+  {
+    "name": "Lumpfish",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 40
+  },
+  {
+    "name": "Mackerel Scad",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.8,
+    "maxMeats": 2,
+    "cost": 5
+  },
+  {
+    "name": "Mako Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 9,
+    "maxMeats": 5,
+    "cost": 43
+  },
+  {
+    "name": "Marbled Electric Ray Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 3.5,
+    "maxMeats": 5,
+    "cost": 30
+  },
+  {
+    "name": "Marlin Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 7.5,
+    "maxMeats": 5,
+    "cost": 45
+  },
+  {
+    "name": "Mediterranean Parrotfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 2,
+    "maxMeats": 5,
+    "cost": 3
+  },
+  {
+    "name": "Megalograptus",
+    "source": "Divine Tree Control Room",
+    "type": "Fish",
+    "drone": false,
+    "kg": 8,
+    "maxMeats": 5,
+    "cost": 46
+  },
+  {
+    "name": "Megamouth Shark Meat",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 11.5,
+    "maxMeats": 5,
+    "cost": 31
+  },
+  {
+    "name": "Moray Eel",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 9,
+    "maxMeats": 0,
+    "cost": 17
+  },
+  {
+    "name": "Narrow-Barred Spanish Mackerel",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 9,
+    "maxMeats": 5,
+    "cost": 10
+  },
+  {
+    "name": "Narwhal Meat",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": true,
+    "kg": 9.5,
+    "maxMeats": 5,
+    "cost": 46
+  },
+  {
+    "name": "Orbicular Batfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.3,
+    "maxMeats": 2,
+    "cost": 2
+  },
+  {
+    "name": "Ornate Wrasse",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.5,
+    "maxMeats": 2,
+    "cost": 2
+  },
+  {
+    "name": "Pacific Fanfish",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 22
+  },
+  {
+    "name": "Painted Comber",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.4,
+    "maxMeats": 3,
+    "cost": 6
+  },
+  {
+    "name": "Peacock Squid",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3.5,
+    "maxMeats": 3,
+    "cost": 36
+  },
+  {
+    "name": "Pelican Eel",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": false,
+    "kg": 8,
+    "maxMeats": 5,
+    "cost": 60
+  },
+  {
+    "name": "Pikaia",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4.5,
+    "maxMeats": 3,
+    "cost": 38
+  },
+  {
+    "name": "Polar Eelpout",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 3,
+    "cost": 30
+  },
+  {
+    "name": "Porbeagle Shark Meat",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": true,
+    "kg": 13.5,
+    "maxMeats": 5,
+    "cost": 55
+  },
+  {
+    "name": "Pyramid Butterflyfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.4,
+    "maxMeats": 2,
+    "cost": 1
+  },
+  {
+    "name": "Qingmendous",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 0,
+    "cost": 40
+  },
+  {
+    "name": "Rainbow Wrasse",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.6,
+    "maxMeats": 2,
+    "cost": 2
+  },
+  {
+    "name": "Red Bream",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 3,
+    "cost": 12
+  },
+  {
+    "name": "Red Lionfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1.5,
+    "maxMeats": 3,
+    "cost": 3
+  },
+  {
+    "name": "Redtoothed Triggerfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 5,
+    "cost": 3
+  },
+  {
+    "name": "Rhinochimaeridae Meat",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 5,
+    "maxMeats": 7,
+    "cost": 30
+  },
+  {
+    "name": "Sailfish Meat",
+    "source": "Shipwreck Interior",
+    "type": "Fish",
+    "drone": true,
+    "kg": 9,
+    "maxMeats": 5,
+    "cost": 65
+  },
+  {
+    "name": "Salema Porgy",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.4,
+    "maxMeats": 3,
+    "cost": 2
+  },
+  {
+    "name": "Sally Lightfoot Crab",
+    "source": "Shipwreck Interior",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4,
+    "maxMeats": 5,
+    "cost": 18
+  },
+  {
+    "name": "Salmon Snailfish",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 20
+  },
+  {
+    "name": "Sea Goldie",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.3,
+    "maxMeats": 2,
+    "cost": 1
+  },
+  {
+    "name": "Sea Toad",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 18
+  },
+  {
+    "name": "Sheepshead Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 1.8,
+    "maxMeats": 5,
+    "cost": 10
+  },
+  {
+    "name": "Small Spotted Dart",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.8,
+    "maxMeats": 3,
+    "cost": 2
+  },
+  {
+    "name": "Snub-Nosed Spiny Eel",
+    "source": "3rd Glacial Cave",
+    "type": "Fish",
+    "drone": false,
+    "kg": 6.5,
+    "maxMeats": 5,
+    "cost": 60
+  },
+  {
+    "name": "Spear Squid",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": false,
+    "kg": 4.6,
+    "maxMeats": 3,
+    "cost": 17
+  },
+  {
+    "name": "Spider Crab",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 7.5,
+    "maxMeats": 5,
+    "cost": 17
+  },
+  {
+    "name": "Starry Puffer",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3,
+    "maxMeats": 3,
+    "cost": 15
+  },
+  {
+    "name": "Starry Skate",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": true,
+    "kg": 5.5,
+    "maxMeats": 5,
+    "cost": 44
+  },
+  {
+    "name": "Stingray Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 3,
+    "maxMeats": 5,
+    "cost": 17
+  },
+  {
+    "name": "Striped Catfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.3,
+    "maxMeats": 0,
+    "cost": 2
+  },
+  {
+    "name": "Striped Red Mullet",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.7,
+    "maxMeats": 0,
+    "cost": 5
+  },
+  {
+    "name": "Threetooth Puffer",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 5,
+    "maxMeats": 3,
+    "cost": 23
+  },
+  {
+    "name": "Thresher Shark Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 8.5,
+    "maxMeats": 5,
+    "cost": 53
+  },
+  {
+    "name": "Tiger Shark Meat",
+    "source": "50-130m Day or Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 15,
+    "maxMeats": 5,
+    "cost": 17
+  },
+  {
+    "name": "Titan Triggerfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 3.8,
+    "maxMeats": 5,
+    "cost": 5
+  },
+  {
+    "name": "Vampire Squid",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 5,
+    "cost": 41
+  },
+  {
+    "name": "White Spotted Jellyfish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 3,
+    "cost": 6
+  },
+  {
+    "name": "White Trevally",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 6,
+    "maxMeats": 5,
+    "cost": 7
+  },
+  {
+    "name": "Whitetip Reefshark Head",
+    "source": "0-50m Day and Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 2.5,
+    "maxMeats": 1,
+    "cost": 40
+  },
+  {
+    "name": "Whitetip Reefshark Meat",
+    "source": "0-50m Day and Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 2.5,
+    "maxMeats": 5,
+    "cost": 8
+  },
+  {
+    "name": "Xenacanthus Meat",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": true,
+    "kg": 5.5,
+    "maxMeats": 5,
+    "cost": 53
+  },
+  {
+    "name": "Yellow Tang",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.4,
+    "maxMeats": 2,
+    "cost": 1
+  },
+  {
+    "name": "Yellowback Fusilier",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": false,
+    "kg": 0.8,
+    "maxMeats": 2,
+    "cost": 2
+  },
+  {
+    "name": "Yellowfin Tuna Akami",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 6,
+    "maxMeats": 5,
+    "cost": 24
+  },
+  {
+    "name": "Yellowfin Tuna Chutoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 6,
+    "maxMeats": 5,
+    "cost": 30
+  },
+  {
+    "name": "Yellowfin Tuna Ootoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": true,
+    "kg": 0,
+    "maxMeats": 9,
+    "cost": 42
+  },
+  {
+    "name": "Zebra Shark Meat",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": true,
+    "kg": 10.5,
+    "maxMeats": 5,
+    "cost": 42
+  },
+  {
+    "name": "Rainbow Cap",
+    "source": "Jango",
+    "type": "Jango",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 750
+  },
+  {
+    "name": "Truffle",
+    "source": "Jango",
+    "type": "Jango",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 650
+  },
+  {
+    "name": "Black Tiger Shrimp",
+    "source": "50-130m",
+    "type": "Net",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 5,
+    "cost": 17
+  },
+  {
+    "name": "Chambered Nautilus",
+    "source": "130-250m",
+    "type": "Net",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 3,
+    "cost": 12
+  },
+  {
+    "name": "Clione",
+    "source": "130-250m",
+    "type": "Net",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 4,
+    "cost": 25
+  },
+  {
+    "name": "Seadragon",
+    "source": "Hydrothermal Vents",
+    "type": "Net",
+    "drone": false,
+    "kg": 0.5,
+    "maxMeats": 4,
+    "cost": 35
+  },
+  {
+    "name": "Waptia Fieldensis",
+    "source": "Hydrothermal Vents",
+    "type": "Net",
+    "drone": false,
+    "kg": 0.4,
+    "maxMeats": 5,
+    "cost": 34
+  },
+  {
+    "name": "White Shrimp",
+    "source": "0-130m Day and Night",
+    "type": "Net",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 5,
+    "cost": 17
+  },
+  {
+    "name": "Whiteleg Shrimp",
+    "source": "0-50m",
+    "type": "Net",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 0,
+    "cost": 11
+  },
+  {
+    "name": "Black Pepper",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 6
+  },
+  {
+    "name": "Black Vinegar",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 5
+  },
+  {
+    "name": "Curry Block",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 6
+  },
+  {
+    "name": "Mayonnaise",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 7
+  },
+  {
+    "name": "Miso",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 8
+  },
+  {
+    "name": "Olive Oil",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 6
+  },
+  {
+    "name": "Salt",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 8
+  },
+  {
+    "name": "Sesame Seed",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 8
+  },
+  {
+    "name": "Soy Sauce",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 6
+  },
+  {
+    "name": "Turmeric",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Procure",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 5
+  },
+  {
+    "name": "Agar",
+    "source": "0-50m",
+    "type": "Sea Plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 3
+  },
+  {
+    "name": "Buckbean",
+    "source": "Glacial Area",
+    "type": "Sea Plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 9
+  },
+  {
+    "name": "Sea Grape",
+    "source": "Limestone Cave",
+    "type": "Sea Plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 6
+  },
+  {
+    "name": "Black Coral",
+    "source": "Glacial Area",
+    "type": "Sea plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 8
+  },
+  {
+    "name": "Bladderwrack",
+    "source": "Glacial Seaweed Cave",
+    "type": "Sea plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 10
+  },
+  {
+    "name": "Hyalonema",
+    "source": "Glacial Seaweed Cave",
+    "type": "Sea plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 65
+  },
+  {
+    "name": "Kajime",
+    "source": "0-130m",
+    "type": "Sea plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 7
+  },
+  {
+    "name": "Kelp",
+    "source": "50-130m",
+    "type": "Sea plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 6
+  },
+  {
+    "name": "Seaweed",
+    "source": "50-130m",
+    "type": "Sea plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 5
+  },
+  {
+    "name": "Southern Bull Kelp",
+    "source": "Glacial Area",
+    "type": "Sea plant",
+    "drone": false,
+    "kg": 0.1,
+    "maxMeats": 1,
+    "cost": 8
+  },
+  {
+    "name": "Green Sea Urchin",
+    "source": "0-50m Day and Night",
+    "type": "Urchin",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 90
+  },
+  {
+    "name": "Purple Sea Urchin",
+    "source": "0-50m Day or Night",
+    "type": "Urchin",
+    "drone": false,
+    "kg": 1,
+    "maxMeats": 1,
+    "cost": 20
+  },
+  {
+    "name": "Bean",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 20
+  },
+  {
+    "name": "Buckwheat",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 18
+  },
+  {
+    "name": "Carrot",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 25
+  },
+  {
+    "name": "Cherry Tomato",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 17
+  },
+  {
+    "name": "Cucumber",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 20
+  },
+  {
+    "name": "Egg",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 15
+  },
+  {
+    "name": "Eggplant",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 21
+  },
+  {
+    "name": "Garlic",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 19
+  },
+  {
+    "name": "Grade A Egg",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 90
+  },
+  {
+    "name": "Habanero",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 16
+  },
+  {
+    "name": "Onion",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 20
+  },
+  {
+    "name": "Rice",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 15
+  },
+  {
+    "name": "Wheat",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
+    "drone": false,
+    "kg": 0,
+    "maxMeats": 0,
+    "cost": 19
+  }
+]
