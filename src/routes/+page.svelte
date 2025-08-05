@@ -5,19 +5,20 @@
 
   $: dishes = data.dishes;
   $: ingredients = data.ingredients;
+  $: parties = data.parties;
 
   let activeTab = 'dishes';
 </script>
 
 <svelte:head>
-  <title>Dave Menu - Dishes & Ingredients</title>
-  <meta name="description" content="Complete dish and ingredient collection from Dave the Diver" />
+  <title>Dave Menu - Dishes, Ingredients & Parties</title>
+  <meta name="description" content="Complete dish, ingredient and party collection from Dave the Diver" />
 </svelte:head>
 
 <div class="container">
   <header>
     <h1>Dave Menu</h1>
-    <p>Complete dish and ingredient collection from Dave the Diver</p>
+    <p>Complete dish, ingredient and party collection from Dave the Diver</p>
   </header>
 
   <main>
@@ -35,6 +36,13 @@
         on:click={() => activeTab = 'ingredients'}
       >
         Ingredients ({ingredients.length})
+      </button>
+      <button
+        class="tab"
+        class:active={activeTab === 'parties'}
+        on:click={() => activeTab = 'parties'}
+      >
+        Parties ({parties.length})
       </button>
     </nav>
 
@@ -106,6 +114,29 @@
           </table>
         </div>
       </section>
+    {:else if activeTab === 'parties'}
+      <section class="parties">
+        <h2>All Parties ({parties.length})</h2>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Party Name</th>
+                <th>Bonus Multiplier</th>
+              </tr>
+            </thead>
+            <tbody>
+              {#each parties as party}
+                <tr>
+                  <td class="party-name">{party.name}</td>
+                  <td class="bonus">{party.bonus}×</td>
+                </tr>
+              {/each}
+            </tbody>
+          </table>
+        </div>
+      </section>
     {/if}
   </main>
 </div>
@@ -160,7 +191,7 @@
     border-bottom-color: #2563eb;
   }
 
-  .dishes h2, .ingredients h2 {
+  .dishes h2, .ingredients h2, .parties h2 {
     margin-bottom: 1.5rem;
     color: #1e293b;
   }
@@ -199,7 +230,7 @@
     background-color: #f9fafb;
   }
 
-  .dish-name, .ingredient-name {
+  .dish-name, .ingredient-name, .party-name {
     font-weight: 600;
     color: #1f2937;
     min-width: 200px;
@@ -233,6 +264,13 @@
     color: #059669;
   }
 
+  .bonus {
+    text-align: center;
+    font-weight: 600;
+    color: #dc2626;
+    font-size: 1rem;
+  }
+
   .drone {
     text-align: center;
     color: #059669;
@@ -258,7 +296,7 @@
       font-size: 0.8rem;
     }
 
-    .dish-name, .ingredient-name {
+    .dish-name, .ingredient-name, .party-name {
       min-width: 150px;
     }
   }

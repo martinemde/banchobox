@@ -12,7 +12,7 @@
     "name": "Barbed Eel",
     "source": "Fog Coast",
     "type": "Aberration",
-    "drone": true,
+    "drone": false,
     "kg": 6,
     "maxMeats": 0,
     "cost": 0

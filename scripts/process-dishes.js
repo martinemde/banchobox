@@ -70,5 +70,33 @@ function processIngredients() {
   return ingredients;
 }
 
+function processParties() {
+  const csvPath = join(__dirname, '..', 'data', 'parties.csv');
+  const csvContent = readFileSync(csvPath, 'utf-8');
+
+  const lines = csvContent.trim().split('\n');
+  const parties = [];
+
+  for (let i = 1; i < lines.length; i++) {
+    const values = lines[i].split(',');
+
+    if (values.length >= 2 && values[0]) {
+      const party = {
+        name: values[0] || '',
+        bonus: parseFloat(values[1]) || 0
+      };
+
+      parties.push(party);
+    }
+  }
+
+  const outputPath = join(__dirname, '..', 'src', 'lib', 'parties.json');
+  writeFileSync(outputPath, JSON.stringify(parties, null, 2));
+
+  console.log(`Processed ${parties.length} parties to ${outputPath}`);
+  return parties;
+}
+
 processDishes();
 processIngredients();
+processParties();

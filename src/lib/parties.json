@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Cucumber",
+    "bonus": 2.5
+  },
+  {
+    "name": "Jellyfish",
+    "bonus": 2
+  },
+  {
+    "name": "Curry",
+    "bonus": 2
+  },
+  {
+    "name": "Tuna",
+    "bonus": 3.5
+  },
+  {
+    "name": "Marlin",
+    "bonus": 2
+  },
+  {
+    "name": "Shark",
+    "bonus": 2
+  },
+  {
+    "name": "Shrimp",
+    "bonus": 2
+  },
+  {
+    "name": "Lobster",
+    "bonus": 2.5
+  }
+]

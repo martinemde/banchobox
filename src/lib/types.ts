@@ -18,3 +18,8 @@ export interface Ingredient {
   maxMeats: number;
   cost: number;
 }
+
+export interface Party {
+  name: string;
+  bonus: number;
+}
