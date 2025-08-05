@@ -128,35 +128,60 @@
       <section class="parties">
         <h2>All Parties ({parties.length})</h2>
 
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Party Name</th>
-                <th>Bonus Multiplier</th>
-                <th>Dishes ({parties.reduce((sum, p) => sum + p.dishes.length, 0)} total)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {#each parties as party}
-                <tr>
-                  <td class="party-name">{party.name}</td>
-                  <td class="bonus">{party.bonus}×</td>
-                  <td class="dishes-list">
-                    {#if party.dishes.length > 0}
-                      <div class="dishes-container">
-                        {#each party.dishes as dish, i}
-                          <span class="dish-tag">{dish}</span>{#if i < party.dishes.length - 1}, {/if}
+        <div class="parties-container">
+          {#each parties as party}
+            <div class="party-card">
+              <div class="party-header">
+                <h3 class="party-name">{party.name}</h3>
+                <div class="party-info">
+                  <span class="bonus">{party.bonus}× bonus</span>
+                  <span class="dish-count">{party.dishes.length} dishes</span>
+                </div>
+              </div>
+              
+              {#if party.dishes.length > 0}
+                <div class="party-dishes">
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Dish Name</th>
+                          <th>Unlock Condition</th>
+                          <th>DLC</th>
+                          <th>Level</th>
+                          <th>Taste</th>
+                          <th>Initial Price</th>
+                          <th>Final Price</th>
+                          <th>Servings</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {#each party.dishes as dishName}
+                          {@const dish = dishes.find(d => d.name === dishName)}
+                          {#if dish}
+                            <tr>
+                              <td class="dish-name">{dish.name}</td>
+                              <td class="unlock-condition">{dish.unlockCondition || '—'}</td>
+                              <td class="dlc">{dish.dlc || '—'}</td>
+                              <td class="level">{dish.finalLevel}</td>
+                              <td class="taste">{dish.finalTaste}</td>
+                              <td class="price">{dish.initialPrice}</td>
+                              <td class="price">{dish.finalPrice}</td>
+                              <td class="servings">{dish.servings}</td>
+                            </tr>
+                          {/if}
                         {/each}
-                      </div>
-                    {:else}
-                      —
-                    {/if}
-                  </td>
-                </tr>
-              {/each}
-            </tbody>
-          </table>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              {:else}
+                <div class="no-dishes">
+                  <p>No dishes associated with this party</p>
+                </div>
+              {/if}
+            </div>
+          {/each}
         </div>
       </section>
     {/if}
@@ -319,6 +344,70 @@
     gap: 0.25rem;
   }
 
+  .parties-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .party-card {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+  }
+
+  .party-header {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .party-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .party-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
+
+  .party-info .bonus {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  .dish-count {
+    font-size: 0.875rem;
+    opacity: 0.9;
+  }
+
+  .party-dishes {
+    padding: 0;
+  }
+
+  .party-dishes .table-container {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .no-dishes {
+    padding: 2rem;
+    text-align: center;
+    color: #64748b;
+    font-style: italic;
+  }
+
   @media (max-width: 768px) {
     .container {
       padding: 1rem;
@@ -340,6 +429,27 @@
 
     .dish-name, .ingredient-name, .party-name {
       min-width: 150px;
+    }
+
+    .parties-container {
+      gap: 1.5rem;
+    }
+
+    .party-header {
+      padding: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .party-header h3 {
+      font-size: 1.25rem;
+    }
+
+    .party-info {
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 1rem;
     }
   }
 </style>
