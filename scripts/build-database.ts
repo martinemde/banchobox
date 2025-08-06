@@ -60,71 +60,108 @@ sqlite.exec(`
   );
 `);
 
+function parseCSV(csvContent: string, filename?: string): Array<Record<string, string>> {
+  const lines = csvContent.trim().split('\n');
+  if (lines.length < 2) {
+    console.warn(`${filename || 'CSV file'} has no data rows`);
+    return [];
+  }
+  
+  const headers = lines[0].split(',').map(h => h.trim());
+  const rows = [];
+  
+  console.log(`${filename || 'CSV file'} headers: ${headers.join(', ')}`);
+  
+  for (let i = 1; i < lines.length; i++) {
+    const values = lines[i].split(',');
+    const row: Record<string, string> = {};
+    
+    for (let j = 0; j < headers.length; j++) {
+      row[headers[j]] = values[j]?.trim() || '';
+    }
+    
+    rows.push(row);
+  }
+  
+  return rows;
+}
+
+function validateRequiredColumns(rows: Array<Record<string, string>>, requiredColumns: string[], filename: string) {
+  if (rows.length === 0) return;
+  
+  const availableColumns = Object.keys(rows[0]);
+  const missingColumns = requiredColumns.filter(col => !availableColumns.includes(col));
+  
+  if (missingColumns.length > 0) {
+    throw new Error(`${filename} is missing required columns: ${missingColumns.join(', ')}. Available columns: ${availableColumns.join(', ')}`);
+  }
+}
+
 async function loadData() {
   console.log('Loading data into database...');
-
+  
   // Load dishes
   const dishesCSV = readFileSync(join(__dirname, '..', 'data', 'dishes.csv'), 'utf-8');
-  const dishLines = dishesCSV.trim().split('\n').slice(1);
-
-  for (const line of dishLines) {
-    const values = line.split(',');
-    if (values.length >= 8 && values[0]) {
+  const dishRows = parseCSV(dishesCSV, 'dishes.csv');
+  validateRequiredColumns(dishRows, ['Dish Name', 'Final Level', 'Final Taste', 'Initial Price', 'Final Price', 'Servings'], 'dishes.csv');
+  
+  for (const row of dishRows) {
+    if (row['Dish Name']) {
       await db.insert(schema.dishes).values({
-        name: values[0] || '',
-        unlockCondition: values[1] || null,
-        dlc: values[2] || null,
-        finalLevel: parseInt(values[3]) || 0,
-        finalTaste: parseInt(values[4]) || 0,
-        initialPrice: parseInt(values[5]) || 0,
-        finalPrice: parseInt(values[6]) || 0,
-        servings: parseInt(values[7]) || 0,
+        name: row['Dish Name'] || '',
+        unlockCondition: row['Unlock Condition'] || null,
+        dlc: row['DLC'] || null,
+        finalLevel: parseInt(row['Final Level']) || 0,
+        finalTaste: parseInt(row['Final Taste']) || 0,
+        initialPrice: parseInt(row['Initial Price']) || 0,
+        finalPrice: parseInt(row['Final Price']) || 0,
+        servings: parseInt(row['Servings']) || 0,
       });
     }
   }
 
-  // Load ingredients
+  // Load ingredients  
   const ingredientsCSV = readFileSync(join(__dirname, '..', 'data', 'ingredients.csv'), 'utf-8');
-  const ingredientLines = ingredientsCSV.trim().split('\n').slice(1);
+  const ingredientRows = parseCSV(ingredientsCSV, 'ingredients.csv');
+  validateRequiredColumns(ingredientRows, ['Ingredient'], 'ingredients.csv');
 
-  for (const line of ingredientLines) {
-    const values = line.split(',');
-    if (values.length >= 7 && values[0]) {
+  for (const row of ingredientRows) {
+    if (row['Ingredient']) {
       await db.insert(schema.ingredients).values({
-        name: values[0] || '',
-        source: values[1] || null,
-        type: values[2] || null,
-        drone: values[3] === 'checked',
-        kg: parseFloat(values[4]) || null,
-        maxMeats: parseInt(values[5]) || null,
-        cost: parseInt(values[6]) || null,
+        name: row['Ingredient'] || '',
+        source: row['Source'] || null,
+        type: row['Type'] || null,
+        drone: row['Drone'] === 'checked',
+        kg: parseFloat(row['kg']) || null,
+        maxMeats: parseInt(row['Max Meats']) || null,
+        cost: parseInt(row['Cost']) || null,
       });
     }
   }
 
   // Load parties
   const partiesCSV = readFileSync(join(__dirname, '..', 'data', 'parties.csv'), 'utf-8');
-  const partyLines = partiesCSV.trim().split('\n').slice(1);
+  const partyRows = parseCSV(partiesCSV, 'parties.csv');
+  validateRequiredColumns(partyRows, ['Party', 'Bonus'], 'parties.csv');
 
-  for (const line of partyLines) {
-    const values = line.split(',');
-    if (values.length >= 2 && values[0]) {
+  for (const row of partyRows) {
+    if (row['Party']) {
       await db.insert(schema.parties).values({
-        name: values[0] || '',
-        bonus: parseFloat(values[1]) || 0,
+        name: row['Party'] || '',
+        bonus: parseFloat(row['Bonus']) || 0,
       });
     }
   }
 
   // Load party-dish relationships
   const partyDishesCSV = readFileSync(join(__dirname, '..', 'data', 'party-dishes.csv'), 'utf-8');
-  const partyDishLines = partyDishesCSV.trim().split('\n').slice(1);
+  const partyDishRows = parseCSV(partyDishesCSV, 'party-dishes.csv');
+  validateRequiredColumns(partyDishRows, ['Party', 'Dish'], 'party-dishes.csv');
 
-  for (const line of partyDishLines) {
-    const values = line.split(',');
-    if (values.length >= 2 && values[0] && values[1] && values[1].trim()) {
-      const partyName = values[0].trim();
-      const dishName = values[1].trim();
+  for (const row of partyDishRows) {
+    if (row['Party'] && row['Dish'] && row['Dish'].trim()) {
+      const partyName = row['Party'].trim();
+      const dishName = row['Dish'].trim();
 
       // Find party and dish IDs
       const party = await db.select().from(schema.parties).where(eq(schema.parties.name, partyName)).limit(1);
@@ -143,17 +180,16 @@ async function loadData() {
 
   // Load dish-ingredient relationships
   const dishIngredientsCSV = readFileSync(join(__dirname, '..', 'data', 'dish-ingredients.csv'), 'utf-8');
-  const dishIngredientLines = dishIngredientsCSV.trim().split('\n').slice(1);
+  const dishIngredientRows = parseCSV(dishIngredientsCSV, 'dish-ingredients.csv');
+  validateRequiredColumns(dishIngredientRows, ['Dish', 'Count', 'Ingredient'], 'dish-ingredients.csv');
 
-  for (const line of dishIngredientLines) {
-    const values = line.split(',');
-    // Structure: Dish,Count,Ingredient,Levels,Upgrade Count
-    if (values.length >= 5 && values[0] && values[1] && values[2] && values[2].trim()) {
-      const dishName = values[0].trim();
-      const count = parseInt(values[1]) || 0;
-      const ingredientName = values[2].trim();
-      const levels = parseInt(values[3]) || null;
-      const upgradeCount = parseInt(values[4]) || null;
+  for (const row of dishIngredientRows) {
+    if (row['Dish'] && row['Count'] && row['Ingredient'] && row['Ingredient'].trim()) {
+      const dishName = row['Dish'].trim();
+      const count = parseInt(row['Count']) || 0;
+      const ingredientName = row['Ingredient'].trim();
+      const levels = parseInt(row['Levels']) || null;
+      const upgradeCount = parseInt(row['Upgrade Count']) || null;
 
       const dish = await db.select().from(schema.dishes).where(eq(schema.dishes.name, dishName)).limit(1);
       const ingredient = await db.select().from(schema.ingredients).where(eq(schema.ingredients.name, ingredientName)).limit(1);
