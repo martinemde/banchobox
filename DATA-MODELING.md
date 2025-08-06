@@ -1,15 +1,15 @@
-# Data Modeling with Drizzle
+# Data Processing
 
-This project uses a hybrid approach for data modeling that addresses the constraints of static site generation while providing proper data modeling benefits.
+This project uses a simple CSV-to-JSON processing approach that addresses the constraints of static site generation.
 
 ## Architecture Overview
 
 ```
 CSV Files (Source of Truth)
     ↓
-SQLite + Drizzle (Build Time)
+Direct CSV Processing (Build Time)
     ↓
-Validation & Relationship Building
+Relationship Building & Validation
     ↓
 Optimized JSON Files (Runtime)
     ↓
@@ -18,11 +18,11 @@ Static Svelte Site
 
 ## Benefits of This Approach
 
-### ✅ **Proper Data Modeling**
-- **Normalized schema** with proper foreign key relationships
-- **Type safety** with Drizzle TypeScript types
+### ✅ **Simple and Direct**
+- **No database dependencies** - direct CSV parsing
+- **Type safety** with TypeScript interfaces
 - **Data validation** during build process
-- **Single source of truth** for all relationships
+- **Clear relationship mapping** between entities
 
 ### ✅ **Static Site Compatible**
 - No database needed at runtime
@@ -31,30 +31,30 @@ Static Svelte Site
 - Works with any static hosting
 
 ### ✅ **Developer Experience**
-- **Schema-first** approach with TypeScript
-- **Relationship validation** prevents data inconsistencies
-- **Easy to query and transform** data during build
+- **Lightweight** build process
+- **Easy to understand** and modify
+- **Fast** processing without database overhead
 - **Maintainable** as data complexity grows
 
-## Schema Design
+## Data Structure
 
 ```typescript
-// Core entities with proper typing
-dishes: { id, name, unlockCondition, dlc, finalLevel, ... }
-ingredients: { id, name, source, type, drone, ... }
-parties: { id, name, bonus }
+// Core entities
+dishes: { name, unlockCondition, dlc, finalLevel, finalTaste, initialPrice, finalPrice, servings, parties[], ingredients[] }
+ingredients: { name, source, type, drone, kg, maxMeats, cost }
+parties: { name, bonus, dishes[] }
 
-// Junction tables for many-to-many relationships
-dishParties: { dishId, partyId }
-dishIngredients: { dishId, ingredientId }
+// Embedded relationships
+DishIngredient: { name, count, levels, upgradeCount }
 ```
 
 ## Build Process
 
-1. **CSV Import**: Load CSV files into SQLite database
-2. **Relationship Building**: Create foreign key relationships
-3. **Validation**: Ensure all references are valid
-4. **Export**: Generate optimized JSON with embedded relationships
+1. **CSV Parsing**: Parse CSV files directly using built-in string processing
+2. **Data Mapping**: Create Maps for efficient lookups and relationship building
+3. **Relationship Building**: Link entities using name-based lookups
+4. **Validation**: Warn about missing references during processing
+5. **Export**: Generate optimized JSON with embedded relationships
 
 ## File Structure
 
@@ -63,50 +63,47 @@ data/
 ├── dishes.csv              # Source data
 ├── ingredients.csv         # Source data
 ├── parties.csv             # Source data
-└── party-dishes.csv        # Relationships
+├── party-dishes.csv        # Dish-party relationships
+└── dish-ingredients.csv    # Dish-ingredient relationships
 
 scripts/
-├── build-database.ts       # New: Drizzle-based processor
-└── process-dishes.js       # Old: Can be removed
+├── build-database.ts       # Direct CSV processor
+└── process-dishes.js       # Legacy: Can be removed
 
 src/lib/
-├── schema.ts              # Drizzle schema definition
-├── dishes.json            # Generated: Dishes with parties[]
+├── dishes.json            # Generated: Dishes with parties[] and ingredients[]
 ├── ingredients.json       # Generated: Ingredients
 └── parties.json           # Generated: Parties with dishes[]
 ```
 
-## Example Query (Build Time)
+## Processing Logic
 
 ```typescript
-// Get dishes with their party bonuses
-const dishesWithParties = await db
-  .select({
-    dish: schema.dishes,
-    partyName: schema.parties.name,
-  })
-  .from(schema.dishes)
-  .leftJoin(schema.dishParties, eq(schema.dishes.id, schema.dishParties.dishId))
-  .leftJoin(schema.parties, eq(schema.dishParties.partyId, schema.parties.id));
+// Load and map data directly from CSV
+const dishes = new Map<string, DishData>();
+const ingredients = new Map<string, IngredientData>();
+const parties = new Map<string, PartyData>();
+
+// Build relationships using Maps for O(1) lookup
+for (const row of partyDishRows) {
+  const party = parties.get(partyName);
+  const dish = dishes.get(dishName);
+  if (party && dish) {
+    dish.parties.push(partyName);
+    party.dishes.push(dishName);
+  }
+}
 ```
-
-## Migration Strategy
-
-1. **Phase 1**: Install Drizzle dependencies
-2. **Phase 2**: Run both old and new build processes in parallel
-3. **Phase 3**: Verify JSON output is identical
-4. **Phase 4**: Switch to new build process
-5. **Phase 5**: Remove old processing script
 
 ## Future Enhancements
 
-With proper data modeling in place, we can easily add:
+With direct CSV processing in place, we can easily add:
 
-- **Dish-Ingredient relationships**
+- **Enhanced validation** (stricter data checks)
 - **Recipe requirements** (quantities, cooking steps)
 - **Location-based filtering**
 - **Advanced search and filtering**
-- **Data validation rules**
+- **Data transformation rules**
 - **Import/export tools for community contributions**
 
 ## Commands
@@ -115,14 +112,14 @@ With proper data modeling in place, we can easily add:
 # Install dependencies
 npm install
 
-# Build data using new process
+# Build data using CSV processor
 npm run build-data
 
-# Development (uses new build process)
+# Development (uses CSV processor)
 npm run dev
 
 # Fallback to old process if needed
 npm run process-data
 ```
 
-This approach gives you the best of both worlds: proper data modeling during development with static site compatibility for deployment.
+This approach provides a simple, efficient solution: direct CSV processing with full relationship support and static site compatibility.

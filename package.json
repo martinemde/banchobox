@@ -15,14 +15,12 @@
 		"test:unit": "vitest",
 		"test": "npm run test:integration && npm run test:unit",
 		"test:e2e": "playwright test",
-		"build-data": "tsx scripts/build-database.ts",
-		"process-data": "node scripts/process-dishes.js"
+		"build-data": "tsx scripts/build-database.ts"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
-		"better-sqlite3": "^12.0.0",
-		"drizzle-orm": "^0.36.4",
+
 		"tsx": "^4.19.2",
 		"@fontsource/fira-mono": "^5.0.0",
 		"@neoconfetti/svelte": "^2.0.0",
