@@ -8,16 +8,16 @@
       "Great Spider Crab and Cucumber Sushi",
       "Sea Toad and Cucumber Gunkan Sushi",
       "Pickled Vegetables",
-      "Deep-Fried Vegetables",
-      "Trevally Sandwich"
+      "Trevally Sandwich",
+      "Deep-Fried Vegetables"
     ]
   },
   {
     "name": "Jellyfish",
     "bonus": 2,
     "dishes": [
-      "Cold Jellyfish & Green Sea Urchin Salad",
       "Seasoned Jellyfish",
+      "Cold Jellyfish & Green Sea Urchin Salad",
       "Deepsea Kaiju Ramen",
       "Seagrapes Jellyfish Sushi",
       "Phantom Jellyfish Jelly"
@@ -27,13 +27,13 @@
     "name": "Curry",
     "bonus": 2,
     "dishes": [
+      "Godzilla vs. Ebirah Curry",
+      "Wrasse Curry",
       "Great Spider Crab Curry",
       "Ice Fish Curry",
-      "Wrasse Curry",
       "Roasted Capelin",
       "Atlantic Bonito Curry",
       "Humphead Parrotfish Curry",
-      "Godzilla vs. Ebirah Curry",
       "Moray Eel Curry"
     ]
   },
@@ -59,8 +59,8 @@
     "name": "Marlin",
     "bonus": 2,
     "dishes": [
-      "Truffle Sailfish Tartare",
       "Boiled Sailfish and Seaweed",
+      "Truffle Sailfish Tartare",
       "Marlin and Soybean Paste Roast",
       "Sailfish Sushi",
       "Marlin Sushi"
@@ -70,10 +70,10 @@
     "name": "Shark",
     "bonus": 2,
     "dishes": [
-      "Truffle Shark Sandwich",
       "Falcatus Soybean Paste Soup",
-      "Shark Karaage",
+      "Truffle Shark Sandwich",
       "Crimson Fish Roll",
+      "Shark Karaage",
       "Boiled Porbeagle Shark",
       "Deep Fish Tempura",
       "Lusca Neck Tadaki",
@@ -90,8 +90,8 @@
       "Seasoned Waptia Fieldensis",
       "Humboldt Ink Pasta",
       "Rice with White Shrimp Meat",
-      "Special Fried Shrimp Sushi",
       "Mianbao Xia",
+      "Special Fried Shrimp Sushi",
       "Boiled and Deep-Fried White Shrimp"
     ]
   },
@@ -99,12 +99,12 @@
     "name": "Lobster",
     "bonus": 2.5,
     "dishes": [
-      "Truffle Blue Lobster Tail Sushi",
       "Lobster Platter",
+      "Truffle Blue Lobster Tail Sushi",
       "Stir-fried Habanero Lobster",
       "Steamed Eastern Rock Lobster & Egg",
-      "Crystal Lobster Roll",
       "Godzilla vs. Ebirah Curry",
+      "Crystal Lobster Roll",
       "Ebirah Chasing Sashimi"
     ]
   }

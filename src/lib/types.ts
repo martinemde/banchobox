@@ -1,3 +1,10 @@
+export interface DishIngredient {
+  name: string;
+  count: number;
+  levels: number | null;
+  upgradeCount: number | null;
+}
+
 export interface Dish {
   name: string;
   unlockCondition: string;
@@ -8,6 +15,7 @@ export interface Dish {
   finalPrice: number;
   servings: number;
   parties: string[];
+  ingredients: DishIngredient[];
 }
 
 export interface Ingredient {

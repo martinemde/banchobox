@@ -6,7 +6,7 @@
     "drone": false,
     "kg": 5,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Barbed Eel",
@@ -14,8 +14,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 6,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Bloodskin Shark",
@@ -24,7 +24,7 @@
     "drone": true,
     "kg": 11.5,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Bony Wreckfish",
@@ -32,8 +32,8 @@
     "type": "Aberration",
     "drone": true,
     "kg": 8,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Bursting Anglerfish",
@@ -42,7 +42,7 @@
     "drone": false,
     "kg": 6,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Concertina Barracuda",
@@ -51,7 +51,7 @@
     "drone": false,
     "kg": 6.5,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Enthralled Stonefish",
@@ -59,8 +59,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 8,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Fanged Cod",
@@ -68,8 +68,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 3.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Gazing Shark",
@@ -78,7 +78,7 @@
     "drone": true,
     "kg": 11,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Gelatinous Stonefish",
@@ -86,8 +86,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 7.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Gnashing Perch",
@@ -95,8 +95,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 4.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Grotesque Mackerel",
@@ -104,8 +104,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 3,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Host Eel",
@@ -113,8 +113,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 5.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Malignant Pincer",
@@ -122,8 +122,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 2.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Many Eyed Mackerel",
@@ -131,8 +131,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 2.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Parhelion Jellyfish",
@@ -141,7 +141,7 @@
     "drone": false,
     "kg": 5,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Perished Loosejaw",
@@ -150,7 +150,7 @@
     "drone": false,
     "kg": 3,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Radiant Squid",
@@ -159,7 +159,7 @@
     "drone": false,
     "kg": 4.5,
     "maxMeats": 3,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Sallow Sailfish",
@@ -168,7 +168,7 @@
     "drone": true,
     "kg": 9.5,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Savage Barracuda",
@@ -177,7 +177,7 @@
     "drone": false,
     "kg": 7,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Scouring Bass",
@@ -185,8 +185,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 3.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Seizing Snailfish",
@@ -195,7 +195,7 @@
     "drone": false,
     "kg": 5,
     "maxMeats": 3,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Shattered Wreckfish",
@@ -204,7 +204,7 @@
     "drone": false,
     "kg": 6.5,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Sprouting Eel",
@@ -213,7 +213,7 @@
     "drone": true,
     "kg": 7,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Three-Headed Cod",
@@ -221,8 +221,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 6,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Translucent Sturgeon",
@@ -231,7 +231,7 @@
     "drone": true,
     "kg": 8,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Tusked Grouper",
@@ -239,8 +239,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Voltaic Grouper",
@@ -248,8 +248,8 @@
     "type": "Aberration",
     "drone": false,
     "kg": 6,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Withered Ray",
@@ -258,7 +258,7 @@
     "drone": true,
     "kg": 8.5,
     "maxMeats": 5,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Cerebral Crab",
@@ -266,8 +266,8 @@
     "type": "Aberration Crab",
     "drone": false,
     "kg": 2,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Cortex Decorator",
@@ -275,8 +275,8 @@
     "type": "Aberration Crab",
     "drone": false,
     "kg": 2.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Entangled Crab",
@@ -285,7 +285,7 @@
     "drone": false,
     "kg": 2.5,
     "maxMeats": 3,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Imperious Lobster",
@@ -293,8 +293,8 @@
     "type": "Aberration Crab",
     "drone": false,
     "kg": 3,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Splintered Crab",
@@ -302,8 +302,8 @@
     "type": "Aberration Crab",
     "drone": false,
     "kg": 3.5,
-    "maxMeats": 0,
-    "cost": 0
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Clione Queen's Tentacle",
@@ -312,7 +312,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Goblin Shark's Fatty Meat",
@@ -321,7 +321,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Helicoprion Tail",
@@ -330,7 +330,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Klaus's Fin",
@@ -339,7 +339,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Kronosaurus Tongue",
@@ -348,7 +348,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Lusca Neck Meat",
@@ -357,7 +357,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Lusca Tentacle",
@@ -366,7 +366,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Mantis Shrimp Meat",
@@ -375,7 +375,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Phantom Jellyfish Meat",
@@ -384,7 +384,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Truck Hermit Crab Legs",
@@ -393,7 +393,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Wolf Eel Tail Meat",
@@ -402,7 +402,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "Yawie's Inner Flesh",
@@ -411,7 +411,7 @@
     "drone": false,
     "kg": 1,
     "maxMeats": 1,
-    "cost": 0
+    "cost": null
   },
   {
     "name": "American Lobster",
@@ -541,12 +541,12 @@
   },
   {
     "name": "Default",
-    "source": "",
+    "source": null,
     "type": "Default",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
-    "cost": 0
+    "kg": null,
+    "maxMeats": null,
+    "cost": null
   },
   {
     "name": "Alaska Pollock",
@@ -742,7 +742,7 @@
     "source": "0-130m",
     "type": "Fish",
     "drone": true,
-    "kg": 0,
+    "kg": null,
     "maxMeats": 9,
     "cost": 45
   },
@@ -761,7 +761,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 5,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 18
   },
   {
@@ -923,7 +923,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 0.4,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 3
   },
   {
@@ -950,7 +950,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 0.2,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 2
   },
   {
@@ -1094,7 +1094,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 0.5,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 2
   },
   {
@@ -1211,7 +1211,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 9,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 17
   },
   {
@@ -1328,7 +1328,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 6,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 40
   },
   {
@@ -1508,7 +1508,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 0.3,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 2
   },
   {
@@ -1517,7 +1517,7 @@
     "type": "Fish",
     "drone": false,
     "kg": 0.7,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 5
   },
   {
@@ -1651,7 +1651,7 @@
     "source": "0-130m",
     "type": "Fish",
     "drone": true,
-    "kg": 0,
+    "kg": null,
     "maxMeats": 9,
     "cost": 42
   },
@@ -1669,8 +1669,8 @@
     "source": "Jango",
     "type": "Jango",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 750
   },
   {
@@ -1678,8 +1678,8 @@
     "source": "Jango",
     "type": "Jango",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 650
   },
   {
@@ -1742,7 +1742,7 @@
     "type": "Net",
     "drone": false,
     "kg": 0.1,
-    "maxMeats": 0,
+    "maxMeats": null,
     "cost": 11
   },
   {
@@ -1948,8 +1948,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 20
   },
   {
@@ -1957,8 +1957,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 18
   },
   {
@@ -1966,8 +1966,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 25
   },
   {
@@ -1975,8 +1975,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 17
   },
   {
@@ -1984,8 +1984,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 20
   },
   {
@@ -1993,8 +1993,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 15
   },
   {
@@ -2002,8 +2002,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 21
   },
   {
@@ -2011,8 +2011,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 19
   },
   {
@@ -2020,8 +2020,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 90
   },
   {
@@ -2029,8 +2029,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 16
   },
   {
@@ -2038,8 +2038,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 20
   },
   {
@@ -2047,8 +2047,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 15
   },
   {
@@ -2056,8 +2056,8 @@
     "source": "Vegetable Farm",
     "type": "Vegetable Farm",
     "drone": false,
-    "kg": 0,
-    "maxMeats": 0,
+    "kg": null,
+    "maxMeats": null,
     "cost": 19
   }
 ]
