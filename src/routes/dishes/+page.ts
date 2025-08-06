@@ -1,11 +1,9 @@
-import { loadDishes } from '$lib/data.js';
+import { Data } from '$lib/data/runtime.js';
 
 export const prerender = true;
 
 export async function load() {
-  const dishes = loadDishes();
-
   return {
-    dishes
+    dishes: Data.dishes
   };
 }

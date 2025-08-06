@@ -1,304 +1,524 @@
-import { drizzle } from 'drizzle-orm/better-sqlite3';
-import Database from 'better-sqlite3';
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { eq } from 'drizzle-orm';
-import * as schema from '../src/lib/schema.js';
+import type {
+  Dish,
+  Ingredient,
+  Party,
+  DishIngredient,
+  DishParty,
+  Id,
+  PartyDish,
+  EnrichedDish,
+  EnrichedIngredient,
+  EnrichedParty,
+  IngredientLine
+} from '../src/lib/types.js';
+import { buildGraph } from '../src/lib/graph/index.js';
+import { recipeCost, lineCost } from '../src/lib/calc/costs.js';
+import { partyPrice } from '../src/lib/calc/price.js';
+import { partyProfitPerDish } from '../src/lib/calc/profit.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Initialize database
-const sqlite = new Database(':memory:'); // In-memory for build process
-const db = drizzle(sqlite, { schema });
+function parseCSV(csvContent: string, filename?: string): Array<Record<string, string>> {
+  const lines = csvContent.trim().split('\n');
+  if (lines.length < 2) {
+    console.warn(`${filename || 'CSV file'} has no data rows`);
+    return [];
+  }
 
-// Create tables
-sqlite.exec(`
-  CREATE TABLE dishes (
-    id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL UNIQUE,
-    unlock_condition TEXT,
-    dlc TEXT,
-    final_level INTEGER NOT NULL,
-    final_taste INTEGER NOT NULL,
-    initial_price INTEGER NOT NULL,
-    final_price INTEGER NOT NULL,
-    servings INTEGER NOT NULL
-  );
+  const headers = lines[0].split(',').map(h => h.trim());
+  const rows: Array<Record<string, string>> = [];
 
-  CREATE TABLE ingredients (
-    id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL UNIQUE,
-    source TEXT,
-    type TEXT,
-    drone INTEGER NOT NULL,
-    kg REAL,
-    max_meats INTEGER,
-    cost INTEGER
-  );
+  console.log(`${filename || 'CSV file'} headers: ${headers.join(', ')}`);
 
-  CREATE TABLE parties (
-    id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL UNIQUE,
-    bonus REAL NOT NULL
-  );
+  for (let i = 1; i < lines.length; i++) {
+    const values = lines[i].split(',');
+    const row: Record<string, string> = {};
 
-  CREATE TABLE dish_parties (
-    id INTEGER PRIMARY KEY,
-    dish_id INTEGER NOT NULL REFERENCES dishes(id),
-    party_id INTEGER NOT NULL REFERENCES parties(id)
-  );
+    for (let j = 0; j < headers.length; j++) {
+      row[headers[j]] = values[j]?.trim() || '';
+    }
 
-  CREATE TABLE dish_ingredients (
-    id INTEGER PRIMARY KEY,
-    dish_id INTEGER NOT NULL REFERENCES dishes(id),
-    ingredient_id INTEGER NOT NULL REFERENCES ingredients(id),
-    count INTEGER NOT NULL,
-    levels INTEGER,
-    upgrade_count INTEGER
-  );
-`);
+    rows.push(row);
+  }
 
-async function loadData() {
-  console.log('Loading data into database...');
+  return rows;
+}
 
-  // Load dishes
+function validateRequiredColumns(rows: Array<Record<string, string>>, requiredColumns: string[], filename: string) {
+  if (rows.length === 0) return;
+
+  const availableColumns = Object.keys(rows[0]);
+  const missingColumns = requiredColumns.filter(col => !availableColumns.includes(col));
+
+  if (missingColumns.length > 0) {
+    throw new Error(`${filename} is missing required columns: ${missingColumns.join(', ')}. Available columns: ${availableColumns.join(', ')}`);
+  }
+}
+
+function loadDishes() {
   const dishesCSV = readFileSync(join(__dirname, '..', 'data', 'dishes.csv'), 'utf-8');
-  const dishLines = dishesCSV.trim().split('\n').slice(1);
+  const dishRows = parseCSV(dishesCSV, 'dishes.csv');
+  validateRequiredColumns(dishRows, ['Dish Name', 'Final Level', 'Final Taste', 'Initial Price', 'Final Price', 'Servings'], 'dishes.csv');
 
-  for (const line of dishLines) {
-    const values = line.split(',');
-    if (values.length >= 8 && values[0]) {
-      await db.insert(schema.dishes).values({
-        name: values[0] || '',
-        unlockCondition: values[1] || null,
-        dlc: values[2] || null,
-        finalLevel: parseInt(values[3]) || 0,
-        finalTaste: parseInt(values[4]) || 0,
-        initialPrice: parseInt(values[5]) || 0,
-        finalPrice: parseInt(values[6]) || 0,
-        servings: parseInt(values[7]) || 0,
-      });
+  const dishes: Dish[] = [];
+  const dishNameToId = new Map<string, Id>();
+
+  dishRows.forEach((row, index) => {
+    if (row['Dish Name']) {
+      const id = index + 1; // Start IDs at 1
+      const dish: Dish = {
+        id,
+        name: row['Dish Name'],
+        final_level: parseInt(row['Final Level']) || 0,
+        final_taste: parseInt(row['Final Taste']) || 0,
+        initial_price: parseInt(row['Initial Price']) || 0,
+        final_price: parseInt(row['Final Price']) || 0,
+        servings: parseInt(row['Servings']) || 0,
+        unlock_condition: row['Unlock Condition'] || null,
+        dlc: row['DLC'] || null,
+      };
+      dishes.push(dish);
+      dishNameToId.set(row['Dish Name'], id);
     }
-  }
+  });
 
-  // Load ingredients
+  return { dishes, dishNameToId };
+}
+
+function loadIngredients() {
   const ingredientsCSV = readFileSync(join(__dirname, '..', 'data', 'ingredients.csv'), 'utf-8');
-  const ingredientLines = ingredientsCSV.trim().split('\n').slice(1);
+  const ingredientRows = parseCSV(ingredientsCSV, 'ingredients.csv');
+  validateRequiredColumns(ingredientRows, ['Ingredient'], 'ingredients.csv');
 
-  for (const line of ingredientLines) {
-    const values = line.split(',');
-    if (values.length >= 7 && values[0]) {
-      await db.insert(schema.ingredients).values({
-        name: values[0] || '',
-        source: values[1] || null,
-        type: values[2] || null,
-        drone: values[3] === 'checked',
-        kg: parseFloat(values[4]) || null,
-        maxMeats: parseInt(values[5]) || null,
-        cost: parseInt(values[6]) || null,
-      });
+  const ingredients: Ingredient[] = [];
+  const ingredientNameToId = new Map<string, Id>();
+
+  ingredientRows.forEach((row, index) => {
+    if (row['Ingredient']) {
+      const id = index + 1; // Start IDs at 1
+      const ingredient: Ingredient = {
+        id,
+        name: row['Ingredient'],
+        source: row['Source'] || undefined,
+        type: row['Type'] || undefined,
+        drone: row['Drone'] === 'checked' ? 1 : 0,
+        kg: parseFloat(row['kg']) || null,
+        max_meats: parseInt(row['Max Meats']) || null,
+        cost: parseInt(row['Cost']) || null,
+      };
+      ingredients.push(ingredient);
+      ingredientNameToId.set(row['Ingredient'], id);
     }
-  }
+  });
 
-  // Load parties
+  return { ingredients, ingredientNameToId };
+}
+
+function loadParties() {
   const partiesCSV = readFileSync(join(__dirname, '..', 'data', 'parties.csv'), 'utf-8');
-  const partyLines = partiesCSV.trim().split('\n').slice(1);
+  const partyRows = parseCSV(partiesCSV, 'parties.csv');
+  validateRequiredColumns(partyRows, ['Party', 'Bonus', 'Order'], 'parties.csv');
 
-  for (const line of partyLines) {
-    const values = line.split(',');
-    if (values.length >= 2 && values[0]) {
-      await db.insert(schema.parties).values({
-        name: values[0] || '',
-        bonus: parseFloat(values[1]) || 0,
-      });
+  const parties: Party[] = [];
+  const partyNameToId = new Map<string, Id>();
+
+  partyRows.forEach((row, index) => {
+    if (row['Party']) {
+      const id = index + 1; // Start IDs at 1
+      const party: Party = {
+        id,
+        name: row['Party'],
+        bonus: parseFloat(row['Bonus']) || 0,
+        order: parseInt(row['Order']) || 0,
+      };
+      parties.push(party);
+      partyNameToId.set(row['Party'], id);
     }
-  }
+  });
 
+  // Sort parties by order to ensure static ordering
+  parties.sort((a, b) => a.order - b.order);
+
+  return { parties, partyNameToId };
+}
+
+function loadRelationships(
+  dishNameToId: Map<string, Id>,
+  ingredientNameToId: Map<string, Id>,
+  partyNameToId: Map<string, Id>
+) {
   // Load party-dish relationships
   const partyDishesCSV = readFileSync(join(__dirname, '..', 'data', 'party-dishes.csv'), 'utf-8');
-  const partyDishLines = partyDishesCSV.trim().split('\n').slice(1);
+  const partyDishRows = parseCSV(partyDishesCSV, 'party-dishes.csv');
+  validateRequiredColumns(partyDishRows, ['Party', 'Dish'], 'party-dishes.csv');
 
-  for (const line of partyDishLines) {
-    const values = line.split(',');
-    if (values.length >= 2 && values[0] && values[1] && values[1].trim()) {
-      const partyName = values[0].trim();
-      const dishName = values[1].trim();
+  const dishParties: DishParty[] = [];
+  for (const row of partyDishRows) {
+    if (row['Party'] && row['Dish'] && row['Dish'].trim()) {
+      const partyId = partyNameToId.get(row['Party'].trim());
+      const dishId = dishNameToId.get(row['Dish'].trim());
 
-      // Find party and dish IDs
-      const party = await db.select().from(schema.parties).where(eq(schema.parties.name, partyName)).limit(1);
-      const dish = await db.select().from(schema.dishes).where(eq(schema.dishes.name, dishName)).limit(1);
-
-      if (party.length > 0 && dish.length > 0) {
-        await db.insert(schema.dishParties).values({
-          dishId: dish[0].id,
-          partyId: party[0].id,
+      if (partyId && dishId) {
+        dishParties.push({
+          dish_id: dishId,
+          party_id: partyId,
         });
       } else {
-        console.warn(`Could not find party "${partyName}" or dish "${dishName}"`);
+        console.warn(`Could not find party "${row['Party']}" or dish "${row['Dish']}"`);
       }
     }
   }
 
   // Load dish-ingredient relationships
   const dishIngredientsCSV = readFileSync(join(__dirname, '..', 'data', 'dish-ingredients.csv'), 'utf-8');
-  const dishIngredientLines = dishIngredientsCSV.trim().split('\n').slice(1);
+  const dishIngredientRows = parseCSV(dishIngredientsCSV, 'dish-ingredients.csv');
+  validateRequiredColumns(dishIngredientRows, ['Dish', 'Count', 'Ingredient'], 'dish-ingredients.csv');
 
-  for (const line of dishIngredientLines) {
-    const values = line.split(',');
-    // Structure: Dish,Count,Ingredient,Levels,Upgrade Count
-    if (values.length >= 5 && values[0] && values[1] && values[2] && values[2].trim()) {
-      const dishName = values[0].trim();
-      const count = parseInt(values[1]) || 0;
-      const ingredientName = values[2].trim();
-      const levels = parseInt(values[3]) || null;
-      const upgradeCount = parseInt(values[4]) || null;
+  const dishIngredients: DishIngredient[] = [];
+  for (const row of dishIngredientRows) {
+    if (row['Dish'] && row['Count'] && row['Ingredient'] && row['Ingredient'].trim()) {
+      const dishId = dishNameToId.get(row['Dish'].trim());
+      const ingredientId = ingredientNameToId.get(row['Ingredient'].trim());
+      const count = parseInt(row['Count']) || 0;
+      const levels = parseInt(row['Levels']) || null;
+      const upgradeCount = parseInt(row['Upgrade Count']) || null;
 
-      const dish = await db.select().from(schema.dishes).where(eq(schema.dishes.name, dishName)).limit(1);
-      const ingredient = await db.select().from(schema.ingredients).where(eq(schema.ingredients.name, ingredientName)).limit(1);
-
-      if (dish.length > 0 && ingredient.length > 0) {
-        await db.insert(schema.dishIngredients).values({
-          dishId: dish[0].id,
-          ingredientId: ingredient[0].id,
-          count: count,
-          levels: levels,
-          upgradeCount: upgradeCount,
+      if (dishId && ingredientId) {
+        dishIngredients.push({
+          dish_id: dishId,
+          ingredient_id: ingredientId,
+          count,
+          levels,
+          upgrade_count: upgradeCount,
         });
       } else {
-        console.warn(`Could not find dish "${dishName}" or ingredient "${ingredientName}"`);
+        console.warn(`Could not find dish "${row['Dish']}" or ingredient "${row['Ingredient']}"`);
       }
     }
   }
+
+  return { dishIngredients, dishParties };
 }
 
-async function exportData() {
-  console.log('Exporting data to JSON...');
+function loadNormalizedData() {
+  console.log('Loading and normalizing data from CSV files...');
 
-  // Export dishes with party relationships
-  const dishesWithParties = await db
-    .select({
-      id: schema.dishes.id,
-      name: schema.dishes.name,
-      unlockCondition: schema.dishes.unlockCondition,
-      dlc: schema.dishes.dlc,
-      finalLevel: schema.dishes.finalLevel,
-      finalTaste: schema.dishes.finalTaste,
-      initialPrice: schema.dishes.initialPrice,
-      finalPrice: schema.dishes.finalPrice,
-      servings: schema.dishes.servings,
-      partyName: schema.parties.name,
-    })
-    .from(schema.dishes)
-    .leftJoin(schema.dishParties, eq(schema.dishes.id, schema.dishParties.dishId))
-    .leftJoin(schema.parties, eq(schema.dishParties.partyId, schema.parties.id));
+  const { dishes, dishNameToId } = loadDishes();
+  const { ingredients, ingredientNameToId } = loadIngredients();
+  const { parties, partyNameToId } = loadParties();
+  const { dishIngredients, dishParties } = loadRelationships(
+    dishNameToId,
+    ingredientNameToId,
+    partyNameToId
+  );
 
-  // Group by dish and collect parties
-  const dishesMap = new Map();
-  for (const row of dishesWithParties) {
-    if (!dishesMap.has(row.id)) {
-      dishesMap.set(row.id, {
-        name: row.name,
-        unlockCondition: row.unlockCondition,
-        dlc: row.dlc,
-        finalLevel: row.finalLevel,
-        finalTaste: row.finalTaste,
-        initialPrice: row.initialPrice,
-        finalPrice: row.finalPrice,
-        servings: row.servings,
-        parties: [],
-        ingredients: [],
-      });
-    }
-    if (row.partyName) {
-      dishesMap.get(row.id).parties.push(row.partyName);
-    }
+  return { dishes, ingredients, parties, dishIngredients, dishParties };
+}
+
+function enrichData(
+  dishes: Dish[],
+  ingredients: Ingredient[],
+  parties: Party[],
+  dishIngredients: DishIngredient[],
+  dishParties: DishParty[]
+) {
+  console.log('Building graph and enriching data...');
+
+  const graph = buildGraph(dishes, ingredients, parties, dishIngredients, dishParties);
+
+  // First, create PartyDish entities for all party-dish combinations
+  console.log('Creating PartyDish entities...');
+  const partyDishes: PartyDish[] = [];
+  let partyDishIdCounter = 1;
+
+  for (const dishParty of dishParties) {
+    const dish = graph.dishById.get(dishParty.dish_id);
+    const party = graph.partyById.get(dishParty.party_id);
+
+    if (!dish || !party) continue;
+
+    // Get ingredient lines for this dish
+    const ingLines: IngredientLine[] = (graph.ingByDishId.get(dish.id) ?? []).map(line => ({
+      count: line.count,
+      unitCost: graph.ingById.get(line.ingredient_id)?.cost ?? null,
+    }));
+
+    // Recipe cost is calculated per dish, not per party-dish combination
+    const dishPartyPrice = partyPrice(dish, party);
+    const dishPartyRevenue = dishPartyPrice * dish.servings;
+    const dishProfit = partyProfitPerDish(dish, party, ingLines);
+    const dishProfitPerServing = dishProfit / dish.servings;
+
+    const partyDish: PartyDish = {
+      id: partyDishIdCounter++,
+      partyId: party.id,
+      dishId: dish.id,
+      partyPrice: dishPartyPrice,
+      partyRevenue: dishPartyRevenue,
+      profit: dishProfit,
+      profitPerServing: dishProfitPerServing,
+    };
+
+    partyDishes.push(partyDish);
   }
 
-  // Add ingredient relationships to dishes
-  const dishesWithIngredients = await db
-    .select({
-      dishId: schema.dishIngredients.dishId,
-      ingredientName: schema.ingredients.name,
-      count: schema.dishIngredients.count,
-      levels: schema.dishIngredients.levels,
-      upgradeCount: schema.dishIngredients.upgradeCount,
-    })
-    .from(schema.dishIngredients)
-    .leftJoin(schema.ingredients, eq(schema.dishIngredients.ingredientId, schema.ingredients.id));
+  // Create lookup maps for PartyDish entities
+  const partyDishById = new Map<Id, PartyDish>();
+  const partyDishesByDishId = new Map<Id, PartyDish[]>();
+  const partyDishesByPartyId = new Map<Id, PartyDish[]>();
 
-  for (const row of dishesWithIngredients) {
-    if (dishesMap.has(row.dishId) && row.ingredientName) {
-      dishesMap.get(row.dishId).ingredients.push({
-        name: row.ingredientName,
-        count: row.count,
-        levels: row.levels,
-        upgradeCount: row.upgradeCount,
-      });
+  for (const partyDish of partyDishes) {
+    partyDishById.set(partyDish.id, partyDish);
+
+    if (!partyDishesByDishId.has(partyDish.dishId)) {
+      partyDishesByDishId.set(partyDish.dishId, []);
     }
+    partyDishesByDishId.get(partyDish.dishId)!.push(partyDish);
+
+    if (!partyDishesByPartyId.has(partyDish.partyId)) {
+      partyDishesByPartyId.set(partyDish.partyId, []);
+    }
+    partyDishesByPartyId.get(partyDish.partyId)!.push(partyDish);
   }
 
-  // Export parties with dish relationships
-  const partiesWithDishes = await db
-    .select({
-      id: schema.parties.id,
-      name: schema.parties.name,
-      bonus: schema.parties.bonus,
-      dishName: schema.dishes.name,
-    })
-    .from(schema.parties)
-    .leftJoin(schema.dishParties, eq(schema.parties.id, schema.dishParties.partyId))
-    .leftJoin(schema.dishes, eq(schema.dishParties.dishId, schema.dishes.id));
+  // Enrich dishes with precomputed values
+  const enrichedDishes: EnrichedDish[] = dishes.map(dish => {
+    // Get ingredient lines for this dish with upgrade counts
+    const dishIngredientData = graph.dishIngredients.filter(di => di.dish_id === dish.id);
+    const ingredientLines = (graph.ingByDishId.get(dish.id) ?? []).map(line => {
+      const dishIngredient = dishIngredientData.find(di => di.ingredient_id === line.ingredient_id);
+      const unitCost = graph.ingById.get(line.ingredient_id)?.cost ?? null;
 
-  // Group by party and collect dishes
-  const partiesMap = new Map();
-  for (const row of partiesWithDishes) {
-    if (!partiesMap.has(row.id)) {
-      partiesMap.set(row.id, {
-        name: row.name,
-        bonus: row.bonus,
-        dishes: [],
-      });
+      return {
+        ingredientId: line.ingredient_id,
+        count: line.count,
+        unitCost,
+        lineCost: lineCost(line.count, unitCost),
+        upgradeCount: dishIngredient?.upgrade_count ?? null,
+      };
+    });
+
+    // Calculate recipe cost
+    const ingLines: IngredientLine[] = ingredientLines.map(line => ({
+      count: line.count,
+      unitCost: line.unitCost,
+    }));
+    const dishRecipeCost = recipeCost(ingLines);
+
+    // Get PartyDish entities for this dish
+    const dishPartyDishes = partyDishesByDishId.get(dish.id) ?? [];
+    const partyDishIds = dishPartyDishes.map(pd => pd.id);
+
+    // Find best party dish (highest profit)
+    const bestPartyDish = dishPartyDishes.reduce((best, current) =>
+      (best === null || current.profit > best.profit) ? current : best,
+      null as PartyDish | null
+    );
+
+    // Calculate pre-computed values to avoid view-level calculations
+    const baseRevenue = dish.final_price * dish.servings;
+    const baseProfit = baseRevenue - dishRecipeCost;
+    const baseProfitPerServing = baseProfit / dish.servings;
+    const maxProfitPerServing = bestPartyDish ? bestPartyDish.profit / dish.servings : 0;
+
+    // Calculate upgrade cost
+    const upgradeCost = ingredientLines.reduce((total, line) => {
+      return total + ((line.unitCost || 0) * (line.upgradeCount || 0));
+    }, 0);
+
+    // Calculate upgrade break even
+    const upgradeBreakEven = upgradeCost > 0 && bestPartyDish ? (bestPartyDish.profit / upgradeCost) : 0;
+
+    // Calculate ingredient count
+    const ingredientCount = ingredientLines.reduce((total, line) => total + line.count, 0);
+
+    // Get best party information for flattened access
+    const bestParty = bestPartyDish ? graph.partyById.get(bestPartyDish.partyId) : null;
+    const bestPartyName = bestParty?.name ?? null;
+    const bestPartyBonus = bestParty?.bonus ?? null;
+    const bestPartyPrice = bestPartyDish?.partyPrice ?? null;
+    const bestPartyRevenue = bestPartyDish?.partyRevenue ?? null;
+
+    const enrichedDish: EnrichedDish = {
+      ...dish,
+      ingredients: ingredientLines,
+      recipeCost: dishRecipeCost,
+      partyDishIds,
+      bestPartyDishId: bestPartyDish?.id ?? null,
+      maxProfitPerDish: bestPartyDish?.profit ?? baseProfitPerServing,
+      baseRevenue,
+      baseProfit,
+      baseProfitPerServing,
+      maxProfitPerServing,
+      upgradeCost,
+      upgradeBreakEven,
+      ingredientCount,
+      bestPartyName,
+      bestPartyBonus,
+      bestPartyPrice,
+      bestPartyRevenue,
+    };
+
+    return enrichedDish;
+  });
+
+  // Enrich ingredients
+  const enrichedIngredients: EnrichedIngredient[] = ingredients.map(ingredient => {
+    const usedInDishes = (graph.dishesByIngredientId.get(ingredient.id) ?? []).map(usage => ({
+      dishId: usage.dish_id,
+      count: usage.count,
+    }));
+
+    // Find best PartyDish for this ingredient (highest profit among all dishes that use this ingredient)
+    let bestPartyDish: PartyDish | null = null;
+    for (const usage of usedInDishes) {
+      const dishPartyDishes = partyDishesByDishId.get(usage.dishId) ?? [];
+      for (const partyDish of dishPartyDishes) {
+        if (bestPartyDish === null || partyDish.profit > bestPartyDish.profit) {
+          bestPartyDish = partyDish;
+        }
+      }
     }
-    if (row.dishName) {
-      partiesMap.get(row.id).dishes.push(row.dishName);
+
+    // Find all parties this ingredient is used for
+    const allPartyIds = new Set<Id>();
+    for (const usage of usedInDishes) {
+      const dishPartyDishes = partyDishesByDishId.get(usage.dishId) ?? [];
+      for (const partyDish of dishPartyDishes) {
+        allPartyIds.add(partyDish.partyId);
+      }
     }
-  }
 
-  // Export ingredients (no relationships yet)
-  const ingredientsList = await db.select().from(schema.ingredients);
+    const enrichedIngredient: EnrichedIngredient = {
+      ...ingredient,
+      usedIn: usedInDishes,
+      bestPartyDishId: bestPartyDish?.id ?? null,
+      usedForParties: Array.from(allPartyIds),
+    };
 
-  // Write files
-  const outputDir = join(__dirname, '..', 'src', 'lib');
+    return enrichedIngredient;
+  });
+
+  // Enrich parties
+  const enrichedParties: EnrichedParty[] = parties.map(party => {
+    // Get PartyDish entities for this party, sorted by profit descending
+    const partyPartyDishes = (partyDishesByPartyId.get(party.id) ?? [])
+      .sort((a, b) => b.profit - a.profit);
+
+    const partyDishIds = partyPartyDishes.map(pd => pd.id);
+
+    const enrichedParty: EnrichedParty = {
+      ...party,
+      partyDishIds,
+    };
+
+    return enrichedParty;
+  });
+
+  // Ensure enriched parties maintain static ordering
+  enrichedParties.sort((a, b) => a.order - b.order);
+
+  return { enrichedDishes, enrichedIngredients, enrichedParties, partyDishes };
+}
+
+function exportData(
+  enrichedDishes: EnrichedDish[],
+  enrichedIngredients: EnrichedIngredient[],
+  enrichedParties: EnrichedParty[],
+  partyDishes: PartyDish[]
+) {
+  console.log('Exporting enriched data to JSON...');
+
+  const outputDir = join(__dirname, '..', 'static', 'data');
+
+  // Ensure output directory exists
+  mkdirSync(outputDir, { recursive: true });
+
+  // Export enriched data with versioning
+  const version = 'v1';
 
   writeFileSync(
-    join(outputDir, 'dishes.json'),
-    JSON.stringify(Array.from(dishesMap.values()), null, 2)
+    join(outputDir, `dishes.${version}.json`),
+    JSON.stringify(enrichedDishes, null, 2)
   );
 
   writeFileSync(
-    join(outputDir, 'parties.json'),
-    JSON.stringify(Array.from(partiesMap.values()), null, 2)
+    join(outputDir, `ingredients.${version}.json`),
+    JSON.stringify(enrichedIngredients, null, 2)
   );
 
   writeFileSync(
-    join(outputDir, 'ingredients.json'),
-    JSON.stringify(ingredientsList.map(({ id, ...rest }) => rest), null, 2)
+    join(outputDir, `parties.${version}.json`),
+    JSON.stringify(enrichedParties, null, 2)
   );
 
-  // Count total ingredient relationships
-  const totalIngredientRelationships = Array.from(dishesMap.values())
-    .reduce((sum, dish) => sum + dish.ingredients.length, 0);
+  writeFileSync(
+    join(outputDir, `party-dishes.${version}.json`),
+    JSON.stringify(partyDishes, null, 2)
+  );
 
-  console.log(`Exported ${dishesMap.size} dishes, ${partiesMap.size} parties, ${ingredientsList.length} ingredients`);
+  // Also maintain legacy format in src/lib for backward compatibility during transition
+  const legacyOutputDir = join(__dirname, '..', 'src', 'lib');
+
+  // Create simple indices for client-side lookups
+  const indices = {
+    dishById: Object.fromEntries(enrichedDishes.map(d => [d.id, d])),
+    ingredientById: Object.fromEntries(enrichedIngredients.map(i => [i.id, i])),
+    partyById: Object.fromEntries(enrichedParties.map(p => [p.id, p])),
+    partyDishById: Object.fromEntries(partyDishes.map(pd => [pd.id, pd])),
+  };
+
+  writeFileSync(
+    join(outputDir, `indices.${version}.json`),
+    JSON.stringify(indices, null, 2)
+  );
+
+  // Legacy exports (for backward compatibility)
+  writeFileSync(
+    join(legacyOutputDir, 'dishes.json'),
+    JSON.stringify(enrichedDishes, null, 2)
+  );
+
+  writeFileSync(
+    join(legacyOutputDir, 'ingredients.json'),
+    JSON.stringify(enrichedIngredients, null, 2)
+  );
+
+  writeFileSync(
+    join(legacyOutputDir, 'parties.json'),
+    JSON.stringify(enrichedParties, null, 2)
+  );
+
+  writeFileSync(
+    join(legacyOutputDir, 'party-dishes.json'),
+    JSON.stringify(partyDishes, null, 2)
+  );
+
+  // Count relationships for logging
+  const totalIngredientRelationships = enrichedDishes.reduce((sum, dish) => sum + dish.ingredients.length, 0);
+  const totalPartyDishRelationships = partyDishes.length;
+
+  console.log(`Exported ${enrichedDishes.length} dishes, ${enrichedParties.length} parties, ${enrichedIngredients.length} ingredients, ${partyDishes.length} party-dishes`);
   console.log(`Total dish-ingredient relationships: ${totalIngredientRelationships}`);
+  console.log(`Total party-dish relationships: ${totalPartyDishRelationships}`);
+  console.log(`Data exported to /static/data with version ${version}`);
 }
 
 // Run the build process
 try {
-  await loadData();
-  await exportData();
+  const { dishes, ingredients, parties, dishIngredients, dishParties } = loadNormalizedData();
+  const { enrichedDishes, enrichedIngredients, enrichedParties, partyDishes } = enrichData(
+    dishes,
+    ingredients,
+    parties,
+    dishIngredients,
+    dishParties
+  );
+  exportData(enrichedDishes, enrichedIngredients, enrichedParties, partyDishes);
   console.log('Build completed successfully!');
 } catch (error) {
   console.error('Build failed:', error);

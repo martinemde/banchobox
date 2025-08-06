@@ -1,76 +1,205 @@
 <script lang="ts">
-  import type { PageData } from './$types.js';
+  import { Data } from '$lib/data/runtime.js';
+  import Recipe from '$lib/components/Recipe.svelte';
 
-  export let data: PageData;
+  // Global sorting state for all party tables
+  let sortColumn: string = 'dishName';
+  let sortDirection: 'asc' | 'desc' = 'asc';
 
-  $: dishes = data.dishes;
-  $: parties = data.parties;
+  // Use the enriched data service
+  $: enrichedParties = Data.parties;
+
+  // Sort function for party dishes using PartyDish entities
+  function sortPartyDishes(partyDishes: any[], column: string, direction: 'asc' | 'desc') {
+    return [...partyDishes].sort((a, b) => {
+      let aVal, bVal;
+
+      const dishA = Data.getDishById(a.dishId);
+      const dishB = Data.getDishById(b.dishId);
+
+      if (!dishA || !dishB) return 0;
+
+      // Handle different column types - now using pre-calculated values from PartyDish entities
+      switch (column) {
+        case 'dishName':
+          aVal = dishA.name;
+          bVal = dishB.name;
+          break;
+        case 'unlockCondition':
+          aVal = dishA.unlock_condition || '';
+          bVal = dishB.unlock_condition || '';
+          break;
+        case 'partyPrice':
+          aVal = a.partyPrice;
+          bVal = b.partyPrice;
+          break;
+        case 'partyRevenue':
+          aVal = a.partyRevenue;
+          bVal = b.partyRevenue;
+          break;
+        case 'recipeCost':
+          aVal = dishA.recipeCost;
+          bVal = dishB.recipeCost;
+          break;
+        case 'profit':
+          aVal = a.profit;
+          bVal = b.profit;
+          break;
+        case 'profitPerServing':
+          aVal = a.profitPerServing;
+          bVal = b.profitPerServing;
+          break;
+        default:
+          aVal = (a as any)[column] || (dishA as any)[column];
+          bVal = (b as any)[column] || (dishB as any)[column];
+      }
+
+      // Handle null/undefined values
+      if (aVal == null && bVal == null) return 0;
+      if (aVal == null) return direction === 'asc' ? -1 : 1;
+      if (bVal == null) return direction === 'asc' ? 1 : -1;
+
+      // Compare values
+      if (typeof aVal === 'string' && typeof bVal === 'string') {
+        return direction === 'asc'
+          ? aVal.localeCompare(bVal)
+          : bVal.localeCompare(aVal);
+      } else {
+        return direction === 'asc'
+          ? (aVal < bVal ? -1 : aVal > bVal ? 1 : 0)
+          : (bVal < aVal ? -1 : bVal > aVal ? 1 : 0);
+      }
+    });
+  }
+
+    // Handle column header click - applies to all party tables
+  function handleSort(column: string) {
+    if (sortColumn === column) {
+      sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+    } else {
+      sortColumn = column;
+      sortDirection = column === 'dishName' ? 'asc' : 'desc';
+    }
+  }
+
+  // Make sorted parties reactive to sort changes
+  $: sortedParties = enrichedParties.map(party => {
+    const partyDishes = Data.getPartyDishesByPartyId(party.id);
+    const sortedDishes = sortPartyDishes(partyDishes, sortColumn, sortDirection);
+    return {
+      ...party,
+      sortedDishes
+    };
+  });
 </script>
 
 <svelte:head>
   <title>Parties - Dave Menu</title>
-  <meta name="description" content="Complete party collection from Dave the Diver" />
+  <meta name="description" content="Complete party collection from Dave the Diver with calculated profit analysis" />
 </svelte:head>
 
 <div class="container">
   <header>
-    <h1>All Parties ({parties.length})</h1>
-    <p>Complete party collection from Dave the Diver</p>
+    <h1>Parties</h1>
   </header>
 
   <section class="parties">
     <div class="parties-container">
-      {#each parties as party}
+      {#each sortedParties as party}
         <div class="party-card">
           <div class="party-header">
-            <h3 class="party-name">{party.name}</h3>
+            <h3 class="party-name">{party.name} Party</h3>
             <div class="party-info">
               <span class="bonus">{party.bonus}× bonus</span>
-              <span class="dish-count">{party.dishes.length} dishes</span>
+              <span class="dish-count">{party.partyDishIds.length} dishes</span>
             </div>
           </div>
 
-          {#if party.dishes.length > 0}
-            <div class="party-dishes">
-              <div class="table-container">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Dish Name</th>
-                      <th>Unlock Condition</th>
-                      <th>DLC</th>
-                      <th>Level</th>
-                      <th>Taste</th>
-                      <th>Initial Price</th>
-                      <th>Final Price</th>
-                      <th>Servings</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {#each party.dishes as dishName}
-                      {@const dish = dishes.find(d => d.name === dishName)}
-                      {#if dish}
-                        <tr>
-                          <td class="dish-name">{dish.name}</td>
-                          <td class="unlock-condition">{dish.unlockCondition || '—'}</td>
-                          <td class="dlc">{dish.dlc || '—'}</td>
-                          <td class="level">{dish.finalLevel}</td>
-                          <td class="taste">{dish.finalTaste}</td>
-                          <td class="price">{dish.initialPrice}</td>
-                          <td class="price">{dish.finalPrice}</td>
-                          <td class="servings">{dish.servings}</td>
-                        </tr>
-                      {/if}
-                    {/each}
-                  </tbody>
-                </table>
-              </div>
+          <div class="party-dishes">
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="sortable" on:click={() => handleSort('dishName')}>
+                      <div class="header-content">
+                        Dish
+                        {#if sortColumn === 'dishName'}
+                          <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                        {/if}
+                      </div>
+                    </th>
+                    <th class="sortable" on:click={() => handleSort('unlockCondition')}>
+                      <div class="header-content">
+                        Unlock Condition
+                        {#if sortColumn === 'unlockCondition'}
+                          <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                        {/if}
+                      </div>
+                    </th>
+                    <th class="sortable" on:click={() => handleSort('partyPrice')}>
+                      <div class="header-content">
+                        Price
+                        {#if sortColumn === 'partyPrice'}
+                          <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                        {/if}
+                      </div>
+                    </th>
+                    <th class="sortable" on:click={() => handleSort('partyRevenue')}>
+                      <div class="header-content">
+                        Revenue
+                        <br>(Price × Servings)
+                        {#if sortColumn === 'partyRevenue'}
+                          <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                        {/if}
+                      </div>
+                    </th>
+                    <th class="sortable" on:click={() => handleSort('recipeCost')}>
+                      <div class="header-content">
+                        Recipe Cost
+                        {#if sortColumn === 'recipeCost'}
+                          <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                        {/if}
+                      </div>
+                    </th>
+                    <th class="sortable" on:click={() => handleSort('profit')}>
+                      <div class="header-content">
+                        Profit<br>(Revenue - Recipe Cost)
+                        {#if sortColumn === 'profit'}
+                          <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                        {/if}
+                      </div>
+                    </th>
+                    <th class="sortable" on:click={() => handleSort('profitPerServing')}>
+                      <div class="header-content">
+                        Profit / Serving
+                        {#if sortColumn === 'profitPerServing'}
+                          <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                        {/if}
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {#each party.sortedDishes as partyDish}
+                    {@const dish = Data.getDishById(partyDish.dishId)}
+                    {#if dish}
+                      <tr>
+                        <td class="dish-name">
+                          <Recipe {dish} />
+                        </td>
+                        <td class="unlock-condition">{dish.unlock_condition || '—'}</td>
+                        <td class="party-price">{Math.round(partyDish.partyPrice)}</td>
+                        <td class="party-revenue">{Math.round(partyDish.partyRevenue)}</td>
+                        <td class="recipe-cost">{Math.round(dish.recipeCost)}</td>
+                        <td class="party-profit">{Math.round(partyDish.profit)}</td>
+                        <td class="profit-per-serving">{Math.round(partyDish.profitPerServing)}</td>
+                      </tr>
+                    {/if}
+                  {/each}
+                </tbody>
+              </table>
             </div>
-          {:else}
-            <div class="no-dishes">
-              <p>No dishes associated with this party</p>
-            </div>
-          {/if}
+          </div>
         </div>
       {/each}
     </div>
@@ -79,7 +208,7 @@
 
 <style>
   .container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 2rem;
   }
@@ -95,10 +224,7 @@
     margin-bottom: 0.5rem;
   }
 
-  header p {
-    font-size: 1.2rem;
-    color: rgb(var(--color-on-surface-token) / 0.75);
-  }
+
 
   .table-container {
     overflow-x: auto;
@@ -110,6 +236,7 @@
   table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 1200px; /* Ensure horizontal scroll on small screens */
   }
 
   th {
@@ -122,6 +249,40 @@
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  th.sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+  }
+
+  th.sortable:hover {
+    background-color: rgb(var(--color-surface-400));
+  }
+
+  th.sortable:active {
+    background-color: rgb(var(--color-surface-500));
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+  }
+
+  .sort-indicator {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(var(--color-primary-500));
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+
+  th.sortable:hover .sort-indicator {
+    opacity: 1;
   }
 
   td {
@@ -129,46 +290,60 @@
     border-bottom: 1px solid rgb(var(--color-surface-300));
     font-size: 0.875rem;
     color: rgb(var(--color-on-surface-token));
+    vertical-align: top;
   }
 
   tr:hover {
     background-color: rgb(var(--color-surface-300) / 0.5);
   }
 
-  .dish-name, .party-name {
+  .dish-name {
     font-weight: 600;
     color: rgb(var(--color-on-surface-token));
-    min-width: 200px;
+    min-width: 180px;
   }
 
   .unlock-condition {
     color: rgb(var(--color-on-surface-token) / 0.6);
     font-size: 0.8rem;
-  }
-
-  .dlc {
-    color: rgb(var(--color-tertiary-500));
-    font-weight: 500;
-    font-size: 0.8rem;
-  }
-
-  .level, .taste, .servings {
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .price {
-    text-align: right;
-    font-weight: 600;
-    color: rgb(var(--color-secondary-500));
+    max-width: 150px;
   }
 
   .bonus {
     text-align: center;
     font-weight: 600;
-    color: rgb(var(--color-error-500));
-    font-size: 1rem;
+    color: rgb(var(--color-primary-600));
+    font-size: 0.875rem;
   }
+
+  .party-price, .party-revenue, .recipe-cost {
+    text-align: right;
+    font-weight: 600;
+    color: rgb(var(--color-secondary-500));
+    white-space: nowrap;
+  }
+
+  .party-revenue {
+    color: rgb(var(--color-success-600));
+  }
+
+  .recipe-cost {
+    color: rgb(var(--color-warning-600));
+  }
+
+  .party-profit {
+    text-align: right;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .profit-per-serving {
+    text-align: right;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+
 
   .parties-container {
     display: flex;
@@ -211,6 +386,7 @@
     border-radius: 1rem;
     font-weight: 600;
     font-size: 0.875rem;
+    color: white;
   }
 
   .dish-count {
@@ -227,12 +403,7 @@
     border-radius: 0;
   }
 
-  .no-dishes {
-    padding: 2rem;
-    text-align: center;
-    color: rgb(var(--color-on-surface-token) / 0.75);
-    font-style: italic;
-  }
+
 
   @media (max-width: 768px) {
     .container {
@@ -248,8 +419,8 @@
       font-size: 0.8rem;
     }
 
-    .dish-name, .party-name {
-      min-width: 150px;
+    .dish-name {
+      min-width: 120px;
     }
 
     .parties-container {
@@ -272,5 +443,12 @@
       flex-direction: row;
       gap: 1rem;
     }
+
+    .unlock-condition {
+      max-width: 100px;
+      font-size: 0.7rem;
+    }
+
+
   }
 </style>

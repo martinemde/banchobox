@@ -40,7 +40,7 @@ Marlin and Soybean Paste Roast,Marlin Party,,10,272,380,1406,9
 Humphead Parrotfish Curry,Platinum Rank,,10,347,375,1387,6
 Mianbao Xia,Chinese Chef VIP,,10,305,375,1387,10
 Special Fried Shrimp Sushi,Drae lvl 5,,10,317,380,1406,1
-Lusca Neck Tadaki,Carve Boss,,1,250,1350,1350,10
+Lusca Neck Tadaki,Boss,,1,250,1350,1350,10
 Deepsea Kaiju Ramen,Godzilla DLC,Godzilla DLC,10,410,350,1295,6
 Bluefin Tuna Ootoro Sushi,Tuna Party,,10,330,135,499,1
 Boiled and Deep-Fried White Shrimp,Raptor lvl 5,,10,330,225,832,10
@@ -83,29 +83,29 @@ Deep-Fried Red Lionfish,Cohh lvl 10,,10,366,390,1443,4
 Comber Sandwich,British Chef VIP,,10,420,390,1443,6
 Fried Tomato and Snailfish,Chinese Chef VIP,,10,335,390,1443,12
 Narrow-Barred Spanish Mackerel Arancini,Italian Chef VIP,,10,364,390,1443,7
-Roasted Helicoprion Tail,Carve Boss,,1,170,710,710,10
+Roasted Helicoprion Tail,Boss,,1,170,710,710,10
 Smoked Atlantic Mackerel Scramble,British Chef VIP,,10,460,387,1431,6
 Black Vinegar Braised Parrotfish,Platinum Rank,,10,406,385,1424,6
 Fried Rice with Sally Lightfoot Crab,Chinese Chef VIP,,10,305,385,1424,10
 Plotosid Pie,British Chef VIP,,10,420,385,1424,7
 Rice with Purple Sea Urchin Sushi,Raptor lvl 10,,10,320,385,1424,4
 Deep-fried Sea Urchin,mxmtoon Collab,mxmtoon,5,275,690,1518,2
-Phantom Jellyfish Jelly,Carve Boss,,1,165,700,700,10
+Phantom Jellyfish Jelly,Boss,,1,165,700,700,10
 Tomato Egg Soup,Chinese Chef VIP,,10,309,380,1406,12
 Sailfish Sushi,,,10,400,195,721,1
 Tropical Fish Sushi Set,Michael Bang VIP,,10,346,375,1387,9
 Seahorse Udon,Platinum Rank,,10,353,375,1387,4
 Blobfish Spring Roll,Chinese Chef VIP,,10,322,375,1387,10
 Pelican Eel Jelly,British Chef VIP,,10,439,373,1380,9
-Blanched Lusca Tentacle,Carve Boss,,1,250,1350,1350,10
+Blanched Lusca Tentacle,Boss,,1,250,1350,1350,10
 Vegetable Sushi,DJ Sammy VIP,,10,390,375,1387,1
 Boiled Asian Sheepshead Wrasse & Truffle,Jango VIP,,5,280,755,1661,2
 Grilled Antarctic Octopus & Truffle,Jango Shop,,5,338,770,1694,2
-White Shark Omelet,Carve Boss,,1,150,650,650,10
+White Shark Omelet,Boss,,1,150,650,650,10
 Gazing Shark Sushi,Dredge DLC,Dredge DLC,1,3,1250,1250,1
 Translucent Sturgeon Sushi,Dredge DLC,Dredge DLC,1,3,1235,1235,1
 Bloodskin Shark Sushi,Dredge DLC,Dredge DLC,1,4,1225,1225,1
-Goblin Shark Belly Roast,Carve Boss,,1,135,600,600,10
+Goblin Shark Belly Roast,Boss,,1,135,600,600,10
 Bluefin Tuna Chutoro Sushi,Tuna Party,,10,241,95,351,1
 Rainbow Cap Eel Skewers,Jango,Potion Craft,5,295,730,1606,2
 Rainbow Cap Triggerfish Fishcake,Potion Craft Collab,Potion Craft,5,268,705,1551,2
@@ -122,16 +122,16 @@ Yellowfin Tuna Akami Sushi,Tuna Party,,10,235,73,270,1
 Malignant Pincer Sushi,Dredge DLC,Dredge DLC,1,3,880,880,1
 Fried Seahorses,Cohh lvl 5,,10,363,220,814,4
 Stellate Puffer Special Sushi,Gold Rank,,10,340,220,814,1
-Yawie Steamed Meat,Carve Boss,,1,180,750,750,10
+Yawie Steamed Meat,Boss,,1,180,750,750,10
 Cortex Decorator Sushi,Dredge DLC,Dredge DLC,1,2,740,740,1
-Steamed Kronosaurus Tongue,Carve Boss,,1,180,724,724,10
+Steamed Kronosaurus Tongue,Boss,,1,180,724,724,10
 Seagrapes Special Sushi,Gold Rank,,10,390,200,740,1
 Dunkleosteus Sushi,,,10,420,210,777,1
 Moray Eel Curry,Silver Rank,,10,273,95,351,6
 Big-Eyed Scad and Soybean Paste Roast,Gold Rank,,10,348,185,684,7
 Stellate Puffer Nicogori,Any Staff lvl 5,,10,381,180,666,7
 Seasoned Long-spine Porcupinefish Skin,,,10,410,180,666,7
-Boiled Mantis Shrimp with Soy Paste,Carve Boss,,1,150,650,650,10
+Boiled Mantis Shrimp with Soy Paste,Boss,,1,150,650,650,10
 Trout Sea Grapes Ricebowl,Gold Rank,,10,290,175,647,7
 Greenland Shark Sushi,,,10,370,186,688,1
 Bony Wreckfish Sushi,Dredge DLC,Dredge DLC,1,1,620,620,1
@@ -142,9 +142,9 @@ Shattered Wreckfish Sushi,Dredge DLC,Dredge DLC,1,2,560,560,1
 Porbeagle Shark Sushi,,,10,380,165,610,1
 Tokummia Katalepsis Sushi,,,10,460,165,610,1
 Smallspotted Dart Kajime Soup,Any Staff lvl 5,,10,367,150,555,7
-Steamed Wolf Eel,Carve Boss,,1,120,550,550,10
-Stir-Fried Hermit Crab and Seaweed,Carve Boss,,1,150,550,550,10
-Clione Queen Soup,Carve Boss,,1,135,550,550,10
+Steamed Wolf Eel,Boss,,1,120,550,550,10
+Stir-Fried Hermit Crab and Seaweed,Boss,,1,150,550,550,10
+Clione Queen Soup,Boss,,1,135,550,550,10
 Whole-Roasted Shark Head,,,10,295,75,277,7
 Xenacanthus Sushi,,,10,430,160,592,1
 Thresher Shark Sushi,,,10,390,159,588,1

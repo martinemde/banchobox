@@ -1,11 +1,9 @@
-import { loadIngredients } from '$lib/data.js';
+import { Data } from '$lib/data/runtime.js';
 
 export const prerender = true;
 
 export async function load() {
-  const ingredients = loadIngredients();
-
   return {
-    ingredients
+    ingredients: Data.ingredients
   };
 }
