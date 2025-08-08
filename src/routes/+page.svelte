@@ -9,13 +9,13 @@
 </script>
 
 <svelte:head>
-  <title>Dave Menu - Dave the Diver Complete Database</title>
+  <title>Bancho Box - Dave the Diver Complete Database</title>
   <meta name="description" content="Complete dish, ingredient and party collection from Dave the Diver" />
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">
   <div class="text-center mb-12">
-    <h1 class="text-6xl font-bold text-primary-500 mb-4">Dave Menu</h1>
+    <h1 class="text-6xl font-bold text-primary-500 mb-4">Bancho Box</h1>
     <p class="text-xl text-on-surface-token max-w-2xl mx-auto">
       Your complete database for dishes, ingredients, and party bonuses from Dave the Diver
     </p>
@@ -79,18 +79,12 @@
 
   <div class="text-center mt-16">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-on-surface-token mb-6">About Dave Menu</h2>
+      <h2 class="text-3xl font-bold text-on-surface-token mb-6">About Bancho Box</h2>
       <p class="text-lg text-on-surface-token/75 leading-relaxed">
-        Dave Menu is a comprehensive database for Dave the Diver, featuring detailed information about
+        Bancho Box is a comprehensive database for Dave the Diver, featuring detailed information about
         dishes, ingredients, and party events. Whether you're planning the perfect restaurant menu or
         looking for specific ingredients, this tool helps you navigate the depths of Dave's culinary world.
       </p>
     </div>
   </div>
 </div>
-
-<style>
-  .w-full {
-    width: 100%;
-  }
-</style>
