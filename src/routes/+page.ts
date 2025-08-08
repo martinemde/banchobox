@@ -1,15 +1,12 @@
-import { loadDishes, loadIngredients, loadParties } from '$lib/data.js';
+import { Data } from '$lib/data/runtime.js';
 
 export const prerender = true;
 
 export async function load() {
-  const dishes = loadDishes();
-  const ingredients = loadIngredients();
-  const parties = loadParties();
-
   return {
-    dishes,
-    ingredients,
-    parties
+    dishes: Data.dishes,
+    ingredients: Data.ingredients,
+    parties: Data.parties,
+    partyDishes: Data.partyDishes
   };
 }

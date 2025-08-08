@@ -4,8 +4,8 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "npm run build-data && vite dev",
-		"build": "npm run build-data && vite build",
+		"dev": "npm run build:data && vite dev",
+		"build": "npm run build:data && vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -15,7 +15,7 @@
 		"test:unit": "vitest",
 		"test": "npm run test:integration && npm run test:unit",
 		"test:e2e": "playwright test",
-		"build-data": "tsx scripts/build-database.ts"
+		"build:data": "tsx scripts/build-database.ts"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",

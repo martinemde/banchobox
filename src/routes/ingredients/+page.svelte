@@ -1,20 +1,170 @@
 <script lang="ts">
-  import type { PageData } from './$types.js';
+  import { Data } from '$lib/data/runtime.js';
 
-  export let data: PageData;
+  // Sorting state
+  let sortColumn: string = 'name';
+  let sortDirection: 'asc' | 'desc' = 'asc';
 
-  $: ingredients = data.ingredients;
+  // Use the enriched data service
+  $: baseIngredients = Data.ingredients;
+  $: totalIngredients = Data.getTotalIngredients();
+
+  // Sort function
+  function sortIngredients(ingredients: any[], column: string, direction: 'asc' | 'desc') {
+    return [...ingredients].sort((a, b) => {
+      let aVal, bVal;
+
+      // Handle special calculated columns
+      switch (column) {
+        case 'costPerKg':
+          aVal = calculateCostPerKg(a);
+          bVal = calculateCostPerKg(b);
+          break;
+        case 'revenuePerKg':
+          aVal = calculateBestDishRevenuePerKg(a);
+          bVal = calculateBestDishRevenuePerKg(b);
+          break;
+        case 'sumUpgradeCount':
+          aVal = calculateSumUpgradeCount(a);
+          bVal = calculateSumUpgradeCount(b);
+          break;
+        case 'pricePerIngredient':
+          aVal = calculateBestDishPricePerIngredient(a);
+          bVal = calculateBestDishPricePerIngredient(b);
+          break;
+        case 'bestDishPrice':
+          aVal = getBestDishPrice(a);
+          bVal = getBestDishPrice(b);
+          break;
+        case 'maxRevenue':
+          aVal = calculateMaxRevenue(a);
+          bVal = calculateMaxRevenue(b);
+          break;
+        case 'partiesCount':
+          aVal = getPartiesThatUseIngredient(a).length;
+          bVal = getPartiesThatUseIngredient(b).length;
+          break;
+        case 'bestDishName':
+          const bestPartyDishA = a.bestPartyDishId ? Data.getPartyDishById(a.bestPartyDishId) : null;
+          const bestPartyDishB = b.bestPartyDishId ? Data.getPartyDishById(b.bestPartyDishId) : null;
+          const dishA = bestPartyDishA ? Data.getDishById(bestPartyDishA.dishId) : null;
+          const dishB = bestPartyDishB ? Data.getDishById(bestPartyDishB.dishId) : null;
+          aVal = dishA?.name || '';
+          bVal = dishB?.name || '';
+          break;
+        default:
+          aVal = a[column];
+          bVal = b[column];
+      }
+
+      // Handle null/undefined values
+      if (aVal == null && bVal == null) return 0;
+      if (aVal == null) return direction === 'asc' ? -1 : 1;
+      if (bVal == null) return direction === 'asc' ? 1 : -1;
+
+      // Compare values
+      if (typeof aVal === 'string' && typeof bVal === 'string') {
+        return direction === 'asc'
+          ? aVal.localeCompare(bVal)
+          : bVal.localeCompare(aVal);
+      } else {
+        return direction === 'asc'
+          ? (aVal < bVal ? -1 : aVal > bVal ? 1 : 0)
+          : (bVal < aVal ? -1 : bVal > aVal ? 1 : 0);
+      }
+    });
+  }
+
+  // Handle column header click
+  function handleSort(column: string) {
+    if (sortColumn === column) {
+      sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+    } else {
+      sortColumn = column;
+      sortDirection = column === 'name' ? 'asc' : 'desc'; // Default to ascending for name, descending for others
+    }
+  }
+
+  // Get sorted ingredients
+  $: enrichedIngredients = sortIngredients(baseIngredients, sortColumn, sortDirection);
+
+  // Calculate cost per kg for an ingredient
+  function calculateCostPerKg(ingredient: any): number {
+    if (!ingredient.cost || !ingredient.kg) return 0;
+    return ingredient.cost / ingredient.kg;
+  }
+
+  // Calculate best dish revenue per kg using PartyDish entities
+  function calculateBestDishRevenuePerKg(ingredient: any): number {
+    if (!ingredient.bestPartyDishId || !ingredient.kg) return 0;
+
+    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    if (!bestPartyDish) return 0;
+
+    return bestPartyDish.partyRevenue / ingredient.kg;
+  }
+
+  // Calculate sum of upgrade counts for this ingredient across all dishes
+  function calculateSumUpgradeCount(ingredient: any): number {
+    return Data.dishes.reduce((total, dish) => {
+      const dishIngredient = dish.ingredients.find(ing => ing.ingredientId === ingredient.id);
+      return total + (dishIngredient?.upgradeCount || 0);
+    }, 0);
+  }
+
+  // Calculate best dish price per ingredient (dish price / ingredient count in dish)
+  function calculateBestDishPricePerIngredient(ingredient: any): number {
+    if (!ingredient.bestPartyDishId) return 0;
+
+    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    if (!bestPartyDish) return 0;
+
+    const bestDish = Data.getDishById(bestPartyDish.dishId);
+    if (!bestDish) return 0;
+
+    const totalIngredientCount = bestDish.ingredients.reduce((sum, ing) => sum + ing.count, 0);
+    return totalIngredientCount > 0 ? bestDish.final_price / totalIngredientCount : 0;
+  }
+
+  // Get best dish price
+  function getBestDishPrice(ingredient: any): number {
+    if (!ingredient.bestPartyDishId) return 0;
+
+    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    if (!bestPartyDish) return 0;
+
+    const bestDish = Data.getDishById(bestPartyDish.dishId);
+    return bestDish?.final_price || 0;
+  }
+
+  // Calculate max revenue for the ingredient using PartyDish entities
+  function calculateMaxRevenue(ingredient: any): number {
+    if (!ingredient.bestPartyDishId) return 0;
+
+    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    if (!bestPartyDish) return 0;
+
+    return bestPartyDish.partyRevenue;
+  }
+
+  // Get party names that use this ingredient
+  function getPartiesThatUseIngredient(ingredient: any): string[] {
+    const partyNames: string[] = ingredient.usedForParties.map((partyId: number) => {
+      const party = Data.getPartyById(partyId);
+      return party?.name || 'Unknown';
+    });
+    return [...new Set(partyNames)].sort();
+  }
 </script>
 
 <svelte:head>
   <title>Ingredients - Dave Menu</title>
-  <meta name="description" content="Complete ingredient collection from Dave the Diver" />
+  <meta name="description" content="Complete ingredient analysis from Dave the Diver with profitability metrics" />
 </svelte:head>
 
 <div class="container">
   <header>
-    <h1>All Ingredients ({ingredients.length})</h1>
-    <p>Complete ingredient collection from Dave the Diver</p>
+    <h1>All Ingredients ({totalIngredients})</h1>
   </header>
 
   <section class="ingredients">
@@ -22,25 +172,171 @@
       <table>
         <thead>
           <tr>
-            <th>Ingredient</th>
-            <th>Source</th>
-            <th>Type</th>
-            <th>Drone</th>
-            <th>Weight (kg)</th>
-            <th>Max Meats</th>
-            <th>Cost</th>
+            <th class="sortable" on:click={() => handleSort('name')}>
+              <div class="header-content">
+                Ingredient
+                {#if sortColumn === 'name'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('source')}>
+              <div class="header-content">
+                Source
+                {#if sortColumn === 'source'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('type')}>
+              <div class="header-content">
+                Type
+                {#if sortColumn === 'type'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('drone')}>
+              <div class="header-content">
+                Drone
+                {#if sortColumn === 'drone'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('kg')}>
+              <div class="header-content">
+                kg
+                {#if sortColumn === 'kg'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('max_meats')}>
+              <div class="header-content">
+                Max Meats
+                {#if sortColumn === 'max_meats'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('cost')}>
+              <div class="header-content">
+                Cost
+                {#if sortColumn === 'cost'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('costPerKg')}>
+              <div class="header-content">
+                Cost/kg
+                {#if sortColumn === 'costPerKg'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('revenuePerKg')}>
+              <div class="header-content">
+                Best Dish Revenue/kg
+                {#if sortColumn === 'revenuePerKg'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('sumUpgradeCount')}>
+              <div class="header-content">
+                Sum Upgrade Count
+                {#if sortColumn === 'sumUpgradeCount'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('pricePerIngredient')}>
+              <div class="header-content">
+                Best Dish Price/Ingredient
+                {#if sortColumn === 'pricePerIngredient'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('bestDishPrice')}>
+              <div class="header-content">
+                Best Dish Price
+                {#if sortColumn === 'bestDishPrice'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('maxRevenue')}>
+              <div class="header-content">
+                Max Revenue
+                {#if sortColumn === 'maxRevenue'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
+            <th class="sortable" on:click={() => handleSort('partiesCount')}>
+              <div class="header-content">
+                Parties
+                {#if sortColumn === 'partiesCount'}
+                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
+                {/if}
+              </div>
+            </th>
           </tr>
         </thead>
         <tbody>
-          {#each ingredients as ingredient}
+          {#each enrichedIngredients as ingredient}
+            {@const costPerKg = calculateCostPerKg(ingredient)}
+            {@const revenuePerKg = calculateBestDishRevenuePerKg(ingredient)}
+            {@const sumUpgradeCount = calculateSumUpgradeCount(ingredient)}
+            {@const pricePerIngredient = calculateBestDishPricePerIngredient(ingredient)}
+            {@const bestDishPrice = getBestDishPrice(ingredient)}
+            {@const maxRevenue = calculateMaxRevenue(ingredient)}
+            {@const partiesUsing = getPartiesThatUseIngredient(ingredient)}
+            {@const bestPartyDish = ingredient.bestPartyDishId ? Data.getPartyDishById(ingredient.bestPartyDishId) : null}
+            {@const bestDish = bestPartyDish ? Data.getDishById(bestPartyDish.dishId) : null}
             <tr>
               <td class="ingredient-name">{ingredient.name}</td>
               <td class="source">{ingredient.source || '—'}</td>
               <td class="type">{ingredient.type || '—'}</td>
-              <td class="drone">{ingredient.drone ? '✓' : '—'}</td>
-              <td class="weight">{ingredient.kg || '—'}</td>
-              <td class="max-meats">{ingredient.maxMeats || '—'}</td>
+              <td class="drone">{ingredient.drone === 1 ? '✓' : '—'}</td>
+              <td class="weight">{ingredient.kg !== null ? ingredient.kg.toFixed(2) : '—'}</td>
+              <td class="max-meats">{ingredient.max_meats || '—'}</td>
               <td class="cost">{ingredient.cost || '—'}</td>
+              <td class="cost-per-kg">
+                {costPerKg > 0 ? Math.round(costPerKg) : '—'}
+              </td>
+              <td class="revenue-per-kg">
+                {revenuePerKg > 0 ? Math.round(revenuePerKg) : '—'}
+              </td>
+              <td class="upgrade-count">
+                {sumUpgradeCount > 0 ? sumUpgradeCount : '—'}
+              </td>
+              <td class="price-per-ingredient">
+                {pricePerIngredient > 0 ? Math.round(pricePerIngredient) : '—'}
+              </td>
+              <td class="best-dish-price">
+                {bestDishPrice > 0 ? Math.round(bestDishPrice) : '—'}
+                {#if bestDish}
+                  <div class="best-dish-name">{bestDish.name}</div>
+                {/if}
+              </td>
+              <td class="max-revenue">
+                {maxRevenue > 0 ? Math.round(maxRevenue) : '—'}
+              </td>
+              <td class="parties-list">
+                {#if partiesUsing.length > 0}
+                  <div class="parties-container">
+                    {#each partiesUsing as partyName, i}
+                      <span class="party-tag">{partyName}</span>{#if i < partiesUsing.length - 1}, {/if}
+                    {/each}
+                  </div>
+                {:else}
+                  —
+                {/if}
+              </td>
             </tr>
           {/each}
         </tbody>
@@ -51,7 +347,7 @@
 
 <style>
   .container {
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 2rem;
   }
@@ -82,25 +378,61 @@
   table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 1600px; /* Wide table for all columns */
   }
 
   th {
     background-color: rgb(var(--color-surface-300));
-    padding: 1rem 0.75rem;
+    padding: 0.75rem 0.5rem;
     text-align: left;
     font-weight: 600;
     color: rgb(var(--color-on-surface-token));
     border-bottom: 1px solid rgb(var(--color-surface-400));
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  th.sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease;
+  }
+
+  th.sortable:hover {
+    background-color: rgb(var(--color-surface-400));
+  }
+
+  th.sortable:active {
+    background-color: rgb(var(--color-surface-500));
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+  }
+
+  .sort-indicator {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(var(--color-primary-500));
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+
+  th.sortable:hover .sort-indicator {
+    opacity: 1;
   }
 
   td {
-    padding: 0.75rem;
+    padding: 0.6rem 0.4rem;
     border-bottom: 1px solid rgb(var(--color-surface-300));
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: rgb(var(--color-on-surface-token));
+    vertical-align: top;
   }
 
   tr:hover {
@@ -110,38 +442,93 @@
   .ingredient-name {
     font-weight: 600;
     color: rgb(var(--color-on-surface-token));
-    min-width: 200px;
+    min-width: 140px;
+    max-width: 140px;
   }
 
   .source {
     color: rgb(var(--color-on-surface-token) / 0.6);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    max-width: 100px;
+    white-space: normal;
   }
 
   .type {
     color: rgb(var(--color-secondary-500));
     font-weight: 500;
-    font-size: 0.8rem;
-  }
-
-  .weight, .max-meats {
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .cost {
-    text-align: right;
-    font-weight: 600;
-    color: rgb(var(--color-secondary-500));
+    font-size: 0.75rem;
+    max-width: 80px;
   }
 
   .drone {
     text-align: center;
-    color: rgb(var(--color-secondary-500));
+    color: rgb(var(--color-success-500));
     font-weight: 600;
   }
 
-  @media (max-width: 768px) {
+  .weight, .max-meats, .upgrade-count {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .cost, .cost-per-kg, .price-per-ingredient, .best-dish-price, .max-revenue {
+    text-align: right;
+    font-weight: 600;
+    color: rgb(var(--color-secondary-500));
+    white-space: nowrap;
+  }
+
+  .revenue-per-kg {
+    text-align: right;
+    font-weight: 600;
+    color: rgb(var(--color-success-600));
+    white-space: nowrap;
+  }
+
+  .cost-per-kg {
+    color: rgb(var(--color-warning-600));
+  }
+
+  .max-revenue {
+    color: rgb(var(--color-success-500));
+    background-color: rgb(var(--color-success-500) / 0.1);
+    font-weight: 700;
+  }
+
+  .best-dish-price {
+    color: rgb(var(--color-primary-600));
+  }
+
+  .best-dish-name {
+    font-size: 0.7rem;
+    color: rgb(var(--color-on-surface-token) / 0.6);
+    font-weight: 400;
+    margin-top: 0.2rem;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .parties-list {
+    max-width: 200px;
+  }
+
+  .parties-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+
+  .party-tag {
+    background-color: rgb(var(--color-primary-500) / 0.2);
+    color: rgb(var(--color-primary-500));
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1200px) {
     .container {
       padding: 1rem;
     }
@@ -151,12 +538,29 @@
     }
 
     th, td {
-      padding: 0.5rem;
-      font-size: 0.8rem;
+      padding: 0.4rem 0.3rem;
+      font-size: 0.75rem;
     }
 
     .ingredient-name {
-      min-width: 150px;
+      min-width: 120px;
+      max-width: 120px;
+    }
+
+    .source {
+      max-width: 80px;
+    }
+
+    .type {
+      max-width: 60px;
+    }
+
+    .parties-list {
+      max-width: 150px;
+    }
+
+    table {
+      min-width: 1400px;
     }
   }
 </style>
