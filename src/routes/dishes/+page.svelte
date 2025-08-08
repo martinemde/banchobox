@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Data } from '$lib/data/runtime.js';
-  import Recipe from '$lib/components/Recipe.svelte';
+  import Dish from '$lib/components/Dish.svelte';
 
   // Sorting state
   let sortColumn: string = 'baseProfitPerServing';
@@ -52,7 +52,7 @@
 </script>
 
 <svelte:head>
-  <title>Dishes - Dave Menu</title>
+  <title>Dishes - Bancho Box</title>
   <meta name="description" content="Complete dish collection from Dave the Diver with comprehensive profit analysis" />
 </svelte:head>
 
@@ -174,7 +174,7 @@
 
     <div class="card-list">
       {#each enrichedDishes as dish}
-        <Recipe {dish} />
+        <Dish {dish} />
       {/each}
     </div>
   </section>

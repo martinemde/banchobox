@@ -6,7 +6,7 @@
 
 <AppBar>
   {#snippet lead()}
-    <h3 class="text-xl font-bold text-primary-500 no-underline">Dave's Menu</h3>
+    <h3 class="text-xl font-bold text-primary-500 no-underline">Bancho Box</h3>
   {/snippet}
 
   {#snippet trail()}

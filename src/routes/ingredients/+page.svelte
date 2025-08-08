@@ -159,7 +159,7 @@
 </script>
 
 <svelte:head>
-  <title>Ingredients - Dave Menu</title>
+  <title>Ingredients - Bancho Box</title>
   <meta name="description" content="Complete ingredient analysis from Dave the Diver with profitability metrics" />
 </svelte:head>
 

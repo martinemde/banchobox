@@ -47,7 +47,7 @@
         return Snowflake;
       case 'net':
         return Shrimp;
-      case 'procure':
+      case 'seasoning':
         return CookingPot;
       case 'sea plant':
         return LeafyGreen;
@@ -131,23 +131,23 @@
 
     <div class="ml-auto flex items-start gap-2 self-start">
       {#if ingredient.drone === 1}
-        <span class="group relative inline-flex" tabindex="0" role="img" aria-label="Drone">
+        <button type="button" class="group relative inline-flex" aria-label="Drone">
           <ChevronsUp size={24} class="opacity-80" />
           <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">Drone</span>
-        </span>
+        </button>
       {/if}
       {#if ingredient.type}
         {@const TypeIcon = getTypeIcon(ingredient.type)}
         {#if TypeIcon}
-          <span class="group relative inline-flex" tabindex="0" role="img" aria-label={ingredient.type}>
+          <button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
             <TypeIcon size={24} class="opacity-80" />
             <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
-          </span>
+          </button>
         {:else}
-          <span class="group relative inline-flex text-xs opacity-80 whitespace-nowrap" tabindex="0" aria-label={ingredient.type}>
+          <button type="button" class="group relative inline-flex text-xs opacity-80 whitespace-nowrap" aria-label={ingredient.type}>
             {ingredient.type}
             <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
-          </span>
+          </button>
         {/if}
       {/if}
     </div>

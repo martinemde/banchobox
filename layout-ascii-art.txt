@@ -54,3 +54,20 @@ Ingredient View:
 | dish 2       | 3   | 5   | 572    | 240   | 5    |           |
 | Dish 3       | 3   | 10  | 150    | 90    | 6    |           |
 +--------------+-----+---------+-------+-------+---------------+
+
+
+Party Dish Component
+
+(The Price, Revenue, Profit, will all be based on the party calculations)
+
++--------+--------+--------+-------+--------------+---+--------+
+| [IMG]  | Name   |  Price | 1,250  x 4 Servings = 5,000       |
+|        | Unlock |   Cost |  -250                -1,000       |
+|        |        | Profit | 1,000                 4,000       |
++--------+--------+-------+--------+---------+--------+--------+
+| Recipe               | Qty | Upgrade | Sell | Buy  | Source  |
++----------------------+-----+---------+------+----------------+
+| Truffle              | 1   | 17      |  150 | 650 | Farm     |
+| Purple Sea Urchin    | 3   | 572     |  240 |  -  | Glacial  |
+| Sailfish Meat        | 3   | 572     |  150 |     |Deep Sea  |
++----------------------+-----+---------+------+----------------+

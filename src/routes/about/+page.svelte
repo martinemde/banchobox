@@ -5,12 +5,12 @@
 
 <div class="container mx-auto px-4 py-8 max-w-4xl">
 	<div class="text-center mb-8">
-		<h1 class="text-4xl font-bold text-primary-500 mb-4">About Dave Menu</h1>
+		<h1 class="text-4xl font-bold text-primary-500 mb-4">About Bancho Box</h1>
 	</div>
 
 	<div class="card variant-glass-surface p-8 space-y-6">
 		<p class="text-lg text-on-surface-token/90">
-			Dave Menu is a comprehensive database application for <strong class="text-primary-500">Dave the Diver</strong>,
+			Bancho Box is a comprehensive database application for <strong class="text-primary-500">Dave the Diver</strong>,
 			built with modern web technologies to help players navigate the game's complex culinary system.
 		</p>
 

@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test.describe('navigation', () => {
   test('dishes page renders with expected headers and content', async ({ page }) => {
     await page.goto('/dishes');
-    await expect(page).toHaveTitle(/Dishes - Dave Menu/);
+    await expect(page).toHaveTitle(/Dishes - Bancho Box/);
     await expect(page.locator('thead')).toContainText('Recipe');
     await expect(page.locator('thead')).toContainText('Base Profit/Serving');
     await expect(page.locator('.card-list .card').first()).toBeVisible();
