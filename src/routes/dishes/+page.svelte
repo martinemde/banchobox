@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Data } from '$lib/data/runtime.js';
   import Recipe from '$lib/components/Recipe.svelte';
+  import { imageUrlForName } from '$lib/images/index.js';
 
   // Sorting state
   let sortColumn: string = 'baseProfitPerServing';
@@ -66,6 +67,7 @@
       <table>
         <thead>
           <tr>
+            <th rowspan="2" class="image-col">Image</th>
             <th rowspan="2" class="sortable" on:click={() => handleSort('name')}>
               <div class="header-content">
                 Recipe
@@ -225,7 +227,13 @@
         </thead>
         <tbody>
           {#each enrichedDishes as dish}
+              {@const imgSrc = imageUrlForName(dish.name)}
             <tr>
+              <td class="thumb">
+                {#if imgSrc}
+                  <img src={imgSrc} alt={dish.name} loading="lazy" />
+                {/if}
+              </td>
               <td class="recipe">
                 <Recipe {dish} />
               </td>
@@ -302,7 +310,23 @@
   table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 2400px; /* Wide table for all columns */
+    min-width: 2480px; /* Slightly wider to account for image column */
+  }
+  .image-col {
+    width: 64px;
+    text-align: center;
+  }
+
+  .thumb {
+    width: 64px;
+    text-align: center;
+  }
+
+  .thumb img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    image-rendering: auto;
   }
 
   th {
@@ -500,7 +524,7 @@
     }
 
     table {
-      min-width: 2000px;
+      min-width: 2080px;
     }
   }
 </style>

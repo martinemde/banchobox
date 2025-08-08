@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Data } from '$lib/data/runtime.js';
+  import { imageUrlForName } from '$lib/images/index.js';
 
   // Sorting state
   let sortColumn: string = 'name';
@@ -172,6 +173,7 @@
       <table>
         <thead>
           <tr>
+            <th class="image-col">Image</th>
             <th class="sortable" on:click={() => handleSort('name')}>
               <div class="header-content">
                 Ingredient
@@ -297,7 +299,13 @@
             {@const partiesUsing = getPartiesThatUseIngredient(ingredient)}
             {@const bestPartyDish = ingredient.bestPartyDishId ? Data.getPartyDishById(ingredient.bestPartyDishId) : null}
             {@const bestDish = bestPartyDish ? Data.getDishById(bestPartyDish.dishId) : null}
+            {@const imgSrc = imageUrlForName(ingredient.name)}
             <tr>
+              <td class="thumb">
+                {#if imgSrc}
+                  <img src={imgSrc} alt={ingredient.name} loading="lazy" />
+                {/if}
+              </td>
               <td class="ingredient-name">{ingredient.name}</td>
               <td class="source">{ingredient.source || '—'}</td>
               <td class="type">{ingredient.type || '—'}</td>
@@ -378,7 +386,23 @@
   table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 1600px; /* Wide table for all columns */
+    min-width: 1680px; /* Slightly wider to account for image column */
+  }
+  .image-col {
+    width: 64px;
+    text-align: center;
+  }
+
+  .thumb {
+    width: 64px;
+    text-align: center;
+  }
+
+  .thumb img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    image-rendering: auto;
   }
 
   th {
@@ -560,7 +584,7 @@
     }
 
     table {
-      min-width: 1400px;
+      min-width: 1480px;
     }
   }
 </style>
