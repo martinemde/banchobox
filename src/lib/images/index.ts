@@ -2,7 +2,8 @@
 // We store files under `src/lib/images/dave/*.png` and reference by normalized name
 
 // Using Vite's import.meta.glob to eagerly import URLs for all PNGs in the directory
-const daveImages = import.meta.glob('/src/lib/images/dave/*.png', { eager: true, as: 'url' });
+// Note: 'as' has been deprecated; use 'query' + 'import' instead
+const daveImages = import.meta.glob('/src/lib/images/dave/*.png', { eager: true, query: '?url', import: 'default' });
 
 /**
  * Convert a dish or ingredient name to the canonical filename used for the image.
@@ -22,5 +23,3 @@ export function imageUrlForName(name: string): string | undefined {
   const found = daveImages[key] as unknown as string | undefined;
   return found;
 }
-
-

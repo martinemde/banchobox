@@ -1,7 +1,6 @@
 <script lang="ts">
   import { Data } from '$lib/data/runtime.js';
   import Recipe from '$lib/components/Recipe.svelte';
-  import { imageUrlForName } from '$lib/images/index.js';
 
   // Sorting state
   let sortColumn: string = 'baseProfitPerServing';
@@ -58,16 +57,11 @@
 </svelte:head>
 
 <div class="container">
-  <header>
-    <h1>Dishes ({totalDishes})</h1>
-  </header>
-
   <section class="dishes">
     <div class="table-container">
       <table>
         <thead>
           <tr>
-            <th rowspan="2" class="image-col">Image</th>
             <th rowspan="2" class="sortable" on:click={() => handleSort('name')}>
               <div class="header-content">
                 Recipe
@@ -76,27 +70,10 @@
                 {/if}
               </div>
             </th>
-            <th rowspan="2" class="sortable" on:click={() => handleSort('unlock_condition')}>
-              <div class="header-content">
-                Unlock Condition
-                {#if sortColumn === 'unlock_condition'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
             <th rowspan="2" class="sortable" on:click={() => handleSort('dlc')}>
               <div class="header-content">
                 DLC
                 {#if sortColumn === 'dlc'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th colspan="4" class="party-group">Party Analysis</th>
-            <th rowspan="2" class="sortable" on:click={() => handleSort('final_level')}>
-              <div class="header-content">
-                Final Level
-                {#if sortColumn === 'final_level'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
               </div>
@@ -135,7 +112,7 @@
             </th>
             <th rowspan="2" class="sortable" on:click={() => handleSort('baseRevenue')}>
               <div class="header-content">
-                Base Revenue
+                Revenue
                 {#if sortColumn === 'baseRevenue'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -167,7 +144,7 @@
             </th>
             <th rowspan="2" class="sortable" on:click={() => handleSort('baseProfit')}>
               <div class="header-content">
-                Base Profit
+                Profit
                 {#if sortColumn === 'baseProfit'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -175,7 +152,7 @@
             </th>
             <th rowspan="2" class="sortable" on:click={() => handleSort('baseProfitPerServing')}>
               <div class="header-content">
-                Base Profit/Serving
+                Profit/Serving
                 {#if sortColumn === 'baseProfitPerServing'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -183,99 +160,22 @@
             </th>
             <th rowspan="2" class="sortable" on:click={() => handleSort('ingredientCount')}>
               <div class="header-content">
-                Ingredient Count
+                Ingredients
                 {#if sortColumn === 'ingredientCount'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
               </div>
             </th>
           </tr>
-          <tr>
-            <th class="party-subheader sortable" on:click={() => handleSort('bestPartyName')}>
-              <div class="header-content">
-                Best Party
-                {#if sortColumn === 'bestPartyName'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="party-subheader sortable" on:click={() => handleSort('bestPartyBonus')}>
-              <div class="header-content">
-                Bonus
-                {#if sortColumn === 'bestPartyBonus'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="party-subheader sortable" on:click={() => handleSort('bestPartyPrice')}>
-              <div class="header-content">
-                Party Price
-                {#if sortColumn === 'bestPartyPrice'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="party-subheader sortable" on:click={() => handleSort('bestPartyRevenue')}>
-              <div class="header-content">
-                Party Revenue
-                {#if sortColumn === 'bestPartyRevenue'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-          </tr>
         </thead>
-        <tbody>
-          {#each enrichedDishes as dish}
-              {@const imgSrc = imageUrlForName(dish.name)}
-            <tr>
-              <td class="thumb">
-                {#if imgSrc}
-                  <img src={imgSrc} alt={dish.name} loading="lazy" />
-                {/if}
-              </td>
-              <td class="recipe">
-                <Recipe {dish} />
-              </td>
-              <td class="unlock-condition">{dish.unlock_condition || '—'}</td>
-              <td class="dlc">{dish.dlc || '—'}</td>
-
-              <!-- Party Analysis Columns -->
-              <td class="best-party">
-                {dish.bestPartyName || 'No parties'}
-              </td>
-              <td class="bonus">
-                {dish.bestPartyBonus ? `${dish.bestPartyBonus}×` : '—'}
-              </td>
-              <td class="party-price">
-                {dish.bestPartyPrice ? Math.round(dish.bestPartyPrice) : '—'}
-              </td>
-              <td class="party-revenue">
-                {dish.bestPartyRevenue ? Math.round(dish.bestPartyRevenue) : '—'}
-              </td>
-
-              <td class="level">{dish.final_level}</td>
-              <td class="taste">{dish.final_taste}</td>
-              <td class="price">{dish.initial_price}</td>
-              <td class="price">{dish.final_price}</td>
-              <td class="servings">{dish.servings}</td>
-              <td class="revenue">{Math.round(dish.baseRevenue)}</td>
-              <td class="upgrade-cost">{Math.round(dish.upgradeCost)}</td>
-              <td class="break-even">
-                {dish.upgradeCost > 0 ? dish.upgradeBreakEven.toFixed(1) + '×' : '—'}
-              </td>
-              <td class="cost">{Math.round(dish.recipeCost)}</td>
-              <td class="profit {dish.baseProfit > 0 ? 'positive' : 'negative'}">
-                {Math.round(dish.baseProfit)}
-              </td>
-              <td class="profit-per-serving {dish.baseProfitPerServing > 0 ? 'positive' : 'negative'}">
-                {Math.round(dish.baseProfitPerServing)}
-              </td>
-              <td class="ingredient-count">{dish.ingredientCount}</td>
-            </tr>
-          {/each}
-        </tbody>
+        <tbody></tbody>
       </table>
+    </div>
+
+    <div class="card-list">
+      {#each enrichedDishes as dish}
+        <Recipe {dish} />
+      {/each}
     </div>
   </section>
 </div>
@@ -287,18 +187,7 @@
     padding: 2rem;
   }
 
-  header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    color: rgb(var(--color-primary-500));
-    margin-bottom: 0.5rem;
-  }
-
-
+  /* removed unused header/h1 rules */
 
   .table-container {
     overflow-x: auto;
@@ -310,23 +199,10 @@
   table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 2480px; /* Slightly wider to account for image column */
   }
   .image-col {
     width: 64px;
     text-align: center;
-  }
-
-  .thumb {
-    width: 64px;
-    text-align: center;
-  }
-
-  .thumb img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    image-rendering: auto;
   }
 
   th {
@@ -403,100 +279,12 @@
     color: white;
   }
 
-  td {
-    padding: 0.6rem 0.4rem;
-    border-bottom: 1px solid rgb(var(--color-surface-300));
-    font-size: 0.8rem;
-    color: rgb(var(--color-on-surface-token));
-    vertical-align: top;
-    white-space: nowrap;
-  }
-
-  tr:hover {
-    background-color: rgb(var(--color-surface-300) / 0.5);
-  }
-
-
-
-  .recipe {
-    max-width: 200px;
-    white-space: normal;
-  }
-
-
-
-  .unlock-condition {
-    color: rgb(var(--color-on-surface-token) / 0.6);
-    font-size: 0.75rem;
-    max-width: 120px;
-    white-space: normal;
-  }
-
-  .dlc {
-    color: rgb(var(--color-tertiary-500));
-    font-weight: 500;
-    font-size: 0.75rem;
-  }
-
-  .best-party {
-    font-weight: 500;
-    color: rgb(var(--color-primary-500));
-    font-size: 0.75rem;
-    background-color: rgb(var(--color-primary-500) / 0.1);
-  }
-
-  .bonus {
-    text-align: center;
-    font-weight: 600;
-    color: rgb(var(--color-primary-600));
-    font-size: 0.75rem;
-    background-color: rgb(var(--color-primary-500) / 0.1);
-  }
-
-  .party-price, .party-revenue {
-    text-align: right;
-    font-weight: 600;
-    color: rgb(var(--color-primary-600));
-    background-color: rgb(var(--color-primary-500) / 0.1);
-  }
-
-  .level, .taste, .servings, .ingredient-count {
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .price, .revenue, .cost, .upgrade-cost {
-    text-align: right;
-    font-weight: 600;
-    color: rgb(var(--color-secondary-500));
-  }
-
-  .revenue {
-    color: rgb(var(--color-success-600));
-  }
-
-  .cost, .upgrade-cost {
-    color: rgb(var(--color-warning-600));
-  }
-
-  .break-even {
-    text-align: right;
-    font-weight: 600;
-    color: rgb(var(--color-info-600));
-    font-size: 0.75rem;
-  }
-
-  .profit, .profit-per-serving {
-    text-align: right;
-    font-weight: 700;
-  }
-
-  .profit.positive, .profit-per-serving.positive {
-    color: rgb(var(--color-success-500));
-  }
-
-  .profit.negative, .profit-per-serving.negative {
-    color: rgb(var(--color-error-500));
+  /* Cards container */
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   @media (max-width: 1200px) {
@@ -504,23 +292,9 @@
       padding: 1rem;
     }
 
-    h1 {
-      font-size: 2rem;
-    }
-
-    th, td {
+    th {
       padding: 0.4rem 0.3rem;
       font-size: 0.75rem;
-    }
-
-
-
-    .recipe {
-      max-width: 160px;
-    }
-
-    .unlock-condition {
-      max-width: 100px;
     }
 
     table {

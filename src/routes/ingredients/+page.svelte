@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Data } from '$lib/data/runtime.js';
-  import { imageUrlForName } from '$lib/images/index.js';
+  import IngredientCard from '$lib/components/Ingredient.svelte';
 
   // Sorting state
   let sortColumn: string = 'name';
@@ -164,19 +164,14 @@
 </svelte:head>
 
 <div class="container">
-  <header>
-    <h1>All Ingredients ({totalIngredients})</h1>
-  </header>
-
   <section class="ingredients">
     <div class="table-container">
       <table>
         <thead>
           <tr>
-            <th class="image-col">Image</th>
             <th class="sortable" on:click={() => handleSort('name')}>
               <div class="header-content">
-                Ingredient
+                Name
                 {#if sortColumn === 'name'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -208,7 +203,7 @@
             </th>
             <th class="sortable" on:click={() => handleSort('kg')}>
               <div class="header-content">
-                kg
+                Weight
                 {#if sortColumn === 'kg'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -216,7 +211,7 @@
             </th>
             <th class="sortable" on:click={() => handleSort('max_meats')}>
               <div class="header-content">
-                Max Meats
+                Meats
                 {#if sortColumn === 'max_meats'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -240,7 +235,7 @@
             </th>
             <th class="sortable" on:click={() => handleSort('revenuePerKg')}>
               <div class="header-content">
-                Best Dish Revenue/kg
+                Revenue/kg
                 {#if sortColumn === 'revenuePerKg'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -248,7 +243,7 @@
             </th>
             <th class="sortable" on:click={() => handleSort('sumUpgradeCount')}>
               <div class="header-content">
-                Sum Upgrade Count
+                Upgrade Count
                 {#if sortColumn === 'sumUpgradeCount'}
                   <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
                 {/if}
@@ -288,67 +283,14 @@
             </th>
           </tr>
         </thead>
-        <tbody>
-          {#each enrichedIngredients as ingredient}
-            {@const costPerKg = calculateCostPerKg(ingredient)}
-            {@const revenuePerKg = calculateBestDishRevenuePerKg(ingredient)}
-            {@const sumUpgradeCount = calculateSumUpgradeCount(ingredient)}
-            {@const pricePerIngredient = calculateBestDishPricePerIngredient(ingredient)}
-            {@const bestDishPrice = getBestDishPrice(ingredient)}
-            {@const maxRevenue = calculateMaxRevenue(ingredient)}
-            {@const partiesUsing = getPartiesThatUseIngredient(ingredient)}
-            {@const bestPartyDish = ingredient.bestPartyDishId ? Data.getPartyDishById(ingredient.bestPartyDishId) : null}
-            {@const bestDish = bestPartyDish ? Data.getDishById(bestPartyDish.dishId) : null}
-            {@const imgSrc = imageUrlForName(ingredient.name)}
-            <tr>
-              <td class="thumb">
-                {#if imgSrc}
-                  <img src={imgSrc} alt={ingredient.name} loading="lazy" />
-                {/if}
-              </td>
-              <td class="ingredient-name">{ingredient.name}</td>
-              <td class="source">{ingredient.source || '—'}</td>
-              <td class="type">{ingredient.type || '—'}</td>
-              <td class="drone">{ingredient.drone === 1 ? '✓' : '—'}</td>
-              <td class="weight">{ingredient.kg !== null ? ingredient.kg.toFixed(2) : '—'}</td>
-              <td class="max-meats">{ingredient.max_meats || '—'}</td>
-              <td class="cost">{ingredient.cost || '—'}</td>
-              <td class="cost-per-kg">
-                {costPerKg > 0 ? Math.round(costPerKg) : '—'}
-              </td>
-              <td class="revenue-per-kg">
-                {revenuePerKg > 0 ? Math.round(revenuePerKg) : '—'}
-              </td>
-              <td class="upgrade-count">
-                {sumUpgradeCount > 0 ? sumUpgradeCount : '—'}
-              </td>
-              <td class="price-per-ingredient">
-                {pricePerIngredient > 0 ? Math.round(pricePerIngredient) : '—'}
-              </td>
-              <td class="best-dish-price">
-                {bestDishPrice > 0 ? Math.round(bestDishPrice) : '—'}
-                {#if bestDish}
-                  <div class="best-dish-name">{bestDish.name}</div>
-                {/if}
-              </td>
-              <td class="max-revenue">
-                {maxRevenue > 0 ? Math.round(maxRevenue) : '—'}
-              </td>
-              <td class="parties-list">
-                {#if partiesUsing.length > 0}
-                  <div class="parties-container">
-                    {#each partiesUsing as partyName, i}
-                      <span class="party-tag">{partyName}</span>{#if i < partiesUsing.length - 1}, {/if}
-                    {/each}
-                  </div>
-                {:else}
-                  —
-                {/if}
-              </td>
-            </tr>
-          {/each}
-        </tbody>
+        <tbody></tbody>
       </table>
+    </div>
+
+    <div class="card-list">
+      {#each enrichedIngredients as ingredient}
+        <IngredientCard {ingredient} />
+      {/each}
     </div>
   </section>
 </div>
@@ -358,22 +300,6 @@
     max-width: 1800px;
     margin: 0 auto;
     padding: 2rem;
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    color: rgb(var(--color-primary-500));
-    margin-bottom: 0.5rem;
-  }
-
-  header p {
-    font-size: 1.2rem;
-    color: rgb(var(--color-on-surface-token) / 0.75);
   }
 
   .table-container {
@@ -388,22 +314,7 @@
     border-collapse: collapse;
     min-width: 1680px; /* Slightly wider to account for image column */
   }
-  .image-col {
-    width: 64px;
-    text-align: center;
-  }
-
-  .thumb {
-    width: 64px;
-    text-align: center;
-  }
-
-  .thumb img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    image-rendering: auto;
-  }
+  /* image column removed in card view */
 
   th {
     background-color: rgb(var(--color-surface-300));
@@ -451,136 +362,17 @@
     opacity: 1;
   }
 
-  td {
-    padding: 0.6rem 0.4rem;
-    border-bottom: 1px solid rgb(var(--color-surface-300));
-    font-size: 0.8rem;
-    color: rgb(var(--color-on-surface-token));
-    vertical-align: top;
-  }
-
-  tr:hover {
-    background-color: rgb(var(--color-surface-300) / 0.5);
-  }
-
-  .ingredient-name {
-    font-weight: 600;
-    color: rgb(var(--color-on-surface-token));
-    min-width: 140px;
-    max-width: 140px;
-  }
-
-  .source {
-    color: rgb(var(--color-on-surface-token) / 0.6);
-    font-size: 0.75rem;
-    max-width: 100px;
-    white-space: normal;
-  }
-
-  .type {
-    color: rgb(var(--color-secondary-500));
-    font-weight: 500;
-    font-size: 0.75rem;
-    max-width: 80px;
-  }
-
-  .drone {
-    text-align: center;
-    color: rgb(var(--color-success-500));
-    font-weight: 600;
-  }
-
-  .weight, .max-meats, .upgrade-count {
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .cost, .cost-per-kg, .price-per-ingredient, .best-dish-price, .max-revenue {
-    text-align: right;
-    font-weight: 600;
-    color: rgb(var(--color-secondary-500));
-    white-space: nowrap;
-  }
-
-  .revenue-per-kg {
-    text-align: right;
-    font-weight: 600;
-    color: rgb(var(--color-success-600));
-    white-space: nowrap;
-  }
-
-  .cost-per-kg {
-    color: rgb(var(--color-warning-600));
-  }
-
-  .max-revenue {
-    color: rgb(var(--color-success-500));
-    background-color: rgb(var(--color-success-500) / 0.1);
-    font-weight: 700;
-  }
-
-  .best-dish-price {
-    color: rgb(var(--color-primary-600));
-  }
-
-  .best-dish-name {
-    font-size: 0.7rem;
-    color: rgb(var(--color-on-surface-token) / 0.6);
-    font-weight: 400;
-    margin-top: 0.2rem;
-    white-space: normal;
-    line-height: 1.2;
-  }
-
-  .parties-list {
-    max-width: 200px;
-  }
-
-  .parties-container {
+  /* Cards container */
+  .card-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.2rem;
-  }
-
-  .party-tag {
-    background-color: rgb(var(--color-primary-500) / 0.2);
-    color: rgb(var(--color-primary-500));
-    padding: 0.15rem 0.4rem;
-    border-radius: 0.25rem;
-    font-weight: 500;
-    font-size: 0.7rem;
-    white-space: nowrap;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   @media (max-width: 1200px) {
     .container {
       padding: 1rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    th, td {
-      padding: 0.4rem 0.3rem;
-      font-size: 0.75rem;
-    }
-
-    .ingredient-name {
-      min-width: 120px;
-      max-width: 120px;
-    }
-
-    .source {
-      max-width: 80px;
-    }
-
-    .type {
-      max-width: 60px;
-    }
-
-    .parties-list {
-      max-width: 150px;
     }
 
     table {

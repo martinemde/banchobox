@@ -1,0 +1,202 @@
+<script lang="ts">
+  import type { EnrichedIngredient, EnrichedDish } from '../types.js';
+  import { Data } from '../data/runtime.js';
+  import { imageUrlForName } from '../images/index.js';
+  import { Accordion } from '@skeletonlabs/skeleton-svelte';
+  import {
+    ArchiveRestore,
+    ArchiveX,
+    ChevronsUp,
+    CookingPot,
+    Fish,
+    FishOff,
+    LeafyGreen,
+    Loader,
+    Shrimp,
+    Snowflake,
+    Wheat,
+  } from '@lucide/svelte';
+
+  export let ingredient: EnrichedIngredient;
+
+  $: imageSrc = imageUrlForName(ingredient.name);
+
+  function formatNumber(value: number | null | undefined): string {
+    if (value == null || Number.isNaN(value)) return '—';
+    return new Intl.NumberFormat().format(Math.round(value));
+  }
+
+  $: costPerKg = (() => {
+    if (ingredient.cost == null || ingredient.kg == null || ingredient.kg === 0) return null;
+    return ingredient.cost / ingredient.kg;
+  })();
+
+  function getTypeIcon(type?: string) {
+    if (!type) return null;
+    const key = type.toLowerCase();
+    switch (key) {
+      case 'aberration crab':
+        return FishOff;
+      case 'aberration crab':
+        return ArchiveX;
+      case 'crab trap':
+        return ArchiveRestore;
+      case 'fish':
+        return Fish;
+      case 'jango':
+        return Snowflake;
+      case 'net':
+        return Shrimp;
+      case 'procure':
+        return CookingPot;
+      case 'sea plant':
+        return LeafyGreen;
+      case 'vegetable':
+        return Wheat;
+      case 'urchin':
+        return Loader;
+      default:
+        return null;
+    }
+  }
+
+
+  type RecipeRow = {
+    dish: EnrichedDish;
+    count: number;
+    level: number | null;
+    upgradeCount: number | null;
+    price: number | null | undefined;
+    servings: number | null | undefined;
+    partyName: string | null;
+  };
+
+  $: recipeRows = (ingredient.usedIn || [])
+    .map(({ dishId, count }) => {
+      const dish = Data.getDishById(dishId);
+      if (!dish) return null;
+      const line = dish.ingredients.find((ing) => ing.ingredientId === ingredient.id);
+      const parties = Data.getPartyDishesByDishId(dish.id) || [];
+      const bestParty = [...parties].sort((a, b) => b.profit - a.profit)[0];
+      const partyName = bestParty ? (Data.getPartyById(bestParty.partyId)?.name ?? null) : null;
+
+      const row: RecipeRow = {
+        dish,
+        count,
+        level: dish.final_level ?? null,
+        upgradeCount: (line as any)?.upgradeCount ?? null,
+        price: dish.final_price,
+        servings: dish.servings,
+        partyName
+      };
+      return row;
+    })
+    .filter(Boolean)
+    .map((r) => r as RecipeRow)
+    .sort((a, b) => (b.price ?? 0) - (a.price ?? 0));
+</script>
+
+<article class="card preset-filled-surface-100-900 border-[1px] border-surface-200-800 card-hover divide-y divide-surface-200-800">
+  <!-- Section 1: Overview -->
+  <section class="flex items-start gap-4 p-4">
+    <div class="size-16 rounded bg-surface-300-700 grid place-items-center overflow-hidden" aria-hidden="true">
+      {#if imageSrc}
+        <img src={imageSrc} alt="" loading="lazy" class="size-full object-contain" />
+      {/if}
+    </div>
+
+    <div class="flex-1 min-w-0">
+      <div class="flex items-center gap-2">
+        <h3 class="h5 m-0 truncate !leading-none">{ingredient.name}</h3>
+      </div>
+
+      <div class="mt-1 *:text-xs opacity-80 flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span>{ingredient.source}</span>
+      </div>
+
+      <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
+        <span>
+          Sell: {ingredient.cost != null ? `${formatNumber(ingredient.cost)}g` : '—'}
+        </span>
+        <span>Buy: —</span>
+      </div>
+
+      {#if ingredient.kg != null}
+        <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>Weight: {ingredient.kg != null ? `${ingredient.kg}kg` : '—'}</span>
+            <span class="opacity-80">{costPerKg != null ? `${formatNumber(costPerKg)}g/kg` : ''}</span>
+        </div>
+      {/if}
+    </div>
+
+    <div class="ml-auto flex items-start gap-2 self-start">
+      {#if ingredient.drone === 1}
+        <span class="group relative inline-flex" tabindex="0" role="img" aria-label="Drone">
+          <ChevronsUp size={24} class="opacity-80" />
+          <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">Drone</span>
+        </span>
+      {/if}
+      {#if ingredient.type}
+        {@const TypeIcon = getTypeIcon(ingredient.type)}
+        {#if TypeIcon}
+          <span class="group relative inline-flex" tabindex="0" role="img" aria-label={ingredient.type}>
+            <TypeIcon size={24} class="opacity-80" />
+            <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
+          </span>
+        {:else}
+          <span class="group relative inline-flex text-xs opacity-80 whitespace-nowrap" tabindex="0" aria-label={ingredient.type}>
+            {ingredient.type}
+            <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
+          </span>
+        {/if}
+      {/if}
+    </div>
+  </section>
+
+  <!-- Section 2: Recipes using this ingredient -->
+  {#if recipeRows.length > 0}
+    <section class="p-4">
+      <Accordion collapsible defaultValue={[]}>
+        <Accordion.Item value="recipes">
+          {#snippet control()}
+            <div class="flex items-center justify-between w-full">
+              <span class="text-xs uppercase tracking-wide opacity-80">Recipes</span>
+              <span class="text-xs opacity-80 tabular-nums">({recipeRows.length})</span>
+            </div>
+          {/snippet}
+
+          {#snippet panel()}
+            <div class="overflow-x-auto mt-2">
+              <table class="w-full table-auto text-sm">
+                <thead class="bg-surface-200-800">
+                  <tr>
+                    <th class="p-2 text-left">Recipe</th>
+                    <th class="p-2 text-center">Qty</th>
+                    <th class="p-2 text-center">Lvl</th>
+                    <th class="p-2 text-center">Upgrade</th>
+                    <th class="p-2 text-right">Price</th>
+                    <th class="p-2 text-right">Serv</th>
+                    <th class="p-2 text-left">Party</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {#each recipeRows as row}
+                    <tr class="border-b border-surface-200-800">
+                      <td class="p-2">{row.dish.name}</td>
+                      <td class="p-2 text-center tabular-nums">{row.count}</td>
+                      <td class="p-2 text-center tabular-nums">{row.level ?? '—'}</td>
+                      <td class="p-2 text-center tabular-nums">{row.upgradeCount ?? '—'}</td>
+                      <td class="p-2 text-right tabular-nums">{formatNumber(row.price as number)}</td>
+                      <td class="p-2 text-right tabular-nums">{row.servings ?? '—'}</td>
+                      <td class="p-2">{row.partyName ?? '—'}</td>
+                    </tr>
+                  {/each}
+                </tbody>
+              </table>
+            </div>
+          {/snippet}
+        </Accordion.Item>
+      </Accordion>
+    </section>
+  {/if}
+</article>

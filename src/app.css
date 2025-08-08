@@ -2,18 +2,11 @@
 
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton/optional/presets';
-@import '@skeletonlabs/skeleton/themes/cerberus';
+@import '@skeletonlabs/skeleton/themes/modern';
 
 @source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
 
-@import '@fontsource/fira-mono';
 @plugin '@tailwindcss/typography';
-
-:root {
-	--font-mono: 'Fira Mono', monospace;
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
-}
 
 body {
 	min-height: 100vh;
@@ -47,23 +40,6 @@ h2 {
 	font-size: 1rem;
 }
 
-pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	border-radius: 3px;
-	padding: 0.5em;
-	overflow-x: auto;
-}
-
-.text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
-}
-
 input,
 button {
 	font-size: inherit;
@@ -78,16 +54,4 @@ button:focus:not(:focus-visible) {
 	h1 {
 		font-size: 2.4rem;
 	}
-}
-
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: auto;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
 }

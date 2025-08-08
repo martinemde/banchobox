@@ -215,16 +215,16 @@ Seaweed,50-130m,Sea plant,,0.1,1,5
 Southern Bull Kelp,Glacial Area,Sea plant,,0.1,1,8
 Green Sea Urchin,0-50m Day and Night,Urchin,,1.0,1,90
 Purple Sea Urchin,0-50m Day or Night,Urchin,,1.0,1,20
-Bean,Vegetable Farm,Vegetable Farm,,,,20
-Buckwheat,Vegetable Farm,Vegetable Farm,,,,18
-Carrot,Vegetable Farm,Vegetable Farm,,,,25
-Cherry Tomato,Vegetable Farm,Vegetable Farm,,,,17
-Cucumber,Vegetable Farm,Vegetable Farm,,,,20
-Egg,Vegetable Farm,Vegetable Farm,,,,15
-Eggplant,Vegetable Farm,Vegetable Farm,,,,21
-Garlic,Vegetable Farm,Vegetable Farm,,,,19
-Grade A Egg,Vegetable Farm,Vegetable Farm,,,,90
-Habanero,Vegetable Farm,Vegetable Farm,,,,16
-Onion,Vegetable Farm,Vegetable Farm,,,,20
-Rice,Vegetable Farm,Vegetable Farm,,,,15
-Wheat,Vegetable Farm,Vegetable Farm,,,,19
+Bean,Vegetable Farm,Vegetable,,,,20
+Buckwheat,Vegetable Farm,Vegetable,,,,18
+Carrot,Vegetable Farm,Vegetable,,,,25
+Cherry Tomato,Vegetable Farm,Vegetable,,,,17
+Cucumber,Vegetable Farm,Vegetable,,,,20
+Egg,Chicken Farm,Egg,,,,15
+Eggplant,Vegetable Farm,Vegetable,,,,21
+Garlic,Vegetable Farm,Vegetable,,,,19
+Grade A Egg,Chicken Farm,Egg,,,,90
+Habanero,Vegetable Farm,Vegetable,,,,16
+Onion,Vegetable Farm,Vegetable,,,,20
+Rice,Vegetable Farm,Vegetable,,,,15
+Wheat,Vegetable Farm,Vegetable,,,,19

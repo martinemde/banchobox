@@ -1,70 +1,71 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { AppBar } from '@skeletonlabs/skeleton-svelte';
+  import { CookingPot, PartyPopper, Soup } from '@lucide/svelte';
 </script>
 
-<header class="bg-white shadow-sm border-b">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <div class="flex items-center">
-        <div class="text-xl font-bold text-blue-600">Dave Menu</div>
-      </div>
+<AppBar>
+  {#snippet lead()}
+    <h3 class="text-xl font-bold text-primary-500 no-underline">Dave's Menu</h3>
+  {/snippet}
 
-      <nav class="flex space-x-8">
-        <a
-          href="/"
-          class="nav-link"
-          class:active={$page.url.pathname === '/'}
-          data-sveltekit-preload-data="hover"
-        >
-          Home
-        </a>
-        <a
-          href="/dishes"
-          class="nav-link"
-          class:active={$page.url.pathname === '/dishes'}
-          data-sveltekit-preload-data="hover"
-        >
-          Dishes
-        </a>
-        <a
-          href="/ingredients"
-          class="nav-link"
-          class:active={$page.url.pathname === '/ingredients'}
-          data-sveltekit-preload-data="hover"
-        >
-          Ingredients
-        </a>
-        <a
-          href="/parties"
-          class="nav-link"
-          class:active={$page.url.pathname === '/parties'}
-          data-sveltekit-preload-data="hover"
-        >
-          Parties
-        </a>
-      </nav>
-    </div>
-  </div>
-</header>
+  {#snippet trail()}
+    <nav class="flex items-center gap-2">
+      <a
+        href="/dishes"
+        class="nav-link"
+        class:active={$page.url.pathname === '/dishes'}
+        data-sveltekit-preload-data="hover"
+        aria-label="Dishes"
+      >
+        <Soup size={22} />
+        <span class="label hidden sm:inline">Dishes</span>
+      </a>
+      <a
+        href="/ingredients"
+        class="nav-link"
+        class:active={$page.url.pathname === '/ingredients'}
+        data-sveltekit-preload-data="hover"
+        aria-label="Ingredients"
+      >
+        <CookingPot size={22} />
+        <span class="label hidden sm:inline">Ingredients</span>
+      </a>
+      <a
+        href="/parties"
+        class="nav-link"
+        class:active={$page.url.pathname === '/parties'}
+        data-sveltekit-preload-data="hover"
+        aria-label="Parties"
+      >
+        <PartyPopper size={22} />
+        <span class="label hidden sm:inline">Parties</span>
+      </a>
+    </nav>
+  {/snippet}
+</AppBar>
 
 <style>
   .nav-link {
-    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 0.375rem;
     font-size: 0.875rem;
     font-weight: 500;
-    color: #374151;
+    color: var(--color-surface-600);
     text-decoration: none;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s;
   }
 
   .nav-link:hover {
-    color: #2563eb;
-    background-color: #f3f4f6;
+    color: var(--color-primary-500);
+    background-color: var(--color-surface-100);
   }
 
   .nav-link.active {
-    color: #2563eb;
-    background-color: #eff6ff;
+    color: var(--color-primary-500);
+    background-color: var(--color-primary-50);
   }
 </style>
