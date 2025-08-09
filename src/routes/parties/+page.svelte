@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Data } from '$lib/data/runtime.js';
   import PartyDish from '$lib/components/PartyDish.svelte';
+  import SortControl from '$lib/components/SortControl.svelte';
 
   // Global sorting state for all party tables
   let sortColumn: string = 'dishName';
@@ -8,6 +9,26 @@
 
   // Use the enriched data service (static)
   const enrichedParties = Data.parties;
+
+  // Search state (filters party dish list by dish fields)
+  let searchQuery: string = '';
+  function normalize(value: unknown): string {
+    return (value ?? '').toString().toLowerCase();
+  }
+  function partyDishMatchesQuery(partyDish: any, query: string): boolean {
+    if (!query) return true;
+    const dish = Data.getDishById(partyDish.dishId);
+    if (!dish) return false;
+    const q = normalize(query);
+    if (normalize(dish.name).includes(q)) return true;
+    if (normalize(dish.dlc).includes(q)) return true;
+    if (normalize(dish.unlock_condition).includes(q)) return true;
+    for (const ingredientLine of dish.ingredients || []) {
+      const ingredient = Data.getIngredientById(ingredientLine.ingredientId);
+      if (normalize(ingredient?.name).includes(q)) return true;
+    }
+    return false;
+  }
 
   // Sort function for party dishes using PartyDish entities
   function sortPartyDishes(partyDishes: any[], column: string, direction: 'asc' | 'desc') {
@@ -82,15 +103,27 @@
     }
   }
 
-  // Make sorted parties reactive to sort changes
+  // Make sorted parties reactive to sort and search changes
   $: sortedParties = enrichedParties.map(party => {
     const partyDishes = Data.getPartyDishesByPartyId(party.id);
     const sortedDishes = sortPartyDishes(partyDishes, sortColumn, sortDirection);
+    const visibleDishes = (searchQuery && searchQuery.trim().length > 0)
+      ? sortedDishes.filter(pd => partyDishMatchesQuery(pd, searchQuery))
+      : sortedDishes;
     return {
       ...party,
-      sortedDishes
+      sortedDishes: visibleDishes
     };
   });
+
+  const sortOptions = [
+    { value: 'dishName', label: 'Dish Name' },
+    { value: 'partyPrice', label: 'Price' },
+    { value: 'partyRevenue', label: 'Revenue' },
+    { value: 'recipeCost', label: 'Recipe Cost' },
+    { value: 'profit', label: 'Profit' },
+    { value: 'profitPerServing', label: 'Profit / Serving' }
+  ];
 </script>
 
 <svelte:head>
@@ -99,61 +132,30 @@
 </svelte:head>
 
 <div class="max-w-screen-2xl mx-auto md:p-4">
-  <div class="overflow-x-auto rounded-md border border-surface-200-800 bg-surface-100-900">
-    <table class="w-full border-collapse">
-      <thead class="bg-surface-200-800">
-        <tr>
-          <th class="cursor-pointer select-none px-3 py-2 text-left font-semibold uppercase text-xs tracking-wide whitespace-nowrap" on:click={() => handleSort('dishName')}>
-            <div class="flex items-center justify-between gap-1">
-              <span>Dish</span>
-              {#if sortColumn === 'dishName'}
-                <span class="font-bold text-primary-500">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-              {/if}
-            </div>
-          </th>
-          <th class="cursor-pointer select-none px-3 py-2 text-left font-semibold uppercase text-xs tracking-wide whitespace-nowrap" on:click={() => handleSort('partyPrice')}>
-            <div class="flex items-center justify-between gap-1">
-              <span>Price</span>
-              {#if sortColumn === 'partyPrice'}
-                <span class="font-bold text-primary-500">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-              {/if}
-            </div>
-          </th>
-          <th class="cursor-pointer select-none px-3 py-2 text-left font-semibold uppercase text-xs tracking-wide whitespace-nowrap" on:click={() => handleSort('partyRevenue')}>
-            <div class="flex items-center justify-between gap-1">
-              <span>Revenue</span>
-              {#if sortColumn === 'partyRevenue'}
-                <span class="font-bold text-primary-500">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-              {/if}
-            </div>
-          </th>
-          <th class="cursor-pointer select-none px-3 py-2 text-left font-semibold uppercase text-xs tracking-wide whitespace-nowrap" on:click={() => handleSort('recipeCost')}>
-            <div class="flex items-center justify-between gap-1">
-              <span>Recipe Cost</span>
-              {#if sortColumn === 'recipeCost'}
-                <span class="font-bold text-primary-500">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-              {/if}
-            </div>
-          </th>
-          <th class="cursor-pointer select-none px-3 py-2 text-left font-semibold uppercase text-xs tracking-wide whitespace-nowrap" on:click={() => handleSort('profit')}>
-            <div class="flex items-center justify-between gap-1">
-              <span>Profit</span>
-              {#if sortColumn === 'profit'}
-                <span class="font-bold text-primary-500">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-              {/if}
-            </div>
-          </th>
-          <th class="cursor-pointer select-none px-3 py-2 text-left font-semibold uppercase text-xs tracking-wide whitespace-nowrap" on:click={() => handleSort('profitPerServing')}>
-            <div class="flex items-center justify-between gap-1">
-              <span>/ Serving</span>
-              {#if sortColumn === 'profitPerServing'}
-                <span class="font-bold text-primary-500">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-              {/if}
-            </div>
-          </th>
-        </tr>
-      </thead>
-    </table>
+  <div class="controls p-4">
+    <div class="search-wrapper">
+      <input
+        type="search"
+        class="search-input"
+        placeholder="Search dishes by name, ingredient, DLC, unlock…"
+        bind:value={searchQuery}
+      />
+      {#if searchQuery}
+        <button class="clear-btn" aria-label="Clear search" on:click={() => { searchQuery = ''; }}>
+          ×
+        </button>
+      {/if}
+    </div>
+
+    <SortControl
+      options={sortOptions}
+      bind:column={sortColumn}
+      bind:direction={sortDirection}
+      on:change={(e) => {
+        sortColumn = e.detail.column;
+        sortDirection = e.detail.direction;
+      }}
+    />
   </div>
 
   <section class="parties">
@@ -181,3 +183,35 @@
     </div>
   </section>
 </div>
+
+<style>
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .search-wrapper { position: relative; max-width: 540px; }
+  .search-input {
+    width: 100%;
+    padding: 0.6rem 2rem 0.6rem 0.8rem;
+    border: 1px solid rgb(var(--color-surface-400));
+    border-radius: 0.5rem;
+    background: rgb(var(--color-surface-200));
+    color: rgb(var(--color-on-surface-token));
+  }
+  .clear-btn {
+    position: absolute;
+    right: 0.35rem;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    border: none;
+    background: transparent;
+    color: rgb(var(--color-on-surface-token));
+    font-size: 1.25rem;
+    padding: 0 0.25rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .clear-btn:hover { opacity: 1; }
+</style>
