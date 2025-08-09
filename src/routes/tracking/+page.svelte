@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { EnrichedIngredient, EnrichedDish } from '$lib/types.js';
+  import type { Ingredient, Dish } from '$lib/types.js';
   import PlannedIngredient from '$lib/components/PlannedIngredient.svelte';
   import { trackedDishIds, trackedIngredientIds } from '$lib/stores/tracking.js';
   import type { PageProps } from './$types';
@@ -23,10 +23,10 @@
 
   const plannedIngredients = $derived(Array.from(plannedIngredientIds)
     .map((id) => data.ingredients.find((i) => i.id === id))
-    .filter((i): i is EnrichedIngredient => Boolean(i)));
+    .filter((i): i is Ingredient => Boolean(i)));
 
   type TrackedUsage = {
-    dish: EnrichedDish;
+    dish: Dish;
     qty: number;
     upgrade: number;
   };

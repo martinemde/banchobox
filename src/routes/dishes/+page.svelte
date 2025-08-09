@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Dish from '$lib/components/Dish.svelte';
+  import Dish from '$lib/components/DishCard.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
   import { Data } from '$lib/data/runtime.js';
 
@@ -89,15 +89,14 @@
     { value: 'name', label: 'Recipe' },
     { value: 'dlc', label: 'DLC' },
     { value: 'finalTaste', label: 'Final Taste' },
-    { value: 'basePrice', label: 'Initial Price' },
     { value: 'finalPrice', label: 'Final Price' },
-    { value: 'finalServings', label: 'Servings' },
+    { value: 'finalServings', label: 'Final Servings' },
     { value: 'baseRevenue', label: 'Revenue' },
-    { value: 'upgradeCost', label: 'Upgrade Cost' },
-    { value: 'upgradeBreakEven', label: 'Upgrade Break Even' },
-    { value: 'recipeCost', label: 'Recipe Cost' },
-    { value: 'baseProfit', label: 'Profit' },
+    { value: 'baseProfit', label: 'Recipe Profit' },
     { value: 'baseProfitPerServing', label: 'Profit / Serving' },
+    { value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
+    { value: 'upgradeCost', label: 'Upgrade Cost' },
+    { value: 'recipeCost', label: 'Recipe Cost' },
     { value: 'ingredientCount', label: 'Ingredients' }
   ];
 </script>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import PartyDish from '$lib/components/PartyDish.svelte';
+  import PartyDish from '$lib/components/PartyDishCard.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
   import { Data } from '$lib/data/runtime.js';
 
@@ -40,7 +40,6 @@
 
       if (!dishA || !dishB) return 0;
 
-      // Handle different column types - now using pre-calculated values from PartyDish entities
       switch (column) {
         case 'dishName':
           aVal = dishA.name;

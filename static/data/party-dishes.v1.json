@@ -5,8 +5,8 @@
     "dishId": 192,
     "partyPrice": 3930,
     "partyRevenue": 27510,
-    "profit": 27510,
-    "profitPerServing": 3930
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 2,
@@ -14,8 +14,8 @@
     "dishId": 302,
     "partyPrice": 3850,
     "partyRevenue": 7700,
-    "profit": 7700,
-    "profitPerServing": 3850
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "dishId": 97,
     "partyPrice": 2997.5,
     "partyRevenue": 2997.5,
-    "profit": 2997.5,
-    "profitPerServing": 2997.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 4,
@@ -32,8 +32,8 @@
     "dishId": 181,
     "partyPrice": 2960,
     "partyRevenue": 2960,
-    "profit": 2960,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 5,
@@ -41,8 +41,8 @@
     "dishId": 152,
     "partyPrice": 2922.5,
     "partyRevenue": 8767.5,
-    "profit": 8767.5,
-    "profitPerServing": 2922.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 6,
@@ -50,8 +50,8 @@
     "dishId": 66,
     "partyPrice": 2885,
     "partyRevenue": 8655,
-    "profit": 8655,
-    "profitPerServing": 2885
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 7,
@@ -59,8 +59,8 @@
     "dishId": 230,
     "partyPrice": 2885,
     "partyRevenue": 20195,
-    "profit": 20195,
-    "profitPerServing": 2885
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 8,
@@ -68,8 +68,8 @@
     "dishId": 98,
     "partyPrice": 2960,
     "partyRevenue": 26640,
-    "profit": 26640,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 9,
@@ -77,8 +77,8 @@
     "dishId": 114,
     "partyPrice": 2960,
     "partyRevenue": 26640,
-    "profit": 26640,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 10,
@@ -86,8 +86,8 @@
     "dishId": 247,
     "partyPrice": 2960,
     "partyRevenue": 17760,
-    "profit": 17760,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 11,
@@ -95,8 +95,8 @@
     "dishId": 172,
     "partyPrice": 2886,
     "partyRevenue": 20202,
-    "profit": 20202,
-    "profitPerServing": 2886
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 12,
@@ -104,8 +104,8 @@
     "dishId": 11,
     "partyPrice": 2812,
     "partyRevenue": 19684,
-    "profit": 19684,
-    "profitPerServing": 2812
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 13,
@@ -113,8 +113,8 @@
     "dishId": 112,
     "partyPrice": 2774,
     "partyRevenue": 16644,
-    "profit": 16644,
-    "profitPerServing": 2774
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 14,
@@ -122,8 +122,8 @@
     "dishId": 294,
     "partyPrice": 2738,
     "partyRevenue": 24642,
-    "profit": 24642,
-    "profitPerServing": 2738
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 15,
@@ -131,8 +131,8 @@
     "dishId": 134,
     "partyPrice": 702,
     "partyRevenue": 4212,
-    "profit": 4212,
-    "profitPerServing": 702
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 16,
@@ -140,8 +140,8 @@
     "dishId": 300,
     "partyPrice": 3014,
     "partyRevenue": 6028,
-    "profit": 6028,
-    "profitPerServing": 3014
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 17,
@@ -149,8 +149,8 @@
     "dishId": 189,
     "partyPrice": 2960,
     "partyRevenue": 17760,
-    "profit": 17760,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 18,
@@ -158,8 +158,8 @@
     "dishId": 292,
     "partyPrice": 2590,
     "partyRevenue": 15540,
-    "profit": 15540,
-    "profitPerServing": 2590
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 19,
@@ -167,8 +167,8 @@
     "dishId": 184,
     "partyPrice": 1664,
     "partyRevenue": 1664,
-    "profit": 1664,
-    "profitPerServing": 1664
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 20,
@@ -176,8 +176,8 @@
     "dishId": 151,
     "partyPrice": 1400,
     "partyRevenue": 14000,
-    "profit": 14000,
-    "profitPerServing": 1400
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 21,
@@ -185,8 +185,8 @@
     "dishId": 234,
     "partyPrice": 4290,
     "partyRevenue": 8580,
-    "profit": 8580,
-    "profitPerServing": 4290
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 22,
@@ -194,8 +194,8 @@
     "dishId": 118,
     "partyPrice": 4022.5,
     "partyRevenue": 24135,
-    "profit": 24135,
-    "profitPerServing": 4022.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 23,
@@ -203,8 +203,8 @@
     "dishId": 216,
     "partyPrice": 3607.5,
     "partyRevenue": 21645,
-    "profit": 21645,
-    "profitPerServing": 3607.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 24,
@@ -212,8 +212,8 @@
     "dishId": 209,
     "partyPrice": 3515,
     "partyRevenue": 24605,
-    "profit": 24605,
-    "profitPerServing": 3515
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 25,
@@ -221,8 +221,8 @@
     "dishId": 60,
     "partyPrice": 3422.5,
     "partyRevenue": 30802.5,
-    "profit": 30802.5,
-    "profitPerServing": 3422.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 26,
@@ -230,8 +230,8 @@
     "dishId": 294,
     "partyPrice": 3422.5,
     "partyRevenue": 30802.5,
-    "profit": 30802.5,
-    "profitPerServing": 3422.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 27,
@@ -239,8 +239,8 @@
     "dishId": 293,
     "partyPrice": 3145,
     "partyRevenue": 28305,
-    "profit": 28305,
-    "profitPerServing": 3145
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 28,
@@ -248,8 +248,8 @@
     "dishId": 235,
     "partyPrice": 3454,
     "partyRevenue": 6908,
-    "profit": 6908,
-    "profitPerServing": 3454
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 29,
@@ -257,8 +257,8 @@
     "dishId": 40,
     "partyPrice": 3144,
     "partyRevenue": 28296,
-    "profit": 28296,
-    "profitPerServing": 3144
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 30,
@@ -266,8 +266,8 @@
     "dishId": 127,
     "partyPrice": 2812,
     "partyRevenue": 25308,
-    "profit": 25308,
-    "profitPerServing": 2812
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 31,
@@ -275,8 +275,8 @@
     "dishId": 175,
     "partyPrice": 1442,
     "partyRevenue": 1442,
-    "profit": 1442,
-    "profitPerServing": 1442
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 32,
@@ -284,8 +284,8 @@
     "dishId": 128,
     "partyPrice": 998,
     "partyRevenue": 998,
-    "profit": 998,
-    "profitPerServing": 998
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 33,
@@ -293,8 +293,8 @@
     "dishId": 236,
     "partyPrice": 3410,
     "partyRevenue": 6820,
-    "profit": 6820,
-    "profitPerServing": 3410
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 34,
@@ -302,8 +302,8 @@
     "dishId": 79,
     "partyPrice": 3108,
     "partyRevenue": 21756,
-    "profit": 21756,
-    "profitPerServing": 3108
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 35,
@@ -311,8 +311,8 @@
     "dishId": 194,
     "partyPrice": 2960,
     "partyRevenue": 26640,
-    "profit": 26640,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 36,
@@ -320,8 +320,8 @@
     "dishId": 59,
     "partyPrice": 2960,
     "partyRevenue": 26640,
-    "profit": 26640,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 37,
@@ -329,8 +329,8 @@
     "dishId": 39,
     "partyPrice": 2960,
     "partyRevenue": 20720,
-    "profit": 20720,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 38,
@@ -338,8 +338,8 @@
     "dishId": 63,
     "partyPrice": 2922,
     "partyRevenue": 20454,
-    "profit": 20454,
-    "profitPerServing": 2922
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 39,
@@ -347,8 +347,8 @@
     "dishId": 123,
     "partyPrice": 2700,
     "partyRevenue": 27000,
-    "profit": 27000,
-    "profitPerServing": 2700
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 40,
@@ -356,8 +356,8 @@
     "dishId": 173,
     "partyPrice": 1420,
     "partyRevenue": 14200,
-    "profit": 14200,
-    "profitPerServing": 1420
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 41,
@@ -365,8 +365,8 @@
     "dishId": 240,
     "partyPrice": 1300,
     "partyRevenue": 13000,
-    "profit": 13000,
-    "profitPerServing": 1300
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 42,
@@ -374,8 +374,8 @@
     "dishId": 93,
     "partyPrice": 1200,
     "partyRevenue": 12000,
-    "profit": 12000,
-    "profitPerServing": 1200
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 43,
@@ -383,8 +383,8 @@
     "dishId": 246,
     "partyPrice": 554,
     "partyRevenue": 3878,
-    "profit": 3878,
-    "profitPerServing": 554
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 44,
@@ -392,8 +392,8 @@
     "dishId": 192,
     "partyPrice": 3144,
     "partyRevenue": 22008,
-    "profit": 22008,
-    "profitPerServing": 3144
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 45,
@@ -401,8 +401,8 @@
     "dishId": 110,
     "partyPrice": 3108,
     "partyRevenue": 31080,
-    "profit": 31080,
-    "profitPerServing": 3108
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 46,
@@ -410,8 +410,8 @@
     "dishId": 171,
     "partyPrice": 2960,
     "partyRevenue": 26640,
-    "profit": 26640,
-    "profitPerServing": 2960
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 47,
@@ -419,8 +419,8 @@
     "dishId": 206,
     "partyPrice": 2812,
     "partyRevenue": 2812,
-    "profit": 2812,
-    "profitPerServing": 2812
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 48,
@@ -428,8 +428,8 @@
     "dishId": 132,
     "partyPrice": 2774,
     "partyRevenue": 27740,
-    "profit": 27740,
-    "profitPerServing": 2774
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 49,
@@ -437,8 +437,8 @@
     "dishId": 36,
     "partyPrice": 1664,
     "partyRevenue": 16640,
-    "profit": 16640,
-    "profitPerServing": 1664
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 50,
@@ -446,8 +446,8 @@
     "dishId": 113,
     "partyPrice": 5890.5,
     "partyRevenue": 5890.5,
-    "profit": 5890.5,
-    "profitPerServing": 5890.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 51,
@@ -455,8 +455,8 @@
     "dishId": 299,
     "partyPrice": 5313,
     "partyRevenue": 10626,
-    "profit": 10626,
-    "profitPerServing": 5313
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 52,
@@ -464,8 +464,8 @@
     "dishId": 109,
     "partyPrice": 5113.5,
     "partyRevenue": 35794.5,
-    "profit": 35794.5,
-    "profitPerServing": 5113.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 53,
@@ -473,8 +473,8 @@
     "dishId": 33,
     "partyPrice": 4662,
     "partyRevenue": 41958,
-    "profit": 41958,
-    "profitPerServing": 4662
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 54,
@@ -482,8 +482,8 @@
     "dishId": 255,
     "partyPrice": 3948,
     "partyRevenue": 35532,
-    "profit": 35532,
-    "profitPerServing": 3948
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 55,
@@ -491,8 +491,8 @@
     "dishId": 107,
     "partyPrice": 3430,
     "partyRevenue": 30870,
-    "profit": 30870,
-    "profitPerServing": 3430
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 56,
@@ -500,8 +500,8 @@
     "dishId": 32,
     "partyPrice": 1746.5,
     "partyRevenue": 1746.5,
-    "profit": 1746.5,
-    "profitPerServing": 1746.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 57,
@@ -509,8 +509,8 @@
     "dishId": 254,
     "partyPrice": 1617,
     "partyRevenue": 1617,
-    "profit": 1617,
-    "profitPerServing": 1617
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 58,
@@ -518,8 +518,8 @@
     "dishId": 31,
     "partyPrice": 1228.5,
     "partyRevenue": 1228.5,
-    "profit": 1228.5,
-    "profitPerServing": 1228.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 59,
@@ -527,8 +527,8 @@
     "dishId": 253,
     "partyPrice": 1165.5,
     "partyRevenue": 1165.5,
-    "profit": 1165.5,
-    "profitPerServing": 1165.5
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 60,
@@ -536,8 +536,8 @@
     "dishId": 30,
     "partyPrice": 1036,
     "partyRevenue": 1036,
-    "profit": 1036,
-    "profitPerServing": 1036
+    "profit": null,
+    "profitPerServing": null
   },
   {
     "id": 61,
@@ -545,7 +545,7 @@
     "dishId": 252,
     "partyPrice": 945,
     "partyRevenue": 945,
-    "profit": 945,
-    "profitPerServing": 945
+    "profit": null,
+    "profitPerServing": null
   }
 ]

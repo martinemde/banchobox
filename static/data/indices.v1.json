@@ -14138,8 +14138,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 1,
@@ -14190,8 +14190,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 2,
@@ -14216,8 +14216,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 3,
@@ -14242,8 +14242,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 118,
@@ -14274,8 +14274,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 256,
@@ -14300,8 +14300,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 5,
@@ -14334,8 +14334,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 7,
@@ -14364,8 +14364,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 9,
@@ -14390,8 +14390,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 10,
@@ -14420,8 +14420,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 11,
@@ -14452,8 +14452,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 200,
@@ -14486,8 +14486,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 258,
@@ -14512,8 +14512,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 259,
@@ -14538,8 +14538,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 189,
@@ -14570,8 +14570,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 293,
@@ -14607,8 +14607,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 114,
@@ -14651,8 +14651,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 18,
@@ -14681,8 +14681,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 230,
@@ -14713,8 +14713,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 14,
@@ -14739,8 +14739,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 192,
@@ -14778,8 +14778,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 228,
@@ -14822,8 +14822,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 132,
@@ -14862,8 +14862,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 152,
@@ -14928,8 +14928,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 133,
@@ -14958,8 +14958,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 194,
@@ -14990,8 +14990,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 60,
@@ -15030,8 +15030,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 25,
@@ -15060,8 +15060,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 27,
@@ -15086,8 +15086,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 260,
@@ -15112,8 +15112,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 28,
@@ -15144,8 +15144,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 174,
@@ -15174,8 +15174,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 33,
@@ -15206,8 +15206,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 109,
@@ -15242,8 +15242,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 32,
@@ -15274,8 +15274,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 34,
@@ -15300,8 +15300,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 221,
@@ -15330,8 +15330,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 261,
@@ -15356,8 +15356,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 42,
@@ -15388,8 +15388,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 79,
@@ -15430,8 +15430,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 297,
@@ -15468,8 +15468,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 262,
@@ -15494,8 +15494,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 293,
@@ -15526,8 +15526,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 172,
@@ -15558,8 +15558,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 45,
@@ -15584,8 +15584,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 138,
@@ -15645,8 +15645,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 263,
@@ -15671,8 +15671,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 46,
@@ -15697,8 +15697,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 255,
@@ -15753,8 +15753,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 133,
@@ -15783,8 +15783,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 49,
@@ -15809,8 +15809,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 48,
@@ -15835,8 +15835,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 59,
@@ -15867,8 +15867,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 174,
@@ -15897,8 +15897,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 292,
@@ -15929,8 +15929,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 53,
@@ -15959,8 +15959,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 264,
@@ -15985,8 +15985,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 63,
@@ -16017,8 +16017,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 194,
@@ -16049,8 +16049,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 233,
@@ -16083,8 +16083,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 265,
@@ -16109,8 +16109,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 60,
@@ -16141,8 +16141,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 197,
@@ -16198,8 +16198,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 247,
@@ -16238,8 +16238,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 86,
@@ -16278,8 +16278,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 67,
@@ -16304,8 +16304,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 68,
@@ -16330,8 +16330,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 69,
@@ -16356,8 +16356,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 72,
@@ -16386,8 +16386,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 73,
@@ -16412,8 +16412,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 74,
@@ -16442,8 +16442,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 209,
@@ -16474,8 +16474,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 53,
@@ -16552,8 +16552,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 64,
@@ -16600,8 +16600,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 77,
@@ -16626,8 +16626,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 266,
@@ -16652,8 +16652,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 267,
@@ -16678,8 +16678,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 294,
@@ -16711,8 +16711,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 79,
@@ -16743,8 +16743,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 81,
@@ -16769,8 +16769,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 268,
@@ -16795,8 +16795,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 85,
@@ -16825,8 +16825,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 83,
@@ -16851,8 +16851,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 189,
@@ -16883,8 +16883,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 90,
@@ -16915,8 +16915,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 110,
@@ -16973,8 +16973,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 269,
@@ -16999,8 +16999,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 89,
@@ -17029,8 +17029,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 270,
@@ -17055,8 +17055,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 230,
@@ -17087,8 +17087,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 271,
@@ -17113,8 +17113,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 93,
@@ -17141,8 +17141,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 204,
@@ -17171,8 +17171,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 228,
@@ -17224,8 +17224,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 95,
@@ -17254,8 +17254,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 112,
@@ -17286,8 +17286,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 300,
@@ -17328,8 +17328,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 100,
@@ -17354,8 +17354,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 101,
@@ -17384,8 +17384,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 272,
@@ -17410,8 +17410,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 85,
@@ -17451,8 +17451,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 104,
@@ -17481,8 +17481,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 201,
@@ -17507,8 +17507,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 231,
@@ -17537,8 +17537,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 173,
@@ -17565,8 +17565,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 204,
@@ -17595,8 +17595,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 273,
@@ -17621,8 +17621,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 110,
@@ -17653,8 +17653,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 113,
@@ -17685,8 +17685,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 114,
@@ -17717,8 +17717,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 274,
@@ -17743,8 +17743,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 190,
@@ -17795,8 +17795,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 63,
@@ -17856,8 +17856,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 240,
@@ -17884,8 +17884,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 211,
@@ -17910,8 +17910,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 116,
@@ -17940,8 +17940,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 188,
@@ -17978,8 +17978,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 17,
@@ -18008,8 +18008,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 120,
@@ -18034,8 +18034,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 158,
@@ -18064,8 +18064,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 133,
@@ -18094,8 +18094,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 122,
@@ -18120,8 +18120,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 123,
@@ -18148,8 +18148,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 24,
@@ -18174,8 +18174,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 124,
@@ -18204,8 +18204,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 196,
@@ -18230,8 +18230,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 275,
@@ -18256,8 +18256,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 38,
@@ -18282,8 +18282,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 276,
@@ -18308,8 +18308,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 70,
@@ -18338,8 +18338,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 127,
@@ -18370,8 +18370,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 25,
@@ -18424,8 +18424,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 21,
@@ -18454,8 +18454,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 130,
@@ -18480,8 +18480,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 131,
@@ -18512,8 +18512,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 79,
@@ -18578,8 +18578,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 134,
@@ -18615,8 +18615,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 136,
@@ -18645,8 +18645,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 138,
@@ -18675,8 +18675,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 216,
@@ -18707,8 +18707,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 206,
@@ -18836,8 +18836,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 86,
@@ -18889,8 +18889,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 17,
@@ -18919,8 +18919,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 247,
@@ -18951,8 +18951,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 145,
@@ -18981,8 +18981,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 53,
@@ -19011,8 +19011,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 277,
@@ -19037,8 +19037,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 222,
@@ -19071,8 +19071,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 149,
@@ -19101,8 +19101,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 278,
@@ -19127,8 +19127,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 151,
@@ -19155,8 +19155,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 153,
@@ -19185,8 +19185,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 156,
@@ -19211,8 +19211,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 39,
@@ -19243,8 +19243,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 170,
@@ -19283,8 +19283,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 174,
@@ -19313,8 +19313,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 161,
@@ -19339,8 +19339,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 279,
@@ -19365,8 +19365,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 304,
@@ -19399,8 +19399,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 247,
@@ -19431,8 +19431,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 59,
@@ -19463,8 +19463,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 65,
@@ -19493,8 +19493,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 166,
@@ -19519,8 +19519,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 179,
@@ -19549,8 +19549,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 59,
@@ -19581,8 +19581,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 33,
@@ -19679,8 +19679,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 40,
@@ -19715,8 +19715,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 176,
@@ -19741,8 +19741,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 280,
@@ -19767,8 +19767,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 87,
@@ -19797,8 +19797,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 89,
@@ -19827,8 +19827,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 222,
@@ -19896,8 +19896,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 281,
@@ -19922,8 +19922,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 282,
@@ -19948,8 +19948,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 180,
@@ -19974,8 +19974,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 293,
@@ -20037,8 +20037,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 181,
@@ -20069,8 +20069,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 183,
@@ -20095,8 +20095,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 193,
@@ -20152,8 +20152,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 283,
@@ -20178,8 +20178,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 170,
@@ -20231,8 +20231,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 284,
@@ -20257,8 +20257,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 195,
@@ -20287,8 +20287,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 198,
@@ -20317,8 +20317,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 204,
@@ -20347,8 +20347,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 103,
@@ -20381,8 +20381,8 @@
       "night": false,
       "fog": false,
       "farm": "Gumo",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 40,
@@ -20422,8 +20422,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 41,
@@ -20512,8 +20512,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 296,
@@ -20542,8 +20542,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 169,
@@ -20583,8 +20583,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 285,
@@ -20609,8 +20609,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 286,
@@ -20635,8 +20635,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 158,
@@ -20669,8 +20669,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 70,
@@ -20699,8 +20699,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 70,
@@ -20733,8 +20733,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 155,
@@ -20763,8 +20763,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 220,
@@ -20793,8 +20793,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 287,
@@ -20819,8 +20819,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 223,
@@ -20845,8 +20845,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 224,
@@ -20871,8 +20871,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 225,
@@ -20897,8 +20897,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 231,
@@ -20927,8 +20927,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 118,
@@ -20959,8 +20959,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 288,
@@ -20985,8 +20985,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 118,
@@ -21017,8 +21017,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 217,
@@ -21043,8 +21043,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 102,
@@ -21089,8 +21089,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 134,
@@ -21130,8 +21130,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 289,
@@ -21156,8 +21156,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 222,
@@ -21192,8 +21192,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 290,
@@ -21218,8 +21218,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 192,
@@ -21251,8 +21251,8 @@
       "night": false,
       "fog": false,
       "farm": "Otto",
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 110,
@@ -21328,8 +21328,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 171,
@@ -21364,8 +21364,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 184,
@@ -21396,8 +21396,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 229,
@@ -21430,8 +21430,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 36,
@@ -21474,8 +21474,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 246,
@@ -21502,8 +21502,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 245,
@@ -21528,8 +21528,8 @@
       "night": true,
       "fog": true,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 291,
@@ -21554,8 +21554,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 212,
@@ -21580,8 +21580,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 248,
@@ -21606,8 +21606,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 249,
@@ -21632,8 +21632,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 250,
@@ -21658,8 +21658,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 41,
@@ -21688,8 +21688,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 107,
@@ -21720,8 +21720,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 255,
@@ -21752,8 +21752,8 @@
       "night": false,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 254,
@@ -21784,8 +21784,8 @@
       "night": true,
       "fog": false,
       "farm": null,
-      "jangoPurchase": null,
-      "ottoPurchase": null,
+      "buyJango": null,
+      "buyOtto": null,
       "usedIn": [
         {
           "dishId": 257,

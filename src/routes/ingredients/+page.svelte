@@ -1,5 +1,5 @@
 <script lang="ts">
-  import IngredientCard from '$lib/components/Ingredient.svelte';
+  import IngredientCard from '$lib/components/IngredientCard.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
   import { Data } from '$lib/data/runtime.js';
@@ -11,7 +11,6 @@
 
   // Base data
   const baseIngredients = $derived(Data.ingredients);
-  const totalIngredients = $derived(Data.getTotalIngredients());
 
   // Search state (by name only for ingredients page)
   let searchQuery = $state('');

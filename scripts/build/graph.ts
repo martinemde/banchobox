@@ -5,25 +5,25 @@
  */
 
 import type {
-  Dish,
-  Ingredient,
+  BasicDish,
+  BasicIngredient,
   Party,
   DishIngredient,
   DishParty,
   Graph,
   Id
-} from '../types.js';
+} from '../../src/lib/types.js';
 
 export function buildGraph(
-  dishes: Dish[],
-  ingredients: Ingredient[],
+  dishes: BasicDish[],
+  ingredients: BasicIngredient[],
   parties: Party[],
   dishIngredients: DishIngredient[],
   dishParties: DishParty[]
 ): Graph {
   // Create basic maps
-  const dishById = new Map<Id, Dish>();
-  const ingById = new Map<Id, Ingredient>();
+  const dishById = new Map<Id, BasicDish>();
+  const ingById = new Map<Id, BasicIngredient>();
   const partyById = new Map<Id, Party>();
 
   // Populate basic maps

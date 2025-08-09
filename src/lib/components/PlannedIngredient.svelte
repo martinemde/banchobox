@@ -1,11 +1,11 @@
 <script lang="ts">
-  import type { EnrichedIngredient, EnrichedDish } from '../types.js';
+  import type { Ingredient, Dish } from '../types.js';
   import { enhancedImageForFile } from '../images/index.js';
   import TrackButton from './TrackButton.svelte';
   import { trackedIngredientIds, trackedDishIds } from '$lib/stores/tracking.js';
   import { browser } from '$app/environment';
 
-  export let ingredient: EnrichedIngredient;
+  export let ingredient: Ingredient;
 
   let enhancedImage: string;
   $: enhancedImage = enhancedImageForFile(ingredient.image);
@@ -17,7 +17,7 @@
   }
 
   type TrackedUsage = {
-    dish: EnrichedDish;
+    dish: Dish;
     qty: number;
     upgrade: number;
   };

@@ -21,7 +21,7 @@ export function enhancedImageForFile(filename: string | null | undefined): strin
     throw new Error(`enhancedImageForFile: image not found for key ${key}`);
   }
   // Some bundlers expose the processed artifact at default, others inline it
-  if (typeof mod === 'object' && mod !== null && 'default' in (mod as any)) {
+  if (typeof mod === 'object' && mod !== null && 'default' in mod) {
     return (mod as { default: unknown }).default as unknown as string;
   }
   return mod as unknown as string;

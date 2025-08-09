@@ -1,25 +1,14 @@
 <script lang="ts">
-  import type { EnrichedIngredient, EnrichedDish } from '../types.js';
+  import type { Ingredient, Dish } from '../types.js';
   import { enhancedImageForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import { browser } from '$app/environment';
   import TrackButton from './TrackButton.svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
-  import {
-    ArchiveRestore,
-    ArchiveX,
-    ChevronsUp,
-    CookingPot,
-    Fish,
-    FishOff,
-    LeafyGreen,
-    Loader,
-    Shrimp,
-    Snowflake,
-    Wheat,
-  } from '@lucide/svelte';
+  import { ChevronsUp, CloudFog, Moon, Sun } from '@lucide/svelte';
+  import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
 
-  export let ingredient: EnrichedIngredient;
+  export let ingredient: Ingredient;
 
   let enhancedImage: string;
   $: enhancedImage = enhancedImageForFile(ingredient.image);
@@ -31,43 +20,24 @@
     return new Intl.NumberFormat().format(Math.round(value));
   }
 
-  $: costPerKg = (() => {
+  $: sellValuePerKg = (() => {
     if (ingredient.sell == null || ingredient.kg == null || ingredient.kg === 0) return null;
     return ingredient.sell / ingredient.kg;
   })();
 
-  function getTypeIcon(type?: string) {
-    if (!type) return null;
-    const key = type.toLowerCase();
-    switch (key) {
-      case 'aberration crab':
-        return FishOff;
-      case 'aberration crab':
-        return ArchiveX;
-      case 'crab trap':
-        return ArchiveRestore;
-      case 'fish':
-        return Fish;
-      case 'jango':
-        return Snowflake;
-      case 'net':
-        return Shrimp;
-      case 'seasoning':
-        return CookingPot;
-      case 'sea plant':
-        return LeafyGreen;
-      case 'vegetable':
-        return Wheat;
-      case 'urchin':
-        return Loader;
-      default:
-        return null;
-    }
-  }
+  $: buyText = (() => {
+    if (!ingredient) return null;
+    const parts: string[] = [];
+    if (ingredient.buyJango != null) parts.push(`${formatNumber(ingredient.buyJango)} from Jango`);
+    if (ingredient.buyOtto != null) parts.push(`${formatNumber(ingredient.buyOtto)} from Otto`);
+    if (parts.length === 0) return null;
+    return parts.join(' · ');
+  })();
+
 
 
   type RecipeRow = {
-    dish: EnrichedDish;
+    dish: Dish;
     count: number;
     level: number | null;
     upgradeCount: number | null;
@@ -111,21 +81,33 @@
           <h3 class="h5 m-0 truncate !leading-none">{ingredient.name}</h3>
         </div>
 
-        <div class="mt-1 *:text-xs opacity-80 flex flex-wrap items-center gap-x-3 gap-y-1">
-            <span>{ingredient.source}</span>
+        <div class="mt-1 *:text-xs opacity-80 flex flex-wrap items-center gap-1">
+          <span>{ingredient.source}</span>
+          {#if ingredient.day}
+            <span class="inline-flex items-center" title="Day"><Sun size={16} /></span>
+          {/if}
+          {#if ingredient.night}
+            <span class="inline-flex items-center" title="Night"><Moon size={16} /></span>
+          {/if}
+          {#if ingredient.fog}
+            <span class="inline-flex items-center" title="Fog"><CloudFog size={16} /></span>
+          {/if}
         </div>
 
         <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
           <span>
-            Sell: {ingredient.sell != null ? `${formatNumber(ingredient.sell)}g` : '—'}
+            Sell: {ingredient.sell != null ? formatNumber(ingredient.sell) : '—'}
           </span>
-          <span>Buy: —</span>
+
+          {#if ingredient.kg != null}
+            <span class="opacity-80">({sellValuePerKg != null ? `${formatNumber(sellValuePerKg)}/kg` : ''})</span>
+            <span>Weight: {ingredient.kg != null ? `${ingredient.kg}kg` : '—'}</span>
+          {/if}
         </div>
 
-        {#if ingredient.kg != null}
+        {#if buyText}
           <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
-              <span>Weight: {ingredient.kg != null ? `${ingredient.kg}kg` : '—'}</span>
-              <span class="opacity-80">{costPerKg != null ? `${formatNumber(costPerKg)}g/kg` : ''}</span>
+            <span>Buy: {buyText}</span>
           </div>
         {/if}
       </div>
@@ -138,7 +120,7 @@
           </button>
         {/if}
         {#if ingredient.type}
-          {@const TypeIcon = getTypeIcon(ingredient.type)}
+          {@const TypeIcon = getIngredientTypeIcon(ingredient.type)}
           {#if TypeIcon}
             <button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
               <TypeIcon size={24} class="opacity-80" />

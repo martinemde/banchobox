@@ -24,7 +24,7 @@
   $: formattedCostTotal = totalCost == null ? '—' : `-${formatNumber(totalCost)}`;
 </script>
 
-<table class="w-full table-auto text-sm">
+<table class="w-64 shrink-0 table-auto text-sm">
   <tbody>
     <tr>
       <td class="text-xs opacity-70">Price</td>

@@ -1,229 +1,229 @@
-id,name,source,type,drone,kg,max_meats,sell,day,night,fog,rank,farm,jango_purchase,otto_purchase,image
-1,Agar,0-50m,Sea Plant,,0.1,1,3,,,,2,Gumo,,,agar.png
-2,Alaska Pollock,Glacial Area,Fish,,7.0,5,45,TRUE,,,8,,,,alaska_pollock.png
-3,Allenypterus,Hydrothermal Vents,Fish,,4.0,3,42,TRUE,,,9,,,,allenypterus.png
-4,American Lobster,0-50m,Crab trap,,1.0,3,43,TRUE,,,8,,,,american_lobster.png
-5,Anomalocaris,Hydrothermal Vents,Fish,,4.0,3,75,TRUE,,,9,,,,anomalocaris.png
-6,Antarctic Octopus,Glacial Area,Fish,,7.5,5,40,TRUE,,,9,,,,antarctic_octopus.png
-7,Arctic Cod,Glacial Area,Fish,,5.0,3,32,TRUE,,,8,,,,arctic_cod.png
-8,Arctic Telescope Fish,Glacial Area,Fish,,3.0,3,40,TRUE,,,8,,,,arctic_telescope_fish.png
-9,Atlantic Anglerfish,Limestone Cave,Fish,,5.5,5,11,TRUE,,,4,,,,atlantic_anglerfish.png
-10,Atlantic Bonito,50-130m,Fish,,4.0,3,7,TRUE,,,2,,,,atlantic_bonito.png
-11,Atlantic Mackerel,50-130m,Fish,,3.5,3,7,TRUE,,,3,,,,atlantic_mackerel.png
-12,Aurora Jellyfish,Jellyfish Basin,Aberration,,5.0,5,,,TRUE,TRUE,5,,,,aurora_jellyfish.png
-13,Barbed Eel,Fog Coast,Aberration,,6.0,,,,TRUE,TRUE,7,,,,barbed_eel.png
-14,Barrel Jellyfish,0-50m,Fish,,1.0,3,5,TRUE,,,2,,,,barrel_jellyfish.png
-15,Barreleye,Glacial Passage,Fish,,3.0,3,35,TRUE,,,7,,,,barreleye.png
-16,Bean,Vegetable Farm,Vegetable Farm,,,,20,,,,4,Otto,170,200,bean.png
-17,Bigeye Scad,50-130m,Fish,,0.6,3,6,TRUE,,,1,,,,bigeye_scad.png
-18,Bigeye Trevally,50-130m,Fish,,3.0,5,6,TRUE,,,2,,,,bigeye_trevally.png
-19,Black and White Snapper,0-50m,Fish,,1.0,5,3,TRUE,,,1,,,,black_and_white_snapper.png
-20,Black Coral,Glacial Area,Sea plant,,0.1,1,8,,,,2,Gumo,,,black_coral.png
-21,Black Pepper,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,1,,60,,black_pepper.png
-22,Black Tiger Shrimp,50-130m,Net,,0.1,5,17,TRUE,,,5,,,,black_tiger_shrimp.png
-23,Black Vinegar,Dispatch & Cooking Pots,Procure,,0.1,1,5,,,,1,,50,,black_vinegar.png
-24,Blackfin Barracuda,50-130m,Fish,,5.5,5,20,,TRUE,,5,,,,blackfin_barracuda.png
-25,Blacktip Shark Meat,0-50m,Fish,TRUE,2.5,5,20,,TRUE,,6,,,,blacktip_reefshark.png
-26,Bladderwrack,Glacial Seaweed Cave,Sea plant,,0.1,1,10,,,,2,Gumo,,,bladderwrack.png
-27,Blobfish,Glacial Passage,Fish,,7.5,5,40,TRUE,,,7,,,,blobfish.png
-28,Blood-belly Comb Jellyfish,130-250m,Fish,,7.0,3,17,,,,6,,,,blood-belly_comb_jellyfish.png
-29,Bloodskin Shark,Fog Coast,Aberration,TRUE,11.5,5,,,TRUE,TRUE,9,,,,bloodskin_shark.png
-30,Blue Lobster,0-50m,Crab trap,,1.0,3,47,,TRUE,,8,,,,blue_lobster.png
-31,Blue Tang,0-50m,Fish,,0.5,3,2,TRUE,,,1,,,,blue_tang.png
-32,Bluefin Tuna Akami,0-130m,Fish,TRUE,8.0,5,27,TRUE,,,7,,,,bluefin_tuna.png
-33,Bluefin Tuna Chutoro,0-130m,Fish,TRUE,8.0,5,32,TRUE,,,7,,,,bluefin_tuna.png
-34,Bluefin Tuna Ootoro,0-130m,Fish,TRUE,,9,45,TRUE,,,7,,,,bluefin_tuna.png
-35,Bluehead Tilefish,50-130m,Fish,,0.2,2,5,TRUE,,,1,,,,bluehead_tilefish.png
-36,Bluespotted Stargazer,130-250m,Fish,,5.0,0,18,TRUE,,,6,,,,bluespotted_stargazer.png
-37,Bony Wreckfish,Black Cliff,Aberration,TRUE,8.0,,,,TRUE,TRUE,7,,,,bony_wreckfish.png
-38,Box Jellyfish,0-50m,Fish,,5.0,3,18,,TRUE,,5,,,,box_jellyfish.png
-39,Buckbean,Glacial Area,Sea Plant,,0.1,1,9,,,,4,Gumo,,,buckbean.png
-40,Buckwheat,Vegetable Farm,Vegetable Farm,,,,18,,,,4,Otto,,185,buckwheat.png
-41,Bursting Anglerfish,Jellyfish Basin,Aberration,,6.0,5,,,TRUE,TRUE,7,,,,bursting_anglerfish.png
-42,California Spiny Lobster,50-130m,Crab trap,,1.5,3,22,TRUE,,,5,,,,california_spiny_lobster.png
-43,Capelin,Glacial Area,Fish,,0.5,3,15,TRUE,,,8,,,,capelin.png
-44,Cardinal Fish,0-50m,Fish,,0.2,3,1,,,,1,,,,cardinal_fish.png
-45,Carrot,Vegetable Farm,Vegetable Farm,,,,25,,,,4,Otto,106,250,carrot.png
-46,Cerebral Crab,Fog Coast,Aberration Crab,,2.0,,,,TRUE,TRUE,7,,,,cerebral_crab.png
-47,Chambered Nautilus,130-250m,Net,,1.0,3,12,TRUE,,,5,,,,chambered_nautilus.png
-48,Cherry Tomato,Vegetable Farm,Vegetable Farm,,,,17,,,,4,Otto,148,175,cherry_tomato.png
-49,Clearfin Lionfish,0-50m,Fish,,1.7,3,8,,TRUE,,4,,,,clearfin_lionfish.png
-50,Clione,130-250m,Net,,0.1,4,25,TRUE,,,5,,,,clione.png
-51,Clione Queen Tentacle,130-250m,Boss,,1.0,1,,,,,99,,,,clione_queen_tentacle.png
-52,Clown Frogfish,50-130m,Fish,,0.3,3,5,TRUE,,,1,,,,clown_frogfish.png
-53,Clownfish,0-50m,Fish,,0.2,2,1,TRUE,,,1,,,,clownfish.png
-54,Comb Jelly,130-250m,Fish,,7.0,3,14,TRUE,,,6,,,,comb_jelly.png
-55,Comber,0-50m,Fish,,0.2,2,1,TRUE,,,1,,,,comber.png
-56,Concertina Barracuda,Jellyfish Basin,Aberration,,6.5,5,,,TRUE,TRUE,8,,,,concertina_barracuda.png
-57,Cookiecutter Shark,130-250m,Fish,,5.0,3,25,TRUE,,,6,,,,cookiecutter_shark.png
-58,Copper Shark Meat,0-50m,Fish,TRUE,4.0,5,22,,TRUE,,6,,,,copper_shark.png
-59,Coral Trout,50-130m,Fish,,3.0,5,6,TRUE,,,2,,,,coral_trout.png
-60,Cortex Decorator,Black Cliff,Aberration Crab,,2.5,,,,TRUE,TRUE,7,,,,cortex_decorator.png
-61,Crystal Lobster,50-130m,Crab trap,,1.5,3,47,,TRUE,,8,,,,crystal_lobster.png
-62,Cucumber,Vegetable Farm,Vegetable Farm,,,,20,,,,4,Otto,,200,cucumber.png
-63,Curry Block,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,1,,60,,curry_block.png
-64,Cuttlefish,50-130m,Fish,,4.0,3,6,TRUE,,,2,,,,cuttlefish.png
-65,Devil Scorpionfish,50-130m,Fish,,3.0,3,45,,TRUE,,8,,,,devil_scorpionfish.png
-66,Dollocaris Ingens,Hydrothermal Vents,Crab trap,,1.5,3,45,TRUE,,,8,,,,dollocaris_ingens.png
-67,Drepanaspis Meat,Hydrothermal Vents,Fish,TRUE,8.5,5,50,TRUE,,,9,,,,drepanaspis.png
-68,Dumbo Octopus,Glacial Passage,Fish,,4.0,3,38,TRUE,,,7,,,,dumbo_octopus.png
-69,Dunkleosteus Meat,Hydrothermal Vents,Fish,TRUE,19.5,5,70,TRUE,,,9,,,,dunkleosteus.png
-70,Dusky Grouper,50-130m,Fish,,9.0,5,10,TRUE,,,3,,,,dusky_grouper.png
-71,Eastern Rock Lobster,130-250m,Crab trap,,2.5,3,47,TRUE,,,8,,,,eastern_rock_lobster.png
-72,Egg,Vegetable Farm,Vegetable Farm,,,,15,,,,4,Otto,63,75,egg.png
-73,Eggplant,Vegetable Farm,Vegetable Farm,,,,21,,,,4,Otto,178,210,eggplant.png
-74,Emperor Angelfish,0-50m,Fish,,0.4,0,3,TRUE,,,1,,,,emperor_angelfish.png
-75,Entangled Crab,Jellyfish Basin,Aberration Crab,,2.5,3,,,TRUE,TRUE,8,,,,entangled_crab.png
-76,Enthralled Stonefish,Black Cliff,Aberration,,8.0,,,,TRUE,TRUE,6,,,,enthralled_stonefish.png
-77,European Lobster,0-50m,Crab trap,,1.0,3,23,TRUE,,,5,,,,european_lobster.png
-78,Falcatus,Hydrothermal Vents,Fish,,6.0,3,43,TRUE,,,9,,,,falcatus.png
-79,Fan Lobster,50-130m,Crab trap,,0.2,3,22,,TRUE,,5,,,,fan_lobster.png
-80,Fanged Cod,Fog Coast,Aberration,,3.5,,,,TRUE,TRUE,5,,,,fanged_cod.png
-81,Fangtooth,130-250m,Fish,,3.0,3,15,TRUE,,,5,,,,fangtooth.png
-82,Flame Angelfish,0-50m,Fish,,0.2,0,2,TRUE,,,1,,,,flame_angelfish.png
-83,Fried Egg Jellyfish,0-50m,Fish,,1.0,3,5,TRUE,,,2,,,,fried_egg_jellyfish.png
-84,Frilled Shark Meat,130-250m,Fish,TRUE,8.5,5,28,TRUE,,,7,,,,frilled_shark.png
-85,Garlic,Vegetable Farm,Vegetable Farm,,,,19,,,,4,Otto,161,190,garlic.png
-86,Gazing Shark,Jellyfish Basin,Aberration,TRUE,11.0,5,,,TRUE,TRUE,9,,,,gazing_shark.png
-87,Gelatinous Snailfish,Glacial Area,Fish,,2.0,3,28,TRUE,,,8,,,,gelatinous_snailfish.png
-88,Gelatinous Stonefish,Black Cliff,Aberration,,7.5,,,,TRUE,TRUE,5,,,,gelatinous_stonefish.png
-89,Giant Trevally Meat,50-130m,Fish,TRUE,5.0,5,10,TRUE,,,4,,,,giant_trevally_meat.png
-90,Gnashing Perch,Black Cliff,Aberration,,4.5,,,,TRUE,TRUE,6,,,,gnashing_perch.png
-91,Goblin Shark's Fatty Meat,130-250m,Boss,,1.0,1,,,,,99,,,,goblin_shark_s_fatty_meat.png
-92,Golden King Crab,Glacial Area,Fish,,8.0,5,45,TRUE,,,8,,,,golden_king_crab.png
-93,Grade A Egg,Vegetable Farm,Vegetable Farm,,,,90,,,,4,Otto,382,450,grade_a_egg.png
-94,Great Barracuda,50-130m,Fish,,7.0,5,6,TRUE,TRUE,,3,,,,great_barracuda.png
-95,Green Humphead Parrotfish,0-50m,Fish,TRUE,1.8,5,5,TRUE,,,3,,,,green_humphead_parrotfish.png
-96,Green Sea Urchin,0-50m,Urchin,,1.0,1,90,TRUE,TRUE,,5,,,,green_sea_urchin.png
-97,Greenland Shark Meat,Glacial Area,Fish,TRUE,20.0,5,62,TRUE,,,9,,,,greenland_shark.png
-98,Grey Triggerfish,50-130m,Fish,,3.5,5,6,TRUE,,,2,,,,grey_triggerfish.png
-99,Grotesque Mackerel,Fog Coast,Aberration,,3.0,,,,TRUE,TRUE,5,,,,grotesque_mackerel.png
-100,Habanero,Vegetable Farm,Vegetable Farm,,,,16,,,,4,Otto,153,180,habanero.png
-101,Haddock,Glacial Area,Fish,,6.0,5,37,TRUE,,,8,,,,haddock.png
-102,Hammerhead Meat,50-130m,Fish,TRUE,13.0,5,47,TRUE,,,9,,,,smooth_hammerhead.png
-103,Harlequin Hind,50-130m,Fish,,1.1,5,6,TRUE,,,2,,,,harlequin_hind.png
-104,Helicoprion Tail,3rd Glacial Cave,Boss,,1.0,1,,TRUE,,,99,,,,helicoprion_tail.png
-105,Horsehair Crab,Glacial Area,Crab trap,,1.5,3,50,TRUE,,,9,,,,horsehair_crab.png
-106,Host Eel,Fog Coast,Aberration,,5.5,,,,TRUE,TRUE,8,,,,host_eel.png
-107,Humboldt Squid Meat,50-130m,Fish,TRUE,7.5,5,48,,TRUE,,8,,,,humboldt_squid.png
-108,Hyalonema,Glacial Seaweed Cave,Sea plant,,0.1,1,65,,,,3,Gumo,,,hyalonema.png
-109,Ice Fish,Glacial Area,Fish,,5.5,3,32,TRUE,,,8,,,,ice_fish.png
-110,Imperious Lobster,Jellyfish Basin,Aberration Crab,,3.0,,,,TRUE,TRUE,9,,,,imperious_lobster.png
-111,Kajime,0-130m,Sea plant,,0.1,1,7,,,,2,Gumo,,,kajime.png
-112,Kelp,50-130m,Sea plant,,0.1,1,6,,,,2,Gumo,,,kelp.png
-113,Klaus's Fin,0-50m,Boss,,1.0,1,,,TRUE,,99,,,,klaus_s_fin.png
-114,Kronosaurus Tongue,Hydrothermal Vents,Boss,,1.0,1,,,,,99,,,,kronosaurus_tongue.png
-115,Lagoon Triggerfish,0-50m,Fish,,0.7,2,2,TRUE,,,1,,,,lagoon_triggerfish.png
-116,Long-Snouted Seahorse,0-50m,Fish,,0.5,0,2,TRUE,,,4,,,,long-snouted_seahorse.png
-117,Longfin Batfish,0-50m,Fish,,0.8,5,3,TRUE,,,1,,,,longfin_batfish.png
-118,Longnose Sawshark Meat,50-130m,Fish,TRUE,6.5,5,12,TRUE,TRUE,,6,,,,longnose_sawshark.png
-119,Longspine Porcupinefish,0-50m,Fish,,3.5,3,26,,TRUE,,5,,,,longspine_porcupinefish.png
-120,Longspine Squirrelfish,0-50m,Fish,,0.4,3,3,,TRUE,,5,,,,longspine_squirrelfish.png
-121,Lumpfish,Hydrothermal Vents,Fish,,5.0,3,40,TRUE,,,8,,,,lumpfish.png
-122,Lusca Neck Meat,50-130m,Boss,,1.0,1,,,TRUE,,99,,,,lusca_neck_meat.png
-123,Lusca Tentacle,50-130m,Boss,,1.0,1,,,TRUE,,99,,,,lusca_tentacle.png
-124,Mackerel Scad,50-130m,Fish,,0.8,2,5,TRUE,,,1,,,,mackerel_scad.png
-125,Mako Meat,0-50m,Fish,TRUE,9.0,5,43,TRUE,,,8,,,,shortfin_mako.png
-126,Malignant Pincer,Fog Coast,Aberration,,2.5,,,,TRUE,TRUE,8,,,,malignant_pincer.png
-127,Mantis Shrimp Meat,0-50m,Boss,,1.0,1,,,TRUE,,99,,,,mantis_shrimp_meat.png
-128,Many Eyed Mackerel,Fog Coast,Aberration,,2.5,,,,TRUE,TRUE,6,,,,many_eyed_mackerel.png
-129,Marbled Electric Ray Meat,0-50m,Fish,TRUE,3.5,5,30,TRUE,,,6,,,,marbled_electric_ray_meat.png
-130,Marlin Meat,0-50m,Fish,TRUE,7.5,5,45,TRUE,,,8,,,,marlin.png
-131,Mayonnaise,Dispatch & Cooking Pots,Procure,,0.1,1,7,,,,1,,70,,mayonnaise.png
-132,Mediterranean Parrotfish,0-50m,Fish,,2.0,5,3,TRUE,,,1,,,,mediterranean_parrotfish.png
-133,Megalograptus,Divine Tree Control Room,Fish,,8.0,5,46,TRUE,,,9,,,,megalograptus.png
-134,Megamouth Shark Meat,130-250m,Fish,TRUE,11.5,5,31,TRUE,,,7,,,,megamouth_shark.png
-135,Miso,Dispatch & Cooking Pots,Procure,,0.1,1,8,,,,1,,80,,miso.png
-136,Moray Eel,0-50m,Fish,,9.0,0,17,,TRUE,,5,,,,moray_eel.png
-137,Narrow-barred Spanish Mackerel,50-130m,Fish,,9.0,5,10,TRUE,,,3,,,,narrow-barred_spanish_mackerel.png
-138,Narwhal Meat,Glacial Area,Fish,TRUE,9.5,5,46,TRUE,,,9,,,,narwhal.png
-139,Norway Lobster,130-250m,Crab trap,,0.2,3,25,TRUE,,,5,,,,norway_lobster.png
-140,Olive Oil,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,1,,60,,olive_oil.png
-141,Onion,Vegetable Farm,Vegetable Farm,,,,20,,,,4,Otto,170,200,onion.png
-142,Orbicular Batfish,0-50m,Fish,,0.3,2,2,TRUE,,,1,,,,orbicular_batfish.png
-143,Ornate Wrasse,0-50m,Fish,,0.5,2,2,TRUE,,,1,,,,ornate_wrasse.png
-144,Pacific Fanfish,130-250m,Fish,,5.0,3,22,TRUE,,,5,,,,pacific_fanfish.png
-145,Painted Comber,50-130m,Fish,,0.4,3,6,TRUE,,,1,,,,painted_comber.png
-146,Parhelion Jellyfish,Jellyfish Basin,Aberration,,5.0,5,,,TRUE,TRUE,5,,,,parhelion_jellyfish.png
-147,Peacock Squid,Glacial Passage,Fish,,3.5,3,36,TRUE,,,7,,,,peacock_squid.png
-148,Pelican Eel,Glacial Passage,Fish,,8.0,5,60,TRUE,,,9,,,,pelican_eel.png
-149,Perished Loosejaw,Jellyfish Basin,Aberration,,3.0,5,,,TRUE,TRUE,6,,,,perished_loosejaw.png
-150,Phantom Jellyfish Meat,Second Glacial Cave,Boss,,1.0,1,,TRUE,,,99,,,,phantom_jellyfish_meat.png
-151,Pikaia,Hydrothermal Vents,Fish,,4.5,3,38,TRUE,,,9,,,,pikaia.png
-152,Polar Eelpout,Glacial Area,Fish,,3.0,3,30,TRUE,,,8,,,,polar_eelpout.png
-153,Porbeagle Shark Meat,Glacial Area,Fish,TRUE,13.5,5,55,TRUE,,,9,,,,porbeagle_shark.png
-154,Purple Sea Urchin,0-50m,Urchin,,1.0,1,20,TRUE,TRUE,,5,,,,purple_sea_urchin.png
-155,Pyramid Butterflyfish,0-50m,Fish,,0.4,2,1,TRUE,,,1,,,,pyramid_butterflyfish.png
-156,Qingmendous,Hydrothermal Vents,Fish,,6.0,0,40,TRUE,,,9,,,,qingmendous.png
-157,Radiant Squid,Jellyfish Basin,Aberration,,4.5,3,,,TRUE,TRUE,5,,,,radiant_squid.png
-158,Rainbow Cap,Jango,Jango,,,,750,,,,1,,750,,rainbow_cap.png
-159,Rainbow Wrasse,0-50m,Fish,,0.6,2,2,TRUE,,,1,,,,rainbow_wrasse.png
-160,Red Bream,130-250m,Fish,,3.0,3,12,TRUE,,,5,,,,red_bream.png
-161,Red Lionfish,0-50m,Fish,,1.5,3,3,TRUE,TRUE,,2,,,,red_lionfish.png
-162,Red-banded Lobster,0-50m,Crab trap,,0.1,3,25,,TRUE,,5,,,,red-banded_lobster.png
-163,Redtoothed Triggerfish,0-50m,Fish,,1.0,5,3,TRUE,,,1,,,,redtoothed_triggerfish.png
-164,Rhinochimaeridae Meat,130-250m,Fish,TRUE,5.0,7,30,TRUE,,,6,,,,rhinochimaeridae.png
-165,Rice,Vegetable Farm,Vegetable Farm,,,,15,,,,3,Otto,,,rice.png
-166,Sailfish Meat,Shipwreck Interior,Fish,TRUE,9.0,5,65,TRUE,,,9,,,,sailfish.png
-167,Salema Porgy,0-50m,Fish,,0.4,3,2,TRUE,,,1,,,,salema_porgy.png
-168,Sallow Sailfish,Fog Coast,Aberration,TRUE,9.5,5,,,TRUE,TRUE,9,,,,sallow_sailfish.png
-169,Sally Lightfoot Crab,Shipwreck Interior,Fish,,4.0,5,18,TRUE,,,7,,,,sally_lightfoot_crab.png
-170,Salmon Snailfish,130-250m,Fish,,5.0,3,20,TRUE,,,5,,,,salmon_snailfish.png
-171,Salt,Dispatch & Cooking Pots,Procure,,0.1,1,8,,,,1,,80,,salt.png
-172,Savage Barracuda,Jellyfish Basin,Aberration,,7.0,5,,,TRUE,TRUE,7,,,,savage_barracuda.png
-173,Scouring Bass,Black Cliff,Aberration,,3.5,,,,TRUE,TRUE,5,,,,scouring_bass.png
-174,Sea Goldie,0-50m,Fish,,0.3,2,1,TRUE,,,1,,,,sea_goldie.png
-175,Sea Grape,Limestone Cave,Sea Plant,,0.1,1,6,,,,2,Gumo,,,sea_grape.png
-176,Sea Toad,130-250m,Fish,,5.0,3,18,TRUE,,,5,,,,sea_toad.png
-177,Seadragon,Hydrothermal Vents,Net,,0.5,4,35,,,,8,,,,weedy_seadragon.png
-178,Seaweed,50-130m,Sea plant,,0.1,1,5,,,,2,Gumo,,,seaweed.png
-179,Seizing Snailfish,Jellyfish Basin,Aberration,,5.0,3,,,TRUE,TRUE,6,,,,seizing_snailfish.png
-180,Sesame Seed,Dispatch & Cooking Pots,Procure,,0.1,1,8,,,,1,,80,,sesame_seed.png
-181,Shattered Wreckfish,Black Cliff,Aberration,,6.5,5,,,TRUE,TRUE,6,,,,shattered_wreckfish.png
-182,Sheepshead Meat,0-50m,Fish,TRUE,1.8,5,10,TRUE,,,5,,,,sheepshead.png
-183,Small Spotted Dart,0-50m,Fish,,0.8,3,2,TRUE,,,1,,,,small_spotted_dart.png
-184,Snow Crab,Glacial Area,Crab trap,,2.0,3,40,TRUE,,,8,,,,snow_crab.png
-185,Snub-nosed Spiny Eel,3rd Glacial Cave,Fish,,6.5,5,60,,,,9,,,,snub-nosed_spiny_eel.png
-186,Southern Bull Kelp,Glacial Area,Sea plant,,0.1,1,8,,,,2,Gumo,,,southern_bull_kelp.png
-187,Soy Sauce,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,1,,60,,soy_sauce.png
-188,Spear Squid,50-130m,Fish,,4.6,3,17,,TRUE,,5,,,,spear_squid.png
-189,Spider Crab,130-250m,Fish,,7.5,5,17,TRUE,,,6,,,,spider_crab.png
-190,Splintered Crab,Black Cliff,Aberration Crab,,3.5,,,,TRUE,TRUE,8,,,,splintered_crab.png
-191,Sprouting Eel,Black Cliff,Aberration,TRUE,7.0,5,,,TRUE,TRUE,7,,,,sprouting_eel.png
-192,Starry Puffer,0-50m,Fish,,3.0,3,15,TRUE,TRUE,,3,,,,starry_puffer.png
-193,Starry Skate,Glacial Area,Fish,TRUE,5.5,5,44,TRUE,,,9,,,,starry_skate.png
-194,Stingray Meat,0-50m,Fish,TRUE,3.0,5,17,TRUE,,,6,,,,stingray_meat.png
-195,Striped Catfish,0-50m,Fish,,0.3,0,2,TRUE,,,5,,,,striped_catfish.png
-196,Striped Red Mullet,50-130m,Fish,,0.7,0,5,TRUE,,,1,,,,striped_red_mullet.png
-197,Three-Headed Cod,Fog Coast,Aberration,,6.0,,,,TRUE,TRUE,6,,,,three-headed_cod.png
-198,Threetooth Puffer,130-250m,Fish,,5.0,3,23,TRUE,,,5,,,,threetooth_puffer.png
-199,Thresher Shark Meat,0-50m,Fish,TRUE,8.5,5,53,TRUE,,,9,,,,thresher_shark.png
-200,Tiger Shark Meat,50-130m,Fish,TRUE,15.0,5,17,TRUE,TRUE,,6,,,,tiger_shark_meat.png
-201,Titan Triggerfish,0-50m,Fish,,3.8,5,5,TRUE,TRUE,,2,,,,titan_triggerfish.png
-202,Tokummia Katalepsis,Hydrothermal Vents,Crab trap,,2.0,3,55,TRUE,,,9,,,,tokummia_katalepsis.png
-203,Translucent Sturgeon,Black Cliff,Aberration,TRUE,8.0,5,,,TRUE,TRUE,9,,,,translucent_sturgeon.png
-204,Tropical Rock Lobster,50-130m,Crab trap,,1.2,3,45,TRUE,,,8,,,,tropical_rock_lobster.png
-205,Truck Hermit Crab Legs,0-50m,Boss,,1.0,1,,,TRUE,,99,,,,truck_hermit_crab_legs.png
-206,Truffle,Jango,Jango,,,,650,,,,1,,650,,truffle.png
-207,Turmeric,Dispatch & Cooking Pots,Procure,,0.1,1,5,,,,1,,50,,turmeric.png
-208,Tusked Grouper,Fog Coast,Aberration,,5.0,,,,TRUE,TRUE,6,,,,tusked_grouper.png
-209,Vampire Squid,Glacial Passage,Fish,,6.0,5,41,TRUE,,,8,,,,vampire_squid.png
-210,Voltaic Grouper,Fog Coast,Aberration,,6.0,,,,TRUE,TRUE,7,,,,voltaic_grouper.png
-211,Waptia Fieldensis,Hydrothermal Vents,Net,,0.4,5,34,TRUE,,,9,,,,waptia_fieldensis.png
-212,Wheat,Vegetable Farm,Vegetable Farm,,,,19,,,,4,Otto,161,190,wheat.png
-213,White Shrimp,0-130m,Net,,0.1,5,17,TRUE,TRUE,,7,,,,white_shrimp.png
-214,White Spotted Jellyfish,50-130m,Fish,,1.0,3,6,TRUE,,,2,,,,white_spotted_jellyfish.png
-215,White Trevally,50-130m,Fish,,6.0,5,7,TRUE,,,2,,,,white_trevally.png
-216,Whiteleg Shrimp,0-50m,Net,,0.1,0,11,TRUE,,,5,,,,whiteleg_shrimp.png
-217,Whitetip Reefshark Head,0-50m,Fish,TRUE,2.5,1,40,TRUE,TRUE,,4,,,,whitetip_reefshark_head.png
-218,Whitetip Reefshark Meat,0-50m,Fish,TRUE,2.5,5,8,TRUE,TRUE,,4,,,,whitetip_reefshark_meat.png
-219,Withered Ray,Black Cliff,Aberration,TRUE,8.5,5,,,TRUE,TRUE,9,,,,withered_ray.png
-220,Wolf Eel Tail Meat,130-250m,Boss,,1.0,1,,,,,99,,,,wolf_eel_tail_meat.png
-221,Xenacanthus Meat,Hydrothermal Vents,Fish,TRUE,5.5,5,53,TRUE,,,9,,,,xenacanthus.png
-222,Yawie's Inner Flesh,Divine Tree Control Room,Boss,,1.0,1,,,,,99,,,,yawie_s_inner_flesh.png
-223,Yellow Tang,0-50m,Fish,,0.4,2,1,TRUE,,,1,,,,yellow_tang.png
-224,Yellowback Fusilier,0-50m,Fish,,0.8,2,2,TRUE,,,1,,,,yellowback_fusilier.png
-225,Yellowfin Tuna Akami,0-130m,Fish,TRUE,6.0,5,24,TRUE,,,7,,,,yellowfin_tuna.png
-226,Yellowfin Tuna Chutoro,0-130m,Fish,TRUE,6.0,5,30,TRUE,,,7,,,,yellowfin_tuna.png
-227,Yellowfin Tuna Ootoro,0-130m,Fish,TRUE,,9,42,TRUE,,,7,,,,yellowfin_tuna.png
-228,Zebra Shark Meat,0-50m,Fish,TRUE,10.5,5,42,,TRUE,,8,,,,zebra_shark.png
+id,name,source,type,drone,kg,max_meats,day,night,fog,rank,farm,buy_jango,buy_otto,sell,cost,image
+12,Aurora Jellyfish,Jellyfish Basin,Aberration,,5.0,5,,,TRUE,5,,,,,0,aurora_jellyfish.png
+13,Barbed Eel,Fog Coast,Aberration,,6.0,,,,TRUE,7,,,,,0,barbed_eel.png
+29,Bloodskin Shark,Fog Coast,Aberration,TRUE,11.5,5,,,TRUE,9,,,,,0,bloodskin_shark.png
+37,Bony Wreckfish,Black Cliff,Aberration,TRUE,8.0,,,,TRUE,7,,,,,0,bony_wreckfish.png
+41,Bursting Anglerfish,Jellyfish Basin,Aberration,,6.0,5,,,TRUE,7,,,,,0,bursting_anglerfish.png
+56,Concertina Barracuda,Jellyfish Basin,Aberration,,6.5,5,,,TRUE,8,,,,,0,concertina_barracuda.png
+76,Enthralled Stonefish,Black Cliff,Aberration,,8.0,,,,TRUE,6,,,,,0,enthralled_stonefish.png
+80,Fanged Cod,Fog Coast,Aberration,,3.5,,,,TRUE,5,,,,,0,fanged_cod.png
+86,Gazing Shark,Jellyfish Basin,Aberration,TRUE,11.0,5,,,TRUE,9,,,,,0,gazing_shark.png
+88,Gelatinous Stonefish,Black Cliff,Aberration,,7.5,,,,TRUE,5,,,,,0,gelatinous_stonefish.png
+90,Gnashing Perch,Black Cliff,Aberration,,4.5,,,,TRUE,6,,,,,0,gnashing_perch.png
+99,Grotesque Mackerel,Fog Coast,Aberration,,3.0,,,,TRUE,5,,,,,0,grotesque_mackerel.png
+106,Host Eel,Fog Coast,Aberration,,5.5,,,,TRUE,8,,,,,0,host_eel.png
+126,Malignant Pincer,Fog Coast,Aberration,,2.5,,,,TRUE,8,,,,,0,malignant_pincer.png
+128,Many Eyed Mackerel,Fog Coast,Aberration,,2.5,,,,TRUE,6,,,,,0,many_eyed_mackerel.png
+146,Parhelion Jellyfish,Jellyfish Basin,Aberration,,5.0,5,,,TRUE,5,,,,,0,parhelion_jellyfish.png
+149,Perished Loosejaw,Jellyfish Basin,Aberration,,3.0,5,,,TRUE,6,,,,,0,perished_loosejaw.png
+157,Radiant Squid,Jellyfish Basin,Aberration,,4.5,3,,,TRUE,5,,,,,0,radiant_squid.png
+168,Sallow Sailfish,Fog Coast,Aberration,TRUE,9.5,5,,,TRUE,9,,,,,0,sallow_sailfish.png
+172,Savage Barracuda,Jellyfish Basin,Aberration,,7.0,5,,,TRUE,7,,,,,0,savage_barracuda.png
+173,Scouring Bass,Black Cliff,Aberration,,3.5,,,,TRUE,5,,,,,0,scouring_bass.png
+179,Seizing Snailfish,Jellyfish Basin,Aberration,,5.0,3,,,TRUE,6,,,,,0,seizing_snailfish.png
+181,Shattered Wreckfish,Black Cliff,Aberration,,6.5,5,,,TRUE,6,,,,,0,shattered_wreckfish.png
+191,Sprouting Eel,Black Cliff,Aberration,TRUE,7.0,5,,,TRUE,7,,,,,0,sprouting_eel.png
+197,Three-Headed Cod,Fog Coast,Aberration,,6.0,,,,TRUE,6,,,,,0,three-headed_cod.png
+203,Translucent Sturgeon,Black Cliff,Aberration,TRUE,8.0,5,,,TRUE,9,,,,,0,translucent_sturgeon.png
+208,Tusked Grouper,Fog Coast,Aberration,,5.0,,,,TRUE,6,,,,,0,tusked_grouper.png
+210,Voltaic Grouper,Fog Coast,Aberration,,6.0,,,,TRUE,7,,,,,0,voltaic_grouper.png
+219,Withered Ray,Black Cliff,Aberration,TRUE,8.5,5,,,TRUE,9,,,,,0,withered_ray.png
+46,Cerebral Crab,Fog Coast,Aberration Crab,,2.0,,,,TRUE,7,,,,,0,cerebral_crab.png
+60,Cortex Decorator,Black Cliff,Aberration Crab,,2.5,,,,TRUE,7,,,,,0,cortex_decorator.png
+75,Entangled Crab,Jellyfish Basin,Aberration Crab,,2.5,3,,,TRUE,8,,,,,0,entangled_crab.png
+110,Imperious Lobster,Jellyfish Basin,Aberration Crab,,3.0,,,,TRUE,9,,,,,0,imperious_lobster.png
+190,Splintered Crab,Black Cliff,Aberration Crab,,3.5,,,,TRUE,8,,,,,0,splintered_crab.png
+51,Clione Queen Tentacle,130-250m,Boss,,1.0,1,,,,99,,,,,0,clione_queen_tentacle.png
+91,Goblin Shark's Fatty Meat,130-250m,Boss,,1.0,1,,,,99,,,,,0,goblin_shark_s_fatty_meat.png
+104,Helicoprion Tail,3rd Glacial Cave,Boss,,1.0,1,TRUE,,,99,,,,,0,helicoprion_tail.png
+113,Klaus's Fin,0-50m,Boss,,1.0,1,,TRUE,,99,,,,,0,klaus_s_fin.png
+114,Kronosaurus Tongue,Hydrothermal Vents,Boss,,1.0,1,,,,99,,,,,0,kronosaurus_tongue.png
+122,Lusca Neck Meat,50-130m,Boss,,1.0,1,,TRUE,,99,,,,,0,lusca_neck_meat.png
+123,Lusca Tentacle,50-130m,Boss,,1.0,1,,TRUE,,99,,,,,0,lusca_tentacle.png
+127,Mantis Shrimp Meat,0-50m,Boss,,1.0,1,,TRUE,,99,,,,,0,mantis_shrimp_meat.png
+150,Phantom Jellyfish Meat,Second Glacial Cave,Boss,,1.0,1,TRUE,,,99,,,,,0,phantom_jellyfish_meat.png
+205,Truck Hermit Crab Legs,0-50m,Boss,,1.0,1,,TRUE,,99,,,,,0,truck_hermit_crab_legs.png
+220,Wolf Eel Tail Meat,130-250m,Boss,,1.0,1,,,,99,,,,,0,wolf_eel_tail_meat.png
+222,Yawie's Inner Flesh,Divine Tree Control Room,Boss,,1.0,1,,,,99,,,,,0,yawie_s_inner_flesh.png
+4,American Lobster,0-50m,Crab trap,,1.0,3,TRUE,,,8,,,,43,43,american_lobster.png
+30,Blue Lobster,0-50m,Crab trap,,1.0,3,,TRUE,,8,,,,47,47,blue_lobster.png
+42,California Spiny Lobster,50-130m,Crab trap,,1.5,3,TRUE,,,5,,,,22,22,california_spiny_lobster.png
+61,Crystal Lobster,50-130m,Crab trap,,1.5,3,,TRUE,,8,,,,47,47,crystal_lobster.png
+66,Dollocaris Ingens,Hydrothermal Vents,Crab trap,,1.5,3,TRUE,,,8,,,,45,45,dollocaris_ingens.png
+71,Eastern Rock Lobster,130-250m,Crab trap,,2.5,3,TRUE,,,8,,,,47,47,eastern_rock_lobster.png
+77,European Lobster,0-50m,Crab trap,,1.0,3,TRUE,,,5,,,,23,23,european_lobster.png
+79,Fan Lobster,50-130m,Crab trap,,0.2,3,,TRUE,,5,,,,22,22,fan_lobster.png
+105,Horsehair Crab,Glacial Area,Crab trap,,1.5,3,TRUE,,,9,,,,50,50,horsehair_crab.png
+139,Norway Lobster,130-250m,Crab trap,,0.2,3,TRUE,,,5,,,,25,25,norway_lobster.png
+162,Red-banded Lobster,0-50m,Crab trap,,0.1,3,,TRUE,,5,,,,25,25,red-banded_lobster.png
+184,Snow Crab,Glacial Area,Crab trap,,2.0,3,TRUE,,,8,,,,40,40,snow_crab.png
+202,Tokummia Katalepsis,Hydrothermal Vents,Crab trap,,2.0,3,TRUE,,,9,,,,55,55,tokummia_katalepsis.png
+204,Tropical Rock Lobster,50-130m,Crab trap,,1.2,3,TRUE,,,8,,,,45,45,tropical_rock_lobster.png
+72,Egg,Vegetable Farm,Egg,,,,,,,4,Otto,63,75,15,15,egg.png
+93,Grade A Egg,Vegetable Farm,Egg,,,,,,,4,Otto,382,450,90,90,grade_a_egg.png
+2,Alaska Pollock,Glacial Area,Fish,,7.0,5,TRUE,,,8,,,,45,45,alaska_pollock.png
+3,Allenypterus,Hydrothermal Vents,Fish,,4.0,3,TRUE,,,9,,,,42,42,allenypterus.png
+5,Anomalocaris,Hydrothermal Vents,Fish,,4.0,3,TRUE,,,9,,,,75,75,anomalocaris.png
+6,Antarctic Octopus,Glacial Area,Fish,,7.5,5,TRUE,,,9,,,,40,40,antarctic_octopus.png
+7,Arctic Cod,Glacial Area,Fish,,5.0,3,TRUE,,,8,,,,32,32,arctic_cod.png
+8,Arctic Telescope Fish,Glacial Area,Fish,,3.0,3,TRUE,,,8,,,,40,40,arctic_telescope_fish.png
+9,Atlantic Anglerfish,Limestone Cave,Fish,,5.5,5,TRUE,,,4,,,,11,11,atlantic_anglerfish.png
+10,Atlantic Bonito,50-130m,Fish,,4.0,3,TRUE,,,2,,,,7,7,atlantic_bonito.png
+11,Atlantic Mackerel,50-130m,Fish,,3.5,3,TRUE,,,3,,,,7,7,atlantic_mackerel.png
+14,Barrel Jellyfish,0-50m,Fish,,1.0,3,TRUE,,,2,,,,5,5,barrel_jellyfish.png
+15,Barreleye,Glacial Passage,Fish,,3.0,3,TRUE,,,7,,,,35,35,barreleye.png
+17,Bigeye Scad,50-130m,Fish,,0.6,3,TRUE,,,1,,,,6,6,bigeye_scad.png
+18,Bigeye Trevally,50-130m,Fish,,3.0,5,TRUE,,,2,,,,6,6,bigeye_trevally.png
+19,Black and White Snapper,0-50m,Fish,,1.0,5,TRUE,,,1,,,,3,3,black_and_white_snapper.png
+24,Blackfin Barracuda,50-130m,Fish,,5.5,5,,TRUE,,5,,,,20,20,blackfin_barracuda.png
+25,Blacktip Shark Meat,0-50m,Fish,TRUE,2.5,5,,TRUE,,6,,,,20,20,blacktip_reefshark.png
+27,Blobfish,Glacial Passage,Fish,,7.5,5,TRUE,,,7,,,,40,40,blobfish.png
+28,Blood-belly Comb Jellyfish,130-250m,Fish,,7.0,3,TRUE,,,6,,,,17,17,blood-belly_comb_jellyfish.png
+31,Blue Tang,0-50m,Fish,,0.5,3,TRUE,,,1,,,,2,2,blue_tang.png
+32,Bluefin Tuna Akami,0-130m,Fish,TRUE,8.0,5,TRUE,,,7,,,,27,27,bluefin_tuna.png
+33,Bluefin Tuna Chutoro,0-130m,Fish,TRUE,8.0,5,TRUE,,,7,,,,32,32,bluefin_tuna.png
+34,Bluefin Tuna Ootoro,0-130m,Fish,TRUE,,9,TRUE,,,7,,,,45,45,bluefin_tuna.png
+35,Bluehead Tilefish,50-130m,Fish,,0.2,2,TRUE,,,1,,,,5,5,bluehead_tilefish.png
+36,Bluespotted Stargazer,130-250m,Fish,,5.0,0,TRUE,,,6,,,,18,18,bluespotted_stargazer.png
+38,Box Jellyfish,0-50m,Fish,,5.0,3,,TRUE,,5,,,,18,18,box_jellyfish.png
+43,Capelin,Glacial Area,Fish,,0.5,3,TRUE,,,8,,,,15,15,capelin.png
+44,Cardinal Fish,0-50m,Fish,,0.2,3,,,,1,,,,1,1,cardinal_fish.png
+49,Clearfin Lionfish,0-50m,Fish,,1.7,3,,TRUE,,4,,,,8,8,clearfin_lionfish.png
+52,Clown Frogfish,50-130m,Fish,,0.3,3,TRUE,,,1,,,,5,5,clown_frogfish.png
+53,Clownfish,0-50m,Fish,,0.2,2,TRUE,,,1,,,,1,1,clownfish.png
+54,Comb Jelly,130-250m,Fish,,7.0,3,TRUE,,,6,,,,14,14,comb_jelly.png
+55,Comber,0-50m,Fish,,0.2,2,TRUE,,,1,,,,1,1,comber.png
+57,Cookiecutter Shark,130-250m,Fish,,5.0,3,TRUE,,,6,,,,25,25,cookiecutter_shark.png
+58,Copper Shark Meat,0-50m,Fish,TRUE,4.0,5,,TRUE,,6,,,,22,22,copper_shark.png
+59,Coral Trout,50-130m,Fish,,3.0,5,TRUE,,,2,,,,6,6,coral_trout.png
+64,Cuttlefish,50-130m,Fish,,4.0,3,TRUE,,,2,,,,6,6,cuttlefish.png
+65,Devil Scorpionfish,50-130m,Fish,,3.0,3,,TRUE,,8,,,,45,45,devil_scorpionfish.png
+67,Drepanaspis Meat,Hydrothermal Vents,Fish,TRUE,8.5,5,TRUE,,,9,,,,50,50,drepanaspis.png
+68,Dumbo Octopus,Glacial Passage,Fish,,4.0,3,TRUE,,,7,,,,38,38,dumbo_octopus.png
+69,Dunkleosteus Meat,Hydrothermal Vents,Fish,TRUE,19.5,5,TRUE,,,9,,,,70,70,dunkleosteus.png
+70,Dusky Grouper,50-130m,Fish,,9.0,5,TRUE,,,3,,,,10,10,dusky_grouper.png
+74,Emperor Angelfish,0-50m,Fish,,0.4,0,TRUE,,,1,,,,3,3,emperor_angelfish.png
+78,Falcatus,Hydrothermal Vents,Fish,,6.0,3,TRUE,,,9,,,,43,43,falcatus.png
+81,Fangtooth,130-250m,Fish,,3.0,3,TRUE,,,5,,,,15,15,fangtooth.png
+82,Flame Angelfish,0-50m,Fish,,0.2,0,TRUE,,,1,,,,2,2,flame_angelfish.png
+83,Fried Egg Jellyfish,0-50m,Fish,,1.0,3,TRUE,,,2,,,,5,5,fried_egg_jellyfish.png
+84,Frilled Shark Meat,130-250m,Fish,TRUE,8.5,5,TRUE,,,7,,,,28,28,frilled_shark.png
+87,Gelatinous Snailfish,Glacial Area,Fish,,2.0,3,TRUE,,,8,,,,28,28,gelatinous_snailfish.png
+89,Giant Trevally Meat,50-130m,Fish,TRUE,5.0,5,TRUE,,,4,,,,10,10,giant_trevally_meat.png
+92,Golden King Crab,Glacial Area,Fish,,8.0,5,TRUE,,,8,,,,45,45,golden_king_crab.png
+94,Great Barracuda,50-130m,Fish,,7.0,5,TRUE,TRUE,,3,,,,6,6,great_barracuda.png
+95,Green Humphead Parrotfish,0-50m,Fish,TRUE,1.8,5,TRUE,,,3,,,,5,5,green_humphead_parrotfish.png
+97,Greenland Shark Meat,Glacial Area,Fish,TRUE,20.0,5,TRUE,,,9,,,,62,62,greenland_shark.png
+98,Grey Triggerfish,50-130m,Fish,,3.5,5,TRUE,,,2,,,,6,6,grey_triggerfish.png
+101,Haddock,Glacial Area,Fish,,6.0,5,TRUE,,,8,,,,37,37,haddock.png
+102,Hammerhead Meat,50-130m,Fish,TRUE,13.0,5,TRUE,,,9,,,,47,47,smooth_hammerhead.png
+103,Harlequin Hind,50-130m,Fish,,1.1,5,TRUE,,,2,,,,6,6,harlequin_hind.png
+107,Humboldt Squid Meat,50-130m,Fish,TRUE,7.5,5,,TRUE,,8,,,,48,48,humboldt_squid.png
+109,Ice Fish,Glacial Area,Fish,,5.5,3,TRUE,,,8,,,,32,32,ice_fish.png
+115,Lagoon Triggerfish,0-50m,Fish,,0.7,2,TRUE,,,1,,,,2,2,lagoon_triggerfish.png
+116,Long-Snouted Seahorse,0-50m,Fish,,0.5,0,TRUE,,,4,,,,2,2,long-snouted_seahorse.png
+117,Longfin Batfish,0-50m,Fish,,0.8,5,TRUE,,,1,,,,3,3,longfin_batfish.png
+118,Longnose Sawshark Meat,50-130m,Fish,TRUE,6.5,5,TRUE,TRUE,,6,,,,12,12,longnose_sawshark.png
+119,Longspine Porcupinefish,0-50m,Fish,,3.5,3,,TRUE,,5,,,,26,26,longspine_porcupinefish.png
+120,Longspine Squirrelfish,0-50m,Fish,,0.4,3,,TRUE,,5,,,,3,3,longspine_squirrelfish.png
+121,Lumpfish,Hydrothermal Vents,Fish,,5.0,3,TRUE,,,8,,,,40,40,lumpfish.png
+124,Mackerel Scad,50-130m,Fish,,0.8,2,TRUE,,,1,,,,5,5,mackerel_scad.png
+125,Mako Meat,0-50m,Fish,TRUE,9.0,5,TRUE,,,8,,,,43,43,shortfin_mako.png
+129,Marbled Electric Ray Meat,0-50m,Fish,TRUE,3.5,5,TRUE,,,6,,,,30,30,marbled_electric_ray_meat.png
+130,Marlin Meat,0-50m,Fish,TRUE,7.5,5,TRUE,,,8,,,,45,45,marlin.png
+132,Mediterranean Parrotfish,0-50m,Fish,,2.0,5,TRUE,,,1,,,,3,3,mediterranean_parrotfish.png
+133,Megalograptus,Divine Tree Control Room,Fish,,8.0,5,TRUE,,,9,,,,46,46,megalograptus.png
+134,Megamouth Shark Meat,130-250m,Fish,TRUE,11.5,5,TRUE,,,7,,,,31,31,megamouth_shark.png
+136,Moray Eel,0-50m,Fish,,9.0,0,,TRUE,,5,,,,17,17,moray_eel.png
+137,Narrow-barred Spanish Mackerel,50-130m,Fish,,9.0,5,TRUE,,,3,,,,10,10,narrow-barred_spanish_mackerel.png
+138,Narwhal Meat,Glacial Area,Fish,TRUE,9.5,5,TRUE,,,9,,,,46,46,narwhal.png
+142,Orbicular Batfish,0-50m,Fish,,0.3,2,TRUE,,,1,,,,2,2,orbicular_batfish.png
+143,Ornate Wrasse,0-50m,Fish,,0.5,2,TRUE,,,1,,,,2,2,ornate_wrasse.png
+144,Pacific Fanfish,130-250m,Fish,,5.0,3,TRUE,,,5,,,,22,22,pacific_fanfish.png
+145,Painted Comber,50-130m,Fish,,0.4,3,TRUE,,,1,,,,6,6,painted_comber.png
+147,Peacock Squid,Glacial Passage,Fish,,3.5,3,TRUE,,,7,,,,36,36,peacock_squid.png
+148,Pelican Eel,Glacial Passage,Fish,,8.0,5,TRUE,,,9,,,,60,60,pelican_eel.png
+151,Pikaia,Hydrothermal Vents,Fish,,4.5,3,TRUE,,,9,,,,38,38,pikaia.png
+152,Polar Eelpout,Glacial Area,Fish,,3.0,3,TRUE,,,8,,,,30,30,polar_eelpout.png
+153,Porbeagle Shark Meat,Glacial Area,Fish,TRUE,13.5,5,TRUE,,,9,,,,55,55,porbeagle_shark.png
+155,Pyramid Butterflyfish,0-50m,Fish,,0.4,2,TRUE,,,1,,,,1,1,pyramid_butterflyfish.png
+156,Qingmendous,Hydrothermal Vents,Fish,,6.0,0,TRUE,,,9,,,,40,40,qingmendous.png
+159,Rainbow Wrasse,0-50m,Fish,,0.6,2,TRUE,,,1,,,,2,2,rainbow_wrasse.png
+160,Red Bream,130-250m,Fish,,3.0,3,TRUE,,,5,,,,12,12,red_bream.png
+161,Red Lionfish,0-50m,Fish,,1.5,3,TRUE,TRUE,,2,,,,3,3,red_lionfish.png
+163,Redtoothed Triggerfish,0-50m,Fish,,1.0,5,TRUE,,,1,,,,3,3,redtoothed_triggerfish.png
+164,Rhinochimaeridae Meat,130-250m,Fish,TRUE,5.0,7,TRUE,,,6,,,,30,30,rhinochimaeridae.png
+166,Sailfish Meat,Shipwreck Interior,Fish,TRUE,9.0,5,TRUE,,,9,,,,65,65,sailfish.png
+167,Salema Porgy,0-50m,Fish,,0.4,3,TRUE,,,1,,,,2,2,salema_porgy.png
+169,Sally Lightfoot Crab,Shipwreck Interior,Fish,,4.0,5,TRUE,,,7,,,,18,18,sally_lightfoot_crab.png
+170,Salmon Snailfish,130-250m,Fish,,5.0,3,TRUE,,,5,,,,20,20,salmon_snailfish.png
+174,Sea Goldie,0-50m,Fish,,0.3,2,TRUE,,,1,,,,1,1,sea_goldie.png
+176,Sea Toad,130-250m,Fish,,5.0,3,TRUE,,,5,,,,18,18,sea_toad.png
+182,Sheepshead Meat,0-50m,Fish,TRUE,1.8,5,TRUE,,,5,,,,10,10,sheepshead.png
+183,Small Spotted Dart,0-50m,Fish,,0.8,3,TRUE,,,1,,,,2,2,small_spotted_dart.png
+185,Snub-nosed Spiny Eel,3rd Glacial Cave,Fish,,6.5,5,,,,9,,,,60,60,snub-nosed_spiny_eel.png
+188,Spear Squid,50-130m,Fish,,4.6,3,,TRUE,,5,,,,17,17,spear_squid.png
+189,Spider Crab,130-250m,Fish,,7.5,5,TRUE,,,6,,,,17,17,spider_crab.png
+192,Starry Puffer,0-50m,Fish,,3.0,3,TRUE,TRUE,,3,,,,15,15,starry_puffer.png
+193,Starry Skate,Glacial Area,Fish,TRUE,5.5,5,TRUE,,,9,,,,44,44,starry_skate.png
+194,Stingray Meat,0-50m,Fish,TRUE,3.0,5,TRUE,,,6,,,,17,17,stingray_meat.png
+195,Striped Catfish,0-50m,Fish,,0.3,0,TRUE,,,5,,,,2,2,striped_catfish.png
+196,Striped Red Mullet,50-130m,Fish,,0.7,0,TRUE,,,1,,,,5,5,striped_red_mullet.png
+198,Threetooth Puffer,130-250m,Fish,,5.0,3,TRUE,,,5,,,,23,23,threetooth_puffer.png
+199,Thresher Shark Meat,0-50m,Fish,TRUE,8.5,5,TRUE,,,9,,,,53,53,thresher_shark.png
+200,Tiger Shark Meat,50-130m,Fish,TRUE,15.0,5,TRUE,TRUE,,6,,,,17,17,tiger_shark_meat.png
+201,Titan Triggerfish,0-50m,Fish,,3.8,5,TRUE,TRUE,,2,,,,5,5,titan_triggerfish.png
+209,Vampire Squid,Glacial Passage,Fish,,6.0,5,TRUE,,,8,,,,41,41,vampire_squid.png
+214,White Spotted Jellyfish,50-130m,Fish,,1.0,3,TRUE,,,2,,,,6,6,white_spotted_jellyfish.png
+215,White Trevally,50-130m,Fish,,6.0,5,TRUE,,,2,,,,7,7,white_trevally.png
+217,Whitetip Reefshark Head,0-50m,Fish,TRUE,2.5,1,TRUE,TRUE,,4,,,,40,40,whitetip_reefshark_head.png
+218,Whitetip Reefshark Meat,0-50m,Fish,TRUE,2.5,5,TRUE,TRUE,,4,,,,8,8,whitetip_reefshark_meat.png
+221,Xenacanthus Meat,Hydrothermal Vents,Fish,TRUE,5.5,5,TRUE,,,9,,,,53,53,xenacanthus.png
+223,Yellow Tang,0-50m,Fish,,0.4,2,TRUE,,,1,,,,1,1,yellow_tang.png
+224,Yellowback Fusilier,0-50m,Fish,,0.8,2,TRUE,,,1,,,,2,2,yellowback_fusilier.png
+225,Yellowfin Tuna Akami,0-130m,Fish,TRUE,6.0,5,TRUE,,,7,,,,24,24,yellowfin_tuna.png
+226,Yellowfin Tuna Chutoro,0-130m,Fish,TRUE,6.0,5,TRUE,,,7,,,,30,30,yellowfin_tuna.png
+227,Yellowfin Tuna Ootoro,0-130m,Fish,TRUE,,9,TRUE,,,7,,,,42,42,yellowfin_tuna.png
+228,Zebra Shark Meat,0-50m,Fish,TRUE,10.5,5,,TRUE,,8,,,,42,42,zebra_shark.png
+158,Rainbow Cap,Jango,Jango,,,,,,,1,,750,,750,750,rainbow_cap.png
+206,Truffle,Jango,Jango,,,,,,,1,,650,,650,650,truffle.png
+22,Black Tiger Shrimp,50-130m,Net,,0.1,5,TRUE,,,5,,,,17,17,black_tiger_shrimp.png
+47,Chambered Nautilus,130-250m,Net,,1.0,3,TRUE,,,5,,,,12,12,chambered_nautilus.png
+50,Clione,130-250m,Net,,0.1,4,TRUE,,,5,,,,25,25,clione.png
+177,Seadragon,Hydrothermal Vents,Net,,0.5,4,,,,8,,,,35,35,weedy_seadragon.png
+211,Waptia Fieldensis,Hydrothermal Vents,Net,,0.4,5,TRUE,,,9,,,,34,34,waptia_fieldensis.png
+213,White Shrimp,0-130m,Net,,0.1,5,TRUE,TRUE,,7,,,,17,17,white_shrimp.png
+216,Whiteleg Shrimp,0-50m,Net,,0.1,0,TRUE,,,5,,,,11,11,whiteleg_shrimp.png
+21,Black Pepper,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,60,,6,6,black_pepper.png
+23,Black Vinegar,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,50,,5,5,black_vinegar.png
+63,Curry Block,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,60,,6,6,curry_block.png
+131,Mayonnaise,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,70,,7,7,mayonnaise.png
+135,Miso,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,80,,8,8,miso.png
+140,Olive Oil,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,60,,6,6,olive_oil.png
+171,Salt,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,80,,8,8,salt.png
+180,Sesame Seed,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,80,,8,8,sesame_seed.png
+187,Soy Sauce,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,60,,6,6,soy_sauce.png
+207,Turmeric,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,50,,5,5,turmeric.png
+1,Agar,0-50m,Sea Plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,3,3,agar.png
+20,Black Coral,Glacial Area,Sea plant,,0.1,1,TRUE,,,2,Gumo,,,8,8,black_coral.png
+26,Bladderwrack,Glacial Seaweed Cave,Sea plant,,0.1,1,TRUE,,,2,Gumo,,,10,10,bladderwrack.png
+39,Buckbean,Glacial Area,Sea Plant,,0.1,1,TRUE,,,4,Gumo,,,9,9,buckbean.png
+108,Hyalonema,Glacial Seaweed Cave,Sea plant,,0.1,1,TRUE,,,3,Gumo,,,65,65,hyalonema.png
+111,Kajime,0-130m,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,7,7,kajime.png
+112,Kelp,50-130m,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,6,6,kelp.png
+175,Sea Grape,Limestone Cave,Sea Plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,6,6,sea_grape.png
+178,Seaweed,50-130m,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,5,5,seaweed.png
+186,Southern Bull Kelp,Glacial Area,Sea plant,,0.1,1,TRUE,,,2,Gumo,,,8,8,southern_bull_kelp.png
+96,Green Sea Urchin,0-50m,Urchin,,1.0,1,TRUE,TRUE,TRUE,5,,,,90,90,green_sea_urchin.png
+154,Purple Sea Urchin,0-50m,Urchin,,1.0,1,TRUE,TRUE,TRUE,5,,,,20,20,purple_sea_urchin.png
+16,Bean,Vegetable Farm,Vegetable,,,,,,,4,Otto,170,200,20,20,bean.png
+40,Buckwheat,Vegetable Farm,Vegetable,,,,,,,4,Otto,,185,18,18,buckwheat.png
+45,Carrot,Vegetable Farm,Vegetable,,,,,,,4,Otto,106,250,25,25,carrot.png
+48,Cherry Tomato,Vegetable Farm,Vegetable,,,,,,,4,Otto,148,175,17,17,cherry_tomato.png
+62,Cucumber,Vegetable Farm,Vegetable,,,,,,,4,Otto,,200,20,20,cucumber.png
+73,Eggplant,Vegetable Farm,Vegetable,,,,,,,4,Otto,178,210,21,21,eggplant.png
+85,Garlic,Vegetable Farm,Vegetable,,,,,,,4,Otto,161,190,19,19,garlic.png
+100,Habanero,Vegetable Farm,Vegetable,,,,,,,4,Otto,153,180,16,16,habanero.png
+141,Onion,Vegetable Farm,Vegetable,,,,,,,4,Otto,170,200,20,20,onion.png
+165,Rice,Vegetable Farm,Rice,,,,,,,3,Otto,,,15,15,rice.png
+212,Wheat,Vegetable Farm,Vegetable,,,,,,,4,Otto,161,190,19,19,wheat.png

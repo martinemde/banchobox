@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { Data } from './runtime.js';
-import type { EnrichedDish, EnrichedIngredient, EnrichedParty, PartyDish, Id } from '../types.js';
+import type { Dish, Ingredient, EnrichedParty, PartyDish, Id } from '../types.js';
 
-function mkIngredient(id: Id, name = `Ing ${id}`): EnrichedIngredient {
+function mkIngredient(id: Id, name = `Ing ${id}`): Ingredient {
   return {
     id,
     name,
@@ -24,7 +24,7 @@ function mkParty(id: Id, name = `Party ${id}`): EnrichedParty {
   return { id, name, order: id, bonus: 2, partyDishIds: [] };
 }
 
-function mkDish(id: Id, opts: { ingredientId: Id; partyDishIds?: Id[] } = { ingredientId: 1 }): EnrichedDish {
+function mkDish(id: Id, opts: { ingredientId: Id; partyDishIds?: Id[] } = { ingredientId: 1 }): Dish {
   const ingId = opts.ingredientId;
   return {
     id,
@@ -83,10 +83,10 @@ describe('Data.init and lookups', () => {
   });
 
   it('initializes and exposes arrays', () => {
-    const ingredients: EnrichedIngredient[] = [mkIngredient(1)];
+    const ingredients: Ingredient[] = [mkIngredient(1)];
     const parties: EnrichedParty[] = [mkParty(1)];
     const partyDishes: PartyDish[] = [mkPartyDish(1, 1, 1)];
-    const dishes: EnrichedDish[] = [mkDish(1, { ingredientId: 1, partyDishIds: [1] })];
+    const dishes: Dish[] = [mkDish(1, { ingredientId: 1, partyDishIds: [1] })];
 
     Data.init({ dishes, ingredients, parties, partyDishes });
 

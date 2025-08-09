@@ -1,7 +1,7 @@
 // Core data interfaces matching Data-Modeling.md structure with ID-based system
 export type Id = number;
 
-export interface Dish {
+export interface BasicDish {
   id: Id;
   name: string;
   image: string;
@@ -17,7 +17,7 @@ export interface Dish {
   artisansFlames?: number | null;
 }
 
-export interface Ingredient {
+export interface BasicIngredient {
   id: Id;
   name: string;
   image: string; // image filename
@@ -26,15 +26,15 @@ export interface Ingredient {
   drone: boolean;
   kg?: number | null;
   maxMeats?: number | null;
-  sell?: number | null;
-  // Newly imported fields from ingredients.csv
   day: boolean;
   night: boolean;
   fog: boolean;
   rank: number;
-  farm?: string; // farm/vendor source like Gumo
-  jangoPurchase?: number | null; // Jango purchase price
-  ottoPurchase?: number | null; // Otto purchase price
+  farm?: string; // farm source like Gumo
+  sell?: number | null;
+  buyJango?: number | null; // Jango purchase price
+  buyOtto?: number | null; // Otto purchase price
+  cost: number; // The replacement cost for the ingredient
 }
 
 export interface Party {
@@ -60,15 +60,15 @@ export interface DishParty {
 
 // Graph structure for efficient lookups
 export interface Graph {
-  dishes: Dish[];
-  ingredients: Ingredient[];
+  dishes: BasicDish[];
+  ingredients: BasicIngredient[];
   parties: Party[];
   dishIngredients: DishIngredient[];
   dishParties: DishParty[];
 
   // Indexes for O(1) lookups
-  dishById: Map<Id, Dish>;
-  ingById: Map<Id, Ingredient>;
+  dishById: Map<Id, BasicDish>;
+  ingById: Map<Id, BasicIngredient>;
   partyById: Map<Id, Party>;
   ingByDishId: Map<Id, { ingredientId: Id; count: number }[]>;
   dishesByIngredientId: Map<Id, { dishId: Id; count: number }[]>;
@@ -83,11 +83,6 @@ export interface Calculator<TInput = unknown, TOutput = number> {
   calculate(data: TInput): TOutput;
 }
 
-// Specific calculator types
-export interface IngredientLine {
-  count: number;
-  unitCost: number | null | undefined;
-}
 
 export interface BestPartyResult {
   partyDishId: Id;
@@ -111,7 +106,7 @@ export interface PartyDish {
 }
 
 // Precomputed data structures for JSON export
-export interface EnrichedDish extends Dish {
+export interface Dish extends BasicDish {
   ingredients: Array<{
     ingredientId: Id;
     count: number;
@@ -140,7 +135,7 @@ export interface EnrichedDish extends Dish {
   bestPartyRevenue: number | null;
 }
 
-export interface EnrichedIngredient extends Ingredient {
+export interface Ingredient extends BasicIngredient {
   usedIn: Array<{
     dishId: Id;
     count: number;
@@ -155,8 +150,8 @@ export interface EnrichedParty extends Party {
 
 // Data service interface
 export interface DataService {
-  dishes: EnrichedDish[];
-  ingredients: EnrichedIngredient[];
+  dishes: Dish[];
+  ingredients: Ingredient[];
   parties: EnrichedParty[];
   partyDishes: PartyDish[];
 }

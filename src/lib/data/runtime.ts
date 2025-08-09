@@ -2,25 +2,25 @@
  * Runtime data service - loads precomputed data and provides efficient access
  */
 
-import type { EnrichedDish, EnrichedIngredient, EnrichedParty, PartyDish, Id } from '../types.js';
+import type { Dish, Ingredient, EnrichedParty, PartyDish, Id } from '../types.js';
 
 // Data containers initialized via init()
-let dishes: EnrichedDish[] = [];
-let ingredients: EnrichedIngredient[] = [];
+let dishes: Dish[] = [];
+let ingredients: Ingredient[] = [];
 let parties: EnrichedParty[] = [];
 let partyDishes: PartyDish[] = [];
 
 // Indices populated in init()
-let dishById: Record<Id, EnrichedDish> = {} as Record<Id, EnrichedDish>;
-let ingredientById: Record<Id, EnrichedIngredient> = {} as Record<Id, EnrichedIngredient>;
+let dishById: Record<Id, Dish> = {} as Record<Id, Dish>;
+let ingredientById: Record<Id, Ingredient> = {} as Record<Id, Ingredient>;
 let partyById: Record<Id, EnrichedParty> = {} as Record<Id, EnrichedParty>;
 let partyDishById: Record<Id, PartyDish> = {} as Record<Id, PartyDish>;
 
 // Runtime data service with efficient lookups
 export const Data = {
   init(data: {
-    dishes: EnrichedDish[];
-    ingredients: EnrichedIngredient[];
+    dishes: Dish[];
+    ingredients: Ingredient[];
     parties: EnrichedParty[];
     partyDishes: PartyDish[];
   }) {
@@ -29,8 +29,8 @@ export const Data = {
     parties = data.parties;
     partyDishes = data.partyDishes;
 
-    dishById = Object.fromEntries(dishes.map((d) => [d.id, d])) as Record<Id, EnrichedDish>;
-    ingredientById = Object.fromEntries(ingredients.map((i) => [i.id, i])) as Record<Id, EnrichedIngredient>;
+    dishById = Object.fromEntries(dishes.map((d) => [d.id, d])) as Record<Id, Dish>;
+    ingredientById = Object.fromEntries(ingredients.map((i) => [i.id, i])) as Record<Id, Ingredient>;
     partyById = Object.fromEntries(parties.map((p) => [p.id, p])) as Record<Id, EnrichedParty>;
     partyDishById = Object.fromEntries(partyDishes.map((pd) => [pd.id, pd])) as Record<Id, PartyDish>;
   },
@@ -40,20 +40,20 @@ export const Data = {
   get partyDishes() { return partyDishes; },
 
   // Efficient lookup methods
-  getDishById: (id: Id): EnrichedDish | undefined => dishById[id],
-  getIngredientById: (id: Id): EnrichedIngredient | undefined => ingredientById[id],
+  getDishById: (id: Id): Dish | undefined => dishById[id],
+  getIngredientById: (id: Id): Ingredient | undefined => ingredientById[id],
   getPartyById: (id: Id): EnrichedParty | undefined => partyById[id],
   getPartyDishById: (id: Id): PartyDish | undefined => partyDishById[id],
 
   // Filtered views
-  getDishesByPartyId: (partyId: Id): EnrichedDish[] => {
+  getDishesByPartyId: (partyId: Id): Dish[] => {
     const partyDishIds = partyDishes
       .filter(pd => pd.partyId === partyId)
       .map(pd => pd.dishId);
     return dishes.filter(dish => partyDishIds.includes(dish.id));
   },
 
-  getDishesByIngredientId: (ingredientId: Id): EnrichedDish[] =>
+  getDishesByIngredientId: (ingredientId: Id): Dish[] =>
     dishes.filter(dish => dish.ingredients.some(ing => ing.ingredientId === ingredientId)),
 
   getPartyDishesByPartyId: (partyId: Id): PartyDish[] => {
@@ -69,7 +69,7 @@ export const Data = {
     partyDishes.filter(pd => pd.dishId === dishId),
 
   // Sorted views
-  getDishesSortedByProfit: (limit?: number): EnrichedDish[] => {
+  getDishesSortedByProfit: (limit?: number): Dish[] => {
     const sorted = [...dishes].sort((a, b) => b.maxProfitPerDish - a.maxProfitPerDish);
     return limit ? sorted.slice(0, limit) : sorted;
   },
@@ -80,12 +80,12 @@ export const Data = {
   getTotalParties: (): number => parties.length,
 
   // Search functionality
-  searchDishesByName: (query: string): EnrichedDish[] =>
+  searchDishesByName: (query: string): Dish[] =>
     dishes.filter(dish =>
       dish.name.toLowerCase().includes(query.toLowerCase())
     ),
 
-  searchIngredientsByName: (query: string): EnrichedIngredient[] =>
+  searchIngredientsByName: (query: string): Ingredient[] =>
     ingredients.filter(ingredient =>
       ingredient.name.toLowerCase().includes(query.toLowerCase())
     ),
