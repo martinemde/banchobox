@@ -1,6 +1,9 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import process from 'node:process';
+import { parse as parseCsv } from 'csv-parse/sync';
+import { z } from 'zod';
 import type {
   Dish,
   Ingredient,
@@ -22,30 +25,202 @@ import { partyProfitPerDish } from '../src/lib/calc/profit.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-function parseCSV(csvContent: string, filename?: string): Array<Record<string, string>> {
-  const lines = csvContent.trim().split('\n');
-  if (lines.length < 2) {
-    console.warn(`${filename || 'CSV file'} has no data rows`);
+// --------------------------
+// CSV parsing + validation
+// --------------------------
+
+function boolFlag(value: unknown): boolean {
+  if (typeof value !== 'string') return false;
+  const v = value.trim().toLowerCase();
+  return v === 'checked' || v === 'true' || v === 'yes';
+}
+
+function emptyToNullNumber(value: unknown): number | null {
+  if (typeof value !== 'string') return null;
+  const v = value.trim();
+  if (v === '') return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+const intFromString = (label: string) =>
+  z
+    .string()
+    .transform((s) => s.trim())
+    .refine((s) => s !== '', { message: `${label} is required` })
+    .transform((s) => {
+      const n = Number(s);
+      if (!Number.isFinite(n) || !Number.isInteger(n)) {
+        throw new Error(`${label} must be an integer`);
+      }
+      return n;
+    });
+
+const floatFromString = (label: string) =>
+  z
+    .string()
+    .transform((s) => s.trim())
+    .refine((s) => s !== '', { message: `${label} is required` })
+    .transform((s) => {
+      const n = Number(s);
+      if (!Number.isFinite(n)) {
+        throw new Error(`${label} must be a number`);
+      }
+      return n;
+    });
+
+const optionalString = z
+  .string()
+  .optional()
+  .transform((s) => (s && s.trim() !== '' ? s.trim() : undefined));
+
+const optionalNumber = optionalString.transform((s) => s ? Number(s) : null);
+const optionalBoolean = optionalString.transform((s) => s ? boolFlag(s) : false);
+
+// Dishes CSV schema -> normalized row (camelCase)
+const dishesRowSchema = z
+  .object({
+    'id': intFromString('id'),
+    'name': z.string().transform((s) => s.trim()),
+    'image': z.string().transform((s) => s.trim()),
+    'max_level': intFromString('max_level'),
+    'base_price': intFromString('base_price'),
+    'base_taste': intFromString('base_taste'),
+    'base_servings': intFromString('base_servings'),
+    'final_price': intFromString('final_price'),
+    'final_taste': intFromString('final_taste'),
+    'final_servings': intFromString('final_servings'),
+    'unlock': optionalString,
+    'dlc': optionalString,
+    'artisans_flames': optionalNumber,
+  })
+  .passthrough()
+  .transform((row) => ({
+    id: row['id'],
+    name: row['name'],
+    image: row['image'],
+    maxLevel: row['max_level'],
+    basePrice: row['base_price'],
+    baseTaste: row['base_taste'],
+    baseServings: row['base_servings'],
+    finalPrice: row['final_price'],
+    finalTaste: row['final_taste'],
+    finalServings: row['final_servings'],
+    unlock: row['unlock'] ?? null,
+    dlc: row['dlc'] ?? null,
+    artisansFlames: emptyToNullNumber(row['artisans_flames']) as number | null,
+  }));
+
+// Ingredients CSV schema -> normalized row (camelCase)
+const ingredientsRowSchema = z
+  .object({
+    'id': intFromString('id'),
+    'name': z.string().transform((s) => s.trim()),
+    'source': z.string().transform((s) => s.trim()),
+    'type': z.string().transform((s) => s.trim()),
+    'image': z.string().transform((s) => s.trim()),
+    'rank': intFromString('rank'),
+    'drone': optionalBoolean,
+    'kg': optionalNumber,
+    'max_meats': optionalNumber,
+    'sell': optionalNumber,
+    'day': optionalBoolean,
+    'night': optionalBoolean,
+    'fog': optionalBoolean,
+    'farm': optionalString,
+    'jango_purchase': optionalNumber,
+    'otto_purchase': optionalNumber,
+  })
+  .passthrough()
+  .transform((row) => ({
+    id: row['id'],
+    name: row['name'],
+    source: row['source'],
+    type: row['type'],
+    image: row['image'],
+    rank: row['rank'],
+    kg: emptyToNullNumber(row['kg']),
+    maxMeats: emptyToNullNumber(row['max_meats']) as number | null,
+    sell: emptyToNullNumber(row['sell']) as number | null,
+    drone: row['drone'],
+    day: row['day'],
+    night: row['night'],
+    fog: row['fog'],
+    farm: row['farm'] ?? null,
+    jangoPurchase: emptyToNullNumber(row['jango_purchase']) as number | null,
+    ottoPurchase: emptyToNullNumber(row['otto_purchase']) as number | null,
+  }));
+
+// Parties CSV schema -> normalized row (camelCase)
+const partiesRowSchema = z
+  .object({
+    'id': intFromString('id'),
+    'order': intFromString('order'),
+    'name': z.string().transform((s) => s.trim()),
+    'bonus': floatFromString('bonus'),
+  })
+  .passthrough()
+  .transform((row) => ({
+    id: row['id'],
+    order: row['order'],
+    name: row['name'],
+    bonus: row['bonus'],
+  }));
+
+// Dish-Ingredients CSV schema -> normalized row (camelCase)
+const dishIngredientsRowSchema = z
+  .object({
+    'dish': z.string().transform((s) => s.trim()),
+    'count': intFromString('count'),
+    'ingredient': z.string().transform((s) => s.trim()),
+    'levels': intFromString('levels'),
+    'upgrade_count': intFromString('upgrade_count'),
+  })
+  .passthrough()
+  .transform((row) => ({
+    dish: row['dish'],
+    ingredient: row['ingredient'],
+    count: row['count'],
+    levels: row['levels'],
+    upgradeCount: row['upgrade_count'],
+  }));
+
+// Party-Dishes CSV schema -> normalized row
+const partyDishesRowSchema = z
+  .object({
+    'party': z.string().transform((s) => s.trim()),
+    'dish': z.string().transform((s) => s.trim()),
+  })
+  .passthrough()
+  .transform((row) => ({
+    party: row['party'],
+    dish: row['dish'],
+  }));
+
+function parseTable<T>(csvContent: string, schema: z.ZodSchema<T>, filename: string): T[] {
+  const records = parseCsv(csvContent, {
+    columns: true,
+    skip_empty_lines: true,
+    trim: true,
+  }) as Array<Record<string, string>>;
+  if (records.length === 0) {
+    console.warn(`${filename} has no data rows`);
     return [];
   }
-
-  const headers = lines[0].split(',').map(h => h.trim());
-  const rows: Array<Record<string, string>> = [];
-
-  console.log(`${filename || 'CSV file'} headers: ${headers.join(', ')}`);
-
-  for (let i = 1; i < lines.length; i++) {
-    const values = lines[i].split(',');
-    const row: Record<string, string> = {};
-
-    for (let j = 0; j < headers.length; j++) {
-      row[headers[j]] = values[j]?.trim() || '';
+  const out: T[] = [];
+  for (let i = 0; i < records.length; i++) {
+    const rec = records[i];
+    const result = schema.safeParse(rec);
+    if (!result.success) {
+      const issues = result.error.issues
+        .map((iss) => `${iss.path.join('.') || 'value'}: ${iss.message}`)
+        .join('; ');
+      const rowNum = i + 2; // account for header row
+      throw new Error(`${filename} row ${rowNum}: ${issues}`);
     }
-
-    rows.push(row);
+    out.push(result.data);
   }
-
-  return rows;
+  return out;
 }
 
 function validateRequiredColumns(rows: Array<Record<string, string>>, requiredColumns: string[], filename: string) {
@@ -61,29 +236,30 @@ function validateRequiredColumns(rows: Array<Record<string, string>>, requiredCo
 
 function loadDishes() {
   const dishesCSV = readFileSync(join(__dirname, '..', 'data', 'dishes.csv'), 'utf-8');
-  const dishRows = parseCSV(dishesCSV, 'dishes.csv');
-  validateRequiredColumns(dishRows, ['Dish Name', 'Final Level', 'Final Taste', 'Initial Price', 'Final Price', 'Servings'], 'dishes.csv');
+  const rawRecords = parseCsv(dishesCSV, { columns: true, skip_empty_lines: true, trim: true }) as Array<Record<string, string>>;
+  validateRequiredColumns(rawRecords, [
+    'id',
+    'name',
+    'max_level',
+    'base_price',
+    'base_taste',
+    'base_servings',
+    'final_price',
+    'final_taste',
+    'final_servings',
+    'unlock',
+    'dlc',
+    'artisans_flames',
+    'image',
+  ], 'dishes.csv');
+  const normalized = parseTable(dishesCSV, dishesRowSchema, 'dishes.csv');
 
   const dishes: Dish[] = [];
   const dishNameToId = new Map<string, Id>();
 
-  dishRows.forEach((row, index) => {
-    if (row['Dish Name']) {
-      const id = index + 1; // Start IDs at 1
-      const dish: Dish = {
-        id,
-        name: row['Dish Name'],
-        final_level: parseInt(row['Final Level']) || 0,
-        final_taste: parseInt(row['Final Taste']) || 0,
-        initial_price: parseInt(row['Initial Price']) || 0,
-        final_price: parseInt(row['Final Price']) || 0,
-        servings: parseInt(row['Servings']) || 0,
-        unlock_condition: row['Unlock Condition'] || null,
-        dlc: row['DLC'] || null,
-      };
-      dishes.push(dish);
-      dishNameToId.set(row['Dish Name'], id);
-    }
+  normalized.forEach((row) => {
+    dishes.push(row as Dish);
+    dishNameToId.set(row.name, row.id);
   });
 
   return { dishes, dishNameToId };
@@ -91,28 +267,27 @@ function loadDishes() {
 
 function loadIngredients() {
   const ingredientsCSV = readFileSync(join(__dirname, '..', 'data', 'ingredients.csv'), 'utf-8');
-  const ingredientRows = parseCSV(ingredientsCSV, 'ingredients.csv');
-  validateRequiredColumns(ingredientRows, ['Ingredient'], 'ingredients.csv');
+  const rawRecords = parseCsv(ingredientsCSV, { columns: true, skip_empty_lines: true, trim: true }) as Array<Record<string, string>>;
+  validateRequiredColumns(rawRecords, [
+    'id',
+    'name',
+    'source',
+    'type',
+    'kg',
+    'max_meats',
+    'sell',
+    'day',
+    'night',
+    'fog',
+  ], 'ingredients.csv');
+  const normalized = parseTable(ingredientsCSV, ingredientsRowSchema, 'ingredients.csv');
 
   const ingredients: Ingredient[] = [];
   const ingredientNameToId = new Map<string, Id>();
 
-  ingredientRows.forEach((row, index) => {
-    if (row['Ingredient']) {
-      const id = index + 1; // Start IDs at 1
-      const ingredient: Ingredient = {
-        id,
-        name: row['Ingredient'],
-        source: row['Source'] || undefined,
-        type: row['Type'] || undefined,
-        drone: row['Drone'] === 'checked' ? 1 : 0,
-        kg: parseFloat(row['kg']) || null,
-        max_meats: parseInt(row['Max Meats']) || null,
-        cost: parseInt(row['Cost']) || null,
-      };
-      ingredients.push(ingredient);
-      ingredientNameToId.set(row['Ingredient'], id);
-    }
+  normalized.forEach((row) => {
+    ingredients.push(row as Ingredient);
+    ingredientNameToId.set(row.name, row.id);
   });
 
   return { ingredients, ingredientNameToId };
@@ -120,24 +295,17 @@ function loadIngredients() {
 
 function loadParties() {
   const partiesCSV = readFileSync(join(__dirname, '..', 'data', 'parties.csv'), 'utf-8');
-  const partyRows = parseCSV(partiesCSV, 'parties.csv');
-  validateRequiredColumns(partyRows, ['Party', 'Bonus', 'Order'], 'parties.csv');
+  const rawRecords = parseCsv(partiesCSV, { columns: true, skip_empty_lines: true, trim: true }) as Array<Record<string, string>>;
+  validateRequiredColumns(rawRecords, ['id', 'order', 'name', 'bonus'], 'parties.csv');
+  const normalized = parseTable(partiesCSV, partiesRowSchema, 'parties.csv');
 
   const parties: Party[] = [];
   const partyNameToId = new Map<string, Id>();
 
-  partyRows.forEach((row, index) => {
-    if (row['Party']) {
-      const id = index + 1; // Start IDs at 1
-      const party: Party = {
-        id,
-        name: row['Party'],
-        bonus: parseFloat(row['Bonus']) || 0,
-        order: parseInt(row['Order']) || 0,
-      };
-      parties.push(party);
-      partyNameToId.set(row['Party'], id);
-    }
+  normalized.forEach((row) => {
+    const party: Party = row as unknown as Party;
+    parties.push(party);
+    partyNameToId.set(row.name, row.id);
   });
 
   // Sort parties by order to ensure static ordering
@@ -153,51 +321,44 @@ function loadRelationships(
 ) {
   // Load party-dish relationships
   const partyDishesCSV = readFileSync(join(__dirname, '..', 'data', 'party-dishes.csv'), 'utf-8');
-  const partyDishRows = parseCSV(partyDishesCSV, 'party-dishes.csv');
-  validateRequiredColumns(partyDishRows, ['Party', 'Dish'], 'party-dishes.csv');
+  const rawPartyDishRecords = parseCsv(partyDishesCSV, { columns: true, skip_empty_lines: true, trim: true }) as Array<Record<string, string>>;
+  validateRequiredColumns(rawPartyDishRecords, ['party', 'dish'], 'party-dishes.csv');
+  const partyDishRows = parseTable(partyDishesCSV, partyDishesRowSchema, 'party-dishes.csv');
 
   const dishParties: DishParty[] = [];
   for (const row of partyDishRows) {
-    if (row['Party'] && row['Dish'] && row['Dish'].trim()) {
-      const partyId = partyNameToId.get(row['Party'].trim());
-      const dishId = dishNameToId.get(row['Dish'].trim());
-
-      if (partyId && dishId) {
-        dishParties.push({
-          dish_id: dishId,
-          party_id: partyId,
-        });
-      } else {
-        console.warn(`Could not find party "${row['Party']}" or dish "${row['Dish']}"`);
-      }
+    const partyId = partyNameToId.get(row.party);
+    const dishId = dishNameToId.get(row.dish);
+    if (partyId && dishId) {
+      dishParties.push({
+        dishId: dishId,
+        partyId: partyId,
+      });
+    } else {
+      console.warn(`\x1b[31mCould not find party "${row.party}" or dish "${row.dish}"\x1b[0m`);
     }
   }
 
   // Load dish-ingredient relationships
   const dishIngredientsCSV = readFileSync(join(__dirname, '..', 'data', 'dish-ingredients.csv'), 'utf-8');
-  const dishIngredientRows = parseCSV(dishIngredientsCSV, 'dish-ingredients.csv');
-  validateRequiredColumns(dishIngredientRows, ['Dish', 'Count', 'Ingredient'], 'dish-ingredients.csv');
+  const rawDishIngRecords = parseCsv(dishIngredientsCSV, { columns: true, skip_empty_lines: true, trim: true }) as Array<Record<string, string>>;
+  validateRequiredColumns(rawDishIngRecords, ['dish', 'count', 'ingredient', 'levels', 'upgrade_count'], 'dish-ingredients.csv');
+  const dishIngredientRows = parseTable(dishIngredientsCSV, dishIngredientsRowSchema, 'dish-ingredients.csv');
 
   const dishIngredients: DishIngredient[] = [];
   for (const row of dishIngredientRows) {
-    if (row['Dish'] && row['Count'] && row['Ingredient'] && row['Ingredient'].trim()) {
-      const dishId = dishNameToId.get(row['Dish'].trim());
-      const ingredientId = ingredientNameToId.get(row['Ingredient'].trim());
-      const count = parseInt(row['Count']) || 0;
-      const levels = parseInt(row['Levels']) || null;
-      const upgradeCount = parseInt(row['Upgrade Count']) || null;
-
-      if (dishId && ingredientId) {
-        dishIngredients.push({
-          dish_id: dishId,
-          ingredient_id: ingredientId,
-          count,
-          levels,
-          upgrade_count: upgradeCount,
-        });
-      } else {
-        console.warn(`Could not find dish "${row['Dish']}" or ingredient "${row['Ingredient']}"`);
-      }
+    const dishId = dishNameToId.get(row.dish);
+    const ingredientId = ingredientNameToId.get(row.ingredient);
+    if (dishId && ingredientId) {
+      dishIngredients.push({
+        dishId: dishId,
+        ingredientId: ingredientId,
+        count: row.count,
+        levels: row.levels,
+        upgradeCount: row.upgradeCount,
+      });
+    } else {
+      console.warn(`\x1b[31mCould not find dish "${row.dish}" or ingredient "${row.ingredient}"\x1b[0m`);
     }
   }
 
@@ -205,8 +366,6 @@ function loadRelationships(
 }
 
 function loadNormalizedData() {
-  console.log('Loading and normalizing data from CSV files...');
-
   const { dishes, dishNameToId } = loadDishes();
   const { ingredients, ingredientNameToId } = loadIngredients();
   const { parties, partyNameToId } = loadParties();
@@ -226,32 +385,27 @@ function enrichData(
   dishIngredients: DishIngredient[],
   dishParties: DishParty[]
 ) {
-  console.log('Building graph and enriching data...');
-
   const graph = buildGraph(dishes, ingredients, parties, dishIngredients, dishParties);
-
-  // First, create PartyDish entities for all party-dish combinations
-  console.log('Creating PartyDish entities...');
   const partyDishes: PartyDish[] = [];
   let partyDishIdCounter = 1;
 
   for (const dishParty of dishParties) {
-    const dish = graph.dishById.get(dishParty.dish_id);
-    const party = graph.partyById.get(dishParty.party_id);
+    const dish = graph.dishById.get(dishParty.dishId);
+    const party = graph.partyById.get(dishParty.partyId);
 
     if (!dish || !party) continue;
 
     // Get ingredient lines for this dish
     const ingLines: IngredientLine[] = (graph.ingByDishId.get(dish.id) ?? []).map(line => ({
       count: line.count,
-      unitCost: graph.ingById.get(line.ingredient_id)?.cost ?? null,
+      unitCost: graph.ingById.get(line.ingredientId)?.sell ?? null,
     }));
 
     // Recipe cost is calculated per dish, not per party-dish combination
     const dishPartyPrice = partyPrice(dish, party);
-    const dishPartyRevenue = dishPartyPrice * dish.servings;
+    const dishPartyRevenue = dishPartyPrice * dish.finalServings;
     const dishProfit = partyProfitPerDish(dish, party, ingLines);
-    const dishProfitPerServing = dishProfit / dish.servings;
+    const dishProfitPerServing = dishProfit / dish.finalServings;
 
     const partyDish: PartyDish = {
       id: partyDishIdCounter++,
@@ -288,17 +442,17 @@ function enrichData(
   // Enrich dishes with precomputed values
   const enrichedDishes: EnrichedDish[] = dishes.map(dish => {
     // Get ingredient lines for this dish with upgrade counts
-    const dishIngredientData = graph.dishIngredients.filter(di => di.dish_id === dish.id);
+    const dishIngredientData = graph.dishIngredients.filter(di => di.dishId === dish.id);
     const ingredientLines = (graph.ingByDishId.get(dish.id) ?? []).map(line => {
-      const dishIngredient = dishIngredientData.find(di => di.ingredient_id === line.ingredient_id);
-      const unitCost = graph.ingById.get(line.ingredient_id)?.cost ?? null;
+      const dishIngredient = dishIngredientData.find(di => di.ingredientId === line.ingredientId);
+      const unitCost = graph.ingById.get(line.ingredientId)?.sell ?? null;
 
       return {
-        ingredientId: line.ingredient_id,
+        ingredientId: line.ingredientId,
         count: line.count,
         unitCost,
         lineCost: lineCost(line.count, unitCost),
-        upgradeCount: dishIngredient?.upgrade_count ?? null,
+        upgradeCount: dishIngredient?.upgradeCount ?? null,
       };
     });
 
@@ -320,10 +474,10 @@ function enrichData(
     );
 
     // Calculate pre-computed values to avoid view-level calculations
-    const baseRevenue = dish.final_price * dish.servings;
+    const baseRevenue = dish.finalPrice * dish.finalServings;
     const baseProfit = baseRevenue - dishRecipeCost;
-    const baseProfitPerServing = baseProfit / dish.servings;
-    const maxProfitPerServing = bestPartyDish ? bestPartyDish.profit / dish.servings : 0;
+    const baseProfitPerServing = baseProfit / dish.finalServings;
+    const maxProfitPerServing = bestPartyDish ? bestPartyDish.profit / dish.finalServings : 0;
 
     // Calculate upgrade cost
     const upgradeCost = ingredientLines.reduce((total, line) => {
@@ -369,7 +523,7 @@ function enrichData(
   // Enrich ingredients
   const enrichedIngredients: EnrichedIngredient[] = ingredients.map(ingredient => {
     const usedInDishes = (graph.dishesByIngredientId.get(ingredient.id) ?? []).map(usage => ({
-      dishId: usage.dish_id,
+      dishId: usage.dishId,
       count: usage.count,
     }));
 
@@ -431,8 +585,6 @@ function exportData(
   enrichedParties: EnrichedParty[],
   partyDishes: PartyDish[]
 ) {
-  console.log('Exporting enriched data to JSON...');
-
   const outputDir = join(__dirname, '..', 'static', 'data');
 
   // Ensure output directory exists
@@ -462,7 +614,6 @@ function exportData(
   );
 
   // Also maintain legacy format in src/lib for backward compatibility during transition
-  const legacyOutputDir = join(__dirname, '..', 'src', 'lib');
 
   // Create simple indices for client-side lookups
   const indices = {
@@ -477,35 +628,16 @@ function exportData(
     JSON.stringify(indices, null, 2)
   );
 
-  // Legacy exports (for backward compatibility)
-  writeFileSync(
-    join(legacyOutputDir, 'dishes.json'),
-    JSON.stringify(enrichedDishes, null, 2)
-  );
-
-  writeFileSync(
-    join(legacyOutputDir, 'ingredients.json'),
-    JSON.stringify(enrichedIngredients, null, 2)
-  );
-
-  writeFileSync(
-    join(legacyOutputDir, 'parties.json'),
-    JSON.stringify(enrichedParties, null, 2)
-  );
-
-  writeFileSync(
-    join(legacyOutputDir, 'party-dishes.json'),
-    JSON.stringify(partyDishes, null, 2)
-  );
-
   // Count relationships for logging
   const totalIngredientRelationships = enrichedDishes.reduce((sum, dish) => sum + dish.ingredients.length, 0);
   const totalPartyDishRelationships = partyDishes.length;
 
-  console.log(`Exported ${enrichedDishes.length} dishes, ${enrichedParties.length} parties, ${enrichedIngredients.length} ingredients, ${partyDishes.length} party-dishes`);
-  console.log(`Total dish-ingredient relationships: ${totalIngredientRelationships}`);
-  console.log(`Total party-dish relationships: ${totalPartyDishRelationships}`);
-  console.log(`Data exported to /static/data with version ${version}`);
+  console.log(`${enrichedParties.length}\tParties`);
+  console.log(`${partyDishes.length}\tParty-dishes`);
+  console.log(`${enrichedDishes.length}\tDishes`);
+  console.log(`${totalIngredientRelationships}\tDish-ingredients`);
+  console.log(`${enrichedIngredients.length}\tIngredients`);
+  console.log(`Data exported to /static/data with version ${version}\n`);
 }
 
 // Run the build process

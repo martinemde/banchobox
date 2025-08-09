@@ -1,4 +1,4 @@
-Dish,Count,Ingredient,Levels,Upgrade Count
+dish,count,ingredient,levels,upgrade_count
 Dusky Grouper Steak,5,Dusky Grouper,10,670
 Comber Sandwich,5,Painted Comber,10,670
 Wrasse Curry,5,Ornate Wrasse,10,670
@@ -16,7 +16,7 @@ Seasoned Jellyfish,5,Fried Egg Jellyfish,10,670
 Smoked Atlantic Mackerel Scramble,5,Atlantic Mackerel,10,670
 Mianbao Xia,5,Black Tiger Shrimp,10,670
 Roasted Capelin,5,Capelin,10,670
-Narrow-Barred Spanish Mackerel Arancini,5,Narrow-Barred Spanish Mackerel,10,670
+Narrow-barred Spanish Mackerel Arancini,5,Narrow-barred Spanish Mackerel,10,670
 Black Vinegar Braised Parrotfish,5,Mediterranean Parrotfish,10,670
 Trevally Sandwich,5,Bigeye Trevally,10,670
 Trevally Sandwich,5,Giant Trevally Meat,10,670
@@ -99,7 +99,7 @@ Seasoned Waptia Fieldensis,3,Waptia Fieldensis,10,446
 Trevally Nanbanzuke,3,Onion,10,446
 Dried Stingray,3,Marbled Electric Ray Meat,10,446
 Antarctic Octopus Carpaccio,3,Antarctic Octopus,10,446
-Boiled  Fusilier,3,Yellowback Fusilier,10,446
+Boiled Yellowback Fusilier,3,Yellowback Fusilier,10,446
 Falcatus Soybean Paste Soup,3,Seaweed,10,446
 Blobfish Spring Roll,3,Blobfish,10,446
 Shark Karaage,3,Copper Shark Meat,10,446
@@ -115,12 +115,12 @@ Lobster Platter,2,American Lobster,10,333
 Comber Sandwich,2,Egg,10,333
 Dumbo Takoyaki,2,Wheat,10,333
 Special Fried Shrimp Sushi,2,Black Tiger Shrimp,10,333
-Narrow-Barred Spanish Mackerel Arancini,2,Egg,10,333
+Narrow-barred Spanish Mackerel Arancini,2,Egg,10,333
 Lobster Platter,2,Tropical Rock Lobster,10,333
 Godzilla vs. Ebirah Curry,2,European Lobster,10,333
 Antarctic Octopus Carpaccio,2,Onion,10,333
-Grilled Eel with Habanero,2,Snub-Nosed Spiny Eel,10,333
-Narrow-Barred Spanish Mackerel Arancini,2,Garlic,10,333
+Grilled Eel with Habanero,2,Snub-nosed Spiny Eel,10,333
+Narrow-barred Spanish Mackerel Arancini,2,Garlic,10,333
 Seasoned Waptia Fieldensis,2,Cucumber,10,333
 Narwhal Miso Soup,2,Carrot,10,333
 Plotosid Pie,2,Wheat,10,333
@@ -183,7 +183,7 @@ Hot Pepper Tuna,2,Habanero,10,333
 Fried Tomato and Snailfish,2,Bean,10,333
 Seahorse Salad,2,Cherry Tomato,10,333
 Tomato Egg Soup,2,Cherry Tomato,10,333
-Narrow-Barred Spanish Mackerel Arancini,2,Rice,10,333
+Narrow-barred Spanish Mackerel Arancini,2,Rice,10,333
 Batfish Ricebowl,2,Rice,10,333
 Batfish Ricebowl,2,Egg,10,333
 Godzilla vs. Ebirah Curry,2,Moray Eel,10,333
@@ -202,13 +202,13 @@ Blacktip Reefshark Sushi,1,Blacktip Shark Meat,10,221
 Dumbo Octopus Sushi,1,Dumbo Octopus,10,221
 Rice with Purple Sea Urchin Sushi,1,Sesame Seed,10,221
 Pikaia Ramen,1,Southern Bull Kelp,10,221
-Cardinalfish Sushi,1,Cardinalfish,10,221
+Cardinalfish Sushi,1,Cardinal Fish,10,221
 Yellowfin Tuna Ootoro Sushi,1,Yellowfin Tuna Ootoro,10,221
 Green Humphead Parrotfish Sushi,1,Green Humphead Parrotfish,10,221
 Tomato Egg Soup,1,Black Pepper,10,221
 Special Fried Shrimp Sushi,1,Olive Oil,10,221
 Fried Rice with Sally Lightfoot Crab,1,Black Pepper,10,221
-Boiled  Fusilier,1,Soy Sauce,10,221
+Boiled Yellowback Fusilier,1,Soy Sauce,10,221
 Seaweed Rolled Omelet,1,Grade A Egg,10,221
 Polar Eelpout Sushi,1,Polar Eelpout,10,221
 Striped Catfish Sushi,1,Striped Catfish,10,221
@@ -281,7 +281,7 @@ European Lobster Sushi,1,European Lobster,10,221
 Vegetable Sushi,1,Carrot,10,221
 Whole-Roasted Shark Head,1,Whitetip Reefshark Head,10,221
 Copper Shark Sushi,1,Copper Shark Meat,10,221
-Blood-belly Comb Jelly Sushi,1,Blood-Belly Comb Jellyish,10,221
+Blood-belly Comb Jelly Sushi,1,Blood-belly Comb Jellyfish,10,221
 Norway Lobster Sushi,1,Norway Lobster,10,221
 Clione Sushi,1,Clione,10,221
 White Trevally Kombu Ochazuke,1,Kelp,10,221
@@ -353,7 +353,7 @@ White Shrimp Sushi,1,White Shrimp,10,221
 Bluespotted Stargazer Sushi,1,Bluespotted Stargazer,10,221
 Sweet and Sour Stargazer,1,Olive Oil,10,221
 American Lobster Sushi,1,American Lobster,10,221
-Snub-Nosed Spiny Eel Sushi,1,Snub-Nosed Spiny Eel,10,221
+Snub-nosed Spiny Eel Sushi,1,Snub-nosed Spiny Eel,10,221
 Comber Sushi,1,Comber,10,221
 Mackerel Scad Hotdog,1,Mayonnaise,10,221
 Trout Sea Grapes Ricebowl,1,Sea Grape,10,221
@@ -372,7 +372,7 @@ Smallspotted Dart Sushi,1,Small Spotted Dart,10,221
 Seagrapes Special Sushi,1,Sea Grape,10,221
 Titan Triggerfish Sushi,1,Titan Triggerfish,10,221
 Ice Fish Sushi,1,Ice Fish,10,221
-Narrow-Barred Spanish Mackerel Sushi,1,Narrow-Barred Spanish Mackerel,10,221
+Narrow-barred Spanish Mackerel Sushi,1,Narrow-barred Spanish Mackerel,10,221
 Bluefin Tuna Rice Bowl,1,Sesame Seed,10,221
 Eastern Rock Lobster Sushi,1,Eastern Rock Lobster,10,221
 Deep-Fried Vegetables,1,Onion,10,221
@@ -460,7 +460,7 @@ Seasoned Waptia Fieldensis,1,Black Vinegar,10,221
 Trout Sea Grapes Ricebowl,1,Rice,10,221
 Dumbo Takoyaki,1,Mayonnaise,10,221
 Crystal Lobster Sushi,1,Crystal Lobster,10,221
-Reef Triggerfish Sushi,1,Lagoon Triggerfish,10,221
+Lagoon Triggerfish Sushi,1,Lagoon Triggerfish,10,221
 Humboldt Squid Sushi,1,Humboldt Squid Meat,10,221
 Roasted Capelin,1,Black Coral,10,221
 Raw Black Tiger Shrimp Sushi,1,Black Tiger Shrimp,10,221
@@ -511,7 +511,7 @@ Hyalonema Tuna Sashimi,2,Hyalonema,5,35
 Green Sea Urchin & Cucumber Salad,2,Cucumber,5,35
 Deep-fried Sea Urchin,2,Purple Sea Urchin,5,35
 Green Sea Urchin & Cucumber Salad,2,Buckbean,5,35
-Rainbow Cap Eel Skewers,2,Snub-Nosed Spiny Eel,5,35
+Rainbow Cap Eel Skewers,2,Snub-nosed Spiny Eel,5,35
 Steamed Hyalonema Angler Fish,2,Hyalonema,5,35
 Truffle Blue Lobster Tail Sushi,2,Blue Lobster,5,35
 Rainbow Cap Pacific Fanfish Ochazuke,1,Rainbow Cap,5,23
@@ -545,7 +545,7 @@ Boiled Mantis Shrimp with Soy Paste,1,Mantis Shrimp Meat,1,0
 Boiled Mantis Shrimp with Soy Paste,1,Agar,1,0
 Parhelion Jellyfish Sushi,1,Parhelion Jellyfish,1,0
 Imperious Lobster Sushi,1,Imperious Lobster,1,0
-Clione Queen Soup,1,Clione Queen's Tentacle,1,0
+Clione Queen Soup,1,Clione Queen Tentacle,1,0
 Steamed Wolf Eel,1,Salt,1,0
 Malignant Pincer Sushi,1,Malignant Pincer,1,0
 Roasted Helicoprion Tail,1,Seaweed,1,0
