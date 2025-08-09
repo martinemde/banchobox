@@ -190,96 +190,6 @@
 
   .clear-btn:hover { opacity: 1; }
 
-  .table-container {
-    overflow-x: auto;
-    background: rgb(var(--color-surface-200));
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .image-col {
-    width: 64px;
-    text-align: center;
-  }
-
-  th {
-    background-color: rgb(var(--color-surface-300));
-    padding: 0.75rem 0.5rem;
-    text-align: left;
-    font-weight: 600;
-    color: rgb(var(--color-on-surface-token));
-    border-bottom: 1px solid rgb(var(--color-surface-400));
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-    vertical-align: bottom;
-  }
-
-  th.sortable {
-    cursor: pointer;
-    user-select: none;
-    transition: background-color 0.2s ease;
-  }
-
-  th.sortable:hover {
-    background-color: rgb(var(--color-surface-400));
-  }
-
-  th.sortable:active {
-    background-color: rgb(var(--color-surface-500));
-  }
-
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.3rem;
-  }
-
-  .sort-indicator {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: rgb(var(--color-primary-500));
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
-  }
-
-  th.sortable:hover .sort-indicator {
-    opacity: 1;
-  }
-
-  th.party-group {
-    background-color: rgb(var(--color-primary-500) / 0.8);
-    color: white;
-    text-align: center;
-    border-left: 2px solid rgb(var(--color-primary-600));
-    border-right: 2px solid rgb(var(--color-primary-600));
-  }
-
-  th.party-subheader {
-    background-color: rgb(var(--color-primary-500) / 0.6);
-    color: white;
-    font-size: 0.75rem;
-    padding: 0.5rem 0.4rem;
-  }
-
-  th.party-subheader.sortable:hover {
-    background-color: rgb(var(--color-primary-500) / 0.8);
-  }
-
-  th.party-subheader.sortable:active {
-    background-color: rgb(var(--color-primary-500));
-  }
-
-  th.party-subheader .sort-indicator {
-    color: white;
-  }
-
   /* Cards container */
   .card-list {
     display: flex;
@@ -291,15 +201,6 @@
   @media (max-width: 1200px) {
     .container {
       padding: 1rem;
-    }
-
-    th {
-      padding: 0.4rem 0.3rem;
-      font-size: 0.75rem;
-    }
-
-    table {
-      min-width: 2080px;
     }
   }
 </style>
