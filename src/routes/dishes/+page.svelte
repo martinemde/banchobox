@@ -2,6 +2,7 @@
   import { Data } from '$lib/data/runtime.js';
   import Dish from '$lib/components/Dish.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
+  import LoadMoreSentinel from '$lib/components/LoadMoreSentinel.svelte';
 
   // Sorting state
   let sortColumn: string = 'baseProfitPerServing';
@@ -81,6 +82,25 @@
     ? enrichedDishes.filter((dish) => dishMatchesQuery(dish, searchQuery))
     : enrichedDishes;
 
+  // Incremental rendering: only render a chunk at a time
+  let pageSize = 20;
+  let renderedCount = pageSize;
+  $: renderedDishes = visibleDishes.slice(0, renderedCount);
+
+  function loadMore() {
+    renderedCount = Math.min(renderedCount + pageSize, visibleDishes.length);
+  }
+
+  // Reset when sort/search changes (signature-based)
+  let lastSignature = '';
+  $: {
+    const signature = `${searchQuery}|${sortColumn}|${sortDirection}`;
+    if (signature !== lastSignature) {
+      renderedCount = Math.min(pageSize, visibleDishes.length);
+      lastSignature = signature;
+    }
+  }
+
   // Sort options for SortControl (align with clickable headers)
   const sortOptions = [
     { value: 'name', label: 'Recipe' },
@@ -137,9 +157,12 @@
       />
     </div>
     <div class="card-list">
-      {#each visibleDishes as dish}
+      {#each renderedDishes as dish}
         <Dish {dish} />
       {/each}
+      {#if renderedCount < visibleDishes.length}
+        <LoadMoreSentinel rootMargin="1200px" on:visible={loadMore} />
+      {/if}
     </div>
   </section>
 </div>

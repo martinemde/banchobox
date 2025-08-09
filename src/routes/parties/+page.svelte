@@ -2,6 +2,7 @@
   import { Data } from '$lib/data/runtime.js';
   import PartyDish from '$lib/components/PartyDish.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
+  import LoadMoreSentinel from '$lib/components/LoadMoreSentinel.svelte';
 
   // Global sorting state for all party tables
   let sortColumn: string = 'dishName';
@@ -116,6 +117,35 @@
     };
   });
 
+  // Incremental rendering per party section
+  let pageSize = 10;
+  let renderedPartiesCount = pageSize;
+  function loadMoreParties() {
+    renderedPartiesCount = Math.min(renderedPartiesCount + pageSize, sortedParties.length);
+  }
+  $: { renderedPartiesCount = pageSize; }
+
+  // Per-party dish pagination
+  let dishPageSize = 20;
+  let renderedDishCounts: Record<number, number> = {};
+  function loadMoreDishesForParty(partyId: number) {
+    const party = sortedParties.find((p) => p.id === partyId);
+    if (!party) return;
+    const current = renderedDishCounts[partyId] ?? dishPageSize;
+    renderedDishCounts = {
+      ...renderedDishCounts,
+      [partyId]: Math.min(current + dishPageSize, party.sortedDishes.length)
+    };
+  }
+  // Reset per-party dish counts when the visible list changes
+  $: {
+    const next: Record<number, number> = {};
+    for (const party of sortedParties) {
+      next[party.id] = Math.min(dishPageSize, party.sortedDishes.length);
+    }
+    renderedDishCounts = next;
+  }
+
   const sortOptions = [
     { value: 'dishName', label: 'Dish Name' },
     { value: 'partyPrice', label: 'Price' },
@@ -160,7 +190,7 @@
 
   <section class="parties">
     <div class="parties-container">
-      {#each sortedParties as party}
+      {#each sortedParties.slice(0, renderedPartiesCount) as party}
         <section class="mt-6">
           <header class="flex items-center justify-between px-4 py-3 border-b border-surface-200-800">
             <h3 class="h4 m-0">{party.name} Party</h3>
@@ -171,15 +201,23 @@
           </header>
 
           <div class="flex flex-col gap-4 p-4">
-            {#each party.sortedDishes as partyDish}
+            {#each party.sortedDishes.slice(0, renderedDishCounts[party.id] || 0) as partyDish}
               {@const dish = Data.getDishById(partyDish.dishId)}
               {#if dish}
                 <PartyDish {dish} {partyDish} />
               {/if}
             {/each}
+            {#if (renderedDishCounts[party.id] || 0) < party.sortedDishes.length}
+              <LoadMoreSentinel rootMargin="1200px" on:visible={() => loadMoreDishesForParty(party.id)} />
+            {/if}
           </div>
         </section>
       {/each}
+      {#if renderedPartiesCount < sortedParties.length}
+        <div class="p-4">
+          <LoadMoreSentinel rootMargin="1200px" on:visible={loadMoreParties} />
+        </div>
+      {/if}
     </div>
   </section>
 </div>

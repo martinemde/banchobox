@@ -2,6 +2,7 @@
   import { Data } from '$lib/data/runtime.js';
   import IngredientCard from '$lib/components/Ingredient.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
+  import LoadMoreSentinel from '$lib/components/LoadMoreSentinel.svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
 
   // Sorting state
@@ -113,6 +114,23 @@
   $: visibleIngredients = enrichedIngredients.filter((ing) =>
     ingredientMatchesQuery(ing, searchQuery) && (!showTrackedOnly || $trackedIngredientIds.has(ing.id))
   );
+
+  // Incremental rendering
+  let pageSize = 20;
+  let renderedCount = pageSize;
+  $: renderedIngredients = visibleIngredients.slice(0, renderedCount);
+  function loadMore() {
+    renderedCount = Math.min(renderedCount + pageSize, visibleIngredients.length);
+  }
+  // Reset when sort/search filters change
+  let lastSignature = '';
+  $: {
+    const signature = `${searchQuery}|${sortColumn}|${sortDirection}|${showTrackedOnly}`;
+    if (signature !== lastSignature) {
+      renderedCount = Math.min(pageSize, visibleIngredients.length);
+      lastSignature = signature;
+    }
+  }
 
   // Calculate cost per kg for an ingredient
   function calculateCostPerKg(ingredient: any): number {
@@ -227,9 +245,12 @@
     </div>
 
     <div class="card-list">
-      {#each visibleIngredients as ingredient}
+      {#each renderedIngredients as ingredient}
         <IngredientCard {ingredient} />
       {/each}
+      {#if renderedCount < visibleIngredients.length}
+        <LoadMoreSentinel rootMargin="1200px" on:visible={loadMore} />
+      {/if}
     </div>
   </section>
 </div>

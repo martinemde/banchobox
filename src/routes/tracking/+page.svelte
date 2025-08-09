@@ -2,6 +2,7 @@
   import { Data } from '$lib/data/runtime.js';
   import type { EnrichedIngredient, EnrichedDish } from '$lib/types.js';
   import PlannedIngredient from '$lib/components/PlannedIngredient.svelte';
+  import LoadMoreSentinel from '$lib/components/LoadMoreSentinel.svelte';
   import { trackedDishIds, trackedIngredientIds } from '$lib/stores/tracking.js';
 
   // Compute the union of directly tracked ingredients and ingredients from tracked dishes
@@ -39,6 +40,22 @@
     // Sort by dish price desc for readability
     return usages.sort((a, b) => (b.dish.final_price ?? 0) - (a.dish.final_price ?? 0));
   }
+
+  // pagination for tracking page
+  let pageSize = 20;
+  let renderedCount = pageSize;
+  function loadMore() {
+    renderedCount = Math.min(renderedCount + pageSize, plannedIngredients.length);
+  }
+  // Reset when tracking set changes
+  let lastSignature = '';
+  $: {
+    const signature = `${$trackedIngredientIds.size}|${$trackedDishIds.size}|${plannedIngredients.length}`;
+    if (signature !== lastSignature) {
+      renderedCount = Math.min(pageSize, plannedIngredients.length);
+      lastSignature = signature;
+    }
+  }
 </script>
 
 <svelte:head>
@@ -59,9 +76,12 @@
       <div class="opacity-70 text-sm">No tracked ingredients yet. Track an ingredient or a dish to see items here.</div>
     {:else}
       <div class="card-list">
-        {#each plannedIngredients as ingredient}
+        {#each plannedIngredients.slice(0, renderedCount) as ingredient}
           <PlannedIngredient {ingredient} />
         {/each}
+        {#if renderedCount < plannedIngredients.length}
+          <LoadMoreSentinel rootMargin="1200px" on:visible={loadMore} />
+        {/if}
       </div>
     {/if}
   </section>
