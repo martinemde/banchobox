@@ -4,9 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [
-		tailwindcss({
-			content: ['./src/**/*.{html,js,svelte,ts}']
-		}),
+		tailwindcss(),
 		sveltekit()
 	],
 	test: {

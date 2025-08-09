@@ -19,10 +19,8 @@ export function loadDishes(): LegacyDish[] {
     initialPrice: dish.initial_price,
     finalPrice: dish.final_price,
     servings: dish.servings,
-    parties: dish.partyStats.map(stat => {
-      const party = enrichedDishes.find(d => d.partyStats.some(ps => ps.partyId === stat.partyId));
-      return party?.name || 'Unknown Party';
-    }),
+    // Map best party (if available) to a single party name for legacy shape; otherwise empty array
+    parties: (dish.bestPartyName ? [dish.bestPartyName] : []),
     ingredients: dish.ingredients.map(ing => ({
       name: ing.unitCost !== null ? `Ingredient ${ing.ingredientId}` : 'Unknown Ingredient',
       count: ing.count,
@@ -50,6 +48,14 @@ export function loadParties(): LegacyParty[] {
   return enrichedParties.map(party => ({
     name: party.name,
     bonus: party.bonus,
-    dishes: party.dishes.map(d => `Dish ${d.dishId}`), // This would need actual name lookup in practice
+    // Fallback to using PartyDish ids to list dish references (best-effort legacy mapping)
+    dishes: (party.partyDishIds || []).map(pdId => {
+      try {
+        const pd = (partiesData as any); // Not available here cleanly; keep shape compatible
+        return `PartyDish ${pdId}`;
+      } catch {
+        return `PartyDish ${pdId}`;
+      }
+    })
   }));
 }

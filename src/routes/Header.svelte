@@ -2,6 +2,7 @@
   import { page } from '$app/stores';
   import { AppBar } from '@skeletonlabs/skeleton-svelte';
   import { CookingPot, PartyPopper, Soup } from '@lucide/svelte';
+  import { trackedIngredientIds } from '$lib/stores/tracking.js';
 </script>
 
 <AppBar>
@@ -28,7 +29,12 @@
         data-sveltekit-preload-data="hover"
         aria-label="Ingredients"
       >
-        <CookingPot size={22} />
+        <span class="relative inline-block">
+          <CookingPot size={22} />
+          {#if $trackedIngredientIds.size > 0}
+            <span class="badge-count" aria-hidden="true">{$trackedIngredientIds.size}</span>
+          {/if}
+        </span>
         <span class="label hidden sm:inline">Ingredients</span>
       </a>
       <a
@@ -67,5 +73,22 @@
   .nav-link.active {
     color: var(--color-primary-500);
     background-color: var(--color-primary-50);
+  }
+
+  .badge-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    display: inline-grid;
+    place-items: center;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 9999px;
+    background-color: rgb(var(--color-primary-500));
+    color: white;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 700;
   }
 </style>

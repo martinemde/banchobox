@@ -2,10 +2,12 @@
   import { Data } from '$lib/data/runtime.js';
   import IngredientCard from '$lib/components/Ingredient.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
+  import { trackedIngredientIds } from '$lib/stores/tracking.js';
 
   // Sorting state
   let sortColumn: string = 'name';
   let sortDirection: 'asc' | 'desc' = 'asc';
+  let showTrackedOnly: boolean = false;
 
   // Use the enriched data service
   $: baseIngredients = Data.ingredients;
@@ -107,10 +109,10 @@
 
   // Get sorted ingredients
   $: enrichedIngredients = sortIngredients(baseIngredients, sortColumn, sortDirection);
-  // Apply search filter
-  $: visibleIngredients = (searchQuery && searchQuery.trim().length > 0)
-    ? enrichedIngredients.filter((ing) => ingredientMatchesQuery(ing, searchQuery))
-    : enrichedIngredients;
+  // Apply search and tracked-only filters
+  $: visibleIngredients = enrichedIngredients.filter((ing) =>
+    ingredientMatchesQuery(ing, searchQuery) && (!showTrackedOnly || $trackedIngredientIds.has(ing.id))
+  );
 
   // Calculate cost per kg for an ingredient
   function calculateCostPerKg(ingredient: any): number {
@@ -212,6 +214,16 @@
           sortDirection = e.detail.direction;
         }}
       />
+
+      <div class="flex items-center gap-2 mt-1">
+        <label class="inline-flex items-center gap-2 text-sm">
+          <input type="checkbox" bind:checked={showTrackedOnly} />
+          <span>Show tracked only</span>
+          {#if showTrackedOnly}
+            <span class="text-xs opacity-60">{$trackedIngredientIds.size} tracked</span>
+          {/if}
+        </label>
+      </div>
     </div>
 
     <div class="card-list">
