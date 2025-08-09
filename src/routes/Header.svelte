@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { AppBar } from '@skeletonlabs/skeleton-svelte';
-  import { CookingPot, PartyPopper, Soup } from '@lucide/svelte';
+  import { CookingPot, PartyPopper, Soup, ClipboardList } from '@lucide/svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
 </script>
 
@@ -46,6 +46,16 @@
       >
         <PartyPopper size={22} />
         <span class="label hidden sm:inline">Parties</span>
+      </a>
+      <a
+        href="/tracking"
+        class="nav-link ml-auto"
+        class:active={$page.url.pathname === '/tracking'}
+        data-sveltekit-preload-data="hover"
+        aria-label="Tracking"
+      >
+        <ClipboardList size={22} />
+        <span class="label hidden sm:inline">Tracking</span>
       </a>
     </nav>
   {/snippet}
