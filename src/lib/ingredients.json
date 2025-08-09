@@ -672,7 +672,7 @@
   {
     "id": 38,
     "name": "Klaus's Fin",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Boss",
     "drone": 0,
     "kg": 1,
@@ -710,7 +710,7 @@
   {
     "id": 40,
     "name": "Lusca Neck Meat",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Boss",
     "drone": 0,
     "kg": 1,
@@ -730,7 +730,7 @@
   {
     "id": 41,
     "name": "Lusca Tentacle",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Boss",
     "drone": 0,
     "kg": 1,
@@ -748,7 +748,7 @@
   {
     "id": 42,
     "name": "Mantis Shrimp Meat",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Boss",
     "drone": 0,
     "kg": 1,
@@ -786,7 +786,7 @@
   {
     "id": 44,
     "name": "Truck Hermit Crab Legs",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Boss",
     "drone": 0,
     "kg": 1,
@@ -864,7 +864,7 @@
   {
     "id": 48,
     "name": "Blue Lobster",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Crab trap",
     "drone": 0,
     "kg": 1,
@@ -912,7 +912,7 @@
   {
     "id": 50,
     "name": "Crystal Lobster",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Crab trap",
     "drone": 0,
     "kg": 1.5,
@@ -1003,7 +1003,7 @@
   {
     "id": 54,
     "name": "Fan Lobster",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Crab trap",
     "drone": 0,
     "kg": 0.2,
@@ -1067,7 +1067,7 @@
   {
     "id": 57,
     "name": "Red-banded Lobster",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Crab trap",
     "drone": 0,
     "kg": 0.1,
@@ -1154,23 +1154,6 @@
   },
   {
     "id": 61,
-    "name": "Wasabi Sushi",
-    "type": "Default",
-    "drone": 0,
-    "kg": null,
-    "max_meats": null,
-    "cost": null,
-    "usedIn": [
-      {
-        "dishId": 305,
-        "count": 1
-      }
-    ],
-    "bestPartyDishId": null,
-    "usedForParties": []
-  },
-  {
-    "id": 62,
     "name": "Alaska Pollock",
     "source": "Glacial Area",
     "type": "Fish",
@@ -1188,7 +1171,7 @@
     "usedForParties": []
   },
   {
-    "id": 63,
+    "id": 62,
     "name": "Allenypterus",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -1206,7 +1189,7 @@
     "usedForParties": []
   },
   {
-    "id": 64,
+    "id": 63,
     "name": "Anomalocaris",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -1224,7 +1207,7 @@
     "usedForParties": []
   },
   {
-    "id": 65,
+    "id": 64,
     "name": "Antarctic Octopus",
     "source": "Glacial Area",
     "type": "Fish",
@@ -1250,7 +1233,7 @@
     "usedForParties": []
   },
   {
-    "id": 66,
+    "id": 65,
     "name": "Arctic Cod",
     "source": "Glacial Area",
     "type": "Fish",
@@ -1272,7 +1255,7 @@
     "usedForParties": []
   },
   {
-    "id": 67,
+    "id": 66,
     "name": "Arctic Telescope Fish",
     "source": "Glacial Area",
     "type": "Fish",
@@ -1290,7 +1273,7 @@
     "usedForParties": []
   },
   {
-    "id": 68,
+    "id": 67,
     "name": "Atlantic Anglerfish",
     "source": "Limestone Cave",
     "type": "Fish",
@@ -1312,7 +1295,7 @@
     "usedForParties": []
   },
   {
-    "id": 69,
+    "id": 68,
     "name": "Atlantic Bonito",
     "source": "50-130m",
     "type": "Fish",
@@ -1336,7 +1319,7 @@
     ]
   },
   {
-    "id": 70,
+    "id": 69,
     "name": "Atlantic Mackerel",
     "source": "50-130m",
     "type": "Fish",
@@ -1362,7 +1345,7 @@
     "usedForParties": []
   },
   {
-    "id": 71,
+    "id": 70,
     "name": "Barrel Jellyfish",
     "source": "0-50m",
     "type": "Fish",
@@ -1386,7 +1369,7 @@
     ]
   },
   {
-    "id": 72,
+    "id": 71,
     "name": "Barreleye",
     "source": "Glacial Passage",
     "type": "Fish",
@@ -1415,7 +1398,7 @@
     ]
   },
   {
-    "id": 73,
+    "id": 72,
     "name": "Bigeye Scad",
     "source": "50-130m",
     "type": "Fish",
@@ -1437,7 +1420,7 @@
     "usedForParties": []
   },
   {
-    "id": 74,
+    "id": 73,
     "name": "Bigeye Trevally",
     "source": "50-130m",
     "type": "Fish",
@@ -1461,7 +1444,7 @@
     ]
   },
   {
-    "id": 75,
+    "id": 74,
     "name": "Black and White Snapper",
     "source": "0-50m",
     "type": "Fish",
@@ -1479,9 +1462,9 @@
     "usedForParties": []
   },
   {
-    "id": 76,
+    "id": 75,
     "name": "Blackfin Barracuda",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Fish",
     "drone": 0,
     "kg": 5.5,
@@ -1501,9 +1484,9 @@
     "usedForParties": []
   },
   {
-    "id": 77,
+    "id": 76,
     "name": "Blacktip Shark Meat",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 1,
     "kg": 2.5,
@@ -1525,7 +1508,7 @@
     ]
   },
   {
-    "id": 78,
+    "id": 77,
     "name": "Blobfish",
     "source": "Glacial Passage",
     "type": "Fish",
@@ -1547,25 +1530,20 @@
     "usedForParties": []
   },
   {
-    "id": 79,
-    "name": "Blood-Belly Comb Jelly",
+    "id": 78,
+    "name": "Blood-Belly Comb Jellyfish",
     "source": "130-250m",
     "type": "Fish",
     "drone": 0,
     "kg": 7,
     "max_meats": 3,
     "cost": 17,
-    "usedIn": [
-      {
-        "dishId": 239,
-        "count": 1
-      }
-    ],
+    "usedIn": [],
     "bestPartyDishId": null,
     "usedForParties": []
   },
   {
-    "id": 80,
+    "id": 79,
     "name": "Blue Tang",
     "source": "0-50m",
     "type": "Fish",
@@ -1587,7 +1565,7 @@
     "usedForParties": []
   },
   {
-    "id": 81,
+    "id": 80,
     "name": "Bluefin Tuna Akami",
     "source": "0-130m",
     "type": "Fish",
@@ -1611,7 +1589,7 @@
     ]
   },
   {
-    "id": 82,
+    "id": 81,
     "name": "Bluefin Tuna Chutoro",
     "source": "0-130m",
     "type": "Fish",
@@ -1639,7 +1617,7 @@
     ]
   },
   {
-    "id": 83,
+    "id": 82,
     "name": "Bluefin Tuna Ootoro",
     "source": "0-130m",
     "type": "Fish",
@@ -1663,7 +1641,7 @@
     ]
   },
   {
-    "id": 84,
+    "id": 83,
     "name": "Bluehead Tilefish",
     "source": "50-130m",
     "type": "Fish",
@@ -1681,7 +1659,7 @@
     "usedForParties": []
   },
   {
-    "id": 85,
+    "id": 84,
     "name": "Bluespotted Stargazer",
     "source": "130-250m",
     "type": "Fish",
@@ -1703,9 +1681,9 @@
     "usedForParties": []
   },
   {
-    "id": 86,
+    "id": 85,
     "name": "Box Jellyfish",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 0,
     "kg": 5,
@@ -1727,7 +1705,7 @@
     ]
   },
   {
-    "id": 87,
+    "id": 86,
     "name": "Capelin",
     "source": "Glacial Area",
     "type": "Fish",
@@ -1751,27 +1729,22 @@
     ]
   },
   {
-    "id": 88,
-    "name": "Cardinalfish",
+    "id": 87,
+    "name": "Cardinal Fish",
     "source": "0-50m",
     "type": "Fish",
     "drone": 0,
     "kg": 0.2,
     "max_meats": 3,
     "cost": 1,
-    "usedIn": [
-      {
-        "dishId": 302,
-        "count": 1
-      }
-    ],
+    "usedIn": [],
     "bestPartyDishId": null,
     "usedForParties": []
   },
   {
-    "id": 89,
+    "id": 88,
     "name": "Clearfin Lionfish",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 0,
     "kg": 1.7,
@@ -1791,7 +1764,7 @@
     "usedForParties": []
   },
   {
-    "id": 90,
+    "id": 89,
     "name": "Clown Frogfish",
     "source": "50-130m",
     "type": "Fish",
@@ -1815,7 +1788,7 @@
     ]
   },
   {
-    "id": 91,
+    "id": 90,
     "name": "Clownfish",
     "source": "0-50m",
     "type": "Fish",
@@ -1837,7 +1810,7 @@
     "usedForParties": []
   },
   {
-    "id": 92,
+    "id": 91,
     "name": "Comb Jelly",
     "source": "130-250m",
     "type": "Fish",
@@ -1861,7 +1834,7 @@
     ]
   },
   {
-    "id": 93,
+    "id": 92,
     "name": "Comber",
     "source": "0-50m",
     "type": "Fish",
@@ -1883,7 +1856,7 @@
     "usedForParties": []
   },
   {
-    "id": 94,
+    "id": 93,
     "name": "Cookiecutter Shark",
     "source": "130-250m",
     "type": "Fish",
@@ -1907,9 +1880,9 @@
     ]
   },
   {
-    "id": 95,
+    "id": 94,
     "name": "Copper Shark Meat",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 1,
     "kg": 4,
@@ -1931,7 +1904,7 @@
     ]
   },
   {
-    "id": 96,
+    "id": 95,
     "name": "Coral Trout",
     "source": "50-130m",
     "type": "Fish",
@@ -1957,7 +1930,7 @@
     "usedForParties": []
   },
   {
-    "id": 97,
+    "id": 96,
     "name": "Cuttlefish",
     "source": "50-130m",
     "type": "Fish",
@@ -1989,9 +1962,9 @@
     ]
   },
   {
-    "id": 98,
+    "id": 97,
     "name": "Devil Scorpionfish",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Fish",
     "drone": 0,
     "kg": 3,
@@ -2007,7 +1980,7 @@
     "usedForParties": []
   },
   {
-    "id": 99,
+    "id": 98,
     "name": "Drepanaspis Meat",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -2025,7 +1998,7 @@
     "usedForParties": []
   },
   {
-    "id": 100,
+    "id": 99,
     "name": "Dumbo Octopus",
     "source": "Glacial Passage",
     "type": "Fish",
@@ -2047,7 +2020,7 @@
     "usedForParties": []
   },
   {
-    "id": 101,
+    "id": 100,
     "name": "Dunkleosteus Meat",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -2065,7 +2038,7 @@
     "usedForParties": []
   },
   {
-    "id": 102,
+    "id": 101,
     "name": "Dusky Grouper",
     "source": "50-130m",
     "type": "Fish",
@@ -2087,7 +2060,7 @@
     "usedForParties": []
   },
   {
-    "id": 103,
+    "id": 102,
     "name": "Emperor Angelfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2105,7 +2078,7 @@
     "usedForParties": []
   },
   {
-    "id": 104,
+    "id": 103,
     "name": "Falcatus",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -2129,7 +2102,7 @@
     ]
   },
   {
-    "id": 105,
+    "id": 104,
     "name": "Fangtooth",
     "source": "130-250m",
     "type": "Fish",
@@ -2151,7 +2124,7 @@
     "usedForParties": []
   },
   {
-    "id": 106,
+    "id": 105,
     "name": "Flame Angelfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2169,7 +2142,7 @@
     "usedForParties": []
   },
   {
-    "id": 107,
+    "id": 106,
     "name": "Fried Egg Jellyfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2193,7 +2166,7 @@
     ]
   },
   {
-    "id": 108,
+    "id": 107,
     "name": "Frilled Shark Meat",
     "source": "130-250m",
     "type": "Fish",
@@ -2217,7 +2190,7 @@
     ]
   },
   {
-    "id": 109,
+    "id": 108,
     "name": "Gelatinous Snailfish",
     "source": "Glacial Area",
     "type": "Fish",
@@ -2239,7 +2212,7 @@
     "usedForParties": []
   },
   {
-    "id": 110,
+    "id": 109,
     "name": "Giant Trevally Meat",
     "source": "50-130m",
     "type": "Fish",
@@ -2263,7 +2236,7 @@
     ]
   },
   {
-    "id": 111,
+    "id": 110,
     "name": "Golden King Crab",
     "source": "Glacial Area",
     "type": "Fish",
@@ -2285,7 +2258,7 @@
     "usedForParties": []
   },
   {
-    "id": 112,
+    "id": 111,
     "name": "Great Barracuda",
     "source": "50-130m",
     "type": "Fish",
@@ -2307,7 +2280,7 @@
     "usedForParties": []
   },
   {
-    "id": 113,
+    "id": 112,
     "name": "Green Humphead Parrotfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2331,7 +2304,7 @@
     ]
   },
   {
-    "id": 114,
+    "id": 113,
     "name": "Greenland Shark Meat",
     "source": "Glacial Area",
     "type": "Fish",
@@ -2349,7 +2322,7 @@
     "usedForParties": []
   },
   {
-    "id": 115,
+    "id": 114,
     "name": "Grey Triggerfish",
     "source": "50-130m",
     "type": "Fish",
@@ -2371,7 +2344,7 @@
     "usedForParties": []
   },
   {
-    "id": 116,
+    "id": 115,
     "name": "Haddock",
     "source": "Glacial Area",
     "type": "Fish",
@@ -2393,7 +2366,7 @@
     "usedForParties": []
   },
   {
-    "id": 117,
+    "id": 116,
     "name": "Hammerhead Meat",
     "source": "50-130m",
     "type": "Fish",
@@ -2411,7 +2384,7 @@
     "usedForParties": []
   },
   {
-    "id": 118,
+    "id": 117,
     "name": "Harlequin Hind",
     "source": "50-130m",
     "type": "Fish",
@@ -2433,9 +2406,9 @@
     "usedForParties": []
   },
   {
-    "id": 119,
+    "id": 118,
     "name": "Humboldt Squid Meat",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Fish",
     "drone": 1,
     "kg": 7.5,
@@ -2457,7 +2430,7 @@
     ]
   },
   {
-    "id": 120,
+    "id": 119,
     "name": "Ice Fish",
     "source": "Glacial Area",
     "type": "Fish",
@@ -2481,7 +2454,7 @@
     ]
   },
   {
-    "id": 121,
+    "id": 120,
     "name": "Lagoon Triggerfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2503,7 +2476,7 @@
     "usedForParties": []
   },
   {
-    "id": 122,
+    "id": 121,
     "name": "Long-Snouted Seahorse",
     "source": "0-50m",
     "type": "Fish",
@@ -2533,7 +2506,7 @@
     "usedForParties": []
   },
   {
-    "id": 123,
+    "id": 122,
     "name": "Longfin Batfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2555,9 +2528,9 @@
     "usedForParties": []
   },
   {
-    "id": 124,
+    "id": 123,
     "name": "Longnose Sawshark Meat",
-    "source": "50-130m Day or Night",
+    "source": "50-130m",
     "type": "Fish",
     "drone": 1,
     "kg": 6.5,
@@ -2573,9 +2546,9 @@
     "usedForParties": []
   },
   {
-    "id": 125,
+    "id": 124,
     "name": "Longspine Porcupinefish",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 0,
     "kg": 3.5,
@@ -2595,9 +2568,9 @@
     "usedForParties": []
   },
   {
-    "id": 126,
+    "id": 125,
     "name": "Longspine Squirrelfish",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 0,
     "kg": 0.4,
@@ -2617,7 +2590,7 @@
     "usedForParties": []
   },
   {
-    "id": 127,
+    "id": 126,
     "name": "Lumpfish",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -2635,7 +2608,7 @@
     "usedForParties": []
   },
   {
-    "id": 128,
+    "id": 127,
     "name": "Mackerel Scad",
     "source": "50-130m",
     "type": "Fish",
@@ -2657,7 +2630,7 @@
     "usedForParties": []
   },
   {
-    "id": 129,
+    "id": 128,
     "name": "Mako Meat",
     "source": "0-50m",
     "type": "Fish",
@@ -2675,7 +2648,7 @@
     "usedForParties": []
   },
   {
-    "id": 130,
+    "id": 129,
     "name": "Marbled Electric Ray Meat",
     "source": "0-50m",
     "type": "Fish",
@@ -2697,7 +2670,7 @@
     "usedForParties": []
   },
   {
-    "id": 131,
+    "id": 130,
     "name": "Marlin Meat",
     "source": "0-50m",
     "type": "Fish",
@@ -2721,7 +2694,7 @@
     ]
   },
   {
-    "id": 132,
+    "id": 131,
     "name": "Mediterranean Parrotfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2743,7 +2716,7 @@
     "usedForParties": []
   },
   {
-    "id": 133,
+    "id": 132,
     "name": "Megalograptus",
     "source": "Divine Tree Control Room",
     "type": "Fish",
@@ -2761,7 +2734,7 @@
     "usedForParties": []
   },
   {
-    "id": 134,
+    "id": 133,
     "name": "Megamouth Shark Meat",
     "source": "130-250m",
     "type": "Fish",
@@ -2785,9 +2758,9 @@
     ]
   },
   {
-    "id": 135,
+    "id": 134,
     "name": "Moray Eel",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 0,
     "kg": 9,
@@ -2814,7 +2787,7 @@
     ]
   },
   {
-    "id": 136,
+    "id": 135,
     "name": "Narrow-Barred Spanish Mackerel",
     "source": "50-130m",
     "type": "Fish",
@@ -2836,7 +2809,7 @@
     "usedForParties": []
   },
   {
-    "id": 137,
+    "id": 136,
     "name": "Narwhal Meat",
     "source": "Glacial Area",
     "type": "Fish",
@@ -2858,7 +2831,7 @@
     "usedForParties": []
   },
   {
-    "id": 138,
+    "id": 137,
     "name": "Orbicular Batfish",
     "source": "0-50m",
     "type": "Fish",
@@ -2880,7 +2853,7 @@
     "usedForParties": []
   },
   {
-    "id": 139,
+    "id": 138,
     "name": "Ornate Wrasse",
     "source": "0-50m",
     "type": "Fish",
@@ -2904,7 +2877,7 @@
     ]
   },
   {
-    "id": 140,
+    "id": 139,
     "name": "Pacific Fanfish",
     "source": "130-250m",
     "type": "Fish",
@@ -2926,7 +2899,7 @@
     "usedForParties": []
   },
   {
-    "id": 141,
+    "id": 140,
     "name": "Painted Comber",
     "source": "50-130m",
     "type": "Fish",
@@ -2948,7 +2921,7 @@
     "usedForParties": []
   },
   {
-    "id": 142,
+    "id": 141,
     "name": "Peacock Squid",
     "source": "Glacial Passage",
     "type": "Fish",
@@ -2974,7 +2947,7 @@
     "usedForParties": []
   },
   {
-    "id": 143,
+    "id": 142,
     "name": "Pelican Eel",
     "source": "Glacial Passage",
     "type": "Fish",
@@ -2996,7 +2969,7 @@
     "usedForParties": []
   },
   {
-    "id": 144,
+    "id": 143,
     "name": "Pikaia",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -3018,7 +2991,7 @@
     "usedForParties": []
   },
   {
-    "id": 145,
+    "id": 144,
     "name": "Polar Eelpout",
     "source": "Glacial Area",
     "type": "Fish",
@@ -3036,7 +3009,7 @@
     "usedForParties": []
   },
   {
-    "id": 146,
+    "id": 145,
     "name": "Porbeagle Shark Meat",
     "source": "Glacial Area",
     "type": "Fish",
@@ -3060,7 +3033,7 @@
     ]
   },
   {
-    "id": 147,
+    "id": 146,
     "name": "Pyramid Butterflyfish",
     "source": "0-50m",
     "type": "Fish",
@@ -3082,7 +3055,7 @@
     "usedForParties": []
   },
   {
-    "id": 148,
+    "id": 147,
     "name": "Qingmendous",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -3100,7 +3073,7 @@
     "usedForParties": []
   },
   {
-    "id": 149,
+    "id": 148,
     "name": "Rainbow Wrasse",
     "source": "0-50m",
     "type": "Fish",
@@ -3124,7 +3097,7 @@
     ]
   },
   {
-    "id": 150,
+    "id": 149,
     "name": "Red Bream",
     "source": "130-250m",
     "type": "Fish",
@@ -3148,7 +3121,7 @@
     ]
   },
   {
-    "id": 151,
+    "id": 150,
     "name": "Red Lionfish",
     "source": "0-50m",
     "type": "Fish",
@@ -3170,7 +3143,7 @@
     "usedForParties": []
   },
   {
-    "id": 152,
+    "id": 151,
     "name": "Redtoothed Triggerfish",
     "source": "0-50m",
     "type": "Fish",
@@ -3192,7 +3165,7 @@
     "usedForParties": []
   },
   {
-    "id": 153,
+    "id": 152,
     "name": "Rhinochimaeridae Meat",
     "source": "130-250m",
     "type": "Fish",
@@ -3216,7 +3189,7 @@
     ]
   },
   {
-    "id": 154,
+    "id": 153,
     "name": "Sailfish Meat",
     "source": "Shipwreck Interior",
     "type": "Fish",
@@ -3244,7 +3217,7 @@
     ]
   },
   {
-    "id": 155,
+    "id": 154,
     "name": "Salema Porgy",
     "source": "0-50m",
     "type": "Fish",
@@ -3262,7 +3235,7 @@
     "usedForParties": []
   },
   {
-    "id": 156,
+    "id": 155,
     "name": "Sally Lightfoot Crab",
     "source": "Shipwreck Interior",
     "type": "Fish",
@@ -3284,7 +3257,7 @@
     "usedForParties": []
   },
   {
-    "id": 157,
+    "id": 156,
     "name": "Salmon Snailfish",
     "source": "130-250m",
     "type": "Fish",
@@ -3306,7 +3279,7 @@
     "usedForParties": []
   },
   {
-    "id": 158,
+    "id": 157,
     "name": "Sea Goldie",
     "source": "0-50m",
     "type": "Fish",
@@ -3324,7 +3297,7 @@
     "usedForParties": []
   },
   {
-    "id": 159,
+    "id": 158,
     "name": "Sea Toad",
     "source": "130-250m",
     "type": "Fish",
@@ -3348,7 +3321,7 @@
     ]
   },
   {
-    "id": 160,
+    "id": 159,
     "name": "Sheepshead Meat",
     "source": "0-50m",
     "type": "Fish",
@@ -3370,7 +3343,7 @@
     "usedForParties": []
   },
   {
-    "id": 161,
+    "id": 160,
     "name": "Small Spotted Dart",
     "source": "0-50m",
     "type": "Fish",
@@ -3392,7 +3365,7 @@
     "usedForParties": []
   },
   {
-    "id": 162,
+    "id": 161,
     "name": "Snub-Nosed Spiny Eel",
     "source": "3rd Glacial Cave",
     "type": "Fish",
@@ -3418,9 +3391,9 @@
     "usedForParties": []
   },
   {
-    "id": 163,
+    "id": 162,
     "name": "Spear Squid",
-    "source": "50-130m Night",
+    "source": "50-130m",
     "type": "Fish",
     "drone": 0,
     "kg": 4.6,
@@ -3440,7 +3413,7 @@
     "usedForParties": []
   },
   {
-    "id": 164,
+    "id": 163,
     "name": "Spider Crab",
     "source": "130-250m",
     "type": "Fish",
@@ -3473,7 +3446,7 @@
     ]
   },
   {
-    "id": 165,
+    "id": 164,
     "name": "Starry Puffer",
     "source": "0-50m",
     "type": "Fish",
@@ -3499,7 +3472,7 @@
     "usedForParties": []
   },
   {
-    "id": 166,
+    "id": 165,
     "name": "Starry Skate",
     "source": "Glacial Area",
     "type": "Fish",
@@ -3521,7 +3494,7 @@
     "usedForParties": []
   },
   {
-    "id": 167,
+    "id": 166,
     "name": "Stingray Meat",
     "source": "0-50m",
     "type": "Fish",
@@ -3547,7 +3520,7 @@
     "usedForParties": []
   },
   {
-    "id": 168,
+    "id": 167,
     "name": "Striped Catfish",
     "source": "0-50m",
     "type": "Fish",
@@ -3569,7 +3542,7 @@
     "usedForParties": []
   },
   {
-    "id": 169,
+    "id": 168,
     "name": "Striped Red Mullet",
     "source": "50-130m",
     "type": "Fish",
@@ -3591,7 +3564,7 @@
     "usedForParties": []
   },
   {
-    "id": 170,
+    "id": 169,
     "name": "Threetooth Puffer",
     "source": "130-250m",
     "type": "Fish",
@@ -3609,7 +3582,7 @@
     "usedForParties": []
   },
   {
-    "id": 171,
+    "id": 170,
     "name": "Thresher Shark Meat",
     "source": "0-50m",
     "type": "Fish",
@@ -3627,9 +3600,9 @@
     "usedForParties": []
   },
   {
-    "id": 172,
+    "id": 171,
     "name": "Tiger Shark Meat",
-    "source": "50-130m Day or Night",
+    "source": "50-130m",
     "type": "Fish",
     "drone": 1,
     "kg": 15,
@@ -3645,7 +3618,7 @@
     "usedForParties": []
   },
   {
-    "id": 173,
+    "id": 172,
     "name": "Titan Triggerfish",
     "source": "0-50m",
     "type": "Fish",
@@ -3667,7 +3640,7 @@
     "usedForParties": []
   },
   {
-    "id": 174,
+    "id": 173,
     "name": "Vampire Squid",
     "source": "Glacial Passage",
     "type": "Fish",
@@ -3695,7 +3668,7 @@
     ]
   },
   {
-    "id": 175,
+    "id": 174,
     "name": "White Spotted Jellyfish",
     "source": "50-130m",
     "type": "Fish",
@@ -3719,7 +3692,7 @@
     ]
   },
   {
-    "id": 176,
+    "id": 175,
     "name": "White Trevally",
     "source": "50-130m",
     "type": "Fish",
@@ -3745,9 +3718,9 @@
     "usedForParties": []
   },
   {
-    "id": 177,
+    "id": 176,
     "name": "Whitetip Reefshark Head",
-    "source": "0-50m Day and Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 1,
     "kg": 2.5,
@@ -3765,9 +3738,9 @@
     ]
   },
   {
-    "id": 178,
+    "id": 177,
     "name": "Whitetip Reefshark Meat",
-    "source": "0-50m Day and Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 1,
     "kg": 2.5,
@@ -3783,7 +3756,7 @@
     "usedForParties": []
   },
   {
-    "id": 179,
+    "id": 178,
     "name": "Xenacanthus Meat",
     "source": "Hydrothermal Vents",
     "type": "Fish",
@@ -3801,7 +3774,7 @@
     "usedForParties": []
   },
   {
-    "id": 180,
+    "id": 179,
     "name": "Yellow Tang",
     "source": "0-50m",
     "type": "Fish",
@@ -3819,7 +3792,7 @@
     "usedForParties": []
   },
   {
-    "id": 181,
+    "id": 180,
     "name": "Yellowback Fusilier",
     "source": "0-50m",
     "type": "Fish",
@@ -3841,7 +3814,7 @@
     "usedForParties": []
   },
   {
-    "id": 182,
+    "id": 181,
     "name": "Yellowfin Tuna Akami",
     "source": "0-130m",
     "type": "Fish",
@@ -3865,7 +3838,7 @@
     ]
   },
   {
-    "id": 183,
+    "id": 182,
     "name": "Yellowfin Tuna Chutoro",
     "source": "0-130m",
     "type": "Fish",
@@ -3889,7 +3862,7 @@
     ]
   },
   {
-    "id": 184,
+    "id": 183,
     "name": "Yellowfin Tuna Ootoro",
     "source": "0-130m",
     "type": "Fish",
@@ -3913,9 +3886,9 @@
     ]
   },
   {
-    "id": 185,
+    "id": 184,
     "name": "Zebra Shark Meat",
-    "source": "0-50m Night",
+    "source": "0-50m",
     "type": "Fish",
     "drone": 1,
     "kg": 10.5,
@@ -3931,7 +3904,7 @@
     "usedForParties": []
   },
   {
-    "id": 186,
+    "id": 185,
     "name": "Rainbow Cap",
     "source": "Jango",
     "type": "Jango",
@@ -3957,7 +3930,7 @@
     "usedForParties": []
   },
   {
-    "id": 187,
+    "id": 186,
     "name": "Truffle",
     "source": "Jango",
     "type": "Jango",
@@ -3995,7 +3968,7 @@
     ]
   },
   {
-    "id": 188,
+    "id": 187,
     "name": "Black Tiger Shrimp",
     "source": "50-130m",
     "type": "Net",
@@ -4027,7 +4000,7 @@
     ]
   },
   {
-    "id": 189,
+    "id": 188,
     "name": "Chambered Nautilus",
     "source": "130-250m",
     "type": "Net",
@@ -4045,7 +4018,7 @@
     "usedForParties": []
   },
   {
-    "id": 190,
+    "id": 189,
     "name": "Clione",
     "source": "130-250m",
     "type": "Net",
@@ -4063,7 +4036,7 @@
     "usedForParties": []
   },
   {
-    "id": 191,
+    "id": 190,
     "name": "Seadragon",
     "source": "Hydrothermal Vents",
     "type": "Net",
@@ -4081,7 +4054,7 @@
     "usedForParties": []
   },
   {
-    "id": 192,
+    "id": 191,
     "name": "Waptia Fieldensis",
     "source": "Hydrothermal Vents",
     "type": "Net",
@@ -4106,9 +4079,9 @@
     ]
   },
   {
-    "id": 193,
+    "id": 192,
     "name": "White Shrimp",
-    "source": "0-130m Day and Night",
+    "source": "0-130m",
     "type": "Net",
     "drone": 0,
     "kg": 0.1,
@@ -4134,7 +4107,7 @@
     ]
   },
   {
-    "id": 194,
+    "id": 193,
     "name": "Whiteleg Shrimp",
     "source": "0-50m",
     "type": "Net",
@@ -4170,10 +4143,10 @@
     ]
   },
   {
-    "id": 195,
+    "id": 194,
     "name": "Black Pepper",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4206,10 +4179,10 @@
     ]
   },
   {
-    "id": 196,
+    "id": 195,
     "name": "Black Vinegar",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4264,10 +4237,10 @@
     ]
   },
   {
-    "id": 197,
+    "id": 196,
     "name": "Curry Block",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4296,10 +4269,10 @@
     ]
   },
   {
-    "id": 198,
+    "id": 197,
     "name": "Mayonnaise",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4342,10 +4315,10 @@
     ]
   },
   {
-    "id": 199,
+    "id": 198,
     "name": "Miso",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4400,10 +4373,10 @@
     ]
   },
   {
-    "id": 200,
+    "id": 199,
     "name": "Olive Oil",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4521,10 +4494,10 @@
     ]
   },
   {
-    "id": 201,
+    "id": 200,
     "name": "Salt",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4582,10 +4555,10 @@
     ]
   },
   {
-    "id": 202,
+    "id": 201,
     "name": "Sesame Seed",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4627,10 +4600,10 @@
     ]
   },
   {
-    "id": 203,
+    "id": 202,
     "name": "Soy Sauce",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4709,10 +4682,10 @@
     ]
   },
   {
-    "id": 204,
+    "id": 203,
     "name": "Turmeric",
     "source": "Dispatch & Cooking Pots",
-    "type": "Seasoning",
+    "type": "Procure",
     "drone": 0,
     "kg": 0.1,
     "max_meats": 1,
@@ -4742,7 +4715,7 @@
     ]
   },
   {
-    "id": 205,
+    "id": 204,
     "name": "Agar",
     "source": "0-50m",
     "type": "Sea Plant",
@@ -4786,7 +4759,7 @@
     ]
   },
   {
-    "id": 206,
+    "id": 205,
     "name": "Buckbean",
     "source": "Glacial Area",
     "type": "Sea Plant",
@@ -4820,7 +4793,7 @@
     ]
   },
   {
-    "id": 207,
+    "id": 206,
     "name": "Sea Grape",
     "source": "Limestone Cave",
     "type": "Sea Plant",
@@ -4875,7 +4848,7 @@
     ]
   },
   {
-    "id": 208,
+    "id": 207,
     "name": "Black Coral",
     "source": "Glacial Area",
     "type": "Sea plant",
@@ -4906,7 +4879,7 @@
     ]
   },
   {
-    "id": 209,
+    "id": 208,
     "name": "Bladderwrack",
     "source": "Glacial Seaweed Cave",
     "type": "Sea plant",
@@ -4938,7 +4911,7 @@
     ]
   },
   {
-    "id": 210,
+    "id": 209,
     "name": "Hyalonema",
     "source": "Glacial Seaweed Cave",
     "type": "Sea plant",
@@ -4962,7 +4935,7 @@
     ]
   },
   {
-    "id": 211,
+    "id": 210,
     "name": "Kajime",
     "source": "0-130m",
     "type": "Sea plant",
@@ -5006,7 +4979,7 @@
     ]
   },
   {
-    "id": 212,
+    "id": 211,
     "name": "Kelp",
     "source": "50-130m",
     "type": "Sea plant",
@@ -5059,7 +5032,7 @@
     ]
   },
   {
-    "id": 213,
+    "id": 212,
     "name": "Seaweed",
     "source": "50-130m",
     "type": "Sea plant",
@@ -5108,7 +5081,7 @@
     ]
   },
   {
-    "id": 214,
+    "id": 213,
     "name": "Southern Bull Kelp",
     "source": "Glacial Area",
     "type": "Sea plant",
@@ -5141,9 +5114,9 @@
     ]
   },
   {
-    "id": 215,
+    "id": 214,
     "name": "Green Sea Urchin",
-    "source": "0-50m Day and Night",
+    "source": "0-50m",
     "type": "Urchin",
     "drone": 0,
     "kg": 1,
@@ -5175,9 +5148,9 @@
     ]
   },
   {
-    "id": 216,
+    "id": 215,
     "name": "Purple Sea Urchin",
-    "source": "0-50m Day or Night",
+    "source": "0-50m",
     "type": "Urchin",
     "drone": 0,
     "kg": 1,
@@ -5207,10 +5180,10 @@
     ]
   },
   {
-    "id": 217,
+    "id": 216,
     "name": "Bean",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5243,10 +5216,10 @@
     ]
   },
   {
-    "id": 218,
+    "id": 217,
     "name": "Buckwheat",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5273,10 +5246,10 @@
     "usedForParties": []
   },
   {
-    "id": 219,
+    "id": 218,
     "name": "Carrot",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5326,10 +5299,10 @@
     ]
   },
   {
-    "id": 220,
+    "id": 219,
     "name": "Cherry Tomato",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5374,10 +5347,10 @@
     ]
   },
   {
-    "id": 221,
+    "id": 220,
     "name": "Cucumber",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5423,10 +5396,10 @@
     ]
   },
   {
-    "id": 222,
+    "id": 221,
     "name": "Egg",
-    "source": "Chicken Farm",
-    "type": "Egg",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5493,10 +5466,10 @@
     ]
   },
   {
-    "id": 223,
+    "id": 222,
     "name": "Eggplant",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5533,10 +5506,10 @@
     ]
   },
   {
-    "id": 224,
+    "id": 223,
     "name": "Garlic",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5583,10 +5556,10 @@
     ]
   },
   {
-    "id": 225,
+    "id": 224,
     "name": "Grade A Egg",
-    "source": "Chicken Farm",
-    "type": "Egg",
+    "source": "Vegetable Farm",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5628,10 +5601,10 @@
     ]
   },
   {
-    "id": 226,
+    "id": 225,
     "name": "Habanero",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5661,10 +5634,10 @@
     ]
   },
   {
-    "id": 227,
+    "id": 226,
     "name": "Onion",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5706,10 +5679,10 @@
     ]
   },
   {
-    "id": 228,
+    "id": 227,
     "name": "Rice",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,
@@ -5796,10 +5769,10 @@
     ]
   },
   {
-    "id": 229,
+    "id": 228,
     "name": "Wheat",
     "source": "Vegetable Farm",
-    "type": "Vegetable",
+    "type": "Vegetable Farm",
     "drone": 0,
     "kg": null,
     "max_meats": null,

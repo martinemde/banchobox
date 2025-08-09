@@ -1,230 +1,229 @@
-Ingredient,Source,Type,Drone,kg,Max Meats,Cost
-Aurora Jellyfish,Jellyfish Basin,Aberration,,5.0,5,
-Barbed Eel,Fog Coast,Aberration,,6.0,,
-Bloodskin Shark,Fog Coast,Aberration,checked,11.5,5,
-Bony Wreckfish,Black Cliff,Aberration,checked,8.0,,
-Bursting Anglerfish,Jellyfish Basin,Aberration,,6.0,5,
-Concertina Barracuda,Jellyfish Basin,Aberration,,6.5,5,
-Enthralled Stonefish,Black Cliff,Aberration,,8.0,,
-Fanged Cod,Fog Coast,Aberration,,3.5,,
-Gazing Shark,Jellyfish Basin,Aberration,checked,11.0,5,
-Gelatinous Stonefish,Black Cliff,Aberration,,7.5,,
-Gnashing Perch,Black Cliff,Aberration,,4.5,,
-Grotesque Mackerel,Fog Coast,Aberration,,3.0,,
-Host Eel,Fog Coast,Aberration,,5.5,,
-Malignant Pincer,Fog Coast,Aberration,,2.5,,
-Many Eyed Mackerel,Fog Coast,Aberration,,2.5,,
-Parhelion Jellyfish,Jellyfish Basin,Aberration,,5.0,5,
-Perished Loosejaw,Jellyfish Basin,Aberration,,3.0,5,
-Radiant Squid,Jellyfish Basin,Aberration,,4.5,3,
-Sallow Sailfish,Fog Coast,Aberration,checked,9.5,5,
-Savage Barracuda,Jellyfish Basin,Aberration,,7.0,5,
-Scouring Bass,Black Cliff,Aberration,,3.5,,
-Seizing Snailfish,Jellyfish Basin,Aberration,,5.0,3,
-Shattered Wreckfish,Black Cliff,Aberration,,6.5,5,
-Sprouting Eel,Black Cliff,Aberration,checked,7.0,5,
-Three-Headed Cod,Fog Coast,Aberration,,6.0,,
-Translucent Sturgeon,Black Cliff,Aberration,checked,8.0,5,
-Tusked Grouper,Fog Coast,Aberration,,5.0,,
-Voltaic Grouper,Fog Coast,Aberration,,6.0,,
-Withered Ray,Black Cliff,Aberration,checked,8.5,5,
-Cerebral Crab,Fog Coast,Aberration Crab,,2.0,,
-Cortex Decorator,Black Cliff,Aberration Crab,,2.5,,
-Entangled Crab,Jellyfish Basin,Aberration Crab,,2.5,3,
-Imperious Lobster,Jellyfish Basin,Aberration Crab,,3.0,,
-Splintered Crab,Black Cliff,Aberration Crab,,3.5,,
-Clione Queen's Tentacle,130-250m,Boss,,1.0,1,
-Goblin Shark's Fatty Meat,130-250m,Boss,,1.0,1,
-Helicoprion Tail,3rd Glacial Cave,Boss,,1.0,1,
-Klaus's Fin,0-50m Night,Boss,,1.0,1,
-Kronosaurus Tongue,Hydrothermal Vents,Boss,,1.0,1,
-Lusca Neck Meat,50-130m Night,Boss,,1.0,1,
-Lusca Tentacle,50-130m Night,Boss,,1.0,1,
-Mantis Shrimp Meat,0-50m Night,Boss,,1.0,1,
-Phantom Jellyfish Meat,Second Glacial Cave,Boss,,1.0,1,
-Truck Hermit Crab Legs,0-50m Night,Boss,,1.0,1,
-Wolf Eel Tail Meat,130-250m,Boss,,1.0,1,
-Yawie's Inner Flesh,Divine Tree Control Room,Boss,,1.0,1,
-American Lobster,0-50m,Crab trap,,1.0,3,43
-Blue Lobster,0-50m Night,Crab trap,,1.0,3,47
-California Spiny Lobster,50-130m,Crab trap,,1.5,3,22
-Crystal Lobster,50-130m Night,Crab trap,,1.5,3,47
-Dollocaris Ingens,Hydrothermal Vents,Crab trap,,1.5,3,45
-Eastern Rock Lobster,130-250m,Crab trap,,2.5,3,47
-European Lobster,0-50m,Crab trap,,1.0,3,23
-Fan Lobster,50-130m Night,Crab trap,,0.2,3,22
-Horsehair Crab,Glacial Area,Crab trap,,1.5,3,50
-Norway Lobster,130-250m,Crab trap,,0.2,3,25
-Red-banded Lobster,0-50m Night,Crab trap,,0.1,3,25
-Snow Crab,Glacial Area,Crab trap,,2.0,3,40
-Tokummia Katalepsis,Hydrothermal Vents,Crab trap,,2.0,3,55
-Tropical Rock Lobster,50-130m,Crab trap,,1.2,3,45
-Wasabi Sushi,,Default,,,,
-Alaska Pollock,Glacial Area,Fish,,7.0,5,45
-Allenypterus,Hydrothermal Vents,Fish,,4.0,3,42
-Anomalocaris,Hydrothermal Vents,Fish,,4.0,3,75
-Antarctic Octopus,Glacial Area,Fish,,7.5,5,40
-Arctic Cod,Glacial Area,Fish,,5.0,3,32
-Arctic Telescope Fish,Glacial Area,Fish,,3.0,3,40
-Atlantic Anglerfish,Limestone Cave,Fish,,5.5,5,11
-Atlantic Bonito,50-130m,Fish,,4.0,3,7
-Atlantic Mackerel,50-130m,Fish,,3.5,3,7
-Barrel Jellyfish,0-50m,Fish,,1.0,3,5
-Barreleye,Glacial Passage,Fish,,3.0,3,35
-Bigeye Scad,50-130m,Fish,,0.6,3,6
-Bigeye Trevally,50-130m,Fish,,3.0,5,6
-Black and White Snapper,0-50m,Fish,,1.0,5,3
-Blackfin Barracuda,50-130m Night,Fish,,5.5,5,20
-Blacktip Shark Meat,0-50m Night,Fish,checked,2.5,5,20
-Blobfish,Glacial Passage,Fish,,7.5,5,40
-Blood-Belly Comb Jelly,130-250m,Fish,,7.0,3,17
-Blue Tang,0-50m,Fish,,0.5,3,2
-Bluefin Tuna Akami,0-130m,Fish,checked,8.0,5,27
-Bluefin Tuna Chutoro,0-130m,Fish,checked,8.0,5,32
-Bluefin Tuna Ootoro,0-130m,Fish,checked,,9,45
-Bluehead Tilefish,50-130m,Fish,,0.2,2,5
-Bluespotted Stargazer,130-250m,Fish,,5.0,0,18
-Box Jellyfish,0-50m Night,Fish,,5.0,3,18
-Capelin,Glacial Area,Fish,,0.5,3,15
-Cardinalfish,0-50m,Fish,,0.2,3,1
-Clearfin Lionfish,0-50m Night,Fish,,1.7,3,8
-Clown Frogfish,50-130m,Fish,,0.3,3,5
-Clownfish,0-50m,Fish,,0.2,2,1
-Comb Jelly,130-250m,Fish,,7.0,3,14
-Comber,0-50m,Fish,,0.2,2,1
-Cookiecutter Shark,130-250m,Fish,,5.0,3,25
-Copper Shark Meat,0-50m Night,Fish,checked,4.0,5,22
-Coral Trout,50-130m,Fish,,3.0,5,6
-Cuttlefish,50-130m,Fish,,4.0,3,6
-Devil Scorpionfish,50-130m Night,Fish,,3.0,3,45
-Drepanaspis Meat,Hydrothermal Vents,Fish,checked,8.5,5,50
-Dumbo Octopus,Glacial Passage,Fish,,4.0,3,38
-Dunkleosteus Meat,Hydrothermal Vents,Fish,checked,19.5,5,70
-Dusky Grouper,50-130m,Fish,,9.0,5,10
-Emperor Angelfish,0-50m,Fish,,0.4,0,3
-Falcatus,Hydrothermal Vents,Fish,,6.0,3,43
-Fangtooth,130-250m,Fish,,3.0,3,15
-Flame Angelfish,0-50m,Fish,,0.2,0,2
-Fried Egg Jellyfish,0-50m,Fish,,1.0,3,5
-Frilled Shark Meat,130-250m,Fish,checked,8.5,5,28
-Gelatinous Snailfish,Glacial Area,Fish,,2.0,3,28
-Giant Trevally Meat,50-130m,Fish,checked,5.0,5,10
-Golden King Crab,Glacial Area,Fish,,8.0,5,45
-Great Barracuda,50-130m,Fish,,7.0,5,6
-Green Humphead Parrotfish,0-50m,Fish,checked,1.8,5,5
-Greenland Shark Meat,Glacial Area,Fish,checked,20.0,5,62
-Grey Triggerfish,50-130m,Fish,,3.5,5,6
-Haddock,Glacial Area,Fish,,6.0,5,37
-Hammerhead Meat,50-130m,Fish,checked,13.0,5,47
-Harlequin Hind,50-130m,Fish,,1.1,5,6
-Humboldt Squid Meat,50-130m Night,Fish,checked,7.5,5,48
-Ice Fish,Glacial Area,Fish,,5.5,3,32
-Lagoon Triggerfish,0-50m,Fish,,0.7,2,2
-Long-Snouted Seahorse,0-50m,Fish,,0.5,0,2
-Longfin Batfish,0-50m,Fish,,0.8,5,3
-Longnose Sawshark Meat,50-130m Day or Night,Fish,checked,6.5,5,12
-Longspine Porcupinefish,0-50m Night,Fish,,3.5,3,26
-Longspine Squirrelfish,0-50m Night,Fish,,0.4,3,3
-Lumpfish,Hydrothermal Vents,Fish,,5.0,3,40
-Mackerel Scad,50-130m,Fish,,0.8,2,5
-Mako Meat,0-50m,Fish,checked,9.0,5,43
-Marbled Electric Ray Meat,0-50m,Fish,checked,3.5,5,30
-Marlin Meat,0-50m,Fish,checked,7.5,5,45
-Mediterranean Parrotfish,0-50m,Fish,,2.0,5,3
-Megalograptus,Divine Tree Control Room,Fish,,8.0,5,46
-Megamouth Shark Meat,130-250m,Fish,checked,11.5,5,31
-Moray Eel,0-50m Night,Fish,,9.0,0,17
-Narrow-Barred Spanish Mackerel,50-130m,Fish,,9.0,5,10
-Narwhal Meat,Glacial Area,Fish,checked,9.5,5,46
-Orbicular Batfish,0-50m,Fish,,0.3,2,2
-Ornate Wrasse,0-50m,Fish,,0.5,2,2
-Pacific Fanfish,130-250m,Fish,,5.0,3,22
-Painted Comber,50-130m,Fish,,0.4,3,6
-Peacock Squid,Glacial Passage,Fish,,3.5,3,36
-Pelican Eel,Glacial Passage,Fish,,8.0,5,60
-Pikaia,Hydrothermal Vents,Fish,,4.5,3,38
-Polar Eelpout,Glacial Area,Fish,,3.0,3,30
-Porbeagle Shark Meat,Glacial Area,Fish,checked,13.5,5,55
-Pyramid Butterflyfish,0-50m,Fish,,0.4,2,1
-Qingmendous,Hydrothermal Vents,Fish,,6.0,0,40
-Rainbow Wrasse,0-50m,Fish,,0.6,2,2
-Red Bream,130-250m,Fish,,3.0,3,12
-Red Lionfish,0-50m,Fish,,1.5,3,3
-Redtoothed Triggerfish,0-50m,Fish,,1.0,5,3
-Rhinochimaeridae Meat,130-250m,Fish,checked,5.0,7,30
-Sailfish Meat,Shipwreck Interior,Fish,checked,9.0,5,65
-Salema Porgy,0-50m,Fish,,0.4,3,2
-Sally Lightfoot Crab,Shipwreck Interior,Fish,,4.0,5,18
-Salmon Snailfish,130-250m,Fish,,5.0,3,20
-Sea Goldie,0-50m,Fish,,0.3,2,1
-Sea Toad,130-250m,Fish,,5.0,3,18
-Sheepshead Meat,0-50m,Fish,checked,1.8,5,10
-Small Spotted Dart,0-50m,Fish,,0.8,3,2
-Snub-Nosed Spiny Eel,3rd Glacial Cave,Fish,,6.5,5,60
-Spear Squid,50-130m Night,Fish,,4.6,3,17
-Spider Crab,130-250m,Fish,,7.5,5,17
-Starry Puffer,0-50m,Fish,,3.0,3,15
-Starry Skate,Glacial Area,Fish,checked,5.5,5,44
-Stingray Meat,0-50m,Fish,checked,3.0,5,17
-Striped Catfish,0-50m,Fish,,0.3,0,2
-Striped Red Mullet,50-130m,Fish,,0.7,0,5
-Threetooth Puffer,130-250m,Fish,,5.0,3,23
-Thresher Shark Meat,0-50m,Fish,checked,8.5,5,53
-Tiger Shark Meat,50-130m Day or Night,Fish,checked,15.0,5,17
-Titan Triggerfish,0-50m,Fish,,3.8,5,5
-Vampire Squid,Glacial Passage,Fish,,6.0,5,41
-White Spotted Jellyfish,50-130m,Fish,,1.0,3,6
-White Trevally,50-130m,Fish,,6.0,5,7
-Whitetip Reefshark Head,0-50m Day and Night,Fish,checked,2.5,1,40
-Whitetip Reefshark Meat,0-50m Day and Night,Fish,checked,2.5,5,8
-Xenacanthus Meat,Hydrothermal Vents,Fish,checked,5.5,5,53
-Yellow Tang,0-50m,Fish,,0.4,2,1
-Yellowback Fusilier,0-50m,Fish,,0.8,2,2
-Yellowfin Tuna Akami,0-130m,Fish,checked,6.0,5,24
-Yellowfin Tuna Chutoro,0-130m,Fish,checked,6.0,5,30
-Yellowfin Tuna Ootoro,0-130m,Fish,checked,,9,42
-Zebra Shark Meat,0-50m Night,Fish,checked,10.5,5,42
-Rainbow Cap,Jango,Jango,,,,750
-Truffle,Jango,Jango,,,,650
-Black Tiger Shrimp,50-130m,Net,,0.1,5,17
-Chambered Nautilus,130-250m,Net,,1.0,3,12
-Clione,130-250m,Net,,0.1,4,25
-Seadragon,Hydrothermal Vents,Net,,0.5,4,35
-Waptia Fieldensis,Hydrothermal Vents,Net,,0.4,5,34
-White Shrimp,0-130m Day and Night,Net,,0.1,5,17
-Whiteleg Shrimp,0-50m,Net,,0.1,0,11
-Black Pepper,Dispatch & Cooking Pots,Seasoning,,0.1,1,6
-Black Vinegar,Dispatch & Cooking Pots,Seasoning,,0.1,1,5
-Curry Block,Dispatch & Cooking Pots,Seasoning,,0.1,1,6
-Mayonnaise,Dispatch & Cooking Pots,Seasoning,,0.1,1,7
-Miso,Dispatch & Cooking Pots,Seasoning,,0.1,1,8
-Olive Oil,Dispatch & Cooking Pots,Seasoning,,0.1,1,6
-Salt,Dispatch & Cooking Pots,Seasoning,,0.1,1,8
-Sesame Seed,Dispatch & Cooking Pots,Seasoning,,0.1,1,8
-Soy Sauce,Dispatch & Cooking Pots,Seasoning,,0.1,1,6
-Turmeric,Dispatch & Cooking Pots,Seasoning,,0.1,1,5
-Agar,0-50m,Sea Plant,,0.1,1,3
-Buckbean,Glacial Area,Sea Plant,,0.1,1,9
-Sea Grape,Limestone Cave,Sea Plant,,0.1,1,6
-Black Coral,Glacial Area,Sea plant,,0.1,1,8
-Bladderwrack,Glacial Seaweed Cave,Sea plant,,0.1,1,10
-Hyalonema,Glacial Seaweed Cave,Sea plant,,0.1,1,65
-Kajime,0-130m,Sea plant,,0.1,1,7
-Kelp,50-130m,Sea plant,,0.1,1,6
-Seaweed,50-130m,Sea plant,,0.1,1,5
-Southern Bull Kelp,Glacial Area,Sea plant,,0.1,1,8
-Green Sea Urchin,0-50m Day and Night,Urchin,,1.0,1,90
-Purple Sea Urchin,0-50m Day or Night,Urchin,,1.0,1,20
-Bean,Vegetable Farm,Vegetable,,,,20
-Buckwheat,Vegetable Farm,Vegetable,,,,18
-Carrot,Vegetable Farm,Vegetable,,,,25
-Cherry Tomato,Vegetable Farm,Vegetable,,,,17
-Cucumber,Vegetable Farm,Vegetable,,,,20
-Egg,Chicken Farm,Egg,,,,15
-Eggplant,Vegetable Farm,Vegetable,,,,21
-Garlic,Vegetable Farm,Vegetable,,,,19
-Grade A Egg,Chicken Farm,Egg,,,,90
-Habanero,Vegetable Farm,Vegetable,,,,16
-Onion,Vegetable Farm,Vegetable,,,,20
-Rice,Vegetable Farm,Vegetable,,,,15
-Wheat,Vegetable Farm,Vegetable,,,,19
+Ingredient,Source,Type,Drone,kg,Max Meats,Cost,Day,Night,Aberration,Rank,Farm,Jango Purchase,Otto Purchase,Icon
+Aurora Jellyfish,Jellyfish Basin,Aberration,,5.0,5,,,,checked,5,,,,Aurora_Jellyfish.png
+Barbed Eel,Fog Coast,Aberration,,6.0,,,,,checked,7,,,,Barbed_Eel.png
+Bloodskin Shark,Fog Coast,Aberration,checked,11.5,5,,,,checked,9,,,,Bloodskin_Shark.png
+Bony Wreckfish,Black Cliff,Aberration,checked,8.0,,,,,checked,7,,,,Bony_Wreckfish.png
+Bursting Anglerfish,Jellyfish Basin,Aberration,,6.0,5,,,,checked,7,,,,Bursting_Anglerfish.png
+Concertina Barracuda,Jellyfish Basin,Aberration,,6.5,5,,,,checked,8,,,,Concertina_Barracuda.png
+Enthralled Stonefish,Black Cliff,Aberration,,8.0,,,,,checked,6,,,,Enthralled_Stonefish.png
+Fanged Cod,Fog Coast,Aberration,,3.5,,,,,checked,5,,,,Fanged_Cod.png
+Gazing Shark,Jellyfish Basin,Aberration,checked,11.0,5,,,,checked,9,,,,Gazing_Shark.png
+Gelatinous Stonefish,Black Cliff,Aberration,,7.5,,,,,checked,5,,,,Gelatinous_Stonefish.png
+Gnashing Perch,Black Cliff,Aberration,,4.5,,,,,checked,6,,,,Gnashing_Perch.png
+Grotesque Mackerel,Fog Coast,Aberration,,3.0,,,,,checked,5,,,,Grotesque_Mackerel.png
+Host Eel,Fog Coast,Aberration,,5.5,,,,,checked,8,,,,Host_Eel.png
+Malignant Pincer,Fog Coast,Aberration,,2.5,,,,,checked,8,,,,Malignant_Pincer.png
+Many Eyed Mackerel,Fog Coast,Aberration,,2.5,,,,,checked,6,,,,Many_Eyed_Mackerel.png
+Parhelion Jellyfish,Jellyfish Basin,Aberration,,5.0,5,,,,checked,5,,,,Parhelion_Jellyfish.png
+Perished Loosejaw,Jellyfish Basin,Aberration,,3.0,5,,,,checked,6,,,,Perished_Loosejaw.png
+Radiant Squid,Jellyfish Basin,Aberration,,4.5,3,,,,checked,5,,,,Radiant_Squid.png
+Sallow Sailfish,Fog Coast,Aberration,checked,9.5,5,,,,checked,9,,,,Sallow_Sailfish.png
+Savage Barracuda,Jellyfish Basin,Aberration,,7.0,5,,,,checked,7,,,,Savage_Barracuda.png
+Scouring Bass,Black Cliff,Aberration,,3.5,,,,,checked,5,,,,Scouring_Bass.png
+Seizing Snailfish,Jellyfish Basin,Aberration,,5.0,3,,,,checked,6,,,,Seizing_Snailfish.png
+Shattered Wreckfish,Black Cliff,Aberration,,6.5,5,,,,checked,6,,,,Shattered_Wreckfish.png
+Sprouting Eel,Black Cliff,Aberration,checked,7.0,5,,,,checked,7,,,,Sprouting_Eel.png
+Three-Headed Cod,Fog Coast,Aberration,,6.0,,,,,checked,6,,,,Three-Headed_Cod.png
+Translucent Sturgeon,Black Cliff,Aberration,checked,8.0,5,,,,checked,9,,,,Translucent_Sturgeon.png
+Tusked Grouper,Fog Coast,Aberration,,5.0,,,,,checked,6,,,,Tusked_Grouper.png
+Voltaic Grouper,Fog Coast,Aberration,,6.0,,,,,checked,7,,,,Voltaic_Grouper.png
+Withered Ray,Black Cliff,Aberration,checked,8.5,5,,,,checked,9,,,,Withered_Ray.png
+Cerebral Crab,Fog Coast,Aberration Crab,,2.0,,,,,checked,7,,,,Cerebral_Crab.png
+Cortex Decorator,Black Cliff,Aberration Crab,,2.5,,,,,checked,7,,,,Cortex_Decorator.png
+Entangled Crab,Jellyfish Basin,Aberration Crab,,2.5,3,,,,checked,8,,,,Entangled_Crab.png
+Imperious Lobster,Jellyfish Basin,Aberration Crab,,3.0,,,,,checked,9,,,,Imperious_Lobster.png
+Splintered Crab,Black Cliff,Aberration Crab,,3.5,,,,,checked,8,,,,Splintered_Crab.png
+Clione Queen's Tentacle,130-250m,Boss,,1.0,1,,,,,,,,,
+Goblin Shark's Fatty Meat,130-250m,Boss,,1.0,1,,,,,,,,,Goblin_Shark_s_Fatty_Meat.png
+Helicoprion Tail,3rd Glacial Cave,Boss,,1.0,1,,checked,,,99,,,,Helicoprion_Tail.png
+Klaus's Fin,0-50m,Boss,,1.0,1,,,checked,,,,,,Klaus_s_Fin.png
+Kronosaurus Tongue,Hydrothermal Vents,Boss,,1.0,1,,,,,,,,,Kronosaurus_Tongue.png
+Lusca Neck Meat,50-130m,Boss,,1.0,1,,,checked,,,,,,Lusca_Neck_Meat.png
+Lusca Tentacle,50-130m,Boss,,1.0,1,,,checked,,,,,,Lusca_Tentacle.png
+Mantis Shrimp Meat,0-50m,Boss,,1.0,1,,,checked,,99,,,,Mantis_Shrimp_Meat.png
+Phantom Jellyfish Meat,Second Glacial Cave,Boss,,1.0,1,,checked,,,99,,,,Phantom_Jellyfish_Meat.png
+Truck Hermit Crab Legs,0-50m,Boss,,1.0,1,,,checked,,,,,,Truck_Hermit_Crab_Legs.png
+Wolf Eel Tail Meat,130-250m,Boss,,1.0,1,,,,,,,,,Wolf_Eel_Tail_Meat.png
+Yawie's Inner Flesh,Divine Tree Control Room,Boss,,1.0,1,,,,,,,,,Yawie_s_Inner_Flesh.png
+American Lobster,0-50m,Crab trap,,1.0,3,43,checked,,,8,,,,American_Lobster.png
+Blue Lobster,0-50m,Crab trap,,1.0,3,47,,checked,,8,,,,Blue_Lobster.png
+California Spiny Lobster,50-130m,Crab trap,,1.5,3,22,checked,,,5,,,,California_Spiny_Lobster.png
+Crystal Lobster,50-130m,Crab trap,,1.5,3,47,,checked,,8,,,,Crystal_Lobster.png
+Dollocaris Ingens,Hydrothermal Vents,Crab trap,,1.5,3,45,checked,,,8,,,,Dollocaris_Ingens.png
+Eastern Rock Lobster,130-250m,Crab trap,,2.5,3,47,checked,,,8,,,,Eastern_Rock_Lobster.png
+European Lobster,0-50m,Crab trap,,1.0,3,23,checked,,,5,,,,European_Lobster.png
+Fan Lobster,50-130m,Crab trap,,0.2,3,22,,checked,,5,,,,Fan_Lobster.png
+Horsehair Crab,Glacial Area,Crab trap,,1.5,3,50,checked,,,9,,,,Horsehair_Crab.png
+Norway Lobster,130-250m,Crab trap,,0.2,3,25,checked,,,5,,,,Norway_Lobster.png
+Red-banded Lobster,0-50m,Crab trap,,0.1,3,25,,checked,,5,,,,Red-banded_Lobster.png
+Snow Crab,Glacial Area,Crab trap,,2.0,3,40,checked,,,8,,,,Snow_Crab.png
+Tokummia Katalepsis,Hydrothermal Vents,Crab trap,,2.0,3,55,checked,,,9,,,,Tokummia_Katalepsis.png
+Tropical Rock Lobster,50-130m,Crab trap,,1.2,3,45,checked,,,8,,,,Tropical_Rock_Lobster.png
+Alaska Pollock,Glacial Area,Fish,,7.0,5,45,checked,,,8,,,,Alaska_Pollock.png
+Allenypterus,Hydrothermal Vents,Fish,,4.0,3,42,checked,,,9,,,,Allenypterus.png
+Anomalocaris,Hydrothermal Vents,Fish,,4.0,3,75,checked,,,9,,,,Anomalocaris.png
+Antarctic Octopus,Glacial Area,Fish,,7.5,5,40,checked,,,9,,,,Antarctic_Octopus.png
+Arctic Cod,Glacial Area,Fish,,5.0,3,32,checked,,,8,,,,Arctic_Cod.png
+Arctic Telescope Fish,Glacial Area,Fish,,3.0,3,40,checked,,,8,,,,Arctic_Telescope_Fish.png
+Atlantic Anglerfish,Limestone Cave,Fish,,5.5,5,11,checked,,,4,,,,Atlantic_Anglerfish.png
+Atlantic Bonito,50-130m,Fish,,4.0,3,7,checked,,,2,,,,Atlantic_Bonito.png
+Atlantic Mackerel,50-130m,Fish,,3.5,3,7,checked,,,3,,,,Atlantic_Mackerel.png
+Barrel Jellyfish,0-50m,Fish,,1.0,3,5,checked,,,2,,,,Barrel_Jellyfish.png
+Barreleye,Glacial Passage,Fish,,3.0,3,35,checked,,,7,,,,Barreleye.png
+Bigeye Scad,50-130m,Fish,,0.6,3,6,checked,,,1,,,,Bigeye_Scad.png
+Bigeye Trevally,50-130m,Fish,,3.0,5,6,checked,,,2,,,,Bigeye_Trevally.png
+Black and White Snapper,0-50m,Fish,,1.0,5,3,checked,,,1,,,,Black_and_White_Snapper.png
+Blackfin Barracuda,50-130m,Fish,,5.5,5,20,,checked,,5,,,,Blackfin_Barracuda.png
+Blacktip Shark Meat,0-50m,Fish,checked,2.5,5,20,,checked,,6,,,,Blacktip_Reefshark.png
+Blobfish,Glacial Passage,Fish,,7.5,5,40,checked,,,7,,,,Blobfish.png
+Blood-Belly Comb Jellyfish,130-250m,Fish,,7.0,3,17,,,,,,,,Blood-Belly_Comb_Jellyfish.png
+Blue Tang,0-50m,Fish,,0.5,3,2,checked,,,1,,,,Blue_Tang.png
+Bluefin Tuna Akami,0-130m,Fish,checked,8.0,5,27,checked,,,7,,,,Bluefin_Tuna.png
+Bluefin Tuna Chutoro,0-130m,Fish,checked,8.0,5,32,checked,,,7,,,,Bluefin_Tuna.png
+Bluefin Tuna Ootoro,0-130m,Fish,checked,,9,45,checked,,,7,,,,Bluefin_Tuna.png
+Bluehead Tilefish,50-130m,Fish,,0.2,2,5,checked,,,1,,,,Bluehead_Tilefish.png
+Bluespotted Stargazer,130-250m,Fish,,5.0,0,18,checked,,,6,,,,Bluespotted_Stargazer.png
+Box Jellyfish,0-50m,Fish,,5.0,3,18,,checked,,5,,,,Box_Jellyfish.png
+Capelin,Glacial Area,Fish,,0.5,3,15,checked,,,8,,,,Capelin.png
+Cardinal Fish,0-50m,Fish,,0.2,3,1,,,,,,,,Cardinal_Fish.png
+Clearfin Lionfish,0-50m,Fish,,1.7,3,8,,checked,,4,,,,Clearfin_Lionfish.png
+Clown Frogfish,50-130m,Fish,,0.3,3,5,checked,,,1,,,,Clown_Frogfish.png
+Clownfish,0-50m,Fish,,0.2,2,1,checked,,,1,,,,Clownfish.png
+Comb Jelly,130-250m,Fish,,7.0,3,14,checked,,,6,,,,Comb_Jelly.png
+Comber,0-50m,Fish,,0.2,2,1,checked,,,1,,,,Comber.png
+Cookiecutter Shark,130-250m,Fish,,5.0,3,25,checked,,,6,,,,Cookiecutter_Shark.png
+Copper Shark Meat,0-50m,Fish,checked,4.0,5,22,,checked,,6,,,,Copper_Shark.png
+Coral Trout,50-130m,Fish,,3.0,5,6,checked,,,2,,,,Coral_Trout.png
+Cuttlefish,50-130m,Fish,,4.0,3,6,checked,,,2,,,,Cuttlefish.png
+Devil Scorpionfish,50-130m,Fish,,3.0,3,45,,checked,,8,,,,Devil_Scorpionfish.png
+Drepanaspis Meat,Hydrothermal Vents,Fish,checked,8.5,5,50,checked,,,9,,,,Drepanaspis.png
+Dumbo Octopus,Glacial Passage,Fish,,4.0,3,38,checked,,,7,,,,Dumbo_Octopus.png
+Dunkleosteus Meat,Hydrothermal Vents,Fish,checked,19.5,5,70,checked,,,9,,,,Dunkleosteus.png
+Dusky Grouper,50-130m,Fish,,9.0,5,10,checked,,,3,,,,Dusky_Grouper.png
+Emperor Angelfish,0-50m,Fish,,0.4,0,3,checked,,,1,,,,Emperor_Angelfish.png
+Falcatus,Hydrothermal Vents,Fish,,6.0,3,43,checked,,,9,,,,Falcatus.png
+Fangtooth,130-250m,Fish,,3.0,3,15,checked,,,5,,,,Fangtooth.png
+Flame Angelfish,0-50m,Fish,,0.2,0,2,checked,,,1,,,,Flame_Angelfish.png
+Fried Egg Jellyfish,0-50m,Fish,,1.0,3,5,checked,,,2,,,,Fried_Egg_Jellyfish.png
+Frilled Shark Meat,130-250m,Fish,checked,8.5,5,28,checked,,,7,,,,Frilled_Shark.png
+Gelatinous Snailfish,Glacial Area,Fish,,2.0,3,28,checked,,,8,,,,Gelatinous_Snailfish.png
+Giant Trevally Meat,50-130m,Fish,checked,5.0,5,10,checked,,,4,,,,Giant_Trevally_Meat.png
+Golden King Crab,Glacial Area,Fish,,8.0,5,45,checked,,,8,,,,Golden_King_Crab.png
+Great Barracuda,50-130m,Fish,,7.0,5,6,checked,checked,,3,,,,Great_Barracuda.png
+Green Humphead Parrotfish,0-50m,Fish,checked,1.8,5,5,checked,,,3,,,,Green_Humphead_Parrotfish.png
+Greenland Shark Meat,Glacial Area,Fish,checked,20.0,5,62,checked,,,9,,,,Greenland_Shark.png
+Grey Triggerfish,50-130m,Fish,,3.5,5,6,checked,,,2,,,,Grey_Triggerfish.png
+Haddock,Glacial Area,Fish,,6.0,5,37,checked,,,8,,,,Haddock.png
+Hammerhead Meat,50-130m,Fish,checked,13.0,5,47,checked,,,9,,,,Smooth_Hammerhead.png
+Harlequin Hind,50-130m,Fish,,1.1,5,6,checked,,,2,,,,Harlequin_Hind.png
+Humboldt Squid Meat,50-130m,Fish,checked,7.5,5,48,,checked,,8,,,,Humboldt_Squid.png
+Ice Fish,Glacial Area,Fish,,5.5,3,32,checked,,,8,,,,Ice_Fish.png
+Lagoon Triggerfish,0-50m,Fish,,0.7,2,2,checked,,,1,,,,Lagoon_Triggerfish.png
+Long-Snouted Seahorse,0-50m,Fish,,0.5,0,2,checked,,,4,,,,Long-Snouted_Seahorse.png
+Longfin Batfish,0-50m,Fish,,0.8,5,3,checked,,,1,,,,Longfin_Batfish.png
+Longnose Sawshark Meat,50-130m,Fish,checked,6.5,5,12,checked,checked,,6,,,,Longnose_Sawshark.png
+Longspine Porcupinefish,0-50m,Fish,,3.5,3,26,,checked,,5,,,,Longspine_Porcupinefish.png
+Longspine Squirrelfish,0-50m,Fish,,0.4,3,3,,checked,,5,,,,Longspine_Squirrelfish.png
+Lumpfish,Hydrothermal Vents,Fish,,5.0,3,40,checked,,,8,,,,Lumpfish.png
+Mackerel Scad,50-130m,Fish,,0.8,2,5,checked,,,1,,,,Mackerel_Scad.png
+Mako Meat,0-50m,Fish,checked,9.0,5,43,checked,,,8,,,,Shortfin_Mako.png
+Marbled Electric Ray Meat,0-50m,Fish,checked,3.5,5,30,checked,,,6,,,,Marbled_Electric_Ray_Meat.png
+Marlin Meat,0-50m,Fish,checked,7.5,5,45,checked,,,8,,,,Marlin.png
+Mediterranean Parrotfish,0-50m,Fish,,2.0,5,3,checked,,,1,,,,Mediterranean_Parrotfish.png
+Megalograptus,Divine Tree Control Room,Fish,,8.0,5,46,checked,,,9,,,,Megalograptus.png
+Megamouth Shark Meat,130-250m,Fish,checked,11.5,5,31,checked,,,7,,,,Megamouth_Shark.png
+Moray Eel,0-50m,Fish,,9.0,0,17,,checked,,5,,,,Moray_Eel.png
+Narrow-Barred Spanish Mackerel,50-130m,Fish,,9.0,5,10,checked,,,3,,,,Narrow-Barred_Spanish_Mackerel.png
+Narwhal Meat,Glacial Area,Fish,checked,9.5,5,46,checked,,,9,,,,Narwhal.png
+Orbicular Batfish,0-50m,Fish,,0.3,2,2,checked,,,1,,,,Orbicular_Batfish.png
+Ornate Wrasse,0-50m,Fish,,0.5,2,2,checked,,,1,,,,Ornate_Wrasse.png
+Pacific Fanfish,130-250m,Fish,,5.0,3,22,checked,,,5,,,,Pacific_Fanfish.png
+Painted Comber,50-130m,Fish,,0.4,3,6,checked,,,1,,,,Painted_Comber.png
+Peacock Squid,Glacial Passage,Fish,,3.5,3,36,checked,,,7,,,,Peacock_Squid.png
+Pelican Eel,Glacial Passage,Fish,,8.0,5,60,checked,,,9,,,,Pelican_Eel.png
+Pikaia,Hydrothermal Vents,Fish,,4.5,3,38,checked,,,9,,,,Pikaia.png
+Polar Eelpout,Glacial Area,Fish,,3.0,3,30,checked,,,8,,,,Polar_Eelpout.png
+Porbeagle Shark Meat,Glacial Area,Fish,checked,13.5,5,55,checked,,,9,,,,Porbeagle_Shark.png
+Pyramid Butterflyfish,0-50m,Fish,,0.4,2,1,checked,,,1,,,,Pyramid_Butterflyfish.png
+Qingmendous,Hydrothermal Vents,Fish,,6.0,0,40,checked,,,9,,,,Qingmendous.png
+Rainbow Wrasse,0-50m,Fish,,0.6,2,2,checked,,,1,,,,Rainbow_Wrasse.png
+Red Bream,130-250m,Fish,,3.0,3,12,checked,,,5,,,,Red_Bream.png
+Red Lionfish,0-50m,Fish,,1.5,3,3,checked,checked,,2,,,,Red_Lionfish.png
+Redtoothed Triggerfish,0-50m,Fish,,1.0,5,3,checked,,,1,,,,Redtoothed_Triggerfish.png
+Rhinochimaeridae Meat,130-250m,Fish,checked,5.0,7,30,checked,,,6,,,,Rhinochimaeridae.png
+Sailfish Meat,Shipwreck Interior,Fish,checked,9.0,5,65,checked,,,9,,,,Sailfish.png
+Salema Porgy,0-50m,Fish,,0.4,3,2,checked,,,1,,,,Salema_Porgy.png
+Sally Lightfoot Crab,Shipwreck Interior,Fish,,4.0,5,18,checked,,,7,,,,Sally_Lightfoot_Crab.png
+Salmon Snailfish,130-250m,Fish,,5.0,3,20,checked,,,5,,,,Salmon_Snailfish.png
+Sea Goldie,0-50m,Fish,,0.3,2,1,checked,,,1,,,,Sea_Goldie.png
+Sea Toad,130-250m,Fish,,5.0,3,18,checked,,,5,,,,Sea_Toad.png
+Sheepshead Meat,0-50m,Fish,checked,1.8,5,10,checked,,,5,,,,Sheepshead.png
+Small Spotted Dart,0-50m,Fish,,0.8,3,2,checked,,,1,,,,Small_Spotted_Dart.png
+Snub-Nosed Spiny Eel,3rd Glacial Cave,Fish,,6.5,5,60,,,,,,,,
+Spear Squid,50-130m,Fish,,4.6,3,17,,checked,,5,,,,Spear_Squid.png
+Spider Crab,130-250m,Fish,,7.5,5,17,checked,,,6,,,,Spider_Crab.png
+Starry Puffer,0-50m,Fish,,3.0,3,15,checked,checked,,3,,,,Starry_Puffer.png
+Starry Skate,Glacial Area,Fish,checked,5.5,5,44,checked,,,9,,,,Starry_Skate.png
+Stingray Meat,0-50m,Fish,checked,3.0,5,17,checked,,,6,,,,Stingray_Meat.png
+Striped Catfish,0-50m,Fish,,0.3,0,2,checked,,,5,,,,Striped_Catfish.png
+Striped Red Mullet,50-130m,Fish,,0.7,0,5,checked,,,1,,,,Striped_Red_Mullet.png
+Threetooth Puffer,130-250m,Fish,,5.0,3,23,checked,,,5,,,,Threetooth_Puffer.png
+Thresher Shark Meat,0-50m,Fish,checked,8.5,5,53,checked,,,9,,,,Thresher_Shark.png
+Tiger Shark Meat,50-130m,Fish,checked,15.0,5,17,checked,checked,,6,,,,Tiger_Shark_Meat.png
+Titan Triggerfish,0-50m,Fish,,3.8,5,5,checked,checked,,2,,,,Titan_Triggerfish.png
+Vampire Squid,Glacial Passage,Fish,,6.0,5,41,checked,,,8,,,,Vampire_Squid.png
+White Spotted Jellyfish,50-130m,Fish,,1.0,3,6,checked,,,2,,,,White_Spotted_Jellyfish.png
+White Trevally,50-130m,Fish,,6.0,5,7,checked,,,2,,,,White_Trevally.png
+Whitetip Reefshark Head,0-50m,Fish,checked,2.5,1,40,checked,checked,,4,,,,Whitetip_Reefshark_Head.png
+Whitetip Reefshark Meat,0-50m,Fish,checked,2.5,5,8,checked,checked,,4,,,,Whitetip_Reefshark_Meat.png
+Xenacanthus Meat,Hydrothermal Vents,Fish,checked,5.5,5,53,checked,,,9,,,,Xenacanthus.png
+Yellow Tang,0-50m,Fish,,0.4,2,1,checked,,,1,,,,Yellow_Tang.png
+Yellowback Fusilier,0-50m,Fish,,0.8,2,2,checked,,,1,,,,Yellowback_Fusilier.png
+Yellowfin Tuna Akami,0-130m,Fish,checked,6.0,5,24,checked,,,7,,,,Yellowfin_Tuna.png
+Yellowfin Tuna Chutoro,0-130m,Fish,checked,6.0,5,30,checked,,,7,,,,Yellowfin_Tuna.png
+Yellowfin Tuna Ootoro,0-130m,Fish,checked,,9,42,checked,,,7,,,,Yellowfin_Tuna.png
+Zebra Shark Meat,0-50m,Fish,checked,10.5,5,42,,checked,,8,,,,Zebra_Shark.png
+Rainbow Cap,Jango,Jango,,,,750,,,,,,750,,Rainbow_Cap.png
+Truffle,Jango,Jango,,,,650,,,,,,650,,Truffle.png
+Black Tiger Shrimp,50-130m,Net,,0.1,5,17,checked,,,5,,,,Black_Tiger_Shrimp.png
+Chambered Nautilus,130-250m,Net,,1.0,3,12,checked,,,5,,,,Chambered_Nautilus.png
+Clione,130-250m,Net,,0.1,4,25,checked,,,5,,,,Clione.png
+Seadragon,Hydrothermal Vents,Net,,0.5,4,35,,,,,,,,Weedy_Seadragon.png
+Waptia Fieldensis,Hydrothermal Vents,Net,,0.4,5,34,checked,,,9,,,,Waptia_Fieldensis.png
+White Shrimp,0-130m,Net,,0.1,5,17,checked,checked,,7,,,,White_Shrimp.png
+Whiteleg Shrimp,0-50m,Net,,0.1,0,11,checked,,,5,,,,Whiteleg_Shrimp.png
+Black Pepper,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,,,60,,Black_Pepper.png
+Black Vinegar,Dispatch & Cooking Pots,Procure,,0.1,1,5,,,,,,50,,Black_Vinegar.png
+Curry Block,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,,,60,,Curry_Block.png
+Mayonnaise,Dispatch & Cooking Pots,Procure,,0.1,1,7,,,,,,70,,Mayonnaise.png
+Miso,Dispatch & Cooking Pots,Procure,,0.1,1,8,,,,,,80,,Miso.png
+Olive Oil,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,,,60,,Olive_Oil.png
+Salt,Dispatch & Cooking Pots,Procure,,0.1,1,8,,,,,,80,,Salt.png
+Sesame Seed,Dispatch & Cooking Pots,Procure,,0.1,1,8,,,,,,80,,Sesame_Seed.png
+Soy Sauce,Dispatch & Cooking Pots,Procure,,0.1,1,6,,,,,,60,,Soy_Sauce.png
+Turmeric,Dispatch & Cooking Pots,Procure,,0.1,1,5,,,,,,50,,Turmeric.png
+Agar,0-50m,Sea Plant,,0.1,1,3,,,,,Gumo,,,Agar.png
+Buckbean,Glacial Area,Sea Plant,,0.1,1,9,,,,,Gumo,,,Buckbean.png
+Sea Grape,Limestone Cave,Sea Plant,,0.1,1,6,,,,,Gumo,,,Sea_Grape.png
+Black Coral,Glacial Area,Sea plant,,0.1,1,8,,,,,Gumo,,,Black_Coral.png
+Bladderwrack,Glacial Seaweed Cave,Sea plant,,0.1,1,10,,,,,Gumo,,,Bladderwrack.png
+Hyalonema,Glacial Seaweed Cave,Sea plant,,0.1,1,65,,,,,Gumo,,,Hyalonema.png
+Kajime,0-130m,Sea plant,,0.1,1,7,,,,,Gumo,,,Kajime.png
+Kelp,50-130m,Sea plant,,0.1,1,6,,,,,Gumo,,,Kelp.png
+Seaweed,50-130m,Sea plant,,0.1,1,5,,,,,Gumo,,,Seaweed.png
+Southern Bull Kelp,Glacial Area,Sea plant,,0.1,1,8,,,,,Gumo,,,Southern_Bull_Kelp.png
+Green Sea Urchin,0-50m,Urchin,,1.0,1,90,checked,checked,,5,,,,Green_Sea_Urchin.png
+Purple Sea Urchin,0-50m,Urchin,,1.0,1,20,checked,checked,,5,,,,Purple_Sea_Urchin.png
+Bean,Vegetable Farm,Vegetable Farm,,,,20,,,,,Otto,170,200,Bean.png
+Buckwheat,Vegetable Farm,Vegetable Farm,,,,18,,,,,Otto,,185,Buckwheat.png
+Carrot,Vegetable Farm,Vegetable Farm,,,,25,,,,,Otto,106,250,Carrot.png
+Cherry Tomato,Vegetable Farm,Vegetable Farm,,,,17,,,,,Otto,148,175,Cherry_Tomato.png
+Cucumber,Vegetable Farm,Vegetable Farm,,,,20,,,,,Otto,,200,Cucumber.png
+Egg,Vegetable Farm,Vegetable Farm,,,,15,,,,,Otto,63,75,Egg.png
+Eggplant,Vegetable Farm,Vegetable Farm,,,,21,,,,,Otto,178,210,Eggplant.png
+Garlic,Vegetable Farm,Vegetable Farm,,,,19,,,,,Otto,161,190,Garlic.png
+Grade A Egg,Vegetable Farm,Vegetable Farm,,,,90,,,,,Otto,382,450,Grade_A_Egg.png
+Habanero,Vegetable Farm,Vegetable Farm,,,,16,,,,,Otto,153,180,Habanero.png
+Onion,Vegetable Farm,Vegetable Farm,,,,20,,,,,Otto,170,200,Onion.png
+Rice,Vegetable Farm,Vegetable Farm,,,,15,,,,,Otto,,,Rice.png
+Wheat,Vegetable Farm,Vegetable Farm,,,,19,,,,,Otto,161,190,Wheat.png

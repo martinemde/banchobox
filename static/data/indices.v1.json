@@ -12,21 +12,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 83,
+          "ingredientId": 82,
           "count": 3,
           "unitCost": 45,
           "lineCost": 135,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 184,
+          "ingredientId": 183,
           "count": 3,
           "unitCost": 42,
           "lineCost": 126,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 210,
+          "ingredientId": 209,
           "count": 2,
           "unitCost": 65,
           "lineCost": 130,
@@ -63,21 +63,21 @@
       "dlc": "mxmtoon",
       "ingredients": [
         {
-          "ingredientId": 215,
+          "ingredientId": 214,
           "count": 3,
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 82,
+          "ingredientId": 81,
           "count": 3,
           "unitCost": 32,
           "lineCost": 96,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 97,
+          "ingredientId": 96,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
@@ -114,28 +114,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 82,
+          "ingredientId": 81,
           "count": 3,
           "unitCost": 32,
           "lineCost": 96,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 2,
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 226,
+          "ingredientId": 225,
           "count": 2,
           "unitCost": 16,
           "lineCost": 32,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 202,
+          "ingredientId": 201,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -172,28 +172,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 3,
           "unitCost": 15,
           "lineCost": 45,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 81,
+          "ingredientId": 80,
           "count": 3,
           "unitCost": 27,
           "lineCost": 81,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 202,
+          "ingredientId": 201,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -281,21 +281,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 183,
+          "ingredientId": 182,
           "count": 3,
           "unitCost": 30,
           "lineCost": 90,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -339,7 +339,7 @@
           "upgradeCount": 35
         },
         {
-          "ingredientId": 187,
+          "ingredientId": 186,
           "count": 1,
           "unitCost": 650,
           "lineCost": 650,
@@ -376,28 +376,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 208,
+          "ingredientId": 207,
           "count": 3,
           "unitCost": 8,
           "lineCost": 24,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 192,
+          "ingredientId": 191,
           "count": 3,
           "unitCost": 34,
           "lineCost": 102,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -435,21 +435,21 @@
       "dlc": "mxmtoon",
       "ingredients": [
         {
-          "ingredientId": 215,
+          "ingredientId": 214,
           "count": 3,
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 35
         },
         {
-          "ingredientId": 206,
+          "ingredientId": 205,
           "count": 2,
           "unitCost": 9,
           "lineCost": 18,
@@ -493,14 +493,14 @@
           "upgradeCount": 333
         },
         {
-          "ingredientId": 226,
+          "ingredientId": 225,
           "count": 2,
           "unitCost": 16,
           "lineCost": 32,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -544,14 +544,14 @@
           "upgradeCount": 333
         },
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 2,
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
@@ -588,28 +588,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 182,
+          "ingredientId": 181,
           "count": 3,
           "unitCost": 24,
           "lineCost": 72,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 3,
           "unitCost": 15,
           "lineCost": 45,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 198,
+          "ingredientId": 197,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 202,
+          "ingredientId": 201,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -653,21 +653,21 @@
           "upgradeCount": 333
         },
         {
-          "ingredientId": 135,
+          "ingredientId": 134,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 204,
+          "ingredientId": 203,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -712,14 +712,14 @@
           "upgradeCount": 333
         },
         {
-          "ingredientId": 209,
+          "ingredientId": 208,
           "count": 2,
           "unitCost": 10,
           "lineCost": 20,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
@@ -756,14 +756,14 @@
       "dlc": "Godzilla DLC",
       "ingredients": [
         {
-          "ingredientId": 72,
+          "ingredientId": 71,
           "count": 3,
           "unitCost": 35,
           "lineCost": 105,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 2,
           "unitCost": 6,
           "lineCost": 12,
@@ -807,28 +807,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 154,
+          "ingredientId": 153,
           "count": 3,
           "unitCost": 65,
           "lineCost": 195,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 211,
+          "ingredientId": 210,
           "count": 2,
           "unitCost": 7,
           "lineCost": 14,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 214,
+          "ingredientId": 213,
           "count": 2,
           "unitCost": 8,
           "lineCost": 16,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -865,28 +865,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 3,
           "unitCost": 19,
           "lineCost": 57,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 3,
           "unitCost": 19,
           "lineCost": 57,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 193,
+          "ingredientId": 192,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 119,
+          "ingredientId": 118,
           "count": 1,
           "unitCost": 48,
           "lineCost": 48,
@@ -923,28 +923,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 3,
           "unitCost": 8,
           "lineCost": 24,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 104,
+          "ingredientId": 103,
           "count": 3,
           "unitCost": 43,
           "lineCost": 129,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 206,
+          "ingredientId": 205,
           "count": 3,
           "unitCost": 9,
           "lineCost": 27,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 3,
           "unitCost": 5,
           "lineCost": 15,
@@ -981,21 +981,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 154,
+          "ingredientId": 153,
           "count": 3,
           "unitCost": 65,
           "lineCost": 195,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 216,
+          "ingredientId": 215,
           "count": 3,
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 187,
+          "ingredientId": 186,
           "count": 1,
           "unitCost": 650,
           "lineCost": 650,
@@ -1032,21 +1032,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 134,
+          "ingredientId": 133,
           "count": 3,
           "unitCost": 31,
           "lineCost": 93,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 108,
+          "ingredientId": 107,
           "count": 3,
           "unitCost": 28,
           "lineCost": 84,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 187,
+          "ingredientId": 186,
           "count": 1,
           "unitCost": 650,
           "lineCost": 650,
@@ -1083,14 +1083,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 164,
+          "ingredientId": 163,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -1127,28 +1127,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 139,
+          "ingredientId": 138,
           "count": 5,
           "unitCost": 2,
           "lineCost": 10,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 149,
+          "ingredientId": 148,
           "count": 5,
           "unitCost": 2,
           "lineCost": 10,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 197,
+          "ingredientId": 196,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 217,
+          "ingredientId": 216,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -1185,21 +1185,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 225,
+          "ingredientId": 224,
           "count": 1,
           "unitCost": 90,
           "lineCost": 90,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 164,
+          "ingredientId": 163,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 197,
+          "ingredientId": 196,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -1236,28 +1236,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 193,
+          "ingredientId": 192,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -1294,21 +1294,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 153,
+          "ingredientId": 152,
           "count": 3,
           "unitCost": 30,
           "lineCost": 90,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 150,
+          "ingredientId": 149,
           "count": 3,
           "unitCost": 12,
           "lineCost": 36,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 90,
+          "ingredientId": 89,
           "count": 3,
           "unitCost": 5,
           "lineCost": 15,
@@ -1345,21 +1345,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 120,
+          "ingredientId": 119,
           "count": 3,
           "unitCost": 32,
           "lineCost": 96,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 217,
+          "ingredientId": 216,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 197,
+          "ingredientId": 196,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -1396,28 +1396,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 77,
+          "ingredientId": 76,
           "count": 3,
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 95,
+          "ingredientId": 94,
           "count": 3,
           "unitCost": 22,
           "lineCost": 66,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 1,
           "unitCost": 19,
           "lineCost": 19,
@@ -1454,28 +1454,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 107,
+          "ingredientId": 106,
           "count": 5,
           "unitCost": 5,
           "lineCost": 25,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 71,
+          "ingredientId": 70,
           "count": 5,
           "unitCost": 5,
           "lineCost": 25,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 208,
+          "ingredientId": 207,
           "count": 2,
           "unitCost": 8,
           "lineCost": 16,
@@ -1512,21 +1512,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 146,
+          "ingredientId": 145,
           "count": 3,
           "unitCost": 55,
           "lineCost": 165,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 195,
+          "ingredientId": 194,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -1563,14 +1563,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 159,
+          "ingredientId": 158,
           "count": 1,
           "unitCost": 18,
           "lineCost": 18,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -1607,28 +1607,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 94,
+          "ingredientId": 93,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 174,
+          "ingredientId": 173,
           "count": 1,
           "unitCost": 41,
           "lineCost": 41,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 72,
+          "ingredientId": 71,
           "count": 1,
           "unitCost": 35,
           "lineCost": 35,
@@ -1665,28 +1665,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 223,
+          "ingredientId": 222,
           "count": 1,
           "unitCost": 21,
           "lineCost": 21,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -1723,21 +1723,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 87,
+          "ingredientId": 86,
           "count": 5,
           "unitCost": 15,
           "lineCost": 75,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 204,
+          "ingredientId": 203,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 208,
+          "ingredientId": 207,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -1774,21 +1774,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 74,
+          "ingredientId": 73,
           "count": 5,
           "unitCost": 6,
           "lineCost": 30,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 110,
+          "ingredientId": 109,
           "count": 5,
           "unitCost": 10,
           "lineCost": 50,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
@@ -1825,28 +1825,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 227,
+          "ingredientId": 226,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -1883,21 +1883,21 @@
       "dlc": "mxmtoon",
       "ingredients": [
         {
-          "ingredientId": 215,
+          "ingredientId": 214,
           "count": 3,
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 86,
+          "ingredientId": 85,
           "count": 2,
           "unitCost": 18,
           "lineCost": 36,
           "upgradeCount": 35
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 2,
           "unitCost": 6,
           "lineCost": 12,
@@ -1934,21 +1934,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 69,
+          "ingredientId": 68,
           "count": 5,
           "unitCost": 7,
           "lineCost": 35,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 2,
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 197,
+          "ingredientId": 196,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -1985,21 +1985,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 131,
+          "ingredientId": 130,
           "count": 3,
           "unitCost": 45,
           "lineCost": 135,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -2036,21 +2036,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 113,
+          "ingredientId": 112,
           "count": 5,
           "unitCost": 5,
           "lineCost": 25,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 227,
+          "ingredientId": 226,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 204,
+          "ingredientId": 203,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -2087,28 +2087,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 188,
+          "ingredientId": 187,
           "count": 5,
           "unitCost": 17,
           "lineCost": 85,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 194,
+          "ingredientId": 193,
           "count": 5,
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -2145,28 +2145,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 188,
+          "ingredientId": 187,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 194,
+          "ingredientId": 193,
           "count": 2,
           "unitCost": 11,
           "lineCost": 22,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -2210,21 +2210,21 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 202,
+          "ingredientId": 201,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": null
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": null
         },
         {
-          "ingredientId": 198,
+          "ingredientId": 197,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -2261,21 +2261,21 @@
       "dlc": "Godzilla DLC",
       "ingredients": [
         {
-          "ingredientId": 92,
+          "ingredientId": 91,
           "count": 5,
           "unitCost": 14,
           "lineCost": 70,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 3,
           "unitCost": 5,
           "lineCost": 15,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -2312,7 +2312,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 83,
+          "ingredientId": 82,
           "count": 1,
           "unitCost": 45,
           "lineCost": 45,
@@ -2349,28 +2349,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 194,
+          "ingredientId": 193,
           "count": 5,
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 198,
+          "ingredientId": 197,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -2407,21 +2407,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 175,
+          "ingredientId": 174,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -2458,21 +2458,21 @@
       "dlc": "Ichiban DLC",
       "ingredients": [
         {
-          "ingredientId": 218,
+          "ingredientId": 217,
           "count": 3,
           "unitCost": 18,
           "lineCost": 54,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 167,
+          "ingredientId": 166,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -2507,7 +2507,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 184,
+          "ingredientId": 183,
           "count": 1,
           "unitCost": 42,
           "lineCost": 42,
@@ -2544,28 +2544,28 @@
       "dlc": "Ichiban DLC",
       "ingredients": [
         {
-          "ingredientId": 70,
+          "ingredientId": 69,
           "count": 3,
           "unitCost": 7,
           "lineCost": 21,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 218,
+          "ingredientId": 217,
           "count": 2,
           "unitCost": 18,
           "lineCost": 36,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -2614,14 +2614,14 @@
           "upgradeCount": 333
         },
         {
-          "ingredientId": 111,
+          "ingredientId": 110,
           "count": 2,
           "unitCost": 45,
           "lineCost": 90,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -2656,28 +2656,28 @@
       "dlc": "Ichiban DLC",
       "ingredients": [
         {
-          "ingredientId": 218,
+          "ingredientId": 217,
           "count": 2,
           "unitCost": 18,
           "lineCost": 36,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 223,
+          "ingredientId": 222,
           "count": 2,
           "unitCost": 21,
           "lineCost": 42,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
@@ -2712,28 +2712,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 112,
+          "ingredientId": 111,
           "count": 5,
           "unitCost": 6,
           "lineCost": 30,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 198,
+          "ingredientId": 197,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 227,
+          "ingredientId": 226,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -2768,28 +2768,28 @@
       "dlc": "Ichiban DLC",
       "ingredients": [
         {
-          "ingredientId": 163,
+          "ingredientId": 162,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 218,
+          "ingredientId": 217,
           "count": 2,
           "unitCost": 18,
           "lineCost": 36,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -2824,28 +2824,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 162,
+          "ingredientId": 161,
           "count": 2,
           "unitCost": 60,
           "lineCost": 120,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 226,
+          "ingredientId": 225,
           "count": 2,
           "unitCost": 16,
           "lineCost": 32,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 211,
+          "ingredientId": 210,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -2880,28 +2880,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 165,
+          "ingredientId": 164,
           "count": 3,
           "unitCost": 15,
           "lineCost": 45,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 125,
+          "ingredientId": 124,
           "count": 3,
           "unitCost": 26,
           "lineCost": 78,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 209,
+          "ingredientId": 208,
           "count": 1,
           "unitCost": 10,
           "lineCost": 10,
@@ -2936,21 +2936,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 100,
+          "ingredientId": 99,
           "count": 3,
           "unitCost": 38,
           "lineCost": 114,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 198,
+          "ingredientId": 197,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -2985,28 +2985,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 144,
+          "ingredientId": 143,
           "count": 3,
           "unitCost": 38,
           "lineCost": 114,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 214,
+          "ingredientId": 213,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 225,
+          "ingredientId": 224,
           "count": 1,
           "unitCost": 90,
           "lineCost": 90,
@@ -3041,28 +3041,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 223,
+          "ingredientId": 222,
           "count": 1,
           "unitCost": 21,
           "lineCost": 21,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 1,
           "unitCost": 19,
           "lineCost": 19,
@@ -3097,28 +3097,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 226,
+          "ingredientId": 225,
           "count": 2,
           "unitCost": 16,
           "lineCost": 32,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 105,
+          "ingredientId": 104,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 209,
+          "ingredientId": 208,
           "count": 1,
           "unitCost": 10,
           "lineCost": 10,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3153,21 +3153,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 217,
+          "ingredientId": 216,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 164,
+          "ingredientId": 163,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -3202,28 +3202,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 142,
+          "ingredientId": 141,
           "count": 3,
           "unitCost": 36,
           "lineCost": 108,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 195,
+          "ingredientId": 194,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3258,28 +3258,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 66,
+          "ingredientId": 65,
           "count": 3,
           "unitCost": 32,
           "lineCost": 96,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
@@ -3314,28 +3314,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 89,
+          "ingredientId": 88,
           "count": 3,
           "unitCost": 8,
           "lineCost": 24,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 126,
+          "ingredientId": 125,
           "count": 3,
           "unitCost": 3,
           "lineCost": 9,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 76,
+          "ingredientId": 75,
           "count": 3,
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 209,
+          "ingredientId": 208,
           "count": 1,
           "unitCost": 10,
           "lineCost": 10,
@@ -3370,21 +3370,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 68,
+          "ingredientId": 67,
           "count": 3,
           "unitCost": 11,
           "lineCost": 33,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 210,
+          "ingredientId": 209,
           "count": 2,
           "unitCost": 65,
           "lineCost": 130,
           "upgradeCount": 35
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3419,28 +3419,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 116,
+          "ingredientId": 115,
           "count": 3,
           "unitCost": 37,
           "lineCost": 111,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 2,
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3475,28 +3475,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 147,
+          "ingredientId": 146,
           "count": 3,
           "unitCost": 1,
           "lineCost": 3,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 80,
+          "ingredientId": 79,
           "count": 3,
           "unitCost": 2,
           "lineCost": 6,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 91,
+          "ingredientId": 90,
           "count": 3,
           "unitCost": 1,
           "lineCost": 3,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
@@ -3531,21 +3531,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 65,
+          "ingredientId": 64,
           "count": 3,
           "unitCost": 40,
           "lineCost": 120,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 227,
+          "ingredientId": 226,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3580,28 +3580,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 122,
+          "ingredientId": 121,
           "count": 3,
           "unitCost": 2,
           "lineCost": 6,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 2,
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3636,21 +3636,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 128,
+          "ingredientId": 127,
           "count": 5,
           "unitCost": 5,
           "lineCost": 25,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 198,
+          "ingredientId": 197,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -3685,28 +3685,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 123,
+          "ingredientId": 122,
           "count": 5,
           "unitCost": 3,
           "lineCost": 15,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 138,
+          "ingredientId": 137,
           "count": 5,
           "unitCost": 2,
           "lineCost": 10,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
@@ -3741,21 +3741,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 3,
           "unitCost": 5,
           "lineCost": 15,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 225,
+          "ingredientId": 224,
           "count": 1,
           "unitCost": 90,
           "lineCost": 90,
@@ -3790,28 +3790,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 97,
+          "ingredientId": 96,
           "count": 5,
           "unitCost": 6,
           "lineCost": 30,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 227,
+          "ingredientId": 226,
           "count": 3,
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -3846,28 +3846,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 176,
+          "ingredientId": 175,
           "count": 5,
           "unitCost": 7,
           "lineCost": 35,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 227,
+          "ingredientId": 226,
           "count": 3,
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3902,28 +3902,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 2,
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 225,
+          "ingredientId": 224,
           "count": 1,
           "unitCost": 90,
           "lineCost": 90,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -3958,28 +3958,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 102,
+          "ingredientId": 101,
           "count": 5,
           "unitCost": 10,
           "lineCost": 50,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -4014,28 +4014,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 137,
+          "ingredientId": 136,
           "count": 3,
           "unitCost": 46,
           "lineCost": 138,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 2,
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 206,
+          "ingredientId": 205,
           "count": 2,
           "unitCost": 9,
           "lineCost": 18,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -4070,28 +4070,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 142,
+          "ingredientId": 141,
           "count": 3,
           "unitCost": 36,
           "lineCost": 108,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 97,
+          "ingredientId": 96,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 174,
+          "ingredientId": 173,
           "count": 3,
           "unitCost": 41,
           "lineCost": 123,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -4126,28 +4126,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 223,
+          "ingredientId": 222,
           "count": 3,
           "unitCost": 21,
           "lineCost": 63,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 188,
+          "ingredientId": 187,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 194,
+          "ingredientId": 193,
           "count": 3,
           "unitCost": 11,
           "lineCost": 33,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -4182,28 +4182,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 167,
+          "ingredientId": 166,
           "count": 3,
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 166,
+          "ingredientId": 165,
           "count": 3,
           "unitCost": 44,
           "lineCost": 132,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 130,
+          "ingredientId": 129,
           "count": 3,
           "unitCost": 30,
           "lineCost": 90,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -4238,28 +4238,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 85,
+          "ingredientId": 84,
           "count": 1,
           "unitCost": 18,
           "lineCost": 18,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 1,
           "unitCost": 19,
           "lineCost": 19,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -4294,28 +4294,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 151,
+          "ingredientId": 150,
           "count": 5,
           "unitCost": 3,
           "lineCost": 15,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 1,
           "unitCost": 19,
           "lineCost": 19,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 195,
+          "ingredientId": 194,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -4350,28 +4350,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 141,
+          "ingredientId": 140,
           "count": 5,
           "unitCost": 6,
           "lineCost": 30,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 93,
+          "ingredientId": 92,
           "count": 5,
           "unitCost": 1,
           "lineCost": 5,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
@@ -4406,28 +4406,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 109,
+          "ingredientId": 108,
           "count": 3,
           "unitCost": 28,
           "lineCost": 84,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 157,
+          "ingredientId": 156,
           "count": 3,
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 217,
+          "ingredientId": 216,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
@@ -4462,28 +4462,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 136,
+          "ingredientId": 135,
           "count": 5,
           "unitCost": 10,
           "lineCost": 50,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 224,
+          "ingredientId": 223,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
@@ -4518,7 +4518,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -4532,14 +4532,14 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 214,
+          "ingredientId": 213,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": null
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -4576,21 +4576,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 70,
+          "ingredientId": 69,
           "count": 5,
           "unitCost": 7,
           "lineCost": 35,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 222,
+          "ingredientId": 221,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
@@ -4625,21 +4625,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 132,
+          "ingredientId": 131,
           "count": 5,
           "unitCost": 3,
           "lineCost": 15,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 2,
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -4674,28 +4674,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 156,
+          "ingredientId": 155,
           "count": 2,
           "unitCost": 18,
           "lineCost": 36,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 195,
+          "ingredientId": 194,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 225,
+          "ingredientId": 224,
           "count": 1,
           "unitCost": 90,
           "lineCost": 90,
@@ -4730,28 +4730,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 168,
+          "ingredientId": 167,
           "count": 5,
           "unitCost": 2,
           "lineCost": 10,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 217,
+          "ingredientId": 216,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 227,
+          "ingredientId": 226,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
@@ -4786,21 +4786,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 2,
           "unitCost": 15,
           "lineCost": 30,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 216,
+          "ingredientId": 215,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 202,
+          "ingredientId": 201,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -4835,28 +4835,28 @@
       "dlc": "mxmtoon",
       "ingredients": [
         {
-          "ingredientId": 211,
+          "ingredientId": 210,
           "count": 2,
           "unitCost": 7,
           "lineCost": 14,
           "upgradeCount": 35
         },
         {
-          "ingredientId": 215,
+          "ingredientId": 214,
           "count": 2,
           "unitCost": 90,
           "lineCost": 180,
           "upgradeCount": 35
         },
         {
-          "ingredientId": 216,
+          "ingredientId": 215,
           "count": 2,
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 35
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -4891,14 +4891,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 206,
+          "ingredientId": 205,
           "count": 3,
           "unitCost": 9,
           "lineCost": 27,
           "upgradeCount": null
         },
         {
-          "ingredientId": 205,
+          "ingredientId": 204,
           "count": 3,
           "unitCost": 3,
           "lineCost": 9,
@@ -4942,21 +4942,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 225,
+          "ingredientId": 224,
           "count": 2,
           "unitCost": 90,
           "lineCost": 180,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 220,
+          "ingredientId": 219,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 195,
+          "ingredientId": 194,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -4991,7 +4991,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 154,
+          "ingredientId": 153,
           "count": 1,
           "unitCost": 65,
           "lineCost": 65,
@@ -5028,28 +5028,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 118,
+          "ingredientId": 117,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 3,
           "unitCost": 15,
           "lineCost": 45,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 173,
+          "ingredientId": 172,
           "count": 3,
           "unitCost": 5,
           "lineCost": 15,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 96,
+          "ingredientId": 95,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
@@ -5084,21 +5084,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 122,
+          "ingredientId": 121,
           "count": 3,
           "unitCost": 2,
           "lineCost": 6,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -5133,28 +5133,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 78,
+          "ingredientId": 77,
           "count": 3,
           "unitCost": 40,
           "lineCost": 120,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 229,
+          "ingredientId": 228,
           "count": 2,
           "unitCost": 19,
           "lineCost": 38,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 198,
+          "ingredientId": 197,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 202,
+          "ingredientId": 201,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -5189,21 +5189,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 143,
+          "ingredientId": 142,
           "count": 3,
           "unitCost": 60,
           "lineCost": 180,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 205,
+          "ingredientId": 204,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -5245,14 +5245,14 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": null
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -5287,21 +5287,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 219,
+          "ingredientId": 218,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 223,
+          "ingredientId": 222,
           "count": 1,
           "unitCost": 21,
           "lineCost": 21,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -5336,21 +5336,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 160,
+          "ingredientId": 159,
           "count": 3,
           "unitCost": 10,
           "lineCost": 30,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 187,
+          "ingredientId": 186,
           "count": 1,
           "unitCost": 650,
           "lineCost": 650,
@@ -5385,21 +5385,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 211,
+          "ingredientId": 210,
           "count": 3,
           "unitCost": 7,
           "lineCost": 21,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 65,
+          "ingredientId": 64,
           "count": 3,
           "unitCost": 40,
           "lineCost": 120,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 187,
+          "ingredientId": 186,
           "count": 1,
           "unitCost": 650,
           "lineCost": 650,
@@ -5434,7 +5434,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 225,
+          "ingredientId": 224,
           "count": 3,
           "unitCost": 90,
           "lineCost": 270,
@@ -5583,21 +5583,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": null
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": null
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -5641,7 +5641,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 82,
+          "ingredientId": 81,
           "count": 1,
           "unitCost": 32,
           "lineCost": 32,
@@ -5678,21 +5678,21 @@
       "dlc": "Potion Craft",
       "ingredients": [
         {
-          "ingredientId": 162,
+          "ingredientId": 161,
           "count": 2,
           "unitCost": 60,
           "lineCost": 120,
           "upgradeCount": 35
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 23
         },
         {
-          "ingredientId": 186,
+          "ingredientId": 185,
           "count": 1,
           "unitCost": 750,
           "lineCost": 750,
@@ -5727,28 +5727,28 @@
       "dlc": "Potion Craft",
       "ingredients": [
         {
-          "ingredientId": 121,
+          "ingredientId": 120,
           "count": 3,
           "unitCost": 2,
           "lineCost": 6,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 115,
+          "ingredientId": 114,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 186,
+          "ingredientId": 185,
           "count": 1,
           "unitCost": 750,
           "lineCost": 750,
           "upgradeCount": 23
         },
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -5783,28 +5783,28 @@
       "dlc": "Potion Craft",
       "ingredients": [
         {
-          "ingredientId": 140,
+          "ingredientId": 139,
           "count": 3,
           "unitCost": 22,
           "lineCost": 66,
           "upgradeCount": 48
         },
         {
-          "ingredientId": 186,
+          "ingredientId": 185,
           "count": 1,
           "unitCost": 750,
           "lineCost": 750,
           "upgradeCount": 23
         },
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 23
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -5839,7 +5839,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 183,
+          "ingredientId": 182,
           "count": 1,
           "unitCost": 30,
           "lineCost": 30,
@@ -5876,7 +5876,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 221,
+          "ingredientId": 220,
           "count": 3,
           "unitCost": 20,
           "lineCost": 60,
@@ -5946,7 +5946,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 81,
+          "ingredientId": 80,
           "count": 1,
           "unitCost": 27,
           "lineCost": 27,
@@ -6053,7 +6053,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 131,
+          "ingredientId": 130,
           "count": 1,
           "unitCost": 45,
           "lineCost": 45,
@@ -6125,7 +6125,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 182,
+          "ingredientId": 181,
           "count": 1,
           "unitCost": 24,
           "lineCost": 24,
@@ -6197,21 +6197,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 122,
+          "ingredientId": 121,
           "count": 3,
           "unitCost": 2,
           "lineCost": 6,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -6246,14 +6246,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 165,
+          "ingredientId": 164,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -6295,7 +6295,7 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -6365,21 +6365,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 214,
+          "ingredientId": 213,
           "count": 3,
           "unitCost": 8,
           "lineCost": 24,
           "upgradeCount": null
         },
         {
-          "ingredientId": 205,
+          "ingredientId": 204,
           "count": 3,
           "unitCost": 3,
           "lineCost": 9,
           "upgradeCount": null
         },
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 3,
           "unitCost": 5,
           "lineCost": 15,
@@ -6421,14 +6421,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -6463,7 +6463,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 101,
+          "ingredientId": 100,
           "count": 1,
           "unitCost": 70,
           "lineCost": 70,
@@ -6498,14 +6498,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 135,
+          "ingredientId": 134,
           "count": 2,
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 204,
+          "ingredientId": 203,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -6542,21 +6542,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 73,
+          "ingredientId": 72,
           "count": 5,
           "unitCost": 6,
           "lineCost": 30,
           "upgradeCount": 670
         },
         {
-          "ingredientId": 202,
+          "ingredientId": 201,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -6591,21 +6591,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 165,
+          "ingredientId": 164,
           "count": 3,
           "unitCost": 15,
           "lineCost": 45,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 205,
+          "ingredientId": 204,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -6640,21 +6640,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 125,
+          "ingredientId": 124,
           "count": 3,
           "unitCost": 26,
           "lineCost": 78,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -6696,21 +6696,21 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 205,
+          "ingredientId": 204,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
           "upgradeCount": null
         },
         {
-          "ingredientId": 223,
+          "ingredientId": 222,
           "count": 1,
           "unitCost": 21,
           "lineCost": 21,
           "upgradeCount": null
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -6745,28 +6745,28 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 96,
+          "ingredientId": 95,
           "count": 3,
           "unitCost": 6,
           "lineCost": 18,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 207,
+          "ingredientId": 206,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 228,
+          "ingredientId": 227,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -6801,7 +6801,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 114,
+          "ingredientId": 113,
           "count": 1,
           "unitCost": 62,
           "lineCost": 62,
@@ -6906,7 +6906,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 162,
+          "ingredientId": 161,
           "count": 1,
           "unitCost": 60,
           "lineCost": 60,
@@ -6941,7 +6941,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 143,
+          "ingredientId": 142,
           "count": 1,
           "unitCost": 60,
           "lineCost": 60,
@@ -7011,7 +7011,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 146,
+          "ingredientId": 145,
           "count": 1,
           "unitCost": 55,
           "lineCost": 55,
@@ -7081,21 +7081,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 161,
+          "ingredientId": 160,
           "count": 3,
           "unitCost": 2,
           "lineCost": 6,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 211,
+          "ingredientId": 210,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -7130,14 +7130,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": null
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -7151,7 +7151,7 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 205,
+          "ingredientId": 204,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -7193,21 +7193,21 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
           "upgradeCount": null
         },
         {
-          "ingredientId": 213,
+          "ingredientId": 212,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
           "upgradeCount": null
         },
         {
-          "ingredientId": 211,
+          "ingredientId": 210,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -7249,21 +7249,21 @@
           "upgradeCount": null
         },
         {
-          "ingredientId": 199,
+          "ingredientId": 198,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
           "upgradeCount": null
         },
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": null
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -7298,14 +7298,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 177,
+          "ingredientId": 176,
           "count": 1,
           "unitCost": 40,
           "lineCost": 40,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 200,
+          "ingredientId": 199,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -7342,7 +7342,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 179,
+          "ingredientId": 178,
           "count": 1,
           "unitCost": 53,
           "lineCost": 53,
@@ -7377,7 +7377,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 171,
+          "ingredientId": 170,
           "count": 1,
           "unitCost": 53,
           "lineCost": 53,
@@ -7587,7 +7587,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 99,
+          "ingredientId": 98,
           "count": 1,
           "unitCost": 50,
           "lineCost": 50,
@@ -7657,7 +7657,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 119,
+          "ingredientId": 118,
           "count": 1,
           "unitCost": 48,
           "lineCost": 48,
@@ -7762,7 +7762,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 117,
+          "ingredientId": 116,
           "count": 1,
           "unitCost": 47,
           "lineCost": 47,
@@ -7832,7 +7832,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 137,
+          "ingredientId": 136,
           "count": 1,
           "unitCost": 46,
           "lineCost": 46,
@@ -7867,7 +7867,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 133,
+          "ingredientId": 132,
           "count": 1,
           "unitCost": 46,
           "lineCost": 46,
@@ -8007,7 +8007,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 98,
+          "ingredientId": 97,
           "count": 1,
           "unitCost": 45,
           "lineCost": 45,
@@ -8077,7 +8077,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 62,
+          "ingredientId": 61,
           "count": 1,
           "unitCost": 45,
           "lineCost": 45,
@@ -8147,7 +8147,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 111,
+          "ingredientId": 110,
           "count": 1,
           "unitCost": 45,
           "lineCost": 45,
@@ -8287,7 +8287,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 104,
+          "ingredientId": 103,
           "count": 1,
           "unitCost": 43,
           "lineCost": 43,
@@ -8322,7 +8322,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 166,
+          "ingredientId": 165,
           "count": 1,
           "unitCost": 44,
           "lineCost": 44,
@@ -8462,7 +8462,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 63,
+          "ingredientId": 62,
           "count": 1,
           "unitCost": 42,
           "lineCost": 42,
@@ -8532,7 +8532,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 78,
+          "ingredientId": 77,
           "count": 1,
           "unitCost": 40,
           "lineCost": 40,
@@ -8567,7 +8567,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 67,
+          "ingredientId": 66,
           "count": 1,
           "unitCost": 40,
           "lineCost": 40,
@@ -8637,7 +8637,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 65,
+          "ingredientId": 64,
           "count": 1,
           "unitCost": 40,
           "lineCost": 40,
@@ -8672,7 +8672,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 127,
+          "ingredientId": 126,
           "count": 1,
           "unitCost": 40,
           "lineCost": 40,
@@ -8707,7 +8707,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 148,
+          "ingredientId": 147,
           "count": 1,
           "unitCost": 40,
           "lineCost": 40,
@@ -8812,7 +8812,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 144,
+          "ingredientId": 143,
           "count": 1,
           "unitCost": 38,
           "lineCost": 38,
@@ -8882,7 +8882,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 174,
+          "ingredientId": 173,
           "count": 1,
           "unitCost": 41,
           "lineCost": 41,
@@ -9022,7 +9022,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 116,
+          "ingredientId": 115,
           "count": 1,
           "unitCost": 37,
           "lineCost": 37,
@@ -9092,7 +9092,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 185,
+          "ingredientId": 184,
           "count": 1,
           "unitCost": 42,
           "lineCost": 42,
@@ -9127,7 +9127,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 191,
+          "ingredientId": 190,
           "count": 1,
           "unitCost": 35,
           "lineCost": 35,
@@ -9162,7 +9162,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 192,
+          "ingredientId": 191,
           "count": 1,
           "unitCost": 34,
           "lineCost": 34,
@@ -9197,7 +9197,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 129,
+          "ingredientId": 128,
           "count": 1,
           "unitCost": 43,
           "lineCost": 43,
@@ -9267,21 +9267,21 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 176,
+          "ingredientId": 175,
           "count": 3,
           "unitCost": 7,
           "lineCost": 21,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -9316,7 +9316,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 134,
+          "ingredientId": 133,
           "count": 1,
           "unitCost": 31,
           "lineCost": 31,
@@ -9351,7 +9351,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 66,
+          "ingredientId": 65,
           "count": 1,
           "unitCost": 32,
           "lineCost": 32,
@@ -9386,7 +9386,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 120,
+          "ingredientId": 119,
           "count": 1,
           "unitCost": 32,
           "lineCost": 32,
@@ -9421,7 +9421,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 145,
+          "ingredientId": 144,
           "count": 1,
           "unitCost": 30,
           "lineCost": 30,
@@ -9456,7 +9456,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 153,
+          "ingredientId": 152,
           "count": 1,
           "unitCost": 30,
           "lineCost": 30,
@@ -9491,7 +9491,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 130,
+          "ingredientId": 129,
           "count": 1,
           "unitCost": 30,
           "lineCost": 30,
@@ -9526,14 +9526,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 169,
+          "ingredientId": 168,
           "count": 3,
           "unitCost": 5,
           "lineCost": 15,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 212,
+          "ingredientId": 211,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -9568,7 +9568,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 108,
+          "ingredientId": 107,
           "count": 1,
           "unitCost": 28,
           "lineCost": 28,
@@ -9603,7 +9603,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 109,
+          "ingredientId": 108,
           "count": 1,
           "unitCost": 28,
           "lineCost": 28,
@@ -9638,7 +9638,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 100,
+          "ingredientId": 99,
           "count": 1,
           "unitCost": 38,
           "lineCost": 38,
@@ -9673,7 +9673,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 94,
+          "ingredientId": 93,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
@@ -9778,7 +9778,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 142,
+          "ingredientId": 141,
           "count": 1,
           "unitCost": 36,
           "lineCost": 36,
@@ -9813,7 +9813,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 170,
+          "ingredientId": 169,
           "count": 1,
           "unitCost": 23,
           "lineCost": 23,
@@ -9883,7 +9883,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 72,
+          "ingredientId": 71,
           "count": 1,
           "unitCost": 35,
           "lineCost": 35,
@@ -9988,7 +9988,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 95,
+          "ingredientId": 94,
           "count": 1,
           "unitCost": 22,
           "lineCost": 22,
@@ -10023,7 +10023,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 140,
+          "ingredientId": 139,
           "count": 1,
           "unitCost": 22,
           "lineCost": 22,
@@ -10058,7 +10058,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 216,
+          "ingredientId": 215,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -10093,7 +10093,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 76,
+          "ingredientId": 75,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -10128,7 +10128,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 77,
+          "ingredientId": 76,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -10163,7 +10163,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 157,
+          "ingredientId": 156,
           "count": 1,
           "unitCost": 20,
           "lineCost": 20,
@@ -10198,14 +10198,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 205,
+          "ingredientId": 204,
           "count": 3,
           "unitCost": 3,
           "lineCost": 9,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -10240,7 +10240,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 86,
+          "ingredientId": 85,
           "count": 1,
           "unitCost": 18,
           "lineCost": 18,
@@ -10275,7 +10275,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 85,
+          "ingredientId": 84,
           "count": 1,
           "unitCost": 18,
           "lineCost": 18,
@@ -10310,7 +10310,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 159,
+          "ingredientId": 158,
           "count": 1,
           "unitCost": 18,
           "lineCost": 18,
@@ -10345,14 +10345,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 181,
+          "ingredientId": 180,
           "count": 3,
           "unitCost": 2,
           "lineCost": 6,
           "upgradeCount": 446
         },
         {
-          "ingredientId": 203,
+          "ingredientId": 202,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -10387,14 +10387,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 211,
+          "ingredientId": 210,
           "count": 2,
           "unitCost": 7,
           "lineCost": 14,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 196,
+          "ingredientId": 195,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -10429,7 +10429,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 193,
+          "ingredientId": 192,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -10464,14 +10464,14 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 152,
+          "ingredientId": 151,
           "count": 2,
           "unitCost": 3,
           "lineCost": 6,
           "upgradeCount": 333
         },
         {
-          "ingredientId": 201,
+          "ingredientId": 200,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -10506,7 +10506,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 163,
+          "ingredientId": 162,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -10541,7 +10541,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 167,
+          "ingredientId": 166,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -10574,26 +10574,18 @@
       "servings": 1,
       "unlock_condition": null,
       "dlc": null,
-      "ingredients": [
-        {
-          "ingredientId": 79,
-          "count": 1,
-          "unitCost": 17,
-          "lineCost": 17,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 17,
+      "ingredients": [],
+      "recipeCost": 0,
       "partyDishIds": [],
       "bestPartyDishId": null,
-      "maxProfitPerDish": 168,
+      "maxProfitPerDish": 185,
       "baseRevenue": 185,
-      "baseProfit": 168,
-      "baseProfitPerServing": 168,
+      "baseProfit": 185,
+      "baseProfitPerServing": 185,
       "maxProfitPerServing": 0,
-      "upgradeCost": 3757,
+      "upgradeCost": 0,
       "upgradeBreakEven": 0,
-      "ingredientCount": 1,
+      "ingredientCount": 0,
       "bestPartyName": null,
       "bestPartyBonus": null,
       "bestPartyPrice": null,
@@ -10611,7 +10603,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 135,
+          "ingredientId": 134,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -10646,7 +10638,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 172,
+          "ingredientId": 171,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -10681,7 +10673,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 164,
+          "ingredientId": 163,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -10716,7 +10708,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 188,
+          "ingredientId": 187,
           "count": 1,
           "unitCost": 17,
           "lineCost": 17,
@@ -10751,7 +10743,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 156,
+          "ingredientId": 155,
           "count": 1,
           "unitCost": 18,
           "lineCost": 18,
@@ -10786,7 +10778,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 92,
+          "ingredientId": 91,
           "count": 1,
           "unitCost": 14,
           "lineCost": 14,
@@ -10821,7 +10813,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 87,
+          "ingredientId": 86,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -10856,7 +10848,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 105,
+          "ingredientId": 104,
           "count": 1,
           "unitCost": 15,
           "lineCost": 15,
@@ -10891,7 +10883,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 64,
+          "ingredientId": 63,
           "count": 1,
           "unitCost": 75,
           "lineCost": 75,
@@ -10926,7 +10918,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 194,
+          "ingredientId": 193,
           "count": 1,
           "unitCost": 11,
           "lineCost": 11,
@@ -10961,7 +10953,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 124,
+          "ingredientId": 123,
           "count": 1,
           "unitCost": 12,
           "lineCost": 12,
@@ -10996,7 +10988,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 189,
+          "ingredientId": 188,
           "count": 1,
           "unitCost": 12,
           "lineCost": 12,
@@ -11031,7 +11023,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 150,
+          "ingredientId": 149,
           "count": 1,
           "unitCost": 12,
           "lineCost": 12,
@@ -11066,7 +11058,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 68,
+          "ingredientId": 67,
           "count": 1,
           "unitCost": 11,
           "lineCost": 11,
@@ -11101,7 +11093,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 122,
+          "ingredientId": 121,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -11136,7 +11128,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 190,
+          "ingredientId": 189,
           "count": 1,
           "unitCost": 25,
           "lineCost": 25,
@@ -11171,7 +11163,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 110,
+          "ingredientId": 109,
           "count": 1,
           "unitCost": 10,
           "lineCost": 10,
@@ -11206,7 +11198,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 136,
+          "ingredientId": 135,
           "count": 1,
           "unitCost": 10,
           "lineCost": 10,
@@ -11241,7 +11233,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 102,
+          "ingredientId": 101,
           "count": 1,
           "unitCost": 10,
           "lineCost": 10,
@@ -11276,7 +11268,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 89,
+          "ingredientId": 88,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -11311,7 +11303,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 178,
+          "ingredientId": 177,
           "count": 1,
           "unitCost": 8,
           "lineCost": 8,
@@ -11346,7 +11338,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 176,
+          "ingredientId": 175,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -11381,7 +11373,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 70,
+          "ingredientId": 69,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -11416,7 +11408,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 69,
+          "ingredientId": 68,
           "count": 1,
           "unitCost": 7,
           "lineCost": 7,
@@ -11451,7 +11443,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 112,
+          "ingredientId": 111,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11486,7 +11478,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 97,
+          "ingredientId": 96,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11521,7 +11513,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 74,
+          "ingredientId": 73,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11556,7 +11548,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 96,
+          "ingredientId": 95,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11591,7 +11583,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 118,
+          "ingredientId": 117,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11626,7 +11618,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 175,
+          "ingredientId": 174,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11661,7 +11653,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 73,
+          "ingredientId": 72,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11696,7 +11688,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 115,
+          "ingredientId": 114,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11731,7 +11723,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 141,
+          "ingredientId": 140,
           "count": 1,
           "unitCost": 6,
           "lineCost": 6,
@@ -11766,7 +11758,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 113,
+          "ingredientId": 112,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -11801,7 +11793,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 169,
+          "ingredientId": 168,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -11836,7 +11828,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 71,
+          "ingredientId": 70,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -11871,7 +11863,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 173,
+          "ingredientId": 172,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -11906,7 +11898,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 107,
+          "ingredientId": 106,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -11941,7 +11933,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 84,
+          "ingredientId": 83,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -11976,7 +11968,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 128,
+          "ingredientId": 127,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -12011,7 +12003,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 90,
+          "ingredientId": 89,
           "count": 1,
           "unitCost": 5,
           "lineCost": 5,
@@ -12046,7 +12038,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 160,
+          "ingredientId": 159,
           "count": 1,
           "unitCost": 10,
           "lineCost": 10,
@@ -12081,7 +12073,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 132,
+          "ingredientId": 131,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -12116,7 +12108,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 103,
+          "ingredientId": 102,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -12151,7 +12143,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 151,
+          "ingredientId": 150,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -12186,7 +12178,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 123,
+          "ingredientId": 122,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -12221,7 +12213,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 75,
+          "ingredientId": 74,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -12256,7 +12248,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 152,
+          "ingredientId": 151,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -12291,7 +12283,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 126,
+          "ingredientId": 125,
           "count": 1,
           "unitCost": 3,
           "lineCost": 3,
@@ -12326,7 +12318,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 139,
+          "ingredientId": 138,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12361,7 +12353,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 161,
+          "ingredientId": 160,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12396,7 +12388,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 121,
+          "ingredientId": 120,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12431,7 +12423,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 181,
+          "ingredientId": 180,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12466,7 +12458,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 149,
+          "ingredientId": 148,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12501,7 +12493,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 80,
+          "ingredientId": 79,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12536,7 +12528,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 168,
+          "ingredientId": 167,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12571,7 +12563,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 138,
+          "ingredientId": 137,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12606,7 +12598,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 155,
+          "ingredientId": 154,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12641,7 +12633,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 106,
+          "ingredientId": 105,
           "count": 1,
           "unitCost": 2,
           "lineCost": 2,
@@ -12676,7 +12668,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 180,
+          "ingredientId": 179,
           "count": 1,
           "unitCost": 1,
           "lineCost": 1,
@@ -12711,7 +12703,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 147,
+          "ingredientId": 146,
           "count": 1,
           "unitCost": 1,
           "lineCost": 1,
@@ -12746,7 +12738,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 158,
+          "ingredientId": 157,
           "count": 1,
           "unitCost": 1,
           "lineCost": 1,
@@ -12779,26 +12771,18 @@
       "servings": 1,
       "unlock_condition": null,
       "dlc": null,
-      "ingredients": [
-        {
-          "ingredientId": 88,
-          "count": 1,
-          "unitCost": 1,
-          "lineCost": 1,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 1,
+      "ingredients": [],
+      "recipeCost": 0,
       "partyDishIds": [],
       "bestPartyDishId": null,
-      "maxProfitPerDish": 10,
+      "maxProfitPerDish": 11,
       "baseRevenue": 11,
-      "baseProfit": 10,
-      "baseProfitPerServing": 10,
+      "baseProfit": 11,
+      "baseProfitPerServing": 11,
       "maxProfitPerServing": 0,
-      "upgradeCost": 221,
+      "upgradeCost": 0,
       "upgradeBreakEven": 0,
-      "ingredientCount": 1,
+      "ingredientCount": 0,
       "bestPartyName": null,
       "bestPartyBonus": null,
       "bestPartyPrice": null,
@@ -12816,7 +12800,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 91,
+          "ingredientId": 90,
           "count": 1,
           "unitCost": 1,
           "lineCost": 1,
@@ -12851,7 +12835,7 @@
       "dlc": null,
       "ingredients": [
         {
-          "ingredientId": 93,
+          "ingredientId": 92,
           "count": 1,
           "unitCost": 1,
           "lineCost": 1,
@@ -12876,7 +12860,7 @@
     },
     "305": {
       "id": 305,
-      "name": "Wasabi Sushi",
+      "name": "Norimaki",
       "final_level": 10,
       "final_taste": 1,
       "initial_price": 1,
@@ -12884,15 +12868,7 @@
       "servings": 1,
       "unlock_condition": null,
       "dlc": null,
-      "ingredients": [
-        {
-          "ingredientId": 61,
-          "count": 1,
-          "unitCost": null,
-          "lineCost": 0,
-          "upgradeCount": 221
-        }
-      ],
+      "ingredients": [],
       "recipeCost": 0,
       "partyDishIds": [],
       "bestPartyDishId": null,
@@ -12903,7 +12879,7 @@
       "maxProfitPerServing": 0,
       "upgradeCost": 0,
       "upgradeBreakEven": 0,
-      "ingredientCount": 1,
+      "ingredientCount": 0,
       "bestPartyName": null,
       "bestPartyBonus": null,
       "bestPartyPrice": null,
@@ -13584,7 +13560,7 @@
     "38": {
       "id": 38,
       "name": "Klaus's Fin",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Boss",
       "drone": 0,
       "kg": 1,
@@ -13622,7 +13598,7 @@
     "40": {
       "id": 40,
       "name": "Lusca Neck Meat",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Boss",
       "drone": 0,
       "kg": 1,
@@ -13642,7 +13618,7 @@
     "41": {
       "id": 41,
       "name": "Lusca Tentacle",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Boss",
       "drone": 0,
       "kg": 1,
@@ -13660,7 +13636,7 @@
     "42": {
       "id": 42,
       "name": "Mantis Shrimp Meat",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Boss",
       "drone": 0,
       "kg": 1,
@@ -13698,7 +13674,7 @@
     "44": {
       "id": 44,
       "name": "Truck Hermit Crab Legs",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Boss",
       "drone": 0,
       "kg": 1,
@@ -13776,7 +13752,7 @@
     "48": {
       "id": 48,
       "name": "Blue Lobster",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Crab trap",
       "drone": 0,
       "kg": 1,
@@ -13824,7 +13800,7 @@
     "50": {
       "id": 50,
       "name": "Crystal Lobster",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Crab trap",
       "drone": 0,
       "kg": 1.5,
@@ -13915,7 +13891,7 @@
     "54": {
       "id": 54,
       "name": "Fan Lobster",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Crab trap",
       "drone": 0,
       "kg": 0.2,
@@ -13979,7 +13955,7 @@
     "57": {
       "id": 57,
       "name": "Red-banded Lobster",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Crab trap",
       "drone": 0,
       "kg": 0.1,
@@ -14066,23 +14042,6 @@
     },
     "61": {
       "id": 61,
-      "name": "Wasabi Sushi",
-      "type": "Default",
-      "drone": 0,
-      "kg": null,
-      "max_meats": null,
-      "cost": null,
-      "usedIn": [
-        {
-          "dishId": 305,
-          "count": 1
-        }
-      ],
-      "bestPartyDishId": null,
-      "usedForParties": []
-    },
-    "62": {
-      "id": 62,
       "name": "Alaska Pollock",
       "source": "Glacial Area",
       "type": "Fish",
@@ -14099,8 +14058,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "63": {
-      "id": 63,
+    "62": {
+      "id": 62,
       "name": "Allenypterus",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -14117,8 +14076,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "64": {
-      "id": 64,
+    "63": {
+      "id": 63,
       "name": "Anomalocaris",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -14135,8 +14094,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "65": {
-      "id": 65,
+    "64": {
+      "id": 64,
       "name": "Antarctic Octopus",
       "source": "Glacial Area",
       "type": "Fish",
@@ -14161,8 +14120,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "66": {
-      "id": 66,
+    "65": {
+      "id": 65,
       "name": "Arctic Cod",
       "source": "Glacial Area",
       "type": "Fish",
@@ -14183,8 +14142,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "67": {
-      "id": 67,
+    "66": {
+      "id": 66,
       "name": "Arctic Telescope Fish",
       "source": "Glacial Area",
       "type": "Fish",
@@ -14201,8 +14160,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "68": {
-      "id": 68,
+    "67": {
+      "id": 67,
       "name": "Atlantic Anglerfish",
       "source": "Limestone Cave",
       "type": "Fish",
@@ -14223,8 +14182,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "69": {
-      "id": 69,
+    "68": {
+      "id": 68,
       "name": "Atlantic Bonito",
       "source": "50-130m",
       "type": "Fish",
@@ -14247,8 +14206,8 @@
         6
       ]
     },
-    "70": {
-      "id": 70,
+    "69": {
+      "id": 69,
       "name": "Atlantic Mackerel",
       "source": "50-130m",
       "type": "Fish",
@@ -14273,8 +14232,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "71": {
-      "id": 71,
+    "70": {
+      "id": 70,
       "name": "Barrel Jellyfish",
       "source": "0-50m",
       "type": "Fish",
@@ -14297,8 +14256,8 @@
         1
       ]
     },
-    "72": {
-      "id": 72,
+    "71": {
+      "id": 71,
       "name": "Barreleye",
       "source": "Glacial Passage",
       "type": "Fish",
@@ -14326,8 +14285,8 @@
         4
       ]
     },
-    "73": {
-      "id": 73,
+    "72": {
+      "id": 72,
       "name": "Bigeye Scad",
       "source": "50-130m",
       "type": "Fish",
@@ -14348,8 +14307,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "74": {
-      "id": 74,
+    "73": {
+      "id": 73,
       "name": "Bigeye Trevally",
       "source": "50-130m",
       "type": "Fish",
@@ -14372,8 +14331,8 @@
         5
       ]
     },
-    "75": {
-      "id": 75,
+    "74": {
+      "id": 74,
       "name": "Black and White Snapper",
       "source": "0-50m",
       "type": "Fish",
@@ -14390,10 +14349,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "76": {
-      "id": 76,
+    "75": {
+      "id": 75,
       "name": "Blackfin Barracuda",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Fish",
       "drone": 0,
       "kg": 5.5,
@@ -14412,10 +14371,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "77": {
-      "id": 77,
+    "76": {
+      "id": 76,
       "name": "Blacktip Shark Meat",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 1,
       "kg": 2.5,
@@ -14436,8 +14395,8 @@
         4
       ]
     },
-    "78": {
-      "id": 78,
+    "77": {
+      "id": 77,
       "name": "Blobfish",
       "source": "Glacial Passage",
       "type": "Fish",
@@ -14458,26 +14417,21 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "79": {
-      "id": 79,
-      "name": "Blood-Belly Comb Jelly",
+    "78": {
+      "id": 78,
+      "name": "Blood-Belly Comb Jellyfish",
       "source": "130-250m",
       "type": "Fish",
       "drone": 0,
       "kg": 7,
       "max_meats": 3,
       "cost": 17,
-      "usedIn": [
-        {
-          "dishId": 239,
-          "count": 1
-        }
-      ],
+      "usedIn": [],
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "80": {
-      "id": 80,
+    "79": {
+      "id": 79,
       "name": "Blue Tang",
       "source": "0-50m",
       "type": "Fish",
@@ -14498,8 +14452,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "81": {
-      "id": 81,
+    "80": {
+      "id": 80,
       "name": "Bluefin Tuna Akami",
       "source": "0-130m",
       "type": "Fish",
@@ -14522,8 +14476,8 @@
         2
       ]
     },
-    "82": {
-      "id": 82,
+    "81": {
+      "id": 81,
       "name": "Bluefin Tuna Chutoro",
       "source": "0-130m",
       "type": "Fish",
@@ -14550,8 +14504,8 @@
         2
       ]
     },
-    "83": {
-      "id": 83,
+    "82": {
+      "id": 82,
       "name": "Bluefin Tuna Ootoro",
       "source": "0-130m",
       "type": "Fish",
@@ -14574,8 +14528,8 @@
         2
       ]
     },
-    "84": {
-      "id": 84,
+    "83": {
+      "id": 83,
       "name": "Bluehead Tilefish",
       "source": "50-130m",
       "type": "Fish",
@@ -14592,8 +14546,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "85": {
-      "id": 85,
+    "84": {
+      "id": 84,
       "name": "Bluespotted Stargazer",
       "source": "130-250m",
       "type": "Fish",
@@ -14614,10 +14568,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "86": {
-      "id": 86,
+    "85": {
+      "id": 85,
       "name": "Box Jellyfish",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 0,
       "kg": 5,
@@ -14638,8 +14592,8 @@
         1
       ]
     },
-    "87": {
-      "id": 87,
+    "86": {
+      "id": 86,
       "name": "Capelin",
       "source": "Glacial Area",
       "type": "Fish",
@@ -14662,28 +14616,23 @@
         6
       ]
     },
-    "88": {
-      "id": 88,
-      "name": "Cardinalfish",
+    "87": {
+      "id": 87,
+      "name": "Cardinal Fish",
       "source": "0-50m",
       "type": "Fish",
       "drone": 0,
       "kg": 0.2,
       "max_meats": 3,
       "cost": 1,
-      "usedIn": [
-        {
-          "dishId": 302,
-          "count": 1
-        }
-      ],
+      "usedIn": [],
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "89": {
-      "id": 89,
+    "88": {
+      "id": 88,
       "name": "Clearfin Lionfish",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 0,
       "kg": 1.7,
@@ -14702,8 +14651,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "90": {
-      "id": 90,
+    "89": {
+      "id": 89,
       "name": "Clown Frogfish",
       "source": "50-130m",
       "type": "Fish",
@@ -14726,8 +14675,8 @@
         4
       ]
     },
-    "91": {
-      "id": 91,
+    "90": {
+      "id": 90,
       "name": "Clownfish",
       "source": "0-50m",
       "type": "Fish",
@@ -14748,8 +14697,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "92": {
-      "id": 92,
+    "91": {
+      "id": 91,
       "name": "Comb Jelly",
       "source": "130-250m",
       "type": "Fish",
@@ -14772,8 +14721,8 @@
         1
       ]
     },
-    "93": {
-      "id": 93,
+    "92": {
+      "id": 92,
       "name": "Comber",
       "source": "0-50m",
       "type": "Fish",
@@ -14794,8 +14743,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "94": {
-      "id": 94,
+    "93": {
+      "id": 93,
       "name": "Cookiecutter Shark",
       "source": "130-250m",
       "type": "Fish",
@@ -14818,10 +14767,10 @@
         4
       ]
     },
-    "95": {
-      "id": 95,
+    "94": {
+      "id": 94,
       "name": "Copper Shark Meat",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 1,
       "kg": 4,
@@ -14842,8 +14791,8 @@
         4
       ]
     },
-    "96": {
-      "id": 96,
+    "95": {
+      "id": 95,
       "name": "Coral Trout",
       "source": "50-130m",
       "type": "Fish",
@@ -14868,8 +14817,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "97": {
-      "id": 97,
+    "96": {
+      "id": 96,
       "name": "Cuttlefish",
       "source": "50-130m",
       "type": "Fish",
@@ -14900,10 +14849,10 @@
         2
       ]
     },
-    "98": {
-      "id": 98,
+    "97": {
+      "id": 97,
       "name": "Devil Scorpionfish",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Fish",
       "drone": 0,
       "kg": 3,
@@ -14918,8 +14867,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "99": {
-      "id": 99,
+    "98": {
+      "id": 98,
       "name": "Drepanaspis Meat",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -14936,8 +14885,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "100": {
-      "id": 100,
+    "99": {
+      "id": 99,
       "name": "Dumbo Octopus",
       "source": "Glacial Passage",
       "type": "Fish",
@@ -14958,8 +14907,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "101": {
-      "id": 101,
+    "100": {
+      "id": 100,
       "name": "Dunkleosteus Meat",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -14976,8 +14925,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "102": {
-      "id": 102,
+    "101": {
+      "id": 101,
       "name": "Dusky Grouper",
       "source": "50-130m",
       "type": "Fish",
@@ -14998,8 +14947,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "103": {
-      "id": 103,
+    "102": {
+      "id": 102,
       "name": "Emperor Angelfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15016,8 +14965,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "104": {
-      "id": 104,
+    "103": {
+      "id": 103,
       "name": "Falcatus",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -15040,8 +14989,8 @@
         4
       ]
     },
-    "105": {
-      "id": 105,
+    "104": {
+      "id": 104,
       "name": "Fangtooth",
       "source": "130-250m",
       "type": "Fish",
@@ -15062,8 +15011,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "106": {
-      "id": 106,
+    "105": {
+      "id": 105,
       "name": "Flame Angelfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15080,8 +15029,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "107": {
-      "id": 107,
+    "106": {
+      "id": 106,
       "name": "Fried Egg Jellyfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15104,8 +15053,8 @@
         1
       ]
     },
-    "108": {
-      "id": 108,
+    "107": {
+      "id": 107,
       "name": "Frilled Shark Meat",
       "source": "130-250m",
       "type": "Fish",
@@ -15128,8 +15077,8 @@
         4
       ]
     },
-    "109": {
-      "id": 109,
+    "108": {
+      "id": 108,
       "name": "Gelatinous Snailfish",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15150,8 +15099,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "110": {
-      "id": 110,
+    "109": {
+      "id": 109,
       "name": "Giant Trevally Meat",
       "source": "50-130m",
       "type": "Fish",
@@ -15174,8 +15123,8 @@
         5
       ]
     },
-    "111": {
-      "id": 111,
+    "110": {
+      "id": 110,
       "name": "Golden King Crab",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15196,8 +15145,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "112": {
-      "id": 112,
+    "111": {
+      "id": 111,
       "name": "Great Barracuda",
       "source": "50-130m",
       "type": "Fish",
@@ -15218,8 +15167,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "113": {
-      "id": 113,
+    "112": {
+      "id": 112,
       "name": "Green Humphead Parrotfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15242,8 +15191,8 @@
         6
       ]
     },
-    "114": {
-      "id": 114,
+    "113": {
+      "id": 113,
       "name": "Greenland Shark Meat",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15260,8 +15209,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "115": {
-      "id": 115,
+    "114": {
+      "id": 114,
       "name": "Grey Triggerfish",
       "source": "50-130m",
       "type": "Fish",
@@ -15282,8 +15231,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "116": {
-      "id": 116,
+    "115": {
+      "id": 115,
       "name": "Haddock",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15304,8 +15253,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "117": {
-      "id": 117,
+    "116": {
+      "id": 116,
       "name": "Hammerhead Meat",
       "source": "50-130m",
       "type": "Fish",
@@ -15322,8 +15271,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "118": {
-      "id": 118,
+    "117": {
+      "id": 117,
       "name": "Harlequin Hind",
       "source": "50-130m",
       "type": "Fish",
@@ -15344,10 +15293,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "119": {
-      "id": 119,
+    "118": {
+      "id": 118,
       "name": "Humboldt Squid Meat",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Fish",
       "drone": 1,
       "kg": 7.5,
@@ -15368,8 +15317,8 @@
         7
       ]
     },
-    "120": {
-      "id": 120,
+    "119": {
+      "id": 119,
       "name": "Ice Fish",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15392,8 +15341,8 @@
         6
       ]
     },
-    "121": {
-      "id": 121,
+    "120": {
+      "id": 120,
       "name": "Lagoon Triggerfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15414,8 +15363,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "122": {
-      "id": 122,
+    "121": {
+      "id": 121,
       "name": "Long-Snouted Seahorse",
       "source": "0-50m",
       "type": "Fish",
@@ -15444,8 +15393,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "123": {
-      "id": 123,
+    "122": {
+      "id": 122,
       "name": "Longfin Batfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15466,10 +15415,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "124": {
-      "id": 124,
+    "123": {
+      "id": 123,
       "name": "Longnose Sawshark Meat",
-      "source": "50-130m Day or Night",
+      "source": "50-130m",
       "type": "Fish",
       "drone": 1,
       "kg": 6.5,
@@ -15484,10 +15433,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "125": {
-      "id": 125,
+    "124": {
+      "id": 124,
       "name": "Longspine Porcupinefish",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 0,
       "kg": 3.5,
@@ -15506,10 +15455,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "126": {
-      "id": 126,
+    "125": {
+      "id": 125,
       "name": "Longspine Squirrelfish",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 0,
       "kg": 0.4,
@@ -15528,8 +15477,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "127": {
-      "id": 127,
+    "126": {
+      "id": 126,
       "name": "Lumpfish",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -15546,8 +15495,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "128": {
-      "id": 128,
+    "127": {
+      "id": 127,
       "name": "Mackerel Scad",
       "source": "50-130m",
       "type": "Fish",
@@ -15568,8 +15517,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "129": {
-      "id": 129,
+    "128": {
+      "id": 128,
       "name": "Mako Meat",
       "source": "0-50m",
       "type": "Fish",
@@ -15586,8 +15535,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "130": {
-      "id": 130,
+    "129": {
+      "id": 129,
       "name": "Marbled Electric Ray Meat",
       "source": "0-50m",
       "type": "Fish",
@@ -15608,8 +15557,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "131": {
-      "id": 131,
+    "130": {
+      "id": 130,
       "name": "Marlin Meat",
       "source": "0-50m",
       "type": "Fish",
@@ -15632,8 +15581,8 @@
         3
       ]
     },
-    "132": {
-      "id": 132,
+    "131": {
+      "id": 131,
       "name": "Mediterranean Parrotfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15654,8 +15603,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "133": {
-      "id": 133,
+    "132": {
+      "id": 132,
       "name": "Megalograptus",
       "source": "Divine Tree Control Room",
       "type": "Fish",
@@ -15672,8 +15621,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "134": {
-      "id": 134,
+    "133": {
+      "id": 133,
       "name": "Megamouth Shark Meat",
       "source": "130-250m",
       "type": "Fish",
@@ -15696,10 +15645,10 @@
         4
       ]
     },
-    "135": {
-      "id": 135,
+    "134": {
+      "id": 134,
       "name": "Moray Eel",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 0,
       "kg": 9,
@@ -15725,8 +15674,8 @@
         8
       ]
     },
-    "136": {
-      "id": 136,
+    "135": {
+      "id": 135,
       "name": "Narrow-Barred Spanish Mackerel",
       "source": "50-130m",
       "type": "Fish",
@@ -15747,8 +15696,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "137": {
-      "id": 137,
+    "136": {
+      "id": 136,
       "name": "Narwhal Meat",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15769,8 +15718,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "138": {
-      "id": 138,
+    "137": {
+      "id": 137,
       "name": "Orbicular Batfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15791,8 +15740,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "139": {
-      "id": 139,
+    "138": {
+      "id": 138,
       "name": "Ornate Wrasse",
       "source": "0-50m",
       "type": "Fish",
@@ -15815,8 +15764,8 @@
         6
       ]
     },
-    "140": {
-      "id": 140,
+    "139": {
+      "id": 139,
       "name": "Pacific Fanfish",
       "source": "130-250m",
       "type": "Fish",
@@ -15837,8 +15786,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "141": {
-      "id": 141,
+    "140": {
+      "id": 140,
       "name": "Painted Comber",
       "source": "50-130m",
       "type": "Fish",
@@ -15859,8 +15808,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "142": {
-      "id": 142,
+    "141": {
+      "id": 141,
       "name": "Peacock Squid",
       "source": "Glacial Passage",
       "type": "Fish",
@@ -15885,8 +15834,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "143": {
-      "id": 143,
+    "142": {
+      "id": 142,
       "name": "Pelican Eel",
       "source": "Glacial Passage",
       "type": "Fish",
@@ -15907,8 +15856,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "144": {
-      "id": 144,
+    "143": {
+      "id": 143,
       "name": "Pikaia",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -15929,8 +15878,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "145": {
-      "id": 145,
+    "144": {
+      "id": 144,
       "name": "Polar Eelpout",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15947,8 +15896,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "146": {
-      "id": 146,
+    "145": {
+      "id": 145,
       "name": "Porbeagle Shark Meat",
       "source": "Glacial Area",
       "type": "Fish",
@@ -15971,8 +15920,8 @@
         4
       ]
     },
-    "147": {
-      "id": 147,
+    "146": {
+      "id": 146,
       "name": "Pyramid Butterflyfish",
       "source": "0-50m",
       "type": "Fish",
@@ -15993,8 +15942,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "148": {
-      "id": 148,
+    "147": {
+      "id": 147,
       "name": "Qingmendous",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -16011,8 +15960,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "149": {
-      "id": 149,
+    "148": {
+      "id": 148,
       "name": "Rainbow Wrasse",
       "source": "0-50m",
       "type": "Fish",
@@ -16035,8 +15984,8 @@
         6
       ]
     },
-    "150": {
-      "id": 150,
+    "149": {
+      "id": 149,
       "name": "Red Bream",
       "source": "130-250m",
       "type": "Fish",
@@ -16059,8 +16008,8 @@
         4
       ]
     },
-    "151": {
-      "id": 151,
+    "150": {
+      "id": 150,
       "name": "Red Lionfish",
       "source": "0-50m",
       "type": "Fish",
@@ -16081,8 +16030,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "152": {
-      "id": 152,
+    "151": {
+      "id": 151,
       "name": "Redtoothed Triggerfish",
       "source": "0-50m",
       "type": "Fish",
@@ -16103,8 +16052,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "153": {
-      "id": 153,
+    "152": {
+      "id": 152,
       "name": "Rhinochimaeridae Meat",
       "source": "130-250m",
       "type": "Fish",
@@ -16127,8 +16076,8 @@
         4
       ]
     },
-    "154": {
-      "id": 154,
+    "153": {
+      "id": 153,
       "name": "Sailfish Meat",
       "source": "Shipwreck Interior",
       "type": "Fish",
@@ -16155,8 +16104,8 @@
         3
       ]
     },
-    "155": {
-      "id": 155,
+    "154": {
+      "id": 154,
       "name": "Salema Porgy",
       "source": "0-50m",
       "type": "Fish",
@@ -16173,8 +16122,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "156": {
-      "id": 156,
+    "155": {
+      "id": 155,
       "name": "Sally Lightfoot Crab",
       "source": "Shipwreck Interior",
       "type": "Fish",
@@ -16195,8 +16144,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "157": {
-      "id": 157,
+    "156": {
+      "id": 156,
       "name": "Salmon Snailfish",
       "source": "130-250m",
       "type": "Fish",
@@ -16217,8 +16166,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "158": {
-      "id": 158,
+    "157": {
+      "id": 157,
       "name": "Sea Goldie",
       "source": "0-50m",
       "type": "Fish",
@@ -16235,8 +16184,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "159": {
-      "id": 159,
+    "158": {
+      "id": 158,
       "name": "Sea Toad",
       "source": "130-250m",
       "type": "Fish",
@@ -16259,8 +16208,8 @@
         5
       ]
     },
-    "160": {
-      "id": 160,
+    "159": {
+      "id": 159,
       "name": "Sheepshead Meat",
       "source": "0-50m",
       "type": "Fish",
@@ -16281,8 +16230,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "161": {
-      "id": 161,
+    "160": {
+      "id": 160,
       "name": "Small Spotted Dart",
       "source": "0-50m",
       "type": "Fish",
@@ -16303,8 +16252,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "162": {
-      "id": 162,
+    "161": {
+      "id": 161,
       "name": "Snub-Nosed Spiny Eel",
       "source": "3rd Glacial Cave",
       "type": "Fish",
@@ -16329,10 +16278,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "163": {
-      "id": 163,
+    "162": {
+      "id": 162,
       "name": "Spear Squid",
-      "source": "50-130m Night",
+      "source": "50-130m",
       "type": "Fish",
       "drone": 0,
       "kg": 4.6,
@@ -16351,8 +16300,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "164": {
-      "id": 164,
+    "163": {
+      "id": 163,
       "name": "Spider Crab",
       "source": "130-250m",
       "type": "Fish",
@@ -16384,8 +16333,8 @@
         5
       ]
     },
-    "165": {
-      "id": 165,
+    "164": {
+      "id": 164,
       "name": "Starry Puffer",
       "source": "0-50m",
       "type": "Fish",
@@ -16410,8 +16359,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "166": {
-      "id": 166,
+    "165": {
+      "id": 165,
       "name": "Starry Skate",
       "source": "Glacial Area",
       "type": "Fish",
@@ -16432,8 +16381,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "167": {
-      "id": 167,
+    "166": {
+      "id": 166,
       "name": "Stingray Meat",
       "source": "0-50m",
       "type": "Fish",
@@ -16458,8 +16407,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "168": {
-      "id": 168,
+    "167": {
+      "id": 167,
       "name": "Striped Catfish",
       "source": "0-50m",
       "type": "Fish",
@@ -16480,8 +16429,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "169": {
-      "id": 169,
+    "168": {
+      "id": 168,
       "name": "Striped Red Mullet",
       "source": "50-130m",
       "type": "Fish",
@@ -16502,8 +16451,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "170": {
-      "id": 170,
+    "169": {
+      "id": 169,
       "name": "Threetooth Puffer",
       "source": "130-250m",
       "type": "Fish",
@@ -16520,8 +16469,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "171": {
-      "id": 171,
+    "170": {
+      "id": 170,
       "name": "Thresher Shark Meat",
       "source": "0-50m",
       "type": "Fish",
@@ -16538,10 +16487,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "172": {
-      "id": 172,
+    "171": {
+      "id": 171,
       "name": "Tiger Shark Meat",
-      "source": "50-130m Day or Night",
+      "source": "50-130m",
       "type": "Fish",
       "drone": 1,
       "kg": 15,
@@ -16556,8 +16505,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "173": {
-      "id": 173,
+    "172": {
+      "id": 172,
       "name": "Titan Triggerfish",
       "source": "0-50m",
       "type": "Fish",
@@ -16578,8 +16527,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "174": {
-      "id": 174,
+    "173": {
+      "id": 173,
       "name": "Vampire Squid",
       "source": "Glacial Passage",
       "type": "Fish",
@@ -16606,8 +16555,8 @@
         4
       ]
     },
-    "175": {
-      "id": 175,
+    "174": {
+      "id": 174,
       "name": "White Spotted Jellyfish",
       "source": "50-130m",
       "type": "Fish",
@@ -16630,8 +16579,8 @@
         1
       ]
     },
-    "176": {
-      "id": 176,
+    "175": {
+      "id": 175,
       "name": "White Trevally",
       "source": "50-130m",
       "type": "Fish",
@@ -16656,10 +16605,10 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "177": {
-      "id": 177,
+    "176": {
+      "id": 176,
       "name": "Whitetip Reefshark Head",
-      "source": "0-50m Day and Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 1,
       "kg": 2.5,
@@ -16676,10 +16625,10 @@
         4
       ]
     },
-    "178": {
-      "id": 178,
+    "177": {
+      "id": 177,
       "name": "Whitetip Reefshark Meat",
-      "source": "0-50m Day and Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 1,
       "kg": 2.5,
@@ -16694,8 +16643,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "179": {
-      "id": 179,
+    "178": {
+      "id": 178,
       "name": "Xenacanthus Meat",
       "source": "Hydrothermal Vents",
       "type": "Fish",
@@ -16712,8 +16661,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "180": {
-      "id": 180,
+    "179": {
+      "id": 179,
       "name": "Yellow Tang",
       "source": "0-50m",
       "type": "Fish",
@@ -16730,8 +16679,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "181": {
-      "id": 181,
+    "180": {
+      "id": 180,
       "name": "Yellowback Fusilier",
       "source": "0-50m",
       "type": "Fish",
@@ -16752,8 +16701,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "182": {
-      "id": 182,
+    "181": {
+      "id": 181,
       "name": "Yellowfin Tuna Akami",
       "source": "0-130m",
       "type": "Fish",
@@ -16776,8 +16725,8 @@
         2
       ]
     },
-    "183": {
-      "id": 183,
+    "182": {
+      "id": 182,
       "name": "Yellowfin Tuna Chutoro",
       "source": "0-130m",
       "type": "Fish",
@@ -16800,8 +16749,8 @@
         2
       ]
     },
-    "184": {
-      "id": 184,
+    "183": {
+      "id": 183,
       "name": "Yellowfin Tuna Ootoro",
       "source": "0-130m",
       "type": "Fish",
@@ -16824,10 +16773,10 @@
         2
       ]
     },
-    "185": {
-      "id": 185,
+    "184": {
+      "id": 184,
       "name": "Zebra Shark Meat",
-      "source": "0-50m Night",
+      "source": "0-50m",
       "type": "Fish",
       "drone": 1,
       "kg": 10.5,
@@ -16842,8 +16791,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "186": {
-      "id": 186,
+    "185": {
+      "id": 185,
       "name": "Rainbow Cap",
       "source": "Jango",
       "type": "Jango",
@@ -16868,8 +16817,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "187": {
-      "id": 187,
+    "186": {
+      "id": 186,
       "name": "Truffle",
       "source": "Jango",
       "type": "Jango",
@@ -16906,8 +16855,8 @@
         4
       ]
     },
-    "188": {
-      "id": 188,
+    "187": {
+      "id": 187,
       "name": "Black Tiger Shrimp",
       "source": "50-130m",
       "type": "Net",
@@ -16938,8 +16887,8 @@
         7
       ]
     },
-    "189": {
-      "id": 189,
+    "188": {
+      "id": 188,
       "name": "Chambered Nautilus",
       "source": "130-250m",
       "type": "Net",
@@ -16956,8 +16905,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "190": {
-      "id": 190,
+    "189": {
+      "id": 189,
       "name": "Clione",
       "source": "130-250m",
       "type": "Net",
@@ -16974,8 +16923,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "191": {
-      "id": 191,
+    "190": {
+      "id": 190,
       "name": "Seadragon",
       "source": "Hydrothermal Vents",
       "type": "Net",
@@ -16992,8 +16941,8 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "192": {
-      "id": 192,
+    "191": {
+      "id": 191,
       "name": "Waptia Fieldensis",
       "source": "Hydrothermal Vents",
       "type": "Net",
@@ -17017,10 +16966,10 @@
         7
       ]
     },
-    "193": {
-      "id": 193,
+    "192": {
+      "id": 192,
       "name": "White Shrimp",
-      "source": "0-130m Day and Night",
+      "source": "0-130m",
       "type": "Net",
       "drone": 0,
       "kg": 0.1,
@@ -17045,8 +16994,8 @@
         7
       ]
     },
-    "194": {
-      "id": 194,
+    "193": {
+      "id": 193,
       "name": "Whiteleg Shrimp",
       "source": "0-50m",
       "type": "Net",
@@ -17081,11 +17030,11 @@
         7
       ]
     },
-    "195": {
-      "id": 195,
+    "194": {
+      "id": 194,
       "name": "Black Pepper",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17117,11 +17066,11 @@
         4
       ]
     },
-    "196": {
-      "id": 196,
+    "195": {
+      "id": 195,
       "name": "Black Vinegar",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17175,11 +17124,11 @@
         7
       ]
     },
-    "197": {
-      "id": 197,
+    "196": {
+      "id": 196,
       "name": "Curry Block",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17207,11 +17156,11 @@
         6
       ]
     },
-    "198": {
-      "id": 198,
+    "197": {
+      "id": 197,
       "name": "Mayonnaise",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17253,11 +17202,11 @@
         4
       ]
     },
-    "199": {
-      "id": 199,
+    "198": {
+      "id": 198,
       "name": "Miso",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17311,11 +17260,11 @@
         3
       ]
     },
-    "200": {
-      "id": 200,
+    "199": {
+      "id": 199,
       "name": "Olive Oil",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17432,11 +17381,11 @@
         2
       ]
     },
-    "201": {
-      "id": 201,
+    "200": {
+      "id": 200,
       "name": "Salt",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17493,11 +17442,11 @@
         4
       ]
     },
-    "202": {
-      "id": 202,
+    "201": {
+      "id": 201,
       "name": "Sesame Seed",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17538,11 +17487,11 @@
         4
       ]
     },
-    "203": {
-      "id": 203,
+    "202": {
+      "id": 202,
       "name": "Soy Sauce",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17620,11 +17569,11 @@
         4
       ]
     },
-    "204": {
-      "id": 204,
+    "203": {
+      "id": 203,
       "name": "Turmeric",
       "source": "Dispatch & Cooking Pots",
-      "type": "Seasoning",
+      "type": "Procure",
       "drone": 0,
       "kg": 0.1,
       "max_meats": 1,
@@ -17653,8 +17602,8 @@
         8
       ]
     },
-    "205": {
-      "id": 205,
+    "204": {
+      "id": 204,
       "name": "Agar",
       "source": "0-50m",
       "type": "Sea Plant",
@@ -17697,8 +17646,8 @@
         1
       ]
     },
-    "206": {
-      "id": 206,
+    "205": {
+      "id": 205,
       "name": "Buckbean",
       "source": "Glacial Area",
       "type": "Sea Plant",
@@ -17731,8 +17680,8 @@
         1
       ]
     },
-    "207": {
-      "id": 207,
+    "206": {
+      "id": 206,
       "name": "Sea Grape",
       "source": "Limestone Cave",
       "type": "Sea Plant",
@@ -17786,8 +17735,8 @@
         4
       ]
     },
-    "208": {
-      "id": 208,
+    "207": {
+      "id": 207,
       "name": "Black Coral",
       "source": "Glacial Area",
       "type": "Sea plant",
@@ -17817,8 +17766,8 @@
         6
       ]
     },
-    "209": {
-      "id": 209,
+    "208": {
+      "id": 208,
       "name": "Bladderwrack",
       "source": "Glacial Seaweed Cave",
       "type": "Sea plant",
@@ -17849,8 +17798,8 @@
         8
       ]
     },
-    "210": {
-      "id": 210,
+    "209": {
+      "id": 209,
       "name": "Hyalonema",
       "source": "Glacial Seaweed Cave",
       "type": "Sea plant",
@@ -17873,8 +17822,8 @@
         2
       ]
     },
-    "211": {
-      "id": 211,
+    "210": {
+      "id": 210,
       "name": "Kajime",
       "source": "0-130m",
       "type": "Sea plant",
@@ -17917,8 +17866,8 @@
         3
       ]
     },
-    "212": {
-      "id": 212,
+    "211": {
+      "id": 211,
       "name": "Kelp",
       "source": "50-130m",
       "type": "Sea plant",
@@ -17970,8 +17919,8 @@
         8
       ]
     },
-    "213": {
-      "id": 213,
+    "212": {
+      "id": 212,
       "name": "Seaweed",
       "source": "50-130m",
       "type": "Sea plant",
@@ -18019,8 +17968,8 @@
         4
       ]
     },
-    "214": {
-      "id": 214,
+    "213": {
+      "id": 213,
       "name": "Southern Bull Kelp",
       "source": "Glacial Area",
       "type": "Sea plant",
@@ -18052,10 +18001,10 @@
         4
       ]
     },
-    "215": {
-      "id": 215,
+    "214": {
+      "id": 214,
       "name": "Green Sea Urchin",
-      "source": "0-50m Day and Night",
+      "source": "0-50m",
       "type": "Urchin",
       "drone": 0,
       "kg": 1,
@@ -18086,10 +18035,10 @@
         5
       ]
     },
-    "216": {
-      "id": 216,
+    "215": {
+      "id": 215,
       "name": "Purple Sea Urchin",
-      "source": "0-50m Day or Night",
+      "source": "0-50m",
       "type": "Urchin",
       "drone": 0,
       "kg": 1,
@@ -18118,11 +18067,11 @@
         3
       ]
     },
-    "217": {
-      "id": 217,
+    "216": {
+      "id": 216,
       "name": "Bean",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18154,11 +18103,11 @@
         6
       ]
     },
-    "218": {
-      "id": 218,
+    "217": {
+      "id": 217,
       "name": "Buckwheat",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18184,11 +18133,11 @@
       "bestPartyDishId": null,
       "usedForParties": []
     },
-    "219": {
-      "id": 219,
+    "218": {
+      "id": 218,
       "name": "Carrot",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18237,11 +18186,11 @@
         5
       ]
     },
-    "220": {
-      "id": 220,
+    "219": {
+      "id": 219,
       "name": "Cherry Tomato",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18285,11 +18234,11 @@
         2
       ]
     },
-    "221": {
-      "id": 221,
+    "220": {
+      "id": 220,
       "name": "Cucumber",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18334,11 +18283,11 @@
         7
       ]
     },
-    "222": {
-      "id": 222,
+    "221": {
+      "id": 221,
       "name": "Egg",
-      "source": "Chicken Farm",
-      "type": "Egg",
+      "source": "Vegetable Farm",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18404,11 +18353,11 @@
         2
       ]
     },
-    "223": {
-      "id": 223,
+    "222": {
+      "id": 222,
       "name": "Eggplant",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18444,11 +18393,11 @@
         5
       ]
     },
-    "224": {
-      "id": 224,
+    "223": {
+      "id": 223,
       "name": "Garlic",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18494,11 +18443,11 @@
         3
       ]
     },
-    "225": {
-      "id": 225,
+    "224": {
+      "id": 224,
       "name": "Grade A Egg",
-      "source": "Chicken Farm",
-      "type": "Egg",
+      "source": "Vegetable Farm",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18539,11 +18488,11 @@
         4
       ]
     },
-    "226": {
-      "id": 226,
+    "225": {
+      "id": 225,
       "name": "Habanero",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18572,11 +18521,11 @@
         8
       ]
     },
-    "227": {
-      "id": 227,
+    "226": {
+      "id": 226,
       "name": "Onion",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18617,11 +18566,11 @@
         5
       ]
     },
-    "228": {
-      "id": 228,
+    "227": {
+      "id": 227,
       "name": "Rice",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
@@ -18707,11 +18656,11 @@
         8
       ]
     },
-    "229": {
-      "id": 229,
+    "228": {
+      "id": 228,
       "name": "Wheat",
       "source": "Vegetable Farm",
-      "type": "Vegetable",
+      "type": "Vegetable Farm",
       "drone": 0,
       "kg": null,
       "max_meats": null,
