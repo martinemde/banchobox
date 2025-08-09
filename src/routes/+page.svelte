@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { PageData } from './$types.js';
+  import { goto } from '$app/navigation';
 
   export let data: PageData;
 
@@ -23,7 +24,13 @@
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
     <!-- Dishes Card -->
-    <div class="card variant-glass-surface p-8 text-center">
+    <div
+      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer"
+      role="link"
+      tabindex="0"
+      on:click={() => goto('/dishes')}
+      on:keydown={(e) => e.key === 'Enter' && goto('/dishes')}
+    >
       <div class="mb-6">
         <div class="w-16 h-16 bg-primary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,7 +48,13 @@
     </div>
 
     <!-- Ingredients Card -->
-    <div class="card variant-glass-surface p-8 text-center">
+    <div
+      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer"
+      role="link"
+      tabindex="0"
+      on:click={() => goto('/ingredients')}
+      on:keydown={(e) => e.key === 'Enter' && goto('/ingredients')}
+    >
       <div class="mb-6">
         <div class="w-16 h-16 bg-secondary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-secondary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,7 +72,13 @@
     </div>
 
     <!-- Parties Card -->
-    <div class="card variant-glass-surface p-8 text-center">
+    <div
+      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer"
+      role="link"
+      tabindex="0"
+      on:click={() => goto('/parties')}
+      on:keydown={(e) => e.key === 'Enter' && goto('/parties')}
+    >
       <div class="mb-6">
         <div class="w-16 h-16 bg-tertiary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg class="w-8 h-8 text-tertiary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
