@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { EnrichedIngredient, EnrichedDish } from '../types.js';
-  import { Data } from '../data/runtime.js';
-  import { imageUrlForName } from '../images/index.js';
+  import { enhancedImageForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import { browser } from '$app/environment';
   import TrackButton from './TrackButton.svelte';
@@ -22,7 +21,8 @@
 
   export let ingredient: EnrichedIngredient;
 
-  $: imageSrc = imageUrlForName(ingredient.name);
+  let enhancedImage: string;
+  $: enhancedImage = enhancedImageForFile(ingredient.image);
   // Match thumbnail sizing used in PartyDish
   const thumbPx = 96;
 
@@ -32,8 +32,8 @@
   }
 
   $: costPerKg = (() => {
-    if (ingredient.cost == null || ingredient.kg == null || ingredient.kg === 0) return null;
-    return ingredient.cost / ingredient.kg;
+    if (ingredient.sell == null || ingredient.kg == null || ingredient.kg === 0) return null;
+    return ingredient.sell / ingredient.kg;
   })();
 
   function getTypeIcon(type?: string) {
@@ -76,26 +76,7 @@
     partyName: string | null;
   };
 
-  $: recipeRows = (ingredient.usedIn || [])
-    .map(({ dishId, count }) => {
-      const dish = Data.getDishById(dishId);
-      if (!dish) return null;
-      const line = dish.ingredients.find((ing) => ing.ingredientId === ingredient.id);
-      const parties = Data.getPartyDishesByDishId(dish.id) || [];
-      const bestParty = [...parties].sort((a, b) => b.profit - a.profit)[0];
-      const partyName = bestParty ? (Data.getPartyById(bestParty.partyId)?.name ?? null) : null;
-
-      const row: RecipeRow = {
-        dish,
-        count,
-        level: dish.final_level ?? null,
-        upgradeCount: (line as any)?.upgradeCount ?? null,
-        price: dish.final_price,
-        servings: dish.servings,
-        partyName
-      };
-      return row;
-    })
+  $: recipeRows = (ingredient as any).recipeRows ?? []
     .filter(Boolean)
     .map((r) => r as RecipeRow)
     .sort((a, b) => (b.price ?? 0) - (a.price ?? 0));
@@ -107,9 +88,7 @@
     <div class="flex items-start gap-4">
       <div class="inline-block" style="width: {thumbPx}px">
         <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-          {#if imageSrc}
-            <img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={imageSrc} alt="" loading="lazy" />
-          {/if}
+          <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={ingredient.name} sizes="{thumbPx}px" loading="lazy" />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">
@@ -138,7 +117,7 @@
 
         <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
           <span>
-            Sell: {ingredient.cost != null ? `${formatNumber(ingredient.cost)}g` : '—'}
+            Sell: {ingredient.sell != null ? `${formatNumber(ingredient.sell)}g` : '—'}
           </span>
           <span>Buy: —</span>
         </div>
@@ -152,7 +131,7 @@
       </div>
 
       <div class="ml-auto flex items-start gap-2 self-start">
-        {#if ingredient.drone === 1}
+        {#if ingredient.drone}
           <button type="button" class="group relative inline-flex" aria-label="Drone">
             <ChevronsUp size={24} class="opacity-80" />
             <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">Drone</span>

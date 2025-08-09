@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
+    "order": 1,
     "name": "Jellyfish",
     "bonus": 2,
-    "order": 1,
     "partyDishIds": [
       17,
       18,
@@ -14,9 +14,9 @@
   },
   {
     "id": 2,
+    "order": 2,
     "name": "Tuna",
     "bonus": 3.5,
-    "order": 2,
     "partyDishIds": [
       53,
       52,
@@ -34,9 +34,9 @@
   },
   {
     "id": 3,
+    "order": 3,
     "name": "Marlin",
     "bonus": 2,
-    "order": 3,
     "partyDishIds": [
       29,
       30,
@@ -47,13 +47,13 @@
   },
   {
     "id": 4,
+    "order": 4,
     "name": "Shark",
     "bonus": 2,
-    "order": 4,
     "partyDishIds": [
       39,
-      36,
       35,
+      36,
       34,
       37,
       38,
@@ -66,9 +66,9 @@
   },
   {
     "id": 5,
+    "order": 5,
     "name": "Cucumber",
     "bonus": 2.5,
-    "order": 5,
     "partyDishIds": [
       1,
       7,
@@ -81,9 +81,9 @@
   },
   {
     "id": 6,
+    "order": 6,
     "name": "Curry",
     "bonus": 2,
-    "order": 6,
     "partyDishIds": [
       8,
       9,
@@ -97,9 +97,9 @@
   },
   {
     "id": 7,
+    "order": 7,
     "name": "Shrimp",
     "bonus": 2,
-    "order": 7,
     "partyDishIds": [
       45,
       48,
@@ -111,12 +111,12 @@
   },
   {
     "id": 8,
+    "order": 8,
     "name": "Lobster",
     "bonus": 2.5,
-    "order": 8,
     "partyDishIds": [
-      26,
       25,
+      26,
       27,
       24,
       22,

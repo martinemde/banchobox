@@ -1,12 +1,10 @@
 <script lang="ts">
-  import type { PageData } from './$types.js';
   import { goto } from '$app/navigation';
+  import { Data } from '$lib/data/runtime.js';
 
-  export let data: PageData;
-
-  $: dishes = data.dishes;
-  $: ingredients = data.ingredients;
-  $: parties = data.parties;
+  $: dishes = Data.dishes;
+  $: ingredients = Data.ingredients;
+  $: parties = Data.parties;
 </script>
 
 <svelte:head>
@@ -28,8 +26,8 @@
       class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
       role="link"
       tabindex="0"
-      on:click={() => goto('/dishes')}
-      on:keydown={(e) => e.key === 'Enter' && goto('/dishes')}
+      onclick={() => goto('/dishes')}
+      onkeydown={(e) => e.key === 'Enter' && goto('/dishes')}
     >
       <div class="mb-6">
         <div class="w-16 h-16 bg-primary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -42,7 +40,7 @@
           Browse all {dishes.length} dishes with detailed information about levels, prices, and requirements
         </p>
       </div>
-      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" on:click={() => goto('/dishes')}>
+      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" onclick={() => goto('/dishes')}>
         View All Dishes
       </button>
     </div>
@@ -52,8 +50,8 @@
       class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
       role="link"
       tabindex="0"
-      on:click={() => goto('/ingredients')}
-      on:keydown={(e) => e.key === 'Enter' && goto('/ingredients')}
+      onclick={() => goto('/ingredients')}
+      onkeydown={(e) => e.key === 'Enter' && goto('/ingredients')}
     >
       <div class="mb-6">
         <div class="w-16 h-16 bg-secondary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -66,7 +64,7 @@
           Explore all {ingredients.length} ingredients with source locations, types, and gathering information
         </p>
       </div>
-      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" on:click={() => goto('/ingredients')}>
+      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" onclick={() => goto('/ingredients')}>
         View All Ingredients
       </button>
     </div>
@@ -76,8 +74,8 @@
       class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
       role="link"
       tabindex="0"
-      on:click={() => goto('/parties')}
-      on:keydown={(e) => e.key === 'Enter' && goto('/parties')}
+      onclick={() => goto('/parties')}
+      onkeydown={(e) => e.key === 'Enter' && goto('/parties')}
     >
       <div class="mb-6">
         <div class="w-16 h-16 bg-tertiary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -90,7 +88,7 @@
           Discover all {parties.length} party events with bonuses and associated dishes
         </p>
       </div>
-      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" on:click={() => goto('/parties')}>
+      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" onclick={() => goto('/parties')}>
         View All Parties
       </button>
     </div>

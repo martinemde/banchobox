@@ -1,8 +1,7 @@
 <script lang="ts">
   import type { EnrichedDish, PartyDish as PartyDishEntity } from '../types.js';
-  import { Data } from '../data/runtime.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
-  import { imageUrlForName } from '../images/index.js';
+  import { enhancedImageForFile } from '../images/index.js';
   import TrackButton from './TrackButton.svelte';
   import ProfitTable from './ProfitTable.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
@@ -11,8 +10,9 @@
   export let dish: EnrichedDish;
   export let partyDish: PartyDishEntity; // Calculated values for this dish under the current party
 
-  $: imageSrc = imageUrlForName(dish.name);
-  $: party = Data.getPartyById(partyDish.partyId);
+  let enhancedImage: string;
+  $: enhancedImage = enhancedImageForFile(dish.image);
+  export let party: { name: string; bonus: number } | null = null;
 
   // Fixed width for thumbnail and track button
   const thumbPx = 96; // 96px (~size-24)
@@ -21,8 +21,6 @@
     if (value == null || Number.isNaN(value)) return '—';
     return new Intl.NumberFormat().format(Math.round(value));
   }
-
-  $: costPerServing = dish.servings > 0 ? dish.recipeCost / dish.servings : null;
 
   type IngredientRow = {
     name: string;
@@ -33,17 +31,14 @@
     source: string;
   };
   let ingredientRows: IngredientRow[] = [];
-  $: ingredientRows = dish.ingredients.map((ing) => {
-    const meta = Data.getIngredientById(ing.ingredientId);
-    return {
-      name: meta?.name ?? 'Unknown',
-      count: ing.count,
-      upgradeCount: ing.upgradeCount ?? null,
-      sell: meta?.cost ?? null,
-      buy: ing.unitCost ?? null,
-      source: meta?.source ?? meta?.type ?? '—'
-    };
-  });
+  $: ingredientRows = dish.ingredients.map((ing) => ({
+    name: (ing as any).ingredientName ?? 'Unknown',
+    count: ing.count,
+    upgradeCount: ing.upgradeCount ?? null,
+    sell: (ing as any).ingredientSell ?? null,
+    buy: ing.unitCost ?? null,
+    source: (ing as any).ingredientSource ?? (ing as any).ingredientType ?? '—'
+  }));
 
   // Summary string for accordion control
   $: ingredientSummary = ingredientRows.map((row) => `${row.name} ×${row.count}`).join(', ');
@@ -54,12 +49,10 @@
   <section class="p-4">
     <div class="flex items-start gap-4">
         <div class="inline-block" style="width: {thumbPx}px">
-          {#if imageSrc}
-            <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-              <span class="badge rounded-full preset-filled-primary-500 absolute px-1.5 py-0.5 -right-3 -top-2 z-10">{party?.bonus ?? ''}×</span>
-              <img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={imageSrc} alt="" loading="lazy" />
-            </div>
-          {/if}
+          <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
+            <span class="badge rounded-full preset-filled-primary-500 absolute px-1.5 py-0.5 -right-3 -top-2 z-10">{party?.bonus ?? ''}×</span>
+            <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={dish.name} loading="lazy" />
+          </div>
           <div class="mt-2" style="width: {thumbPx}px">
             {#if browser && dish?.id != null}
               {@const isTracked = $trackedDishIds.has(dish.id)}
@@ -79,13 +72,13 @@
         <div class="flex-1 min-w-0 space-y-4">
           <header>
             <div class="font-semibold text-base truncate">{dish.name}</div>
-            <div class="text-xs opacity-70 truncate mt-0.5">{dish.unlock_condition || '—'}</div>
+            <div class="text-xs opacity-70 truncate mt-0.5">{dish.unlock || '—'}</div>
           </header>
 
 
           <ProfitTable
             price={partyDish.partyPrice}
-            servings={dish.servings}
+            servings={dish.finalServings}
             totalCost={dish.recipeCost}
           />
         </div>

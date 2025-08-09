@@ -4,45 +4,58 @@ export type Id = number;
 export interface Dish {
   id: Id;
   name: string;
-  final_level: number;
-  final_taste: number;
-  initial_price: number;
-  final_price: number;
-  servings: number;
-  unlock_condition?: string | null;
+  image: string;
+  maxLevel: number;
+  basePrice: number;
+  baseTaste: number;
+  baseServings: number;
+  finalPrice: number;
+  finalTaste: number;
+  finalServings: number;
+  unlock?: string | null;
   dlc?: string | null;
+  artisansFlames?: number | null;
 }
 
 export interface Ingredient {
   id: Id;
   name: string;
-  source?: string;
-  type?: string;
-  drone: number;
+  image: string; // image filename
+  source: string;
+  type: string;
+  drone: boolean;
   kg?: number | null;
-  max_meats?: number | null;
-  cost?: number | null;
+  maxMeats?: number | null;
+  sell?: number | null;
+  // Newly imported fields from ingredients.csv
+  day: boolean;
+  night: boolean;
+  fog: boolean;
+  rank: number;
+  farm?: string; // farm/vendor source like Gumo
+  jangoPurchase?: number | null; // Jango purchase price
+  ottoPurchase?: number | null; // Otto purchase price
 }
 
 export interface Party {
   id: Id;
   name: string;
-  bonus: number;
   order: number;
+  bonus: number;
 }
 
 // Relationship entities
 export interface DishIngredient {
-  dish_id: Id;
-  ingredient_id: Id;
+  dishId: Id;
+  ingredientId: Id;
   count: number;
-  levels?: number | null;
-  upgrade_count?: number | null;
+  levels: number;
+  upgradeCount: number;
 }
 
 export interface DishParty {
-  dish_id: Id;
-  party_id: Id;
+  dishId: Id;
+  partyId: Id;
 }
 
 // Graph structure for efficient lookups
@@ -57,8 +70,8 @@ export interface Graph {
   dishById: Map<Id, Dish>;
   ingById: Map<Id, Ingredient>;
   partyById: Map<Id, Party>;
-  ingByDishId: Map<Id, { ingredient_id: Id; count: number }[]>;
-  dishesByIngredientId: Map<Id, { dish_id: Id; count: number }[]>;
+  ingByDishId: Map<Id, { ingredientId: Id; count: number }[]>;
+  dishesByIngredientId: Map<Id, { dishId: Id; count: number }[]>;
   partiesByDishId: Map<Id, Id[]>;
   dishesByPartyId: Map<Id, Id[]>;
 }
@@ -91,10 +104,10 @@ export interface PartyDish {
   id: Id; // Unique identifier for this party-dish combination
   partyId: Id;
   dishId: Id;
-  partyPrice: number; // dish.final_price * party.bonus
-  partyRevenue: number; // partyPrice * dish.servings
+  partyPrice: number; // dish.finalPrice * party.bonus
+  partyRevenue: number; // partyPrice * dish.finalServings
   profit: number; // partyRevenue - dish.recipeCost
-  profitPerServing: number; // profit / dish.servings
+  profitPerServing: number; // profit / dish.finalServings
 }
 
 // Precomputed data structures for JSON export
@@ -112,10 +125,10 @@ export interface EnrichedDish extends Dish {
   maxProfitPerDish: number;
 
   // Pre-calculated values to avoid view-level calculations
-  baseRevenue: number; // final_price * servings
+  baseRevenue: number; // finalPrice * finalServings
   baseProfit: number; // baseRevenue - recipeCost
-  baseProfitPerServing: number; // baseProfit / servings
-  maxProfitPerServing: number; // maxProfitPerDish / servings
+  baseProfitPerServing: number; // baseProfit / finalServings
+  maxProfitPerServing: number; // maxProfitPerDish / finalServings
   upgradeCost: number; // sum of (unitCost * upgradeCount) for all ingredients
   upgradeBreakEven: number; // maxProfitPerDish / upgradeCost (0 if upgradeCost is 0)
   ingredientCount: number; // total count of all ingredients
@@ -146,41 +159,4 @@ export interface DataService {
   ingredients: EnrichedIngredient[];
   parties: EnrichedParty[];
   partyDishes: PartyDish[];
-}
-
-// Legacy interfaces for backward compatibility during transition
-export interface LegacyDish {
-  name: string;
-  unlockCondition?: string;
-  dlc?: string;
-  finalLevel: number;
-  finalTaste: number;
-  initialPrice: number;
-  finalPrice: number;
-  servings: number;
-  parties: string[];
-  ingredients: LegacyDishIngredient[];
-}
-
-export interface LegacyDishIngredient {
-  name: string;
-  count: number;
-  levels?: number;
-  upgradeCount?: number;
-}
-
-export interface LegacyIngredient {
-  name: string;
-  source?: string;
-  type?: string;
-  drone: boolean;
-  kg?: number;
-  maxMeats?: number;
-  cost?: number;
-}
-
-export interface LegacyParty {
-  name: string;
-  bonus: number;
-  dishes: string[];
 }

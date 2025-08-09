@@ -1,20 +1,20 @@
 <script lang="ts">
-  import { Data } from '$lib/data/runtime.js';
   import IngredientCard from '$lib/components/Ingredient.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
+  import { Data } from '$lib/data/runtime.js';
 
   // Sorting state
-  let sortColumn: string = 'name';
-  let sortDirection: 'asc' | 'desc' = 'asc';
-  let showTrackedOnly: boolean = false;
+  let sortColumn = $state<string>('name');
+  let sortDirection = $state<'asc' | 'desc'>('asc');
+  let showTrackedOnly = $state(false);
 
-  // Use the enriched data service
-  $: baseIngredients = Data.ingredients;
-  $: totalIngredients = Data.getTotalIngredients();
+  // Base data
+  const baseIngredients = $derived(Data.ingredients);
+  const totalIngredients = $derived(Data.getTotalIngredients());
 
   // Search state (by name only for ingredients page)
-  let searchQuery: string = '';
+  let searchQuery = $state('');
   function normalize(value: unknown): string {
     return (value ?? '').toString().toLowerCase();
   }
@@ -60,10 +60,10 @@
           bVal = getPartiesThatUseIngredient(b).length;
           break;
         case 'bestDishName':
-          const bestPartyDishA = a.bestPartyDishId ? Data.getPartyDishById(a.bestPartyDishId) : null;
-          const bestPartyDishB = b.bestPartyDishId ? Data.getPartyDishById(b.bestPartyDishId) : null;
-          const dishA = bestPartyDishA ? Data.getDishById(bestPartyDishA.dishId) : null;
-          const dishB = bestPartyDishB ? Data.getDishById(bestPartyDishB.dishId) : null;
+          const bestPartyDishA = a.bestPartyDishId ? partyDishById.get(a.bestPartyDishId) : null;
+          const bestPartyDishB = b.bestPartyDishId ? partyDishById.get(b.bestPartyDishId) : null;
+          const dishA = bestPartyDishA ? dishById.get(bestPartyDishA.dishId) : null;
+          const dishB = bestPartyDishB ? dishById.get(bestPartyDishB.dishId) : null;
           aVal = dishA?.name || '';
           bVal = dishB?.name || '';
           break;
@@ -107,12 +107,16 @@
     { value: 'partiesCount', label: 'Parties' }
   ];
 
+  // Local indices
+  const partyDishById = new Map(Data.partyDishes.map((pd) => [pd.id, pd]));
+  const dishById = new Map(Data.dishes.map((d) => [d.id, d]));
+
   // Get sorted ingredients
-  $: enrichedIngredients = sortIngredients(baseIngredients, sortColumn, sortDirection);
+  const enrichedIngredients = $derived(sortIngredients(baseIngredients, sortColumn, sortDirection));
   // Apply search and tracked-only filters
-  $: visibleIngredients = enrichedIngredients.filter((ing) =>
+  const visibleIngredients = $derived(enrichedIngredients.filter((ing) =>
     ingredientMatchesQuery(ing, searchQuery) && (!showTrackedOnly || $trackedIngredientIds.has(ing.id))
-  );
+  ));
 
   // Calculate cost per kg for an ingredient
   function calculateCostPerKg(ingredient: any): number {
@@ -124,7 +128,7 @@
   function calculateBestDishRevenuePerKg(ingredient: any): number {
     if (!ingredient.bestPartyDishId || !ingredient.kg) return 0;
 
-    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
     if (!bestPartyDish) return 0;
 
     return bestPartyDish.partyRevenue / ingredient.kg;
@@ -142,32 +146,32 @@
   function calculateBestDishPricePerIngredient(ingredient: any): number {
     if (!ingredient.bestPartyDishId) return 0;
 
-    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
     if (!bestPartyDish) return 0;
 
-    const bestDish = Data.getDishById(bestPartyDish.dishId);
+    const bestDish = dishById.get(bestPartyDish.dishId);
     if (!bestDish) return 0;
 
     const totalIngredientCount = bestDish.ingredients.reduce((sum, ing) => sum + ing.count, 0);
-    return totalIngredientCount > 0 ? bestDish.final_price / totalIngredientCount : 0;
+    return totalIngredientCount > 0 ? bestDish.finalPrice / totalIngredientCount : 0;
   }
 
   // Get best dish price
   function getBestDishPrice(ingredient: any): number {
     if (!ingredient.bestPartyDishId) return 0;
 
-    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
     if (!bestPartyDish) return 0;
 
-    const bestDish = Data.getDishById(bestPartyDish.dishId);
-    return bestDish?.final_price || 0;
+    const bestDish = dishById.get(bestPartyDish.dishId);
+    return bestDish?.finalPrice || 0;
   }
 
   // Calculate max revenue for the ingredient using PartyDish entities
   function calculateMaxRevenue(ingredient: any): number {
     if (!ingredient.bestPartyDishId) return 0;
 
-    const bestPartyDish = Data.getPartyDishById(ingredient.bestPartyDishId);
+    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
     if (!bestPartyDish) return 0;
 
     return bestPartyDish.partyRevenue;
@@ -175,10 +179,8 @@
 
   // Get party names that use this ingredient
   function getPartiesThatUseIngredient(ingredient: any): string[] {
-    const partyNames: string[] = ingredient.usedForParties.map((partyId: number) => {
-      const party = Data.getPartyById(partyId);
-      return party?.name || 'Unknown';
-    });
+    const partyById = new Map(Data.parties.map((p) => [p.id, p]));
+    const partyNames: string[] = ingredient.usedForParties.map((partyId: number) => partyById.get(partyId)?.name || 'Unknown');
     return [...new Set(partyNames)].sort();
   }
 </script>
@@ -199,7 +201,7 @@
           bind:value={searchQuery}
         />
         {#if searchQuery}
-          <button class="clear-btn" aria-label="Clear search" on:click={() => { searchQuery = ''; }}>
+          <button class="clear-btn" aria-label="Clear search" onclick={() => { searchQuery = ''; }}>
             ×
           </button>
         {/if}

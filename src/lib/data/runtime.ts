@@ -4,31 +4,40 @@
 
 import type { EnrichedDish, EnrichedIngredient, EnrichedParty, PartyDish, Id } from '../types.js';
 
-// Static imports for tree-shaking (SvelteKit will bundle these efficiently)
-// Using the legacy location for now since SvelteKit can't import from /static during build
-import dishesV1 from '../dishes.json';
-import ingredientsV1 from '../ingredients.json';
-import partiesV1 from '../parties.json';
-import partyDishesV1 from '../party-dishes.json';
+// Data containers initialized via init()
+let dishes: EnrichedDish[] = [];
+let ingredients: EnrichedIngredient[] = [];
+let parties: EnrichedParty[] = [];
+let partyDishes: PartyDish[] = [];
 
-// Type the imported data
-const dishes = dishesV1 as EnrichedDish[];
-const ingredients = ingredientsV1 as EnrichedIngredient[];
-const parties = partiesV1 as EnrichedParty[];
-const partyDishes = partyDishesV1 as PartyDish[];
-
-// Build runtime indices from the loaded data
-const dishById = Object.fromEntries(dishes.map(d => [d.id, d])) as Record<Id, EnrichedDish>;
-const ingredientById = Object.fromEntries(ingredients.map(i => [i.id, i])) as Record<Id, EnrichedIngredient>;
-const partyById = Object.fromEntries(parties.map(p => [p.id, p])) as Record<Id, EnrichedParty>;
-const partyDishById = Object.fromEntries(partyDishes.map(pd => [pd.id, pd])) as Record<Id, PartyDish>;
+// Indices populated in init()
+let dishById: Record<Id, EnrichedDish> = {} as Record<Id, EnrichedDish>;
+let ingredientById: Record<Id, EnrichedIngredient> = {} as Record<Id, EnrichedIngredient>;
+let partyById: Record<Id, EnrichedParty> = {} as Record<Id, EnrichedParty>;
+let partyDishById: Record<Id, PartyDish> = {} as Record<Id, PartyDish>;
 
 // Runtime data service with efficient lookups
 export const Data = {
-  dishes,
-  ingredients,
-  parties,
-  partyDishes,
+  init(data: {
+    dishes: EnrichedDish[];
+    ingredients: EnrichedIngredient[];
+    parties: EnrichedParty[];
+    partyDishes: PartyDish[];
+  }) {
+    dishes = data.dishes;
+    ingredients = data.ingredients;
+    parties = data.parties;
+    partyDishes = data.partyDishes;
+
+    dishById = Object.fromEntries(dishes.map((d) => [d.id, d])) as Record<Id, EnrichedDish>;
+    ingredientById = Object.fromEntries(ingredients.map((i) => [i.id, i])) as Record<Id, EnrichedIngredient>;
+    partyById = Object.fromEntries(parties.map((p) => [p.id, p])) as Record<Id, EnrichedParty>;
+    partyDishById = Object.fromEntries(partyDishes.map((pd) => [pd.id, pd])) as Record<Id, PartyDish>;
+  },
+  get dishes() { return dishes; },
+  get ingredients() { return ingredients; },
+  get parties() { return parties; },
+  get partyDishes() { return partyDishes; },
 
   // Efficient lookup methods
   getDishById: (id: Id): EnrichedDish | undefined => dishById[id],

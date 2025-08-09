@@ -1,14 +1,14 @@
 <script lang="ts">
   import type { EnrichedIngredient, EnrichedDish } from '../types.js';
-  import { Data } from '../data/runtime.js';
-  import { imageUrlForName } from '../images/index.js';
+  import { enhancedImageForFile } from '../images/index.js';
   import TrackButton from './TrackButton.svelte';
   import { trackedIngredientIds, trackedDishIds } from '$lib/stores/tracking.js';
   import { browser } from '$app/environment';
 
   export let ingredient: EnrichedIngredient;
 
-  $: imageSrc = imageUrlForName(ingredient.name);
+  let enhancedImage: string;
+  $: enhancedImage = enhancedImageForFile(ingredient.image);
   const thumbPx = 96;
 
   function formatNumber(value: number | null | undefined): string {
@@ -27,13 +27,13 @@
   function getTrackedUsagesForIngredient(ingredientId: number): TrackedUsage[] {
     const list: TrackedUsage[] = [];
     for (const dishId of $trackedDishIds) {
-      const dish = Data.getDishById(dishId);
+      const dish = (ingredient as any).__dishesById?.get(dishId) ?? null;
       if (!dish) continue;
-      const line = dish.ingredients.find((ing) => ing.ingredientId === ingredientId);
+      const line = dish.ingredients.find((ing: { ingredientId: number; count: number; upgradeCount?: number }) => ing.ingredientId === ingredientId);
       if (!line) continue;
       list.push({ dish, qty: line.count, upgrade: line.upgradeCount ?? 0 });
     }
-    return list.sort((a, b) => (b.dish.final_price ?? 0) - (a.dish.final_price ?? 0));
+    return list.sort((a, b) => (b.dish.finalPrice ?? 0) - (a.dish.finalPrice ?? 0));
   }
 
   $: totalQty = usages.reduce((sum, u) => sum + u.qty, 0);
@@ -46,9 +46,7 @@
     <div class="flex items-start gap-4">
       <div class="inline-block" style="width: {thumbPx}px">
         <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-          {#if imageSrc}
-            <img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={imageSrc} alt="" loading="lazy" />
-          {/if}
+          <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={ingredient.name} loading="lazy" />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">
@@ -76,7 +74,7 @@
         </div>
 
         <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
-          <span>Sell: {ingredient.cost != null ? `${formatNumber(ingredient.cost)}g` : '—'}</span>
+          <span>Sell: {ingredient.sell != null ? `${formatNumber(ingredient.sell)}g` : '—'}</span>
           <span>Buy: —</span>
           {#if ingredient.kg != null}
             <span>Weight: {ingredient.kg}kg</span>
@@ -121,5 +119,3 @@
     {/if}
   </section>
 </article>
-
-

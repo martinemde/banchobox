@@ -1,17 +1,17 @@
 /**
  * Graph building and management utilities
- * 
+ *
  * Creates efficient lookup structures from normalized data
  */
 
-import type { 
-  Dish, 
-  Ingredient, 
-  Party, 
-  DishIngredient, 
-  DishParty, 
-  Graph, 
-  Id 
+import type {
+  Dish,
+  Ingredient,
+  Party,
+  DishIngredient,
+  DishParty,
+  Graph,
+  Id
 } from '../types.js';
 
 export function buildGraph(
@@ -38,28 +38,28 @@ export function buildGraph(
   }
 
   // Build relationship maps
-  const ingByDishId = new Map<Id, { ingredient_id: Id; count: number }[]>();
-  const dishesByIngredientId = new Map<Id, { dish_id: Id; count: number }[]>();
+  const ingByDishId = new Map<Id, { ingredientId: Id; count: number }[]>();
+  const dishesByIngredientId = new Map<Id, { dishId: Id; count: number }[]>();
   const partiesByDishId = new Map<Id, Id[]>();
   const dishesByPartyId = new Map<Id, Id[]>();
 
   // Process dish-ingredient relationships
   for (const di of dishIngredients) {
     // Ingredients by dish
-    if (!ingByDishId.has(di.dish_id)) {
-      ingByDishId.set(di.dish_id, []);
+    if (!ingByDishId.has(di.dishId)) {
+      ingByDishId.set(di.dishId, []);
     }
-    ingByDishId.get(di.dish_id)!.push({
-      ingredient_id: di.ingredient_id,
+    ingByDishId.get(di.dishId)!.push({
+      ingredientId: di.ingredientId,
       count: di.count
     });
 
     // Dishes by ingredient
-    if (!dishesByIngredientId.has(di.ingredient_id)) {
-      dishesByIngredientId.set(di.ingredient_id, []);
+    if (!dishesByIngredientId.has(di.ingredientId)) {
+      dishesByIngredientId.set(di.ingredientId, []);
     }
-    dishesByIngredientId.get(di.ingredient_id)!.push({
-      dish_id: di.dish_id,
+    dishesByIngredientId.get(di.ingredientId)!.push({
+      dishId: di.dishId,
       count: di.count
     });
   }
@@ -67,16 +67,16 @@ export function buildGraph(
   // Process dish-party relationships
   for (const dp of dishParties) {
     // Parties by dish
-    if (!partiesByDishId.has(dp.dish_id)) {
-      partiesByDishId.set(dp.dish_id, []);
+    if (!partiesByDishId.has(dp.dishId)) {
+      partiesByDishId.set(dp.dishId, []);
     }
-    partiesByDishId.get(dp.dish_id)!.push(dp.party_id);
+    partiesByDishId.get(dp.dishId)!.push(dp.partyId);
 
     // Dishes by party
-    if (!dishesByPartyId.has(dp.party_id)) {
-      dishesByPartyId.set(dp.party_id, []);
+    if (!dishesByPartyId.has(dp.partyId)) {
+      dishesByPartyId.set(dp.partyId, []);
     }
-    dishesByPartyId.get(dp.party_id)!.push(dp.dish_id);
+    dishesByPartyId.get(dp.partyId)!.push(dp.dishId);
   }
 
   return {

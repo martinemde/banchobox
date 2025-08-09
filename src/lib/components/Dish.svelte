@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { EnrichedDish } from '../types.js';
   import { Data } from '../data/runtime.js';
-  import { imageUrlForName } from '../images/index.js';
+  import { enhancedImageForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import ProfitTable from './ProfitTable.svelte';
   import TrackButton from './TrackButton.svelte';
@@ -10,7 +10,8 @@
 
   export let dish: EnrichedDish;
 
-  $: imageSrc = imageUrlForName(dish.name);
+  let enhancedImage: string;
+  $: enhancedImage = enhancedImageForFile(dish.image);
   // Fixed width for thumbnail to match default card format
   const thumbPx = 96;
 
@@ -48,7 +49,7 @@
     <div class="flex items-start gap-4">
       <div class="inline-block" style="width: {thumbPx}px">
         <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-          <img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={imageSrc} alt="" loading="lazy" />
+          <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={dish.name} sizes="{thumbPx}px" loading="lazy" />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">
@@ -67,12 +68,12 @@
 
         <div class="text-center">
             <span class="text-xs opacity-70">Max Level</span>
-            <span class="font-semibold">{dish.final_level}</span>
+            <span class="font-semibold">{dish.maxLevel}</span>
         </div>
 
         <div class="text-center">
             <span class="text-xs opacity-70">Taste</span>
-            <span class="font-semibold">{dish.final_taste}</span>
+            <span class="font-semibold">{dish.finalTaste}</span>
         </div>
       </div>
 
@@ -81,12 +82,12 @@
       <div class="flex-1 min-w-0 space-y-4">
         <header>
           <div class="font-semibold text-base truncate">{dish.name}</div>
-          <div class="text-xs opacity-70 truncate mt-0.5">{dish.unlock_condition || '—'}</div>
+          <div class="text-xs opacity-70 truncate mt-0.5">{dish.unlock || '—'}</div>
         </header>
 
-        <ProfitTable
-          price={dish.final_price}
-          servings={dish.servings}
+          <ProfitTable
+          price={dish.finalPrice}
+          servings={dish.finalServings}
           totalCost={dish.recipeCost}
         />
       </div>

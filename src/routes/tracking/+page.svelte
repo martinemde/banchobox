@@ -1,25 +1,29 @@
 <script lang="ts">
-  import { Data } from '$lib/data/runtime.js';
   import type { EnrichedIngredient, EnrichedDish } from '$lib/types.js';
   import PlannedIngredient from '$lib/components/PlannedIngredient.svelte';
   import { trackedDishIds, trackedIngredientIds } from '$lib/stores/tracking.js';
+  import type { PageProps } from './$types';
+
+  let { data }: PageProps = $props();
+
+  const dishById = new Map(data.dishes.map((d) => [d.id, d]));
 
   // Compute the union of directly tracked ingredients and ingredients from tracked dishes
-  $: ingredientIdsFromTrackedDishes = new Set<number>(
+  const ingredientIdsFromTrackedDishes = $derived(new Set<number>(
     [...$trackedDishIds].flatMap((dishId) => {
-      const dish = Data.getDishById(dishId);
+      const dish = dishById.get(dishId);
       return dish ? dish.ingredients.map((ing) => ing.ingredientId) : [];
     })
-  );
+  ));
 
-  $: plannedIngredientIds = new Set<number>([
+  const plannedIngredientIds = $derived(new Set<number>([
     ...Array.from($trackedIngredientIds),
     ...Array.from(ingredientIdsFromTrackedDishes)
-  ]);
+  ]));
 
-  $: plannedIngredients = Array.from(plannedIngredientIds)
-    .map((id) => Data.getIngredientById(id))
-    .filter((i): i is EnrichedIngredient => Boolean(i));
+  const plannedIngredients = $derived(Array.from(plannedIngredientIds)
+    .map((id) => data.ingredients.find((i) => i.id === id))
+    .filter((i): i is EnrichedIngredient => Boolean(i)));
 
   type TrackedUsage = {
     dish: EnrichedDish;
@@ -30,14 +34,14 @@
   function getTrackedUsagesForIngredient(ingredientId: number): TrackedUsage[] {
     const usages: TrackedUsage[] = [];
     for (const dishId of $trackedDishIds) {
-      const dish = Data.getDishById(dishId);
+      const dish = dishById.get(dishId);
       if (!dish) continue;
       const line = dish.ingredients.find((ing) => ing.ingredientId === ingredientId);
       if (!line) continue;
       usages.push({ dish, qty: line.count, upgrade: line.upgradeCount ?? 0 });
     }
-    // Sort by dish price desc for readability
-    return usages.sort((a, b) => (b.dish.final_price ?? 0) - (a.dish.final_price ?? 0));
+  // Sort by dish price desc for readability
+  return usages.sort((a, b) => (b.dish.finalPrice ?? 0) - (a.dish.finalPrice ?? 0));
   }
 </script>
 
@@ -45,7 +49,7 @@
   <title>Tracking - Bancho Box</title>
   <meta name="description" content="A focused list of tracked ingredients, including those from tracked dishes" />
   <meta name="robots" content="noindex" />
-  
+
 </svelte:head>
 
 <div class="container">
@@ -85,5 +89,3 @@
     .container { padding: 1rem; }
   }
 </style>
-
-

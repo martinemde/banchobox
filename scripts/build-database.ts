@@ -18,9 +18,21 @@ import type {
   IngredientLine
 } from '../src/lib/types.js';
 import { buildGraph } from '../src/lib/graph/index.js';
-import { recipeCost, lineCost } from '../src/lib/calc/costs.js';
-import { partyPrice } from '../src/lib/calc/price.js';
-import { partyProfitPerDish } from '../src/lib/calc/profit.js';
+// Inline simple calculators (formerly in src/lib/calc/*)
+const lineCost = (count: number, unitCost: number | null | undefined): number =>
+  count * (unitCost ?? 0);
+
+const recipeCost = (ingLines: IngredientLine[]): number =>
+  ingLines.reduce((sum, line) => sum + lineCost(line.count, line.unitCost), 0);
+
+const partyPrice = (dish: Dish, party: Party): number =>
+  dish.finalPrice * party.bonus;
+
+const partyProfitPerDish = (
+  dish: Dish,
+  party: Party,
+  ingLines: IngredientLine[]
+): number => partyPrice(dish, party) * dish.finalServings - recipeCost(ingLines);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -586,9 +598,11 @@ function exportData(
   partyDishes: PartyDish[]
 ) {
   const outputDir = join(__dirname, '..', 'static', 'data');
+  const libOutputDir = join(__dirname, '..', 'src', 'lib');
 
-  // Ensure output directory exists
+  // Ensure output directories exist
   mkdirSync(outputDir, { recursive: true });
+  mkdirSync(libOutputDir, { recursive: true });
 
   // Export enriched data with versioning
   const version = 'v1';
@@ -613,24 +627,14 @@ function exportData(
     JSON.stringify(partyDishes, null, 2)
   );
 
-  // Also maintain legacy format in src/lib for backward compatibility during transition
-
-  // Create simple indices for client-side lookups
-  const indices = {
-    dishById: Object.fromEntries(enrichedDishes.map(d => [d.id, d])),
-    ingredientById: Object.fromEntries(enrichedIngredients.map(i => [i.id, i])),
-    partyById: Object.fromEntries(enrichedParties.map(p => [p.id, p])),
-    partyDishById: Object.fromEntries(partyDishes.map(pd => [pd.id, pd])),
-  };
-
-  writeFileSync(
-    join(outputDir, `indices.${version}.json`),
-    JSON.stringify(indices, null, 2)
-  );
+  // Also emit copies under src/lib for direct ESM imports during dev/build
+  writeFileSync(join(libOutputDir, 'dishes.json'), JSON.stringify(enrichedDishes, null, 2));
+  writeFileSync(join(libOutputDir, 'ingredients.json'), JSON.stringify(enrichedIngredients, null, 2));
+  writeFileSync(join(libOutputDir, 'parties.json'), JSON.stringify(enrichedParties, null, 2));
+  writeFileSync(join(libOutputDir, 'party-dishes.json'), JSON.stringify(partyDishes, null, 2));
 
   // Count relationships for logging
   const totalIngredientRelationships = enrichedDishes.reduce((sum, dish) => sum + dish.ingredients.length, 0);
-  const totalPartyDishRelationships = partyDishes.length;
 
   console.log(`${enrichedParties.length}\tParties`);
   console.log(`${partyDishes.length}\tParty-dishes`);

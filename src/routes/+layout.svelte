@@ -1,8 +1,17 @@
 <script lang="ts">
 	import Header from './Header.svelte';
 	import '../app.css';
+	import type { LayoutProps } from './$types';
+  import { Data } from '$lib/data/runtime.js';
 
-	let { children } = $props();
+	let { children, data }: LayoutProps = $props();
+  // Initialize Data service once per render (SSR/CSR) before children render
+  Data.init({
+    dishes: data.dishes,
+    ingredients: data.ingredients,
+    parties: data.parties,
+    partyDishes: data.partyDishes
+  });
 </script>
 
 <div class="app">

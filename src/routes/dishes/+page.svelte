@@ -1,18 +1,21 @@
 <script lang="ts">
-  import { Data } from '$lib/data/runtime.js';
   import Dish from '$lib/components/Dish.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
+  import { Data } from '$lib/data/runtime.js';
+
+  // Local indices for efficient lookups
+  const ingredientById = new Map(Data.ingredients.map((i) => [i.id, i]));
 
   // Sorting state
-  let sortColumn: string = 'baseProfitPerServing';
-  let sortDirection: 'asc' | 'desc' = 'desc';
+  let sortColumn = $state<string>('baseProfitPerServing');
+  let sortDirection = $state<'asc' | 'desc'>('desc');
 
-  // Use the new enriched data service
-  $: baseDishes = Data.getDishesSortedByProfit();
-  $: totalDishes = Data.getTotalDishes();
+  // Base dishes sorted by max profit (precomputed)
+  const baseDishes = $derived(Data.getDishesSortedByProfit());
+  const totalDishes = $derived(Data.getTotalDishes());
 
   // Search state
-  let searchQuery: string = '';
+  let searchQuery = $state('');
 
   function normalize(value: unknown): string {
     return (value ?? '').toString().toLowerCase();
@@ -25,11 +28,11 @@
     // name / dlc / unlock condition
     if (normalize(dish.name).includes(q)) return true;
     if (normalize(dish.dlc).includes(q)) return true;
-    if (normalize(dish.unlock_condition).includes(q)) return true;
+    if (normalize(dish.unlock).includes(q)) return true;
 
     // ingredient names
     for (const ingredientLine of dish.ingredients || []) {
-      const ingredient = Data.getIngredientById(ingredientLine.ingredientId);
+      const ingredient = ingredientById.get(ingredientLine.ingredientId);
       if (normalize(ingredient?.name).includes(q)) return true;
     }
     return false;
@@ -74,21 +77,21 @@
   }
 
   // Get sorted dishes
-  $: enrichedDishes = sortDishes(baseDishes, sortColumn, sortDirection);
+  const enrichedDishes = $derived(sortDishes(baseDishes, sortColumn, sortDirection));
 
   // Apply search filter to visible dishes
-  $: visibleDishes = (searchQuery && searchQuery.trim().length > 0)
+  const visibleDishes = $derived((searchQuery && searchQuery.trim().length > 0)
     ? enrichedDishes.filter((dish) => dishMatchesQuery(dish, searchQuery))
-    : enrichedDishes;
+    : enrichedDishes);
 
   // Sort options for SortControl (align with clickable headers)
   const sortOptions = [
     { value: 'name', label: 'Recipe' },
     { value: 'dlc', label: 'DLC' },
-    { value: 'final_taste', label: 'Final Taste' },
-    { value: 'initial_price', label: 'Initial Price' },
-    { value: 'final_price', label: 'Final Price' },
-    { value: 'servings', label: 'Servings' },
+    { value: 'finalTaste', label: 'Final Taste' },
+    { value: 'basePrice', label: 'Initial Price' },
+    { value: 'finalPrice', label: 'Final Price' },
+    { value: 'finalServings', label: 'Servings' },
     { value: 'baseRevenue', label: 'Revenue' },
     { value: 'upgradeCost', label: 'Upgrade Cost' },
     { value: 'upgradeBreakEven', label: 'Upgrade Break Even' },
@@ -120,7 +123,7 @@
           bind:value={searchQuery}
         />
         {#if searchQuery}
-          <button class="clear-btn" aria-label="Clear search" on:click={() => { searchQuery = ''; }}>
+          <button class="clear-btn" aria-label="Clear search" onclick={() => { searchQuery = ''; }}>
             ×
           </button>
         {/if}

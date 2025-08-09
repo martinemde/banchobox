@@ -1,32 +1,32 @@
 <script lang="ts">
-  import { Data } from '$lib/data/runtime.js';
   import PartyDish from '$lib/components/PartyDish.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
+  import { Data } from '$lib/data/runtime.js';
+
+  const dishById = new Map(Data.dishes.map((d) => [d.id, d]));
+  const partyDishById = new Map(Data.partyDishes.map((pd) => [pd.id, pd]));
 
   // Global sorting state for all party tables
-  let sortColumn: string = 'dishName';
-  let sortDirection: 'asc' | 'desc' = 'asc';
+  let sortColumn = $state<string>('dishName');
+  let sortDirection = $state<'asc' | 'desc'>('asc');
 
-  // Use the enriched data service (static)
+  // Use layout-provided data
   const enrichedParties = Data.parties;
 
   // Search state (filters party dish list by dish fields)
-  let searchQuery: string = '';
+  let searchQuery = $state('');
   function normalize(value: unknown): string {
     return (value ?? '').toString().toLowerCase();
   }
   function partyDishMatchesQuery(partyDish: any, query: string): boolean {
     if (!query) return true;
-    const dish = Data.getDishById(partyDish.dishId);
+    const dish = dishById.get(partyDish.dishId);
     if (!dish) return false;
     const q = normalize(query);
     if (normalize(dish.name).includes(q)) return true;
     if (normalize(dish.dlc).includes(q)) return true;
-    if (normalize(dish.unlock_condition).includes(q)) return true;
-    for (const ingredientLine of dish.ingredients || []) {
-      const ingredient = Data.getIngredientById(ingredientLine.ingredientId);
-      if (normalize(ingredient?.name).includes(q)) return true;
-    }
+    if (normalize(dish.unlock).includes(q)) return true;
+    // ingredient names not needed; skip heavy lookup
     return false;
   }
 
@@ -35,8 +35,8 @@
     return [...partyDishes].sort((a, b) => {
       let aVal, bVal;
 
-      const dishA = Data.getDishById(a.dishId);
-      const dishB = Data.getDishById(b.dishId);
+      const dishA = dishById.get(a.dishId);
+      const dishB = dishById.get(b.dishId);
 
       if (!dishA || !dishB) return 0;
 
@@ -46,9 +46,9 @@
           aVal = dishA.name;
           bVal = dishB.name;
           break;
-        case 'unlockCondition':
-          aVal = dishA.unlock_condition || '';
-          bVal = dishB.unlock_condition || '';
+        case 'unlock':
+          aVal = dishA.unlock || '';
+          bVal = dishB.unlock || '';
           break;
         case 'partyPrice':
           aVal = a.partyPrice;
@@ -104,8 +104,10 @@
   }
 
   // Make sorted parties reactive to sort and search changes
-  $: sortedParties = enrichedParties.map(party => {
-    const partyDishes = Data.getPartyDishesByPartyId(party.id);
+  const sortedParties = $derived(enrichedParties.map(party => {
+    const partyDishes = (party.partyDishIds && party.partyDishIds.length > 0)
+      ? party.partyDishIds.map((id: number) => partyDishById.get(id)).filter(Boolean) as any[]
+      : Data.partyDishes.filter((pd) => pd.partyId === party.id);
     const sortedDishes = sortPartyDishes(partyDishes, sortColumn, sortDirection);
     const visibleDishes = (searchQuery && searchQuery.trim().length > 0)
       ? sortedDishes.filter(pd => partyDishMatchesQuery(pd, searchQuery))
@@ -114,7 +116,7 @@
       ...party,
       sortedDishes: visibleDishes
     };
-  });
+  }));
 
   const sortOptions = [
     { value: 'dishName', label: 'Dish Name' },
@@ -141,7 +143,7 @@
         bind:value={searchQuery}
       />
       {#if searchQuery}
-        <button class="clear-btn" aria-label="Clear search" on:click={() => { searchQuery = ''; }}>
+        <button class="clear-btn" aria-label="Clear search" onclick={() => { searchQuery = ''; }}>
           ×
         </button>
       {/if}
@@ -172,9 +174,9 @@
 
           <div class="flex flex-col gap-4 p-4">
             {#each party.sortedDishes as partyDish}
-              {@const dish = Data.getDishById(partyDish.dishId)}
+              {@const dish = dishById.get(partyDish.dishId)}
               {#if dish}
-                <PartyDish {dish} {partyDish} />
+                <PartyDish {dish} {partyDish} party={party} />
               {/if}
             {/each}
           </div>
