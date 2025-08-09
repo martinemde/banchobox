@@ -25,7 +25,7 @@
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
     <!-- Dishes Card -->
     <div
-      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer"
+      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
       role="link"
       tabindex="0"
       on:click={() => goto('/dishes')}
@@ -42,14 +42,14 @@
           Browse all {dishes.length} dishes with detailed information about levels, prices, and requirements
         </p>
       </div>
-      <a href="/dishes" class="btn variant-filled-primary w-full">
+      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" on:click={() => goto('/dishes')}>
         View All Dishes
-      </a>
+      </button>
     </div>
 
     <!-- Ingredients Card -->
     <div
-      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer"
+      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
       role="link"
       tabindex="0"
       on:click={() => goto('/ingredients')}
@@ -66,14 +66,14 @@
           Explore all {ingredients.length} ingredients with source locations, types, and gathering information
         </p>
       </div>
-      <a href="/ingredients" class="btn variant-filled-secondary w-full">
+      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" on:click={() => goto('/ingredients')}>
         View All Ingredients
-      </a>
+      </button>
     </div>
 
     <!-- Parties Card -->
     <div
-      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer"
+      class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
       role="link"
       tabindex="0"
       on:click={() => goto('/parties')}
@@ -90,9 +90,9 @@
           Discover all {parties.length} party events with bonuses and associated dishes
         </p>
       </div>
-      <a href="/parties" class="btn variant-filled-tertiary w-full">
+      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" on:click={() => goto('/parties')}>
         View All Parties
-      </a>
+      </button>
     </div>
   </div>
 
