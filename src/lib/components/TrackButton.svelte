@@ -2,7 +2,7 @@
   import { createEventDispatcher } from 'svelte';
 
   export let checked: boolean = false;
-  export let label: string = 'track';
+  export let label: string = 'Track';
 
   const dispatch = createEventDispatcher<{ change: { checked: boolean } }>();
 
@@ -14,7 +14,7 @@
 
 <button
   type="button"
-  class="btn btn-sm inline-flex w-full justify-start items-center preset-filled-surface-500 text-xs"
+  class="btn inline-flex w-full justify-start items-center preset-filled-surface-500"
   aria-pressed={checked}
   on:click={toggle}
 >
@@ -25,7 +25,7 @@
     aria-hidden="true"
     class="checkbox size-4 pointer-events-none"
   />
-  <span class="text-xs">{label}</span>
+  <span class="text-sm">{label}</span>
 </button>
 
 <style>
