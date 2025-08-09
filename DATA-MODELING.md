@@ -2,14 +2,13 @@
 
 - **Static site** (pre-rendered) with **client-side interactions** and persistence.
 
-- CSV  **source-of-truth** that changes rarely.
+- CSV **source-of-truth** that changes rarely.
 
 - **Relational joins** across Parties ↔ Dishes ↔ Ingredients for cross-cutting queries.
 
 - **Avoid “big ugly” math** by isolating each calculation in **small pure functions**.
 
 - Precompute “heavy, global invariants”; compute **per-user**, **selection-dependent** numbers on the fly.
-
 
 ---
 
@@ -32,17 +31,13 @@
 /static/data            # emitted JSON assets (versioned, cacheable)
 ```
 
-**Key idea:** put _all_ formulas into src/lib/calc/* as tiny pure functions that accept only the inputs they need. Both the **build step** and the **client** import these same functions so there is **one source of truth** for the math.
+**Key idea:** put _all_ formulas into src/lib/calc/\* as tiny pure functions that accept only the inputs they need. Both the **build step** and the **client** import these same functions so there is **one source of truth** for the math.
 
 ---
 
 ## **2) Data flow (build-time ETL)**
 
-
-
 **Source:** CSVs for dishes, ingredients, parties, dish_parties, dish_ingredients.
-
-
 
 **Pipeline in /scripts/build-data.ts:**
 
@@ -56,59 +51,43 @@
 
 5. **Emit JSON bundles** (flat, denormalized where convenient) for the app.
 
-
-
-
 You run it with pnpm build:data (before pnpm build). Because SvelteKit is static, we serve the JSON from /static/data.
-
-
 
 ### **Suggested emitted artifacts**
 
 - dishes.json – each dish with:
+  - base fields
 
-    - base fields
+  - ingredients[]: { ingredientId, count, unitCost, lineCost }
 
-    - ingredients[]: { ingredientId, count, unitCost, lineCost }
+  - recipeCost
 
-    - recipeCost
+  - partyStats[]: { partyId, bonus, partyPrice, servings, profit }
 
-    - partyStats[]: { partyId, bonus, partyPrice, servings, profit }
+  - bestParty: { partyId, bonus, profit }
 
-    - bestParty: { partyId, bonus, profit }
-
-    - maxProfitPerDish (same as bestParty.profit)
-
+  - maxProfitPerDish (same as bestParty.profit)
 
 - ingredients.json – each ingredient with:
+  - base fields
 
-    - base fields
+  - usedIn[]: { dishId, count }
 
-    - usedIn[]: { dishId, count }
+  - bestDish: { dishId, partyId, profit } (see §4)
 
-    - bestDish: { dishId, partyId, profit } (see §4)
-
-    - usedForParties[]: unique list of parties reachable via used dishes
-
+  - usedForParties[]: unique list of parties reachable via used dishes
 
 - parties.json – each party with:
+  - base fields
 
-    - base fields
-
-    - dishes[]: { dishId, partyPrice, profit } (precomputed via calculators)
-
+  - dishes[]: { dishId, partyPrice, profit } (precomputed via calculators)
 
 - indices.json – small maps to speed routing & joins:
+  - dishIdsByIngredientId
 
-    - dishIdsByIngredientId
+  - dishIdsByPartyId
 
-    - dishIdsByPartyId
-
-    - (and/or embed these in the objects above if you prefer)
-
-
-
-
+  - (and/or embed these in the objects above if you prefer)
 
 Keep each file reasonably sized; JSON compresses very well with brotli at the edge/CDN.
 
@@ -160,8 +139,6 @@ Create the graph in one place (build step). In the client, you typically won’t
 ---
 
 ## **4) Calculators (small, pure, composable)**
-
-
 
 **Keep every function tiny and testable.**
 
@@ -236,21 +213,19 @@ export const bestDishForIngredient = (
 
 > These calculators are tiny and composable; there’s no 200-line “do everything” function. You can add more (e.g., kg-based metrics) next to these.
 
-
-
 **Unit-test** them with Vitest. Because the build step uses them too, tests give you a safety net for both build and runtime.
 
 ---
 
 ## **5) What to precompute vs compute on the fly**
 
-|**Concern**|**Precompute?**|**Reason**|
-|---|---|---|
-|**Per dish**: recipeCost, party prices/revenue/profit per party, bestParty, maxProfitPerDish|**Yes**|Heavy, global invariants; independent of user choices.|
-|**Per ingredient**: bestDish (dish + party + profit), usedInDishes, usedForParties|**Yes**|Cross-graph derived; queried often; static until data refresh.|
-|**Per party**: list of dishes with partyPrice/profit sorted by profit|**Yes**|Speeds party views and “what to cook for this party?”|
-|**Per-user selection**: shopping list totals (ingredient → count), total recipe cost, total revenue/profit under chosen party context|**No** (compute client-side)|Depends on user’s choices and quantities; small, linear time over selected dishes.|
-|**Edge/what-if**: excluding ingredients, substituting costs, filtering DLC|**Client-side**|Fast enough with indices; depends on user toggles.|
+| **Concern**                                                                                                                           | **Precompute?**              | **Reason**                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------- |
+| **Per dish**: recipeCost, party prices/revenue/profit per party, bestParty, maxProfitPerDish                                          | **Yes**                      | Heavy, global invariants; independent of user choices.                             |
+| **Per ingredient**: bestDish (dish + party + profit), usedInDishes, usedForParties                                                    | **Yes**                      | Cross-graph derived; queried often; static until data refresh.                     |
+| **Per party**: list of dishes with partyPrice/profit sorted by profit                                                                 | **Yes**                      | Speeds party views and “what to cook for this party?”                              |
+| **Per-user selection**: shopping list totals (ingredient → count), total recipe cost, total revenue/profit under chosen party context | **No** (compute client-side) | Depends on user’s choices and quantities; small, linear time over selected dishes. |
+| **Edge/what-if**: excluding ingredients, substituting costs, filtering DLC                                                            | **Client-side**              | Fast enough with indices; depends on user toggles.                                 |
 
 This split keeps payloads reasonable while giving you instant UX for user actions.
 
@@ -258,14 +233,11 @@ This split keeps payloads reasonable while giving you instant UX for user action
 
 ## **6) SvelteKit integration**
 
-
-
 ### **Prerender**
 
 - In +layout.ts, mark export const prerender = true;.
 
 - Load the **smallest** index (or import JSON statically) so pages can render instantly and hydrate.
-
 
 ```
 // src/routes/+layout.ts
@@ -273,8 +245,6 @@ export const prerender = true;
 ```
 
 ### **Loading data**
-
-
 
 You can **statically import** JSON to get tree-shaken chunks:
 
@@ -289,8 +259,6 @@ export const Data = { dishes, ingredients, parties, indices };
 ```
 
 (Or fetch('/data/...json') if you prefer, but static imports simplify.)
-
-
 
 ### **Stores & persistence**
 
@@ -383,15 +351,11 @@ function readCsv(path: string) {
 
 - **Parties page**: show dishes sorted by profit for that party (precomputed); quick “plan menu” adds quantities.
 
-
-
-
 Keep page code thin by using:
 
 - **Selectors** (tiny helpers that accept ids, return the precomputed record).
 
 - **Derived stores** for anything selection-dependent.
-
 
 ---
 
@@ -407,7 +371,6 @@ Keep page code thin by using:
 
 - **Document formulas** at the top of each file. Example:
 
-
 ```
 partyPrice  = dish.final_price * party.bonus
 revenue     = partyPrice * dish.servings
@@ -418,7 +381,6 @@ profit      = revenue - recipeCost
 -
 
 - **Version your data** (dishes.v1.json). If formulas change, bump to v2 and keep both side-by-side while you transition.
-
 
 ---
 

@@ -10,11 +10,9 @@ import type { Dish, Party } from '../types.js';
 
 export const baseDishPrice = (dish: Dish): number => dish.final_price;
 
-export const revenuePerDish = (dish: Dish): number =>
-  baseDishPrice(dish) * dish.servings;
+export const revenuePerDish = (dish: Dish): number => baseDishPrice(dish) * dish.servings;
 
-export const partyPrice = (dish: Dish, party: Party): number =>
-  baseDishPrice(dish) * party.bonus;
+export const partyPrice = (dish: Dish, party: Party): number => baseDishPrice(dish) * party.bonus;
 
 export const partyRevenuePerDish = (dish: Dish, party: Party): number =>
-  partyPrice(dish, party) * dish.servings;
+	partyPrice(dish, party) * dish.servings;
