@@ -3,6 +3,9 @@
   import { Data } from '../data/runtime.js';
   import { imageUrlForName } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
+  import { browser } from '$app/environment';
+  import TrackButton from './TrackButton.svelte';
+  import { trackedIngredientIds } from '$lib/stores/tracking.js';
   import {
     ArchiveRestore,
     ArchiveX,
@@ -20,6 +23,8 @@
   export let ingredient: EnrichedIngredient;
 
   $: imageSrc = imageUrlForName(ingredient.name);
+  // Match thumbnail sizing used in PartyDish
+  const thumbPx = 96;
 
   function formatNumber(value: number | null | undefined): string {
     if (value == null || Number.isNaN(value)) return '—';
@@ -97,59 +102,77 @@
 </script>
 
 <article class="card preset-filled-surface-100-900 border-[1px] border-surface-200-800 card-hover divide-y divide-surface-200-800">
-  <!-- Section 1: Overview -->
-  <section class="flex items-start gap-4 p-4">
-    <div class="size-16 rounded bg-surface-300-700 grid place-items-center overflow-hidden" aria-hidden="true">
-      {#if imageSrc}
-        <img src={imageSrc} alt="" loading="lazy" class="size-full object-contain" />
-      {/if}
-    </div>
-
-    <div class="flex-1 min-w-0">
-      <div class="flex items-center gap-2">
-        <h3 class="h5 m-0 truncate !leading-none">{ingredient.name}</h3>
-      </div>
-
-      <div class="mt-1 *:text-xs opacity-80 flex flex-wrap items-center gap-x-3 gap-y-1">
-          <span>{ingredient.source}</span>
-      </div>
-
-      <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
-        <span>
-          Sell: {ingredient.cost != null ? `${formatNumber(ingredient.cost)}g` : '—'}
-        </span>
-        <span>Buy: —</span>
-      </div>
-
-      {#if ingredient.kg != null}
-        <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
-            <span>Weight: {ingredient.kg != null ? `${ingredient.kg}kg` : '—'}</span>
-            <span class="opacity-80">{costPerKg != null ? `${formatNumber(costPerKg)}g/kg` : ''}</span>
+  <!-- Section 1: Overview (formatted like PartyDish) -->
+  <section class="p-4">
+    <div class="flex items-start gap-4">
+      <div class="inline-block" style="width: {thumbPx}px">
+        <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
+          {#if imageSrc}
+            <img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={imageSrc} alt="" loading="lazy" />
+          {/if}
         </div>
-      {/if}
-    </div>
 
-    <div class="ml-auto flex items-start gap-2 self-start">
-      {#if ingredient.drone === 1}
-        <button type="button" class="group relative inline-flex" aria-label="Drone">
-          <ChevronsUp size={24} class="opacity-80" />
-          <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">Drone</span>
-        </button>
-      {/if}
-      {#if ingredient.type}
-        {@const TypeIcon = getTypeIcon(ingredient.type)}
-        {#if TypeIcon}
-          <button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
-            <TypeIcon size={24} class="opacity-80" />
-            <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
-          </button>
-        {:else}
-          <button type="button" class="group relative inline-flex text-xs opacity-80 whitespace-nowrap" aria-label={ingredient.type}>
-            {ingredient.type}
-            <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
+        <div class="mt-2" style="width: {thumbPx}px">
+          {#if browser && ingredient?.id != null}
+            {@const isTracked = $trackedIngredientIds.has(ingredient.id)}
+            <TrackButton
+              checked={isTracked}
+              on:change={(e) => {
+                const nowChecked = e.detail.checked as boolean;
+                if (nowChecked) trackedIngredientIds.track(ingredient.id);
+                else trackedIngredientIds.untrack(ingredient.id);
+              }}
+            />
+          {/if}
+        </div>
+      </div>
+
+      <div class="flex-1 min-w-0 space-y-2">
+        <div class="flex items-center gap-2">
+          <h3 class="h5 m-0 truncate !leading-none">{ingredient.name}</h3>
+        </div>
+
+        <div class="mt-1 *:text-xs opacity-80 flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>{ingredient.source}</span>
+        </div>
+
+        <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span>
+            Sell: {ingredient.cost != null ? `${formatNumber(ingredient.cost)}g` : '—'}
+          </span>
+          <span>Buy: —</span>
+        </div>
+
+        {#if ingredient.kg != null}
+          <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
+              <span>Weight: {ingredient.kg != null ? `${ingredient.kg}kg` : '—'}</span>
+              <span class="opacity-80">{costPerKg != null ? `${formatNumber(costPerKg)}g/kg` : ''}</span>
+          </div>
+        {/if}
+      </div>
+
+      <div class="ml-auto flex items-start gap-2 self-start">
+        {#if ingredient.drone === 1}
+          <button type="button" class="group relative inline-flex" aria-label="Drone">
+            <ChevronsUp size={24} class="opacity-80" />
+            <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">Drone</span>
           </button>
         {/if}
-      {/if}
+        {#if ingredient.type}
+          {@const TypeIcon = getTypeIcon(ingredient.type)}
+          {#if TypeIcon}
+            <button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
+              <TypeIcon size={24} class="opacity-80" />
+              <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
+            </button>
+          {:else}
+            <button type="button" class="group relative inline-flex text-xs opacity-80 whitespace-nowrap" aria-label={ingredient.type}>
+              {ingredient.type}
+              <span class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-black/80 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">{ingredient.type}</span>
+            </button>
+          {/if}
+        {/if}
+      </div>
     </div>
   </section>
 

@@ -1,12 +1,10 @@
 import { writable, type Writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
-const STORAGE_KEY = 'trackedDishIds.v1';
-
-function readFromStorage(): number[] {
+function readFromStorage(storageKey: string): number[] {
   if (!browser) return [];
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(storageKey);
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (Array.isArray(parsed)) return parsed.filter((n) => Number.isFinite(n));
@@ -16,25 +14,25 @@ function readFromStorage(): number[] {
   }
 }
 
-function writeToStorage(ids: Set<number>): void {
+function writeToStorage(storageKey: string, ids: Set<number>): void {
   if (!browser) return;
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([...ids]));
+    localStorage.setItem(storageKey, JSON.stringify([...ids]));
   } catch {
     // ignore
   }
 }
 
-function createTrackedDishIdsStore(): Writable<Set<number>> & {
+function createTrackedIdsStore(storageKey: string): Writable<Set<number>> & {
   track: (id: number) => void;
   untrack: (id: number) => void;
   toggle: (id: number) => void;
 } {
-  const initial = new Set<number>(readFromStorage());
+  const initial = new Set<number>(readFromStorage(storageKey));
   const store = writable<Set<number>>(initial);
 
   // Persist on changes
-  store.subscribe((ids) => writeToStorage(ids));
+  store.subscribe((ids) => writeToStorage(storageKey, ids));
 
   function withClone(updateFn: (next: Set<number>) => void) {
     store.update((current) => {
@@ -62,4 +60,5 @@ function createTrackedDishIdsStore(): Writable<Set<number>> & {
   return Object.assign(store, { track, untrack, toggle });
 }
 
-export const trackedDishIds = createTrackedDishIdsStore();
+export const trackedDishIds = createTrackedIdsStore('trackedDishIds.v1');
+export const trackedIngredientIds = createTrackedIdsStore('trackedIngredientIds.v1');
