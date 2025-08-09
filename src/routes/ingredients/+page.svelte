@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Data } from '$lib/data/runtime.js';
   import IngredientCard from '$lib/components/Ingredient.svelte';
+  import SortControl from '$lib/components/SortControl.svelte';
 
   // Sorting state
   let sortColumn: string = 'name';
@@ -9,6 +10,17 @@
   // Use the enriched data service
   $: baseIngredients = Data.ingredients;
   $: totalIngredients = Data.getTotalIngredients();
+
+  // Search state (by name only for ingredients page)
+  let searchQuery: string = '';
+  function normalize(value: unknown): string {
+    return (value ?? '').toString().toLowerCase();
+  }
+  function ingredientMatchesQuery(ingredient: any, query: string): boolean {
+    if (!query) return true;
+    const q = normalize(query);
+    return normalize(ingredient.name).includes(q);
+  }
 
   // Sort function
   function sortIngredients(ingredients: any[], column: string, direction: 'asc' | 'desc') {
@@ -76,18 +88,29 @@
     });
   }
 
-  // Handle column header click
-  function handleSort(column: string) {
-    if (sortColumn === column) {
-      sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-    } else {
-      sortColumn = column;
-      sortDirection = column === 'name' ? 'asc' : 'desc'; // Default to ascending for name, descending for others
-    }
-  }
+  const sortOptions = [
+    { value: 'name', label: 'Name' },
+    { value: 'source', label: 'Source' },
+    { value: 'type', label: 'Type' },
+    { value: 'drone', label: 'Drone' },
+    { value: 'kg', label: 'Weight' },
+    { value: 'max_meats', label: 'Meats' },
+    { value: 'cost', label: 'Cost' },
+    { value: 'costPerKg', label: 'Cost/kg' },
+    { value: 'revenuePerKg', label: 'Revenue/kg' },
+    { value: 'sumUpgradeCount', label: 'Upgrade Count' },
+    { value: 'pricePerIngredient', label: 'Best Dish Price/Ingredient' },
+    { value: 'bestDishPrice', label: 'Best Dish Price' },
+    { value: 'maxRevenue', label: 'Max Revenue' },
+    { value: 'partiesCount', label: 'Parties' }
+  ];
 
   // Get sorted ingredients
   $: enrichedIngredients = sortIngredients(baseIngredients, sortColumn, sortDirection);
+  // Apply search filter
+  $: visibleIngredients = (searchQuery && searchQuery.trim().length > 0)
+    ? enrichedIngredients.filter((ing) => ingredientMatchesQuery(ing, searchQuery))
+    : enrichedIngredients;
 
   // Calculate cost per kg for an ingredient
   function calculateCostPerKg(ingredient: any): number {
@@ -163,132 +186,36 @@
   <meta name="description" content="Complete ingredient analysis from Dave the Diver with profitability metrics" />
 </svelte:head>
 
-<div class="container">
+  <div class="container">
   <section class="ingredients">
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th class="sortable" on:click={() => handleSort('name')}>
-              <div class="header-content">
-                Name
-                {#if sortColumn === 'name'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('source')}>
-              <div class="header-content">
-                Source
-                {#if sortColumn === 'source'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('type')}>
-              <div class="header-content">
-                Type
-                {#if sortColumn === 'type'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('drone')}>
-              <div class="header-content">
-                Drone
-                {#if sortColumn === 'drone'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('kg')}>
-              <div class="header-content">
-                Weight
-                {#if sortColumn === 'kg'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('max_meats')}>
-              <div class="header-content">
-                Meats
-                {#if sortColumn === 'max_meats'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('cost')}>
-              <div class="header-content">
-                Cost
-                {#if sortColumn === 'cost'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('costPerKg')}>
-              <div class="header-content">
-                Cost/kg
-                {#if sortColumn === 'costPerKg'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('revenuePerKg')}>
-              <div class="header-content">
-                Revenue/kg
-                {#if sortColumn === 'revenuePerKg'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('sumUpgradeCount')}>
-              <div class="header-content">
-                Upgrade Count
-                {#if sortColumn === 'sumUpgradeCount'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('pricePerIngredient')}>
-              <div class="header-content">
-                Best Dish Price/Ingredient
-                {#if sortColumn === 'pricePerIngredient'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('bestDishPrice')}>
-              <div class="header-content">
-                Best Dish Price
-                {#if sortColumn === 'bestDishPrice'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('maxRevenue')}>
-              <div class="header-content">
-                Max Revenue
-                {#if sortColumn === 'maxRevenue'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-            <th class="sortable" on:click={() => handleSort('partiesCount')}>
-              <div class="header-content">
-                Parties
-                {#if sortColumn === 'partiesCount'}
-                  <span class="sort-indicator">{sortDirection === 'asc' ? '↑' : '↓'}</span>
-                {/if}
-              </div>
-            </th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <div class="controls p-2">
+      <div class="search-wrapper">
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search ingredients by name…"
+          bind:value={searchQuery}
+        />
+        {#if searchQuery}
+          <button class="clear-btn" aria-label="Clear search" on:click={() => { searchQuery = ''; }}>
+            ×
+          </button>
+        {/if}
+      </div>
+
+      <SortControl
+        options={sortOptions}
+        bind:column={sortColumn}
+        bind:direction={sortDirection}
+        on:change={(e) => {
+          sortColumn = e.detail.column;
+          sortDirection = e.detail.direction;
+        }}
+      />
     </div>
 
     <div class="card-list">
-      {#each enrichedIngredients as ingredient}
+      {#each visibleIngredients as ingredient}
         <IngredientCard {ingredient} />
       {/each}
     </div>
@@ -302,65 +229,42 @@
     padding: 2rem;
   }
 
-  .table-container {
-    overflow-x: auto;
-    background: rgb(var(--color-surface-200));
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 1680px; /* Slightly wider to account for image column */
-  }
-  /* image column removed in card view */
-
-  th {
-    background-color: rgb(var(--color-surface-300));
-    padding: 0.75rem 0.5rem;
-    text-align: left;
-    font-weight: 600;
-    color: rgb(var(--color-on-surface-token));
-    border-bottom: 1px solid rgb(var(--color-surface-400));
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-  }
-
-  th.sortable {
-    cursor: pointer;
-    user-select: none;
-    transition: background-color 0.2s ease;
-  }
-
-  th.sortable:hover {
-    background-color: rgb(var(--color-surface-400));
-  }
-
-  th.sortable:active {
-    background-color: rgb(var(--color-surface-500));
-  }
-
-  .header-content {
+  .controls {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.3rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  .sort-indicator {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: rgb(var(--color-primary-500));
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
+  .search-wrapper {
+    position: relative;
+    max-width: 540px;
   }
 
-  th.sortable:hover .sort-indicator {
-    opacity: 1;
+  .search-input {
+    width: 100%;
+    padding: 0.6rem 2rem 0.6rem 0.8rem;
+    border: 1px solid rgb(var(--color-surface-400));
+    border-radius: 0.5rem;
+    background: rgb(var(--color-surface-200));
+    color: rgb(var(--color-on-surface-token));
   }
+
+  .clear-btn {
+    position: absolute;
+    right: 0.35rem;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    border: none;
+    background: transparent;
+    color: rgb(var(--color-on-surface-token));
+    font-size: 1.25rem;
+    padding: 0 0.25rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .clear-btn:hover { opacity: 1; }
 
   /* Cards container */
   .card-list {
@@ -375,8 +279,6 @@
       padding: 1rem;
     }
 
-    table {
-      min-width: 1480px;
-    }
+    /* no table at this point */
   }
 </style>
