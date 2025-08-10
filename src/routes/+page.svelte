@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { goto } from '$app/navigation';
   import { Data } from '$lib/data/runtime.js';
 
   $: dishes = Data.dishes;
@@ -22,12 +21,10 @@
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
     <!-- Dishes Card -->
-    <div
+    <a
+      href="/dishes"
+      data-sveltekit-preload-data="hover"
       class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
-      role="link"
-      tabindex="0"
-      onclick={() => goto('/dishes')}
-      onkeydown={(e) => e.key === 'Enter' && goto('/dishes')}
     >
       <div class="mb-6">
         <div class="w-16 h-16 bg-primary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -40,18 +37,14 @@
           Browse all {dishes.length} dishes with detailed information about levels, prices, and requirements
         </p>
       </div>
-      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" onclick={() => goto('/dishes')}>
-        View All Dishes
-      </button>
-    </div>
+      <span class="btn btn-lg preset-filled w-full mt-auto text-center">View All Dishes</span>
+    </a>
 
     <!-- Ingredients Card -->
-    <div
+    <a
+      href="/ingredients"
+      data-sveltekit-preload-data="hover"
       class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
-      role="link"
-      tabindex="0"
-      onclick={() => goto('/ingredients')}
-      onkeydown={(e) => e.key === 'Enter' && goto('/ingredients')}
     >
       <div class="mb-6">
         <div class="w-16 h-16 bg-secondary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -64,18 +57,14 @@
           Explore all {ingredients.length} ingredients with source locations, types, and gathering information
         </p>
       </div>
-      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" onclick={() => goto('/ingredients')}>
-        View All Ingredients
-      </button>
-    </div>
+      <span class="btn btn-lg preset-filled w-full mt-auto text-center">View All Ingredients</span>
+    </a>
 
     <!-- Parties Card -->
-    <div
+    <a
+      href="/parties"
+      data-sveltekit-preload-data="hover"
       class="card variant-glass-surface p-8 text-center rounded-xl shadow-md hover:shadow-xl transition cursor-pointer bg-white/10 border border-white/10 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-white/20 flex flex-col h-full"
-      role="link"
-      tabindex="0"
-      onclick={() => goto('/parties')}
-      onkeydown={(e) => e.key === 'Enter' && goto('/parties')}
     >
       <div class="mb-6">
         <div class="w-16 h-16 bg-tertiary-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -88,10 +77,8 @@
           Discover all {parties.length} party events with bonuses and associated dishes
         </p>
       </div>
-      <button type="button" class="btn btn-lg preset-filled w-full mt-auto" onclick={() => goto('/parties')}>
-        View All Parties
-      </button>
-    </div>
+      <span class="btn btn-lg preset-filled w-full mt-auto text-center">View All Parties</span>
+    </a>
   </div>
 
   <div class="text-center mt-16">
