@@ -7,8 +7,8 @@
   const partyDishById = new Map(Data.partyDishes.map((pd) => [pd.id, pd]));
 
   // Global sorting state for all party tables
-  let sortColumn = $state<string>('dishName');
-  let sortDirection = $state<'asc' | 'desc'>('asc');
+  let sortColumn = $state<string>('profitPerServing');
+  let sortDirection = $state<'asc' | 'desc'>('desc');
 
   // Use layout-provided data
   const enrichedParties = Data.parties;
@@ -90,16 +90,6 @@
           : (bVal < aVal ? -1 : bVal > aVal ? 1 : 0);
       }
     });
-  }
-
-    // Handle column header click - applies to all party tables
-  function handleSort(column: string) {
-    if (sortColumn === column) {
-      sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-    } else {
-      sortColumn = column;
-      sortDirection = column === 'dishName' ? 'asc' : 'desc';
-    }
   }
 
   // Make sorted parties reactive to sort and search changes

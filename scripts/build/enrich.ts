@@ -12,10 +12,20 @@ import type {
 } from '../../src/lib/types.js';
 import { buildGraph } from './graph.js';
 
-const partyPrice = (dish: Dish, party: Party): number => dish.finalPrice * party.bonus;
+const partyPrice = (dish: BasicDish, party: Party): number => dish.finalPrice * party.bonus;
 
-const partyProfitPerDish = (dish: Dish, party: Party): number =>
-  partyPrice(dish, party) * dish.finalServings - dish.recipeCost;
+// Compute a dish's total recipe cost from ingredients in the graph
+const computeDishRecipeCost = (dishId: Id, graph: ReturnType<typeof buildGraph>): number => {
+  const lines = graph.dishIngredients.filter((di) => di.dishId === dishId);
+  return lines.reduce((sum, line) => {
+    const ing = graph.ingById.get(line.ingredientId);
+    const unitCost = ing ? ing.cost : 0;
+    return sum + unitCost * line.count;
+  }, 0);
+};
+
+const partyProfitPerDish = (dish: BasicDish, party: Party, dishRecipeCost: number): number =>
+  partyPrice(dish, party) * dish.finalServings - dishRecipeCost;
 
 // Removed unused helper to satisfy linter
 
@@ -31,14 +41,15 @@ export function enrichData(
   let partyDishIdCounter = 1;
 
   for (const dishParty of dishParties) {
-    const dish = graph.dishById.get(dishParty.dishId) as Dish | undefined;
-    const party = graph.partyById.get(dishParty.partyId);
+    const dish = graph.dishById.get(dishParty.dishId)!;
+    const party = graph.partyById.get(dishParty.partyId)!;
 
     if (!dish || !party) continue;
 
     const dishPartyPrice = partyPrice(dish, party);
     const dishPartyRevenue = dishPartyPrice * dish.finalServings;
-    const dishProfit = partyProfitPerDish(dish as unknown as Dish, party);
+    const dishRecipeCost = computeDishRecipeCost(dish.id, graph);
+    const dishProfit = partyProfitPerDish(dish, party, dishRecipeCost);
     const dishProfitPerServing = dishProfit / dish.finalServings;
 
     const partyDish: PartyDish = {
@@ -119,7 +130,7 @@ export function enrichData(
       recipeCost: dishRecipeCost,
       partyDishIds,
       bestPartyDishId: bestPartyDish?.id ?? null,
-      maxProfitPerDish: bestPartyDish?.profit ?? baseProfitPerServing,
+      maxProfitPerDish: bestPartyDish?.profit ?? baseProfit,
       baseRevenue,
       baseProfit,
       baseProfitPerServing,

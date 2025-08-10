@@ -19,21 +19,20 @@
   $: profitTotal = revenue != null && totalCost != null ? revenue - totalCost : null;
 
   // display strings
-  $: formattedPricePerServing = formatNumber(price ?? null);
   $: formattedCostPerServing = costPerServing == null ? '—' : `-${formatNumber(costPerServing)}`;
   $: formattedCostTotal = totalCost == null ? '—' : `-${formatNumber(totalCost)}`;
 </script>
 
-<table class="w-64 shrink-0 table-auto text-sm">
+<table class="w-full max-w-64 table-auto text-sm">
   <tbody>
     <tr>
       <td class="text-xs opacity-70">Price</td>
-      <td class="tabular-nums text-right">{formattedPricePerServing}</td>
+      <td class="tabular-nums text-right">{formatNumber(price)}</td>
       <td class="tabular-nums text-right opacity-70 text-xs">
-        × {isFiniteNumber(servings) ? servings : '—'} Servings
+        ×{servings} servings
       </td>
       <td class="tabular-nums text-right">
-        = {formatNumber(revenue)}
+        ={formatNumber(revenue)}
       </td>
     </tr>
     {#if costPerServing != null}

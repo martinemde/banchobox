@@ -70,7 +70,9 @@
         <div class="flex-1 min-w-0 space-y-4">
           <header>
             <div class="font-semibold text-base truncate">{dish.name}</div>
-            <div class="text-xs opacity-70 truncate mt-0.5">{dish.unlock || '—'}</div>
+            {#if dish.unlock}
+              <div class="text-xs opacity-70 truncate mt-0.5">{dish.unlock}</div>
+            {/if}
           </header>
 
 
