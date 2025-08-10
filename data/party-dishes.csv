@@ -1,62 +1,99 @@
 party,dish
-Cucumber,Seasoned Waptia Fieldensis
-Cucumber,Green Sea Urchin & Cucumber Salad
-Cucumber,Great Spider Crab and Cucumber Sushi
-Cucumber,Sea Toad and Cucumber Gunkan Sushi
-Cucumber,Pickled Vegetables
 Cucumber,Deep-Fried Vegetables
+Cucumber,Great Spider Crab and Cucumber Sushi
+Cucumber,Green Sea Urchin & Cucumber Salad
+Cucumber,Pickled Vegetables
+Cucumber,Sea Toad and Cucumber Gunkan Sushi
+Cucumber,Seasoned Waptia Fieldensis
+Cucumber,Skewered Cucumber
 Cucumber,Trevally Sandwich
-Curry,Great Spider Crab Curry
-Curry,Ice Fish Curry
-Curry,Wrasse Curry
-Curry,Roasted Capelin
 Curry,Atlantic Bonito Curry
-Curry,Humphead Parrotfish Curry
 Curry,Godzilla vs. Ebirah Curry
+Curry,Great Spider Crab Curry
+Curry,Humphead Parrotfish Curry
+Curry,Ice Fish Curry
 Curry,Moray Eel Curry
+Curry,Roasted Capelin
+Curry,Wrasse Curry
+Jellyfish,Barrel Jellyfish Sushi
+Jellyfish,Blood-belly Comb Jelly Sushi
+Jellyfish,Box Jellyfish Sushi
 Jellyfish,Cold Jellyfish & Green Sea Urchin Salad
-Jellyfish,Seasoned Jellyfish
+Jellyfish,Comb Jelly Sushi
 Jellyfish,Deep Sea Kaiju Ramen
-Jellyfish,Seagrapes Jellyfish Sushi
+Jellyfish,Fried Egg Jellyfish Sushi
 Jellyfish,Phantom Jellyfish Jelly
-Lobster,Truffle Blue Lobster Tail Sushi
-Lobster,Lobster Platter
-Lobster,Stir-fried Habanero Lobster
-Lobster,Steamed Eastern Rock Lobster & Egg
+Jellyfish,Seagrapes Jellyfish Sushi
+Jellyfish,Seasoned Jellyfish
+Jellyfish,White Spotted Jellyfish Sushi
+Lobster,American Lobster Sushi
+Lobster,Blue Lobster Sushi
+Lobster,California Spiny Lobster Sushi
 Lobster,Crystal Lobster Roll
-Lobster,Godzilla vs. Ebirah Curry
+Lobster,Crystal Lobster Sushi
+Lobster,Eastern Rock Lobster Sushi
 Lobster,Ebirah Chasing Sashimi
-Marlin,Truffle Sailfish Tartare
+Lobster,European Lobster Sushi
+Lobster,Fan Lobster Sushi
+Lobster,Godzilla vs. Ebirah Curry
+Lobster,Lobster Platter
+Lobster,Norway Lobster Sushi
+Lobster,Red-banded Lobster Sushi
+Lobster,Steamed Eastern Rock Lobster & Egg
+Lobster,Stir-fried Habanero Lobster
+Lobster,Tropical Rock Lobster Sushi
+Lobster,Truffle Blue Lobster Tail Sushi
 Marlin,Boiled Sailfish and Seaweed
+Marlin,Marlin Sushi
 Marlin,Marlin and Soybean Paste Roast
 Marlin,Sailfish Sushi
-Marlin,Marlin Sushi
-Shark,Truffle Shark Sandwich
-Shark,Falcatus Soybean Paste Soup
-Shark,Shark Karaage
-Shark,Crimson Fish Roll
+Marlin,Truffle Sailfish Tartare
+Shark,Blacktip Reefshark Sushi
 Shark,Boiled Porbeagle Shark
+Shark,Cookiecutter Shark Sushi
+Shark,Copper Shark Sushi
+Shark,Crimson Fish Roll
 Shark,Deep Fish Tempura
-Shark,Lusca Neck Tadaki
-Shark,Roasted Helicoprion Tail
-Shark,White Shark Omelet
+Shark,Falcatus Soybean Paste Soup
+Shark,Falcatus Sushi
+Shark,Frilled Shark Sushi
 Shark,Goblin Shark Belly Roast
+Shark,Greenland Shark Sushi
+Shark,Longnose Sawshark Sushi
+Shark,Lusca Neck Tadaki
+Shark,Megamouth Shark Sushi
+Shark,Porbeagle Shark Sushi
+Shark,Roasted Helicoprion Tail
+Shark,Shark Karaage
+Shark,Shortfin Mako Sushi
+Shark,Smooth Hammerhead Sushi
+Shark,Thresher Shark Sushi
+Shark,Tiger Shark Sushi
+Shark,Truffle Shark Sandwich
+Shark,White Shark Omelet
+Shark,Whitetip Reefshark Sushi
 Shark,Whole-Roasted Shark Head
-Shrimp,Seasoned Waptia Fieldensis
-Shrimp,Humboldt Ink Pasta
-Shrimp,Rice with White Shrimp Meat
-Shrimp,Special Fried Shrimp Sushi
-Shrimp,Mianbao Xia
+Shark,Zebra Shark Sushi
+Shrimp,Boiled Mantis Shrimp with Soy Paste
 Shrimp,Boiled and Deep-Fried White Shrimp
-Tuna,Hyalonema Tuna Sashimi
-Tuna,Chirashi Sushi
-Tuna,Hot Pepper Tuna
-Tuna,Bluefin Tuna Rice Bowl
-Tuna,Yellowfin Tuna Steak
-Tuna,Hawaiian Poke
-Tuna,Bluefin Tuna Ootoro Sushi
-Tuna,Yellowfin Tuna Ootoro Sushi
-Tuna,Bluefin Tuna Chutoro Sushi
-Tuna,Yellowfin Tuna Chutoro Sushi
+Shrimp,Cooked Whiteleg Shrimp Sushi
+Shrimp,Deep-Fried Eggplant Shrimp Meatballs
+Shrimp,Humboldt Ink Pasta
+Shrimp,Mianbao Xia
+Shrimp,Raw Black Tiger Shrimp Sushi
+Shrimp,Rice with White Shrimp Meat
+Shrimp,Seasoned Waptia Fieldensis
+Shrimp,Special Fried Shrimp Sushi
+Shrimp,White Shrimp Sushi
 Tuna,Bluefin Tuna Akami Sushi
+Tuna,Bluefin Tuna Chutoro Sushi
+Tuna,Bluefin Tuna Ootoro Sushi
+Tuna,Bluefin Tuna Rice Bowl
+Tuna,Chirashi Sushi
+Tuna,Hawaiian Poke
+Tuna,Hot Pepper Tuna
+Tuna,Hyalonema Tuna Sashimi
 Tuna,Yellowfin Tuna Akami Sushi
+Tuna,Yellowfin Tuna Chutoro Sushi
+Tuna,Yellowfin Tuna Ootoro Sushi
+Tuna,Yellowfin Tuna Steak
