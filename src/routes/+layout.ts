@@ -12,7 +12,6 @@ type LoaderResult = {
 };
 
 export const load: (event: Parameters<LayoutServerLoad>[0]) => Promise<LoaderResult> = async ({ fetch }) => {
-  if (typeof window === 'undefined') return {}; // SSR: don't embed data
   const url = (file: string) => `${base}/data/${file}`;
 
   const [dishes, ingredients, parties, partyDishes] = await Promise.all([
