@@ -5,18 +5,22 @@
   import { Data } from '$lib/data/runtime.js';
   import { onMount } from 'svelte';
   import { dishesStores } from '$lib/stores/dishes';
+  import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
 
 	let { children, data }: LayoutProps = $props();
   // Initialize Data service on the client after mount to avoid SSR undefined data
   onMount(() => {
     Data.init({
       dishes: (data.dishesBundle?.rows ?? []) as any,
-      ingredients: data.ingredients ?? [],
+      ingredients: (data.ingredientsBundle?.rows ?? data.ingredients ?? []) as any,
       parties: data.parties ?? [],
       partyDishes: data.partyDishes ?? []
     });
     if (data.dishesBundle) {
       dishesStores.bundle.set(data.dishesBundle as any);
+    }
+    if (data.ingredientsBundle) {
+      ingredientsBundleStore.set(data.ingredientsBundle as any);
     }
   });
 
@@ -25,11 +29,14 @@
     if (data?.dishesBundle) {
       Data.init({
         dishes: (data.dishesBundle.rows ?? []) as any,
-        ingredients: data.ingredients ?? [],
+        ingredients: (data.ingredientsBundle?.rows ?? data.ingredients ?? []) as any,
         parties: data.parties ?? [],
         partyDishes: data.partyDishes ?? []
       });
       dishesStores.bundle.set(data.dishesBundle as any);
+      if (data.ingredientsBundle) {
+        ingredientsBundleStore.set(data.ingredientsBundle as any);
+      }
     }
   });
 </script>

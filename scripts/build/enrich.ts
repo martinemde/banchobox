@@ -192,13 +192,50 @@ export function enrichData(
     }
 
     // Ingredient type already includes usedForParties and bestPartyDishId
-    const enrichedIngredient: Ingredient = {
+    const enrichedIngredient = {
       ...ingredient,
       usedForParties: Array.from(allPartyIds),
       bestPartyDishId: bestPartyDish?.id ?? null,
     } as Ingredient;
 
-    return enrichedIngredient;
+    // Compute search and sort helpers
+    const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
+
+    const usedForPartiesCount = enrichedIngredient.usedForParties?.length ?? 0;
+    const sell = enrichedIngredient.sell ?? null;
+    const kg = enrichedIngredient.kg ?? null;
+    const sellPerKg = sell != null && kg != null && kg !== 0 ? sell / kg : null;
+
+    const search = [
+      enrichedIngredient.name,
+      enrichedIngredient.source,
+      enrichedIngredient.type,
+      enrichedIngredient.day ? 'day' : '',
+      enrichedIngredient.night ? 'night' : '',
+      enrichedIngredient.fog ? 'fog' : '',
+      enrichedIngredient.drone ? 'drone' : '',
+    ]
+      .map(normalize)
+      .filter(Boolean)
+      .join(' ');
+
+    const sort = {
+      name: normalize(enrichedIngredient.name),
+      sell,
+      kg,
+      sellPerKg,
+      buyJango: enrichedIngredient.buyJango ?? null,
+      buyOtto: enrichedIngredient.buyOtto ?? null,
+      usedForPartiesCount,
+    } as const;
+
+    const finalIngredient: Ingredient = {
+      ...enrichedIngredient,
+      search,
+      sort: sort as any,
+    };
+
+    return finalIngredient;
   });
 
   const parties: EnrichedParty[] = basicParties.map((party) => {

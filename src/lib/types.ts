@@ -146,6 +146,9 @@ export interface Ingredient extends BasicIngredient {
   }>;
   bestPartyDishId: Id | null; // Reference to PartyDish with highest profit for this ingredient
   usedForParties: Id[];
+  // Client-side search & sort helpers (precomputed at build time)
+  search: string; // normalized tokens (name, source, type, day/night/fog, drone)
+  sort: Record<IngredientSortKey, string | number | null>;
 }
 
 export interface EnrichedParty extends Party {
@@ -170,3 +173,13 @@ export type SortKey =
   | 'maxProfitPerDish'
   | 'upgradeCost'
   | 'ingredientCount';
+
+// Sort keys available for Ingredient.sort
+export type IngredientSortKey =
+  | 'name'
+  | 'sell'
+  | 'kg'
+  | 'sellPerKg'
+  | 'buyJango'
+  | 'buyOtto'
+  | 'usedForPartiesCount';

@@ -2,187 +2,23 @@
   import IngredientCard from '$lib/components/IngredientCard.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
-  import { Data } from '$lib/data/runtime.js';
+  import { ingredientsStores } from '$lib/stores/ingredients';
+  import { syncToUrl } from '$lib/stores/urlSync';
 
-  // Sorting state
-  let sortColumn = $state<string>('name');
-  let sortDirection = $state<'asc' | 'desc'>('asc');
+  const { query, sortKey, sortDir, visible, filters } = ingredientsStores;
+  syncToUrl('ingredients', ingredientsStores);
+
   let showTrackedOnly = $state(false);
-
-  // Base data
-  const baseIngredients = $derived(Data.ingredients);
-
-  // Search state (by name only for ingredients page)
-  let searchQuery = $state('');
-  function normalize(value: unknown): string {
-    return (value ?? '').toString().toLowerCase();
-  }
-  function ingredientMatchesQuery(ingredient: any, query: string): boolean {
-    if (!query) return true;
-    const q = normalize(query);
-    return normalize(ingredient.name).includes(q);
-  }
-
-  // Sort function
-  function sortIngredients(ingredients: any[], column: string, direction: 'asc' | 'desc') {
-    return [...ingredients].sort((a, b) => {
-      let aVal, bVal;
-
-      // Handle special calculated columns
-      switch (column) {
-        case 'costPerKg':
-          aVal = calculateCostPerKg(a);
-          bVal = calculateCostPerKg(b);
-          break;
-        case 'revenuePerKg':
-          aVal = calculateBestDishRevenuePerKg(a);
-          bVal = calculateBestDishRevenuePerKg(b);
-          break;
-        case 'sumUpgradeCount':
-          aVal = calculateSumUpgradeCount(a);
-          bVal = calculateSumUpgradeCount(b);
-          break;
-        case 'pricePerIngredient':
-          aVal = calculateBestDishPricePerIngredient(a);
-          bVal = calculateBestDishPricePerIngredient(b);
-          break;
-        case 'bestDishPrice':
-          aVal = getBestDishPrice(a);
-          bVal = getBestDishPrice(b);
-          break;
-        case 'maxRevenue':
-          aVal = calculateMaxRevenue(a);
-          bVal = calculateMaxRevenue(b);
-          break;
-        case 'partiesCount':
-          aVal = getPartiesThatUseIngredient(a).length;
-          bVal = getPartiesThatUseIngredient(b).length;
-          break;
-        case 'bestDishName':
-          const bestPartyDishA = a.bestPartyDishId ? partyDishById.get(a.bestPartyDishId) : null;
-          const bestPartyDishB = b.bestPartyDishId ? partyDishById.get(b.bestPartyDishId) : null;
-          const dishA = bestPartyDishA ? dishById.get(bestPartyDishA.dishId) : null;
-          const dishB = bestPartyDishB ? dishById.get(bestPartyDishB.dishId) : null;
-          aVal = dishA?.name || '';
-          bVal = dishB?.name || '';
-          break;
-        default:
-          aVal = a[column];
-          bVal = b[column];
-      }
-
-      // Handle null/undefined values
-      if (aVal == null && bVal == null) return 0;
-      if (aVal == null) return direction === 'asc' ? -1 : 1;
-      if (bVal == null) return direction === 'asc' ? 1 : -1;
-
-      // Compare values
-      if (typeof aVal === 'string' && typeof bVal === 'string') {
-        return direction === 'asc'
-          ? aVal.localeCompare(bVal)
-          : bVal.localeCompare(aVal);
-      } else {
-        return direction === 'asc'
-          ? (aVal < bVal ? -1 : aVal > bVal ? 1 : 0)
-          : (bVal < aVal ? -1 : bVal > aVal ? 1 : 0);
-      }
-    });
-  }
 
   const sortOptions = [
     { value: 'name', label: 'Name' },
-    { value: 'source', label: 'Source' },
-    { value: 'type', label: 'Type' },
-    { value: 'drone', label: 'Drone' },
-    { value: 'kg', label: 'Weight' },
-    { value: 'max_meats', label: 'Meats' },
-    { value: 'cost', label: 'Cost' },
-    { value: 'costPerKg', label: 'Cost/kg' },
-    { value: 'revenuePerKg', label: 'Revenue/kg' },
-    { value: 'sumUpgradeCount', label: 'Upgrade Count' },
-    { value: 'pricePerIngredient', label: 'Best Dish Price/Ingredient' },
-    { value: 'bestDishPrice', label: 'Best Dish Price' },
-    { value: 'maxRevenue', label: 'Max Revenue' },
-    { value: 'partiesCount', label: 'Parties' }
+    { value: 'sell', label: 'Sell' },
+    { value: 'kg', label: 'Weight (kg)' },
+    { value: 'sellPerKg', label: 'Sell / kg' },
+    { value: 'buyJango', label: 'Buy: Jango' },
+    { value: 'buyOtto', label: 'Buy: Otto' },
+    { value: 'usedForPartiesCount', label: 'Parties Using' }
   ];
-
-  // Local indices (reactive and SSR-safe)
-  const partyDishById = $derived(new Map((Data.partyDishes ?? []).map((pd) => [pd.id, pd])));
-  const dishById = $derived(new Map((Data.dishes ?? []).map((d) => [d.id, d])));
-
-  // Get sorted ingredients
-  const enrichedIngredients = $derived(sortIngredients(baseIngredients, sortColumn, sortDirection));
-  // Apply search and tracked-only filters
-  const visibleIngredients = $derived(enrichedIngredients.filter((ing) =>
-    ingredientMatchesQuery(ing, searchQuery) && (!showTrackedOnly || $trackedIngredientIds.has(ing.id))
-  ));
-
-  // Calculate cost per kg for an ingredient
-  function calculateCostPerKg(ingredient: any): number {
-    if (!ingredient.cost || !ingredient.kg) return 0;
-    return ingredient.cost / ingredient.kg;
-  }
-
-  // Calculate best dish revenue per kg using PartyDish entities
-  function calculateBestDishRevenuePerKg(ingredient: any): number {
-    if (!ingredient.bestPartyDishId || !ingredient.kg) return 0;
-
-    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
-    if (!bestPartyDish) return 0;
-
-    return bestPartyDish.partyRevenue / ingredient.kg;
-  }
-
-  // Calculate sum of upgrade counts for this ingredient across all dishes
-  function calculateSumUpgradeCount(ingredient: any): number {
-    return (Data.dishes ?? []).reduce((total, dish) => {
-      const dishIngredient = dish.ingredients.find(ing => ing.ingredientId === ingredient.id);
-      return total + (dishIngredient?.upgradeCount || 0);
-    }, 0);
-  }
-
-  // Calculate best dish price per ingredient (dish price / ingredient count in dish)
-  function calculateBestDishPricePerIngredient(ingredient: any): number {
-    if (!ingredient.bestPartyDishId) return 0;
-
-    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
-    if (!bestPartyDish) return 0;
-
-    const bestDish = dishById.get(bestPartyDish.dishId);
-    if (!bestDish) return 0;
-
-    const totalIngredientCount = bestDish.ingredients.reduce((sum, ing) => sum + ing.count, 0);
-    return totalIngredientCount > 0 ? bestDish.finalPrice / totalIngredientCount : 0;
-  }
-
-  // Get best dish price
-  function getBestDishPrice(ingredient: any): number {
-    if (!ingredient.bestPartyDishId) return 0;
-
-    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
-    if (!bestPartyDish) return 0;
-
-    const bestDish = dishById.get(bestPartyDish.dishId);
-    return bestDish?.finalPrice || 0;
-  }
-
-  // Calculate max revenue for the ingredient using PartyDish entities
-  function calculateMaxRevenue(ingredient: any): number {
-    if (!ingredient.bestPartyDishId) return 0;
-
-    const bestPartyDish = partyDishById.get(ingredient.bestPartyDishId);
-    if (!bestPartyDish) return 0;
-
-    return bestPartyDish.partyRevenue;
-  }
-
-  // Get party names that use this ingredient
-  function getPartiesThatUseIngredient(ingredient: any): string[] {
-    const partyById = new Map((Data.parties ?? []).map((p) => [p.id, p]));
-    const partyIds: number[] = Array.isArray(ingredient.usedForParties) ? ingredient.usedForParties : [];
-    const partyNames: string[] = partyIds.map((partyId: number) => partyById.get(partyId)?.name || 'Unknown');
-    return [...new Set(partyNames)].sort();
-  }
 </script>
 
 <svelte:head>
@@ -197,11 +33,11 @@
         <input
           type="search"
           class="search-input"
-          placeholder="Search ingredients by name…"
-          bind:value={searchQuery}
+          placeholder="Search ingredients by name, source, type, time, drone…"
+          bind:value={$query}
         />
-        {#if searchQuery}
-          <button class="clear-btn" aria-label="Clear search" onclick={() => { searchQuery = ''; }}>
+        {#if $query}
+          <button class="clear-btn" aria-label="Clear search" onclick={() => { query.set(''); }}>
             ×
           </button>
         {/if}
@@ -209,11 +45,11 @@
 
       <SortControl
         options={sortOptions}
-        bind:column={sortColumn}
-        bind:direction={sortDirection}
+        column={$sortKey}
+        direction={$sortDir}
         on:change={(e) => {
-          sortColumn = e.detail.column;
-          sortDirection = e.detail.direction;
+          sortKey.set(e.detail.column);
+          sortDir.set(e.detail.direction);
         }}
       />
 
@@ -228,11 +64,13 @@
       </div>
     </div>
 
-    <div class="card-list">
-      {#each visibleIngredients as ingredient}
-        <IngredientCard {ingredient} />
-      {/each}
-    </div>
+      <div class="card-list">
+        {#each $visible as ingredient (ingredient.id)}
+          {#if !showTrackedOnly || $trackedIngredientIds.has(ingredient.id)}
+            <IngredientCard {ingredient} />
+          {/if}
+        {/each}
+      </div>
   </section>
 </div>
 

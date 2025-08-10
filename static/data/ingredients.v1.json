@@ -18,7 +18,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "aurora jellyfish jellyfish basin aberration fog",
+    "sort": {
+      "name": "aurora jellyfish",
+      "sell": null,
+      "kg": 5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 13,
@@ -39,7 +49,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "barbed eel fog coast aberration fog",
+    "sort": {
+      "name": "barbed eel",
+      "sell": null,
+      "kg": 6,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 29,
@@ -60,7 +80,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "bloodskin shark fog coast aberration fog drone",
+    "sort": {
+      "name": "bloodskin shark",
+      "sell": null,
+      "kg": 11.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 37,
@@ -81,7 +111,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "bony wreckfish black cliff aberration fog drone",
+    "sort": {
+      "name": "bony wreckfish",
+      "sell": null,
+      "kg": 8,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 41,
@@ -102,7 +142,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "bursting anglerfish jellyfish basin aberration fog",
+    "sort": {
+      "name": "bursting anglerfish",
+      "sell": null,
+      "kg": 6,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 56,
@@ -123,7 +173,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "concertina barracuda jellyfish basin aberration fog",
+    "sort": {
+      "name": "concertina barracuda",
+      "sell": null,
+      "kg": 6.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 76,
@@ -144,7 +204,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "enthralled stonefish black cliff aberration fog",
+    "sort": {
+      "name": "enthralled stonefish",
+      "sell": null,
+      "kg": 8,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 80,
@@ -165,7 +235,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "fanged cod fog coast aberration fog",
+    "sort": {
+      "name": "fanged cod",
+      "sell": null,
+      "kg": 3.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 86,
@@ -186,7 +266,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "gazing shark jellyfish basin aberration fog drone",
+    "sort": {
+      "name": "gazing shark",
+      "sell": null,
+      "kg": 11,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 88,
@@ -207,7 +297,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "gelatinous stonefish black cliff aberration fog",
+    "sort": {
+      "name": "gelatinous stonefish",
+      "sell": null,
+      "kg": 7.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 90,
@@ -228,7 +328,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "gnashing perch black cliff aberration fog",
+    "sort": {
+      "name": "gnashing perch",
+      "sell": null,
+      "kg": 4.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 99,
@@ -249,7 +359,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "grotesque mackerel fog coast aberration fog",
+    "sort": {
+      "name": "grotesque mackerel",
+      "sell": null,
+      "kg": 3,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 106,
@@ -270,7 +390,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "host eel fog coast aberration fog",
+    "sort": {
+      "name": "host eel",
+      "sell": null,
+      "kg": 5.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 126,
@@ -291,7 +421,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "malignant pincer fog coast aberration fog",
+    "sort": {
+      "name": "malignant pincer",
+      "sell": null,
+      "kg": 2.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 128,
@@ -312,7 +452,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "many eyed mackerel fog coast aberration fog",
+    "sort": {
+      "name": "many eyed mackerel",
+      "sell": null,
+      "kg": 2.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 146,
@@ -333,7 +483,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "parhelion jellyfish jellyfish basin aberration fog",
+    "sort": {
+      "name": "parhelion jellyfish",
+      "sell": null,
+      "kg": 5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 149,
@@ -354,7 +514,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "perished loosejaw jellyfish basin aberration fog",
+    "sort": {
+      "name": "perished loosejaw",
+      "sell": null,
+      "kg": 3,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 157,
@@ -375,7 +545,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "radiant squid jellyfish basin aberration fog",
+    "sort": {
+      "name": "radiant squid",
+      "sell": null,
+      "kg": 4.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 168,
@@ -396,7 +576,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "sallow sailfish fog coast aberration fog drone",
+    "sort": {
+      "name": "sallow sailfish",
+      "sell": null,
+      "kg": 9.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 172,
@@ -417,7 +607,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "savage barracuda jellyfish basin aberration fog",
+    "sort": {
+      "name": "savage barracuda",
+      "sell": null,
+      "kg": 7,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 173,
@@ -438,7 +638,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "scouring bass black cliff aberration fog",
+    "sort": {
+      "name": "scouring bass",
+      "sell": null,
+      "kg": 3.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 179,
@@ -459,7 +669,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "seizing snailfish jellyfish basin aberration fog",
+    "sort": {
+      "name": "seizing snailfish",
+      "sell": null,
+      "kg": 5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 181,
@@ -480,7 +700,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "shattered wreckfish black cliff aberration fog",
+    "sort": {
+      "name": "shattered wreckfish",
+      "sell": null,
+      "kg": 6.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 191,
@@ -501,7 +731,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "sprouting eel black cliff aberration fog drone",
+    "sort": {
+      "name": "sprouting eel",
+      "sell": null,
+      "kg": 7,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 197,
@@ -522,7 +762,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "three-headed cod fog coast aberration fog",
+    "sort": {
+      "name": "three-headed cod",
+      "sell": null,
+      "kg": 6,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 203,
@@ -543,7 +793,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "translucent sturgeon black cliff aberration fog drone",
+    "sort": {
+      "name": "translucent sturgeon",
+      "sell": null,
+      "kg": 8,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 208,
@@ -564,7 +824,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "tusked grouper fog coast aberration fog",
+    "sort": {
+      "name": "tusked grouper",
+      "sell": null,
+      "kg": 5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 210,
@@ -585,7 +855,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "voltaic grouper fog coast aberration fog",
+    "sort": {
+      "name": "voltaic grouper",
+      "sell": null,
+      "kg": 6,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 219,
@@ -606,7 +886,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "withered ray black cliff aberration fog drone",
+    "sort": {
+      "name": "withered ray",
+      "sell": null,
+      "kg": 8.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 46,
@@ -627,7 +917,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "cerebral crab fog coast aberration crab fog",
+    "sort": {
+      "name": "cerebral crab",
+      "sell": null,
+      "kg": 2,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 60,
@@ -648,7 +948,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "cortex decorator black cliff aberration crab fog",
+    "sort": {
+      "name": "cortex decorator",
+      "sell": null,
+      "kg": 2.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 75,
@@ -669,7 +979,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "entangled crab jellyfish basin aberration crab fog",
+    "sort": {
+      "name": "entangled crab",
+      "sell": null,
+      "kg": 2.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 110,
@@ -690,7 +1010,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "imperious lobster jellyfish basin aberration crab fog",
+    "sort": {
+      "name": "imperious lobster",
+      "sell": null,
+      "kg": 3,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 190,
@@ -711,7 +1041,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "splintered crab black cliff aberration crab fog",
+    "sort": {
+      "name": "splintered crab",
+      "sell": null,
+      "kg": 3.5,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 51,
@@ -732,7 +1072,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "clione queen tentacle 130-250m boss",
+    "sort": {
+      "name": "clione queen tentacle",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 91,
@@ -755,7 +1105,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 59
+    "bestPartyDishId": 59,
+    "search": "goblin shark's fatty meat 130-250m boss",
+    "sort": {
+      "name": "goblin shark's fatty meat",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 104,
@@ -778,7 +1138,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 65
+    "bestPartyDishId": 65,
+    "search": "helicoprion tail 3rd glacial cave boss day",
+    "sort": {
+      "name": "helicoprion tail",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 113,
@@ -801,7 +1171,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 72
+    "bestPartyDishId": 72,
+    "search": "klaus's fin 0-50m boss night",
+    "sort": {
+      "name": "klaus's fin",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 114,
@@ -822,7 +1202,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "kronosaurus tongue hydrothermal vents boss",
+    "sort": {
+      "name": "kronosaurus tongue",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 122,
@@ -845,7 +1235,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 62
+    "bestPartyDishId": 62,
+    "search": "lusca neck meat 50-130m boss night",
+    "sort": {
+      "name": "lusca neck meat",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 123,
@@ -866,7 +1266,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "lusca tentacle 50-130m boss night",
+    "sort": {
+      "name": "lusca tentacle",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 127,
@@ -889,7 +1299,17 @@
     "usedForParties": [
       7
     ],
-    "bestPartyDishId": 76
+    "bestPartyDishId": 76,
+    "search": "mantis shrimp meat 0-50m boss night",
+    "sort": {
+      "name": "mantis shrimp meat",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 150,
@@ -912,7 +1332,17 @@
     "usedForParties": [
       1
     ],
-    "bestPartyDishId": 24
+    "bestPartyDishId": 24,
+    "search": "phantom jellyfish meat second glacial cave boss day",
+    "sort": {
+      "name": "phantom jellyfish meat",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 205,
@@ -933,7 +1363,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "truck hermit crab legs 0-50m boss night",
+    "sort": {
+      "name": "truck hermit crab legs",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 220,
@@ -954,7 +1394,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "wolf eel tail meat 130-250m boss",
+    "sort": {
+      "name": "wolf eel tail meat",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 222,
@@ -975,7 +1425,17 @@
     "buyOtto": null,
     "cost": 0,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "yawie's inner flesh divine tree control room boss",
+    "sort": {
+      "name": "yawie's inner flesh",
+      "sell": null,
+      "kg": 1,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 4,
@@ -998,7 +1458,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 38
+    "bestPartyDishId": 38,
+    "search": "american lobster 0-50m crab trap day",
+    "sort": {
+      "name": "american lobster",
+      "sell": 43,
+      "kg": 1,
+      "sellPerKg": 43,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 30,
@@ -1021,7 +1491,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 44
+    "bestPartyDishId": 44,
+    "search": "blue lobster 0-50m crab trap night",
+    "sort": {
+      "name": "blue lobster",
+      "sell": 47,
+      "kg": 1,
+      "sellPerKg": 47,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 42,
@@ -1044,7 +1524,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 34
+    "bestPartyDishId": 34,
+    "search": "california spiny lobster 50-130m crab trap day",
+    "sort": {
+      "name": "california spiny lobster",
+      "sell": 22,
+      "kg": 1.5,
+      "sellPerKg": 14.666666666666666,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 61,
@@ -1067,7 +1557,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 31
+    "bestPartyDishId": 31,
+    "search": "crystal lobster 50-130m crab trap night",
+    "sort": {
+      "name": "crystal lobster",
+      "sell": 47,
+      "kg": 1.5,
+      "sellPerKg": 31.333333333333332,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 66,
@@ -1088,7 +1588,17 @@
     "buyOtto": null,
     "cost": 45,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "dollocaris ingens hydrothermal vents crab trap day",
+    "sort": {
+      "name": "dollocaris ingens",
+      "sell": 45,
+      "kg": 1.5,
+      "sellPerKg": 30,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 71,
@@ -1111,7 +1621,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 41
+    "bestPartyDishId": 41,
+    "search": "eastern rock lobster 130-250m crab trap day",
+    "sort": {
+      "name": "eastern rock lobster",
+      "sell": 47,
+      "kg": 2.5,
+      "sellPerKg": 18.8,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 77,
@@ -1135,7 +1655,17 @@
       6,
       8
     ],
-    "bestPartyDishId": 37
+    "bestPartyDishId": 37,
+    "search": "european lobster 0-50m crab trap day",
+    "sort": {
+      "name": "european lobster",
+      "sell": 23,
+      "kg": 1,
+      "sellPerKg": 23,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 79,
@@ -1158,7 +1688,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 36
+    "bestPartyDishId": 36,
+    "search": "fan lobster 50-130m crab trap night",
+    "sort": {
+      "name": "fan lobster",
+      "sell": 22,
+      "kg": 0.2,
+      "sellPerKg": 110,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 105,
@@ -1179,7 +1719,17 @@
     "buyOtto": null,
     "cost": 50,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "horsehair crab glacial area crab trap day",
+    "sort": {
+      "name": "horsehair crab",
+      "sell": 50,
+      "kg": 1.5,
+      "sellPerKg": 33.333333333333336,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 139,
@@ -1202,7 +1752,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 42
+    "bestPartyDishId": 42,
+    "search": "norway lobster 130-250m crab trap day",
+    "sort": {
+      "name": "norway lobster",
+      "sell": 25,
+      "kg": 0.2,
+      "sellPerKg": 125,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 162,
@@ -1225,7 +1785,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 40
+    "bestPartyDishId": 40,
+    "search": "red-banded lobster 0-50m crab trap night",
+    "sort": {
+      "name": "red-banded lobster",
+      "sell": 25,
+      "kg": 0.1,
+      "sellPerKg": 250,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 184,
@@ -1246,7 +1816,17 @@
     "buyOtto": null,
     "cost": 40,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "snow crab glacial area crab trap day",
+    "sort": {
+      "name": "snow crab",
+      "sell": 40,
+      "kg": 2,
+      "sellPerKg": 20,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 202,
@@ -1269,7 +1849,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 38
+    "bestPartyDishId": 38,
+    "search": "tokummia katalepsis hydrothermal vents crab trap day",
+    "sort": {
+      "name": "tokummia katalepsis",
+      "sell": 55,
+      "kg": 2,
+      "sellPerKg": 27.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 204,
@@ -1292,7 +1882,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 38
+    "bestPartyDishId": 38,
+    "search": "tropical rock lobster 50-130m crab trap day",
+    "sort": {
+      "name": "tropical rock lobster",
+      "sell": 45,
+      "kg": 1.2,
+      "sellPerKg": 37.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 72,
@@ -1317,7 +1917,17 @@
       7,
       2
     ],
-    "bestPartyDishId": 90
+    "bestPartyDishId": 90,
+    "search": "egg vegetable farm egg",
+    "sort": {
+      "name": "egg",
+      "sell": 15,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 63,
+      "buyOtto": 75,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 93,
@@ -1341,7 +1951,17 @@
       6,
       4
     ],
-    "bestPartyDishId": 11
+    "bestPartyDishId": 11,
+    "search": "grade a egg vegetable farm egg",
+    "sort": {
+      "name": "grade a egg",
+      "sell": 90,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 382,
+      "buyOtto": 450,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 2,
@@ -1362,7 +1982,17 @@
     "buyOtto": null,
     "cost": 45,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "alaska pollock glacial area fish day",
+    "sort": {
+      "name": "alaska pollock",
+      "sell": 45,
+      "kg": 7,
+      "sellPerKg": 6.428571428571429,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 3,
@@ -1383,7 +2013,17 @@
     "buyOtto": null,
     "cost": 42,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "allenypterus hydrothermal vents fish day",
+    "sort": {
+      "name": "allenypterus",
+      "sell": 42,
+      "kg": 4,
+      "sellPerKg": 10.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 5,
@@ -1404,7 +2044,17 @@
     "buyOtto": null,
     "cost": 75,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "anomalocaris hydrothermal vents fish day",
+    "sort": {
+      "name": "anomalocaris",
+      "sell": 75,
+      "kg": 4,
+      "sellPerKg": 18.75,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 6,
@@ -1425,7 +2075,17 @@
     "buyOtto": null,
     "cost": 40,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "antarctic octopus glacial area fish day",
+    "sort": {
+      "name": "antarctic octopus",
+      "sell": 40,
+      "kg": 7.5,
+      "sellPerKg": 5.333333333333333,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 7,
@@ -1446,7 +2106,17 @@
     "buyOtto": null,
     "cost": 32,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "arctic cod glacial area fish day",
+    "sort": {
+      "name": "arctic cod",
+      "sell": 32,
+      "kg": 5,
+      "sellPerKg": 6.4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 8,
@@ -1467,7 +2137,17 @@
     "buyOtto": null,
     "cost": 40,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "arctic telescope fish glacial area fish day",
+    "sort": {
+      "name": "arctic telescope fish",
+      "sell": 40,
+      "kg": 3,
+      "sellPerKg": 13.333333333333334,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 9,
@@ -1488,7 +2168,17 @@
     "buyOtto": null,
     "cost": 11,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "atlantic anglerfish limestone cave fish day",
+    "sort": {
+      "name": "atlantic anglerfish",
+      "sell": 11,
+      "kg": 5.5,
+      "sellPerKg": 2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 10,
@@ -1511,7 +2201,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 9
+    "bestPartyDishId": 9,
+    "search": "atlantic bonito 50-130m fish day",
+    "sort": {
+      "name": "atlantic bonito",
+      "sell": 7,
+      "kg": 4,
+      "sellPerKg": 1.75,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 11,
@@ -1532,7 +2232,17 @@
     "buyOtto": null,
     "cost": 7,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "atlantic mackerel 50-130m fish day",
+    "sort": {
+      "name": "atlantic mackerel",
+      "sell": 7,
+      "kg": 3.5,
+      "sellPerKg": 2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 14,
@@ -1555,7 +2265,17 @@
     "usedForParties": [
       1
     ],
-    "bestPartyDishId": 26
+    "bestPartyDishId": 26,
+    "search": "barrel jellyfish 0-50m fish day",
+    "sort": {
+      "name": "barrel jellyfish",
+      "sell": 5,
+      "kg": 1,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 15,
@@ -1579,7 +2299,17 @@
       8,
       4
     ],
-    "bestPartyDishId": 34
+    "bestPartyDishId": 34,
+    "search": "barreleye glacial passage fish day",
+    "sort": {
+      "name": "barreleye",
+      "sell": 35,
+      "kg": 3,
+      "sellPerKg": 11.666666666666666,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 17,
@@ -1600,7 +2330,17 @@
     "buyOtto": null,
     "cost": 6,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "bigeye scad 50-130m fish day",
+    "sort": {
+      "name": "bigeye scad",
+      "sell": 6,
+      "kg": 0.6,
+      "sellPerKg": 10,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 18,
@@ -1623,7 +2363,17 @@
     "usedForParties": [
       5
     ],
-    "bestPartyDishId": 8
+    "bestPartyDishId": 8,
+    "search": "bigeye trevally 50-130m fish day",
+    "sort": {
+      "name": "bigeye trevally",
+      "sell": 6,
+      "kg": 3,
+      "sellPerKg": 2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 19,
@@ -1644,7 +2394,17 @@
     "buyOtto": null,
     "cost": 3,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "black and white snapper 0-50m fish day",
+    "sort": {
+      "name": "black and white snapper",
+      "sell": 3,
+      "kg": 1,
+      "sellPerKg": 3,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 24,
@@ -1665,7 +2425,17 @@
     "buyOtto": null,
     "cost": 20,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "blackfin barracuda 50-130m fish night",
+    "sort": {
+      "name": "blackfin barracuda",
+      "sell": 20,
+      "kg": 5.5,
+      "sellPerKg": 3.6363636363636362,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 25,
@@ -1688,7 +2458,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 66
+    "bestPartyDishId": 66,
+    "search": "blacktip shark meat 0-50m fish night drone",
+    "sort": {
+      "name": "blacktip shark meat",
+      "sell": 20,
+      "kg": 2.5,
+      "sellPerKg": 8,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 27,
@@ -1709,7 +2489,17 @@
     "buyOtto": null,
     "cost": 40,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "blobfish glacial passage fish day",
+    "sort": {
+      "name": "blobfish",
+      "sell": 40,
+      "kg": 7.5,
+      "sellPerKg": 5.333333333333333,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 28,
@@ -1732,7 +2522,17 @@
     "usedForParties": [
       1
     ],
-    "bestPartyDishId": 18
+    "bestPartyDishId": 18,
+    "search": "blood-belly comb jellyfish 130-250m fish day",
+    "sort": {
+      "name": "blood-belly comb jellyfish",
+      "sell": 17,
+      "kg": 7,
+      "sellPerKg": 2.4285714285714284,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 31,
@@ -1753,7 +2553,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "blue tang 0-50m fish day",
+    "sort": {
+      "name": "blue tang",
+      "sell": 2,
+      "kg": 0.5,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 32,
@@ -1776,7 +2586,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 90
+    "bestPartyDishId": 90,
+    "search": "bluefin tuna akami 0-130m fish day drone",
+    "sort": {
+      "name": "bluefin tuna akami",
+      "sell": 27,
+      "kg": 8,
+      "sellPerKg": 3.375,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 33,
@@ -1799,7 +2619,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 93
+    "bestPartyDishId": 93,
+    "search": "bluefin tuna chutoro 0-130m fish day drone",
+    "sort": {
+      "name": "bluefin tuna chutoro",
+      "sell": 32,
+      "kg": 8,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 34,
@@ -1822,7 +2652,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 94
+    "bestPartyDishId": 94,
+    "search": "bluefin tuna ootoro 0-130m fish day drone",
+    "sort": {
+      "name": "bluefin tuna ootoro",
+      "sell": 45,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 35,
@@ -1843,7 +2683,17 @@
     "buyOtto": null,
     "cost": 5,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "bluehead tilefish 50-130m fish day",
+    "sort": {
+      "name": "bluehead tilefish",
+      "sell": 5,
+      "kg": 0.2,
+      "sellPerKg": 25,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 36,
@@ -1864,7 +2714,17 @@
     "buyOtto": null,
     "cost": 18,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "bluespotted stargazer 130-250m fish day",
+    "sort": {
+      "name": "bluespotted stargazer",
+      "sell": 18,
+      "kg": 5,
+      "sellPerKg": 3.6,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 38,
@@ -1887,7 +2747,17 @@
     "usedForParties": [
       1
     ],
-    "bestPartyDishId": 20
+    "bestPartyDishId": 20,
+    "search": "box jellyfish 0-50m fish night",
+    "sort": {
+      "name": "box jellyfish",
+      "sell": 18,
+      "kg": 5,
+      "sellPerKg": 3.6,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 43,
@@ -1910,7 +2780,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 15
+    "bestPartyDishId": 15,
+    "search": "capelin glacial area fish day",
+    "sort": {
+      "name": "capelin",
+      "sell": 15,
+      "kg": 0.5,
+      "sellPerKg": 30,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 44,
@@ -1931,7 +2811,17 @@
     "buyOtto": null,
     "cost": 1,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "cardinal fish 0-50m fish",
+    "sort": {
+      "name": "cardinal fish",
+      "sell": 1,
+      "kg": 0.2,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 49,
@@ -1952,7 +2842,17 @@
     "buyOtto": null,
     "cost": 8,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "clearfin lionfish 0-50m fish night",
+    "sort": {
+      "name": "clearfin lionfish",
+      "sell": 8,
+      "kg": 1.7,
+      "sellPerKg": 4.705882352941177,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 52,
@@ -1975,7 +2875,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 54
+    "bestPartyDishId": 54,
+    "search": "clown frogfish 50-130m fish day",
+    "sort": {
+      "name": "clown frogfish",
+      "sell": 5,
+      "kg": 0.3,
+      "sellPerKg": 16.666666666666668,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 53,
@@ -1996,7 +2906,17 @@
     "buyOtto": null,
     "cost": 1,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "clownfish 0-50m fish day",
+    "sort": {
+      "name": "clownfish",
+      "sell": 1,
+      "kg": 0.2,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 54,
@@ -2019,7 +2939,17 @@
     "usedForParties": [
       1
     ],
-    "bestPartyDishId": 22
+    "bestPartyDishId": 22,
+    "search": "comb jelly 130-250m fish day",
+    "sort": {
+      "name": "comb jelly",
+      "sell": 14,
+      "kg": 7,
+      "sellPerKg": 2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 55,
@@ -2040,7 +2970,17 @@
     "buyOtto": null,
     "cost": 1,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "comber 0-50m fish day",
+    "sort": {
+      "name": "comber",
+      "sell": 1,
+      "kg": 0.2,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 57,
@@ -2063,7 +3003,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 55
+    "bestPartyDishId": 55,
+    "search": "cookiecutter shark 130-250m fish day",
+    "sort": {
+      "name": "cookiecutter shark",
+      "sell": 25,
+      "kg": 5,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 58,
@@ -2086,7 +3036,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 66
+    "bestPartyDishId": 66,
+    "search": "copper shark meat 0-50m fish night drone",
+    "sort": {
+      "name": "copper shark meat",
+      "sell": 22,
+      "kg": 4,
+      "sellPerKg": 5.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 59,
@@ -2107,7 +3067,17 @@
     "buyOtto": null,
     "cost": 6,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "coral trout 50-130m fish day",
+    "sort": {
+      "name": "coral trout",
+      "sell": 6,
+      "kg": 3,
+      "sellPerKg": 2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 64,
@@ -2130,7 +3100,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 91
+    "bestPartyDishId": 91,
+    "search": "cuttlefish 50-130m fish day",
+    "sort": {
+      "name": "cuttlefish",
+      "sell": 6,
+      "kg": 4,
+      "sellPerKg": 1.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 65,
@@ -2151,7 +3131,17 @@
     "buyOtto": null,
     "cost": 45,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "devil scorpionfish 50-130m fish night",
+    "sort": {
+      "name": "devil scorpionfish",
+      "sell": 45,
+      "kg": 3,
+      "sellPerKg": 15,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 67,
@@ -2172,7 +3162,17 @@
     "buyOtto": null,
     "cost": 50,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "drepanaspis meat hydrothermal vents fish day drone",
+    "sort": {
+      "name": "drepanaspis meat",
+      "sell": 50,
+      "kg": 8.5,
+      "sellPerKg": 5.882352941176471,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 68,
@@ -2193,7 +3193,17 @@
     "buyOtto": null,
     "cost": 38,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "dumbo octopus glacial passage fish day",
+    "sort": {
+      "name": "dumbo octopus",
+      "sell": 38,
+      "kg": 4,
+      "sellPerKg": 9.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 69,
@@ -2214,7 +3224,17 @@
     "buyOtto": null,
     "cost": 70,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "dunkleosteus meat hydrothermal vents fish day drone",
+    "sort": {
+      "name": "dunkleosteus meat",
+      "sell": 70,
+      "kg": 19.5,
+      "sellPerKg": 3.58974358974359,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 70,
@@ -2235,7 +3255,17 @@
     "buyOtto": null,
     "cost": 10,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "dusky grouper 50-130m fish day",
+    "sort": {
+      "name": "dusky grouper",
+      "sell": 10,
+      "kg": 9,
+      "sellPerKg": 1.1111111111111112,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 74,
@@ -2256,7 +3286,17 @@
     "buyOtto": null,
     "cost": 3,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "emperor angelfish 0-50m fish day",
+    "sort": {
+      "name": "emperor angelfish",
+      "sell": 3,
+      "kg": 0.4,
+      "sellPerKg": 7.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 78,
@@ -2279,7 +3319,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 56
+    "bestPartyDishId": 56,
+    "search": "falcatus hydrothermal vents fish day",
+    "sort": {
+      "name": "falcatus",
+      "sell": 43,
+      "kg": 6,
+      "sellPerKg": 7.166666666666667,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 81,
@@ -2300,7 +3350,17 @@
     "buyOtto": null,
     "cost": 15,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "fangtooth 130-250m fish day",
+    "sort": {
+      "name": "fangtooth",
+      "sell": 15,
+      "kg": 3,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 82,
@@ -2321,7 +3381,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "flame angelfish 0-50m fish day",
+    "sort": {
+      "name": "flame angelfish",
+      "sell": 2,
+      "kg": 0.2,
+      "sellPerKg": 10,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 83,
@@ -2344,7 +3414,17 @@
     "usedForParties": [
       1
     ],
-    "bestPartyDishId": 26
+    "bestPartyDishId": 26,
+    "search": "fried egg jellyfish 0-50m fish day",
+    "sort": {
+      "name": "fried egg jellyfish",
+      "sell": 5,
+      "kg": 1,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 84,
@@ -2367,7 +3447,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 71
+    "bestPartyDishId": 71,
+    "search": "frilled shark meat 130-250m fish day drone",
+    "sort": {
+      "name": "frilled shark meat",
+      "sell": 28,
+      "kg": 8.5,
+      "sellPerKg": 3.2941176470588234,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 87,
@@ -2388,7 +3478,17 @@
     "buyOtto": null,
     "cost": 28,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "gelatinous snailfish glacial area fish day",
+    "sort": {
+      "name": "gelatinous snailfish",
+      "sell": 28,
+      "kg": 2,
+      "sellPerKg": 14,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 89,
@@ -2411,7 +3511,17 @@
     "usedForParties": [
       5
     ],
-    "bestPartyDishId": 8
+    "bestPartyDishId": 8,
+    "search": "giant trevally meat 50-130m fish day drone",
+    "sort": {
+      "name": "giant trevally meat",
+      "sell": 10,
+      "kg": 5,
+      "sellPerKg": 2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 92,
@@ -2432,7 +3542,17 @@
     "buyOtto": null,
     "cost": 45,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "golden king crab glacial area fish day",
+    "sort": {
+      "name": "golden king crab",
+      "sell": 45,
+      "kg": 8,
+      "sellPerKg": 5.625,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 94,
@@ -2453,7 +3573,17 @@
     "buyOtto": null,
     "cost": 6,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "great barracuda 50-130m fish day night",
+    "sort": {
+      "name": "great barracuda",
+      "sell": 6,
+      "kg": 7,
+      "sellPerKg": 0.8571428571428571,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 95,
@@ -2476,7 +3606,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 12
+    "bestPartyDishId": 12,
+    "search": "green humphead parrotfish 0-50m fish day drone",
+    "sort": {
+      "name": "green humphead parrotfish",
+      "sell": 5,
+      "kg": 1.8,
+      "sellPerKg": 2.7777777777777777,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 97,
@@ -2499,7 +3639,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 60
+    "bestPartyDishId": 60,
+    "search": "greenland shark meat glacial area fish day drone",
+    "sort": {
+      "name": "greenland shark meat",
+      "sell": 62,
+      "kg": 20,
+      "sellPerKg": 3.1,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 98,
@@ -2520,7 +3670,17 @@
     "buyOtto": null,
     "cost": 6,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "grey triggerfish 50-130m fish day",
+    "sort": {
+      "name": "grey triggerfish",
+      "sell": 6,
+      "kg": 3.5,
+      "sellPerKg": 1.7142857142857142,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 101,
@@ -2541,7 +3701,17 @@
     "buyOtto": null,
     "cost": 37,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "haddock glacial area fish day",
+    "sort": {
+      "name": "haddock",
+      "sell": 37,
+      "kg": 6,
+      "sellPerKg": 6.166666666666667,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 102,
@@ -2564,7 +3734,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 68
+    "bestPartyDishId": 68,
+    "search": "hammerhead meat 50-130m fish day drone",
+    "sort": {
+      "name": "hammerhead meat",
+      "sell": 47,
+      "kg": 13,
+      "sellPerKg": 3.6153846153846154,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 103,
@@ -2585,7 +3765,17 @@
     "buyOtto": null,
     "cost": 6,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "harlequin hind 50-130m fish day",
+    "sort": {
+      "name": "harlequin hind",
+      "sell": 6,
+      "kg": 1.1,
+      "sellPerKg": 5.454545454545454,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 107,
@@ -2608,7 +3798,17 @@
     "usedForParties": [
       7
     ],
-    "bestPartyDishId": 80
+    "bestPartyDishId": 80,
+    "search": "humboldt squid meat 50-130m fish night drone",
+    "sort": {
+      "name": "humboldt squid meat",
+      "sell": 48,
+      "kg": 7.5,
+      "sellPerKg": 6.4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 109,
@@ -2631,7 +3831,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 13
+    "bestPartyDishId": 13,
+    "search": "ice fish glacial area fish day",
+    "sort": {
+      "name": "ice fish",
+      "sell": 32,
+      "kg": 5.5,
+      "sellPerKg": 5.818181818181818,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 115,
@@ -2652,7 +3862,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "lagoon triggerfish 0-50m fish day",
+    "sort": {
+      "name": "lagoon triggerfish",
+      "sell": 2,
+      "kg": 0.7,
+      "sellPerKg": 2.857142857142857,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 116,
@@ -2673,7 +3893,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "long-snouted seahorse 0-50m fish day",
+    "sort": {
+      "name": "long-snouted seahorse",
+      "sell": 2,
+      "kg": 0.5,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 117,
@@ -2694,7 +3924,17 @@
     "buyOtto": null,
     "cost": 3,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "longfin batfish 0-50m fish day",
+    "sort": {
+      "name": "longfin batfish",
+      "sell": 3,
+      "kg": 0.8,
+      "sellPerKg": 3.75,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 118,
@@ -2717,7 +3957,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 61
+    "bestPartyDishId": 61,
+    "search": "longnose sawshark meat 50-130m fish day night drone",
+    "sort": {
+      "name": "longnose sawshark meat",
+      "sell": 12,
+      "kg": 6.5,
+      "sellPerKg": 1.8461538461538463,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 119,
@@ -2738,7 +3988,17 @@
     "buyOtto": null,
     "cost": 26,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "longspine porcupinefish 0-50m fish night",
+    "sort": {
+      "name": "longspine porcupinefish",
+      "sell": 26,
+      "kg": 3.5,
+      "sellPerKg": 7.428571428571429,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 120,
@@ -2759,7 +4019,17 @@
     "buyOtto": null,
     "cost": 3,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "longspine squirrelfish 0-50m fish night",
+    "sort": {
+      "name": "longspine squirrelfish",
+      "sell": 3,
+      "kg": 0.4,
+      "sellPerKg": 7.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 121,
@@ -2780,7 +4050,17 @@
     "buyOtto": null,
     "cost": 40,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "lumpfish hydrothermal vents fish day",
+    "sort": {
+      "name": "lumpfish",
+      "sell": 40,
+      "kg": 5,
+      "sellPerKg": 8,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 124,
@@ -2801,7 +4081,17 @@
     "buyOtto": null,
     "cost": 5,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "mackerel scad 50-130m fish day",
+    "sort": {
+      "name": "mackerel scad",
+      "sell": 5,
+      "kg": 0.8,
+      "sellPerKg": 6.25,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 125,
@@ -2824,7 +4114,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 67
+    "bestPartyDishId": 67,
+    "search": "mako meat 0-50m fish day drone",
+    "sort": {
+      "name": "mako meat",
+      "sell": 43,
+      "kg": 9,
+      "sellPerKg": 4.777777777777778,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 129,
@@ -2845,7 +4145,17 @@
     "buyOtto": null,
     "cost": 30,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "marbled electric ray meat 0-50m fish day drone",
+    "sort": {
+      "name": "marbled electric ray meat",
+      "sell": 30,
+      "kg": 3.5,
+      "sellPerKg": 8.571428571428571,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 130,
@@ -2868,7 +4178,17 @@
     "usedForParties": [
       3
     ],
-    "bestPartyDishId": 47
+    "bestPartyDishId": 47,
+    "search": "marlin meat 0-50m fish day drone",
+    "sort": {
+      "name": "marlin meat",
+      "sell": 45,
+      "kg": 7.5,
+      "sellPerKg": 6,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 132,
@@ -2889,7 +4209,17 @@
     "buyOtto": null,
     "cost": 3,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "mediterranean parrotfish 0-50m fish day",
+    "sort": {
+      "name": "mediterranean parrotfish",
+      "sell": 3,
+      "kg": 2,
+      "sellPerKg": 1.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 133,
@@ -2910,7 +4240,17 @@
     "buyOtto": null,
     "cost": 46,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "megalograptus divine tree control room fish day",
+    "sort": {
+      "name": "megalograptus",
+      "sell": 46,
+      "kg": 8,
+      "sellPerKg": 5.75,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 134,
@@ -2933,7 +4273,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 71
+    "bestPartyDishId": 71,
+    "search": "megamouth shark meat 130-250m fish day drone",
+    "sort": {
+      "name": "megamouth shark meat",
+      "sell": 31,
+      "kg": 11.5,
+      "sellPerKg": 2.6956521739130435,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 136,
@@ -2957,7 +4307,17 @@
       6,
       8
     ],
-    "bestPartyDishId": 37
+    "bestPartyDishId": 37,
+    "search": "moray eel 0-50m fish night",
+    "sort": {
+      "name": "moray eel",
+      "sell": 17,
+      "kg": 9,
+      "sellPerKg": 1.8888888888888888,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 137,
@@ -2978,7 +4338,17 @@
     "buyOtto": null,
     "cost": 10,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "narrow-barred spanish mackerel 50-130m fish day",
+    "sort": {
+      "name": "narrow-barred spanish mackerel",
+      "sell": 10,
+      "kg": 9,
+      "sellPerKg": 1.1111111111111112,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 138,
@@ -2999,7 +4369,17 @@
     "buyOtto": null,
     "cost": 46,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "narwhal meat glacial area fish day drone",
+    "sort": {
+      "name": "narwhal meat",
+      "sell": 46,
+      "kg": 9.5,
+      "sellPerKg": 4.842105263157895,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 142,
@@ -3020,7 +4400,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "orbicular batfish 0-50m fish day",
+    "sort": {
+      "name": "orbicular batfish",
+      "sell": 2,
+      "kg": 0.3,
+      "sellPerKg": 6.666666666666667,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 143,
@@ -3043,7 +4433,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 16
+    "bestPartyDishId": 16,
+    "search": "ornate wrasse 0-50m fish day",
+    "sort": {
+      "name": "ornate wrasse",
+      "sell": 2,
+      "kg": 0.5,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 144,
@@ -3064,7 +4464,17 @@
     "buyOtto": null,
     "cost": 22,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "pacific fanfish 130-250m fish day",
+    "sort": {
+      "name": "pacific fanfish",
+      "sell": 22,
+      "kg": 5,
+      "sellPerKg": 4.4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 145,
@@ -3085,7 +4495,17 @@
     "buyOtto": null,
     "cost": 6,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "painted comber 50-130m fish day",
+    "sort": {
+      "name": "painted comber",
+      "sell": 6,
+      "kg": 0.4,
+      "sellPerKg": 15,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 147,
@@ -3106,7 +4526,17 @@
     "buyOtto": null,
     "cost": 36,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "peacock squid glacial passage fish day",
+    "sort": {
+      "name": "peacock squid",
+      "sell": 36,
+      "kg": 3.5,
+      "sellPerKg": 10.285714285714286,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 148,
@@ -3127,7 +4557,17 @@
     "buyOtto": null,
     "cost": 60,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "pelican eel glacial passage fish day",
+    "sort": {
+      "name": "pelican eel",
+      "sell": 60,
+      "kg": 8,
+      "sellPerKg": 7.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 151,
@@ -3148,7 +4588,17 @@
     "buyOtto": null,
     "cost": 38,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "pikaia hydrothermal vents fish day",
+    "sort": {
+      "name": "pikaia",
+      "sell": 38,
+      "kg": 4.5,
+      "sellPerKg": 8.444444444444445,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 152,
@@ -3169,7 +4619,17 @@
     "buyOtto": null,
     "cost": 30,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "polar eelpout glacial area fish day",
+    "sort": {
+      "name": "polar eelpout",
+      "sell": 30,
+      "kg": 3,
+      "sellPerKg": 10,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 153,
@@ -3192,7 +4652,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 51
+    "bestPartyDishId": 51,
+    "search": "porbeagle shark meat glacial area fish day drone",
+    "sort": {
+      "name": "porbeagle shark meat",
+      "sell": 55,
+      "kg": 13.5,
+      "sellPerKg": 4.074074074074074,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 155,
@@ -3213,7 +4683,17 @@
     "buyOtto": null,
     "cost": 1,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "pyramid butterflyfish 0-50m fish day",
+    "sort": {
+      "name": "pyramid butterflyfish",
+      "sell": 1,
+      "kg": 0.4,
+      "sellPerKg": 2.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 156,
@@ -3234,7 +4714,17 @@
     "buyOtto": null,
     "cost": 40,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "qingmendous hydrothermal vents fish day",
+    "sort": {
+      "name": "qingmendous",
+      "sell": 40,
+      "kg": 6,
+      "sellPerKg": 6.666666666666667,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 159,
@@ -3257,7 +4747,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 16
+    "bestPartyDishId": 16,
+    "search": "rainbow wrasse 0-50m fish day",
+    "sort": {
+      "name": "rainbow wrasse",
+      "sell": 2,
+      "kg": 0.6,
+      "sellPerKg": 3.3333333333333335,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 160,
@@ -3280,7 +4780,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 54
+    "bestPartyDishId": 54,
+    "search": "red bream 130-250m fish day",
+    "sort": {
+      "name": "red bream",
+      "sell": 12,
+      "kg": 3,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 161,
@@ -3301,7 +4811,17 @@
     "buyOtto": null,
     "cost": 3,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "red lionfish 0-50m fish day night",
+    "sort": {
+      "name": "red lionfish",
+      "sell": 3,
+      "kg": 1.5,
+      "sellPerKg": 2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 163,
@@ -3322,7 +4842,17 @@
     "buyOtto": null,
     "cost": 3,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "redtoothed triggerfish 0-50m fish day",
+    "sort": {
+      "name": "redtoothed triggerfish",
+      "sell": 3,
+      "kg": 1,
+      "sellPerKg": 3,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 164,
@@ -3345,7 +4875,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 54
+    "bestPartyDishId": 54,
+    "search": "rhinochimaeridae meat 130-250m fish day drone",
+    "sort": {
+      "name": "rhinochimaeridae meat",
+      "sell": 30,
+      "kg": 5,
+      "sellPerKg": 6,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 166,
@@ -3368,7 +4908,17 @@
     "usedForParties": [
       3
     ],
-    "bestPartyDishId": 45
+    "bestPartyDishId": 45,
+    "search": "sailfish meat shipwreck interior fish day drone",
+    "sort": {
+      "name": "sailfish meat",
+      "sell": 65,
+      "kg": 9,
+      "sellPerKg": 7.222222222222222,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 167,
@@ -3389,7 +4939,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "salema porgy 0-50m fish day",
+    "sort": {
+      "name": "salema porgy",
+      "sell": 2,
+      "kg": 0.4,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 169,
@@ -3410,7 +4970,17 @@
     "buyOtto": null,
     "cost": 18,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "sally lightfoot crab shipwreck interior fish day",
+    "sort": {
+      "name": "sally lightfoot crab",
+      "sell": 18,
+      "kg": 4,
+      "sellPerKg": 4.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 170,
@@ -3431,7 +5001,17 @@
     "buyOtto": null,
     "cost": 20,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "salmon snailfish 130-250m fish day",
+    "sort": {
+      "name": "salmon snailfish",
+      "sell": 20,
+      "kg": 5,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 174,
@@ -3452,7 +5032,17 @@
     "buyOtto": null,
     "cost": 1,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "sea goldie 0-50m fish day",
+    "sort": {
+      "name": "sea goldie",
+      "sell": 1,
+      "kg": 0.3,
+      "sellPerKg": 3.3333333333333335,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 176,
@@ -3475,7 +5065,17 @@
     "usedForParties": [
       5
     ],
-    "bestPartyDishId": 5
+    "bestPartyDishId": 5,
+    "search": "sea toad 130-250m fish day",
+    "sort": {
+      "name": "sea toad",
+      "sell": 18,
+      "kg": 5,
+      "sellPerKg": 3.6,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 182,
@@ -3496,7 +5096,17 @@
     "buyOtto": null,
     "cost": 10,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "sheepshead meat 0-50m fish day drone",
+    "sort": {
+      "name": "sheepshead meat",
+      "sell": 10,
+      "kg": 1.8,
+      "sellPerKg": 5.555555555555555,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 183,
@@ -3517,7 +5127,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "small spotted dart 0-50m fish day",
+    "sort": {
+      "name": "small spotted dart",
+      "sell": 2,
+      "kg": 0.8,
+      "sellPerKg": 2.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 185,
@@ -3538,7 +5158,17 @@
     "buyOtto": null,
     "cost": 60,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "snub-nosed spiny eel 3rd glacial cave fish",
+    "sort": {
+      "name": "snub-nosed spiny eel",
+      "sell": 60,
+      "kg": 6.5,
+      "sellPerKg": 9.23076923076923,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 188,
@@ -3559,7 +5189,17 @@
     "buyOtto": null,
     "cost": 17,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "spear squid 50-130m fish night",
+    "sort": {
+      "name": "spear squid",
+      "sell": 17,
+      "kg": 4.6,
+      "sellPerKg": 3.695652173913044,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 189,
@@ -3583,7 +5223,17 @@
       6,
       5
     ],
-    "bestPartyDishId": 11
+    "bestPartyDishId": 11,
+    "search": "spider crab 130-250m fish day",
+    "sort": {
+      "name": "spider crab",
+      "sell": 17,
+      "kg": 7.5,
+      "sellPerKg": 2.2666666666666666,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 192,
@@ -3604,7 +5254,17 @@
     "buyOtto": null,
     "cost": 15,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "starry puffer 0-50m fish day night",
+    "sort": {
+      "name": "starry puffer",
+      "sell": 15,
+      "kg": 3,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 193,
@@ -3625,7 +5285,17 @@
     "buyOtto": null,
     "cost": 44,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "starry skate glacial area fish day drone",
+    "sort": {
+      "name": "starry skate",
+      "sell": 44,
+      "kg": 5.5,
+      "sellPerKg": 8,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 194,
@@ -3646,7 +5316,17 @@
     "buyOtto": null,
     "cost": 17,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "stingray meat 0-50m fish day drone",
+    "sort": {
+      "name": "stingray meat",
+      "sell": 17,
+      "kg": 3,
+      "sellPerKg": 5.666666666666667,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 195,
@@ -3667,7 +5347,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "striped catfish 0-50m fish day",
+    "sort": {
+      "name": "striped catfish",
+      "sell": 2,
+      "kg": 0.3,
+      "sellPerKg": 6.666666666666667,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 196,
@@ -3688,7 +5378,17 @@
     "buyOtto": null,
     "cost": 5,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "striped red mullet 50-130m fish day",
+    "sort": {
+      "name": "striped red mullet",
+      "sell": 5,
+      "kg": 0.7,
+      "sellPerKg": 7.142857142857143,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 198,
@@ -3709,7 +5409,17 @@
     "buyOtto": null,
     "cost": 23,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "threetooth puffer 130-250m fish day",
+    "sort": {
+      "name": "threetooth puffer",
+      "sell": 23,
+      "kg": 5,
+      "sellPerKg": 4.6,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 199,
@@ -3732,7 +5442,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 69
+    "bestPartyDishId": 69,
+    "search": "thresher shark meat 0-50m fish day drone",
+    "sort": {
+      "name": "thresher shark meat",
+      "sell": 53,
+      "kg": 8.5,
+      "sellPerKg": 6.235294117647059,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 200,
@@ -3755,7 +5475,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 70
+    "bestPartyDishId": 70,
+    "search": "tiger shark meat 50-130m fish day night drone",
+    "sort": {
+      "name": "tiger shark meat",
+      "sell": 17,
+      "kg": 15,
+      "sellPerKg": 1.1333333333333333,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 201,
@@ -3776,7 +5506,17 @@
     "buyOtto": null,
     "cost": 5,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "titan triggerfish 0-50m fish day night",
+    "sort": {
+      "name": "titan triggerfish",
+      "sell": 5,
+      "kg": 3.8,
+      "sellPerKg": 1.3157894736842106,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 209,
@@ -3799,7 +5539,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 55
+    "bestPartyDishId": 55,
+    "search": "vampire squid glacial passage fish day",
+    "sort": {
+      "name": "vampire squid",
+      "sell": 41,
+      "kg": 6,
+      "sellPerKg": 6.833333333333333,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 214,
@@ -3822,7 +5572,17 @@
     "usedForParties": [
       1
     ],
-    "bestPartyDishId": 25
+    "bestPartyDishId": 25,
+    "search": "white spotted jellyfish 50-130m fish day",
+    "sort": {
+      "name": "white spotted jellyfish",
+      "sell": 6,
+      "kg": 1,
+      "sellPerKg": 6,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 215,
@@ -3843,7 +5603,17 @@
     "buyOtto": null,
     "cost": 7,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "white trevally 50-130m fish day",
+    "sort": {
+      "name": "white trevally",
+      "sell": 7,
+      "kg": 6,
+      "sellPerKg": 1.1666666666666667,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 217,
@@ -3866,7 +5636,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 74
+    "bestPartyDishId": 74,
+    "search": "whitetip reefshark head 0-50m fish day night drone",
+    "sort": {
+      "name": "whitetip reefshark head",
+      "sell": 40,
+      "kg": 2.5,
+      "sellPerKg": 16,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 218,
@@ -3889,7 +5669,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 73
+    "bestPartyDishId": 73,
+    "search": "whitetip reefshark meat 0-50m fish day night drone",
+    "sort": {
+      "name": "whitetip reefshark meat",
+      "sell": 8,
+      "kg": 2.5,
+      "sellPerKg": 3.2,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 221,
@@ -3910,7 +5700,17 @@
     "buyOtto": null,
     "cost": 53,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "xenacanthus meat hydrothermal vents fish day drone",
+    "sort": {
+      "name": "xenacanthus meat",
+      "sell": 53,
+      "kg": 5.5,
+      "sellPerKg": 9.636363636363637,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 223,
@@ -3931,7 +5731,17 @@
     "buyOtto": null,
     "cost": 1,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "yellow tang 0-50m fish day",
+    "sort": {
+      "name": "yellow tang",
+      "sell": 1,
+      "kg": 0.4,
+      "sellPerKg": 2.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 224,
@@ -3952,7 +5762,17 @@
     "buyOtto": null,
     "cost": 2,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "yellowback fusilier 0-50m fish day",
+    "sort": {
+      "name": "yellowback fusilier",
+      "sell": 2,
+      "kg": 0.8,
+      "sellPerKg": 2.5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 225,
@@ -3975,7 +5795,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 92
+    "bestPartyDishId": 92,
+    "search": "yellowfin tuna akami 0-130m fish day drone",
+    "sort": {
+      "name": "yellowfin tuna akami",
+      "sell": 24,
+      "kg": 6,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 226,
@@ -3998,7 +5828,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 98
+    "bestPartyDishId": 98,
+    "search": "yellowfin tuna chutoro 0-130m fish day drone",
+    "sort": {
+      "name": "yellowfin tuna chutoro",
+      "sell": 30,
+      "kg": 6,
+      "sellPerKg": 5,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 227,
@@ -4021,7 +5861,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 94
+    "bestPartyDishId": 94,
+    "search": "yellowfin tuna ootoro 0-130m fish day drone",
+    "sort": {
+      "name": "yellowfin tuna ootoro",
+      "sell": 42,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 228,
@@ -4044,7 +5894,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 75
+    "bestPartyDishId": 75,
+    "search": "zebra shark meat 0-50m fish night drone",
+    "sort": {
+      "name": "zebra shark meat",
+      "sell": 42,
+      "kg": 10.5,
+      "sellPerKg": 4,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 158,
@@ -4065,7 +5925,17 @@
     "buyOtto": null,
     "cost": 750,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "rainbow cap jango jango",
+    "sort": {
+      "name": "rainbow cap",
+      "sell": 750,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 750,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 206,
@@ -4090,7 +5960,17 @@
       3,
       4
     ],
-    "bestPartyDishId": 44
+    "bestPartyDishId": 44,
+    "search": "truffle jango jango",
+    "sort": {
+      "name": "truffle",
+      "sell": 650,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 650,
+      "buyOtto": null,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 22,
@@ -4113,7 +5993,17 @@
     "usedForParties": [
       7
     ],
-    "bestPartyDishId": 81
+    "bestPartyDishId": 81,
+    "search": "black tiger shrimp 50-130m net day",
+    "sort": {
+      "name": "black tiger shrimp",
+      "sell": 17,
+      "kg": 0.1,
+      "sellPerKg": 170,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 47,
@@ -4134,7 +6024,17 @@
     "buyOtto": null,
     "cost": 12,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "chambered nautilus 130-250m net day",
+    "sort": {
+      "name": "chambered nautilus",
+      "sell": 12,
+      "kg": 1,
+      "sellPerKg": 12,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 50,
@@ -4155,7 +6055,17 @@
     "buyOtto": null,
     "cost": 25,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "clione 130-250m net day",
+    "sort": {
+      "name": "clione",
+      "sell": 25,
+      "kg": 0.1,
+      "sellPerKg": 250,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 177,
@@ -4176,7 +6086,17 @@
     "buyOtto": null,
     "cost": 35,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "seadragon hydrothermal vents net",
+    "sort": {
+      "name": "seadragon",
+      "sell": 35,
+      "kg": 0.5,
+      "sellPerKg": 70,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 211,
@@ -4200,7 +6120,17 @@
       5,
       7
     ],
-    "bestPartyDishId": 6
+    "bestPartyDishId": 6,
+    "search": "waptia fieldensis hydrothermal vents net day",
+    "sort": {
+      "name": "waptia fieldensis",
+      "sell": 34,
+      "kg": 0.4,
+      "sellPerKg": 85,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 213,
@@ -4223,7 +6153,17 @@
     "usedForParties": [
       7
     ],
-    "bestPartyDishId": 80
+    "bestPartyDishId": 80,
+    "search": "white shrimp 0-130m net day night",
+    "sort": {
+      "name": "white shrimp",
+      "sell": 17,
+      "kg": 0.1,
+      "sellPerKg": 170,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 216,
@@ -4246,7 +6186,17 @@
     "usedForParties": [
       7
     ],
-    "bestPartyDishId": 81
+    "bestPartyDishId": 81,
+    "search": "whiteleg shrimp 0-50m net day",
+    "sort": {
+      "name": "whiteleg shrimp",
+      "sell": 11,
+      "kg": 0.1,
+      "sellPerKg": 110,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 21,
@@ -4269,7 +6219,17 @@
     "usedForParties": [
       4
     ],
-    "bestPartyDishId": 51
+    "bestPartyDishId": 51,
+    "search": "black pepper dispatch & cooking pots procure",
+    "sort": {
+      "name": "black pepper",
+      "sell": 6,
+      "kg": 0.1,
+      "sellPerKg": 60,
+      "buyJango": 60,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 23,
@@ -4294,7 +6254,17 @@
       4,
       7
     ],
-    "bestPartyDishId": 6
+    "bestPartyDishId": 6,
+    "search": "black vinegar dispatch & cooking pots procure",
+    "sort": {
+      "name": "black vinegar",
+      "sell": 5,
+      "kg": 0.1,
+      "sellPerKg": 50,
+      "buyJango": 50,
+      "buyOtto": null,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 63,
@@ -4317,7 +6287,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 11
+    "bestPartyDishId": 11,
+    "search": "curry block dispatch & cooking pots procure",
+    "sort": {
+      "name": "curry block",
+      "sell": 6,
+      "kg": 0.1,
+      "sellPerKg": 60,
+      "buyJango": 60,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 131,
@@ -4342,7 +6322,17 @@
       2,
       4
     ],
-    "bestPartyDishId": 92
+    "bestPartyDishId": 92,
+    "search": "mayonnaise dispatch & cooking pots procure",
+    "sort": {
+      "name": "mayonnaise",
+      "sell": 7,
+      "kg": 0.1,
+      "sellPerKg": 70,
+      "buyJango": 70,
+      "buyOtto": null,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 135,
@@ -4368,7 +6358,17 @@
       3,
       7
     ],
-    "bestPartyDishId": 47
+    "bestPartyDishId": 47,
+    "search": "miso dispatch & cooking pots procure",
+    "sort": {
+      "name": "miso",
+      "sell": 8,
+      "kg": 0.1,
+      "sellPerKg": 80,
+      "buyJango": 80,
+      "buyOtto": null,
+      "usedForPartiesCount": 4
+    }
   },
   {
     "id": 140,
@@ -4396,7 +6396,17 @@
       8,
       2
     ],
-    "bestPartyDishId": 98
+    "bestPartyDishId": 98,
+    "search": "olive oil dispatch & cooking pots procure",
+    "sort": {
+      "name": "olive oil",
+      "sell": 6,
+      "kg": 0.1,
+      "sellPerKg": 60,
+      "buyJango": 60,
+      "buyOtto": null,
+      "usedForPartiesCount": 6
+    }
   },
   {
     "id": 171,
@@ -4420,7 +6430,17 @@
       1,
       4
     ],
-    "bestPartyDishId": 59
+    "bestPartyDishId": 59,
+    "search": "salt dispatch & cooking pots procure",
+    "sort": {
+      "name": "salt",
+      "sell": 8,
+      "kg": 0.1,
+      "sellPerKg": 80,
+      "buyJango": 80,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 180,
@@ -4444,7 +6464,17 @@
       2,
       4
     ],
-    "bestPartyDishId": 90
+    "bestPartyDishId": 90,
+    "search": "sesame seed dispatch & cooking pots procure",
+    "sort": {
+      "name": "sesame seed",
+      "sell": 8,
+      "kg": 0.1,
+      "sellPerKg": 80,
+      "buyJango": 80,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 187,
@@ -4469,7 +6499,17 @@
       7,
       4
     ],
-    "bestPartyDishId": 45
+    "bestPartyDishId": 45,
+    "search": "soy sauce dispatch & cooking pots procure",
+    "sort": {
+      "name": "soy sauce",
+      "sell": 6,
+      "kg": 0.1,
+      "sellPerKg": 60,
+      "buyJango": 60,
+      "buyOtto": null,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 207,
@@ -4493,7 +6533,17 @@
       6,
       8
     ],
-    "bestPartyDishId": 37
+    "bestPartyDishId": 37,
+    "search": "turmeric dispatch & cooking pots procure",
+    "sort": {
+      "name": "turmeric",
+      "sell": 5,
+      "kg": 0.1,
+      "sellPerKg": 50,
+      "buyJango": 50,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 1,
@@ -4517,7 +6567,17 @@
       1,
       7
     ],
-    "bestPartyDishId": 24
+    "bestPartyDishId": 24,
+    "search": "agar 0-50m sea plant day night fog",
+    "sort": {
+      "name": "agar",
+      "sell": 3,
+      "kg": 0.1,
+      "sellPerKg": 30,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 20,
@@ -4543,7 +6603,17 @@
       1,
       6
     ],
-    "bestPartyDishId": 6
+    "bestPartyDishId": 6,
+    "search": "black coral glacial area sea plant day",
+    "sort": {
+      "name": "black coral",
+      "sell": 8,
+      "kg": 0.1,
+      "sellPerKg": 80,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 4
+    }
   },
   {
     "id": 26,
@@ -4566,7 +6636,17 @@
     "usedForParties": [
       8
     ],
-    "bestPartyDishId": 31
+    "bestPartyDishId": 31,
+    "search": "bladderwrack glacial seaweed cave sea plant day",
+    "sort": {
+      "name": "bladderwrack",
+      "sell": 10,
+      "kg": 0.1,
+      "sellPerKg": 100,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 39,
@@ -4591,7 +6671,17 @@
       5,
       1
     ],
-    "bestPartyDishId": 56
+    "bestPartyDishId": 56,
+    "search": "buckbean glacial area sea plant day",
+    "sort": {
+      "name": "buckbean",
+      "sell": 9,
+      "kg": 0.1,
+      "sellPerKg": 90,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 108,
@@ -4614,7 +6704,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 94
+    "bestPartyDishId": 94,
+    "search": "hyalonema glacial seaweed cave sea plant day",
+    "sort": {
+      "name": "hyalonema",
+      "sell": 65,
+      "kg": 0.1,
+      "sellPerKg": 650,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 111,
@@ -4637,7 +6737,17 @@
     "usedForParties": [
       3
     ],
-    "bestPartyDishId": 45
+    "bestPartyDishId": 45,
+    "search": "kajime 0-130m sea plant day night fog",
+    "sort": {
+      "name": "kajime",
+      "sell": 7,
+      "kg": 0.1,
+      "sellPerKg": 70,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 112,
@@ -4661,7 +6771,17 @@
       4,
       8
     ],
-    "bestPartyDishId": 41
+    "bestPartyDishId": 41,
+    "search": "kelp 50-130m sea plant day night fog",
+    "sort": {
+      "name": "kelp",
+      "sell": 6,
+      "kg": 0.1,
+      "sellPerKg": 60,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 175,
@@ -4687,7 +6807,17 @@
       1,
       4
     ],
-    "bestPartyDishId": 93
+    "bestPartyDishId": 93,
+    "search": "sea grape limestone cave sea plant day night fog",
+    "sort": {
+      "name": "sea grape",
+      "sell": 6,
+      "kg": 0.1,
+      "sellPerKg": 60,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 4
+    }
   },
   {
     "id": 178,
@@ -4711,7 +6841,17 @@
       1,
       4
     ],
-    "bestPartyDishId": 56
+    "bestPartyDishId": 56,
+    "search": "seaweed 50-130m sea plant day night fog",
+    "sort": {
+      "name": "seaweed",
+      "sell": 5,
+      "kg": 0.1,
+      "sellPerKg": 50,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 186,
@@ -4735,7 +6875,17 @@
       3,
       4
     ],
-    "bestPartyDishId": 45
+    "bestPartyDishId": 45,
+    "search": "southern bull kelp glacial area sea plant day",
+    "sort": {
+      "name": "southern bull kelp",
+      "sell": 8,
+      "kg": 0.1,
+      "sellPerKg": 80,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 96,
@@ -4760,7 +6910,17 @@
       2,
       5
     ],
-    "bestPartyDishId": 91
+    "bestPartyDishId": 91,
+    "search": "green sea urchin 0-50m urchin day night fog",
+    "sort": {
+      "name": "green sea urchin",
+      "sell": 90,
+      "kg": 1,
+      "sellPerKg": 90,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 154,
@@ -4783,7 +6943,17 @@
     "usedForParties": [
       3
     ],
-    "bestPartyDishId": 49
+    "bestPartyDishId": 49,
+    "search": "purple sea urchin 0-50m urchin day night fog",
+    "sort": {
+      "name": "purple sea urchin",
+      "sell": 20,
+      "kg": 1,
+      "sellPerKg": 20,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 16,
@@ -4806,7 +6976,17 @@
     "usedForParties": [
       6
     ],
-    "bestPartyDishId": 13
+    "bestPartyDishId": 13,
+    "search": "bean vegetable farm vegetable",
+    "sort": {
+      "name": "bean",
+      "sell": 20,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 170,
+      "buyOtto": 200,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 40,
@@ -4827,7 +7007,17 @@
     "buyOtto": 185,
     "cost": 18,
     "usedForParties": [],
-    "bestPartyDishId": null
+    "bestPartyDishId": null,
+    "search": "buckwheat vegetable farm vegetable",
+    "sort": {
+      "name": "buckwheat",
+      "sell": 18,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": 185,
+      "usedForPartiesCount": 0
+    }
   },
   {
     "id": 45,
@@ -4851,7 +7041,17 @@
       6,
       5
     ],
-    "bestPartyDishId": 9
+    "bestPartyDishId": 9,
+    "search": "carrot vegetable farm vegetable",
+    "sort": {
+      "name": "carrot",
+      "sell": 25,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 106,
+      "buyOtto": 250,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 48,
@@ -4874,7 +7074,17 @@
     "usedForParties": [
       2
     ],
-    "bestPartyDishId": 98
+    "bestPartyDishId": 98,
+    "search": "cherry tomato vegetable farm vegetable",
+    "sort": {
+      "name": "cherry tomato",
+      "sell": 17,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 148,
+      "buyOtto": 175,
+      "usedForPartiesCount": 1
+    }
   },
   {
     "id": 62,
@@ -4898,7 +7108,17 @@
       5,
       7
     ],
-    "bestPartyDishId": 6
+    "bestPartyDishId": 6,
+    "search": "cucumber vegetable farm vegetable",
+    "sort": {
+      "name": "cucumber",
+      "sell": 20,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": 200,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 73,
@@ -4922,7 +7142,17 @@
       7,
       5
     ],
-    "bestPartyDishId": 79
+    "bestPartyDishId": 79,
+    "search": "eggplant vegetable farm vegetable",
+    "sort": {
+      "name": "eggplant",
+      "sell": 21,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 178,
+      "buyOtto": 210,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 85,
@@ -4947,7 +7177,17 @@
       1,
       3
     ],
-    "bestPartyDishId": 80
+    "bestPartyDishId": 80,
+    "search": "garlic vegetable farm vegetable",
+    "sort": {
+      "name": "garlic",
+      "sell": 19,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 161,
+      "buyOtto": 190,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 100,
@@ -4971,7 +7211,17 @@
       2,
       8
     ],
-    "bestPartyDishId": 93
+    "bestPartyDishId": 93,
+    "search": "habanero vegetable farm vegetable",
+    "sort": {
+      "name": "habanero",
+      "sell": 16,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 153,
+      "buyOtto": 180,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 141,
@@ -4995,7 +7245,17 @@
       6,
       5
     ],
-    "bestPartyDishId": 12
+    "bestPartyDishId": 12,
+    "search": "onion vegetable farm vegetable",
+    "sort": {
+      "name": "onion",
+      "sell": 20,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 170,
+      "buyOtto": 200,
+      "usedForPartiesCount": 2
+    }
   },
   {
     "id": 165,
@@ -5020,7 +7280,17 @@
       7,
       8
     ],
-    "bestPartyDishId": 90
+    "bestPartyDishId": 90,
+    "search": "rice vegetable farm rice",
+    "sort": {
+      "name": "rice",
+      "sell": 15,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": null,
+      "buyOtto": null,
+      "usedForPartiesCount": 3
+    }
   },
   {
     "id": 212,
@@ -5044,6 +7314,16 @@
       7,
       4
     ],
-    "bestPartyDishId": 80
+    "bestPartyDishId": 80,
+    "search": "wheat vegetable farm vegetable",
+    "sort": {
+      "name": "wheat",
+      "sell": 19,
+      "kg": null,
+      "sellPerKg": null,
+      "buyJango": 161,
+      "buyOtto": 190,
+      "usedForPartiesCount": 2
+    }
   }
 ]

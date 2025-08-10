@@ -17,7 +17,17 @@ function mkIngredient(id: Id, name = `Ing ${id}`): Ingredient {
     rank: 1,
     usedIn: [],
     bestPartyDishId: null,
-    usedForParties: []
+    usedForParties: [],
+    search: name.toLowerCase(),
+    sort: {
+      name: name.toLowerCase(),
+      sell: null,
+      kg: null,
+      sellPerKg: null,
+      buyJango: null,
+      buyOtto: null,
+      usedForPartiesCount: 0,
+    }
   };
 }
 
@@ -58,7 +68,18 @@ function mkDish(id: Id, opts: { ingredientId: Id; partyDishIds?: Id[] } = { ingr
     bestPartyName: null,
     bestPartyBonus: null,
     bestPartyPrice: null,
-    bestPartyRevenue: null
+    bestPartyRevenue: null,
+    search: `dish ${id}`,
+    sort: {
+      name: `dish ${id}`,
+      finalPrice: 20,
+      finalServings: 2,
+      baseProfitPerServing: 17.5,
+      maxProfitPerServing: 15,
+      maxProfitPerDish: 30,
+      upgradeCost: 0,
+      ingredientCount: 1,
+    }
   };
 }
 

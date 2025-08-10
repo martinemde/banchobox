@@ -7,7 +7,7 @@ export interface EntityBundle<Row> {
   facets: Record<string, Record<string, Id[]>>;
 }
 
-export interface EntityStores<Row extends { id: Id; sort: Record<string, string | number>; search?: string }> {
+export interface EntityStores<Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }> {
   bundle: Writable<EntityBundle<Row> | null>;
   query: Writable<string>;
   sortKey: Writable<string>;
@@ -16,7 +16,7 @@ export interface EntityStores<Row extends { id: Id; sort: Record<string, string 
   visible: Readable<Row[]>;
 }
 
-export function createEntityStores<Row extends { id: Id; sort: Record<string, string | number>; search?: string }>(
+export function createEntityStores<Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }>(
   initial?: Partial<{
     bundle: EntityBundle<Row> | null;
     query: string;
@@ -31,7 +31,7 @@ export function createEntityStores<Row extends { id: Id; sort: Record<string, st
   const sortDir = writable<'asc' | 'desc'>(initial?.sortDir ?? 'asc');
   const filters = writable<Record<string, Set<string>>>(initial?.filters ?? {});
 
-  function compareValues(a: string | number, b: string | number, dir: 'asc' | 'desc'): number {
+  function compareValues(a: string | number | null, b: string | number | null, dir: 'asc' | 'desc'): number {
     if (a == null && b == null) return 0;
     if (a == null) return dir === 'asc' ? -1 : 1;
     if (b == null) return dir === 'asc' ? 1 : -1;
@@ -80,8 +80,8 @@ export function createEntityStores<Row extends { id: Id; sort: Record<string, st
     // 3) Sort
     const key = $sortKey;
     rows = [...rows].sort((a, b) => {
-      const aVal = a.sort[key] as string | number;
-      const bVal = b.sort[key] as string | number;
+      const aVal = a.sort[key] as string | number | null;
+      const bVal = b.sort[key] as string | number | null;
       const cmp = compareValues(aVal, bVal, $sortDir);
       if (cmp !== 0) return cmp;
       // stable tie-breaker by id
