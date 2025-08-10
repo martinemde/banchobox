@@ -109,15 +109,14 @@ export interface Dish extends BasicDish {
   recipeCost: number;
   partyDishIds: Id[]; // References to PartyDish entities
   bestPartyDishId: Id | null; // Reference to the PartyDish with highest profit
-  maxProfitPerDish: number;
 
   // Pre-calculated values to avoid view-level calculations
   baseRevenue: number; // finalPrice * finalServings
   baseProfit: number; // baseRevenue - recipeCost
   baseProfitPerServing: number; // baseProfit / finalServings
-  maxProfitPerServing: number; // maxProfitPerDish / finalServings
+  maxProfitPerServing: number; // best profit per serving across parties
   upgradeCost: number; // sum of (unitCost * upgradeCount) for all ingredients
-  upgradeBreakEven: number; // maxProfitPerDish / upgradeCost (0 if upgradeCost is 0)
+  upgradeBreakEven: number; // ceil(best profit / upgradeCost); 0 if upgradeCost is 0
   ingredientCount: number; // total count of all ingredients
 
   // Best party information (flattened for easier access)
@@ -164,7 +163,6 @@ export type DishSortKey =
   | 'finalServings'
   | 'baseProfitPerServing'
   | 'maxProfitPerServing'
-  | 'maxProfitPerDish'
   | 'upgradeCost'
   | 'ingredientCount';
 

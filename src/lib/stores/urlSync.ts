@@ -1,5 +1,4 @@
 import { get } from 'svelte/store';
-import { goto } from '$app/navigation';
 
 import type { Readable, Writable } from 'svelte/store';
 
@@ -43,8 +42,13 @@ export function syncToUrl(namespace: string, stores: Stores) {
 
   const update = () => {
     const params = buildSearch();
-    const url = `${window.location.pathname}?${params.toString()}`;
-    goto(url, { replaceState: true, noScroll: true });
+    const search = params.toString();
+    const nextUrl = search ? `${window.location.pathname}?${search}` : window.location.pathname;
+    const currentUrl = window.location.pathname + window.location.search;
+    if (nextUrl !== currentUrl) {
+      // Update the URL without triggering SvelteKit navigation to preserve focus
+      window.history.replaceState(window.history.state, '', nextUrl);
+    }
   };
 
   // Subscribe to stores

@@ -49,8 +49,9 @@ export function enrichData(
     const dishPartyPrice = partyPrice(dish, party);
     const dishPartyRevenue = dishPartyPrice * dish.finalServings;
     const dishRecipeCost = computeDishRecipeCost(dish.id, graph);
-    const dishProfit = partyProfitPerDish(dish, party, dishRecipeCost);
-    const dishProfitPerServing = dishProfit / dish.finalServings;
+    const dishProfitRaw = partyProfitPerDish(dish, party, dishRecipeCost);
+    const dishProfit = Math.round(dishProfitRaw);
+    const dishProfitPerServing = Math.round(dishProfit / dish.finalServings);
 
     const dishName = dish.name;
     const dlc = dish.dlc ?? null;
@@ -130,11 +131,11 @@ export function enrichData(
     );
 
     const upgradeCost = ingredientLines.reduce((sum, line) => sum + line.unitCost * line.upgradeCount, 0);
-    const upgradeBreakEven = upgradeCost > 0 && bestPartyDish ? bestPartyDish.profit / upgradeCost : 0;
+    const upgradeBreakEven = upgradeCost > 0 && bestPartyDish ? Math.ceil(bestPartyDish.profit / upgradeCost) : 0;
 
     const baseRevenue = dish.finalPrice * dish.finalServings;
     const baseProfit = baseRevenue - dishRecipeCost;
-    const baseProfitPerServing = baseProfit / dish.finalServings;
+    const baseProfitPerServing = Math.round(baseProfit / dish.finalServings);
 
     const bestParty = bestPartyDish ? graph.partyById.get(bestPartyDish.partyId) : null;
     const bestPartyName = bestParty?.name ?? null;
@@ -142,7 +143,9 @@ export function enrichData(
 
     const bestPartyPrice = bestPartyDish?.partyPrice ?? null;
     const bestPartyRevenue = bestPartyDish?.partyRevenue ?? null;
-    const maxProfitPerServing = bestPartyDish ? bestPartyDish.profit / dish.finalServings : baseProfitPerServing;
+    const maxProfitPerServing = bestPartyDish
+      ? Math.round(bestPartyDish.profit / dish.finalServings)
+      : baseProfitPerServing;
 
     // Build search tokens and sort keys for client-side stores
     const ingredientNames = ingredientLines
@@ -158,7 +161,6 @@ export function enrichData(
       finalServings: dish.finalServings,
       baseProfitPerServing,
       maxProfitPerServing,
-      maxProfitPerDish: bestPartyDish?.profit ?? baseProfit,
       upgradeCost,
       ingredientCount,
     } as const;
@@ -169,7 +171,6 @@ export function enrichData(
       recipeCost: dishRecipeCost,
       partyDishIds,
       bestPartyDishId: bestPartyDish?.id ?? null,
-      maxProfitPerDish: bestPartyDish?.profit ?? baseProfit,
       baseRevenue,
       baseProfit,
       baseProfitPerServing,
@@ -252,7 +253,7 @@ export function enrichData(
     const finalIngredient: Ingredient = {
       ...enrichedIngredient,
       search,
-      sort: sort as any,
+      sort: sort as unknown as Ingredient['sort'],
     };
 
     return finalIngredient;

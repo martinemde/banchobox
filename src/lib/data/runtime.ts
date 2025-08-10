@@ -70,7 +70,7 @@ export const Data = {
 
   // Sorted views
   getDishesSortedByProfit: (limit?: number): Dish[] => {
-    const sorted = [...dishes].sort((a, b) => b.maxProfitPerDish - a.maxProfitPerDish);
+    const sorted = [...dishes].sort((a, b) => b.maxProfitPerServing - a.maxProfitPerServing);
     return limit ? sorted.slice(0, limit) : sorted;
   },
 

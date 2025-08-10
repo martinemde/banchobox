@@ -13,7 +13,6 @@
     { value: 'finalServings', label: 'Final Servings' },
     { value: 'baseProfitPerServing', label: 'Profit / Serving' },
     { value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
-    { value: 'maxProfitPerDish', label: 'Max Profit / Dish' },
     { value: 'upgradeCost', label: 'Upgrade Cost' },
     { value: 'ingredientCount', label: 'Ingredients' }
   ];
