@@ -147,20 +147,22 @@
       }
     ],
     "recipeCost": 43,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 434,
+    "partyDishIds": [
+      28
+    ],
+    "bestPartyDishId": 28,
+    "maxProfitPerDish": null,
     "baseRevenue": 477,
     "baseProfit": 434,
     "baseProfitPerServing": 434,
-    "maxProfitPerServing": 434,
+    "maxProfitPerServing": null,
     "upgradeCost": 9503,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 1192.5,
+    "bestPartyRevenue": 1192.5
   },
   {
     "id": 5,
@@ -470,9 +472,9 @@
     ],
     "recipeCost": 91,
     "partyDishIds": [
-      12
+      9
     ],
-    "bestPartyDishId": 12,
+    "bestPartyDishId": 9,
     "maxProfitPerDish": null,
     "baseRevenue": 9842,
     "baseProfit": 9751,
@@ -627,20 +629,22 @@
       }
     ],
     "recipeCost": 5,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 50,
+    "partyDishIds": [
+      17
+    ],
+    "bestPartyDishId": 17,
+    "maxProfitPerDish": null,
     "baseRevenue": 55,
     "baseProfit": 50,
     "baseProfitPerServing": 50,
-    "maxProfitPerServing": 50,
+    "maxProfitPerServing": null,
     "upgradeCost": 1105,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Jellyfish",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 110,
+    "bestPartyRevenue": 110
   },
   {
     "id": 16,
@@ -988,20 +992,22 @@
       }
     ],
     "recipeCost": 20,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 202,
+    "partyDishIds": [
+      50
+    ],
+    "bestPartyDishId": 50,
+    "maxProfitPerDish": null,
     "baseRevenue": 222,
     "baseProfit": 202,
     "baseProfitPerServing": 202,
-    "maxProfitPerServing": 202,
+    "maxProfitPerServing": null,
     "upgradeCost": 4420,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 444,
+    "bestPartyRevenue": 444
   },
   {
     "id": 24,
@@ -1179,20 +1185,22 @@
       }
     ],
     "recipeCost": 17,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 168,
+    "partyDishIds": [
+      18
+    ],
+    "bestPartyDishId": 18,
+    "maxProfitPerDish": null,
     "baseRevenue": 185,
     "baseProfit": 168,
     "baseProfitPerServing": 168,
-    "maxProfitPerServing": 168,
+    "maxProfitPerServing": null,
     "upgradeCost": 3757,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Jellyfish",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 370,
+    "bestPartyRevenue": 370
   },
   {
     "id": 28,
@@ -1218,20 +1226,22 @@
       }
     ],
     "recipeCost": 47,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 474,
+    "partyDishIds": [
+      29
+    ],
+    "bestPartyDishId": 29,
+    "maxProfitPerDish": null,
     "baseRevenue": 521,
     "baseProfit": 474,
     "baseProfitPerServing": 474,
-    "maxProfitPerServing": 474,
+    "maxProfitPerServing": null,
     "upgradeCost": 10387,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 1302.5,
+    "bestPartyRevenue": 1302.5
   },
   {
     "id": 29,
@@ -1297,9 +1307,9 @@
     ],
     "recipeCost": 27,
     "partyDishIds": [
-      60
+      87
     ],
-    "bestPartyDishId": 60,
+    "bestPartyDishId": 87,
     "maxProfitPerDish": null,
     "baseRevenue": 296,
     "baseProfit": 269,
@@ -1338,9 +1348,9 @@
     ],
     "recipeCost": 32,
     "partyDishIds": [
-      58
+      88
     ],
-    "bestPartyDishId": 58,
+    "bestPartyDishId": 88,
     "maxProfitPerDish": null,
     "baseRevenue": 351,
     "baseProfit": 319,
@@ -1379,9 +1389,9 @@
     ],
     "recipeCost": 45,
     "partyDishIds": [
-      56
+      89
     ],
-    "bestPartyDishId": 56,
+    "bestPartyDishId": 89,
     "maxProfitPerDish": null,
     "baseRevenue": 499,
     "baseProfit": 454,
@@ -1441,9 +1451,9 @@
     ],
     "recipeCost": 149,
     "partyDishIds": [
-      53
+      90
     ],
-    "bestPartyDishId": 53,
+    "bestPartyDishId": 90,
     "maxProfitPerDish": null,
     "baseRevenue": 11988,
     "baseProfit": 11839,
@@ -1581,9 +1591,9 @@
     ],
     "recipeCost": 83,
     "partyDishIds": [
-      49
+      77
     ],
-    "bestPartyDishId": 49,
+    "bestPartyDishId": 77,
     "maxProfitPerDish": null,
     "baseRevenue": 8320,
     "baseProfit": 8237,
@@ -1695,20 +1705,22 @@
       }
     ],
     "recipeCost": 32,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 646.8,
+    "partyDishIds": [
+      76
+    ],
+    "bestPartyDishId": 76,
+    "maxProfitPerDish": null,
     "baseRevenue": 6500,
     "baseProfit": 6468,
     "baseProfitPerServing": 646.8,
-    "maxProfitPerServing": 646.8,
+    "maxProfitPerServing": null,
     "upgradeCost": 0,
     "upgradeBreakEven": 0,
     "ingredientCount": 4,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shrimp",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 1300,
+    "bestPartyRevenue": 13000
   },
   {
     "id": 39,
@@ -1749,9 +1761,9 @@
     ],
     "recipeCost": 176,
     "partyDishIds": [
-      37
+      51
     ],
-    "bestPartyDishId": 37,
+    "bestPartyDishId": 51,
     "maxProfitPerDish": null,
     "baseRevenue": 10360,
     "baseProfit": 10184,
@@ -1811,9 +1823,9 @@
     ],
     "recipeCost": 231,
     "partyDishIds": [
-      29
+      45
     ],
-    "bestPartyDishId": 29,
+    "bestPartyDishId": 45,
     "maxProfitPerDish": null,
     "baseRevenue": 14148,
     "baseProfit": 13917,
@@ -1897,20 +1909,22 @@
       }
     ],
     "recipeCost": 18,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 185,
+    "partyDishIds": [
+      19
+    ],
+    "bestPartyDishId": 19,
+    "maxProfitPerDish": null,
     "baseRevenue": 203,
     "baseProfit": 185,
     "baseProfitPerServing": 185,
-    "maxProfitPerServing": 185,
+    "maxProfitPerServing": null,
     "upgradeCost": 3978,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Jellyfish",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 406,
+    "bestPartyRevenue": 406
   },
   {
     "id": 43,
@@ -1936,20 +1950,22 @@
       }
     ],
     "recipeCost": 22,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 222,
+    "partyDishIds": [
+      30
+    ],
+    "bestPartyDishId": 30,
+    "maxProfitPerDish": null,
     "baseRevenue": 244,
     "baseProfit": 222,
     "baseProfitPerServing": 222,
-    "maxProfitPerServing": 222,
+    "maxProfitPerServing": null,
     "upgradeCost": 4862,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 610,
+    "bestPartyRevenue": 610
   },
   {
     "id": 44,
@@ -2308,20 +2324,22 @@
       }
     ],
     "recipeCost": 14,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 152,
+    "partyDishIds": [
+      21
+    ],
+    "bestPartyDishId": 21,
+    "maxProfitPerDish": null,
     "baseRevenue": 166,
     "baseProfit": 152,
     "baseProfitPerServing": 152,
-    "maxProfitPerServing": 152,
+    "maxProfitPerServing": null,
     "upgradeCost": 3094,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Jellyfish",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 332,
+    "bestPartyRevenue": 332
   },
   {
     "id": 53,
@@ -2446,20 +2464,22 @@
       }
     ],
     "recipeCost": 11,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 118,
+    "partyDishIds": [
+      78
+    ],
+    "bestPartyDishId": 78,
+    "maxProfitPerDish": null,
     "baseRevenue": 129,
     "baseProfit": 118,
     "baseProfitPerServing": 118,
-    "maxProfitPerServing": 118,
+    "maxProfitPerServing": null,
     "upgradeCost": 2431,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shrimp",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 258,
+    "bestPartyRevenue": 258
   },
   {
     "id": 56,
@@ -2485,20 +2505,22 @@
       }
     ],
     "recipeCost": 25,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 252,
+    "partyDishIds": [
+      52
+    ],
+    "bestPartyDishId": 52,
+    "maxProfitPerDish": null,
     "baseRevenue": 277,
     "baseProfit": 252,
     "baseProfitPerServing": 252,
-    "maxProfitPerServing": 252,
+    "maxProfitPerServing": null,
     "upgradeCost": 5525,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 554,
+    "bestPartyRevenue": 554
   },
   {
     "id": 57,
@@ -2524,20 +2546,22 @@
       }
     ],
     "recipeCost": 22,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 218,
+    "partyDishIds": [
+      53
+    ],
+    "bestPartyDishId": 53,
+    "maxProfitPerDish": null,
     "baseRevenue": 240,
     "baseProfit": 218,
     "baseProfitPerServing": 218,
-    "maxProfitPerServing": 218,
+    "maxProfitPerServing": null,
     "upgradeCost": 4862,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 480,
+    "bestPartyRevenue": 480
   },
   {
     "id": 58,
@@ -2617,9 +2641,9 @@
     ],
     "recipeCost": 141,
     "partyDishIds": [
-      36
+      54
     ],
-    "bestPartyDishId": 36,
+    "bestPartyDishId": 54,
     "maxProfitPerDish": null,
     "baseRevenue": 13320,
     "baseProfit": 13179,
@@ -2672,9 +2696,9 @@
     ],
     "recipeCost": 144,
     "partyDishIds": [
-      25
+      31
     ],
-    "bestPartyDishId": 25,
+    "bestPartyDishId": 31,
     "maxProfitPerDish": null,
     "baseRevenue": 12321,
     "baseProfit": 12177,
@@ -2712,20 +2736,22 @@
       }
     ],
     "recipeCost": 47,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 474,
+    "partyDishIds": [
+      32
+    ],
+    "bestPartyDishId": 32,
+    "maxProfitPerDish": null,
     "baseRevenue": 521,
     "baseProfit": 474,
     "baseProfitPerServing": 474,
-    "maxProfitPerServing": 474,
+    "maxProfitPerServing": null,
     "upgradeCost": 10387,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 1302.5,
+    "bestPartyRevenue": 1302.5
   },
   {
     "id": 62,
@@ -2812,9 +2838,9 @@
     ],
     "recipeCost": 119,
     "partyDishIds": [
-      38
+      55
     ],
-    "bestPartyDishId": 38,
+    "bestPartyDishId": 55,
     "maxProfitPerDish": null,
     "baseRevenue": 10227,
     "baseProfit": 10108,
@@ -2873,20 +2899,22 @@
       }
     ],
     "recipeCost": 153,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 1458.142857142857,
+    "partyDishIds": [
+      79
+    ],
+    "bestPartyDishId": 79,
+    "maxProfitPerDish": null,
     "baseRevenue": 10360,
     "baseProfit": 10207,
     "baseProfitPerServing": 1458.142857142857,
-    "maxProfitPerServing": 1458.142857142857,
+    "maxProfitPerServing": null,
     "upgradeCost": 23180,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 10,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shrimp",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 2960,
+    "bestPartyRevenue": 20720
   },
   {
     "id": 65,
@@ -2994,9 +3022,9 @@
     ],
     "recipeCost": 71,
     "partyDishIds": [
-      6
+      1
     ],
-    "bestPartyDishId": 6,
+    "bestPartyDishId": 1,
     "maxProfitPerDish": null,
     "baseRevenue": 3462,
     "baseProfit": 3391,
@@ -3441,20 +3469,22 @@
       }
     ],
     "recipeCost": 47,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 474,
+    "partyDishIds": [
+      33
+    ],
+    "bestPartyDishId": 33,
+    "maxProfitPerDish": null,
     "baseRevenue": 521,
     "baseProfit": 474,
     "baseProfitPerServing": 474,
-    "maxProfitPerServing": 474,
+    "maxProfitPerServing": null,
     "upgradeCost": 10387,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 1302.5,
+    "bestPartyRevenue": 1302.5
   },
   {
     "id": 77,
@@ -3519,20 +3549,22 @@
       }
     ],
     "recipeCost": 23,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 232,
+    "partyDishIds": [
+      35
+    ],
+    "bestPartyDishId": 35,
+    "maxProfitPerDish": null,
     "baseRevenue": 255,
     "baseProfit": 232,
     "baseProfitPerServing": 232,
-    "maxProfitPerServing": 232,
+    "maxProfitPerServing": null,
     "upgradeCost": 5083,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 637.5,
+    "bestPartyRevenue": 637.5
   },
   {
     "id": 79,
@@ -3580,9 +3612,9 @@
     ],
     "recipeCost": 195,
     "partyDishIds": [
-      34
+      56
     ],
-    "bestPartyDishId": 34,
+    "bestPartyDishId": 56,
     "maxProfitPerDish": null,
     "baseRevenue": 10878,
     "baseProfit": 10683,
@@ -3620,20 +3652,22 @@
       }
     ],
     "recipeCost": 43,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 438,
+    "partyDishIds": [
+      57
+    ],
+    "bestPartyDishId": 57,
+    "maxProfitPerDish": null,
     "baseRevenue": 481,
     "baseProfit": 438,
     "baseProfitPerServing": 438,
-    "maxProfitPerServing": 438,
+    "maxProfitPerServing": null,
     "upgradeCost": 9503,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 962,
+    "bestPartyRevenue": 962
   },
   {
     "id": 81,
@@ -3659,20 +3693,22 @@
       }
     ],
     "recipeCost": 22,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 222,
+    "partyDishIds": [
+      36
+    ],
+    "bestPartyDishId": 36,
+    "maxProfitPerDish": null,
     "baseRevenue": 244,
     "baseProfit": 222,
     "baseProfitPerServing": 222,
-    "maxProfitPerServing": 222,
+    "maxProfitPerServing": null,
     "upgradeCost": 4862,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 610,
+    "bestPartyRevenue": 610
   },
   {
     "id": 82,
@@ -3776,20 +3812,22 @@
       }
     ],
     "recipeCost": 5,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 50,
+    "partyDishIds": [
+      23
+    ],
+    "bestPartyDishId": 23,
+    "maxProfitPerDish": null,
     "baseRevenue": 55,
     "baseProfit": 50,
     "baseProfitPerServing": 50,
-    "maxProfitPerServing": 50,
+    "maxProfitPerServing": null,
     "upgradeCost": 1105,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Jellyfish",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 110,
+    "bestPartyRevenue": 110
   },
   {
     "id": 85,
@@ -4108,20 +4146,22 @@
       }
     ],
     "recipeCost": 28,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 286,
+    "partyDishIds": [
+      58
+    ],
+    "bestPartyDishId": 58,
+    "maxProfitPerDish": null,
     "baseRevenue": 314,
     "baseProfit": 286,
     "baseProfitPerServing": 286,
-    "maxProfitPerServing": 286,
+    "maxProfitPerServing": null,
     "upgradeCost": 6188,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 628,
+    "bestPartyRevenue": 628
   },
   {
     "id": 91,
@@ -4247,9 +4287,9 @@
     ],
     "recipeCost": 20,
     "partyDishIds": [
-      42
+      59
     ],
-    "bestPartyDishId": 42,
+    "bestPartyDishId": 59,
     "maxProfitPerDish": null,
     "baseRevenue": 6000,
     "baseProfit": 5980,
@@ -4433,9 +4473,9 @@
     ],
     "recipeCost": 37,
     "partyDishIds": [
-      3
+      2
     ],
-    "bestPartyDishId": 3,
+    "bestPartyDishId": 2,
     "maxProfitPerDish": null,
     "baseRevenue": 1199,
     "baseProfit": 1162,
@@ -4488,9 +4528,9 @@
     ],
     "recipeCost": 113,
     "partyDishIds": [
-      8
+      11
     ],
-    "bestPartyDishId": 8,
+    "bestPartyDishId": 11,
     "maxProfitPerDish": null,
     "baseRevenue": 13320,
     "baseProfit": 13207,
@@ -4567,20 +4607,22 @@
       }
     ],
     "recipeCost": 62,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 626,
+    "partyDishIds": [
+      60
+    ],
+    "bestPartyDishId": 60,
+    "maxProfitPerDish": null,
     "baseRevenue": 688,
     "baseProfit": 626,
     "baseProfitPerServing": 626,
-    "maxProfitPerServing": 626,
+    "maxProfitPerServing": null,
     "upgradeCost": 13702,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 1376,
+    "bestPartyRevenue": 1376
   },
   {
     "id": 101,
@@ -4918,9 +4960,9 @@
     ],
     "recipeCost": 132,
     "partyDishIds": [
-      55
+      92
     ],
-    "bestPartyDishId": 55,
+    "bestPartyDishId": 92,
     "maxProfitPerDish": null,
     "baseRevenue": 8820,
     "baseProfit": 8688,
@@ -5019,9 +5061,9 @@
     ],
     "recipeCost": 148,
     "partyDishIds": [
-      52
+      93
     ],
-    "bestPartyDishId": 52,
+    "bestPartyDishId": 93,
     "maxProfitPerDish": null,
     "baseRevenue": 10227,
     "baseProfit": 10079,
@@ -5081,9 +5123,9 @@
     ],
     "recipeCost": 213,
     "partyDishIds": [
-      45
+      80
     ],
-    "bestPartyDishId": 45,
+    "bestPartyDishId": 80,
     "maxProfitPerDish": null,
     "baseRevenue": 15540,
     "baseProfit": 15327,
@@ -5175,9 +5217,9 @@
     ],
     "recipeCost": 70,
     "partyDishIds": [
-      13
+      12
     ],
-    "bestPartyDishId": 13,
+    "bestPartyDishId": 12,
     "maxProfitPerDish": null,
     "baseRevenue": 8322,
     "baseProfit": 8252,
@@ -5230,9 +5272,9 @@
     ],
     "recipeCost": 391,
     "partyDishIds": [
-      50
+      94
     ],
-    "bestPartyDishId": 50,
+    "bestPartyDishId": 94,
     "maxProfitPerDish": null,
     "baseRevenue": 1683,
     "baseProfit": 1292,
@@ -5285,9 +5327,9 @@
     ],
     "recipeCost": 142,
     "partyDishIds": [
-      9
+      13
     ],
-    "bestPartyDishId": 9,
+    "bestPartyDishId": 13,
     "maxProfitPerDish": null,
     "baseRevenue": 13320,
     "baseProfit": 13178,
@@ -5478,9 +5520,9 @@
     ],
     "recipeCost": 286,
     "partyDishIds": [
-      22
+      38
     ],
-    "bestPartyDishId": 22,
+    "bestPartyDishId": 38,
     "maxProfitPerDish": null,
     "baseRevenue": 9654,
     "baseProfit": 9368,
@@ -5557,20 +5599,22 @@
       }
     ],
     "recipeCost": 12,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 117,
+    "partyDishIds": [
+      61
+    ],
+    "bestPartyDishId": 61,
+    "maxProfitPerDish": null,
     "baseRevenue": 129,
     "baseProfit": 117,
     "baseProfitPerServing": 117,
-    "maxProfitPerServing": 117,
+    "maxProfitPerServing": null,
     "upgradeCost": 2652,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 258,
+    "bestPartyRevenue": 258
   },
   {
     "id": 121,
@@ -5696,9 +5740,9 @@
     ],
     "recipeCost": 21,
     "partyDishIds": [
-      39
+      62
     ],
-    "bestPartyDishId": 39,
+    "bestPartyDishId": 62,
     "maxProfitPerDish": null,
     "baseRevenue": 13500,
     "baseProfit": 13479,
@@ -5882,9 +5926,9 @@
     ],
     "recipeCost": 181,
     "partyDishIds": [
-      30
+      47
     ],
-    "bestPartyDishId": 30,
+    "bestPartyDishId": 47,
     "maxProfitPerDish": null,
     "baseRevenue": 12654,
     "baseProfit": 12473,
@@ -5923,9 +5967,9 @@
     ],
     "recipeCost": 45,
     "partyDishIds": [
-      32
+      46
     ],
-    "bestPartyDishId": 32,
+    "bestPartyDishId": 46,
     "maxProfitPerDish": null,
     "baseRevenue": 499,
     "baseProfit": 454,
@@ -6041,20 +6085,22 @@
       }
     ],
     "recipeCost": 31,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 320,
+    "partyDishIds": [
+      63
+    ],
+    "bestPartyDishId": 63,
+    "maxProfitPerDish": null,
     "baseRevenue": 351,
     "baseProfit": 320,
     "baseProfitPerServing": 320,
-    "maxProfitPerServing": 320,
+    "maxProfitPerServing": null,
     "upgradeCost": 6851,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 702,
+    "bestPartyRevenue": 702
   },
   {
     "id": 132,
@@ -6102,9 +6148,9 @@
     ],
     "recipeCost": 184,
     "partyDishIds": [
-      48
+      81
     ],
-    "bestPartyDishId": 48,
+    "bestPartyDishId": 81,
     "maxProfitPerDish": null,
     "baseRevenue": 13870,
     "baseProfit": 13686,
@@ -6210,9 +6256,9 @@
     ],
     "recipeCost": 39,
     "partyDishIds": [
-      15
+      14
     ],
-    "bestPartyDishId": 15,
+    "bestPartyDishId": 14,
     "maxProfitPerDish": null,
     "baseRevenue": 2106,
     "baseProfit": 2067,
@@ -6578,20 +6624,22 @@
       }
     ],
     "recipeCost": 25,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 252,
+    "partyDishIds": [
+      39
+    ],
+    "bestPartyDishId": 39,
+    "maxProfitPerDish": null,
     "baseRevenue": 277,
     "baseProfit": 252,
     "baseProfitPerServing": 252,
-    "maxProfitPerServing": 252,
+    "maxProfitPerServing": null,
     "upgradeCost": 5525,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 692.5,
+    "bestPartyRevenue": 692.5
   },
   {
     "id": 143,
@@ -6979,9 +7027,9 @@
     ],
     "recipeCost": 36,
     "partyDishIds": [
-      20
+      24
     ],
-    "bestPartyDishId": 20,
+    "bestPartyDishId": 24,
     "maxProfitPerDish": null,
     "baseRevenue": 7000,
     "baseProfit": 6964,
@@ -7041,9 +7089,9 @@
     ],
     "recipeCost": 71,
     "partyDishIds": [
-      5
+      4
     ],
-    "bestPartyDishId": 5,
+    "bestPartyDishId": 4,
     "maxProfitPerDish": null,
     "baseRevenue": 3507,
     "baseProfit": 3436,
@@ -7279,20 +7327,22 @@
       }
     ],
     "recipeCost": 55,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 555,
+    "partyDishIds": [
+      64
+    ],
+    "bestPartyDishId": 64,
+    "maxProfitPerDish": null,
     "baseRevenue": 610,
     "baseProfit": 555,
     "baseProfitPerServing": 555,
-    "maxProfitPerServing": 555,
+    "maxProfitPerServing": null,
     "upgradeCost": 12155,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 1220,
+    "bestPartyRevenue": 1220
   },
   {
     "id": 158,
@@ -7534,20 +7584,22 @@
       }
     ],
     "recipeCost": 17,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 168,
+    "partyDishIds": [
+      82
+    ],
+    "bestPartyDishId": 82,
+    "maxProfitPerDish": null,
     "baseRevenue": 185,
     "baseProfit": 168,
     "baseProfitPerServing": 168,
-    "maxProfitPerServing": 168,
+    "maxProfitPerServing": null,
     "upgradeCost": 3757,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shrimp",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 370,
+    "bestPartyRevenue": 370
   },
   {
     "id": 164,
@@ -7651,20 +7703,22 @@
       }
     ],
     "recipeCost": 25,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 252,
+    "partyDishIds": [
+      40
+    ],
+    "bestPartyDishId": 40,
+    "maxProfitPerDish": null,
     "baseRevenue": 277,
     "baseProfit": 252,
     "baseProfitPerServing": 252,
-    "maxProfitPerServing": 252,
+    "maxProfitPerServing": null,
     "upgradeCost": 5525,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 692.5,
+    "bestPartyRevenue": 692.5
   },
   {
     "id": 167,
@@ -7896,9 +7950,9 @@
     ],
     "recipeCost": 117,
     "partyDishIds": [
-      46
+      83
     ],
-    "bestPartyDishId": 46,
+    "bestPartyDishId": 83,
     "maxProfitPerDish": null,
     "baseRevenue": 13320,
     "baseProfit": 13203,
@@ -7951,9 +8005,9 @@
     ],
     "recipeCost": 88,
     "partyDishIds": [
-      11
+      15
     ],
-    "bestPartyDishId": 11,
+    "bestPartyDishId": 15,
     "maxProfitPerDish": null,
     "baseRevenue": 10101,
     "baseProfit": 10013,
@@ -8013,9 +8067,9 @@
     ],
     "recipeCost": 19,
     "partyDishIds": [
-      40
+      65
     ],
-    "bestPartyDishId": 40,
+    "bestPartyDishId": 65,
     "maxProfitPerDish": null,
     "baseRevenue": 7100,
     "baseProfit": 7081,
@@ -8114,9 +8168,9 @@
     ],
     "recipeCost": 65,
     "partyDishIds": [
-      31
+      48
     ],
-    "bestPartyDishId": 31,
+    "bestPartyDishId": 48,
     "maxProfitPerDish": null,
     "baseRevenue": 721,
     "baseProfit": 656,
@@ -8364,9 +8418,9 @@
     ],
     "recipeCost": 38,
     "partyDishIds": [
-      4
+      5
     ],
-    "bestPartyDishId": 4,
+    "bestPartyDishId": 5,
     "maxProfitPerDish": null,
     "baseRevenue": 1184,
     "baseProfit": 1146,
@@ -8497,9 +8551,9 @@
     ],
     "recipeCost": 20,
     "partyDishIds": [
-      19
+      25
     ],
-    "bestPartyDishId": 19,
+    "bestPartyDishId": 25,
     "maxProfitPerDish": null,
     "baseRevenue": 832,
     "baseProfit": 812,
@@ -8757,9 +8811,9 @@
     ],
     "recipeCost": 104,
     "partyDishIds": [
-      17
+      26
     ],
-    "bestPartyDishId": 17,
+    "bestPartyDishId": 26,
     "maxProfitPerDish": null,
     "baseRevenue": 8880,
     "baseProfit": 8776,
@@ -8918,10 +8972,10 @@
     ],
     "recipeCost": 171,
     "partyDishIds": [
-      1,
-      44
+      6,
+      84
     ],
-    "bestPartyDishId": 1,
+    "bestPartyDishId": 6,
     "maxProfitPerDish": null,
     "baseRevenue": 11004,
     "baseProfit": 10833,
@@ -9034,9 +9088,9 @@
     ],
     "recipeCost": 151,
     "partyDishIds": [
-      35
+      66
     ],
-    "bestPartyDishId": 35,
+    "bestPartyDishId": 66,
     "maxProfitPerDish": null,
     "baseRevenue": 13320,
     "baseProfit": 13169,
@@ -9113,20 +9167,22 @@
       }
     ],
     "recipeCost": 43,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 345,
+    "partyDishIds": [
+      67
+    ],
+    "bestPartyDishId": 67,
+    "maxProfitPerDish": null,
     "baseRevenue": 388,
     "baseProfit": 345,
     "baseProfitPerServing": 345,
-    "maxProfitPerServing": 345,
+    "maxProfitPerServing": null,
     "upgradeCost": 9503,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 776,
+    "bestPartyRevenue": 776
   },
   {
     "id": 197,
@@ -9152,20 +9208,22 @@
       }
     ],
     "recipeCost": 60,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 1124,
+    "partyDishIds": [
+      7
+    ],
+    "bestPartyDishId": 7,
+    "maxProfitPerDish": null,
     "baseRevenue": 1184,
     "baseProfit": 1124,
     "baseProfitPerServing": 1124,
-    "maxProfitPerServing": 1124,
+    "maxProfitPerServing": null,
     "upgradeCost": 8920,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 3,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Cucumber",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 2960,
+    "bestPartyRevenue": 2960
   },
   {
     "id": 198,
@@ -9336,20 +9394,22 @@
       }
     ],
     "recipeCost": 47,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 474,
+    "partyDishIds": [
+      68
+    ],
+    "bestPartyDishId": 68,
+    "maxProfitPerDish": null,
     "baseRevenue": 521,
     "baseProfit": 474,
     "baseProfitPerServing": 474,
-    "maxProfitPerServing": 474,
+    "maxProfitPerServing": null,
     "upgradeCost": 10387,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 1042,
+    "bestPartyRevenue": 1042
   },
   {
     "id": 202,
@@ -9574,9 +9634,9 @@
     ],
     "recipeCost": 77,
     "partyDishIds": [
-      47
+      85
     ],
-    "bestPartyDishId": 47,
+    "bestPartyDishId": 85,
     "maxProfitPerDish": null,
     "baseRevenue": 1406,
     "baseProfit": 1329,
@@ -9707,9 +9767,9 @@
     ],
     "recipeCost": 136,
     "partyDishIds": [
-      24
+      41
     ],
-    "bestPartyDishId": 24,
+    "bestPartyDishId": 41,
     "maxProfitPerDish": null,
     "baseRevenue": 9842,
     "baseProfit": 9706,
@@ -10073,9 +10133,9 @@
     ],
     "recipeCost": 88,
     "partyDishIds": [
-      23
+      42
     ],
-    "bestPartyDishId": 23,
+    "bestPartyDishId": 42,
     "maxProfitPerDish": null,
     "baseRevenue": 8658,
     "baseProfit": 8570,
@@ -10456,20 +10516,22 @@
       }
     ],
     "recipeCost": 53,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 535,
+    "partyDishIds": [
+      69
+    ],
+    "bestPartyDishId": 69,
+    "maxProfitPerDish": null,
     "baseRevenue": 588,
     "baseProfit": 535,
     "baseProfitPerServing": 535,
-    "maxProfitPerServing": 535,
+    "maxProfitPerServing": null,
     "upgradeCost": 11713,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 1176,
+    "bestPartyRevenue": 1176
   },
   {
     "id": 225,
@@ -10495,20 +10557,22 @@
       }
     ],
     "recipeCost": 17,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 168,
+    "partyDishIds": [
+      70
+    ],
+    "bestPartyDishId": 70,
+    "maxProfitPerDish": null,
     "baseRevenue": 185,
     "baseProfit": 168,
     "baseProfitPerServing": 168,
-    "maxProfitPerServing": 168,
+    "maxProfitPerServing": null,
     "upgradeCost": 3757,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 370,
+    "bestPartyRevenue": 370
   },
   {
     "id": 226,
@@ -10740,9 +10804,9 @@
     ],
     "recipeCost": 120,
     "partyDishIds": [
-      7
+      8
     ],
-    "bestPartyDishId": 7,
+    "bestPartyDishId": 8,
     "maxProfitPerDish": null,
     "baseRevenue": 8078,
     "baseProfit": 7958,
@@ -10840,20 +10904,22 @@
       }
     ],
     "recipeCost": 45,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 454,
+    "partyDishIds": [
+      43
+    ],
+    "bestPartyDishId": 43,
+    "maxProfitPerDish": null,
     "baseRevenue": 499,
     "baseProfit": 454,
     "baseProfitPerServing": 454,
-    "maxProfitPerServing": 454,
+    "maxProfitPerServing": null,
     "upgradeCost": 9945,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Lobster",
+    "bestPartyBonus": 2.5,
+    "bestPartyPrice": 1247.5,
+    "bestPartyRevenue": 1247.5
   },
   {
     "id": 233,
@@ -10947,9 +11013,9 @@
     ],
     "recipeCost": 744,
     "partyDishIds": [
-      21
+      44
     ],
-    "bestPartyDishId": 21,
+    "bestPartyDishId": 44,
     "maxProfitPerDish": null,
     "baseRevenue": 3432,
     "baseProfit": 2688,
@@ -11002,9 +11068,9 @@
     ],
     "recipeCost": 905,
     "partyDishIds": [
-      28
+      49
     ],
-    "bestPartyDishId": 28,
+    "bestPartyDishId": 49,
     "maxProfitPerDish": null,
     "baseRevenue": 3454,
     "baseProfit": 2549,
@@ -11057,9 +11123,9 @@
     ],
     "recipeCost": 827,
     "partyDishIds": [
-      33
+      71
     ],
-    "bestPartyDishId": 33,
+    "bestPartyDishId": 71,
     "maxProfitPerDish": null,
     "baseRevenue": 3410,
     "baseProfit": 2583,
@@ -11236,9 +11302,9 @@
     ],
     "recipeCost": 270,
     "partyDishIds": [
-      41
+      72
     ],
-    "bestPartyDishId": 41,
+    "bestPartyDishId": 72,
     "maxProfitPerDish": null,
     "baseRevenue": 6500,
     "baseProfit": 6230,
@@ -11276,20 +11342,22 @@
       }
     ],
     "recipeCost": 17,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 179,
+    "partyDishIds": [
+      86
+    ],
+    "bestPartyDishId": 86,
+    "maxProfitPerDish": null,
     "baseRevenue": 196,
     "baseProfit": 179,
     "baseProfitPerServing": 179,
-    "maxProfitPerServing": 179,
+    "maxProfitPerServing": null,
     "upgradeCost": 3757,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shrimp",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 392,
+    "bestPartyRevenue": 392
   },
   {
     "id": 242,
@@ -11315,20 +11383,22 @@
       }
     ],
     "recipeCost": 6,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 60,
+    "partyDishIds": [
+      27
+    ],
+    "bestPartyDishId": 27,
+    "maxProfitPerDish": null,
     "baseRevenue": 66,
     "baseProfit": 60,
     "baseProfitPerServing": 60,
-    "maxProfitPerServing": 60,
+    "maxProfitPerServing": null,
     "upgradeCost": 1326,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Jellyfish",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 132,
+    "bestPartyRevenue": 132
   },
   {
     "id": 243,
@@ -11446,20 +11516,22 @@
       }
     ],
     "recipeCost": 8,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 80,
+    "partyDishIds": [
+      73
+    ],
+    "bestPartyDishId": 73,
+    "maxProfitPerDish": null,
     "baseRevenue": 88,
     "baseProfit": 80,
     "baseProfitPerServing": 80,
-    "maxProfitPerServing": 80,
+    "maxProfitPerServing": null,
     "upgradeCost": 1768,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 176,
+    "bestPartyRevenue": 176
   },
   {
     "id": 246,
@@ -11493,9 +11565,9 @@
     ],
     "recipeCost": 46,
     "partyDishIds": [
-      43
+      74
     ],
-    "bestPartyDishId": 43,
+    "bestPartyDishId": 74,
     "maxProfitPerDish": null,
     "baseRevenue": 1939,
     "baseProfit": 1893,
@@ -11555,9 +11627,9 @@
     ],
     "recipeCost": 46,
     "partyDishIds": [
-      10
+      16
     ],
-    "bestPartyDishId": 10,
+    "bestPartyDishId": 16,
     "maxProfitPerDish": null,
     "baseRevenue": 8880,
     "baseProfit": 8834,
@@ -11759,9 +11831,9 @@
     ],
     "recipeCost": 24,
     "partyDishIds": [
-      61
+      95
     ],
-    "bestPartyDishId": 61,
+    "bestPartyDishId": 95,
     "maxProfitPerDish": null,
     "baseRevenue": 270,
     "baseProfit": 246,
@@ -11800,9 +11872,9 @@
     ],
     "recipeCost": 30,
     "partyDishIds": [
-      59
+      96
     ],
-    "bestPartyDishId": 59,
+    "bestPartyDishId": 96,
     "maxProfitPerDish": null,
     "baseRevenue": 333,
     "baseProfit": 303,
@@ -11841,9 +11913,9 @@
     ],
     "recipeCost": 42,
     "partyDishIds": [
-      57
+      97
     ],
-    "bestPartyDishId": 57,
+    "bestPartyDishId": 97,
     "maxProfitPerDish": null,
     "baseRevenue": 462,
     "baseProfit": 420,
@@ -11896,9 +11968,9 @@
     ],
     "recipeCost": 147,
     "partyDishIds": [
-      54
+      98
     ],
-    "bestPartyDishId": 54,
+    "bestPartyDishId": 98,
     "maxProfitPerDish": null,
     "baseRevenue": 10152,
     "baseProfit": 10005,
@@ -11975,20 +12047,22 @@
       }
     ],
     "recipeCost": 42,
-    "partyDishIds": [],
-    "bestPartyDishId": null,
-    "maxProfitPerDish": 357,
+    "partyDishIds": [
+      75
+    ],
+    "bestPartyDishId": 75,
+    "maxProfitPerDish": null,
     "baseRevenue": 399,
     "baseProfit": 357,
     "baseProfitPerServing": 357,
-    "maxProfitPerServing": 357,
+    "maxProfitPerServing": null,
     "upgradeCost": 9282,
-    "upgradeBreakEven": 0,
+    "upgradeBreakEven": null,
     "ingredientCount": 1,
-    "bestPartyName": null,
-    "bestPartyBonus": null,
-    "bestPartyPrice": null,
-    "bestPartyRevenue": null
+    "bestPartyName": "Shark",
+    "bestPartyBonus": 2,
+    "bestPartyPrice": 798,
+    "bestPartyRevenue": 798
   },
   {
     "id": 258,
@@ -13355,9 +13429,9 @@
     ],
     "recipeCost": 93,
     "partyDishIds": [
-      18
+      22
     ],
-    "bestPartyDishId": 18,
+    "bestPartyDishId": 22,
     "maxProfitPerDish": null,
     "baseRevenue": 7770,
     "baseProfit": 7677,
@@ -13410,9 +13484,9 @@
     ],
     "recipeCost": 161,
     "partyDishIds": [
-      27
+      34
     ],
-    "bestPartyDishId": 27,
+    "bestPartyDishId": 34,
     "maxProfitPerDish": null,
     "baseRevenue": 11322,
     "baseProfit": 11161,
@@ -13472,10 +13546,10 @@
     ],
     "recipeCost": 91,
     "partyDishIds": [
-      14,
-      26
+      10,
+      37
     ],
-    "bestPartyDishId": 14,
+    "bestPartyDishId": 10,
     "maxProfitPerDish": null,
     "baseRevenue": 12321,
     "baseProfit": 12230,
@@ -13761,9 +13835,9 @@
     ],
     "recipeCost": 384,
     "partyDishIds": [
-      51
+      91
     ],
-    "bestPartyDishId": 51,
+    "bestPartyDishId": 91,
     "maxProfitPerDish": null,
     "baseRevenue": 3036,
     "baseProfit": 2652,
@@ -13816,9 +13890,9 @@
     ],
     "recipeCost": 318,
     "partyDishIds": [
-      16
+      20
     ],
-    "bestPartyDishId": 16,
+    "bestPartyDishId": 20,
     "maxProfitPerDish": null,
     "baseRevenue": 3014,
     "baseProfit": 2696,
@@ -13931,9 +14005,9 @@
     ],
     "recipeCost": 328,
     "partyDishIds": [
-      2
+      3
     ],
-    "bestPartyDishId": 2,
+    "bestPartyDishId": 3,
     "maxProfitPerDish": null,
     "baseRevenue": 3080,
     "baseProfit": 2752,

@@ -7,16 +7,14 @@
 </script>
 
 <svelte:head>
-  <title>Bancho Box - Dave the Diver Complete Database</title>
+  <title>Bancho Box - A Dave the Diver Almanac</title>
   <meta name="description" content="Complete dish, ingredient and party collection from Dave the Diver" />
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8">
   <div class="text-center mb-12">
     <h1 class="text-6xl font-bold text-primary-500 mb-4">Bancho Box</h1>
-    <p class="text-xl text-on-surface-token max-w-2xl mx-auto">
-      Your complete database for dishes, ingredients, and party bonuses from Dave the Diver
-    </p>
+    <p class="text-xl text-on-surface-token max-w-2xl mx-auto">A Dave the Diver Almanac</p>
   </div>
 
   <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

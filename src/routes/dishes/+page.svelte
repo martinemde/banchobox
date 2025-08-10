@@ -108,11 +108,6 @@
 
 <div class="container">
   <section class="dishes">
-
-    <header class="text-center mb-6 md:mb-10">
-      <h1 class="h1 m-0">Dish Recipes</h1>
-    </header>
-
     <div class="controls p-2">
       <div class="search-wrapper">
         <input

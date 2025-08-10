@@ -1,9 +1,57 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { AppBar } from '@skeletonlabs/skeleton-svelte';
-  import { CookingPot, PartyPopper, Soup, ClipboardList } from '@lucide/svelte';
+  import { PartyPopper, Soup, ClipboardList, Shrimp } from '@lucide/svelte';
+  import { onMount } from 'svelte';
+
+  let isHidden = false;
+  let lastScrollY = 0;
+  let isTicking = false;
+  let appBarHeight = 64;
+  let appBarEl: HTMLElement;
+
+  function handleRafUpdate() {
+    const currentScrollY = window.scrollY || 0;
+    const deltaY = currentScrollY - lastScrollY;
+
+    const minDeltaToToggle = 4;
+    const topGuard = 32; // never hide near the very top
+
+    if (Math.abs(deltaY) > minDeltaToToggle) {
+      if (deltaY > 0 && currentScrollY > topGuard) {
+        isHidden = true; // scrolling down
+      } else {
+        isHidden = false; // scrolling up
+      }
+      lastScrollY = currentScrollY;
+    }
+
+    isTicking = false;
+  }
+
+  function onScroll() {
+    if (!isTicking) {
+      window.requestAnimationFrame(handleRafUpdate);
+      isTicking = true;
+    }
+  }
+
+  onMount(() => {
+    lastScrollY = window.scrollY || 0;
+    window.addEventListener('scroll', onScroll, { passive: true });
+    // Measure and track AppBar height so spacer matches exactly
+    const measure = () => {
+      if (appBarEl) appBarHeight = appBarEl.offsetHeight || appBarHeight;
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (appBarEl) ro.observe(appBarEl);
+    return () => window.removeEventListener('scroll', onScroll);
+  });
 </script>
 
+<div class="appbar" style={`--appbar-height: ${appBarHeight}px`}>
+<div class="appbar-inner" class:hidden={isHidden} bind:this={appBarEl}>
 <AppBar>
   {#snippet lead()}
     <h3 class="text-xl font-bold text-primary-500 no-underline">Bancho Box</h3>
@@ -28,7 +76,7 @@
         data-sveltekit-preload-data="hover"
         aria-label="Ingredients"
       >
-        <CookingPot size={22} />
+        <Shrimp size={22} />
         <span class="label hidden sm:inline">Ingredients</span>
       </a>
       <a
@@ -54,8 +102,40 @@
     </nav>
   {/snippet}
 </AppBar>
+</div>
+</div>
+<!-- Permanent spacer to keep content position stable regardless of header visibility -->
+<div class="appbar-spacer" aria-hidden="true" style={`height: ${appBarHeight}px`}></div>
 
 <style>
+  .appbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .appbar-inner {
+    transition: transform 200ms ease-in-out;
+    will-change: transform;
+  }
+
+  .appbar-inner.hidden {
+    transform: translateY(-100%);
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .appbar-inner {
+      transition: none;
+    }
+  }
+
+  .appbar-spacer {
+    height: var(--appbar-height, 64px);
+  }
+
   .nav-link {
     display: inline-flex;
     align-items: center;
