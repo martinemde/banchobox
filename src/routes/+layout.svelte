@@ -4,21 +4,21 @@
 	import type { LayoutProps } from './$types';
   import { Data } from '$lib/data/runtime.js';
   import { onMount } from 'svelte';
-  import { dishesStores } from '$lib/stores/dishes';
+  import { dishesStores, bundle as dishesBundleStore } from '$lib/stores/dishes';
   import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
-  import { partiesBundleStore, dishesByPartyStore } from '$lib/stores/parties';
+  import { bundle as partiesBundleStore, dishesByPartyStore } from '$lib/stores/parties';
 
 	let { children, data }: LayoutProps = $props();
   // Initialize Data service on the client after mount to avoid SSR undefined data
   onMount(() => {
     Data.init({
       dishes: (data.dishesBundle?.rows ?? []) as any,
-      ingredients: (data.ingredientsBundle?.rows ?? data.ingredients ?? []) as any,
-      parties: (data.partiesBundle?.rows ?? data.parties ?? []) as any,
+      ingredients: (data.ingredientsBundle?.rows ?? []) as any,
+      parties: (data.partiesBundle?.rows ?? []) as any,
       partyDishes: data.partyDishes ?? []
     });
     if (data.dishesBundle) {
-      dishesStores.bundle.set(data.dishesBundle as any);
+      dishesBundleStore.set(data.dishesBundle as any);
     }
     if (data.ingredientsBundle) {
       ingredientsBundleStore.set(data.ingredientsBundle as any);
@@ -38,11 +38,11 @@
     if (data?.dishesBundle) {
       Data.init({
         dishes: (data.dishesBundle.rows ?? []) as any,
-        ingredients: (data.ingredientsBundle?.rows ?? data.ingredients ?? []) as any,
-        parties: (data.partiesBundle?.rows ?? data.parties ?? []) as any,
+        ingredients: (data.ingredientsBundle?.rows ?? []) as any,
+        parties: (data.partiesBundle?.rows ?? []) as any,
         partyDishes: data.partyDishes ?? []
       });
-      dishesStores.bundle.set(data.dishesBundle as any);
+      dishesBundleStore.set(data.dishesBundle as any);
       if (data.ingredientsBundle) {
         ingredientsBundleStore.set(data.ingredientsBundle as any);
       }

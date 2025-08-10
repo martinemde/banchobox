@@ -39,14 +39,12 @@ export const load: (event: Parameters<LayoutLoad>[0]) => Promise<LoaderResult> =
   if (typeof window === 'undefined') return {};
   const fromData = (file: string) => `${base}/data/${file}`;
 
-  const [dishesBundle, ingredientsBundle, partiesBundle, ingredients, parties, partyDishes] = await Promise.all([
+  const [dishesBundle, ingredientsBundle, partiesBundle, partyDishes] = await Promise.all([
     fetch(fromData('dishes.v1.json')).then((r) => r.json() as Promise<DishesBundle>),
-    fetch(fromData('ingredients.bundle.json')).then((r) => r.json() as Promise<IngredientsBundle>),
-    fetch(fromData('parties.bundle.json')).then((r) => r.json() as Promise<PartiesBundle>),
-    fetch(fromData('ingredients.v1.json')).then((r) => r.json() as Promise<Ingredient[]>),
-    fetch(fromData('parties.v1.json')).then((r) => r.json() as Promise<EnrichedParty[]>),
+    fetch(fromData('ingredients.v1.json')).then((r) => r.json() as Promise<IngredientsBundle>),
+    fetch(fromData('parties.v1.json')).then((r) => r.json() as Promise<PartiesBundle>),
     fetch(fromData('party-dishes.v1.json')).then((r) => r.json() as Promise<PartyDish[]>)
   ]);
 
-  return { dishesBundle, ingredientsBundle, partiesBundle, ingredients, parties, partyDishes };
+  return { dishesBundle, ingredientsBundle, partiesBundle, partyDishes } as any;
 };

@@ -22,11 +22,13 @@ export function exportData(
   const version = 'v1';
 
   const dishesBundle = buildDishesBundle(dishes);
+  const ingredientsBundle = buildIngredientsBundle(ingredients);
+  const partiesBundle = buildPartiesBundle(parties, partyDishes);
+
+  // Overwrite v1 files with bundled forms where applicable
   writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));
-  writeFileSync(join(outputDir, `ingredients.${version}.json`), JSON.stringify(ingredients, null, 2));
-  writeFileSync(join(outputDir, `ingredients.bundle.json`), JSON.stringify(buildIngredientsBundle(ingredients), null, 2));
-  writeFileSync(join(outputDir, `parties.bundle.json`), JSON.stringify(buildPartiesBundle(parties, partyDishes), null, 2));
-  writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(parties, null, 2));
+  writeFileSync(join(outputDir, `ingredients.${version}.json`), JSON.stringify(ingredientsBundle, null, 2));
+  writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(partiesBundle, null, 2));
   writeFileSync(join(outputDir, `party-dishes.${version}.json`), JSON.stringify(partyDishes, null, 2));
 
   const totalIngredientRelationships = dishes.reduce((sum, dish) => sum + dish.ingredients.length, 0);

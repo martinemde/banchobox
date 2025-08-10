@@ -7,7 +7,7 @@ export const partiesStores = createEntityStores<EnrichedParty>({
   sortDir: 'asc',
 });
 
-export const partiesBundleStore = partiesStores.bundle;
+export const bundle = partiesStores.bundle;
 
 export function clearPartyFilters() {
   partiesStores.filters.set({});

@@ -1,220 +1,5122 @@
-[
-  {
-    "id": 1,
-    "order": 1,
-    "name": "Jellyfish",
-    "bonus": 2,
-    "partyDishIds": [
-      26,
-      22,
-      24,
-      20,
-      25,
-      19,
-      18,
-      21,
-      27,
-      17,
-      23
-    ],
-    "search": "jellyfish bonus 2x",
-    "sort": {
-      "name": "jellyfish",
+{
+  "rows": [
+    {
+      "id": 1,
+      "order": 1,
+      "name": "Jellyfish",
       "bonus": 2,
-      "dishCount": 11,
-      "order": 1
-    }
-  },
-  {
-    "id": 2,
-    "order": 2,
-    "name": "Tuna",
-    "bonus": 3.5,
-    "partyDishIds": [
-      90,
-      93,
-      98,
-      92,
-      91,
-      94,
-      89,
-      97,
-      88,
-      96,
-      87,
-      95
-    ],
-    "search": "tuna bonus 3.5x",
-    "sort": {
-      "name": "tuna",
+      "partyDishIds": [
+        26,
+        22,
+        24,
+        20,
+        25,
+        19,
+        18,
+        21,
+        27,
+        17,
+        23
+      ],
+      "search": "jellyfish bonus 2x",
+      "sort": {
+        "name": "jellyfish",
+        "bonus": 2,
+        "dishCount": 11,
+        "order": 1
+      }
+    },
+    {
+      "id": 2,
+      "order": 2,
+      "name": "Tuna",
       "bonus": 3.5,
-      "dishCount": 12,
-      "order": 2
-    }
-  },
-  {
-    "id": 3,
-    "order": 3,
-    "name": "Marlin",
-    "bonus": 2,
-    "partyDishIds": [
-      45,
-      47,
-      49,
-      48,
-      46
-    ],
-    "search": "marlin bonus 2x",
-    "sort": {
-      "name": "marlin",
+      "partyDishIds": [
+        90,
+        93,
+        98,
+        92,
+        91,
+        94,
+        89,
+        97,
+        88,
+        96,
+        87,
+        95
+      ],
+      "search": "tuna bonus 3.5x",
+      "sort": {
+        "name": "tuna",
+        "bonus": 3.5,
+        "dishCount": 12,
+        "order": 2
+      }
+    },
+    {
+      "id": 3,
+      "order": 3,
+      "name": "Marlin",
       "bonus": 2,
-      "dishCount": 5,
-      "order": 3
-    }
-  },
-  {
-    "id": 4,
-    "order": 4,
-    "name": "Shark",
-    "bonus": 2,
-    "partyDishIds": [
-      62,
-      54,
-      66,
-      56,
-      51,
-      55,
-      65,
-      72,
-      59,
-      71,
-      74,
-      60,
-      64,
-      69,
-      68,
-      57,
-      75,
-      67,
-      63,
-      58,
-      52,
-      53,
-      50,
-      70,
-      61,
-      73
-    ],
-    "search": "shark bonus 2x",
-    "sort": {
-      "name": "shark",
+      "partyDishIds": [
+        45,
+        47,
+        49,
+        48,
+        46
+      ],
+      "search": "marlin bonus 2x",
+      "sort": {
+        "name": "marlin",
+        "bonus": 2,
+        "dishCount": 5,
+        "order": 3
+      }
+    },
+    {
+      "id": 4,
+      "order": 4,
+      "name": "Shark",
       "bonus": 2,
-      "dishCount": 26,
-      "order": 4
-    }
-  },
-  {
-    "id": 5,
-    "order": 5,
-    "name": "Cucumber",
-    "bonus": 2.5,
-    "partyDishIds": [
-      6,
-      8,
-      4,
-      1,
-      3,
-      2,
-      5,
-      7
-    ],
-    "search": "cucumber bonus 2.5x",
-    "sort": {
-      "name": "cucumber",
+      "partyDishIds": [
+        62,
+        54,
+        66,
+        56,
+        51,
+        55,
+        65,
+        72,
+        59,
+        71,
+        74,
+        60,
+        64,
+        69,
+        68,
+        57,
+        75,
+        67,
+        63,
+        58,
+        52,
+        53,
+        50,
+        70,
+        61,
+        73
+      ],
+      "search": "shark bonus 2x",
+      "sort": {
+        "name": "shark",
+        "bonus": 2,
+        "dishCount": 26,
+        "order": 4
+      }
+    },
+    {
+      "id": 5,
+      "order": 5,
+      "name": "Cucumber",
       "bonus": 2.5,
-      "dishCount": 8,
-      "order": 5
-    }
-  },
-  {
-    "id": 6,
-    "order": 6,
-    "name": "Curry",
-    "bonus": 2,
-    "partyDishIds": [
-      11,
-      13,
-      10,
-      15,
-      9,
-      16,
-      12,
-      14
-    ],
-    "search": "curry bonus 2x",
-    "sort": {
-      "name": "curry",
+      "partyDishIds": [
+        6,
+        8,
+        4,
+        1,
+        3,
+        2,
+        5,
+        7
+      ],
+      "search": "cucumber bonus 2.5x",
+      "sort": {
+        "name": "cucumber",
+        "bonus": 2.5,
+        "dishCount": 8,
+        "order": 5
+      }
+    },
+    {
+      "id": 6,
+      "order": 6,
+      "name": "Curry",
       "bonus": 2,
-      "dishCount": 8,
-      "order": 6
-    }
-  },
-  {
-    "id": 7,
-    "order": 7,
-    "name": "Shrimp",
-    "bonus": 2,
-    "partyDishIds": [
-      80,
-      81,
-      83,
-      84,
-      79,
-      77,
-      76,
-      85,
-      86,
-      82,
-      78
-    ],
-    "search": "shrimp bonus 2x",
-    "sort": {
-      "name": "shrimp",
+      "partyDishIds": [
+        11,
+        13,
+        10,
+        15,
+        9,
+        16,
+        12,
+        14
+      ],
+      "search": "curry bonus 2x",
+      "sort": {
+        "name": "curry",
+        "bonus": 2,
+        "dishCount": 8,
+        "order": 6
+      }
+    },
+    {
+      "id": 7,
+      "order": 7,
+      "name": "Shrimp",
       "bonus": 2,
-      "dishCount": 11,
-      "order": 7
-    }
-  },
-  {
-    "id": 8,
-    "order": 8,
-    "name": "Lobster",
-    "bonus": 2.5,
-    "partyDishIds": [
-      37,
-      31,
-      34,
-      41,
-      38,
-      42,
-      44,
-      29,
-      32,
-      33,
-      43,
-      28,
-      39,
-      40,
-      35,
-      30,
-      36
-    ],
-    "search": "lobster bonus 2.5x",
-    "sort": {
-      "name": "lobster",
+      "partyDishIds": [
+        80,
+        81,
+        83,
+        84,
+        79,
+        77,
+        76,
+        85,
+        86,
+        82,
+        78
+      ],
+      "search": "shrimp bonus 2x",
+      "sort": {
+        "name": "shrimp",
+        "bonus": 2,
+        "dishCount": 11,
+        "order": 7
+      }
+    },
+    {
+      "id": 8,
+      "order": 8,
+      "name": "Lobster",
       "bonus": 2.5,
-      "dishCount": 17,
-      "order": 8
+      "partyDishIds": [
+        37,
+        31,
+        34,
+        41,
+        38,
+        42,
+        44,
+        29,
+        32,
+        33,
+        43,
+        28,
+        39,
+        40,
+        35,
+        30,
+        36
+      ],
+      "search": "lobster bonus 2.5x",
+      "sort": {
+        "name": "lobster",
+        "bonus": 2.5,
+        "dishCount": 17,
+        "order": 8
+      }
+    }
+  ],
+  "byId": {
+    "1": {
+      "id": 1,
+      "order": 1,
+      "name": "Jellyfish",
+      "bonus": 2,
+      "partyDishIds": [
+        26,
+        22,
+        24,
+        20,
+        25,
+        19,
+        18,
+        21,
+        27,
+        17,
+        23
+      ],
+      "search": "jellyfish bonus 2x",
+      "sort": {
+        "name": "jellyfish",
+        "bonus": 2,
+        "dishCount": 11,
+        "order": 1
+      }
+    },
+    "2": {
+      "id": 2,
+      "order": 2,
+      "name": "Tuna",
+      "bonus": 3.5,
+      "partyDishIds": [
+        90,
+        93,
+        98,
+        92,
+        91,
+        94,
+        89,
+        97,
+        88,
+        96,
+        87,
+        95
+      ],
+      "search": "tuna bonus 3.5x",
+      "sort": {
+        "name": "tuna",
+        "bonus": 3.5,
+        "dishCount": 12,
+        "order": 2
+      }
+    },
+    "3": {
+      "id": 3,
+      "order": 3,
+      "name": "Marlin",
+      "bonus": 2,
+      "partyDishIds": [
+        45,
+        47,
+        49,
+        48,
+        46
+      ],
+      "search": "marlin bonus 2x",
+      "sort": {
+        "name": "marlin",
+        "bonus": 2,
+        "dishCount": 5,
+        "order": 3
+      }
+    },
+    "4": {
+      "id": 4,
+      "order": 4,
+      "name": "Shark",
+      "bonus": 2,
+      "partyDishIds": [
+        62,
+        54,
+        66,
+        56,
+        51,
+        55,
+        65,
+        72,
+        59,
+        71,
+        74,
+        60,
+        64,
+        69,
+        68,
+        57,
+        75,
+        67,
+        63,
+        58,
+        52,
+        53,
+        50,
+        70,
+        61,
+        73
+      ],
+      "search": "shark bonus 2x",
+      "sort": {
+        "name": "shark",
+        "bonus": 2,
+        "dishCount": 26,
+        "order": 4
+      }
+    },
+    "5": {
+      "id": 5,
+      "order": 5,
+      "name": "Cucumber",
+      "bonus": 2.5,
+      "partyDishIds": [
+        6,
+        8,
+        4,
+        1,
+        3,
+        2,
+        5,
+        7
+      ],
+      "search": "cucumber bonus 2.5x",
+      "sort": {
+        "name": "cucumber",
+        "bonus": 2.5,
+        "dishCount": 8,
+        "order": 5
+      }
+    },
+    "6": {
+      "id": 6,
+      "order": 6,
+      "name": "Curry",
+      "bonus": 2,
+      "partyDishIds": [
+        11,
+        13,
+        10,
+        15,
+        9,
+        16,
+        12,
+        14
+      ],
+      "search": "curry bonus 2x",
+      "sort": {
+        "name": "curry",
+        "bonus": 2,
+        "dishCount": 8,
+        "order": 6
+      }
+    },
+    "7": {
+      "id": 7,
+      "order": 7,
+      "name": "Shrimp",
+      "bonus": 2,
+      "partyDishIds": [
+        80,
+        81,
+        83,
+        84,
+        79,
+        77,
+        76,
+        85,
+        86,
+        82,
+        78
+      ],
+      "search": "shrimp bonus 2x",
+      "sort": {
+        "name": "shrimp",
+        "bonus": 2,
+        "dishCount": 11,
+        "order": 7
+      }
+    },
+    "8": {
+      "id": 8,
+      "order": 8,
+      "name": "Lobster",
+      "bonus": 2.5,
+      "partyDishIds": [
+        37,
+        31,
+        34,
+        41,
+        38,
+        42,
+        44,
+        29,
+        32,
+        33,
+        43,
+        28,
+        39,
+        40,
+        35,
+        30,
+        36
+      ],
+      "search": "lobster bonus 2.5x",
+      "sort": {
+        "name": "lobster",
+        "bonus": 2.5,
+        "dishCount": 17,
+        "order": 8
+      }
+    }
+  },
+  "facets": {},
+  "dishesByParty": {
+    "1": {
+      "rows": [
+        {
+          "id": 26,
+          "partyId": 1,
+          "dishId": 189,
+          "partyPrice": 2960,
+          "partyRevenue": 17760,
+          "profit": 17656,
+          "profitPerServing": 2942.6666666666665,
+          "dishName": "Seasoned Jellyfish",
+          "dlc": null,
+          "unlock": "James lvl 15",
+          "recipeCost": 104,
+          "search": "seasoned jellyfish james lvl 15",
+          "sort": {
+            "dishName": "seasoned jellyfish",
+            "partyPrice": 2960,
+            "partyRevenue": 17760,
+            "profit": 17656,
+            "profitPerServing": 2942.6666666666665,
+            "recipeCost": 104
+          }
+        },
+        {
+          "id": 20,
+          "partyId": 1,
+          "dishId": 300,
+          "partyPrice": 3014,
+          "partyRevenue": 6028,
+          "profit": 5710,
+          "profitPerServing": 2855,
+          "dishName": "Cold Jellyfish & Green Sea Urchin Salad",
+          "dlc": "mxmtoon",
+          "unlock": "mxmtoon Collab",
+          "recipeCost": 318,
+          "search": "cold jellyfish & green sea urchin salad mxmtoon mxmtoon collab",
+          "sort": {
+            "dishName": "cold jellyfish & green sea urchin salad",
+            "partyPrice": 3014,
+            "partyRevenue": 6028,
+            "profit": 5710,
+            "profitPerServing": 2855,
+            "recipeCost": 318
+          }
+        },
+        {
+          "id": 22,
+          "partyId": 1,
+          "dishId": 292,
+          "partyPrice": 2590,
+          "partyRevenue": 15540,
+          "profit": 15447,
+          "profitPerServing": 2574.5,
+          "dishName": "Deep Sea Kaiju Ramen",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 93,
+          "search": "deep sea kaiju ramen godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "deep sea kaiju ramen",
+            "partyPrice": 2590,
+            "partyRevenue": 15540,
+            "profit": 15447,
+            "profitPerServing": 2574.5,
+            "recipeCost": 93
+          }
+        },
+        {
+          "id": 25,
+          "partyId": 1,
+          "dishId": 184,
+          "partyPrice": 1664,
+          "partyRevenue": 1664,
+          "profit": 1644,
+          "profitPerServing": 1644,
+          "dishName": "Seagrapes Jellyfish Sushi",
+          "dlc": null,
+          "unlock": "Vincent VIP",
+          "recipeCost": 20,
+          "search": "seagrapes jellyfish sushi vincent vip",
+          "sort": {
+            "dishName": "seagrapes jellyfish sushi",
+            "partyPrice": 1664,
+            "partyRevenue": 1664,
+            "profit": 1644,
+            "profitPerServing": 1644,
+            "recipeCost": 20
+          }
+        },
+        {
+          "id": 24,
+          "partyId": 1,
+          "dishId": 151,
+          "partyPrice": 1400,
+          "partyRevenue": 14000,
+          "profit": 13964,
+          "profitPerServing": 1396.4,
+          "dishName": "Phantom Jellyfish Jelly",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 36,
+          "search": "phantom jellyfish jelly boss",
+          "sort": {
+            "dishName": "phantom jellyfish jelly",
+            "partyPrice": 1400,
+            "partyRevenue": 14000,
+            "profit": 13964,
+            "profitPerServing": 1396.4,
+            "recipeCost": 36
+          }
+        },
+        {
+          "id": 19,
+          "partyId": 1,
+          "dishId": 42,
+          "partyPrice": 406,
+          "partyRevenue": 406,
+          "profit": 388,
+          "profitPerServing": 388,
+          "dishName": "Box Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 18,
+          "search": "box jellyfish sushi",
+          "sort": {
+            "dishName": "box jellyfish sushi",
+            "partyPrice": 406,
+            "partyRevenue": 406,
+            "profit": 388,
+            "profitPerServing": 388,
+            "recipeCost": 18
+          }
+        },
+        {
+          "id": 18,
+          "partyId": 1,
+          "dishId": 27,
+          "partyPrice": 370,
+          "partyRevenue": 370,
+          "profit": 353,
+          "profitPerServing": 353,
+          "dishName": "Blood-belly Comb Jelly Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "blood-belly comb jelly sushi",
+          "sort": {
+            "dishName": "blood-belly comb jelly sushi",
+            "partyPrice": 370,
+            "partyRevenue": 370,
+            "profit": 353,
+            "profitPerServing": 353,
+            "recipeCost": 17
+          }
+        },
+        {
+          "id": 21,
+          "partyId": 1,
+          "dishId": 52,
+          "partyPrice": 332,
+          "partyRevenue": 332,
+          "profit": 318,
+          "profitPerServing": 318,
+          "dishName": "Comb Jelly Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 14,
+          "search": "comb jelly sushi",
+          "sort": {
+            "dishName": "comb jelly sushi",
+            "partyPrice": 332,
+            "partyRevenue": 332,
+            "profit": 318,
+            "profitPerServing": 318,
+            "recipeCost": 14
+          }
+        },
+        {
+          "id": 27,
+          "partyId": 1,
+          "dishId": 242,
+          "partyPrice": 132,
+          "partyRevenue": 132,
+          "profit": 126,
+          "profitPerServing": 126,
+          "dishName": "White Spotted Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 6,
+          "search": "white spotted jellyfish sushi",
+          "sort": {
+            "dishName": "white spotted jellyfish sushi",
+            "partyPrice": 132,
+            "partyRevenue": 132,
+            "profit": 126,
+            "profitPerServing": 126,
+            "recipeCost": 6
+          }
+        },
+        {
+          "id": 17,
+          "partyId": 1,
+          "dishId": 15,
+          "partyPrice": 110,
+          "partyRevenue": 110,
+          "profit": 105,
+          "profitPerServing": 105,
+          "dishName": "Barrel Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 5,
+          "search": "barrel jellyfish sushi",
+          "sort": {
+            "dishName": "barrel jellyfish sushi",
+            "partyPrice": 110,
+            "partyRevenue": 110,
+            "profit": 105,
+            "profitPerServing": 105,
+            "recipeCost": 5
+          }
+        },
+        {
+          "id": 23,
+          "partyId": 1,
+          "dishId": 84,
+          "partyPrice": 110,
+          "partyRevenue": 110,
+          "profit": 105,
+          "profitPerServing": 105,
+          "dishName": "Fried Egg Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 5,
+          "search": "fried egg jellyfish sushi",
+          "sort": {
+            "dishName": "fried egg jellyfish sushi",
+            "partyPrice": 110,
+            "partyRevenue": 110,
+            "profit": 105,
+            "profitPerServing": 105,
+            "recipeCost": 5
+          }
+        }
+      ],
+      "byId": {
+        "17": {
+          "id": 17,
+          "partyId": 1,
+          "dishId": 15,
+          "partyPrice": 110,
+          "partyRevenue": 110,
+          "profit": 105,
+          "profitPerServing": 105,
+          "dishName": "Barrel Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 5,
+          "search": "barrel jellyfish sushi",
+          "sort": {
+            "dishName": "barrel jellyfish sushi",
+            "partyPrice": 110,
+            "partyRevenue": 110,
+            "profit": 105,
+            "profitPerServing": 105,
+            "recipeCost": 5
+          }
+        },
+        "18": {
+          "id": 18,
+          "partyId": 1,
+          "dishId": 27,
+          "partyPrice": 370,
+          "partyRevenue": 370,
+          "profit": 353,
+          "profitPerServing": 353,
+          "dishName": "Blood-belly Comb Jelly Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "blood-belly comb jelly sushi",
+          "sort": {
+            "dishName": "blood-belly comb jelly sushi",
+            "partyPrice": 370,
+            "partyRevenue": 370,
+            "profit": 353,
+            "profitPerServing": 353,
+            "recipeCost": 17
+          }
+        },
+        "19": {
+          "id": 19,
+          "partyId": 1,
+          "dishId": 42,
+          "partyPrice": 406,
+          "partyRevenue": 406,
+          "profit": 388,
+          "profitPerServing": 388,
+          "dishName": "Box Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 18,
+          "search": "box jellyfish sushi",
+          "sort": {
+            "dishName": "box jellyfish sushi",
+            "partyPrice": 406,
+            "partyRevenue": 406,
+            "profit": 388,
+            "profitPerServing": 388,
+            "recipeCost": 18
+          }
+        },
+        "20": {
+          "id": 20,
+          "partyId": 1,
+          "dishId": 300,
+          "partyPrice": 3014,
+          "partyRevenue": 6028,
+          "profit": 5710,
+          "profitPerServing": 2855,
+          "dishName": "Cold Jellyfish & Green Sea Urchin Salad",
+          "dlc": "mxmtoon",
+          "unlock": "mxmtoon Collab",
+          "recipeCost": 318,
+          "search": "cold jellyfish & green sea urchin salad mxmtoon mxmtoon collab",
+          "sort": {
+            "dishName": "cold jellyfish & green sea urchin salad",
+            "partyPrice": 3014,
+            "partyRevenue": 6028,
+            "profit": 5710,
+            "profitPerServing": 2855,
+            "recipeCost": 318
+          }
+        },
+        "21": {
+          "id": 21,
+          "partyId": 1,
+          "dishId": 52,
+          "partyPrice": 332,
+          "partyRevenue": 332,
+          "profit": 318,
+          "profitPerServing": 318,
+          "dishName": "Comb Jelly Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 14,
+          "search": "comb jelly sushi",
+          "sort": {
+            "dishName": "comb jelly sushi",
+            "partyPrice": 332,
+            "partyRevenue": 332,
+            "profit": 318,
+            "profitPerServing": 318,
+            "recipeCost": 14
+          }
+        },
+        "22": {
+          "id": 22,
+          "partyId": 1,
+          "dishId": 292,
+          "partyPrice": 2590,
+          "partyRevenue": 15540,
+          "profit": 15447,
+          "profitPerServing": 2574.5,
+          "dishName": "Deep Sea Kaiju Ramen",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 93,
+          "search": "deep sea kaiju ramen godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "deep sea kaiju ramen",
+            "partyPrice": 2590,
+            "partyRevenue": 15540,
+            "profit": 15447,
+            "profitPerServing": 2574.5,
+            "recipeCost": 93
+          }
+        },
+        "23": {
+          "id": 23,
+          "partyId": 1,
+          "dishId": 84,
+          "partyPrice": 110,
+          "partyRevenue": 110,
+          "profit": 105,
+          "profitPerServing": 105,
+          "dishName": "Fried Egg Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 5,
+          "search": "fried egg jellyfish sushi",
+          "sort": {
+            "dishName": "fried egg jellyfish sushi",
+            "partyPrice": 110,
+            "partyRevenue": 110,
+            "profit": 105,
+            "profitPerServing": 105,
+            "recipeCost": 5
+          }
+        },
+        "24": {
+          "id": 24,
+          "partyId": 1,
+          "dishId": 151,
+          "partyPrice": 1400,
+          "partyRevenue": 14000,
+          "profit": 13964,
+          "profitPerServing": 1396.4,
+          "dishName": "Phantom Jellyfish Jelly",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 36,
+          "search": "phantom jellyfish jelly boss",
+          "sort": {
+            "dishName": "phantom jellyfish jelly",
+            "partyPrice": 1400,
+            "partyRevenue": 14000,
+            "profit": 13964,
+            "profitPerServing": 1396.4,
+            "recipeCost": 36
+          }
+        },
+        "25": {
+          "id": 25,
+          "partyId": 1,
+          "dishId": 184,
+          "partyPrice": 1664,
+          "partyRevenue": 1664,
+          "profit": 1644,
+          "profitPerServing": 1644,
+          "dishName": "Seagrapes Jellyfish Sushi",
+          "dlc": null,
+          "unlock": "Vincent VIP",
+          "recipeCost": 20,
+          "search": "seagrapes jellyfish sushi vincent vip",
+          "sort": {
+            "dishName": "seagrapes jellyfish sushi",
+            "partyPrice": 1664,
+            "partyRevenue": 1664,
+            "profit": 1644,
+            "profitPerServing": 1644,
+            "recipeCost": 20
+          }
+        },
+        "26": {
+          "id": 26,
+          "partyId": 1,
+          "dishId": 189,
+          "partyPrice": 2960,
+          "partyRevenue": 17760,
+          "profit": 17656,
+          "profitPerServing": 2942.6666666666665,
+          "dishName": "Seasoned Jellyfish",
+          "dlc": null,
+          "unlock": "James lvl 15",
+          "recipeCost": 104,
+          "search": "seasoned jellyfish james lvl 15",
+          "sort": {
+            "dishName": "seasoned jellyfish",
+            "partyPrice": 2960,
+            "partyRevenue": 17760,
+            "profit": 17656,
+            "profitPerServing": 2942.6666666666665,
+            "recipeCost": 104
+          }
+        },
+        "27": {
+          "id": 27,
+          "partyId": 1,
+          "dishId": 242,
+          "partyPrice": 132,
+          "partyRevenue": 132,
+          "profit": 126,
+          "profitPerServing": 126,
+          "dishName": "White Spotted Jellyfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 6,
+          "search": "white spotted jellyfish sushi",
+          "sort": {
+            "dishName": "white spotted jellyfish sushi",
+            "partyPrice": 132,
+            "partyRevenue": 132,
+            "profit": 126,
+            "profitPerServing": 126,
+            "recipeCost": 6
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            26,
+            25,
+            24,
+            19,
+            18,
+            21,
+            27,
+            17,
+            23
+          ],
+          "mxmtoon": [
+            20
+          ],
+          "Godzilla DLC": [
+            22
+          ]
+        },
+        "unlock": {
+          "James lvl 15": [
+            26
+          ],
+          "mxmtoon Collab": [
+            20
+          ],
+          "Godzilla DLC": [
+            22
+          ],
+          "Vincent VIP": [
+            25
+          ],
+          "Boss": [
+            24
+          ]
+        }
+      }
+    },
+    "2": {
+      "rows": [
+        {
+          "id": 94,
+          "partyId": 2,
+          "dishId": 113,
+          "partyPrice": 5890.5,
+          "partyRevenue": 5890.5,
+          "profit": 5499.5,
+          "profitPerServing": 5499.5,
+          "dishName": "Hyalonema Tuna Sashimi",
+          "dlc": null,
+          "unlock": "Glacial Seaweed Cave",
+          "recipeCost": 391,
+          "search": "hyalonema tuna sashimi glacial seaweed cave",
+          "sort": {
+            "dishName": "hyalonema tuna sashimi",
+            "partyPrice": 5890.5,
+            "partyRevenue": 5890.5,
+            "profit": 5499.5,
+            "profitPerServing": 5499.5,
+            "recipeCost": 391
+          }
+        },
+        {
+          "id": 91,
+          "partyId": 2,
+          "dishId": 299,
+          "partyPrice": 5313,
+          "partyRevenue": 10626,
+          "profit": 10242,
+          "profitPerServing": 5121,
+          "dishName": "Chirashi Sushi",
+          "dlc": "mxmtoon",
+          "unlock": "mxmtoon Collab",
+          "recipeCost": 384,
+          "search": "chirashi sushi mxmtoon mxmtoon collab",
+          "sort": {
+            "dishName": "chirashi sushi",
+            "partyPrice": 5313,
+            "partyRevenue": 10626,
+            "profit": 10242,
+            "profitPerServing": 5121,
+            "recipeCost": 384
+          }
+        },
+        {
+          "id": 93,
+          "partyId": 2,
+          "dishId": 109,
+          "partyPrice": 5113.5,
+          "partyRevenue": 35794.5,
+          "profit": 35646.5,
+          "profitPerServing": 5092.357142857143,
+          "dishName": "Hot Pepper Tuna",
+          "dlc": null,
+          "unlock": "Jango VIP",
+          "recipeCost": 148,
+          "search": "hot pepper tuna jango vip",
+          "sort": {
+            "dishName": "hot pepper tuna",
+            "partyPrice": 5113.5,
+            "partyRevenue": 35794.5,
+            "profit": 35646.5,
+            "profitPerServing": 5092.357142857143,
+            "recipeCost": 148
+          }
+        },
+        {
+          "id": 90,
+          "partyId": 2,
+          "dishId": 33,
+          "partyPrice": 4662,
+          "partyRevenue": 41958,
+          "profit": 41809,
+          "profitPerServing": 4645.444444444444,
+          "dishName": "Bluefin Tuna Rice Bowl",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 149,
+          "search": "bluefin tuna rice bowl tuna party",
+          "sort": {
+            "dishName": "bluefin tuna rice bowl",
+            "partyPrice": 4662,
+            "partyRevenue": 41958,
+            "profit": 41809,
+            "profitPerServing": 4645.444444444444,
+            "recipeCost": 149
+          }
+        },
+        {
+          "id": 98,
+          "partyId": 2,
+          "dishId": 255,
+          "partyPrice": 3948,
+          "partyRevenue": 35532,
+          "profit": 35385,
+          "profitPerServing": 3931.6666666666665,
+          "dishName": "Yellowfin Tuna Steak",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 147,
+          "search": "yellowfin tuna steak tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna steak",
+            "partyPrice": 3948,
+            "partyRevenue": 35532,
+            "profit": 35385,
+            "profitPerServing": 3931.6666666666665,
+            "recipeCost": 147
+          }
+        },
+        {
+          "id": 92,
+          "partyId": 2,
+          "dishId": 107,
+          "partyPrice": 3430,
+          "partyRevenue": 30870,
+          "profit": 30738,
+          "profitPerServing": 3415.3333333333335,
+          "dishName": "Hawaiian Poke",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 132,
+          "search": "hawaiian poke tuna party",
+          "sort": {
+            "dishName": "hawaiian poke",
+            "partyPrice": 3430,
+            "partyRevenue": 30870,
+            "profit": 30738,
+            "profitPerServing": 3415.3333333333335,
+            "recipeCost": 132
+          }
+        },
+        {
+          "id": 89,
+          "partyId": 2,
+          "dishId": 32,
+          "partyPrice": 1746.5,
+          "partyRevenue": 1746.5,
+          "profit": 1701.5,
+          "profitPerServing": 1701.5,
+          "dishName": "Bluefin Tuna Ootoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 45,
+          "search": "bluefin tuna ootoro sushi tuna party",
+          "sort": {
+            "dishName": "bluefin tuna ootoro sushi",
+            "partyPrice": 1746.5,
+            "partyRevenue": 1746.5,
+            "profit": 1701.5,
+            "profitPerServing": 1701.5,
+            "recipeCost": 45
+          }
+        },
+        {
+          "id": 97,
+          "partyId": 2,
+          "dishId": 254,
+          "partyPrice": 1617,
+          "partyRevenue": 1617,
+          "profit": 1575,
+          "profitPerServing": 1575,
+          "dishName": "Yellowfin Tuna Ootoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 42,
+          "search": "yellowfin tuna ootoro sushi tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna ootoro sushi",
+            "partyPrice": 1617,
+            "partyRevenue": 1617,
+            "profit": 1575,
+            "profitPerServing": 1575,
+            "recipeCost": 42
+          }
+        },
+        {
+          "id": 88,
+          "partyId": 2,
+          "dishId": 31,
+          "partyPrice": 1228.5,
+          "partyRevenue": 1228.5,
+          "profit": 1196.5,
+          "profitPerServing": 1196.5,
+          "dishName": "Bluefin Tuna Chutoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 32,
+          "search": "bluefin tuna chutoro sushi tuna party",
+          "sort": {
+            "dishName": "bluefin tuna chutoro sushi",
+            "partyPrice": 1228.5,
+            "partyRevenue": 1228.5,
+            "profit": 1196.5,
+            "profitPerServing": 1196.5,
+            "recipeCost": 32
+          }
+        },
+        {
+          "id": 96,
+          "partyId": 2,
+          "dishId": 253,
+          "partyPrice": 1165.5,
+          "partyRevenue": 1165.5,
+          "profit": 1135.5,
+          "profitPerServing": 1135.5,
+          "dishName": "Yellowfin Tuna Chutoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 30,
+          "search": "yellowfin tuna chutoro sushi tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna chutoro sushi",
+            "partyPrice": 1165.5,
+            "partyRevenue": 1165.5,
+            "profit": 1135.5,
+            "profitPerServing": 1135.5,
+            "recipeCost": 30
+          }
+        },
+        {
+          "id": 87,
+          "partyId": 2,
+          "dishId": 30,
+          "partyPrice": 1036,
+          "partyRevenue": 1036,
+          "profit": 1009,
+          "profitPerServing": 1009,
+          "dishName": "Bluefin Tuna Akami Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 27,
+          "search": "bluefin tuna akami sushi tuna party",
+          "sort": {
+            "dishName": "bluefin tuna akami sushi",
+            "partyPrice": 1036,
+            "partyRevenue": 1036,
+            "profit": 1009,
+            "profitPerServing": 1009,
+            "recipeCost": 27
+          }
+        },
+        {
+          "id": 95,
+          "partyId": 2,
+          "dishId": 252,
+          "partyPrice": 945,
+          "partyRevenue": 945,
+          "profit": 921,
+          "profitPerServing": 921,
+          "dishName": "Yellowfin Tuna Akami Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 24,
+          "search": "yellowfin tuna akami sushi tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna akami sushi",
+            "partyPrice": 945,
+            "partyRevenue": 945,
+            "profit": 921,
+            "profitPerServing": 921,
+            "recipeCost": 24
+          }
+        }
+      ],
+      "byId": {
+        "87": {
+          "id": 87,
+          "partyId": 2,
+          "dishId": 30,
+          "partyPrice": 1036,
+          "partyRevenue": 1036,
+          "profit": 1009,
+          "profitPerServing": 1009,
+          "dishName": "Bluefin Tuna Akami Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 27,
+          "search": "bluefin tuna akami sushi tuna party",
+          "sort": {
+            "dishName": "bluefin tuna akami sushi",
+            "partyPrice": 1036,
+            "partyRevenue": 1036,
+            "profit": 1009,
+            "profitPerServing": 1009,
+            "recipeCost": 27
+          }
+        },
+        "88": {
+          "id": 88,
+          "partyId": 2,
+          "dishId": 31,
+          "partyPrice": 1228.5,
+          "partyRevenue": 1228.5,
+          "profit": 1196.5,
+          "profitPerServing": 1196.5,
+          "dishName": "Bluefin Tuna Chutoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 32,
+          "search": "bluefin tuna chutoro sushi tuna party",
+          "sort": {
+            "dishName": "bluefin tuna chutoro sushi",
+            "partyPrice": 1228.5,
+            "partyRevenue": 1228.5,
+            "profit": 1196.5,
+            "profitPerServing": 1196.5,
+            "recipeCost": 32
+          }
+        },
+        "89": {
+          "id": 89,
+          "partyId": 2,
+          "dishId": 32,
+          "partyPrice": 1746.5,
+          "partyRevenue": 1746.5,
+          "profit": 1701.5,
+          "profitPerServing": 1701.5,
+          "dishName": "Bluefin Tuna Ootoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 45,
+          "search": "bluefin tuna ootoro sushi tuna party",
+          "sort": {
+            "dishName": "bluefin tuna ootoro sushi",
+            "partyPrice": 1746.5,
+            "partyRevenue": 1746.5,
+            "profit": 1701.5,
+            "profitPerServing": 1701.5,
+            "recipeCost": 45
+          }
+        },
+        "90": {
+          "id": 90,
+          "partyId": 2,
+          "dishId": 33,
+          "partyPrice": 4662,
+          "partyRevenue": 41958,
+          "profit": 41809,
+          "profitPerServing": 4645.444444444444,
+          "dishName": "Bluefin Tuna Rice Bowl",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 149,
+          "search": "bluefin tuna rice bowl tuna party",
+          "sort": {
+            "dishName": "bluefin tuna rice bowl",
+            "partyPrice": 4662,
+            "partyRevenue": 41958,
+            "profit": 41809,
+            "profitPerServing": 4645.444444444444,
+            "recipeCost": 149
+          }
+        },
+        "91": {
+          "id": 91,
+          "partyId": 2,
+          "dishId": 299,
+          "partyPrice": 5313,
+          "partyRevenue": 10626,
+          "profit": 10242,
+          "profitPerServing": 5121,
+          "dishName": "Chirashi Sushi",
+          "dlc": "mxmtoon",
+          "unlock": "mxmtoon Collab",
+          "recipeCost": 384,
+          "search": "chirashi sushi mxmtoon mxmtoon collab",
+          "sort": {
+            "dishName": "chirashi sushi",
+            "partyPrice": 5313,
+            "partyRevenue": 10626,
+            "profit": 10242,
+            "profitPerServing": 5121,
+            "recipeCost": 384
+          }
+        },
+        "92": {
+          "id": 92,
+          "partyId": 2,
+          "dishId": 107,
+          "partyPrice": 3430,
+          "partyRevenue": 30870,
+          "profit": 30738,
+          "profitPerServing": 3415.3333333333335,
+          "dishName": "Hawaiian Poke",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 132,
+          "search": "hawaiian poke tuna party",
+          "sort": {
+            "dishName": "hawaiian poke",
+            "partyPrice": 3430,
+            "partyRevenue": 30870,
+            "profit": 30738,
+            "profitPerServing": 3415.3333333333335,
+            "recipeCost": 132
+          }
+        },
+        "93": {
+          "id": 93,
+          "partyId": 2,
+          "dishId": 109,
+          "partyPrice": 5113.5,
+          "partyRevenue": 35794.5,
+          "profit": 35646.5,
+          "profitPerServing": 5092.357142857143,
+          "dishName": "Hot Pepper Tuna",
+          "dlc": null,
+          "unlock": "Jango VIP",
+          "recipeCost": 148,
+          "search": "hot pepper tuna jango vip",
+          "sort": {
+            "dishName": "hot pepper tuna",
+            "partyPrice": 5113.5,
+            "partyRevenue": 35794.5,
+            "profit": 35646.5,
+            "profitPerServing": 5092.357142857143,
+            "recipeCost": 148
+          }
+        },
+        "94": {
+          "id": 94,
+          "partyId": 2,
+          "dishId": 113,
+          "partyPrice": 5890.5,
+          "partyRevenue": 5890.5,
+          "profit": 5499.5,
+          "profitPerServing": 5499.5,
+          "dishName": "Hyalonema Tuna Sashimi",
+          "dlc": null,
+          "unlock": "Glacial Seaweed Cave",
+          "recipeCost": 391,
+          "search": "hyalonema tuna sashimi glacial seaweed cave",
+          "sort": {
+            "dishName": "hyalonema tuna sashimi",
+            "partyPrice": 5890.5,
+            "partyRevenue": 5890.5,
+            "profit": 5499.5,
+            "profitPerServing": 5499.5,
+            "recipeCost": 391
+          }
+        },
+        "95": {
+          "id": 95,
+          "partyId": 2,
+          "dishId": 252,
+          "partyPrice": 945,
+          "partyRevenue": 945,
+          "profit": 921,
+          "profitPerServing": 921,
+          "dishName": "Yellowfin Tuna Akami Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 24,
+          "search": "yellowfin tuna akami sushi tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna akami sushi",
+            "partyPrice": 945,
+            "partyRevenue": 945,
+            "profit": 921,
+            "profitPerServing": 921,
+            "recipeCost": 24
+          }
+        },
+        "96": {
+          "id": 96,
+          "partyId": 2,
+          "dishId": 253,
+          "partyPrice": 1165.5,
+          "partyRevenue": 1165.5,
+          "profit": 1135.5,
+          "profitPerServing": 1135.5,
+          "dishName": "Yellowfin Tuna Chutoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 30,
+          "search": "yellowfin tuna chutoro sushi tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna chutoro sushi",
+            "partyPrice": 1165.5,
+            "partyRevenue": 1165.5,
+            "profit": 1135.5,
+            "profitPerServing": 1135.5,
+            "recipeCost": 30
+          }
+        },
+        "97": {
+          "id": 97,
+          "partyId": 2,
+          "dishId": 254,
+          "partyPrice": 1617,
+          "partyRevenue": 1617,
+          "profit": 1575,
+          "profitPerServing": 1575,
+          "dishName": "Yellowfin Tuna Ootoro Sushi",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 42,
+          "search": "yellowfin tuna ootoro sushi tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna ootoro sushi",
+            "partyPrice": 1617,
+            "partyRevenue": 1617,
+            "profit": 1575,
+            "profitPerServing": 1575,
+            "recipeCost": 42
+          }
+        },
+        "98": {
+          "id": 98,
+          "partyId": 2,
+          "dishId": 255,
+          "partyPrice": 3948,
+          "partyRevenue": 35532,
+          "profit": 35385,
+          "profitPerServing": 3931.6666666666665,
+          "dishName": "Yellowfin Tuna Steak",
+          "dlc": null,
+          "unlock": "Tuna Party",
+          "recipeCost": 147,
+          "search": "yellowfin tuna steak tuna party",
+          "sort": {
+            "dishName": "yellowfin tuna steak",
+            "partyPrice": 3948,
+            "partyRevenue": 35532,
+            "profit": 35385,
+            "profitPerServing": 3931.6666666666665,
+            "recipeCost": 147
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            94,
+            93,
+            90,
+            98,
+            92,
+            89,
+            97,
+            88,
+            96,
+            87,
+            95
+          ],
+          "mxmtoon": [
+            91
+          ]
+        },
+        "unlock": {
+          "Glacial Seaweed Cave": [
+            94
+          ],
+          "mxmtoon Collab": [
+            91
+          ],
+          "Jango VIP": [
+            93
+          ],
+          "Tuna Party": [
+            90,
+            98,
+            92,
+            89,
+            97,
+            88,
+            96,
+            87,
+            95
+          ]
+        }
+      }
+    },
+    "3": {
+      "rows": [
+        {
+          "id": 45,
+          "partyId": 3,
+          "dishId": 40,
+          "partyPrice": 3144,
+          "partyRevenue": 28296,
+          "profit": 28065,
+          "profitPerServing": 3118.3333333333335,
+          "dishName": "Boiled Sailfish and Seaweed",
+          "dlc": null,
+          "unlock": "Marlin Party",
+          "recipeCost": 231,
+          "search": "boiled sailfish and seaweed marlin party",
+          "sort": {
+            "dishName": "boiled sailfish and seaweed",
+            "partyPrice": 3144,
+            "partyRevenue": 28296,
+            "profit": 28065,
+            "profitPerServing": 3118.3333333333335,
+            "recipeCost": 231
+          }
+        },
+        {
+          "id": 49,
+          "partyId": 3,
+          "dishId": 235,
+          "partyPrice": 3454,
+          "partyRevenue": 6908,
+          "profit": 6003,
+          "profitPerServing": 3001.5,
+          "dishName": "Truffle Sailfish Tartare",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 905,
+          "search": "truffle sailfish tartare jango shop",
+          "sort": {
+            "dishName": "truffle sailfish tartare",
+            "partyPrice": 3454,
+            "partyRevenue": 6908,
+            "profit": 6003,
+            "profitPerServing": 3001.5,
+            "recipeCost": 905
+          }
+        },
+        {
+          "id": 47,
+          "partyId": 3,
+          "dishId": 127,
+          "partyPrice": 2812,
+          "partyRevenue": 25308,
+          "profit": 25127,
+          "profitPerServing": 2791.8888888888887,
+          "dishName": "Marlin and Soybean Paste Roast",
+          "dlc": null,
+          "unlock": "Marlin Party",
+          "recipeCost": 181,
+          "search": "marlin and soybean paste roast marlin party",
+          "sort": {
+            "dishName": "marlin and soybean paste roast",
+            "partyPrice": 2812,
+            "partyRevenue": 25308,
+            "profit": 25127,
+            "profitPerServing": 2791.8888888888887,
+            "recipeCost": 181
+          }
+        },
+        {
+          "id": 48,
+          "partyId": 3,
+          "dishId": 175,
+          "partyPrice": 1442,
+          "partyRevenue": 1442,
+          "profit": 1377,
+          "profitPerServing": 1377,
+          "dishName": "Sailfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 65,
+          "search": "sailfish sushi",
+          "sort": {
+            "dishName": "sailfish sushi",
+            "partyPrice": 1442,
+            "partyRevenue": 1442,
+            "profit": 1377,
+            "profitPerServing": 1377,
+            "recipeCost": 65
+          }
+        },
+        {
+          "id": 46,
+          "partyId": 3,
+          "dishId": 128,
+          "partyPrice": 998,
+          "partyRevenue": 998,
+          "profit": 953,
+          "profitPerServing": 953,
+          "dishName": "Marlin Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 45,
+          "search": "marlin sushi",
+          "sort": {
+            "dishName": "marlin sushi",
+            "partyPrice": 998,
+            "partyRevenue": 998,
+            "profit": 953,
+            "profitPerServing": 953,
+            "recipeCost": 45
+          }
+        }
+      ],
+      "byId": {
+        "45": {
+          "id": 45,
+          "partyId": 3,
+          "dishId": 40,
+          "partyPrice": 3144,
+          "partyRevenue": 28296,
+          "profit": 28065,
+          "profitPerServing": 3118.3333333333335,
+          "dishName": "Boiled Sailfish and Seaweed",
+          "dlc": null,
+          "unlock": "Marlin Party",
+          "recipeCost": 231,
+          "search": "boiled sailfish and seaweed marlin party",
+          "sort": {
+            "dishName": "boiled sailfish and seaweed",
+            "partyPrice": 3144,
+            "partyRevenue": 28296,
+            "profit": 28065,
+            "profitPerServing": 3118.3333333333335,
+            "recipeCost": 231
+          }
+        },
+        "46": {
+          "id": 46,
+          "partyId": 3,
+          "dishId": 128,
+          "partyPrice": 998,
+          "partyRevenue": 998,
+          "profit": 953,
+          "profitPerServing": 953,
+          "dishName": "Marlin Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 45,
+          "search": "marlin sushi",
+          "sort": {
+            "dishName": "marlin sushi",
+            "partyPrice": 998,
+            "partyRevenue": 998,
+            "profit": 953,
+            "profitPerServing": 953,
+            "recipeCost": 45
+          }
+        },
+        "47": {
+          "id": 47,
+          "partyId": 3,
+          "dishId": 127,
+          "partyPrice": 2812,
+          "partyRevenue": 25308,
+          "profit": 25127,
+          "profitPerServing": 2791.8888888888887,
+          "dishName": "Marlin and Soybean Paste Roast",
+          "dlc": null,
+          "unlock": "Marlin Party",
+          "recipeCost": 181,
+          "search": "marlin and soybean paste roast marlin party",
+          "sort": {
+            "dishName": "marlin and soybean paste roast",
+            "partyPrice": 2812,
+            "partyRevenue": 25308,
+            "profit": 25127,
+            "profitPerServing": 2791.8888888888887,
+            "recipeCost": 181
+          }
+        },
+        "48": {
+          "id": 48,
+          "partyId": 3,
+          "dishId": 175,
+          "partyPrice": 1442,
+          "partyRevenue": 1442,
+          "profit": 1377,
+          "profitPerServing": 1377,
+          "dishName": "Sailfish Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 65,
+          "search": "sailfish sushi",
+          "sort": {
+            "dishName": "sailfish sushi",
+            "partyPrice": 1442,
+            "partyRevenue": 1442,
+            "profit": 1377,
+            "profitPerServing": 1377,
+            "recipeCost": 65
+          }
+        },
+        "49": {
+          "id": 49,
+          "partyId": 3,
+          "dishId": 235,
+          "partyPrice": 3454,
+          "partyRevenue": 6908,
+          "profit": 6003,
+          "profitPerServing": 3001.5,
+          "dishName": "Truffle Sailfish Tartare",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 905,
+          "search": "truffle sailfish tartare jango shop",
+          "sort": {
+            "dishName": "truffle sailfish tartare",
+            "partyPrice": 3454,
+            "partyRevenue": 6908,
+            "profit": 6003,
+            "profitPerServing": 3001.5,
+            "recipeCost": 905
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            45,
+            49,
+            47,
+            48,
+            46
+          ]
+        },
+        "unlock": {
+          "Marlin Party": [
+            45,
+            47
+          ],
+          "Jango Shop": [
+            49
+          ]
+        }
+      }
+    },
+    "4": {
+      "rows": [
+        {
+          "id": 56,
+          "partyId": 4,
+          "dishId": 79,
+          "partyPrice": 3108,
+          "partyRevenue": 21756,
+          "profit": 21561,
+          "profitPerServing": 3080.1428571428573,
+          "dishName": "Falcatus Soybean Paste Soup",
+          "dlc": null,
+          "unlock": "Kronosaurus",
+          "recipeCost": 195,
+          "search": "falcatus soybean paste soup kronosaurus",
+          "sort": {
+            "dishName": "falcatus soybean paste soup",
+            "partyPrice": 3108,
+            "partyRevenue": 21756,
+            "profit": 21561,
+            "profitPerServing": 3080.1428571428573,
+            "recipeCost": 195
+          }
+        },
+        {
+          "id": 71,
+          "partyId": 4,
+          "dishId": 236,
+          "partyPrice": 3410,
+          "partyRevenue": 6820,
+          "profit": 5993,
+          "profitPerServing": 2996.5,
+          "dishName": "Truffle Shark Sandwich",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 827,
+          "search": "truffle shark sandwich jango shop",
+          "sort": {
+            "dishName": "truffle shark sandwich",
+            "partyPrice": 3410,
+            "partyRevenue": 6820,
+            "profit": 5993,
+            "profitPerServing": 2996.5,
+            "recipeCost": 827
+          }
+        },
+        {
+          "id": 54,
+          "partyId": 4,
+          "dishId": 59,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26499,
+          "profitPerServing": 2944.3333333333335,
+          "dishName": "Crimson Fish Roll",
+          "dlc": null,
+          "unlock": "Billy lvl 15",
+          "recipeCost": 141,
+          "search": "crimson fish roll billy lvl 15",
+          "sort": {
+            "dishName": "crimson fish roll",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26499,
+            "profitPerServing": 2944.3333333333335,
+            "recipeCost": 141
+          }
+        },
+        {
+          "id": 66,
+          "partyId": 4,
+          "dishId": 194,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26489,
+          "profitPerServing": 2943.222222222222,
+          "dishName": "Shark Karaage",
+          "dlc": null,
+          "unlock": "Itsuki lvl 15",
+          "recipeCost": 151,
+          "search": "shark karaage itsuki lvl 15",
+          "sort": {
+            "dishName": "shark karaage",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26489,
+            "profitPerServing": 2943.222222222222,
+            "recipeCost": 151
+          }
+        },
+        {
+          "id": 51,
+          "partyId": 4,
+          "dishId": 39,
+          "partyPrice": 2960,
+          "partyRevenue": 20720,
+          "profit": 20544,
+          "profitPerServing": 2934.8571428571427,
+          "dishName": "Boiled Porbeagle Shark",
+          "dlc": null,
+          "unlock": "Raul lvl 15",
+          "recipeCost": 176,
+          "search": "boiled porbeagle shark raul lvl 15",
+          "sort": {
+            "dishName": "boiled porbeagle shark",
+            "partyPrice": 2960,
+            "partyRevenue": 20720,
+            "profit": 20544,
+            "profitPerServing": 2934.8571428571427,
+            "recipeCost": 176
+          }
+        },
+        {
+          "id": 55,
+          "partyId": 4,
+          "dishId": 63,
+          "partyPrice": 2922,
+          "partyRevenue": 20454,
+          "profit": 20335,
+          "profitPerServing": 2905,
+          "dishName": "Deep Fish Tempura",
+          "dlc": null,
+          "unlock": "British Chef VIP",
+          "recipeCost": 119,
+          "search": "deep fish tempura british chef vip",
+          "sort": {
+            "dishName": "deep fish tempura",
+            "partyPrice": 2922,
+            "partyRevenue": 20454,
+            "profit": 20335,
+            "profitPerServing": 2905,
+            "recipeCost": 119
+          }
+        },
+        {
+          "id": 62,
+          "partyId": 4,
+          "dishId": 123,
+          "partyPrice": 2700,
+          "partyRevenue": 27000,
+          "profit": 26979,
+          "profitPerServing": 2697.9,
+          "dishName": "Lusca Neck Tadaki",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 21,
+          "search": "lusca neck tadaki boss",
+          "sort": {
+            "dishName": "lusca neck tadaki",
+            "partyPrice": 2700,
+            "partyRevenue": 27000,
+            "profit": 26979,
+            "profitPerServing": 2697.9,
+            "recipeCost": 21
+          }
+        },
+        {
+          "id": 65,
+          "partyId": 4,
+          "dishId": 173,
+          "partyPrice": 1420,
+          "partyRevenue": 14200,
+          "profit": 14181,
+          "profitPerServing": 1418.1,
+          "dishName": "Roasted Helicoprion Tail",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 19,
+          "search": "roasted helicoprion tail boss",
+          "sort": {
+            "dishName": "roasted helicoprion tail",
+            "partyPrice": 1420,
+            "partyRevenue": 14200,
+            "profit": 14181,
+            "profitPerServing": 1418.1,
+            "recipeCost": 19
+          }
+        },
+        {
+          "id": 60,
+          "partyId": 4,
+          "dishId": 100,
+          "partyPrice": 1376,
+          "partyRevenue": 1376,
+          "profit": 1314,
+          "profitPerServing": 1314,
+          "dishName": "Greenland Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 62,
+          "search": "greenland shark sushi",
+          "sort": {
+            "dishName": "greenland shark sushi",
+            "partyPrice": 1376,
+            "partyRevenue": 1376,
+            "profit": 1314,
+            "profitPerServing": 1314,
+            "recipeCost": 62
+          }
+        },
+        {
+          "id": 72,
+          "partyId": 4,
+          "dishId": 240,
+          "partyPrice": 1300,
+          "partyRevenue": 13000,
+          "profit": 12730,
+          "profitPerServing": 1273,
+          "dishName": "White Shark Omelet",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 270,
+          "search": "white shark omelet boss",
+          "sort": {
+            "dishName": "white shark omelet",
+            "partyPrice": 1300,
+            "partyRevenue": 13000,
+            "profit": 12730,
+            "profitPerServing": 1273,
+            "recipeCost": 270
+          }
+        },
+        {
+          "id": 59,
+          "partyId": 4,
+          "dishId": 93,
+          "partyPrice": 1200,
+          "partyRevenue": 12000,
+          "profit": 11980,
+          "profitPerServing": 1198,
+          "dishName": "Goblin Shark Belly Roast",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 20,
+          "search": "goblin shark belly roast boss",
+          "sort": {
+            "dishName": "goblin shark belly roast",
+            "partyPrice": 1200,
+            "partyRevenue": 12000,
+            "profit": 11980,
+            "profitPerServing": 1198,
+            "recipeCost": 20
+          }
+        },
+        {
+          "id": 64,
+          "partyId": 4,
+          "dishId": 157,
+          "partyPrice": 1220,
+          "partyRevenue": 1220,
+          "profit": 1165,
+          "profitPerServing": 1165,
+          "dishName": "Porbeagle Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 55,
+          "search": "porbeagle shark sushi",
+          "sort": {
+            "dishName": "porbeagle shark sushi",
+            "partyPrice": 1220,
+            "partyRevenue": 1220,
+            "profit": 1165,
+            "profitPerServing": 1165,
+            "recipeCost": 55
+          }
+        },
+        {
+          "id": 69,
+          "partyId": 4,
+          "dishId": 224,
+          "partyPrice": 1176,
+          "partyRevenue": 1176,
+          "profit": 1123,
+          "profitPerServing": 1123,
+          "dishName": "Thresher Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 53,
+          "search": "thresher shark sushi",
+          "sort": {
+            "dishName": "thresher shark sushi",
+            "partyPrice": 1176,
+            "partyRevenue": 1176,
+            "profit": 1123,
+            "profitPerServing": 1123,
+            "recipeCost": 53
+          }
+        },
+        {
+          "id": 68,
+          "partyId": 4,
+          "dishId": 201,
+          "partyPrice": 1042,
+          "partyRevenue": 1042,
+          "profit": 995,
+          "profitPerServing": 995,
+          "dishName": "Smooth Hammerhead Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "smooth hammerhead sushi",
+          "sort": {
+            "dishName": "smooth hammerhead sushi",
+            "partyPrice": 1042,
+            "partyRevenue": 1042,
+            "profit": 995,
+            "profitPerServing": 995,
+            "recipeCost": 47
+          }
+        },
+        {
+          "id": 57,
+          "partyId": 4,
+          "dishId": 80,
+          "partyPrice": 962,
+          "partyRevenue": 962,
+          "profit": 919,
+          "profitPerServing": 919,
+          "dishName": "Falcatus Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 43,
+          "search": "falcatus sushi",
+          "sort": {
+            "dishName": "falcatus sushi",
+            "partyPrice": 962,
+            "partyRevenue": 962,
+            "profit": 919,
+            "profitPerServing": 919,
+            "recipeCost": 43
+          }
+        },
+        {
+          "id": 75,
+          "partyId": 4,
+          "dishId": 257,
+          "partyPrice": 798,
+          "partyRevenue": 798,
+          "profit": 756,
+          "profitPerServing": 756,
+          "dishName": "Zebra Shark Sushi",
+          "dlc": null,
+          "unlock": "Shark Party",
+          "recipeCost": 42,
+          "search": "zebra shark sushi shark party",
+          "sort": {
+            "dishName": "zebra shark sushi",
+            "partyPrice": 798,
+            "partyRevenue": 798,
+            "profit": 756,
+            "profitPerServing": 756,
+            "recipeCost": 42
+          }
+        },
+        {
+          "id": 67,
+          "partyId": 4,
+          "dishId": 196,
+          "partyPrice": 776,
+          "partyRevenue": 776,
+          "profit": 733,
+          "profitPerServing": 733,
+          "dishName": "Shortfin Mako Sushi",
+          "dlc": null,
+          "unlock": "Shark Party",
+          "recipeCost": 43,
+          "search": "shortfin mako sushi shark party",
+          "sort": {
+            "dishName": "shortfin mako sushi",
+            "partyPrice": 776,
+            "partyRevenue": 776,
+            "profit": 733,
+            "profitPerServing": 733,
+            "recipeCost": 43
+          }
+        },
+        {
+          "id": 63,
+          "partyId": 4,
+          "dishId": 131,
+          "partyPrice": 702,
+          "partyRevenue": 702,
+          "profit": 671,
+          "profitPerServing": 671,
+          "dishName": "Megamouth Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 31,
+          "search": "megamouth shark sushi",
+          "sort": {
+            "dishName": "megamouth shark sushi",
+            "partyPrice": 702,
+            "partyRevenue": 702,
+            "profit": 671,
+            "profitPerServing": 671,
+            "recipeCost": 31
+          }
+        },
+        {
+          "id": 58,
+          "partyId": 4,
+          "dishId": 90,
+          "partyPrice": 628,
+          "partyRevenue": 628,
+          "profit": 600,
+          "profitPerServing": 600,
+          "dishName": "Frilled Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 28,
+          "search": "frilled shark sushi",
+          "sort": {
+            "dishName": "frilled shark sushi",
+            "partyPrice": 628,
+            "partyRevenue": 628,
+            "profit": 600,
+            "profitPerServing": 600,
+            "recipeCost": 28
+          }
+        },
+        {
+          "id": 74,
+          "partyId": 4,
+          "dishId": 246,
+          "partyPrice": 554,
+          "partyRevenue": 3878,
+          "profit": 3832,
+          "profitPerServing": 547.4285714285714,
+          "dishName": "Whole-Roasted Shark Head",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 46,
+          "search": "whole-roasted shark head",
+          "sort": {
+            "dishName": "whole-roasted shark head",
+            "partyPrice": 554,
+            "partyRevenue": 3878,
+            "profit": 3832,
+            "profitPerServing": 547.4285714285714,
+            "recipeCost": 46
+          }
+        },
+        {
+          "id": 52,
+          "partyId": 4,
+          "dishId": 56,
+          "partyPrice": 554,
+          "partyRevenue": 554,
+          "profit": 529,
+          "profitPerServing": 529,
+          "dishName": "Cookiecutter Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 25,
+          "search": "cookiecutter shark sushi",
+          "sort": {
+            "dishName": "cookiecutter shark sushi",
+            "partyPrice": 554,
+            "partyRevenue": 554,
+            "profit": 529,
+            "profitPerServing": 529,
+            "recipeCost": 25
+          }
+        },
+        {
+          "id": 53,
+          "partyId": 4,
+          "dishId": 57,
+          "partyPrice": 480,
+          "partyRevenue": 480,
+          "profit": 458,
+          "profitPerServing": 458,
+          "dishName": "Copper Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 22,
+          "search": "copper shark sushi",
+          "sort": {
+            "dishName": "copper shark sushi",
+            "partyPrice": 480,
+            "partyRevenue": 480,
+            "profit": 458,
+            "profitPerServing": 458,
+            "recipeCost": 22
+          }
+        },
+        {
+          "id": 50,
+          "partyId": 4,
+          "dishId": 23,
+          "partyPrice": 444,
+          "partyRevenue": 444,
+          "profit": 424,
+          "profitPerServing": 424,
+          "dishName": "Blacktip Reefshark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 20,
+          "search": "blacktip reefshark sushi",
+          "sort": {
+            "dishName": "blacktip reefshark sushi",
+            "partyPrice": 444,
+            "partyRevenue": 444,
+            "profit": 424,
+            "profitPerServing": 424,
+            "recipeCost": 20
+          }
+        },
+        {
+          "id": 70,
+          "partyId": 4,
+          "dishId": 225,
+          "partyPrice": 370,
+          "partyRevenue": 370,
+          "profit": 353,
+          "profitPerServing": 353,
+          "dishName": "Tiger Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "tiger shark sushi",
+          "sort": {
+            "dishName": "tiger shark sushi",
+            "partyPrice": 370,
+            "partyRevenue": 370,
+            "profit": 353,
+            "profitPerServing": 353,
+            "recipeCost": 17
+          }
+        },
+        {
+          "id": 61,
+          "partyId": 4,
+          "dishId": 120,
+          "partyPrice": 258,
+          "partyRevenue": 258,
+          "profit": 246,
+          "profitPerServing": 246,
+          "dishName": "Longnose Sawshark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 12,
+          "search": "longnose sawshark sushi",
+          "sort": {
+            "dishName": "longnose sawshark sushi",
+            "partyPrice": 258,
+            "partyRevenue": 258,
+            "profit": 246,
+            "profitPerServing": 246,
+            "recipeCost": 12
+          }
+        },
+        {
+          "id": 73,
+          "partyId": 4,
+          "dishId": 245,
+          "partyPrice": 176,
+          "partyRevenue": 176,
+          "profit": 168,
+          "profitPerServing": 168,
+          "dishName": "Whitetip Reefshark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 8,
+          "search": "whitetip reefshark sushi",
+          "sort": {
+            "dishName": "whitetip reefshark sushi",
+            "partyPrice": 176,
+            "partyRevenue": 176,
+            "profit": 168,
+            "profitPerServing": 168,
+            "recipeCost": 8
+          }
+        }
+      ],
+      "byId": {
+        "50": {
+          "id": 50,
+          "partyId": 4,
+          "dishId": 23,
+          "partyPrice": 444,
+          "partyRevenue": 444,
+          "profit": 424,
+          "profitPerServing": 424,
+          "dishName": "Blacktip Reefshark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 20,
+          "search": "blacktip reefshark sushi",
+          "sort": {
+            "dishName": "blacktip reefshark sushi",
+            "partyPrice": 444,
+            "partyRevenue": 444,
+            "profit": 424,
+            "profitPerServing": 424,
+            "recipeCost": 20
+          }
+        },
+        "51": {
+          "id": 51,
+          "partyId": 4,
+          "dishId": 39,
+          "partyPrice": 2960,
+          "partyRevenue": 20720,
+          "profit": 20544,
+          "profitPerServing": 2934.8571428571427,
+          "dishName": "Boiled Porbeagle Shark",
+          "dlc": null,
+          "unlock": "Raul lvl 15",
+          "recipeCost": 176,
+          "search": "boiled porbeagle shark raul lvl 15",
+          "sort": {
+            "dishName": "boiled porbeagle shark",
+            "partyPrice": 2960,
+            "partyRevenue": 20720,
+            "profit": 20544,
+            "profitPerServing": 2934.8571428571427,
+            "recipeCost": 176
+          }
+        },
+        "52": {
+          "id": 52,
+          "partyId": 4,
+          "dishId": 56,
+          "partyPrice": 554,
+          "partyRevenue": 554,
+          "profit": 529,
+          "profitPerServing": 529,
+          "dishName": "Cookiecutter Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 25,
+          "search": "cookiecutter shark sushi",
+          "sort": {
+            "dishName": "cookiecutter shark sushi",
+            "partyPrice": 554,
+            "partyRevenue": 554,
+            "profit": 529,
+            "profitPerServing": 529,
+            "recipeCost": 25
+          }
+        },
+        "53": {
+          "id": 53,
+          "partyId": 4,
+          "dishId": 57,
+          "partyPrice": 480,
+          "partyRevenue": 480,
+          "profit": 458,
+          "profitPerServing": 458,
+          "dishName": "Copper Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 22,
+          "search": "copper shark sushi",
+          "sort": {
+            "dishName": "copper shark sushi",
+            "partyPrice": 480,
+            "partyRevenue": 480,
+            "profit": 458,
+            "profitPerServing": 458,
+            "recipeCost": 22
+          }
+        },
+        "54": {
+          "id": 54,
+          "partyId": 4,
+          "dishId": 59,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26499,
+          "profitPerServing": 2944.3333333333335,
+          "dishName": "Crimson Fish Roll",
+          "dlc": null,
+          "unlock": "Billy lvl 15",
+          "recipeCost": 141,
+          "search": "crimson fish roll billy lvl 15",
+          "sort": {
+            "dishName": "crimson fish roll",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26499,
+            "profitPerServing": 2944.3333333333335,
+            "recipeCost": 141
+          }
+        },
+        "55": {
+          "id": 55,
+          "partyId": 4,
+          "dishId": 63,
+          "partyPrice": 2922,
+          "partyRevenue": 20454,
+          "profit": 20335,
+          "profitPerServing": 2905,
+          "dishName": "Deep Fish Tempura",
+          "dlc": null,
+          "unlock": "British Chef VIP",
+          "recipeCost": 119,
+          "search": "deep fish tempura british chef vip",
+          "sort": {
+            "dishName": "deep fish tempura",
+            "partyPrice": 2922,
+            "partyRevenue": 20454,
+            "profit": 20335,
+            "profitPerServing": 2905,
+            "recipeCost": 119
+          }
+        },
+        "56": {
+          "id": 56,
+          "partyId": 4,
+          "dishId": 79,
+          "partyPrice": 3108,
+          "partyRevenue": 21756,
+          "profit": 21561,
+          "profitPerServing": 3080.1428571428573,
+          "dishName": "Falcatus Soybean Paste Soup",
+          "dlc": null,
+          "unlock": "Kronosaurus",
+          "recipeCost": 195,
+          "search": "falcatus soybean paste soup kronosaurus",
+          "sort": {
+            "dishName": "falcatus soybean paste soup",
+            "partyPrice": 3108,
+            "partyRevenue": 21756,
+            "profit": 21561,
+            "profitPerServing": 3080.1428571428573,
+            "recipeCost": 195
+          }
+        },
+        "57": {
+          "id": 57,
+          "partyId": 4,
+          "dishId": 80,
+          "partyPrice": 962,
+          "partyRevenue": 962,
+          "profit": 919,
+          "profitPerServing": 919,
+          "dishName": "Falcatus Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 43,
+          "search": "falcatus sushi",
+          "sort": {
+            "dishName": "falcatus sushi",
+            "partyPrice": 962,
+            "partyRevenue": 962,
+            "profit": 919,
+            "profitPerServing": 919,
+            "recipeCost": 43
+          }
+        },
+        "58": {
+          "id": 58,
+          "partyId": 4,
+          "dishId": 90,
+          "partyPrice": 628,
+          "partyRevenue": 628,
+          "profit": 600,
+          "profitPerServing": 600,
+          "dishName": "Frilled Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 28,
+          "search": "frilled shark sushi",
+          "sort": {
+            "dishName": "frilled shark sushi",
+            "partyPrice": 628,
+            "partyRevenue": 628,
+            "profit": 600,
+            "profitPerServing": 600,
+            "recipeCost": 28
+          }
+        },
+        "59": {
+          "id": 59,
+          "partyId": 4,
+          "dishId": 93,
+          "partyPrice": 1200,
+          "partyRevenue": 12000,
+          "profit": 11980,
+          "profitPerServing": 1198,
+          "dishName": "Goblin Shark Belly Roast",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 20,
+          "search": "goblin shark belly roast boss",
+          "sort": {
+            "dishName": "goblin shark belly roast",
+            "partyPrice": 1200,
+            "partyRevenue": 12000,
+            "profit": 11980,
+            "profitPerServing": 1198,
+            "recipeCost": 20
+          }
+        },
+        "60": {
+          "id": 60,
+          "partyId": 4,
+          "dishId": 100,
+          "partyPrice": 1376,
+          "partyRevenue": 1376,
+          "profit": 1314,
+          "profitPerServing": 1314,
+          "dishName": "Greenland Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 62,
+          "search": "greenland shark sushi",
+          "sort": {
+            "dishName": "greenland shark sushi",
+            "partyPrice": 1376,
+            "partyRevenue": 1376,
+            "profit": 1314,
+            "profitPerServing": 1314,
+            "recipeCost": 62
+          }
+        },
+        "61": {
+          "id": 61,
+          "partyId": 4,
+          "dishId": 120,
+          "partyPrice": 258,
+          "partyRevenue": 258,
+          "profit": 246,
+          "profitPerServing": 246,
+          "dishName": "Longnose Sawshark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 12,
+          "search": "longnose sawshark sushi",
+          "sort": {
+            "dishName": "longnose sawshark sushi",
+            "partyPrice": 258,
+            "partyRevenue": 258,
+            "profit": 246,
+            "profitPerServing": 246,
+            "recipeCost": 12
+          }
+        },
+        "62": {
+          "id": 62,
+          "partyId": 4,
+          "dishId": 123,
+          "partyPrice": 2700,
+          "partyRevenue": 27000,
+          "profit": 26979,
+          "profitPerServing": 2697.9,
+          "dishName": "Lusca Neck Tadaki",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 21,
+          "search": "lusca neck tadaki boss",
+          "sort": {
+            "dishName": "lusca neck tadaki",
+            "partyPrice": 2700,
+            "partyRevenue": 27000,
+            "profit": 26979,
+            "profitPerServing": 2697.9,
+            "recipeCost": 21
+          }
+        },
+        "63": {
+          "id": 63,
+          "partyId": 4,
+          "dishId": 131,
+          "partyPrice": 702,
+          "partyRevenue": 702,
+          "profit": 671,
+          "profitPerServing": 671,
+          "dishName": "Megamouth Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 31,
+          "search": "megamouth shark sushi",
+          "sort": {
+            "dishName": "megamouth shark sushi",
+            "partyPrice": 702,
+            "partyRevenue": 702,
+            "profit": 671,
+            "profitPerServing": 671,
+            "recipeCost": 31
+          }
+        },
+        "64": {
+          "id": 64,
+          "partyId": 4,
+          "dishId": 157,
+          "partyPrice": 1220,
+          "partyRevenue": 1220,
+          "profit": 1165,
+          "profitPerServing": 1165,
+          "dishName": "Porbeagle Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 55,
+          "search": "porbeagle shark sushi",
+          "sort": {
+            "dishName": "porbeagle shark sushi",
+            "partyPrice": 1220,
+            "partyRevenue": 1220,
+            "profit": 1165,
+            "profitPerServing": 1165,
+            "recipeCost": 55
+          }
+        },
+        "65": {
+          "id": 65,
+          "partyId": 4,
+          "dishId": 173,
+          "partyPrice": 1420,
+          "partyRevenue": 14200,
+          "profit": 14181,
+          "profitPerServing": 1418.1,
+          "dishName": "Roasted Helicoprion Tail",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 19,
+          "search": "roasted helicoprion tail boss",
+          "sort": {
+            "dishName": "roasted helicoprion tail",
+            "partyPrice": 1420,
+            "partyRevenue": 14200,
+            "profit": 14181,
+            "profitPerServing": 1418.1,
+            "recipeCost": 19
+          }
+        },
+        "66": {
+          "id": 66,
+          "partyId": 4,
+          "dishId": 194,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26489,
+          "profitPerServing": 2943.222222222222,
+          "dishName": "Shark Karaage",
+          "dlc": null,
+          "unlock": "Itsuki lvl 15",
+          "recipeCost": 151,
+          "search": "shark karaage itsuki lvl 15",
+          "sort": {
+            "dishName": "shark karaage",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26489,
+            "profitPerServing": 2943.222222222222,
+            "recipeCost": 151
+          }
+        },
+        "67": {
+          "id": 67,
+          "partyId": 4,
+          "dishId": 196,
+          "partyPrice": 776,
+          "partyRevenue": 776,
+          "profit": 733,
+          "profitPerServing": 733,
+          "dishName": "Shortfin Mako Sushi",
+          "dlc": null,
+          "unlock": "Shark Party",
+          "recipeCost": 43,
+          "search": "shortfin mako sushi shark party",
+          "sort": {
+            "dishName": "shortfin mako sushi",
+            "partyPrice": 776,
+            "partyRevenue": 776,
+            "profit": 733,
+            "profitPerServing": 733,
+            "recipeCost": 43
+          }
+        },
+        "68": {
+          "id": 68,
+          "partyId": 4,
+          "dishId": 201,
+          "partyPrice": 1042,
+          "partyRevenue": 1042,
+          "profit": 995,
+          "profitPerServing": 995,
+          "dishName": "Smooth Hammerhead Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "smooth hammerhead sushi",
+          "sort": {
+            "dishName": "smooth hammerhead sushi",
+            "partyPrice": 1042,
+            "partyRevenue": 1042,
+            "profit": 995,
+            "profitPerServing": 995,
+            "recipeCost": 47
+          }
+        },
+        "69": {
+          "id": 69,
+          "partyId": 4,
+          "dishId": 224,
+          "partyPrice": 1176,
+          "partyRevenue": 1176,
+          "profit": 1123,
+          "profitPerServing": 1123,
+          "dishName": "Thresher Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 53,
+          "search": "thresher shark sushi",
+          "sort": {
+            "dishName": "thresher shark sushi",
+            "partyPrice": 1176,
+            "partyRevenue": 1176,
+            "profit": 1123,
+            "profitPerServing": 1123,
+            "recipeCost": 53
+          }
+        },
+        "70": {
+          "id": 70,
+          "partyId": 4,
+          "dishId": 225,
+          "partyPrice": 370,
+          "partyRevenue": 370,
+          "profit": 353,
+          "profitPerServing": 353,
+          "dishName": "Tiger Shark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "tiger shark sushi",
+          "sort": {
+            "dishName": "tiger shark sushi",
+            "partyPrice": 370,
+            "partyRevenue": 370,
+            "profit": 353,
+            "profitPerServing": 353,
+            "recipeCost": 17
+          }
+        },
+        "71": {
+          "id": 71,
+          "partyId": 4,
+          "dishId": 236,
+          "partyPrice": 3410,
+          "partyRevenue": 6820,
+          "profit": 5993,
+          "profitPerServing": 2996.5,
+          "dishName": "Truffle Shark Sandwich",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 827,
+          "search": "truffle shark sandwich jango shop",
+          "sort": {
+            "dishName": "truffle shark sandwich",
+            "partyPrice": 3410,
+            "partyRevenue": 6820,
+            "profit": 5993,
+            "profitPerServing": 2996.5,
+            "recipeCost": 827
+          }
+        },
+        "72": {
+          "id": 72,
+          "partyId": 4,
+          "dishId": 240,
+          "partyPrice": 1300,
+          "partyRevenue": 13000,
+          "profit": 12730,
+          "profitPerServing": 1273,
+          "dishName": "White Shark Omelet",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 270,
+          "search": "white shark omelet boss",
+          "sort": {
+            "dishName": "white shark omelet",
+            "partyPrice": 1300,
+            "partyRevenue": 13000,
+            "profit": 12730,
+            "profitPerServing": 1273,
+            "recipeCost": 270
+          }
+        },
+        "73": {
+          "id": 73,
+          "partyId": 4,
+          "dishId": 245,
+          "partyPrice": 176,
+          "partyRevenue": 176,
+          "profit": 168,
+          "profitPerServing": 168,
+          "dishName": "Whitetip Reefshark Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 8,
+          "search": "whitetip reefshark sushi",
+          "sort": {
+            "dishName": "whitetip reefshark sushi",
+            "partyPrice": 176,
+            "partyRevenue": 176,
+            "profit": 168,
+            "profitPerServing": 168,
+            "recipeCost": 8
+          }
+        },
+        "74": {
+          "id": 74,
+          "partyId": 4,
+          "dishId": 246,
+          "partyPrice": 554,
+          "partyRevenue": 3878,
+          "profit": 3832,
+          "profitPerServing": 547.4285714285714,
+          "dishName": "Whole-Roasted Shark Head",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 46,
+          "search": "whole-roasted shark head",
+          "sort": {
+            "dishName": "whole-roasted shark head",
+            "partyPrice": 554,
+            "partyRevenue": 3878,
+            "profit": 3832,
+            "profitPerServing": 547.4285714285714,
+            "recipeCost": 46
+          }
+        },
+        "75": {
+          "id": 75,
+          "partyId": 4,
+          "dishId": 257,
+          "partyPrice": 798,
+          "partyRevenue": 798,
+          "profit": 756,
+          "profitPerServing": 756,
+          "dishName": "Zebra Shark Sushi",
+          "dlc": null,
+          "unlock": "Shark Party",
+          "recipeCost": 42,
+          "search": "zebra shark sushi shark party",
+          "sort": {
+            "dishName": "zebra shark sushi",
+            "partyPrice": 798,
+            "partyRevenue": 798,
+            "profit": 756,
+            "profitPerServing": 756,
+            "recipeCost": 42
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            56,
+            71,
+            54,
+            66,
+            51,
+            55,
+            62,
+            65,
+            60,
+            72,
+            59,
+            64,
+            69,
+            68,
+            57,
+            75,
+            67,
+            63,
+            58,
+            74,
+            52,
+            53,
+            50,
+            70,
+            61,
+            73
+          ]
+        },
+        "unlock": {
+          "Kronosaurus": [
+            56
+          ],
+          "Jango Shop": [
+            71
+          ],
+          "Billy lvl 15": [
+            54
+          ],
+          "Itsuki lvl 15": [
+            66
+          ],
+          "Raul lvl 15": [
+            51
+          ],
+          "British Chef VIP": [
+            55
+          ],
+          "Boss": [
+            62,
+            65,
+            72,
+            59
+          ],
+          "Shark Party": [
+            75,
+            67
+          ]
+        }
+      }
+    },
+    "5": {
+      "rows": [
+        {
+          "id": 6,
+          "partyId": 5,
+          "dishId": 192,
+          "partyPrice": 3930,
+          "partyRevenue": 27510,
+          "profit": 27339,
+          "profitPerServing": 3905.5714285714284,
+          "dishName": "Seasoned Waptia Fieldensis",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 171,
+          "search": "seasoned waptia fieldensis cucumber party",
+          "sort": {
+            "dishName": "seasoned waptia fieldensis",
+            "partyPrice": 3930,
+            "partyRevenue": 27510,
+            "profit": 27339,
+            "profitPerServing": 3905.5714285714284,
+            "recipeCost": 171
+          }
+        },
+        {
+          "id": 3,
+          "partyId": 5,
+          "dishId": 302,
+          "partyPrice": 3850,
+          "partyRevenue": 7700,
+          "profit": 7372,
+          "profitPerServing": 3686,
+          "dishName": "Green Sea Urchin & Cucumber Salad",
+          "dlc": "mxmtoon",
+          "unlock": "Jango",
+          "recipeCost": 328,
+          "search": "green sea urchin & cucumber salad mxmtoon jango",
+          "sort": {
+            "dishName": "green sea urchin & cucumber salad",
+            "partyPrice": 3850,
+            "partyRevenue": 7700,
+            "profit": 7372,
+            "profitPerServing": 3686,
+            "recipeCost": 328
+          }
+        },
+        {
+          "id": 2,
+          "partyId": 5,
+          "dishId": 97,
+          "partyPrice": 2997.5,
+          "partyRevenue": 2997.5,
+          "profit": 2960.5,
+          "profitPerServing": 2960.5,
+          "dishName": "Great Spider Crab and Cucumber Sushi",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 37,
+          "search": "great spider crab and cucumber sushi cucumber party",
+          "sort": {
+            "dishName": "great spider crab and cucumber sushi",
+            "partyPrice": 2997.5,
+            "partyRevenue": 2997.5,
+            "profit": 2960.5,
+            "profitPerServing": 2960.5,
+            "recipeCost": 37
+          }
+        },
+        {
+          "id": 5,
+          "partyId": 5,
+          "dishId": 181,
+          "partyPrice": 2960,
+          "partyRevenue": 2960,
+          "profit": 2922,
+          "profitPerServing": 2922,
+          "dishName": "Sea Toad and Cucumber Gunkan Sushi",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 38,
+          "search": "sea toad and cucumber gunkan sushi cucumber party",
+          "sort": {
+            "dishName": "sea toad and cucumber gunkan sushi",
+            "partyPrice": 2960,
+            "partyRevenue": 2960,
+            "profit": 2922,
+            "profitPerServing": 2922,
+            "recipeCost": 38
+          }
+        },
+        {
+          "id": 7,
+          "partyId": 5,
+          "dishId": 197,
+          "partyPrice": 2960,
+          "partyRevenue": 2960,
+          "profit": 2900,
+          "profitPerServing": 2900,
+          "dishName": "Skewered Cucumber",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 60,
+          "search": "skewered cucumber cucumber party",
+          "sort": {
+            "dishName": "skewered cucumber",
+            "partyPrice": 2960,
+            "partyRevenue": 2960,
+            "profit": 2900,
+            "profitPerServing": 2900,
+            "recipeCost": 60
+          }
+        },
+        {
+          "id": 4,
+          "partyId": 5,
+          "dishId": 152,
+          "partyPrice": 2922.5,
+          "partyRevenue": 8767.5,
+          "profit": 8696.5,
+          "profitPerServing": 2898.8333333333335,
+          "dishName": "Pickled Vegetables",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 71,
+          "search": "pickled vegetables cucumber party",
+          "sort": {
+            "dishName": "pickled vegetables",
+            "partyPrice": 2922.5,
+            "partyRevenue": 8767.5,
+            "profit": 8696.5,
+            "profitPerServing": 2898.8333333333335,
+            "recipeCost": 71
+          }
+        },
+        {
+          "id": 8,
+          "partyId": 5,
+          "dishId": 230,
+          "partyPrice": 2885,
+          "partyRevenue": 20195,
+          "profit": 20075,
+          "profitPerServing": 2867.8571428571427,
+          "dishName": "Trevally Sandwich",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 120,
+          "search": "trevally sandwich cucumber party",
+          "sort": {
+            "dishName": "trevally sandwich",
+            "partyPrice": 2885,
+            "partyRevenue": 20195,
+            "profit": 20075,
+            "profitPerServing": 2867.8571428571427,
+            "recipeCost": 120
+          }
+        },
+        {
+          "id": 1,
+          "partyId": 5,
+          "dishId": 66,
+          "partyPrice": 2885,
+          "partyRevenue": 8655,
+          "profit": 8584,
+          "profitPerServing": 2861.3333333333335,
+          "dishName": "Deep-Fried Vegetables",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 71,
+          "search": "deep-fried vegetables cucumber party",
+          "sort": {
+            "dishName": "deep-fried vegetables",
+            "partyPrice": 2885,
+            "partyRevenue": 8655,
+            "profit": 8584,
+            "profitPerServing": 2861.3333333333335,
+            "recipeCost": 71
+          }
+        }
+      ],
+      "byId": {
+        "1": {
+          "id": 1,
+          "partyId": 5,
+          "dishId": 66,
+          "partyPrice": 2885,
+          "partyRevenue": 8655,
+          "profit": 8584,
+          "profitPerServing": 2861.3333333333335,
+          "dishName": "Deep-Fried Vegetables",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 71,
+          "search": "deep-fried vegetables cucumber party",
+          "sort": {
+            "dishName": "deep-fried vegetables",
+            "partyPrice": 2885,
+            "partyRevenue": 8655,
+            "profit": 8584,
+            "profitPerServing": 2861.3333333333335,
+            "recipeCost": 71
+          }
+        },
+        "2": {
+          "id": 2,
+          "partyId": 5,
+          "dishId": 97,
+          "partyPrice": 2997.5,
+          "partyRevenue": 2997.5,
+          "profit": 2960.5,
+          "profitPerServing": 2960.5,
+          "dishName": "Great Spider Crab and Cucumber Sushi",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 37,
+          "search": "great spider crab and cucumber sushi cucumber party",
+          "sort": {
+            "dishName": "great spider crab and cucumber sushi",
+            "partyPrice": 2997.5,
+            "partyRevenue": 2997.5,
+            "profit": 2960.5,
+            "profitPerServing": 2960.5,
+            "recipeCost": 37
+          }
+        },
+        "3": {
+          "id": 3,
+          "partyId": 5,
+          "dishId": 302,
+          "partyPrice": 3850,
+          "partyRevenue": 7700,
+          "profit": 7372,
+          "profitPerServing": 3686,
+          "dishName": "Green Sea Urchin & Cucumber Salad",
+          "dlc": "mxmtoon",
+          "unlock": "Jango",
+          "recipeCost": 328,
+          "search": "green sea urchin & cucumber salad mxmtoon jango",
+          "sort": {
+            "dishName": "green sea urchin & cucumber salad",
+            "partyPrice": 3850,
+            "partyRevenue": 7700,
+            "profit": 7372,
+            "profitPerServing": 3686,
+            "recipeCost": 328
+          }
+        },
+        "4": {
+          "id": 4,
+          "partyId": 5,
+          "dishId": 152,
+          "partyPrice": 2922.5,
+          "partyRevenue": 8767.5,
+          "profit": 8696.5,
+          "profitPerServing": 2898.8333333333335,
+          "dishName": "Pickled Vegetables",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 71,
+          "search": "pickled vegetables cucumber party",
+          "sort": {
+            "dishName": "pickled vegetables",
+            "partyPrice": 2922.5,
+            "partyRevenue": 8767.5,
+            "profit": 8696.5,
+            "profitPerServing": 2898.8333333333335,
+            "recipeCost": 71
+          }
+        },
+        "5": {
+          "id": 5,
+          "partyId": 5,
+          "dishId": 181,
+          "partyPrice": 2960,
+          "partyRevenue": 2960,
+          "profit": 2922,
+          "profitPerServing": 2922,
+          "dishName": "Sea Toad and Cucumber Gunkan Sushi",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 38,
+          "search": "sea toad and cucumber gunkan sushi cucumber party",
+          "sort": {
+            "dishName": "sea toad and cucumber gunkan sushi",
+            "partyPrice": 2960,
+            "partyRevenue": 2960,
+            "profit": 2922,
+            "profitPerServing": 2922,
+            "recipeCost": 38
+          }
+        },
+        "6": {
+          "id": 6,
+          "partyId": 5,
+          "dishId": 192,
+          "partyPrice": 3930,
+          "partyRevenue": 27510,
+          "profit": 27339,
+          "profitPerServing": 3905.5714285714284,
+          "dishName": "Seasoned Waptia Fieldensis",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 171,
+          "search": "seasoned waptia fieldensis cucumber party",
+          "sort": {
+            "dishName": "seasoned waptia fieldensis",
+            "partyPrice": 3930,
+            "partyRevenue": 27510,
+            "profit": 27339,
+            "profitPerServing": 3905.5714285714284,
+            "recipeCost": 171
+          }
+        },
+        "7": {
+          "id": 7,
+          "partyId": 5,
+          "dishId": 197,
+          "partyPrice": 2960,
+          "partyRevenue": 2960,
+          "profit": 2900,
+          "profitPerServing": 2900,
+          "dishName": "Skewered Cucumber",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 60,
+          "search": "skewered cucumber cucumber party",
+          "sort": {
+            "dishName": "skewered cucumber",
+            "partyPrice": 2960,
+            "partyRevenue": 2960,
+            "profit": 2900,
+            "profitPerServing": 2900,
+            "recipeCost": 60
+          }
+        },
+        "8": {
+          "id": 8,
+          "partyId": 5,
+          "dishId": 230,
+          "partyPrice": 2885,
+          "partyRevenue": 20195,
+          "profit": 20075,
+          "profitPerServing": 2867.8571428571427,
+          "dishName": "Trevally Sandwich",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 120,
+          "search": "trevally sandwich cucumber party",
+          "sort": {
+            "dishName": "trevally sandwich",
+            "partyPrice": 2885,
+            "partyRevenue": 20195,
+            "profit": 20075,
+            "profitPerServing": 2867.8571428571427,
+            "recipeCost": 120
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            6,
+            2,
+            5,
+            7,
+            4,
+            8,
+            1
+          ],
+          "mxmtoon": [
+            3
+          ]
+        },
+        "unlock": {
+          "Cucumber Party": [
+            6,
+            2,
+            5,
+            7,
+            4,
+            8,
+            1
+          ],
+          "Jango": [
+            3
+          ]
+        }
+      }
+    },
+    "6": {
+      "rows": [
+        {
+          "id": 16,
+          "partyId": 6,
+          "dishId": 247,
+          "partyPrice": 2960,
+          "partyRevenue": 17760,
+          "profit": 17714,
+          "profitPerServing": 2952.3333333333335,
+          "dishName": "Wrasse Curry",
+          "dlc": null,
+          "unlock": "Jandi lvl 15",
+          "recipeCost": 46,
+          "search": "wrasse curry jandi lvl 15",
+          "sort": {
+            "dishName": "wrasse curry",
+            "partyPrice": 2960,
+            "partyRevenue": 17760,
+            "profit": 17714,
+            "profitPerServing": 2952.3333333333335,
+            "recipeCost": 46
+          }
+        },
+        {
+          "id": 11,
+          "partyId": 6,
+          "dishId": 98,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26527,
+          "profitPerServing": 2947.4444444444443,
+          "dishName": "Great Spider Crab Curry",
+          "dlc": null,
+          "unlock": "Charlie lvl 15",
+          "recipeCost": 113,
+          "search": "great spider crab curry charlie lvl 15",
+          "sort": {
+            "dishName": "great spider crab curry",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26527,
+            "profitPerServing": 2947.4444444444443,
+            "recipeCost": 113
+          }
+        },
+        {
+          "id": 13,
+          "partyId": 6,
+          "dishId": 114,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26498,
+          "profitPerServing": 2944.222222222222,
+          "dishName": "Ice Fish Curry",
+          "dlc": null,
+          "unlock": "Drae lvl 15",
+          "recipeCost": 142,
+          "search": "ice fish curry drae lvl 15",
+          "sort": {
+            "dishName": "ice fish curry",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26498,
+            "profitPerServing": 2944.222222222222,
+            "recipeCost": 142
+          }
+        },
+        {
+          "id": 15,
+          "partyId": 6,
+          "dishId": 172,
+          "partyPrice": 2886,
+          "partyRevenue": 20202,
+          "profit": 20114,
+          "profitPerServing": 2873.4285714285716,
+          "dishName": "Roasted Capelin",
+          "dlc": null,
+          "unlock": "Drae lvl 10",
+          "recipeCost": 88,
+          "search": "roasted capelin drae lvl 10",
+          "sort": {
+            "dishName": "roasted capelin",
+            "partyPrice": 2886,
+            "partyRevenue": 20202,
+            "profit": 20114,
+            "profitPerServing": 2873.4285714285716,
+            "recipeCost": 88
+          }
+        },
+        {
+          "id": 9,
+          "partyId": 6,
+          "dishId": 11,
+          "partyPrice": 2812,
+          "partyRevenue": 19684,
+          "profit": 19593,
+          "profitPerServing": 2799,
+          "dishName": "Atlantic Bonito Curry",
+          "dlc": null,
+          "unlock": "Platinum Rank",
+          "recipeCost": 91,
+          "search": "atlantic bonito curry platinum rank",
+          "sort": {
+            "dishName": "atlantic bonito curry",
+            "partyPrice": 2812,
+            "partyRevenue": 19684,
+            "profit": 19593,
+            "profitPerServing": 2799,
+            "recipeCost": 91
+          }
+        },
+        {
+          "id": 12,
+          "partyId": 6,
+          "dishId": 112,
+          "partyPrice": 2774,
+          "partyRevenue": 16644,
+          "profit": 16574,
+          "profitPerServing": 2762.3333333333335,
+          "dishName": "Humphead Parrotfish Curry",
+          "dlc": null,
+          "unlock": "Platinum Rank",
+          "recipeCost": 70,
+          "search": "humphead parrotfish curry platinum rank",
+          "sort": {
+            "dishName": "humphead parrotfish curry",
+            "partyPrice": 2774,
+            "partyRevenue": 16644,
+            "profit": 16574,
+            "profitPerServing": 2762.3333333333335,
+            "recipeCost": 70
+          }
+        },
+        {
+          "id": 10,
+          "partyId": 6,
+          "dishId": 294,
+          "partyPrice": 2738,
+          "partyRevenue": 24642,
+          "profit": 24551,
+          "profitPerServing": 2727.8888888888887,
+          "dishName": "Godzilla vs. Ebirah Curry",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 91,
+          "search": "godzilla vs. ebirah curry godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "godzilla vs. ebirah curry",
+            "partyPrice": 2738,
+            "partyRevenue": 24642,
+            "profit": 24551,
+            "profitPerServing": 2727.8888888888887,
+            "recipeCost": 91
+          }
+        },
+        {
+          "id": 14,
+          "partyId": 6,
+          "dishId": 134,
+          "partyPrice": 702,
+          "partyRevenue": 4212,
+          "profit": 4173,
+          "profitPerServing": 695.5,
+          "dishName": "Moray Eel Curry",
+          "dlc": null,
+          "unlock": "Silver Rank",
+          "recipeCost": 39,
+          "search": "moray eel curry silver rank",
+          "sort": {
+            "dishName": "moray eel curry",
+            "partyPrice": 702,
+            "partyRevenue": 4212,
+            "profit": 4173,
+            "profitPerServing": 695.5,
+            "recipeCost": 39
+          }
+        }
+      ],
+      "byId": {
+        "9": {
+          "id": 9,
+          "partyId": 6,
+          "dishId": 11,
+          "partyPrice": 2812,
+          "partyRevenue": 19684,
+          "profit": 19593,
+          "profitPerServing": 2799,
+          "dishName": "Atlantic Bonito Curry",
+          "dlc": null,
+          "unlock": "Platinum Rank",
+          "recipeCost": 91,
+          "search": "atlantic bonito curry platinum rank",
+          "sort": {
+            "dishName": "atlantic bonito curry",
+            "partyPrice": 2812,
+            "partyRevenue": 19684,
+            "profit": 19593,
+            "profitPerServing": 2799,
+            "recipeCost": 91
+          }
+        },
+        "10": {
+          "id": 10,
+          "partyId": 6,
+          "dishId": 294,
+          "partyPrice": 2738,
+          "partyRevenue": 24642,
+          "profit": 24551,
+          "profitPerServing": 2727.8888888888887,
+          "dishName": "Godzilla vs. Ebirah Curry",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 91,
+          "search": "godzilla vs. ebirah curry godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "godzilla vs. ebirah curry",
+            "partyPrice": 2738,
+            "partyRevenue": 24642,
+            "profit": 24551,
+            "profitPerServing": 2727.8888888888887,
+            "recipeCost": 91
+          }
+        },
+        "11": {
+          "id": 11,
+          "partyId": 6,
+          "dishId": 98,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26527,
+          "profitPerServing": 2947.4444444444443,
+          "dishName": "Great Spider Crab Curry",
+          "dlc": null,
+          "unlock": "Charlie lvl 15",
+          "recipeCost": 113,
+          "search": "great spider crab curry charlie lvl 15",
+          "sort": {
+            "dishName": "great spider crab curry",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26527,
+            "profitPerServing": 2947.4444444444443,
+            "recipeCost": 113
+          }
+        },
+        "12": {
+          "id": 12,
+          "partyId": 6,
+          "dishId": 112,
+          "partyPrice": 2774,
+          "partyRevenue": 16644,
+          "profit": 16574,
+          "profitPerServing": 2762.3333333333335,
+          "dishName": "Humphead Parrotfish Curry",
+          "dlc": null,
+          "unlock": "Platinum Rank",
+          "recipeCost": 70,
+          "search": "humphead parrotfish curry platinum rank",
+          "sort": {
+            "dishName": "humphead parrotfish curry",
+            "partyPrice": 2774,
+            "partyRevenue": 16644,
+            "profit": 16574,
+            "profitPerServing": 2762.3333333333335,
+            "recipeCost": 70
+          }
+        },
+        "13": {
+          "id": 13,
+          "partyId": 6,
+          "dishId": 114,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26498,
+          "profitPerServing": 2944.222222222222,
+          "dishName": "Ice Fish Curry",
+          "dlc": null,
+          "unlock": "Drae lvl 15",
+          "recipeCost": 142,
+          "search": "ice fish curry drae lvl 15",
+          "sort": {
+            "dishName": "ice fish curry",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26498,
+            "profitPerServing": 2944.222222222222,
+            "recipeCost": 142
+          }
+        },
+        "14": {
+          "id": 14,
+          "partyId": 6,
+          "dishId": 134,
+          "partyPrice": 702,
+          "partyRevenue": 4212,
+          "profit": 4173,
+          "profitPerServing": 695.5,
+          "dishName": "Moray Eel Curry",
+          "dlc": null,
+          "unlock": "Silver Rank",
+          "recipeCost": 39,
+          "search": "moray eel curry silver rank",
+          "sort": {
+            "dishName": "moray eel curry",
+            "partyPrice": 702,
+            "partyRevenue": 4212,
+            "profit": 4173,
+            "profitPerServing": 695.5,
+            "recipeCost": 39
+          }
+        },
+        "15": {
+          "id": 15,
+          "partyId": 6,
+          "dishId": 172,
+          "partyPrice": 2886,
+          "partyRevenue": 20202,
+          "profit": 20114,
+          "profitPerServing": 2873.4285714285716,
+          "dishName": "Roasted Capelin",
+          "dlc": null,
+          "unlock": "Drae lvl 10",
+          "recipeCost": 88,
+          "search": "roasted capelin drae lvl 10",
+          "sort": {
+            "dishName": "roasted capelin",
+            "partyPrice": 2886,
+            "partyRevenue": 20202,
+            "profit": 20114,
+            "profitPerServing": 2873.4285714285716,
+            "recipeCost": 88
+          }
+        },
+        "16": {
+          "id": 16,
+          "partyId": 6,
+          "dishId": 247,
+          "partyPrice": 2960,
+          "partyRevenue": 17760,
+          "profit": 17714,
+          "profitPerServing": 2952.3333333333335,
+          "dishName": "Wrasse Curry",
+          "dlc": null,
+          "unlock": "Jandi lvl 15",
+          "recipeCost": 46,
+          "search": "wrasse curry jandi lvl 15",
+          "sort": {
+            "dishName": "wrasse curry",
+            "partyPrice": 2960,
+            "partyRevenue": 17760,
+            "profit": 17714,
+            "profitPerServing": 2952.3333333333335,
+            "recipeCost": 46
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            16,
+            11,
+            13,
+            15,
+            9,
+            12,
+            14
+          ],
+          "Godzilla DLC": [
+            10
+          ]
+        },
+        "unlock": {
+          "Jandi lvl 15": [
+            16
+          ],
+          "Charlie lvl 15": [
+            11
+          ],
+          "Drae lvl 15": [
+            13
+          ],
+          "Drae lvl 10": [
+            15
+          ],
+          "Platinum Rank": [
+            9,
+            12
+          ],
+          "Godzilla DLC": [
+            10
+          ],
+          "Silver Rank": [
+            14
+          ]
+        }
+      }
+    },
+    "7": {
+      "rows": [
+        {
+          "id": 84,
+          "partyId": 7,
+          "dishId": 192,
+          "partyPrice": 3144,
+          "partyRevenue": 22008,
+          "profit": 21837,
+          "profitPerServing": 3119.5714285714284,
+          "dishName": "Seasoned Waptia Fieldensis",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 171,
+          "search": "seasoned waptia fieldensis cucumber party",
+          "sort": {
+            "dishName": "seasoned waptia fieldensis",
+            "partyPrice": 3144,
+            "partyRevenue": 22008,
+            "profit": 21837,
+            "profitPerServing": 3119.5714285714284,
+            "recipeCost": 171
+          }
+        },
+        {
+          "id": 80,
+          "partyId": 7,
+          "dishId": 110,
+          "partyPrice": 3108,
+          "partyRevenue": 31080,
+          "profit": 30867,
+          "profitPerServing": 3086.7,
+          "dishName": "Humboldt Ink Pasta",
+          "dlc": null,
+          "unlock": "Italian Chef VIP",
+          "recipeCost": 213,
+          "search": "humboldt ink pasta italian chef vip",
+          "sort": {
+            "dishName": "humboldt ink pasta",
+            "partyPrice": 3108,
+            "partyRevenue": 31080,
+            "profit": 30867,
+            "profitPerServing": 3086.7,
+            "recipeCost": 213
+          }
+        },
+        {
+          "id": 83,
+          "partyId": 7,
+          "dishId": 171,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26523,
+          "profitPerServing": 2947,
+          "dishName": "Rice with White Shrimp Meat",
+          "dlc": null,
+          "unlock": "Kyoko lvl 15",
+          "recipeCost": 117,
+          "search": "rice with white shrimp meat kyoko lvl 15",
+          "sort": {
+            "dishName": "rice with white shrimp meat",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26523,
+            "profitPerServing": 2947,
+            "recipeCost": 117
+          }
+        },
+        {
+          "id": 79,
+          "partyId": 7,
+          "dishId": 64,
+          "partyPrice": 2960,
+          "partyRevenue": 20720,
+          "profit": 20567,
+          "profitPerServing": 2938.1428571428573,
+          "dishName": "Deep-Fried Eggplant Shrimp Meatballs",
+          "dlc": null,
+          "unlock": "Yusuke lvl 15",
+          "recipeCost": 153,
+          "search": "deep-fried eggplant shrimp meatballs yusuke lvl 15",
+          "sort": {
+            "dishName": "deep-fried eggplant shrimp meatballs",
+            "partyPrice": 2960,
+            "partyRevenue": 20720,
+            "profit": 20567,
+            "profitPerServing": 2938.1428571428573,
+            "recipeCost": 153
+          }
+        },
+        {
+          "id": 81,
+          "partyId": 7,
+          "dishId": 132,
+          "partyPrice": 2774,
+          "partyRevenue": 27740,
+          "profit": 27556,
+          "profitPerServing": 2755.6,
+          "dishName": "Mianbao Xia",
+          "dlc": null,
+          "unlock": "Chinese Chef VIP",
+          "recipeCost": 184,
+          "search": "mianbao xia chinese chef vip",
+          "sort": {
+            "dishName": "mianbao xia",
+            "partyPrice": 2774,
+            "partyRevenue": 27740,
+            "profit": 27556,
+            "profitPerServing": 2755.6,
+            "recipeCost": 184
+          }
+        },
+        {
+          "id": 85,
+          "partyId": 7,
+          "dishId": 206,
+          "partyPrice": 2812,
+          "partyRevenue": 2812,
+          "profit": 2735,
+          "profitPerServing": 2735,
+          "dishName": "Special Fried Shrimp Sushi",
+          "dlc": null,
+          "unlock": "Drae lvl 5",
+          "recipeCost": 77,
+          "search": "special fried shrimp sushi drae lvl 5",
+          "sort": {
+            "dishName": "special fried shrimp sushi",
+            "partyPrice": 2812,
+            "partyRevenue": 2812,
+            "profit": 2735,
+            "profitPerServing": 2735,
+            "recipeCost": 77
+          }
+        },
+        {
+          "id": 77,
+          "partyId": 7,
+          "dishId": 36,
+          "partyPrice": 1664,
+          "partyRevenue": 16640,
+          "profit": 16557,
+          "profitPerServing": 1655.7,
+          "dishName": "Boiled and Deep-Fried White Shrimp",
+          "dlc": null,
+          "unlock": "Raptor lvl 5",
+          "recipeCost": 83,
+          "search": "boiled and deep-fried white shrimp raptor lvl 5",
+          "sort": {
+            "dishName": "boiled and deep-fried white shrimp",
+            "partyPrice": 1664,
+            "partyRevenue": 16640,
+            "profit": 16557,
+            "profitPerServing": 1655.7,
+            "recipeCost": 83
+          }
+        },
+        {
+          "id": 76,
+          "partyId": 7,
+          "dishId": 38,
+          "partyPrice": 1300,
+          "partyRevenue": 13000,
+          "profit": 12968,
+          "profitPerServing": 1296.8,
+          "dishName": "Boiled Mantis Shrimp with Soy Paste",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 32,
+          "search": "boiled mantis shrimp with soy paste boss",
+          "sort": {
+            "dishName": "boiled mantis shrimp with soy paste",
+            "partyPrice": 1300,
+            "partyRevenue": 13000,
+            "profit": 12968,
+            "profitPerServing": 1296.8,
+            "recipeCost": 32
+          }
+        },
+        {
+          "id": 86,
+          "partyId": 7,
+          "dishId": 241,
+          "partyPrice": 392,
+          "partyRevenue": 392,
+          "profit": 375,
+          "profitPerServing": 375,
+          "dishName": "White Shrimp Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "white shrimp sushi",
+          "sort": {
+            "dishName": "white shrimp sushi",
+            "partyPrice": 392,
+            "partyRevenue": 392,
+            "profit": 375,
+            "profitPerServing": 375,
+            "recipeCost": 17
+          }
+        },
+        {
+          "id": 82,
+          "partyId": 7,
+          "dishId": 163,
+          "partyPrice": 370,
+          "partyRevenue": 370,
+          "profit": 353,
+          "profitPerServing": 353,
+          "dishName": "Raw Black Tiger Shrimp Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "raw black tiger shrimp sushi",
+          "sort": {
+            "dishName": "raw black tiger shrimp sushi",
+            "partyPrice": 370,
+            "partyRevenue": 370,
+            "profit": 353,
+            "profitPerServing": 353,
+            "recipeCost": 17
+          }
+        },
+        {
+          "id": 78,
+          "partyId": 7,
+          "dishId": 55,
+          "partyPrice": 258,
+          "partyRevenue": 258,
+          "profit": 247,
+          "profitPerServing": 247,
+          "dishName": "Cooked Whiteleg Shrimp Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 11,
+          "search": "cooked whiteleg shrimp sushi",
+          "sort": {
+            "dishName": "cooked whiteleg shrimp sushi",
+            "partyPrice": 258,
+            "partyRevenue": 258,
+            "profit": 247,
+            "profitPerServing": 247,
+            "recipeCost": 11
+          }
+        }
+      ],
+      "byId": {
+        "76": {
+          "id": 76,
+          "partyId": 7,
+          "dishId": 38,
+          "partyPrice": 1300,
+          "partyRevenue": 13000,
+          "profit": 12968,
+          "profitPerServing": 1296.8,
+          "dishName": "Boiled Mantis Shrimp with Soy Paste",
+          "dlc": null,
+          "unlock": "Boss",
+          "recipeCost": 32,
+          "search": "boiled mantis shrimp with soy paste boss",
+          "sort": {
+            "dishName": "boiled mantis shrimp with soy paste",
+            "partyPrice": 1300,
+            "partyRevenue": 13000,
+            "profit": 12968,
+            "profitPerServing": 1296.8,
+            "recipeCost": 32
+          }
+        },
+        "77": {
+          "id": 77,
+          "partyId": 7,
+          "dishId": 36,
+          "partyPrice": 1664,
+          "partyRevenue": 16640,
+          "profit": 16557,
+          "profitPerServing": 1655.7,
+          "dishName": "Boiled and Deep-Fried White Shrimp",
+          "dlc": null,
+          "unlock": "Raptor lvl 5",
+          "recipeCost": 83,
+          "search": "boiled and deep-fried white shrimp raptor lvl 5",
+          "sort": {
+            "dishName": "boiled and deep-fried white shrimp",
+            "partyPrice": 1664,
+            "partyRevenue": 16640,
+            "profit": 16557,
+            "profitPerServing": 1655.7,
+            "recipeCost": 83
+          }
+        },
+        "78": {
+          "id": 78,
+          "partyId": 7,
+          "dishId": 55,
+          "partyPrice": 258,
+          "partyRevenue": 258,
+          "profit": 247,
+          "profitPerServing": 247,
+          "dishName": "Cooked Whiteleg Shrimp Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 11,
+          "search": "cooked whiteleg shrimp sushi",
+          "sort": {
+            "dishName": "cooked whiteleg shrimp sushi",
+            "partyPrice": 258,
+            "partyRevenue": 258,
+            "profit": 247,
+            "profitPerServing": 247,
+            "recipeCost": 11
+          }
+        },
+        "79": {
+          "id": 79,
+          "partyId": 7,
+          "dishId": 64,
+          "partyPrice": 2960,
+          "partyRevenue": 20720,
+          "profit": 20567,
+          "profitPerServing": 2938.1428571428573,
+          "dishName": "Deep-Fried Eggplant Shrimp Meatballs",
+          "dlc": null,
+          "unlock": "Yusuke lvl 15",
+          "recipeCost": 153,
+          "search": "deep-fried eggplant shrimp meatballs yusuke lvl 15",
+          "sort": {
+            "dishName": "deep-fried eggplant shrimp meatballs",
+            "partyPrice": 2960,
+            "partyRevenue": 20720,
+            "profit": 20567,
+            "profitPerServing": 2938.1428571428573,
+            "recipeCost": 153
+          }
+        },
+        "80": {
+          "id": 80,
+          "partyId": 7,
+          "dishId": 110,
+          "partyPrice": 3108,
+          "partyRevenue": 31080,
+          "profit": 30867,
+          "profitPerServing": 3086.7,
+          "dishName": "Humboldt Ink Pasta",
+          "dlc": null,
+          "unlock": "Italian Chef VIP",
+          "recipeCost": 213,
+          "search": "humboldt ink pasta italian chef vip",
+          "sort": {
+            "dishName": "humboldt ink pasta",
+            "partyPrice": 3108,
+            "partyRevenue": 31080,
+            "profit": 30867,
+            "profitPerServing": 3086.7,
+            "recipeCost": 213
+          }
+        },
+        "81": {
+          "id": 81,
+          "partyId": 7,
+          "dishId": 132,
+          "partyPrice": 2774,
+          "partyRevenue": 27740,
+          "profit": 27556,
+          "profitPerServing": 2755.6,
+          "dishName": "Mianbao Xia",
+          "dlc": null,
+          "unlock": "Chinese Chef VIP",
+          "recipeCost": 184,
+          "search": "mianbao xia chinese chef vip",
+          "sort": {
+            "dishName": "mianbao xia",
+            "partyPrice": 2774,
+            "partyRevenue": 27740,
+            "profit": 27556,
+            "profitPerServing": 2755.6,
+            "recipeCost": 184
+          }
+        },
+        "82": {
+          "id": 82,
+          "partyId": 7,
+          "dishId": 163,
+          "partyPrice": 370,
+          "partyRevenue": 370,
+          "profit": 353,
+          "profitPerServing": 353,
+          "dishName": "Raw Black Tiger Shrimp Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "raw black tiger shrimp sushi",
+          "sort": {
+            "dishName": "raw black tiger shrimp sushi",
+            "partyPrice": 370,
+            "partyRevenue": 370,
+            "profit": 353,
+            "profitPerServing": 353,
+            "recipeCost": 17
+          }
+        },
+        "83": {
+          "id": 83,
+          "partyId": 7,
+          "dishId": 171,
+          "partyPrice": 2960,
+          "partyRevenue": 26640,
+          "profit": 26523,
+          "profitPerServing": 2947,
+          "dishName": "Rice with White Shrimp Meat",
+          "dlc": null,
+          "unlock": "Kyoko lvl 15",
+          "recipeCost": 117,
+          "search": "rice with white shrimp meat kyoko lvl 15",
+          "sort": {
+            "dishName": "rice with white shrimp meat",
+            "partyPrice": 2960,
+            "partyRevenue": 26640,
+            "profit": 26523,
+            "profitPerServing": 2947,
+            "recipeCost": 117
+          }
+        },
+        "84": {
+          "id": 84,
+          "partyId": 7,
+          "dishId": 192,
+          "partyPrice": 3144,
+          "partyRevenue": 22008,
+          "profit": 21837,
+          "profitPerServing": 3119.5714285714284,
+          "dishName": "Seasoned Waptia Fieldensis",
+          "dlc": null,
+          "unlock": "Cucumber Party",
+          "recipeCost": 171,
+          "search": "seasoned waptia fieldensis cucumber party",
+          "sort": {
+            "dishName": "seasoned waptia fieldensis",
+            "partyPrice": 3144,
+            "partyRevenue": 22008,
+            "profit": 21837,
+            "profitPerServing": 3119.5714285714284,
+            "recipeCost": 171
+          }
+        },
+        "85": {
+          "id": 85,
+          "partyId": 7,
+          "dishId": 206,
+          "partyPrice": 2812,
+          "partyRevenue": 2812,
+          "profit": 2735,
+          "profitPerServing": 2735,
+          "dishName": "Special Fried Shrimp Sushi",
+          "dlc": null,
+          "unlock": "Drae lvl 5",
+          "recipeCost": 77,
+          "search": "special fried shrimp sushi drae lvl 5",
+          "sort": {
+            "dishName": "special fried shrimp sushi",
+            "partyPrice": 2812,
+            "partyRevenue": 2812,
+            "profit": 2735,
+            "profitPerServing": 2735,
+            "recipeCost": 77
+          }
+        },
+        "86": {
+          "id": 86,
+          "partyId": 7,
+          "dishId": 241,
+          "partyPrice": 392,
+          "partyRevenue": 392,
+          "profit": 375,
+          "profitPerServing": 375,
+          "dishName": "White Shrimp Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 17,
+          "search": "white shrimp sushi",
+          "sort": {
+            "dishName": "white shrimp sushi",
+            "partyPrice": 392,
+            "partyRevenue": 392,
+            "profit": 375,
+            "profitPerServing": 375,
+            "recipeCost": 17
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            84,
+            80,
+            83,
+            79,
+            81,
+            85,
+            77,
+            76,
+            86,
+            82,
+            78
+          ]
+        },
+        "unlock": {
+          "Cucumber Party": [
+            84
+          ],
+          "Italian Chef VIP": [
+            80
+          ],
+          "Kyoko lvl 15": [
+            83
+          ],
+          "Yusuke lvl 15": [
+            79
+          ],
+          "Chinese Chef VIP": [
+            81
+          ],
+          "Drae lvl 5": [
+            85
+          ],
+          "Raptor lvl 5": [
+            77
+          ],
+          "Boss": [
+            76
+          ]
+        }
+      }
+    },
+    "8": {
+      "rows": [
+        {
+          "id": 38,
+          "partyId": 8,
+          "dishId": 118,
+          "partyPrice": 4022.5,
+          "partyRevenue": 24135,
+          "profit": 23849,
+          "profitPerServing": 3974.8333333333335,
+          "dishName": "Lobster Platter",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 286,
+          "search": "lobster platter jango shop",
+          "sort": {
+            "dishName": "lobster platter",
+            "partyPrice": 4022.5,
+            "partyRevenue": 24135,
+            "profit": 23849,
+            "profitPerServing": 3974.8333333333335,
+            "recipeCost": 286
+          }
+        },
+        {
+          "id": 44,
+          "partyId": 8,
+          "dishId": 234,
+          "partyPrice": 4290,
+          "partyRevenue": 8580,
+          "profit": 7836,
+          "profitPerServing": 3918,
+          "dishName": "Truffle Blue Lobster Tail Sushi",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 744,
+          "search": "truffle blue lobster tail sushi jango shop",
+          "sort": {
+            "dishName": "truffle blue lobster tail sushi",
+            "partyPrice": 4290,
+            "partyRevenue": 8580,
+            "profit": 7836,
+            "profitPerServing": 3918,
+            "recipeCost": 744
+          }
+        },
+        {
+          "id": 42,
+          "partyId": 8,
+          "dishId": 216,
+          "partyPrice": 3607.5,
+          "partyRevenue": 21645,
+          "profit": 21557,
+          "profitPerServing": 3592.8333333333335,
+          "dishName": "Stir-fried Habanero Lobster",
+          "dlc": null,
+          "unlock": "Jango VIP",
+          "recipeCost": 88,
+          "search": "stir-fried habanero lobster jango vip",
+          "sort": {
+            "dishName": "stir-fried habanero lobster",
+            "partyPrice": 3607.5,
+            "partyRevenue": 21645,
+            "profit": 21557,
+            "profitPerServing": 3592.8333333333335,
+            "recipeCost": 88
+          }
+        },
+        {
+          "id": 41,
+          "partyId": 8,
+          "dishId": 209,
+          "partyPrice": 3515,
+          "partyRevenue": 24605,
+          "profit": 24469,
+          "profitPerServing": 3495.5714285714284,
+          "dishName": "Steamed Eastern Rock Lobster & Egg",
+          "dlc": null,
+          "unlock": "Lobster Party",
+          "recipeCost": 136,
+          "search": "steamed eastern rock lobster & egg lobster party",
+          "sort": {
+            "dishName": "steamed eastern rock lobster & egg",
+            "partyPrice": 3515,
+            "partyRevenue": 24605,
+            "profit": 24469,
+            "profitPerServing": 3495.5714285714284,
+            "recipeCost": 136
+          }
+        },
+        {
+          "id": 37,
+          "partyId": 8,
+          "dishId": 294,
+          "partyPrice": 3422.5,
+          "partyRevenue": 30802.5,
+          "profit": 30711.5,
+          "profitPerServing": 3412.3888888888887,
+          "dishName": "Godzilla vs. Ebirah Curry",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 91,
+          "search": "godzilla vs. ebirah curry godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "godzilla vs. ebirah curry",
+            "partyPrice": 3422.5,
+            "partyRevenue": 30802.5,
+            "profit": 30711.5,
+            "profitPerServing": 3412.3888888888887,
+            "recipeCost": 91
+          }
+        },
+        {
+          "id": 31,
+          "partyId": 8,
+          "dishId": 60,
+          "partyPrice": 3422.5,
+          "partyRevenue": 30802.5,
+          "profit": 30658.5,
+          "profitPerServing": 3406.5,
+          "dishName": "Crystal Lobster Roll",
+          "dlc": null,
+          "unlock": "Lobster Party",
+          "recipeCost": 144,
+          "search": "crystal lobster roll lobster party",
+          "sort": {
+            "dishName": "crystal lobster roll",
+            "partyPrice": 3422.5,
+            "partyRevenue": 30802.5,
+            "profit": 30658.5,
+            "profitPerServing": 3406.5,
+            "recipeCost": 144
+          }
+        },
+        {
+          "id": 34,
+          "partyId": 8,
+          "dishId": 293,
+          "partyPrice": 3145,
+          "partyRevenue": 28305,
+          "profit": 28144,
+          "profitPerServing": 3127.1111111111113,
+          "dishName": "Ebirah Chasing Sashimi",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 161,
+          "search": "ebirah chasing sashimi godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "ebirah chasing sashimi",
+            "partyPrice": 3145,
+            "partyRevenue": 28305,
+            "profit": 28144,
+            "profitPerServing": 3127.1111111111113,
+            "recipeCost": 161
+          }
+        },
+        {
+          "id": 29,
+          "partyId": 8,
+          "dishId": 28,
+          "partyPrice": 1302.5,
+          "partyRevenue": 1302.5,
+          "profit": 1255.5,
+          "profitPerServing": 1255.5,
+          "dishName": "Blue Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "blue lobster sushi",
+          "sort": {
+            "dishName": "blue lobster sushi",
+            "partyPrice": 1302.5,
+            "partyRevenue": 1302.5,
+            "profit": 1255.5,
+            "profitPerServing": 1255.5,
+            "recipeCost": 47
+          }
+        },
+        {
+          "id": 32,
+          "partyId": 8,
+          "dishId": 61,
+          "partyPrice": 1302.5,
+          "partyRevenue": 1302.5,
+          "profit": 1255.5,
+          "profitPerServing": 1255.5,
+          "dishName": "Crystal Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "crystal lobster sushi",
+          "sort": {
+            "dishName": "crystal lobster sushi",
+            "partyPrice": 1302.5,
+            "partyRevenue": 1302.5,
+            "profit": 1255.5,
+            "profitPerServing": 1255.5,
+            "recipeCost": 47
+          }
+        },
+        {
+          "id": 33,
+          "partyId": 8,
+          "dishId": 76,
+          "partyPrice": 1302.5,
+          "partyRevenue": 1302.5,
+          "profit": 1255.5,
+          "profitPerServing": 1255.5,
+          "dishName": "Eastern Rock Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "eastern rock lobster sushi",
+          "sort": {
+            "dishName": "eastern rock lobster sushi",
+            "partyPrice": 1302.5,
+            "partyRevenue": 1302.5,
+            "profit": 1255.5,
+            "profitPerServing": 1255.5,
+            "recipeCost": 47
+          }
+        },
+        {
+          "id": 43,
+          "partyId": 8,
+          "dishId": 232,
+          "partyPrice": 1247.5,
+          "partyRevenue": 1247.5,
+          "profit": 1202.5,
+          "profitPerServing": 1202.5,
+          "dishName": "Tropical Rock Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 45,
+          "search": "tropical rock lobster sushi",
+          "sort": {
+            "dishName": "tropical rock lobster sushi",
+            "partyPrice": 1247.5,
+            "partyRevenue": 1247.5,
+            "profit": 1202.5,
+            "profitPerServing": 1202.5,
+            "recipeCost": 45
+          }
+        },
+        {
+          "id": 28,
+          "partyId": 8,
+          "dishId": 4,
+          "partyPrice": 1192.5,
+          "partyRevenue": 1192.5,
+          "profit": 1149.5,
+          "profitPerServing": 1149.5,
+          "dishName": "American Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 43,
+          "search": "american lobster sushi",
+          "sort": {
+            "dishName": "american lobster sushi",
+            "partyPrice": 1192.5,
+            "partyRevenue": 1192.5,
+            "profit": 1149.5,
+            "profitPerServing": 1149.5,
+            "recipeCost": 43
+          }
+        },
+        {
+          "id": 39,
+          "partyId": 8,
+          "dishId": 142,
+          "partyPrice": 692.5,
+          "partyRevenue": 692.5,
+          "profit": 667.5,
+          "profitPerServing": 667.5,
+          "dishName": "Norway Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 25,
+          "search": "norway lobster sushi",
+          "sort": {
+            "dishName": "norway lobster sushi",
+            "partyPrice": 692.5,
+            "partyRevenue": 692.5,
+            "profit": 667.5,
+            "profitPerServing": 667.5,
+            "recipeCost": 25
+          }
+        },
+        {
+          "id": 40,
+          "partyId": 8,
+          "dishId": 166,
+          "partyPrice": 692.5,
+          "partyRevenue": 692.5,
+          "profit": 667.5,
+          "profitPerServing": 667.5,
+          "dishName": "Red-banded Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 25,
+          "search": "red-banded lobster sushi",
+          "sort": {
+            "dishName": "red-banded lobster sushi",
+            "partyPrice": 692.5,
+            "partyRevenue": 692.5,
+            "profit": 667.5,
+            "profitPerServing": 667.5,
+            "recipeCost": 25
+          }
+        },
+        {
+          "id": 35,
+          "partyId": 8,
+          "dishId": 78,
+          "partyPrice": 637.5,
+          "partyRevenue": 637.5,
+          "profit": 614.5,
+          "profitPerServing": 614.5,
+          "dishName": "European Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 23,
+          "search": "european lobster sushi",
+          "sort": {
+            "dishName": "european lobster sushi",
+            "partyPrice": 637.5,
+            "partyRevenue": 637.5,
+            "profit": 614.5,
+            "profitPerServing": 614.5,
+            "recipeCost": 23
+          }
+        },
+        {
+          "id": 30,
+          "partyId": 8,
+          "dishId": 43,
+          "partyPrice": 610,
+          "partyRevenue": 610,
+          "profit": 588,
+          "profitPerServing": 588,
+          "dishName": "California Spiny Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 22,
+          "search": "california spiny lobster sushi",
+          "sort": {
+            "dishName": "california spiny lobster sushi",
+            "partyPrice": 610,
+            "partyRevenue": 610,
+            "profit": 588,
+            "profitPerServing": 588,
+            "recipeCost": 22
+          }
+        },
+        {
+          "id": 36,
+          "partyId": 8,
+          "dishId": 81,
+          "partyPrice": 610,
+          "partyRevenue": 610,
+          "profit": 588,
+          "profitPerServing": 588,
+          "dishName": "Fan Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 22,
+          "search": "fan lobster sushi",
+          "sort": {
+            "dishName": "fan lobster sushi",
+            "partyPrice": 610,
+            "partyRevenue": 610,
+            "profit": 588,
+            "profitPerServing": 588,
+            "recipeCost": 22
+          }
+        }
+      ],
+      "byId": {
+        "28": {
+          "id": 28,
+          "partyId": 8,
+          "dishId": 4,
+          "partyPrice": 1192.5,
+          "partyRevenue": 1192.5,
+          "profit": 1149.5,
+          "profitPerServing": 1149.5,
+          "dishName": "American Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 43,
+          "search": "american lobster sushi",
+          "sort": {
+            "dishName": "american lobster sushi",
+            "partyPrice": 1192.5,
+            "partyRevenue": 1192.5,
+            "profit": 1149.5,
+            "profitPerServing": 1149.5,
+            "recipeCost": 43
+          }
+        },
+        "29": {
+          "id": 29,
+          "partyId": 8,
+          "dishId": 28,
+          "partyPrice": 1302.5,
+          "partyRevenue": 1302.5,
+          "profit": 1255.5,
+          "profitPerServing": 1255.5,
+          "dishName": "Blue Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "blue lobster sushi",
+          "sort": {
+            "dishName": "blue lobster sushi",
+            "partyPrice": 1302.5,
+            "partyRevenue": 1302.5,
+            "profit": 1255.5,
+            "profitPerServing": 1255.5,
+            "recipeCost": 47
+          }
+        },
+        "30": {
+          "id": 30,
+          "partyId": 8,
+          "dishId": 43,
+          "partyPrice": 610,
+          "partyRevenue": 610,
+          "profit": 588,
+          "profitPerServing": 588,
+          "dishName": "California Spiny Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 22,
+          "search": "california spiny lobster sushi",
+          "sort": {
+            "dishName": "california spiny lobster sushi",
+            "partyPrice": 610,
+            "partyRevenue": 610,
+            "profit": 588,
+            "profitPerServing": 588,
+            "recipeCost": 22
+          }
+        },
+        "31": {
+          "id": 31,
+          "partyId": 8,
+          "dishId": 60,
+          "partyPrice": 3422.5,
+          "partyRevenue": 30802.5,
+          "profit": 30658.5,
+          "profitPerServing": 3406.5,
+          "dishName": "Crystal Lobster Roll",
+          "dlc": null,
+          "unlock": "Lobster Party",
+          "recipeCost": 144,
+          "search": "crystal lobster roll lobster party",
+          "sort": {
+            "dishName": "crystal lobster roll",
+            "partyPrice": 3422.5,
+            "partyRevenue": 30802.5,
+            "profit": 30658.5,
+            "profitPerServing": 3406.5,
+            "recipeCost": 144
+          }
+        },
+        "32": {
+          "id": 32,
+          "partyId": 8,
+          "dishId": 61,
+          "partyPrice": 1302.5,
+          "partyRevenue": 1302.5,
+          "profit": 1255.5,
+          "profitPerServing": 1255.5,
+          "dishName": "Crystal Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "crystal lobster sushi",
+          "sort": {
+            "dishName": "crystal lobster sushi",
+            "partyPrice": 1302.5,
+            "partyRevenue": 1302.5,
+            "profit": 1255.5,
+            "profitPerServing": 1255.5,
+            "recipeCost": 47
+          }
+        },
+        "33": {
+          "id": 33,
+          "partyId": 8,
+          "dishId": 76,
+          "partyPrice": 1302.5,
+          "partyRevenue": 1302.5,
+          "profit": 1255.5,
+          "profitPerServing": 1255.5,
+          "dishName": "Eastern Rock Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 47,
+          "search": "eastern rock lobster sushi",
+          "sort": {
+            "dishName": "eastern rock lobster sushi",
+            "partyPrice": 1302.5,
+            "partyRevenue": 1302.5,
+            "profit": 1255.5,
+            "profitPerServing": 1255.5,
+            "recipeCost": 47
+          }
+        },
+        "34": {
+          "id": 34,
+          "partyId": 8,
+          "dishId": 293,
+          "partyPrice": 3145,
+          "partyRevenue": 28305,
+          "profit": 28144,
+          "profitPerServing": 3127.1111111111113,
+          "dishName": "Ebirah Chasing Sashimi",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 161,
+          "search": "ebirah chasing sashimi godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "ebirah chasing sashimi",
+            "partyPrice": 3145,
+            "partyRevenue": 28305,
+            "profit": 28144,
+            "profitPerServing": 3127.1111111111113,
+            "recipeCost": 161
+          }
+        },
+        "35": {
+          "id": 35,
+          "partyId": 8,
+          "dishId": 78,
+          "partyPrice": 637.5,
+          "partyRevenue": 637.5,
+          "profit": 614.5,
+          "profitPerServing": 614.5,
+          "dishName": "European Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 23,
+          "search": "european lobster sushi",
+          "sort": {
+            "dishName": "european lobster sushi",
+            "partyPrice": 637.5,
+            "partyRevenue": 637.5,
+            "profit": 614.5,
+            "profitPerServing": 614.5,
+            "recipeCost": 23
+          }
+        },
+        "36": {
+          "id": 36,
+          "partyId": 8,
+          "dishId": 81,
+          "partyPrice": 610,
+          "partyRevenue": 610,
+          "profit": 588,
+          "profitPerServing": 588,
+          "dishName": "Fan Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 22,
+          "search": "fan lobster sushi",
+          "sort": {
+            "dishName": "fan lobster sushi",
+            "partyPrice": 610,
+            "partyRevenue": 610,
+            "profit": 588,
+            "profitPerServing": 588,
+            "recipeCost": 22
+          }
+        },
+        "37": {
+          "id": 37,
+          "partyId": 8,
+          "dishId": 294,
+          "partyPrice": 3422.5,
+          "partyRevenue": 30802.5,
+          "profit": 30711.5,
+          "profitPerServing": 3412.3888888888887,
+          "dishName": "Godzilla vs. Ebirah Curry",
+          "dlc": "Godzilla DLC",
+          "unlock": "Godzilla DLC",
+          "recipeCost": 91,
+          "search": "godzilla vs. ebirah curry godzilla dlc godzilla dlc",
+          "sort": {
+            "dishName": "godzilla vs. ebirah curry",
+            "partyPrice": 3422.5,
+            "partyRevenue": 30802.5,
+            "profit": 30711.5,
+            "profitPerServing": 3412.3888888888887,
+            "recipeCost": 91
+          }
+        },
+        "38": {
+          "id": 38,
+          "partyId": 8,
+          "dishId": 118,
+          "partyPrice": 4022.5,
+          "partyRevenue": 24135,
+          "profit": 23849,
+          "profitPerServing": 3974.8333333333335,
+          "dishName": "Lobster Platter",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 286,
+          "search": "lobster platter jango shop",
+          "sort": {
+            "dishName": "lobster platter",
+            "partyPrice": 4022.5,
+            "partyRevenue": 24135,
+            "profit": 23849,
+            "profitPerServing": 3974.8333333333335,
+            "recipeCost": 286
+          }
+        },
+        "39": {
+          "id": 39,
+          "partyId": 8,
+          "dishId": 142,
+          "partyPrice": 692.5,
+          "partyRevenue": 692.5,
+          "profit": 667.5,
+          "profitPerServing": 667.5,
+          "dishName": "Norway Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 25,
+          "search": "norway lobster sushi",
+          "sort": {
+            "dishName": "norway lobster sushi",
+            "partyPrice": 692.5,
+            "partyRevenue": 692.5,
+            "profit": 667.5,
+            "profitPerServing": 667.5,
+            "recipeCost": 25
+          }
+        },
+        "40": {
+          "id": 40,
+          "partyId": 8,
+          "dishId": 166,
+          "partyPrice": 692.5,
+          "partyRevenue": 692.5,
+          "profit": 667.5,
+          "profitPerServing": 667.5,
+          "dishName": "Red-banded Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 25,
+          "search": "red-banded lobster sushi",
+          "sort": {
+            "dishName": "red-banded lobster sushi",
+            "partyPrice": 692.5,
+            "partyRevenue": 692.5,
+            "profit": 667.5,
+            "profitPerServing": 667.5,
+            "recipeCost": 25
+          }
+        },
+        "41": {
+          "id": 41,
+          "partyId": 8,
+          "dishId": 209,
+          "partyPrice": 3515,
+          "partyRevenue": 24605,
+          "profit": 24469,
+          "profitPerServing": 3495.5714285714284,
+          "dishName": "Steamed Eastern Rock Lobster & Egg",
+          "dlc": null,
+          "unlock": "Lobster Party",
+          "recipeCost": 136,
+          "search": "steamed eastern rock lobster & egg lobster party",
+          "sort": {
+            "dishName": "steamed eastern rock lobster & egg",
+            "partyPrice": 3515,
+            "partyRevenue": 24605,
+            "profit": 24469,
+            "profitPerServing": 3495.5714285714284,
+            "recipeCost": 136
+          }
+        },
+        "42": {
+          "id": 42,
+          "partyId": 8,
+          "dishId": 216,
+          "partyPrice": 3607.5,
+          "partyRevenue": 21645,
+          "profit": 21557,
+          "profitPerServing": 3592.8333333333335,
+          "dishName": "Stir-fried Habanero Lobster",
+          "dlc": null,
+          "unlock": "Jango VIP",
+          "recipeCost": 88,
+          "search": "stir-fried habanero lobster jango vip",
+          "sort": {
+            "dishName": "stir-fried habanero lobster",
+            "partyPrice": 3607.5,
+            "partyRevenue": 21645,
+            "profit": 21557,
+            "profitPerServing": 3592.8333333333335,
+            "recipeCost": 88
+          }
+        },
+        "43": {
+          "id": 43,
+          "partyId": 8,
+          "dishId": 232,
+          "partyPrice": 1247.5,
+          "partyRevenue": 1247.5,
+          "profit": 1202.5,
+          "profitPerServing": 1202.5,
+          "dishName": "Tropical Rock Lobster Sushi",
+          "dlc": null,
+          "unlock": null,
+          "recipeCost": 45,
+          "search": "tropical rock lobster sushi",
+          "sort": {
+            "dishName": "tropical rock lobster sushi",
+            "partyPrice": 1247.5,
+            "partyRevenue": 1247.5,
+            "profit": 1202.5,
+            "profitPerServing": 1202.5,
+            "recipeCost": 45
+          }
+        },
+        "44": {
+          "id": 44,
+          "partyId": 8,
+          "dishId": 234,
+          "partyPrice": 4290,
+          "partyRevenue": 8580,
+          "profit": 7836,
+          "profitPerServing": 3918,
+          "dishName": "Truffle Blue Lobster Tail Sushi",
+          "dlc": null,
+          "unlock": "Jango Shop",
+          "recipeCost": 744,
+          "search": "truffle blue lobster tail sushi jango shop",
+          "sort": {
+            "dishName": "truffle blue lobster tail sushi",
+            "partyPrice": 4290,
+            "partyRevenue": 8580,
+            "profit": 7836,
+            "profitPerServing": 3918,
+            "recipeCost": 744
+          }
+        }
+      },
+      "facets": {
+        "dlc": {
+          "base": [
+            38,
+            44,
+            42,
+            41,
+            31,
+            29,
+            32,
+            33,
+            43,
+            28,
+            39,
+            40,
+            35,
+            30,
+            36
+          ],
+          "Godzilla DLC": [
+            37,
+            34
+          ]
+        },
+        "unlock": {
+          "Jango Shop": [
+            38,
+            44
+          ],
+          "Jango VIP": [
+            42
+          ],
+          "Lobster Party": [
+            41,
+            31
+          ],
+          "Godzilla DLC": [
+            37,
+            34
+          ]
+        }
+      }
     }
   }
-]
+}
