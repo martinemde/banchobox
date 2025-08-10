@@ -12,7 +12,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"test:unit": "vitest",
+		"test:unit": "vitest run",
 		"test": "npm run test:integration && npm run test:unit",
 		"test:e2e": "playwright test",
 		"build:data": "tsx scripts/build-database.ts"

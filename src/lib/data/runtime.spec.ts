@@ -10,6 +10,7 @@ function mkIngredient(id: Id, name = `Ing ${id}`): Ingredient {
     source: 'sea',
     type: 'fish',
     drone: false,
+    cost: 1,
     day: true,
     night: true,
     fog: false,
