@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Dish, Ingredient, EnrichedParty, PartyDish } from '../../src/lib/types.js';
+import { buildDishesBundle } from './dish_bundle.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,7 +19,8 @@ export function exportData(
 
   const version = 'v1';
 
-  writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishes, null, 2));
+  const dishesBundle = buildDishesBundle(dishes);
+  writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));
   writeFileSync(join(outputDir, `ingredients.${version}.json`), JSON.stringify(ingredients, null, 2));
   writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(parties, null, 2));
   writeFileSync(join(outputDir, `party-dishes.${version}.json`), JSON.stringify(partyDishes, null, 2));

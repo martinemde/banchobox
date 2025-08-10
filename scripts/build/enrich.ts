@@ -124,6 +124,25 @@ export function enrichData(
     const bestPartyRevenue = bestPartyDish?.partyRevenue ?? null;
     const maxProfitPerServing = bestPartyDish ? bestPartyDish.profit / dish.finalServings : baseProfitPerServing;
 
+    // Build search tokens and sort keys for client-side stores
+    const ingredientNames = ingredientLines
+      .map((l) => graph.ingById.get(l.ingredientId)?.name || '')
+      .filter(Boolean);
+    const normalize = (s: unknown) => (s ?? '').toString().toLowerCase();
+    const search = [dish.name, dish.dlc, dish.unlock, ...ingredientNames]
+      .map(normalize)
+      .join(' ');
+    const sort = {
+      name: normalize(dish.name),
+      finalPrice: dish.finalPrice,
+      finalServings: dish.finalServings,
+      baseProfitPerServing,
+      maxProfitPerServing,
+      maxProfitPerDish: bestPartyDish?.profit ?? baseProfit,
+      upgradeCost,
+      ingredientCount,
+    } as const;
+
     const enrichedDish: Dish = {
       ...dish,
       ingredients: ingredientLines,
@@ -142,6 +161,8 @@ export function enrichData(
       bestPartyBonus,
       bestPartyPrice,
       bestPartyRevenue,
+      search,
+      sort,
     };
 
     return enrichedDish;

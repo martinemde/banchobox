@@ -3,15 +3,16 @@
   import SortControl from '$lib/components/SortControl.svelte';
   import { Data } from '$lib/data/runtime.js';
 
-  const dishById = new Map(Data.dishes.map((d) => [d.id, d]));
-  const partyDishById = new Map(Data.partyDishes.map((pd) => [pd.id, pd]));
+  // SSR-safe, reactive indices
+  const dishById = $derived(new Map((Data.dishes ?? []).map((d) => [d.id, d])));
+  const partyDishById = $derived(new Map((Data.partyDishes ?? []).map((pd) => [pd.id, pd])));
 
   // Global sorting state for all party tables
   let sortColumn = $state<string>('profitPerServing');
   let sortDirection = $state<'asc' | 'desc'>('desc');
 
-  // Use layout-provided data
-  const enrichedParties = Data.parties;
+  // Use layout-provided data (reactive and SSR-safe)
+  const enrichedParties = $derived(Data.parties ?? []);
 
   // Search state (filters party dish list by dish fields)
   let searchQuery = $state('');
@@ -93,10 +94,11 @@
   }
 
   // Make sorted parties reactive to sort and search changes
-  const sortedParties = $derived(enrichedParties.map(party => {
-    const partyDishes = (party.partyDishIds && party.partyDishIds.length > 0)
-      ? party.partyDishIds.map((id: number) => partyDishById.get(id)).filter(Boolean) as any[]
-      : Data.partyDishes.filter((pd) => pd.partyId === party.id);
+  const sortedParties = $derived((enrichedParties ?? []).map(party => {
+    const partyDishIds: number[] = Array.isArray(party.partyDishIds) ? party.partyDishIds : [];
+    const partyDishes = (partyDishIds.length > 0)
+      ? partyDishIds.map((id: number) => partyDishById.get(id)).filter(Boolean) as any[]
+      : (Data.partyDishes ?? []).filter((pd) => pd.partyId === party.id);
     const sortedDishes = sortPartyDishes(partyDishes, sortColumn, sortDirection);
     const visibleDishes = (searchQuery && searchQuery.trim().length > 0)
       ? sortedDishes.filter(pd => partyDishMatchesQuery(pd, searchQuery))

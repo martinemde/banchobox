@@ -1,12 +1,13 @@
 <script lang="ts">
-  import type { Ingredient, Dish } from '$lib/types.js';
+  import type { Ingredient, Dish, Id } from '$lib/types.js';
   import PlannedIngredient from '$lib/components/PlannedIngredient.svelte';
   import { trackedDishIds, trackedIngredientIds } from '$lib/stores/tracking.js';
   import type { PageProps } from './$types';
 
   let { data }: PageProps = $props();
-
-  const dishById = new Map(data.dishes.map((d) => [d.id, d]));
+  const dishes = $derived(((data as any).dishesBundle?.rows ?? []) as Dish[]);
+  const ingredients = $derived((data.ingredients ?? []) as Ingredient[]);
+  const dishById = $derived(new Map<Id, Dish>((dishes as Dish[]).map((d: Dish) => [d.id, d])));
 
   // Compute the union of directly tracked ingredients and ingredients from tracked dishes
   const ingredientIdsFromTrackedDishes = $derived(new Set<number>(
@@ -22,7 +23,7 @@
   ]));
 
   const plannedIngredients = $derived(Array.from(plannedIngredientIds)
-    .map((id) => data.ingredients.find((i) => i.id === id))
+    .map((id) => ingredients.find((i) => i.id === id))
     .filter((i): i is Ingredient => Boolean(i)));
 
   type TrackedUsage = {

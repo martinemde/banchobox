@@ -106,9 +106,9 @@
     { value: 'partiesCount', label: 'Parties' }
   ];
 
-  // Local indices
-  const partyDishById = new Map(Data.partyDishes.map((pd) => [pd.id, pd]));
-  const dishById = new Map(Data.dishes.map((d) => [d.id, d]));
+  // Local indices (reactive and SSR-safe)
+  const partyDishById = $derived(new Map((Data.partyDishes ?? []).map((pd) => [pd.id, pd])));
+  const dishById = $derived(new Map((Data.dishes ?? []).map((d) => [d.id, d])));
 
   // Get sorted ingredients
   const enrichedIngredients = $derived(sortIngredients(baseIngredients, sortColumn, sortDirection));
@@ -135,7 +135,7 @@
 
   // Calculate sum of upgrade counts for this ingredient across all dishes
   function calculateSumUpgradeCount(ingredient: any): number {
-    return Data.dishes.reduce((total, dish) => {
+    return (Data.dishes ?? []).reduce((total, dish) => {
       const dishIngredient = dish.ingredients.find(ing => ing.ingredientId === ingredient.id);
       return total + (dishIngredient?.upgradeCount || 0);
     }, 0);
@@ -178,8 +178,9 @@
 
   // Get party names that use this ingredient
   function getPartiesThatUseIngredient(ingredient: any): string[] {
-    const partyById = new Map(Data.parties.map((p) => [p.id, p]));
-    const partyNames: string[] = ingredient.usedForParties.map((partyId: number) => partyById.get(partyId)?.name || 'Unknown');
+    const partyById = new Map((Data.parties ?? []).map((p) => [p.id, p]));
+    const partyIds: number[] = Array.isArray(ingredient.usedForParties) ? ingredient.usedForParties : [];
+    const partyNames: string[] = partyIds.map((partyId: number) => partyById.get(partyId)?.name || 'Unknown');
     return [...new Set(partyNames)].sort();
   }
 </script>

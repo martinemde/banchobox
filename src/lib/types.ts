@@ -133,6 +133,10 @@ export interface Dish extends BasicDish {
   bestPartyBonus: number | null;
   bestPartyPrice: number | null;
   bestPartyRevenue: number | null;
+
+  // Client-side search & sort helpers (precomputed at build time)
+  search: string; // normalized tokens (name, dlc, unlock, ingredient names)
+  sort: Record<SortKey, string | number>;
 }
 
 export interface Ingredient extends BasicIngredient {
@@ -155,3 +159,14 @@ export interface DataService {
   parties: EnrichedParty[];
   partyDishes: PartyDish[];
 }
+
+// Sort keys available for Dish.sort
+export type SortKey =
+  | 'name'
+  | 'finalPrice'
+  | 'finalServings'
+  | 'baseProfitPerServing'
+  | 'maxProfitPerServing'
+  | 'maxProfitPerDish'
+  | 'upgradeCost'
+  | 'ingredientCount';
