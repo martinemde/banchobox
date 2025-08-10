@@ -16,6 +16,14 @@ type IngredientsBundle = {
   facets: Record<string, Record<string, Id[]>>;
 };
 
+type PartiesDishSubBundle = { rows: PartyDish[]; byId: Record<Id, PartyDish>; facets: Record<string, Record<string, Id[]>> };
+type PartiesBundle = {
+  rows: EnrichedParty[];
+  byId: Record<Id, EnrichedParty>;
+  facets: Record<string, Record<string, Id[]>>;
+  dishesByParty: Record<Id, PartiesDishSubBundle>;
+};
+
 type LoaderResult = {
   dishes?: never; // replaced by bundle
   ingredients?: Ingredient[];
@@ -23,6 +31,7 @@ type LoaderResult = {
   partyDishes?: PartyDish[];
   dishesBundle?: DishesBundle;
   ingredientsBundle?: IngredientsBundle;
+  partiesBundle?: PartiesBundle;
 };
 
 export const load: (event: Parameters<LayoutLoad>[0]) => Promise<LoaderResult> = async ({ fetch }) => {
@@ -30,13 +39,14 @@ export const load: (event: Parameters<LayoutLoad>[0]) => Promise<LoaderResult> =
   if (typeof window === 'undefined') return {};
   const fromData = (file: string) => `${base}/data/${file}`;
 
-  const [dishesBundle, ingredientsBundle, ingredients, parties, partyDishes] = await Promise.all([
+  const [dishesBundle, ingredientsBundle, partiesBundle, ingredients, parties, partyDishes] = await Promise.all([
     fetch(fromData('dishes.v1.json')).then((r) => r.json() as Promise<DishesBundle>),
     fetch(fromData('ingredients.bundle.json')).then((r) => r.json() as Promise<IngredientsBundle>),
+    fetch(fromData('parties.bundle.json')).then((r) => r.json() as Promise<PartiesBundle>),
     fetch(fromData('ingredients.v1.json')).then((r) => r.json() as Promise<Ingredient[]>),
     fetch(fromData('parties.v1.json')).then((r) => r.json() as Promise<EnrichedParty[]>),
     fetch(fromData('party-dishes.v1.json')).then((r) => r.json() as Promise<PartyDish[]>)
   ]);
 
-  return { dishesBundle, ingredientsBundle, ingredients, parties, partyDishes };
+  return { dishesBundle, ingredientsBundle, partiesBundle, ingredients, parties, partyDishes };
 };

@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import type { Dish, Ingredient, EnrichedParty, PartyDish } from '../../src/lib/types.js';
 import { buildDishesBundle } from './dish_bundle.js';
 import { buildIngredientsBundle } from './ingredient_bundle.js';
+import { buildPartiesBundle } from './party_bundle.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -24,6 +25,7 @@ export function exportData(
   writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));
   writeFileSync(join(outputDir, `ingredients.${version}.json`), JSON.stringify(ingredients, null, 2));
   writeFileSync(join(outputDir, `ingredients.bundle.json`), JSON.stringify(buildIngredientsBundle(ingredients), null, 2));
+  writeFileSync(join(outputDir, `parties.bundle.json`), JSON.stringify(buildPartiesBundle(parties, partyDishes), null, 2));
   writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(parties, null, 2));
   writeFileSync(join(outputDir, `party-dishes.${version}.json`), JSON.stringify(partyDishes, null, 2));
 

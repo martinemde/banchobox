@@ -32,7 +32,15 @@ function mkIngredient(id: Id, name = `Ing ${id}`): Ingredient {
 }
 
 function mkParty(id: Id, name = `Party ${id}`): EnrichedParty {
-  return { id, name, order: id, bonus: 2, partyDishIds: [] };
+  return {
+    id,
+    name,
+    order: id,
+    bonus: 2,
+    partyDishIds: [],
+    search: `${name.toLowerCase()} bonus 2x`,
+    sort: { name: name.toLowerCase(), bonus: 2, dishCount: 0, order: id },
+  };
 }
 
 function mkDish(id: Id, opts: { ingredientId: Id; partyDishIds?: Id[] } = { ingredientId: 1 }): Dish {
@@ -94,7 +102,20 @@ function mkPartyDish(id: Id, dishId: Id, partyId: Id, bonus = 2): PartyDish {
     partyPrice,
     partyRevenue,
     profit,
-    profitPerServing: profit / 2
+    profitPerServing: profit / 2,
+    dishName: `Dish ${dishId}`,
+    dlc: null,
+    unlock: null,
+    recipeCost: 5,
+    search: `dish ${dishId}`,
+    sort: {
+      dishName: `dish ${dishId}`,
+      partyPrice,
+      partyRevenue,
+      profit,
+      profitPerServing: profit / 2,
+      recipeCost: 5,
+    }
   };
 }
 

@@ -6,6 +6,7 @@
   import { onMount } from 'svelte';
   import { dishesStores } from '$lib/stores/dishes';
   import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
+  import { partiesBundleStore, dishesByPartyStore } from '$lib/stores/parties';
 
 	let { children, data }: LayoutProps = $props();
   // Initialize Data service on the client after mount to avoid SSR undefined data
@@ -13,7 +14,7 @@
     Data.init({
       dishes: (data.dishesBundle?.rows ?? []) as any,
       ingredients: (data.ingredientsBundle?.rows ?? data.ingredients ?? []) as any,
-      parties: data.parties ?? [],
+      parties: (data.partiesBundle?.rows ?? data.parties ?? []) as any,
       partyDishes: data.partyDishes ?? []
     });
     if (data.dishesBundle) {
@@ -21,6 +22,14 @@
     }
     if (data.ingredientsBundle) {
       ingredientsBundleStore.set(data.ingredientsBundle as any);
+    }
+    if (data.partiesBundle) {
+      partiesBundleStore.set({
+        rows: data.partiesBundle.rows as any,
+        byId: data.partiesBundle.byId as any,
+        facets: data.partiesBundle.facets as any,
+      });
+      dishesByPartyStore.set(data.partiesBundle.dishesByParty as any);
     }
   });
 
@@ -30,12 +39,20 @@
       Data.init({
         dishes: (data.dishesBundle.rows ?? []) as any,
         ingredients: (data.ingredientsBundle?.rows ?? data.ingredients ?? []) as any,
-        parties: data.parties ?? [],
+        parties: (data.partiesBundle?.rows ?? data.parties ?? []) as any,
         partyDishes: data.partyDishes ?? []
       });
       dishesStores.bundle.set(data.dishesBundle as any);
       if (data.ingredientsBundle) {
         ingredientsBundleStore.set(data.ingredientsBundle as any);
+      }
+      if (data.partiesBundle) {
+        partiesBundleStore.set({
+          rows: data.partiesBundle.rows as any,
+          byId: data.partiesBundle.byId as any,
+          facets: data.partiesBundle.facets as any,
+        });
+        dishesByPartyStore.set(data.partiesBundle.dishesByParty as any);
       }
     }
   });

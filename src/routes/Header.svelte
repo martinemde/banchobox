@@ -54,7 +54,7 @@
 <div class="appbar-inner" class:hidden={isHidden} bind:this={appBarEl}>
 <AppBar>
   {#snippet lead()}
-    <h3 class="text-xl font-bold text-primary-500 no-underline">Bancho Box</h3>
+    <h3 class="text-2xl font-bold text-primary-500 no-underline">Bancho Box</h3>
   {/snippet}
 
   {#snippet trail()}

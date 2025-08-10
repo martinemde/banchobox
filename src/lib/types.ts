@@ -76,24 +76,6 @@ export interface Graph {
   dishesByPartyId: Map<Id, Id[]>;
 }
 
-// Calculator interfaces for extensibility
-export interface Calculator<TInput = unknown, TOutput = number> {
-  name: string;
-  description: string;
-  calculate(data: TInput): TOutput;
-}
-
-
-export interface BestPartyResult {
-  partyDishId: Id;
-  profit: number;
-}
-
-export interface BestDishResult {
-  partyDishId: Id | null;
-  profit: number;
-}
-
 // PartyDish entity - first-class representation of party-dish relationships
 export interface PartyDish {
   id: Id; // Unique identifier for this party-dish combination
@@ -103,6 +85,16 @@ export interface PartyDish {
   partyRevenue: number; // partyPrice * dish.finalServings
   profit: number; // partyRevenue - dish.recipeCost
   profitPerServing: number; // profit / dish.finalServings
+
+  // Denormalized dish fields for UI
+  dishName: string;
+  dlc?: string | null;
+  unlock?: string | null;
+  recipeCost: number;
+
+  // Client-side helpers
+  search: string;
+  sort: Record<PartyDishSortKey, string | number | null>;
 }
 
 // Precomputed data structures for JSON export
@@ -136,7 +128,7 @@ export interface Dish extends BasicDish {
 
   // Client-side search & sort helpers (precomputed at build time)
   search: string; // normalized tokens (name, dlc, unlock, ingredient names)
-  sort: Record<SortKey, string | number>;
+  sort: Record<DishSortKey, string | number>;
 }
 
 export interface Ingredient extends BasicIngredient {
@@ -153,6 +145,8 @@ export interface Ingredient extends BasicIngredient {
 
 export interface EnrichedParty extends Party {
   partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
+  search: string;
+  sort: Record<PartySortKey, string | number>;
 }
 
 // Data service interface
@@ -164,7 +158,7 @@ export interface DataService {
 }
 
 // Sort keys available for Dish.sort
-export type SortKey =
+export type DishSortKey =
   | 'name'
   | 'finalPrice'
   | 'finalServings'
@@ -183,3 +177,19 @@ export type IngredientSortKey =
   | 'buyJango'
   | 'buyOtto'
   | 'usedForPartiesCount';
+
+// Sort keys for EnrichedParty.sort
+export type PartySortKey =
+  | 'order'
+  | 'name'
+  | 'bonus'
+  | 'dishCount';
+
+// Sort keys for PartyDish.sort
+export type PartyDishSortKey =
+  | 'dishName'
+  | 'partyPrice'
+  | 'partyRevenue'
+  | 'profit'
+  | 'profitPerServing'
+  | 'recipeCost';

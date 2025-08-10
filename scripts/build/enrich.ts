@@ -52,6 +52,20 @@ export function enrichData(
     const dishProfit = partyProfitPerDish(dish, party, dishRecipeCost);
     const dishProfitPerServing = dishProfit / dish.finalServings;
 
+    const dishName = dish.name;
+    const dlc = dish.dlc ?? null;
+    const unlock = dish.unlock ?? null;
+    const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
+    const search = [dishName, dlc, unlock].map(normalize).filter(Boolean).join(' ');
+    const sort = {
+      dishName: normalize(dishName),
+      partyPrice: dishPartyPrice,
+      partyRevenue: dishPartyRevenue,
+      profit: dishProfit,
+      profitPerServing: dishProfitPerServing,
+      recipeCost: dishRecipeCost,
+    } as const;
+
     const partyDish: PartyDish = {
       id: partyDishIdCounter++,
       partyId: party.id,
@@ -60,6 +74,12 @@ export function enrichData(
       partyRevenue: dishPartyRevenue,
       profit: dishProfit,
       profitPerServing: dishProfitPerServing,
+      dishName,
+      dlc,
+      unlock,
+      recipeCost: dishRecipeCost,
+      search,
+      sort,
     };
 
     partyDishes.push(partyDish);
@@ -242,10 +262,20 @@ export function enrichData(
     const partyPartyDishes = (partyDishesByPartyId.get(party.id) ?? []).sort((a, b) => b.profit - a.profit);
     const partyDishIds = partyPartyDishes.map((pd) => pd.id);
 
+    const dishCount = partyDishIds.length;
+    const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
+
     const enrichedParty: EnrichedParty = {
       ...party,
       partyDishIds,
-    };
+      search: [party.name, `bonus ${party.bonus}x`].map(normalize).join(' '),
+      sort: {
+        name: normalize(party.name),
+        bonus: party.bonus,
+        dishCount,
+        order: party.order,
+      },
+    } as EnrichedParty;
 
     return enrichedParty;
   });

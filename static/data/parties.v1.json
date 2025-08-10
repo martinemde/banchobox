@@ -16,7 +16,14 @@
       27,
       17,
       23
-    ]
+    ],
+    "search": "jellyfish bonus 2x",
+    "sort": {
+      "name": "jellyfish",
+      "bonus": 2,
+      "dishCount": 11,
+      "order": 1
+    }
   },
   {
     "id": 2,
@@ -36,7 +43,14 @@
       96,
       87,
       95
-    ]
+    ],
+    "search": "tuna bonus 3.5x",
+    "sort": {
+      "name": "tuna",
+      "bonus": 3.5,
+      "dishCount": 12,
+      "order": 2
+    }
   },
   {
     "id": 3,
@@ -49,7 +63,14 @@
       49,
       48,
       46
-    ]
+    ],
+    "search": "marlin bonus 2x",
+    "sort": {
+      "name": "marlin",
+      "bonus": 2,
+      "dishCount": 5,
+      "order": 3
+    }
   },
   {
     "id": 4,
@@ -83,7 +104,14 @@
       70,
       61,
       73
-    ]
+    ],
+    "search": "shark bonus 2x",
+    "sort": {
+      "name": "shark",
+      "bonus": 2,
+      "dishCount": 26,
+      "order": 4
+    }
   },
   {
     "id": 5,
@@ -99,7 +127,14 @@
       2,
       5,
       7
-    ]
+    ],
+    "search": "cucumber bonus 2.5x",
+    "sort": {
+      "name": "cucumber",
+      "bonus": 2.5,
+      "dishCount": 8,
+      "order": 5
+    }
   },
   {
     "id": 6,
@@ -115,7 +150,14 @@
       16,
       12,
       14
-    ]
+    ],
+    "search": "curry bonus 2x",
+    "sort": {
+      "name": "curry",
+      "bonus": 2,
+      "dishCount": 8,
+      "order": 6
+    }
   },
   {
     "id": 7,
@@ -134,7 +176,14 @@
       86,
       82,
       78
-    ]
+    ],
+    "search": "shrimp bonus 2x",
+    "sort": {
+      "name": "shrimp",
+      "bonus": 2,
+      "dishCount": 11,
+      "order": 7
+    }
   },
   {
     "id": 8,
@@ -159,6 +208,13 @@
       35,
       30,
       36
-    ]
+    ],
+    "search": "lobster bonus 2.5x",
+    "sort": {
+      "name": "lobster",
+      "bonus": 2.5,
+      "dishCount": 17,
+      "order": 8
+    }
   }
 ]
