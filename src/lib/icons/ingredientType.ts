@@ -9,8 +9,8 @@ import {
   LeafyGreen,
   Loader,
   Shrimp,
+  Skull,
   Snowflake,
-  Sprout,
   Wheat,
 } from '@lucide/svelte';
 
@@ -23,6 +23,8 @@ export function getIngredientTypeIcon(type?: string) {
       return FishOff;
     case 'aberration crab':
       return ArchiveX;
+    case 'boss':
+      return Skull;
     case 'crab trap':
       return ArchiveRestore;
     case 'egg':
@@ -38,7 +40,6 @@ export function getIngredientTypeIcon(type?: string) {
     case 'rice':
       return Wheat;
     case 'sea plant':
-    //   return Sprout
       return LeafyGreen;
     case 'vegetable':
       return Carrot;
