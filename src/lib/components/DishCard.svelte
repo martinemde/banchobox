@@ -12,6 +12,7 @@
 	import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
 	import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
+  import DishPartiesPanel from './DishPartiesPanel.svelte';
 
   export let dish: Dish;
 
@@ -89,7 +90,7 @@
       <div class="flex-1 min-w-0 space-y-4">
         <header>
           <div class="font-semibold text-base truncate">{dish.name}</div>
-          <div class="text-xs opacity-70 truncate mt-0.5">{dish.unlock || '—'}</div>
+          <div class="text-sm opacity-70 truncate mt-0.5">{dish.unlock || '—'}</div>
         </header>
 
           <ProfitTable
@@ -180,23 +181,7 @@
           {/snippet}
 
           {#snippet panel()}
-            <div class="overflow-x-auto -mx-4">
-              {#each partyRows as row}
-                <div class="flex items-start gap-x-4 border-t border-surface-200-800 p-4">
-                  <div class="w-24 shrink-0">
-                    <div class="text-md font-semibold truncate">{row.party.name}</div>
-                    <div class="mt-1">
-                      <span class="badge rounded-full preset-filled-primary-500 px-1.5 py-0.5">{row.party.bonus}× Party</span>
-                    </div>
-                  </div>
-                  <ProfitTable
-                    price={row.partyDish.partyPrice}
-                    servings={row.dish.finalServings}
-                    totalCost={row.dish.recipeCost}
-                  />
-                </div>
-              {/each}
-            </div>
+            <DishPartiesPanel ids={dish.partyDishIds} />
           {/snippet}
         </Accordion.Item>
       {/if}
