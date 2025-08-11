@@ -4,6 +4,8 @@ alwaysApply: true
 
 SvelteKit app is written in TypeScript and uses Skeleton UI and Lucide icons.
 
+[SvelteKit Documentation](https://svelte.dev/llms-medium.txt)
+
 * Renders as a static site on CloudFlare
 * Ensure good static performance on client side
 * Ensure good first page and navigation performance
