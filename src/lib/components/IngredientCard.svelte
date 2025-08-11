@@ -81,7 +81,7 @@
           <h3 class="h5 m-0 truncate !leading-none">{ingredient.name}</h3>
         </div>
 
-        <div class="mt-1 *:text-xs opacity-80 flex flex-wrap items-center gap-1">
+        <div class="mt-1 *:text-sm opacity-80 flex flex-wrap items-center gap-1">
           <span>{ingredient.source}</span>
           {#if ingredient.day}
             <span class="inline-flex items-center" title="Day"><Sun size={16} /></span>
