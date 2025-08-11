@@ -11,7 +11,7 @@
     { value: 'name', label: 'Recipe' },
     { value: 'finalPrice', label: 'Final Price' },
     { value: 'finalServings', label: 'Final Servings' },
-    { value: 'baseProfitPerServing', label: 'Profit / Serving' },
+    { value: 'finalProfitPerServing', label: 'Profit / Serving' },
     { value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
     { value: 'upgradeCost', label: 'Upgrade Cost' },
     { value: 'ingredientCount', label: 'Ingredients' }

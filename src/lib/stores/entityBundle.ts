@@ -1,11 +1,5 @@
 import { derived, writable, type Readable, type Writable } from 'svelte/store';
-import type { Id } from '$lib/types.js';
-
-export interface EntityBundle<Row> {
-  rows: Row[];
-  byId: Record<Id, Row>;
-  facets: Record<string, Record<string, Id[]>>;
-}
+import type { Id, EntityBundle } from '$lib/types.js';
 
 export interface EntityStores<Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }> {
   bundle: Writable<EntityBundle<Row> | null>;

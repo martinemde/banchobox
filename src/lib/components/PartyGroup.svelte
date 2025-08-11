@@ -1,9 +1,9 @@
 <script lang="ts">
   import SortControl from '$lib/components/SortControl.svelte';
   import PartyDish from '$lib/components/PartyDishCard.svelte';
-  import { createPartyDishesStores } from '$lib/stores/parties';
+  import { createPartyDishesStores } from '$lib/stores/partyDishes.js';
   import type { EnrichedParty, Id, PartyDish as PartyDishRow } from '$lib/types.js';
-  import { Data } from '$lib/data/runtime.js';
+  import { bundle as dishesBundle } from '$lib/stores/dishes.js';
   import type { Readable, Writable } from 'svelte/store';
 
   export let party: EnrichedParty;
@@ -62,7 +62,7 @@
       </div>
 
       {#each $visibleStore as pd (pd.id)}
-        {@const dish = (Data.getDishById(pd.dishId))}
+        {@const dish = ($dishesBundle?.byId[pd.dishId])}
         {#if dish}
           <PartyDish dish={dish} partyDish={pd} party={party} />
         {/if}

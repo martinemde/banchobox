@@ -1,9 +1,8 @@
 <script lang="ts">
   import PartyDish from '$lib/components/PartyDishCard.svelte';
   import SortControl from '$lib/components/SortControl.svelte';
-  import { Data } from '$lib/data/runtime.js';
   import { partiesStores } from '$lib/stores/parties';
-  import { dishesByPartyStore } from '$lib/stores/parties';
+  import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
   import PartyGroup from '$lib/components/PartyGroup.svelte';
 
   const { query, sortKey, sortDir, visible } = partiesStores;

@@ -1,9 +1,11 @@
 <script lang="ts">
-  import { Data } from '$lib/data/runtime.js';
+  import { bundle as dishesBundle } from '$lib/stores/dishes.js';
+  import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
+  import { bundle as partiesBundle } from '$lib/stores/parties.js';
 
-  $: dishes = Data.dishes;
-  $: ingredients = Data.ingredients;
-  $: parties = Data.parties;
+  $: dishes = $dishesBundle?.rows ?? [];
+  $: ingredients = $ingredientsBundle?.rows ?? [];
+  $: parties = $partiesBundle?.rows ?? [];
 </script>
 
 <svelte:head>

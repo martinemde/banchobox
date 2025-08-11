@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { Dish, PartyDish as PartyDishEntity } from '../types.js';
-  import { Data } from '../data/runtime.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import { enhancedImageForFile } from '../images/index.js';
   import TrackButton from './TrackButton.svelte';
@@ -9,6 +8,7 @@
   import { browser } from '$app/environment';
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
   import IngredientTypeCount from './IngredientTypeCount.svelte';
+  import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
 
   export let dish: Dish;
   export let partyDish: PartyDishEntity; // Calculated values for this dish under the current party
@@ -26,7 +26,7 @@
   }
 
   $: ingredientRows = dish.ingredients.map((ing) => {
-    const meta = Data.getIngredientById(ing.ingredientId);
+    const meta = $ingredientsBundle?.byId[ing.ingredientId];
     return {
       name: meta?.name ?? 'Unknown',
       count: ing.count,

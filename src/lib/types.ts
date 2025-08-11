@@ -1,6 +1,14 @@
 // Core data interfaces matching Data-Modeling.md structure with ID-based system
 export type Id = number;
 
+export type Facets = Record<string, Record<string, Id[]>>;
+
+export interface EntityBundle<Row> {
+  rows: Row[];
+  byId: Record<Id, Row>;
+  facets: Facets;
+}
+
 export interface BasicDish {
   id: Id;
   name: string;
@@ -108,22 +116,14 @@ export interface Dish extends BasicDish {
   }>;
   recipeCost: number;
   partyDishIds: Id[]; // References to PartyDish entities
-  bestPartyDishId: Id | null; // Reference to the PartyDish with highest profit
 
   // Pre-calculated values to avoid view-level calculations
-  baseRevenue: number; // finalPrice * finalServings
-  baseProfit: number; // baseRevenue - recipeCost
-  baseProfitPerServing: number; // baseProfit / finalServings
+  finalRevenue: number; // finalPrice * finalServings
+  finalProfit: number; // finalRevenue - recipeCost
+  finalProfitPerServing: number; // finalProfit / finalServings
   maxProfitPerServing: number; // best profit per serving across parties
   upgradeCost: number; // sum of (unitCost * upgradeCount) for all ingredients
-  upgradeBreakEven: number; // ceil(best profit / upgradeCost); 0 if upgradeCost is 0
   ingredientCount: number; // total count of all ingredients
-
-  // Best party information (flattened for easier access)
-  bestPartyName: string | null;
-  bestPartyBonus: number | null;
-  bestPartyPrice: number | null;
-  bestPartyRevenue: number | null;
 
   // Client-side search & sort helpers (precomputed at build time)
   search: string; // normalized tokens (name, dlc, unlock, ingredient names)
@@ -135,7 +135,6 @@ export interface Ingredient extends BasicIngredient {
     dishId: Id;
     count: number;
   }>;
-  bestPartyDishId: Id | null; // Reference to PartyDish with highest profit for this ingredient
   usedForParties: Id[];
   // Client-side search & sort helpers (precomputed at build time)
   search: string; // normalized tokens (name, source, type, day/night/fog, drone)
@@ -161,7 +160,7 @@ export type DishSortKey =
   | 'name'
   | 'finalPrice'
   | 'finalServings'
-  | 'baseProfitPerServing'
+  | 'finalProfitPerServing'
   | 'maxProfitPerServing'
   | 'upgradeCost'
   | 'ingredientCount';

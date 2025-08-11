@@ -1,14 +1,12 @@
-import type { Ingredient, Id } from '../../src/lib/types.js';
+import type { Ingredient, Id, EntityBundle } from '../../src/lib/types.js';
 
-export type Facets = Record<string, Record<string, Id[]>>;
-
-export function buildIngredientsBundle(ingredients: Ingredient[]) {
+export function buildIngredientsBundle(ingredients: Ingredient[]): EntityBundle<Ingredient> {
   const byId = Object.fromEntries(ingredients.map((i) => [i.id, i])) as Record<Id, Ingredient>;
 
   // Minimal, useful facets (no hasIngredient)
-  const facets: Facets = {
-    type: {}, // e.g. 'fish', 'shellfish', etc.
-    source: {}, // e.g. 'Blue Hole', 'Market', ...
+  const facets: EntityBundle<Ingredient>['facets'] = {
+    type: {}, // e.g. 'fish', 'vegetable', etc.
+    source: {}, // e.g. 'Glacial Passage', 'Vegetable Farm', ...
     time: {}, // 'day','night','fog' flags mapped to ids
     vendor: {}, // 'jangovendor', 'ottovendor' based on presence of buy price
     drone: {}, // 'yes' when ingredient.drone === true

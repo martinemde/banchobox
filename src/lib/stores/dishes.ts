@@ -2,7 +2,7 @@ import { createEntityStores } from './entityBundle.js';
 import type { Dish } from '$lib/types.js';
 
 export const dishesStores = createEntityStores<Dish>({
-  sortKey: 'baseProfitPerServing',
+  sortKey: 'finalProfitPerServing',
   sortDir: 'desc',
 });
 

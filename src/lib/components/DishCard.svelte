@@ -1,6 +1,5 @@
 <script lang="ts">
-  import type { Dish } from '../types.js';
-  import { Data } from '../data/runtime.js';
+  import type { Dish, PartyDish } from '../types.js';
   import { enhancedImageForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import ProfitTable from './ProfitTable.svelte';
@@ -10,6 +9,9 @@
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
   import IngredientTypeCount from './IngredientTypeCount.svelte';
 	import { PartyPopper } from '@lucide/svelte';
+	import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
+	import { bundle as partiesBundle } from '$lib/stores/parties.js';
+	import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
 
   export let dish: Dish;
 
@@ -19,7 +21,7 @@
   const thumbPx = 96;
 
   $: ingredientRows = dish.ingredients.map((ing) => {
-    const meta = Data.getIngredientById(ing.ingredientId);
+    const meta = $ingredientsBundle?.byId[ing.ingredientId];
     return {
       name: meta?.name ?? 'Unknown',
       count: ing.count,
@@ -38,12 +40,12 @@
 
   // Build rows for all parties associated to this dish, sorted by profit desc
   $: partyRows = (dish.partyDishIds || [])
-    .map((id) => Data.getPartyDishById(id))
+    .map((id) => $partyDishByIdStore?.[id] as PartyDish)
     .filter(Boolean)
     .map((pd) => ({
       partyDish: pd!,
-      party: Data.getPartyById(pd!.partyId)!,
-      dish: Data.getDishById(pd!.dishId)!
+      party: $partiesBundle?.byId[pd!.partyId]!,
+      dish
     }))
     .sort((a, b) => b.partyDish.profit - a.partyDish.profit);
 </script>
