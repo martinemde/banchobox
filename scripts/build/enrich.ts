@@ -58,10 +58,11 @@ export function enrichData(
     const partyProfitPerServing = Math.round(partyProfit / dish.finalServings);
 
     const dishName = dish.name;
+    const partyName = party.name;
     const dlc = dish.dlc ?? null;
     const unlock = dish.unlock ?? null;
 
-    const search = [dishName, dlc, unlock].map(normalize).filter(Boolean).join(' ');
+    const search = [dishName, partyName, dlc, unlock].map(normalize).filter(Boolean).join(' ');
     const sort = {
       dishName: normalize(dishName),
       partyPrice,
@@ -75,10 +76,13 @@ export function enrichData(
       id: partyDishIdCounter++,
       partyId: party.id,
       dishId: dish.id,
+      partyName,
+      partyBonus: party.bonus,
       partyPrice: partyPrice,
       partyRevenue: partyRevenue,
       profit: partyProfit,
       profitPerServing: partyProfitPerServing,
+      finalServings: dish.finalServings,
       dishName,
       dlc,
       unlock,
@@ -113,10 +117,14 @@ export function enrichData(
 
     const ingredientLines = dishIngredients.map((di) => {
       const ing = graph.ingById.get(di.ingredientId)!;
+      const type = ing.type;
 
       return {
         ingredientId: di.ingredientId,
         count: di.count,
+        name: ing.name,
+        image: ing.image,
+        type,
         unitCost: ing.cost,
         lineCost: ing.cost * di.count,
         upgradeCount: di.upgradeCount,
@@ -131,6 +139,7 @@ export function enrichData(
 
     const dishPartyDishes = partyDishesByDishId.get(dish.id) ?? [];
     const partyDishIds = dishPartyDishes.map((pd) => pd.id);
+    const partyIds = dishPartyDishes.map((pd) => pd.partyId);
 
     let maxProfitPerServing = finalProfitPerServing
     for (const partyDish of dishPartyDishes) {
@@ -165,6 +174,7 @@ export function enrichData(
       ingredients: ingredientLines,
       recipeCost,
       partyDishIds,
+      partyIds,
       finalRevenue,
       finalProfit,
       finalProfitPerServing,

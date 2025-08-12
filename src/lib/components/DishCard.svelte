@@ -1,54 +1,38 @@
 <script lang="ts">
-  import type { Dish, PartyDish } from '../types.js';
+  import type { Dish, Id, Party, PartyDish } from '../types.js';
   import { enhancedImageForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import ProfitTable from './ProfitTable.svelte';
   import TrackButton from './TrackButton.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
   import { browser } from '$app/environment';
-  import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
-  import IngredientTypeCount from './IngredientTypeCount.svelte';
 	import { PartyPopper } from '@lucide/svelte';
-	import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
-	import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
-  import DishPartiesPanel from './DishPartiesPanel.svelte';
+  import PartyDishPanel from './PartyDishPanel.svelte';
+  import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
+  import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
 
-  export let dish: Dish;
+  let { dish } = $props<{ dish: Dish }>();
 
-  let enhancedImage: string;
-  $: enhancedImage = enhancedImageForFile(dish.image);
+  let enhancedImage = $derived(enhancedImageForFile(dish.image));
   // Fixed width for thumbnail to match default card format
   const thumbPx = 96;
 
-  $: ingredientRows = dish.ingredients.map((ing) => {
-    const meta = $ingredientsBundle?.byId[ing.ingredientId];
-    return {
-      name: meta?.name ?? 'Unknown',
-      count: ing.count,
-      upgradeCount: ing.upgradeCount,
-      unitCost: ing.unitCost,
-      lineCost: ing.lineCost,
-      image: enhancedImageForFile(meta?.image ?? undefined),
-      icon: getIngredientTypeIcon(meta?.type ?? meta?.source ?? undefined)
-    };
-  });
-
-  function formatNumber(value: number | null | undefined): string {
-    if (value == null || Number.isNaN(value)) return '—';
-    return new Intl.NumberFormat().format(Math.round(value));
+  // Lazy-load recipe panel when user first expands the accordion
+  let LazyRecipePanel: any = $state(null);
+  function ensureRecipePanelLoaded() {
+    if (!LazyRecipePanel) {
+      import('./RecipePanel.svelte').then((m) => (LazyRecipePanel = m.default));
+    }
   }
+  let partyDishes = $derived(
+    (dish.partyDishIds ?? [])
+      .map((id: Id) => $partyDishByIdStore?.[id] as PartyDish | undefined)
+      .filter((pd: PartyDish | undefined): pd is PartyDish => Boolean(pd))
+  );
 
-  // Build rows for all parties associated to this dish, sorted by profit desc
-  $: partyRows = (dish.partyDishIds || [])
-    .map((id) => $partyDishByIdStore?.[id] as PartyDish)
-    .filter(Boolean)
-    .map((pd) => ({
-      partyDish: pd!,
-      party: $partiesBundle?.byId[pd!.partyId]!,
-      dish
-    }))
-    .sort((a, b) => b.partyDish.profit - a.partyDish.profit);
+  // Controlled accordion value, trigger lazy load via onValueChange (Skeleton docs)
+  let value = $state<string[]>([]);
 </script>
 
 <article class="card preset-filled-surface-100-900 border border-surface-200-800 divide-y divide-surface-200-800">
@@ -104,87 +88,36 @@
 
   <!-- Section 2 & 3: Collapsible Recipe and Parties -->
   <section>
-    <Accordion multiple collapsible defaultValue={[]}>
+    <Accordion {value} onValueChange={(e) => { value = e.value; if (e.value?.includes('recipe')) ensureRecipePanelLoaded(); }} multiple collapsible defaultValue={[]}>
       <Accordion.Item value="recipe" controlHover="hover:preset-filled-primary-900-100 hover:text-primary-200-800">
         {#snippet control()}
-          <div class="w-full min-w-0">
-            <div class="flex flex-wrap gap-2 items-center pr-10 text-xs opacity-80">
-              {#each ingredientRows as row}
-                <span class="inline-flex items-center gap-1">
-                  <IngredientTypeCount count={row.count} icon={row.icon} title={row.name} size={16} />
-                </span>
-              {/each}
-            </div>
-          </div>
+          <RecipeSummaryIcons dish={dish} />
         {/snippet}
 
         {#snippet panel()}
-          <div class="overflow-x-auto mt-2 -mx-4">
-            <table class="w-full table-auto text-sm">
-              <thead class="bg-surface-200-800">
-                <tr>
-                  <th class="p-2 pl-4 text-left" colspan="2">Ingredient</th>
-                  <th class="p-2 text-left">Qty</th>
-                  <th class="p-2 text-right">Cost</th>
-                  <th class="p-2 text-right">Upgrade</th>
-                </tr>
-              </thead>
-              <tbody>
-                {#each ingredientRows as row}
-                  <tr class="border-b border-surface-200-800">
-                    <td class="pl-4 w-8">
-                      <div class="relative" style="width: 24px; height: 24px">
-                        <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700" style="width: 24px; height: 24px" src={row.image} alt={row.name} sizes="24px" loading="lazy" />
-                      </div>
-                    </td>
-                    <td class="p-2">{row.name}</td>
-                    <td class="p-2 text-left tabular-nums gap-x-2">
-                      {#if row.icon}
-                        {@const Icon = row.icon}
-                        <span class="inline-flex items-center gap-x-1">
-                          <strong>{row.count}</strong><Icon size={16} class="opacity-70" />
-                        </span>
-                      {:else}
-                        <strong>{row.count}</strong>
-                      {/if}
-                    </td>
-                    <td class="p-2 text-right tabular-nums">{formatNumber(row.lineCost)}</td>
-                    <td class="p-2 pr-4 text-right tabular-nums">{(row.upgradeCount ?? 0) > 0 ? row.upgradeCount : '—'}</td>
-                  </tr>
-                {/each}
-              </tbody>
-              <tfoot>
-                <tr class="bg-surface-200-800 font-semibold">
-                  <td class="pl-4 p-2 uppercase text-xs" colspan="2">Recipe Cost</td>
-                  <td class="p-2 text-left tabular-nums">{dish.ingredientCount}</td>
-                  <td class="p-2 text-right tabular-nums">{formatNumber(dish.recipeCost)}</td>
-                  <td class="pr-4 p-2 text-right tabular-nums">{formatNumber(dish.upgradeCost)}</td>
-                  <td></td>
-                </tr>
-              </tfoot>
-            </table>
+          <div id="recipe-panel">
+            {#if LazyRecipePanel}
+              <LazyRecipePanel {dish} />
+            {/if}
           </div>
         {/snippet}
       </Accordion.Item>
 
-      {#if dish.partyDishIds && dish.partyDishIds.length > 0}
-        <Accordion.Item value="parties" controlHover="hover:preset-filled-primary-900-100 hover:text-primary-300-700">
+      {#each partyDishes as partyDish}
+        <Accordion.Item value={`party-${partyDish.partyName}`} controlHover="hover:preset-filled-primary-900-100 hover:text-primary-300-700" classes="border-t border-surface-200-800">
+          {#snippet lead()}
+            <PartyPopper size={16} />
+          {/snippet}
           {#snippet control()}
-            <span class="flex min-w-0 truncate pr-10 text-sm gap-x-2 items-center">
-              {#each partyRows as row}
-                <PartyPopper size={16} />
-                <span class="min-w-0 pr-3 text-sm">
-                  {row.party.name} Party
-                </span>
-              {/each}
-            </span>
+            <span class="font-semibold">{partyDish.partyBonus}×</span>
+            <span class="text-sm">{partyDish.partyName} Party</span>
           {/snippet}
 
           {#snippet panel()}
-            <DishPartiesPanel ids={dish.partyDishIds} />
+            <PartyDishPanel {partyDish} />
           {/snippet}
         </Accordion.Item>
-      {/if}
+      {/each}
     </Accordion>
   </section>
 </article>

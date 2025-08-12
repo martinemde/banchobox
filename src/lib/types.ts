@@ -89,10 +89,13 @@ export interface PartyDish {
   id: Id; // Unique identifier for this party-dish combination
   partyId: Id;
   dishId: Id;
+  partyName: string;
   partyPrice: number; // dish.finalPrice * party.bonus
   partyRevenue: number; // partyPrice * dish.finalServings
   profit: number; // partyRevenue - dish.recipeCost
   profitPerServing: number; // profit / dish.finalServings
+  finalServings: number; // dish.finalServings
+  partyBonus: number; // party.bonus
 
   // Denormalized dish fields for UI
   dishName: string;
@@ -110,12 +113,17 @@ export interface Dish extends BasicDish {
   ingredients: Array<{
     ingredientId: Id;
     count: number;
+    // Denormalized fields to render recipe without loading ingredient bundle
+    name: string;
+    image: string; // image filename
+    type: string; // semantic type; used to select icon
     unitCost: number | null;
     lineCost: number;
     upgradeCount: number | null;
   }>;
   recipeCost: number;
   partyDishIds: Id[]; // References to PartyDish entities
+  partyIds: Id[]; // References to Party entities
 
   // Pre-calculated values to avoid view-level calculations
   finalRevenue: number; // finalPrice * finalServings
