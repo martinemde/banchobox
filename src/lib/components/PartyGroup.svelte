@@ -31,7 +31,7 @@
 </script>
 
 <section class="mt-6">
-  <header class="flex items-center justify-between px-4 py-3 border-b border-surface-200-800">
+  <header class="flex items-center justify-between py-3 border-b border-surface-200-800">
     <h3 class="h4 m-0">{party.name} Party</h3>
     <div class="flex items-center gap-2">
       <span class="badge preset-filled-primary-500 text-xs">{party.bonus}× bonus</span>
@@ -39,7 +39,7 @@
     </div>
   </header>
 
-  <div class="flex flex-col gap-4 p-4">
+  <div class="flex flex-col gap-y-4">
     {#if true}
       <div class="controls p-2">
         <div class="search-wrapper">

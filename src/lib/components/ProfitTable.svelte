@@ -1,5 +1,8 @@
 <script lang="ts">
-  let { price, servings, totalCost } = $props<{ price: number; servings: number; totalCost: number }>();
+  import { rawImageUrlForFile } from '$lib/images/index.js';
+  import type { Dish } from '$lib/types';
+
+  let { dish } = $props<{dish: Dish}>();
 
   function formatNumber(value: number | null | undefined): string {
     if (value == null || Number.isNaN(value)) return '—';
@@ -7,24 +10,40 @@
   }
 
   // numeric calculations
-  let revenue = $derived(price * servings);
+  let price = $derived(dish.finalPrice);
+  let servings = $derived(dish.finalServings);
+  let revenue = $derived(dish.finalRevenue);
+  let totalCost = $derived(dish.recipeCost);
   let costPerServing = $derived(totalCost / servings);
-  let profitPerServing = $derived(price - costPerServing);
-  let profitTotal = $derived(price * servings - totalCost);
+  let profitPerServing = $derived(dish.finalProfitPerServing);
+  let profitTotal = $derived(dish.finalProfit);
+
+  let servingsImage = rawImageUrlForFile('ui/servings.png');
+  let coinImage = rawImageUrlForFile('ui/coin.png');
 </script>
 
-<table class="w-64 table-auto text-sm">
+<table class="w-full max-w-64 table-auto text-sm">
   <tbody>
-    <tr class="align-bottom">
-      <td class="text-xs opacity-70">Price</td>
-      <td class="tabular-nums text-right">{formatNumber(price)}</td>
-      <td class="tabular-nums text-right flex flex-row flex-wrap items-end justify-end gap-x-1 gap-y-0.5">
-        <span class="opacity-70 whitespace-nowrap">×{servings} servings</span>
-        <span class="whitespace-nowrap">=&nbsp;{formatNumber(revenue)}</span>
+    <tr class="align-baseline">
+      <td class="opacity-70 align-bottom">
+        Price
+      </td>
+      <td class="tabular-nums text-right">
+        <img class="inline-block align-text-bottom w-4 h-4" src={coinImage} alt="Price" loading="lazy" decoding="async" width={20} height={20} />
+        {formatNumber(price)}
+      </td>
+      <td class="tabular-nums text-right">
+        <span class="opacity-70 whitespace-nowrap">×{servings}</span>
+        <img class="inline-block align-text-bottom w-4 h-4" src={servingsImage} alt="Servings" loading="lazy" decoding="async" width={20} height={20} />
+        <span class="whitespace-nowrap">
+          =&nbsp;{formatNumber(revenue)}
+        </span>
       </td>
     </tr>
     <tr class="text-red-800 dark:text-red-200">
-      <td class="text-xs opacity-70">Cost</td>
+      <td class="text-xs opacity-70">
+        Cost
+      </td>
       <td class="tabular-nums text-right text-xs">
         -{formatNumber(costPerServing)}
       </td>
@@ -33,7 +52,9 @@
       </td>
     </tr>
     <tr class="font-semibold">
-      <td class="text-xs opacity-70">Profit</td>
+      <td class="opacity-70 flex flex-row flex-wrap">
+        Profit
+      </td>
       <td class="tabular-nums text-right">
         {formatNumber(profitPerServing)}
       </td>

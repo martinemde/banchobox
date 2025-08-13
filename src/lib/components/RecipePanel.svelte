@@ -1,30 +1,20 @@
 <script lang="ts">
   import type { Dish } from '$lib/types.js';
-  import { enhancedImageForFile } from '$lib/images/index.js';
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
+  import PixelIcon from './PixelIcon.svelte';
 
   let { dish } = $props<{ dish: Dish }>();
-
-  function tryEnhancedImage(filename: string | null | undefined): string | null {
-    try {
-      if (!filename) return null;
-      return enhancedImageForFile(filename);
-    } catch {
-      return null;
-    }
-  }
 
   let ingredientRows = $derived(
     dish.ingredients.map((ing: Dish['ingredients'][number]) => {
       const icon = getIngredientTypeIcon(ing.type);
-      const image = tryEnhancedImage(ing.image);
       return {
         name: ing.name ?? `Ingredient #${ing.ingredientId}`,
         count: ing.count,
         upgradeCount: ing.upgradeCount,
         unitCost: ing.unitCost,
         lineCost: ing.lineCost,
-        image,
+        image: ing.imageUrl ?? ing.image,
         icon
       };
     })
@@ -50,15 +40,8 @@
       {#each ingredientRows as row}
         <tr class="border-b border-surface-200-800">
           <td class="pl-4 w-8">
-            <div class="relative" style="width: 24px; height: 24px">
-              <enhanced:img
-                class="overflow-hidden rounded-md object-contain bg-surface-300-700"
-                style="width: 24px; height: 24px"
-                src={row.image}
-                alt={row.name}
-                sizes="24px"
-                loading="lazy"
-              />
+            <div class="relative" style="width: 32px; height: 32px">
+              <PixelIcon image={row.image} alt={row.name} uiScale={0.5} />
             </div>
           </td>
           <td class="p-2">{row.name}</td>

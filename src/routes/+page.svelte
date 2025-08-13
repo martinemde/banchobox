@@ -85,9 +85,11 @@
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold text-on-surface-token mb-6">About Bancho Box</h2>
       <p class="text-lg text-on-surface-token/75 leading-relaxed">
-        Bancho Box is a comprehensive database for Dave the Diver, featuring detailed information about
-        dishes, ingredients, and party events. Whether you're planning the perfect restaurant menu or
-        looking for specific ingredients, this tool helps you navigate the depths of Dave's culinary world.
+        Bancho Box is a fan made database for Dave the Diver.
+        It is not affiliated with Dave the Diver or its developers or publishers.
+        Assets are sourced from the game and used for informational purposes only.
+        All assets are the property of their respective owners.
+        Assets are used with the intent of "fair use" to encourage more people to enjoy playing Dave the Diver.
       </p>
     </div>
   </div>

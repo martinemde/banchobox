@@ -1,22 +1,25 @@
 <script lang="ts">
-  import type { Dish, Id, Party, PartyDish } from '../types.js';
-  import { enhancedImageForFile } from '../images/index.js';
+  import type { Dish, Id, PartyDish } from '../types.js';
+  import { rawImageUrlForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import ProfitTable from './ProfitTable.svelte';
   import TrackButton from './TrackButton.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
-  import { browser } from '$app/environment';
 	import { PartyPopper } from '@lucide/svelte';
-	import { bundle as partiesBundle } from '$lib/stores/parties.js';
   import PartyDishPanel from './PartyDishPanel.svelte';
   import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
   import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
+  import PixelIcon from './PixelIcon.svelte';
 
   let { dish } = $props<{ dish: Dish }>();
 
-  let enhancedImage = $derived(enhancedImageForFile(dish.image));
+  let imageName = $derived(dish.imageUrl ?? dish.image);
+  let tasteImage = rawImageUrlForFile('ui/sort_taste.png');
+  let levelImage = rawImageUrlForFile('ui/sort_level.png');
+
   // Fixed width for thumbnail to match default card format
   const thumbPx = 96;
+  const iconPx = 16;
 
   // Lazy-load recipe panel when user first expands the accordion
   let LazyRecipePanel: any = $state(null);
@@ -39,13 +42,13 @@
   <!-- Section 1: Overview -->
   <section class="p-4">
     <div class="flex items-start gap-4">
-      <div class="inline-block" style="width: {thumbPx}px">
-        <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-          <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={dish.name} sizes="{thumbPx}px" loading="lazy" />
+      <div class="inline-block">
+        <div class="relative grid place-items-center">
+          <PixelIcon image={imageName} alt={dish.name} />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">
-          {#if browser && dish?.id != null}
+          {#if dish?.id != null}
             {@const isTracked = $trackedDishIds.has(dish.id)}
             <TrackButton
               checked={isTracked}
@@ -58,13 +61,13 @@
           {/if}
         </div>
 
-        <div class="text-center">
-            <span class="text-xs opacity-70">Max Level</span>
+        <div class="text-center flex items-center gap-1">
+            <img class="object-contain w-4 h-4" src={levelImage} alt="Max Level" loading="lazy" decoding="async" width={iconPx} height={iconPx} />
             <span class="font-semibold">{dish.maxLevel}</span>
         </div>
 
-        <div class="text-center">
-            <span class="text-xs opacity-70">Taste</span>
+        <div class="text-center flex items-center gap-1">
+            <img class="object-contain w-4 h-4" src={tasteImage} alt="Taste" loading="lazy" decoding="async" width={iconPx} height={iconPx} />
             <span class="font-semibold">{dish.finalTaste}</span>
         </div>
       </div>
@@ -77,11 +80,7 @@
           <div class="text-sm opacity-70 truncate mt-0.5">{dish.unlock || '—'}</div>
         </header>
 
-          <ProfitTable
-          price={dish.finalPrice}
-          servings={dish.finalServings}
-          totalCost={dish.recipeCost}
-        />
+        <ProfitTable dish={dish} />
       </div>
     </div>
   </section>

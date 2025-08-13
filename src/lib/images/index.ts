@@ -1,32 +1,38 @@
-// Enhanced image modules for thumbnails (processed at build via @sveltejs/enhanced-img)
-const thumbnailEnhancedModules = import.meta.glob(
+// Raw asset URL registries (no enhanced image handling)
+const thumbnailUrlModules = import.meta.glob(
   '/src/lib/images/thumbnails/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
-  {
-    eager: true,
-    query: {
-      enhanced: true
-    }
-  }
+  { eager: true, query: '?url', import: 'default' }
 );
 
-// Local alias mirroring the plugin's accepted object form for <enhanced:img>
-export type ImageSource = string;
+const uiUrlModules = import.meta.glob(
+  '/src/lib/images/ui/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
+  { eager: true, query: '?url', import: 'default' }
+);
 
-// Resolve an enhanced image module's default export for a given filename
-export function enhancedImageForFile(filename: string | null | undefined): string {
-  if (!filename) throw new Error('enhancedImageForFile: filename is required');
-  const key = `/src/lib/images/thumbnails/${filename}`;
-  const mod = thumbnailEnhancedModules[key] as { default?: unknown } | unknown | undefined;
-  if (mod == null) {
-    throw new Error(`enhancedImageForFile: image not found for key ${key}`);
+const allUrlModules = {
+  ...thumbnailUrlModules,
+  ...uiUrlModules
+} as Record<string, string>;
+
+// Resolve a raw asset URL for a given filename (e.g. "foo.png" or "ui/foo.png")
+export function rawImageUrlForFile(filename: string | null | undefined): string {
+  if (!filename) throw new Error('rawImageUrlForFile: filename is required');
+
+  const candidateKeys: string[] = [];
+  if (filename.includes('/')) {
+    candidateKeys.push(`/src/lib/images/${filename}`);
   }
-  // Some bundlers expose the processed artifact at default, others inline it
-  if (typeof mod === 'object' && mod !== null && 'default' in mod) {
-    return (mod as { default: unknown }).default as unknown as string;
+  candidateKeys.push(`/src/lib/images/thumbnails/${filename}`);
+
+  for (const key of candidateKeys) {
+    const url = allUrlModules[key];
+    if (url) return url;
   }
-  return mod as unknown as string;
+
+  throw new Error(
+    `rawImageUrlForFile: image not found for candidates: ${candidateKeys.join(', ')}`
+  );
 }
-
 
 // Deprecated: kept for temporary compatibility while migrating callsites
 export function toImageFileName(name: string): string {

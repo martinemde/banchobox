@@ -16,6 +16,8 @@
     { value: 'profit', label: 'Profit' },
     { value: 'profitPerServing', label: 'Profit / Serving' }
   ];
+
+  let filtersDialogRef: HTMLDialogElement | null = $state(null);
 </script>
 
 <svelte:head>
@@ -23,8 +25,8 @@
   <meta name="description" content="Complete party collection from Dave the Diver with calculated profit analysis" />
 </svelte:head>
 
-<div class="max-w-screen-2xl mx-auto md:p-4">
-  <div class="controls p-4">
+{#snippet ControlsPanel()}
+  <div class="controls space-y-3">
     <div class="search-wrapper">
       <input
         type="search"
@@ -38,7 +40,6 @@
         </button>
       {/if}
     </div>
-
     <SortControl
       options={[{ value: 'name', label: 'Name' }, { value: 'bonus', label: 'Bonus' }, { value: 'dishCount', label: 'Dish Count' }]}
       column={$sortKey}
@@ -49,16 +50,44 @@
       }}
     />
   </div>
+{/snippet}
 
-  <section class="parties">
-    <div class="parties-container">
-      {#each $visible as party (party.id)}
-        {#if $dishesByPartyStore?.[party.id]}
-          <PartyGroup party={party} subBundle={$dishesByPartyStore[party.id]} />
-        {/if}
-      {/each}
+<div class="mx-auto max-w-screen-xl px-4 py-6 md:h-[100dvh] md:overflow-hidden">
+  <div class="md:grid md:grid-cols-[320px_minmax(0,1fr)] md:gap-6 md:h-full">
+    <div class="md:hidden mb-4">
+      <button class="btn btn-lg preset-filled w-full" onclick={() => (filtersDialogRef as HTMLDialogElement)?.showModal()}>
+        Filters & sort
+      </button>
     </div>
-  </section>
+
+    <aside class="hidden md:block md:h-full md:overflow-auto">
+      <div class="card variant-glass-surface p-4 border border-white/10 sticky top-0">
+        {@render ControlsPanel()}
+      </div>
+    </aside>
+
+    <section class="parties md:h-full md:overflow-y-auto">
+      <div class="mx-auto md:mx-0 max-w-[400px] w-full">
+        <div class="flex flex-col gap-4">
+          {#each $visible as party (party.id)}
+            {#if $dishesByPartyStore?.[party.id]}
+              <PartyGroup party={party} subBundle={$dishesByPartyStore[party.id]} />
+            {/if}
+          {/each}
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <dialog bind:this={filtersDialogRef} class="left-drawer modal">
+    <div class="drawer-panel card variant-glass-surface p-4 h-dvh w-[min(92vw,360px)] overflow-auto">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-semibold">Filters & sort</h3>
+        <button class="btn btn-sm preset-tonal" onclick={() => (filtersDialogRef as HTMLDialogElement)?.close()}>Close</button>
+      </div>
+      {@render ControlsPanel()}
+    </div>
+  </dialog>
 </div>
 
 <style>
@@ -91,4 +120,16 @@
     opacity: 0.7;
   }
   .clear-btn:hover { opacity: 1; }
+  dialog.left-drawer {
+    position: fixed;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: stretch;
+  }
+  dialog.left-drawer::backdrop { background: rgba(0,0,0,0.5); }
+  .drawer-panel { margin: 0; height: 100dvh; }
 </style>

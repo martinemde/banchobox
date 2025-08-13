@@ -1,21 +1,17 @@
 <script lang="ts">
   import type { Dish, PartyDish as PartyDishEntity, EnrichedParty } from '../types.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
-  import { enhancedImageForFile } from '../images/index.js';
   import TrackButton from './TrackButton.svelte';
   import ProfitTable from './ProfitTable.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
-  import { browser } from '$app/environment';
-  import IngredientTypeCount from './IngredientTypeCount.svelte';
   import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
+  import PixelIcon from './PixelIcon.svelte';
 
   let { dish, partyDish, party } = $props<{
     dish: Dish;
     partyDish: PartyDishEntity; // Calculated values for this dish under the current party
     party: EnrichedParty;
   }>();
-
-  let enhancedImage = $derived(enhancedImageForFile(dish.image));
 
   // Fixed width for thumbnail and track button
   const thumbPx = 96; // 96px (~size-24)
@@ -43,12 +39,12 @@
   <section class="p-4">
     <div class="flex items-start gap-4">
         <div class="inline-block" style="width: {thumbPx}px">
-          <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
+          <div class="relative grid place-items-center" style="width: {thumbPx}px; height: {thumbPx}px">
             <span class="badge rounded-full preset-filled-primary-500 absolute px-1.5 py-0.5 -right-3 -top-2 z-10">{party?.bonus ?? ''}×</span>
-            <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={dish.name} loading="lazy" />
+            <PixelIcon image={dish.imageUrl ?? dish.image} alt={dish.name} />
           </div>
           <div class="mt-2" style="width: {thumbPx}px">
-            {#if browser && dish?.id != null}
+            {#if dish?.id != null}
               {@const isTracked = $trackedDishIds.has(dish.id)}
               <TrackButton
                 checked={isTracked}
@@ -72,11 +68,7 @@
           </header>
 
 
-          <ProfitTable
-            price={partyDish.partyPrice}
-            servings={dish.finalServings}
-            totalCost={dish.recipeCost}
-          />
+          <ProfitTable dish={partyDish} />
         </div>
     </div>
   </section>

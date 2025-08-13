@@ -13,6 +13,7 @@ export interface BasicDish {
   id: Id;
   name: string;
   image: string;
+  imageUrl?: string; // resolved static URL for the image
   maxLevel: number;
   basePrice: number;
   baseTaste: number;
@@ -29,6 +30,7 @@ export interface BasicIngredient {
   id: Id;
   name: string;
   image: string; // image filename
+  imageUrl?: string; // resolved static URL for the image
   source: string;
   type: string;
   drone: boolean;
@@ -84,30 +86,6 @@ export interface Graph {
   dishesByPartyId: Map<Id, Id[]>;
 }
 
-// PartyDish entity - first-class representation of party-dish relationships
-export interface PartyDish {
-  id: Id; // Unique identifier for this party-dish combination
-  partyId: Id;
-  dishId: Id;
-  partyName: string;
-  partyPrice: number; // dish.finalPrice * party.bonus
-  partyRevenue: number; // partyPrice * dish.finalServings
-  profit: number; // partyRevenue - dish.recipeCost
-  profitPerServing: number; // profit / dish.finalServings
-  finalServings: number; // dish.finalServings
-  partyBonus: number; // party.bonus
-
-  // Denormalized dish fields for UI
-  dishName: string;
-  dlc?: string | null;
-  unlock?: string | null;
-  recipeCost: number;
-
-  // Client-side helpers
-  search: string;
-  sort: Record<PartyDishSortKey, string | number | null>;
-}
-
 // Precomputed data structures for JSON export
 export interface Dish extends BasicDish {
   ingredients: Array<{
@@ -116,6 +94,7 @@ export interface Dish extends BasicDish {
     // Denormalized fields to render recipe without loading ingredient bundle
     name: string;
     image: string; // image filename
+    imageUrl?: string; // resolved static URL for the image
     type: string; // semantic type; used to select icon
     unitCost: number | null;
     lineCost: number;
@@ -136,6 +115,14 @@ export interface Dish extends BasicDish {
   // Client-side search & sort helpers (precomputed at build time)
   search: string; // normalized tokens (name, dlc, unlock, ingredient names)
   sort: Record<DishSortKey, string | number>;
+}
+
+// PartyDish entity - first-class representation of party-dish relationships
+export interface PartyDish extends Dish {
+  partyId: Id;
+  dishId: Id;
+  partyName: string;
+  partyBonus: number; // party.bonus
 }
 
 export interface Ingredient extends BasicIngredient {
@@ -168,10 +155,16 @@ export type DishSortKey =
   | 'name'
   | 'finalPrice'
   | 'finalServings'
+  | 'finalRevenue'
+  | 'finalProfit'
   | 'finalProfitPerServing'
   | 'maxProfitPerServing'
+  | 'recipeCost'
   | 'upgradeCost'
   | 'ingredientCount';
+
+// Sort keys for PartyDish.sort
+export type PartyDishSortKey = DishSortKey | 'partyBonus' | 'partyName';
 
 // Sort keys available for Ingredient.sort
 export type IngredientSortKey =
@@ -189,12 +182,3 @@ export type PartySortKey =
   | 'name'
   | 'bonus'
   | 'dishCount';
-
-// Sort keys for PartyDish.sort
-export type PartyDishSortKey =
-  | 'dishName'
-  | 'partyPrice'
-  | 'partyRevenue'
-  | 'profit'
-  | 'profitPerServing'
-  | 'recipeCost';

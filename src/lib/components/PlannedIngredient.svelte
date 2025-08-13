@@ -1,14 +1,12 @@
 <script lang="ts">
   import type { Ingredient, Dish } from '../types.js';
-  import { enhancedImageForFile } from '../images/index.js';
   import TrackButton from './TrackButton.svelte';
   import { trackedIngredientIds, trackedDishIds } from '$lib/stores/tracking.js';
   import { browser } from '$app/environment';
+  import PixelIcon from './PixelIcon.svelte';
 
   export let ingredient: Ingredient;
 
-  let enhancedImage: string;
-  $: enhancedImage = enhancedImageForFile(ingredient.image);
   const thumbPx = 96;
 
   function formatNumber(value: number | null | undefined): string {
@@ -46,7 +44,7 @@
     <div class="flex items-start gap-4">
       <div class="inline-block" style="width: {thumbPx}px">
         <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-          <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={ingredient.name} loading="lazy" />
+          <PixelIcon image={ingredient.imageUrl ?? ingredient.image} alt={ingredient.name} />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">

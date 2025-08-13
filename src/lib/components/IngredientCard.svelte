@@ -1,18 +1,14 @@
 <script lang="ts">
   import type { Ingredient, Dish } from '../types.js';
-  import { enhancedImageForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
-  import { browser } from '$app/environment';
   import TrackButton from './TrackButton.svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
   import { ChevronsUp, CloudFog, Moon, Sun } from '@lucide/svelte';
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
+  import PixelIcon from './PixelIcon.svelte';
 
   export let ingredient: Ingredient;
 
-  let enhancedImage: string;
-  $: enhancedImage = enhancedImageForFile(ingredient.image);
-  // Match thumbnail sizing used in PartyDish
   const thumbPx = 96;
 
   function formatNumber(value: number | null | undefined): string {
@@ -56,13 +52,13 @@
   <!-- Section 1: Overview (formatted like PartyDish) -->
   <section class="p-4">
     <div class="flex items-start gap-4">
-      <div class="inline-block" style="width: {thumbPx}px">
-        <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-          <enhanced:img class="overflow-hidden rounded-md object-contain bg-surface-300-700 w-full h-full" src={enhancedImage} alt={ingredient.name} sizes="{thumbPx}px" loading="lazy" />
+      <div class="inline-block">
+        <div class="relative grid place-items-center">
+          <PixelIcon image={ingredient.imageUrl ?? ingredient.image} alt={ingredient.name} />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">
-          {#if browser && ingredient?.id != null}
+          {#if ingredient?.id != null}
             {@const isTracked = $trackedIngredientIds.has(ingredient.id)}
             <TrackButton
               checked={isTracked}

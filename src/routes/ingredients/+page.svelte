@@ -19,6 +19,8 @@
     { value: 'buyOtto', label: 'Buy: Otto' },
     { value: 'usedForPartiesCount', label: 'Parties Using' }
   ];
+
+  let filtersDialogRef: HTMLDialogElement | null = $state(null);
 </script>
 
 <svelte:head>
@@ -26,67 +28,81 @@
   <meta name="description" content="Complete ingredient analysis from Dave the Diver with profitability metrics" />
 </svelte:head>
 
-  <div class="container">
-  <section class="ingredients">
-    <div class="controls p-2">
-      <div class="search-wrapper">
-        <input
-          type="search"
-          class="search-input"
-          placeholder="Search ingredients by name, source, type, time, drone…"
-          bind:value={$query}
-        />
-        {#if $query}
-          <button class="clear-btn" aria-label="Clear search" onclick={() => { query.set(''); }}>
-            ×
-          </button>
-        {/if}
-      </div>
-
-      <SortControl
-        options={sortOptions}
-        column={$sortKey}
-        direction={$sortDir}
-        on:change={(e) => {
-          sortKey.set(e.detail.column);
-          sortDir.set(e.detail.direction);
-        }}
+{#snippet ControlsPanel()}
+  <div class="controls space-y-3">
+    <div class="search-wrapper">
+      <input
+        type="search"
+        class="search-input"
+        placeholder="Search ingredients by name, source, type, time, drone…"
+        bind:value={$query}
       />
+      {#if $query}
+        <button class="clear-btn" aria-label="Clear search" onclick={() => { query.set(''); }}>
+          ×
+        </button>
+      {/if}
+    </div>
+    <SortControl
+      options={sortOptions}
+      column={$sortKey}
+      direction={$sortDir}
+      on:change={(e) => {
+        sortKey.set(e.detail.column);
+        sortDir.set(e.detail.direction);
+      }}
+    />
+    <div class="flex items-center gap-2 mt-1">
+      <label class="inline-flex items-center gap-2 text-sm">
+        <input type="checkbox" bind:checked={showTrackedOnly} />
+        <span>Show tracked only</span>
+        {#if showTrackedOnly}
+          <span class="text-xs opacity-60">{$trackedIngredientIds.size} tracked</span>
+        {/if}
+      </label>
+    </div>
+  </div>
+{/snippet}
 
-      <div class="flex items-center gap-2 mt-1">
-        <label class="inline-flex items-center gap-2 text-sm">
-          <input type="checkbox" bind:checked={showTrackedOnly} />
-          <span>Show tracked only</span>
-          {#if showTrackedOnly}
-            <span class="text-xs opacity-60">{$trackedIngredientIds.size} tracked</span>
-          {/if}
-        </label>
-      </div>
+<div class="mx-auto max-w-screen-xl px-4 py-6 md:h-[100dvh] md:overflow-hidden">
+  <div class="md:grid md:grid-cols-[320px_minmax(0,1fr)] md:gap-6 md:h-full">
+    <div class="md:hidden mb-4">
+      <button class="btn btn-lg preset-filled w-full" onclick={() => (filtersDialogRef as HTMLDialogElement)?.showModal()}>
+        Filters & sort
+      </button>
     </div>
 
-      <div class="card-list">
-        {#each $visible as ingredient (ingredient.id)}
-          {#if !showTrackedOnly || $trackedIngredientIds.has(ingredient.id)}
-            <IngredientCard {ingredient} />
-          {/if}
-        {/each}
+    <aside class="hidden md:block md:h-full md:overflow-auto">
+      <div class="card variant-glass-surface p-4 border border-white/10 sticky top-0">
+        {@render ControlsPanel()}
       </div>
-  </section>
+    </aside>
+
+    <section class="ingredients md:h-full md:overflow-y-auto">
+      <div class="mx-auto md:mx-0 max-w-[400px] w-full">
+        <div class="flex flex-col gap-4">
+          {#each $visible as ingredient (ingredient.id)}
+            {#if !showTrackedOnly || $trackedIngredientIds.has(ingredient.id)}
+              <IngredientCard {ingredient} />
+            {/if}
+          {/each}
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <dialog bind:this={filtersDialogRef} class="left-drawer modal">
+    <div class="drawer-panel card variant-glass-surface p-4 h-dvh w-[min(92vw,360px)] overflow-auto">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-semibold">Filters & sort</h3>
+        <button class="btn btn-sm preset-tonal" onclick={() => (filtersDialogRef as HTMLDialogElement)?.close()}>Close</button>
+      </div>
+      {@render ControlsPanel()}
+    </div>
+  </dialog>
 </div>
 
 <style>
-  .container {
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-
-  .controls {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
   .search-wrapper {
     position: relative;
     max-width: 540px;
@@ -118,19 +134,16 @@
 
   .clear-btn:hover { opacity: 1; }
 
-  /* Cards container */
-  .card-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
+  dialog.left-drawer {
+    position: fixed;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: stretch;
   }
-
-  @media (max-width: 1200px) {
-    .container {
-      padding: 1rem;
-    }
-
-    /* no table at this point */
-  }
+  dialog.left-drawer::backdrop { background: rgba(0,0,0,0.5); }
+  .drawer-panel { margin: 0; height: 100dvh; }
 </style>
