@@ -2,14 +2,18 @@
 alwaysApply: true
 ---
 
-SvelteKit app is written in TypeScript and uses Skeleton UI and Lucide icons.
+This is a SvelteKit app using Svelte 5, TypeScript, Skeleton UI, Lucide icons.
 
 [SvelteKit Documentation](https://svelte.dev/llms-medium.txt)
 
+* Adhere to Svelte 5 best practices, using the newest features wherever possible.
+
+A little about the app:
+
 * Renders as a static site on CloudFlare
-* Ensure good static performance on client side
+* Ensure good performance on client side
 * Ensure good first page and navigation performance
-* Strive for clean uncomplicated views
+* Strive for clean uncomplicated views utilizing runes for state
 * Use components to control the size and complexity of views
 
 This site loads data from CSV and transforms it to static enriched JSON.
