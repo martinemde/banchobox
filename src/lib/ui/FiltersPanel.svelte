@@ -31,14 +31,6 @@
     searchPlaceholder?: string;
   } = $props();
 
-  function formatFacetTitle(key: string): string {
-    // Simple title-case; customize as needed
-    return key
-      .replace(/([a-z])([A-Z])/g, '$1 $2')
-      .replace(/[_-]+/g, ' ')
-      .replace(/^./, (c) => c.toUpperCase());
-  }
-
   function isChecked(facet: string, value: string): boolean {
     return Boolean($filters?.[facet]?.has(value));
   }
@@ -84,7 +76,7 @@
 
   {#each Object.entries(($bundle?.facets ?? {})) as [facetName, facetIndex]}
     <fieldset class="space-y-1">
-      <legend class="text-sm font-semibold">{formatFacetTitle(facetName)}</legend>
+      <legend class="text-sm font-semibold">{facetName}</legend>
       {#each Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b)) as key}
         <label class="flex items-center gap-2 text-sm">
           <input

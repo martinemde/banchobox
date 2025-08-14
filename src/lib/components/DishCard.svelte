@@ -35,7 +35,7 @@
   let value = $state<string[]>([]);
 </script>
 
-<article class="card preset-filled-surface-100-900 border border-surface-200-800 divide-y divide-surface-200-800">
+<article class="card preset-filled-surface-100-900 border border-surface-200-800 divide-y divide-surface-200-800 min-w-40 max-w-100">
   <!-- Section 1: Overview -->
   <section class="p-4">
     <div class="flex items-start gap-4">
@@ -60,7 +60,7 @@
 
         <div class="text-center flex items-center gap-1">
             <img class="object-contain w-4 h-4" src={levelImage} alt="Max Level" loading="lazy" decoding="async" width={iconPx} height={iconPx} />
-            <span class="font-semibold">{dish.maxLevel}</span>
+           <span class="font-semibold">{dish.maxLevel}</span>
         </div>
 
         <div class="text-center flex items-center gap-1">

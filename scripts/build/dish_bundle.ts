@@ -9,20 +9,27 @@ export function buildDishesBundle(dishes: Dish[]): EntityBundle<Dish> {
     dlc: {},
     unlock: {},
     hasIngredient: {}, // ingredientId -> [dishIds]
+    "DLC": {},
+    "Unlock": {},
+    "Ingredient": {},
   };
 
   for (const d of dishes) {
-    const dlcVal = (d.dlc ?? 'base').toString();
-    (facets.dlc[dlcVal] ??= []).push(d.id);
+    const dlcVal = (d.dlc ?? 'Base').toString();
+    (facets['DLC'][dlcVal] ??= []).push(d.id);
 
     const unlockVal = (d.unlock ?? '').toString();
     if (unlockVal) {
-      (facets.unlock[unlockVal] ??= []).push(d.id);
+      if (unlockVal.startsWith('Staff ')) {
+        (facets['Unlock']['Staff Unlock'] ??= []).push(d.id);
+      } else {
+        (facets['Unlock'][unlockVal] ??= []).push(d.id);
+      }
     }
 
     for (const line of d.ingredients) {
-      const key = String(line.ingredientId);
-      (facets.hasIngredient[key] ??= []).push(d.id);
+      const key = String(line.name);
+      (facets['Ingredient'][key] ??= []).push(d.id);
     }
   }
 

@@ -21,7 +21,7 @@
 </script>
 
 <div class="px-4 py-6 md:h-[100dvh] md:overflow-hidden {containerClass}">
-  <div class="md:grid md:grid-cols-[320px_minmax(0,1fr)] lg:grid-cols-[320px_minmax(0,1fr)_288px] md:gap-6 md:h-full">
+  <div class="md:flex md:gap-6 md:h-full">
     <div class="md:hidden mb-4">
       <button class="btn btn-lg preset-filled w-full" onclick={() => (leftDialogRef as HTMLDialogElement)?.showModal()}>
         {#if title}
@@ -32,20 +32,18 @@
       </button>
     </div>
 
-    <aside class="hidden md:block md:h-full md:overflow-auto">
-      <div class="card variant-glass-surface p-4 border border-white/10 top-0">
+    <aside class="hidden md:block md:w-72 md:shrink-0 md:h-full md:overflow-auto">
+      <div class="px-4 border-r border-white/10 top-0">
         {@render left!()}
       </div>
     </aside>
 
-    <section class="md:h-full md:overflow-y-auto">
-      <div class="mx-auto md:mx-0 max-w-[400px] w-full">
-        {@render content!()}
-      </div>
+    <section class="md:flex-1 md:min-w-0 md:h-full md:overflow-y-auto">
+      {@render content!()}
     </section>
 
     {#if right}
-      <aside class="hidden lg:block md:h-full md:overflow-auto">
+      <aside class="hidden lg:block lg:w-64 md:shrink-0 md:h-full md:overflow-auto">
         {@render right!()}
       </aside>
     {/if}
