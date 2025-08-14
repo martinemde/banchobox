@@ -25,4 +25,4 @@ vite.config.ts.timestamp-*
 
 # Claude
 .claude
-.reference
+reference

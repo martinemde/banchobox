@@ -54,7 +54,7 @@
     <div class="flex items-start gap-4">
       <div class="inline-block">
         <div class="relative grid place-items-center">
-          <PixelIcon image={ingredient.imageUrl ?? ingredient.image} alt={ingredient.name} />
+          <PixelIcon image={ingredient.image} alt={ingredient.name} />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">

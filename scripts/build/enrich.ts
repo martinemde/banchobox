@@ -19,14 +19,6 @@ import { buildPartyDishesBundle } from './party_dish_bundle.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
-// Resolve absolute URL for a given thumbnail filename to a stable public path.
-// The export step copies thumbnails to /static/images/thumbnails.
-function resolveImageUrl(name: string | undefined | null): string | undefined {
-  if (!name) return undefined;
-  const key = name.includes('.') ? name : `${name}.png`;
-  return `/images/thumbnails/${key}`;
-}
-
 export function enrichData(
   basicDishes: BasicDish[],
   basicIngredients: BasicIngredient[],
@@ -50,8 +42,7 @@ export function enrichData(
         ingredientId: di.ingredientId,
         count: di.count,
         name: ing.name,
-        image: ing.image,
-        imageUrl: resolveImageUrl(ing.image),
+        image: ing.image, // persist raw filename from CSV (e.g., "agar.png")
         type,
         unitCost: ing.cost,
         lineCost: ing.cost * di.count,
@@ -165,7 +156,6 @@ export function enrichData(
 
     const enrichedDish: Dish = {
       ...dish,
-      imageUrl: resolveImageUrl(dish.image),
       ingredients: ingredientLines,
       recipeCost,
       partyDishIds: localPartyDishIds,
@@ -176,6 +166,8 @@ export function enrichData(
       maxProfitPerServing,
       upgradeCost,
       ingredientCount,
+      // Persist raw filename from CSV for top-level dish image
+      image: dish.image,
       search,
       sort,
     };
@@ -186,44 +178,49 @@ export function enrichData(
 
   // Enrich ingredients
   const ingredients: Ingredient[] = basicIngredients.map((ingredient) => {
-    const allPartyIds = new Set<Id>();
+    // Usage: which dishes reference this ingredient
+    const usageLines = dishIngredients.filter((di) => di.ingredientId === ingredient.id);
+    const usedIn = usageLines.map((u) => ({ dishId: u.dishId, count: u.count }));
 
-    const enrichedIngredient = {
-      ...ingredient,
-      imageUrl: resolveImageUrl(ingredient.image),
-      usedForParties: Array.from(allPartyIds),
-    } as Ingredient;
+    // Parties that benefit from those dishes
+    const partyIdSet = new Set<Id>();
+    for (const u of usageLines) {
+      for (const dp of dishParties) {
+        if (dp.dishId === u.dishId) partyIdSet.add(dp.partyId);
+      }
+    }
 
-    const usedForPartiesCount = enrichedIngredient.usedForParties?.length ?? 0;
-    const sell = enrichedIngredient.sell ?? null;
-    const kg = enrichedIngredient.kg ?? null;
+    const sell = ingredient.sell ?? null;
+    const kg = ingredient.kg ?? null;
     const sellPerKg = sell != null && kg != null && kg !== 0 ? sell / kg : null;
 
     const search = [
-      enrichedIngredient.name,
-      enrichedIngredient.source,
-      enrichedIngredient.type,
-      enrichedIngredient.day ? 'day' : '',
-      enrichedIngredient.night ? 'night' : '',
-      enrichedIngredient.fog ? 'fog' : '',
-      enrichedIngredient.drone ? 'drone' : '',
+      ingredient.name,
+      ingredient.source,
+      ingredient.type,
+      ingredient.day ? 'day' : '',
+      ingredient.night ? 'night' : '',
+      ingredient.fog ? 'fog' : '',
+      ingredient.drone ? 'drone' : '',
     ]
       .map(normalize)
       .filter(Boolean)
       .join(' ');
 
     const sort = {
-      name: normalize(enrichedIngredient.name),
+      name: normalize(ingredient.name),
       sell,
       kg,
       sellPerKg,
-      buyJango: enrichedIngredient.buyJango ?? null,
-      buyOtto: enrichedIngredient.buyOtto ?? null,
-      usedForPartiesCount,
+      buyJango: ingredient.buyJango ?? null,
+      buyOtto: ingredient.buyOtto ?? null,
+      usedForPartiesCount: partyIdSet.size,
     } as const;
 
     const finalIngredient: Ingredient = {
-      ...enrichedIngredient,
+      ...ingredient,
+      usedIn,
+      usedForParties: Array.from(partyIdSet),
       search,
       sort: sort as unknown as Ingredient['sort'],
     };

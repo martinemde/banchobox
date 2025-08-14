@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync, cpSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Dish, EnrichedParty, Ingredient, PartyDish, EntityBundle } from '../../src/lib/types.js';
@@ -14,16 +14,11 @@ export function exportData(args: {
 }) {
   const { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle } = args;
   const outputDir = join(__dirname, '..', '..', 'src', 'lib', 'data');
-  const thumbnailsSrcDir = join(__dirname, '..', '..', 'src', 'lib', 'images', 'thumbnails');
-  const thumbnailsOutDir = join(__dirname, '..', '..', 'static', 'images', 'thumbnails');
 
   mkdirSync(outputDir, { recursive: true });
-  mkdirSync(thumbnailsOutDir, { recursive: true });
 
   const version = 'v1';
 
-  // Ensure pixel art thumbnails are available at stable public URLs
-  cpSync(thumbnailsSrcDir, thumbnailsOutDir, { recursive: true });
 
   // Overwrite v1 files with bundled forms where applicable
   writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));

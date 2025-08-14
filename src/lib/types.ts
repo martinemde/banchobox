@@ -13,7 +13,6 @@ export interface BasicDish {
   id: Id;
   name: string;
   image: string;
-  imageUrl?: string; // resolved static URL for the image
   maxLevel: number;
   basePrice: number;
   baseTaste: number;
@@ -30,7 +29,6 @@ export interface BasicIngredient {
   id: Id;
   name: string;
   image: string; // image filename
-  imageUrl?: string; // resolved static URL for the image
   source: string;
   type: string;
   drone: boolean;
@@ -94,7 +92,6 @@ export interface Dish extends BasicDish {
     // Denormalized fields to render recipe without loading ingredient bundle
     name: string;
     image: string; // image filename
-    imageUrl?: string; // resolved static URL for the image
     type: string; // semantic type; used to select icon
     unitCost: number | null;
     lineCost: number;

@@ -14,7 +14,7 @@
         upgradeCount: ing.upgradeCount,
         unitCost: ing.unitCost,
         lineCost: ing.lineCost,
-        image: ing.imageUrl ?? ing.image,
+        image: ing.image,
         icon
       };
     })

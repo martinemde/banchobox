@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { Dish, Id, PartyDish } from '../types.js';
-  import { rawImageUrlForFile } from '../images/index.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import ProfitTable from './ProfitTable.svelte';
   import TrackButton from './TrackButton.svelte';
@@ -10,12 +9,10 @@
   import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
   import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
   import PixelIcon from './PixelIcon.svelte';
+  import tasteImage from '$lib/images/ui/sort_taste.png';
+  import levelImage from '$lib/images/ui/sort_level.png';
 
   let { dish } = $props<{ dish: Dish }>();
-
-  let imageName = $derived(dish.imageUrl ?? dish.image);
-  let tasteImage = rawImageUrlForFile('ui/sort_taste.png');
-  let levelImage = rawImageUrlForFile('ui/sort_level.png');
 
   // Fixed width for thumbnail to match default card format
   const thumbPx = 96;
@@ -44,7 +41,7 @@
     <div class="flex items-start gap-4">
       <div class="inline-block">
         <div class="relative grid place-items-center">
-          <PixelIcon image={imageName} alt={dish.name} />
+          <PixelIcon image={dish.image} alt={dish.name} uiScale={1.5} />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">

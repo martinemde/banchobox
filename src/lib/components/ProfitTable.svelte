@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { rawImageUrlForFile } from '$lib/images/index.js';
+  import servingsImage from '$lib/images/ui/servings.png';
+  import coinImage from '$lib/images/ui/coin.png';
   import type { Dish } from '$lib/types';
 
   let { dish } = $props<{dish: Dish}>();
@@ -17,9 +18,6 @@
   let costPerServing = $derived(totalCost / servings);
   let profitPerServing = $derived(dish.finalProfitPerServing);
   let profitTotal = $derived(dish.finalProfit);
-
-  let servingsImage = rawImageUrlForFile('ui/servings.png');
-  let coinImage = rawImageUrlForFile('ui/coin.png');
 </script>
 
 <table class="w-full max-w-64 table-auto text-sm">
