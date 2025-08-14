@@ -37,7 +37,7 @@
 
 <dialog
 	bind:this={dialogEl}
-	class="fixed inset-0 m-0 grid grid-cols-[auto_1fr] items-stretch bg-transparent p-0 md:hidden"
+	class="fixed inset-0 m-0 grid grid-cols-[80vw_1fr] items-stretch bg-transparent p-0 md:hidden"
 	aria-modal="true"
 	aria-labelledby="drawer-title"
 	onclose={handleClose}
@@ -47,7 +47,7 @@
 	}}
 >
 	<div
-		class={`h-screen border-r border-white/10 bg-surface-50/90 backdrop-blur ${widthClass} overflow-y-auto`}
+		class={`h-screen border-r border-white/10 bg-surface-50/90 backdrop-blur w-full overflow-y-auto`}
 	>
 		<div class="p-4">
 			<div class="mb-3 flex items-center justify-between">

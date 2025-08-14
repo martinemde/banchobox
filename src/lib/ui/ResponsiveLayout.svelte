@@ -53,7 +53,7 @@
 	</div>
 
 	<dialog bind:this={leftDialogRef} class="left-drawer modal md:hidden">
-		<div class="drawer-panel variant-glass-surface h-dvh w-[80vw] overflow-auto card p-4">
+		<div class="drawer-panel variant-glass-surface h-dvh w-full overflow-auto card p-4">
 			<div class="mb-3 flex items-center justify-between">
 				<h3 class="text-lg font-semibold">
 					{#if title}
@@ -90,7 +90,7 @@
 	@media (max-width: 767px) {
 		dialog.left-drawer[open] {
 			display: grid;
-			grid-template-columns: auto 1fr;
+			grid-template-columns: 80vw 1fr;
 			align-items: stretch;
 		}
 	}
