@@ -5,7 +5,6 @@
   import TrackButton from './TrackButton.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
 	import { PartyPopper } from '@lucide/svelte';
-  import PartyDishPanel from './PartyDishPanel.svelte';
   import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
   import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
   import PixelIcon from '../ui/PixelIcon.svelte';
@@ -25,14 +24,41 @@
       import('./RecipePanel.svelte').then((m) => (LazyRecipePanel = m.default));
     }
   }
-  let partyDishes = $derived(
+
+  let LazyPartyDishPanel: any = $state(null);
+  function ensurePartyDishPanelLoaded() {
+    if (!LazyPartyDishPanel) {
+      import('./PartyDishPanel.svelte').then((m) => (LazyPartyDishPanel = m.default));
+    }
+  }
+
+  function onTrackChange(e: CustomEvent<{ checked: boolean }>) {
+    const nowChecked = e.detail.checked as boolean;
+    if (nowChecked) trackedDishIds.track(dish.id);
+    else trackedDishIds.untrack(dish.id);
+  }
+  // Minimize per-card memory by keeping only metadata for controls
+  type PartyDishMeta = { id: Id; partyId: Id; partyName: string; partyBonus: number };
+  let partyDishesMeta = $derived(
     (dish.partyDishIds ?? [])
-      .map((id: Id) => $partyDishByIdStore?.[id] as PartyDish | undefined)
-      .filter((pd: PartyDish | undefined): pd is PartyDish => Boolean(pd))
+      .map((id: Id) => {
+        const pd = $partyDishByIdStore?.[id] as PartyDish | undefined;
+        return pd
+          ? { id: pd.id, partyId: pd.partyId, partyName: pd.partyName, partyBonus: pd.partyBonus }
+          : null;
+      })
+      .filter((x: PartyDishMeta | null): x is PartyDishMeta => x !== null)
   );
 
   // Controlled accordion value, trigger lazy load via onValueChange (Skeleton docs)
   let value = $state<string[]>([]);
+
+  function onAccordionValueChange(e: any) {
+    const next = e.value as string[];
+    value = next;
+    if (next?.includes('recipe')) ensureRecipePanelLoaded();
+    if (next?.some((v) => typeof v === 'string' && v.startsWith('party-'))) ensurePartyDishPanelLoaded();
+  }
 </script>
 
 <article class="card preset-filled-surface-100-900 border border-surface-200-800 divide-y divide-surface-200-800 min-w-40 max-w-100">
@@ -49,11 +75,7 @@
             {@const isTracked = $trackedDishIds.has(dish.id)}
             <TrackButton
               checked={isTracked}
-              on:change={(e) => {
-                const nowChecked = e.detail.checked as boolean;
-                if (nowChecked) trackedDishIds.track(dish.id);
-                else trackedDishIds.untrack(dish.id);
-              }}
+              on:change={onTrackChange}
             />
           {/if}
         </div>
@@ -84,7 +106,7 @@
 
   <!-- Section 2 & 3: Collapsible Recipe and Parties -->
   <section>
-    <Accordion {value} onValueChange={(e) => { value = e.value; if (e.value?.includes('recipe')) ensureRecipePanelLoaded(); }} multiple collapsible defaultValue={[]}>
+    <Accordion {value} onValueChange={onAccordionValueChange} multiple collapsible>
       <Accordion.Item value="recipe" controlHover="hover:preset-filled-primary-900-100 hover:text-primary-200-800">
         {#snippet control()}
           <RecipeSummaryIcons dish={dish} />
@@ -92,25 +114,32 @@
 
         {#snippet panel()}
           <div id="recipe-panel">
-            {#if LazyRecipePanel}
+            {#if value.includes('recipe') && LazyRecipePanel}
               <LazyRecipePanel {dish} />
             {/if}
           </div>
         {/snippet}
       </Accordion.Item>
 
-      {#each partyDishes as partyDish}
-        <Accordion.Item value={`party-${partyDish.partyName}`} controlHover="hover:preset-filled-primary-900-100 hover:text-primary-300-700" classes="border-t border-surface-200-800">
+      {#each partyDishesMeta as meta (meta.id)}
+        <Accordion.Item value={`party-${meta.partyId}`} controlHover="hover:preset-filled-primary-900-100 hover:text-primary-300-700" classes="border-t border-surface-200-800">
           {#snippet lead()}
             <PartyPopper size={16} />
           {/snippet}
           {#snippet control()}
-            <span class="font-semibold">{partyDish.partyBonus}×</span>
-            <span class="text-sm">{partyDish.partyName} Party</span>
+            <span class="font-semibold">{meta.partyBonus}×</span>
+            <span class="text-sm">{meta.partyName} Party</span>
           {/snippet}
 
           {#snippet panel()}
-            <PartyDishPanel {partyDish} />
+            {#if value.includes(`party-${meta.partyId}`)}
+              {@const partyDish = $partyDishByIdStore?.[meta.id]}
+              {#if partyDish}
+                {#if LazyPartyDishPanel}
+                  <LazyPartyDishPanel {partyDish} />
+                {/if}
+              {/if}
+            {/if}
           {/snippet}
         </Accordion.Item>
       {/each}
