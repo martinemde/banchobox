@@ -53,7 +53,7 @@
 	</div>
 
 	<dialog bind:this={leftDialogRef} class="left-drawer modal md:hidden">
-		<div class="drawer-panel variant-glass-surface h-dvh w-full overflow-auto card p-4">
+		<div class="drawer-panel variant-glass-surface h-dvh w-full overflow-auto card p-4 max-w-[360px]">
 			<div class="mb-3 flex items-center justify-between">
 				<h3 class="text-lg font-semibold">
 					{#if title}
