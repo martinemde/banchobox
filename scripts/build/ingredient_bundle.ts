@@ -8,7 +8,7 @@ export function buildIngredientsBundle(ingredients: Ingredient[]): EntityBundle<
     type: {}, // e.g. 'fish', 'vegetable', etc.
     source: {}, // e.g. 'Glacial Passage', 'Vegetable Farm', ...
     time: {}, // 'day','night','fog' flags mapped to ids
-    vendor: {}, // 'jangovendor', 'ottovendor' based on presence of buy price
+    vendor: {}, // 'jango', 'otto' based on presence of buy price
     drone: {}, // 'yes' when ingredient.drone === true
   };
 
@@ -18,8 +18,8 @@ export function buildIngredientsBundle(ingredients: Ingredient[]): EntityBundle<
     if (i.day) (facets.time['day'] ??= []).push(i.id);
     if (i.night) (facets.time['night'] ??= []).push(i.id);
     if (i.fog) (facets.time['fog'] ??= []).push(i.id);
-    if (i.buyJango != null) (facets.vendor['jangovendor'] ??= []).push(i.id);
-    if (i.buyOtto != null) (facets.vendor['ottovendor'] ??= []).push(i.id);
+    if (i.buyJango != null) (facets.vendor['jango'] ??= []).push(i.id);
+    if (i.buyOtto != null) (facets.vendor['otto'] ??= []).push(i.id);
     if (i.drone) (facets.drone['yes'] ??= []).push(i.id);
   }
 

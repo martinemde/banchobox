@@ -204,14 +204,14 @@ id,name,source,type,drone,kg,max_meats,day,night,fog,rank,farm,buy_jango,buy_ott
 180,Sesame Seed,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,80,,8,8,sesame_seed.png
 187,Soy Sauce,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,60,,6,6,soy_sauce.png
 207,Turmeric,Dispatch & Cooking Pots,Procure,,0.1,1,,,,1,,50,,5,5,turmeric.png
-1,Agar,0-50m,Sea Plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,3,3,agar.png
+1,Agar,0-50m,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,3,3,agar.png
 20,Black Coral,Glacial Area,Sea plant,,0.1,1,TRUE,,,2,Gumo,,,8,8,black_coral.png
 26,Bladderwrack,Glacial Seaweed Cave,Sea plant,,0.1,1,TRUE,,,2,Gumo,,,10,10,bladderwrack.png
-39,Buckbean,Glacial Area,Sea Plant,,0.1,1,TRUE,,,4,Gumo,,,9,9,buckbean.png
+39,Buckbean,Glacial Area,Sea plant,,0.1,1,TRUE,,,4,Gumo,,,9,9,buckbean.png
 108,Hyalonema,Glacial Seaweed Cave,Sea plant,,0.1,1,TRUE,,,3,Gumo,,,65,65,hyalonema.png
 111,Kajime,0-130m,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,7,7,kajime.png
 112,Kelp,50-130m,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,6,6,kelp.png
-175,Sea Grape,Limestone Cave,Sea Plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,6,6,sea_grape.png
+175,Sea Grape,Limestone Cave,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,6,6,sea_grape.png
 178,Seaweed,50-130m,Sea plant,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,5,5,seaweed.png
 186,Southern Bull Kelp,Glacial Area,Sea plant,,0.1,1,TRUE,,,2,Gumo,,,8,8,southern_bull_kelp.png
 96,Green Sea Urchin,0-50m,Urchin,,1.0,1,TRUE,TRUE,TRUE,5,,,,90,90,green_sea_urchin.png

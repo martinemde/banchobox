@@ -2,7 +2,7 @@
   import type { Ingredient, Dish } from '../types.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import TrackButton from './TrackButton.svelte';
-  import { trackedIngredientIds } from '$lib/stores/tracking.js';
+  import { trackedDishIds } from '$lib/stores/tracking.js';
   import { ChevronsUp, CloudFog, Moon, Sun } from '@lucide/svelte';
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
   import PixelIcon from '../ui/PixelIcon.svelte';
@@ -54,20 +54,13 @@
     <div class="flex items-start gap-4">
       <div class="inline-block">
         <div class="relative grid place-items-center">
-          <PixelIcon image={ingredient.image} alt={ingredient.name} />
+          <PixelIcon image={ingredient.image} alt={ingredient.name} uiScale={1.5} />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">
           {#if ingredient?.id != null}
-            {@const isTracked = $trackedIngredientIds.has(ingredient.id)}
-            <TrackButton
-              checked={isTracked}
-              on:change={(e) => {
-                const nowChecked = e.detail.checked as boolean;
-                if (nowChecked) trackedIngredientIds.track(ingredient.id);
-                else trackedIngredientIds.untrack(ingredient.id);
-              }}
-            />
+            {@const isTracked = (ingredient.usedIn ?? []).some((u) => $trackedDishIds.has(u.dishId))}
+            <TrackButton checked={isTracked} disabled={true} />
           {/if}
         </div>
       </div>

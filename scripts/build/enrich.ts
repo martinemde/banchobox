@@ -212,9 +212,6 @@ export function enrichData(
       sell,
       kg,
       sellPerKg,
-      buyJango: ingredient.buyJango ?? null,
-      buyOtto: ingredient.buyOtto ?? null,
-      usedForPartiesCount: partyIdSet.size,
     } as const;
 
     const finalIngredient: Ingredient = {

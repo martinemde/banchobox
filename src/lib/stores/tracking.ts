@@ -61,4 +61,3 @@ function createTrackedIdsStore(storageKey: string): Writable<Set<number>> & {
 }
 
 export const trackedDishIds = createTrackedIdsStore('trackedDishIds.v1');
-export const trackedIngredientIds = createTrackedIdsStore('trackedIngredientIds.v1');

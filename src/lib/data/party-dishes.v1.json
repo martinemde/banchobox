@@ -30,7 +30,7 @@
           "count": 1,
           "name": "Agar",
           "image": "agar.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 3,
           "lineCost": 3,
           "upgradeCount": 0
@@ -109,7 +109,7 @@
           "count": 1,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 0
@@ -287,7 +287,7 @@
           "count": 3,
           "name": "Buckbean",
           "image": "buckbean.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 9,
           "lineCost": 27,
           "upgradeCount": 0
@@ -297,7 +297,7 @@
           "count": 3,
           "name": "Agar",
           "image": "agar.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 3,
           "lineCost": 9,
           "upgradeCount": 0
@@ -1555,7 +1555,7 @@
           "count": 2,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
@@ -1826,7 +1826,7 @@
           "count": 2,
           "name": "Buckbean",
           "image": "buckbean.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 9,
           "lineCost": 18,
           "upgradeCount": 35
@@ -2211,7 +2211,7 @@
           "count": 3,
           "name": "Buckbean",
           "image": "buckbean.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 9,
           "lineCost": 27,
           "upgradeCount": 446
@@ -2705,7 +2705,7 @@
           "count": 2,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 35
@@ -4385,7 +4385,7 @@
           "count": 2,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
@@ -4563,7 +4563,7 @@
           "count": 1,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221
@@ -7112,7 +7112,7 @@
           "count": 1,
           "name": "Agar",
           "image": "agar.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 3,
           "lineCost": 3,
           "upgradeCount": 0
@@ -7191,7 +7191,7 @@
           "count": 1,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 0
@@ -7369,7 +7369,7 @@
           "count": 3,
           "name": "Buckbean",
           "image": "buckbean.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 9,
           "lineCost": 27,
           "upgradeCount": 0
@@ -7379,7 +7379,7 @@
           "count": 3,
           "name": "Agar",
           "image": "agar.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 3,
           "lineCost": 9,
           "upgradeCount": 0
@@ -8637,7 +8637,7 @@
           "count": 2,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
@@ -8908,7 +8908,7 @@
           "count": 2,
           "name": "Buckbean",
           "image": "buckbean.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 9,
           "lineCost": 18,
           "upgradeCount": 35
@@ -9293,7 +9293,7 @@
           "count": 3,
           "name": "Buckbean",
           "image": "buckbean.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 9,
           "lineCost": 27,
           "upgradeCount": 446
@@ -9787,7 +9787,7 @@
           "count": 2,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 35
@@ -11467,7 +11467,7 @@
           "count": 2,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 12,
           "upgradeCount": 333
@@ -11645,7 +11645,7 @@
           "count": 1,
           "name": "Sea Grape",
           "image": "sea_grape.png",
-          "type": "Sea Plant",
+          "type": "Sea plant",
           "unitCost": 6,
           "lineCost": 6,
           "upgradeCount": 221

@@ -41,7 +41,7 @@
         <div class="inline-block" style="width: {thumbPx}px">
           <div class="relative grid place-items-center" style="width: {thumbPx}px; height: {thumbPx}px">
             <span class="badge rounded-full preset-filled-primary-500 absolute px-1.5 py-0.5 -right-3 -top-2 z-10">{party?.bonus ?? ''}×</span>
-            <PixelIcon image={dish.image} alt={dish.name} />
+            <PixelIcon image={dish.image} alt={dish.name} uiScale={1.5}/>
           </div>
           <div class="mt-2" style="width: {thumbPx}px">
             {#if dish?.id != null}

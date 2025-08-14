@@ -15,7 +15,7 @@
 {:else}
   <ul class="space-y-2">
     {#each tracked as t}
-      <li class="p-2 rounded-lg border border-surface-200">
+      <li class="p-2 rounded-lg border border-surface-500">
         <div class="text-sm font-medium truncate">{t.name}</div>
         <div class="mt-1 flex items-center justify-between text-xs opacity-70">
           <span>Profit {t.profit.toLocaleString()}</span>

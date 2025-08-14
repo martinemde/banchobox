@@ -30,10 +30,7 @@
         "name": "aurora jellyfish",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -66,10 +63,7 @@
         "name": "barbed eel",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -102,10 +96,7 @@
         "name": "bloodskin shark",
         "sell": null,
         "kg": 11.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -138,10 +129,7 @@
         "name": "bony wreckfish",
         "sell": null,
         "kg": 8,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -174,10 +162,7 @@
         "name": "bursting anglerfish",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -210,10 +195,7 @@
         "name": "concertina barracuda",
         "sell": null,
         "kg": 6.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -246,10 +228,7 @@
         "name": "enthralled stonefish",
         "sell": null,
         "kg": 8,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -282,10 +261,7 @@
         "name": "fanged cod",
         "sell": null,
         "kg": 3.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -318,10 +294,7 @@
         "name": "gazing shark",
         "sell": null,
         "kg": 11,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -354,10 +327,7 @@
         "name": "gelatinous stonefish",
         "sell": null,
         "kg": 7.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -390,10 +360,7 @@
         "name": "gnashing perch",
         "sell": null,
         "kg": 4.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -426,10 +393,7 @@
         "name": "grotesque mackerel",
         "sell": null,
         "kg": 3,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -462,10 +426,7 @@
         "name": "host eel",
         "sell": null,
         "kg": 5.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -498,10 +459,7 @@
         "name": "malignant pincer",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -534,10 +492,7 @@
         "name": "many eyed mackerel",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -570,10 +525,7 @@
         "name": "parhelion jellyfish",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -606,10 +558,7 @@
         "name": "perished loosejaw",
         "sell": null,
         "kg": 3,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -642,10 +591,7 @@
         "name": "radiant squid",
         "sell": null,
         "kg": 4.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -678,10 +624,7 @@
         "name": "sallow sailfish",
         "sell": null,
         "kg": 9.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -714,10 +657,7 @@
         "name": "savage barracuda",
         "sell": null,
         "kg": 7,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -750,10 +690,7 @@
         "name": "scouring bass",
         "sell": null,
         "kg": 3.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -786,10 +723,7 @@
         "name": "seizing snailfish",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -822,10 +756,7 @@
         "name": "shattered wreckfish",
         "sell": null,
         "kg": 6.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -858,10 +789,7 @@
         "name": "sprouting eel",
         "sell": null,
         "kg": 7,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -894,10 +822,7 @@
         "name": "three-headed cod",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -930,10 +855,7 @@
         "name": "translucent sturgeon",
         "sell": null,
         "kg": 8,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -966,10 +888,7 @@
         "name": "tusked grouper",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1002,10 +921,7 @@
         "name": "voltaic grouper",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1038,10 +954,7 @@
         "name": "withered ray",
         "sell": null,
         "kg": 8.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1074,10 +987,7 @@
         "name": "cerebral crab",
         "sell": null,
         "kg": 2,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1110,10 +1020,7 @@
         "name": "cortex decorator",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1146,10 +1053,7 @@
         "name": "entangled crab",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1182,10 +1086,7 @@
         "name": "imperious lobster",
         "sell": null,
         "kg": 3,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1218,10 +1119,7 @@
         "name": "splintered crab",
         "sell": null,
         "kg": 3.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1254,10 +1152,7 @@
         "name": "clione queen tentacle",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1292,10 +1187,7 @@
         "name": "goblin shark's fatty meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -1330,10 +1222,7 @@
         "name": "helicoprion tail",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -1368,10 +1257,7 @@
         "name": "klaus's fin",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -1404,10 +1290,7 @@
         "name": "kronosaurus tongue",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1442,10 +1325,7 @@
         "name": "lusca neck meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -1478,10 +1358,7 @@
         "name": "lusca tentacle",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1516,10 +1393,7 @@
         "name": "mantis shrimp meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -1554,10 +1428,7 @@
         "name": "phantom jellyfish meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -1590,10 +1461,7 @@
         "name": "truck hermit crab legs",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1626,10 +1494,7 @@
         "name": "wolf eel tail meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1662,10 +1527,7 @@
         "name": "yawie's inner flesh",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -1704,10 +1566,7 @@
         "name": "american lobster",
         "sell": 43,
         "kg": 1,
-        "sellPerKg": 43,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 43
       }
     },
     {
@@ -1746,10 +1605,7 @@
         "name": "blue lobster",
         "sell": 47,
         "kg": 1,
-        "sellPerKg": 47,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 47
       }
     },
     {
@@ -1788,10 +1644,7 @@
         "name": "california spiny lobster",
         "sell": 22,
         "kg": 1.5,
-        "sellPerKg": 14.666666666666666,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 14.666666666666666
       }
     },
     {
@@ -1830,10 +1683,7 @@
         "name": "crystal lobster",
         "sell": 47,
         "kg": 1.5,
-        "sellPerKg": 31.333333333333332,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 31.333333333333332
       }
     },
     {
@@ -1866,10 +1716,7 @@
         "name": "dollocaris ingens",
         "sell": 45,
         "kg": 1.5,
-        "sellPerKg": 30,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 30
       }
     },
     {
@@ -1908,10 +1755,7 @@
         "name": "eastern rock lobster",
         "sell": 47,
         "kg": 2.5,
-        "sellPerKg": 18.8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 18.8
       }
     },
     {
@@ -1951,10 +1795,7 @@
         "name": "european lobster",
         "sell": 23,
         "kg": 1,
-        "sellPerKg": 23,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 23
       }
     },
     {
@@ -1989,10 +1830,7 @@
         "name": "fan lobster",
         "sell": 22,
         "kg": 0.2,
-        "sellPerKg": 110,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 110
       }
     },
     {
@@ -2029,10 +1867,7 @@
         "name": "horsehair crab",
         "sell": 50,
         "kg": 1.5,
-        "sellPerKg": 33.333333333333336,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 33.333333333333336
       }
     },
     {
@@ -2071,10 +1906,7 @@
         "name": "norway lobster",
         "sell": 25,
         "kg": 0.2,
-        "sellPerKg": 125,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 125
       }
     },
     {
@@ -2109,10 +1941,7 @@
         "name": "red-banded lobster",
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 250
       }
     },
     {
@@ -2149,10 +1978,7 @@
         "name": "snow crab",
         "sell": 40,
         "kg": 2,
-        "sellPerKg": 20,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 20
       }
     },
     {
@@ -2191,10 +2017,7 @@
         "name": "tokummia katalepsis",
         "sell": 55,
         "kg": 2,
-        "sellPerKg": 27.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 27.5
       }
     },
     {
@@ -2233,10 +2056,7 @@
         "name": "tropical rock lobster",
         "sell": 45,
         "kg": 1.2,
-        "sellPerKg": 37.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 37.5
       }
     },
     {
@@ -2321,10 +2141,7 @@
         "name": "egg",
         "sell": 15,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 63,
-        "buyOtto": 75,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     {
@@ -2384,10 +2201,7 @@
         "name": "grade a egg",
         "sell": 90,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 382,
-        "buyOtto": 450,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     {
@@ -2420,10 +2234,7 @@
         "name": "alaska pollock",
         "sell": 45,
         "kg": 7,
-        "sellPerKg": 6.428571428571429,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.428571428571429
       }
     },
     {
@@ -2456,10 +2267,7 @@
         "name": "allenypterus",
         "sell": 42,
         "kg": 4,
-        "sellPerKg": 10.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10.5
       }
     },
     {
@@ -2492,10 +2300,7 @@
         "name": "anomalocaris",
         "sell": 75,
         "kg": 4,
-        "sellPerKg": 18.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 18.75
       }
     },
     {
@@ -2536,10 +2341,7 @@
         "name": "antarctic octopus",
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.333333333333333
       }
     },
     {
@@ -2576,10 +2378,7 @@
         "name": "arctic cod",
         "sell": 32,
         "kg": 5,
-        "sellPerKg": 6.4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.4
       }
     },
     {
@@ -2612,10 +2411,7 @@
         "name": "arctic telescope fish",
         "sell": 40,
         "kg": 3,
-        "sellPerKg": 13.333333333333334,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 13.333333333333334
       }
     },
     {
@@ -2652,10 +2448,7 @@
         "name": "atlantic anglerfish",
         "sell": 11,
         "kg": 5.5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     {
@@ -2694,10 +2487,7 @@
         "name": "atlantic bonito",
         "sell": 7,
         "kg": 4,
-        "sellPerKg": 1.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.75
       }
     },
     {
@@ -2738,10 +2528,7 @@
         "name": "atlantic mackerel",
         "sell": 7,
         "kg": 3.5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     {
@@ -2780,10 +2567,7 @@
         "name": "barrel jellyfish",
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     {
@@ -2827,10 +2611,7 @@
         "name": "barreleye",
         "sell": 35,
         "kg": 3,
-        "sellPerKg": 11.666666666666666,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 11.666666666666666
       }
     },
     {
@@ -2867,10 +2648,7 @@
         "name": "bigeye scad",
         "sell": 6,
         "kg": 0.6,
-        "sellPerKg": 10,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10
       }
     },
     {
@@ -2909,10 +2687,7 @@
         "name": "bigeye trevally",
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2
       }
     },
     {
@@ -2945,10 +2720,7 @@
         "name": "black and white snapper",
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3
       }
     },
     {
@@ -2985,10 +2757,7 @@
         "name": "blackfin barracuda",
         "sell": 20,
         "kg": 5.5,
-        "sellPerKg": 3.6363636363636362,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.6363636363636362
       }
     },
     {
@@ -3027,10 +2796,7 @@
         "name": "blacktip shark meat",
         "sell": 20,
         "kg": 2.5,
-        "sellPerKg": 8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 8
       }
     },
     {
@@ -3067,10 +2833,7 @@
         "name": "blobfish",
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.333333333333333
       }
     },
     {
@@ -3105,10 +2868,7 @@
         "name": "blood-belly comb jellyfish",
         "sell": 17,
         "kg": 7,
-        "sellPerKg": 2.4285714285714284,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2.4285714285714284
       }
     },
     {
@@ -3145,10 +2905,7 @@
         "name": "blue tang",
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4
       }
     },
     {
@@ -3187,10 +2944,7 @@
         "name": "bluefin tuna akami",
         "sell": 27,
         "kg": 8,
-        "sellPerKg": 3.375,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.375
       }
     },
     {
@@ -3233,10 +2987,7 @@
         "name": "bluefin tuna chutoro",
         "sell": 32,
         "kg": 8,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     {
@@ -3275,10 +3026,7 @@
         "name": "bluefin tuna ootoro",
         "sell": 45,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -3311,10 +3059,7 @@
         "name": "bluehead tilefish",
         "sell": 5,
         "kg": 0.2,
-        "sellPerKg": 25,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 25
       }
     },
     {
@@ -3351,10 +3096,7 @@
         "name": "bluespotted stargazer",
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.6
       }
     },
     {
@@ -3393,10 +3135,7 @@
         "name": "box jellyfish",
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.6
       }
     },
     {
@@ -3435,10 +3174,7 @@
         "name": "capelin",
         "sell": 15,
         "kg": 0.5,
-        "sellPerKg": 30,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 30
       }
     },
     {
@@ -3471,10 +3207,7 @@
         "name": "cardinal fish",
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     {
@@ -3511,10 +3244,7 @@
         "name": "clearfin lionfish",
         "sell": 8,
         "kg": 1.7,
-        "sellPerKg": 4.705882352941177,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.705882352941177
       }
     },
     {
@@ -3553,10 +3283,7 @@
         "name": "clown frogfish",
         "sell": 5,
         "kg": 0.3,
-        "sellPerKg": 16.666666666666668,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 16.666666666666668
       }
     },
     {
@@ -3593,10 +3320,7 @@
         "name": "clownfish",
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     {
@@ -3635,10 +3359,7 @@
         "name": "comb jelly",
         "sell": 14,
         "kg": 7,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2
       }
     },
     {
@@ -3675,10 +3396,7 @@
         "name": "comber",
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     {
@@ -3717,10 +3435,7 @@
         "name": "cookiecutter shark",
         "sell": 25,
         "kg": 5,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     {
@@ -3759,10 +3474,7 @@
         "name": "copper shark meat",
         "sell": 22,
         "kg": 4,
-        "sellPerKg": 5.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5.5
       }
     },
     {
@@ -3803,10 +3515,7 @@
         "name": "coral trout",
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     {
@@ -3853,10 +3562,7 @@
         "name": "cuttlefish",
         "sell": 6,
         "kg": 4,
-        "sellPerKg": 1.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.5
       }
     },
     {
@@ -3889,10 +3595,7 @@
         "name": "devil scorpionfish",
         "sell": 45,
         "kg": 3,
-        "sellPerKg": 15,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 15
       }
     },
     {
@@ -3925,10 +3628,7 @@
         "name": "drepanaspis meat",
         "sell": 50,
         "kg": 8.5,
-        "sellPerKg": 5.882352941176471,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.882352941176471
       }
     },
     {
@@ -3965,10 +3665,7 @@
         "name": "dumbo octopus",
         "sell": 38,
         "kg": 4,
-        "sellPerKg": 9.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 9.5
       }
     },
     {
@@ -4001,10 +3698,7 @@
         "name": "dunkleosteus meat",
         "sell": 70,
         "kg": 19.5,
-        "sellPerKg": 3.58974358974359,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.58974358974359
       }
     },
     {
@@ -4041,10 +3735,7 @@
         "name": "dusky grouper",
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.1111111111111112
       }
     },
     {
@@ -4077,10 +3768,7 @@
         "name": "emperor angelfish",
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.5
       }
     },
     {
@@ -4119,10 +3807,7 @@
         "name": "falcatus",
         "sell": 43,
         "kg": 6,
-        "sellPerKg": 7.166666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 7.166666666666667
       }
     },
     {
@@ -4159,10 +3844,7 @@
         "name": "fangtooth",
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     {
@@ -4195,10 +3877,7 @@
         "name": "flame angelfish",
         "sell": 2,
         "kg": 0.2,
-        "sellPerKg": 10,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10
       }
     },
     {
@@ -4237,10 +3916,7 @@
         "name": "fried egg jellyfish",
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     {
@@ -4279,10 +3955,7 @@
         "name": "frilled shark meat",
         "sell": 28,
         "kg": 8.5,
-        "sellPerKg": 3.2941176470588234,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.2941176470588234
       }
     },
     {
@@ -4319,10 +3992,7 @@
         "name": "gelatinous snailfish",
         "sell": 28,
         "kg": 2,
-        "sellPerKg": 14,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 14
       }
     },
     {
@@ -4361,10 +4031,7 @@
         "name": "giant trevally meat",
         "sell": 10,
         "kg": 5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2
       }
     },
     {
@@ -4401,10 +4068,7 @@
         "name": "golden king crab",
         "sell": 45,
         "kg": 8,
-        "sellPerKg": 5.625,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.625
       }
     },
     {
@@ -4441,10 +4105,7 @@
         "name": "great barracuda",
         "sell": 6,
         "kg": 7,
-        "sellPerKg": 0.8571428571428571,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 0.8571428571428571
       }
     },
     {
@@ -4483,10 +4144,7 @@
         "name": "green humphead parrotfish",
         "sell": 5,
         "kg": 1.8,
-        "sellPerKg": 2.7777777777777777,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2.7777777777777777
       }
     },
     {
@@ -4521,10 +4179,7 @@
         "name": "greenland shark meat",
         "sell": 62,
         "kg": 20,
-        "sellPerKg": 3.1,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.1
       }
     },
     {
@@ -4561,10 +4216,7 @@
         "name": "grey triggerfish",
         "sell": 6,
         "kg": 3.5,
-        "sellPerKg": 1.7142857142857142,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.7142857142857142
       }
     },
     {
@@ -4601,10 +4253,7 @@
         "name": "haddock",
         "sell": 37,
         "kg": 6,
-        "sellPerKg": 6.166666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.166666666666667
       }
     },
     {
@@ -4639,10 +4288,7 @@
         "name": "hammerhead meat",
         "sell": 47,
         "kg": 13,
-        "sellPerKg": 3.6153846153846154,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.6153846153846154
       }
     },
     {
@@ -4679,10 +4325,7 @@
         "name": "harlequin hind",
         "sell": 6,
         "kg": 1.1,
-        "sellPerKg": 5.454545454545454,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.454545454545454
       }
     },
     {
@@ -4721,10 +4364,7 @@
         "name": "humboldt squid meat",
         "sell": 48,
         "kg": 7.5,
-        "sellPerKg": 6.4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6.4
       }
     },
     {
@@ -4763,10 +4403,7 @@
         "name": "ice fish",
         "sell": 32,
         "kg": 5.5,
-        "sellPerKg": 5.818181818181818,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5.818181818181818
       }
     },
     {
@@ -4803,10 +4440,7 @@
         "name": "lagoon triggerfish",
         "sell": 2,
         "kg": 0.7,
-        "sellPerKg": 2.857142857142857,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.857142857142857
       }
     },
     {
@@ -4851,10 +4485,7 @@
         "name": "long-snouted seahorse",
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4
       }
     },
     {
@@ -4891,10 +4522,7 @@
         "name": "longfin batfish",
         "sell": 3,
         "kg": 0.8,
-        "sellPerKg": 3.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.75
       }
     },
     {
@@ -4929,10 +4557,7 @@
         "name": "longnose sawshark meat",
         "sell": 12,
         "kg": 6.5,
-        "sellPerKg": 1.8461538461538463,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.8461538461538463
       }
     },
     {
@@ -4969,10 +4594,7 @@
         "name": "longspine porcupinefish",
         "sell": 26,
         "kg": 3.5,
-        "sellPerKg": 7.428571428571429,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.428571428571429
       }
     },
     {
@@ -5009,10 +4631,7 @@
         "name": "longspine squirrelfish",
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.5
       }
     },
     {
@@ -5045,10 +4664,7 @@
         "name": "lumpfish",
         "sell": 40,
         "kg": 5,
-        "sellPerKg": 8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8
       }
     },
     {
@@ -5085,10 +4701,7 @@
         "name": "mackerel scad",
         "sell": 5,
         "kg": 0.8,
-        "sellPerKg": 6.25,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.25
       }
     },
     {
@@ -5123,10 +4736,7 @@
         "name": "mako meat",
         "sell": 43,
         "kg": 9,
-        "sellPerKg": 4.777777777777778,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4.777777777777778
       }
     },
     {
@@ -5163,10 +4773,7 @@
         "name": "marbled electric ray meat",
         "sell": 30,
         "kg": 3.5,
-        "sellPerKg": 8.571428571428571,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8.571428571428571
       }
     },
     {
@@ -5205,10 +4812,7 @@
         "name": "marlin meat",
         "sell": 45,
         "kg": 7.5,
-        "sellPerKg": 6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6
       }
     },
     {
@@ -5245,10 +4849,7 @@
         "name": "mediterranean parrotfish",
         "sell": 3,
         "kg": 2,
-        "sellPerKg": 1.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.5
       }
     },
     {
@@ -5281,10 +4882,7 @@
         "name": "megalograptus",
         "sell": 46,
         "kg": 8,
-        "sellPerKg": 5.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.75
       }
     },
     {
@@ -5323,10 +4921,7 @@
         "name": "megamouth shark meat",
         "sell": 31,
         "kg": 11.5,
-        "sellPerKg": 2.6956521739130435,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2.6956521739130435
       }
     },
     {
@@ -5370,10 +4965,7 @@
         "name": "moray eel",
         "sell": 17,
         "kg": 9,
-        "sellPerKg": 1.8888888888888888,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 1.8888888888888888
       }
     },
     {
@@ -5410,10 +5002,7 @@
         "name": "narrow-barred spanish mackerel",
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.1111111111111112
       }
     },
     {
@@ -5450,10 +5039,7 @@
         "name": "narwhal meat",
         "sell": 46,
         "kg": 9.5,
-        "sellPerKg": 4.842105263157895,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.842105263157895
       }
     },
     {
@@ -5490,10 +5076,7 @@
         "name": "orbicular batfish",
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.666666666666667
       }
     },
     {
@@ -5532,10 +5115,7 @@
         "name": "ornate wrasse",
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     {
@@ -5572,10 +5152,7 @@
         "name": "pacific fanfish",
         "sell": 22,
         "kg": 5,
-        "sellPerKg": 4.4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.4
       }
     },
     {
@@ -5612,10 +5189,7 @@
         "name": "painted comber",
         "sell": 6,
         "kg": 0.4,
-        "sellPerKg": 15,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 15
       }
     },
     {
@@ -5656,10 +5230,7 @@
         "name": "peacock squid",
         "sell": 36,
         "kg": 3.5,
-        "sellPerKg": 10.285714285714286,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10.285714285714286
       }
     },
     {
@@ -5696,10 +5267,7 @@
         "name": "pelican eel",
         "sell": 60,
         "kg": 8,
-        "sellPerKg": 7.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.5
       }
     },
     {
@@ -5736,10 +5304,7 @@
         "name": "pikaia",
         "sell": 38,
         "kg": 4.5,
-        "sellPerKg": 8.444444444444445,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8.444444444444445
       }
     },
     {
@@ -5772,10 +5337,7 @@
         "name": "polar eelpout",
         "sell": 30,
         "kg": 3,
-        "sellPerKg": 10,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10
       }
     },
     {
@@ -5814,10 +5376,7 @@
         "name": "porbeagle shark meat",
         "sell": 55,
         "kg": 13.5,
-        "sellPerKg": 4.074074074074074,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4.074074074074074
       }
     },
     {
@@ -5854,10 +5413,7 @@
         "name": "pyramid butterflyfish",
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     {
@@ -5890,10 +5446,7 @@
         "name": "qingmendous",
         "sell": 40,
         "kg": 6,
-        "sellPerKg": 6.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.666666666666667
       }
     },
     {
@@ -5932,10 +5485,7 @@
         "name": "rainbow wrasse",
         "sell": 2,
         "kg": 0.6,
-        "sellPerKg": 3.3333333333333335,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.3333333333333335
       }
     },
     {
@@ -5974,10 +5524,7 @@
         "name": "red bream",
         "sell": 12,
         "kg": 3,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     {
@@ -6014,10 +5561,7 @@
         "name": "red lionfish",
         "sell": 3,
         "kg": 1.5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     {
@@ -6054,10 +5598,7 @@
         "name": "redtoothed triggerfish",
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3
       }
     },
     {
@@ -6096,10 +5637,7 @@
         "name": "rhinochimaeridae meat",
         "sell": 30,
         "kg": 5,
-        "sellPerKg": 6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6
       }
     },
     {
@@ -6142,10 +5680,7 @@
         "name": "sailfish meat",
         "sell": 65,
         "kg": 9,
-        "sellPerKg": 7.222222222222222,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 7.222222222222222
       }
     },
     {
@@ -6178,10 +5713,7 @@
         "name": "salema porgy",
         "sell": 2,
         "kg": 0.4,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     {
@@ -6218,10 +5750,7 @@
         "name": "sally lightfoot crab",
         "sell": 18,
         "kg": 4,
-        "sellPerKg": 4.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.5
       }
     },
     {
@@ -6258,10 +5787,7 @@
         "name": "salmon snailfish",
         "sell": 20,
         "kg": 5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4
       }
     },
     {
@@ -6294,10 +5820,7 @@
         "name": "sea goldie",
         "sell": 1,
         "kg": 0.3,
-        "sellPerKg": 3.3333333333333335,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.3333333333333335
       }
     },
     {
@@ -6336,10 +5859,7 @@
         "name": "sea toad",
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.6
       }
     },
     {
@@ -6376,10 +5896,7 @@
         "name": "sheepshead meat",
         "sell": 10,
         "kg": 1.8,
-        "sellPerKg": 5.555555555555555,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.555555555555555
       }
     },
     {
@@ -6416,10 +5933,7 @@
         "name": "small spotted dart",
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     {
@@ -6460,10 +5974,7 @@
         "name": "snub-nosed spiny eel",
         "sell": 60,
         "kg": 6.5,
-        "sellPerKg": 9.23076923076923,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 9.23076923076923
       }
     },
     {
@@ -6500,10 +6011,7 @@
         "name": "spear squid",
         "sell": 17,
         "kg": 4.6,
-        "sellPerKg": 3.695652173913044,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.695652173913044
       }
     },
     {
@@ -6551,10 +6059,7 @@
         "name": "spider crab",
         "sell": 17,
         "kg": 7.5,
-        "sellPerKg": 2.2666666666666666,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 2.2666666666666666
       }
     },
     {
@@ -6595,10 +6100,7 @@
         "name": "starry puffer",
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     {
@@ -6635,10 +6137,7 @@
         "name": "starry skate",
         "sell": 44,
         "kg": 5.5,
-        "sellPerKg": 8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8
       }
     },
     {
@@ -6679,10 +6178,7 @@
         "name": "stingray meat",
         "sell": 17,
         "kg": 3,
-        "sellPerKg": 5.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.666666666666667
       }
     },
     {
@@ -6719,10 +6215,7 @@
         "name": "striped catfish",
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.666666666666667
       }
     },
     {
@@ -6759,10 +6252,7 @@
         "name": "striped red mullet",
         "sell": 5,
         "kg": 0.7,
-        "sellPerKg": 7.142857142857143,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.142857142857143
       }
     },
     {
@@ -6795,10 +6285,7 @@
         "name": "threetooth puffer",
         "sell": 23,
         "kg": 5,
-        "sellPerKg": 4.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.6
       }
     },
     {
@@ -6833,10 +6320,7 @@
         "name": "thresher shark meat",
         "sell": 53,
         "kg": 8.5,
-        "sellPerKg": 6.235294117647059,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6.235294117647059
       }
     },
     {
@@ -6871,10 +6355,7 @@
         "name": "tiger shark meat",
         "sell": 17,
         "kg": 15,
-        "sellPerKg": 1.1333333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.1333333333333333
       }
     },
     {
@@ -6911,10 +6392,7 @@
         "name": "titan triggerfish",
         "sell": 5,
         "kg": 3.8,
-        "sellPerKg": 1.3157894736842106,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.3157894736842106
       }
     },
     {
@@ -6957,10 +6435,7 @@
         "name": "vampire squid",
         "sell": 41,
         "kg": 6,
-        "sellPerKg": 6.833333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6.833333333333333
       }
     },
     {
@@ -6999,10 +6474,7 @@
         "name": "white spotted jellyfish",
         "sell": 6,
         "kg": 1,
-        "sellPerKg": 6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6
       }
     },
     {
@@ -7043,10 +6515,7 @@
         "name": "white trevally",
         "sell": 7,
         "kg": 6,
-        "sellPerKg": 1.1666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.1666666666666667
       }
     },
     {
@@ -7081,10 +6550,7 @@
         "name": "whitetip reefshark head",
         "sell": 40,
         "kg": 2.5,
-        "sellPerKg": 16,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 16
       }
     },
     {
@@ -7119,10 +6585,7 @@
         "name": "whitetip reefshark meat",
         "sell": 8,
         "kg": 2.5,
-        "sellPerKg": 3.2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.2
       }
     },
     {
@@ -7155,10 +6618,7 @@
         "name": "xenacanthus meat",
         "sell": 53,
         "kg": 5.5,
-        "sellPerKg": 9.636363636363637,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 9.636363636363637
       }
     },
     {
@@ -7191,10 +6651,7 @@
         "name": "yellow tang",
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     {
@@ -7231,10 +6688,7 @@
         "name": "yellowback fusilier",
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     {
@@ -7273,10 +6727,7 @@
         "name": "yellowfin tuna akami",
         "sell": 24,
         "kg": 6,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     {
@@ -7315,10 +6766,7 @@
         "name": "yellowfin tuna chutoro",
         "sell": 30,
         "kg": 6,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     {
@@ -7357,10 +6805,7 @@
         "name": "yellowfin tuna ootoro",
         "sell": 42,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -7395,10 +6840,7 @@
         "name": "zebra shark meat",
         "sell": 42,
         "kg": 10.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     {
@@ -7439,10 +6881,7 @@
         "name": "rainbow cap",
         "sell": 750,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 750,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -7495,10 +6934,7 @@
         "name": "truffle",
         "sell": 650,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 650,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     {
@@ -7545,10 +6981,7 @@
         "name": "black tiger shrimp",
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 170
       }
     },
     {
@@ -7581,10 +7014,7 @@
         "name": "chambered nautilus",
         "sell": 12,
         "kg": 1,
-        "sellPerKg": 12,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 12
       }
     },
     {
@@ -7617,10 +7047,7 @@
         "name": "clione",
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 250
       }
     },
     {
@@ -7653,10 +7080,7 @@
         "name": "seadragon",
         "sell": 35,
         "kg": 0.5,
-        "sellPerKg": 70,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 70
       }
     },
     {
@@ -7696,10 +7120,7 @@
         "name": "waptia fieldensis",
         "sell": 34,
         "kg": 0.4,
-        "sellPerKg": 85,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 85
       }
     },
     {
@@ -7742,10 +7163,7 @@
         "name": "white shrimp",
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 170
       }
     },
     {
@@ -7796,10 +7214,7 @@
         "name": "whiteleg shrimp",
         "sell": 11,
         "kg": 0.1,
-        "sellPerKg": 110,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 110
       }
     },
     {
@@ -7850,10 +7265,7 @@
         "name": "black pepper",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 60
       }
     },
     {
@@ -7926,10 +7338,7 @@
         "name": "black vinegar",
         "sell": 5,
         "kg": 0.1,
-        "sellPerKg": 50,
-        "buyJango": 50,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 50
       }
     },
     {
@@ -7976,10 +7385,7 @@
         "name": "curry block",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 60
       }
     },
     {
@@ -8040,10 +7446,7 @@
         "name": "mayonnaise",
         "sell": 7,
         "kg": 0.1,
-        "sellPerKg": 70,
-        "buyJango": 70,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 70
       }
     },
     {
@@ -8117,10 +7520,7 @@
         "name": "miso",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": 80,
-        "buyOtto": null,
-        "usedForPartiesCount": 4
+        "sellPerKg": 80
       }
     },
     {
@@ -8256,10 +7656,7 @@
         "name": "olive oil",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 6
+        "sellPerKg": 60
       }
     },
     {
@@ -8335,10 +7732,7 @@
         "name": "salt",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": 80,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 80
       }
     },
     {
@@ -8398,10 +7792,7 @@
         "name": "sesame seed",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": 80,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 80
       }
     },
     {
@@ -8498,10 +7889,7 @@
         "name": "soy sauce",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 60
       }
     },
     {
@@ -8549,17 +7937,14 @@
         "name": "turmeric",
         "sell": 5,
         "kg": 0.1,
-        "sellPerKg": 50,
-        "buyJango": 50,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 50
       }
     },
     {
       "id": 1,
       "name": "Agar",
       "source": "0-50m",
-      "type": "Sea Plant",
+      "type": "Sea plant",
       "image": "agar.png",
       "rank": 2,
       "kg": 0.1,
@@ -8612,10 +7997,7 @@
         "name": "agar",
         "sell": 3,
         "kg": 0.1,
-        "sellPerKg": 30,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 30
       }
     },
     {
@@ -8661,10 +8043,7 @@
         "name": "black coral",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 4
+        "sellPerKg": 80
       }
     },
     {
@@ -8711,17 +8090,14 @@
         "name": "bladderwrack",
         "sell": 10,
         "kg": 0.1,
-        "sellPerKg": 100,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 100
       }
     },
     {
       "id": 39,
       "name": "Buckbean",
       "source": "Glacial Area",
-      "type": "Sea Plant",
+      "type": "Sea plant",
       "image": "buckbean.png",
       "rank": 4,
       "kg": 0.1,
@@ -8763,10 +8139,7 @@
         "name": "buckbean",
         "sell": 9,
         "kg": 0.1,
-        "sellPerKg": 90,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 90
       }
     },
     {
@@ -8805,10 +8178,7 @@
         "name": "hyalonema",
         "sell": 65,
         "kg": 0.1,
-        "sellPerKg": 650,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 650
       }
     },
     {
@@ -8867,10 +8237,7 @@
         "name": "kajime",
         "sell": 7,
         "kg": 0.1,
-        "sellPerKg": 70,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 70
       }
     },
     {
@@ -8938,17 +8305,14 @@
         "name": "kelp",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 60
       }
     },
     {
       "id": 175,
       "name": "Sea Grape",
       "source": "Limestone Cave",
-      "type": "Sea Plant",
+      "type": "Sea plant",
       "image": "sea_grape.png",
       "rank": 2,
       "kg": 0.1,
@@ -9011,10 +8375,7 @@
         "name": "sea grape",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 4
+        "sellPerKg": 60
       }
     },
     {
@@ -9078,10 +8439,7 @@
         "name": "seaweed",
         "sell": 5,
         "kg": 0.1,
-        "sellPerKg": 50,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 50
       }
     },
     {
@@ -9129,10 +8487,7 @@
         "name": "southern bull kelp",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 80
       }
     },
     {
@@ -9181,10 +8536,7 @@
         "name": "green sea urchin",
         "sell": 90,
         "kg": 1,
-        "sellPerKg": 90,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 90
       }
     },
     {
@@ -9231,10 +8583,7 @@
         "name": "purple sea urchin",
         "sell": 20,
         "kg": 1,
-        "sellPerKg": 20,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 20
       }
     },
     {
@@ -9285,10 +8634,7 @@
         "name": "bean",
         "sell": 20,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 170,
-        "buyOtto": 200,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -9333,10 +8679,7 @@
         "name": "buckwheat",
         "sell": 18,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": 185,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     {
@@ -9404,10 +8747,7 @@
         "name": "carrot",
         "sell": 25,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 106,
-        "buyOtto": 250,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     {
@@ -9470,10 +8810,7 @@
         "name": "cherry tomato",
         "sell": 17,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 148,
-        "buyOtto": 175,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     {
@@ -9537,10 +8874,7 @@
         "name": "cucumber",
         "sell": 20,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": 200,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     {
@@ -9596,10 +8930,7 @@
         "name": "eggplant",
         "sell": 21,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 178,
-        "buyOtto": 210,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     {
@@ -9664,10 +8995,7 @@
         "name": "garlic",
         "sell": 19,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 161,
-        "buyOtto": 190,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     {
@@ -9715,10 +9043,7 @@
         "name": "habanero",
         "sell": 16,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 153,
-        "buyOtto": 180,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     {
@@ -9778,10 +9103,7 @@
         "name": "onion",
         "sell": 20,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 170,
-        "buyOtto": 200,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     {
@@ -9886,10 +9208,7 @@
         "name": "rice",
         "sell": 15,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     {
@@ -9973,10 +9292,7 @@
         "name": "wheat",
         "sell": 19,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 161,
-        "buyOtto": 190,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     }
   ],
@@ -9985,7 +9301,7 @@
       "id": 1,
       "name": "Agar",
       "source": "0-50m",
-      "type": "Sea Plant",
+      "type": "Sea plant",
       "image": "agar.png",
       "rank": 2,
       "kg": 0.1,
@@ -10038,10 +9354,7 @@
         "name": "agar",
         "sell": 3,
         "kg": 0.1,
-        "sellPerKg": 30,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 30
       }
     },
     "2": {
@@ -10074,10 +9387,7 @@
         "name": "alaska pollock",
         "sell": 45,
         "kg": 7,
-        "sellPerKg": 6.428571428571429,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.428571428571429
       }
     },
     "3": {
@@ -10110,10 +9420,7 @@
         "name": "allenypterus",
         "sell": 42,
         "kg": 4,
-        "sellPerKg": 10.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10.5
       }
     },
     "4": {
@@ -10152,10 +9459,7 @@
         "name": "american lobster",
         "sell": 43,
         "kg": 1,
-        "sellPerKg": 43,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 43
       }
     },
     "5": {
@@ -10188,10 +9492,7 @@
         "name": "anomalocaris",
         "sell": 75,
         "kg": 4,
-        "sellPerKg": 18.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 18.75
       }
     },
     "6": {
@@ -10232,10 +9533,7 @@
         "name": "antarctic octopus",
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.333333333333333
       }
     },
     "7": {
@@ -10272,10 +9570,7 @@
         "name": "arctic cod",
         "sell": 32,
         "kg": 5,
-        "sellPerKg": 6.4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.4
       }
     },
     "8": {
@@ -10308,10 +9603,7 @@
         "name": "arctic telescope fish",
         "sell": 40,
         "kg": 3,
-        "sellPerKg": 13.333333333333334,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 13.333333333333334
       }
     },
     "9": {
@@ -10348,10 +9640,7 @@
         "name": "atlantic anglerfish",
         "sell": 11,
         "kg": 5.5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     "10": {
@@ -10390,10 +9679,7 @@
         "name": "atlantic bonito",
         "sell": 7,
         "kg": 4,
-        "sellPerKg": 1.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.75
       }
     },
     "11": {
@@ -10434,10 +9720,7 @@
         "name": "atlantic mackerel",
         "sell": 7,
         "kg": 3.5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     "12": {
@@ -10470,10 +9753,7 @@
         "name": "aurora jellyfish",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "13": {
@@ -10506,10 +9786,7 @@
         "name": "barbed eel",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "14": {
@@ -10548,10 +9825,7 @@
         "name": "barrel jellyfish",
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     "15": {
@@ -10595,10 +9869,7 @@
         "name": "barreleye",
         "sell": 35,
         "kg": 3,
-        "sellPerKg": 11.666666666666666,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 11.666666666666666
       }
     },
     "16": {
@@ -10649,10 +9920,7 @@
         "name": "bean",
         "sell": 20,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 170,
-        "buyOtto": 200,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "17": {
@@ -10689,10 +9957,7 @@
         "name": "bigeye scad",
         "sell": 6,
         "kg": 0.6,
-        "sellPerKg": 10,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10
       }
     },
     "18": {
@@ -10731,10 +9996,7 @@
         "name": "bigeye trevally",
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2
       }
     },
     "19": {
@@ -10767,10 +10029,7 @@
         "name": "black and white snapper",
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3
       }
     },
     "20": {
@@ -10816,10 +10075,7 @@
         "name": "black coral",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 4
+        "sellPerKg": 80
       }
     },
     "21": {
@@ -10870,10 +10126,7 @@
         "name": "black pepper",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 60
       }
     },
     "22": {
@@ -10920,10 +10173,7 @@
         "name": "black tiger shrimp",
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 170
       }
     },
     "23": {
@@ -10996,10 +10246,7 @@
         "name": "black vinegar",
         "sell": 5,
         "kg": 0.1,
-        "sellPerKg": 50,
-        "buyJango": 50,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 50
       }
     },
     "24": {
@@ -11036,10 +10283,7 @@
         "name": "blackfin barracuda",
         "sell": 20,
         "kg": 5.5,
-        "sellPerKg": 3.6363636363636362,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.6363636363636362
       }
     },
     "25": {
@@ -11078,10 +10322,7 @@
         "name": "blacktip shark meat",
         "sell": 20,
         "kg": 2.5,
-        "sellPerKg": 8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 8
       }
     },
     "26": {
@@ -11128,10 +10369,7 @@
         "name": "bladderwrack",
         "sell": 10,
         "kg": 0.1,
-        "sellPerKg": 100,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 100
       }
     },
     "27": {
@@ -11168,10 +10406,7 @@
         "name": "blobfish",
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.333333333333333
       }
     },
     "28": {
@@ -11206,10 +10441,7 @@
         "name": "blood-belly comb jellyfish",
         "sell": 17,
         "kg": 7,
-        "sellPerKg": 2.4285714285714284,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2.4285714285714284
       }
     },
     "29": {
@@ -11242,10 +10474,7 @@
         "name": "bloodskin shark",
         "sell": null,
         "kg": 11.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "30": {
@@ -11284,10 +10513,7 @@
         "name": "blue lobster",
         "sell": 47,
         "kg": 1,
-        "sellPerKg": 47,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 47
       }
     },
     "31": {
@@ -11324,10 +10550,7 @@
         "name": "blue tang",
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4
       }
     },
     "32": {
@@ -11366,10 +10589,7 @@
         "name": "bluefin tuna akami",
         "sell": 27,
         "kg": 8,
-        "sellPerKg": 3.375,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.375
       }
     },
     "33": {
@@ -11412,10 +10632,7 @@
         "name": "bluefin tuna chutoro",
         "sell": 32,
         "kg": 8,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     "34": {
@@ -11454,10 +10671,7 @@
         "name": "bluefin tuna ootoro",
         "sell": 45,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "35": {
@@ -11490,10 +10704,7 @@
         "name": "bluehead tilefish",
         "sell": 5,
         "kg": 0.2,
-        "sellPerKg": 25,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 25
       }
     },
     "36": {
@@ -11530,10 +10741,7 @@
         "name": "bluespotted stargazer",
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.6
       }
     },
     "37": {
@@ -11566,10 +10774,7 @@
         "name": "bony wreckfish",
         "sell": null,
         "kg": 8,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "38": {
@@ -11608,17 +10813,14 @@
         "name": "box jellyfish",
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.6
       }
     },
     "39": {
       "id": 39,
       "name": "Buckbean",
       "source": "Glacial Area",
-      "type": "Sea Plant",
+      "type": "Sea plant",
       "image": "buckbean.png",
       "rank": 4,
       "kg": 0.1,
@@ -11660,10 +10862,7 @@
         "name": "buckbean",
         "sell": 9,
         "kg": 0.1,
-        "sellPerKg": 90,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 90
       }
     },
     "40": {
@@ -11708,10 +10907,7 @@
         "name": "buckwheat",
         "sell": 18,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": 185,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "41": {
@@ -11744,10 +10940,7 @@
         "name": "bursting anglerfish",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "42": {
@@ -11786,10 +10979,7 @@
         "name": "california spiny lobster",
         "sell": 22,
         "kg": 1.5,
-        "sellPerKg": 14.666666666666666,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 14.666666666666666
       }
     },
     "43": {
@@ -11828,10 +11018,7 @@
         "name": "capelin",
         "sell": 15,
         "kg": 0.5,
-        "sellPerKg": 30,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 30
       }
     },
     "44": {
@@ -11864,10 +11051,7 @@
         "name": "cardinal fish",
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     "45": {
@@ -11935,10 +11119,7 @@
         "name": "carrot",
         "sell": 25,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 106,
-        "buyOtto": 250,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     "46": {
@@ -11971,10 +11152,7 @@
         "name": "cerebral crab",
         "sell": null,
         "kg": 2,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "47": {
@@ -12007,10 +11185,7 @@
         "name": "chambered nautilus",
         "sell": 12,
         "kg": 1,
-        "sellPerKg": 12,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 12
       }
     },
     "48": {
@@ -12073,10 +11248,7 @@
         "name": "cherry tomato",
         "sell": 17,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 148,
-        "buyOtto": 175,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "49": {
@@ -12113,10 +11285,7 @@
         "name": "clearfin lionfish",
         "sell": 8,
         "kg": 1.7,
-        "sellPerKg": 4.705882352941177,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.705882352941177
       }
     },
     "50": {
@@ -12149,10 +11318,7 @@
         "name": "clione",
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 250
       }
     },
     "51": {
@@ -12185,10 +11351,7 @@
         "name": "clione queen tentacle",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "52": {
@@ -12227,10 +11390,7 @@
         "name": "clown frogfish",
         "sell": 5,
         "kg": 0.3,
-        "sellPerKg": 16.666666666666668,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 16.666666666666668
       }
     },
     "53": {
@@ -12267,10 +11427,7 @@
         "name": "clownfish",
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     "54": {
@@ -12309,10 +11466,7 @@
         "name": "comb jelly",
         "sell": 14,
         "kg": 7,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2
       }
     },
     "55": {
@@ -12349,10 +11503,7 @@
         "name": "comber",
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     "56": {
@@ -12385,10 +11536,7 @@
         "name": "concertina barracuda",
         "sell": null,
         "kg": 6.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "57": {
@@ -12427,10 +11575,7 @@
         "name": "cookiecutter shark",
         "sell": 25,
         "kg": 5,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     "58": {
@@ -12469,10 +11614,7 @@
         "name": "copper shark meat",
         "sell": 22,
         "kg": 4,
-        "sellPerKg": 5.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5.5
       }
     },
     "59": {
@@ -12513,10 +11655,7 @@
         "name": "coral trout",
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     "60": {
@@ -12549,10 +11688,7 @@
         "name": "cortex decorator",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "61": {
@@ -12591,10 +11727,7 @@
         "name": "crystal lobster",
         "sell": 47,
         "kg": 1.5,
-        "sellPerKg": 31.333333333333332,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 31.333333333333332
       }
     },
     "62": {
@@ -12658,10 +11791,7 @@
         "name": "cucumber",
         "sell": 20,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": 200,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     "63": {
@@ -12708,10 +11838,7 @@
         "name": "curry block",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 60
       }
     },
     "64": {
@@ -12758,10 +11885,7 @@
         "name": "cuttlefish",
         "sell": 6,
         "kg": 4,
-        "sellPerKg": 1.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.5
       }
     },
     "65": {
@@ -12794,10 +11918,7 @@
         "name": "devil scorpionfish",
         "sell": 45,
         "kg": 3,
-        "sellPerKg": 15,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 15
       }
     },
     "66": {
@@ -12830,10 +11951,7 @@
         "name": "dollocaris ingens",
         "sell": 45,
         "kg": 1.5,
-        "sellPerKg": 30,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 30
       }
     },
     "67": {
@@ -12866,10 +11984,7 @@
         "name": "drepanaspis meat",
         "sell": 50,
         "kg": 8.5,
-        "sellPerKg": 5.882352941176471,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.882352941176471
       }
     },
     "68": {
@@ -12906,10 +12021,7 @@
         "name": "dumbo octopus",
         "sell": 38,
         "kg": 4,
-        "sellPerKg": 9.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 9.5
       }
     },
     "69": {
@@ -12942,10 +12054,7 @@
         "name": "dunkleosteus meat",
         "sell": 70,
         "kg": 19.5,
-        "sellPerKg": 3.58974358974359,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.58974358974359
       }
     },
     "70": {
@@ -12982,10 +12091,7 @@
         "name": "dusky grouper",
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.1111111111111112
       }
     },
     "71": {
@@ -13024,10 +12130,7 @@
         "name": "eastern rock lobster",
         "sell": 47,
         "kg": 2.5,
-        "sellPerKg": 18.8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 18.8
       }
     },
     "72": {
@@ -13112,10 +12215,7 @@
         "name": "egg",
         "sell": 15,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 63,
-        "buyOtto": 75,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     "73": {
@@ -13171,10 +12271,7 @@
         "name": "eggplant",
         "sell": 21,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 178,
-        "buyOtto": 210,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     "74": {
@@ -13207,10 +12304,7 @@
         "name": "emperor angelfish",
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.5
       }
     },
     "75": {
@@ -13243,10 +12337,7 @@
         "name": "entangled crab",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "76": {
@@ -13279,10 +12370,7 @@
         "name": "enthralled stonefish",
         "sell": null,
         "kg": 8,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "77": {
@@ -13322,10 +12410,7 @@
         "name": "european lobster",
         "sell": 23,
         "kg": 1,
-        "sellPerKg": 23,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 23
       }
     },
     "78": {
@@ -13364,10 +12449,7 @@
         "name": "falcatus",
         "sell": 43,
         "kg": 6,
-        "sellPerKg": 7.166666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 7.166666666666667
       }
     },
     "79": {
@@ -13402,10 +12484,7 @@
         "name": "fan lobster",
         "sell": 22,
         "kg": 0.2,
-        "sellPerKg": 110,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 110
       }
     },
     "80": {
@@ -13438,10 +12517,7 @@
         "name": "fanged cod",
         "sell": null,
         "kg": 3.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "81": {
@@ -13478,10 +12554,7 @@
         "name": "fangtooth",
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     "82": {
@@ -13514,10 +12587,7 @@
         "name": "flame angelfish",
         "sell": 2,
         "kg": 0.2,
-        "sellPerKg": 10,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10
       }
     },
     "83": {
@@ -13556,10 +12626,7 @@
         "name": "fried egg jellyfish",
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     "84": {
@@ -13598,10 +12665,7 @@
         "name": "frilled shark meat",
         "sell": 28,
         "kg": 8.5,
-        "sellPerKg": 3.2941176470588234,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.2941176470588234
       }
     },
     "85": {
@@ -13666,10 +12730,7 @@
         "name": "garlic",
         "sell": 19,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 161,
-        "buyOtto": 190,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     "86": {
@@ -13702,10 +12763,7 @@
         "name": "gazing shark",
         "sell": null,
         "kg": 11,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "87": {
@@ -13742,10 +12800,7 @@
         "name": "gelatinous snailfish",
         "sell": 28,
         "kg": 2,
-        "sellPerKg": 14,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 14
       }
     },
     "88": {
@@ -13778,10 +12833,7 @@
         "name": "gelatinous stonefish",
         "sell": null,
         "kg": 7.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "89": {
@@ -13820,10 +12872,7 @@
         "name": "giant trevally meat",
         "sell": 10,
         "kg": 5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2
       }
     },
     "90": {
@@ -13856,10 +12905,7 @@
         "name": "gnashing perch",
         "sell": null,
         "kg": 4.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "91": {
@@ -13894,10 +12940,7 @@
         "name": "goblin shark's fatty meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "92": {
@@ -13934,10 +12977,7 @@
         "name": "golden king crab",
         "sell": 45,
         "kg": 8,
-        "sellPerKg": 5.625,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.625
       }
     },
     "93": {
@@ -13997,10 +13037,7 @@
         "name": "grade a egg",
         "sell": 90,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 382,
-        "buyOtto": 450,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     "94": {
@@ -14037,10 +13074,7 @@
         "name": "great barracuda",
         "sell": 6,
         "kg": 7,
-        "sellPerKg": 0.8571428571428571,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 0.8571428571428571
       }
     },
     "95": {
@@ -14079,10 +13113,7 @@
         "name": "green humphead parrotfish",
         "sell": 5,
         "kg": 1.8,
-        "sellPerKg": 2.7777777777777777,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2.7777777777777777
       }
     },
     "96": {
@@ -14131,10 +13162,7 @@
         "name": "green sea urchin",
         "sell": 90,
         "kg": 1,
-        "sellPerKg": 90,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 90
       }
     },
     "97": {
@@ -14169,10 +13197,7 @@
         "name": "greenland shark meat",
         "sell": 62,
         "kg": 20,
-        "sellPerKg": 3.1,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.1
       }
     },
     "98": {
@@ -14209,10 +13234,7 @@
         "name": "grey triggerfish",
         "sell": 6,
         "kg": 3.5,
-        "sellPerKg": 1.7142857142857142,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.7142857142857142
       }
     },
     "99": {
@@ -14245,10 +13267,7 @@
         "name": "grotesque mackerel",
         "sell": null,
         "kg": 3,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "100": {
@@ -14296,10 +13315,7 @@
         "name": "habanero",
         "sell": 16,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 153,
-        "buyOtto": 180,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     "101": {
@@ -14336,10 +13352,7 @@
         "name": "haddock",
         "sell": 37,
         "kg": 6,
-        "sellPerKg": 6.166666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.166666666666667
       }
     },
     "102": {
@@ -14374,10 +13387,7 @@
         "name": "hammerhead meat",
         "sell": 47,
         "kg": 13,
-        "sellPerKg": 3.6153846153846154,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.6153846153846154
       }
     },
     "103": {
@@ -14414,10 +13424,7 @@
         "name": "harlequin hind",
         "sell": 6,
         "kg": 1.1,
-        "sellPerKg": 5.454545454545454,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.454545454545454
       }
     },
     "104": {
@@ -14452,10 +13459,7 @@
         "name": "helicoprion tail",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "105": {
@@ -14492,10 +13496,7 @@
         "name": "horsehair crab",
         "sell": 50,
         "kg": 1.5,
-        "sellPerKg": 33.333333333333336,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 33.333333333333336
       }
     },
     "106": {
@@ -14528,10 +13529,7 @@
         "name": "host eel",
         "sell": null,
         "kg": 5.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "107": {
@@ -14570,10 +13568,7 @@
         "name": "humboldt squid meat",
         "sell": 48,
         "kg": 7.5,
-        "sellPerKg": 6.4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6.4
       }
     },
     "108": {
@@ -14612,10 +13607,7 @@
         "name": "hyalonema",
         "sell": 65,
         "kg": 0.1,
-        "sellPerKg": 650,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 650
       }
     },
     "109": {
@@ -14654,10 +13646,7 @@
         "name": "ice fish",
         "sell": 32,
         "kg": 5.5,
-        "sellPerKg": 5.818181818181818,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5.818181818181818
       }
     },
     "110": {
@@ -14690,10 +13679,7 @@
         "name": "imperious lobster",
         "sell": null,
         "kg": 3,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "111": {
@@ -14752,10 +13738,7 @@
         "name": "kajime",
         "sell": 7,
         "kg": 0.1,
-        "sellPerKg": 70,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 70
       }
     },
     "112": {
@@ -14823,10 +13806,7 @@
         "name": "kelp",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 60
       }
     },
     "113": {
@@ -14861,10 +13841,7 @@
         "name": "klaus's fin",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "114": {
@@ -14897,10 +13874,7 @@
         "name": "kronosaurus tongue",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "115": {
@@ -14937,10 +13911,7 @@
         "name": "lagoon triggerfish",
         "sell": 2,
         "kg": 0.7,
-        "sellPerKg": 2.857142857142857,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.857142857142857
       }
     },
     "116": {
@@ -14985,10 +13956,7 @@
         "name": "long-snouted seahorse",
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4
       }
     },
     "117": {
@@ -15025,10 +13993,7 @@
         "name": "longfin batfish",
         "sell": 3,
         "kg": 0.8,
-        "sellPerKg": 3.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.75
       }
     },
     "118": {
@@ -15063,10 +14028,7 @@
         "name": "longnose sawshark meat",
         "sell": 12,
         "kg": 6.5,
-        "sellPerKg": 1.8461538461538463,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.8461538461538463
       }
     },
     "119": {
@@ -15103,10 +14065,7 @@
         "name": "longspine porcupinefish",
         "sell": 26,
         "kg": 3.5,
-        "sellPerKg": 7.428571428571429,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.428571428571429
       }
     },
     "120": {
@@ -15143,10 +14102,7 @@
         "name": "longspine squirrelfish",
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.5
       }
     },
     "121": {
@@ -15179,10 +14135,7 @@
         "name": "lumpfish",
         "sell": 40,
         "kg": 5,
-        "sellPerKg": 8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8
       }
     },
     "122": {
@@ -15217,10 +14170,7 @@
         "name": "lusca neck meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "123": {
@@ -15253,10 +14203,7 @@
         "name": "lusca tentacle",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "124": {
@@ -15293,10 +14240,7 @@
         "name": "mackerel scad",
         "sell": 5,
         "kg": 0.8,
-        "sellPerKg": 6.25,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.25
       }
     },
     "125": {
@@ -15331,10 +14275,7 @@
         "name": "mako meat",
         "sell": 43,
         "kg": 9,
-        "sellPerKg": 4.777777777777778,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4.777777777777778
       }
     },
     "126": {
@@ -15367,10 +14308,7 @@
         "name": "malignant pincer",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "127": {
@@ -15405,10 +14343,7 @@
         "name": "mantis shrimp meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "128": {
@@ -15441,10 +14376,7 @@
         "name": "many eyed mackerel",
         "sell": null,
         "kg": 2.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "129": {
@@ -15481,10 +14413,7 @@
         "name": "marbled electric ray meat",
         "sell": 30,
         "kg": 3.5,
-        "sellPerKg": 8.571428571428571,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8.571428571428571
       }
     },
     "130": {
@@ -15523,10 +14452,7 @@
         "name": "marlin meat",
         "sell": 45,
         "kg": 7.5,
-        "sellPerKg": 6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6
       }
     },
     "131": {
@@ -15587,10 +14513,7 @@
         "name": "mayonnaise",
         "sell": 7,
         "kg": 0.1,
-        "sellPerKg": 70,
-        "buyJango": 70,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 70
       }
     },
     "132": {
@@ -15627,10 +14550,7 @@
         "name": "mediterranean parrotfish",
         "sell": 3,
         "kg": 2,
-        "sellPerKg": 1.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.5
       }
     },
     "133": {
@@ -15663,10 +14583,7 @@
         "name": "megalograptus",
         "sell": 46,
         "kg": 8,
-        "sellPerKg": 5.75,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.75
       }
     },
     "134": {
@@ -15705,10 +14622,7 @@
         "name": "megamouth shark meat",
         "sell": 31,
         "kg": 11.5,
-        "sellPerKg": 2.6956521739130435,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 2.6956521739130435
       }
     },
     "135": {
@@ -15782,10 +14696,7 @@
         "name": "miso",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": 80,
-        "buyOtto": null,
-        "usedForPartiesCount": 4
+        "sellPerKg": 80
       }
     },
     "136": {
@@ -15829,10 +14740,7 @@
         "name": "moray eel",
         "sell": 17,
         "kg": 9,
-        "sellPerKg": 1.8888888888888888,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 1.8888888888888888
       }
     },
     "137": {
@@ -15869,10 +14777,7 @@
         "name": "narrow-barred spanish mackerel",
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.1111111111111112
       }
     },
     "138": {
@@ -15909,10 +14814,7 @@
         "name": "narwhal meat",
         "sell": 46,
         "kg": 9.5,
-        "sellPerKg": 4.842105263157895,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.842105263157895
       }
     },
     "139": {
@@ -15951,10 +14853,7 @@
         "name": "norway lobster",
         "sell": 25,
         "kg": 0.2,
-        "sellPerKg": 125,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 125
       }
     },
     "140": {
@@ -16090,10 +14989,7 @@
         "name": "olive oil",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 6
+        "sellPerKg": 60
       }
     },
     "141": {
@@ -16153,10 +15049,7 @@
         "name": "onion",
         "sell": 20,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 170,
-        "buyOtto": 200,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     "142": {
@@ -16193,10 +15086,7 @@
         "name": "orbicular batfish",
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.666666666666667
       }
     },
     "143": {
@@ -16235,10 +15125,7 @@
         "name": "ornate wrasse",
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     "144": {
@@ -16275,10 +15162,7 @@
         "name": "pacific fanfish",
         "sell": 22,
         "kg": 5,
-        "sellPerKg": 4.4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.4
       }
     },
     "145": {
@@ -16315,10 +15199,7 @@
         "name": "painted comber",
         "sell": 6,
         "kg": 0.4,
-        "sellPerKg": 15,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 15
       }
     },
     "146": {
@@ -16351,10 +15232,7 @@
         "name": "parhelion jellyfish",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "147": {
@@ -16395,10 +15273,7 @@
         "name": "peacock squid",
         "sell": 36,
         "kg": 3.5,
-        "sellPerKg": 10.285714285714286,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10.285714285714286
       }
     },
     "148": {
@@ -16435,10 +15310,7 @@
         "name": "pelican eel",
         "sell": 60,
         "kg": 8,
-        "sellPerKg": 7.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.5
       }
     },
     "149": {
@@ -16471,10 +15343,7 @@
         "name": "perished loosejaw",
         "sell": null,
         "kg": 3,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "150": {
@@ -16509,10 +15378,7 @@
         "name": "phantom jellyfish meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "151": {
@@ -16549,10 +15415,7 @@
         "name": "pikaia",
         "sell": 38,
         "kg": 4.5,
-        "sellPerKg": 8.444444444444445,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8.444444444444445
       }
     },
     "152": {
@@ -16585,10 +15448,7 @@
         "name": "polar eelpout",
         "sell": 30,
         "kg": 3,
-        "sellPerKg": 10,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 10
       }
     },
     "153": {
@@ -16627,10 +15487,7 @@
         "name": "porbeagle shark meat",
         "sell": 55,
         "kg": 13.5,
-        "sellPerKg": 4.074074074074074,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4.074074074074074
       }
     },
     "154": {
@@ -16677,10 +15534,7 @@
         "name": "purple sea urchin",
         "sell": 20,
         "kg": 1,
-        "sellPerKg": 20,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 20
       }
     },
     "155": {
@@ -16717,10 +15571,7 @@
         "name": "pyramid butterflyfish",
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     "156": {
@@ -16753,10 +15604,7 @@
         "name": "qingmendous",
         "sell": 40,
         "kg": 6,
-        "sellPerKg": 6.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.666666666666667
       }
     },
     "157": {
@@ -16789,10 +15637,7 @@
         "name": "radiant squid",
         "sell": null,
         "kg": 4.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "158": {
@@ -16833,10 +15678,7 @@
         "name": "rainbow cap",
         "sell": 750,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 750,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "159": {
@@ -16875,10 +15717,7 @@
         "name": "rainbow wrasse",
         "sell": 2,
         "kg": 0.6,
-        "sellPerKg": 3.3333333333333335,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.3333333333333335
       }
     },
     "160": {
@@ -16917,10 +15756,7 @@
         "name": "red bream",
         "sell": 12,
         "kg": 3,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     "161": {
@@ -16957,10 +15793,7 @@
         "name": "red lionfish",
         "sell": 3,
         "kg": 1.5,
-        "sellPerKg": 2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2
       }
     },
     "162": {
@@ -16995,10 +15828,7 @@
         "name": "red-banded lobster",
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 250
       }
     },
     "163": {
@@ -17035,10 +15865,7 @@
         "name": "redtoothed triggerfish",
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3
       }
     },
     "164": {
@@ -17077,10 +15904,7 @@
         "name": "rhinochimaeridae meat",
         "sell": 30,
         "kg": 5,
-        "sellPerKg": 6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6
       }
     },
     "165": {
@@ -17185,10 +16009,7 @@
         "name": "rice",
         "sell": 15,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     "166": {
@@ -17231,10 +16052,7 @@
         "name": "sailfish meat",
         "sell": 65,
         "kg": 9,
-        "sellPerKg": 7.222222222222222,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 7.222222222222222
       }
     },
     "167": {
@@ -17267,10 +16085,7 @@
         "name": "salema porgy",
         "sell": 2,
         "kg": 0.4,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     "168": {
@@ -17303,10 +16118,7 @@
         "name": "sallow sailfish",
         "sell": null,
         "kg": 9.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "169": {
@@ -17343,10 +16155,7 @@
         "name": "sally lightfoot crab",
         "sell": 18,
         "kg": 4,
-        "sellPerKg": 4.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.5
       }
     },
     "170": {
@@ -17383,10 +16192,7 @@
         "name": "salmon snailfish",
         "sell": 20,
         "kg": 5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4
       }
     },
     "171": {
@@ -17462,10 +16268,7 @@
         "name": "salt",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": 80,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 80
       }
     },
     "172": {
@@ -17498,10 +16301,7 @@
         "name": "savage barracuda",
         "sell": null,
         "kg": 7,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "173": {
@@ -17534,10 +16334,7 @@
         "name": "scouring bass",
         "sell": null,
         "kg": 3.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "174": {
@@ -17570,17 +16367,14 @@
         "name": "sea goldie",
         "sell": 1,
         "kg": 0.3,
-        "sellPerKg": 3.3333333333333335,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.3333333333333335
       }
     },
     "175": {
       "id": 175,
       "name": "Sea Grape",
       "source": "Limestone Cave",
-      "type": "Sea Plant",
+      "type": "Sea plant",
       "image": "sea_grape.png",
       "rank": 2,
       "kg": 0.1,
@@ -17643,10 +16437,7 @@
         "name": "sea grape",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 4
+        "sellPerKg": 60
       }
     },
     "176": {
@@ -17685,10 +16476,7 @@
         "name": "sea toad",
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.6
       }
     },
     "177": {
@@ -17721,10 +16509,7 @@
         "name": "seadragon",
         "sell": 35,
         "kg": 0.5,
-        "sellPerKg": 70,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 70
       }
     },
     "178": {
@@ -17788,10 +16573,7 @@
         "name": "seaweed",
         "sell": 5,
         "kg": 0.1,
-        "sellPerKg": 50,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 50
       }
     },
     "179": {
@@ -17824,10 +16606,7 @@
         "name": "seizing snailfish",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "180": {
@@ -17887,10 +16666,7 @@
         "name": "sesame seed",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": 80,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 80
       }
     },
     "181": {
@@ -17923,10 +16699,7 @@
         "name": "shattered wreckfish",
         "sell": null,
         "kg": 6.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "182": {
@@ -17963,10 +16736,7 @@
         "name": "sheepshead meat",
         "sell": 10,
         "kg": 1.8,
-        "sellPerKg": 5.555555555555555,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.555555555555555
       }
     },
     "183": {
@@ -18003,10 +16773,7 @@
         "name": "small spotted dart",
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     "184": {
@@ -18043,10 +16810,7 @@
         "name": "snow crab",
         "sell": 40,
         "kg": 2,
-        "sellPerKg": 20,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 20
       }
     },
     "185": {
@@ -18087,10 +16851,7 @@
         "name": "snub-nosed spiny eel",
         "sell": 60,
         "kg": 6.5,
-        "sellPerKg": 9.23076923076923,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 9.23076923076923
       }
     },
     "186": {
@@ -18138,10 +16899,7 @@
         "name": "southern bull kelp",
         "sell": 8,
         "kg": 0.1,
-        "sellPerKg": 80,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 80
       }
     },
     "187": {
@@ -18238,10 +16996,7 @@
         "name": "soy sauce",
         "sell": 6,
         "kg": 0.1,
-        "sellPerKg": 60,
-        "buyJango": 60,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": 60
       }
     },
     "188": {
@@ -18278,10 +17033,7 @@
         "name": "spear squid",
         "sell": 17,
         "kg": 4.6,
-        "sellPerKg": 3.695652173913044,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 3.695652173913044
       }
     },
     "189": {
@@ -18329,10 +17081,7 @@
         "name": "spider crab",
         "sell": 17,
         "kg": 7.5,
-        "sellPerKg": 2.2666666666666666,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 2.2666666666666666
       }
     },
     "190": {
@@ -18365,10 +17114,7 @@
         "name": "splintered crab",
         "sell": null,
         "kg": 3.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "191": {
@@ -18401,10 +17147,7 @@
         "name": "sprouting eel",
         "sell": null,
         "kg": 7,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "192": {
@@ -18445,10 +17188,7 @@
         "name": "starry puffer",
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5
       }
     },
     "193": {
@@ -18485,10 +17225,7 @@
         "name": "starry skate",
         "sell": 44,
         "kg": 5.5,
-        "sellPerKg": 8,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 8
       }
     },
     "194": {
@@ -18529,10 +17266,7 @@
         "name": "stingray meat",
         "sell": 17,
         "kg": 3,
-        "sellPerKg": 5.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 5.666666666666667
       }
     },
     "195": {
@@ -18569,10 +17303,7 @@
         "name": "striped catfish",
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 6.666666666666667
       }
     },
     "196": {
@@ -18609,10 +17340,7 @@
         "name": "striped red mullet",
         "sell": 5,
         "kg": 0.7,
-        "sellPerKg": 7.142857142857143,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 7.142857142857143
       }
     },
     "197": {
@@ -18645,10 +17373,7 @@
         "name": "three-headed cod",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "198": {
@@ -18681,10 +17406,7 @@
         "name": "threetooth puffer",
         "sell": 23,
         "kg": 5,
-        "sellPerKg": 4.6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 4.6
       }
     },
     "199": {
@@ -18719,10 +17441,7 @@
         "name": "thresher shark meat",
         "sell": 53,
         "kg": 8.5,
-        "sellPerKg": 6.235294117647059,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6.235294117647059
       }
     },
     "200": {
@@ -18757,10 +17476,7 @@
         "name": "tiger shark meat",
         "sell": 17,
         "kg": 15,
-        "sellPerKg": 1.1333333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 1.1333333333333333
       }
     },
     "201": {
@@ -18797,10 +17513,7 @@
         "name": "titan triggerfish",
         "sell": 5,
         "kg": 3.8,
-        "sellPerKg": 1.3157894736842106,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.3157894736842106
       }
     },
     "202": {
@@ -18839,10 +17552,7 @@
         "name": "tokummia katalepsis",
         "sell": 55,
         "kg": 2,
-        "sellPerKg": 27.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 27.5
       }
     },
     "203": {
@@ -18875,10 +17585,7 @@
         "name": "translucent sturgeon",
         "sell": null,
         "kg": 8,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "204": {
@@ -18917,10 +17624,7 @@
         "name": "tropical rock lobster",
         "sell": 45,
         "kg": 1.2,
-        "sellPerKg": 37.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 37.5
       }
     },
     "205": {
@@ -18953,10 +17657,7 @@
         "name": "truck hermit crab legs",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "206": {
@@ -19009,10 +17710,7 @@
         "name": "truffle",
         "sell": 650,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 650,
-        "buyOtto": null,
-        "usedForPartiesCount": 3
+        "sellPerKg": null
       }
     },
     "207": {
@@ -19060,10 +17758,7 @@
         "name": "turmeric",
         "sell": 5,
         "kg": 0.1,
-        "sellPerKg": 50,
-        "buyJango": 50,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 50
       }
     },
     "208": {
@@ -19096,10 +17791,7 @@
         "name": "tusked grouper",
         "sell": null,
         "kg": 5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "209": {
@@ -19142,10 +17834,7 @@
         "name": "vampire squid",
         "sell": 41,
         "kg": 6,
-        "sellPerKg": 6.833333333333333,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6.833333333333333
       }
     },
     "210": {
@@ -19178,10 +17867,7 @@
         "name": "voltaic grouper",
         "sell": null,
         "kg": 6,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "211": {
@@ -19221,10 +17907,7 @@
         "name": "waptia fieldensis",
         "sell": 34,
         "kg": 0.4,
-        "sellPerKg": 85,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 2
+        "sellPerKg": 85
       }
     },
     "212": {
@@ -19308,10 +17991,7 @@
         "name": "wheat",
         "sell": 19,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": 161,
-        "buyOtto": 190,
-        "usedForPartiesCount": 2
+        "sellPerKg": null
       }
     },
     "213": {
@@ -19354,10 +18034,7 @@
         "name": "white shrimp",
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 170
       }
     },
     "214": {
@@ -19396,10 +18073,7 @@
         "name": "white spotted jellyfish",
         "sell": 6,
         "kg": 1,
-        "sellPerKg": 6,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 6
       }
     },
     "215": {
@@ -19440,10 +18114,7 @@
         "name": "white trevally",
         "sell": 7,
         "kg": 6,
-        "sellPerKg": 1.1666666666666667,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 1.1666666666666667
       }
     },
     "216": {
@@ -19494,10 +18165,7 @@
         "name": "whiteleg shrimp",
         "sell": 11,
         "kg": 0.1,
-        "sellPerKg": 110,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 110
       }
     },
     "217": {
@@ -19532,10 +18200,7 @@
         "name": "whitetip reefshark head",
         "sell": 40,
         "kg": 2.5,
-        "sellPerKg": 16,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 16
       }
     },
     "218": {
@@ -19570,10 +18235,7 @@
         "name": "whitetip reefshark meat",
         "sell": 8,
         "kg": 2.5,
-        "sellPerKg": 3.2,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 3.2
       }
     },
     "219": {
@@ -19606,10 +18268,7 @@
         "name": "withered ray",
         "sell": null,
         "kg": 8.5,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "220": {
@@ -19642,10 +18301,7 @@
         "name": "wolf eel tail meat",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "221": {
@@ -19678,10 +18334,7 @@
         "name": "xenacanthus meat",
         "sell": 53,
         "kg": 5.5,
-        "sellPerKg": 9.636363636363637,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 9.636363636363637
       }
     },
     "222": {
@@ -19714,10 +18367,7 @@
         "name": "yawie's inner flesh",
         "sell": null,
         "kg": 1,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": null
       }
     },
     "223": {
@@ -19750,10 +18400,7 @@
         "name": "yellow tang",
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     "224": {
@@ -19790,10 +18437,7 @@
         "name": "yellowback fusilier",
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 0
+        "sellPerKg": 2.5
       }
     },
     "225": {
@@ -19832,10 +18476,7 @@
         "name": "yellowfin tuna akami",
         "sell": 24,
         "kg": 6,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     },
     "226": {
@@ -19874,10 +18515,7 @@
         "name": "yellowfin tuna chutoro",
         "sell": 30,
         "kg": 6,
-        "sellPerKg": 5,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 5
       }
     },
     "227": {
@@ -19916,10 +18554,7 @@
         "name": "yellowfin tuna ootoro",
         "sell": 42,
         "kg": null,
-        "sellPerKg": null,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": null
       }
     },
     "228": {
@@ -19954,10 +18589,7 @@
         "name": "zebra shark meat",
         "sell": 42,
         "kg": 10.5,
-        "sellPerKg": 4,
-        "buyJango": null,
-        "buyOtto": null,
-        "usedForPartiesCount": 1
+        "sellPerKg": 4
       }
     }
   },
@@ -20186,17 +18818,15 @@
         187,
         207
       ],
-      "Sea Plant": [
-        1,
-        39,
-        175
-      ],
       "Sea plant": [
+        1,
         20,
         26,
+        39,
         108,
         111,
         112,
+        175,
         178,
         186
       ],
@@ -20715,7 +19345,7 @@
       ]
     },
     "vendor": {
-      "jangovendor": [
+      "jango": [
         72,
         93,
         158,
@@ -20739,7 +19369,7 @@
         141,
         212
       ],
-      "ottovendor": [
+      "otto": [
         72,
         93,
         16,

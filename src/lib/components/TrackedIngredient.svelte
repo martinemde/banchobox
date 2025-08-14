@@ -1,11 +1,12 @@
 <script lang="ts">
   import type { Ingredient, Dish } from '../types.js';
   import TrackButton from './TrackButton.svelte';
-  import { trackedIngredientIds, trackedDishIds } from '$lib/stores/tracking.js';
+  import { trackedDishIds } from '$lib/stores/tracking.js';
   import { browser } from '$app/environment';
   import PixelIcon from '../ui/PixelIcon.svelte';
 
   export let ingredient: Ingredient;
+  export let dishById: Map<number, Dish> | undefined;
 
   const thumbPx = 96;
 
@@ -25,9 +26,9 @@
   function getTrackedUsagesForIngredient(ingredientId: number): TrackedUsage[] {
     const list: TrackedUsage[] = [];
     for (const dishId of $trackedDishIds) {
-      const dish = (ingredient as any).__dishesById?.get(dishId) ?? null;
+      const dish = dishById?.get(dishId) ?? null;
       if (!dish) continue;
-      const line = dish.ingredients.find((ing: { ingredientId: number; count: number; upgradeCount?: number }) => ing.ingredientId === ingredientId);
+      const line = dish.ingredients.find((ing) => ing.ingredientId === ingredientId);
       if (!line) continue;
       list.push({ dish, qty: line.count, upgrade: line.upgradeCount ?? 0 });
     }
@@ -44,20 +45,13 @@
     <div class="flex items-start gap-4">
       <div class="inline-block" style="width: {thumbPx}px">
         <div class="relative" style="width: {thumbPx}px; height: {thumbPx}px">
-          <PixelIcon image={ingredient.image} alt={ingredient.name} />
+          <PixelIcon image={ingredient.image} alt={ingredient.name} uiScale={1.5} />
         </div>
 
         <div class="mt-2" style="width: {thumbPx}px">
           {#if browser && ingredient?.id != null}
-            {@const isTracked = $trackedIngredientIds.has(ingredient.id)}
-            <TrackButton
-              checked={isTracked}
-              on:change={(e) => {
-                const nowChecked = e.detail.checked as boolean;
-                if (nowChecked) trackedIngredientIds.track(ingredient.id);
-                else trackedIngredientIds.untrack(ingredient.id);
-              }}
-            />
+            {@const isTracked = usages.length > 0}
+            <TrackButton checked={isTracked} disabled={true} />
           {/if}
         </div>
       </div>

@@ -3,18 +3,32 @@
   import type { Readable, Writable } from 'svelte/store';
   import type { EntityBundle, Id } from '$lib/types.js';
 
+  const defaultSortOptions = [
+    { value: 'name', label: 'Recipe' },
+    { value: 'finalPrice', label: 'Final Price' },
+    { value: 'finalServings', label: 'Final Servings' },
+    { value: 'finalProfitPerServing', label: 'Profit / Serving' },
+    { value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
+    { value: 'upgradeCost', label: 'Upgrade Cost' },
+    { value: 'ingredientCount', label: 'Ingredients' },
+  ];
+
   let {
     bundle,
     filters,
     query = $bindable(''),
     sortKey = $bindable<string>('finalProfitPerServing'),
-    sortDir = $bindable<'asc'|'desc'>('desc')
+    sortDir = $bindable<'asc'|'desc'>('desc'),
+    sortOptions,
+    searchPlaceholder
   }: {
     bundle: Readable<EntityBundle<any> | null>;
     filters: Writable<Record<string, Set<string>>>;
     query?: string;
     sortKey?: string;
     sortDir?: 'asc'|'desc';
+    sortOptions?: Array<{ value: string; label: string }>;
+    searchPlaceholder?: string;
   } = $props();
 
   function formatFacetTitle(key: string): string {
@@ -39,15 +53,8 @@
     });
   }
 
-  const sortOptions = [
-    { value: 'name', label: 'Recipe' },
-    { value: 'finalPrice', label: 'Final Price' },
-    { value: 'finalServings', label: 'Final Servings' },
-    { value: 'finalProfitPerServing', label: 'Profit / Serving' },
-    { value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
-    { value: 'upgradeCost', label: 'Upgrade Cost' },
-    { value: 'ingredientCount', label: 'Ingredients' },
-  ];
+  const effectiveSortOptions = sortOptions ?? defaultSortOptions;
+  const effectivePlaceholder = searchPlaceholder ?? 'Search by name…';
 </script>
 
 <div class="space-y-4">
@@ -58,7 +65,7 @@
         type="search"
         id="filters-search"
         class="search-input w-full"
-        placeholder="Search dishes by name, ingredient, DLC, unlock…"
+        placeholder={effectivePlaceholder}
         bind:value={query}
       />
       {#if query}
@@ -68,9 +75,8 @@
   </div>
 
   <div class="space-y-2">
-    <label class="text-sm font-semibold" for="filters-sort">Sort</label>
     <SortControl
-      options={sortOptions}
+      options={effectiveSortOptions}
       bind:column={sortKey}
       bind:direction={sortDir}
     />
@@ -96,10 +102,26 @@
 <style>
   .search-input {
     padding: 0.6rem 2rem 0.6rem 0.8rem;
-    border: 1px solid rgb(var(--color-surface-400));
+    border: 1px solid rgb(var(--color-surface-300));
     border-radius: 0.5rem;
-    background: rgb(var(--color-surface-200));
+    background-color: rgb(var(--color-surface-50));
     color: rgb(var(--color-on-surface-token));
+    caret-color: rgb(var(--color-primary-500));
+    transition: background-color 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+  }
+  .search-input::placeholder {
+    color: rgb(var(--color-on-surface-token) / 0.55);
+  }
+  .search-input:hover {
+    background-color: rgb(var(--color-surface-100));
+    border-color: rgb(var(--color-surface-400));
+  }
+  .search-input:focus,
+  .search-input:focus-visible {
+    outline: none;
+    background-color: rgb(var(--color-surface-50));
+    border-color: rgb(var(--color-primary-500));
+    box-shadow: 0 0 0 3px rgb(var(--color-primary-500) / 0.25);
   }
   .clear-btn {
     position: absolute;
@@ -114,6 +136,10 @@
     padding: 0 0.25rem;
     cursor: pointer;
     opacity: 0.7;
+    transition: color 150ms ease, opacity 150ms ease;
   }
-  .clear-btn:hover { opacity: 1; }
+  .clear-btn:hover {
+    opacity: 1;
+    color: rgb(var(--color-on-surface-token));
+  }
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Ingredient, Dish, Id } from '$lib/types.js';
-  import PlannedIngredient from '$lib/components/PlannedIngredient.svelte';
-  import { trackedDishIds, trackedIngredientIds } from '$lib/stores/tracking.js';
+  import TrackedIngredient from '$lib/components/TrackedIngredient.svelte';
+  import { trackedDishIds } from '$lib/stores/tracking.js';
   import type { PageProps } from './$types';
 
   let { data }: PageProps = $props();
@@ -9,7 +9,7 @@
   const ingredients = $derived(((data as any).ingredients?.rows ?? []) as Ingredient[]);
   const dishById = $derived(new Map<Id, Dish>((dishes as Dish[]).map((d: Dish) => [d.id, d])));
 
-  // Compute the union of directly tracked ingredients and ingredients from tracked dishes
+  // Ingredients from tracked dishes
   const ingredientIdsFromTrackedDishes = $derived(new Set<number>(
     [...$trackedDishIds].flatMap((dishId) => {
       const dish = dishById.get(dishId);
@@ -18,7 +18,6 @@
   ));
 
   const plannedIngredientIds = $derived(new Set<number>([
-    ...Array.from($trackedIngredientIds),
     ...Array.from(ingredientIdsFromTrackedDishes)
   ]));
 
@@ -48,7 +47,7 @@
 
 <svelte:head>
   <title>Tracking - Bancho Box</title>
-  <meta name="description" content="A focused list of tracked ingredients, including those from tracked dishes" />
+  <meta name="description" content="Ingredients required by your tracked dishes" />
   <meta name="robots" content="noindex" />
 
 </svelte:head>
@@ -57,15 +56,15 @@
   <section class="plan">
     <header class="mb-3">
       <h1 class="text-xl font-semibold">Tracking</h1>
-      <p class="opacity-80 text-sm">Ingredients you tracked directly, plus ingredients required by your tracked dishes.</p>
+      <p class="opacity-80 text-sm">Ingredients required by your tracked dishes.</p>
     </header>
 
     {#if plannedIngredients.length === 0}
-      <div class="opacity-70 text-sm">No tracked ingredients yet. Track an ingredient or a dish to see items here.</div>
+      <div class="opacity-70 text-sm">No tracked dishes yet. Track a dish to see items here.</div>
     {:else}
       <div class="card-list">
         {#each plannedIngredients as ingredient}
-          <PlannedIngredient {ingredient} />
+          <TrackedIngredient {ingredient} {dishById} />
         {/each}
       </div>
     {/if}
