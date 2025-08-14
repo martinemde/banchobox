@@ -1,6 +1,6 @@
 <script lang="ts">
   import PartyDish from '$lib/components/PartyDishCard.svelte';
-  import SortControl from '$lib/components/SortControl.svelte';
+  import SortControl from '$lib/ui/SortControl.svelte';
   import { partiesStores } from '$lib/stores/parties';
   import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
   import PartyGroup from '$lib/components/PartyGroup.svelte';
@@ -42,12 +42,8 @@
     </div>
     <SortControl
       options={[{ value: 'name', label: 'Name' }, { value: 'bonus', label: 'Bonus' }, { value: 'dishCount', label: 'Dish Count' }]}
-      column={$sortKey}
-      direction={$sortDir}
-      on:change={(e) => {
-        sortKey.set(e.detail.column);
-        sortDir.set(e.detail.direction);
-      }}
+      bind:column={$sortKey}
+      bind:direction={$sortDir}
     />
   </div>
 {/snippet}

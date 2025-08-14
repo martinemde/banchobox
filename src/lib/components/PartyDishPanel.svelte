@@ -8,5 +8,5 @@
 <div class="flex items-start gap-x-4 px-4">
     <div class="w-24 shrink-0">
     </div>
-    <ProfitTable price={partyDish.partyPrice} servings={partyDish.finalServings} totalCost={partyDish.recipeCost} />
+    <ProfitTable dish={partyDish} />
 </div>

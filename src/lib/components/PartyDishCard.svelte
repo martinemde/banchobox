@@ -5,7 +5,7 @@
   import ProfitTable from './ProfitTable.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
   import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
-  import PixelIcon from './PixelIcon.svelte';
+  import PixelIcon from '../ui/PixelIcon.svelte';
 
   let { dish, partyDish, party } = $props<{
     dish: Dish;

@@ -3,7 +3,7 @@
   import TrackButton from './TrackButton.svelte';
   import { trackedIngredientIds, trackedDishIds } from '$lib/stores/tracking.js';
   import { browser } from '$app/environment';
-  import PixelIcon from './PixelIcon.svelte';
+  import PixelIcon from '../ui/PixelIcon.svelte';
 
   export let ingredient: Ingredient;
 

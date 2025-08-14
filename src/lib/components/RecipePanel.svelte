@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Dish } from '$lib/types.js';
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
-  import PixelIcon from './PixelIcon.svelte';
+  import PixelIcon from '../ui/PixelIcon.svelte';
 
   let { dish } = $props<{ dish: Dish }>();
 

@@ -1,6 +1,6 @@
 <script lang="ts">
   import Dish from '$lib/components/DishCard.svelte';
-  import SortControl from '$lib/components/SortControl.svelte';
+  import SortControl from '$lib/ui/SortControl.svelte';
   import { dishesStores } from '$lib/stores/dishes';
   import { syncToUrl } from '$lib/stores/urlSync';
   import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
@@ -8,7 +8,7 @@
   import TrackingSidebar from '$lib/ui/TrackingSidebar.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
 
-  const { query, sortKey, sortDir, visible } = dishesStores;
+  const { query, sortKey, sortDir, visible, filters } = dishesStores;
   syncToUrl('dishes', dishesStores);
 
   let filtersOpen = $state(false);
@@ -39,8 +39,8 @@
     </div>
 
     <!-- Left sidebar (≥md) -->
-    <aside class="hidden md:block border border-white/10 rounded-lg sticky top-14 self-start bg-surface-50/70 backdrop-blur p-4">
-      <FiltersPanel bind:query={$query} bind:sortKey={$sortKey} bind:sortDir={$sortDir} />
+    <aside class="hidden md:block border border-white/10 rounded-lg top-14 self-start bg-surface-50/70 backdrop-blur p-4">
+      <FiltersPanel bundle={dishesStores.bundle} {filters} bind:query={$query} bind:sortKey={$sortKey as string} bind:sortDir={$sortDir} />
     </aside>
 
     <!-- Center content -->
@@ -48,7 +48,7 @@
       <!-- Mobile subheader -->
       <div class="sticky top-14 z-30 bg-surface-50/90 backdrop-blur border-b border-white/10 md:hidden">
         <div class="px-1 py-3">
-          <FiltersPanel bind:query={$query} bind:sortKey={$sortKey} bind:sortDir={$sortDir} />
+          <FiltersPanel bundle={dishesStores.bundle} {filters} bind:query={$query} bind:sortKey={$sortKey as string} bind:sortDir={$sortDir} />
         </div>
       </div>
 
@@ -72,6 +72,6 @@
     {#snippet title()}
       <h3 class="text-lg font-semibold">Filters &amp; sort</h3>
     {/snippet}
-    <FiltersPanel bind:query={$query} bind:sortKey={$sortKey} bind:sortDir={$sortDir} />
+    <FiltersPanel bundle={dishesStores.bundle} {filters} bind:query={$query} bind:sortKey={$sortKey as string} bind:sortDir={$sortDir} />
   </DrawerLeft>
 </div>

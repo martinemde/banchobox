@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SortControl from '$lib/components/SortControl.svelte';
+  import SortControl from '$lib/ui/SortControl.svelte';
   import PartyDish from '$lib/components/PartyDishCard.svelte';
   import { createPartyDishesStores } from '$lib/stores/partyDishes.js';
   import type { EnrichedParty, Id, PartyDish as PartyDishRow } from '$lib/types.js';
@@ -52,12 +52,8 @@
         </div>
         <SortControl
           options={dishSortOptions}
-          column={$sortKeyStore}
-          direction={$sortDirStore}
-          on:change={(e) => {
-            sortKeyStore.set(e.detail.column);
-            sortDirStore.set(e.detail.direction);
-          }}
+          bind:column={$sortKeyStore}
+          bind:direction={$sortDirStore}
         />
       </div>
 

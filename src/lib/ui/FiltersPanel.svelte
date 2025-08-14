@@ -1,12 +1,43 @@
 <script lang="ts">
-  import SortControl from '$lib/components/SortControl.svelte';
+  import SortControl from '$lib/ui/SortControl.svelte';
+  import type { Readable, Writable } from 'svelte/store';
+  import type { EntityBundle, Id } from '$lib/types.js';
 
-  let { query = $bindable(''), sortKey = $bindable<'name'|'finalPrice'|'finalServings'|'finalProfitPerServing'|'maxProfitPerServing'|'upgradeCost'|'ingredientCount'>('finalProfitPerServing'), sortDir = $bindable<'asc'|'desc'>('desc') } = $props();
+  let {
+    bundle,
+    filters,
+    query = $bindable(''),
+    sortKey = $bindable<string>('finalProfitPerServing'),
+    sortDir = $bindable<'asc'|'desc'>('desc')
+  }: {
+    bundle: Readable<EntityBundle<any> | null>;
+    filters: Writable<Record<string, Set<string>>>;
+    query?: string;
+    sortKey?: string;
+    sortDir?: 'asc'|'desc';
+  } = $props();
 
-  // placeholder toggles - no external effect yet
-  let vip = $state(false);
-  let night = $state(false);
-  let glacial = $state(false);
+  function formatFacetTitle(key: string): string {
+    // Simple title-case; customize as needed
+    return key
+      .replace(/([a-z])([A-Z])/g, '$1 $2')
+      .replace(/[_-]+/g, ' ')
+      .replace(/^./, (c) => c.toUpperCase());
+  }
+
+  function isChecked(facet: string, value: string): boolean {
+    return Boolean($filters?.[facet]?.has(value));
+  }
+
+  function toggleFacet(facet: string, value: string, checked: boolean) {
+    filters.update((current: Record<string, Set<string>>) => {
+      const next: Record<string, Set<string>> = { ...current };
+      const set = new Set(next[facet] ?? []);
+      if (checked) set.add(value); else set.delete(value);
+      if (set.size > 0) next[facet] = set; else delete next[facet];
+      return next;
+    });
+  }
 
   const sortOptions = [
     { value: 'name', label: 'Recipe' },
@@ -40,30 +71,26 @@
     <label class="text-sm font-semibold" for="filters-sort">Sort</label>
     <SortControl
       options={sortOptions}
-      column={sortKey as string}
-      direction={sortDir as 'asc' | 'desc'}
-      on:change={(e) => {
-        sortKey = e.detail.column as any;
-        sortDir = e.detail.direction as 'asc' | 'desc';
-      }}
+      bind:column={sortKey}
+      bind:direction={sortDir}
     />
   </div>
 
-  <fieldset class="space-y-2">
-    <legend class="text-sm font-semibold">Filters</legend>
-    <label class="flex items-center gap-2 text-sm">
-      <input type="checkbox" bind:checked={vip} />
-      VIP Bartender
-    </label>
-    <label class="flex items-center gap-2 text-sm">
-      <input type="checkbox" bind:checked={night} />
-      Night Dive
-    </label>
-    <label class="flex items-center gap-2 text-sm">
-      <input type="checkbox" bind:checked={glacial} />
-      Glacial Area
-    </label>
-  </fieldset>
+  {#each Object.entries(($bundle?.facets ?? {})) as [facetName, facetIndex]}
+    <fieldset class="space-y-1">
+      <legend class="text-sm font-semibold">{formatFacetTitle(facetName)}</legend>
+      {#each Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b)) as key}
+        <label class="flex items-center gap-2 text-sm">
+          <input
+            type="checkbox"
+            checked={isChecked(facetName, key)}
+            onchange={(e) => toggleFacet(facetName, key, (e.currentTarget as HTMLInputElement).checked)}
+          />
+          {key}
+        </label>
+      {/each}
+    </fieldset>
+  {/each}
 </div>
 
 <style>

@@ -8,7 +8,7 @@
   import PartyDishPanel from './PartyDishPanel.svelte';
   import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
   import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
-  import PixelIcon from './PixelIcon.svelte';
+  import PixelIcon from '../ui/PixelIcon.svelte';
   import tasteImage from '$lib/images/ui/sort_taste.png';
   import levelImage from '$lib/images/ui/sort_level.png';
 

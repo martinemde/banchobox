@@ -6,7 +6,7 @@
 
   let { data }: PageProps = $props();
   const dishes = $derived(((data as any).dishesBundle?.rows ?? []) as Dish[]);
-  const ingredients = $derived((data.ingredients ?? []) as Ingredient[]);
+  const ingredients = $derived(((data as any).ingredients?.rows ?? []) as Ingredient[]);
   const dishById = $derived(new Map<Id, Dish>((dishes as Dish[]).map((d: Dish) => [d.id, d])));
 
   // Compute the union of directly tracked ingredients and ingredients from tracked dishes

@@ -5,7 +5,7 @@
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
   import { ChevronsUp, CloudFog, Moon, Sun } from '@lucide/svelte';
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
-  import PixelIcon from './PixelIcon.svelte';
+  import PixelIcon from '../ui/PixelIcon.svelte';
 
   export let ingredient: Ingredient;
 

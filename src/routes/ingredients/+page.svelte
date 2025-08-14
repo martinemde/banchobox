@@ -1,6 +1,6 @@
 <script lang="ts">
   import IngredientCard from '$lib/components/IngredientCard.svelte';
-  import SortControl from '$lib/components/SortControl.svelte';
+  import SortControl from '$lib/ui/SortControl.svelte';
   import { trackedIngredientIds } from '$lib/stores/tracking.js';
   import { ingredientsStores } from '$lib/stores/ingredients';
   import { syncToUrl } from '$lib/stores/urlSync';
@@ -43,15 +43,11 @@
         </button>
       {/if}
     </div>
-    <SortControl
-      options={sortOptions}
-      column={$sortKey}
-      direction={$sortDir}
-      on:change={(e) => {
-        sortKey.set(e.detail.column);
-        sortDir.set(e.detail.direction);
-      }}
-    />
+     <SortControl
+       options={sortOptions}
+       bind:column={$sortKey}
+       bind:direction={$sortDir}
+     />
     <div class="flex items-center gap-2 mt-1">
       <label class="inline-flex items-center gap-2 text-sm">
         <input type="checkbox" bind:checked={showTrackedOnly} />
@@ -73,7 +69,7 @@
     </div>
 
     <aside class="hidden md:block md:h-full md:overflow-auto">
-      <div class="card variant-glass-surface p-4 border border-white/10 sticky top-0">
+      <div class="card variant-glass-surface p-4 border border-white/10 top-0">
         {@render ControlsPanel()}
       </div>
     </aside>
