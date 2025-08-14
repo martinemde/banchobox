@@ -53,9 +53,7 @@
 	</div>
 
 	<dialog bind:this={leftDialogRef} class="left-drawer modal md:hidden">
-		<div
-			class="drawer-panel variant-glass-surface h-dvh w-[min(80vw,360px)] overflow-auto card p-4"
-		>
+		<div class="drawer-panel variant-glass-surface h-dvh w-[80vw] overflow-auto card p-4">
 			<div class="mb-3 flex items-center justify-between">
 				<h3 class="text-lg font-semibold">
 					{#if title}
@@ -72,7 +70,7 @@
 			{@render left!()}
 		</div>
 		<button
-			class="h-dvh w-full bg-transparent"
+			class="h-dvh w-full bg-black/50"
 			aria-label="Close"
 			onclick={() => (leftDialogRef as HTMLDialogElement)?.close()}
 		></button>
