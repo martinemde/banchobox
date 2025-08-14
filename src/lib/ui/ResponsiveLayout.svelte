@@ -18,6 +18,20 @@
 	} = $props();
 
 	let leftDialogRef: HTMLDialogElement | null = $state(null);
+
+	// Prevent body scroll when dialog is open
+	$effect(() => {
+		if (leftDialogRef?.open) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+		}
+
+		// Cleanup on component unmount
+		return () => {
+			document.body.style.overflow = '';
+		};
+	});
 </script>
 
 <div class="px-4 py-6 md:h-[100dvh] md:overflow-hidden {containerClass}">
@@ -53,7 +67,7 @@
 	</div>
 
 	<dialog bind:this={leftDialogRef} class="left-drawer modal md:hidden">
-		<div class="drawer-panel variant-glass-surface h-dvh w-full overflow-auto card p-4 max-w-[360px]">
+		<div class="drawer-panel variant-glass-surface h-dvh overflow-auto card p-4">
 			<div class="mb-3 flex items-center justify-between">
 				<h3 class="text-lg font-semibold">
 					{#if title}
@@ -70,7 +84,7 @@
 			{@render left!()}
 		</div>
 		<button
-			class="h-dvh w-full bg-black/50"
+			class="h-dvh bg-black/50"
 			aria-label="Close"
 			onclick={() => (leftDialogRef as HTMLDialogElement)?.close()}
 		></button>
@@ -90,7 +104,7 @@
 	@media (max-width: 767px) {
 		dialog.left-drawer[open] {
 			display: grid;
-			grid-template-columns: 80vw 1fr;
+			grid-template-columns: min(80vw, 360px) 1fr;
 			align-items: stretch;
 		}
 	}
@@ -100,5 +114,6 @@
 	.drawer-panel {
 		margin: 0;
 		height: 100dvh;
+		width: min(80vw, 360px);
 	}
 </style>
