@@ -1,56 +1,68 @@
 <script lang="ts">
-  import PartyDish from '$lib/components/PartyDishCard.svelte';
-  import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
-  import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
-  import { partiesStores } from '$lib/stores/parties';
-  import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
-  import PartyGroup from '$lib/components/PartyGroup.svelte';
+	import PartyDish from '$lib/components/PartyDishCard.svelte';
+	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
+	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
+	import { partiesStores } from '$lib/stores/parties';
+	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
+	import PartyGroup from '$lib/components/PartyGroup.svelte';
 
-  const { query, sortKey, sortDir, visible, filters, bundle } = partiesStores;
-  let dishSearch = $state('');
+	const { query, sortKey, sortDir, visible, filters, bundle } = partiesStores;
+	let dishSearch = $state('');
 
-  const dishSortOptions = [
-    { value: 'dishName', label: 'Dish Name' },
-    { value: 'partyPrice', label: 'Price' },
-    { value: 'partyRevenue', label: 'Revenue' },
-    { value: 'recipeCost', label: 'Recipe Cost' },
-    { value: 'profit', label: 'Profit' },
-    { value: 'profitPerServing', label: 'Profit / Serving' }
-  ];
+	const dishSortOptions = [
+		{ value: 'dishName', label: 'Dish Name' },
+		{ value: 'partyPrice', label: 'Price' },
+		{ value: 'partyRevenue', label: 'Revenue' },
+		{ value: 'recipeCost', label: 'Recipe Cost' },
+		{ value: 'profit', label: 'Profit' },
+		{ value: 'profitPerServing', label: 'Profit / Serving' }
+	];
 
-  // handled by ResponsiveLayout
-  let filtersDialogRef: HTMLDialogElement | null = $state(null);
+	// handled by ResponsiveLayout
+	let filtersDialogRef: HTMLDialogElement | null = $state(null);
 </script>
 
 <svelte:head>
-  <title>Parties - Bancho Box</title>
-  <meta name="description" content="Complete party collection from Dave the Diver with calculated profit analysis" />
+	<title>Parties - Bancho Box</title>
+	<meta
+		name="description"
+		content="Complete party collection from Dave the Diver with calculated profit analysis"
+	/>
 </svelte:head>
 
 {#snippet Left()}
-  <FiltersPanel
-    bundle={bundle}
-    {filters}
-    bind:query={$query}
-    bind:sortKey={$sortKey as string}
-    bind:sortDir={$sortDir}
-    sortOptions={[{ value: 'name', label: 'Name' }, { value: 'bonus', label: 'Bonus' }, { value: 'dishCount', label: 'Dish Count' }]}
-    searchPlaceholder="Search parties…"
-  />
+	<FiltersPanel
+		{bundle}
+		{filters}
+		bind:query={$query}
+		bind:sortKey={$sortKey as string}
+		bind:sortDir={$sortDir}
+		sortOptions={[
+			{ value: 'name', label: 'Name' },
+			{ value: 'bonus', label: 'Bonus' },
+			{ value: 'dishCount', label: 'Dish Count' }
+		]}
+		searchPlaceholder="Search parties…"
+	/>
 {/snippet}
 
 {#snippet Content()}
-  <div class="flex flex-col gap-4">
-    {#each $visible as party (party.id)}
-      {#if $dishesByPartyStore?.[party.id]}
-        <PartyGroup party={party} subBundle={$dishesByPartyStore[party.id]} />
-      {/if}
-    {/each}
-  </div>
+	<div class="flex flex-col gap-4">
+		{#each $visible as party (party.id)}
+			{#if $dishesByPartyStore?.[party.id]}
+				<PartyGroup {party} subBundle={$dishesByPartyStore[party.id]} />
+			{/if}
+		{/each}
+	</div>
 {/snippet}
 
-<ResponsiveLayout left={Left} content={Content} leftTitle="Filters & sort" containerClass="parties" />
+<ResponsiveLayout
+	left={Left}
+	content={Content}
+	leftTitle="Filters & sort"
+	containerClass="parties"
+/>
 
 <style>
-  /* controls moved into FiltersPanel */
+	/* controls moved into FiltersPanel */
 </style>
