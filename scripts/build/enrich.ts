@@ -213,10 +213,11 @@ export function enrichData(
       .sort((a, b) => (b.revenue / b.count) - (a.revenue / a.count));
 
     const sell = ingredient.sell ?? null;
+    const meats = ingredient.maxMeats ?? null;
     const kg = ingredient.kg ?? null;
     let sellPerKg: number | undefined = undefined;
-    if (sell != null && kg != null && kg !== 0) {
-      sellPerKg = sell / kg;
+    if (sell != null && meats != null && kg != null && kg !== 0) {
+      sellPerKg = sell * meats / kg;
     }
 
     const vendors = {} as Record<string, number>;
