@@ -12,6 +12,21 @@
 
   const thumbPx = 96;
 
+  // Lazy-load recipes table only when opened
+  let LazyRecipesTable: any = $state(null);
+  function ensureRecipesTableLoaded() {
+    if (!LazyRecipesTable) {
+      import('./IngredientRecipesTable.svelte').then((m) => (LazyRecipesTable = m.default));
+    }
+  }
+
+  // Controlled accordion value
+  let value = $state<string[]>([]);
+  function onAccordionValueChange(e: any) {
+    value = e?.value as string[];
+    if (Array.isArray(value) && value.includes('recipes')) ensureRecipesTableLoaded();
+  }
+
   function formatNumber(value: number | null | undefined): string {
     if (value == null || Number.isNaN(value)) return '—';
     return new Intl.NumberFormat().format(Math.round(value));
@@ -117,7 +132,7 @@
   <!-- Section 2: Recipes using this ingredient -->
   {#if ingredient.usedIn.length > 0}
     <section class="border-t border-surface-200-800">
-      <Accordion collapsible defaultValue={[]}>
+      <Accordion {value} onValueChange={onAccordionValueChange} collapsible>
         <Accordion.Item value="recipes">
           {#snippet lead()}
             <Soup size={16} />
@@ -129,41 +144,9 @@
           {/snippet}
 
           {#snippet panel()}
-            <div class="overflow-x-auto mt-2 -mx-4">
-              <table class="w-full table-auto text-sm">
-                <thead class="bg-surface-200-800">
-                  <tr>
-                    <th class="p-2 pl-4 text-left" colspan="2">Recipe</th>
-                    <th class="p-2 text-center">Qty</th>
-                    <th class="p-2 text-center">Lvl</th>
-                    <th class="p-2 text-center">Upgrade</th>
-                    <th class="p-2 text-right">Price</th>
-                    <th class="p-2 text-right">Serv</th>
-                    <th class="p-2 text-right">Revenue</th>
-                    <th class="p-2 pr-4 text-right">Party</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {#each ingredient.usedIn as row (row.dishId)}
-                    <tr class="border-b border-surface-200-800">
-                      <td class="pl-4 w-8">
-                        <div class="relative" style="width: 32px; height: 32px">
-                          <PixelIcon image={row.dishImage} alt={row.dishName} uiScale={0.5} />
-                        </div>
-                      </td>
-                      <td class="p-2">{row.dishName}</td>
-                      <td class="p-2 text-center tabular-nums">{row.count}</td>
-                      <td class="p-2 text-center tabular-nums">{row.level ?? '—'}</td>
-                      <td class="p-2 text-center tabular-nums">{row.upgradeCount ?? '—'}</td>
-                      <td class="p-2 text-right tabular-nums">{formatNumber(row.price as number)}</td>
-                      <td class="p-2 text-right tabular-nums">{row.servings ?? '—'}</td>
-                      <td class="p-2 text-right tabular-nums">{formatNumber(row.revenue)}</td>
-                      <td class="p-2 pr-4 text-right">{row.partyNames.join(', ') ?? '—'}</td>
-                    </tr>
-                  {/each}
-                </tbody>
-              </table>
-            </div>
+            {#if value.includes('recipes') && LazyRecipesTable}
+              <LazyRecipesTable {ingredient} {formatNumber} />
+            {/if}
           {/snippet}
         </Accordion.Item>
       </Accordion>

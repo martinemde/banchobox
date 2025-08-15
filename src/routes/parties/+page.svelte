@@ -27,29 +27,32 @@
   <meta name="description" content="Complete party collection from Dave the Diver with calculated profit analysis" />
 </svelte:head>
 
-{#snippet Left()}
-  <FiltersPanel
-    bundle={bundle}
-    {filters}
-    bind:query={$query}
-    bind:sortKey={$sortKey as string}
-    bind:sortDir={$sortDir}
-    sortOptions={[{ value: 'name', label: 'Name' }, { value: 'bonus', label: 'Bonus' }, { value: 'dishCount', label: 'Dish Count' }]}
-    searchPlaceholder="Search parties…"
-  />
-{/snippet}
 
-{#snippet Content()}
-  <div class="flex flex-col gap-4">
-    {#each $visible as party (party.id)}
-      {#if $dishesByPartyStore?.[party.id]}
-        <PartyGroup party={party} subBundle={$dishesByPartyStore[party.id]} />
-      {/if}
-    {/each}
-  </div>
-{/snippet}
 
-<ResponsiveLayout left={Left} content={Content} leftTitle="Filters & sort" containerClass="parties" />
+
+<ResponsiveLayout leftTitle="Filters & sort" containerClass="parties" scrollMode="container" />
+  {#snippet left()}
+    <FiltersPanel
+      bundle={bundle}
+      {filters}
+      bind:query={$query}
+      bind:sortKey={$sortKey as string}
+      bind:sortDir={$sortDir}
+      sortOptions={[{ value: 'name', label: 'Name' }, { value: 'bonus', label: 'Bonus' }, { value: 'dishCount', label: 'Dish Count' }]}
+      searchPlaceholder="Search parties…"
+    />
+  {/snippet}
+
+  {#snippet content()}
+    <div class="flex flex-col gap-4">
+      {#each $visible as party (party.id)}
+        {#if $dishesByPartyStore?.[party.id]}
+          <PartyGroup party={party} subBundle={$dishesByPartyStore[party.id]} />
+        {/if}
+      {/each}
+    </div>
+  {/snippet}
+</ResponsiveLayout>
 
 <style>
   /* controls moved into FiltersPanel */

@@ -45,12 +45,20 @@
     });
   }
 
-  const effectiveSortOptions = sortOptions ?? defaultSortOptions;
   const effectivePlaceholder = searchPlaceholder ?? 'Search by name…';
 
   // Collapsible facets state: only first category expanded by default
   let expanded = $state<Record<string, boolean>>({});
   const facetEntries = $derived(Object.entries(($bundle?.facets ?? {})));
+  // Precompute sorted keys per facet to avoid sorting in template
+  const sortedFacetKeys: Record<string, string[]> = $derived(
+    Object.fromEntries(
+      facetEntries.map(([facetName, facetIndex]) => [
+        facetName,
+        Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b))
+      ])
+    )
+  );
 
   function toggleSection(facetName: string) {
     expanded[facetName] = !expanded[facetName];
@@ -115,7 +123,7 @@
       </legend>
       {#if expanded[facetName]}
         <div id={facetPanelId(facetName)} class="space-y-1">
-          {#each Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b)) as key}
+          {#each (sortedFacetKeys[facetName] ?? []) as key}
             <label class="flex items-center gap-2 text-sm">
               <input
                 type="checkbox"
