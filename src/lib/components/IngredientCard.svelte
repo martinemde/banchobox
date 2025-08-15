@@ -1,13 +1,14 @@
 <script lang="ts">
-  import type { Ingredient, Dish } from '../types.js';
+  import type { Ingredient } from '../types.js';
   import { Accordion } from '@skeletonlabs/skeleton-svelte';
   import TrackButton from './TrackButton.svelte';
   import { trackedDishIds } from '$lib/stores/tracking.js';
-  import { ChevronsUp, CloudFog, Moon, Sun } from '@lucide/svelte';
   import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
   import PixelIcon from '../ui/PixelIcon.svelte';
+  import { ChevronsUp, CloudFog, MapPin, Moon, Sun, Soup, Weight } from '@lucide/svelte';
+  import coinImage from '$lib/images/ui/coin.png';
 
-  export let ingredient: Ingredient;
+  let { ingredient }: { ingredient: Ingredient } = $props();
 
   const thumbPx = 96;
 
@@ -16,36 +17,6 @@
     return new Intl.NumberFormat().format(Math.round(value));
   }
 
-  $: sellValuePerKg = (() => {
-    if (ingredient.sell == null || ingredient.kg == null || ingredient.kg === 0) return null;
-    return ingredient.sell / ingredient.kg;
-  })();
-
-  $: buyText = (() => {
-    if (!ingredient) return null;
-    const parts: string[] = [];
-    if (ingredient.buyJango != null) parts.push(`${formatNumber(ingredient.buyJango)} from Jango`);
-    if (ingredient.buyOtto != null) parts.push(`${formatNumber(ingredient.buyOtto)} from Otto`);
-    if (parts.length === 0) return null;
-    return parts.join(' · ');
-  })();
-
-
-
-  type RecipeRow = {
-    dish: Dish;
-    count: number;
-    level: number | null;
-    upgradeCount: number | null;
-    price: number | null | undefined;
-    servings: number | null | undefined;
-    partyName: string | null;
-  };
-
-  $: recipeRows = (ingredient as any).recipeRows ?? []
-    .filter(Boolean)
-    .map((r) => r as RecipeRow)
-    .sort((a, b) => (b.price ?? 0) - (a.price ?? 0));
 </script>
 
 <article class="card preset-filled-surface-100-900 border-[1px] border-surface-200-800 card-hover divide-y divide-surface-200-800">
@@ -67,36 +38,53 @@
 
       <div class="flex-1 min-w-0 space-y-2">
         <div class="flex items-center gap-2">
-          <h3 class="h5 m-0 truncate !leading-none">{ingredient.name}</h3>
+          <h3 class="h5 m-0 leading-none truncate">{ingredient.name}</h3>
         </div>
 
-        <div class="mt-1 *:text-sm opacity-80 flex flex-wrap items-center gap-1">
+        <div class="mt-1 *:text-sm flex flex-wrap items-center gap-1">
+          <MapPin size={16} class="opacity-70" />
           <span>{ingredient.source}</span>
           {#if ingredient.day}
-            <span class="inline-flex items-center" title="Day"><Sun size={16} /></span>
+            <span class="inline-flex items-center" title="during the day">
+              <Sun size={16} />
+              <span class="sr-only">during the day</span>
+            </span>
           {/if}
           {#if ingredient.night}
-            <span class="inline-flex items-center" title="Night"><Moon size={16} /></span>
+            <span class="inline-flex items-center" title="at night">
+              <Moon size={16} />
+              <span class="sr-only">at night</span>
+            </span>
           {/if}
           {#if ingredient.fog}
-            <span class="inline-flex items-center" title="Fog"><CloudFog size={16} /></span>
+            <span class="inline-flex items-center" title="during foggy nights">
+              <CloudFog size={16} />
+              <span class="sr-only">during foggy nights</span>
+            </span>
           {/if}
         </div>
 
         <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
-          <span>
-            Sell: {ingredient.sell != null ? formatNumber(ingredient.sell) : '—'}
+          <span class="inline-flex items-center gap-1">
+            <img class="inline-block align-text-bottom w-4 h-4" src={coinImage} alt="Sell Price" title="Sell Price" loading="lazy" decoding="async" width={20} height={20} />
+            {ingredient.sell != null ? formatNumber(ingredient.sell) : '—'}
           </span>
 
           {#if ingredient.kg != null}
-            <span class="opacity-80">({sellValuePerKg != null ? `${formatNumber(sellValuePerKg)}/kg` : ''})</span>
-            <span>Weight: {ingredient.kg != null ? `${ingredient.kg}kg` : '—'}</span>
+            <span class="inline-flex items-center gap-1">
+              <Weight size={16} aria-label="weight" />
+              {ingredient.kg}kg
+            </span>
+            <span class="opacity-80">({formatNumber(ingredient.sellPerKg)}/kg)</span>
           {/if}
         </div>
 
-        {#if buyText}
+        {#if ingredient.vendors != null && Object.keys(ingredient.vendors).length > 0}
           <div class="mt-1 text-sm flex flex-wrap items-center gap-x-3 gap-y-1">
-            <span>Buy: {buyText}</span>
+            <span>Buy:</span>
+            {#each Object.entries(ingredient.vendors) as [vendor, price]}
+              <span>{formatNumber(price)} ({vendor})</span>
+            {/each}
           </div>
         {/if}
       </div>
@@ -127,41 +115,50 @@
   </section>
 
   <!-- Section 2: Recipes using this ingredient -->
-  {#if recipeRows.length > 0}
-    <section class="p-4">
+  {#if ingredient.usedIn.length > 0}
+    <section class="border-t border-surface-200-800">
       <Accordion collapsible defaultValue={[]}>
         <Accordion.Item value="recipes">
+          {#snippet lead()}
+            <Soup size={16} />
+          {/snippet}
+
           {#snippet control()}
-            <div class="flex items-center justify-between w-full">
-              <span class="text-xs uppercase tracking-wide opacity-80">Recipes</span>
-              <span class="text-xs opacity-80 tabular-nums">({recipeRows.length})</span>
-            </div>
+            <span class="text-xs uppercase tracking-wide opacity-80">Recipes</span>
+            <span class="text-xs opacity-80 tabular-nums">{ingredient.usedIn.length}</span>
           {/snippet}
 
           {#snippet panel()}
-            <div class="overflow-x-auto mt-2">
+            <div class="overflow-x-auto mt-2 -mx-4">
               <table class="w-full table-auto text-sm">
                 <thead class="bg-surface-200-800">
                   <tr>
-                    <th class="p-2 text-left">Recipe</th>
+                    <th class="p-2 pl-4 text-left" colspan="2">Recipe</th>
                     <th class="p-2 text-center">Qty</th>
                     <th class="p-2 text-center">Lvl</th>
                     <th class="p-2 text-center">Upgrade</th>
                     <th class="p-2 text-right">Price</th>
                     <th class="p-2 text-right">Serv</th>
-                    <th class="p-2 text-left">Party</th>
+                    <th class="p-2 text-right">Revenue</th>
+                    <th class="p-2 pr-4 text-right">Party</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {#each recipeRows as row}
+                  {#each ingredient.usedIn as row (row.dishId)}
                     <tr class="border-b border-surface-200-800">
-                      <td class="p-2">{row.dish.name}</td>
+                      <td class="pl-4 w-8">
+                        <div class="relative" style="width: 32px; height: 32px">
+                          <PixelIcon image={row.dishImage} alt={row.dishName} uiScale={0.5} />
+                        </div>
+                      </td>
+                      <td class="p-2">{row.dishName}</td>
                       <td class="p-2 text-center tabular-nums">{row.count}</td>
                       <td class="p-2 text-center tabular-nums">{row.level ?? '—'}</td>
                       <td class="p-2 text-center tabular-nums">{row.upgradeCount ?? '—'}</td>
                       <td class="p-2 text-right tabular-nums">{formatNumber(row.price as number)}</td>
                       <td class="p-2 text-right tabular-nums">{row.servings ?? '—'}</td>
-                      <td class="p-2">{row.partyName ?? '—'}</td>
+                      <td class="p-2 text-right tabular-nums">{formatNumber(row.revenue)}</td>
+                      <td class="p-2 pr-4 text-right">{row.partyNames.join(', ') ?? '—'}</td>
                     </tr>
                   {/each}
                 </tbody>

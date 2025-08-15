@@ -11,7 +11,7 @@
   }
 
   // numeric calculations
-  let price = $derived(dish.finalPrice);
+  let price = $derived(dish. finalPrice);
   let servings = $derived(dish.finalServings);
   let revenue = $derived(dish.finalRevenue);
   let totalCost = $derived(dish.recipeCost);

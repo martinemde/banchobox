@@ -32,6 +32,12 @@ export interface BasicIngredient {
   source: string;
   type: string;
   drone: boolean;
+  harpoon: boolean;
+  steelnet: boolean;
+  crabtrap: boolean;
+  bugnet: boolean;
+  gloves: boolean;
+  aberration: boolean;
   kg?: number | null;
   maxMeats?: number | null;
   day: boolean;
@@ -122,21 +128,31 @@ export interface PartyDish extends Dish {
   partyBonus: number; // party.bonus
 }
 
-export interface Ingredient extends BasicIngredient {
-  usedIn: Array<{
-    dishId: Id;
-    count: number;
-  }>;
-  usedForParties: Id[];
-  // Client-side search & sort helpers (precomputed at build time)
-  search: string; // normalized tokens (name, source, type, day/night/fog, drone)
-  sort: Record<IngredientSortKey, string | number | null>;
-}
-
 export interface EnrichedParty extends Party {
   partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
   search: string;
   sort: Record<PartySortKey, string | number>;
+}
+
+export interface Ingredient extends BasicIngredient {
+  usedIn: Array<{
+    dishId: Id;
+    dishName: string;
+    dishImage: string;
+    count: number;
+    upgradeCount: number;
+    level: number;
+    price: number;
+    revenue: number;
+    servings: number;
+    partyNames: string[];
+  }>;
+  usedForParties: Id[];
+  sellPerKg?: number;
+  vendors?: Record<string, number> | null;
+  // Client-side search & sort helpers (precomputed at build time)
+  search: string; // normalized tokens (name, source, type, day/night/fog, drone)
+  sort: Record<IngredientSortKey, string | number | null>;
 }
 
 // Data service interface

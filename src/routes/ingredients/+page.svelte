@@ -2,6 +2,7 @@
   import IngredientCard from '$lib/components/IngredientCard.svelte';
   import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
   import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
+  import ResultsHeader from '$lib/ui/ResultsHeader.svelte';
   import { ingredientsStores } from '$lib/stores/ingredients';
   import { syncToUrl } from '$lib/stores/urlSync';
 
@@ -10,9 +11,10 @@
 
   const sortOptions = [
     { value: 'name', label: 'Name' },
-    { value: 'sell', label: 'Sell' },
     { value: 'kg', label: 'Weight (kg)' },
+    { value: 'sell', label: 'Sell' },
     { value: 'sellPerKg', label: 'Sell / kg' },
+    { value: 'buy', label: 'Purchase' },
   ];
 
 </script>
@@ -37,6 +39,7 @@
 
   {#snippet content()}
     <div class="flex flex-col gap-4">
+      <ResultsHeader visible={visible} entityLabel="Ingredients" bind:sortKey={$sortKey as string} bind:sortDir={$sortDir} sortOptions={sortOptions} />
       {#each $visible as ingredient (ingredient.id)}
         <IngredientCard {ingredient} />
       {/each}

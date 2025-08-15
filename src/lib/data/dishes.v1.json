@@ -2556,7 +2556,7 @@
           "count": 3,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 34,
           "lineCost": 102,
           "upgradeCount": 446
@@ -2757,7 +2757,7 @@
           "count": 1,
           "name": "Aurora Jellyfish",
           "image": "aurora_jellyfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -2806,7 +2806,7 @@
           "count": 1,
           "name": "Barbed Eel",
           "image": "barbed_eel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -2855,7 +2855,7 @@
           "count": 1,
           "name": "Bloodskin Shark",
           "image": "bloodskin_shark.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -2904,7 +2904,7 @@
           "count": 1,
           "name": "Bony Wreckfish",
           "image": "bony_wreckfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -2953,7 +2953,7 @@
           "count": 1,
           "name": "Bursting Anglerfish",
           "image": "bursting_anglerfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3002,7 +3002,7 @@
           "count": 1,
           "name": "Cerebral Crab",
           "image": "cerebral_crab.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3051,7 +3051,7 @@
           "count": 1,
           "name": "Concertina Barracuda",
           "image": "concertina_barracuda.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3100,7 +3100,7 @@
           "count": 1,
           "name": "Cortex Decorator",
           "image": "cortex_decorator.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3149,7 +3149,7 @@
           "count": 1,
           "name": "Entangled Crab",
           "image": "entangled_crab.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3198,7 +3198,7 @@
           "count": 1,
           "name": "Enthralled Stonefish",
           "image": "enthralled_stonefish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3247,7 +3247,7 @@
           "count": 1,
           "name": "Fanged Cod",
           "image": "fanged_cod.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3296,7 +3296,7 @@
           "count": 1,
           "name": "Gazing Shark",
           "image": "gazing_shark.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3345,7 +3345,7 @@
           "count": 1,
           "name": "Gelatinous Stonefish",
           "image": "gelatinous_stonefish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3394,7 +3394,7 @@
           "count": 1,
           "name": "Gnashing Perch",
           "image": "gnashing_perch.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3443,7 +3443,7 @@
           "count": 1,
           "name": "Grotesque Mackerel",
           "image": "grotesque_mackerel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3492,7 +3492,7 @@
           "count": 1,
           "name": "Host Eel",
           "image": "host_eel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3541,7 +3541,7 @@
           "count": 1,
           "name": "Imperious Lobster",
           "image": "imperious_lobster.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3590,7 +3590,7 @@
           "count": 1,
           "name": "Malignant Pincer",
           "image": "malignant_pincer.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3639,7 +3639,7 @@
           "count": 1,
           "name": "Many Eyed Mackerel",
           "image": "many_eyed_mackerel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3688,7 +3688,7 @@
           "count": 1,
           "name": "Parhelion Jellyfish",
           "image": "parhelion_jellyfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3737,7 +3737,7 @@
           "count": 1,
           "name": "Perished Loosejaw",
           "image": "perished_loosejaw.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3786,7 +3786,7 @@
           "count": 1,
           "name": "Radiant Squid",
           "image": "radiant_squid.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3835,7 +3835,7 @@
           "count": 1,
           "name": "Sallow Sailfish",
           "image": "sallow_sailfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3884,7 +3884,7 @@
           "count": 1,
           "name": "Savage Barracuda",
           "image": "savage_barracuda.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3933,7 +3933,7 @@
           "count": 1,
           "name": "Scouring Bass",
           "image": "scouring_bass.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -3982,7 +3982,7 @@
           "count": 1,
           "name": "Seizing Snailfish",
           "image": "seizing_snailfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4031,7 +4031,7 @@
           "count": 1,
           "name": "Shattered Wreckfish",
           "image": "shattered_wreckfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4080,7 +4080,7 @@
           "count": 1,
           "name": "Splintered Crab",
           "image": "splintered_crab.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4129,7 +4129,7 @@
           "count": 1,
           "name": "Sprouting Eel",
           "image": "sprouting_eel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4178,7 +4178,7 @@
           "count": 1,
           "name": "Three-Headed Cod",
           "image": "three-headed_cod.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4227,7 +4227,7 @@
           "count": 1,
           "name": "Translucent Sturgeon",
           "image": "translucent_sturgeon.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4276,7 +4276,7 @@
           "count": 1,
           "name": "Tusked Grouper",
           "image": "tusked_grouper.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4325,7 +4325,7 @@
           "count": 1,
           "name": "Voltaic Grouper",
           "image": "voltaic_grouper.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4374,7 +4374,7 @@
           "count": 1,
           "name": "Withered Ray",
           "image": "withered_ray.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -4658,7 +4658,7 @@
           "count": 2,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 22,
           "lineCost": 44,
           "upgradeCount": 333
@@ -4711,7 +4711,7 @@
           "count": 2,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 23,
           "lineCost": 46,
           "upgradeCount": 333
@@ -4796,7 +4796,7 @@
           "count": 3,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
@@ -5244,7 +5244,7 @@
           "count": 2,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 43,
           "lineCost": 86,
           "upgradeCount": 333
@@ -5254,7 +5254,7 @@
           "count": 2,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 45,
           "lineCost": 90,
           "upgradeCount": 333
@@ -5264,7 +5264,7 @@
           "count": 2,
           "name": "Tokummia Katalepsis",
           "image": "tokummia_katalepsis.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 55,
           "lineCost": 110,
           "upgradeCount": 333
@@ -5475,7 +5475,7 @@
           "count": 2,
           "name": "Snow Crab",
           "image": "snow_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 40,
           "lineCost": 80,
           "upgradeCount": 333
@@ -5485,7 +5485,7 @@
           "count": 2,
           "name": "Horsehair Crab",
           "image": "horsehair_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 50,
           "lineCost": 100,
           "upgradeCount": 333
@@ -5554,7 +5554,7 @@
           "count": 2,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 35
@@ -5627,7 +5627,7 @@
           "count": 3,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 48
@@ -5925,7 +5925,7 @@
           "count": 2,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -5998,7 +5998,7 @@
           "count": 2,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -6227,7 +6227,7 @@
           "count": 3,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
@@ -6300,7 +6300,7 @@
           "count": 3,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
@@ -6383,7 +6383,7 @@
           "count": 2,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 180,
           "upgradeCount": 35
@@ -6393,7 +6393,7 @@
           "count": 2,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 35
@@ -6693,7 +6693,7 @@
           "count": 2,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
@@ -7763,7 +7763,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -8551,7 +8551,7 @@
           "count": 3,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -8561,7 +8561,7 @@
           "count": 3,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 33,
           "upgradeCount": 446
@@ -8831,7 +8831,7 @@
           "count": 2,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
@@ -8841,7 +8841,7 @@
           "count": 2,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 22,
           "upgradeCount": 333
@@ -8914,7 +8914,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -9984,7 +9984,7 @@
           "count": 5,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 85,
           "upgradeCount": 670
@@ -9994,7 +9994,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -10531,7 +10531,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -10904,7 +10904,7 @@
           "count": 2,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
@@ -11651,7 +11651,7 @@
           "count": 1,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 43,
           "lineCost": 43,
           "upgradeCount": 221
@@ -12451,7 +12451,7 @@
           "count": 1,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -12704,7 +12704,7 @@
           "count": 1,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -12855,7 +12855,7 @@
           "count": 1,
           "name": "Chambered Nautilus",
           "image": "chambered_nautilus.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 12,
           "lineCost": 12,
           "upgradeCount": 221
@@ -12953,7 +12953,7 @@
           "count": 1,
           "name": "Clione",
           "image": "clione.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -13202,7 +13202,7 @@
           "count": 1,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 11,
           "upgradeCount": 221
@@ -13410,7 +13410,7 @@
           "count": 1,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -13561,7 +13561,7 @@
           "count": 1,
           "name": "Dollocaris Ingens",
           "image": "dollocaris_ingens.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 45,
           "lineCost": 45,
           "upgradeCount": 221
@@ -13806,7 +13806,7 @@
           "count": 1,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -13908,7 +13908,7 @@
           "count": 1,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 23,
           "lineCost": 23,
           "upgradeCount": 221
@@ -14014,7 +14014,7 @@
           "count": 1,
           "name": "Fan Lobster",
           "image": "fan_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -14716,7 +14716,7 @@
           "count": 1,
           "name": "Horsehair Crab",
           "image": "horsehair_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 50,
           "lineCost": 50,
           "upgradeCount": 221
@@ -15599,7 +15599,7 @@
           "count": 1,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -16097,7 +16097,7 @@
           "count": 1,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 20,
           "upgradeCount": 221
@@ -16293,7 +16293,7 @@
           "count": 1,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
@@ -16444,7 +16444,7 @@
           "count": 1,
           "name": "Red-banded Lobster",
           "image": "red-banded_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -16893,7 +16893,7 @@
           "count": 1,
           "name": "Seadragon",
           "image": "weedy_seadragon.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 35,
           "lineCost": 35,
           "upgradeCount": 221
@@ -17211,7 +17211,7 @@
           "count": 1,
           "name": "Snow Crab",
           "image": "snow_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 40,
           "lineCost": 40,
           "upgradeCount": 221
@@ -17807,7 +17807,7 @@
           "count": 1,
           "name": "Tokummia Katalepsis",
           "image": "tokummia_katalepsis.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 55,
           "lineCost": 55,
           "upgradeCount": 221
@@ -17856,7 +17856,7 @@
           "count": 1,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 45,
           "lineCost": 45,
           "upgradeCount": 221
@@ -17958,7 +17958,7 @@
           "count": 1,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 34,
           "lineCost": 34,
           "upgradeCount": 221
@@ -18007,7 +18007,7 @@
           "count": 1,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
@@ -18521,7 +18521,7 @@
           "count": 1,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 43,
           "lineCost": 43,
           "upgradeCount": 221
@@ -19907,7 +19907,7 @@
           "count": 1,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -20349,7 +20349,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -20852,7 +20852,7 @@
           "count": 1,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -21003,7 +21003,7 @@
           "count": 1,
           "name": "Chambered Nautilus",
           "image": "chambered_nautilus.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 12,
           "lineCost": 12,
           "upgradeCount": 221
@@ -21180,7 +21180,7 @@
           "count": 1,
           "name": "Clione",
           "image": "clione.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -21508,7 +21508,7 @@
           "count": 1,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 11,
           "upgradeCount": 221
@@ -21789,7 +21789,7 @@
           "count": 2,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -21862,7 +21862,7 @@
           "count": 1,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -22057,7 +22057,7 @@
           "count": 3,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -22067,7 +22067,7 @@
           "count": 3,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 33,
           "upgradeCount": 446
@@ -22341,7 +22341,7 @@
           "count": 1,
           "name": "Dollocaris Ingens",
           "image": "dollocaris_ingens.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 45,
           "lineCost": 45,
           "upgradeCount": 221
@@ -22813,7 +22813,7 @@
           "count": 1,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -22915,7 +22915,7 @@
           "count": 1,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 23,
           "lineCost": 23,
           "upgradeCount": 221
@@ -23104,7 +23104,7 @@
           "count": 1,
           "name": "Fan Lobster",
           "image": "fan_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -24799,7 +24799,7 @@
           "count": 1,
           "name": "Horsehair Crab",
           "image": "horsehair_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 50,
           "lineCost": 50,
           "upgradeCount": 221
@@ -24951,7 +24951,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -25459,7 +25459,7 @@
           "count": 2,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 43,
           "lineCost": 86,
           "upgradeCount": 333
@@ -25469,7 +25469,7 @@
           "count": 2,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 45,
           "lineCost": 90,
           "upgradeCount": 333
@@ -25479,7 +25479,7 @@
           "count": 2,
           "name": "Tokummia Katalepsis",
           "image": "tokummia_katalepsis.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 55,
           "lineCost": 110,
           "upgradeCount": 333
@@ -26259,7 +26259,7 @@
           "count": 5,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 85,
           "upgradeCount": 670
@@ -26269,7 +26269,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -26906,7 +26906,7 @@
           "count": 1,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -27945,7 +27945,7 @@
           "count": 1,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 20,
           "upgradeCount": 221
@@ -28141,7 +28141,7 @@
           "count": 1,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
@@ -28292,7 +28292,7 @@
           "count": 1,
           "name": "Red-banded Lobster",
           "image": "red-banded_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -28522,7 +28522,7 @@
           "count": 2,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 333
@@ -28581,7 +28581,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -29319,7 +29319,7 @@
           "count": 1,
           "name": "Seadragon",
           "image": "weedy_seadragon.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 35,
           "lineCost": 35,
           "upgradeCount": 221
@@ -29918,7 +29918,7 @@
           "count": 3,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 34,
           "lineCost": 102,
           "upgradeCount": 446
@@ -30540,7 +30540,7 @@
           "count": 1,
           "name": "Snow Crab",
           "image": "snow_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 40,
           "lineCost": 40,
           "upgradeCount": 221
@@ -30638,7 +30638,7 @@
           "count": 2,
           "name": "Snow Crab",
           "image": "snow_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 40,
           "lineCost": 80,
           "upgradeCount": 333
@@ -30648,7 +30648,7 @@
           "count": 2,
           "name": "Horsehair Crab",
           "image": "horsehair_crab.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 50,
           "lineCost": 100,
           "upgradeCount": 333
@@ -30766,7 +30766,7 @@
           "count": 2,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
@@ -30776,7 +30776,7 @@
           "count": 2,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 11,
           "lineCost": 22,
           "upgradeCount": 333
@@ -30947,7 +30947,7 @@
           "count": 2,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -31424,7 +31424,7 @@
           "count": 2,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
@@ -32095,7 +32095,7 @@
           "count": 1,
           "name": "Tokummia Katalepsis",
           "image": "tokummia_katalepsis.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 55,
           "lineCost": 55,
           "upgradeCount": 221
@@ -32444,7 +32444,7 @@
           "count": 1,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 45,
           "lineCost": 45,
           "upgradeCount": 221
@@ -32576,7 +32576,7 @@
           "count": 2,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 35
@@ -32649,7 +32649,7 @@
           "count": 3,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 60,
           "upgradeCount": 48
@@ -32903,7 +32903,7 @@
           "count": 1,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 34,
           "lineCost": 34,
           "upgradeCount": 221
@@ -33015,7 +33015,7 @@
           "count": 1,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Net",
+          "type": "Fish",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
@@ -33978,7 +33978,7 @@
           "count": 1,
           "name": "Aurora Jellyfish",
           "image": "aurora_jellyfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34027,7 +34027,7 @@
           "count": 1,
           "name": "Barbed Eel",
           "image": "barbed_eel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34076,7 +34076,7 @@
           "count": 1,
           "name": "Bloodskin Shark",
           "image": "bloodskin_shark.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34125,7 +34125,7 @@
           "count": 1,
           "name": "Bony Wreckfish",
           "image": "bony_wreckfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34174,7 +34174,7 @@
           "count": 1,
           "name": "Bursting Anglerfish",
           "image": "bursting_anglerfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34223,7 +34223,7 @@
           "count": 1,
           "name": "Cerebral Crab",
           "image": "cerebral_crab.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34272,7 +34272,7 @@
           "count": 1,
           "name": "Concertina Barracuda",
           "image": "concertina_barracuda.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34321,7 +34321,7 @@
           "count": 1,
           "name": "Cortex Decorator",
           "image": "cortex_decorator.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34370,7 +34370,7 @@
           "count": 1,
           "name": "Entangled Crab",
           "image": "entangled_crab.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34419,7 +34419,7 @@
           "count": 1,
           "name": "Enthralled Stonefish",
           "image": "enthralled_stonefish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34468,7 +34468,7 @@
           "count": 1,
           "name": "Fanged Cod",
           "image": "fanged_cod.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34517,7 +34517,7 @@
           "count": 1,
           "name": "Gazing Shark",
           "image": "gazing_shark.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34566,7 +34566,7 @@
           "count": 1,
           "name": "Gelatinous Stonefish",
           "image": "gelatinous_stonefish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34615,7 +34615,7 @@
           "count": 1,
           "name": "Gnashing Perch",
           "image": "gnashing_perch.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34664,7 +34664,7 @@
           "count": 1,
           "name": "Grotesque Mackerel",
           "image": "grotesque_mackerel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34713,7 +34713,7 @@
           "count": 1,
           "name": "Host Eel",
           "image": "host_eel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34762,7 +34762,7 @@
           "count": 1,
           "name": "Imperious Lobster",
           "image": "imperious_lobster.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34811,7 +34811,7 @@
           "count": 1,
           "name": "Malignant Pincer",
           "image": "malignant_pincer.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34860,7 +34860,7 @@
           "count": 1,
           "name": "Many Eyed Mackerel",
           "image": "many_eyed_mackerel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34909,7 +34909,7 @@
           "count": 1,
           "name": "Parhelion Jellyfish",
           "image": "parhelion_jellyfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -34958,7 +34958,7 @@
           "count": 1,
           "name": "Perished Loosejaw",
           "image": "perished_loosejaw.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35007,7 +35007,7 @@
           "count": 1,
           "name": "Radiant Squid",
           "image": "radiant_squid.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35056,7 +35056,7 @@
           "count": 1,
           "name": "Sallow Sailfish",
           "image": "sallow_sailfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35105,7 +35105,7 @@
           "count": 1,
           "name": "Savage Barracuda",
           "image": "savage_barracuda.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35154,7 +35154,7 @@
           "count": 1,
           "name": "Scouring Bass",
           "image": "scouring_bass.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35203,7 +35203,7 @@
           "count": 1,
           "name": "Seizing Snailfish",
           "image": "seizing_snailfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35252,7 +35252,7 @@
           "count": 1,
           "name": "Shattered Wreckfish",
           "image": "shattered_wreckfish.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35301,7 +35301,7 @@
           "count": 1,
           "name": "Splintered Crab",
           "image": "splintered_crab.png",
-          "type": "Aberration Crab",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35350,7 +35350,7 @@
           "count": 1,
           "name": "Sprouting Eel",
           "image": "sprouting_eel.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35399,7 +35399,7 @@
           "count": 1,
           "name": "Three-Headed Cod",
           "image": "three-headed_cod.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35448,7 +35448,7 @@
           "count": 1,
           "name": "Translucent Sturgeon",
           "image": "translucent_sturgeon.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35497,7 +35497,7 @@
           "count": 1,
           "name": "Tusked Grouper",
           "image": "tusked_grouper.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35546,7 +35546,7 @@
           "count": 1,
           "name": "Voltaic Grouper",
           "image": "voltaic_grouper.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35595,7 +35595,7 @@
           "count": 1,
           "name": "Withered Ray",
           "image": "withered_ray.png",
-          "type": "Aberration",
+          "type": "Fish",
           "unitCost": 0,
           "lineCost": 0,
           "upgradeCount": 0
@@ -35737,7 +35737,7 @@
           "count": 2,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 22,
           "lineCost": 44,
           "upgradeCount": 333
@@ -35790,7 +35790,7 @@
           "count": 2,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Crab trap",
+          "type": "Fish",
           "unitCost": 23,
           "lineCost": 46,
           "upgradeCount": 333
@@ -36181,7 +36181,7 @@
           "count": 3,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
@@ -36254,7 +36254,7 @@
           "count": 3,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48
@@ -36337,7 +36337,7 @@
           "count": 2,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 180,
           "upgradeCount": 35
@@ -36347,7 +36347,7 @@
           "count": 2,
           "name": "Purple Sea Urchin",
           "image": "purple_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 20,
           "lineCost": 40,
           "upgradeCount": 35
@@ -36406,7 +36406,7 @@
           "count": 3,
           "name": "Green Sea Urchin",
           "image": "green_sea_urchin.png",
-          "type": "Urchin",
+          "type": "Fish",
           "unitCost": 90,
           "lineCost": 270,
           "upgradeCount": 48

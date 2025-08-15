@@ -55,7 +55,7 @@
 <AppBar>
   {#snippet lead()}
     <h3 class="text-2xl font-bold text-primary-500">
-      <a href="/" class="no-underline">Bancho Box</a>
+      <a href="/" class="no-underline">BanchoBox</a>
     </h3>
   {/snippet}
 

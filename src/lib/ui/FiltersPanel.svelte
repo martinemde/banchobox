@@ -47,6 +47,39 @@
 
   const effectiveSortOptions = sortOptions ?? defaultSortOptions;
   const effectivePlaceholder = searchPlaceholder ?? 'Search by name…';
+
+  // Collapsible facets state: only first category expanded by default
+  let expanded = $state<Record<string, boolean>>({});
+  const facetEntries = $derived(Object.entries(($bundle?.facets ?? {})));
+
+  function toggleSection(facetName: string) {
+    expanded[facetName] = !expanded[facetName];
+  }
+
+  function facetPanelId(name: string): string {
+    return 'facet-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  }
+
+  // Initialize/maintain expanded keys when facets change
+  $effect(() => {
+    const names = facetEntries.map(([n]) => n);
+    if (names.length === 0) return;
+    const hasAny = Object.keys(expanded).length > 0;
+    if (!hasAny) {
+      expanded = names.reduce((acc, name, idx) => {
+        acc[name] = idx === 0; // first open, others collapsed
+        return acc;
+      }, {} as Record<string, boolean>);
+    }
+    for (const name of names) if (!(name in expanded)) expanded[name] = false;
+    for (const key of Object.keys(expanded)) if (!names.includes(key)) delete expanded[key];
+
+    // Ensure any facet with active selections is expanded
+    const activeFacets = Object.entries($filters ?? {})
+      .filter(([, set]) => set && (set as Set<string>).size > 0)
+      .map(([facetName]) => facetName);
+    for (const name of activeFacets) expanded[name] = true;
+  });
 </script>
 
 <div class="space-y-4">
@@ -66,27 +99,34 @@
     </div>
   </div>
 
-  <div class="space-y-2">
-    <SortControl
-      options={effectiveSortOptions}
-      bind:column={sortKey}
-      bind:direction={sortDir}
-    />
-  </div>
-
-  {#each Object.entries(($bundle?.facets ?? {})) as [facetName, facetIndex]}
+  {#each facetEntries as [facetName, facetIndex], i}
     <fieldset class="space-y-1">
-      <legend class="text-sm font-semibold">{facetName}</legend>
-      {#each Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b)) as key}
-        <label class="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={isChecked(facetName, key)}
-            onchange={(e) => toggleFacet(facetName, key, (e.currentTarget as HTMLInputElement).checked)}
-          />
-          {key}
-        </label>
-      {/each}
+      <legend class="text-sm font-semibold">
+        <button
+          type="button"
+          class="flex w-full items-center justify-between gap-x-2"
+          aria-expanded={Boolean(expanded[facetName])}
+          aria-controls={facetPanelId(facetName)}
+          onclick={() => toggleSection(facetName)}
+        >
+          <span aria-hidden="true">{expanded[facetName] ? '▾' : '▸'}</span>
+          <span>{facetName}</span>
+        </button>
+      </legend>
+      {#if expanded[facetName]}
+        <div id={facetPanelId(facetName)} class="space-y-1">
+          {#each Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b)) as key}
+            <label class="flex items-center gap-2 text-sm">
+              <input
+                type="checkbox"
+                checked={isChecked(facetName, key)}
+                onchange={(e) => toggleFacet(facetName, key, (e.currentTarget as HTMLInputElement).checked)}
+              />
+              {key}
+            </label>
+          {/each}
+        </div>
+      {/if}
     </fieldset>
   {/each}
 </div>
