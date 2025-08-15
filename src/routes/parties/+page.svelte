@@ -30,7 +30,7 @@
 
 
 
-<ResponsiveLayout leftTitle="Filters & sort" containerClass="parties" scrollMode="container" />
+<ResponsiveLayout leftTitle="Filters & sort" containerClass="parties" scrollMode="container">
   {#snippet left()}
     <FiltersPanel
       bundle={bundle}
