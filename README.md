@@ -1,22 +1,44 @@
-# sv
+# Bancho Box
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A comprehensive database application for **Dave the Diver**, built with modern web technologies to help players navigate the game's complex culinary system.
 
-## Creating a project
+**🌐 Visit the live application:** [banchobox.com](https://banchobox.com)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
+
+- **Complete dish database** with unlock conditions, pricing, and party bonuses (305 dishes)
+- **Comprehensive ingredient catalog** with sources and gathering information (228 ingredients)  
+- **Party event listings** with associated dishes and bonus multipliers (8 parties)
+- **Dark/light theme support** for comfortable viewing
+- **Responsive design** for desktop and mobile devices
+
+## Technology Stack
+
+This application is built with [SvelteKit](https://svelte.dev/docs/kit) and styled with [Skeleton UI](https://skeleton.dev) for a modern, accessible user experience.
+
+## Development
+
+### Prerequisites
+
+Install dependencies:
 
 ```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+npm install
 ```
 
-## Developing
+### Data Processing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+The application processes CSV data files into optimized JSON bundles. Before running the development server, you need to build the data:
+
+```sh
+npm run build:data
+```
+
+This command imports and pre-computes data from CSV files in the `data/` directory, creating optimized JSON files in `src/lib/data/`.
+
+### Running the Development Server
+
+Start the development server (this automatically runs `build:data` first):
 
 ```sh
 npm run dev
@@ -25,9 +47,9 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building for Production
 
-To create a production version of your app:
+To create a production version of the app:
 
 ```sh
 npm run build
@@ -35,4 +57,13 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Project Structure
+
+- `data/` - CSV files containing dishes, ingredients, parties, and relationships
+- `scripts/build-database.ts` - Data processing script that converts CSV to JSON
+- `src/lib/data/` - Generated JSON data files (created by `build:data`)
+- `src/routes/` - SvelteKit application pages and components
+
+## Disclaimer
+
+Bancho Box is a fan-made database for Dave the Diver. It is not affiliated with Dave the Diver or its developers or publishers. Assets are sourced from the game and used for informational purposes only under fair use guidelines. All assets are the property of their respective owners and are used with the intent to encourage more people to enjoy playing Dave the Diver.
