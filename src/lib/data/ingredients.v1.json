@@ -171,9 +171,7 @@
           "price": 1540,
           "revenue": 3080,
           "servings": 2,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 299,
@@ -185,9 +183,7 @@
           "price": 1518,
           "revenue": 3036,
           "servings": 2,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 300,
@@ -199,16 +195,10 @@
           "price": 1507,
           "revenue": 3014,
           "servings": 2,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1,
-        2,
-        5
-      ],
+      "usedForParties": [1, 2, 5],
       "sellPerKg": 90,
       "vendors": {},
       "search": "green sea urchin 0-50m fish jellyfish tuna cucumber party",
@@ -279,9 +269,7 @@
           "price": 1727,
           "revenue": 3454,
           "servings": 2,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 159,
@@ -296,9 +284,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 20,
       "vendors": {},
       "search": "purple sea urchin 0-50m fish marlin party",
@@ -345,9 +331,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 169,
@@ -371,9 +355,7 @@
           "price": 1199,
           "revenue": 1199,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 207,
@@ -388,10 +370,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        5
-      ],
+      "usedForParties": [6, 5],
       "sellPerKg": 11.333333333333334,
       "vendors": {},
       "search": "spider crab 130-250m fish curry cucumber party",
@@ -438,9 +417,7 @@
           "price": 1609,
           "revenue": 9654,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 4,
@@ -452,14 +429,10 @@
           "price": 477,
           "revenue": 477,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 129,
       "vendors": {},
       "search": "american lobster 0-50m fish lobster party",
@@ -506,9 +479,7 @@
           "price": 1716,
           "revenue": 3432,
           "servings": 2,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 28,
@@ -520,14 +491,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 141,
       "vendors": {},
       "search": "blue lobster 0-50m fish lobster party",
@@ -574,9 +541,7 @@
           "price": 1258,
           "revenue": 11322,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 43,
@@ -588,14 +553,10 @@
           "price": 244,
           "revenue": 244,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 44,
       "vendors": {},
       "search": "california spiny lobster 50-130m fish lobster party",
@@ -738,9 +699,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 61,
@@ -752,14 +711,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 94,
       "vendors": {},
       "search": "crystal lobster 50-130m fish lobster party",
@@ -856,9 +811,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 76,
@@ -870,14 +823,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 56.4,
       "vendors": {},
       "search": "eastern rock lobster 130-250m fish lobster party",
@@ -972,10 +921,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 78,
@@ -987,15 +933,10 @@
           "price": 255,
           "revenue": 255,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        6,
-        8
-      ],
+      "usedForParties": [6, 8],
       "sellPerKg": 69,
       "vendors": {},
       "search": "european lobster 0-50m fish curry lobster party",
@@ -1042,14 +983,10 @@
           "price": 244,
           "revenue": 244,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 330,
       "vendors": {},
       "search": "fan lobster 50-130m fish lobster party",
@@ -1206,9 +1143,7 @@
           "price": 1443,
           "revenue": 8658,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 142,
@@ -1220,14 +1155,10 @@
           "price": 277,
           "revenue": 277,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 375,
       "vendors": {},
       "search": "norway lobster 130-250m fish lobster party",
@@ -1274,14 +1205,10 @@
           "price": 277,
           "revenue": 277,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 750,
       "vendors": {},
       "search": "red-banded lobster 0-50m fish lobster party",
@@ -1438,9 +1365,7 @@
           "price": 1609,
           "revenue": 9654,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 227,
@@ -1455,9 +1380,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 82.5,
       "vendors": {},
       "search": "tokummia katalepsis hydrothermal vents fish lobster party",
@@ -1504,9 +1427,7 @@
           "price": 1609,
           "revenue": 9654,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 232,
@@ -1518,14 +1439,10 @@
           "price": 499,
           "revenue": 499,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 112.5,
       "vendors": {},
       "search": "tropical rock lobster 50-130m fish lobster party",
@@ -1572,9 +1489,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 132,
@@ -1586,9 +1501,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 206,
@@ -1600,9 +1513,7 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 163,
@@ -1614,14 +1525,10 @@
           "price": 185,
           "revenue": 185,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 850,
       "vendors": {},
       "search": "black tiger shrimp 50-130m fish shrimp party",
@@ -1818,10 +1725,7 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         },
         {
           "dishId": 239,
@@ -1836,10 +1740,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5,
-        7
-      ],
+      "usedForParties": [5, 7],
       "sellPerKg": 425,
       "vendors": {},
       "search": "waptia fieldensis hydrothermal vents fish cucumber shrimp party",
@@ -1886,9 +1787,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 171,
@@ -1900,9 +1799,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 241,
@@ -1914,14 +1811,10 @@
           "price": 196,
           "revenue": 196,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 850,
       "vendors": {},
       "search": "white shrimp 0-130m fish shrimp party",
@@ -1968,9 +1861,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 132,
@@ -1982,9 +1873,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 36,
@@ -1996,9 +1885,7 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 206,
@@ -2010,9 +1897,7 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 55,
@@ -2024,14 +1909,10 @@
           "price": 129,
           "revenue": 129,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 0,
       "vendors": {},
       "search": "whiteleg shrimp 0-50m fish shrimp party",
@@ -2126,14 +2007,10 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "goblin shark's fatty meat 130-250m boss shark party",
       "sort": {
@@ -2178,14 +2055,10 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "helicoprion tail 3rd glacial cave boss shark party",
       "sort": {
@@ -2230,14 +2103,10 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "klaus's fin 0-50m boss shark party",
       "sort": {
@@ -2330,14 +2199,10 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "lusca neck meat 50-130m boss shark party",
       "sort": {
@@ -2430,14 +2295,10 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "vendors": {},
       "search": "mantis shrimp meat 0-50m boss shrimp party",
       "sort": {
@@ -2482,14 +2343,10 @@
           "price": 700,
           "revenue": 7000,
           "servings": 10,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "vendors": {},
       "search": "phantom jellyfish meat second glacial cave boss jellyfish party",
       "sort": {
@@ -2714,9 +2571,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 221,
@@ -2740,9 +2595,7 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 171,
@@ -2754,9 +2607,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 147,
@@ -2804,9 +2655,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 53,
@@ -2833,11 +2682,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        7,
-        2
-      ],
+      "usedForParties": [8, 7, 2],
       "vendors": {
         "Otto": 75,
         "Jango": 63
@@ -2921,9 +2766,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 117,
@@ -2959,15 +2802,10 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        6,
-        4
-      ],
+      "usedForParties": [6, 4],
       "vendors": {
         "Otto": 450,
         "Jango": 382
@@ -3413,9 +3251,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 12,
@@ -3430,9 +3266,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 5.25,
       "vendors": {},
       "search": "atlantic bonito 50-130m fish curry party",
@@ -3649,9 +3483,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 15,
@@ -3663,14 +3495,10 @@
           "price": 55,
           "revenue": 55,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 15,
       "vendors": {},
       "search": "barrel jellyfish 0-50m fish jellyfish party",
@@ -3717,9 +3545,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 293,
@@ -3731,9 +3557,7 @@
           "price": 1258,
           "revenue": 11322,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 16,
@@ -3748,10 +3572,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        4
-      ],
+      "usedForParties": [8, 4],
       "sellPerKg": 35,
       "vendors": {},
       "search": "barreleye glacial passage fish lobster shark party",
@@ -3860,9 +3681,7 @@
           "price": 1154,
           "revenue": 8078,
           "servings": 7,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 20,
@@ -3877,9 +3696,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5
-      ],
+      "usedForParties": [5],
       "sellPerKg": 10,
       "vendors": {},
       "search": "bigeye trevally 50-130m fish cucumber party",
@@ -4038,9 +3855,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 23,
@@ -4052,14 +3867,10 @@
           "price": 222,
           "revenue": 222,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 40,
       "vendors": {},
       "search": "blacktip shark meat 0-50m fish shark party",
@@ -4168,14 +3979,10 @@
           "price": 185,
           "revenue": 185,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 7.285714285714286,
       "vendors": {},
       "search": "blood-belly comb jellyfish 130-250m fish jellyfish party",
@@ -4332,9 +4139,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 30,
@@ -4346,14 +4151,10 @@
           "price": 296,
           "revenue": 296,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 16.875,
       "vendors": {},
       "search": "bluefin tuna akami 0-130m fish tuna party",
@@ -4400,9 +4201,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 299,
@@ -4414,9 +4213,7 @@
           "price": 1518,
           "revenue": 3036,
           "servings": 2,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 31,
@@ -4428,14 +4225,10 @@
           "price": 351,
           "revenue": 351,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 20,
       "vendors": {},
       "search": "bluefin tuna chutoro 0-130m fish tuna party",
@@ -4482,9 +4275,7 @@
           "price": 1683,
           "revenue": 1683,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 32,
@@ -4496,14 +4287,10 @@
           "price": 499,
           "revenue": 499,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "vendors": {},
       "search": "bluefin tuna ootoro 0-130m fish tuna party",
       "sort": {
@@ -4646,9 +4433,7 @@
           "price": 1507,
           "revenue": 3014,
           "servings": 2,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 42,
@@ -4660,14 +4445,10 @@
           "price": 203,
           "revenue": 203,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 10.8,
       "vendors": {},
       "search": "box jellyfish 0-50m fish jellyfish party",
@@ -4762,9 +4543,7 @@
           "price": 1443,
           "revenue": 10101,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 44,
@@ -4779,9 +4558,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 90,
       "vendors": {},
       "search": "capelin glacial area fish curry party",
@@ -4940,9 +4717,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 50,
@@ -4957,9 +4732,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 50,
       "vendors": {},
       "search": "clown frogfish 50-130m fish shark party",
@@ -5068,9 +4841,7 @@
           "price": 1295,
           "revenue": 7770,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 52,
@@ -5082,14 +4853,10 @@
           "price": 166,
           "revenue": 166,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 6,
       "vendors": {},
       "search": "comb jelly 130-250m fish jellyfish party",
@@ -5246,9 +5013,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 56,
@@ -5260,14 +5025,10 @@
           "price": 277,
           "revenue": 277,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 15,
       "vendors": {},
       "search": "cookiecutter shark 130-250m fish shark party",
@@ -5314,9 +5075,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 57,
@@ -5328,14 +5087,10 @@
           "price": 240,
           "revenue": 240,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 27.5,
       "vendors": {},
       "search": "copper shark meat 0-50m fish shark party",
@@ -5480,9 +5235,7 @@
           "price": 1518,
           "revenue": 3036,
           "servings": 2,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 62,
@@ -5497,9 +5250,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 4.5,
       "vendors": {},
       "search": "cuttlefish 50-130m fish tuna party",
@@ -5918,9 +5669,7 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 80,
@@ -5932,14 +5681,10 @@
           "price": 481,
           "revenue": 481,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 21.5,
       "vendors": {},
       "search": "falcatus hydrothermal vents fish shark party",
@@ -6146,9 +5891,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 84,
@@ -6160,14 +5903,10 @@
           "price": 55,
           "revenue": 55,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 15,
       "vendors": {},
       "search": "fried egg jellyfish 0-50m fish jellyfish party",
@@ -6214,9 +5953,7 @@
           "price": 1705,
           "revenue": 3410,
           "servings": 2,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 90,
@@ -6228,14 +5965,10 @@
           "price": 314,
           "revenue": 314,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 16.470588235294116,
       "vendors": {},
       "search": "frilled shark meat 130-250m fish shark party",
@@ -6440,9 +6173,7 @@
           "price": 1154,
           "revenue": 8078,
           "servings": 7,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 92,
@@ -6457,9 +6188,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5
-      ],
+      "usedForParties": [5],
       "sellPerKg": 10,
       "vendors": {},
       "search": "giant trevally meat 50-130m fish cucumber party",
@@ -6616,9 +6345,7 @@
           "price": 1387,
           "revenue": 8322,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 99,
@@ -6633,9 +6360,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 13.88888888888889,
       "vendors": {},
       "search": "green humphead parrotfish 0-50m fish curry party",
@@ -6682,14 +6407,10 @@
           "price": 688,
           "revenue": 688,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 15.5,
       "vendors": {},
       "search": "greenland shark meat glacial area fish shark party",
@@ -6908,14 +6629,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 18.076923076923077,
       "vendors": {},
       "search": "hammerhead meat 50-130m fish shark party",
@@ -7072,9 +6789,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 111,
@@ -7089,9 +6804,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 32,
       "vendors": {},
       "search": "humboldt squid meat 50-130m fish shrimp party",
@@ -7138,9 +6851,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 115,
@@ -7155,9 +6866,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 17.454545454545453,
       "vendors": {},
       "search": "ice fish glacial area fish curry party",
@@ -7414,14 +7123,10 @@
           "price": 129,
           "revenue": 129,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 9.23076923076923,
       "vendors": {},
       "search": "longnose sawshark meat 50-130m fish shark party",
@@ -7704,14 +7409,10 @@
           "price": 388,
           "revenue": 388,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 23.88888888888889,
       "vendors": {},
       "search": "mako meat 0-50m fish shark party",
@@ -7916,9 +7617,7 @@
           "price": 1406,
           "revenue": 12654,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 128,
@@ -7930,14 +7629,10 @@
           "price": 499,
           "revenue": 499,
           "servings": 1,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 30,
       "vendors": {},
       "search": "marlin meat 0-50m fish marlin party",
@@ -8096,9 +7791,7 @@
           "price": 1705,
           "revenue": 3410,
           "servings": 2,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 131,
@@ -8110,14 +7803,10 @@
           "price": 351,
           "revenue": 351,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 13.478260869565217,
       "vendors": {},
       "search": "megamouth shark meat 130-250m fish shark party",
@@ -8164,10 +7853,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 134,
@@ -8179,9 +7865,7 @@
           "price": 351,
           "revenue": 2106,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 135,
@@ -8196,10 +7880,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        8
-      ],
+      "usedForParties": [6, 8],
       "sellPerKg": 0,
       "vendors": {},
       "search": "moray eel 0-50m fish curry lobster party",
@@ -8432,9 +8113,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 144,
@@ -8449,9 +8128,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 8,
       "vendors": {},
       "search": "ornate wrasse 0-50m fish curry party",
@@ -8966,9 +8643,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 157,
@@ -8980,14 +8655,10 @@
           "price": 610,
           "revenue": 610,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 20.37037037037037,
       "vendors": {},
       "search": "porbeagle shark meat glacial area fish shark party",
@@ -9194,9 +8865,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 162,
@@ -9211,9 +8880,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 6.666666666666667,
       "vendors": {},
       "search": "rainbow wrasse 0-50m fish curry party",
@@ -9260,9 +8927,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 164,
@@ -9277,9 +8942,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 12,
       "vendors": {},
       "search": "red bream 130-250m fish shark party",
@@ -9450,9 +9113,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 168,
@@ -9467,9 +9128,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 42,
       "vendors": {},
       "search": "rhinochimaeridae meat 130-250m fish shark party",
@@ -9516,9 +9175,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 235,
@@ -9530,9 +9187,7 @@
           "price": 1727,
           "revenue": 3454,
           "servings": 2,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 175,
@@ -9544,14 +9199,10 @@
           "price": 721,
           "revenue": 721,
           "servings": 1,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 36.111111111111114,
       "vendors": {},
       "search": "sailfish meat shipwreck interior fish marlin party",
@@ -9966,9 +9617,7 @@
           "price": 1184,
           "revenue": 1184,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 182,
@@ -9983,9 +9632,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5
-      ],
+      "usedForParties": [5],
       "sellPerKg": 10.8,
       "vendors": {},
       "search": "sea toad 130-250m fish cucumber party",
@@ -10868,14 +10515,10 @@
           "price": 588,
           "revenue": 588,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 31.176470588235293,
       "vendors": {},
       "search": "thresher shark meat 0-50m fish shark party",
@@ -10922,14 +10565,10 @@
           "price": 185,
           "revenue": 185,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 5.666666666666667,
       "vendors": {},
       "search": "tiger shark meat 50-130m fish shark party",
@@ -11134,9 +10773,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 222,
@@ -11163,9 +10800,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 34.166666666666664,
       "vendors": {},
       "search": "vampire squid glacial passage fish shark party",
@@ -11260,9 +10895,7 @@
           "price": 832,
           "revenue": 832,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 242,
@@ -11274,14 +10907,10 @@
           "price": 66,
           "revenue": 66,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 18,
       "vendors": {},
       "search": "white spotted jellyfish 50-130m fish jellyfish party",
@@ -11402,14 +11031,10 @@
           "price": 277,
           "revenue": 1939,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 16,
       "vendors": {},
       "search": "whitetip reefshark head 0-50m fish shark party",
@@ -11456,14 +11081,10 @@
           "price": 88,
           "revenue": 88,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 16,
       "vendors": {},
       "search": "whitetip reefshark meat 0-50m fish shark party",
@@ -11720,9 +11341,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 252,
@@ -11734,14 +11353,10 @@
           "price": 270,
           "revenue": 270,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 20,
       "vendors": {},
       "search": "yellowfin tuna akami 0-130m fish tuna party",
@@ -11788,9 +11403,7 @@
           "price": 1128,
           "revenue": 10152,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 253,
@@ -11802,14 +11415,10 @@
           "price": 333,
           "revenue": 333,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 25,
       "vendors": {},
       "search": "yellowfin tuna chutoro 0-130m fish tuna party",
@@ -11856,9 +11465,7 @@
           "price": 1683,
           "revenue": 1683,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 254,
@@ -11870,14 +11477,10 @@
           "price": 462,
           "revenue": 462,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "vendors": {},
       "search": "yellowfin tuna ootoro 0-130m fish tuna party",
       "sort": {
@@ -11922,14 +11525,10 @@
           "price": 399,
           "revenue": 399,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 20,
       "vendors": {},
       "search": "zebra shark meat 0-50m fish shark party",
@@ -12050,9 +11649,7 @@
           "price": 1727,
           "revenue": 3454,
           "servings": 2,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 234,
@@ -12064,9 +11661,7 @@
           "price": 1716,
           "revenue": 3432,
           "servings": 2,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 236,
@@ -12078,9 +11673,7 @@
           "price": 1705,
           "revenue": 3410,
           "servings": 2,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 102,
@@ -12107,11 +11700,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        3,
-        4
-      ],
+      "usedForParties": [8, 3, 4],
       "vendors": {
         "Jango": 650
       },
@@ -12194,9 +11783,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 65,
@@ -12211,9 +11798,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -12274,10 +11859,7 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         },
         {
           "dishId": 39,
@@ -12289,9 +11871,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 21,
@@ -12351,9 +11931,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 88,
@@ -12380,11 +11958,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5,
-        4,
-        7
-      ],
+      "usedForParties": [5, 4, 7],
       "sellPerKg": 50,
       "vendors": {
         "Jango": 50
@@ -12433,9 +12007,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 98,
@@ -12447,9 +12019,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 11,
@@ -12461,9 +12031,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 247,
@@ -12475,14 +12043,10 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -12555,9 +12119,7 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 95,
@@ -12593,9 +12155,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 36,
@@ -12607,16 +12167,10 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7,
-        2,
-        4
-      ],
+      "usedForParties": [7, 2, 4],
       "sellPerKg": 70,
       "vendors": {
         "Jango": 70
@@ -12689,9 +12243,7 @@
           "price": 1406,
           "revenue": 12654,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 292,
@@ -12703,9 +12255,7 @@
           "price": 1295,
           "revenue": 7770,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 38,
@@ -12717,9 +12267,7 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 140,
@@ -12779,17 +12327,10 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4,
-        1,
-        3,
-        7
-      ],
+      "usedForParties": [4, 1, 3, 7],
       "sellPerKg": 80,
       "vendors": {
         "Jango": 80
@@ -12838,9 +12379,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 24,
@@ -12876,9 +12415,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 294,
@@ -12890,10 +12427,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 85,
@@ -12953,9 +12487,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 229,
@@ -12979,9 +12511,7 @@
           "price": 1128,
           "revenue": 10152,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 186,
@@ -13017,9 +12547,7 @@
           "price": 1443,
           "revenue": 8658,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 36,
@@ -13031,9 +12559,7 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 173,
@@ -13045,9 +12571,7 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 140,
@@ -13071,9 +12595,7 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 65,
@@ -13097,9 +12619,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 88,
@@ -13135,9 +12655,7 @@
           "price": 277,
           "revenue": 1939,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 206,
@@ -13149,19 +12667,10 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7,
-        5,
-        4,
-        6,
-        8,
-        2
-      ],
+      "usedForParties": [7, 5, 4, 6, 8, 2],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -13282,9 +12791,7 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 212,
@@ -13332,15 +12839,10 @@
           "price": 832,
           "revenue": 832,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1,
-        4
-      ],
+      "usedForParties": [1, 4],
       "sellPerKg": 80,
       "vendors": {
         "Jango": 80
@@ -13401,9 +12903,7 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 33,
@@ -13415,9 +12915,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 109,
@@ -13429,9 +12927,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 107,
@@ -13443,9 +12939,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 170,
@@ -13472,10 +12966,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2,
-        4
-      ],
+      "usedForParties": [2, 4],
       "sellPerKg": 80,
       "vendors": {
         "Jango": 80
@@ -13536,9 +13027,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 103,
@@ -13562,9 +13051,7 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 171,
@@ -13576,9 +13063,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 117,
@@ -13713,11 +13198,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3,
-        7,
-        4
-      ],
+      "usedForParties": [3, 7, 4],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -13766,10 +13247,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 172,
@@ -13781,9 +13259,7 @@
           "price": 1443,
           "revenue": 10101,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 112,
@@ -13795,9 +13271,7 @@
           "price": 1387,
           "revenue": 8322,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 134,
@@ -13809,15 +13283,10 @@
           "price": 351,
           "revenue": 2106,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         }
       ],
-      "usedForParties": [
-        6,
-        8
-      ],
+      "usedForParties": [6, 8],
       "sellPerKg": 50,
       "vendors": {
         "Jango": 50
@@ -13902,9 +13371,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 60,
@@ -13916,9 +13383,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 169,
@@ -13990,9 +13455,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 304,
@@ -14016,9 +13479,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 170,
@@ -14042,9 +13503,7 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 238,
@@ -14083,11 +13542,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2,
-        7,
-        8
-      ],
+      "usedForParties": [2, 7, 8],
       "vendors": {},
       "search": "rice vegetable farm rice tuna shrimp lobster party",
       "sort": {
@@ -14144,9 +13599,7 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 212,
@@ -14194,9 +13647,7 @@
           "price": 700,
           "revenue": 7000,
           "servings": 10,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 1,
@@ -14211,10 +13662,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        1,
-        7
-      ],
+      "usedForParties": [1, 7],
       "sellPerKg": 30,
       "vendors": {},
       "search": "agar 0-50m sea plant jellyfish shrimp party",
@@ -14261,9 +13709,7 @@
           "price": 1443,
           "revenue": 10101,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 189,
@@ -14275,9 +13721,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 192,
@@ -14289,18 +13733,10 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         }
       ],
-      "usedForParties": [
-        5,
-        7,
-        1,
-        6
-      ],
+      "usedForParties": [5, 7, 1, 6],
       "sellPerKg": 80,
       "vendors": {},
       "search": "black coral glacial area sea plant cucumber shrimp jellyfish curry party",
@@ -14383,14 +13819,10 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 100,
       "vendors": {},
       "search": "bladderwrack glacial seaweed cave sea plant lobster party",
@@ -14449,9 +13881,7 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 151,
@@ -14463,9 +13893,7 @@
           "price": 700,
           "revenue": 7000,
           "servings": 10,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 302,
@@ -14477,16 +13905,10 @@
           "price": 1540,
           "revenue": 3080,
           "servings": 2,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         }
       ],
-      "usedForParties": [
-        4,
-        5,
-        1
-      ],
+      "usedForParties": [4, 5, 1],
       "sellPerKg": 90,
       "vendors": {},
       "search": "buckbean glacial area sea plant shark cucumber jellyfish party",
@@ -14533,9 +13955,7 @@
           "price": 1683,
           "revenue": 1683,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 210,
@@ -14550,9 +13970,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 650,
       "vendors": {},
       "search": "hyalonema glacial seaweed cave sea plant tuna party",
@@ -14611,9 +14029,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 217,
@@ -14676,9 +14092,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 70,
       "vendors": {},
       "search": "kajime 0-130m sea plant marlin party",
@@ -14737,9 +14151,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 191,
@@ -14775,9 +14187,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 304,
@@ -14828,10 +14238,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4,
-        8
-      ],
+      "usedForParties": [4, 8],
       "sellPerKg": 60,
       "vendors": {},
       "search": "kelp 50-130m sea plant shark lobster party",
@@ -14890,9 +14297,7 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 293,
@@ -14904,9 +14309,7 @@
           "price": 1258,
           "revenue": 11322,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 109,
@@ -14918,9 +14321,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 233,
@@ -14956,9 +14357,7 @@
           "price": 1507,
           "revenue": 3014,
           "servings": 2,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 184,
@@ -14970,9 +14369,7 @@
           "price": 832,
           "revenue": 832,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 185,
@@ -14987,12 +14384,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        2,
-        1,
-        4
-      ],
+      "usedForParties": [8, 2, 1, 4],
       "sellPerKg": 60,
       "vendors": {},
       "search": "sea grape limestone cave sea plant lobster tuna jellyfish shark party",
@@ -15051,9 +14443,7 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 217,
@@ -15089,9 +14479,7 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 305,
@@ -15115,9 +14503,7 @@
           "price": 1295,
           "revenue": 7770,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 211,
@@ -15132,10 +14518,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        1,
-        4
-      ],
+      "usedForParties": [1, 4],
       "sellPerKg": 50,
       "vendors": {},
       "search": "seaweed 50-130m sea plant jellyfish shark party",
@@ -15194,9 +14577,7 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 40,
@@ -15208,9 +14589,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 211,
@@ -15225,10 +14604,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3,
-        4
-      ],
+      "usedForParties": [3, 4],
       "sellPerKg": 80,
       "vendors": {},
       "search": "southern bull kelp glacial area sea plant marlin shark party",
@@ -15275,9 +14651,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 89,
@@ -15301,9 +14675,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 169,
@@ -15330,9 +14702,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "vendors": {
         "Otto": 200,
         "Jango": 170
@@ -15514,9 +14884,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 21,
@@ -15540,9 +14908,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 66,
@@ -15554,9 +14920,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 238,
@@ -15571,10 +14935,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        5
-      ],
+      "usedForParties": [6, 5],
       "vendors": {
         "Otto": 250,
         "Jango": 106
@@ -15706,14 +15067,10 @@
           "price": 1128,
           "revenue": 10152,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "vendors": {
         "Otto": 175,
         "Jango": 148
@@ -15761,10 +15118,7 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         },
         {
           "dishId": 230,
@@ -15776,9 +15130,7 @@
           "price": 1154,
           "revenue": 8078,
           "servings": 7,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 152,
@@ -15790,9 +15142,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 66,
@@ -15804,9 +15154,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 302,
@@ -15818,9 +15166,7 @@
           "price": 1540,
           "revenue": 3080,
           "servings": 2,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 97,
@@ -15832,9 +15178,7 @@
           "price": 1199,
           "revenue": 1199,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 181,
@@ -15846,9 +15190,7 @@
           "price": 1184,
           "revenue": 1184,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 197,
@@ -15860,15 +15202,10 @@
           "price": 1184,
           "revenue": 1184,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         }
       ],
-      "usedForParties": [
-        5,
-        7
-      ],
+      "usedForParties": [5, 7],
       "vendors": {
         "Otto": 200
       },
@@ -15927,9 +15264,7 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 140,
@@ -15953,9 +15288,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 64,
@@ -15967,9 +15300,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 238,
@@ -15984,10 +15315,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        7,
-        5
-      ],
+      "usedForParties": [7, 5],
       "vendors": {
         "Otto": 210,
         "Jango": 178
@@ -16059,9 +15387,7 @@
           "price": 1406,
           "revenue": 12654,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 140,
@@ -16097,9 +15423,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 136,
@@ -16123,16 +15447,10 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        7,
-        1,
-        3
-      ],
+      "usedForParties": [7, 1, 3],
       "vendors": {
         "Otto": 190,
         "Jango": 161
@@ -16204,9 +15522,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 216,
@@ -16218,15 +15534,10 @@
           "price": 1443,
           "revenue": 8658,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        2,
-        8
-      ],
+      "usedForParties": [2, 8],
       "vendors": {
         "Otto": 180,
         "Jango": 153
@@ -16310,9 +15621,7 @@
           "price": 1387,
           "revenue": 8322,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 66,
@@ -16324,9 +15633,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 86,
@@ -16353,10 +15660,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        5
-      ],
+      "usedForParties": [6, 5],
       "vendors": {
         "Otto": 200,
         "Jango": 170
@@ -16404,9 +15708,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 221,
@@ -16466,9 +15768,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 65,
@@ -16492,9 +15792,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 155,
@@ -16557,10 +15855,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        7,
-        4
-      ],
+      "usedForParties": [7, 4],
       "vendors": {
         "Otto": 190,
         "Jango": 161
@@ -16622,9 +15917,7 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 212,
@@ -16672,9 +15965,7 @@
           "price": 700,
           "revenue": 7000,
           "servings": 10,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 1,
@@ -16689,10 +15980,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        1,
-        7
-      ],
+      "usedForParties": [1, 7],
       "sellPerKg": 30,
       "vendors": {},
       "search": "agar 0-50m sea plant jellyfish shrimp party",
@@ -16839,9 +16127,7 @@
           "price": 1609,
           "revenue": 9654,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 4,
@@ -16853,14 +16139,10 @@
           "price": 477,
           "revenue": 477,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 129,
       "vendors": {},
       "search": "american lobster 0-50m fish lobster party",
@@ -17205,9 +16487,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 12,
@@ -17222,9 +16502,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 5.25,
       "vendors": {},
       "search": "atlantic bonito 50-130m fish curry party",
@@ -17441,9 +16719,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 15,
@@ -17455,14 +16731,10 @@
           "price": 55,
           "revenue": 55,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 15,
       "vendors": {},
       "search": "barrel jellyfish 0-50m fish jellyfish party",
@@ -17509,9 +16781,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 293,
@@ -17523,9 +16793,7 @@
           "price": 1258,
           "revenue": 11322,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 16,
@@ -17540,10 +16808,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        4
-      ],
+      "usedForParties": [8, 4],
       "sellPerKg": 35,
       "vendors": {},
       "search": "barreleye glacial passage fish lobster shark party",
@@ -17590,9 +16855,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 89,
@@ -17616,9 +16879,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 169,
@@ -17645,9 +16906,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "vendors": {
         "Otto": 200,
         "Jango": 170
@@ -17757,9 +17016,7 @@
           "price": 1154,
           "revenue": 8078,
           "servings": 7,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 20,
@@ -17774,9 +17031,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5
-      ],
+      "usedForParties": [5],
       "sellPerKg": 10,
       "vendors": {},
       "search": "bigeye trevally 50-130m fish cucumber party",
@@ -17873,9 +17128,7 @@
           "price": 1443,
           "revenue": 10101,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 189,
@@ -17887,9 +17140,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 192,
@@ -17901,18 +17152,10 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         }
       ],
-      "usedForParties": [
-        5,
-        7,
-        1,
-        6
-      ],
+      "usedForParties": [5, 7, 1, 6],
       "sellPerKg": 80,
       "vendors": {},
       "search": "black coral glacial area sea plant cucumber shrimp jellyfish curry party",
@@ -17995,9 +17238,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 65,
@@ -18012,9 +17253,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -18063,9 +17302,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 132,
@@ -18077,9 +17314,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 206,
@@ -18091,9 +17326,7 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 163,
@@ -18105,14 +17338,10 @@
           "price": 185,
           "revenue": 185,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 850,
       "vendors": {},
       "search": "black tiger shrimp 50-130m fish shrimp party",
@@ -18171,10 +17400,7 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         },
         {
           "dishId": 39,
@@ -18186,9 +17412,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 21,
@@ -18248,9 +17472,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 88,
@@ -18277,11 +17499,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5,
-        4,
-        7
-      ],
+      "usedForParties": [5, 4, 7],
       "sellPerKg": 50,
       "vendors": {
         "Jango": 50
@@ -18392,9 +17610,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 23,
@@ -18406,14 +17622,10 @@
           "price": 222,
           "revenue": 222,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 40,
       "vendors": {},
       "search": "blacktip shark meat 0-50m fish shark party",
@@ -18496,14 +17708,10 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 100,
       "vendors": {},
       "search": "bladderwrack glacial seaweed cave sea plant lobster party",
@@ -18612,14 +17820,10 @@
           "price": 185,
           "revenue": 185,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 7.285714285714286,
       "vendors": {},
       "search": "blood-belly comb jellyfish 130-250m fish jellyfish party",
@@ -18714,9 +17918,7 @@
           "price": 1716,
           "revenue": 3432,
           "servings": 2,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 28,
@@ -18728,14 +17930,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 141,
       "vendors": {},
       "search": "blue lobster 0-50m fish lobster party",
@@ -18844,9 +18042,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 30,
@@ -18858,14 +18054,10 @@
           "price": 296,
           "revenue": 296,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 16.875,
       "vendors": {},
       "search": "bluefin tuna akami 0-130m fish tuna party",
@@ -18912,9 +18104,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 299,
@@ -18926,9 +18116,7 @@
           "price": 1518,
           "revenue": 3036,
           "servings": 2,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 31,
@@ -18940,14 +18128,10 @@
           "price": 351,
           "revenue": 351,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 20,
       "vendors": {},
       "search": "bluefin tuna chutoro 0-130m fish tuna party",
@@ -18994,9 +18178,7 @@
           "price": 1683,
           "revenue": 1683,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 32,
@@ -19008,14 +18190,10 @@
           "price": 499,
           "revenue": 499,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "vendors": {},
       "search": "bluefin tuna ootoro 0-130m fish tuna party",
       "sort": {
@@ -19220,9 +18398,7 @@
           "price": 1507,
           "revenue": 3014,
           "servings": 2,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 42,
@@ -19234,14 +18410,10 @@
           "price": 203,
           "revenue": 203,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 10.8,
       "vendors": {},
       "search": "box jellyfish 0-50m fish jellyfish party",
@@ -19300,9 +18472,7 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 151,
@@ -19314,9 +18484,7 @@
           "price": 700,
           "revenue": 7000,
           "servings": 10,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 302,
@@ -19328,16 +18496,10 @@
           "price": 1540,
           "revenue": 3080,
           "servings": 2,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         }
       ],
-      "usedForParties": [
-        4,
-        5,
-        1
-      ],
+      "usedForParties": [4, 5, 1],
       "sellPerKg": 90,
       "vendors": {},
       "search": "buckbean glacial area sea plant shark cucumber jellyfish party",
@@ -19518,9 +18680,7 @@
           "price": 1258,
           "revenue": 11322,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 43,
@@ -19532,14 +18692,10 @@
           "price": 244,
           "revenue": 244,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 44,
       "vendors": {},
       "search": "california spiny lobster 50-130m fish lobster party",
@@ -19586,9 +18742,7 @@
           "price": 1443,
           "revenue": 10101,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 44,
@@ -19603,9 +18757,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 90,
       "vendors": {},
       "search": "capelin glacial area fish curry party",
@@ -19750,9 +18902,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 21,
@@ -19776,9 +18926,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 66,
@@ -19790,9 +18938,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 238,
@@ -19807,10 +18953,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        5
-      ],
+      "usedForParties": [6, 5],
       "vendors": {
         "Otto": 250,
         "Jango": 106
@@ -20040,14 +19183,10 @@
           "price": 1128,
           "revenue": 10152,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "vendors": {
         "Otto": 175,
         "Jango": 148
@@ -20255,9 +19394,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 50,
@@ -20272,9 +19409,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 50,
       "vendors": {},
       "search": "clown frogfish 50-130m fish shark party",
@@ -20383,9 +19518,7 @@
           "price": 1295,
           "revenue": 7770,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 52,
@@ -20397,14 +19530,10 @@
           "price": 166,
           "revenue": 166,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 6,
       "vendors": {},
       "search": "comb jelly 130-250m fish jellyfish party",
@@ -20561,9 +19690,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 56,
@@ -20575,14 +19702,10 @@
           "price": 277,
           "revenue": 277,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 15,
       "vendors": {},
       "search": "cookiecutter shark 130-250m fish shark party",
@@ -20629,9 +19752,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 57,
@@ -20643,14 +19764,10 @@
           "price": 240,
           "revenue": 240,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 27.5,
       "vendors": {},
       "search": "copper shark meat 0-50m fish shark party",
@@ -20819,9 +19936,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 61,
@@ -20833,14 +19948,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 94,
       "vendors": {},
       "search": "crystal lobster 50-130m fish lobster party",
@@ -20887,10 +19998,7 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         },
         {
           "dishId": 230,
@@ -20902,9 +20010,7 @@
           "price": 1154,
           "revenue": 8078,
           "servings": 7,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 152,
@@ -20916,9 +20022,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 66,
@@ -20930,9 +20034,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 302,
@@ -20944,9 +20046,7 @@
           "price": 1540,
           "revenue": 3080,
           "servings": 2,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 97,
@@ -20958,9 +20058,7 @@
           "price": 1199,
           "revenue": 1199,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 181,
@@ -20972,9 +20070,7 @@
           "price": 1184,
           "revenue": 1184,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 197,
@@ -20986,15 +20082,10 @@
           "price": 1184,
           "revenue": 1184,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         }
       ],
-      "usedForParties": [
-        5,
-        7
-      ],
+      "usedForParties": [5, 7],
       "vendors": {
         "Otto": 200
       },
@@ -21041,9 +20132,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 98,
@@ -21055,9 +20144,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 11,
@@ -21069,9 +20156,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 247,
@@ -21083,14 +20168,10 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -21163,9 +20244,7 @@
           "price": 1518,
           "revenue": 3036,
           "servings": 2,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 62,
@@ -21180,9 +20259,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 4.5,
       "vendors": {},
       "search": "cuttlefish 50-130m fish tuna party",
@@ -21553,9 +20630,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 76,
@@ -21567,14 +20642,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 56.4,
       "vendors": {},
       "search": "eastern rock lobster 130-250m fish lobster party",
@@ -21657,9 +20728,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 221,
@@ -21683,9 +20752,7 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 171,
@@ -21697,9 +20764,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 147,
@@ -21747,9 +20812,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 53,
@@ -21776,11 +20839,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        7,
-        2
-      ],
+      "usedForParties": [8, 7, 2],
       "vendors": {
         "Otto": 75,
         "Jango": 63
@@ -21840,9 +20899,7 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 140,
@@ -21866,9 +20923,7 @@
           "price": 1169,
           "revenue": 3507,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 64,
@@ -21880,9 +20935,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 238,
@@ -21897,10 +20950,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        7,
-        5
-      ],
+      "usedForParties": [7, 5],
       "vendors": {
         "Otto": 210,
         "Jango": 178
@@ -22094,10 +21144,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 78,
@@ -22109,15 +21156,10 @@
           "price": 255,
           "revenue": 255,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        6,
-        8
-      ],
+      "usedForParties": [6, 8],
       "sellPerKg": 69,
       "vendors": {},
       "search": "european lobster 0-50m fish curry lobster party",
@@ -22164,9 +21206,7 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 80,
@@ -22178,14 +21218,10 @@
           "price": 481,
           "revenue": 481,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 21.5,
       "vendors": {},
       "search": "falcatus hydrothermal vents fish shark party",
@@ -22232,14 +21268,10 @@
           "price": 244,
           "revenue": 244,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 330,
       "vendors": {},
       "search": "fan lobster 50-130m fish lobster party",
@@ -22446,9 +21478,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 84,
@@ -22460,14 +21490,10 @@
           "price": 55,
           "revenue": 55,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 15,
       "vendors": {},
       "search": "fried egg jellyfish 0-50m fish jellyfish party",
@@ -22514,9 +21540,7 @@
           "price": 1705,
           "revenue": 3410,
           "servings": 2,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 90,
@@ -22528,14 +21552,10 @@
           "price": 314,
           "revenue": 314,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 16.470588235294116,
       "vendors": {},
       "search": "frilled shark meat 130-250m fish shark party",
@@ -22606,9 +21626,7 @@
           "price": 1406,
           "revenue": 12654,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 140,
@@ -22644,9 +21662,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 136,
@@ -22670,16 +21686,10 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        7,
-        1,
-        3
-      ],
+      "usedForParties": [7, 1, 3],
       "vendors": {
         "Otto": 190,
         "Jango": 161
@@ -22885,9 +21895,7 @@
           "price": 1154,
           "revenue": 8078,
           "servings": 7,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 92,
@@ -22902,9 +21910,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5
-      ],
+      "usedForParties": [5],
       "sellPerKg": 10,
       "vendors": {},
       "search": "giant trevally meat 50-130m fish cucumber party",
@@ -22999,14 +22005,10 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "goblin shark's fatty meat 130-250m boss shark party",
       "sort": {
@@ -23149,9 +22151,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 117,
@@ -23187,15 +22187,10 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        6,
-        4
-      ],
+      "usedForParties": [6, 4],
       "vendors": {
         "Otto": 450,
         "Jango": 382
@@ -23305,9 +22300,7 @@
           "price": 1387,
           "revenue": 8322,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 99,
@@ -23322,9 +22315,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 13.88888888888889,
       "vendors": {},
       "search": "green humphead parrotfish 0-50m fish curry party",
@@ -23383,9 +22374,7 @@
           "price": 1540,
           "revenue": 3080,
           "servings": 2,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 299,
@@ -23397,9 +22386,7 @@
           "price": 1518,
           "revenue": 3036,
           "servings": 2,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 300,
@@ -23411,16 +22398,10 @@
           "price": 1507,
           "revenue": 3014,
           "servings": 2,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1,
-        2,
-        5
-      ],
+      "usedForParties": [1, 2, 5],
       "sellPerKg": 90,
       "vendors": {},
       "search": "green sea urchin 0-50m fish jellyfish tuna cucumber party",
@@ -23467,14 +22448,10 @@
           "price": 688,
           "revenue": 688,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 15.5,
       "vendors": {},
       "search": "greenland shark meat glacial area fish shark party",
@@ -23655,9 +22632,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 216,
@@ -23669,15 +22644,10 @@
           "price": 1443,
           "revenue": 8658,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        2,
-        8
-      ],
+      "usedForParties": [2, 8],
       "vendors": {
         "Otto": 180,
         "Jango": 153
@@ -23787,14 +22757,10 @@
           "price": 521,
           "revenue": 521,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 18.076923076923077,
       "vendors": {},
       "search": "hammerhead meat 50-130m fish shark party",
@@ -23903,14 +22869,10 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "helicoprion tail 3rd glacial cave boss shark party",
       "sort": {
@@ -24065,9 +23027,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 111,
@@ -24082,9 +23042,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 32,
       "vendors": {},
       "search": "humboldt squid meat 50-130m fish shrimp party",
@@ -24131,9 +23089,7 @@
           "price": 1683,
           "revenue": 1683,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 210,
@@ -24148,9 +23104,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 650,
       "vendors": {},
       "search": "hyalonema glacial seaweed cave sea plant tuna party",
@@ -24197,9 +23151,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 115,
@@ -24214,9 +23166,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 17.454545454545453,
       "vendors": {},
       "search": "ice fish glacial area fish curry party",
@@ -24323,9 +23273,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 217,
@@ -24388,9 +23336,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 70,
       "vendors": {},
       "search": "kajime 0-130m sea plant marlin party",
@@ -24449,9 +23395,7 @@
           "price": 1406,
           "revenue": 9842,
           "servings": 7,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 191,
@@ -24487,9 +23431,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 304,
@@ -24540,10 +23482,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4,
-        8
-      ],
+      "usedForParties": [4, 8],
       "sellPerKg": 60,
       "vendors": {},
       "search": "kelp 50-130m sea plant shark lobster party",
@@ -24590,14 +23529,10 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "klaus's fin 0-50m boss shark party",
       "sort": {
@@ -24900,14 +23835,10 @@
           "price": 129,
           "revenue": 129,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 9.23076923076923,
       "vendors": {},
       "search": "longnose sawshark meat 50-130m fish shark party",
@@ -25128,14 +24059,10 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "vendors": {},
       "search": "lusca neck meat 50-130m boss shark party",
       "sort": {
@@ -25290,14 +24217,10 @@
           "price": 388,
           "revenue": 388,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 23.88888888888889,
       "vendors": {},
       "search": "mako meat 0-50m fish shark party",
@@ -25392,14 +24315,10 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "vendors": {},
       "search": "mantis shrimp meat 0-50m boss shrimp party",
       "sort": {
@@ -25554,9 +24473,7 @@
           "price": 1406,
           "revenue": 12654,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 128,
@@ -25568,14 +24485,10 @@
           "price": 499,
           "revenue": 499,
           "servings": 1,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 30,
       "vendors": {},
       "search": "marlin meat 0-50m fish marlin party",
@@ -25646,9 +24559,7 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 95,
@@ -25684,9 +24595,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 36,
@@ -25698,16 +24607,10 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7,
-        2,
-        4
-      ],
+      "usedForParties": [7, 2, 4],
       "sellPerKg": 70,
       "vendors": {
         "Jango": 70
@@ -25868,9 +24771,7 @@
           "price": 1705,
           "revenue": 3410,
           "servings": 2,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 131,
@@ -25882,14 +24783,10 @@
           "price": 351,
           "revenue": 351,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 13.478260869565217,
       "vendors": {},
       "search": "megamouth shark meat 130-250m fish shark party",
@@ -25960,9 +24857,7 @@
           "price": 1406,
           "revenue": 12654,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 292,
@@ -25974,9 +24869,7 @@
           "price": 1295,
           "revenue": 7770,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 38,
@@ -25988,9 +24881,7 @@
           "price": 650,
           "revenue": 6500,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 140,
@@ -26050,17 +24941,10 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4,
-        1,
-        3,
-        7
-      ],
+      "usedForParties": [4, 1, 3, 7],
       "sellPerKg": 80,
       "vendors": {
         "Jango": 80
@@ -26109,10 +24993,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 134,
@@ -26124,9 +25005,7 @@
           "price": 351,
           "revenue": 2106,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 135,
@@ -26141,10 +25020,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        8
-      ],
+      "usedForParties": [6, 8],
       "sellPerKg": 0,
       "vendors": {},
       "search": "moray eel 0-50m fish curry lobster party",
@@ -26315,9 +25191,7 @@
           "price": 1443,
           "revenue": 8658,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 142,
@@ -26329,14 +25203,10 @@
           "price": 277,
           "revenue": 277,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 375,
       "vendors": {},
       "search": "norway lobster 130-250m fish lobster party",
@@ -26383,9 +25253,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 24,
@@ -26421,9 +25289,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 294,
@@ -26435,10 +25301,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 85,
@@ -26498,9 +25361,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 229,
@@ -26524,9 +25385,7 @@
           "price": 1128,
           "revenue": 10152,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 186,
@@ -26562,9 +25421,7 @@
           "price": 1443,
           "revenue": 8658,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 36,
@@ -26576,9 +25433,7 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 173,
@@ -26590,9 +25445,7 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 140,
@@ -26616,9 +25469,7 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 65,
@@ -26642,9 +25493,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 88,
@@ -26680,9 +25529,7 @@
           "price": 277,
           "revenue": 1939,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 206,
@@ -26694,19 +25541,10 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7,
-        5,
-        4,
-        6,
-        8,
-        2
-      ],
+      "usedForParties": [7, 5, 4, 6, 8, 2],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -26791,9 +25629,7 @@
           "price": 1387,
           "revenue": 8322,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 66,
@@ -26805,9 +25641,7 @@
           "price": 1154,
           "revenue": 3462,
           "servings": 3,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 86,
@@ -26834,10 +25668,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        5
-      ],
+      "usedForParties": [6, 5],
       "vendors": {
         "Otto": 200,
         "Jango": 170
@@ -26947,9 +25778,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 144,
@@ -26964,9 +25793,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 8,
       "vendors": {},
       "search": "ornate wrasse 0-50m fish curry party",
@@ -27369,14 +26196,10 @@
           "price": 700,
           "revenue": 7000,
           "servings": 10,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "vendors": {},
       "search": "phantom jellyfish meat second glacial cave boss jellyfish party",
       "sort": {
@@ -27533,9 +26356,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 157,
@@ -27547,14 +26368,10 @@
           "price": 610,
           "revenue": 610,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 20.37037037037037,
       "vendors": {},
       "search": "porbeagle shark meat glacial area fish shark party",
@@ -27625,9 +26442,7 @@
           "price": 1727,
           "revenue": 3454,
           "servings": 2,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 159,
@@ -27642,9 +26457,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 20,
       "vendors": {},
       "search": "purple sea urchin 0-50m fish marlin party",
@@ -27925,9 +26738,7 @@
           "price": 1480,
           "revenue": 8880,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 162,
@@ -27942,9 +26753,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6
-      ],
+      "usedForParties": [6],
       "sellPerKg": 6.666666666666667,
       "vendors": {},
       "search": "rainbow wrasse 0-50m fish curry party",
@@ -27991,9 +26800,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 164,
@@ -28008,9 +26815,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 12,
       "vendors": {},
       "search": "red bream 130-250m fish shark party",
@@ -28119,14 +26924,10 @@
           "price": 277,
           "revenue": 277,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 750,
       "vendors": {},
       "search": "red-banded lobster 0-50m fish lobster party",
@@ -28235,9 +27036,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 168,
@@ -28252,9 +27051,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 42,
       "vendors": {},
       "search": "rhinochimaeridae meat 130-250m fish shark party",
@@ -28337,9 +27134,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 60,
@@ -28351,9 +27146,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 169,
@@ -28425,9 +27218,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 304,
@@ -28451,9 +27242,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 170,
@@ -28477,9 +27266,7 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 238,
@@ -28518,11 +27305,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2,
-        7,
-        8
-      ],
+      "usedForParties": [2, 7, 8],
       "vendors": {},
       "search": "rice vegetable farm rice tuna shrimp lobster party",
       "sort": {
@@ -28567,9 +27350,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 235,
@@ -28581,9 +27362,7 @@
           "price": 1727,
           "revenue": 3454,
           "servings": 2,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 175,
@@ -28595,14 +27374,10 @@
           "price": 721,
           "revenue": 721,
           "servings": 1,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         }
       ],
-      "usedForParties": [
-        3
-      ],
+      "usedForParties": [3],
       "sellPerKg": 36.111111111111114,
       "vendors": {},
       "search": "sailfish meat shipwreck interior fish marlin party",
@@ -28943,9 +27718,7 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 212,
@@ -28993,15 +27766,10 @@
           "price": 832,
           "revenue": 832,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1,
-        4
-      ],
+      "usedForParties": [1, 4],
       "sellPerKg": 80,
       "vendors": {
         "Jango": 80
@@ -29208,9 +27976,7 @@
           "price": 600,
           "revenue": 6000,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 293,
@@ -29222,9 +27988,7 @@
           "price": 1258,
           "revenue": 11322,
           "servings": 9,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 109,
@@ -29236,9 +28000,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 233,
@@ -29274,9 +28036,7 @@
           "price": 1507,
           "revenue": 3014,
           "servings": 2,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 184,
@@ -29288,9 +28048,7 @@
           "price": 832,
           "revenue": 832,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 185,
@@ -29305,12 +28063,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        2,
-        1,
-        4
-      ],
+      "usedForParties": [8, 2, 1, 4],
       "sellPerKg": 60,
       "vendors": {},
       "search": "sea grape limestone cave sea plant lobster tuna jellyfish shark party",
@@ -29357,9 +28110,7 @@
           "price": 1184,
           "revenue": 1184,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 182,
@@ -29374,9 +28125,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5
-      ],
+      "usedForParties": [5],
       "sellPerKg": 10.8,
       "vendors": {},
       "search": "sea toad 130-250m fish cucumber party",
@@ -29485,9 +28234,7 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 217,
@@ -29523,9 +28270,7 @@
           "price": 1554,
           "revenue": 10878,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 305,
@@ -29549,9 +28294,7 @@
           "price": 1295,
           "revenue": 7770,
           "servings": 6,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 211,
@@ -29566,10 +28309,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        1,
-        4
-      ],
+      "usedForParties": [1, 4],
       "sellPerKg": 50,
       "vendors": {},
       "search": "seaweed 50-130m sea plant jellyfish shark party",
@@ -29676,9 +28416,7 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 33,
@@ -29690,9 +28428,7 @@
           "price": 1332,
           "revenue": 11988,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 109,
@@ -29704,9 +28440,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 107,
@@ -29718,9 +28452,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 170,
@@ -29747,10 +28479,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        2,
-        4
-      ],
+      "usedForParties": [2, 4],
       "sellPerKg": 80,
       "vendors": {
         "Jango": 80
@@ -30119,9 +28848,7 @@
           "price": 710,
           "revenue": 7100,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 40,
@@ -30133,9 +28860,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 211,
@@ -30150,10 +28875,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3,
-        4
-      ],
+      "usedForParties": [3, 4],
       "sellPerKg": 80,
       "vendors": {},
       "search": "southern bull kelp glacial area sea plant marlin shark party",
@@ -30212,9 +28934,7 @@
           "price": 1572,
           "revenue": 14148,
           "servings": 9,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 103,
@@ -30238,9 +28958,7 @@
           "price": 1350,
           "revenue": 13500,
           "servings": 10,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 171,
@@ -30252,9 +28970,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 117,
@@ -30389,11 +29105,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        3,
-        7,
-        4
-      ],
+      "usedForParties": [3, 7, 4],
       "sellPerKg": 60,
       "vendors": {
         "Jango": 60
@@ -30504,9 +29216,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 169,
@@ -30530,9 +29240,7 @@
           "price": 1199,
           "revenue": 1199,
           "servings": 1,
-          "partyNames": [
-            "Cucumber"
-          ]
+          "partyNames": ["Cucumber"]
         },
         {
           "dishId": 207,
@@ -30547,10 +29255,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        6,
-        5
-      ],
+      "usedForParties": [6, 5],
       "sellPerKg": 11.333333333333334,
       "vendors": {},
       "search": "spider crab 130-250m fish curry cucumber party",
@@ -31125,14 +29830,10 @@
           "price": 588,
           "revenue": 588,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 31.176470588235293,
       "vendors": {},
       "search": "thresher shark meat 0-50m fish shark party",
@@ -31179,14 +29880,10 @@
           "price": 185,
           "revenue": 185,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 5.666666666666667,
       "vendors": {},
       "search": "tiger shark meat 50-130m fish shark party",
@@ -31295,9 +29992,7 @@
           "price": 1609,
           "revenue": 9654,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 227,
@@ -31312,9 +30007,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 82.5,
       "vendors": {},
       "search": "tokummia katalepsis hydrothermal vents fish lobster party",
@@ -31409,9 +30102,7 @@
           "price": 1609,
           "revenue": 9654,
           "servings": 6,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 232,
@@ -31423,14 +30114,10 @@
           "price": 499,
           "revenue": 499,
           "servings": 1,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         }
       ],
-      "usedForParties": [
-        8
-      ],
+      "usedForParties": [8],
       "sellPerKg": 112.5,
       "vendors": {},
       "search": "tropical rock lobster 50-130m fish lobster party",
@@ -31525,9 +30212,7 @@
           "price": 1727,
           "revenue": 3454,
           "servings": 2,
-          "partyNames": [
-            "Marlin"
-          ]
+          "partyNames": ["Marlin"]
         },
         {
           "dishId": 234,
@@ -31539,9 +30224,7 @@
           "price": 1716,
           "revenue": 3432,
           "servings": 2,
-          "partyNames": [
-            "Lobster"
-          ]
+          "partyNames": ["Lobster"]
         },
         {
           "dishId": 236,
@@ -31553,9 +30236,7 @@
           "price": 1705,
           "revenue": 3410,
           "servings": 2,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 102,
@@ -31582,11 +30263,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        8,
-        3,
-        4
-      ],
+      "usedForParties": [8, 3, 4],
       "vendors": {
         "Jango": 650
       },
@@ -31633,10 +30310,7 @@
           "price": 1369,
           "revenue": 12321,
           "servings": 9,
-          "partyNames": [
-            "Curry",
-            "Lobster"
-          ]
+          "partyNames": ["Curry", "Lobster"]
         },
         {
           "dishId": 172,
@@ -31648,9 +30322,7 @@
           "price": 1443,
           "revenue": 10101,
           "servings": 7,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 112,
@@ -31662,9 +30334,7 @@
           "price": 1387,
           "revenue": 8322,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         },
         {
           "dishId": 134,
@@ -31676,15 +30346,10 @@
           "price": 351,
           "revenue": 2106,
           "servings": 6,
-          "partyNames": [
-            "Curry"
-          ]
+          "partyNames": ["Curry"]
         }
       ],
-      "usedForParties": [
-        6,
-        8
-      ],
+      "usedForParties": [6, 8],
       "sellPerKg": 50,
       "vendors": {
         "Jango": 50
@@ -31781,9 +30446,7 @@
           "price": 1461,
           "revenue": 10227,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 222,
@@ -31810,9 +30473,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 34.166666666666664,
       "vendors": {},
       "search": "vampire squid glacial passage fish shark party",
@@ -31907,10 +30568,7 @@
           "price": 1572,
           "revenue": 11004,
           "servings": 7,
-          "partyNames": [
-            "Cucumber",
-            "Shrimp"
-          ]
+          "partyNames": ["Cucumber", "Shrimp"]
         },
         {
           "dishId": 239,
@@ -31925,10 +30583,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        5,
-        7
-      ],
+      "usedForParties": [5, 7],
       "sellPerKg": 425,
       "vendors": {},
       "search": "waptia fieldensis hydrothermal vents fish cucumber shrimp party",
@@ -31975,9 +30630,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         },
         {
           "dishId": 221,
@@ -32037,9 +30690,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 65,
@@ -32063,9 +30714,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 155,
@@ -32128,10 +30777,7 @@
           "partyNames": []
         }
       ],
-      "usedForParties": [
-        7,
-        4
-      ],
+      "usedForParties": [7, 4],
       "vendors": {
         "Otto": 190,
         "Jango": 161
@@ -32179,9 +30825,7 @@
           "price": 1554,
           "revenue": 15540,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 171,
@@ -32193,9 +30837,7 @@
           "price": 1480,
           "revenue": 13320,
           "servings": 9,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 241,
@@ -32207,14 +30849,10 @@
           "price": 196,
           "revenue": 196,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 850,
       "vendors": {},
       "search": "white shrimp 0-130m fish shrimp party",
@@ -32261,9 +30899,7 @@
           "price": 832,
           "revenue": 832,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         },
         {
           "dishId": 242,
@@ -32275,14 +30911,10 @@
           "price": 66,
           "revenue": 66,
           "servings": 1,
-          "partyNames": [
-            "Jellyfish"
-          ]
+          "partyNames": ["Jellyfish"]
         }
       ],
-      "usedForParties": [
-        1
-      ],
+      "usedForParties": [1],
       "sellPerKg": 18,
       "vendors": {},
       "search": "white spotted jellyfish 50-130m fish jellyfish party",
@@ -32403,9 +31035,7 @@
           "price": 1480,
           "revenue": 10360,
           "servings": 7,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 132,
@@ -32417,9 +31047,7 @@
           "price": 1387,
           "revenue": 13870,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 36,
@@ -32431,9 +31059,7 @@
           "price": 832,
           "revenue": 8320,
           "servings": 10,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 206,
@@ -32445,9 +31071,7 @@
           "price": 1406,
           "revenue": 1406,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         },
         {
           "dishId": 55,
@@ -32459,14 +31083,10 @@
           "price": 129,
           "revenue": 129,
           "servings": 1,
-          "partyNames": [
-            "Shrimp"
-          ]
+          "partyNames": ["Shrimp"]
         }
       ],
-      "usedForParties": [
-        7
-      ],
+      "usedForParties": [7],
       "sellPerKg": 0,
       "vendors": {},
       "search": "whiteleg shrimp 0-50m fish shrimp party",
@@ -32513,14 +31133,10 @@
           "price": 277,
           "revenue": 1939,
           "servings": 7,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 16,
       "vendors": {},
       "search": "whitetip reefshark head 0-50m fish shark party",
@@ -32567,14 +31183,10 @@
           "price": 88,
           "revenue": 88,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 16,
       "vendors": {},
       "search": "whitetip reefshark meat 0-50m fish shark party",
@@ -32927,9 +31539,7 @@
           "price": 980,
           "revenue": 8820,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 252,
@@ -32941,14 +31551,10 @@
           "price": 270,
           "revenue": 270,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 20,
       "vendors": {},
       "search": "yellowfin tuna akami 0-130m fish tuna party",
@@ -32995,9 +31601,7 @@
           "price": 1128,
           "revenue": 10152,
           "servings": 9,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 253,
@@ -33009,14 +31613,10 @@
           "price": 333,
           "revenue": 333,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "sellPerKg": 25,
       "vendors": {},
       "search": "yellowfin tuna chutoro 0-130m fish tuna party",
@@ -33063,9 +31663,7 @@
           "price": 1683,
           "revenue": 1683,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         },
         {
           "dishId": 254,
@@ -33077,14 +31675,10 @@
           "price": 462,
           "revenue": 462,
           "servings": 1,
-          "partyNames": [
-            "Tuna"
-          ]
+          "partyNames": ["Tuna"]
         }
       ],
-      "usedForParties": [
-        2
-      ],
+      "usedForParties": [2],
       "vendors": {},
       "search": "yellowfin tuna ootoro 0-130m fish tuna party",
       "sort": {
@@ -33129,14 +31723,10 @@
           "price": 399,
           "revenue": 399,
           "servings": 1,
-          "partyNames": [
-            "Shark"
-          ]
+          "partyNames": ["Shark"]
         }
       ],
-      "usedForParties": [
-        4
-      ],
+      "usedForParties": [4],
       "sellPerKg": 20,
       "vendors": {},
       "search": "zebra shark meat 0-50m fish shark party",
@@ -33152,1226 +31742,123 @@
   "facets": {
     "Type": {
       "Fish": [
-        36,
-        92,
-        96,
-        154,
-        189,
-        4,
-        30,
-        42,
-        46,
-        60,
-        61,
-        66,
-        71,
-        75,
-        77,
-        79,
-        105,
-        110,
-        139,
-        162,
-        184,
-        190,
-        202,
-        204,
-        22,
-        47,
-        50,
-        177,
-        211,
-        213,
-        216,
-        2,
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        17,
-        18,
-        19,
-        24,
-        25,
-        27,
-        28,
-        29,
-        31,
-        32,
-        33,
-        34,
-        35,
-        37,
-        38,
-        41,
-        43,
-        44,
-        49,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        64,
-        65,
-        67,
-        68,
-        69,
-        70,
-        74,
-        76,
-        78,
-        80,
-        81,
-        82,
-        83,
-        84,
-        86,
-        87,
-        88,
-        89,
-        90,
-        94,
-        95,
-        97,
-        98,
-        99,
-        101,
-        102,
-        103,
-        106,
-        107,
-        109,
-        115,
-        116,
-        117,
-        118,
-        119,
-        120,
-        121,
-        124,
-        125,
-        126,
-        128,
-        129,
-        130,
-        132,
-        133,
-        134,
-        136,
-        137,
-        138,
-        142,
-        143,
-        144,
-        145,
-        146,
-        147,
-        148,
-        149,
-        151,
-        152,
-        153,
-        155,
-        156,
-        157,
-        159,
-        160,
-        161,
-        163,
-        164,
-        166,
-        167,
-        168,
-        169,
-        170,
-        172,
-        173,
-        174,
-        176,
-        179,
-        181,
-        182,
-        183,
-        185,
-        188,
-        191,
-        192,
-        193,
-        194,
-        195,
-        196,
-        197,
-        198,
-        199,
-        200,
-        201,
-        203,
-        208,
-        209,
-        210,
-        214,
-        215,
-        217,
-        218,
-        219,
-        221,
-        223,
-        224,
-        225,
-        226,
-        227,
-        228
+        36, 92, 96, 154, 189, 4, 30, 42, 46, 60, 61, 66, 71, 75, 77, 79, 105, 110, 139, 162, 184,
+        190, 202, 204, 22, 47, 50, 177, 211, 213, 216, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+        17, 18, 19, 24, 25, 27, 28, 29, 31, 32, 33, 34, 35, 37, 38, 41, 43, 44, 49, 52, 53, 54, 55,
+        56, 57, 58, 59, 64, 65, 67, 68, 69, 70, 74, 76, 78, 80, 81, 82, 83, 84, 86, 87, 88, 89, 90,
+        94, 95, 97, 98, 99, 101, 102, 103, 106, 107, 109, 115, 116, 117, 118, 119, 120, 121, 124,
+        125, 126, 128, 129, 130, 132, 133, 134, 136, 137, 138, 142, 143, 144, 145, 146, 147, 148,
+        149, 151, 152, 153, 155, 156, 157, 159, 160, 161, 163, 164, 166, 167, 168, 169, 170, 172,
+        173, 174, 176, 179, 181, 182, 183, 185, 188, 191, 192, 193, 194, 195, 196, 197, 198, 199,
+        200, 201, 203, 208, 209, 210, 214, 215, 217, 218, 219, 221, 223, 224, 225, 226, 227, 228
       ],
       "Aberration": [
-        46,
-        60,
-        75,
-        110,
-        190,
-        12,
-        13,
-        29,
-        37,
-        41,
-        56,
-        76,
-        80,
-        86,
-        88,
-        90,
-        99,
-        106,
-        126,
-        128,
-        146,
-        149,
-        157,
-        168,
-        172,
-        173,
-        179,
-        181,
-        191,
-        197,
-        203,
-        208,
-        210,
-        219
+        46, 60, 75, 110, 190, 12, 13, 29, 37, 41, 56, 76, 80, 86, 88, 90, 99, 106, 126, 128, 146,
+        149, 157, 168, 172, 173, 179, 181, 191, 197, 203, 208, 210, 219
       ],
-      "Boss": [
-        51,
-        91,
-        104,
-        113,
-        114,
-        122,
-        123,
-        127,
-        150,
-        205,
-        220,
-        222
-      ],
-      "Egg": [
-        72,
-        93
-      ],
-      "Jango": [
-        158,
-        206
-      ],
-      "Procure": [
-        21,
-        23,
-        63,
-        131,
-        135,
-        140,
-        171,
-        180,
-        187,
-        207
-      ],
-      "Rice": [
-        165
-      ],
-      "Sea plant": [
-        1,
-        20,
-        26,
-        39,
-        108,
-        111,
-        112,
-        175,
-        178,
-        186
-      ],
-      "Vegetable": [
-        16,
-        40,
-        45,
-        48,
-        62,
-        73,
-        85,
-        100,
-        141,
-        212
-      ]
+      "Boss": [51, 91, 104, 113, 114, 122, 123, 127, 150, 205, 220, 222],
+      "Egg": [72, 93],
+      "Jango": [158, 206],
+      "Procure": [21, 23, 63, 131, 135, 140, 171, 180, 187, 207],
+      "Rice": [165],
+      "Sea plant": [1, 20, 26, 39, 108, 111, 112, 175, 178, 186],
+      "Vegetable": [16, 40, 45, 48, 62, 73, 85, 100, 141, 212]
     },
     "Source": {
       "130-250m": [
-        36,
-        189,
-        71,
-        139,
-        47,
-        50,
-        51,
-        91,
-        220,
-        28,
-        54,
-        57,
-        81,
-        84,
-        134,
-        144,
-        160,
-        164,
-        170,
-        176,
-        198
+        36, 189, 71, 139, 47, 50, 51, 91, 220, 28, 54, 57, 81, 84, 134, 144, 160, 164, 170, 176, 198
       ],
       "Glacial Area": [
-        92,
-        105,
-        184,
-        2,
-        6,
-        7,
-        8,
-        43,
-        87,
-        97,
-        101,
-        109,
-        138,
-        152,
-        153,
-        193,
-        20,
-        39,
-        186
+        92, 105, 184, 2, 6, 7, 8, 43, 87, 97, 101, 109, 138, 152, 153, 193, 20, 39, 186
       ],
       "0-50m": [
-        96,
-        154,
-        4,
-        30,
-        77,
-        162,
-        216,
-        113,
-        127,
-        205,
-        14,
-        19,
-        25,
-        31,
-        38,
-        44,
-        49,
-        53,
-        55,
-        58,
-        74,
-        82,
-        83,
-        95,
-        115,
-        116,
-        117,
-        119,
-        120,
-        125,
-        129,
-        130,
-        132,
-        136,
-        142,
-        143,
-        155,
-        159,
-        161,
-        163,
-        167,
-        174,
-        182,
-        183,
-        192,
-        194,
-        195,
-        199,
-        201,
-        217,
-        218,
-        223,
-        224,
-        228,
-        1
+        96, 154, 4, 30, 77, 162, 216, 113, 127, 205, 14, 19, 25, 31, 38, 44, 49, 53, 55, 58, 74, 82,
+        83, 95, 115, 116, 117, 119, 120, 125, 129, 130, 132, 136, 142, 143, 155, 159, 161, 163, 167,
+        174, 182, 183, 192, 194, 195, 199, 201, 217, 218, 223, 224, 228, 1
       ],
       "50-130m": [
-        42,
-        61,
-        79,
-        204,
-        22,
-        122,
-        123,
-        10,
-        11,
-        17,
-        18,
-        24,
-        35,
-        52,
-        59,
-        64,
-        65,
-        70,
-        89,
-        94,
-        98,
-        102,
-        103,
-        107,
-        118,
-        124,
-        137,
-        145,
-        188,
-        196,
-        200,
-        214,
-        215,
-        112,
-        178
+        42, 61, 79, 204, 22, 122, 123, 10, 11, 17, 18, 24, 35, 52, 59, 64, 65, 70, 89, 94, 98, 102,
+        103, 107, 118, 124, 137, 145, 188, 196, 200, 214, 215, 112, 178
       ],
-      "Fog Coast": [
-        46,
-        13,
-        29,
-        80,
-        99,
-        106,
-        126,
-        128,
-        168,
-        197,
-        208,
-        210
-      ],
-      "Black Cliff": [
-        60,
-        190,
-        37,
-        76,
-        88,
-        90,
-        173,
-        181,
-        191,
-        203,
-        219
-      ],
-      "Hydrothermal Vents": [
-        66,
-        202,
-        177,
-        211,
-        114,
-        3,
-        5,
-        67,
-        69,
-        78,
-        121,
-        151,
-        156,
-        221
-      ],
-      "Jellyfish Basin": [
-        75,
-        110,
-        12,
-        41,
-        56,
-        86,
-        146,
-        149,
-        157,
-        172,
-        179
-      ],
-      "0-130m": [
-        213,
-        32,
-        33,
-        34,
-        225,
-        226,
-        227,
-        111
-      ],
-      "3rd Glacial Cave": [
-        104,
-        185
-      ],
-      "Second Glacial Cave": [
-        150
-      ],
-      "Divine Tree Control Room": [
-        222,
-        133
-      ],
-      "Vegetable Farm": [
-        72,
-        93,
-        165,
-        16,
-        40,
-        45,
-        48,
-        62,
-        73,
-        85,
-        100,
-        141,
-        212
-      ],
-      "Limestone Cave": [
-        9,
-        175
-      ],
-      "Glacial Passage": [
-        15,
-        27,
-        68,
-        147,
-        148,
-        209
-      ],
-      "Shipwreck Interior": [
-        166,
-        169
-      ],
-      "Jango": [
-        158,
-        206
-      ],
-      "Dispatch & Cooking Pots": [
-        21,
-        23,
-        63,
-        131,
-        135,
-        140,
-        171,
-        180,
-        187,
-        207
-      ],
-      "Glacial Seaweed Cave": [
-        26,
-        108
-      ]
+      "Fog Coast": [46, 13, 29, 80, 99, 106, 126, 128, 168, 197, 208, 210],
+      "Black Cliff": [60, 190, 37, 76, 88, 90, 173, 181, 191, 203, 219],
+      "Hydrothermal Vents": [66, 202, 177, 211, 114, 3, 5, 67, 69, 78, 121, 151, 156, 221],
+      "Jellyfish Basin": [75, 110, 12, 41, 56, 86, 146, 149, 157, 172, 179],
+      "0-130m": [213, 32, 33, 34, 225, 226, 227, 111],
+      "3rd Glacial Cave": [104, 185],
+      "Second Glacial Cave": [150],
+      "Divine Tree Control Room": [222, 133],
+      "Vegetable Farm": [72, 93, 165, 16, 40, 45, 48, 62, 73, 85, 100, 141, 212],
+      "Limestone Cave": [9, 175],
+      "Glacial Passage": [15, 27, 68, 147, 148, 209],
+      "Shipwreck Interior": [166, 169],
+      "Jango": [158, 206],
+      "Dispatch & Cooking Pots": [21, 23, 63, 131, 135, 140, 171, 180, 187, 207],
+      "Glacial Seaweed Cave": [26, 108]
     },
     "Time": {
       "Day": [
-        36,
-        92,
-        96,
-        154,
-        189,
-        4,
-        42,
-        66,
-        71,
-        77,
-        105,
-        139,
-        184,
-        202,
-        204,
-        22,
-        47,
-        50,
-        211,
-        213,
-        216,
-        104,
-        150,
-        2,
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        14,
-        15,
-        17,
-        18,
-        19,
-        27,
-        28,
-        31,
-        32,
-        33,
-        34,
-        35,
-        43,
-        52,
-        53,
-        54,
-        55,
-        57,
-        59,
-        64,
-        67,
-        68,
-        69,
-        70,
-        74,
-        78,
-        81,
-        82,
-        83,
-        84,
-        87,
-        89,
-        94,
-        95,
-        97,
-        98,
-        101,
-        102,
-        103,
-        109,
-        115,
-        116,
-        117,
-        118,
-        121,
-        124,
-        125,
-        129,
-        130,
-        132,
-        133,
-        134,
-        137,
-        138,
-        142,
-        143,
-        144,
-        145,
-        147,
-        148,
-        151,
-        152,
-        153,
-        155,
-        156,
-        159,
-        160,
-        161,
-        163,
-        164,
-        166,
-        167,
-        169,
-        170,
-        174,
-        176,
-        182,
-        183,
-        192,
-        193,
-        194,
-        195,
-        196,
-        198,
-        199,
-        200,
-        201,
-        209,
-        214,
-        215,
-        217,
-        218,
-        221,
-        223,
-        224,
-        225,
-        226,
-        227,
-        1,
-        20,
-        26,
-        39,
-        108,
-        111,
-        112,
-        175,
-        178,
-        186
+        36, 92, 96, 154, 189, 4, 42, 66, 71, 77, 105, 139, 184, 202, 204, 22, 47, 50, 211, 213, 216,
+        104, 150, 2, 3, 5, 6, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 27, 28, 31, 32, 33, 34, 35, 43,
+        52, 53, 54, 55, 57, 59, 64, 67, 68, 69, 70, 74, 78, 81, 82, 83, 84, 87, 89, 94, 95, 97, 98,
+        101, 102, 103, 109, 115, 116, 117, 118, 121, 124, 125, 129, 130, 132, 133, 134, 137, 138,
+        142, 143, 144, 145, 147, 148, 151, 152, 153, 155, 156, 159, 160, 161, 163, 164, 166, 167,
+        169, 170, 174, 176, 182, 183, 192, 193, 194, 195, 196, 198, 199, 200, 201, 209, 214, 215,
+        217, 218, 221, 223, 224, 225, 226, 227, 1, 20, 26, 39, 108, 111, 112, 175, 178, 186
       ],
       "Night": [
-        96,
-        154,
-        30,
-        61,
-        79,
-        162,
-        213,
-        113,
-        122,
-        123,
-        127,
-        205,
-        24,
-        25,
-        38,
-        49,
-        58,
-        65,
-        94,
-        107,
-        118,
-        119,
-        120,
-        136,
-        161,
-        188,
-        192,
-        200,
-        201,
-        217,
-        218,
-        228,
-        1,
-        111,
-        112,
-        175,
-        178
+        96, 154, 30, 61, 79, 162, 213, 113, 122, 123, 127, 205, 24, 25, 38, 49, 58, 65, 94, 107,
+        118, 119, 120, 136, 161, 188, 192, 200, 201, 217, 218, 228, 1, 111, 112, 175, 178
       ],
       "Fog": [
-        96,
-        154,
-        46,
-        60,
-        75,
-        110,
-        190,
-        12,
-        13,
-        29,
-        37,
-        41,
-        56,
-        76,
-        80,
-        86,
-        88,
-        90,
-        99,
-        106,
-        126,
-        128,
-        146,
-        149,
-        157,
-        168,
-        172,
-        173,
-        179,
-        181,
-        191,
-        197,
-        203,
-        208,
-        210,
-        219,
-        1,
-        111,
-        112,
-        175,
+        96, 154, 46, 60, 75, 110, 190, 12, 13, 29, 37, 41, 56, 76, 80, 86, 88, 90, 99, 106, 126,
+        128, 146, 149, 157, 168, 172, 173, 179, 181, 191, 197, 203, 208, 210, 219, 1, 111, 112, 175,
         178
       ]
     },
     "Vendor": {
       "Jango": [
-        72,
-        93,
-        158,
-        206,
-        21,
-        23,
-        63,
-        131,
-        135,
-        140,
-        171,
-        180,
-        187,
-        207,
-        16,
-        45,
-        48,
-        73,
-        85,
-        100,
-        141,
-        212
+        72, 93, 158, 206, 21, 23, 63, 131, 135, 140, 171, 180, 187, 207, 16, 45, 48, 73, 85, 100,
+        141, 212
       ],
-      "Otto": [
-        72,
-        93,
-        16,
-        40,
-        45,
-        48,
-        62,
-        73,
-        85,
-        100,
-        141,
-        212
-      ]
+      "Otto": [72, 93, 16, 40, 45, 48, 62, 73, 85, 100, 141, 212]
     },
     "Catch": {
-      "Gloves": [
-        36,
-        92,
-        96,
-        154,
-        189
-      ],
+      "Gloves": [36, 92, 96, 154, 189],
       "Steel Net": [
-        36,
-        92,
-        189,
-        2,
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        17,
-        18,
-        19,
-        24,
-        25,
-        27,
-        28,
-        31,
-        32,
-        33,
-        34,
-        35,
-        37,
-        38,
-        41,
-        43,
-        44,
-        49,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        59,
-        64,
-        65,
-        67,
-        68,
-        70,
-        74,
-        76,
-        78,
-        80,
-        81,
-        82,
-        83,
-        84,
-        87,
-        88,
-        89,
-        90,
-        94,
-        95,
-        98,
-        99,
-        101,
-        103,
-        106,
-        107,
-        109,
-        115,
-        116,
-        117,
-        118,
-        119,
-        120,
-        121,
-        124,
-        126,
-        128,
-        129,
-        130,
-        132,
-        133,
-        136,
-        137,
-        138,
-        142,
-        143,
-        144,
-        145,
-        146,
-        147,
-        148,
-        149,
-        151,
-        152,
-        155,
-        156,
-        157,
-        159,
-        160,
-        161,
-        163,
-        164,
-        166,
-        167,
-        168,
-        169,
-        170,
-        172,
-        173,
-        174,
-        176,
-        179,
-        181,
-        182,
-        183,
-        185,
-        188,
-        191,
-        192,
-        193,
-        194,
-        195,
-        196,
-        197,
-        198,
-        201,
-        203,
-        208,
-        209,
-        210,
-        214,
-        215,
-        217,
-        218,
-        221,
-        223,
-        224,
-        225,
-        226,
-        227,
+        36, 92, 189, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 24, 25, 27, 28, 31,
+        32, 33, 34, 35, 37, 38, 41, 43, 44, 49, 52, 53, 54, 55, 56, 57, 59, 64, 65, 67, 68, 70, 74,
+        76, 78, 80, 81, 82, 83, 84, 87, 88, 89, 90, 94, 95, 98, 99, 101, 103, 106, 107, 109, 115,
+        116, 117, 118, 119, 120, 121, 124, 126, 128, 129, 130, 132, 133, 136, 137, 138, 142, 143,
+        144, 145, 146, 147, 148, 149, 151, 152, 155, 156, 157, 159, 160, 161, 163, 164, 166, 167,
+        168, 169, 170, 172, 173, 174, 176, 179, 181, 182, 183, 185, 188, 191, 192, 193, 194, 195,
+        196, 197, 198, 201, 203, 208, 209, 210, 214, 215, 217, 218, 221, 223, 224, 225, 226, 227,
         228
       ],
       "Crab Trap": [
-        4,
-        30,
-        42,
-        46,
-        60,
-        61,
-        66,
-        71,
-        75,
-        77,
-        79,
-        105,
-        110,
-        139,
-        162,
-        184,
-        190,
-        202,
-        204
+        4, 30, 42, 46, 60, 61, 66, 71, 75, 77, 79, 105, 110, 139, 162, 184, 190, 202, 204
       ],
-      "Bug Net": [
-        22,
-        47,
-        50,
-        177,
-        211,
-        213,
-        216
-      ],
+      "Bug Net": [22, 47, 50, 177, 211, 213, 216],
       "Harpoon": [
-        2,
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        17,
-        18,
-        19,
-        24,
-        25,
-        27,
-        28,
-        29,
-        31,
-        32,
-        33,
-        34,
-        35,
-        37,
-        38,
-        41,
-        43,
-        44,
-        49,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        64,
-        65,
-        67,
-        68,
-        69,
-        70,
-        74,
-        76,
-        78,
-        80,
-        81,
-        82,
-        83,
-        84,
-        86,
-        87,
-        88,
-        89,
-        90,
-        94,
-        95,
-        97,
-        98,
-        99,
-        101,
-        102,
-        103,
-        106,
-        107,
-        109,
-        115,
-        116,
-        117,
-        118,
-        119,
-        120,
-        121,
-        124,
-        125,
-        126,
-        128,
-        129,
-        130,
-        132,
-        133,
-        134,
-        136,
-        137,
-        138,
-        142,
-        143,
-        144,
-        145,
-        146,
-        147,
-        148,
-        149,
-        151,
-        152,
-        153,
-        155,
-        156,
-        157,
-        159,
-        160,
-        161,
-        163,
-        164,
-        166,
-        167,
-        168,
-        169,
-        170,
-        172,
-        173,
-        174,
-        176,
-        179,
-        181,
-        182,
-        183,
-        185,
-        188,
-        191,
-        192,
-        193,
-        194,
-        195,
-        196,
-        197,
-        198,
-        199,
-        200,
-        201,
-        203,
-        208,
-        209,
-        210,
-        214,
-        215,
-        217,
-        218,
-        219,
-        221,
-        223,
-        224,
-        225,
-        226,
-        227,
-        228
+        2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 24, 25, 27, 28, 29, 31, 32, 33, 34,
+        35, 37, 38, 41, 43, 44, 49, 52, 53, 54, 55, 56, 57, 58, 59, 64, 65, 67, 68, 69, 70, 74, 76,
+        78, 80, 81, 82, 83, 84, 86, 87, 88, 89, 90, 94, 95, 97, 98, 99, 101, 102, 103, 106, 107,
+        109, 115, 116, 117, 118, 119, 120, 121, 124, 125, 126, 128, 129, 130, 132, 133, 134, 136,
+        137, 138, 142, 143, 144, 145, 146, 147, 148, 149, 151, 152, 153, 155, 156, 157, 159, 160,
+        161, 163, 164, 166, 167, 168, 169, 170, 172, 173, 174, 176, 179, 181, 182, 183, 185, 188,
+        191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 203, 208, 209, 210, 214, 215, 217,
+        218, 219, 221, 223, 224, 225, 226, 227, 228
       ],
       "Drone": [
-        25,
-        29,
-        32,
-        33,
-        34,
-        37,
-        58,
-        67,
-        69,
-        84,
-        86,
-        89,
-        95,
-        97,
-        102,
-        107,
-        118,
-        125,
-        129,
-        130,
-        134,
-        138,
-        153,
-        164,
-        166,
-        168,
-        182,
-        191,
-        193,
-        194,
-        199,
-        200,
-        203,
-        217,
-        218,
-        219,
-        221,
-        225,
-        226,
-        227,
-        228
+        25, 29, 32, 33, 34, 37, 58, 67, 69, 84, 86, 89, 95, 97, 102, 107, 118, 125, 129, 130, 134,
+        138, 153, 164, 166, 168, 182, 191, 193, 194, 199, 200, 203, 217, 218, 219, 221, 225, 226,
+        227, 228
       ]
     },
     "Aberration": {},
     "Farm": {
-      "Otto": [
-        72,
-        93,
-        165,
-        16,
-        40,
-        45,
-        48,
-        62,
-        73,
-        85,
-        100,
-        141,
-        212
-      ],
-      "Gumo": [
-        1,
-        20,
-        26,
-        39,
-        108,
-        111,
-        112,
-        175,
-        178,
-        186
-      ]
+      "Otto": [72, 93, 165, 16, 40, 45, 48, 62, 73, 85, 100, 141, 212],
+      "Gumo": [1, 20, 26, 39, 108, 111, 112, 175, 178, 186]
     }
   }
 }

@@ -7,33 +7,33 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export function exportData(args: {
-	dishesBundle: EntityBundle<Dish>;
-	ingredientsBundle: EntityBundle<Ingredient>;
-	partiesBundle: EntityBundle<EnrichedParty>;
-	partyDishesBundle: EntityBundle<PartyDish>;
+  dishesBundle: EntityBundle<Dish>;
+  ingredientsBundle: EntityBundle<Ingredient>;
+  partiesBundle: EntityBundle<EnrichedParty>;
+  partyDishesBundle: EntityBundle<PartyDish>;
 }) {
-	const { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle } = args;
-	const outputDir = join(__dirname, '..', '..', 'src', 'lib', 'data');
+  const { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle } = args;
+  const outputDir = join(__dirname, '..', '..', 'src', 'lib', 'data');
 
-	mkdirSync(outputDir, { recursive: true });
+  mkdirSync(outputDir, { recursive: true });
 
-	const version = 'v1';
+  const version = 'v1';
 
-	// Overwrite v1 files with bundled forms where applicable
-	writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));
-	writeFileSync(
-		join(outputDir, `ingredients.${version}.json`),
-		JSON.stringify(ingredientsBundle, null, 2)
-	);
-	writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(partiesBundle, null, 2));
-	writeFileSync(
-		join(outputDir, `party-dishes.${version}.json`),
-		JSON.stringify(partyDishesBundle, null, 2)
-	);
+  // Overwrite v1 files with bundled forms where applicable
+  writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));
+  writeFileSync(
+    join(outputDir, `ingredients.${version}.json`),
+    JSON.stringify(ingredientsBundle, null, 2)
+  );
+  writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(partiesBundle, null, 2));
+  writeFileSync(
+    join(outputDir, `party-dishes.${version}.json`),
+    JSON.stringify(partyDishesBundle, null, 2)
+  );
 
-	console.log(`${partiesBundle.rows.length}\tParties`);
-	console.log(`${partyDishesBundle.rows.length}\tParty-dishes`);
-	console.log(`${dishesBundle.rows.length}\tDishes`);
-	console.log(`${ingredientsBundle.rows.length}\tIngredients`);
-	console.log(`Data exported to /src/lib/data with version ${version}\n`);
+  console.log(`${partiesBundle.rows.length}\tParties`);
+  console.log(`${partyDishesBundle.rows.length}\tParty-dishes`);
+  console.log(`${dishesBundle.rows.length}\tDishes`);
+  console.log(`${ingredientsBundle.rows.length}\tIngredients`);
+  console.log(`Data exported to /src/lib/data with version ${version}\n`);
 }

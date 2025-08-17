@@ -10,14 +10,14 @@ import parties from '$lib/data/parties.v1.json';
 import partyDishes from '$lib/data/party-dishes.v1.json';
 
 export const load: LayoutServerLoad = async () => {
-	const dishesBundle = dishes as unknown as EntityBundle<Dish>;
-	const ingredientsBundle = ingredients as unknown as EntityBundle<Ingredient>;
-	const partiesBundle = parties as unknown as EntityBundle<EnrichedParty>;
-	const partyDishesBundle = partyDishes as unknown as EntityBundle<PartyDish>;
-	return {
-		dishes: dishesBundle,
-		ingredients: ingredientsBundle,
-		parties: partiesBundle,
-		partyDishes: partyDishesBundle
-	};
+  const dishesBundle = dishes as unknown as EntityBundle<Dish>;
+  const ingredientsBundle = ingredients as unknown as EntityBundle<Ingredient>;
+  const partiesBundle = parties as unknown as EntityBundle<EnrichedParty>;
+  const partyDishesBundle = partyDishes as unknown as EntityBundle<PartyDish>;
+  return {
+    dishes: dishesBundle,
+    ingredients: ingredientsBundle,
+    parties: partiesBundle,
+    partyDishes: partyDishesBundle
+  };
 };

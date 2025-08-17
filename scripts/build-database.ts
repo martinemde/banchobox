@@ -10,17 +10,17 @@ dirname(__filename); // ensure path derivation works if needed in submodules
 
 // Run the build process
 try {
-	const { dishes, ingredients, parties, dishIngredients, dishParties } = loadNormalizedData();
-	const { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle } = enrichData(
-		dishes,
-		ingredients,
-		parties,
-		dishIngredients,
-		dishParties
-	);
-	exportData({ dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle });
-	console.log('Build completed successfully!');
+  const { dishes, ingredients, parties, dishIngredients, dishParties } = loadNormalizedData();
+  const { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle } = enrichData(
+    dishes,
+    ingredients,
+    parties,
+    dishIngredients,
+    dishParties
+  );
+  exportData({ dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle });
+  console.log('Build completed successfully!');
 } catch (error) {
-	console.error('Build failed:', error);
-	process.exit(1);
+  console.error('Build failed:', error);
+  process.exit(1);
 }

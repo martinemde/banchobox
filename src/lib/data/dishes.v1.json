@@ -126,12 +126,8 @@
         }
       ],
       "recipeCost": 32,
-      "partyDishIds": [
-        1
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [1],
+      "partyIds": [7],
       "finalRevenue": 6500,
       "finalProfit": 6468,
       "finalProfitPerServing": 647,
@@ -288,12 +284,8 @@
         }
       ],
       "recipeCost": 20,
-      "partyDishIds": [
-        2
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [2],
+      "partyIds": [4],
       "finalRevenue": 6000,
       "finalProfit": 5980,
       "finalProfitPerServing": 598,
@@ -371,12 +363,8 @@
         }
       ],
       "recipeCost": 21,
-      "partyDishIds": [
-        3
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [3],
+      "partyIds": [4],
       "finalRevenue": 13500,
       "finalProfit": 13479,
       "finalProfitPerServing": 1348,
@@ -444,12 +432,8 @@
         }
       ],
       "recipeCost": 36,
-      "partyDishIds": [
-        4
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [4],
+      "partyIds": [1],
       "finalRevenue": 7000,
       "finalProfit": 6964,
       "finalProfitPerServing": 696,
@@ -527,12 +511,8 @@
         }
       ],
       "recipeCost": 19,
-      "partyDishIds": [
-        5
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [5],
+      "partyIds": [4],
       "finalRevenue": 7100,
       "finalProfit": 7081,
       "finalProfitPerServing": 708,
@@ -827,12 +807,8 @@
         }
       ],
       "recipeCost": 270,
-      "partyDishIds": [
-        6
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [6],
+      "partyIds": [4],
       "finalRevenue": 6500,
       "finalProfit": 6230,
       "finalProfitPerServing": 623,
@@ -1806,12 +1782,8 @@
         }
       ],
       "recipeCost": 91,
-      "partyDishIds": [
-        7
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [7],
+      "partyIds": [6],
       "finalRevenue": 9842,
       "finalProfit": 9751,
       "finalProfitPerServing": 1393,
@@ -1948,12 +1920,8 @@
         }
       ],
       "recipeCost": 70,
-      "partyDishIds": [
-        8
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [8],
+      "partyIds": [6],
       "finalRevenue": 8322,
       "finalProfit": 8252,
       "finalProfitPerServing": 1375,
@@ -2080,12 +2048,8 @@
         }
       ],
       "recipeCost": 39,
-      "partyDishIds": [
-        9
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [9],
+      "partyIds": [6],
       "finalRevenue": 2106,
       "finalProfit": 2067,
       "finalProfitPerServing": 345,
@@ -2291,12 +2255,8 @@
         }
       ],
       "recipeCost": 71,
-      "partyDishIds": [
-        10
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [10],
+      "partyIds": [5],
       "finalRevenue": 3462,
       "finalProfit": 3391,
       "finalProfitPerServing": 1130,
@@ -2354,12 +2314,8 @@
         }
       ],
       "recipeCost": 37,
-      "partyDishIds": [
-        11
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [11],
+      "partyIds": [5],
       "finalRevenue": 1199,
       "finalProfit": 1162,
       "finalProfitPerServing": 1162,
@@ -2437,12 +2393,8 @@
         }
       ],
       "recipeCost": 71,
-      "partyDishIds": [
-        12
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [12],
+      "partyIds": [5],
       "finalRevenue": 3507,
       "finalProfit": 3436,
       "finalProfitPerServing": 1145,
@@ -2500,12 +2452,8 @@
         }
       ],
       "recipeCost": 38,
-      "partyDishIds": [
-        13
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [13],
+      "partyIds": [5],
       "finalRevenue": 1184,
       "finalProfit": 1146,
       "finalProfitPerServing": 1146,
@@ -2583,14 +2531,8 @@
         }
       ],
       "recipeCost": 171,
-      "partyDishIds": [
-        14,
-        15
-      ],
-      "partyIds": [
-        5,
-        7
-      ],
+      "partyDishIds": [14, 15],
+      "partyIds": [5, 7],
       "finalRevenue": 11004,
       "finalProfit": 10833,
       "finalProfitPerServing": 1548,
@@ -2638,12 +2580,8 @@
         }
       ],
       "recipeCost": 60,
-      "partyDishIds": [
-        16
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [16],
+      "partyIds": [5],
       "finalRevenue": 1184,
       "finalProfit": 1124,
       "finalProfitPerServing": 1124,
@@ -2711,12 +2649,8 @@
         }
       ],
       "recipeCost": 120,
-      "partyDishIds": [
-        17
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [17],
+      "partyIds": [5],
       "finalRevenue": 8078,
       "finalProfit": 7958,
       "finalProfitPerServing": 1137,
@@ -4450,12 +4384,8 @@
         }
       ],
       "recipeCost": 391,
-      "partyDishIds": [
-        18
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [18],
+      "partyIds": [2],
       "finalRevenue": 1683,
       "finalProfit": 1292,
       "finalProfitPerServing": 1292,
@@ -4592,12 +4522,8 @@
         }
       ],
       "recipeCost": 93,
-      "partyDishIds": [
-        19
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [19],
+      "partyIds": [1],
       "finalRevenue": 7770,
       "finalProfit": 7677,
       "finalProfitPerServing": 1280,
@@ -4665,12 +4591,8 @@
         }
       ],
       "recipeCost": 161,
-      "partyDishIds": [
-        20
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [20],
+      "partyIds": [8],
       "finalRevenue": 11322,
       "finalProfit": 11161,
       "finalProfitPerServing": 1240,
@@ -4748,14 +4670,8 @@
         }
       ],
       "recipeCost": 91,
-      "partyDishIds": [
-        21,
-        22
-      ],
-      "partyIds": [
-        6,
-        8
-      ],
+      "partyDishIds": [21, 22],
+      "partyIds": [6, 8],
       "finalRevenue": 12321,
       "finalProfit": 12230,
       "finalProfitPerServing": 1359,
@@ -4823,12 +4739,8 @@
         }
       ],
       "recipeCost": 328,
-      "partyDishIds": [
-        23
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [23],
+      "partyIds": [5],
       "finalRevenue": 3080,
       "finalProfit": 2752,
       "finalProfitPerServing": 1376,
@@ -5271,12 +5183,8 @@
         }
       ],
       "recipeCost": 286,
-      "partyDishIds": [
-        24
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [24],
+      "partyIds": [8],
       "finalRevenue": 9654,
       "finalProfit": 9368,
       "finalProfitPerServing": 1561,
@@ -5571,12 +5479,8 @@
         }
       ],
       "recipeCost": 744,
-      "partyDishIds": [
-        25
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [25],
+      "partyIds": [8],
       "finalRevenue": 3432,
       "finalProfit": 2688,
       "finalProfitPerServing": 1344,
@@ -5644,12 +5548,8 @@
         }
       ],
       "recipeCost": 905,
-      "partyDishIds": [
-        26
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [26],
+      "partyIds": [3],
       "finalRevenue": 3454,
       "finalProfit": 2549,
       "finalProfitPerServing": 1275,
@@ -5717,12 +5617,8 @@
         }
       ],
       "recipeCost": 827,
-      "partyDishIds": [
-        27
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [27],
+      "partyIds": [4],
       "finalRevenue": 3410,
       "finalProfit": 2583,
       "finalProfitPerServing": 1292,
@@ -5800,12 +5696,8 @@
         }
       ],
       "recipeCost": 195,
-      "partyDishIds": [
-        28
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [28],
+      "partyIds": [4],
       "finalRevenue": 10878,
       "finalProfit": 10683,
       "finalProfitPerServing": 1526,
@@ -5952,12 +5844,8 @@
         }
       ],
       "recipeCost": 144,
-      "partyDishIds": [
-        29
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [29],
+      "partyIds": [8],
       "finalRevenue": 12321,
       "finalProfit": 12177,
       "finalProfitPerServing": 1353,
@@ -6025,12 +5913,8 @@
         }
       ],
       "recipeCost": 136,
-      "partyDishIds": [
-        30
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [30],
+      "partyIds": [8],
       "finalRevenue": 9842,
       "finalProfit": 9706,
       "finalProfitPerServing": 1387,
@@ -6108,12 +5992,8 @@
         }
       ],
       "recipeCost": 231,
-      "partyDishIds": [
-        31
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [31],
+      "partyIds": [3],
       "finalRevenue": 14148,
       "finalProfit": 13917,
       "finalProfitPerServing": 1546,
@@ -6181,12 +6061,8 @@
         }
       ],
       "recipeCost": 181,
-      "partyDishIds": [
-        32
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [32],
+      "partyIds": [3],
       "finalRevenue": 12654,
       "finalProfit": 12473,
       "finalProfitPerServing": 1386,
@@ -6254,12 +6130,8 @@
         }
       ],
       "recipeCost": 384,
-      "partyDishIds": [
-        33
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [33],
+      "partyIds": [2],
       "finalRevenue": 3036,
       "finalProfit": 2652,
       "finalProfitPerServing": 1326,
@@ -6327,12 +6199,8 @@
         }
       ],
       "recipeCost": 318,
-      "partyDishIds": [
-        34
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [34],
+      "partyIds": [1],
       "finalRevenue": 3014,
       "finalProfit": 2696,
       "finalProfitPerServing": 1348,
@@ -6637,12 +6505,8 @@
         }
       ],
       "recipeCost": 88,
-      "partyDishIds": [
-        35
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [35],
+      "partyIds": [6],
       "finalRevenue": 10101,
       "finalProfit": 10013,
       "finalProfitPerServing": 1430,
@@ -6779,12 +6643,8 @@
         }
       ],
       "recipeCost": 141,
-      "partyDishIds": [
-        36
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [36],
+      "partyIds": [4],
       "finalRevenue": 13320,
       "finalProfit": 13179,
       "finalProfitPerServing": 1464,
@@ -6931,12 +6791,8 @@
         }
       ],
       "recipeCost": 113,
-      "partyDishIds": [
-        37
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [37],
+      "partyIds": [6],
       "finalRevenue": 13320,
       "finalProfit": 13207,
       "finalProfitPerServing": 1467,
@@ -7231,12 +7087,8 @@
         }
       ],
       "recipeCost": 142,
-      "partyDishIds": [
-        38
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [38],
+      "partyIds": [6],
       "finalRevenue": 13320,
       "finalProfit": 13178,
       "finalProfitPerServing": 1464,
@@ -7551,12 +7403,8 @@
         }
       ],
       "recipeCost": 151,
-      "partyDishIds": [
-        39
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [39],
+      "partyIds": [4],
       "finalRevenue": 13320,
       "finalProfit": 13169,
       "finalProfitPerServing": 1463,
@@ -7634,12 +7482,8 @@
         }
       ],
       "recipeCost": 104,
-      "partyDishIds": [
-        40
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [40],
+      "partyIds": [1],
       "finalRevenue": 8880,
       "finalProfit": 8776,
       "finalProfitPerServing": 1463,
@@ -7717,12 +7561,8 @@
         }
       ],
       "recipeCost": 46,
-      "partyDishIds": [
-        41
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [41],
+      "partyIds": [6],
       "finalRevenue": 8880,
       "finalProfit": 8834,
       "finalProfitPerServing": 1472,
@@ -7800,12 +7640,8 @@
         }
       ],
       "recipeCost": 117,
-      "partyDishIds": [
-        42
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [42],
+      "partyIds": [7],
       "finalRevenue": 13320,
       "finalProfit": 13203,
       "finalProfitPerServing": 1467,
@@ -8337,12 +8173,8 @@
         }
       ],
       "recipeCost": 176,
-      "partyDishIds": [
-        43
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [43],
+      "partyIds": [4],
       "finalRevenue": 10360,
       "finalProfit": 10184,
       "finalProfitPerServing": 1455,
@@ -8578,12 +8410,8 @@
         }
       ],
       "recipeCost": 153,
-      "partyDishIds": [
-        44
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [44],
+      "partyIds": [7],
       "finalRevenue": 10360,
       "finalProfit": 10207,
       "finalProfitPerServing": 1458,
@@ -8868,12 +8696,8 @@
         }
       ],
       "recipeCost": 77,
-      "partyDishIds": [
-        45
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [45],
+      "partyIds": [7],
       "finalRevenue": 1406,
       "finalProfit": 1329,
       "finalProfitPerServing": 1329,
@@ -8951,12 +8775,8 @@
         }
       ],
       "recipeCost": 83,
-      "partyDishIds": [
-        46
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [46],
+      "partyIds": [7],
       "finalRevenue": 8320,
       "finalProfit": 8237,
       "finalProfitPerServing": 824,
@@ -9014,12 +8834,8 @@
         }
       ],
       "recipeCost": 46,
-      "partyDishIds": [
-        47
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [47],
+      "partyIds": [4],
       "finalRevenue": 1939,
       "finalProfit": 1893,
       "finalProfitPerServing": 270,
@@ -9097,12 +8913,8 @@
         }
       ],
       "recipeCost": 149,
-      "partyDishIds": [
-        48
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [48],
+      "partyIds": [2],
       "finalRevenue": 11988,
       "finalProfit": 11839,
       "finalProfitPerServing": 1315,
@@ -9180,12 +8992,8 @@
         }
       ],
       "recipeCost": 132,
-      "partyDishIds": [
-        49
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [49],
+      "partyIds": [2],
       "finalRevenue": 8820,
       "finalProfit": 8688,
       "finalProfitPerServing": 965,
@@ -9253,12 +9061,8 @@
         }
       ],
       "recipeCost": 147,
-      "partyDishIds": [
-        50
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [50],
+      "partyIds": [2],
       "finalRevenue": 10152,
       "finalProfit": 10005,
       "finalProfitPerServing": 1112,
@@ -9484,12 +9288,8 @@
         }
       ],
       "recipeCost": 119,
-      "partyDishIds": [
-        51
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [51],
+      "partyIds": [4],
       "finalRevenue": 10227,
       "finalProfit": 10108,
       "finalProfitPerServing": 1444,
@@ -10021,12 +9821,8 @@
         }
       ],
       "recipeCost": 184,
-      "partyDishIds": [
-        52
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [52],
+      "partyIds": [7],
       "finalRevenue": 13870,
       "finalProfit": 13686,
       "finalProfitPerServing": 1369,
@@ -10548,12 +10344,8 @@
         }
       ],
       "recipeCost": 213,
-      "partyDishIds": [
-        53
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [53],
+      "partyIds": [7],
       "finalRevenue": 15540,
       "finalProfit": 15327,
       "finalProfitPerServing": 1533,
@@ -10858,12 +10650,8 @@
         }
       ],
       "recipeCost": 148,
-      "partyDishIds": [
-        54
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [54],
+      "partyIds": [2],
       "finalRevenue": 10227,
       "finalProfit": 10079,
       "finalProfitPerServing": 1440,
@@ -10931,12 +10719,8 @@
         }
       ],
       "recipeCost": 88,
-      "partyDishIds": [
-        55
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [55],
+      "partyIds": [8],
       "finalRevenue": 8658,
       "finalProfit": 8570,
       "finalProfitPerServing": 1428,
@@ -11083,12 +10867,8 @@
         }
       ],
       "recipeCost": 20,
-      "partyDishIds": [
-        56
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [56],
+      "partyIds": [1],
       "finalRevenue": 832,
       "finalProfit": 812,
       "finalProfitPerServing": 812,
@@ -11136,12 +10916,8 @@
         }
       ],
       "recipeCost": 43,
-      "partyDishIds": [
-        57
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [57],
+      "partyIds": [4],
       "finalRevenue": 388,
       "finalProfit": 345,
       "finalProfitPerServing": 345,
@@ -11189,12 +10965,8 @@
         }
       ],
       "recipeCost": 42,
-      "partyDishIds": [
-        58
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [58],
+      "partyIds": [4],
       "finalRevenue": 399,
       "finalProfit": 357,
       "finalProfitPerServing": 357,
@@ -11242,12 +11014,8 @@
         }
       ],
       "recipeCost": 27,
-      "partyDishIds": [
-        59
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [59],
+      "partyIds": [2],
       "finalRevenue": 296,
       "finalProfit": 269,
       "finalProfitPerServing": 269,
@@ -11295,12 +11063,8 @@
         }
       ],
       "recipeCost": 32,
-      "partyDishIds": [
-        60
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [60],
+      "partyIds": [2],
       "finalRevenue": 351,
       "finalProfit": 319,
       "finalProfitPerServing": 319,
@@ -11348,12 +11112,8 @@
         }
       ],
       "recipeCost": 45,
-      "partyDishIds": [
-        61
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [61],
+      "partyIds": [2],
       "finalRevenue": 499,
       "finalProfit": 454,
       "finalProfitPerServing": 454,
@@ -11401,12 +11161,8 @@
         }
       ],
       "recipeCost": 24,
-      "partyDishIds": [
-        62
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [62],
+      "partyIds": [2],
       "finalRevenue": 270,
       "finalProfit": 246,
       "finalProfitPerServing": 246,
@@ -11454,12 +11210,8 @@
         }
       ],
       "recipeCost": 30,
-      "partyDishIds": [
-        63
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [63],
+      "partyIds": [2],
       "finalRevenue": 333,
       "finalProfit": 303,
       "finalProfitPerServing": 303,
@@ -11507,12 +11259,8 @@
         }
       ],
       "recipeCost": 42,
-      "partyDishIds": [
-        64
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [64],
+      "partyIds": [2],
       "finalRevenue": 462,
       "finalProfit": 420,
       "finalProfitPerServing": 420,
@@ -11658,12 +11406,8 @@
         }
       ],
       "recipeCost": 43,
-      "partyDishIds": [
-        65
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [65],
+      "partyIds": [8],
       "finalRevenue": 477,
       "finalProfit": 434,
       "finalProfitPerServing": 434,
@@ -12054,12 +11798,8 @@
         }
       ],
       "recipeCost": 5,
-      "partyDishIds": [
-        66
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [66],
+      "partyIds": [1],
       "finalRevenue": 55,
       "finalProfit": 50,
       "finalProfitPerServing": 50,
@@ -12303,12 +12043,8 @@
         }
       ],
       "recipeCost": 20,
-      "partyDishIds": [
-        67
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [67],
+      "partyIds": [4],
       "finalRevenue": 222,
       "finalProfit": 202,
       "finalProfitPerServing": 202,
@@ -12405,12 +12141,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        68
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [68],
+      "partyIds": [1],
       "finalRevenue": 185,
       "finalProfit": 168,
       "finalProfitPerServing": 168,
@@ -12458,12 +12190,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        69
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [69],
+      "partyIds": [8],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -12658,12 +12386,8 @@
         }
       ],
       "recipeCost": 18,
-      "partyDishIds": [
-        70
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [70],
+      "partyIds": [1],
       "finalRevenue": 203,
       "finalProfit": 185,
       "finalProfitPerServing": 185,
@@ -12711,12 +12435,8 @@
         }
       ],
       "recipeCost": 22,
-      "partyDishIds": [
-        71
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [71],
+      "partyIds": [8],
       "finalRevenue": 244,
       "finalProfit": 222,
       "finalProfitPerServing": 222,
@@ -13107,12 +12827,8 @@
         }
       ],
       "recipeCost": 14,
-      "partyDishIds": [
-        72
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [72],
+      "partyIds": [1],
       "finalRevenue": 166,
       "finalProfit": 152,
       "finalProfitPerServing": 152,
@@ -13209,12 +12925,8 @@
         }
       ],
       "recipeCost": 11,
-      "partyDishIds": [
-        73
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [73],
+      "partyIds": [7],
       "finalRevenue": 129,
       "finalProfit": 118,
       "finalProfitPerServing": 118,
@@ -13262,12 +12974,8 @@
         }
       ],
       "recipeCost": 25,
-      "partyDishIds": [
-        74
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [74],
+      "partyIds": [4],
       "finalRevenue": 277,
       "finalProfit": 252,
       "finalProfitPerServing": 252,
@@ -13315,12 +13023,8 @@
         }
       ],
       "recipeCost": 22,
-      "partyDishIds": [
-        75
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [75],
+      "partyIds": [4],
       "finalRevenue": 240,
       "finalProfit": 218,
       "finalProfitPerServing": 218,
@@ -13417,12 +13121,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        76
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [76],
+      "partyIds": [8],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -13813,12 +13513,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        77
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [77],
+      "partyIds": [8],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -13915,12 +13611,8 @@
         }
       ],
       "recipeCost": 23,
-      "partyDishIds": [
-        78
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [78],
+      "partyIds": [8],
       "finalRevenue": 255,
       "finalProfit": 232,
       "finalProfitPerServing": 232,
@@ -13968,12 +13660,8 @@
         }
       ],
       "recipeCost": 43,
-      "partyDishIds": [
-        79
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [79],
+      "partyIds": [4],
       "finalRevenue": 481,
       "finalProfit": 438,
       "finalProfitPerServing": 438,
@@ -14021,12 +13709,8 @@
         }
       ],
       "recipeCost": 22,
-      "partyDishIds": [
-        80
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [80],
+      "partyIds": [8],
       "finalRevenue": 244,
       "finalProfit": 222,
       "finalProfitPerServing": 222,
@@ -14172,12 +13856,8 @@
         }
       ],
       "recipeCost": 5,
-      "partyDishIds": [
-        81
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [81],
+      "partyIds": [1],
       "finalRevenue": 55,
       "finalProfit": 50,
       "finalProfitPerServing": 50,
@@ -14225,12 +13905,8 @@
         }
       ],
       "recipeCost": 28,
-      "partyDishIds": [
-        82
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [82],
+      "partyIds": [4],
       "finalRevenue": 314,
       "finalProfit": 286,
       "finalProfitPerServing": 286,
@@ -14523,12 +14199,8 @@
         }
       ],
       "recipeCost": 62,
-      "partyDishIds": [
-        83
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [83],
+      "partyIds": [4],
       "finalRevenue": 688,
       "finalProfit": 626,
       "finalProfitPerServing": 626,
@@ -14968,12 +14640,8 @@
         }
       ],
       "recipeCost": 12,
-      "partyDishIds": [
-        84
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [84],
+      "partyIds": [4],
       "finalRevenue": 129,
       "finalProfit": 117,
       "finalProfitPerServing": 117,
@@ -15217,12 +14885,8 @@
         }
       ],
       "recipeCost": 45,
-      "partyDishIds": [
-        85
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [85],
+      "partyIds": [3],
       "finalRevenue": 499,
       "finalProfit": 454,
       "finalProfitPerServing": 454,
@@ -15368,12 +15032,8 @@
         }
       ],
       "recipeCost": 31,
-      "partyDishIds": [
-        86
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [86],
+      "partyIds": [4],
       "finalRevenue": 351,
       "finalProfit": 320,
       "finalProfitPerServing": 320,
@@ -15606,12 +15266,8 @@
         }
       ],
       "recipeCost": 25,
-      "partyDishIds": [
-        87
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [87],
+      "partyIds": [8],
       "finalRevenue": 277,
       "finalProfit": 252,
       "finalProfitPerServing": 252,
@@ -16051,12 +15707,8 @@
         }
       ],
       "recipeCost": 55,
-      "partyDishIds": [
-        88
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [88],
+      "partyIds": [4],
       "finalRevenue": 610,
       "finalProfit": 555,
       "finalProfitPerServing": 555,
@@ -16300,12 +15952,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        89
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [89],
+      "partyIds": [7],
       "finalRevenue": 185,
       "finalProfit": 168,
       "finalProfitPerServing": 168,
@@ -16451,12 +16099,8 @@
         }
       ],
       "recipeCost": 25,
-      "partyDishIds": [
-        90
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [90],
+      "partyIds": [8],
       "finalRevenue": 277,
       "finalProfit": 252,
       "finalProfitPerServing": 252,
@@ -16602,12 +16246,8 @@
         }
       ],
       "recipeCost": 65,
-      "partyDishIds": [
-        91
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [91],
+      "partyIds": [3],
       "finalRevenue": 721,
       "finalProfit": 656,
       "finalProfitPerServing": 656,
@@ -17165,12 +16805,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        92
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [92],
+      "partyIds": [4],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -17659,12 +17295,8 @@
         }
       ],
       "recipeCost": 53,
-      "partyDishIds": [
-        93
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [93],
+      "partyIds": [4],
       "finalRevenue": 588,
       "finalProfit": 535,
       "finalProfitPerServing": 535,
@@ -17712,12 +17344,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        94
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [94],
+      "partyIds": [4],
       "finalRevenue": 185,
       "finalProfit": 168,
       "finalProfitPerServing": 168,
@@ -17863,12 +17491,8 @@
         }
       ],
       "recipeCost": 45,
-      "partyDishIds": [
-        95
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [95],
+      "partyIds": [8],
       "finalRevenue": 499,
       "finalProfit": 454,
       "finalProfitPerServing": 454,
@@ -18014,12 +17638,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        96
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [96],
+      "partyIds": [7],
       "finalRevenue": 196,
       "finalProfit": 179,
       "finalProfitPerServing": 179,
@@ -18067,12 +17687,8 @@
         }
       ],
       "recipeCost": 6,
-      "partyDishIds": [
-        97
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [97],
+      "partyIds": [1],
       "finalRevenue": 66,
       "finalProfit": 60,
       "finalProfitPerServing": 60,
@@ -18169,12 +17785,8 @@
         }
       ],
       "recipeCost": 8,
-      "partyDishIds": [
-        98
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [98],
+      "partyIds": [4],
       "finalRevenue": 88,
       "finalProfit": 80,
       "finalProfitPerServing": 80,
@@ -18528,12 +18140,8 @@
         }
       ],
       "recipeCost": 43,
-      "partyDishIds": [
-        65
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [65],
+      "partyIds": [8],
       "finalRevenue": 477,
       "finalProfit": 434,
       "finalProfitPerServing": 434,
@@ -18945,12 +18553,8 @@
         }
       ],
       "recipeCost": 91,
-      "partyDishIds": [
-        7
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [7],
+      "partyIds": [6],
       "finalRevenue": 9842,
       "finalProfit": 9751,
       "finalProfitPerServing": 1393,
@@ -19145,12 +18749,8 @@
         }
       ],
       "recipeCost": 5,
-      "partyDishIds": [
-        66
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [66],
+      "partyIds": [1],
       "finalRevenue": 55,
       "finalProfit": 50,
       "finalProfitPerServing": 50,
@@ -19611,12 +19211,8 @@
         }
       ],
       "recipeCost": 20,
-      "partyDishIds": [
-        67
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [67],
+      "partyIds": [4],
       "finalRevenue": 222,
       "finalProfit": 202,
       "finalProfitPerServing": 202,
@@ -19861,12 +19457,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        68
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [68],
+      "partyIds": [1],
       "finalRevenue": 185,
       "finalProfit": 168,
       "finalProfitPerServing": 168,
@@ -19914,12 +19506,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        69
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [69],
+      "partyIds": [8],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -20016,12 +19604,8 @@
         }
       ],
       "recipeCost": 27,
-      "partyDishIds": [
-        59
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [59],
+      "partyIds": [2],
       "finalRevenue": 296,
       "finalProfit": 269,
       "finalProfitPerServing": 269,
@@ -20069,12 +19653,8 @@
         }
       ],
       "recipeCost": 32,
-      "partyDishIds": [
-        60
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [60],
+      "partyIds": [2],
       "finalRevenue": 351,
       "finalProfit": 319,
       "finalProfitPerServing": 319,
@@ -20122,12 +19702,8 @@
         }
       ],
       "recipeCost": 45,
-      "partyDishIds": [
-        61
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [61],
+      "partyIds": [2],
       "finalRevenue": 499,
       "finalProfit": 454,
       "finalProfitPerServing": 454,
@@ -20205,12 +19781,8 @@
         }
       ],
       "recipeCost": 149,
-      "partyDishIds": [
-        48
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [48],
+      "partyIds": [2],
       "finalRevenue": 11988,
       "finalProfit": 11839,
       "finalProfitPerServing": 1315,
@@ -20386,12 +19958,8 @@
         }
       ],
       "recipeCost": 83,
-      "partyDishIds": [
-        46
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [46],
+      "partyIds": [7],
       "finalRevenue": 8320,
       "finalProfit": 8237,
       "finalProfitPerServing": 824,
@@ -20538,12 +20106,8 @@
         }
       ],
       "recipeCost": 32,
-      "partyDishIds": [
-        1
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [1],
+      "partyIds": [7],
       "finalRevenue": 6500,
       "finalProfit": 6468,
       "finalProfitPerServing": 647,
@@ -20611,12 +20175,8 @@
         }
       ],
       "recipeCost": 176,
-      "partyDishIds": [
-        43
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [43],
+      "partyIds": [4],
       "finalRevenue": 10360,
       "finalProfit": 10184,
       "finalProfitPerServing": 1455,
@@ -20694,12 +20254,8 @@
         }
       ],
       "recipeCost": 231,
-      "partyDishIds": [
-        31
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [31],
+      "partyIds": [3],
       "finalRevenue": 14148,
       "finalProfit": 13917,
       "finalProfitPerServing": 1546,
@@ -20806,12 +20362,8 @@
         }
       ],
       "recipeCost": 18,
-      "partyDishIds": [
-        70
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [70],
+      "partyIds": [1],
       "finalRevenue": 203,
       "finalProfit": 185,
       "finalProfitPerServing": 185,
@@ -20859,12 +20411,8 @@
         }
       ],
       "recipeCost": 22,
-      "partyDishIds": [
-        71
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [71],
+      "partyIds": [8],
       "finalRevenue": 244,
       "finalProfit": 222,
       "finalProfitPerServing": 222,
@@ -21334,12 +20882,8 @@
         }
       ],
       "recipeCost": 14,
-      "partyDishIds": [
-        72
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [72],
+      "partyIds": [1],
       "finalRevenue": 166,
       "finalProfit": 152,
       "finalProfitPerServing": 152,
@@ -21515,12 +21059,8 @@
         }
       ],
       "recipeCost": 11,
-      "partyDishIds": [
-        73
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [73],
+      "partyIds": [7],
       "finalRevenue": 129,
       "finalProfit": 118,
       "finalProfitPerServing": 118,
@@ -21568,12 +21108,8 @@
         }
       ],
       "recipeCost": 25,
-      "partyDishIds": [
-        74
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [74],
+      "partyIds": [4],
       "finalRevenue": 277,
       "finalProfit": 252,
       "finalProfitPerServing": 252,
@@ -21621,12 +21157,8 @@
         }
       ],
       "recipeCost": 22,
-      "partyDishIds": [
-        75
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [75],
+      "partyIds": [4],
       "finalRevenue": 240,
       "finalProfit": 218,
       "finalProfitPerServing": 218,
@@ -21743,12 +21275,8 @@
         }
       ],
       "recipeCost": 141,
-      "partyDishIds": [
-        36
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [36],
+      "partyIds": [4],
       "finalRevenue": 13320,
       "finalProfit": 13179,
       "finalProfitPerServing": 1464,
@@ -21816,12 +21344,8 @@
         }
       ],
       "recipeCost": 144,
-      "partyDishIds": [
-        29
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [29],
+      "partyIds": [8],
       "finalRevenue": 12321,
       "finalProfit": 12177,
       "finalProfitPerServing": 1353,
@@ -21869,12 +21393,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        76
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [76],
+      "partyIds": [8],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -22001,12 +21521,8 @@
         }
       ],
       "recipeCost": 119,
-      "partyDishIds": [
-        51
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [51],
+      "partyIds": [4],
       "finalRevenue": 10227,
       "finalProfit": 10108,
       "finalProfitPerServing": 1444,
@@ -22084,12 +21600,8 @@
         }
       ],
       "recipeCost": 153,
-      "partyDishIds": [
-        44
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [44],
+      "partyIds": [7],
       "finalRevenue": 10360,
       "finalProfit": 10207,
       "finalProfitPerServing": 1458,
@@ -22246,12 +21758,8 @@
         }
       ],
       "recipeCost": 71,
-      "partyDishIds": [
-        10
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [10],
+      "partyIds": [5],
       "finalRevenue": 3462,
       "finalProfit": 3391,
       "finalProfitPerServing": 1130,
@@ -22820,12 +22328,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        77
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [77],
+      "partyIds": [8],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -22922,12 +22426,8 @@
         }
       ],
       "recipeCost": 23,
-      "partyDishIds": [
-        78
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [78],
+      "partyIds": [8],
       "finalRevenue": 255,
       "finalProfit": 232,
       "finalProfitPerServing": 232,
@@ -23005,12 +22505,8 @@
         }
       ],
       "recipeCost": 195,
-      "partyDishIds": [
-        28
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [28],
+      "partyIds": [4],
       "finalRevenue": 10878,
       "finalProfit": 10683,
       "finalProfitPerServing": 1526,
@@ -23058,12 +22554,8 @@
         }
       ],
       "recipeCost": 43,
-      "partyDishIds": [
-        79
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [79],
+      "partyIds": [4],
       "finalRevenue": 481,
       "finalProfit": 438,
       "finalProfitPerServing": 438,
@@ -23111,12 +22603,8 @@
         }
       ],
       "recipeCost": 22,
-      "partyDishIds": [
-        80
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [80],
+      "partyIds": [8],
       "finalRevenue": 244,
       "finalProfit": 222,
       "finalProfitPerServing": 222,
@@ -23262,12 +22750,8 @@
         }
       ],
       "recipeCost": 5,
-      "partyDishIds": [
-        81
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [81],
+      "partyIds": [1],
       "finalRevenue": 55,
       "finalProfit": 50,
       "finalProfitPerServing": 50,
@@ -23700,12 +23184,8 @@
         }
       ],
       "recipeCost": 28,
-      "partyDishIds": [
-        82
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [82],
+      "partyIds": [4],
       "finalRevenue": 314,
       "finalProfit": 286,
       "finalProfitPerServing": 286,
@@ -23881,12 +23361,8 @@
         }
       ],
       "recipeCost": 20,
-      "partyDishIds": [
-        2
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [2],
+      "partyIds": [4],
       "finalRevenue": 6000,
       "finalProfit": 5980,
       "finalProfitPerServing": 598,
@@ -24121,12 +23597,8 @@
         }
       ],
       "recipeCost": 37,
-      "partyDishIds": [
-        11
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [11],
+      "partyIds": [5],
       "finalRevenue": 1199,
       "finalProfit": 1162,
       "finalProfitPerServing": 1162,
@@ -24194,12 +23666,8 @@
         }
       ],
       "recipeCost": 113,
-      "partyDishIds": [
-        37
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [37],
+      "partyIds": [6],
       "finalRevenue": 13320,
       "finalProfit": 13207,
       "finalProfitPerServing": 1467,
@@ -24296,12 +23764,8 @@
         }
       ],
       "recipeCost": 62,
-      "partyDishIds": [
-        83
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [83],
+      "partyIds": [4],
       "finalRevenue": 688,
       "finalProfit": 626,
       "finalProfitPerServing": 626,
@@ -24753,12 +24217,8 @@
         }
       ],
       "recipeCost": 132,
-      "partyDishIds": [
-        49
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [49],
+      "partyIds": [2],
       "finalRevenue": 8820,
       "finalProfit": 8688,
       "finalProfitPerServing": 965,
@@ -24885,12 +24345,8 @@
         }
       ],
       "recipeCost": 148,
-      "partyDishIds": [
-        54
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [54],
+      "partyIds": [2],
       "finalRevenue": 10227,
       "finalProfit": 10079,
       "finalProfitPerServing": 1440,
@@ -24968,12 +24424,8 @@
         }
       ],
       "recipeCost": 213,
-      "partyDishIds": [
-        53
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [53],
+      "partyIds": [7],
       "finalRevenue": 15540,
       "finalProfit": 15327,
       "finalProfitPerServing": 1533,
@@ -25090,12 +24542,8 @@
         }
       ],
       "recipeCost": 70,
-      "partyDishIds": [
-        8
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [8],
+      "partyIds": [6],
       "finalRevenue": 8322,
       "finalProfit": 8252,
       "finalProfitPerServing": 1375,
@@ -25163,12 +24611,8 @@
         }
       ],
       "recipeCost": 391,
-      "partyDishIds": [
-        18
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [18],
+      "partyIds": [2],
       "finalRevenue": 1683,
       "finalProfit": 1292,
       "finalProfitPerServing": 1292,
@@ -25236,12 +24680,8 @@
         }
       ],
       "recipeCost": 142,
-      "partyDishIds": [
-        38
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [38],
+      "partyIds": [6],
       "finalRevenue": 13320,
       "finalProfit": 13178,
       "finalProfitPerServing": 1464,
@@ -25486,12 +24926,8 @@
         }
       ],
       "recipeCost": 286,
-      "partyDishIds": [
-        24
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [24],
+      "partyIds": [8],
       "finalRevenue": 9654,
       "finalProfit": 9368,
       "finalProfitPerServing": 1561,
@@ -25588,12 +25024,8 @@
         }
       ],
       "recipeCost": 12,
-      "partyDishIds": [
-        84
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [84],
+      "partyIds": [4],
       "finalRevenue": 129,
       "finalProfit": 117,
       "finalProfitPerServing": 117,
@@ -25769,12 +25201,8 @@
         }
       ],
       "recipeCost": 21,
-      "partyDishIds": [
-        3
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [3],
+      "partyIds": [4],
       "finalRevenue": 13500,
       "finalProfit": 13479,
       "finalProfitPerServing": 1348,
@@ -26009,12 +25437,8 @@
         }
       ],
       "recipeCost": 181,
-      "partyDishIds": [
-        32
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [32],
+      "partyIds": [3],
       "finalRevenue": 12654,
       "finalProfit": 12473,
       "finalProfitPerServing": 1386,
@@ -26062,12 +25486,8 @@
         }
       ],
       "recipeCost": 45,
-      "partyDishIds": [
-        85
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [85],
+      "partyIds": [3],
       "finalRevenue": 499,
       "finalProfit": 454,
       "finalProfitPerServing": 454,
@@ -26213,12 +25633,8 @@
         }
       ],
       "recipeCost": 31,
-      "partyDishIds": [
-        86
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [86],
+      "partyIds": [4],
       "finalRevenue": 351,
       "finalProfit": 320,
       "finalProfitPerServing": 320,
@@ -26296,12 +25712,8 @@
         }
       ],
       "recipeCost": 184,
-      "partyDishIds": [
-        52
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [52],
+      "partyIds": [7],
       "finalRevenue": 13870,
       "finalProfit": 13686,
       "finalProfitPerServing": 1369,
@@ -26438,12 +25850,8 @@
         }
       ],
       "recipeCost": 39,
-      "partyDishIds": [
-        9
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [9],
+      "partyIds": [6],
       "finalRevenue": 2106,
       "finalProfit": 2067,
       "finalProfitPerServing": 345,
@@ -26913,12 +26321,8 @@
         }
       ],
       "recipeCost": 25,
-      "partyDishIds": [
-        87
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [87],
+      "partyIds": [8],
       "finalRevenue": 277,
       "finalProfit": 252,
       "finalProfitPerServing": 252,
@@ -27428,12 +26832,8 @@
         }
       ],
       "recipeCost": 36,
-      "partyDishIds": [
-        4
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [4],
+      "partyIds": [1],
       "finalRevenue": 7000,
       "finalProfit": 6964,
       "finalProfitPerServing": 696,
@@ -27511,12 +26911,8 @@
         }
       ],
       "recipeCost": 71,
-      "partyDishIds": [
-        12
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [12],
+      "partyIds": [5],
       "finalRevenue": 3507,
       "finalProfit": 3436,
       "finalProfitPerServing": 1145,
@@ -27820,12 +27216,8 @@
         }
       ],
       "recipeCost": 55,
-      "partyDishIds": [
-        88
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [88],
+      "partyIds": [4],
       "finalRevenue": 610,
       "finalProfit": 555,
       "finalProfitPerServing": 555,
@@ -28148,12 +27540,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        89
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [89],
+      "partyIds": [7],
       "finalRevenue": 185,
       "finalProfit": 168,
       "finalProfitPerServing": 168,
@@ -28299,12 +27687,8 @@
         }
       ],
       "recipeCost": 25,
-      "partyDishIds": [
-        90
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [90],
+      "partyIds": [8],
       "finalRevenue": 277,
       "finalProfit": 252,
       "finalProfitPerServing": 252,
@@ -28618,12 +28002,8 @@
         }
       ],
       "recipeCost": 117,
-      "partyDishIds": [
-        42
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [42],
+      "partyIds": [7],
       "finalRevenue": 13320,
       "finalProfit": 13203,
       "finalProfitPerServing": 1467,
@@ -28691,12 +28071,8 @@
         }
       ],
       "recipeCost": 88,
-      "partyDishIds": [
-        35
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [35],
+      "partyIds": [6],
       "finalRevenue": 10101,
       "finalProfit": 10013,
       "finalProfitPerServing": 1430,
@@ -28774,12 +28150,8 @@
         }
       ],
       "recipeCost": 19,
-      "partyDishIds": [
-        5
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [5],
+      "partyIds": [4],
       "finalRevenue": 7100,
       "finalProfit": 7081,
       "finalProfitPerServing": 708,
@@ -28906,12 +28278,8 @@
         }
       ],
       "recipeCost": 65,
-      "partyDishIds": [
-        91
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [91],
+      "partyIds": [3],
       "finalRevenue": 721,
       "finalProfit": 656,
       "finalProfitPerServing": 656,
@@ -29224,12 +28592,8 @@
         }
       ],
       "recipeCost": 38,
-      "partyDishIds": [
-        13
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [13],
+      "partyIds": [5],
       "finalRevenue": 1184,
       "finalProfit": 1146,
       "finalProfitPerServing": 1146,
@@ -29395,12 +28759,8 @@
         }
       ],
       "recipeCost": 20,
-      "partyDishIds": [
-        56
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [56],
+      "partyIds": [1],
       "finalRevenue": 832,
       "finalProfit": 812,
       "finalProfitPerServing": 812,
@@ -29734,12 +29094,8 @@
         }
       ],
       "recipeCost": 104,
-      "partyDishIds": [
-        40
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [40],
+      "partyIds": [1],
       "finalRevenue": 8880,
       "finalProfit": 8776,
       "finalProfitPerServing": 1463,
@@ -29945,14 +29301,8 @@
         }
       ],
       "recipeCost": 171,
-      "partyDishIds": [
-        14,
-        15
-      ],
-      "partyIds": [
-        5,
-        7
-      ],
+      "partyDishIds": [14, 15],
+      "partyIds": [5, 7],
       "finalRevenue": 11004,
       "finalProfit": 10833,
       "finalProfitPerServing": 1548,
@@ -30099,12 +29449,8 @@
         }
       ],
       "recipeCost": 151,
-      "partyDishIds": [
-        39
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [39],
+      "partyIds": [4],
       "finalRevenue": 13320,
       "finalProfit": 13169,
       "finalProfitPerServing": 1463,
@@ -30201,12 +29547,8 @@
         }
       ],
       "recipeCost": 43,
-      "partyDishIds": [
-        57
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [57],
+      "partyIds": [4],
       "finalRevenue": 388,
       "finalProfit": 345,
       "finalProfitPerServing": 345,
@@ -30254,12 +29596,8 @@
         }
       ],
       "recipeCost": 60,
-      "partyDishIds": [
-        16
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [16],
+      "partyIds": [5],
       "finalRevenue": 1184,
       "finalProfit": 1124,
       "finalProfitPerServing": 1124,
@@ -30494,12 +29832,8 @@
         }
       ],
       "recipeCost": 47,
-      "partyDishIds": [
-        92
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [92],
+      "partyIds": [4],
       "finalRevenue": 521,
       "finalProfit": 474,
       "finalProfitPerServing": 474,
@@ -30803,12 +30137,8 @@
         }
       ],
       "recipeCost": 77,
-      "partyDishIds": [
-        45
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [45],
+      "partyIds": [7],
       "finalRevenue": 1406,
       "finalProfit": 1329,
       "finalProfitPerServing": 1329,
@@ -30974,12 +30304,8 @@
         }
       ],
       "recipeCost": 136,
-      "partyDishIds": [
-        30
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [30],
+      "partyIds": [8],
       "finalRevenue": 9842,
       "finalProfit": 9706,
       "finalProfitPerServing": 1387,
@@ -31451,12 +30777,8 @@
         }
       ],
       "recipeCost": 88,
-      "partyDishIds": [
-        55
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [55],
+      "partyIds": [8],
       "finalRevenue": 8658,
       "finalProfit": 8570,
       "finalProfitPerServing": 1428,
@@ -31947,12 +31269,8 @@
         }
       ],
       "recipeCost": 53,
-      "partyDishIds": [
-        93
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [93],
+      "partyIds": [4],
       "finalRevenue": 588,
       "finalProfit": 535,
       "finalProfitPerServing": 535,
@@ -32000,12 +31318,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        94
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [94],
+      "partyIds": [4],
       "finalRevenue": 185,
       "finalProfit": 168,
       "finalProfitPerServing": 168,
@@ -32319,12 +31633,8 @@
         }
       ],
       "recipeCost": 120,
-      "partyDishIds": [
-        17
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [17],
+      "partyIds": [5],
       "finalRevenue": 8078,
       "finalProfit": 7958,
       "finalProfitPerServing": 1137,
@@ -32451,12 +31761,8 @@
         }
       ],
       "recipeCost": 45,
-      "partyDishIds": [
-        95
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [95],
+      "partyIds": [8],
       "finalRevenue": 499,
       "finalProfit": 454,
       "finalProfitPerServing": 454,
@@ -32593,12 +31899,8 @@
         }
       ],
       "recipeCost": 744,
-      "partyDishIds": [
-        25
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [25],
+      "partyIds": [8],
       "finalRevenue": 3432,
       "finalProfit": 2688,
       "finalProfitPerServing": 1344,
@@ -32666,12 +31968,8 @@
         }
       ],
       "recipeCost": 905,
-      "partyDishIds": [
-        26
-      ],
-      "partyIds": [
-        3
-      ],
+      "partyDishIds": [26],
+      "partyIds": [3],
       "finalRevenue": 3454,
       "finalProfit": 2549,
       "finalProfitPerServing": 1275,
@@ -32739,12 +32037,8 @@
         }
       ],
       "recipeCost": 827,
-      "partyDishIds": [
-        27
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [27],
+      "partyIds": [4],
       "finalRevenue": 3410,
       "finalProfit": 2583,
       "finalProfitPerServing": 1292,
@@ -32969,12 +32263,8 @@
         }
       ],
       "recipeCost": 270,
-      "partyDishIds": [
-        6
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [6],
+      "partyIds": [4],
       "finalRevenue": 6500,
       "finalProfit": 6230,
       "finalProfitPerServing": 623,
@@ -33022,12 +32312,8 @@
         }
       ],
       "recipeCost": 17,
-      "partyDishIds": [
-        96
-      ],
-      "partyIds": [
-        7
-      ],
+      "partyDishIds": [96],
+      "partyIds": [7],
       "finalRevenue": 196,
       "finalProfit": 179,
       "finalProfitPerServing": 179,
@@ -33075,12 +32361,8 @@
         }
       ],
       "recipeCost": 6,
-      "partyDishIds": [
-        97
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [97],
+      "partyIds": [1],
       "finalRevenue": 66,
       "finalProfit": 60,
       "finalProfitPerServing": 60,
@@ -33246,12 +32528,8 @@
         }
       ],
       "recipeCost": 8,
-      "partyDishIds": [
-        98
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [98],
+      "partyIds": [4],
       "finalRevenue": 88,
       "finalProfit": 80,
       "finalProfitPerServing": 80,
@@ -33309,12 +32587,8 @@
         }
       ],
       "recipeCost": 46,
-      "partyDishIds": [
-        47
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [47],
+      "partyIds": [4],
       "finalRevenue": 1939,
       "finalProfit": 1893,
       "finalProfitPerServing": 270,
@@ -33392,12 +32666,8 @@
         }
       ],
       "recipeCost": 46,
-      "partyDishIds": [
-        41
-      ],
-      "partyIds": [
-        6
-      ],
+      "partyDishIds": [41],
+      "partyIds": [6],
       "finalRevenue": 8880,
       "finalProfit": 8834,
       "finalProfitPerServing": 1472,
@@ -33651,12 +32921,8 @@
         }
       ],
       "recipeCost": 24,
-      "partyDishIds": [
-        62
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [62],
+      "partyIds": [2],
       "finalRevenue": 270,
       "finalProfit": 246,
       "finalProfitPerServing": 246,
@@ -33704,12 +32970,8 @@
         }
       ],
       "recipeCost": 30,
-      "partyDishIds": [
-        63
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [63],
+      "partyIds": [2],
       "finalRevenue": 333,
       "finalProfit": 303,
       "finalProfitPerServing": 303,
@@ -33757,12 +33019,8 @@
         }
       ],
       "recipeCost": 42,
-      "partyDishIds": [
-        64
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [64],
+      "partyIds": [2],
       "finalRevenue": 462,
       "finalProfit": 420,
       "finalProfitPerServing": 420,
@@ -33830,12 +33088,8 @@
         }
       ],
       "recipeCost": 147,
-      "partyDishIds": [
-        50
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [50],
+      "partyIds": [2],
       "finalRevenue": 10152,
       "finalProfit": 10005,
       "finalProfitPerServing": 1112,
@@ -33932,12 +33186,8 @@
         }
       ],
       "recipeCost": 42,
-      "partyDishIds": [
-        58
-      ],
-      "partyIds": [
-        4
-      ],
+      "partyDishIds": [58],
+      "partyIds": [4],
       "finalRevenue": 399,
       "finalProfit": 357,
       "finalProfitPerServing": 357,
@@ -35671,12 +34921,8 @@
         }
       ],
       "recipeCost": 93,
-      "partyDishIds": [
-        19
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [19],
+      "partyIds": [1],
       "finalRevenue": 7770,
       "finalProfit": 7677,
       "finalProfitPerServing": 1280,
@@ -35744,12 +34990,8 @@
         }
       ],
       "recipeCost": 161,
-      "partyDishIds": [
-        20
-      ],
-      "partyIds": [
-        8
-      ],
+      "partyDishIds": [20],
+      "partyIds": [8],
       "finalRevenue": 11322,
       "finalProfit": 11161,
       "finalProfitPerServing": 1240,
@@ -35827,14 +35069,8 @@
         }
       ],
       "recipeCost": 91,
-      "partyDishIds": [
-        21,
-        22
-      ],
-      "partyIds": [
-        6,
-        8
-      ],
+      "partyDishIds": [21, 22],
+      "partyIds": [6, 8],
       "finalRevenue": 12321,
       "finalProfit": 12230,
       "finalProfitPerServing": 1359,
@@ -36208,12 +35444,8 @@
         }
       ],
       "recipeCost": 384,
-      "partyDishIds": [
-        33
-      ],
-      "partyIds": [
-        2
-      ],
+      "partyDishIds": [33],
+      "partyIds": [2],
       "finalRevenue": 3036,
       "finalProfit": 2652,
       "finalProfitPerServing": 1326,
@@ -36281,12 +35513,8 @@
         }
       ],
       "recipeCost": 318,
-      "partyDishIds": [
-        34
-      ],
-      "partyIds": [
-        1
-      ],
+      "partyDishIds": [34],
+      "partyIds": [1],
       "finalRevenue": 3014,
       "finalProfit": 2696,
       "finalProfitPerServing": 1348,
@@ -36433,12 +35661,8 @@
         }
       ],
       "recipeCost": 328,
-      "partyDishIds": [
-        23
-      ],
-      "partyIds": [
-        5
-      ],
+      "partyDishIds": [23],
+      "partyIds": [5],
       "finalRevenue": 3080,
       "finalProfit": 2752,
       "finalProfitPerServing": 1376,
@@ -36690,1603 +35914,296 @@
   "facets": {
     "DLC": {
       "Base": [
-        24,
-        38,
-        48,
-        93,
-        123,
-        151,
-        173,
-        211,
-        212,
-        217,
-        240,
-        249,
-        256,
-        1,
-        41,
-        179,
-        190,
-        72,
-        95,
-        140,
-        169,
-        18,
-        185,
-        214,
-        233,
-        11,
-        21,
-        112,
-        188,
-        134,
-        220,
-        243,
-        66,
-        97,
-        152,
-        181,
-        192,
-        197,
-        230,
-        113,
-        210,
-        85,
-        102,
-        103,
-        118,
-        133,
-        158,
-        204,
-        234,
-        235,
-        236,
-        79,
-        153,
-        60,
-        209,
-        40,
-        127,
-        65,
-        172,
-        170,
-        59,
-        70,
-        98,
-        124,
-        138,
-        114,
-        74,
-        194,
-        189,
-        247,
-        171,
-        222,
-        229,
-        117,
-        17,
-        193,
-        86,
-        39,
-        174,
-        186,
-        64,
-        198,
-        213,
-        88,
-        206,
-        36,
-        246,
-        33,
-        107,
-        255,
-        53,
-        63,
-        149,
-        155,
-        200,
-        25,
-        87,
-        89,
-        132,
-        221,
-        228,
-        238,
-        5,
-        7,
-        104,
-        110,
-        136,
-        147,
-        37,
-        109,
-        216,
-        231,
-        184,
-        196,
-        257,
-        30,
-        31,
-        32,
-        252,
-        253,
-        254,
-        2,
-        3,
-        4,
-        6,
-        8,
-        9,
-        10,
-        12,
-        13,
-        14,
-        15,
-        16,
-        19,
-        20,
-        22,
-        23,
-        26,
-        27,
-        28,
-        29,
-        34,
-        35,
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        49,
-        50,
-        51,
-        52,
-        54,
-        55,
-        56,
-        57,
-        58,
-        61,
-        62,
-        67,
-        68,
-        69,
-        71,
-        73,
-        75,
-        76,
-        77,
-        78,
-        80,
-        81,
-        82,
-        83,
-        84,
-        90,
-        91,
-        92,
-        94,
-        96,
-        99,
-        100,
-        101,
-        105,
-        106,
-        108,
-        111,
-        115,
-        116,
-        119,
-        120,
-        121,
-        122,
-        125,
-        126,
-        128,
-        129,
-        130,
-        131,
-        135,
-        137,
-        139,
-        141,
-        142,
-        143,
-        144,
-        145,
-        146,
-        148,
-        150,
-        154,
-        156,
-        157,
-        159,
-        160,
-        161,
-        162,
-        163,
-        164,
-        165,
-        166,
-        167,
-        168,
-        175,
-        176,
-        177,
-        178,
-        180,
-        182,
-        183,
-        187,
-        191,
-        195,
-        199,
-        201,
-        202,
-        203,
-        205,
-        207,
-        208,
-        215,
-        218,
-        219,
-        223,
-        224,
-        225,
-        226,
-        227,
-        232,
-        237,
-        239,
-        241,
-        242,
-        244,
-        245,
-        248,
-        250,
-        251
+        24, 38, 48, 93, 123, 151, 173, 211, 212, 217, 240, 249, 256, 1, 41, 179, 190, 72, 95, 140,
+        169, 18, 185, 214, 233, 11, 21, 112, 188, 134, 220, 243, 66, 97, 152, 181, 192, 197, 230,
+        113, 210, 85, 102, 103, 118, 133, 158, 204, 234, 235, 236, 79, 153, 60, 209, 40, 127, 65,
+        172, 170, 59, 70, 98, 124, 138, 114, 74, 194, 189, 247, 171, 222, 229, 117, 17, 193, 86, 39,
+        174, 186, 64, 198, 213, 88, 206, 36, 246, 33, 107, 255, 53, 63, 149, 155, 200, 25, 87, 89,
+        132, 221, 228, 238, 5, 7, 104, 110, 136, 147, 37, 109, 216, 231, 184, 196, 257, 30, 31, 32,
+        252, 253, 254, 2, 3, 4, 6, 8, 9, 10, 12, 13, 14, 15, 16, 19, 20, 22, 23, 26, 27, 28, 29, 34,
+        35, 42, 43, 44, 45, 46, 47, 49, 50, 51, 52, 54, 55, 56, 57, 58, 61, 62, 67, 68, 69, 71, 73,
+        75, 76, 77, 78, 80, 81, 82, 83, 84, 90, 91, 92, 94, 96, 99, 100, 101, 105, 106, 108, 111,
+        115, 116, 119, 120, 121, 122, 125, 126, 128, 129, 130, 131, 135, 137, 139, 141, 142, 143,
+        144, 145, 146, 148, 150, 154, 156, 157, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168,
+        175, 176, 177, 178, 180, 182, 183, 187, 191, 195, 199, 201, 202, 203, 205, 207, 208, 215,
+        218, 219, 223, 224, 225, 226, 227, 232, 237, 239, 241, 242, 244, 245, 248, 250, 251
       ],
       "Dredge DLC": [
-        258,
-        259,
-        260,
-        261,
-        262,
-        263,
-        264,
-        265,
-        266,
-        267,
-        268,
-        269,
-        270,
-        271,
-        272,
-        273,
-        274,
-        275,
-        276,
-        277,
-        278,
-        279,
-        280,
-        281,
-        282,
-        283,
-        284,
-        285,
-        286,
-        287,
-        288,
-        289,
-        290,
-        291
+        258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275,
+        276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291
       ],
-      "Godzilla DLC": [
-        292,
-        293,
-        294
-      ],
-      "mxmtoon": [
-        302,
-        299,
-        300,
-        301
-      ],
-      "Potion Craft": [
-        303,
-        304,
-        305
-      ],
-      "Ichiban DLC": [
-        296,
-        295,
-        298,
-        297
-      ]
+      "Godzilla DLC": [292, 293, 294],
+      "mxmtoon": [302, 299, 300, 301],
+      "Potion Craft": [303, 304, 305],
+      "Ichiban DLC": [296, 295, 298, 297]
     },
     "Unlock": {
-      "Boss": [
-        24,
-        38,
-        48,
-        93,
-        123,
-        151,
-        173,
-        211,
-        212,
-        217,
-        240,
-        249,
-        256
-      ],
-      "Cooksta Bronze Rank": [
-        1,
-        41,
-        179,
-        190
-      ],
-      "Cooksta Diamond Rank": [
-        72,
-        95,
-        140,
-        169
-      ],
-      "Cooksta Gold Rank": [
-        18,
-        185,
-        214,
-        233
-      ],
-      "Cooksta Platinum Rank": [
-        11,
-        21,
-        112,
-        188
-      ],
-      "Cooksta Silver Rank": [
-        134,
-        220,
-        243
-      ],
-      "Cucumber Party": [
-        66,
-        97,
-        152,
-        181,
-        192,
-        197,
-        230
-      ],
+      "Boss": [24, 38, 48, 93, 123, 151, 173, 211, 212, 217, 240, 249, 256],
+      "Cooksta Bronze Rank": [1, 41, 179, 190],
+      "Cooksta Diamond Rank": [72, 95, 140, 169],
+      "Cooksta Gold Rank": [18, 185, 214, 233],
+      "Cooksta Platinum Rank": [11, 21, 112, 188],
+      "Cooksta Silver Rank": [134, 220, 243],
+      "Cucumber Party": [66, 97, 152, 181, 192, 197, 230],
       "Dredge DLC": [
-        258,
-        259,
-        260,
-        261,
-        262,
-        263,
-        264,
-        265,
-        266,
-        267,
-        268,
-        269,
-        270,
-        271,
-        272,
-        273,
-        274,
-        275,
-        276,
-        277,
-        278,
-        279,
-        280,
-        281,
-        282,
-        283,
-        284,
-        285,
-        286,
-        287,
-        288,
-        289,
-        290,
-        291
+        258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275,
+        276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291
       ],
-      "Glacial Seaweed Cave": [
-        113,
-        210
-      ],
-      "Godzilla DLC": [
-        292,
-        293,
-        294
-      ],
-      "Jango Shop": [
-        302,
-        303,
-        304,
-        85,
-        102,
-        103,
-        118,
-        133,
-        158,
-        204,
-        234,
-        235,
-        236
-      ],
-      "Kronosaurus": [
-        79,
-        153
-      ],
-      "Lobster Party": [
-        60,
-        209
-      ],
-      "Marlin Party": [
-        40,
-        127
-      ],
-      "mxmtoon Collab": [
-        299,
-        300,
-        301
-      ],
-      "Potion Craft Collab": [
-        305
-      ],
+      "Glacial Seaweed Cave": [113, 210],
+      "Godzilla DLC": [292, 293, 294],
+      "Jango Shop": [302, 303, 304, 85, 102, 103, 118, 133, 158, 204, 234, 235, 236],
+      "Kronosaurus": [79, 153],
+      "Lobster Party": [60, 209],
+      "Marlin Party": [40, 127],
+      "mxmtoon Collab": [299, 300, 301],
+      "Potion Craft Collab": [305],
       "Staff Unlock": [
-        65,
-        172,
-        170,
-        59,
-        70,
-        98,
-        296,
-        124,
-        138,
-        114,
-        74,
-        295,
-        298,
-        194,
-        189,
-        247,
-        171,
-        222,
-        229,
-        117,
-        17,
-        193,
-        86,
-        39,
-        174,
-        186,
-        64,
-        198,
-        213,
-        88,
-        206,
-        36
+        65, 172, 170, 59, 70, 98, 296, 124, 138, 114, 74, 295, 298, 194, 189, 247, 171, 222, 229,
+        117, 17, 193, 86, 39, 174, 186, 64, 198, 213, 88, 206, 36
       ],
-      "Story": [
-        246
-      ],
-      "Tuna Party": [
-        33,
-        107,
-        255
-      ],
-      "VIP Bartender": [
-        297
-      ],
-      "VIP British Chef": [
-        53,
-        63,
-        149,
-        155,
-        200
-      ],
-      "VIP Chinese Chef": [
-        25,
-        87,
-        89,
-        132,
-        221,
-        228
-      ],
-      "VIP DJ Sammy": [
-        238
-      ],
-      "VIP Italian Chef": [
-        5,
-        7,
-        104,
-        110,
-        136,
-        147
-      ],
-      "VIP Jango": [
-        37,
-        109,
-        216
-      ],
-      "VIP Michael Bang": [
-        231
-      ],
-      "VIP Vincent": [
-        184
-      ]
+      "Story": [246],
+      "Tuna Party": [33, 107, 255],
+      "VIP Bartender": [297],
+      "VIP British Chef": [53, 63, 149, 155, 200],
+      "VIP Chinese Chef": [25, 87, 89, 132, 221, 228],
+      "VIP DJ Sammy": [238],
+      "VIP Italian Chef": [5, 7, 104, 110, 136, 147],
+      "VIP Jango": [37, 109, 216],
+      "VIP Michael Bang": [231],
+      "VIP Vincent": [184]
     },
     "Ingredient": {
-      "Lusca Tentacle": [
-        24
-      ],
-      "Salt": [
-        24,
-        48,
-        93,
-        212,
-        249,
-        179,
-        70,
-        74,
-        222,
-        86,
-        184
-      ],
+      "Lusca Tentacle": [24],
+      "Salt": [24, 48, 93, 212, 249, 179, 70, 74, 222, 86, 184],
       "Olive Oil": [
-        24,
-        93,
-        173,
-        140,
-        66,
-        294,
-        85,
-        301,
-        65,
-        74,
-        194,
-        229,
-        86,
-        186,
-        64,
-        88,
-        206,
-        36,
-        246,
-        255,
-        132,
-        221,
-        5,
-        104,
-        216
-      ],
-      "Mantis Shrimp Meat": [
-        38
-      ],
-      "Agar": [
-        38,
-        151,
-        211,
-        212,
-        1,
-        213,
-        149
-      ],
-      "Eggplant": [
-        38,
-        140,
-        152,
-        295,
-        64,
-        238
-      ],
-      "Miso": [
-        38,
-        48,
-        140,
-        18,
-        188,
-        292,
-        79,
-        127,
-        138,
-        295
-      ],
-      "Clione Queen Tentacle": [
-        48
-      ],
-      "Kelp": [
-        48,
-        220,
-        243,
-        304,
-        209,
-        193,
-        63,
-        37,
-        191
-      ],
-      "Sea Grape": [
-        93,
-        185,
-        233,
-        293,
-        300,
-        117,
-        186,
-        109,
-        184
-      ],
-      "Goblin Shark's Fatty Meat": [
-        93
-      ],
-      "Lusca Neck Meat": [
-        123
-      ],
-      "Sesame Seed": [
-        123,
-        18,
-        170,
-        33,
-        107,
-        25,
-        109
-      ],
-      "Soy Sauce": [
-        123,
-        1,
-        41,
-        233,
-        243,
-        210,
-        303,
-        103,
-        204,
-        40,
-        298,
-        171,
-        229,
-        117,
-        198,
-        213
-      ],
-      "Mayonnaise": [
-        123,
-        72,
-        95,
-        124,
-        36,
-        107,
-        25
-      ],
-      "Buckbean": [
-        151,
-        302,
-        79,
-        138
-      ],
-      "Phantom Jellyfish Meat": [
-        151
-      ],
-      "Seaweed": [
-        173,
-        211,
-        217,
-        292,
-        79,
-        305,
-        298,
-        193
-      ],
-      "Helicoprion Tail": [
-        173
-      ],
-      "Southern Bull Kelp": [
-        173,
-        211,
-        153,
-        40
-      ],
-      "Kronosaurus Tongue": [
-        211
-      ],
-      "Black Vinegar": [
-        212,
-        217,
-        190,
-        21,
-        152,
-        192,
-        39,
-        88,
-        149,
-        191
-      ],
-      "Wolf Eel Tail Meat": [
-        212
-      ],
-      "Truck Hermit Crab Legs": [
-        217
-      ],
-      "Kajime": [
-        217,
-        190,
-        102,
-        103,
-        40,
-        301,
-        198
-      ],
-      "Grade A Egg": [
-        240,
-        153,
-        98,
-        117,
-        193,
-        87,
-        228
-      ],
-      "Klaus's Fin": [
-        240
-      ],
-      "Yawie's Inner Flesh": [
-        249
-      ],
-      "Anomalocaris": [
-        256
-      ],
-      "Yellowback Fusilier": [
-        41,
-        251
-      ],
-      "Redtoothed Triggerfish": [
-        179,
-        167
-      ],
-      "Dumbo Octopus": [
-        72,
-        71
-      ],
-      "Wheat": [
-        72,
-        188,
-        153,
-        65,
-        124,
-        194,
-        53,
-        155,
-        200,
-        25,
-        132,
-        221,
-        110
-      ],
-      "Great Barracuda": [
-        95,
-        96
-      ],
-      "Onion": [
-        95,
-        112,
-        66,
-        229,
-        86,
-        155,
-        5
-      ],
-      "Cherry Tomato": [
-        95,
-        74,
-        186,
-        255,
-        89,
-        228,
-        7,
-        104
-      ],
-      "Garlic": [
-        140,
-        127,
-        189,
-        174,
-        7,
-        110,
-        136,
-        147
-      ],
-      "Bean": [
-        169,
-        114,
-        247,
-        155,
-        89
-      ],
-      "Rice": [
-        169,
-        185,
-        214,
-        233,
-        304,
-        60,
-        170,
-        171,
-        117,
-        17,
-        206,
-        33,
-        107,
-        87,
-        238,
-        7,
-        136,
-        231
-      ],
-      "Spider Crab": [
-        169,
-        97,
-        98,
-        207
-      ],
-      "Bigeye Scad": [
-        18,
-        19
-      ],
-      "Starry Puffer": [
-        214,
-        158,
-        213
-      ],
-      "Coral Trout": [
-        233,
-        231,
-        58
-      ],
-      "Atlantic Bonito": [
-        11,
-        12
-      ],
-      "Carrot": [
-        11,
-        21,
-        66,
-        152,
-        296,
-        138,
-        295,
-        238,
-        104
-      ],
-      "Curry Block": [
-        11,
-        98,
-        114,
-        247
-      ],
-      "Mediterranean Parrotfish": [
-        21,
-        129
-      ],
-      "Green Humphead Parrotfish": [
-        112,
-        99
-      ],
-      "Turmeric": [
-        112,
-        134,
-        294,
-        172
-      ],
-      "Long-Snouted Seahorse": [
-        188,
-        186,
-        88,
-        187
-      ],
-      "Moray Eel": [
-        134,
-        294,
-        135
-      ],
-      "Striped Red Mullet": [
-        220,
-        219
-      ],
-      "White Trevally": [
-        243,
-        229,
-        244
-      ],
-      "Cucumber": [
-        66,
-        97,
-        152,
-        181,
-        192,
-        197,
-        230,
-        302
-      ],
-      "Sea Toad": [
-        181,
-        182
-      ],
-      "Black Coral": [
-        192,
-        172,
-        189
-      ],
-      "Waptia Fieldensis": [
-        192,
-        239
-      ],
-      "Bigeye Trevally": [
-        230,
-        20
-      ],
-      "Giant Trevally Meat": [
-        230,
-        92
-      ],
-      "Aurora Jellyfish": [
-        258
-      ],
-      "Barbed Eel": [
-        259
-      ],
-      "Bloodskin Shark": [
-        260
-      ],
-      "Bony Wreckfish": [
-        261
-      ],
-      "Bursting Anglerfish": [
-        262
-      ],
-      "Cerebral Crab": [
-        263
-      ],
-      "Concertina Barracuda": [
-        264
-      ],
-      "Cortex Decorator": [
-        265
-      ],
-      "Entangled Crab": [
-        266
-      ],
-      "Enthralled Stonefish": [
-        267
-      ],
-      "Fanged Cod": [
-        268
-      ],
-      "Gazing Shark": [
-        269
-      ],
-      "Gelatinous Stonefish": [
-        270
-      ],
-      "Gnashing Perch": [
-        271
-      ],
-      "Grotesque Mackerel": [
-        272
-      ],
-      "Host Eel": [
-        273
-      ],
-      "Imperious Lobster": [
-        274
-      ],
-      "Malignant Pincer": [
-        275
-      ],
-      "Many Eyed Mackerel": [
-        276
-      ],
-      "Parhelion Jellyfish": [
-        277
-      ],
-      "Perished Loosejaw": [
-        278
-      ],
-      "Radiant Squid": [
-        279
-      ],
-      "Sallow Sailfish": [
-        280
-      ],
-      "Savage Barracuda": [
-        281
-      ],
-      "Scouring Bass": [
-        282
-      ],
-      "Seizing Snailfish": [
-        283
-      ],
-      "Shattered Wreckfish": [
-        284
-      ],
-      "Splintered Crab": [
-        285
-      ],
-      "Sprouting Eel": [
-        286
-      ],
-      "Three-Headed Cod": [
-        287
-      ],
-      "Translucent Sturgeon": [
-        288
-      ],
-      "Tusked Grouper": [
-        289
-      ],
-      "Voltaic Grouper": [
-        290
-      ],
-      "Withered Ray": [
-        291
-      ],
-      "Bluefin Tuna Ootoro": [
-        113,
-        32
-      ],
-      "Yellowfin Tuna Ootoro": [
-        113,
-        254
-      ],
-      "Hyalonema": [
-        113,
-        210
-      ],
-      "Atlantic Anglerfish": [
-        210,
-        10
-      ],
-      "Comb Jelly": [
-        292,
-        52
-      ],
-      "Barreleye": [
-        293,
-        63,
-        16
-      ],
-      "California Spiny Lobster": [
-        293,
-        43
-      ],
-      "European Lobster": [
-        294,
-        78
-      ],
-      "Green Sea Urchin": [
-        302,
-        299,
-        300,
-        301
-      ],
-      "Snub-nosed Spiny Eel": [
-        303,
-        103,
-        203
-      ],
-      "Rainbow Cap": [
-        303,
-        304,
-        305
-      ],
-      "Pacific Fanfish": [
-        304,
-        145
-      ],
-      "Habanero": [
-        85,
-        103,
-        109,
-        216
-      ],
-      "Fangtooth": [
-        85,
-        82
-      ],
-      "Bladderwrack": [
-        85,
-        133,
-        158,
-        60
-      ],
-      "Antarctic Octopus": [
-        102,
-        5,
-        6
-      ],
-      "Truffle": [
-        102,
-        234,
-        235,
-        236,
-        37
-      ],
-      "American Lobster": [
-        118,
-        4
-      ],
-      "Tropical Rock Lobster": [
-        118,
-        232
-      ],
-      "Tokummia Katalepsis": [
-        118,
-        227
-      ],
-      "Clearfin Lionfish": [
-        133,
-        47
-      ],
-      "Longspine Squirrelfish": [
-        133,
-        121
-      ],
-      "Blackfin Barracuda": [
-        133,
-        22
-      ],
-      "Longspine Porcupinefish": [
-        158,
-        191
-      ],
-      "Egg": [
-        158,
-        209,
-        296,
-        171,
-        17,
-        36,
-        33,
-        297,
-        53,
-        200,
-        221,
-        136,
-        147
-      ],
-      "Snow Crab": [
-        204,
-        202
-      ],
-      "Horsehair Crab": [
-        204,
-        108
-      ],
-      "Golden King Crab": [
-        204,
-        94
-      ],
-      "Blue Lobster": [
-        234,
-        28
-      ],
-      "Sailfish Meat": [
-        235,
-        40,
-        175
-      ],
-      "Purple Sea Urchin": [
-        235,
-        301,
-        170,
-        159
-      ],
-      "Megamouth Shark Meat": [
-        236,
-        131
-      ],
-      "Frilled Shark Meat": [
-        236,
-        90
-      ],
-      "Falcatus": [
-        79,
-        80
-      ],
-      "Pikaia": [
-        153,
-        154
-      ],
-      "Crystal Lobster": [
-        60,
-        61
-      ],
-      "Eastern Rock Lobster": [
-        209,
-        76
-      ],
-      "Marlin Meat": [
-        127,
-        128
-      ],
-      "Bluefin Tuna Chutoro": [
-        299,
-        109,
-        31
-      ],
-      "Cuttlefish": [
-        299,
-        222,
-        86,
-        62
-      ],
-      "Box Jellyfish": [
-        300,
-        42
-      ],
-      "Lagoon Triggerfish": [
-        305,
-        116
-      ],
-      "Grey Triggerfish": [
-        305,
-        101
-      ],
-      "Red Lionfish": [
-        65,
-        165
-      ],
-      "Black Pepper": [
-        65,
-        39,
-        87,
-        228,
-        147
-      ],
-      "Capelin": [
-        172,
-        44
-      ],
-      "Rhinochimaeridae Meat": [
-        59,
-        168
-      ],
-      "Red Bream": [
-        59,
-        164
-      ],
-      "Clown Frogfish": [
-        59,
-        50
-      ],
-      "Stingray Meat": [
-        70,
-        297,
-        215
-      ],
-      "Starry Skate": [
-        70,
-        208
-      ],
-      "Marbled Electric Ray Meat": [
-        70,
-        126
-      ],
-      "Spear Squid": [
-        296,
-        205
-      ],
-      "Buckwheat": [
-        296,
-        295,
-        298,
-        297
-      ],
-      "Mackerel Scad": [
-        124,
-        125
-      ],
-      "Narwhal Meat": [
-        138,
-        139
-      ],
-      "Ice Fish": [
-        114,
-        115
-      ],
-      "Dusky Grouper": [
-        74,
-        75
-      ],
-      "Atlantic Mackerel": [
-        298,
-        200,
-        13
-      ],
-      "Blacktip Shark Meat": [
-        194,
-        23
-      ],
-      "Copper Shark Meat": [
-        194,
-        57
-      ],
-      "Fried Egg Jellyfish": [
-        189,
-        84
-      ],
-      "Barrel Jellyfish": [
-        189,
-        15
-      ],
-      "Ornate Wrasse": [
-        247,
-        144
-      ],
-      "Rainbow Wrasse": [
-        247,
-        162
-      ],
-      "White Shrimp": [
-        171,
-        110,
-        241
-      ],
-      "Peacock Squid": [
-        222,
-        147,
-        148
-      ],
-      "Vampire Squid": [
-        222,
-        63,
-        237
-      ],
-      "Longfin Batfish": [
-        17,
-        119
-      ],
-      "Orbicular Batfish": [
-        17,
-        143
-      ],
-      "Porbeagle Shark Meat": [
-        39,
-        157
-      ],
-      "Pyramid Butterflyfish": [
-        174,
-        160
-      ],
-      "Blue Tang": [
-        174,
-        29
-      ],
-      "Clownfish": [
-        174,
-        51
-      ],
-      "Black Tiger Shrimp": [
-        64,
-        206,
-        132,
-        163
-      ],
-      "Whiteleg Shrimp": [
-        64,
-        206,
-        36,
-        132,
-        55
-      ],
-      "Small Spotted Dart": [
-        198,
-        199
-      ],
-      "Whitetip Reefshark Head": [
-        246
-      ],
-      "Bluefin Tuna Akami": [
-        33,
-        30
-      ],
-      "Yellowfin Tuna Akami": [
-        107,
-        252
-      ],
-      "Yellowfin Tuna Chutoro": [
-        255,
-        253
-      ],
-      "Painted Comber": [
-        53,
-        146
-      ],
-      "Comber": [
-        53,
-        54
-      ],
-      "Cookiecutter Shark": [
-        63,
-        56
-      ],
-      "Pelican Eel": [
-        149,
-        150
-      ],
-      "Striped Catfish": [
-        155,
-        218
-      ],
-      "Blobfish": [
-        25,
-        26
-      ],
-      "Sally Lightfoot Crab": [
-        87,
-        177
-      ],
-      "Gelatinous Snailfish": [
-        89,
-        91
-      ],
-      "Salmon Snailfish": [
-        89,
-        178
-      ],
-      "Bluespotted Stargazer": [
-        221,
-        35
-      ],
-      "Arctic Cod": [
-        7,
-        8
-      ],
-      "Haddock": [
-        104,
-        105
-      ],
-      "Humboldt Squid Meat": [
-        110,
-        111
-      ],
-      "Narrow-barred Spanish Mackerel": [
-        136,
-        137
-      ],
-      "Sheepshead Meat": [
-        37,
-        195
-      ],
-      "Norway Lobster": [
-        216,
-        142
-      ],
-      "Harlequin Hind": [
-        231,
-        106
-      ],
-      "Titan Triggerfish": [
-        231,
-        226
-      ],
-      "White Spotted Jellyfish": [
-        184,
-        242
-      ],
-      "Mako Meat": [
-        196
-      ],
-      "Zebra Shark Meat": [
-        257
-      ],
-      "Alaska Pollock": [
-        2
-      ],
-      "Allenypterus": [
-        3
-      ],
-      "Arctic Telescope Fish": [
-        9
-      ],
-      "Black and White Snapper": [
-        14
-      ],
-      "Blood-belly Comb Jellyfish": [
-        27
-      ],
-      "Bluehead Tilefish": [
-        34
-      ],
-      "Cardinal Fish": [
-        45
-      ],
-      "Chambered Nautilus": [
-        46
-      ],
-      "Clione": [
-        49
-      ],
-      "Devil Scorpionfish": [
-        67
-      ],
-      "Dollocaris Ingens": [
-        68
-      ],
-      "Drepanaspis Meat": [
-        69
-      ],
-      "Dunkleosteus Meat": [
-        73
-      ],
-      "Emperor Angelfish": [
-        77
-      ],
-      "Fan Lobster": [
-        81
-      ],
-      "Flame Angelfish": [
-        83
-      ],
-      "Greenland Shark Meat": [
-        100
-      ],
-      "Longnose Sawshark Meat": [
-        120
-      ],
-      "Lumpfish": [
-        122
-      ],
-      "Megalograptus": [
-        130
-      ],
-      "Polar Eelpout": [
-        156
-      ],
-      "Qingmendous": [
-        161
-      ],
-      "Red-banded Lobster": [
-        166
-      ],
-      "Salema Porgy": [
-        176
-      ],
-      "Sea Goldie": [
-        180
-      ],
-      "Seadragon": [
-        183
-      ],
-      "Hammerhead Meat": [
-        201
-      ],
-      "Threetooth Puffer": [
-        223
-      ],
-      "Thresher Shark Meat": [
-        224
-      ],
-      "Tiger Shark Meat": [
-        225
-      ],
-      "Whitetip Reefshark Meat": [
-        245
-      ],
-      "Xenacanthus Meat": [
-        248
-      ],
-      "Yellow Tang": [
-        250
-      ]
+        24, 93, 173, 140, 66, 294, 85, 301, 65, 74, 194, 229, 86, 186, 64, 88, 206, 36, 246, 255,
+        132, 221, 5, 104, 216
+      ],
+      "Mantis Shrimp Meat": [38],
+      "Agar": [38, 151, 211, 212, 1, 213, 149],
+      "Eggplant": [38, 140, 152, 295, 64, 238],
+      "Miso": [38, 48, 140, 18, 188, 292, 79, 127, 138, 295],
+      "Clione Queen Tentacle": [48],
+      "Kelp": [48, 220, 243, 304, 209, 193, 63, 37, 191],
+      "Sea Grape": [93, 185, 233, 293, 300, 117, 186, 109, 184],
+      "Goblin Shark's Fatty Meat": [93],
+      "Lusca Neck Meat": [123],
+      "Sesame Seed": [123, 18, 170, 33, 107, 25, 109],
+      "Soy Sauce": [123, 1, 41, 233, 243, 210, 303, 103, 204, 40, 298, 171, 229, 117, 198, 213],
+      "Mayonnaise": [123, 72, 95, 124, 36, 107, 25],
+      "Buckbean": [151, 302, 79, 138],
+      "Phantom Jellyfish Meat": [151],
+      "Seaweed": [173, 211, 217, 292, 79, 305, 298, 193],
+      "Helicoprion Tail": [173],
+      "Southern Bull Kelp": [173, 211, 153, 40],
+      "Kronosaurus Tongue": [211],
+      "Black Vinegar": [212, 217, 190, 21, 152, 192, 39, 88, 149, 191],
+      "Wolf Eel Tail Meat": [212],
+      "Truck Hermit Crab Legs": [217],
+      "Kajime": [217, 190, 102, 103, 40, 301, 198],
+      "Grade A Egg": [240, 153, 98, 117, 193, 87, 228],
+      "Klaus's Fin": [240],
+      "Yawie's Inner Flesh": [249],
+      "Anomalocaris": [256],
+      "Yellowback Fusilier": [41, 251],
+      "Redtoothed Triggerfish": [179, 167],
+      "Dumbo Octopus": [72, 71],
+      "Wheat": [72, 188, 153, 65, 124, 194, 53, 155, 200, 25, 132, 221, 110],
+      "Great Barracuda": [95, 96],
+      "Onion": [95, 112, 66, 229, 86, 155, 5],
+      "Cherry Tomato": [95, 74, 186, 255, 89, 228, 7, 104],
+      "Garlic": [140, 127, 189, 174, 7, 110, 136, 147],
+      "Bean": [169, 114, 247, 155, 89],
+      "Rice": [169, 185, 214, 233, 304, 60, 170, 171, 117, 17, 206, 33, 107, 87, 238, 7, 136, 231],
+      "Spider Crab": [169, 97, 98, 207],
+      "Bigeye Scad": [18, 19],
+      "Starry Puffer": [214, 158, 213],
+      "Coral Trout": [233, 231, 58],
+      "Atlantic Bonito": [11, 12],
+      "Carrot": [11, 21, 66, 152, 296, 138, 295, 238, 104],
+      "Curry Block": [11, 98, 114, 247],
+      "Mediterranean Parrotfish": [21, 129],
+      "Green Humphead Parrotfish": [112, 99],
+      "Turmeric": [112, 134, 294, 172],
+      "Long-Snouted Seahorse": [188, 186, 88, 187],
+      "Moray Eel": [134, 294, 135],
+      "Striped Red Mullet": [220, 219],
+      "White Trevally": [243, 229, 244],
+      "Cucumber": [66, 97, 152, 181, 192, 197, 230, 302],
+      "Sea Toad": [181, 182],
+      "Black Coral": [192, 172, 189],
+      "Waptia Fieldensis": [192, 239],
+      "Bigeye Trevally": [230, 20],
+      "Giant Trevally Meat": [230, 92],
+      "Aurora Jellyfish": [258],
+      "Barbed Eel": [259],
+      "Bloodskin Shark": [260],
+      "Bony Wreckfish": [261],
+      "Bursting Anglerfish": [262],
+      "Cerebral Crab": [263],
+      "Concertina Barracuda": [264],
+      "Cortex Decorator": [265],
+      "Entangled Crab": [266],
+      "Enthralled Stonefish": [267],
+      "Fanged Cod": [268],
+      "Gazing Shark": [269],
+      "Gelatinous Stonefish": [270],
+      "Gnashing Perch": [271],
+      "Grotesque Mackerel": [272],
+      "Host Eel": [273],
+      "Imperious Lobster": [274],
+      "Malignant Pincer": [275],
+      "Many Eyed Mackerel": [276],
+      "Parhelion Jellyfish": [277],
+      "Perished Loosejaw": [278],
+      "Radiant Squid": [279],
+      "Sallow Sailfish": [280],
+      "Savage Barracuda": [281],
+      "Scouring Bass": [282],
+      "Seizing Snailfish": [283],
+      "Shattered Wreckfish": [284],
+      "Splintered Crab": [285],
+      "Sprouting Eel": [286],
+      "Three-Headed Cod": [287],
+      "Translucent Sturgeon": [288],
+      "Tusked Grouper": [289],
+      "Voltaic Grouper": [290],
+      "Withered Ray": [291],
+      "Bluefin Tuna Ootoro": [113, 32],
+      "Yellowfin Tuna Ootoro": [113, 254],
+      "Hyalonema": [113, 210],
+      "Atlantic Anglerfish": [210, 10],
+      "Comb Jelly": [292, 52],
+      "Barreleye": [293, 63, 16],
+      "California Spiny Lobster": [293, 43],
+      "European Lobster": [294, 78],
+      "Green Sea Urchin": [302, 299, 300, 301],
+      "Snub-nosed Spiny Eel": [303, 103, 203],
+      "Rainbow Cap": [303, 304, 305],
+      "Pacific Fanfish": [304, 145],
+      "Habanero": [85, 103, 109, 216],
+      "Fangtooth": [85, 82],
+      "Bladderwrack": [85, 133, 158, 60],
+      "Antarctic Octopus": [102, 5, 6],
+      "Truffle": [102, 234, 235, 236, 37],
+      "American Lobster": [118, 4],
+      "Tropical Rock Lobster": [118, 232],
+      "Tokummia Katalepsis": [118, 227],
+      "Clearfin Lionfish": [133, 47],
+      "Longspine Squirrelfish": [133, 121],
+      "Blackfin Barracuda": [133, 22],
+      "Longspine Porcupinefish": [158, 191],
+      "Egg": [158, 209, 296, 171, 17, 36, 33, 297, 53, 200, 221, 136, 147],
+      "Snow Crab": [204, 202],
+      "Horsehair Crab": [204, 108],
+      "Golden King Crab": [204, 94],
+      "Blue Lobster": [234, 28],
+      "Sailfish Meat": [235, 40, 175],
+      "Purple Sea Urchin": [235, 301, 170, 159],
+      "Megamouth Shark Meat": [236, 131],
+      "Frilled Shark Meat": [236, 90],
+      "Falcatus": [79, 80],
+      "Pikaia": [153, 154],
+      "Crystal Lobster": [60, 61],
+      "Eastern Rock Lobster": [209, 76],
+      "Marlin Meat": [127, 128],
+      "Bluefin Tuna Chutoro": [299, 109, 31],
+      "Cuttlefish": [299, 222, 86, 62],
+      "Box Jellyfish": [300, 42],
+      "Lagoon Triggerfish": [305, 116],
+      "Grey Triggerfish": [305, 101],
+      "Red Lionfish": [65, 165],
+      "Black Pepper": [65, 39, 87, 228, 147],
+      "Capelin": [172, 44],
+      "Rhinochimaeridae Meat": [59, 168],
+      "Red Bream": [59, 164],
+      "Clown Frogfish": [59, 50],
+      "Stingray Meat": [70, 297, 215],
+      "Starry Skate": [70, 208],
+      "Marbled Electric Ray Meat": [70, 126],
+      "Spear Squid": [296, 205],
+      "Buckwheat": [296, 295, 298, 297],
+      "Mackerel Scad": [124, 125],
+      "Narwhal Meat": [138, 139],
+      "Ice Fish": [114, 115],
+      "Dusky Grouper": [74, 75],
+      "Atlantic Mackerel": [298, 200, 13],
+      "Blacktip Shark Meat": [194, 23],
+      "Copper Shark Meat": [194, 57],
+      "Fried Egg Jellyfish": [189, 84],
+      "Barrel Jellyfish": [189, 15],
+      "Ornate Wrasse": [247, 144],
+      "Rainbow Wrasse": [247, 162],
+      "White Shrimp": [171, 110, 241],
+      "Peacock Squid": [222, 147, 148],
+      "Vampire Squid": [222, 63, 237],
+      "Longfin Batfish": [17, 119],
+      "Orbicular Batfish": [17, 143],
+      "Porbeagle Shark Meat": [39, 157],
+      "Pyramid Butterflyfish": [174, 160],
+      "Blue Tang": [174, 29],
+      "Clownfish": [174, 51],
+      "Black Tiger Shrimp": [64, 206, 132, 163],
+      "Whiteleg Shrimp": [64, 206, 36, 132, 55],
+      "Small Spotted Dart": [198, 199],
+      "Whitetip Reefshark Head": [246],
+      "Bluefin Tuna Akami": [33, 30],
+      "Yellowfin Tuna Akami": [107, 252],
+      "Yellowfin Tuna Chutoro": [255, 253],
+      "Painted Comber": [53, 146],
+      "Comber": [53, 54],
+      "Cookiecutter Shark": [63, 56],
+      "Pelican Eel": [149, 150],
+      "Striped Catfish": [155, 218],
+      "Blobfish": [25, 26],
+      "Sally Lightfoot Crab": [87, 177],
+      "Gelatinous Snailfish": [89, 91],
+      "Salmon Snailfish": [89, 178],
+      "Bluespotted Stargazer": [221, 35],
+      "Arctic Cod": [7, 8],
+      "Haddock": [104, 105],
+      "Humboldt Squid Meat": [110, 111],
+      "Narrow-barred Spanish Mackerel": [136, 137],
+      "Sheepshead Meat": [37, 195],
+      "Norway Lobster": [216, 142],
+      "Harlequin Hind": [231, 106],
+      "Titan Triggerfish": [231, 226],
+      "White Spotted Jellyfish": [184, 242],
+      "Mako Meat": [196],
+      "Zebra Shark Meat": [257],
+      "Alaska Pollock": [2],
+      "Allenypterus": [3],
+      "Arctic Telescope Fish": [9],
+      "Black and White Snapper": [14],
+      "Blood-belly Comb Jellyfish": [27],
+      "Bluehead Tilefish": [34],
+      "Cardinal Fish": [45],
+      "Chambered Nautilus": [46],
+      "Clione": [49],
+      "Devil Scorpionfish": [67],
+      "Dollocaris Ingens": [68],
+      "Drepanaspis Meat": [69],
+      "Dunkleosteus Meat": [73],
+      "Emperor Angelfish": [77],
+      "Fan Lobster": [81],
+      "Flame Angelfish": [83],
+      "Greenland Shark Meat": [100],
+      "Longnose Sawshark Meat": [120],
+      "Lumpfish": [122],
+      "Megalograptus": [130],
+      "Polar Eelpout": [156],
+      "Qingmendous": [161],
+      "Red-banded Lobster": [166],
+      "Salema Porgy": [176],
+      "Sea Goldie": [180],
+      "Seadragon": [183],
+      "Hammerhead Meat": [201],
+      "Threetooth Puffer": [223],
+      "Thresher Shark Meat": [224],
+      "Tiger Shark Meat": [225],
+      "Whitetip Reefshark Meat": [245],
+      "Xenacanthus Meat": [248],
+      "Yellow Tang": [250]
     }
   }
 }
