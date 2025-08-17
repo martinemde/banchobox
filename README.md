@@ -7,7 +7,7 @@ A comprehensive database application for **Dave the Diver**, built with modern w
 ## Features
 
 - **Complete dish database** with unlock conditions, pricing, and party bonuses (305 dishes)
-- **Comprehensive ingredient catalog** with sources and gathering information (228 ingredients)  
+- **Comprehensive ingredient catalog** with sources and gathering information (228 ingredients)
 - **Party event listings** with associated dishes and bonus multipliers (8 parties)
 - **Dark/light theme support** for comfortable viewing
 - **Responsive design** for desktop and mobile devices
