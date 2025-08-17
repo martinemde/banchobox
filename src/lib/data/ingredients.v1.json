@@ -51,7 +51,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.6,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "bluespotted stargazer 130-250m fish",
       "sort": {
@@ -59,7 +59,7 @@
         "buy": null,
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6
+        "sellPerKg": 0
       }
     },
     {
@@ -113,7 +113,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.625,
+      "sellPerKg": 28.125,
       "vendors": {},
       "search": "golden king crab glacial area fish",
       "sort": {
@@ -121,7 +121,7 @@
         "buy": null,
         "sell": 45,
         "kg": 8,
-        "sellPerKg": 5.625
+        "sellPerKg": 28.125
       }
     },
     {
@@ -392,7 +392,7 @@
         6,
         5
       ],
-      "sellPerKg": 2.2666666666666666,
+      "sellPerKg": 11.333333333333334,
       "vendors": {},
       "search": "spider crab 130-250m fish curry cucumber party",
       "sort": {
@@ -400,7 +400,7 @@
         "buy": null,
         "sell": 17,
         "kg": 7.5,
-        "sellPerKg": 2.2666666666666666
+        "sellPerKg": 11.333333333333334
       }
     },
     {
@@ -460,7 +460,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 43,
+      "sellPerKg": 129,
       "vendors": {},
       "search": "american lobster 0-50m fish lobster party",
       "sort": {
@@ -468,7 +468,7 @@
         "buy": null,
         "sell": 43,
         "kg": 1,
-        "sellPerKg": 43
+        "sellPerKg": 129
       }
     },
     {
@@ -528,7 +528,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 47,
+      "sellPerKg": 141,
       "vendors": {},
       "search": "blue lobster 0-50m fish lobster party",
       "sort": {
@@ -536,7 +536,7 @@
         "buy": null,
         "sell": 47,
         "kg": 1,
-        "sellPerKg": 47
+        "sellPerKg": 141
       }
     },
     {
@@ -596,7 +596,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 14.666666666666666,
+      "sellPerKg": 44,
       "vendors": {},
       "search": "california spiny lobster 50-130m fish lobster party",
       "sort": {
@@ -604,7 +604,7 @@
         "buy": null,
         "sell": 22,
         "kg": 1.5,
-        "sellPerKg": 14.666666666666666
+        "sellPerKg": 44
       }
     },
     {
@@ -760,7 +760,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 31.333333333333332,
+      "sellPerKg": 94,
       "vendors": {},
       "search": "crystal lobster 50-130m fish lobster party",
       "sort": {
@@ -768,7 +768,7 @@
         "buy": null,
         "sell": 47,
         "kg": 1.5,
-        "sellPerKg": 31.333333333333332
+        "sellPerKg": 94
       }
     },
     {
@@ -810,7 +810,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 30,
+      "sellPerKg": 90,
       "vendors": {},
       "search": "dollocaris ingens hydrothermal vents fish",
       "sort": {
@@ -818,7 +818,7 @@
         "buy": null,
         "sell": 45,
         "kg": 1.5,
-        "sellPerKg": 30
+        "sellPerKg": 90
       }
     },
     {
@@ -878,7 +878,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 18.8,
+      "sellPerKg": 56.4,
       "vendors": {},
       "search": "eastern rock lobster 130-250m fish lobster party",
       "sort": {
@@ -886,7 +886,7 @@
         "buy": null,
         "sell": 47,
         "kg": 2.5,
-        "sellPerKg": 18.8
+        "sellPerKg": 56.4
       }
     },
     {
@@ -996,7 +996,7 @@
         6,
         8
       ],
-      "sellPerKg": 23,
+      "sellPerKg": 69,
       "vendors": {},
       "search": "european lobster 0-50m fish curry lobster party",
       "sort": {
@@ -1004,7 +1004,7 @@
         "buy": null,
         "sell": 23,
         "kg": 1,
-        "sellPerKg": 23
+        "sellPerKg": 69
       }
     },
     {
@@ -1050,7 +1050,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 110,
+      "sellPerKg": 330,
       "vendors": {},
       "search": "fan lobster 50-130m fish lobster party",
       "sort": {
@@ -1058,7 +1058,7 @@
         "buy": null,
         "sell": 22,
         "kg": 0.2,
-        "sellPerKg": 110
+        "sellPerKg": 330
       }
     },
     {
@@ -1112,7 +1112,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 33.333333333333336,
+      "sellPerKg": 100,
       "vendors": {},
       "search": "horsehair crab glacial area fish",
       "sort": {
@@ -1120,7 +1120,7 @@
         "buy": null,
         "sell": 50,
         "kg": 1.5,
-        "sellPerKg": 33.333333333333336
+        "sellPerKg": 100
       }
     },
     {
@@ -1228,7 +1228,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 125,
+      "sellPerKg": 375,
       "vendors": {},
       "search": "norway lobster 130-250m fish lobster party",
       "sort": {
@@ -1236,7 +1236,7 @@
         "buy": null,
         "sell": 25,
         "kg": 0.2,
-        "sellPerKg": 125
+        "sellPerKg": 375
       }
     },
     {
@@ -1282,7 +1282,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 250,
+      "sellPerKg": 750,
       "vendors": {},
       "search": "red-banded lobster 0-50m fish lobster party",
       "sort": {
@@ -1290,7 +1290,7 @@
         "buy": null,
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250
+        "sellPerKg": 750
       }
     },
     {
@@ -1344,7 +1344,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 20,
+      "sellPerKg": 60,
       "vendors": {},
       "search": "snow crab glacial area fish",
       "sort": {
@@ -1352,7 +1352,7 @@
         "buy": null,
         "sell": 40,
         "kg": 2,
-        "sellPerKg": 20
+        "sellPerKg": 60
       }
     },
     {
@@ -1458,7 +1458,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 27.5,
+      "sellPerKg": 82.5,
       "vendors": {},
       "search": "tokummia katalepsis hydrothermal vents fish lobster party",
       "sort": {
@@ -1466,7 +1466,7 @@
         "buy": null,
         "sell": 55,
         "kg": 2,
-        "sellPerKg": 27.5
+        "sellPerKg": 82.5
       }
     },
     {
@@ -1526,7 +1526,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 37.5,
+      "sellPerKg": 112.5,
       "vendors": {},
       "search": "tropical rock lobster 50-130m fish lobster party",
       "sort": {
@@ -1534,7 +1534,7 @@
         "buy": null,
         "sell": 45,
         "kg": 1.2,
-        "sellPerKg": 37.5
+        "sellPerKg": 112.5
       }
     },
     {
@@ -1622,7 +1622,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 170,
+      "sellPerKg": 850,
       "vendors": {},
       "search": "black tiger shrimp 50-130m fish shrimp party",
       "sort": {
@@ -1630,7 +1630,7 @@
         "buy": null,
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170
+        "sellPerKg": 850
       }
     },
     {
@@ -1672,7 +1672,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 12,
+      "sellPerKg": 36,
       "vendors": {},
       "search": "chambered nautilus 130-250m fish",
       "sort": {
@@ -1680,7 +1680,7 @@
         "buy": null,
         "sell": 12,
         "kg": 1,
-        "sellPerKg": 12
+        "sellPerKg": 36
       }
     },
     {
@@ -1722,7 +1722,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 250,
+      "sellPerKg": 1000,
       "vendors": {},
       "search": "clione 130-250m fish",
       "sort": {
@@ -1730,7 +1730,7 @@
         "buy": null,
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250
+        "sellPerKg": 1000
       }
     },
     {
@@ -1772,7 +1772,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 70,
+      "sellPerKg": 280,
       "vendors": {},
       "search": "seadragon hydrothermal vents fish",
       "sort": {
@@ -1780,7 +1780,7 @@
         "buy": null,
         "sell": 35,
         "kg": 0.5,
-        "sellPerKg": 70
+        "sellPerKg": 280
       }
     },
     {
@@ -1840,7 +1840,7 @@
         5,
         7
       ],
-      "sellPerKg": 85,
+      "sellPerKg": 425,
       "vendors": {},
       "search": "waptia fieldensis hydrothermal vents fish cucumber shrimp party",
       "sort": {
@@ -1848,7 +1848,7 @@
         "buy": null,
         "sell": 34,
         "kg": 0.4,
-        "sellPerKg": 85
+        "sellPerKg": 425
       }
     },
     {
@@ -1922,7 +1922,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 170,
+      "sellPerKg": 850,
       "vendors": {},
       "search": "white shrimp 0-130m fish shrimp party",
       "sort": {
@@ -1930,7 +1930,7 @@
         "buy": null,
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170
+        "sellPerKg": 850
       }
     },
     {
@@ -2032,7 +2032,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 110,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "whiteleg shrimp 0-50m fish shrimp party",
       "sort": {
@@ -2040,7 +2040,7 @@
         "buy": null,
         "sell": 11,
         "kg": 0.1,
-        "sellPerKg": 110
+        "sellPerKg": 0
       }
     },
     {
@@ -3019,7 +3019,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.428571428571429,
+      "sellPerKg": 32.142857142857146,
       "vendors": {},
       "search": "alaska pollock glacial area fish",
       "sort": {
@@ -3027,7 +3027,7 @@
         "buy": null,
         "sell": 45,
         "kg": 7,
-        "sellPerKg": 6.428571428571429
+        "sellPerKg": 32.142857142857146
       }
     },
     {
@@ -3069,7 +3069,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10.5,
+      "sellPerKg": 31.5,
       "vendors": {},
       "search": "allenypterus hydrothermal vents fish",
       "sort": {
@@ -3077,7 +3077,7 @@
         "buy": null,
         "sell": 42,
         "kg": 4,
-        "sellPerKg": 10.5
+        "sellPerKg": 31.5
       }
     },
     {
@@ -3119,7 +3119,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 18.75,
+      "sellPerKg": 56.25,
       "vendors": {},
       "search": "anomalocaris hydrothermal vents fish",
       "sort": {
@@ -3127,7 +3127,7 @@
         "buy": null,
         "sell": 75,
         "kg": 4,
-        "sellPerKg": 18.75
+        "sellPerKg": 56.25
       }
     },
     {
@@ -3193,7 +3193,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.333333333333333,
+      "sellPerKg": 26.666666666666668,
       "vendors": {},
       "search": "antarctic octopus glacial area fish",
       "sort": {
@@ -3201,7 +3201,7 @@
         "buy": null,
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333
+        "sellPerKg": 26.666666666666668
       }
     },
     {
@@ -3255,7 +3255,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.4,
+      "sellPerKg": 19.2,
       "vendors": {},
       "search": "arctic cod glacial area fish",
       "sort": {
@@ -3263,7 +3263,7 @@
         "buy": null,
         "sell": 32,
         "kg": 5,
-        "sellPerKg": 6.4
+        "sellPerKg": 19.2
       }
     },
     {
@@ -3305,7 +3305,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 13.333333333333334,
+      "sellPerKg": 40,
       "vendors": {},
       "search": "arctic telescope fish glacial area fish",
       "sort": {
@@ -3313,7 +3313,7 @@
         "buy": null,
         "sell": 40,
         "kg": 3,
-        "sellPerKg": 13.333333333333334
+        "sellPerKg": 40
       }
     },
     {
@@ -3367,7 +3367,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "atlantic anglerfish limestone cave fish",
       "sort": {
@@ -3375,7 +3375,7 @@
         "buy": null,
         "sell": 11,
         "kg": 5.5,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     {
@@ -3433,7 +3433,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 1.75,
+      "sellPerKg": 5.25,
       "vendors": {},
       "search": "atlantic bonito 50-130m fish curry party",
       "sort": {
@@ -3441,7 +3441,7 @@
         "buy": null,
         "sell": 7,
         "kg": 4,
-        "sellPerKg": 1.75
+        "sellPerKg": 5.25
       }
     },
     {
@@ -3507,7 +3507,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 6,
       "vendors": {},
       "search": "atlantic mackerel 50-130m fish",
       "sort": {
@@ -3515,7 +3515,7 @@
         "buy": null,
         "sell": 7,
         "kg": 3.5,
-        "sellPerKg": 2
+        "sellPerKg": 6
       }
     },
     {
@@ -3671,7 +3671,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "barrel jellyfish 0-50m fish jellyfish party",
       "sort": {
@@ -3679,7 +3679,7 @@
         "buy": null,
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     {
@@ -3752,7 +3752,7 @@
         8,
         4
       ],
-      "sellPerKg": 11.666666666666666,
+      "sellPerKg": 35,
       "vendors": {},
       "search": "barreleye glacial passage fish lobster shark party",
       "sort": {
@@ -3760,7 +3760,7 @@
         "buy": null,
         "sell": 35,
         "kg": 3,
-        "sellPerKg": 11.666666666666666
+        "sellPerKg": 35
       }
     },
     {
@@ -3814,7 +3814,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10,
+      "sellPerKg": 30,
       "vendors": {},
       "search": "bigeye scad 50-130m fish",
       "sort": {
@@ -3822,7 +3822,7 @@
         "buy": null,
         "sell": 6,
         "kg": 0.6,
-        "sellPerKg": 10
+        "sellPerKg": 30
       }
     },
     {
@@ -3880,7 +3880,7 @@
       "usedForParties": [
         5
       ],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "bigeye trevally 50-130m fish cucumber party",
       "sort": {
@@ -3888,7 +3888,7 @@
         "buy": null,
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     {
@@ -3930,7 +3930,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "black and white snapper 0-50m fish",
       "sort": {
@@ -3938,7 +3938,7 @@
         "buy": null,
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3
+        "sellPerKg": 15
       }
     },
     {
@@ -3992,7 +3992,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.6363636363636362,
+      "sellPerKg": 18.181818181818183,
       "vendors": {},
       "search": "blackfin barracuda 50-130m fish",
       "sort": {
@@ -4000,7 +4000,7 @@
         "buy": null,
         "sell": 20,
         "kg": 5.5,
-        "sellPerKg": 3.6363636363636362
+        "sellPerKg": 18.181818181818183
       }
     },
     {
@@ -4060,7 +4060,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 8,
+      "sellPerKg": 40,
       "vendors": {},
       "search": "blacktip shark meat 0-50m fish shark party",
       "sort": {
@@ -4068,7 +4068,7 @@
         "buy": null,
         "sell": 20,
         "kg": 2.5,
-        "sellPerKg": 8
+        "sellPerKg": 40
       }
     },
     {
@@ -4122,7 +4122,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.333333333333333,
+      "sellPerKg": 26.666666666666668,
       "vendors": {},
       "search": "blobfish glacial passage fish",
       "sort": {
@@ -4130,7 +4130,7 @@
         "buy": null,
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333
+        "sellPerKg": 26.666666666666668
       }
     },
     {
@@ -4176,7 +4176,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 2.4285714285714284,
+      "sellPerKg": 7.285714285714286,
       "vendors": {},
       "search": "blood-belly comb jellyfish 130-250m fish jellyfish party",
       "sort": {
@@ -4184,7 +4184,7 @@
         "buy": null,
         "sell": 17,
         "kg": 7,
-        "sellPerKg": 2.4285714285714284
+        "sellPerKg": 7.285714285714286
       }
     },
     {
@@ -4286,7 +4286,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4,
+      "sellPerKg": 12,
       "vendors": {},
       "search": "blue tang 0-50m fish",
       "sort": {
@@ -4294,7 +4294,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4
+        "sellPerKg": 12
       }
     },
     {
@@ -4354,7 +4354,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 3.375,
+      "sellPerKg": 16.875,
       "vendors": {},
       "search": "bluefin tuna akami 0-130m fish tuna party",
       "sort": {
@@ -4362,7 +4362,7 @@
         "buy": null,
         "sell": 27,
         "kg": 8,
-        "sellPerKg": 3.375
+        "sellPerKg": 16.875
       }
     },
     {
@@ -4436,7 +4436,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 20,
       "vendors": {},
       "search": "bluefin tuna chutoro 0-130m fish tuna party",
       "sort": {
@@ -4444,7 +4444,7 @@
         "buy": null,
         "sell": 32,
         "kg": 8,
-        "sellPerKg": 4
+        "sellPerKg": 20
       }
     },
     {
@@ -4552,7 +4552,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 25,
+      "sellPerKg": 50,
       "vendors": {},
       "search": "bluehead tilefish 50-130m fish",
       "sort": {
@@ -4560,7 +4560,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.2,
-        "sellPerKg": 25
+        "sellPerKg": 50
       }
     },
     {
@@ -4668,7 +4668,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 3.6,
+      "sellPerKg": 10.8,
       "vendors": {},
       "search": "box jellyfish 0-50m fish jellyfish party",
       "sort": {
@@ -4676,7 +4676,7 @@
         "buy": null,
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6
+        "sellPerKg": 10.8
       }
     },
     {
@@ -4782,7 +4782,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 30,
+      "sellPerKg": 90,
       "vendors": {},
       "search": "capelin glacial area fish curry party",
       "sort": {
@@ -4790,7 +4790,7 @@
         "buy": null,
         "sell": 15,
         "kg": 0.5,
-        "sellPerKg": 30
+        "sellPerKg": 90
       }
     },
     {
@@ -4832,7 +4832,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "cardinal fish 0-50m fish",
       "sort": {
@@ -4840,7 +4840,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     {
@@ -4894,7 +4894,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.705882352941177,
+      "sellPerKg": 14.117647058823529,
       "vendors": {},
       "search": "clearfin lionfish 0-50m fish",
       "sort": {
@@ -4902,7 +4902,7 @@
         "buy": null,
         "sell": 8,
         "kg": 1.7,
-        "sellPerKg": 4.705882352941177
+        "sellPerKg": 14.117647058823529
       }
     },
     {
@@ -4960,7 +4960,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 16.666666666666668,
+      "sellPerKg": 50,
       "vendors": {},
       "search": "clown frogfish 50-130m fish shark party",
       "sort": {
@@ -4968,7 +4968,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.3,
-        "sellPerKg": 16.666666666666668
+        "sellPerKg": 50
       }
     },
     {
@@ -5022,7 +5022,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "clownfish 0-50m fish",
       "sort": {
@@ -5030,7 +5030,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5
+        "sellPerKg": 10
       }
     },
     {
@@ -5090,7 +5090,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 2,
+      "sellPerKg": 6,
       "vendors": {},
       "search": "comb jelly 130-250m fish jellyfish party",
       "sort": {
@@ -5098,7 +5098,7 @@
         "buy": null,
         "sell": 14,
         "kg": 7,
-        "sellPerKg": 2
+        "sellPerKg": 6
       }
     },
     {
@@ -5152,7 +5152,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "comber 0-50m fish",
       "sort": {
@@ -5160,7 +5160,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5
+        "sellPerKg": 10
       }
     },
     {
@@ -5268,7 +5268,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "cookiecutter shark 130-250m fish shark party",
       "sort": {
@@ -5276,7 +5276,7 @@
         "buy": null,
         "sell": 25,
         "kg": 5,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     {
@@ -5336,7 +5336,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 5.5,
+      "sellPerKg": 27.5,
       "vendors": {},
       "search": "copper shark meat 0-50m fish shark party",
       "sort": {
@@ -5344,7 +5344,7 @@
         "buy": null,
         "sell": 22,
         "kg": 4,
-        "sellPerKg": 5.5
+        "sellPerKg": 27.5
       }
     },
     {
@@ -5410,7 +5410,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "coral trout 50-130m fish",
       "sort": {
@@ -5418,7 +5418,7 @@
         "buy": null,
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     {
@@ -5500,7 +5500,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 1.5,
+      "sellPerKg": 4.5,
       "vendors": {},
       "search": "cuttlefish 50-130m fish tuna party",
       "sort": {
@@ -5508,7 +5508,7 @@
         "buy": null,
         "sell": 6,
         "kg": 4,
-        "sellPerKg": 1.5
+        "sellPerKg": 4.5
       }
     },
     {
@@ -5550,7 +5550,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 15,
+      "sellPerKg": 45,
       "vendors": {},
       "search": "devil scorpionfish 50-130m fish",
       "sort": {
@@ -5558,7 +5558,7 @@
         "buy": null,
         "sell": 45,
         "kg": 3,
-        "sellPerKg": 15
+        "sellPerKg": 45
       }
     },
     {
@@ -5600,7 +5600,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.882352941176471,
+      "sellPerKg": 29.41176470588235,
       "vendors": {},
       "search": "drepanaspis meat hydrothermal vents fish",
       "sort": {
@@ -5608,7 +5608,7 @@
         "buy": null,
         "sell": 50,
         "kg": 8.5,
-        "sellPerKg": 5.882352941176471
+        "sellPerKg": 29.41176470588235
       }
     },
     {
@@ -5662,7 +5662,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 9.5,
+      "sellPerKg": 28.5,
       "vendors": {},
       "search": "dumbo octopus glacial passage fish",
       "sort": {
@@ -5670,7 +5670,7 @@
         "buy": null,
         "sell": 38,
         "kg": 4,
-        "sellPerKg": 9.5
+        "sellPerKg": 28.5
       }
     },
     {
@@ -5712,7 +5712,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.58974358974359,
+      "sellPerKg": 17.94871794871795,
       "vendors": {},
       "search": "dunkleosteus meat hydrothermal vents fish",
       "sort": {
@@ -5720,7 +5720,7 @@
         "buy": null,
         "sell": 70,
         "kg": 19.5,
-        "sellPerKg": 3.58974358974359
+        "sellPerKg": 17.94871794871795
       }
     },
     {
@@ -5774,7 +5774,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.1111111111111112,
+      "sellPerKg": 5.555555555555555,
       "vendors": {},
       "search": "dusky grouper 50-130m fish",
       "sort": {
@@ -5782,7 +5782,7 @@
         "buy": null,
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112
+        "sellPerKg": 5.555555555555555
       }
     },
     {
@@ -5824,7 +5824,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.5,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "emperor angelfish 0-50m fish",
       "sort": {
@@ -5832,7 +5832,7 @@
         "buy": null,
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5
+        "sellPerKg": 0
       }
     },
     {
@@ -5940,7 +5940,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 7.166666666666667,
+      "sellPerKg": 21.5,
       "vendors": {},
       "search": "falcatus hydrothermal vents fish shark party",
       "sort": {
@@ -5948,7 +5948,7 @@
         "buy": null,
         "sell": 43,
         "kg": 6,
-        "sellPerKg": 7.166666666666667
+        "sellPerKg": 21.5
       }
     },
     {
@@ -6050,7 +6050,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "fangtooth 130-250m fish",
       "sort": {
@@ -6058,7 +6058,7 @@
         "buy": null,
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     {
@@ -6100,7 +6100,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "flame angelfish 0-50m fish",
       "sort": {
@@ -6108,7 +6108,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.2,
-        "sellPerKg": 10
+        "sellPerKg": 0
       }
     },
     {
@@ -6168,7 +6168,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "fried egg jellyfish 0-50m fish jellyfish party",
       "sort": {
@@ -6176,7 +6176,7 @@
         "buy": null,
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     {
@@ -6236,7 +6236,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.2941176470588234,
+      "sellPerKg": 16.470588235294116,
       "vendors": {},
       "search": "frilled shark meat 130-250m fish shark party",
       "sort": {
@@ -6244,7 +6244,7 @@
         "buy": null,
         "sell": 28,
         "kg": 8.5,
-        "sellPerKg": 3.2941176470588234
+        "sellPerKg": 16.470588235294116
       }
     },
     {
@@ -6346,7 +6346,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 14,
+      "sellPerKg": 42,
       "vendors": {},
       "search": "gelatinous snailfish glacial area fish",
       "sort": {
@@ -6354,7 +6354,7 @@
         "buy": null,
         "sell": 28,
         "kg": 2,
-        "sellPerKg": 14
+        "sellPerKg": 42
       }
     },
     {
@@ -6460,7 +6460,7 @@
       "usedForParties": [
         5
       ],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "giant trevally meat 50-130m fish cucumber party",
       "sort": {
@@ -6468,7 +6468,7 @@
         "buy": null,
         "sell": 10,
         "kg": 5,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     {
@@ -6570,7 +6570,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 0.8571428571428571,
+      "sellPerKg": 4.285714285714286,
       "vendors": {},
       "search": "great barracuda 50-130m fish",
       "sort": {
@@ -6578,7 +6578,7 @@
         "buy": null,
         "sell": 6,
         "kg": 7,
-        "sellPerKg": 0.8571428571428571
+        "sellPerKg": 4.285714285714286
       }
     },
     {
@@ -6636,7 +6636,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 2.7777777777777777,
+      "sellPerKg": 13.88888888888889,
       "vendors": {},
       "search": "green humphead parrotfish 0-50m fish curry party",
       "sort": {
@@ -6644,7 +6644,7 @@
         "buy": null,
         "sell": 5,
         "kg": 1.8,
-        "sellPerKg": 2.7777777777777777
+        "sellPerKg": 13.88888888888889
       }
     },
     {
@@ -6690,7 +6690,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.1,
+      "sellPerKg": 15.5,
       "vendors": {},
       "search": "greenland shark meat glacial area fish shark party",
       "sort": {
@@ -6698,7 +6698,7 @@
         "buy": null,
         "sell": 62,
         "kg": 20,
-        "sellPerKg": 3.1
+        "sellPerKg": 15.5
       }
     },
     {
@@ -6752,7 +6752,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.7142857142857142,
+      "sellPerKg": 8.571428571428571,
       "vendors": {},
       "search": "grey triggerfish 50-130m fish",
       "sort": {
@@ -6760,7 +6760,7 @@
         "buy": null,
         "sell": 6,
         "kg": 3.5,
-        "sellPerKg": 1.7142857142857142
+        "sellPerKg": 8.571428571428571
       }
     },
     {
@@ -6862,7 +6862,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.166666666666667,
+      "sellPerKg": 30.833333333333332,
       "vendors": {},
       "search": "haddock glacial area fish",
       "sort": {
@@ -6870,7 +6870,7 @@
         "buy": null,
         "sell": 37,
         "kg": 6,
-        "sellPerKg": 6.166666666666667
+        "sellPerKg": 30.833333333333332
       }
     },
     {
@@ -6916,7 +6916,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.6153846153846154,
+      "sellPerKg": 18.076923076923077,
       "vendors": {},
       "search": "hammerhead meat 50-130m fish shark party",
       "sort": {
@@ -6924,7 +6924,7 @@
         "buy": null,
         "sell": 47,
         "kg": 13,
-        "sellPerKg": 3.6153846153846154
+        "sellPerKg": 18.076923076923077
       }
     },
     {
@@ -6978,7 +6978,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.454545454545454,
+      "sellPerKg": 27.27272727272727,
       "vendors": {},
       "search": "harlequin hind 50-130m fish",
       "sort": {
@@ -6986,7 +6986,7 @@
         "buy": null,
         "sell": 6,
         "kg": 1.1,
-        "sellPerKg": 5.454545454545454
+        "sellPerKg": 27.27272727272727
       }
     },
     {
@@ -7092,7 +7092,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 6.4,
+      "sellPerKg": 32,
       "vendors": {},
       "search": "humboldt squid meat 50-130m fish shrimp party",
       "sort": {
@@ -7100,7 +7100,7 @@
         "buy": null,
         "sell": 48,
         "kg": 7.5,
-        "sellPerKg": 6.4
+        "sellPerKg": 32
       }
     },
     {
@@ -7158,7 +7158,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 5.818181818181818,
+      "sellPerKg": 17.454545454545453,
       "vendors": {},
       "search": "ice fish glacial area fish curry party",
       "sort": {
@@ -7166,7 +7166,7 @@
         "buy": null,
         "sell": 32,
         "kg": 5.5,
-        "sellPerKg": 5.818181818181818
+        "sellPerKg": 17.454545454545453
       }
     },
     {
@@ -7220,7 +7220,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.857142857142857,
+      "sellPerKg": 5.714285714285714,
       "vendors": {},
       "search": "lagoon triggerfish 0-50m fish",
       "sort": {
@@ -7228,7 +7228,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.7,
-        "sellPerKg": 2.857142857142857
+        "sellPerKg": 5.714285714285714
       }
     },
     {
@@ -7306,7 +7306,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "long-snouted seahorse 0-50m fish",
       "sort": {
@@ -7314,7 +7314,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4
+        "sellPerKg": 0
       }
     },
     {
@@ -7368,7 +7368,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.75,
+      "sellPerKg": 18.75,
       "vendors": {},
       "search": "longfin batfish 0-50m fish",
       "sort": {
@@ -7376,7 +7376,7 @@
         "buy": null,
         "sell": 3,
         "kg": 0.8,
-        "sellPerKg": 3.75
+        "sellPerKg": 18.75
       }
     },
     {
@@ -7422,7 +7422,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 1.8461538461538463,
+      "sellPerKg": 9.23076923076923,
       "vendors": {},
       "search": "longnose sawshark meat 50-130m fish shark party",
       "sort": {
@@ -7430,7 +7430,7 @@
         "buy": null,
         "sell": 12,
         "kg": 6.5,
-        "sellPerKg": 1.8461538461538463
+        "sellPerKg": 9.23076923076923
       }
     },
     {
@@ -7484,7 +7484,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.428571428571429,
+      "sellPerKg": 22.285714285714285,
       "vendors": {},
       "search": "longspine porcupinefish 0-50m fish",
       "sort": {
@@ -7492,7 +7492,7 @@
         "buy": null,
         "sell": 26,
         "kg": 3.5,
-        "sellPerKg": 7.428571428571429
+        "sellPerKg": 22.285714285714285
       }
     },
     {
@@ -7546,7 +7546,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.5,
+      "sellPerKg": 22.5,
       "vendors": {},
       "search": "longspine squirrelfish 0-50m fish",
       "sort": {
@@ -7554,7 +7554,7 @@
         "buy": null,
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5
+        "sellPerKg": 22.5
       }
     },
     {
@@ -7596,7 +7596,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8,
+      "sellPerKg": 24,
       "vendors": {},
       "search": "lumpfish hydrothermal vents fish",
       "sort": {
@@ -7604,7 +7604,7 @@
         "buy": null,
         "sell": 40,
         "kg": 5,
-        "sellPerKg": 8
+        "sellPerKg": 24
       }
     },
     {
@@ -7658,7 +7658,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.25,
+      "sellPerKg": 12.5,
       "vendors": {},
       "search": "mackerel scad 50-130m fish",
       "sort": {
@@ -7666,7 +7666,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.8,
-        "sellPerKg": 6.25
+        "sellPerKg": 12.5
       }
     },
     {
@@ -7712,7 +7712,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4.777777777777778,
+      "sellPerKg": 23.88888888888889,
       "vendors": {},
       "search": "mako meat 0-50m fish shark party",
       "sort": {
@@ -7720,7 +7720,7 @@
         "buy": null,
         "sell": 43,
         "kg": 9,
-        "sellPerKg": 4.777777777777778
+        "sellPerKg": 23.88888888888889
       }
     },
     {
@@ -7870,7 +7870,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8.571428571428571,
+      "sellPerKg": 42.857142857142854,
       "vendors": {},
       "search": "marbled electric ray meat 0-50m fish",
       "sort": {
@@ -7878,7 +7878,7 @@
         "buy": null,
         "sell": 30,
         "kg": 3.5,
-        "sellPerKg": 8.571428571428571
+        "sellPerKg": 42.857142857142854
       }
     },
     {
@@ -7938,7 +7938,7 @@
       "usedForParties": [
         3
       ],
-      "sellPerKg": 6,
+      "sellPerKg": 30,
       "vendors": {},
       "search": "marlin meat 0-50m fish marlin party",
       "sort": {
@@ -7946,7 +7946,7 @@
         "buy": null,
         "sell": 45,
         "kg": 7.5,
-        "sellPerKg": 6
+        "sellPerKg": 30
       }
     },
     {
@@ -8000,7 +8000,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.5,
+      "sellPerKg": 7.5,
       "vendors": {},
       "search": "mediterranean parrotfish 0-50m fish",
       "sort": {
@@ -8008,7 +8008,7 @@
         "buy": null,
         "sell": 3,
         "kg": 2,
-        "sellPerKg": 1.5
+        "sellPerKg": 7.5
       }
     },
     {
@@ -8050,7 +8050,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.75,
+      "sellPerKg": 28.75,
       "vendors": {},
       "search": "megalograptus divine tree control room fish",
       "sort": {
@@ -8058,7 +8058,7 @@
         "buy": null,
         "sell": 46,
         "kg": 8,
-        "sellPerKg": 5.75
+        "sellPerKg": 28.75
       }
     },
     {
@@ -8118,7 +8118,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 2.6956521739130435,
+      "sellPerKg": 13.478260869565217,
       "vendors": {},
       "search": "megamouth shark meat 130-250m fish shark party",
       "sort": {
@@ -8126,7 +8126,7 @@
         "buy": null,
         "sell": 31,
         "kg": 11.5,
-        "sellPerKg": 2.6956521739130435
+        "sellPerKg": 13.478260869565217
       }
     },
     {
@@ -8200,7 +8200,7 @@
         6,
         8
       ],
-      "sellPerKg": 1.8888888888888888,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "moray eel 0-50m fish curry lobster party",
       "sort": {
@@ -8208,7 +8208,7 @@
         "buy": null,
         "sell": 17,
         "kg": 9,
-        "sellPerKg": 1.8888888888888888
+        "sellPerKg": 0
       }
     },
     {
@@ -8262,7 +8262,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.1111111111111112,
+      "sellPerKg": 5.555555555555555,
       "vendors": {},
       "search": "narrow-barred spanish mackerel 50-130m fish",
       "sort": {
@@ -8270,7 +8270,7 @@
         "buy": null,
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112
+        "sellPerKg": 5.555555555555555
       }
     },
     {
@@ -8324,7 +8324,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.842105263157895,
+      "sellPerKg": 24.210526315789473,
       "vendors": {},
       "search": "narwhal meat glacial area fish",
       "sort": {
@@ -8332,7 +8332,7 @@
         "buy": null,
         "sell": 46,
         "kg": 9.5,
-        "sellPerKg": 4.842105263157895
+        "sellPerKg": 24.210526315789473
       }
     },
     {
@@ -8386,7 +8386,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.666666666666667,
+      "sellPerKg": 13.333333333333334,
       "vendors": {},
       "search": "orbicular batfish 0-50m fish",
       "sort": {
@@ -8394,7 +8394,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667
+        "sellPerKg": 13.333333333333334
       }
     },
     {
@@ -8452,7 +8452,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 8,
       "vendors": {},
       "search": "ornate wrasse 0-50m fish curry party",
       "sort": {
@@ -8460,7 +8460,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4
+        "sellPerKg": 8
       }
     },
     {
@@ -8514,7 +8514,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.4,
+      "sellPerKg": 13.2,
       "vendors": {},
       "search": "pacific fanfish 130-250m fish",
       "sort": {
@@ -8522,7 +8522,7 @@
         "buy": null,
         "sell": 22,
         "kg": 5,
-        "sellPerKg": 4.4
+        "sellPerKg": 13.2
       }
     },
     {
@@ -8576,7 +8576,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 15,
+      "sellPerKg": 45,
       "vendors": {},
       "search": "painted comber 50-130m fish",
       "sort": {
@@ -8584,7 +8584,7 @@
         "buy": null,
         "sell": 6,
         "kg": 0.4,
-        "sellPerKg": 15
+        "sellPerKg": 45
       }
     },
     {
@@ -8698,7 +8698,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10.285714285714286,
+      "sellPerKg": 30.857142857142858,
       "vendors": {},
       "search": "peacock squid glacial passage fish",
       "sort": {
@@ -8706,7 +8706,7 @@
         "buy": null,
         "sell": 36,
         "kg": 3.5,
-        "sellPerKg": 10.285714285714286
+        "sellPerKg": 30.857142857142858
       }
     },
     {
@@ -8760,7 +8760,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.5,
+      "sellPerKg": 37.5,
       "vendors": {},
       "search": "pelican eel glacial passage fish",
       "sort": {
@@ -8768,7 +8768,7 @@
         "buy": null,
         "sell": 60,
         "kg": 8,
-        "sellPerKg": 7.5
+        "sellPerKg": 37.5
       }
     },
     {
@@ -8870,7 +8870,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8.444444444444445,
+      "sellPerKg": 25.333333333333332,
       "vendors": {},
       "search": "pikaia hydrothermal vents fish",
       "sort": {
@@ -8878,7 +8878,7 @@
         "buy": null,
         "sell": 38,
         "kg": 4.5,
-        "sellPerKg": 8.444444444444445
+        "sellPerKg": 25.333333333333332
       }
     },
     {
@@ -8920,7 +8920,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10,
+      "sellPerKg": 30,
       "vendors": {},
       "search": "polar eelpout glacial area fish",
       "sort": {
@@ -8928,7 +8928,7 @@
         "buy": null,
         "sell": 30,
         "kg": 3,
-        "sellPerKg": 10
+        "sellPerKg": 30
       }
     },
     {
@@ -8988,7 +8988,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4.074074074074074,
+      "sellPerKg": 20.37037037037037,
       "vendors": {},
       "search": "porbeagle shark meat glacial area fish shark party",
       "sort": {
@@ -8996,7 +8996,7 @@
         "buy": null,
         "sell": 55,
         "kg": 13.5,
-        "sellPerKg": 4.074074074074074
+        "sellPerKg": 20.37037037037037
       }
     },
     {
@@ -9050,7 +9050,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 5,
       "vendors": {},
       "search": "pyramid butterflyfish 0-50m fish",
       "sort": {
@@ -9058,7 +9058,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5
+        "sellPerKg": 5
       }
     },
     {
@@ -9100,7 +9100,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.666666666666667,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "qingmendous hydrothermal vents fish",
       "sort": {
@@ -9108,7 +9108,7 @@
         "buy": null,
         "sell": 40,
         "kg": 6,
-        "sellPerKg": 6.666666666666667
+        "sellPerKg": 0
       }
     },
     {
@@ -9214,7 +9214,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 3.3333333333333335,
+      "sellPerKg": 6.666666666666667,
       "vendors": {},
       "search": "rainbow wrasse 0-50m fish curry party",
       "sort": {
@@ -9222,7 +9222,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.6,
-        "sellPerKg": 3.3333333333333335
+        "sellPerKg": 6.666666666666667
       }
     },
     {
@@ -9280,7 +9280,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 12,
       "vendors": {},
       "search": "red bream 130-250m fish shark party",
       "sort": {
@@ -9288,7 +9288,7 @@
         "buy": null,
         "sell": 12,
         "kg": 3,
-        "sellPerKg": 4
+        "sellPerKg": 12
       }
     },
     {
@@ -9342,7 +9342,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 6,
       "vendors": {},
       "search": "red lionfish 0-50m fish",
       "sort": {
@@ -9350,7 +9350,7 @@
         "buy": null,
         "sell": 3,
         "kg": 1.5,
-        "sellPerKg": 2
+        "sellPerKg": 6
       }
     },
     {
@@ -9404,7 +9404,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "redtoothed triggerfish 0-50m fish",
       "sort": {
@@ -9412,7 +9412,7 @@
         "buy": null,
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3
+        "sellPerKg": 15
       }
     },
     {
@@ -9470,7 +9470,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 6,
+      "sellPerKg": 42,
       "vendors": {},
       "search": "rhinochimaeridae meat 130-250m fish shark party",
       "sort": {
@@ -9478,7 +9478,7 @@
         "buy": null,
         "sell": 30,
         "kg": 5,
-        "sellPerKg": 6
+        "sellPerKg": 42
       }
     },
     {
@@ -9552,7 +9552,7 @@
       "usedForParties": [
         3
       ],
-      "sellPerKg": 7.222222222222222,
+      "sellPerKg": 36.111111111111114,
       "vendors": {},
       "search": "sailfish meat shipwreck interior fish marlin party",
       "sort": {
@@ -9560,7 +9560,7 @@
         "buy": null,
         "sell": 65,
         "kg": 9,
-        "sellPerKg": 7.222222222222222
+        "sellPerKg": 36.111111111111114
       }
     },
     {
@@ -9602,7 +9602,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "salema porgy 0-50m fish",
       "sort": {
@@ -9610,7 +9610,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.4,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     {
@@ -9712,7 +9712,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.5,
+      "sellPerKg": 22.5,
       "vendors": {},
       "search": "sally lightfoot crab shipwreck interior fish",
       "sort": {
@@ -9720,7 +9720,7 @@
         "buy": null,
         "sell": 18,
         "kg": 4,
-        "sellPerKg": 4.5
+        "sellPerKg": 22.5
       }
     },
     {
@@ -9774,7 +9774,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4,
+      "sellPerKg": 12,
       "vendors": {},
       "search": "salmon snailfish 130-250m fish",
       "sort": {
@@ -9782,7 +9782,7 @@
         "buy": null,
         "sell": 20,
         "kg": 5,
-        "sellPerKg": 4
+        "sellPerKg": 12
       }
     },
     {
@@ -9920,7 +9920,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.3333333333333335,
+      "sellPerKg": 6.666666666666667,
       "vendors": {},
       "search": "sea goldie 0-50m fish",
       "sort": {
@@ -9928,7 +9928,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.3,
-        "sellPerKg": 3.3333333333333335
+        "sellPerKg": 6.666666666666667
       }
     },
     {
@@ -9986,7 +9986,7 @@
       "usedForParties": [
         5
       ],
-      "sellPerKg": 3.6,
+      "sellPerKg": 10.8,
       "vendors": {},
       "search": "sea toad 130-250m fish cucumber party",
       "sort": {
@@ -9994,7 +9994,7 @@
         "buy": null,
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6
+        "sellPerKg": 10.8
       }
     },
     {
@@ -10144,7 +10144,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.555555555555555,
+      "sellPerKg": 27.77777777777778,
       "vendors": {},
       "search": "sheepshead meat 0-50m fish",
       "sort": {
@@ -10152,7 +10152,7 @@
         "buy": null,
         "sell": 10,
         "kg": 1.8,
-        "sellPerKg": 5.555555555555555
+        "sellPerKg": 27.77777777777778
       }
     },
     {
@@ -10206,7 +10206,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 7.5,
       "vendors": {},
       "search": "small spotted dart 0-50m fish",
       "sort": {
@@ -10214,7 +10214,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5
+        "sellPerKg": 7.5
       }
     },
     {
@@ -10280,7 +10280,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 9.23076923076923,
+      "sellPerKg": 46.15384615384615,
       "vendors": {},
       "search": "snub-nosed spiny eel 3rd glacial cave fish",
       "sort": {
@@ -10288,7 +10288,7 @@
         "buy": null,
         "sell": 60,
         "kg": 6.5,
-        "sellPerKg": 9.23076923076923
+        "sellPerKg": 46.15384615384615
       }
     },
     {
@@ -10342,7 +10342,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.695652173913044,
+      "sellPerKg": 11.08695652173913,
       "vendors": {},
       "search": "spear squid 50-130m fish",
       "sort": {
@@ -10350,7 +10350,7 @@
         "buy": null,
         "sell": 17,
         "kg": 4.6,
-        "sellPerKg": 3.695652173913044
+        "sellPerKg": 11.08695652173913
       }
     },
     {
@@ -10464,7 +10464,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "starry puffer 0-50m fish",
       "sort": {
@@ -10472,7 +10472,7 @@
         "buy": null,
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     {
@@ -10526,7 +10526,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8,
+      "sellPerKg": 40,
       "vendors": {},
       "search": "starry skate glacial area fish",
       "sort": {
@@ -10534,7 +10534,7 @@
         "buy": null,
         "sell": 44,
         "kg": 5.5,
-        "sellPerKg": 8
+        "sellPerKg": 40
       }
     },
     {
@@ -10600,7 +10600,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.666666666666667,
+      "sellPerKg": 28.333333333333332,
       "vendors": {},
       "search": "stingray meat 0-50m fish",
       "sort": {
@@ -10608,7 +10608,7 @@
         "buy": null,
         "sell": 17,
         "kg": 3,
-        "sellPerKg": 5.666666666666667
+        "sellPerKg": 28.333333333333332
       }
     },
     {
@@ -10662,7 +10662,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.666666666666667,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "striped catfish 0-50m fish",
       "sort": {
@@ -10670,7 +10670,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667
+        "sellPerKg": 0
       }
     },
     {
@@ -10724,7 +10724,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.142857142857143,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "striped red mullet 50-130m fish",
       "sort": {
@@ -10732,7 +10732,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.7,
-        "sellPerKg": 7.142857142857143
+        "sellPerKg": 0
       }
     },
     {
@@ -10822,7 +10822,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.6,
+      "sellPerKg": 13.8,
       "vendors": {},
       "search": "threetooth puffer 130-250m fish",
       "sort": {
@@ -10830,7 +10830,7 @@
         "buy": null,
         "sell": 23,
         "kg": 5,
-        "sellPerKg": 4.6
+        "sellPerKg": 13.8
       }
     },
     {
@@ -10876,7 +10876,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 6.235294117647059,
+      "sellPerKg": 31.176470588235293,
       "vendors": {},
       "search": "thresher shark meat 0-50m fish shark party",
       "sort": {
@@ -10884,7 +10884,7 @@
         "buy": null,
         "sell": 53,
         "kg": 8.5,
-        "sellPerKg": 6.235294117647059
+        "sellPerKg": 31.176470588235293
       }
     },
     {
@@ -10930,7 +10930,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 1.1333333333333333,
+      "sellPerKg": 5.666666666666667,
       "vendors": {},
       "search": "tiger shark meat 50-130m fish shark party",
       "sort": {
@@ -10938,7 +10938,7 @@
         "buy": null,
         "sell": 17,
         "kg": 15,
-        "sellPerKg": 1.1333333333333333
+        "sellPerKg": 5.666666666666667
       }
     },
     {
@@ -10992,7 +10992,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.3157894736842106,
+      "sellPerKg": 6.578947368421053,
       "vendors": {},
       "search": "titan triggerfish 0-50m fish",
       "sort": {
@@ -11000,7 +11000,7 @@
         "buy": null,
         "sell": 5,
         "kg": 3.8,
-        "sellPerKg": 1.3157894736842106
+        "sellPerKg": 6.578947368421053
       }
     },
     {
@@ -11166,7 +11166,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 6.833333333333333,
+      "sellPerKg": 34.166666666666664,
       "vendors": {},
       "search": "vampire squid glacial passage fish shark party",
       "sort": {
@@ -11174,7 +11174,7 @@
         "buy": null,
         "sell": 41,
         "kg": 6,
-        "sellPerKg": 6.833333333333333
+        "sellPerKg": 34.166666666666664
       }
     },
     {
@@ -11282,7 +11282,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 6,
+      "sellPerKg": 18,
       "vendors": {},
       "search": "white spotted jellyfish 50-130m fish jellyfish party",
       "sort": {
@@ -11290,7 +11290,7 @@
         "buy": null,
         "sell": 6,
         "kg": 1,
-        "sellPerKg": 6
+        "sellPerKg": 18
       }
     },
     {
@@ -11356,7 +11356,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.1666666666666667,
+      "sellPerKg": 5.833333333333333,
       "vendors": {},
       "search": "white trevally 50-130m fish",
       "sort": {
@@ -11364,7 +11364,7 @@
         "buy": null,
         "sell": 7,
         "kg": 6,
-        "sellPerKg": 1.1666666666666667
+        "sellPerKg": 5.833333333333333
       }
     },
     {
@@ -11464,7 +11464,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.2,
+      "sellPerKg": 16,
       "vendors": {},
       "search": "whitetip reefshark meat 0-50m fish shark party",
       "sort": {
@@ -11472,7 +11472,7 @@
         "buy": null,
         "sell": 8,
         "kg": 2.5,
-        "sellPerKg": 3.2
+        "sellPerKg": 16
       }
     },
     {
@@ -11562,7 +11562,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 9.636363636363637,
+      "sellPerKg": 48.18181818181818,
       "vendors": {},
       "search": "xenacanthus meat hydrothermal vents fish",
       "sort": {
@@ -11570,7 +11570,7 @@
         "buy": null,
         "sell": 53,
         "kg": 5.5,
-        "sellPerKg": 9.636363636363637
+        "sellPerKg": 48.18181818181818
       }
     },
     {
@@ -11612,7 +11612,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 5,
       "vendors": {},
       "search": "yellow tang 0-50m fish",
       "sort": {
@@ -11620,7 +11620,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5
+        "sellPerKg": 5
       }
     },
     {
@@ -11674,7 +11674,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 5,
       "vendors": {},
       "search": "yellowback fusilier 0-50m fish",
       "sort": {
@@ -11682,7 +11682,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5
+        "sellPerKg": 5
       }
     },
     {
@@ -11742,7 +11742,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 20,
       "vendors": {},
       "search": "yellowfin tuna akami 0-130m fish tuna party",
       "sort": {
@@ -11750,7 +11750,7 @@
         "buy": null,
         "sell": 24,
         "kg": 6,
-        "sellPerKg": 4
+        "sellPerKg": 20
       }
     },
     {
@@ -11810,7 +11810,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 25,
       "vendors": {},
       "search": "yellowfin tuna chutoro 0-130m fish tuna party",
       "sort": {
@@ -11818,7 +11818,7 @@
         "buy": null,
         "sell": 30,
         "kg": 6,
-        "sellPerKg": 5
+        "sellPerKg": 25
       }
     },
     {
@@ -11930,7 +11930,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 20,
       "vendors": {},
       "search": "zebra shark meat 0-50m fish shark party",
       "sort": {
@@ -11938,7 +11938,7 @@
         "buy": null,
         "sell": 42,
         "kg": 10.5,
-        "sellPerKg": 4
+        "sellPerKg": 20
       }
     },
     {
@@ -16743,7 +16743,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.428571428571429,
+      "sellPerKg": 32.142857142857146,
       "vendors": {},
       "search": "alaska pollock glacial area fish",
       "sort": {
@@ -16751,7 +16751,7 @@
         "buy": null,
         "sell": 45,
         "kg": 7,
-        "sellPerKg": 6.428571428571429
+        "sellPerKg": 32.142857142857146
       }
     },
     "3": {
@@ -16793,7 +16793,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10.5,
+      "sellPerKg": 31.5,
       "vendors": {},
       "search": "allenypterus hydrothermal vents fish",
       "sort": {
@@ -16801,7 +16801,7 @@
         "buy": null,
         "sell": 42,
         "kg": 4,
-        "sellPerKg": 10.5
+        "sellPerKg": 31.5
       }
     },
     "4": {
@@ -16861,7 +16861,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 43,
+      "sellPerKg": 129,
       "vendors": {},
       "search": "american lobster 0-50m fish lobster party",
       "sort": {
@@ -16869,7 +16869,7 @@
         "buy": null,
         "sell": 43,
         "kg": 1,
-        "sellPerKg": 43
+        "sellPerKg": 129
       }
     },
     "5": {
@@ -16911,7 +16911,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 18.75,
+      "sellPerKg": 56.25,
       "vendors": {},
       "search": "anomalocaris hydrothermal vents fish",
       "sort": {
@@ -16919,7 +16919,7 @@
         "buy": null,
         "sell": 75,
         "kg": 4,
-        "sellPerKg": 18.75
+        "sellPerKg": 56.25
       }
     },
     "6": {
@@ -16985,7 +16985,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.333333333333333,
+      "sellPerKg": 26.666666666666668,
       "vendors": {},
       "search": "antarctic octopus glacial area fish",
       "sort": {
@@ -16993,7 +16993,7 @@
         "buy": null,
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333
+        "sellPerKg": 26.666666666666668
       }
     },
     "7": {
@@ -17047,7 +17047,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.4,
+      "sellPerKg": 19.2,
       "vendors": {},
       "search": "arctic cod glacial area fish",
       "sort": {
@@ -17055,7 +17055,7 @@
         "buy": null,
         "sell": 32,
         "kg": 5,
-        "sellPerKg": 6.4
+        "sellPerKg": 19.2
       }
     },
     "8": {
@@ -17097,7 +17097,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 13.333333333333334,
+      "sellPerKg": 40,
       "vendors": {},
       "search": "arctic telescope fish glacial area fish",
       "sort": {
@@ -17105,7 +17105,7 @@
         "buy": null,
         "sell": 40,
         "kg": 3,
-        "sellPerKg": 13.333333333333334
+        "sellPerKg": 40
       }
     },
     "9": {
@@ -17159,7 +17159,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "atlantic anglerfish limestone cave fish",
       "sort": {
@@ -17167,7 +17167,7 @@
         "buy": null,
         "sell": 11,
         "kg": 5.5,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     "10": {
@@ -17225,7 +17225,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 1.75,
+      "sellPerKg": 5.25,
       "vendors": {},
       "search": "atlantic bonito 50-130m fish curry party",
       "sort": {
@@ -17233,7 +17233,7 @@
         "buy": null,
         "sell": 7,
         "kg": 4,
-        "sellPerKg": 1.75
+        "sellPerKg": 5.25
       }
     },
     "11": {
@@ -17299,7 +17299,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 6,
       "vendors": {},
       "search": "atlantic mackerel 50-130m fish",
       "sort": {
@@ -17307,7 +17307,7 @@
         "buy": null,
         "sell": 7,
         "kg": 3.5,
-        "sellPerKg": 2
+        "sellPerKg": 6
       }
     },
     "12": {
@@ -17463,7 +17463,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "barrel jellyfish 0-50m fish jellyfish party",
       "sort": {
@@ -17471,7 +17471,7 @@
         "buy": null,
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     "15": {
@@ -17544,7 +17544,7 @@
         8,
         4
       ],
-      "sellPerKg": 11.666666666666666,
+      "sellPerKg": 35,
       "vendors": {},
       "search": "barreleye glacial passage fish lobster shark party",
       "sort": {
@@ -17552,7 +17552,7 @@
         "buy": null,
         "sell": 35,
         "kg": 3,
-        "sellPerKg": 11.666666666666666
+        "sellPerKg": 35
       }
     },
     "16": {
@@ -17711,7 +17711,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10,
+      "sellPerKg": 30,
       "vendors": {},
       "search": "bigeye scad 50-130m fish",
       "sort": {
@@ -17719,7 +17719,7 @@
         "buy": null,
         "sell": 6,
         "kg": 0.6,
-        "sellPerKg": 10
+        "sellPerKg": 30
       }
     },
     "18": {
@@ -17777,7 +17777,7 @@
       "usedForParties": [
         5
       ],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "bigeye trevally 50-130m fish cucumber party",
       "sort": {
@@ -17785,7 +17785,7 @@
         "buy": null,
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     "19": {
@@ -17827,7 +17827,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "black and white snapper 0-50m fish",
       "sort": {
@@ -17835,7 +17835,7 @@
         "buy": null,
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3
+        "sellPerKg": 15
       }
     },
     "20": {
@@ -18113,7 +18113,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 170,
+      "sellPerKg": 850,
       "vendors": {},
       "search": "black tiger shrimp 50-130m fish shrimp party",
       "sort": {
@@ -18121,7 +18121,7 @@
         "buy": null,
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170
+        "sellPerKg": 850
       }
     },
     "23": {
@@ -18346,7 +18346,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.6363636363636362,
+      "sellPerKg": 18.181818181818183,
       "vendors": {},
       "search": "blackfin barracuda 50-130m fish",
       "sort": {
@@ -18354,7 +18354,7 @@
         "buy": null,
         "sell": 20,
         "kg": 5.5,
-        "sellPerKg": 3.6363636363636362
+        "sellPerKg": 18.181818181818183
       }
     },
     "25": {
@@ -18414,7 +18414,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 8,
+      "sellPerKg": 40,
       "vendors": {},
       "search": "blacktip shark meat 0-50m fish shark party",
       "sort": {
@@ -18422,7 +18422,7 @@
         "buy": null,
         "sell": 20,
         "kg": 2.5,
-        "sellPerKg": 8
+        "sellPerKg": 40
       }
     },
     "26": {
@@ -18566,7 +18566,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.333333333333333,
+      "sellPerKg": 26.666666666666668,
       "vendors": {},
       "search": "blobfish glacial passage fish",
       "sort": {
@@ -18574,7 +18574,7 @@
         "buy": null,
         "sell": 40,
         "kg": 7.5,
-        "sellPerKg": 5.333333333333333
+        "sellPerKg": 26.666666666666668
       }
     },
     "28": {
@@ -18620,7 +18620,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 2.4285714285714284,
+      "sellPerKg": 7.285714285714286,
       "vendors": {},
       "search": "blood-belly comb jellyfish 130-250m fish jellyfish party",
       "sort": {
@@ -18628,7 +18628,7 @@
         "buy": null,
         "sell": 17,
         "kg": 7,
-        "sellPerKg": 2.4285714285714284
+        "sellPerKg": 7.285714285714286
       }
     },
     "29": {
@@ -18736,7 +18736,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 47,
+      "sellPerKg": 141,
       "vendors": {},
       "search": "blue lobster 0-50m fish lobster party",
       "sort": {
@@ -18744,7 +18744,7 @@
         "buy": null,
         "sell": 47,
         "kg": 1,
-        "sellPerKg": 47
+        "sellPerKg": 141
       }
     },
     "31": {
@@ -18798,7 +18798,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4,
+      "sellPerKg": 12,
       "vendors": {},
       "search": "blue tang 0-50m fish",
       "sort": {
@@ -18806,7 +18806,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4
+        "sellPerKg": 12
       }
     },
     "32": {
@@ -18866,7 +18866,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 3.375,
+      "sellPerKg": 16.875,
       "vendors": {},
       "search": "bluefin tuna akami 0-130m fish tuna party",
       "sort": {
@@ -18874,7 +18874,7 @@
         "buy": null,
         "sell": 27,
         "kg": 8,
-        "sellPerKg": 3.375
+        "sellPerKg": 16.875
       }
     },
     "33": {
@@ -18948,7 +18948,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 20,
       "vendors": {},
       "search": "bluefin tuna chutoro 0-130m fish tuna party",
       "sort": {
@@ -18956,7 +18956,7 @@
         "buy": null,
         "sell": 32,
         "kg": 8,
-        "sellPerKg": 4
+        "sellPerKg": 20
       }
     },
     "34": {
@@ -19064,7 +19064,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 25,
+      "sellPerKg": 50,
       "vendors": {},
       "search": "bluehead tilefish 50-130m fish",
       "sort": {
@@ -19072,7 +19072,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.2,
-        "sellPerKg": 25
+        "sellPerKg": 50
       }
     },
     "36": {
@@ -19126,7 +19126,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.6,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "bluespotted stargazer 130-250m fish",
       "sort": {
@@ -19134,7 +19134,7 @@
         "buy": null,
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6
+        "sellPerKg": 0
       }
     },
     "37": {
@@ -19242,7 +19242,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 3.6,
+      "sellPerKg": 10.8,
       "vendors": {},
       "search": "box jellyfish 0-50m fish jellyfish party",
       "sort": {
@@ -19250,7 +19250,7 @@
         "buy": null,
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6
+        "sellPerKg": 10.8
       }
     },
     "39": {
@@ -19540,7 +19540,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 14.666666666666666,
+      "sellPerKg": 44,
       "vendors": {},
       "search": "california spiny lobster 50-130m fish lobster party",
       "sort": {
@@ -19548,7 +19548,7 @@
         "buy": null,
         "sell": 22,
         "kg": 1.5,
-        "sellPerKg": 14.666666666666666
+        "sellPerKg": 44
       }
     },
     "43": {
@@ -19606,7 +19606,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 30,
+      "sellPerKg": 90,
       "vendors": {},
       "search": "capelin glacial area fish curry party",
       "sort": {
@@ -19614,7 +19614,7 @@
         "buy": null,
         "sell": 15,
         "kg": 0.5,
-        "sellPerKg": 30
+        "sellPerKg": 90
       }
     },
     "44": {
@@ -19656,7 +19656,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "cardinal fish 0-50m fish",
       "sort": {
@@ -19664,7 +19664,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     "45": {
@@ -19910,7 +19910,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 12,
+      "sellPerKg": 36,
       "vendors": {},
       "search": "chambered nautilus 130-250m fish",
       "sort": {
@@ -19918,7 +19918,7 @@
         "buy": null,
         "sell": 12,
         "kg": 1,
-        "sellPerKg": 12
+        "sellPerKg": 36
       }
     },
     "48": {
@@ -20111,7 +20111,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.705882352941177,
+      "sellPerKg": 14.117647058823529,
       "vendors": {},
       "search": "clearfin lionfish 0-50m fish",
       "sort": {
@@ -20119,7 +20119,7 @@
         "buy": null,
         "sell": 8,
         "kg": 1.7,
-        "sellPerKg": 4.705882352941177
+        "sellPerKg": 14.117647058823529
       }
     },
     "50": {
@@ -20161,7 +20161,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 250,
+      "sellPerKg": 1000,
       "vendors": {},
       "search": "clione 130-250m fish",
       "sort": {
@@ -20169,7 +20169,7 @@
         "buy": null,
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250
+        "sellPerKg": 1000
       }
     },
     "51": {
@@ -20275,7 +20275,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 16.666666666666668,
+      "sellPerKg": 50,
       "vendors": {},
       "search": "clown frogfish 50-130m fish shark party",
       "sort": {
@@ -20283,7 +20283,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.3,
-        "sellPerKg": 16.666666666666668
+        "sellPerKg": 50
       }
     },
     "53": {
@@ -20337,7 +20337,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "clownfish 0-50m fish",
       "sort": {
@@ -20345,7 +20345,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5
+        "sellPerKg": 10
       }
     },
     "54": {
@@ -20405,7 +20405,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 2,
+      "sellPerKg": 6,
       "vendors": {},
       "search": "comb jelly 130-250m fish jellyfish party",
       "sort": {
@@ -20413,7 +20413,7 @@
         "buy": null,
         "sell": 14,
         "kg": 7,
-        "sellPerKg": 2
+        "sellPerKg": 6
       }
     },
     "55": {
@@ -20467,7 +20467,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "comber 0-50m fish",
       "sort": {
@@ -20475,7 +20475,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.2,
-        "sellPerKg": 5
+        "sellPerKg": 10
       }
     },
     "56": {
@@ -20583,7 +20583,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "cookiecutter shark 130-250m fish shark party",
       "sort": {
@@ -20591,7 +20591,7 @@
         "buy": null,
         "sell": 25,
         "kg": 5,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     "58": {
@@ -20651,7 +20651,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 5.5,
+      "sellPerKg": 27.5,
       "vendors": {},
       "search": "copper shark meat 0-50m fish shark party",
       "sort": {
@@ -20659,7 +20659,7 @@
         "buy": null,
         "sell": 22,
         "kg": 4,
-        "sellPerKg": 5.5
+        "sellPerKg": 27.5
       }
     },
     "59": {
@@ -20725,7 +20725,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "coral trout 50-130m fish",
       "sort": {
@@ -20733,7 +20733,7 @@
         "buy": null,
         "sell": 6,
         "kg": 3,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     "60": {
@@ -20841,7 +20841,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 31.333333333333332,
+      "sellPerKg": 94,
       "vendors": {},
       "search": "crystal lobster 50-130m fish lobster party",
       "sort": {
@@ -20849,7 +20849,7 @@
         "buy": null,
         "sell": 47,
         "kg": 1.5,
-        "sellPerKg": 31.333333333333332
+        "sellPerKg": 94
       }
     },
     "62": {
@@ -21183,7 +21183,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 1.5,
+      "sellPerKg": 4.5,
       "vendors": {},
       "search": "cuttlefish 50-130m fish tuna party",
       "sort": {
@@ -21191,7 +21191,7 @@
         "buy": null,
         "sell": 6,
         "kg": 4,
-        "sellPerKg": 1.5
+        "sellPerKg": 4.5
       }
     },
     "65": {
@@ -21233,7 +21233,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 15,
+      "sellPerKg": 45,
       "vendors": {},
       "search": "devil scorpionfish 50-130m fish",
       "sort": {
@@ -21241,7 +21241,7 @@
         "buy": null,
         "sell": 45,
         "kg": 3,
-        "sellPerKg": 15
+        "sellPerKg": 45
       }
     },
     "66": {
@@ -21283,7 +21283,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 30,
+      "sellPerKg": 90,
       "vendors": {},
       "search": "dollocaris ingens hydrothermal vents fish",
       "sort": {
@@ -21291,7 +21291,7 @@
         "buy": null,
         "sell": 45,
         "kg": 1.5,
-        "sellPerKg": 30
+        "sellPerKg": 90
       }
     },
     "67": {
@@ -21333,7 +21333,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.882352941176471,
+      "sellPerKg": 29.41176470588235,
       "vendors": {},
       "search": "drepanaspis meat hydrothermal vents fish",
       "sort": {
@@ -21341,7 +21341,7 @@
         "buy": null,
         "sell": 50,
         "kg": 8.5,
-        "sellPerKg": 5.882352941176471
+        "sellPerKg": 29.41176470588235
       }
     },
     "68": {
@@ -21395,7 +21395,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 9.5,
+      "sellPerKg": 28.5,
       "vendors": {},
       "search": "dumbo octopus glacial passage fish",
       "sort": {
@@ -21403,7 +21403,7 @@
         "buy": null,
         "sell": 38,
         "kg": 4,
-        "sellPerKg": 9.5
+        "sellPerKg": 28.5
       }
     },
     "69": {
@@ -21445,7 +21445,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.58974358974359,
+      "sellPerKg": 17.94871794871795,
       "vendors": {},
       "search": "dunkleosteus meat hydrothermal vents fish",
       "sort": {
@@ -21453,7 +21453,7 @@
         "buy": null,
         "sell": 70,
         "kg": 19.5,
-        "sellPerKg": 3.58974358974359
+        "sellPerKg": 17.94871794871795
       }
     },
     "70": {
@@ -21507,7 +21507,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.1111111111111112,
+      "sellPerKg": 5.555555555555555,
       "vendors": {},
       "search": "dusky grouper 50-130m fish",
       "sort": {
@@ -21515,7 +21515,7 @@
         "buy": null,
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112
+        "sellPerKg": 5.555555555555555
       }
     },
     "71": {
@@ -21575,7 +21575,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 18.8,
+      "sellPerKg": 56.4,
       "vendors": {},
       "search": "eastern rock lobster 130-250m fish lobster party",
       "sort": {
@@ -21583,7 +21583,7 @@
         "buy": null,
         "sell": 47,
         "kg": 2.5,
-        "sellPerKg": 18.8
+        "sellPerKg": 56.4
       }
     },
     "72": {
@@ -21952,7 +21952,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.5,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "emperor angelfish 0-50m fish",
       "sort": {
@@ -21960,7 +21960,7 @@
         "buy": null,
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5
+        "sellPerKg": 0
       }
     },
     "75": {
@@ -22118,7 +22118,7 @@
         6,
         8
       ],
-      "sellPerKg": 23,
+      "sellPerKg": 69,
       "vendors": {},
       "search": "european lobster 0-50m fish curry lobster party",
       "sort": {
@@ -22126,7 +22126,7 @@
         "buy": null,
         "sell": 23,
         "kg": 1,
-        "sellPerKg": 23
+        "sellPerKg": 69
       }
     },
     "78": {
@@ -22186,7 +22186,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 7.166666666666667,
+      "sellPerKg": 21.5,
       "vendors": {},
       "search": "falcatus hydrothermal vents fish shark party",
       "sort": {
@@ -22194,7 +22194,7 @@
         "buy": null,
         "sell": 43,
         "kg": 6,
-        "sellPerKg": 7.166666666666667
+        "sellPerKg": 21.5
       }
     },
     "79": {
@@ -22240,7 +22240,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 110,
+      "sellPerKg": 330,
       "vendors": {},
       "search": "fan lobster 50-130m fish lobster party",
       "sort": {
@@ -22248,7 +22248,7 @@
         "buy": null,
         "sell": 22,
         "kg": 0.2,
-        "sellPerKg": 110
+        "sellPerKg": 330
       }
     },
     "80": {
@@ -22350,7 +22350,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "fangtooth 130-250m fish",
       "sort": {
@@ -22358,7 +22358,7 @@
         "buy": null,
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     "82": {
@@ -22400,7 +22400,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "flame angelfish 0-50m fish",
       "sort": {
@@ -22408,7 +22408,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.2,
-        "sellPerKg": 10
+        "sellPerKg": 0
       }
     },
     "83": {
@@ -22468,7 +22468,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "fried egg jellyfish 0-50m fish jellyfish party",
       "sort": {
@@ -22476,7 +22476,7 @@
         "buy": null,
         "sell": 5,
         "kg": 1,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     "84": {
@@ -22536,7 +22536,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.2941176470588234,
+      "sellPerKg": 16.470588235294116,
       "vendors": {},
       "search": "frilled shark meat 130-250m fish shark party",
       "sort": {
@@ -22544,7 +22544,7 @@
         "buy": null,
         "sell": 28,
         "kg": 8.5,
-        "sellPerKg": 3.2941176470588234
+        "sellPerKg": 16.470588235294116
       }
     },
     "85": {
@@ -22791,7 +22791,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 14,
+      "sellPerKg": 42,
       "vendors": {},
       "search": "gelatinous snailfish glacial area fish",
       "sort": {
@@ -22799,7 +22799,7 @@
         "buy": null,
         "sell": 28,
         "kg": 2,
-        "sellPerKg": 14
+        "sellPerKg": 42
       }
     },
     "88": {
@@ -22905,7 +22905,7 @@
       "usedForParties": [
         5
       ],
-      "sellPerKg": 2,
+      "sellPerKg": 10,
       "vendors": {},
       "search": "giant trevally meat 50-130m fish cucumber party",
       "sort": {
@@ -22913,7 +22913,7 @@
         "buy": null,
         "sell": 10,
         "kg": 5,
-        "sellPerKg": 2
+        "sellPerKg": 10
       }
     },
     "90": {
@@ -23067,7 +23067,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.625,
+      "sellPerKg": 28.125,
       "vendors": {},
       "search": "golden king crab glacial area fish",
       "sort": {
@@ -23075,7 +23075,7 @@
         "buy": null,
         "sell": 45,
         "kg": 8,
-        "sellPerKg": 5.625
+        "sellPerKg": 28.125
       }
     },
     "93": {
@@ -23259,7 +23259,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 0.8571428571428571,
+      "sellPerKg": 4.285714285714286,
       "vendors": {},
       "search": "great barracuda 50-130m fish",
       "sort": {
@@ -23267,7 +23267,7 @@
         "buy": null,
         "sell": 6,
         "kg": 7,
-        "sellPerKg": 0.8571428571428571
+        "sellPerKg": 4.285714285714286
       }
     },
     "95": {
@@ -23325,7 +23325,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 2.7777777777777777,
+      "sellPerKg": 13.88888888888889,
       "vendors": {},
       "search": "green humphead parrotfish 0-50m fish curry party",
       "sort": {
@@ -23333,7 +23333,7 @@
         "buy": null,
         "sell": 5,
         "kg": 1.8,
-        "sellPerKg": 2.7777777777777777
+        "sellPerKg": 13.88888888888889
       }
     },
     "96": {
@@ -23475,7 +23475,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.1,
+      "sellPerKg": 15.5,
       "vendors": {},
       "search": "greenland shark meat glacial area fish shark party",
       "sort": {
@@ -23483,7 +23483,7 @@
         "buy": null,
         "sell": 62,
         "kg": 20,
-        "sellPerKg": 3.1
+        "sellPerKg": 15.5
       }
     },
     "98": {
@@ -23537,7 +23537,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.7142857142857142,
+      "sellPerKg": 8.571428571428571,
       "vendors": {},
       "search": "grey triggerfish 50-130m fish",
       "sort": {
@@ -23545,7 +23545,7 @@
         "buy": null,
         "sell": 6,
         "kg": 3.5,
-        "sellPerKg": 1.7142857142857142
+        "sellPerKg": 8.571428571428571
       }
     },
     "99": {
@@ -23741,7 +23741,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.166666666666667,
+      "sellPerKg": 30.833333333333332,
       "vendors": {},
       "search": "haddock glacial area fish",
       "sort": {
@@ -23749,7 +23749,7 @@
         "buy": null,
         "sell": 37,
         "kg": 6,
-        "sellPerKg": 6.166666666666667
+        "sellPerKg": 30.833333333333332
       }
     },
     "102": {
@@ -23795,7 +23795,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.6153846153846154,
+      "sellPerKg": 18.076923076923077,
       "vendors": {},
       "search": "hammerhead meat 50-130m fish shark party",
       "sort": {
@@ -23803,7 +23803,7 @@
         "buy": null,
         "sell": 47,
         "kg": 13,
-        "sellPerKg": 3.6153846153846154
+        "sellPerKg": 18.076923076923077
       }
     },
     "103": {
@@ -23857,7 +23857,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.454545454545454,
+      "sellPerKg": 27.27272727272727,
       "vendors": {},
       "search": "harlequin hind 50-130m fish",
       "sort": {
@@ -23865,7 +23865,7 @@
         "buy": null,
         "sell": 6,
         "kg": 1.1,
-        "sellPerKg": 5.454545454545454
+        "sellPerKg": 27.27272727272727
       }
     },
     "104": {
@@ -23971,7 +23971,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 33.333333333333336,
+      "sellPerKg": 100,
       "vendors": {},
       "search": "horsehair crab glacial area fish",
       "sort": {
@@ -23979,7 +23979,7 @@
         "buy": null,
         "sell": 50,
         "kg": 1.5,
-        "sellPerKg": 33.333333333333336
+        "sellPerKg": 100
       }
     },
     "106": {
@@ -24085,7 +24085,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 6.4,
+      "sellPerKg": 32,
       "vendors": {},
       "search": "humboldt squid meat 50-130m fish shrimp party",
       "sort": {
@@ -24093,7 +24093,7 @@
         "buy": null,
         "sell": 48,
         "kg": 7.5,
-        "sellPerKg": 6.4
+        "sellPerKg": 32
       }
     },
     "108": {
@@ -24217,7 +24217,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 5.818181818181818,
+      "sellPerKg": 17.454545454545453,
       "vendors": {},
       "search": "ice fish glacial area fish curry party",
       "sort": {
@@ -24225,7 +24225,7 @@
         "buy": null,
         "sell": 32,
         "kg": 5.5,
-        "sellPerKg": 5.818181818181818
+        "sellPerKg": 17.454545454545453
       }
     },
     "110": {
@@ -24706,7 +24706,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.857142857142857,
+      "sellPerKg": 5.714285714285714,
       "vendors": {},
       "search": "lagoon triggerfish 0-50m fish",
       "sort": {
@@ -24714,7 +24714,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.7,
-        "sellPerKg": 2.857142857142857
+        "sellPerKg": 5.714285714285714
       }
     },
     "116": {
@@ -24792,7 +24792,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "long-snouted seahorse 0-50m fish",
       "sort": {
@@ -24800,7 +24800,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4
+        "sellPerKg": 0
       }
     },
     "117": {
@@ -24854,7 +24854,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.75,
+      "sellPerKg": 18.75,
       "vendors": {},
       "search": "longfin batfish 0-50m fish",
       "sort": {
@@ -24862,7 +24862,7 @@
         "buy": null,
         "sell": 3,
         "kg": 0.8,
-        "sellPerKg": 3.75
+        "sellPerKg": 18.75
       }
     },
     "118": {
@@ -24908,7 +24908,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 1.8461538461538463,
+      "sellPerKg": 9.23076923076923,
       "vendors": {},
       "search": "longnose sawshark meat 50-130m fish shark party",
       "sort": {
@@ -24916,7 +24916,7 @@
         "buy": null,
         "sell": 12,
         "kg": 6.5,
-        "sellPerKg": 1.8461538461538463
+        "sellPerKg": 9.23076923076923
       }
     },
     "119": {
@@ -24970,7 +24970,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.428571428571429,
+      "sellPerKg": 22.285714285714285,
       "vendors": {},
       "search": "longspine porcupinefish 0-50m fish",
       "sort": {
@@ -24978,7 +24978,7 @@
         "buy": null,
         "sell": 26,
         "kg": 3.5,
-        "sellPerKg": 7.428571428571429
+        "sellPerKg": 22.285714285714285
       }
     },
     "120": {
@@ -25032,7 +25032,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.5,
+      "sellPerKg": 22.5,
       "vendors": {},
       "search": "longspine squirrelfish 0-50m fish",
       "sort": {
@@ -25040,7 +25040,7 @@
         "buy": null,
         "sell": 3,
         "kg": 0.4,
-        "sellPerKg": 7.5
+        "sellPerKg": 22.5
       }
     },
     "121": {
@@ -25082,7 +25082,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8,
+      "sellPerKg": 24,
       "vendors": {},
       "search": "lumpfish hydrothermal vents fish",
       "sort": {
@@ -25090,7 +25090,7 @@
         "buy": null,
         "sell": 40,
         "kg": 5,
-        "sellPerKg": 8
+        "sellPerKg": 24
       }
     },
     "122": {
@@ -25244,7 +25244,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.25,
+      "sellPerKg": 12.5,
       "vendors": {},
       "search": "mackerel scad 50-130m fish",
       "sort": {
@@ -25252,7 +25252,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.8,
-        "sellPerKg": 6.25
+        "sellPerKg": 12.5
       }
     },
     "125": {
@@ -25298,7 +25298,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4.777777777777778,
+      "sellPerKg": 23.88888888888889,
       "vendors": {},
       "search": "mako meat 0-50m fish shark party",
       "sort": {
@@ -25306,7 +25306,7 @@
         "buy": null,
         "sell": 43,
         "kg": 9,
-        "sellPerKg": 4.777777777777778
+        "sellPerKg": 23.88888888888889
       }
     },
     "126": {
@@ -25508,7 +25508,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8.571428571428571,
+      "sellPerKg": 42.857142857142854,
       "vendors": {},
       "search": "marbled electric ray meat 0-50m fish",
       "sort": {
@@ -25516,7 +25516,7 @@
         "buy": null,
         "sell": 30,
         "kg": 3.5,
-        "sellPerKg": 8.571428571428571
+        "sellPerKg": 42.857142857142854
       }
     },
     "130": {
@@ -25576,7 +25576,7 @@
       "usedForParties": [
         3
       ],
-      "sellPerKg": 6,
+      "sellPerKg": 30,
       "vendors": {},
       "search": "marlin meat 0-50m fish marlin party",
       "sort": {
@@ -25584,7 +25584,7 @@
         "buy": null,
         "sell": 45,
         "kg": 7.5,
-        "sellPerKg": 6
+        "sellPerKg": 30
       }
     },
     "131": {
@@ -25772,7 +25772,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.5,
+      "sellPerKg": 7.5,
       "vendors": {},
       "search": "mediterranean parrotfish 0-50m fish",
       "sort": {
@@ -25780,7 +25780,7 @@
         "buy": null,
         "sell": 3,
         "kg": 2,
-        "sellPerKg": 1.5
+        "sellPerKg": 7.5
       }
     },
     "133": {
@@ -25822,7 +25822,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.75,
+      "sellPerKg": 28.75,
       "vendors": {},
       "search": "megalograptus divine tree control room fish",
       "sort": {
@@ -25830,7 +25830,7 @@
         "buy": null,
         "sell": 46,
         "kg": 8,
-        "sellPerKg": 5.75
+        "sellPerKg": 28.75
       }
     },
     "134": {
@@ -25890,7 +25890,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 2.6956521739130435,
+      "sellPerKg": 13.478260869565217,
       "vendors": {},
       "search": "megamouth shark meat 130-250m fish shark party",
       "sort": {
@@ -25898,7 +25898,7 @@
         "buy": null,
         "sell": 31,
         "kg": 11.5,
-        "sellPerKg": 2.6956521739130435
+        "sellPerKg": 13.478260869565217
       }
     },
     "135": {
@@ -26145,7 +26145,7 @@
         6,
         8
       ],
-      "sellPerKg": 1.8888888888888888,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "moray eel 0-50m fish curry lobster party",
       "sort": {
@@ -26153,7 +26153,7 @@
         "buy": null,
         "sell": 17,
         "kg": 9,
-        "sellPerKg": 1.8888888888888888
+        "sellPerKg": 0
       }
     },
     "137": {
@@ -26207,7 +26207,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.1111111111111112,
+      "sellPerKg": 5.555555555555555,
       "vendors": {},
       "search": "narrow-barred spanish mackerel 50-130m fish",
       "sort": {
@@ -26215,7 +26215,7 @@
         "buy": null,
         "sell": 10,
         "kg": 9,
-        "sellPerKg": 1.1111111111111112
+        "sellPerKg": 5.555555555555555
       }
     },
     "138": {
@@ -26269,7 +26269,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.842105263157895,
+      "sellPerKg": 24.210526315789473,
       "vendors": {},
       "search": "narwhal meat glacial area fish",
       "sort": {
@@ -26277,7 +26277,7 @@
         "buy": null,
         "sell": 46,
         "kg": 9.5,
-        "sellPerKg": 4.842105263157895
+        "sellPerKg": 24.210526315789473
       }
     },
     "139": {
@@ -26337,7 +26337,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 125,
+      "sellPerKg": 375,
       "vendors": {},
       "search": "norway lobster 130-250m fish lobster party",
       "sort": {
@@ -26345,7 +26345,7 @@
         "buy": null,
         "sell": 25,
         "kg": 0.2,
-        "sellPerKg": 125
+        "sellPerKg": 375
       }
     },
     "140": {
@@ -26901,7 +26901,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.666666666666667,
+      "sellPerKg": 13.333333333333334,
       "vendors": {},
       "search": "orbicular batfish 0-50m fish",
       "sort": {
@@ -26909,7 +26909,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667
+        "sellPerKg": 13.333333333333334
       }
     },
     "143": {
@@ -26967,7 +26967,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 8,
       "vendors": {},
       "search": "ornate wrasse 0-50m fish curry party",
       "sort": {
@@ -26975,7 +26975,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.5,
-        "sellPerKg": 4
+        "sellPerKg": 8
       }
     },
     "144": {
@@ -27029,7 +27029,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.4,
+      "sellPerKg": 13.2,
       "vendors": {},
       "search": "pacific fanfish 130-250m fish",
       "sort": {
@@ -27037,7 +27037,7 @@
         "buy": null,
         "sell": 22,
         "kg": 5,
-        "sellPerKg": 4.4
+        "sellPerKg": 13.2
       }
     },
     "145": {
@@ -27091,7 +27091,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 15,
+      "sellPerKg": 45,
       "vendors": {},
       "search": "painted comber 50-130m fish",
       "sort": {
@@ -27099,7 +27099,7 @@
         "buy": null,
         "sell": 6,
         "kg": 0.4,
-        "sellPerKg": 15
+        "sellPerKg": 45
       }
     },
     "146": {
@@ -27213,7 +27213,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10.285714285714286,
+      "sellPerKg": 30.857142857142858,
       "vendors": {},
       "search": "peacock squid glacial passage fish",
       "sort": {
@@ -27221,7 +27221,7 @@
         "buy": null,
         "sell": 36,
         "kg": 3.5,
-        "sellPerKg": 10.285714285714286
+        "sellPerKg": 30.857142857142858
       }
     },
     "148": {
@@ -27275,7 +27275,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.5,
+      "sellPerKg": 37.5,
       "vendors": {},
       "search": "pelican eel glacial passage fish",
       "sort": {
@@ -27283,7 +27283,7 @@
         "buy": null,
         "sell": 60,
         "kg": 8,
-        "sellPerKg": 7.5
+        "sellPerKg": 37.5
       }
     },
     "149": {
@@ -27437,7 +27437,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8.444444444444445,
+      "sellPerKg": 25.333333333333332,
       "vendors": {},
       "search": "pikaia hydrothermal vents fish",
       "sort": {
@@ -27445,7 +27445,7 @@
         "buy": null,
         "sell": 38,
         "kg": 4.5,
-        "sellPerKg": 8.444444444444445
+        "sellPerKg": 25.333333333333332
       }
     },
     "152": {
@@ -27487,7 +27487,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 10,
+      "sellPerKg": 30,
       "vendors": {},
       "search": "polar eelpout glacial area fish",
       "sort": {
@@ -27495,7 +27495,7 @@
         "buy": null,
         "sell": 30,
         "kg": 3,
-        "sellPerKg": 10
+        "sellPerKg": 30
       }
     },
     "153": {
@@ -27555,7 +27555,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4.074074074074074,
+      "sellPerKg": 20.37037037037037,
       "vendors": {},
       "search": "porbeagle shark meat glacial area fish shark party",
       "sort": {
@@ -27563,7 +27563,7 @@
         "buy": null,
         "sell": 55,
         "kg": 13.5,
-        "sellPerKg": 4.074074074074074
+        "sellPerKg": 20.37037037037037
       }
     },
     "154": {
@@ -27707,7 +27707,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 5,
       "vendors": {},
       "search": "pyramid butterflyfish 0-50m fish",
       "sort": {
@@ -27715,7 +27715,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5
+        "sellPerKg": 5
       }
     },
     "156": {
@@ -27757,7 +27757,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.666666666666667,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "qingmendous hydrothermal vents fish",
       "sort": {
@@ -27765,7 +27765,7 @@
         "buy": null,
         "sell": 40,
         "kg": 6,
-        "sellPerKg": 6.666666666666667
+        "sellPerKg": 0
       }
     },
     "157": {
@@ -27945,7 +27945,7 @@
       "usedForParties": [
         6
       ],
-      "sellPerKg": 3.3333333333333335,
+      "sellPerKg": 6.666666666666667,
       "vendors": {},
       "search": "rainbow wrasse 0-50m fish curry party",
       "sort": {
@@ -27953,7 +27953,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.6,
-        "sellPerKg": 3.3333333333333335
+        "sellPerKg": 6.666666666666667
       }
     },
     "160": {
@@ -28011,7 +28011,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 12,
       "vendors": {},
       "search": "red bream 130-250m fish shark party",
       "sort": {
@@ -28019,7 +28019,7 @@
         "buy": null,
         "sell": 12,
         "kg": 3,
-        "sellPerKg": 4
+        "sellPerKg": 12
       }
     },
     "161": {
@@ -28073,7 +28073,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2,
+      "sellPerKg": 6,
       "vendors": {},
       "search": "red lionfish 0-50m fish",
       "sort": {
@@ -28081,7 +28081,7 @@
         "buy": null,
         "sell": 3,
         "kg": 1.5,
-        "sellPerKg": 2
+        "sellPerKg": 6
       }
     },
     "162": {
@@ -28127,7 +28127,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 250,
+      "sellPerKg": 750,
       "vendors": {},
       "search": "red-banded lobster 0-50m fish lobster party",
       "sort": {
@@ -28135,7 +28135,7 @@
         "buy": null,
         "sell": 25,
         "kg": 0.1,
-        "sellPerKg": 250
+        "sellPerKg": 750
       }
     },
     "163": {
@@ -28189,7 +28189,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "redtoothed triggerfish 0-50m fish",
       "sort": {
@@ -28197,7 +28197,7 @@
         "buy": null,
         "sell": 3,
         "kg": 1,
-        "sellPerKg": 3
+        "sellPerKg": 15
       }
     },
     "164": {
@@ -28255,7 +28255,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 6,
+      "sellPerKg": 42,
       "vendors": {},
       "search": "rhinochimaeridae meat 130-250m fish shark party",
       "sort": {
@@ -28263,7 +28263,7 @@
         "buy": null,
         "sell": 30,
         "kg": 5,
-        "sellPerKg": 6
+        "sellPerKg": 42
       }
     },
     "165": {
@@ -28603,7 +28603,7 @@
       "usedForParties": [
         3
       ],
-      "sellPerKg": 7.222222222222222,
+      "sellPerKg": 36.111111111111114,
       "vendors": {},
       "search": "sailfish meat shipwreck interior fish marlin party",
       "sort": {
@@ -28611,7 +28611,7 @@
         "buy": null,
         "sell": 65,
         "kg": 9,
-        "sellPerKg": 7.222222222222222
+        "sellPerKg": 36.111111111111114
       }
     },
     "167": {
@@ -28653,7 +28653,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "salema porgy 0-50m fish",
       "sort": {
@@ -28661,7 +28661,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.4,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     "168": {
@@ -28763,7 +28763,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.5,
+      "sellPerKg": 22.5,
       "vendors": {},
       "search": "sally lightfoot crab shipwreck interior fish",
       "sort": {
@@ -28771,7 +28771,7 @@
         "buy": null,
         "sell": 18,
         "kg": 4,
-        "sellPerKg": 4.5
+        "sellPerKg": 22.5
       }
     },
     "170": {
@@ -28825,7 +28825,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4,
+      "sellPerKg": 12,
       "vendors": {},
       "search": "salmon snailfish 130-250m fish",
       "sort": {
@@ -28833,7 +28833,7 @@
         "buy": null,
         "sell": 20,
         "kg": 5,
-        "sellPerKg": 4
+        "sellPerKg": 12
       }
     },
     "171": {
@@ -29150,7 +29150,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.3333333333333335,
+      "sellPerKg": 6.666666666666667,
       "vendors": {},
       "search": "sea goldie 0-50m fish",
       "sort": {
@@ -29158,7 +29158,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.3,
-        "sellPerKg": 3.3333333333333335
+        "sellPerKg": 6.666666666666667
       }
     },
     "175": {
@@ -29377,7 +29377,7 @@
       "usedForParties": [
         5
       ],
-      "sellPerKg": 3.6,
+      "sellPerKg": 10.8,
       "vendors": {},
       "search": "sea toad 130-250m fish cucumber party",
       "sort": {
@@ -29385,7 +29385,7 @@
         "buy": null,
         "sell": 18,
         "kg": 5,
-        "sellPerKg": 3.6
+        "sellPerKg": 10.8
       }
     },
     "177": {
@@ -29427,7 +29427,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 70,
+      "sellPerKg": 280,
       "vendors": {},
       "search": "seadragon hydrothermal vents fish",
       "sort": {
@@ -29435,7 +29435,7 @@
         "buy": null,
         "sell": 35,
         "kg": 0.5,
-        "sellPerKg": 70
+        "sellPerKg": 280
       }
     },
     "178": {
@@ -29863,7 +29863,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.555555555555555,
+      "sellPerKg": 27.77777777777778,
       "vendors": {},
       "search": "sheepshead meat 0-50m fish",
       "sort": {
@@ -29871,7 +29871,7 @@
         "buy": null,
         "sell": 10,
         "kg": 1.8,
-        "sellPerKg": 5.555555555555555
+        "sellPerKg": 27.77777777777778
       }
     },
     "183": {
@@ -29925,7 +29925,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 7.5,
       "vendors": {},
       "search": "small spotted dart 0-50m fish",
       "sort": {
@@ -29933,7 +29933,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5
+        "sellPerKg": 7.5
       }
     },
     "184": {
@@ -29987,7 +29987,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 20,
+      "sellPerKg": 60,
       "vendors": {},
       "search": "snow crab glacial area fish",
       "sort": {
@@ -29995,7 +29995,7 @@
         "buy": null,
         "sell": 40,
         "kg": 2,
-        "sellPerKg": 20
+        "sellPerKg": 60
       }
     },
     "185": {
@@ -30061,7 +30061,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 9.23076923076923,
+      "sellPerKg": 46.15384615384615,
       "vendors": {},
       "search": "snub-nosed spiny eel 3rd glacial cave fish",
       "sort": {
@@ -30069,7 +30069,7 @@
         "buy": null,
         "sell": 60,
         "kg": 6.5,
-        "sellPerKg": 9.23076923076923
+        "sellPerKg": 46.15384615384615
       }
     },
     "186": {
@@ -30458,7 +30458,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 3.695652173913044,
+      "sellPerKg": 11.08695652173913,
       "vendors": {},
       "search": "spear squid 50-130m fish",
       "sort": {
@@ -30466,7 +30466,7 @@
         "buy": null,
         "sell": 17,
         "kg": 4.6,
-        "sellPerKg": 3.695652173913044
+        "sellPerKg": 11.08695652173913
       }
     },
     "189": {
@@ -30551,7 +30551,7 @@
         6,
         5
       ],
-      "sellPerKg": 2.2666666666666666,
+      "sellPerKg": 11.333333333333334,
       "vendors": {},
       "search": "spider crab 130-250m fish curry cucumber party",
       "sort": {
@@ -30559,7 +30559,7 @@
         "buy": null,
         "sell": 17,
         "kg": 7.5,
-        "sellPerKg": 2.2666666666666666
+        "sellPerKg": 11.333333333333334
       }
     },
     "190": {
@@ -30721,7 +30721,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5,
+      "sellPerKg": 15,
       "vendors": {},
       "search": "starry puffer 0-50m fish",
       "sort": {
@@ -30729,7 +30729,7 @@
         "buy": null,
         "sell": 15,
         "kg": 3,
-        "sellPerKg": 5
+        "sellPerKg": 15
       }
     },
     "193": {
@@ -30783,7 +30783,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 8,
+      "sellPerKg": 40,
       "vendors": {},
       "search": "starry skate glacial area fish",
       "sort": {
@@ -30791,7 +30791,7 @@
         "buy": null,
         "sell": 44,
         "kg": 5.5,
-        "sellPerKg": 8
+        "sellPerKg": 40
       }
     },
     "194": {
@@ -30857,7 +30857,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 5.666666666666667,
+      "sellPerKg": 28.333333333333332,
       "vendors": {},
       "search": "stingray meat 0-50m fish",
       "sort": {
@@ -30865,7 +30865,7 @@
         "buy": null,
         "sell": 17,
         "kg": 3,
-        "sellPerKg": 5.666666666666667
+        "sellPerKg": 28.333333333333332
       }
     },
     "195": {
@@ -30919,7 +30919,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 6.666666666666667,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "striped catfish 0-50m fish",
       "sort": {
@@ -30927,7 +30927,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.3,
-        "sellPerKg": 6.666666666666667
+        "sellPerKg": 0
       }
     },
     "196": {
@@ -30981,7 +30981,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 7.142857142857143,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "striped red mullet 50-130m fish",
       "sort": {
@@ -30989,7 +30989,7 @@
         "buy": null,
         "sell": 5,
         "kg": 0.7,
-        "sellPerKg": 7.142857142857143
+        "sellPerKg": 0
       }
     },
     "197": {
@@ -31079,7 +31079,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 4.6,
+      "sellPerKg": 13.8,
       "vendors": {},
       "search": "threetooth puffer 130-250m fish",
       "sort": {
@@ -31087,7 +31087,7 @@
         "buy": null,
         "sell": 23,
         "kg": 5,
-        "sellPerKg": 4.6
+        "sellPerKg": 13.8
       }
     },
     "199": {
@@ -31133,7 +31133,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 6.235294117647059,
+      "sellPerKg": 31.176470588235293,
       "vendors": {},
       "search": "thresher shark meat 0-50m fish shark party",
       "sort": {
@@ -31141,7 +31141,7 @@
         "buy": null,
         "sell": 53,
         "kg": 8.5,
-        "sellPerKg": 6.235294117647059
+        "sellPerKg": 31.176470588235293
       }
     },
     "200": {
@@ -31187,7 +31187,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 1.1333333333333333,
+      "sellPerKg": 5.666666666666667,
       "vendors": {},
       "search": "tiger shark meat 50-130m fish shark party",
       "sort": {
@@ -31195,7 +31195,7 @@
         "buy": null,
         "sell": 17,
         "kg": 15,
-        "sellPerKg": 1.1333333333333333
+        "sellPerKg": 5.666666666666667
       }
     },
     "201": {
@@ -31249,7 +31249,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.3157894736842106,
+      "sellPerKg": 6.578947368421053,
       "vendors": {},
       "search": "titan triggerfish 0-50m fish",
       "sort": {
@@ -31257,7 +31257,7 @@
         "buy": null,
         "sell": 5,
         "kg": 3.8,
-        "sellPerKg": 1.3157894736842106
+        "sellPerKg": 6.578947368421053
       }
     },
     "202": {
@@ -31315,7 +31315,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 27.5,
+      "sellPerKg": 82.5,
       "vendors": {},
       "search": "tokummia katalepsis hydrothermal vents fish lobster party",
       "sort": {
@@ -31323,7 +31323,7 @@
         "buy": null,
         "sell": 55,
         "kg": 2,
-        "sellPerKg": 27.5
+        "sellPerKg": 82.5
       }
     },
     "203": {
@@ -31431,7 +31431,7 @@
       "usedForParties": [
         8
       ],
-      "sellPerKg": 37.5,
+      "sellPerKg": 112.5,
       "vendors": {},
       "search": "tropical rock lobster 50-130m fish lobster party",
       "sort": {
@@ -31439,7 +31439,7 @@
         "buy": null,
         "sell": 45,
         "kg": 1.2,
-        "sellPerKg": 37.5
+        "sellPerKg": 112.5
       }
     },
     "205": {
@@ -31813,7 +31813,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 6.833333333333333,
+      "sellPerKg": 34.166666666666664,
       "vendors": {},
       "search": "vampire squid glacial passage fish shark party",
       "sort": {
@@ -31821,7 +31821,7 @@
         "buy": null,
         "sell": 41,
         "kg": 6,
-        "sellPerKg": 6.833333333333333
+        "sellPerKg": 34.166666666666664
       }
     },
     "210": {
@@ -31929,7 +31929,7 @@
         5,
         7
       ],
-      "sellPerKg": 85,
+      "sellPerKg": 425,
       "vendors": {},
       "search": "waptia fieldensis hydrothermal vents fish cucumber shrimp party",
       "sort": {
@@ -31937,7 +31937,7 @@
         "buy": null,
         "sell": 34,
         "kg": 0.4,
-        "sellPerKg": 85
+        "sellPerKg": 425
       }
     },
     "212": {
@@ -32215,7 +32215,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 170,
+      "sellPerKg": 850,
       "vendors": {},
       "search": "white shrimp 0-130m fish shrimp party",
       "sort": {
@@ -32223,7 +32223,7 @@
         "buy": null,
         "sell": 17,
         "kg": 0.1,
-        "sellPerKg": 170
+        "sellPerKg": 850
       }
     },
     "214": {
@@ -32283,7 +32283,7 @@
       "usedForParties": [
         1
       ],
-      "sellPerKg": 6,
+      "sellPerKg": 18,
       "vendors": {},
       "search": "white spotted jellyfish 50-130m fish jellyfish party",
       "sort": {
@@ -32291,7 +32291,7 @@
         "buy": null,
         "sell": 6,
         "kg": 1,
-        "sellPerKg": 6
+        "sellPerKg": 18
       }
     },
     "215": {
@@ -32357,7 +32357,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 1.1666666666666667,
+      "sellPerKg": 5.833333333333333,
       "vendors": {},
       "search": "white trevally 50-130m fish",
       "sort": {
@@ -32365,7 +32365,7 @@
         "buy": null,
         "sell": 7,
         "kg": 6,
-        "sellPerKg": 1.1666666666666667
+        "sellPerKg": 5.833333333333333
       }
     },
     "216": {
@@ -32467,7 +32467,7 @@
       "usedForParties": [
         7
       ],
-      "sellPerKg": 110,
+      "sellPerKg": 0,
       "vendors": {},
       "search": "whiteleg shrimp 0-50m fish shrimp party",
       "sort": {
@@ -32475,7 +32475,7 @@
         "buy": null,
         "sell": 11,
         "kg": 0.1,
-        "sellPerKg": 110
+        "sellPerKg": 0
       }
     },
     "217": {
@@ -32575,7 +32575,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 3.2,
+      "sellPerKg": 16,
       "vendors": {},
       "search": "whitetip reefshark meat 0-50m fish shark party",
       "sort": {
@@ -32583,7 +32583,7 @@
         "buy": null,
         "sell": 8,
         "kg": 2.5,
-        "sellPerKg": 3.2
+        "sellPerKg": 16
       }
     },
     "219": {
@@ -32721,7 +32721,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 9.636363636363637,
+      "sellPerKg": 48.18181818181818,
       "vendors": {},
       "search": "xenacanthus meat hydrothermal vents fish",
       "sort": {
@@ -32729,7 +32729,7 @@
         "buy": null,
         "sell": 53,
         "kg": 5.5,
-        "sellPerKg": 9.636363636363637
+        "sellPerKg": 48.18181818181818
       }
     },
     "222": {
@@ -32819,7 +32819,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 5,
       "vendors": {},
       "search": "yellow tang 0-50m fish",
       "sort": {
@@ -32827,7 +32827,7 @@
         "buy": null,
         "sell": 1,
         "kg": 0.4,
-        "sellPerKg": 2.5
+        "sellPerKg": 5
       }
     },
     "224": {
@@ -32881,7 +32881,7 @@
         }
       ],
       "usedForParties": [],
-      "sellPerKg": 2.5,
+      "sellPerKg": 5,
       "vendors": {},
       "search": "yellowback fusilier 0-50m fish",
       "sort": {
@@ -32889,7 +32889,7 @@
         "buy": null,
         "sell": 2,
         "kg": 0.8,
-        "sellPerKg": 2.5
+        "sellPerKg": 5
       }
     },
     "225": {
@@ -32949,7 +32949,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 20,
       "vendors": {},
       "search": "yellowfin tuna akami 0-130m fish tuna party",
       "sort": {
@@ -32957,7 +32957,7 @@
         "buy": null,
         "sell": 24,
         "kg": 6,
-        "sellPerKg": 4
+        "sellPerKg": 20
       }
     },
     "226": {
@@ -33017,7 +33017,7 @@
       "usedForParties": [
         2
       ],
-      "sellPerKg": 5,
+      "sellPerKg": 25,
       "vendors": {},
       "search": "yellowfin tuna chutoro 0-130m fish tuna party",
       "sort": {
@@ -33025,7 +33025,7 @@
         "buy": null,
         "sell": 30,
         "kg": 6,
-        "sellPerKg": 5
+        "sellPerKg": 25
       }
     },
     "227": {
@@ -33137,7 +33137,7 @@
       "usedForParties": [
         4
       ],
-      "sellPerKg": 4,
+      "sellPerKg": 20,
       "vendors": {},
       "search": "zebra shark meat 0-50m fish shark party",
       "sort": {
@@ -33145,7 +33145,7 @@
         "buy": null,
         "sell": 42,
         "kg": 10.5,
-        "sellPerKg": 4
+        "sellPerKg": 20
       }
     }
   },
