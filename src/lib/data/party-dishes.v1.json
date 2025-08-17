@@ -8,7 +8,7 @@
       "basePrice": 650,
       "baseTaste": 150,
       "baseServings": 10,
-      "finalPrice": 1300,
+      "finalPrice": 1625,
       "finalTaste": 150,
       "finalServings": 10,
       "unlock": "Boss",
@@ -61,33 +61,33 @@
         1
       ],
       "partyIds": [
-        7
+        8
       ],
-      "finalRevenue": 13000,
-      "finalProfit": 12968,
-      "finalProfitPerServing": 1297,
-      "maxProfitPerServing": 1297,
+      "finalRevenue": 16250,
+      "finalProfit": 16218,
+      "finalProfitPerServing": 1622,
+      "maxProfitPerServing": 1622,
       "upgradeCost": 0,
       "ingredientCount": 4,
-      "search": "boiled mantis shrimp with soy paste shrimp boss",
+      "search": "boiled mantis shrimp with soy paste lobster boss",
       "sort": {
         "name": "boiled mantis shrimp with soy paste",
-        "finalPrice": 1300,
+        "finalPrice": 1625,
         "finalServings": 10,
-        "finalRevenue": 13000,
-        "finalProfit": 12968,
-        "finalProfitPerServing": 1297,
-        "maxProfitPerServing": 1297,
+        "finalRevenue": 16250,
+        "finalProfit": 16218,
+        "finalProfitPerServing": 1622,
+        "maxProfitPerServing": 1622,
         "recipeCost": 32,
         "upgradeCost": 0,
         "ingredientCount": 4,
-        "partyBonus": 2,
-        "partyName": "Shrimp"
+        "partyBonus": 2.5,
+        "partyName": "Lobster"
       },
-      "partyId": 7,
+      "partyId": 8,
       "dishId": 38,
-      "partyName": "Shrimp",
-      "partyBonus": 2
+      "partyName": "Lobster",
+      "partyBonus": 2.5
     },
     {
       "id": 2,
@@ -506,6 +506,75 @@
     },
     {
       "id": 7,
+      "name": "Yawie Steamed Meat",
+      "image": "yawie_steamed_meat.png",
+      "maxLevel": 1,
+      "basePrice": 750,
+      "baseTaste": 180,
+      "baseServings": 10,
+      "finalPrice": 1875,
+      "finalTaste": 180,
+      "finalServings": 10,
+      "unlock": "Boss",
+      "dlc": null,
+      "artisansFlames": 1,
+      "ingredients": [
+        {
+          "ingredientId": 222,
+          "count": 1,
+          "name": "Yawie's Inner Flesh",
+          "image": "yawie_s_inner_flesh.png",
+          "type": "Boss",
+          "unitCost": 0,
+          "lineCost": 0,
+          "upgradeCount": 0
+        },
+        {
+          "ingredientId": 171,
+          "count": 1,
+          "name": "Salt",
+          "image": "salt.png",
+          "type": "Procure",
+          "unitCost": 8,
+          "lineCost": 8,
+          "upgradeCount": 0
+        }
+      ],
+      "recipeCost": 8,
+      "partyDishIds": [
+        7
+      ],
+      "partyIds": [
+        8
+      ],
+      "finalRevenue": 18750,
+      "finalProfit": 18742,
+      "finalProfitPerServing": 1874,
+      "maxProfitPerServing": 1874,
+      "upgradeCost": 0,
+      "ingredientCount": 2,
+      "search": "yawie steamed meat lobster boss",
+      "sort": {
+        "name": "yawie steamed meat",
+        "finalPrice": 1875,
+        "finalServings": 10,
+        "finalRevenue": 18750,
+        "finalProfit": 18742,
+        "finalProfitPerServing": 1874,
+        "maxProfitPerServing": 1874,
+        "recipeCost": 8,
+        "upgradeCost": 0,
+        "ingredientCount": 2,
+        "partyBonus": 2.5,
+        "partyName": "Lobster"
+      },
+      "partyId": 8,
+      "dishId": 249,
+      "partyName": "Lobster",
+      "partyBonus": 2.5
+    },
+    {
+      "id": 8,
       "name": "Atlantic Bonito Curry",
       "image": "atlantic_bonito_curry.png",
       "maxLevel": 10,
@@ -552,7 +621,7 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        7
+        8
       ],
       "partyIds": [
         6
@@ -584,7 +653,7 @@
       "partyBonus": 2
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Humphead Parrotfish Curry",
       "image": "humphead_parrotfish_curry.png",
       "maxLevel": 10,
@@ -631,7 +700,7 @@
       ],
       "recipeCost": 70,
       "partyDishIds": [
-        8
+        9
       ],
       "partyIds": [
         6
@@ -663,7 +732,7 @@
       "partyBonus": 2
     },
     {
-      "id": 9,
+      "id": 10,
       "name": "Moray Eel Curry",
       "image": "moray_eel_curry.png",
       "maxLevel": 10,
@@ -700,7 +769,7 @@
       ],
       "recipeCost": 39,
       "partyDishIds": [
-        9
+        10
       ],
       "partyIds": [
         6
@@ -732,7 +801,7 @@
       "partyBonus": 2
     },
     {
-      "id": 10,
+      "id": 11,
       "name": "Deep-Fried Vegetables",
       "image": "deep-fried_vegetables.png",
       "maxLevel": 10,
@@ -789,7 +858,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        10
+        11
       ],
       "partyIds": [
         5
@@ -821,7 +890,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 11,
+      "id": 12,
       "name": "Great Spider Crab and Cucumber Sushi",
       "image": "great_spider_crab_and_cucumber_sushi.png",
       "maxLevel": 10,
@@ -858,7 +927,7 @@
       ],
       "recipeCost": 37,
       "partyDishIds": [
-        11
+        12
       ],
       "partyIds": [
         5
@@ -890,7 +959,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 12,
+      "id": 13,
       "name": "Pickled Vegetables",
       "image": "pickled_vegetables.png",
       "maxLevel": 10,
@@ -947,7 +1016,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        12
+        13
       ],
       "partyIds": [
         5
@@ -979,7 +1048,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 13,
+      "id": 14,
       "name": "Sea Toad and Cucumber Gunkan Sushi",
       "image": "sea_toad_and_cucumber_gunkan_sushi.png",
       "maxLevel": 10,
@@ -1016,7 +1085,7 @@
       ],
       "recipeCost": 38,
       "partyDishIds": [
-        13
+        14
       ],
       "partyIds": [
         5
@@ -1048,7 +1117,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 14,
+      "id": 15,
       "name": "Seasoned Waptia Fieldensis",
       "image": "seasoned_waptia_fieldensis.png",
       "maxLevel": 10,
@@ -1105,8 +1174,8 @@
       ],
       "recipeCost": 171,
       "partyDishIds": [
-        14,
-        15
+        15,
+        16
       ],
       "partyIds": [
         5,
@@ -1139,7 +1208,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 15,
+      "id": 16,
       "name": "Seasoned Waptia Fieldensis",
       "image": "seasoned_waptia_fieldensis.png",
       "maxLevel": 10,
@@ -1196,8 +1265,8 @@
       ],
       "recipeCost": 171,
       "partyDishIds": [
-        14,
-        15
+        15,
+        16
       ],
       "partyIds": [
         5,
@@ -1230,7 +1299,7 @@
       "partyBonus": 2
     },
     {
-      "id": 16,
+      "id": 17,
       "name": "Skewered Cucumber",
       "image": "skewered_cucumber.png",
       "maxLevel": 10,
@@ -1257,7 +1326,7 @@
       ],
       "recipeCost": 60,
       "partyDishIds": [
-        16
+        17
       ],
       "partyIds": [
         5
@@ -1289,7 +1358,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Trevally Sandwich",
       "image": "trevally_sandwich.png",
       "maxLevel": 10,
@@ -1336,7 +1405,7 @@
       ],
       "recipeCost": 120,
       "partyDishIds": [
-        17
+        18
       ],
       "partyIds": [
         5
@@ -1368,7 +1437,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Hyalonema Tuna Sashimi",
       "image": "hyalonema_tuna_sashimi.png",
       "maxLevel": 5,
@@ -1415,7 +1484,7 @@
       ],
       "recipeCost": 391,
       "partyDishIds": [
-        18
+        19
       ],
       "partyIds": [
         2
@@ -1447,7 +1516,7 @@
       "partyBonus": 3.5
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Deep Sea Kaiju Ramen",
       "image": "deep_sea_kaiju_ramen.png",
       "maxLevel": 10,
@@ -1494,7 +1563,7 @@
       ],
       "recipeCost": 93,
       "partyDishIds": [
-        19
+        20
       ],
       "partyIds": [
         1
@@ -1526,7 +1595,7 @@
       "partyBonus": 2
     },
     {
-      "id": 20,
+      "id": 21,
       "name": "Ebirah Chasing Sashimi",
       "image": "ebirah_chasing_sashimi.png",
       "maxLevel": 10,
@@ -1573,7 +1642,7 @@
       ],
       "recipeCost": 161,
       "partyDishIds": [
-        20
+        21
       ],
       "partyIds": [
         8
@@ -1605,7 +1674,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 21,
+      "id": 22,
       "name": "Godzilla vs. Ebirah Curry",
       "image": "godzilla_vs._ebirah_curry.png",
       "maxLevel": 10,
@@ -1662,8 +1731,8 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        21,
-        22
+        22,
+        23
       ],
       "partyIds": [
         6,
@@ -1696,7 +1765,7 @@
       "partyBonus": 2
     },
     {
-      "id": 22,
+      "id": 23,
       "name": "Godzilla vs. Ebirah Curry",
       "image": "godzilla_vs._ebirah_curry.png",
       "maxLevel": 10,
@@ -1753,8 +1822,8 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        21,
-        22
+        22,
+        23
       ],
       "partyIds": [
         6,
@@ -1787,7 +1856,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 23,
+      "id": 24,
       "name": "Green Sea Urchin & Cucumber Salad",
       "image": "green_sea_urchin_and_cucumber_salad.png",
       "maxLevel": 5,
@@ -1798,7 +1867,7 @@
       "finalTaste": 282,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "dlc": "mxmtoon",
+      "dlc": null,
       "artisansFlames": null,
       "ingredients": [
         {
@@ -1834,7 +1903,7 @@
       ],
       "recipeCost": 328,
       "partyDishIds": [
-        23
+        24
       ],
       "partyIds": [
         5
@@ -1845,7 +1914,7 @@
       "maxProfitPerServing": 3686,
       "upgradeCost": 5335,
       "ingredientCount": 7,
-      "search": "green sea urchin & cucumber salad cucumber mxmtoon jango shop",
+      "search": "green sea urchin & cucumber salad cucumber jango shop",
       "sort": {
         "name": "green sea urchin & cucumber salad",
         "finalPrice": 3850,
@@ -1866,7 +1935,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 24,
+      "id": 25,
       "name": "Lobster Platter",
       "image": "lobster_platter.png",
       "maxLevel": 10,
@@ -1913,7 +1982,7 @@
       ],
       "recipeCost": 286,
       "partyDishIds": [
-        24
+        25
       ],
       "partyIds": [
         8
@@ -1945,7 +2014,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 25,
+      "id": 26,
       "name": "Truffle Blue Lobster Tail Sushi",
       "image": "truffle_blue_lobster_tail_sushi.png",
       "maxLevel": 5,
@@ -1982,7 +2051,7 @@
       ],
       "recipeCost": 744,
       "partyDishIds": [
-        25
+        26
       ],
       "partyIds": [
         8
@@ -2014,7 +2083,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 26,
+      "id": 27,
       "name": "Truffle Sailfish Tartare",
       "image": "truffle_sailfish_tartare.png",
       "maxLevel": 5,
@@ -2061,7 +2130,7 @@
       ],
       "recipeCost": 905,
       "partyDishIds": [
-        26
+        27
       ],
       "partyIds": [
         3
@@ -2093,7 +2162,7 @@
       "partyBonus": 2
     },
     {
-      "id": 27,
+      "id": 28,
       "name": "Truffle Shark Sandwich",
       "image": "truffle_shark_sandwich.png",
       "maxLevel": 5,
@@ -2140,7 +2209,7 @@
       ],
       "recipeCost": 827,
       "partyDishIds": [
-        27
+        28
       ],
       "partyIds": [
         4
@@ -2172,7 +2241,7 @@
       "partyBonus": 2
     },
     {
-      "id": 28,
+      "id": 29,
       "name": "Falcatus Soybean Paste Soup",
       "image": "falcatus_soybean_paste_soup.png",
       "maxLevel": 10,
@@ -2229,7 +2298,7 @@
       ],
       "recipeCost": 195,
       "partyDishIds": [
-        28
+        29
       ],
       "partyIds": [
         4
@@ -2261,7 +2330,7 @@
       "partyBonus": 2
     },
     {
-      "id": 29,
+      "id": 30,
       "name": "Crystal Lobster Roll",
       "image": "crystal_lobster_roll.png",
       "maxLevel": 10,
@@ -2308,7 +2377,7 @@
       ],
       "recipeCost": 144,
       "partyDishIds": [
-        29
+        30
       ],
       "partyIds": [
         8
@@ -2340,7 +2409,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 30,
+      "id": 31,
       "name": "Steamed Eastern Rock Lobster & Egg",
       "image": "steamed_eastern_rock_lobster_and_egg.png",
       "maxLevel": 10,
@@ -2387,7 +2456,7 @@
       ],
       "recipeCost": 136,
       "partyDishIds": [
-        30
+        31
       ],
       "partyIds": [
         8
@@ -2419,7 +2488,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 31,
+      "id": 32,
       "name": "Boiled Sailfish and Seaweed",
       "image": "boiled_sailfish_and_seaweed.png",
       "maxLevel": 10,
@@ -2476,7 +2545,7 @@
       ],
       "recipeCost": 231,
       "partyDishIds": [
-        31
+        32
       ],
       "partyIds": [
         3
@@ -2508,7 +2577,7 @@
       "partyBonus": 2
     },
     {
-      "id": 32,
+      "id": 33,
       "name": "Marlin and Soybean Paste Roast",
       "image": "marlin_and_soybean_paste_roast.png",
       "maxLevel": 10,
@@ -2555,7 +2624,7 @@
       ],
       "recipeCost": 181,
       "partyDishIds": [
-        32
+        33
       ],
       "partyIds": [
         3
@@ -2587,7 +2656,7 @@
       "partyBonus": 2
     },
     {
-      "id": 33,
+      "id": 34,
       "name": "Chirashi Sushi",
       "image": "chirashi_sushi.png",
       "maxLevel": 5,
@@ -2597,8 +2666,8 @@
       "finalPrice": 5313,
       "finalTaste": 274,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 1,
       "ingredients": [
         {
@@ -2634,7 +2703,7 @@
       ],
       "recipeCost": 384,
       "partyDishIds": [
-        33
+        34
       ],
       "partyIds": [
         2
@@ -2645,7 +2714,7 @@
       "maxProfitPerServing": 5121,
       "upgradeCost": 6144,
       "ingredientCount": 9,
-      "search": "chirashi sushi tuna mxmtoon mxmtoon collab",
+      "search": "chirashi sushi tuna mxmtoon",
       "sort": {
         "name": "chirashi sushi",
         "finalPrice": 5313,
@@ -2666,7 +2735,7 @@
       "partyBonus": 3.5
     },
     {
-      "id": 34,
+      "id": 35,
       "name": "Cold Jellyfish & Green Sea Urchin Salad",
       "image": "cold_jellyfish_and_green_sea_urchin_salad.png",
       "maxLevel": 5,
@@ -2676,8 +2745,8 @@
       "finalPrice": 3014,
       "finalTaste": 277,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 9,
       "ingredients": [
         {
@@ -2713,7 +2782,7 @@
       ],
       "recipeCost": 318,
       "partyDishIds": [
-        34
+        35
       ],
       "partyIds": [
         1
@@ -2724,7 +2793,7 @@
       "maxProfitPerServing": 2855,
       "upgradeCost": 5160,
       "ingredientCount": 7,
-      "search": "cold jellyfish & green sea urchin salad jellyfish mxmtoon mxmtoon collab",
+      "search": "cold jellyfish & green sea urchin salad jellyfish mxmtoon",
       "sort": {
         "name": "cold jellyfish & green sea urchin salad",
         "finalPrice": 3014,
@@ -2745,7 +2814,7 @@
       "partyBonus": 2
     },
     {
-      "id": 35,
+      "id": 36,
       "name": "Roasted Capelin",
       "image": "roasted_capelin.png",
       "maxLevel": 10,
@@ -2792,7 +2861,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        35
+        36
       ],
       "partyIds": [
         6
@@ -2824,7 +2893,7 @@
       "partyBonus": 2
     },
     {
-      "id": 36,
+      "id": 37,
       "name": "Crimson Fish Roll",
       "image": "crimson_fish_roll.png",
       "maxLevel": 10,
@@ -2871,7 +2940,7 @@
       ],
       "recipeCost": 141,
       "partyDishIds": [
-        36
+        37
       ],
       "partyIds": [
         4
@@ -2903,7 +2972,7 @@
       "partyBonus": 2
     },
     {
-      "id": 37,
+      "id": 38,
       "name": "Great Spider Crab Curry",
       "image": "great_spider_crab_curry.png",
       "maxLevel": 10,
@@ -2950,7 +3019,7 @@
       ],
       "recipeCost": 113,
       "partyDishIds": [
-        37
+        38
       ],
       "partyIds": [
         6
@@ -2982,7 +3051,7 @@
       "partyBonus": 2
     },
     {
-      "id": 38,
+      "id": 39,
       "name": "Ice Fish Curry",
       "image": "ice_fish_curry.png",
       "maxLevel": 10,
@@ -3029,7 +3098,7 @@
       ],
       "recipeCost": 142,
       "partyDishIds": [
-        38
+        39
       ],
       "partyIds": [
         6
@@ -3061,7 +3130,7 @@
       "partyBonus": 2
     },
     {
-      "id": 39,
+      "id": 40,
       "name": "Shark Karaage",
       "image": "shark_karaage.png",
       "maxLevel": 10,
@@ -3118,7 +3187,7 @@
       ],
       "recipeCost": 151,
       "partyDishIds": [
-        39
+        40
       ],
       "partyIds": [
         4
@@ -3150,7 +3219,7 @@
       "partyBonus": 2
     },
     {
-      "id": 40,
+      "id": 41,
       "name": "Seasoned Jellyfish",
       "image": "seasoned_jellyfish.png",
       "maxLevel": 10,
@@ -3207,7 +3276,7 @@
       ],
       "recipeCost": 104,
       "partyDishIds": [
-        40
+        41
       ],
       "partyIds": [
         1
@@ -3239,7 +3308,7 @@
       "partyBonus": 2
     },
     {
-      "id": 41,
+      "id": 42,
       "name": "Wrasse Curry",
       "image": "wrasse_curry.png",
       "maxLevel": 10,
@@ -3296,7 +3365,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        41
+        42
       ],
       "partyIds": [
         6
@@ -3328,7 +3397,7 @@
       "partyBonus": 2
     },
     {
-      "id": 42,
+      "id": 43,
       "name": "Rice with White Shrimp Meat",
       "image": "rice_with_white_shrimp_meat.png",
       "maxLevel": 10,
@@ -3385,7 +3454,7 @@
       ],
       "recipeCost": 117,
       "partyDishIds": [
-        42
+        43
       ],
       "partyIds": [
         7
@@ -3417,7 +3486,7 @@
       "partyBonus": 2
     },
     {
-      "id": 43,
+      "id": 44,
       "name": "Boiled Porbeagle Shark",
       "image": "boiled_porbeagle_shark.png",
       "maxLevel": 10,
@@ -3464,7 +3533,7 @@
       ],
       "recipeCost": 176,
       "partyDishIds": [
-        43
+        44
       ],
       "partyIds": [
         4
@@ -3496,7 +3565,7 @@
       "partyBonus": 2
     },
     {
-      "id": 44,
+      "id": 45,
       "name": "Deep-Fried Eggplant Shrimp Meatballs",
       "image": "deep-fried_eggplant_shrimp_meatballs.png",
       "maxLevel": 10,
@@ -3553,7 +3622,7 @@
       ],
       "recipeCost": 153,
       "partyDishIds": [
-        44
+        45
       ],
       "partyIds": [
         7
@@ -3585,7 +3654,7 @@
       "partyBonus": 2
     },
     {
-      "id": 45,
+      "id": 46,
       "name": "Special Fried Shrimp Sushi",
       "image": "special_fried_shrimp_sushi.png",
       "maxLevel": 10,
@@ -3642,7 +3711,7 @@
       ],
       "recipeCost": 77,
       "partyDishIds": [
-        45
+        46
       ],
       "partyIds": [
         7
@@ -3674,7 +3743,7 @@
       "partyBonus": 2
     },
     {
-      "id": 46,
+      "id": 47,
       "name": "Boiled and Deep-Fried White Shrimp",
       "image": "boiled_and_deep-fried_white_shrimp.png",
       "maxLevel": 10,
@@ -3731,7 +3800,7 @@
       ],
       "recipeCost": 83,
       "partyDishIds": [
-        46
+        47
       ],
       "partyIds": [
         7
@@ -3763,7 +3832,7 @@
       "partyBonus": 2
     },
     {
-      "id": 47,
+      "id": 48,
       "name": "Whole-Roasted Shark Head",
       "image": "whole-roasted_shark_head.png",
       "maxLevel": 10,
@@ -3800,7 +3869,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        47
+        48
       ],
       "partyIds": [
         4
@@ -3832,7 +3901,7 @@
       "partyBonus": 2
     },
     {
-      "id": 48,
+      "id": 49,
       "name": "Bluefin Tuna Rice Bowl",
       "image": "bluefin_tuna_rice_bowl.png",
       "maxLevel": 10,
@@ -3889,7 +3958,7 @@
       ],
       "recipeCost": 149,
       "partyDishIds": [
-        48
+        49
       ],
       "partyIds": [
         2
@@ -3921,7 +3990,7 @@
       "partyBonus": 3.5
     },
     {
-      "id": 49,
+      "id": 50,
       "name": "Hawaiian Poke",
       "image": "hawaiian_poke.png",
       "maxLevel": 10,
@@ -3978,7 +4047,7 @@
       ],
       "recipeCost": 132,
       "partyDishIds": [
-        49
+        50
       ],
       "partyIds": [
         2
@@ -4010,7 +4079,7 @@
       "partyBonus": 3.5
     },
     {
-      "id": 50,
+      "id": 51,
       "name": "Yellowfin Tuna Steak",
       "image": "yellowfin_tuna_steak.png",
       "maxLevel": 10,
@@ -4057,7 +4126,7 @@
       ],
       "recipeCost": 147,
       "partyDishIds": [
-        50
+        51
       ],
       "partyIds": [
         2
@@ -4089,7 +4158,7 @@
       "partyBonus": 3.5
     },
     {
-      "id": 51,
+      "id": 52,
       "name": "Deep Fish Tempura",
       "image": "deep_fish_tempura.png",
       "maxLevel": 10,
@@ -4146,7 +4215,7 @@
       ],
       "recipeCost": 119,
       "partyDishIds": [
-        51
+        52
       ],
       "partyIds": [
         4
@@ -4178,7 +4247,7 @@
       "partyBonus": 2
     },
     {
-      "id": 52,
+      "id": 53,
       "name": "Mianbao Xia",
       "image": "mianbao_xia.png",
       "maxLevel": 10,
@@ -4235,7 +4304,7 @@
       ],
       "recipeCost": 184,
       "partyDishIds": [
-        52
+        53
       ],
       "partyIds": [
         7
@@ -4267,7 +4336,7 @@
       "partyBonus": 2
     },
     {
-      "id": 53,
+      "id": 54,
       "name": "Humboldt Ink Pasta",
       "image": "humboldt_ink_pasta.png",
       "maxLevel": 10,
@@ -4324,7 +4393,7 @@
       ],
       "recipeCost": 213,
       "partyDishIds": [
-        53
+        54
       ],
       "partyIds": [
         7
@@ -4356,7 +4425,7 @@
       "partyBonus": 2
     },
     {
-      "id": 54,
+      "id": 55,
       "name": "Hot Pepper Tuna",
       "image": "hot_pepper_tuna.png",
       "maxLevel": 10,
@@ -4413,7 +4482,7 @@
       ],
       "recipeCost": 148,
       "partyDishIds": [
-        54
+        55
       ],
       "partyIds": [
         2
@@ -4445,7 +4514,7 @@
       "partyBonus": 3.5
     },
     {
-      "id": 55,
+      "id": 56,
       "name": "Stir-fried Habanero Lobster",
       "image": "stir-fried_habanero_lobster.png",
       "maxLevel": 10,
@@ -4492,7 +4561,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        55
+        56
       ],
       "partyIds": [
         8
@@ -4524,7 +4593,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 56,
+      "id": 57,
       "name": "Seagrapes Jellyfish Sushi",
       "image": "seagrapes_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -4571,7 +4640,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        56
+        57
       ],
       "partyIds": [
         1
@@ -4603,479 +4672,7 @@
       "partyBonus": 2
     },
     {
-      "id": 57,
-      "name": "Shortfin Mako Sushi",
-      "image": "shortfin_mako_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 105,
-      "baseTaste": 36,
-      "baseServings": 1,
-      "finalPrice": 776,
-      "finalTaste": 360,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 125,
-          "count": 1,
-          "name": "Mako Meat",
-          "image": "shortfin_mako.png",
-          "type": "Fish",
-          "unitCost": 43,
-          "lineCost": 43,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 43,
-      "partyDishIds": [
-        57
-      ],
-      "partyIds": [
-        4
-      ],
-      "finalRevenue": 776,
-      "finalProfit": 733,
-      "finalProfitPerServing": 733,
-      "maxProfitPerServing": 733,
-      "upgradeCost": 9503,
-      "ingredientCount": 1,
-      "search": "shortfin mako sushi shark",
-      "sort": {
-        "name": "shortfin mako sushi",
-        "finalPrice": 776,
-        "finalServings": 1,
-        "finalRevenue": 776,
-        "finalProfit": 733,
-        "finalProfitPerServing": 733,
-        "maxProfitPerServing": 733,
-        "recipeCost": 43,
-        "upgradeCost": 9503,
-        "ingredientCount": 1,
-        "partyBonus": 2,
-        "partyName": "Shark"
-      },
-      "partyId": 4,
-      "dishId": 196,
-      "partyName": "Shark",
-      "partyBonus": 2
-    },
-    {
       "id": 58,
-      "name": "Zebra Shark Sushi",
-      "image": "zebra_shark_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 88,
-      "baseTaste": 36,
-      "baseServings": 1,
-      "finalPrice": 798,
-      "finalTaste": 360,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 228,
-          "count": 1,
-          "name": "Zebra Shark Meat",
-          "image": "zebra_shark.png",
-          "type": "Fish",
-          "unitCost": 42,
-          "lineCost": 42,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 42,
-      "partyDishIds": [
-        58
-      ],
-      "partyIds": [
-        4
-      ],
-      "finalRevenue": 798,
-      "finalProfit": 756,
-      "finalProfitPerServing": 756,
-      "maxProfitPerServing": 756,
-      "upgradeCost": 9282,
-      "ingredientCount": 1,
-      "search": "zebra shark sushi shark",
-      "sort": {
-        "name": "zebra shark sushi",
-        "finalPrice": 798,
-        "finalServings": 1,
-        "finalRevenue": 798,
-        "finalProfit": 756,
-        "finalProfitPerServing": 756,
-        "maxProfitPerServing": 756,
-        "recipeCost": 42,
-        "upgradeCost": 9282,
-        "ingredientCount": 1,
-        "partyBonus": 2,
-        "partyName": "Shark"
-      },
-      "partyId": 4,
-      "dishId": 257,
-      "partyName": "Shark",
-      "partyBonus": 2
-    },
-    {
-      "id": 59,
-      "name": "Bluefin Tuna Akami Sushi",
-      "image": "bluefin_tuna_akami_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 80,
-      "baseTaste": 60,
-      "baseServings": 1,
-      "finalPrice": 1036,
-      "finalTaste": 240,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 32,
-          "count": 1,
-          "name": "Bluefin Tuna Akami",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 27,
-          "lineCost": 27,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 27,
-      "partyDishIds": [
-        59
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1036,
-      "finalProfit": 1009,
-      "finalProfitPerServing": 1009,
-      "maxProfitPerServing": 1009,
-      "upgradeCost": 5967,
-      "ingredientCount": 1,
-      "search": "bluefin tuna akami sushi tuna",
-      "sort": {
-        "name": "bluefin tuna akami sushi",
-        "finalPrice": 1036,
-        "finalServings": 1,
-        "finalRevenue": 1036,
-        "finalProfit": 1009,
-        "finalProfitPerServing": 1009,
-        "maxProfitPerServing": 1009,
-        "recipeCost": 27,
-        "upgradeCost": 5967,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 30,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    {
-      "id": 60,
-      "name": "Bluefin Tuna Chutoro Sushi",
-      "image": "bluefin_tuna_chutoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 95,
-      "baseTaste": 61,
-      "baseServings": 1,
-      "finalPrice": 1228.5,
-      "finalTaste": 241,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 33,
-          "count": 1,
-          "name": "Bluefin Tuna Chutoro",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 32,
-          "lineCost": 32,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 32,
-      "partyDishIds": [
-        60
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1228.5,
-      "finalProfit": 1197,
-      "finalProfitPerServing": 1197,
-      "maxProfitPerServing": 1197,
-      "upgradeCost": 7072,
-      "ingredientCount": 1,
-      "search": "bluefin tuna chutoro sushi tuna",
-      "sort": {
-        "name": "bluefin tuna chutoro sushi",
-        "finalPrice": 1228.5,
-        "finalServings": 1,
-        "finalRevenue": 1228.5,
-        "finalProfit": 1197,
-        "finalProfitPerServing": 1197,
-        "maxProfitPerServing": 1197,
-        "recipeCost": 32,
-        "upgradeCost": 7072,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 31,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    {
-      "id": 61,
-      "name": "Bluefin Tuna Ootoro Sushi",
-      "image": "bluefin_tuna_ootoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 133,
-      "baseTaste": 105,
-      "baseServings": 1,
-      "finalPrice": 1746.5,
-      "finalTaste": 330,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 34,
-          "count": 1,
-          "name": "Bluefin Tuna Ootoro",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 45,
-          "lineCost": 45,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 45,
-      "partyDishIds": [
-        61
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1746.5,
-      "finalProfit": 1702,
-      "finalProfitPerServing": 1702,
-      "maxProfitPerServing": 1702,
-      "upgradeCost": 9945,
-      "ingredientCount": 1,
-      "search": "bluefin tuna ootoro sushi tuna",
-      "sort": {
-        "name": "bluefin tuna ootoro sushi",
-        "finalPrice": 1746.5,
-        "finalServings": 1,
-        "finalRevenue": 1746.5,
-        "finalProfit": 1702,
-        "finalProfitPerServing": 1702,
-        "maxProfitPerServing": 1702,
-        "recipeCost": 45,
-        "upgradeCost": 9945,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 32,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    {
-      "id": 62,
-      "name": "Yellowfin Tuna Akami Sushi",
-      "image": "yellowfin_tuna_akami_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 73,
-      "baseTaste": 55,
-      "baseServings": 1,
-      "finalPrice": 945,
-      "finalTaste": 235,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 225,
-          "count": 1,
-          "name": "Yellowfin Tuna Akami",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 24,
-          "lineCost": 24,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 24,
-      "partyDishIds": [
-        62
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 945,
-      "finalProfit": 921,
-      "finalProfitPerServing": 921,
-      "maxProfitPerServing": 921,
-      "upgradeCost": 5304,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna akami sushi tuna",
-      "sort": {
-        "name": "yellowfin tuna akami sushi",
-        "finalPrice": 945,
-        "finalServings": 1,
-        "finalRevenue": 945,
-        "finalProfit": 921,
-        "finalProfitPerServing": 921,
-        "maxProfitPerServing": 921,
-        "recipeCost": 24,
-        "upgradeCost": 5304,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 252,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    {
-      "id": 63,
-      "name": "Yellowfin Tuna Chutoro Sushi",
-      "image": "yellowfin_tuna_chutoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 90,
-      "baseTaste": 58,
-      "baseServings": 1,
-      "finalPrice": 1165.5,
-      "finalTaste": 238,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 226,
-          "count": 1,
-          "name": "Yellowfin Tuna Chutoro",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 30,
-          "lineCost": 30,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 30,
-      "partyDishIds": [
-        63
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1165.5,
-      "finalProfit": 1136,
-      "finalProfitPerServing": 1136,
-      "maxProfitPerServing": 1136,
-      "upgradeCost": 6630,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna chutoro sushi tuna",
-      "sort": {
-        "name": "yellowfin tuna chutoro sushi",
-        "finalPrice": 1165.5,
-        "finalServings": 1,
-        "finalRevenue": 1165.5,
-        "finalProfit": 1136,
-        "finalProfitPerServing": 1136,
-        "maxProfitPerServing": 1136,
-        "recipeCost": 30,
-        "upgradeCost": 6630,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 253,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    {
-      "id": 64,
-      "name": "Yellowfin Tuna Ootoro Sushi",
-      "image": "yellowfin_tuna_ootoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 125,
-      "baseTaste": 90,
-      "baseServings": 1,
-      "finalPrice": 1617,
-      "finalTaste": 315,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 227,
-          "count": 1,
-          "name": "Yellowfin Tuna Ootoro",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 42,
-          "lineCost": 42,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 42,
-      "partyDishIds": [
-        64
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1617,
-      "finalProfit": 1575,
-      "finalProfitPerServing": 1575,
-      "maxProfitPerServing": 1575,
-      "upgradeCost": 9282,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna ootoro sushi tuna",
-      "sort": {
-        "name": "yellowfin tuna ootoro sushi",
-        "finalPrice": 1617,
-        "finalServings": 1,
-        "finalRevenue": 1617,
-        "finalProfit": 1575,
-        "finalProfitPerServing": 1575,
-        "maxProfitPerServing": 1575,
-        "recipeCost": 42,
-        "upgradeCost": 9282,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 254,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    {
-      "id": 65,
       "name": "American Lobster Sushi",
       "image": "american_lobster_sushi.png",
       "maxLevel": 10,
@@ -5102,7 +4699,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        65
+        58
       ],
       "partyIds": [
         8
@@ -5134,7 +4731,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 66,
+      "id": 59,
       "name": "Barrel Jellyfish Sushi",
       "image": "barrel_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -5161,7 +4758,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        66
+        59
       ],
       "partyIds": [
         1
@@ -5193,7 +4790,7 @@
       "partyBonus": 2
     },
     {
-      "id": 67,
+      "id": 60,
       "name": "Blacktip Reefshark Sushi",
       "image": "blacktip_reefshark_sushi.png",
       "maxLevel": 10,
@@ -5220,7 +4817,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        67
+        60
       ],
       "partyIds": [
         4
@@ -5252,7 +4849,7 @@
       "partyBonus": 2
     },
     {
-      "id": 68,
+      "id": 61,
       "name": "Blood-belly Comb Jelly Sushi",
       "image": "blood-belly_comb_jelly_sushi.png",
       "maxLevel": 10,
@@ -5279,7 +4876,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        68
+        61
       ],
       "partyIds": [
         1
@@ -5311,7 +4908,7 @@
       "partyBonus": 2
     },
     {
-      "id": 69,
+      "id": 62,
       "name": "Blue Lobster Sushi",
       "image": "blue_lobster_sushi.png",
       "maxLevel": 10,
@@ -5338,7 +4935,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        69
+        62
       ],
       "partyIds": [
         8
@@ -5370,7 +4967,184 @@
       "partyBonus": 2.5
     },
     {
-      "id": 70,
+      "id": 63,
+      "name": "Bluefin Tuna Akami Sushi",
+      "image": "bluefin_tuna_akami_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 80,
+      "baseTaste": 60,
+      "baseServings": 1,
+      "finalPrice": 1036,
+      "finalTaste": 240,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 32,
+          "count": 1,
+          "name": "Bluefin Tuna Akami",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 27,
+          "lineCost": 27,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 27,
+      "partyDishIds": [
+        63
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1036,
+      "finalProfit": 1009,
+      "finalProfitPerServing": 1009,
+      "maxProfitPerServing": 1009,
+      "upgradeCost": 5967,
+      "ingredientCount": 1,
+      "search": "bluefin tuna akami sushi tuna",
+      "sort": {
+        "name": "bluefin tuna akami sushi",
+        "finalPrice": 1036,
+        "finalServings": 1,
+        "finalRevenue": 1036,
+        "finalProfit": 1009,
+        "finalProfitPerServing": 1009,
+        "maxProfitPerServing": 1009,
+        "recipeCost": 27,
+        "upgradeCost": 5967,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 30,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    {
+      "id": 64,
+      "name": "Bluefin Tuna Chutoro Sushi",
+      "image": "bluefin_tuna_chutoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 95,
+      "baseTaste": 61,
+      "baseServings": 1,
+      "finalPrice": 1228.5,
+      "finalTaste": 241,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 33,
+          "count": 1,
+          "name": "Bluefin Tuna Chutoro",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 32,
+          "lineCost": 32,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 32,
+      "partyDishIds": [
+        64
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1228.5,
+      "finalProfit": 1197,
+      "finalProfitPerServing": 1197,
+      "maxProfitPerServing": 1197,
+      "upgradeCost": 7072,
+      "ingredientCount": 1,
+      "search": "bluefin tuna chutoro sushi tuna",
+      "sort": {
+        "name": "bluefin tuna chutoro sushi",
+        "finalPrice": 1228.5,
+        "finalServings": 1,
+        "finalRevenue": 1228.5,
+        "finalProfit": 1197,
+        "finalProfitPerServing": 1197,
+        "maxProfitPerServing": 1197,
+        "recipeCost": 32,
+        "upgradeCost": 7072,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 31,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    {
+      "id": 65,
+      "name": "Bluefin Tuna Ootoro Sushi",
+      "image": "bluefin_tuna_ootoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 133,
+      "baseTaste": 105,
+      "baseServings": 1,
+      "finalPrice": 1746.5,
+      "finalTaste": 330,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 34,
+          "count": 1,
+          "name": "Bluefin Tuna Ootoro",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 45,
+          "lineCost": 45,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 45,
+      "partyDishIds": [
+        65
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1746.5,
+      "finalProfit": 1702,
+      "finalProfitPerServing": 1702,
+      "maxProfitPerServing": 1702,
+      "upgradeCost": 9945,
+      "ingredientCount": 1,
+      "search": "bluefin tuna ootoro sushi tuna",
+      "sort": {
+        "name": "bluefin tuna ootoro sushi",
+        "finalPrice": 1746.5,
+        "finalServings": 1,
+        "finalRevenue": 1746.5,
+        "finalProfit": 1702,
+        "finalProfitPerServing": 1702,
+        "maxProfitPerServing": 1702,
+        "recipeCost": 45,
+        "upgradeCost": 9945,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 32,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    {
+      "id": 66,
       "name": "Box Jellyfish Sushi",
       "image": "box_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -5397,7 +5171,7 @@
       ],
       "recipeCost": 18,
       "partyDishIds": [
-        70
+        66
       ],
       "partyIds": [
         1
@@ -5429,7 +5203,7 @@
       "partyBonus": 2
     },
     {
-      "id": 71,
+      "id": 67,
       "name": "California Spiny Lobster Sushi",
       "image": "california_spiny_lobster_sushi.png",
       "maxLevel": 10,
@@ -5456,7 +5230,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        71
+        67
       ],
       "partyIds": [
         8
@@ -5488,7 +5262,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 72,
+      "id": 68,
       "name": "Comb Jelly Sushi",
       "image": "comb_jelly_sushi.png",
       "maxLevel": 10,
@@ -5515,7 +5289,7 @@
       ],
       "recipeCost": 14,
       "partyDishIds": [
-        72
+        68
       ],
       "partyIds": [
         1
@@ -5547,7 +5321,7 @@
       "partyBonus": 2
     },
     {
-      "id": 73,
+      "id": 69,
       "name": "Cooked Whiteleg Shrimp Sushi",
       "image": "cooked_whiteleg_shrimp_sushi.png",
       "maxLevel": 10,
@@ -5574,7 +5348,7 @@
       ],
       "recipeCost": 11,
       "partyDishIds": [
-        73
+        69
       ],
       "partyIds": [
         7
@@ -5606,7 +5380,7 @@
       "partyBonus": 2
     },
     {
-      "id": 74,
+      "id": 70,
       "name": "Cookiecutter Shark Sushi",
       "image": "cookiecutter_shark_sushi.png",
       "maxLevel": 10,
@@ -5633,7 +5407,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        74
+        70
       ],
       "partyIds": [
         4
@@ -5665,7 +5439,7 @@
       "partyBonus": 2
     },
     {
-      "id": 75,
+      "id": 71,
       "name": "Copper Shark Sushi",
       "image": "copper_shark_sushi.png",
       "maxLevel": 10,
@@ -5692,7 +5466,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        75
+        71
       ],
       "partyIds": [
         4
@@ -5724,7 +5498,7 @@
       "partyBonus": 2
     },
     {
-      "id": 76,
+      "id": 72,
       "name": "Crystal Lobster Sushi",
       "image": "crystal_lobster_sushi.png",
       "maxLevel": 10,
@@ -5751,7 +5525,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        76
+        72
       ],
       "partyIds": [
         8
@@ -5783,7 +5557,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 77,
+      "id": 73,
       "name": "Eastern Rock Lobster Sushi",
       "image": "eastern_rock_lobster_sushi.png",
       "maxLevel": 10,
@@ -5810,7 +5584,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        77
+        73
       ],
       "partyIds": [
         8
@@ -5842,7 +5616,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 78,
+      "id": 74,
       "name": "European Lobster Sushi",
       "image": "european_lobster_sushi.png",
       "maxLevel": 10,
@@ -5869,7 +5643,7 @@
       ],
       "recipeCost": 23,
       "partyDishIds": [
-        78
+        74
       ],
       "partyIds": [
         8
@@ -5901,7 +5675,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 79,
+      "id": 75,
       "name": "Falcatus Sushi",
       "image": "falcatus_sushi.png",
       "maxLevel": 10,
@@ -5928,7 +5702,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        79
+        75
       ],
       "partyIds": [
         4
@@ -5960,7 +5734,7 @@
       "partyBonus": 2
     },
     {
-      "id": 80,
+      "id": 76,
       "name": "Fan Lobster Sushi",
       "image": "fan_lobster_sushi.png",
       "maxLevel": 10,
@@ -5987,7 +5761,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        80
+        76
       ],
       "partyIds": [
         8
@@ -6019,7 +5793,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 81,
+      "id": 77,
       "name": "Fried Egg Jellyfish Sushi",
       "image": "fried_egg_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -6046,7 +5820,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        81
+        77
       ],
       "partyIds": [
         1
@@ -6078,7 +5852,7 @@
       "partyBonus": 2
     },
     {
-      "id": 82,
+      "id": 78,
       "name": "Frilled Shark Sushi",
       "image": "frilled_shark_sushi.png",
       "maxLevel": 10,
@@ -6105,7 +5879,7 @@
       ],
       "recipeCost": 28,
       "partyDishIds": [
-        82
+        78
       ],
       "partyIds": [
         4
@@ -6137,7 +5911,7 @@
       "partyBonus": 2
     },
     {
-      "id": 83,
+      "id": 79,
       "name": "Greenland Shark Sushi",
       "image": "greenland_shark_sushi.png",
       "maxLevel": 10,
@@ -6164,7 +5938,7 @@
       ],
       "recipeCost": 62,
       "partyDishIds": [
-        83
+        79
       ],
       "partyIds": [
         4
@@ -6196,7 +5970,7 @@
       "partyBonus": 2
     },
     {
-      "id": 84,
+      "id": 80,
       "name": "Longnose Sawshark Sushi",
       "image": "longnose_sawshark_sushi.png",
       "maxLevel": 10,
@@ -6223,7 +5997,7 @@
       ],
       "recipeCost": 12,
       "partyDishIds": [
-        84
+        80
       ],
       "partyIds": [
         4
@@ -6255,7 +6029,7 @@
       "partyBonus": 2
     },
     {
-      "id": 85,
+      "id": 81,
       "name": "Marlin Sushi",
       "image": "marlin_sushi.png",
       "maxLevel": 10,
@@ -6282,7 +6056,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        85
+        81
       ],
       "partyIds": [
         3
@@ -6314,7 +6088,7 @@
       "partyBonus": 2
     },
     {
-      "id": 86,
+      "id": 82,
       "name": "Megamouth Shark Sushi",
       "image": "megamouth_shark_sushi.png",
       "maxLevel": 10,
@@ -6341,7 +6115,7 @@
       ],
       "recipeCost": 31,
       "partyDishIds": [
-        86
+        82
       ],
       "partyIds": [
         4
@@ -6373,7 +6147,7 @@
       "partyBonus": 2
     },
     {
-      "id": 87,
+      "id": 83,
       "name": "Norway Lobster Sushi",
       "image": "norway_lobster_sushi.png",
       "maxLevel": 10,
@@ -6400,7 +6174,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        87
+        83
       ],
       "partyIds": [
         8
@@ -6432,7 +6206,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 88,
+      "id": 84,
       "name": "Porbeagle Shark Sushi",
       "image": "porbeagle_shark_sushi.png",
       "maxLevel": 10,
@@ -6459,7 +6233,7 @@
       ],
       "recipeCost": 55,
       "partyDishIds": [
-        88
+        84
       ],
       "partyIds": [
         4
@@ -6491,7 +6265,7 @@
       "partyBonus": 2
     },
     {
-      "id": 89,
+      "id": 85,
       "name": "Raw Black Tiger Shrimp Sushi",
       "image": "raw_black_tiger_shrimp_sushi.png",
       "maxLevel": 10,
@@ -6518,7 +6292,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        89
+        85
       ],
       "partyIds": [
         7
@@ -6550,7 +6324,7 @@
       "partyBonus": 2
     },
     {
-      "id": 90,
+      "id": 86,
       "name": "Red-banded Lobster Sushi",
       "image": "red-banded_lobster_sushi.png",
       "maxLevel": 10,
@@ -6577,7 +6351,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        90
+        86
       ],
       "partyIds": [
         8
@@ -6609,7 +6383,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 91,
+      "id": 87,
       "name": "Sailfish Sushi",
       "image": "sailfish_sushi.png",
       "maxLevel": 10,
@@ -6636,7 +6410,7 @@
       ],
       "recipeCost": 65,
       "partyDishIds": [
-        91
+        87
       ],
       "partyIds": [
         3
@@ -6668,7 +6442,66 @@
       "partyBonus": 2
     },
     {
-      "id": 92,
+      "id": 88,
+      "name": "Shortfin Mako Sushi",
+      "image": "shortfin_mako_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 105,
+      "baseTaste": 36,
+      "baseServings": 1,
+      "finalPrice": 776,
+      "finalTaste": 360,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 125,
+          "count": 1,
+          "name": "Mako Meat",
+          "image": "shortfin_mako.png",
+          "type": "Fish",
+          "unitCost": 43,
+          "lineCost": 43,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 43,
+      "partyDishIds": [
+        88
+      ],
+      "partyIds": [
+        4
+      ],
+      "finalRevenue": 776,
+      "finalProfit": 733,
+      "finalProfitPerServing": 733,
+      "maxProfitPerServing": 733,
+      "upgradeCost": 9503,
+      "ingredientCount": 1,
+      "search": "shortfin mako sushi shark",
+      "sort": {
+        "name": "shortfin mako sushi",
+        "finalPrice": 776,
+        "finalServings": 1,
+        "finalRevenue": 776,
+        "finalProfit": 733,
+        "finalProfitPerServing": 733,
+        "maxProfitPerServing": 733,
+        "recipeCost": 43,
+        "upgradeCost": 9503,
+        "ingredientCount": 1,
+        "partyBonus": 2,
+        "partyName": "Shark"
+      },
+      "partyId": 4,
+      "dishId": 196,
+      "partyName": "Shark",
+      "partyBonus": 2
+    },
+    {
+      "id": 89,
       "name": "Smooth Hammerhead Sushi",
       "image": "smooth_hammerhead_sushi.png",
       "maxLevel": 10,
@@ -6695,7 +6528,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        92
+        89
       ],
       "partyIds": [
         4
@@ -6727,7 +6560,7 @@
       "partyBonus": 2
     },
     {
-      "id": 93,
+      "id": 90,
       "name": "Thresher Shark Sushi",
       "image": "thresher_shark_sushi.png",
       "maxLevel": 10,
@@ -6754,7 +6587,7 @@
       ],
       "recipeCost": 53,
       "partyDishIds": [
-        93
+        90
       ],
       "partyIds": [
         4
@@ -6786,7 +6619,7 @@
       "partyBonus": 2
     },
     {
-      "id": 94,
+      "id": 91,
       "name": "Tiger Shark Sushi",
       "image": "tiger_shark_sushi.png",
       "maxLevel": 10,
@@ -6813,7 +6646,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        94
+        91
       ],
       "partyIds": [
         4
@@ -6845,7 +6678,7 @@
       "partyBonus": 2
     },
     {
-      "id": 95,
+      "id": 92,
       "name": "Tropical Rock Lobster Sushi",
       "image": "tropical_rock_lobster_sushi.png",
       "maxLevel": 10,
@@ -6872,7 +6705,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        95
+        92
       ],
       "partyIds": [
         8
@@ -6904,7 +6737,7 @@
       "partyBonus": 2.5
     },
     {
-      "id": 96,
+      "id": 93,
       "name": "White Shrimp Sushi",
       "image": "white_shrimp_sushi.png",
       "maxLevel": 10,
@@ -6931,7 +6764,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        96
+        93
       ],
       "partyIds": [
         7
@@ -6963,7 +6796,7 @@
       "partyBonus": 2
     },
     {
-      "id": 97,
+      "id": 94,
       "name": "White Spotted Jellyfish Sushi",
       "image": "white_spotted_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -6990,7 +6823,7 @@
       ],
       "recipeCost": 6,
       "partyDishIds": [
-        97
+        94
       ],
       "partyIds": [
         1
@@ -7022,7 +6855,7 @@
       "partyBonus": 2
     },
     {
-      "id": 98,
+      "id": 95,
       "name": "Whitetip Reefshark Sushi",
       "image": "whitetip_reefshark_sushi.png",
       "maxLevel": 10,
@@ -7049,7 +6882,7 @@
       ],
       "recipeCost": 8,
       "partyDishIds": [
-        98
+        95
       ],
       "partyIds": [
         4
@@ -7079,6 +6912,242 @@
       "dishId": 245,
       "partyName": "Shark",
       "partyBonus": 2
+    },
+    {
+      "id": 96,
+      "name": "Yellowfin Tuna Akami Sushi",
+      "image": "yellowfin_tuna_akami_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 73,
+      "baseTaste": 55,
+      "baseServings": 1,
+      "finalPrice": 945,
+      "finalTaste": 235,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 225,
+          "count": 1,
+          "name": "Yellowfin Tuna Akami",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 24,
+          "lineCost": 24,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 24,
+      "partyDishIds": [
+        96
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 945,
+      "finalProfit": 921,
+      "finalProfitPerServing": 921,
+      "maxProfitPerServing": 921,
+      "upgradeCost": 5304,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna akami sushi tuna",
+      "sort": {
+        "name": "yellowfin tuna akami sushi",
+        "finalPrice": 945,
+        "finalServings": 1,
+        "finalRevenue": 945,
+        "finalProfit": 921,
+        "finalProfitPerServing": 921,
+        "maxProfitPerServing": 921,
+        "recipeCost": 24,
+        "upgradeCost": 5304,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 252,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    {
+      "id": 97,
+      "name": "Yellowfin Tuna Chutoro Sushi",
+      "image": "yellowfin_tuna_chutoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 90,
+      "baseTaste": 58,
+      "baseServings": 1,
+      "finalPrice": 1165.5,
+      "finalTaste": 238,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 226,
+          "count": 1,
+          "name": "Yellowfin Tuna Chutoro",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 30,
+          "lineCost": 30,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 30,
+      "partyDishIds": [
+        97
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1165.5,
+      "finalProfit": 1136,
+      "finalProfitPerServing": 1136,
+      "maxProfitPerServing": 1136,
+      "upgradeCost": 6630,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna chutoro sushi tuna",
+      "sort": {
+        "name": "yellowfin tuna chutoro sushi",
+        "finalPrice": 1165.5,
+        "finalServings": 1,
+        "finalRevenue": 1165.5,
+        "finalProfit": 1136,
+        "finalProfitPerServing": 1136,
+        "maxProfitPerServing": 1136,
+        "recipeCost": 30,
+        "upgradeCost": 6630,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 253,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    {
+      "id": 98,
+      "name": "Yellowfin Tuna Ootoro Sushi",
+      "image": "yellowfin_tuna_ootoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 125,
+      "baseTaste": 90,
+      "baseServings": 1,
+      "finalPrice": 1617,
+      "finalTaste": 315,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 227,
+          "count": 1,
+          "name": "Yellowfin Tuna Ootoro",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 42,
+          "lineCost": 42,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 42,
+      "partyDishIds": [
+        98
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1617,
+      "finalProfit": 1575,
+      "finalProfitPerServing": 1575,
+      "maxProfitPerServing": 1575,
+      "upgradeCost": 9282,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna ootoro sushi tuna",
+      "sort": {
+        "name": "yellowfin tuna ootoro sushi",
+        "finalPrice": 1617,
+        "finalServings": 1,
+        "finalRevenue": 1617,
+        "finalProfit": 1575,
+        "finalProfitPerServing": 1575,
+        "maxProfitPerServing": 1575,
+        "recipeCost": 42,
+        "upgradeCost": 9282,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 254,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    {
+      "id": 99,
+      "name": "Zebra Shark Sushi",
+      "image": "zebra_shark_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 88,
+      "baseTaste": 36,
+      "baseServings": 1,
+      "finalPrice": 798,
+      "finalTaste": 360,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 228,
+          "count": 1,
+          "name": "Zebra Shark Meat",
+          "image": "zebra_shark.png",
+          "type": "Fish",
+          "unitCost": 42,
+          "lineCost": 42,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 42,
+      "partyDishIds": [
+        99
+      ],
+      "partyIds": [
+        4
+      ],
+      "finalRevenue": 798,
+      "finalProfit": 756,
+      "finalProfitPerServing": 756,
+      "maxProfitPerServing": 756,
+      "upgradeCost": 9282,
+      "ingredientCount": 1,
+      "search": "zebra shark sushi shark",
+      "sort": {
+        "name": "zebra shark sushi",
+        "finalPrice": 798,
+        "finalServings": 1,
+        "finalRevenue": 798,
+        "finalProfit": 756,
+        "finalProfitPerServing": 756,
+        "maxProfitPerServing": 756,
+        "recipeCost": 42,
+        "upgradeCost": 9282,
+        "ingredientCount": 1,
+        "partyBonus": 2,
+        "partyName": "Shark"
+      },
+      "partyId": 4,
+      "dishId": 257,
+      "partyName": "Shark",
+      "partyBonus": 2
     }
   ],
   "byId": {
@@ -7090,7 +7159,7 @@
       "basePrice": 650,
       "baseTaste": 150,
       "baseServings": 10,
-      "finalPrice": 1300,
+      "finalPrice": 1625,
       "finalTaste": 150,
       "finalServings": 10,
       "unlock": "Boss",
@@ -7143,33 +7212,33 @@
         1
       ],
       "partyIds": [
-        7
+        8
       ],
-      "finalRevenue": 13000,
-      "finalProfit": 12968,
-      "finalProfitPerServing": 1297,
-      "maxProfitPerServing": 1297,
+      "finalRevenue": 16250,
+      "finalProfit": 16218,
+      "finalProfitPerServing": 1622,
+      "maxProfitPerServing": 1622,
       "upgradeCost": 0,
       "ingredientCount": 4,
-      "search": "boiled mantis shrimp with soy paste shrimp boss",
+      "search": "boiled mantis shrimp with soy paste lobster boss",
       "sort": {
         "name": "boiled mantis shrimp with soy paste",
-        "finalPrice": 1300,
+        "finalPrice": 1625,
         "finalServings": 10,
-        "finalRevenue": 13000,
-        "finalProfit": 12968,
-        "finalProfitPerServing": 1297,
-        "maxProfitPerServing": 1297,
+        "finalRevenue": 16250,
+        "finalProfit": 16218,
+        "finalProfitPerServing": 1622,
+        "maxProfitPerServing": 1622,
         "recipeCost": 32,
         "upgradeCost": 0,
         "ingredientCount": 4,
-        "partyBonus": 2,
-        "partyName": "Shrimp"
+        "partyBonus": 2.5,
+        "partyName": "Lobster"
       },
-      "partyId": 7,
+      "partyId": 8,
       "dishId": 38,
-      "partyName": "Shrimp",
-      "partyBonus": 2
+      "partyName": "Lobster",
+      "partyBonus": 2.5
     },
     "2": {
       "id": 2,
@@ -7588,6 +7657,75 @@
     },
     "7": {
       "id": 7,
+      "name": "Yawie Steamed Meat",
+      "image": "yawie_steamed_meat.png",
+      "maxLevel": 1,
+      "basePrice": 750,
+      "baseTaste": 180,
+      "baseServings": 10,
+      "finalPrice": 1875,
+      "finalTaste": 180,
+      "finalServings": 10,
+      "unlock": "Boss",
+      "dlc": null,
+      "artisansFlames": 1,
+      "ingredients": [
+        {
+          "ingredientId": 222,
+          "count": 1,
+          "name": "Yawie's Inner Flesh",
+          "image": "yawie_s_inner_flesh.png",
+          "type": "Boss",
+          "unitCost": 0,
+          "lineCost": 0,
+          "upgradeCount": 0
+        },
+        {
+          "ingredientId": 171,
+          "count": 1,
+          "name": "Salt",
+          "image": "salt.png",
+          "type": "Procure",
+          "unitCost": 8,
+          "lineCost": 8,
+          "upgradeCount": 0
+        }
+      ],
+      "recipeCost": 8,
+      "partyDishIds": [
+        7
+      ],
+      "partyIds": [
+        8
+      ],
+      "finalRevenue": 18750,
+      "finalProfit": 18742,
+      "finalProfitPerServing": 1874,
+      "maxProfitPerServing": 1874,
+      "upgradeCost": 0,
+      "ingredientCount": 2,
+      "search": "yawie steamed meat lobster boss",
+      "sort": {
+        "name": "yawie steamed meat",
+        "finalPrice": 1875,
+        "finalServings": 10,
+        "finalRevenue": 18750,
+        "finalProfit": 18742,
+        "finalProfitPerServing": 1874,
+        "maxProfitPerServing": 1874,
+        "recipeCost": 8,
+        "upgradeCost": 0,
+        "ingredientCount": 2,
+        "partyBonus": 2.5,
+        "partyName": "Lobster"
+      },
+      "partyId": 8,
+      "dishId": 249,
+      "partyName": "Lobster",
+      "partyBonus": 2.5
+    },
+    "8": {
+      "id": 8,
       "name": "Atlantic Bonito Curry",
       "image": "atlantic_bonito_curry.png",
       "maxLevel": 10,
@@ -7634,7 +7772,7 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        7
+        8
       ],
       "partyIds": [
         6
@@ -7665,8 +7803,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "8": {
-      "id": 8,
+    "9": {
+      "id": 9,
       "name": "Humphead Parrotfish Curry",
       "image": "humphead_parrotfish_curry.png",
       "maxLevel": 10,
@@ -7713,7 +7851,7 @@
       ],
       "recipeCost": 70,
       "partyDishIds": [
-        8
+        9
       ],
       "partyIds": [
         6
@@ -7744,8 +7882,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "9": {
-      "id": 9,
+    "10": {
+      "id": 10,
       "name": "Moray Eel Curry",
       "image": "moray_eel_curry.png",
       "maxLevel": 10,
@@ -7782,7 +7920,7 @@
       ],
       "recipeCost": 39,
       "partyDishIds": [
-        9
+        10
       ],
       "partyIds": [
         6
@@ -7813,8 +7951,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "10": {
-      "id": 10,
+    "11": {
+      "id": 11,
       "name": "Deep-Fried Vegetables",
       "image": "deep-fried_vegetables.png",
       "maxLevel": 10,
@@ -7871,7 +8009,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        10
+        11
       ],
       "partyIds": [
         5
@@ -7902,8 +8040,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "11": {
-      "id": 11,
+    "12": {
+      "id": 12,
       "name": "Great Spider Crab and Cucumber Sushi",
       "image": "great_spider_crab_and_cucumber_sushi.png",
       "maxLevel": 10,
@@ -7940,7 +8078,7 @@
       ],
       "recipeCost": 37,
       "partyDishIds": [
-        11
+        12
       ],
       "partyIds": [
         5
@@ -7971,8 +8109,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "12": {
-      "id": 12,
+    "13": {
+      "id": 13,
       "name": "Pickled Vegetables",
       "image": "pickled_vegetables.png",
       "maxLevel": 10,
@@ -8029,7 +8167,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        12
+        13
       ],
       "partyIds": [
         5
@@ -8060,8 +8198,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "13": {
-      "id": 13,
+    "14": {
+      "id": 14,
       "name": "Sea Toad and Cucumber Gunkan Sushi",
       "image": "sea_toad_and_cucumber_gunkan_sushi.png",
       "maxLevel": 10,
@@ -8098,7 +8236,7 @@
       ],
       "recipeCost": 38,
       "partyDishIds": [
-        13
+        14
       ],
       "partyIds": [
         5
@@ -8129,8 +8267,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "14": {
-      "id": 14,
+    "15": {
+      "id": 15,
       "name": "Seasoned Waptia Fieldensis",
       "image": "seasoned_waptia_fieldensis.png",
       "maxLevel": 10,
@@ -8187,8 +8325,8 @@
       ],
       "recipeCost": 171,
       "partyDishIds": [
-        14,
-        15
+        15,
+        16
       ],
       "partyIds": [
         5,
@@ -8220,8 +8358,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "15": {
-      "id": 15,
+    "16": {
+      "id": 16,
       "name": "Seasoned Waptia Fieldensis",
       "image": "seasoned_waptia_fieldensis.png",
       "maxLevel": 10,
@@ -8278,8 +8416,8 @@
       ],
       "recipeCost": 171,
       "partyDishIds": [
-        14,
-        15
+        15,
+        16
       ],
       "partyIds": [
         5,
@@ -8311,8 +8449,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "16": {
-      "id": 16,
+    "17": {
+      "id": 17,
       "name": "Skewered Cucumber",
       "image": "skewered_cucumber.png",
       "maxLevel": 10,
@@ -8339,7 +8477,7 @@
       ],
       "recipeCost": 60,
       "partyDishIds": [
-        16
+        17
       ],
       "partyIds": [
         5
@@ -8370,8 +8508,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "17": {
-      "id": 17,
+    "18": {
+      "id": 18,
       "name": "Trevally Sandwich",
       "image": "trevally_sandwich.png",
       "maxLevel": 10,
@@ -8418,7 +8556,7 @@
       ],
       "recipeCost": 120,
       "partyDishIds": [
-        17
+        18
       ],
       "partyIds": [
         5
@@ -8449,8 +8587,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "18": {
-      "id": 18,
+    "19": {
+      "id": 19,
       "name": "Hyalonema Tuna Sashimi",
       "image": "hyalonema_tuna_sashimi.png",
       "maxLevel": 5,
@@ -8497,7 +8635,7 @@
       ],
       "recipeCost": 391,
       "partyDishIds": [
-        18
+        19
       ],
       "partyIds": [
         2
@@ -8528,8 +8666,8 @@
       "partyName": "Tuna",
       "partyBonus": 3.5
     },
-    "19": {
-      "id": 19,
+    "20": {
+      "id": 20,
       "name": "Deep Sea Kaiju Ramen",
       "image": "deep_sea_kaiju_ramen.png",
       "maxLevel": 10,
@@ -8576,7 +8714,7 @@
       ],
       "recipeCost": 93,
       "partyDishIds": [
-        19
+        20
       ],
       "partyIds": [
         1
@@ -8607,8 +8745,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "20": {
-      "id": 20,
+    "21": {
+      "id": 21,
       "name": "Ebirah Chasing Sashimi",
       "image": "ebirah_chasing_sashimi.png",
       "maxLevel": 10,
@@ -8655,7 +8793,7 @@
       ],
       "recipeCost": 161,
       "partyDishIds": [
-        20
+        21
       ],
       "partyIds": [
         8
@@ -8686,8 +8824,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "21": {
-      "id": 21,
+    "22": {
+      "id": 22,
       "name": "Godzilla vs. Ebirah Curry",
       "image": "godzilla_vs._ebirah_curry.png",
       "maxLevel": 10,
@@ -8744,8 +8882,8 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        21,
-        22
+        22,
+        23
       ],
       "partyIds": [
         6,
@@ -8777,8 +8915,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "22": {
-      "id": 22,
+    "23": {
+      "id": 23,
       "name": "Godzilla vs. Ebirah Curry",
       "image": "godzilla_vs._ebirah_curry.png",
       "maxLevel": 10,
@@ -8835,8 +8973,8 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        21,
-        22
+        22,
+        23
       ],
       "partyIds": [
         6,
@@ -8868,8 +9006,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "23": {
-      "id": 23,
+    "24": {
+      "id": 24,
       "name": "Green Sea Urchin & Cucumber Salad",
       "image": "green_sea_urchin_and_cucumber_salad.png",
       "maxLevel": 5,
@@ -8880,7 +9018,7 @@
       "finalTaste": 282,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "dlc": "mxmtoon",
+      "dlc": null,
       "artisansFlames": null,
       "ingredients": [
         {
@@ -8916,7 +9054,7 @@
       ],
       "recipeCost": 328,
       "partyDishIds": [
-        23
+        24
       ],
       "partyIds": [
         5
@@ -8927,7 +9065,7 @@
       "maxProfitPerServing": 3686,
       "upgradeCost": 5335,
       "ingredientCount": 7,
-      "search": "green sea urchin & cucumber salad cucumber mxmtoon jango shop",
+      "search": "green sea urchin & cucumber salad cucumber jango shop",
       "sort": {
         "name": "green sea urchin & cucumber salad",
         "finalPrice": 3850,
@@ -8947,8 +9085,8 @@
       "partyName": "Cucumber",
       "partyBonus": 2.5
     },
-    "24": {
-      "id": 24,
+    "25": {
+      "id": 25,
       "name": "Lobster Platter",
       "image": "lobster_platter.png",
       "maxLevel": 10,
@@ -8995,7 +9133,7 @@
       ],
       "recipeCost": 286,
       "partyDishIds": [
-        24
+        25
       ],
       "partyIds": [
         8
@@ -9026,8 +9164,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "25": {
-      "id": 25,
+    "26": {
+      "id": 26,
       "name": "Truffle Blue Lobster Tail Sushi",
       "image": "truffle_blue_lobster_tail_sushi.png",
       "maxLevel": 5,
@@ -9064,7 +9202,7 @@
       ],
       "recipeCost": 744,
       "partyDishIds": [
-        25
+        26
       ],
       "partyIds": [
         8
@@ -9095,8 +9233,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "26": {
-      "id": 26,
+    "27": {
+      "id": 27,
       "name": "Truffle Sailfish Tartare",
       "image": "truffle_sailfish_tartare.png",
       "maxLevel": 5,
@@ -9143,7 +9281,7 @@
       ],
       "recipeCost": 905,
       "partyDishIds": [
-        26
+        27
       ],
       "partyIds": [
         3
@@ -9174,8 +9312,8 @@
       "partyName": "Marlin",
       "partyBonus": 2
     },
-    "27": {
-      "id": 27,
+    "28": {
+      "id": 28,
       "name": "Truffle Shark Sandwich",
       "image": "truffle_shark_sandwich.png",
       "maxLevel": 5,
@@ -9222,7 +9360,7 @@
       ],
       "recipeCost": 827,
       "partyDishIds": [
-        27
+        28
       ],
       "partyIds": [
         4
@@ -9253,8 +9391,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "28": {
-      "id": 28,
+    "29": {
+      "id": 29,
       "name": "Falcatus Soybean Paste Soup",
       "image": "falcatus_soybean_paste_soup.png",
       "maxLevel": 10,
@@ -9311,7 +9449,7 @@
       ],
       "recipeCost": 195,
       "partyDishIds": [
-        28
+        29
       ],
       "partyIds": [
         4
@@ -9342,8 +9480,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "29": {
-      "id": 29,
+    "30": {
+      "id": 30,
       "name": "Crystal Lobster Roll",
       "image": "crystal_lobster_roll.png",
       "maxLevel": 10,
@@ -9390,7 +9528,7 @@
       ],
       "recipeCost": 144,
       "partyDishIds": [
-        29
+        30
       ],
       "partyIds": [
         8
@@ -9421,8 +9559,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "30": {
-      "id": 30,
+    "31": {
+      "id": 31,
       "name": "Steamed Eastern Rock Lobster & Egg",
       "image": "steamed_eastern_rock_lobster_and_egg.png",
       "maxLevel": 10,
@@ -9469,7 +9607,7 @@
       ],
       "recipeCost": 136,
       "partyDishIds": [
-        30
+        31
       ],
       "partyIds": [
         8
@@ -9500,8 +9638,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "31": {
-      "id": 31,
+    "32": {
+      "id": 32,
       "name": "Boiled Sailfish and Seaweed",
       "image": "boiled_sailfish_and_seaweed.png",
       "maxLevel": 10,
@@ -9558,7 +9696,7 @@
       ],
       "recipeCost": 231,
       "partyDishIds": [
-        31
+        32
       ],
       "partyIds": [
         3
@@ -9589,8 +9727,8 @@
       "partyName": "Marlin",
       "partyBonus": 2
     },
-    "32": {
-      "id": 32,
+    "33": {
+      "id": 33,
       "name": "Marlin and Soybean Paste Roast",
       "image": "marlin_and_soybean_paste_roast.png",
       "maxLevel": 10,
@@ -9637,7 +9775,7 @@
       ],
       "recipeCost": 181,
       "partyDishIds": [
-        32
+        33
       ],
       "partyIds": [
         3
@@ -9668,8 +9806,8 @@
       "partyName": "Marlin",
       "partyBonus": 2
     },
-    "33": {
-      "id": 33,
+    "34": {
+      "id": 34,
       "name": "Chirashi Sushi",
       "image": "chirashi_sushi.png",
       "maxLevel": 5,
@@ -9679,8 +9817,8 @@
       "finalPrice": 5313,
       "finalTaste": 274,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 1,
       "ingredients": [
         {
@@ -9716,7 +9854,7 @@
       ],
       "recipeCost": 384,
       "partyDishIds": [
-        33
+        34
       ],
       "partyIds": [
         2
@@ -9727,7 +9865,7 @@
       "maxProfitPerServing": 5121,
       "upgradeCost": 6144,
       "ingredientCount": 9,
-      "search": "chirashi sushi tuna mxmtoon mxmtoon collab",
+      "search": "chirashi sushi tuna mxmtoon",
       "sort": {
         "name": "chirashi sushi",
         "finalPrice": 5313,
@@ -9747,8 +9885,8 @@
       "partyName": "Tuna",
       "partyBonus": 3.5
     },
-    "34": {
-      "id": 34,
+    "35": {
+      "id": 35,
       "name": "Cold Jellyfish & Green Sea Urchin Salad",
       "image": "cold_jellyfish_and_green_sea_urchin_salad.png",
       "maxLevel": 5,
@@ -9758,8 +9896,8 @@
       "finalPrice": 3014,
       "finalTaste": 277,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 9,
       "ingredients": [
         {
@@ -9795,7 +9933,7 @@
       ],
       "recipeCost": 318,
       "partyDishIds": [
-        34
+        35
       ],
       "partyIds": [
         1
@@ -9806,7 +9944,7 @@
       "maxProfitPerServing": 2855,
       "upgradeCost": 5160,
       "ingredientCount": 7,
-      "search": "cold jellyfish & green sea urchin salad jellyfish mxmtoon mxmtoon collab",
+      "search": "cold jellyfish & green sea urchin salad jellyfish mxmtoon",
       "sort": {
         "name": "cold jellyfish & green sea urchin salad",
         "finalPrice": 3014,
@@ -9826,8 +9964,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "35": {
-      "id": 35,
+    "36": {
+      "id": 36,
       "name": "Roasted Capelin",
       "image": "roasted_capelin.png",
       "maxLevel": 10,
@@ -9874,7 +10012,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        35
+        36
       ],
       "partyIds": [
         6
@@ -9905,8 +10043,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "36": {
-      "id": 36,
+    "37": {
+      "id": 37,
       "name": "Crimson Fish Roll",
       "image": "crimson_fish_roll.png",
       "maxLevel": 10,
@@ -9953,7 +10091,7 @@
       ],
       "recipeCost": 141,
       "partyDishIds": [
-        36
+        37
       ],
       "partyIds": [
         4
@@ -9984,8 +10122,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "37": {
-      "id": 37,
+    "38": {
+      "id": 38,
       "name": "Great Spider Crab Curry",
       "image": "great_spider_crab_curry.png",
       "maxLevel": 10,
@@ -10032,7 +10170,7 @@
       ],
       "recipeCost": 113,
       "partyDishIds": [
-        37
+        38
       ],
       "partyIds": [
         6
@@ -10063,8 +10201,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "38": {
-      "id": 38,
+    "39": {
+      "id": 39,
       "name": "Ice Fish Curry",
       "image": "ice_fish_curry.png",
       "maxLevel": 10,
@@ -10111,7 +10249,7 @@
       ],
       "recipeCost": 142,
       "partyDishIds": [
-        38
+        39
       ],
       "partyIds": [
         6
@@ -10142,8 +10280,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "39": {
-      "id": 39,
+    "40": {
+      "id": 40,
       "name": "Shark Karaage",
       "image": "shark_karaage.png",
       "maxLevel": 10,
@@ -10200,7 +10338,7 @@
       ],
       "recipeCost": 151,
       "partyDishIds": [
-        39
+        40
       ],
       "partyIds": [
         4
@@ -10231,8 +10369,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "40": {
-      "id": 40,
+    "41": {
+      "id": 41,
       "name": "Seasoned Jellyfish",
       "image": "seasoned_jellyfish.png",
       "maxLevel": 10,
@@ -10289,7 +10427,7 @@
       ],
       "recipeCost": 104,
       "partyDishIds": [
-        40
+        41
       ],
       "partyIds": [
         1
@@ -10320,8 +10458,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "41": {
-      "id": 41,
+    "42": {
+      "id": 42,
       "name": "Wrasse Curry",
       "image": "wrasse_curry.png",
       "maxLevel": 10,
@@ -10378,7 +10516,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        41
+        42
       ],
       "partyIds": [
         6
@@ -10409,8 +10547,8 @@
       "partyName": "Curry",
       "partyBonus": 2
     },
-    "42": {
-      "id": 42,
+    "43": {
+      "id": 43,
       "name": "Rice with White Shrimp Meat",
       "image": "rice_with_white_shrimp_meat.png",
       "maxLevel": 10,
@@ -10467,7 +10605,7 @@
       ],
       "recipeCost": 117,
       "partyDishIds": [
-        42
+        43
       ],
       "partyIds": [
         7
@@ -10498,8 +10636,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "43": {
-      "id": 43,
+    "44": {
+      "id": 44,
       "name": "Boiled Porbeagle Shark",
       "image": "boiled_porbeagle_shark.png",
       "maxLevel": 10,
@@ -10546,7 +10684,7 @@
       ],
       "recipeCost": 176,
       "partyDishIds": [
-        43
+        44
       ],
       "partyIds": [
         4
@@ -10577,8 +10715,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "44": {
-      "id": 44,
+    "45": {
+      "id": 45,
       "name": "Deep-Fried Eggplant Shrimp Meatballs",
       "image": "deep-fried_eggplant_shrimp_meatballs.png",
       "maxLevel": 10,
@@ -10635,7 +10773,7 @@
       ],
       "recipeCost": 153,
       "partyDishIds": [
-        44
+        45
       ],
       "partyIds": [
         7
@@ -10666,8 +10804,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "45": {
-      "id": 45,
+    "46": {
+      "id": 46,
       "name": "Special Fried Shrimp Sushi",
       "image": "special_fried_shrimp_sushi.png",
       "maxLevel": 10,
@@ -10724,7 +10862,7 @@
       ],
       "recipeCost": 77,
       "partyDishIds": [
-        45
+        46
       ],
       "partyIds": [
         7
@@ -10755,8 +10893,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "46": {
-      "id": 46,
+    "47": {
+      "id": 47,
       "name": "Boiled and Deep-Fried White Shrimp",
       "image": "boiled_and_deep-fried_white_shrimp.png",
       "maxLevel": 10,
@@ -10813,7 +10951,7 @@
       ],
       "recipeCost": 83,
       "partyDishIds": [
-        46
+        47
       ],
       "partyIds": [
         7
@@ -10844,8 +10982,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "47": {
-      "id": 47,
+    "48": {
+      "id": 48,
       "name": "Whole-Roasted Shark Head",
       "image": "whole-roasted_shark_head.png",
       "maxLevel": 10,
@@ -10882,7 +11020,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        47
+        48
       ],
       "partyIds": [
         4
@@ -10913,8 +11051,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "48": {
-      "id": 48,
+    "49": {
+      "id": 49,
       "name": "Bluefin Tuna Rice Bowl",
       "image": "bluefin_tuna_rice_bowl.png",
       "maxLevel": 10,
@@ -10971,7 +11109,7 @@
       ],
       "recipeCost": 149,
       "partyDishIds": [
-        48
+        49
       ],
       "partyIds": [
         2
@@ -11002,8 +11140,8 @@
       "partyName": "Tuna",
       "partyBonus": 3.5
     },
-    "49": {
-      "id": 49,
+    "50": {
+      "id": 50,
       "name": "Hawaiian Poke",
       "image": "hawaiian_poke.png",
       "maxLevel": 10,
@@ -11060,7 +11198,7 @@
       ],
       "recipeCost": 132,
       "partyDishIds": [
-        49
+        50
       ],
       "partyIds": [
         2
@@ -11091,8 +11229,8 @@
       "partyName": "Tuna",
       "partyBonus": 3.5
     },
-    "50": {
-      "id": 50,
+    "51": {
+      "id": 51,
       "name": "Yellowfin Tuna Steak",
       "image": "yellowfin_tuna_steak.png",
       "maxLevel": 10,
@@ -11139,7 +11277,7 @@
       ],
       "recipeCost": 147,
       "partyDishIds": [
-        50
+        51
       ],
       "partyIds": [
         2
@@ -11170,8 +11308,8 @@
       "partyName": "Tuna",
       "partyBonus": 3.5
     },
-    "51": {
-      "id": 51,
+    "52": {
+      "id": 52,
       "name": "Deep Fish Tempura",
       "image": "deep_fish_tempura.png",
       "maxLevel": 10,
@@ -11228,7 +11366,7 @@
       ],
       "recipeCost": 119,
       "partyDishIds": [
-        51
+        52
       ],
       "partyIds": [
         4
@@ -11259,8 +11397,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "52": {
-      "id": 52,
+    "53": {
+      "id": 53,
       "name": "Mianbao Xia",
       "image": "mianbao_xia.png",
       "maxLevel": 10,
@@ -11317,7 +11455,7 @@
       ],
       "recipeCost": 184,
       "partyDishIds": [
-        52
+        53
       ],
       "partyIds": [
         7
@@ -11348,8 +11486,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "53": {
-      "id": 53,
+    "54": {
+      "id": 54,
       "name": "Humboldt Ink Pasta",
       "image": "humboldt_ink_pasta.png",
       "maxLevel": 10,
@@ -11406,7 +11544,7 @@
       ],
       "recipeCost": 213,
       "partyDishIds": [
-        53
+        54
       ],
       "partyIds": [
         7
@@ -11437,8 +11575,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "54": {
-      "id": 54,
+    "55": {
+      "id": 55,
       "name": "Hot Pepper Tuna",
       "image": "hot_pepper_tuna.png",
       "maxLevel": 10,
@@ -11495,7 +11633,7 @@
       ],
       "recipeCost": 148,
       "partyDishIds": [
-        54
+        55
       ],
       "partyIds": [
         2
@@ -11526,8 +11664,8 @@
       "partyName": "Tuna",
       "partyBonus": 3.5
     },
-    "55": {
-      "id": 55,
+    "56": {
+      "id": 56,
       "name": "Stir-fried Habanero Lobster",
       "image": "stir-fried_habanero_lobster.png",
       "maxLevel": 10,
@@ -11574,7 +11712,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        55
+        56
       ],
       "partyIds": [
         8
@@ -11605,8 +11743,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "56": {
-      "id": 56,
+    "57": {
+      "id": 57,
       "name": "Seagrapes Jellyfish Sushi",
       "image": "seagrapes_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -11653,7 +11791,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        56
+        57
       ],
       "partyIds": [
         1
@@ -11684,480 +11822,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "57": {
-      "id": 57,
-      "name": "Shortfin Mako Sushi",
-      "image": "shortfin_mako_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 105,
-      "baseTaste": 36,
-      "baseServings": 1,
-      "finalPrice": 776,
-      "finalTaste": 360,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 125,
-          "count": 1,
-          "name": "Mako Meat",
-          "image": "shortfin_mako.png",
-          "type": "Fish",
-          "unitCost": 43,
-          "lineCost": 43,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 43,
-      "partyDishIds": [
-        57
-      ],
-      "partyIds": [
-        4
-      ],
-      "finalRevenue": 776,
-      "finalProfit": 733,
-      "finalProfitPerServing": 733,
-      "maxProfitPerServing": 733,
-      "upgradeCost": 9503,
-      "ingredientCount": 1,
-      "search": "shortfin mako sushi shark",
-      "sort": {
-        "name": "shortfin mako sushi",
-        "finalPrice": 776,
-        "finalServings": 1,
-        "finalRevenue": 776,
-        "finalProfit": 733,
-        "finalProfitPerServing": 733,
-        "maxProfitPerServing": 733,
-        "recipeCost": 43,
-        "upgradeCost": 9503,
-        "ingredientCount": 1,
-        "partyBonus": 2,
-        "partyName": "Shark"
-      },
-      "partyId": 4,
-      "dishId": 196,
-      "partyName": "Shark",
-      "partyBonus": 2
-    },
     "58": {
       "id": 58,
-      "name": "Zebra Shark Sushi",
-      "image": "zebra_shark_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 88,
-      "baseTaste": 36,
-      "baseServings": 1,
-      "finalPrice": 798,
-      "finalTaste": 360,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 228,
-          "count": 1,
-          "name": "Zebra Shark Meat",
-          "image": "zebra_shark.png",
-          "type": "Fish",
-          "unitCost": 42,
-          "lineCost": 42,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 42,
-      "partyDishIds": [
-        58
-      ],
-      "partyIds": [
-        4
-      ],
-      "finalRevenue": 798,
-      "finalProfit": 756,
-      "finalProfitPerServing": 756,
-      "maxProfitPerServing": 756,
-      "upgradeCost": 9282,
-      "ingredientCount": 1,
-      "search": "zebra shark sushi shark",
-      "sort": {
-        "name": "zebra shark sushi",
-        "finalPrice": 798,
-        "finalServings": 1,
-        "finalRevenue": 798,
-        "finalProfit": 756,
-        "finalProfitPerServing": 756,
-        "maxProfitPerServing": 756,
-        "recipeCost": 42,
-        "upgradeCost": 9282,
-        "ingredientCount": 1,
-        "partyBonus": 2,
-        "partyName": "Shark"
-      },
-      "partyId": 4,
-      "dishId": 257,
-      "partyName": "Shark",
-      "partyBonus": 2
-    },
-    "59": {
-      "id": 59,
-      "name": "Bluefin Tuna Akami Sushi",
-      "image": "bluefin_tuna_akami_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 80,
-      "baseTaste": 60,
-      "baseServings": 1,
-      "finalPrice": 1036,
-      "finalTaste": 240,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 32,
-          "count": 1,
-          "name": "Bluefin Tuna Akami",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 27,
-          "lineCost": 27,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 27,
-      "partyDishIds": [
-        59
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1036,
-      "finalProfit": 1009,
-      "finalProfitPerServing": 1009,
-      "maxProfitPerServing": 1009,
-      "upgradeCost": 5967,
-      "ingredientCount": 1,
-      "search": "bluefin tuna akami sushi tuna",
-      "sort": {
-        "name": "bluefin tuna akami sushi",
-        "finalPrice": 1036,
-        "finalServings": 1,
-        "finalRevenue": 1036,
-        "finalProfit": 1009,
-        "finalProfitPerServing": 1009,
-        "maxProfitPerServing": 1009,
-        "recipeCost": 27,
-        "upgradeCost": 5967,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 30,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    "60": {
-      "id": 60,
-      "name": "Bluefin Tuna Chutoro Sushi",
-      "image": "bluefin_tuna_chutoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 95,
-      "baseTaste": 61,
-      "baseServings": 1,
-      "finalPrice": 1228.5,
-      "finalTaste": 241,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 33,
-          "count": 1,
-          "name": "Bluefin Tuna Chutoro",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 32,
-          "lineCost": 32,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 32,
-      "partyDishIds": [
-        60
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1228.5,
-      "finalProfit": 1197,
-      "finalProfitPerServing": 1197,
-      "maxProfitPerServing": 1197,
-      "upgradeCost": 7072,
-      "ingredientCount": 1,
-      "search": "bluefin tuna chutoro sushi tuna",
-      "sort": {
-        "name": "bluefin tuna chutoro sushi",
-        "finalPrice": 1228.5,
-        "finalServings": 1,
-        "finalRevenue": 1228.5,
-        "finalProfit": 1197,
-        "finalProfitPerServing": 1197,
-        "maxProfitPerServing": 1197,
-        "recipeCost": 32,
-        "upgradeCost": 7072,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 31,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    "61": {
-      "id": 61,
-      "name": "Bluefin Tuna Ootoro Sushi",
-      "image": "bluefin_tuna_ootoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 133,
-      "baseTaste": 105,
-      "baseServings": 1,
-      "finalPrice": 1746.5,
-      "finalTaste": 330,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 34,
-          "count": 1,
-          "name": "Bluefin Tuna Ootoro",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 45,
-          "lineCost": 45,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 45,
-      "partyDishIds": [
-        61
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1746.5,
-      "finalProfit": 1702,
-      "finalProfitPerServing": 1702,
-      "maxProfitPerServing": 1702,
-      "upgradeCost": 9945,
-      "ingredientCount": 1,
-      "search": "bluefin tuna ootoro sushi tuna",
-      "sort": {
-        "name": "bluefin tuna ootoro sushi",
-        "finalPrice": 1746.5,
-        "finalServings": 1,
-        "finalRevenue": 1746.5,
-        "finalProfit": 1702,
-        "finalProfitPerServing": 1702,
-        "maxProfitPerServing": 1702,
-        "recipeCost": 45,
-        "upgradeCost": 9945,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 32,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    "62": {
-      "id": 62,
-      "name": "Yellowfin Tuna Akami Sushi",
-      "image": "yellowfin_tuna_akami_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 73,
-      "baseTaste": 55,
-      "baseServings": 1,
-      "finalPrice": 945,
-      "finalTaste": 235,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 225,
-          "count": 1,
-          "name": "Yellowfin Tuna Akami",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 24,
-          "lineCost": 24,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 24,
-      "partyDishIds": [
-        62
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 945,
-      "finalProfit": 921,
-      "finalProfitPerServing": 921,
-      "maxProfitPerServing": 921,
-      "upgradeCost": 5304,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna akami sushi tuna",
-      "sort": {
-        "name": "yellowfin tuna akami sushi",
-        "finalPrice": 945,
-        "finalServings": 1,
-        "finalRevenue": 945,
-        "finalProfit": 921,
-        "finalProfitPerServing": 921,
-        "maxProfitPerServing": 921,
-        "recipeCost": 24,
-        "upgradeCost": 5304,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 252,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    "63": {
-      "id": 63,
-      "name": "Yellowfin Tuna Chutoro Sushi",
-      "image": "yellowfin_tuna_chutoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 90,
-      "baseTaste": 58,
-      "baseServings": 1,
-      "finalPrice": 1165.5,
-      "finalTaste": 238,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 226,
-          "count": 1,
-          "name": "Yellowfin Tuna Chutoro",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 30,
-          "lineCost": 30,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 30,
-      "partyDishIds": [
-        63
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1165.5,
-      "finalProfit": 1136,
-      "finalProfitPerServing": 1136,
-      "maxProfitPerServing": 1136,
-      "upgradeCost": 6630,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna chutoro sushi tuna",
-      "sort": {
-        "name": "yellowfin tuna chutoro sushi",
-        "finalPrice": 1165.5,
-        "finalServings": 1,
-        "finalRevenue": 1165.5,
-        "finalProfit": 1136,
-        "finalProfitPerServing": 1136,
-        "maxProfitPerServing": 1136,
-        "recipeCost": 30,
-        "upgradeCost": 6630,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 253,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    "64": {
-      "id": 64,
-      "name": "Yellowfin Tuna Ootoro Sushi",
-      "image": "yellowfin_tuna_ootoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 125,
-      "baseTaste": 90,
-      "baseServings": 1,
-      "finalPrice": 1617,
-      "finalTaste": 315,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 227,
-          "count": 1,
-          "name": "Yellowfin Tuna Ootoro",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 42,
-          "lineCost": 42,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 42,
-      "partyDishIds": [
-        64
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 1617,
-      "finalProfit": 1575,
-      "finalProfitPerServing": 1575,
-      "maxProfitPerServing": 1575,
-      "upgradeCost": 9282,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna ootoro sushi tuna",
-      "sort": {
-        "name": "yellowfin tuna ootoro sushi",
-        "finalPrice": 1617,
-        "finalServings": 1,
-        "finalRevenue": 1617,
-        "finalProfit": 1575,
-        "finalProfitPerServing": 1575,
-        "maxProfitPerServing": 1575,
-        "recipeCost": 42,
-        "upgradeCost": 9282,
-        "ingredientCount": 1,
-        "partyBonus": 3.5,
-        "partyName": "Tuna"
-      },
-      "partyId": 2,
-      "dishId": 254,
-      "partyName": "Tuna",
-      "partyBonus": 3.5
-    },
-    "65": {
-      "id": 65,
       "name": "American Lobster Sushi",
       "image": "american_lobster_sushi.png",
       "maxLevel": 10,
@@ -12184,7 +11850,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        65
+        58
       ],
       "partyIds": [
         8
@@ -12215,8 +11881,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "66": {
-      "id": 66,
+    "59": {
+      "id": 59,
       "name": "Barrel Jellyfish Sushi",
       "image": "barrel_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -12243,7 +11909,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        66
+        59
       ],
       "partyIds": [
         1
@@ -12274,8 +11940,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "67": {
-      "id": 67,
+    "60": {
+      "id": 60,
       "name": "Blacktip Reefshark Sushi",
       "image": "blacktip_reefshark_sushi.png",
       "maxLevel": 10,
@@ -12302,7 +11968,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        67
+        60
       ],
       "partyIds": [
         4
@@ -12333,8 +11999,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "68": {
-      "id": 68,
+    "61": {
+      "id": 61,
       "name": "Blood-belly Comb Jelly Sushi",
       "image": "blood-belly_comb_jelly_sushi.png",
       "maxLevel": 10,
@@ -12361,7 +12027,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        68
+        61
       ],
       "partyIds": [
         1
@@ -12392,8 +12058,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "69": {
-      "id": 69,
+    "62": {
+      "id": 62,
       "name": "Blue Lobster Sushi",
       "image": "blue_lobster_sushi.png",
       "maxLevel": 10,
@@ -12420,7 +12086,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        69
+        62
       ],
       "partyIds": [
         8
@@ -12451,8 +12117,185 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "70": {
-      "id": 70,
+    "63": {
+      "id": 63,
+      "name": "Bluefin Tuna Akami Sushi",
+      "image": "bluefin_tuna_akami_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 80,
+      "baseTaste": 60,
+      "baseServings": 1,
+      "finalPrice": 1036,
+      "finalTaste": 240,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 32,
+          "count": 1,
+          "name": "Bluefin Tuna Akami",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 27,
+          "lineCost": 27,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 27,
+      "partyDishIds": [
+        63
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1036,
+      "finalProfit": 1009,
+      "finalProfitPerServing": 1009,
+      "maxProfitPerServing": 1009,
+      "upgradeCost": 5967,
+      "ingredientCount": 1,
+      "search": "bluefin tuna akami sushi tuna",
+      "sort": {
+        "name": "bluefin tuna akami sushi",
+        "finalPrice": 1036,
+        "finalServings": 1,
+        "finalRevenue": 1036,
+        "finalProfit": 1009,
+        "finalProfitPerServing": 1009,
+        "maxProfitPerServing": 1009,
+        "recipeCost": 27,
+        "upgradeCost": 5967,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 30,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    "64": {
+      "id": 64,
+      "name": "Bluefin Tuna Chutoro Sushi",
+      "image": "bluefin_tuna_chutoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 95,
+      "baseTaste": 61,
+      "baseServings": 1,
+      "finalPrice": 1228.5,
+      "finalTaste": 241,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 33,
+          "count": 1,
+          "name": "Bluefin Tuna Chutoro",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 32,
+          "lineCost": 32,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 32,
+      "partyDishIds": [
+        64
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1228.5,
+      "finalProfit": 1197,
+      "finalProfitPerServing": 1197,
+      "maxProfitPerServing": 1197,
+      "upgradeCost": 7072,
+      "ingredientCount": 1,
+      "search": "bluefin tuna chutoro sushi tuna",
+      "sort": {
+        "name": "bluefin tuna chutoro sushi",
+        "finalPrice": 1228.5,
+        "finalServings": 1,
+        "finalRevenue": 1228.5,
+        "finalProfit": 1197,
+        "finalProfitPerServing": 1197,
+        "maxProfitPerServing": 1197,
+        "recipeCost": 32,
+        "upgradeCost": 7072,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 31,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    "65": {
+      "id": 65,
+      "name": "Bluefin Tuna Ootoro Sushi",
+      "image": "bluefin_tuna_ootoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 133,
+      "baseTaste": 105,
+      "baseServings": 1,
+      "finalPrice": 1746.5,
+      "finalTaste": 330,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 34,
+          "count": 1,
+          "name": "Bluefin Tuna Ootoro",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 45,
+          "lineCost": 45,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 45,
+      "partyDishIds": [
+        65
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1746.5,
+      "finalProfit": 1702,
+      "finalProfitPerServing": 1702,
+      "maxProfitPerServing": 1702,
+      "upgradeCost": 9945,
+      "ingredientCount": 1,
+      "search": "bluefin tuna ootoro sushi tuna",
+      "sort": {
+        "name": "bluefin tuna ootoro sushi",
+        "finalPrice": 1746.5,
+        "finalServings": 1,
+        "finalRevenue": 1746.5,
+        "finalProfit": 1702,
+        "finalProfitPerServing": 1702,
+        "maxProfitPerServing": 1702,
+        "recipeCost": 45,
+        "upgradeCost": 9945,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 32,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    "66": {
+      "id": 66,
       "name": "Box Jellyfish Sushi",
       "image": "box_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -12479,7 +12322,7 @@
       ],
       "recipeCost": 18,
       "partyDishIds": [
-        70
+        66
       ],
       "partyIds": [
         1
@@ -12510,8 +12353,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "71": {
-      "id": 71,
+    "67": {
+      "id": 67,
       "name": "California Spiny Lobster Sushi",
       "image": "california_spiny_lobster_sushi.png",
       "maxLevel": 10,
@@ -12538,7 +12381,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        71
+        67
       ],
       "partyIds": [
         8
@@ -12569,8 +12412,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "72": {
-      "id": 72,
+    "68": {
+      "id": 68,
       "name": "Comb Jelly Sushi",
       "image": "comb_jelly_sushi.png",
       "maxLevel": 10,
@@ -12597,7 +12440,7 @@
       ],
       "recipeCost": 14,
       "partyDishIds": [
-        72
+        68
       ],
       "partyIds": [
         1
@@ -12628,8 +12471,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "73": {
-      "id": 73,
+    "69": {
+      "id": 69,
       "name": "Cooked Whiteleg Shrimp Sushi",
       "image": "cooked_whiteleg_shrimp_sushi.png",
       "maxLevel": 10,
@@ -12656,7 +12499,7 @@
       ],
       "recipeCost": 11,
       "partyDishIds": [
-        73
+        69
       ],
       "partyIds": [
         7
@@ -12687,8 +12530,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "74": {
-      "id": 74,
+    "70": {
+      "id": 70,
       "name": "Cookiecutter Shark Sushi",
       "image": "cookiecutter_shark_sushi.png",
       "maxLevel": 10,
@@ -12715,7 +12558,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        74
+        70
       ],
       "partyIds": [
         4
@@ -12746,8 +12589,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "75": {
-      "id": 75,
+    "71": {
+      "id": 71,
       "name": "Copper Shark Sushi",
       "image": "copper_shark_sushi.png",
       "maxLevel": 10,
@@ -12774,7 +12617,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        75
+        71
       ],
       "partyIds": [
         4
@@ -12805,8 +12648,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "76": {
-      "id": 76,
+    "72": {
+      "id": 72,
       "name": "Crystal Lobster Sushi",
       "image": "crystal_lobster_sushi.png",
       "maxLevel": 10,
@@ -12833,7 +12676,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        76
+        72
       ],
       "partyIds": [
         8
@@ -12864,8 +12707,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "77": {
-      "id": 77,
+    "73": {
+      "id": 73,
       "name": "Eastern Rock Lobster Sushi",
       "image": "eastern_rock_lobster_sushi.png",
       "maxLevel": 10,
@@ -12892,7 +12735,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        77
+        73
       ],
       "partyIds": [
         8
@@ -12923,8 +12766,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "78": {
-      "id": 78,
+    "74": {
+      "id": 74,
       "name": "European Lobster Sushi",
       "image": "european_lobster_sushi.png",
       "maxLevel": 10,
@@ -12951,7 +12794,7 @@
       ],
       "recipeCost": 23,
       "partyDishIds": [
-        78
+        74
       ],
       "partyIds": [
         8
@@ -12982,8 +12825,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "79": {
-      "id": 79,
+    "75": {
+      "id": 75,
       "name": "Falcatus Sushi",
       "image": "falcatus_sushi.png",
       "maxLevel": 10,
@@ -13010,7 +12853,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        79
+        75
       ],
       "partyIds": [
         4
@@ -13041,8 +12884,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "80": {
-      "id": 80,
+    "76": {
+      "id": 76,
       "name": "Fan Lobster Sushi",
       "image": "fan_lobster_sushi.png",
       "maxLevel": 10,
@@ -13069,7 +12912,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        80
+        76
       ],
       "partyIds": [
         8
@@ -13100,8 +12943,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "81": {
-      "id": 81,
+    "77": {
+      "id": 77,
       "name": "Fried Egg Jellyfish Sushi",
       "image": "fried_egg_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -13128,7 +12971,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        81
+        77
       ],
       "partyIds": [
         1
@@ -13159,8 +13002,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "82": {
-      "id": 82,
+    "78": {
+      "id": 78,
       "name": "Frilled Shark Sushi",
       "image": "frilled_shark_sushi.png",
       "maxLevel": 10,
@@ -13187,7 +13030,7 @@
       ],
       "recipeCost": 28,
       "partyDishIds": [
-        82
+        78
       ],
       "partyIds": [
         4
@@ -13218,8 +13061,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "83": {
-      "id": 83,
+    "79": {
+      "id": 79,
       "name": "Greenland Shark Sushi",
       "image": "greenland_shark_sushi.png",
       "maxLevel": 10,
@@ -13246,7 +13089,7 @@
       ],
       "recipeCost": 62,
       "partyDishIds": [
-        83
+        79
       ],
       "partyIds": [
         4
@@ -13277,8 +13120,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "84": {
-      "id": 84,
+    "80": {
+      "id": 80,
       "name": "Longnose Sawshark Sushi",
       "image": "longnose_sawshark_sushi.png",
       "maxLevel": 10,
@@ -13305,7 +13148,7 @@
       ],
       "recipeCost": 12,
       "partyDishIds": [
-        84
+        80
       ],
       "partyIds": [
         4
@@ -13336,8 +13179,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "85": {
-      "id": 85,
+    "81": {
+      "id": 81,
       "name": "Marlin Sushi",
       "image": "marlin_sushi.png",
       "maxLevel": 10,
@@ -13364,7 +13207,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        85
+        81
       ],
       "partyIds": [
         3
@@ -13395,8 +13238,8 @@
       "partyName": "Marlin",
       "partyBonus": 2
     },
-    "86": {
-      "id": 86,
+    "82": {
+      "id": 82,
       "name": "Megamouth Shark Sushi",
       "image": "megamouth_shark_sushi.png",
       "maxLevel": 10,
@@ -13423,7 +13266,7 @@
       ],
       "recipeCost": 31,
       "partyDishIds": [
-        86
+        82
       ],
       "partyIds": [
         4
@@ -13454,8 +13297,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "87": {
-      "id": 87,
+    "83": {
+      "id": 83,
       "name": "Norway Lobster Sushi",
       "image": "norway_lobster_sushi.png",
       "maxLevel": 10,
@@ -13482,7 +13325,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        87
+        83
       ],
       "partyIds": [
         8
@@ -13513,8 +13356,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "88": {
-      "id": 88,
+    "84": {
+      "id": 84,
       "name": "Porbeagle Shark Sushi",
       "image": "porbeagle_shark_sushi.png",
       "maxLevel": 10,
@@ -13541,7 +13384,7 @@
       ],
       "recipeCost": 55,
       "partyDishIds": [
-        88
+        84
       ],
       "partyIds": [
         4
@@ -13572,8 +13415,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "89": {
-      "id": 89,
+    "85": {
+      "id": 85,
       "name": "Raw Black Tiger Shrimp Sushi",
       "image": "raw_black_tiger_shrimp_sushi.png",
       "maxLevel": 10,
@@ -13600,7 +13443,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        89
+        85
       ],
       "partyIds": [
         7
@@ -13631,8 +13474,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "90": {
-      "id": 90,
+    "86": {
+      "id": 86,
       "name": "Red-banded Lobster Sushi",
       "image": "red-banded_lobster_sushi.png",
       "maxLevel": 10,
@@ -13659,7 +13502,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        90
+        86
       ],
       "partyIds": [
         8
@@ -13690,8 +13533,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "91": {
-      "id": 91,
+    "87": {
+      "id": 87,
       "name": "Sailfish Sushi",
       "image": "sailfish_sushi.png",
       "maxLevel": 10,
@@ -13718,7 +13561,7 @@
       ],
       "recipeCost": 65,
       "partyDishIds": [
-        91
+        87
       ],
       "partyIds": [
         3
@@ -13749,8 +13592,67 @@
       "partyName": "Marlin",
       "partyBonus": 2
     },
-    "92": {
-      "id": 92,
+    "88": {
+      "id": 88,
+      "name": "Shortfin Mako Sushi",
+      "image": "shortfin_mako_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 105,
+      "baseTaste": 36,
+      "baseServings": 1,
+      "finalPrice": 776,
+      "finalTaste": 360,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 125,
+          "count": 1,
+          "name": "Mako Meat",
+          "image": "shortfin_mako.png",
+          "type": "Fish",
+          "unitCost": 43,
+          "lineCost": 43,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 43,
+      "partyDishIds": [
+        88
+      ],
+      "partyIds": [
+        4
+      ],
+      "finalRevenue": 776,
+      "finalProfit": 733,
+      "finalProfitPerServing": 733,
+      "maxProfitPerServing": 733,
+      "upgradeCost": 9503,
+      "ingredientCount": 1,
+      "search": "shortfin mako sushi shark",
+      "sort": {
+        "name": "shortfin mako sushi",
+        "finalPrice": 776,
+        "finalServings": 1,
+        "finalRevenue": 776,
+        "finalProfit": 733,
+        "finalProfitPerServing": 733,
+        "maxProfitPerServing": 733,
+        "recipeCost": 43,
+        "upgradeCost": 9503,
+        "ingredientCount": 1,
+        "partyBonus": 2,
+        "partyName": "Shark"
+      },
+      "partyId": 4,
+      "dishId": 196,
+      "partyName": "Shark",
+      "partyBonus": 2
+    },
+    "89": {
+      "id": 89,
       "name": "Smooth Hammerhead Sushi",
       "image": "smooth_hammerhead_sushi.png",
       "maxLevel": 10,
@@ -13777,7 +13679,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        92
+        89
       ],
       "partyIds": [
         4
@@ -13808,8 +13710,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "93": {
-      "id": 93,
+    "90": {
+      "id": 90,
       "name": "Thresher Shark Sushi",
       "image": "thresher_shark_sushi.png",
       "maxLevel": 10,
@@ -13836,7 +13738,7 @@
       ],
       "recipeCost": 53,
       "partyDishIds": [
-        93
+        90
       ],
       "partyIds": [
         4
@@ -13867,8 +13769,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "94": {
-      "id": 94,
+    "91": {
+      "id": 91,
       "name": "Tiger Shark Sushi",
       "image": "tiger_shark_sushi.png",
       "maxLevel": 10,
@@ -13895,7 +13797,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        94
+        91
       ],
       "partyIds": [
         4
@@ -13926,8 +13828,8 @@
       "partyName": "Shark",
       "partyBonus": 2
     },
-    "95": {
-      "id": 95,
+    "92": {
+      "id": 92,
       "name": "Tropical Rock Lobster Sushi",
       "image": "tropical_rock_lobster_sushi.png",
       "maxLevel": 10,
@@ -13954,7 +13856,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        95
+        92
       ],
       "partyIds": [
         8
@@ -13985,8 +13887,8 @@
       "partyName": "Lobster",
       "partyBonus": 2.5
     },
-    "96": {
-      "id": 96,
+    "93": {
+      "id": 93,
       "name": "White Shrimp Sushi",
       "image": "white_shrimp_sushi.png",
       "maxLevel": 10,
@@ -14013,7 +13915,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        96
+        93
       ],
       "partyIds": [
         7
@@ -14044,8 +13946,8 @@
       "partyName": "Shrimp",
       "partyBonus": 2
     },
-    "97": {
-      "id": 97,
+    "94": {
+      "id": 94,
       "name": "White Spotted Jellyfish Sushi",
       "image": "white_spotted_jellyfish_sushi.png",
       "maxLevel": 10,
@@ -14072,7 +13974,7 @@
       ],
       "recipeCost": 6,
       "partyDishIds": [
-        97
+        94
       ],
       "partyIds": [
         1
@@ -14103,8 +14005,8 @@
       "partyName": "Jellyfish",
       "partyBonus": 2
     },
-    "98": {
-      "id": 98,
+    "95": {
+      "id": 95,
       "name": "Whitetip Reefshark Sushi",
       "image": "whitetip_reefshark_sushi.png",
       "maxLevel": 10,
@@ -14131,7 +14033,7 @@
       ],
       "recipeCost": 8,
       "partyDishIds": [
-        98
+        95
       ],
       "partyIds": [
         4
@@ -14161,415 +14063,655 @@
       "dishId": 245,
       "partyName": "Shark",
       "partyBonus": 2
+    },
+    "96": {
+      "id": 96,
+      "name": "Yellowfin Tuna Akami Sushi",
+      "image": "yellowfin_tuna_akami_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 73,
+      "baseTaste": 55,
+      "baseServings": 1,
+      "finalPrice": 945,
+      "finalTaste": 235,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 225,
+          "count": 1,
+          "name": "Yellowfin Tuna Akami",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 24,
+          "lineCost": 24,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 24,
+      "partyDishIds": [
+        96
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 945,
+      "finalProfit": 921,
+      "finalProfitPerServing": 921,
+      "maxProfitPerServing": 921,
+      "upgradeCost": 5304,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna akami sushi tuna",
+      "sort": {
+        "name": "yellowfin tuna akami sushi",
+        "finalPrice": 945,
+        "finalServings": 1,
+        "finalRevenue": 945,
+        "finalProfit": 921,
+        "finalProfitPerServing": 921,
+        "maxProfitPerServing": 921,
+        "recipeCost": 24,
+        "upgradeCost": 5304,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 252,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    "97": {
+      "id": 97,
+      "name": "Yellowfin Tuna Chutoro Sushi",
+      "image": "yellowfin_tuna_chutoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 90,
+      "baseTaste": 58,
+      "baseServings": 1,
+      "finalPrice": 1165.5,
+      "finalTaste": 238,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 226,
+          "count": 1,
+          "name": "Yellowfin Tuna Chutoro",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 30,
+          "lineCost": 30,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 30,
+      "partyDishIds": [
+        97
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1165.5,
+      "finalProfit": 1136,
+      "finalProfitPerServing": 1136,
+      "maxProfitPerServing": 1136,
+      "upgradeCost": 6630,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna chutoro sushi tuna",
+      "sort": {
+        "name": "yellowfin tuna chutoro sushi",
+        "finalPrice": 1165.5,
+        "finalServings": 1,
+        "finalRevenue": 1165.5,
+        "finalProfit": 1136,
+        "finalProfitPerServing": 1136,
+        "maxProfitPerServing": 1136,
+        "recipeCost": 30,
+        "upgradeCost": 6630,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 253,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    "98": {
+      "id": 98,
+      "name": "Yellowfin Tuna Ootoro Sushi",
+      "image": "yellowfin_tuna_ootoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 125,
+      "baseTaste": 90,
+      "baseServings": 1,
+      "finalPrice": 1617,
+      "finalTaste": 315,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 227,
+          "count": 1,
+          "name": "Yellowfin Tuna Ootoro",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 42,
+          "lineCost": 42,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 42,
+      "partyDishIds": [
+        98
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 1617,
+      "finalProfit": 1575,
+      "finalProfitPerServing": 1575,
+      "maxProfitPerServing": 1575,
+      "upgradeCost": 9282,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna ootoro sushi tuna",
+      "sort": {
+        "name": "yellowfin tuna ootoro sushi",
+        "finalPrice": 1617,
+        "finalServings": 1,
+        "finalRevenue": 1617,
+        "finalProfit": 1575,
+        "finalProfitPerServing": 1575,
+        "maxProfitPerServing": 1575,
+        "recipeCost": 42,
+        "upgradeCost": 9282,
+        "ingredientCount": 1,
+        "partyBonus": 3.5,
+        "partyName": "Tuna"
+      },
+      "partyId": 2,
+      "dishId": 254,
+      "partyName": "Tuna",
+      "partyBonus": 3.5
+    },
+    "99": {
+      "id": 99,
+      "name": "Zebra Shark Sushi",
+      "image": "zebra_shark_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 88,
+      "baseTaste": 36,
+      "baseServings": 1,
+      "finalPrice": 798,
+      "finalTaste": 360,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 228,
+          "count": 1,
+          "name": "Zebra Shark Meat",
+          "image": "zebra_shark.png",
+          "type": "Fish",
+          "unitCost": 42,
+          "lineCost": 42,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 42,
+      "partyDishIds": [
+        99
+      ],
+      "partyIds": [
+        4
+      ],
+      "finalRevenue": 798,
+      "finalProfit": 756,
+      "finalProfitPerServing": 756,
+      "maxProfitPerServing": 756,
+      "upgradeCost": 9282,
+      "ingredientCount": 1,
+      "search": "zebra shark sushi shark",
+      "sort": {
+        "name": "zebra shark sushi",
+        "finalPrice": 798,
+        "finalServings": 1,
+        "finalRevenue": 798,
+        "finalProfit": 756,
+        "finalProfitPerServing": 756,
+        "maxProfitPerServing": 756,
+        "recipeCost": 42,
+        "upgradeCost": 9282,
+        "ingredientCount": 1,
+        "partyBonus": 2,
+        "partyName": "Shark"
+      },
+      "partyId": 4,
+      "dishId": 257,
+      "partyName": "Shark",
+      "partyBonus": 2
     }
   },
   "facets": {
     "party": {
       "1": [
         4,
-        19,
-        34,
-        40,
-        56,
+        20,
+        35,
+        41,
+        57,
+        59,
+        61,
         66,
         68,
-        70,
-        72,
-        81,
-        97
+        77,
+        94
       ],
       "2": [
-        18,
-        33,
-        48,
+        19,
+        34,
         49,
         50,
-        54,
-        59,
-        60,
-        61,
-        62,
+        51,
+        55,
         63,
-        64
+        64,
+        65,
+        96,
+        97,
+        98
       ],
       "3": [
-        26,
-        31,
+        27,
         32,
-        85,
-        91
+        33,
+        81,
+        87
       ],
       "4": [
         2,
         3,
         5,
         6,
-        27,
         28,
-        36,
-        39,
-        43,
-        47,
-        51,
-        57,
-        58,
-        67,
-        74,
+        29,
+        37,
+        40,
+        44,
+        48,
+        52,
+        60,
+        70,
+        71,
         75,
+        78,
         79,
+        80,
         82,
-        83,
         84,
-        86,
         88,
-        92,
-        93,
-        94,
-        98
+        89,
+        90,
+        91,
+        95,
+        99
       ],
       "5": [
-        10,
         11,
         12,
         13,
         14,
-        16,
+        15,
         17,
-        23
+        18,
+        24
       ],
       "6": [
-        7,
         8,
         9,
-        21,
-        35,
-        37,
+        10,
+        22,
+        36,
         38,
-        41
+        39,
+        42
       ],
       "7": [
-        1,
-        15,
-        42,
-        44,
+        16,
+        43,
         45,
         46,
-        52,
+        47,
         53,
-        73,
-        89,
-        96
+        54,
+        69,
+        85,
+        93
       ],
       "8": [
-        20,
-        22,
-        24,
+        1,
+        7,
+        21,
+        23,
         25,
-        29,
+        26,
         30,
-        55,
-        65,
-        69,
-        71,
+        31,
+        56,
+        58,
+        62,
+        67,
+        72,
+        73,
+        74,
         76,
-        77,
-        78,
-        80,
-        87,
-        90,
-        95
+        83,
+        86,
+        92
       ]
     },
     "dish": {
       "4": [
-        65
+        58
       ],
       "11": [
-        7
+        8
       ],
       "15": [
-        66
-      ],
-      "23": [
-        67
-      ],
-      "27": [
-        68
-      ],
-      "28": [
-        69
-      ],
-      "30": [
         59
       ],
-      "31": [
+      "23": [
         60
       ],
-      "32": [
+      "27": [
         61
       ],
+      "28": [
+        62
+      ],
+      "30": [
+        63
+      ],
+      "31": [
+        64
+      ],
+      "32": [
+        65
+      ],
       "33": [
-        48
+        49
       ],
       "36": [
-        46
+        47
       ],
       "38": [
         1
       ],
       "39": [
-        43
-      ],
-      "40": [
-        31
-      ],
-      "42": [
-        70
-      ],
-      "43": [
-        71
-      ],
-      "52": [
-        72
-      ],
-      "55": [
-        73
-      ],
-      "56": [
-        74
-      ],
-      "57": [
-        75
-      ],
-      "59": [
-        36
-      ],
-      "60": [
-        29
-      ],
-      "61": [
-        76
-      ],
-      "63": [
-        51
-      ],
-      "64": [
         44
       ],
+      "40": [
+        32
+      ],
+      "42": [
+        66
+      ],
+      "43": [
+        67
+      ],
+      "52": [
+        68
+      ],
+      "55": [
+        69
+      ],
+      "56": [
+        70
+      ],
+      "57": [
+        71
+      ],
+      "59": [
+        37
+      ],
+      "60": [
+        30
+      ],
+      "61": [
+        72
+      ],
+      "63": [
+        52
+      ],
+      "64": [
+        45
+      ],
       "66": [
-        10
+        11
       ],
       "76": [
-        77
+        73
       ],
       "78": [
-        78
+        74
       ],
       "79": [
-        28
+        29
       ],
       "80": [
-        79
+        75
       ],
       "81": [
-        80
+        76
       ],
       "84": [
-        81
+        77
       ],
       "90": [
-        82
+        78
       ],
       "93": [
         2
       ],
       "97": [
-        11
+        12
       ],
       "98": [
-        37
-      ],
-      "100": [
-        83
-      ],
-      "107": [
-        49
-      ],
-      "109": [
-        54
-      ],
-      "110": [
-        53
-      ],
-      "112": [
-        8
-      ],
-      "113": [
-        18
-      ],
-      "114": [
         38
       ],
+      "100": [
+        79
+      ],
+      "107": [
+        50
+      ],
+      "109": [
+        55
+      ],
+      "110": [
+        54
+      ],
+      "112": [
+        9
+      ],
+      "113": [
+        19
+      ],
+      "114": [
+        39
+      ],
       "118": [
-        24
+        25
       ],
       "120": [
-        84
+        80
       ],
       "123": [
         3
       ],
       "127": [
-        32
+        33
       ],
       "128": [
-        85
+        81
       ],
       "131": [
-        86
+        82
       ],
       "132": [
-        52
+        53
       ],
       "134": [
-        9
+        10
       ],
       "142": [
-        87
+        83
       ],
       "151": [
         4
       ],
       "152": [
-        12
+        13
       ],
       "157": [
-        88
+        84
       ],
       "163": [
-        89
+        85
       ],
       "166": [
-        90
+        86
       ],
       "171": [
-        42
+        43
       ],
       "172": [
-        35
+        36
       ],
       "173": [
         5
       ],
       "175": [
-        91
+        87
       ],
       "181": [
-        13
+        14
       ],
       "184": [
-        56
-      ],
-      "189": [
-        40
-      ],
-      "192": [
-        14,
-        15
-      ],
-      "194": [
-        39
-      ],
-      "196": [
         57
       ],
-      "197": [
+      "189": [
+        41
+      ],
+      "192": [
+        15,
         16
       ],
-      "201": [
-        92
+      "194": [
+        40
       ],
-      "206": [
-        45
+      "196": [
+        88
       ],
-      "209": [
-        30
-      ],
-      "216": [
-        55
-      ],
-      "224": [
-        93
-      ],
-      "225": [
-        94
-      ],
-      "230": [
+      "197": [
         17
       ],
+      "201": [
+        89
+      ],
+      "206": [
+        46
+      ],
+      "209": [
+        31
+      ],
+      "216": [
+        56
+      ],
+      "224": [
+        90
+      ],
+      "225": [
+        91
+      ],
+      "230": [
+        18
+      ],
       "232": [
-        95
+        92
       ],
       "234": [
-        25
-      ],
-      "235": [
         26
       ],
-      "236": [
+      "235": [
         27
+      ],
+      "236": [
+        28
       ],
       "240": [
         6
       ],
       "241": [
-        96
+        93
       ],
       "242": [
-        97
+        94
       ],
       "245": [
-        98
+        95
       ],
       "246": [
-        47
+        48
       ],
       "247": [
-        41
+        42
+      ],
+      "249": [
+        7
       ],
       "252": [
-        62
+        96
       ],
       "253": [
-        63
+        97
       ],
       "254": [
-        64
+        98
       ],
       "255": [
-        50
+        51
       ],
       "257": [
-        58
+        99
       ],
       "292": [
-        19
-      ],
-      "293": [
         20
       ],
+      "293": [
+        21
+      ],
       "294": [
-        21,
-        22
+        22,
+        23
       ],
       "299": [
-        33
-      ],
-      "300": [
         34
       ],
+      "300": [
+        35
+      ],
       "302": [
-        23
+        24
       ]
     },
     "dlc": {
@@ -14592,6 +14734,7 @@
         16,
         17,
         18,
+        19,
         24,
         25,
         26,
@@ -14601,6 +14744,8 @@
         30,
         31,
         32,
+        33,
+        34,
         35,
         36,
         37,
@@ -14664,18 +14809,14 @@
         95,
         96,
         97,
-        98
+        98,
+        99
       ],
       "Godzilla DLC": [
-        19,
         20,
         21,
-        22
-      ],
-      "mxmtoon": [
-        23,
-        33,
-        34
+        22,
+        23
       ]
     },
     "unlock": {
@@ -14685,115 +14826,116 @@
         3,
         4,
         5,
-        6
+        6,
+        7
       ],
       "Cooksta Platinum Rank": [
-        7,
-        8
-      ],
-      "Cooksta Silver Rank": [
+        8,
         9
       ],
+      "Cooksta Silver Rank": [
+        10
+      ],
       "Cucumber Party": [
-        10,
         11,
         12,
         13,
         14,
         15,
         16,
-        17
-      ],
-      "Glacial Seaweed Cave": [
+        17,
         18
       ],
+      "Glacial Seaweed Cave": [
+        19
+      ],
       "Godzilla DLC": [
-        19,
         20,
         21,
-        22
+        22,
+        23
       ],
       "Jango Shop": [
-        23,
         24,
         25,
         26,
-        27
-      ],
-      "Kronosaurus": [
+        27,
         28
       ],
+      "Kronosaurus": [
+        29
+      ],
       "Lobster Party": [
-        29,
-        30
+        30,
+        31
       ],
       "Marlin Party": [
-        31,
-        32
+        32,
+        33
       ],
-      "mxmtoon Collab": [
-        33,
-        34
-      ],
-      "Staff Level 10 (Drae)": [
+      "mxmtoon": [
+        34,
         35
       ],
-      "Staff Level 15 (Billy)": [
+      "Staff Level 10 (Drae)": [
         36
       ],
-      "Staff Level 15 (Charlie)": [
+      "Staff Level 15 (Billy)": [
         37
       ],
-      "Staff Level 15 (Drae)": [
+      "Staff Level 15 (Charlie)": [
         38
       ],
-      "Staff Level 15 (Itsuki)": [
+      "Staff Level 15 (Drae)": [
         39
       ],
-      "Staff Level 15 (James)": [
+      "Staff Level 15 (Itsuki)": [
         40
       ],
-      "Staff Level 15 (Jandi)": [
+      "Staff Level 15 (James)": [
         41
       ],
-      "Staff Level 15 (Kyoko)": [
+      "Staff Level 15 (Jandi)": [
         42
       ],
-      "Staff Level 15 (Raul)": [
+      "Staff Level 15 (Kyoko)": [
         43
       ],
-      "Staff Level 15 (Yusuke)": [
+      "Staff Level 15 (Raul)": [
         44
       ],
-      "Staff Level 5 (Drae)": [
+      "Staff Level 15 (Yusuke)": [
         45
       ],
-      "Staff Level 5 (Raptor)": [
+      "Staff Level 5 (Drae)": [
         46
       ],
-      "Story": [
+      "Staff Level 5 (Raptor)": [
         47
       ],
-      "Tuna Party": [
-        48,
-        49,
-        50
+      "Story": [
+        48
       ],
-      "VIP British Chef": [
+      "Tuna Party": [
+        49,
+        50,
         51
       ],
-      "VIP Chinese Chef": [
+      "VIP British Chef": [
         52
       ],
-      "VIP Italian Chef": [
+      "VIP Chinese Chef": [
         53
       ],
+      "VIP Italian Chef": [
+        54
+      ],
       "VIP Jango": [
-        54,
-        55
+        55,
+        56
       ],
       "VIP Vincent": [
-        56
+        57
       ]
     }
   }

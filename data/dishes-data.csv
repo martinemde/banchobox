@@ -77,15 +77,15 @@ id,name,unlock,dlc,max_level,base_price,base_taste,base_servings,final_price,fin
 292,Deep Sea Kaiju Ramen,Godzilla DLC,Godzilla DLC,10,350,140,4,1295,410,6,,deep_sea_kaiju_ramen.png
 293,Ebirah Chasing Sashimi,Godzilla DLC,Godzilla DLC,10,340,130,6,1258,382,9,,ebirah_chasing_sashimi.png
 294,Godzilla vs. Ebirah Curry,Godzilla DLC,Godzilla DLC,10,370,140,6,1369,365,9,,godzilla_vs._ebirah_curry.png
-302,Green Sea Urchin & Cucumber Salad,Jango Shop,mxmtoon,5,700,150,2,1540,282,2,,green_sea_urchin_and_cucumber_salad.png
-303,Rainbow Cap Eel Skewers,Jango Shop,Potion Craft,5,730,195,2,1606,295,2,,rainbow_cap_eel_skewers.png
-304,Rainbow Cap Pacific Fanfish Ochazuke,Jango Shop,Potion Craft,5,710,190,2,1562,290,2,,rainbow_cap_pacific_fanfish_ochazuke.png
 85,Fried Habanero Fangtooth,Jango Shop,,10,410,150,5,1517,420,7,,fried_habanero_fangtooth.png
+302,Green Sea Urchin & Cucumber Salad,Jango Shop,,5,700,150,2,1540,282,2,,green_sea_urchin_and_cucumber_salad.png
 102,Grilled Antarctic Octopus & Truffle,Jango Shop,,5,770,185,2,1694,338,2,,grilled_antarctic_octopus_and_truffle.png
 103,Grilled Eel with Habanero,Jango Shop,,10,425,155,6,1572,335,9,,grilled_eel_with_habanero.png
 118,Lobster Platter,Jango Shop,,10,435,195,4,1609,375,6,,lobster_platter.png
 133,Moonlight Bladderwrack Roll,Jango Shop,,10,405,135,6,1498,360,9,,moonlight_bladderwrack_roll.png
 158,Pufferfish Dumpling Soup,Jango Shop,,10,420,150,6,1554,420,9,,pufferfish_dumpling_soup.png
+303,Rainbow Cap Eel Skewers,Jango Shop,,5,730,195,2,1606,295,2,,rainbow_cap_eel_skewers.png
+304,Rainbow Cap Pacific Fanfish Ochazuke,Jango Shop,,5,710,190,2,1562,290,2,,rainbow_cap_pacific_fanfish_ochazuke.png
 204,Soy Sauce Marinated Crab,Jango Shop,,10,435,190,4,1609,505,6,,soy_sauce_marinated_crab.png
 234,Truffle Blue Lobster Tail Sushi,Jango Shop,,5,780,190,2,1716,282,2,,truffle_blue_lobster_tail_sushi.png
 235,Truffle Sailfish Tartare,Jango Shop,,5,785,195,2,1727,295,2,,truffle_sailfish_tartare.png
@@ -96,10 +96,10 @@ id,name,unlock,dlc,max_level,base_price,base_taste,base_servings,final_price,fin
 209,Steamed Eastern Rock Lobster & Egg,Lobster Party,,10,380,140,5,1406,455,7,9,steamed_eastern_rock_lobster_and_egg.png
 40,Boiled Sailfish and Seaweed,Marlin Party,,10,425,138,6,1572,300,9,5,boiled_sailfish_and_seaweed.png
 127,Marlin and Soybean Paste Roast,Marlin Party,,10,380,137,6,1406,272,9,5,marlin_and_soybean_paste_roast.png
-299,Chirashi Sushi,mxmtoon Collab,mxmtoon,5,690,150,2,1518,274,2,1,chirashi_sushi.png
-300,Cold Jellyfish & Green Sea Urchin Salad,mxmtoon Collab,mxmtoon,5,685,145,2,1507,277,2,9,cold_jellyfish_and_green_sea_urchin_salad.png
-301,Deep-fried Sea Urchin,mxmtoon Collab,mxmtoon,5,690,155,2,1518,275,2,9,deep-fried_sea_urchin.png
-305,Rainbow Cap Triggerfish Fishcake,Potion Craft Collab,Potion Craft,5,705,180,2,1551,268,2,,rainbow_cap_triggerfish_fishcake.png
+299,Chirashi Sushi,mxmtoon,,5,690,150,2,1518,274,2,1,chirashi_sushi.png
+300,Cold Jellyfish & Green Sea Urchin Salad,mxmtoon,,5,685,145,2,1507,277,2,9,cold_jellyfish_and_green_sea_urchin_salad.png
+301,Deep-fried Sea Urchin,mxmtoon,,5,690,155,2,1518,275,2,9,deep-fried_sea_urchin.png
+305,Rainbow Cap Triggerfish Fishcake,Mushroomer,,5,705,180,2,1551,268,2,,rainbow_cap_triggerfish_fishcake.png
 65,Deep-Fried Red Lionfish,Staff Level 10 (Cohh),,10,390,132,3,1443,366,4,12,deep-fried_red_lionfish.png
 172,Roasted Capelin,Staff Level 10 (Drae),,10,390,138,5,1443,345,7,12,roasted_capelin.png
 170,Rice with Purple Sea Urchin Sushi,Staff Level 10 (Raptor),,10,385,140,3,1424,320,4,12,rice_with_purple_sea_urchin_sushi.png
@@ -160,14 +160,6 @@ id,name,unlock,dlc,max_level,base_price,base_taste,base_servings,final_price,fin
 216,Stir-fried Habanero Lobster,VIP Jango,,10,390,140,4,1443,320,6,7,stir-fried_habanero_lobster.png
 231,Tropical Fish Sushi Set,VIP Michael Bang,,10,375,130,6,1387,346,9,,tropical_fish_sushi_set.png
 184,Seagrapes Jellyfish Sushi,VIP Vincent,,10,225,100,1,832,280,1,,seagrapes_jellyfish_sushi.png
-196,Shortfin Mako Sushi,,,10,105,36,1,388,360,1,,shortfin_mako_sushi.png
-257,Zebra Shark Sushi,,,10,88,36,1,399,360,1,,zebra_shark_sushi.png
-30,Bluefin Tuna Akami Sushi,,,10,80,60,1,296,240,1,,bluefin_tuna_akami_sushi.png
-31,Bluefin Tuna Chutoro Sushi,,,10,95,61,1,351,241,1,,bluefin_tuna_chutoro_sushi.png
-32,Bluefin Tuna Ootoro Sushi,,,10,133,105,1,499,330,1,,bluefin_tuna_ootoro_sushi.png
-252,Yellowfin Tuna Akami Sushi,,,10,73,55,1,270,235,1,,yellowfin_tuna_akami_sushi.png
-253,Yellowfin Tuna Chutoro Sushi,,,10,90,58,1,333,238,1,,yellowfin_tuna_chutoro_sushi.png
-254,Yellowfin Tuna Ootoro Sushi,,,10,125,90,1,462,315,1,,yellowfin_tuna_ootoro_sushi.png
 2,Alaska Pollock Sushi,,,10,135,38,1,499,380,1,,alaska_pollock_sushi.png
 3,Allenypterus Sushi,,,10,125,36,1,462,360,1,,allenypterus_sushi.png
 4,American Lobster Sushi,,,10,129,29,1,477,290,1,,american_lobster_sushi.png
@@ -188,6 +180,9 @@ id,name,unlock,dlc,max_level,base_price,base_taste,base_servings,final_price,fin
 27,Blood-belly Comb Jelly Sushi,,,10,50,25,1,185,250,1,,blood-belly_comb_jelly_sushi.png
 28,Blue Lobster Sushi,,,10,141,32,1,521,320,1,,blue_lobster_sushi.png
 29,Blue Tang Sushi,,,10,6,11,1,22,110,1,,blue_tang_sushi.png
+30,Bluefin Tuna Akami Sushi,,,10,80,60,1,296,240,1,,bluefin_tuna_akami_sushi.png
+31,Bluefin Tuna Chutoro Sushi,,,10,95,61,1,351,241,1,,bluefin_tuna_chutoro_sushi.png
+32,Bluefin Tuna Ootoro Sushi,,,10,133,105,1,499,330,1,,bluefin_tuna_ootoro_sushi.png
 34,Bluehead Tilefish Sushi,,,10,15,14,1,55,140,1,,bluehead_tilefish_sushi.png
 35,Bluespotted Stargazer Sushi,,,10,55,28,1,203,380,1,,bluespotted_stargazer_sushi.png
 42,Box Jellyfish Sushi,,,10,55,27,1,203,270,1,,box_jellyfish_sushi.png
@@ -279,6 +274,7 @@ id,name,unlock,dlc,max_level,base_price,base_taste,base_servings,final_price,fin
 187,Seahorse Skewers,,,10,30,22,1,111,220,1,,seahorse_skewers.png
 191,Seasoned Long-spine Porcupinefish Skin,,,10,180,140,5,666,410,7,6,seasoned_long-spine_porcupinefish_skin.png
 195,Sheepshead Sushi,,,10,15,24,1,55,240,1,,sheepshead_sushi.png
+196,Shortfin Mako Sushi,,,10,105,36,1,388,360,1,,shortfin_mako_sushi.png
 199,Smallspotted Dart Sushi,,,10,8,12,1,29,120,1,,smallspotted_dart_sushi.png
 201,Smooth Hammerhead Sushi,,,10,141,39,1,521,390,1,,smooth_hammerhead_sushi.png
 202,Snow Crab Sushi,,,10,120,42,1,444,420,1,,snow_crab_sushi.png
@@ -304,3 +300,7 @@ id,name,unlock,dlc,max_level,base_price,base_taste,base_servings,final_price,fin
 248,Xenacanthus Sushi,,,10,160,43,1,592,430,1,,xenacanthus_sushi.png
 250,Yellow Tang Sushi,,,10,4,10,1,14,100,1,,yellow_tang_sushi.png
 251,Yellowback Fusilier Sushi,,,10,7,12,1,25,120,1,,yellowback_fusilier_sushi.png
+252,Yellowfin Tuna Akami Sushi,,,10,73,55,1,270,235,1,,yellowfin_tuna_akami_sushi.png
+253,Yellowfin Tuna Chutoro Sushi,,,10,90,58,1,333,238,1,,yellowfin_tuna_chutoro_sushi.png
+254,Yellowfin Tuna Ootoro Sushi,,,10,125,90,1,462,315,1,,yellowfin_tuna_ootoro_sushi.png
+257,Zebra Shark Sushi,,,10,88,36,1,399,360,1,,zebra_shark_sushi.png

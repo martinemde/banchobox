@@ -130,12 +130,12 @@
         1
       ],
       "partyIds": [
-        7
+        8
       ],
       "finalRevenue": 6500,
       "finalProfit": 6468,
       "finalProfitPerServing": 647,
-      "maxProfitPerServing": 1297,
+      "maxProfitPerServing": 1622,
       "upgradeCost": 0,
       "ingredientCount": 4,
       "search": "boiled mantis shrimp with soy paste  boss mantis shrimp meat agar eggplant miso",
@@ -146,7 +146,7 @@
         "finalRevenue": 6500,
         "finalProfit": 6468,
         "finalProfitPerServing": 647,
-        "maxProfitPerServing": 1297,
+        "maxProfitPerServing": 1622,
         "recipeCost": 32,
         "upgradeCost": 0,
         "ingredientCount": 4
@@ -890,12 +890,16 @@
         }
       ],
       "recipeCost": 8,
-      "partyDishIds": [],
-      "partyIds": [],
+      "partyDishIds": [
+        7
+      ],
+      "partyIds": [
+        8
+      ],
       "finalRevenue": 7500,
       "finalProfit": 7492,
       "finalProfitPerServing": 749,
-      "maxProfitPerServing": 749,
+      "maxProfitPerServing": 1874,
       "upgradeCost": 0,
       "ingredientCount": 2,
       "search": "yawie steamed meat  boss yawie's inner flesh salt",
@@ -906,7 +910,7 @@
         "finalRevenue": 7500,
         "finalProfit": 7492,
         "finalProfitPerServing": 749,
-        "maxProfitPerServing": 749,
+        "maxProfitPerServing": 1874,
         "recipeCost": 8,
         "upgradeCost": 0,
         "ingredientCount": 2
@@ -1807,7 +1811,7 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        7
+        8
       ],
       "partyIds": [
         6
@@ -1949,7 +1953,7 @@
       ],
       "recipeCost": 70,
       "partyDishIds": [
-        8
+        9
       ],
       "partyIds": [
         6
@@ -2081,7 +2085,7 @@
       ],
       "recipeCost": 39,
       "partyDishIds": [
-        9
+        10
       ],
       "partyIds": [
         6
@@ -2292,7 +2296,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        10
+        11
       ],
       "partyIds": [
         5
@@ -2355,7 +2359,7 @@
       ],
       "recipeCost": 37,
       "partyDishIds": [
-        11
+        12
       ],
       "partyIds": [
         5
@@ -2438,7 +2442,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        12
+        13
       ],
       "partyIds": [
         5
@@ -2501,7 +2505,7 @@
       ],
       "recipeCost": 38,
       "partyDishIds": [
-        13
+        14
       ],
       "partyIds": [
         5
@@ -2584,8 +2588,8 @@
       ],
       "recipeCost": 171,
       "partyDishIds": [
-        14,
-        15
+        15,
+        16
       ],
       "partyIds": [
         5,
@@ -2639,7 +2643,7 @@
       ],
       "recipeCost": 60,
       "partyDishIds": [
-        16
+        17
       ],
       "partyIds": [
         5
@@ -2712,7 +2716,7 @@
       ],
       "recipeCost": 120,
       "partyDishIds": [
-        17
+        18
       ],
       "partyIds": [
         5
@@ -4451,7 +4455,7 @@
       ],
       "recipeCost": 391,
       "partyDishIds": [
-        18
+        19
       ],
       "partyIds": [
         2
@@ -4593,7 +4597,7 @@
       ],
       "recipeCost": 93,
       "partyDishIds": [
-        19
+        20
       ],
       "partyIds": [
         1
@@ -4666,7 +4670,7 @@
       ],
       "recipeCost": 161,
       "partyDishIds": [
-        20
+        21
       ],
       "partyIds": [
         8
@@ -4749,8 +4753,8 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        21,
-        22
+        22,
+        23
       ],
       "partyIds": [
         6,
@@ -4773,227 +4777,6 @@
         "maxProfitPerServing": 3412,
         "recipeCost": 91,
         "upgradeCost": 15751,
-        "ingredientCount": 6
-      }
-    },
-    {
-      "id": 302,
-      "name": "Green Sea Urchin & Cucumber Salad",
-      "image": "green_sea_urchin_and_cucumber_salad.png",
-      "maxLevel": 5,
-      "basePrice": 700,
-      "baseTaste": 150,
-      "baseServings": 2,
-      "finalPrice": 1540,
-      "finalTaste": 282,
-      "finalServings": 2,
-      "unlock": "Jango Shop",
-      "dlc": "mxmtoon",
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 96,
-          "count": 3,
-          "name": "Green Sea Urchin",
-          "image": "green_sea_urchin.png",
-          "type": "Fish",
-          "unitCost": 90,
-          "lineCost": 270,
-          "upgradeCount": 48
-        },
-        {
-          "ingredientId": 62,
-          "count": 2,
-          "name": "Cucumber",
-          "image": "cucumber.png",
-          "type": "Vegetable",
-          "unitCost": 20,
-          "lineCost": 40,
-          "upgradeCount": 35
-        },
-        {
-          "ingredientId": 39,
-          "count": 2,
-          "name": "Buckbean",
-          "image": "buckbean.png",
-          "type": "Sea plant",
-          "unitCost": 9,
-          "lineCost": 18,
-          "upgradeCount": 35
-        }
-      ],
-      "recipeCost": 328,
-      "partyDishIds": [
-        23
-      ],
-      "partyIds": [
-        5
-      ],
-      "finalRevenue": 3080,
-      "finalProfit": 2752,
-      "finalProfitPerServing": 1376,
-      "maxProfitPerServing": 3686,
-      "upgradeCost": 5335,
-      "ingredientCount": 7,
-      "search": "green sea urchin & cucumber salad mxmtoon jango shop green sea urchin cucumber buckbean",
-      "sort": {
-        "name": "green sea urchin & cucumber salad",
-        "finalPrice": 1540,
-        "finalServings": 2,
-        "finalRevenue": 3080,
-        "finalProfit": 2752,
-        "finalProfitPerServing": 1376,
-        "maxProfitPerServing": 3686,
-        "recipeCost": 328,
-        "upgradeCost": 5335,
-        "ingredientCount": 7
-      }
-    },
-    {
-      "id": 303,
-      "name": "Rainbow Cap Eel Skewers",
-      "image": "rainbow_cap_eel_skewers.png",
-      "maxLevel": 5,
-      "basePrice": 730,
-      "baseTaste": 195,
-      "baseServings": 2,
-      "finalPrice": 1606,
-      "finalTaste": 295,
-      "finalServings": 2,
-      "unlock": "Jango Shop",
-      "dlc": "Potion Craft",
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 185,
-          "count": 2,
-          "name": "Snub-nosed Spiny Eel",
-          "image": "snub-nosed_spiny_eel.png",
-          "type": "Fish",
-          "unitCost": 60,
-          "lineCost": 120,
-          "upgradeCount": 35
-        },
-        {
-          "ingredientId": 187,
-          "count": 1,
-          "name": "Soy Sauce",
-          "image": "soy_sauce.png",
-          "type": "Procure",
-          "unitCost": 6,
-          "lineCost": 6,
-          "upgradeCount": 23
-        },
-        {
-          "ingredientId": 158,
-          "count": 1,
-          "name": "Rainbow Cap",
-          "image": "rainbow_cap.png",
-          "type": "Jango",
-          "unitCost": 750,
-          "lineCost": 750,
-          "upgradeCount": 23
-        }
-      ],
-      "recipeCost": 876,
-      "partyDishIds": [],
-      "partyIds": [],
-      "finalRevenue": 3212,
-      "finalProfit": 2336,
-      "finalProfitPerServing": 1168,
-      "maxProfitPerServing": 1168,
-      "upgradeCost": 19488,
-      "ingredientCount": 4,
-      "search": "rainbow cap eel skewers potion craft jango shop snub-nosed spiny eel soy sauce rainbow cap",
-      "sort": {
-        "name": "rainbow cap eel skewers",
-        "finalPrice": 1606,
-        "finalServings": 2,
-        "finalRevenue": 3212,
-        "finalProfit": 2336,
-        "finalProfitPerServing": 1168,
-        "maxProfitPerServing": 1168,
-        "recipeCost": 876,
-        "upgradeCost": 19488,
-        "ingredientCount": 4
-      }
-    },
-    {
-      "id": 304,
-      "name": "Rainbow Cap Pacific Fanfish Ochazuke",
-      "image": "rainbow_cap_pacific_fanfish_ochazuke.png",
-      "maxLevel": 5,
-      "basePrice": 710,
-      "baseTaste": 190,
-      "baseServings": 2,
-      "finalPrice": 1562,
-      "finalTaste": 290,
-      "finalServings": 2,
-      "unlock": "Jango Shop",
-      "dlc": "Potion Craft",
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 144,
-          "count": 3,
-          "name": "Pacific Fanfish",
-          "image": "pacific_fanfish.png",
-          "type": "Fish",
-          "unitCost": 22,
-          "lineCost": 66,
-          "upgradeCount": 48
-        },
-        {
-          "ingredientId": 158,
-          "count": 1,
-          "name": "Rainbow Cap",
-          "image": "rainbow_cap.png",
-          "type": "Jango",
-          "unitCost": 750,
-          "lineCost": 750,
-          "upgradeCount": 23
-        },
-        {
-          "ingredientId": 112,
-          "count": 1,
-          "name": "Kelp",
-          "image": "kelp.png",
-          "type": "Sea plant",
-          "unitCost": 6,
-          "lineCost": 6,
-          "upgradeCount": 23
-        },
-        {
-          "ingredientId": 165,
-          "count": 1,
-          "name": "Rice",
-          "image": "rice.png",
-          "type": "Rice",
-          "unitCost": 15,
-          "lineCost": 15,
-          "upgradeCount": 23
-        }
-      ],
-      "recipeCost": 837,
-      "partyDishIds": [],
-      "partyIds": [],
-      "finalRevenue": 3124,
-      "finalProfit": 2287,
-      "finalProfitPerServing": 1144,
-      "maxProfitPerServing": 1144,
-      "upgradeCost": 18789,
-      "ingredientCount": 6,
-      "search": "rainbow cap pacific fanfish ochazuke potion craft jango shop pacific fanfish rainbow cap kelp rice",
-      "sort": {
-        "name": "rainbow cap pacific fanfish ochazuke",
-        "finalPrice": 1562,
-        "finalServings": 2,
-        "finalRevenue": 3124,
-        "finalProfit": 2287,
-        "finalProfitPerServing": 1144,
-        "maxProfitPerServing": 1144,
-        "recipeCost": 837,
-        "upgradeCost": 18789,
         "ingredientCount": 6
       }
     },
@@ -5074,6 +4857,79 @@
         "recipeCost": 78,
         "upgradeCost": 13859,
         "ingredientCount": 6
+      }
+    },
+    {
+      "id": 302,
+      "name": "Green Sea Urchin & Cucumber Salad",
+      "image": "green_sea_urchin_and_cucumber_salad.png",
+      "maxLevel": 5,
+      "basePrice": 700,
+      "baseTaste": 150,
+      "baseServings": 2,
+      "finalPrice": 1540,
+      "finalTaste": 282,
+      "finalServings": 2,
+      "unlock": "Jango Shop",
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 96,
+          "count": 3,
+          "name": "Green Sea Urchin",
+          "image": "green_sea_urchin.png",
+          "type": "Fish",
+          "unitCost": 90,
+          "lineCost": 270,
+          "upgradeCount": 48
+        },
+        {
+          "ingredientId": 62,
+          "count": 2,
+          "name": "Cucumber",
+          "image": "cucumber.png",
+          "type": "Vegetable",
+          "unitCost": 20,
+          "lineCost": 40,
+          "upgradeCount": 35
+        },
+        {
+          "ingredientId": 39,
+          "count": 2,
+          "name": "Buckbean",
+          "image": "buckbean.png",
+          "type": "Sea plant",
+          "unitCost": 9,
+          "lineCost": 18,
+          "upgradeCount": 35
+        }
+      ],
+      "recipeCost": 328,
+      "partyDishIds": [
+        24
+      ],
+      "partyIds": [
+        5
+      ],
+      "finalRevenue": 3080,
+      "finalProfit": 2752,
+      "finalProfitPerServing": 1376,
+      "maxProfitPerServing": 3686,
+      "upgradeCost": 5335,
+      "ingredientCount": 7,
+      "search": "green sea urchin & cucumber salad  jango shop green sea urchin cucumber buckbean",
+      "sort": {
+        "name": "green sea urchin & cucumber salad",
+        "finalPrice": 1540,
+        "finalServings": 2,
+        "finalRevenue": 3080,
+        "finalProfit": 2752,
+        "finalProfitPerServing": 1376,
+        "maxProfitPerServing": 3686,
+        "recipeCost": 328,
+        "upgradeCost": 5335,
+        "ingredientCount": 7
       }
     },
     {
@@ -5272,7 +5128,7 @@
       ],
       "recipeCost": 286,
       "partyDishIds": [
-        24
+        25
       ],
       "partyIds": [
         8
@@ -5456,6 +5312,154 @@
       }
     },
     {
+      "id": 303,
+      "name": "Rainbow Cap Eel Skewers",
+      "image": "rainbow_cap_eel_skewers.png",
+      "maxLevel": 5,
+      "basePrice": 730,
+      "baseTaste": 195,
+      "baseServings": 2,
+      "finalPrice": 1606,
+      "finalTaste": 295,
+      "finalServings": 2,
+      "unlock": "Jango Shop",
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 185,
+          "count": 2,
+          "name": "Snub-nosed Spiny Eel",
+          "image": "snub-nosed_spiny_eel.png",
+          "type": "Fish",
+          "unitCost": 60,
+          "lineCost": 120,
+          "upgradeCount": 35
+        },
+        {
+          "ingredientId": 187,
+          "count": 1,
+          "name": "Soy Sauce",
+          "image": "soy_sauce.png",
+          "type": "Procure",
+          "unitCost": 6,
+          "lineCost": 6,
+          "upgradeCount": 23
+        },
+        {
+          "ingredientId": 158,
+          "count": 1,
+          "name": "Rainbow Cap",
+          "image": "rainbow_cap.png",
+          "type": "Jango",
+          "unitCost": 750,
+          "lineCost": 750,
+          "upgradeCount": 23
+        }
+      ],
+      "recipeCost": 876,
+      "partyDishIds": [],
+      "partyIds": [],
+      "finalRevenue": 3212,
+      "finalProfit": 2336,
+      "finalProfitPerServing": 1168,
+      "maxProfitPerServing": 1168,
+      "upgradeCost": 19488,
+      "ingredientCount": 4,
+      "search": "rainbow cap eel skewers  jango shop snub-nosed spiny eel soy sauce rainbow cap",
+      "sort": {
+        "name": "rainbow cap eel skewers",
+        "finalPrice": 1606,
+        "finalServings": 2,
+        "finalRevenue": 3212,
+        "finalProfit": 2336,
+        "finalProfitPerServing": 1168,
+        "maxProfitPerServing": 1168,
+        "recipeCost": 876,
+        "upgradeCost": 19488,
+        "ingredientCount": 4
+      }
+    },
+    {
+      "id": 304,
+      "name": "Rainbow Cap Pacific Fanfish Ochazuke",
+      "image": "rainbow_cap_pacific_fanfish_ochazuke.png",
+      "maxLevel": 5,
+      "basePrice": 710,
+      "baseTaste": 190,
+      "baseServings": 2,
+      "finalPrice": 1562,
+      "finalTaste": 290,
+      "finalServings": 2,
+      "unlock": "Jango Shop",
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 144,
+          "count": 3,
+          "name": "Pacific Fanfish",
+          "image": "pacific_fanfish.png",
+          "type": "Fish",
+          "unitCost": 22,
+          "lineCost": 66,
+          "upgradeCount": 48
+        },
+        {
+          "ingredientId": 158,
+          "count": 1,
+          "name": "Rainbow Cap",
+          "image": "rainbow_cap.png",
+          "type": "Jango",
+          "unitCost": 750,
+          "lineCost": 750,
+          "upgradeCount": 23
+        },
+        {
+          "ingredientId": 112,
+          "count": 1,
+          "name": "Kelp",
+          "image": "kelp.png",
+          "type": "Sea plant",
+          "unitCost": 6,
+          "lineCost": 6,
+          "upgradeCount": 23
+        },
+        {
+          "ingredientId": 165,
+          "count": 1,
+          "name": "Rice",
+          "image": "rice.png",
+          "type": "Rice",
+          "unitCost": 15,
+          "lineCost": 15,
+          "upgradeCount": 23
+        }
+      ],
+      "recipeCost": 837,
+      "partyDishIds": [],
+      "partyIds": [],
+      "finalRevenue": 3124,
+      "finalProfit": 2287,
+      "finalProfitPerServing": 1144,
+      "maxProfitPerServing": 1144,
+      "upgradeCost": 18789,
+      "ingredientCount": 6,
+      "search": "rainbow cap pacific fanfish ochazuke  jango shop pacific fanfish rainbow cap kelp rice",
+      "sort": {
+        "name": "rainbow cap pacific fanfish ochazuke",
+        "finalPrice": 1562,
+        "finalServings": 2,
+        "finalRevenue": 3124,
+        "finalProfit": 2287,
+        "finalProfitPerServing": 1144,
+        "maxProfitPerServing": 1144,
+        "recipeCost": 837,
+        "upgradeCost": 18789,
+        "ingredientCount": 6
+      }
+    },
+    {
       "id": 204,
       "name": "Soy Sauce Marinated Crab",
       "image": "soy_sauce_marinated_crab.png",
@@ -5572,7 +5576,7 @@
       ],
       "recipeCost": 744,
       "partyDishIds": [
-        25
+        26
       ],
       "partyIds": [
         8
@@ -5645,7 +5649,7 @@
       ],
       "recipeCost": 905,
       "partyDishIds": [
-        26
+        27
       ],
       "partyIds": [
         3
@@ -5718,7 +5722,7 @@
       ],
       "recipeCost": 827,
       "partyDishIds": [
-        27
+        28
       ],
       "partyIds": [
         4
@@ -5801,7 +5805,7 @@
       ],
       "recipeCost": 195,
       "partyDishIds": [
-        28
+        29
       ],
       "partyIds": [
         4
@@ -5953,7 +5957,7 @@
       ],
       "recipeCost": 144,
       "partyDishIds": [
-        29
+        30
       ],
       "partyIds": [
         8
@@ -6026,7 +6030,7 @@
       ],
       "recipeCost": 136,
       "partyDishIds": [
-        30
+        31
       ],
       "partyIds": [
         8
@@ -6109,7 +6113,7 @@
       ],
       "recipeCost": 231,
       "partyDishIds": [
-        31
+        32
       ],
       "partyIds": [
         3
@@ -6182,7 +6186,7 @@
       ],
       "recipeCost": 181,
       "partyDishIds": [
-        32
+        33
       ],
       "partyIds": [
         3
@@ -6218,8 +6222,8 @@
       "finalPrice": 1518,
       "finalTaste": 274,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 1,
       "ingredients": [
         {
@@ -6255,7 +6259,7 @@
       ],
       "recipeCost": 384,
       "partyDishIds": [
-        33
+        34
       ],
       "partyIds": [
         2
@@ -6266,7 +6270,7 @@
       "maxProfitPerServing": 5121,
       "upgradeCost": 6144,
       "ingredientCount": 9,
-      "search": "chirashi sushi mxmtoon mxmtoon collab green sea urchin bluefin tuna chutoro cuttlefish",
+      "search": "chirashi sushi  mxmtoon green sea urchin bluefin tuna chutoro cuttlefish",
       "sort": {
         "name": "chirashi sushi",
         "finalPrice": 1518,
@@ -6291,8 +6295,8 @@
       "finalPrice": 1507,
       "finalTaste": 277,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 9,
       "ingredients": [
         {
@@ -6328,7 +6332,7 @@
       ],
       "recipeCost": 318,
       "partyDishIds": [
-        34
+        35
       ],
       "partyIds": [
         1
@@ -6339,7 +6343,7 @@
       "maxProfitPerServing": 2855,
       "upgradeCost": 5160,
       "ingredientCount": 7,
-      "search": "cold jellyfish & green sea urchin salad mxmtoon mxmtoon collab green sea urchin box jellyfish sea grape",
+      "search": "cold jellyfish & green sea urchin salad  mxmtoon green sea urchin box jellyfish sea grape",
       "sort": {
         "name": "cold jellyfish & green sea urchin salad",
         "finalPrice": 1507,
@@ -6364,8 +6368,8 @@
       "finalPrice": 1518,
       "finalTaste": 275,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 9,
       "ingredients": [
         {
@@ -6418,7 +6422,7 @@
       "maxProfitPerServing": 1398,
       "upgradeCost": 4233,
       "ingredientCount": 7,
-      "search": "deep-fried sea urchin mxmtoon mxmtoon collab kajime green sea urchin purple sea urchin olive oil",
+      "search": "deep-fried sea urchin  mxmtoon kajime green sea urchin purple sea urchin olive oil",
       "sort": {
         "name": "deep-fried sea urchin",
         "finalPrice": 1518,
@@ -6443,8 +6447,8 @@
       "finalPrice": 1551,
       "finalTaste": 268,
       "finalServings": 2,
-      "unlock": "Potion Craft Collab",
-      "dlc": "Potion Craft",
+      "unlock": "Mushroomer",
+      "dlc": null,
       "artisansFlames": null,
       "ingredients": [
         {
@@ -6497,7 +6501,7 @@
       "maxProfitPerServing": 1162,
       "upgradeCost": 17749,
       "ingredientCount": 8,
-      "search": "rainbow cap triggerfish fishcake potion craft potion craft collab lagoon triggerfish grey triggerfish rainbow cap seaweed",
+      "search": "rainbow cap triggerfish fishcake  mushroomer lagoon triggerfish grey triggerfish rainbow cap seaweed",
       "sort": {
         "name": "rainbow cap triggerfish fishcake",
         "finalPrice": 1551,
@@ -6638,7 +6642,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        35
+        36
       ],
       "partyIds": [
         6
@@ -6780,7 +6784,7 @@
       ],
       "recipeCost": 141,
       "partyDishIds": [
-        36
+        37
       ],
       "partyIds": [
         4
@@ -6932,7 +6936,7 @@
       ],
       "recipeCost": 113,
       "partyDishIds": [
-        37
+        38
       ],
       "partyIds": [
         6
@@ -7232,7 +7236,7 @@
       ],
       "recipeCost": 142,
       "partyDishIds": [
-        38
+        39
       ],
       "partyIds": [
         6
@@ -7552,7 +7556,7 @@
       ],
       "recipeCost": 151,
       "partyDishIds": [
-        39
+        40
       ],
       "partyIds": [
         4
@@ -7635,7 +7639,7 @@
       ],
       "recipeCost": 104,
       "partyDishIds": [
-        40
+        41
       ],
       "partyIds": [
         1
@@ -7718,7 +7722,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        41
+        42
       ],
       "partyIds": [
         6
@@ -7801,7 +7805,7 @@
       ],
       "recipeCost": 117,
       "partyDishIds": [
-        42
+        43
       ],
       "partyIds": [
         7
@@ -8338,7 +8342,7 @@
       ],
       "recipeCost": 176,
       "partyDishIds": [
-        43
+        44
       ],
       "partyIds": [
         4
@@ -8579,7 +8583,7 @@
       ],
       "recipeCost": 153,
       "partyDishIds": [
-        44
+        45
       ],
       "partyIds": [
         7
@@ -8869,7 +8873,7 @@
       ],
       "recipeCost": 77,
       "partyDishIds": [
-        45
+        46
       ],
       "partyIds": [
         7
@@ -8952,7 +8956,7 @@
       ],
       "recipeCost": 83,
       "partyDishIds": [
-        46
+        47
       ],
       "partyIds": [
         7
@@ -9015,7 +9019,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        47
+        48
       ],
       "partyIds": [
         4
@@ -9098,7 +9102,7 @@
       ],
       "recipeCost": 149,
       "partyDishIds": [
-        48
+        49
       ],
       "partyIds": [
         2
@@ -9181,7 +9185,7 @@
       ],
       "recipeCost": 132,
       "partyDishIds": [
-        49
+        50
       ],
       "partyIds": [
         2
@@ -9254,7 +9258,7 @@
       ],
       "recipeCost": 147,
       "partyDishIds": [
-        50
+        51
       ],
       "partyIds": [
         2
@@ -9485,7 +9489,7 @@
       ],
       "recipeCost": 119,
       "partyDishIds": [
-        51
+        52
       ],
       "partyIds": [
         4
@@ -10022,7 +10026,7 @@
       ],
       "recipeCost": 184,
       "partyDishIds": [
-        52
+        53
       ],
       "partyIds": [
         7
@@ -10549,7 +10553,7 @@
       ],
       "recipeCost": 213,
       "partyDishIds": [
-        53
+        54
       ],
       "partyIds": [
         7
@@ -10859,7 +10863,7 @@
       ],
       "recipeCost": 148,
       "partyDishIds": [
-        54
+        55
       ],
       "partyIds": [
         2
@@ -10932,7 +10936,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        55
+        56
       ],
       "partyIds": [
         8
@@ -11084,7 +11088,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        56
+        57
       ],
       "partyIds": [
         1
@@ -11107,430 +11111,6 @@
         "recipeCost": 20,
         "upgradeCost": 4420,
         "ingredientCount": 3
-      }
-    },
-    {
-      "id": 196,
-      "name": "Shortfin Mako Sushi",
-      "image": "shortfin_mako_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 105,
-      "baseTaste": 36,
-      "baseServings": 1,
-      "finalPrice": 388,
-      "finalTaste": 360,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 125,
-          "count": 1,
-          "name": "Mako Meat",
-          "image": "shortfin_mako.png",
-          "type": "Fish",
-          "unitCost": 43,
-          "lineCost": 43,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 43,
-      "partyDishIds": [
-        57
-      ],
-      "partyIds": [
-        4
-      ],
-      "finalRevenue": 388,
-      "finalProfit": 345,
-      "finalProfitPerServing": 345,
-      "maxProfitPerServing": 733,
-      "upgradeCost": 9503,
-      "ingredientCount": 1,
-      "search": "shortfin mako sushi   mako meat",
-      "sort": {
-        "name": "shortfin mako sushi",
-        "finalPrice": 388,
-        "finalServings": 1,
-        "finalRevenue": 388,
-        "finalProfit": 345,
-        "finalProfitPerServing": 345,
-        "maxProfitPerServing": 733,
-        "recipeCost": 43,
-        "upgradeCost": 9503,
-        "ingredientCount": 1
-      }
-    },
-    {
-      "id": 257,
-      "name": "Zebra Shark Sushi",
-      "image": "zebra_shark_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 88,
-      "baseTaste": 36,
-      "baseServings": 1,
-      "finalPrice": 399,
-      "finalTaste": 360,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 228,
-          "count": 1,
-          "name": "Zebra Shark Meat",
-          "image": "zebra_shark.png",
-          "type": "Fish",
-          "unitCost": 42,
-          "lineCost": 42,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 42,
-      "partyDishIds": [
-        58
-      ],
-      "partyIds": [
-        4
-      ],
-      "finalRevenue": 399,
-      "finalProfit": 357,
-      "finalProfitPerServing": 357,
-      "maxProfitPerServing": 756,
-      "upgradeCost": 9282,
-      "ingredientCount": 1,
-      "search": "zebra shark sushi   zebra shark meat",
-      "sort": {
-        "name": "zebra shark sushi",
-        "finalPrice": 399,
-        "finalServings": 1,
-        "finalRevenue": 399,
-        "finalProfit": 357,
-        "finalProfitPerServing": 357,
-        "maxProfitPerServing": 756,
-        "recipeCost": 42,
-        "upgradeCost": 9282,
-        "ingredientCount": 1
-      }
-    },
-    {
-      "id": 30,
-      "name": "Bluefin Tuna Akami Sushi",
-      "image": "bluefin_tuna_akami_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 80,
-      "baseTaste": 60,
-      "baseServings": 1,
-      "finalPrice": 296,
-      "finalTaste": 240,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 32,
-          "count": 1,
-          "name": "Bluefin Tuna Akami",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 27,
-          "lineCost": 27,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 27,
-      "partyDishIds": [
-        59
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 296,
-      "finalProfit": 269,
-      "finalProfitPerServing": 269,
-      "maxProfitPerServing": 1009,
-      "upgradeCost": 5967,
-      "ingredientCount": 1,
-      "search": "bluefin tuna akami sushi   bluefin tuna akami",
-      "sort": {
-        "name": "bluefin tuna akami sushi",
-        "finalPrice": 296,
-        "finalServings": 1,
-        "finalRevenue": 296,
-        "finalProfit": 269,
-        "finalProfitPerServing": 269,
-        "maxProfitPerServing": 1009,
-        "recipeCost": 27,
-        "upgradeCost": 5967,
-        "ingredientCount": 1
-      }
-    },
-    {
-      "id": 31,
-      "name": "Bluefin Tuna Chutoro Sushi",
-      "image": "bluefin_tuna_chutoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 95,
-      "baseTaste": 61,
-      "baseServings": 1,
-      "finalPrice": 351,
-      "finalTaste": 241,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 33,
-          "count": 1,
-          "name": "Bluefin Tuna Chutoro",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 32,
-          "lineCost": 32,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 32,
-      "partyDishIds": [
-        60
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 351,
-      "finalProfit": 319,
-      "finalProfitPerServing": 319,
-      "maxProfitPerServing": 1197,
-      "upgradeCost": 7072,
-      "ingredientCount": 1,
-      "search": "bluefin tuna chutoro sushi   bluefin tuna chutoro",
-      "sort": {
-        "name": "bluefin tuna chutoro sushi",
-        "finalPrice": 351,
-        "finalServings": 1,
-        "finalRevenue": 351,
-        "finalProfit": 319,
-        "finalProfitPerServing": 319,
-        "maxProfitPerServing": 1197,
-        "recipeCost": 32,
-        "upgradeCost": 7072,
-        "ingredientCount": 1
-      }
-    },
-    {
-      "id": 32,
-      "name": "Bluefin Tuna Ootoro Sushi",
-      "image": "bluefin_tuna_ootoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 133,
-      "baseTaste": 105,
-      "baseServings": 1,
-      "finalPrice": 499,
-      "finalTaste": 330,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 34,
-          "count": 1,
-          "name": "Bluefin Tuna Ootoro",
-          "image": "bluefin_tuna.png",
-          "type": "Fish",
-          "unitCost": 45,
-          "lineCost": 45,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 45,
-      "partyDishIds": [
-        61
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 499,
-      "finalProfit": 454,
-      "finalProfitPerServing": 454,
-      "maxProfitPerServing": 1702,
-      "upgradeCost": 9945,
-      "ingredientCount": 1,
-      "search": "bluefin tuna ootoro sushi   bluefin tuna ootoro",
-      "sort": {
-        "name": "bluefin tuna ootoro sushi",
-        "finalPrice": 499,
-        "finalServings": 1,
-        "finalRevenue": 499,
-        "finalProfit": 454,
-        "finalProfitPerServing": 454,
-        "maxProfitPerServing": 1702,
-        "recipeCost": 45,
-        "upgradeCost": 9945,
-        "ingredientCount": 1
-      }
-    },
-    {
-      "id": 252,
-      "name": "Yellowfin Tuna Akami Sushi",
-      "image": "yellowfin_tuna_akami_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 73,
-      "baseTaste": 55,
-      "baseServings": 1,
-      "finalPrice": 270,
-      "finalTaste": 235,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 225,
-          "count": 1,
-          "name": "Yellowfin Tuna Akami",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 24,
-          "lineCost": 24,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 24,
-      "partyDishIds": [
-        62
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 270,
-      "finalProfit": 246,
-      "finalProfitPerServing": 246,
-      "maxProfitPerServing": 921,
-      "upgradeCost": 5304,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna akami sushi   yellowfin tuna akami",
-      "sort": {
-        "name": "yellowfin tuna akami sushi",
-        "finalPrice": 270,
-        "finalServings": 1,
-        "finalRevenue": 270,
-        "finalProfit": 246,
-        "finalProfitPerServing": 246,
-        "maxProfitPerServing": 921,
-        "recipeCost": 24,
-        "upgradeCost": 5304,
-        "ingredientCount": 1
-      }
-    },
-    {
-      "id": 253,
-      "name": "Yellowfin Tuna Chutoro Sushi",
-      "image": "yellowfin_tuna_chutoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 90,
-      "baseTaste": 58,
-      "baseServings": 1,
-      "finalPrice": 333,
-      "finalTaste": 238,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 226,
-          "count": 1,
-          "name": "Yellowfin Tuna Chutoro",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 30,
-          "lineCost": 30,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 30,
-      "partyDishIds": [
-        63
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 333,
-      "finalProfit": 303,
-      "finalProfitPerServing": 303,
-      "maxProfitPerServing": 1136,
-      "upgradeCost": 6630,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna chutoro sushi   yellowfin tuna chutoro",
-      "sort": {
-        "name": "yellowfin tuna chutoro sushi",
-        "finalPrice": 333,
-        "finalServings": 1,
-        "finalRevenue": 333,
-        "finalProfit": 303,
-        "finalProfitPerServing": 303,
-        "maxProfitPerServing": 1136,
-        "recipeCost": 30,
-        "upgradeCost": 6630,
-        "ingredientCount": 1
-      }
-    },
-    {
-      "id": 254,
-      "name": "Yellowfin Tuna Ootoro Sushi",
-      "image": "yellowfin_tuna_ootoro_sushi.png",
-      "maxLevel": 10,
-      "basePrice": 125,
-      "baseTaste": 90,
-      "baseServings": 1,
-      "finalPrice": 462,
-      "finalTaste": 315,
-      "finalServings": 1,
-      "unlock": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "ingredients": [
-        {
-          "ingredientId": 227,
-          "count": 1,
-          "name": "Yellowfin Tuna Ootoro",
-          "image": "yellowfin_tuna.png",
-          "type": "Fish",
-          "unitCost": 42,
-          "lineCost": 42,
-          "upgradeCount": 221
-        }
-      ],
-      "recipeCost": 42,
-      "partyDishIds": [
-        64
-      ],
-      "partyIds": [
-        2
-      ],
-      "finalRevenue": 462,
-      "finalProfit": 420,
-      "finalProfitPerServing": 420,
-      "maxProfitPerServing": 1575,
-      "upgradeCost": 9282,
-      "ingredientCount": 1,
-      "search": "yellowfin tuna ootoro sushi   yellowfin tuna ootoro",
-      "sort": {
-        "name": "yellowfin tuna ootoro sushi",
-        "finalPrice": 462,
-        "finalServings": 1,
-        "finalRevenue": 462,
-        "finalProfit": 420,
-        "finalProfitPerServing": 420,
-        "maxProfitPerServing": 1575,
-        "recipeCost": 42,
-        "upgradeCost": 9282,
-        "ingredientCount": 1
       }
     },
     {
@@ -11659,7 +11239,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        65
+        58
       ],
       "partyIds": [
         8
@@ -12055,7 +11635,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        66
+        59
       ],
       "partyIds": [
         1
@@ -12304,7 +11884,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        67
+        60
       ],
       "partyIds": [
         4
@@ -12406,7 +11986,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        68
+        61
       ],
       "partyIds": [
         1
@@ -12459,7 +12039,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        69
+        62
       ],
       "partyIds": [
         8
@@ -12530,6 +12110,165 @@
         "maxProfitPerServing": 20,
         "recipeCost": 2,
         "upgradeCost": 442,
+        "ingredientCount": 1
+      }
+    },
+    {
+      "id": 30,
+      "name": "Bluefin Tuna Akami Sushi",
+      "image": "bluefin_tuna_akami_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 80,
+      "baseTaste": 60,
+      "baseServings": 1,
+      "finalPrice": 296,
+      "finalTaste": 240,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 32,
+          "count": 1,
+          "name": "Bluefin Tuna Akami",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 27,
+          "lineCost": 27,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 27,
+      "partyDishIds": [
+        63
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 296,
+      "finalProfit": 269,
+      "finalProfitPerServing": 269,
+      "maxProfitPerServing": 1009,
+      "upgradeCost": 5967,
+      "ingredientCount": 1,
+      "search": "bluefin tuna akami sushi   bluefin tuna akami",
+      "sort": {
+        "name": "bluefin tuna akami sushi",
+        "finalPrice": 296,
+        "finalServings": 1,
+        "finalRevenue": 296,
+        "finalProfit": 269,
+        "finalProfitPerServing": 269,
+        "maxProfitPerServing": 1009,
+        "recipeCost": 27,
+        "upgradeCost": 5967,
+        "ingredientCount": 1
+      }
+    },
+    {
+      "id": 31,
+      "name": "Bluefin Tuna Chutoro Sushi",
+      "image": "bluefin_tuna_chutoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 95,
+      "baseTaste": 61,
+      "baseServings": 1,
+      "finalPrice": 351,
+      "finalTaste": 241,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 33,
+          "count": 1,
+          "name": "Bluefin Tuna Chutoro",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 32,
+          "lineCost": 32,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 32,
+      "partyDishIds": [
+        64
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 351,
+      "finalProfit": 319,
+      "finalProfitPerServing": 319,
+      "maxProfitPerServing": 1197,
+      "upgradeCost": 7072,
+      "ingredientCount": 1,
+      "search": "bluefin tuna chutoro sushi   bluefin tuna chutoro",
+      "sort": {
+        "name": "bluefin tuna chutoro sushi",
+        "finalPrice": 351,
+        "finalServings": 1,
+        "finalRevenue": 351,
+        "finalProfit": 319,
+        "finalProfitPerServing": 319,
+        "maxProfitPerServing": 1197,
+        "recipeCost": 32,
+        "upgradeCost": 7072,
+        "ingredientCount": 1
+      }
+    },
+    {
+      "id": 32,
+      "name": "Bluefin Tuna Ootoro Sushi",
+      "image": "bluefin_tuna_ootoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 133,
+      "baseTaste": 105,
+      "baseServings": 1,
+      "finalPrice": 499,
+      "finalTaste": 330,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 34,
+          "count": 1,
+          "name": "Bluefin Tuna Ootoro",
+          "image": "bluefin_tuna.png",
+          "type": "Fish",
+          "unitCost": 45,
+          "lineCost": 45,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 45,
+      "partyDishIds": [
+        65
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 499,
+      "finalProfit": 454,
+      "finalProfitPerServing": 454,
+      "maxProfitPerServing": 1702,
+      "upgradeCost": 9945,
+      "ingredientCount": 1,
+      "search": "bluefin tuna ootoro sushi   bluefin tuna ootoro",
+      "sort": {
+        "name": "bluefin tuna ootoro sushi",
+        "finalPrice": 499,
+        "finalServings": 1,
+        "finalRevenue": 499,
+        "finalProfit": 454,
+        "finalProfitPerServing": 454,
+        "maxProfitPerServing": 1702,
+        "recipeCost": 45,
+        "upgradeCost": 9945,
         "ingredientCount": 1
       }
     },
@@ -12659,7 +12398,7 @@
       ],
       "recipeCost": 18,
       "partyDishIds": [
-        70
+        66
       ],
       "partyIds": [
         1
@@ -12712,7 +12451,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        71
+        67
       ],
       "partyIds": [
         8
@@ -13108,7 +12847,7 @@
       ],
       "recipeCost": 14,
       "partyDishIds": [
-        72
+        68
       ],
       "partyIds": [
         1
@@ -13210,7 +12949,7 @@
       ],
       "recipeCost": 11,
       "partyDishIds": [
-        73
+        69
       ],
       "partyIds": [
         7
@@ -13263,7 +13002,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        74
+        70
       ],
       "partyIds": [
         4
@@ -13316,7 +13055,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        75
+        71
       ],
       "partyIds": [
         4
@@ -13418,7 +13157,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        76
+        72
       ],
       "partyIds": [
         8
@@ -13814,7 +13553,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        77
+        73
       ],
       "partyIds": [
         8
@@ -13916,7 +13655,7 @@
       ],
       "recipeCost": 23,
       "partyDishIds": [
-        78
+        74
       ],
       "partyIds": [
         8
@@ -13969,7 +13708,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        79
+        75
       ],
       "partyIds": [
         4
@@ -14022,7 +13761,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        80
+        76
       ],
       "partyIds": [
         8
@@ -14173,7 +13912,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        81
+        77
       ],
       "partyIds": [
         1
@@ -14226,7 +13965,7 @@
       ],
       "recipeCost": 28,
       "partyDishIds": [
-        82
+        78
       ],
       "partyIds": [
         4
@@ -14524,7 +14263,7 @@
       ],
       "recipeCost": 62,
       "partyDishIds": [
-        83
+        79
       ],
       "partyIds": [
         4
@@ -14969,7 +14708,7 @@
       ],
       "recipeCost": 12,
       "partyDishIds": [
-        84
+        80
       ],
       "partyIds": [
         4
@@ -15218,7 +14957,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        85
+        81
       ],
       "partyIds": [
         3
@@ -15369,7 +15108,7 @@
       ],
       "recipeCost": 31,
       "partyDishIds": [
-        86
+        82
       ],
       "partyIds": [
         4
@@ -15607,7 +15346,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        87
+        83
       ],
       "partyIds": [
         8
@@ -16052,7 +15791,7 @@
       ],
       "recipeCost": 55,
       "partyDishIds": [
-        88
+        84
       ],
       "partyIds": [
         4
@@ -16301,7 +16040,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        89
+        85
       ],
       "partyIds": [
         7
@@ -16452,7 +16191,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        90
+        86
       ],
       "partyIds": [
         8
@@ -16603,7 +16342,7 @@
       ],
       "recipeCost": 65,
       "partyDishIds": [
-        91
+        87
       ],
       "partyIds": [
         3
@@ -17090,6 +16829,59 @@
       }
     },
     {
+      "id": 196,
+      "name": "Shortfin Mako Sushi",
+      "image": "shortfin_mako_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 105,
+      "baseTaste": 36,
+      "baseServings": 1,
+      "finalPrice": 388,
+      "finalTaste": 360,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 125,
+          "count": 1,
+          "name": "Mako Meat",
+          "image": "shortfin_mako.png",
+          "type": "Fish",
+          "unitCost": 43,
+          "lineCost": 43,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 43,
+      "partyDishIds": [
+        88
+      ],
+      "partyIds": [
+        4
+      ],
+      "finalRevenue": 388,
+      "finalProfit": 345,
+      "finalProfitPerServing": 345,
+      "maxProfitPerServing": 733,
+      "upgradeCost": 9503,
+      "ingredientCount": 1,
+      "search": "shortfin mako sushi   mako meat",
+      "sort": {
+        "name": "shortfin mako sushi",
+        "finalPrice": 388,
+        "finalServings": 1,
+        "finalRevenue": 388,
+        "finalProfit": 345,
+        "finalProfitPerServing": 345,
+        "maxProfitPerServing": 733,
+        "recipeCost": 43,
+        "upgradeCost": 9503,
+        "ingredientCount": 1
+      }
+    },
+    {
       "id": 199,
       "name": "Smallspotted Dart Sushi",
       "image": "smallspotted_dart_sushi.png",
@@ -17166,7 +16958,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        92
+        89
       ],
       "partyIds": [
         4
@@ -17660,7 +17452,7 @@
       ],
       "recipeCost": 53,
       "partyDishIds": [
-        93
+        90
       ],
       "partyIds": [
         4
@@ -17713,7 +17505,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        94
+        91
       ],
       "partyIds": [
         4
@@ -17864,7 +17656,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        95
+        92
       ],
       "partyIds": [
         8
@@ -18015,7 +17807,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        96
+        93
       ],
       "partyIds": [
         7
@@ -18068,7 +17860,7 @@
       ],
       "recipeCost": 6,
       "partyDishIds": [
-        97
+        94
       ],
       "partyIds": [
         1
@@ -18170,7 +17962,7 @@
       ],
       "recipeCost": 8,
       "partyDishIds": [
-        98
+        95
       ],
       "partyIds": [
         4
@@ -18339,6 +18131,218 @@
         "maxProfitPerServing": 23,
         "recipeCost": 2,
         "upgradeCost": 442,
+        "ingredientCount": 1
+      }
+    },
+    {
+      "id": 252,
+      "name": "Yellowfin Tuna Akami Sushi",
+      "image": "yellowfin_tuna_akami_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 73,
+      "baseTaste": 55,
+      "baseServings": 1,
+      "finalPrice": 270,
+      "finalTaste": 235,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 225,
+          "count": 1,
+          "name": "Yellowfin Tuna Akami",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 24,
+          "lineCost": 24,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 24,
+      "partyDishIds": [
+        96
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 270,
+      "finalProfit": 246,
+      "finalProfitPerServing": 246,
+      "maxProfitPerServing": 921,
+      "upgradeCost": 5304,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna akami sushi   yellowfin tuna akami",
+      "sort": {
+        "name": "yellowfin tuna akami sushi",
+        "finalPrice": 270,
+        "finalServings": 1,
+        "finalRevenue": 270,
+        "finalProfit": 246,
+        "finalProfitPerServing": 246,
+        "maxProfitPerServing": 921,
+        "recipeCost": 24,
+        "upgradeCost": 5304,
+        "ingredientCount": 1
+      }
+    },
+    {
+      "id": 253,
+      "name": "Yellowfin Tuna Chutoro Sushi",
+      "image": "yellowfin_tuna_chutoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 90,
+      "baseTaste": 58,
+      "baseServings": 1,
+      "finalPrice": 333,
+      "finalTaste": 238,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 226,
+          "count": 1,
+          "name": "Yellowfin Tuna Chutoro",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 30,
+          "lineCost": 30,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 30,
+      "partyDishIds": [
+        97
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 333,
+      "finalProfit": 303,
+      "finalProfitPerServing": 303,
+      "maxProfitPerServing": 1136,
+      "upgradeCost": 6630,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna chutoro sushi   yellowfin tuna chutoro",
+      "sort": {
+        "name": "yellowfin tuna chutoro sushi",
+        "finalPrice": 333,
+        "finalServings": 1,
+        "finalRevenue": 333,
+        "finalProfit": 303,
+        "finalProfitPerServing": 303,
+        "maxProfitPerServing": 1136,
+        "recipeCost": 30,
+        "upgradeCost": 6630,
+        "ingredientCount": 1
+      }
+    },
+    {
+      "id": 254,
+      "name": "Yellowfin Tuna Ootoro Sushi",
+      "image": "yellowfin_tuna_ootoro_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 125,
+      "baseTaste": 90,
+      "baseServings": 1,
+      "finalPrice": 462,
+      "finalTaste": 315,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 227,
+          "count": 1,
+          "name": "Yellowfin Tuna Ootoro",
+          "image": "yellowfin_tuna.png",
+          "type": "Fish",
+          "unitCost": 42,
+          "lineCost": 42,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 42,
+      "partyDishIds": [
+        98
+      ],
+      "partyIds": [
+        2
+      ],
+      "finalRevenue": 462,
+      "finalProfit": 420,
+      "finalProfitPerServing": 420,
+      "maxProfitPerServing": 1575,
+      "upgradeCost": 9282,
+      "ingredientCount": 1,
+      "search": "yellowfin tuna ootoro sushi   yellowfin tuna ootoro",
+      "sort": {
+        "name": "yellowfin tuna ootoro sushi",
+        "finalPrice": 462,
+        "finalServings": 1,
+        "finalRevenue": 462,
+        "finalProfit": 420,
+        "finalProfitPerServing": 420,
+        "maxProfitPerServing": 1575,
+        "recipeCost": 42,
+        "upgradeCost": 9282,
+        "ingredientCount": 1
+      }
+    },
+    {
+      "id": 257,
+      "name": "Zebra Shark Sushi",
+      "image": "zebra_shark_sushi.png",
+      "maxLevel": 10,
+      "basePrice": 88,
+      "baseTaste": 36,
+      "baseServings": 1,
+      "finalPrice": 399,
+      "finalTaste": 360,
+      "finalServings": 1,
+      "unlock": null,
+      "dlc": null,
+      "artisansFlames": null,
+      "ingredients": [
+        {
+          "ingredientId": 228,
+          "count": 1,
+          "name": "Zebra Shark Meat",
+          "image": "zebra_shark.png",
+          "type": "Fish",
+          "unitCost": 42,
+          "lineCost": 42,
+          "upgradeCount": 221
+        }
+      ],
+      "recipeCost": 42,
+      "partyDishIds": [
+        99
+      ],
+      "partyIds": [
+        4
+      ],
+      "finalRevenue": 399,
+      "finalProfit": 357,
+      "finalProfitPerServing": 357,
+      "maxProfitPerServing": 756,
+      "upgradeCost": 9282,
+      "ingredientCount": 1,
+      "search": "zebra shark sushi   zebra shark meat",
+      "sort": {
+        "name": "zebra shark sushi",
+        "finalPrice": 399,
+        "finalServings": 1,
+        "finalRevenue": 399,
+        "finalProfit": 357,
+        "finalProfitPerServing": 357,
+        "maxProfitPerServing": 756,
+        "recipeCost": 42,
+        "upgradeCost": 9282,
         "ingredientCount": 1
       }
     }
@@ -18529,7 +18533,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        65
+        58
       ],
       "partyIds": [
         8
@@ -18946,7 +18950,7 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        7
+        8
       ],
       "partyIds": [
         6
@@ -19146,7 +19150,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        66
+        59
       ],
       "partyIds": [
         1
@@ -19612,7 +19616,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        67
+        60
       ],
       "partyIds": [
         4
@@ -19862,7 +19866,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        68
+        61
       ],
       "partyIds": [
         1
@@ -19915,7 +19919,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        69
+        62
       ],
       "partyIds": [
         8
@@ -20017,7 +20021,7 @@
       ],
       "recipeCost": 27,
       "partyDishIds": [
-        59
+        63
       ],
       "partyIds": [
         2
@@ -20070,7 +20074,7 @@
       ],
       "recipeCost": 32,
       "partyDishIds": [
-        60
+        64
       ],
       "partyIds": [
         2
@@ -20123,7 +20127,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        61
+        65
       ],
       "partyIds": [
         2
@@ -20206,7 +20210,7 @@
       ],
       "recipeCost": 149,
       "partyDishIds": [
-        48
+        49
       ],
       "partyIds": [
         2
@@ -20387,7 +20391,7 @@
       ],
       "recipeCost": 83,
       "partyDishIds": [
-        46
+        47
       ],
       "partyIds": [
         7
@@ -20542,12 +20546,12 @@
         1
       ],
       "partyIds": [
-        7
+        8
       ],
       "finalRevenue": 6500,
       "finalProfit": 6468,
       "finalProfitPerServing": 647,
-      "maxProfitPerServing": 1297,
+      "maxProfitPerServing": 1622,
       "upgradeCost": 0,
       "ingredientCount": 4,
       "search": "boiled mantis shrimp with soy paste  boss mantis shrimp meat agar eggplant miso",
@@ -20558,7 +20562,7 @@
         "finalRevenue": 6500,
         "finalProfit": 6468,
         "finalProfitPerServing": 647,
-        "maxProfitPerServing": 1297,
+        "maxProfitPerServing": 1622,
         "recipeCost": 32,
         "upgradeCost": 0,
         "ingredientCount": 4
@@ -20612,7 +20616,7 @@
       ],
       "recipeCost": 176,
       "partyDishIds": [
-        43
+        44
       ],
       "partyIds": [
         4
@@ -20695,7 +20699,7 @@
       ],
       "recipeCost": 231,
       "partyDishIds": [
-        31
+        32
       ],
       "partyIds": [
         3
@@ -20807,7 +20811,7 @@
       ],
       "recipeCost": 18,
       "partyDishIds": [
-        70
+        66
       ],
       "partyIds": [
         1
@@ -20860,7 +20864,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        71
+        67
       ],
       "partyIds": [
         8
@@ -21335,7 +21339,7 @@
       ],
       "recipeCost": 14,
       "partyDishIds": [
-        72
+        68
       ],
       "partyIds": [
         1
@@ -21516,7 +21520,7 @@
       ],
       "recipeCost": 11,
       "partyDishIds": [
-        73
+        69
       ],
       "partyIds": [
         7
@@ -21569,7 +21573,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        74
+        70
       ],
       "partyIds": [
         4
@@ -21622,7 +21626,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        75
+        71
       ],
       "partyIds": [
         4
@@ -21744,7 +21748,7 @@
       ],
       "recipeCost": 141,
       "partyDishIds": [
-        36
+        37
       ],
       "partyIds": [
         4
@@ -21817,7 +21821,7 @@
       ],
       "recipeCost": 144,
       "partyDishIds": [
-        29
+        30
       ],
       "partyIds": [
         8
@@ -21870,7 +21874,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        76
+        72
       ],
       "partyIds": [
         8
@@ -22002,7 +22006,7 @@
       ],
       "recipeCost": 119,
       "partyDishIds": [
-        51
+        52
       ],
       "partyIds": [
         4
@@ -22085,7 +22089,7 @@
       ],
       "recipeCost": 153,
       "partyDishIds": [
-        44
+        45
       ],
       "partyIds": [
         7
@@ -22247,7 +22251,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        10
+        11
       ],
       "partyIds": [
         5
@@ -22821,7 +22825,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        77
+        73
       ],
       "partyIds": [
         8
@@ -22923,7 +22927,7 @@
       ],
       "recipeCost": 23,
       "partyDishIds": [
-        78
+        74
       ],
       "partyIds": [
         8
@@ -23006,7 +23010,7 @@
       ],
       "recipeCost": 195,
       "partyDishIds": [
-        28
+        29
       ],
       "partyIds": [
         4
@@ -23059,7 +23063,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        79
+        75
       ],
       "partyIds": [
         4
@@ -23112,7 +23116,7 @@
       ],
       "recipeCost": 22,
       "partyDishIds": [
-        80
+        76
       ],
       "partyIds": [
         8
@@ -23263,7 +23267,7 @@
       ],
       "recipeCost": 5,
       "partyDishIds": [
-        81
+        77
       ],
       "partyIds": [
         1
@@ -23701,7 +23705,7 @@
       ],
       "recipeCost": 28,
       "partyDishIds": [
-        82
+        78
       ],
       "partyIds": [
         4
@@ -24122,7 +24126,7 @@
       ],
       "recipeCost": 37,
       "partyDishIds": [
-        11
+        12
       ],
       "partyIds": [
         5
@@ -24195,7 +24199,7 @@
       ],
       "recipeCost": 113,
       "partyDishIds": [
-        37
+        38
       ],
       "partyIds": [
         6
@@ -24297,7 +24301,7 @@
       ],
       "recipeCost": 62,
       "partyDishIds": [
-        83
+        79
       ],
       "partyIds": [
         4
@@ -24754,7 +24758,7 @@
       ],
       "recipeCost": 132,
       "partyDishIds": [
-        49
+        50
       ],
       "partyIds": [
         2
@@ -24886,7 +24890,7 @@
       ],
       "recipeCost": 148,
       "partyDishIds": [
-        54
+        55
       ],
       "partyIds": [
         2
@@ -24969,7 +24973,7 @@
       ],
       "recipeCost": 213,
       "partyDishIds": [
-        53
+        54
       ],
       "partyIds": [
         7
@@ -25091,7 +25095,7 @@
       ],
       "recipeCost": 70,
       "partyDishIds": [
-        8
+        9
       ],
       "partyIds": [
         6
@@ -25164,7 +25168,7 @@
       ],
       "recipeCost": 391,
       "partyDishIds": [
-        18
+        19
       ],
       "partyIds": [
         2
@@ -25237,7 +25241,7 @@
       ],
       "recipeCost": 142,
       "partyDishIds": [
-        38
+        39
       ],
       "partyIds": [
         6
@@ -25487,7 +25491,7 @@
       ],
       "recipeCost": 286,
       "partyDishIds": [
-        24
+        25
       ],
       "partyIds": [
         8
@@ -25589,7 +25593,7 @@
       ],
       "recipeCost": 12,
       "partyDishIds": [
-        84
+        80
       ],
       "partyIds": [
         4
@@ -26010,7 +26014,7 @@
       ],
       "recipeCost": 181,
       "partyDishIds": [
-        32
+        33
       ],
       "partyIds": [
         3
@@ -26063,7 +26067,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        85
+        81
       ],
       "partyIds": [
         3
@@ -26214,7 +26218,7 @@
       ],
       "recipeCost": 31,
       "partyDishIds": [
-        86
+        82
       ],
       "partyIds": [
         4
@@ -26297,7 +26301,7 @@
       ],
       "recipeCost": 184,
       "partyDishIds": [
-        52
+        53
       ],
       "partyIds": [
         7
@@ -26439,7 +26443,7 @@
       ],
       "recipeCost": 39,
       "partyDishIds": [
-        9
+        10
       ],
       "partyIds": [
         6
@@ -26914,7 +26918,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        87
+        83
       ],
       "partyIds": [
         8
@@ -27512,7 +27516,7 @@
       ],
       "recipeCost": 71,
       "partyDishIds": [
-        12
+        13
       ],
       "partyIds": [
         5
@@ -27821,7 +27825,7 @@
       ],
       "recipeCost": 55,
       "partyDishIds": [
-        88
+        84
       ],
       "partyIds": [
         4
@@ -28149,7 +28153,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        89
+        85
       ],
       "partyIds": [
         7
@@ -28300,7 +28304,7 @@
       ],
       "recipeCost": 25,
       "partyDishIds": [
-        90
+        86
       ],
       "partyIds": [
         8
@@ -28619,7 +28623,7 @@
       ],
       "recipeCost": 117,
       "partyDishIds": [
-        42
+        43
       ],
       "partyIds": [
         7
@@ -28692,7 +28696,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        35
+        36
       ],
       "partyIds": [
         6
@@ -28907,7 +28911,7 @@
       ],
       "recipeCost": 65,
       "partyDishIds": [
-        91
+        87
       ],
       "partyIds": [
         3
@@ -29225,7 +29229,7 @@
       ],
       "recipeCost": 38,
       "partyDishIds": [
-        13
+        14
       ],
       "partyIds": [
         5
@@ -29396,7 +29400,7 @@
       ],
       "recipeCost": 20,
       "partyDishIds": [
-        56
+        57
       ],
       "partyIds": [
         1
@@ -29735,7 +29739,7 @@
       ],
       "recipeCost": 104,
       "partyDishIds": [
-        40
+        41
       ],
       "partyIds": [
         1
@@ -29946,8 +29950,8 @@
       ],
       "recipeCost": 171,
       "partyDishIds": [
-        14,
-        15
+        15,
+        16
       ],
       "partyIds": [
         5,
@@ -30100,7 +30104,7 @@
       ],
       "recipeCost": 151,
       "partyDishIds": [
-        39
+        40
       ],
       "partyIds": [
         4
@@ -30202,7 +30206,7 @@
       ],
       "recipeCost": 43,
       "partyDishIds": [
-        57
+        88
       ],
       "partyIds": [
         4
@@ -30255,7 +30259,7 @@
       ],
       "recipeCost": 60,
       "partyDishIds": [
-        16
+        17
       ],
       "partyIds": [
         5
@@ -30495,7 +30499,7 @@
       ],
       "recipeCost": 47,
       "partyDishIds": [
-        92
+        89
       ],
       "partyIds": [
         4
@@ -30804,7 +30808,7 @@
       ],
       "recipeCost": 77,
       "partyDishIds": [
-        45
+        46
       ],
       "partyIds": [
         7
@@ -30975,7 +30979,7 @@
       ],
       "recipeCost": 136,
       "partyDishIds": [
-        30
+        31
       ],
       "partyIds": [
         8
@@ -31452,7 +31456,7 @@
       ],
       "recipeCost": 88,
       "partyDishIds": [
-        55
+        56
       ],
       "partyIds": [
         8
@@ -31948,7 +31952,7 @@
       ],
       "recipeCost": 53,
       "partyDishIds": [
-        93
+        90
       ],
       "partyIds": [
         4
@@ -32001,7 +32005,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        94
+        91
       ],
       "partyIds": [
         4
@@ -32320,7 +32324,7 @@
       ],
       "recipeCost": 120,
       "partyDishIds": [
-        17
+        18
       ],
       "partyIds": [
         5
@@ -32452,7 +32456,7 @@
       ],
       "recipeCost": 45,
       "partyDishIds": [
-        95
+        92
       ],
       "partyIds": [
         8
@@ -32594,7 +32598,7 @@
       ],
       "recipeCost": 744,
       "partyDishIds": [
-        25
+        26
       ],
       "partyIds": [
         8
@@ -32667,7 +32671,7 @@
       ],
       "recipeCost": 905,
       "partyDishIds": [
-        26
+        27
       ],
       "partyIds": [
         3
@@ -32740,7 +32744,7 @@
       ],
       "recipeCost": 827,
       "partyDishIds": [
-        27
+        28
       ],
       "partyIds": [
         4
@@ -33023,7 +33027,7 @@
       ],
       "recipeCost": 17,
       "partyDishIds": [
-        96
+        93
       ],
       "partyIds": [
         7
@@ -33076,7 +33080,7 @@
       ],
       "recipeCost": 6,
       "partyDishIds": [
-        97
+        94
       ],
       "partyIds": [
         1
@@ -33247,7 +33251,7 @@
       ],
       "recipeCost": 8,
       "partyDishIds": [
-        98
+        95
       ],
       "partyIds": [
         4
@@ -33310,7 +33314,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        47
+        48
       ],
       "partyIds": [
         4
@@ -33393,7 +33397,7 @@
       ],
       "recipeCost": 46,
       "partyDishIds": [
-        41
+        42
       ],
       "partyIds": [
         6
@@ -33504,12 +33508,16 @@
         }
       ],
       "recipeCost": 8,
-      "partyDishIds": [],
-      "partyIds": [],
+      "partyDishIds": [
+        7
+      ],
+      "partyIds": [
+        8
+      ],
       "finalRevenue": 7500,
       "finalProfit": 7492,
       "finalProfitPerServing": 749,
-      "maxProfitPerServing": 749,
+      "maxProfitPerServing": 1874,
       "upgradeCost": 0,
       "ingredientCount": 2,
       "search": "yawie steamed meat  boss yawie's inner flesh salt",
@@ -33520,7 +33528,7 @@
         "finalRevenue": 7500,
         "finalProfit": 7492,
         "finalProfitPerServing": 749,
-        "maxProfitPerServing": 749,
+        "maxProfitPerServing": 1874,
         "recipeCost": 8,
         "upgradeCost": 0,
         "ingredientCount": 2
@@ -33652,7 +33660,7 @@
       ],
       "recipeCost": 24,
       "partyDishIds": [
-        62
+        96
       ],
       "partyIds": [
         2
@@ -33705,7 +33713,7 @@
       ],
       "recipeCost": 30,
       "partyDishIds": [
-        63
+        97
       ],
       "partyIds": [
         2
@@ -33758,7 +33766,7 @@
       ],
       "recipeCost": 42,
       "partyDishIds": [
-        64
+        98
       ],
       "partyIds": [
         2
@@ -33831,7 +33839,7 @@
       ],
       "recipeCost": 147,
       "partyDishIds": [
-        50
+        51
       ],
       "partyIds": [
         2
@@ -33933,7 +33941,7 @@
       ],
       "recipeCost": 42,
       "partyDishIds": [
-        58
+        99
       ],
       "partyIds": [
         4
@@ -35672,7 +35680,7 @@
       ],
       "recipeCost": 93,
       "partyDishIds": [
-        19
+        20
       ],
       "partyIds": [
         1
@@ -35745,7 +35753,7 @@
       ],
       "recipeCost": 161,
       "partyDishIds": [
-        20
+        21
       ],
       "partyIds": [
         8
@@ -35828,8 +35836,8 @@
       ],
       "recipeCost": 91,
       "partyDishIds": [
-        21,
-        22
+        22,
+        23
       ],
       "partyIds": [
         6,
@@ -36172,8 +36180,8 @@
       "finalPrice": 1518,
       "finalTaste": 274,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 1,
       "ingredients": [
         {
@@ -36209,7 +36217,7 @@
       ],
       "recipeCost": 384,
       "partyDishIds": [
-        33
+        34
       ],
       "partyIds": [
         2
@@ -36220,7 +36228,7 @@
       "maxProfitPerServing": 5121,
       "upgradeCost": 6144,
       "ingredientCount": 9,
-      "search": "chirashi sushi mxmtoon mxmtoon collab green sea urchin bluefin tuna chutoro cuttlefish",
+      "search": "chirashi sushi  mxmtoon green sea urchin bluefin tuna chutoro cuttlefish",
       "sort": {
         "name": "chirashi sushi",
         "finalPrice": 1518,
@@ -36245,8 +36253,8 @@
       "finalPrice": 1507,
       "finalTaste": 277,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 9,
       "ingredients": [
         {
@@ -36282,7 +36290,7 @@
       ],
       "recipeCost": 318,
       "partyDishIds": [
-        34
+        35
       ],
       "partyIds": [
         1
@@ -36293,7 +36301,7 @@
       "maxProfitPerServing": 2855,
       "upgradeCost": 5160,
       "ingredientCount": 7,
-      "search": "cold jellyfish & green sea urchin salad mxmtoon mxmtoon collab green sea urchin box jellyfish sea grape",
+      "search": "cold jellyfish & green sea urchin salad  mxmtoon green sea urchin box jellyfish sea grape",
       "sort": {
         "name": "cold jellyfish & green sea urchin salad",
         "finalPrice": 1507,
@@ -36318,8 +36326,8 @@
       "finalPrice": 1518,
       "finalTaste": 275,
       "finalServings": 2,
-      "unlock": "mxmtoon Collab",
-      "dlc": "mxmtoon",
+      "unlock": "mxmtoon",
+      "dlc": null,
       "artisansFlames": 9,
       "ingredients": [
         {
@@ -36372,7 +36380,7 @@
       "maxProfitPerServing": 1398,
       "upgradeCost": 4233,
       "ingredientCount": 7,
-      "search": "deep-fried sea urchin mxmtoon mxmtoon collab kajime green sea urchin purple sea urchin olive oil",
+      "search": "deep-fried sea urchin  mxmtoon kajime green sea urchin purple sea urchin olive oil",
       "sort": {
         "name": "deep-fried sea urchin",
         "finalPrice": 1518,
@@ -36398,7 +36406,7 @@
       "finalTaste": 282,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "dlc": "mxmtoon",
+      "dlc": null,
       "artisansFlames": null,
       "ingredients": [
         {
@@ -36434,7 +36442,7 @@
       ],
       "recipeCost": 328,
       "partyDishIds": [
-        23
+        24
       ],
       "partyIds": [
         5
@@ -36445,7 +36453,7 @@
       "maxProfitPerServing": 3686,
       "upgradeCost": 5335,
       "ingredientCount": 7,
-      "search": "green sea urchin & cucumber salad mxmtoon jango shop green sea urchin cucumber buckbean",
+      "search": "green sea urchin & cucumber salad  jango shop green sea urchin cucumber buckbean",
       "sort": {
         "name": "green sea urchin & cucumber salad",
         "finalPrice": 1540,
@@ -36471,7 +36479,7 @@
       "finalTaste": 295,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "dlc": "Potion Craft",
+      "dlc": null,
       "artisansFlames": null,
       "ingredients": [
         {
@@ -36514,7 +36522,7 @@
       "maxProfitPerServing": 1168,
       "upgradeCost": 19488,
       "ingredientCount": 4,
-      "search": "rainbow cap eel skewers potion craft jango shop snub-nosed spiny eel soy sauce rainbow cap",
+      "search": "rainbow cap eel skewers  jango shop snub-nosed spiny eel soy sauce rainbow cap",
       "sort": {
         "name": "rainbow cap eel skewers",
         "finalPrice": 1606,
@@ -36540,7 +36548,7 @@
       "finalTaste": 290,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "dlc": "Potion Craft",
+      "dlc": null,
       "artisansFlames": null,
       "ingredients": [
         {
@@ -36593,7 +36601,7 @@
       "maxProfitPerServing": 1144,
       "upgradeCost": 18789,
       "ingredientCount": 6,
-      "search": "rainbow cap pacific fanfish ochazuke potion craft jango shop pacific fanfish rainbow cap kelp rice",
+      "search": "rainbow cap pacific fanfish ochazuke  jango shop pacific fanfish rainbow cap kelp rice",
       "sort": {
         "name": "rainbow cap pacific fanfish ochazuke",
         "finalPrice": 1562,
@@ -36618,8 +36626,8 @@
       "finalPrice": 1551,
       "finalTaste": 268,
       "finalServings": 2,
-      "unlock": "Potion Craft Collab",
-      "dlc": "Potion Craft",
+      "unlock": "Mushroomer",
+      "dlc": null,
       "artisansFlames": null,
       "ingredients": [
         {
@@ -36672,7 +36680,7 @@
       "maxProfitPerServing": 1162,
       "upgradeCost": 17749,
       "ingredientCount": 8,
-      "search": "rainbow cap triggerfish fishcake potion craft potion craft collab lagoon triggerfish grey triggerfish rainbow cap seaweed",
+      "search": "rainbow cap triggerfish fishcake  mushroomer lagoon triggerfish grey triggerfish rainbow cap seaweed",
       "sort": {
         "name": "rainbow cap triggerfish fishcake",
         "finalPrice": 1551,
@@ -36732,11 +36740,14 @@
         113,
         210,
         85,
+        302,
         102,
         103,
         118,
         133,
         158,
+        303,
+        304,
         204,
         234,
         235,
@@ -36747,6 +36758,10 @@
         209,
         40,
         127,
+        299,
+        300,
+        301,
+        305,
         65,
         172,
         170,
@@ -36803,14 +36818,6 @@
         216,
         231,
         184,
-        196,
-        257,
-        30,
-        31,
-        32,
-        252,
-        253,
-        254,
         2,
         3,
         4,
@@ -36831,6 +36838,9 @@
         27,
         28,
         29,
+        30,
+        31,
+        32,
         34,
         35,
         42,
@@ -36922,6 +36932,7 @@
         187,
         191,
         195,
+        196,
         199,
         201,
         202,
@@ -36946,7 +36957,11 @@
         245,
         248,
         250,
-        251
+        251,
+        252,
+        253,
+        254,
+        257
       ],
       "Dredge DLC": [
         258,
@@ -36988,17 +37003,6 @@
         292,
         293,
         294
-      ],
-      "mxmtoon": [
-        302,
-        299,
-        300,
-        301
-      ],
-      "Potion Craft": [
-        303,
-        304,
-        305
       ],
       "Ichiban DLC": [
         296,
@@ -37107,15 +37111,15 @@
         294
       ],
       "Jango Shop": [
-        302,
-        303,
-        304,
         85,
+        302,
         102,
         103,
         118,
         133,
         158,
+        303,
+        304,
         204,
         234,
         235,
@@ -37133,12 +37137,12 @@
         40,
         127
       ],
-      "mxmtoon Collab": [
+      "mxmtoon": [
         299,
         300,
         301
       ],
-      "Potion Craft Collab": [
+      "Mushroomer": [
         305
       ],
       "Staff Unlock": [
@@ -37347,8 +37351,8 @@
         233,
         243,
         210,
-        303,
         103,
+        303,
         204,
         40,
         298,
@@ -37771,26 +37775,6 @@
         294,
         78
       ],
-      "Green Sea Urchin": [
-        302,
-        299,
-        300,
-        301
-      ],
-      "Snub-nosed Spiny Eel": [
-        303,
-        103,
-        203
-      ],
-      "Rainbow Cap": [
-        303,
-        304,
-        305
-      ],
-      "Pacific Fanfish": [
-        304,
-        145
-      ],
       "Habanero": [
         85,
         103,
@@ -37807,6 +37791,12 @@
         158,
         60
       ],
+      "Green Sea Urchin": [
+        302,
+        299,
+        300,
+        301
+      ],
       "Antarctic Octopus": [
         102,
         5,
@@ -37818,6 +37808,11 @@
         235,
         236,
         37
+      ],
+      "Snub-nosed Spiny Eel": [
+        103,
+        303,
+        203
       ],
       "American Lobster": [
         118,
@@ -37861,6 +37856,15 @@
         221,
         136,
         147
+      ],
+      "Rainbow Cap": [
+        303,
+        304,
+        305
+      ],
+      "Pacific Fanfish": [
+        304,
+        145
       ],
       "Snow Crab": [
         204,
@@ -38182,12 +38186,6 @@
         184,
         242
       ],
-      "Mako Meat": [
-        196
-      ],
-      "Zebra Shark Meat": [
-        257
-      ],
       "Alaska Pollock": [
         2
       ],
@@ -38266,6 +38264,9 @@
       "Seadragon": [
         183
       ],
+      "Mako Meat": [
+        196
+      ],
       "Hammerhead Meat": [
         201
       ],
@@ -38286,6 +38287,9 @@
       ],
       "Yellow Tang": [
         250
+      ],
+      "Zebra Shark Meat": [
+        257
       ]
     }
   }

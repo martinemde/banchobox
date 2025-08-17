@@ -232,7 +232,7 @@ function validateRequiredColumns(
 }
 
 function loadDishes() {
-	const dishesCSV = readFileSync(join(__dirname, '..', '..', 'data', 'dishes.csv'), 'utf-8');
+	const dishesCSV = readFileSync(join(__dirname, '..', '..', 'data', 'dishes-data.csv'), 'utf-8');
 	const rawRecords = parseCsv(dishesCSV, {
 		columns: true,
 		skip_empty_lines: true,
@@ -255,9 +255,9 @@ function loadDishes() {
 			'artisans_flames',
 			'image'
 		],
-		'dishes.csv'
+		'dishes-data.csv'
 	);
-	const normalized = parseTable(dishesCSV, dishesRowSchema, 'dishes.csv');
+	const normalized = parseTable(dishesCSV, dishesRowSchema, 'dishes-data.csv');
 
 	const dishes: BasicDish[] = [];
 	const dishNameToId = new Map<string, Id>();
@@ -272,7 +272,7 @@ function loadDishes() {
 
 function loadIngredients() {
 	const ingredientsCSV = readFileSync(
-		join(__dirname, '..', '..', 'data', 'ingredients.csv'),
+		join(__dirname, '..', '..', 'data', 'ingredients-data.csv'),
 		'utf-8'
 	);
 	const rawRecords = parseCsv(ingredientsCSV, {
@@ -283,9 +283,9 @@ function loadIngredients() {
 	validateRequiredColumns(
 		rawRecords,
 		['id', 'name', 'source', 'type', 'kg', 'max_meats', 'sell', 'day', 'night', 'fog'],
-		'ingredients.csv'
+		'ingredients-data.csv'
 	);
-	const normalized = parseTable(ingredientsCSV, ingredientsRowSchema, 'ingredients.csv');
+	const normalized = parseTable(ingredientsCSV, ingredientsRowSchema, 'ingredients-data.csv');
 
 	const ingredients: BasicIngredient[] = [];
 	const ingredientNameToId = new Map<string, Id>();
@@ -299,14 +299,14 @@ function loadIngredients() {
 }
 
 function loadParties() {
-	const partiesCSV = readFileSync(join(__dirname, '..', '..', 'data', 'parties.csv'), 'utf-8');
+	const partiesCSV = readFileSync(join(__dirname, '..', '..', 'data', 'parties-data.csv'), 'utf-8');
 	const rawRecords = parseCsv(partiesCSV, {
 		columns: true,
 		skip_empty_lines: true,
 		trim: true
 	}) as Array<Record<string, string>>;
-	validateRequiredColumns(rawRecords, ['id', 'order', 'name', 'bonus'], 'parties.csv');
-	const normalized = parseTable(partiesCSV, partiesRowSchema, 'parties.csv');
+	validateRequiredColumns(rawRecords, ['id', 'order', 'name', 'bonus'], 'parties-data.csv');
+	const normalized = parseTable(partiesCSV, partiesRowSchema, 'parties-data.csv');
 
 	const parties: Party[] = [];
 	const partyNameToId = new Map<string, Id>();
@@ -330,7 +330,7 @@ function loadRelationships(
 ) {
 	// Load party-dish relationships
 	const partyDishesCSV = readFileSync(
-		join(__dirname, '..', '..', 'data', 'party-dishes.csv'),
+		join(__dirname, '..', '..', 'data', 'party-dishes-data.csv'),
 		'utf-8'
 	);
 	const rawPartyDishRecords = parseCsv(partyDishesCSV, {
@@ -338,8 +338,8 @@ function loadRelationships(
 		skip_empty_lines: true,
 		trim: true
 	}) as Array<Record<string, string>>;
-	validateRequiredColumns(rawPartyDishRecords, ['party', 'dish'], 'party-dishes.csv');
-	const partyDishRows = parseTable(partyDishesCSV, partyDishesRowSchema, 'party-dishes.csv');
+	validateRequiredColumns(rawPartyDishRecords, ['party', 'dish'], 'party-dishes-data.csv');
+	const partyDishRows = parseTable(partyDishesCSV, partyDishesRowSchema, 'party-dishes-data.csv');
 
 	const dishParties: DishParty[] = [];
 	for (const row of partyDishRows) {
@@ -357,7 +357,7 @@ function loadRelationships(
 
 	// Load dish-ingredient relationships
 	const dishIngredientsCSV = readFileSync(
-		join(__dirname, '..', '..', 'data', 'dish-ingredients.csv'),
+		join(__dirname, '..', '..', 'data', 'dish-ingredients-data.csv'),
 		'utf-8'
 	);
 	const rawDishIngRecords = parseCsv(dishIngredientsCSV, {
@@ -368,12 +368,12 @@ function loadRelationships(
 	validateRequiredColumns(
 		rawDishIngRecords,
 		['dish', 'count', 'ingredient', 'levels', 'upgrade_count'],
-		'dish-ingredients.csv'
+		'dish-ingredients-data.csv'
 	);
 	const dishIngredientRows = parseTable(
 		dishIngredientsCSV,
 		dishIngredientsRowSchema,
-		'dish-ingredients.csv'
+		'dish-ingredients-data.csv'
 	);
 
 	const dishIngredients: DishIngredient[] = [];
