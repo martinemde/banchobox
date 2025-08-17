@@ -9,11 +9,17 @@
 
 <div class="mb-2 flex items-center justify-between">
 	<h2 class="text-sm font-semibold">Tracking</h2>
-	<a href="/tracking" class="text-sm text-primary-600 hover:underline">Open</a>
+	{#if tracked.length > 0}
+		<a href="/tracking" class="text-sm text-primary-600 hover:underline">View all</a>
+	{/if}
 </div>
 
 {#if tracked.length === 0}
-	<p class="text-sm opacity-70">Nothing tracked yet.</p>
+	<p class="text-sm opacity-70">
+		When you click the 'Track' button under a dish, the dish will be shown here and a summary of its
+		ingredients will be provided. Use it to track the dishes you're currently upgrading or need for
+		a party.
+	</p>
 {:else}
 	<ul class="space-y-2">
 		{#each tracked as t}
