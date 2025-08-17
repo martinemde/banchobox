@@ -1,25 +1,21 @@
 <script lang="ts">
-  import type { Dish } from '$lib/types.js';
-  import IngredientTypeCount from './IngredientTypeCount.svelte';
+	import type { Dish } from '$lib/types.js';
+	import IngredientTypeCount from './IngredientTypeCount.svelte';
 
-  let { dish } = $props<{ dish: Dish }>();
+	let { dish } = $props<{ dish: Dish }>();
 
-  let items = $derived(
-    dish.ingredients.map((ing: Dish['ingredients'][number]) => ({
-      type: ing.type,
-      count: ing.count
-    }))
-  );
+	let items = $derived(
+		dish.ingredients.map((ing: Dish['ingredients'][number]) => ({
+			type: ing.type,
+			count: ing.count
+		}))
+	);
 </script>
 
-<div class="flex flex-wrap gap-2 items-center pr-10 text-xs opacity-80">
-  {#each items as row}
-    <span class="inline-flex items-center gap-1">
-      <IngredientTypeCount type={row.type} count={row.count} size={16} />
-    </span>
-  {/each}
+<div class="flex flex-wrap items-center gap-2 pr-10 text-xs opacity-80">
+	{#each items as row}
+		<span class="inline-flex items-center gap-1">
+			<IngredientTypeCount type={row.type} count={row.count} size={16} />
+		</span>
+	{/each}
 </div>
-
-
-
-

@@ -2,26 +2,26 @@
 	import Header from './Header.svelte';
 	import '../app.css';
 	import type { LayoutProps } from './$types';
-  import { get } from 'svelte/store';
-  import { bundle as dishesBundleStore } from '$lib/stores/dishes';
-  import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
-  import { bundle as partiesBundleStore } from '$lib/stores/parties';
-  import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
+	import { get } from 'svelte/store';
+	import { bundle as dishesBundleStore } from '$lib/stores/dishes';
+	import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
+	import { bundle as partiesBundleStore } from '$lib/stores/parties';
+	import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
 
 	let { children, data }: LayoutProps = $props();
-  // One-time initialization (works in SSR and client): set only if store is empty
-  if (data.dishes && get(dishesBundleStore) == null) {
-    dishesBundleStore.set(data.dishes as any);
-  }
-  if (data.ingredients && get(ingredientsBundleStore) == null) {
-    ingredientsBundleStore.set(data.ingredients as any);
-  }
-  if (data.parties && get(partiesBundleStore) == null) {
-    partiesBundleStore.set(data.parties as any);
-  }
-  if (data.partyDishes && get(partyDishesBundleStore) == null) {
-    partyDishesBundleStore.set(data.partyDishes as any);
-  }
+	// One-time initialization (works in SSR and client): set only if store is empty
+	if (data.dishes && get(dishesBundleStore) == null) {
+		dishesBundleStore.set(data.dishes as any);
+	}
+	if (data.ingredients && get(ingredientsBundleStore) == null) {
+		ingredientsBundleStore.set(data.ingredients as any);
+	}
+	if (data.parties && get(partiesBundleStore) == null) {
+		partiesBundleStore.set(data.parties as any);
+	}
+	if (data.partyDishes && get(partyDishesBundleStore) == null) {
+		partyDishesBundleStore.set(data.partyDishes as any);
+	}
 </script>
 
 <div class="app">
