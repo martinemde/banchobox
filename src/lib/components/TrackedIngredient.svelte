@@ -93,7 +93,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each usages as row}
+						{#each usages as row (row.dish.id)}
 							<tr class="border-b border-surface-200-800">
 								<td class="p-2">{row.dish.name}</td>
 								<td class="p-2 text-center tabular-nums">{row.qty}</td>

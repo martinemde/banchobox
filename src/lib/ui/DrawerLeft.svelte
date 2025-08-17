@@ -30,7 +30,9 @@
 		if (lastActive instanceof HTMLElement) {
 			try {
 				lastActive.focus({ preventScroll: true });
-			} catch {}
+			} catch {
+				/* ignore restore focus errors */
+			}
 		}
 	}
 </script>

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import SortControl from '$lib/ui/SortControl.svelte';
 	import PartyDish from '$lib/components/PartyDishCard.svelte';
 	import { createPartyDishesStores } from '$lib/stores/partyDishes.js';
 	import type { EnrichedParty, Id, PartyDish as PartyDishRow } from '$lib/types.js';
@@ -13,19 +12,7 @@
 	};
 
 	const stores = createPartyDishesStores(subBundle);
-	const queryStore = stores.query;
-	const sortKeyStore = stores.sortKey;
-	const sortDirStore = stores.sortDir;
 	const visibleStore = stores.visible;
-
-	const dishSortOptions = [
-		{ value: 'dishName', label: 'Dish Name' },
-		{ value: 'partyPrice', label: 'Price' },
-		{ value: 'partyRevenue', label: 'Revenue' },
-		{ value: 'recipeCost', label: 'Recipe Cost' },
-		{ value: 'profit', label: 'Profit' },
-		{ value: 'profitPerServing', label: 'Profit / Serving' }
-	];
 </script>
 
 <section class="mt-6">

@@ -7,20 +7,21 @@
 	import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
 	import { bundle as partiesBundleStore } from '$lib/stores/parties';
 	import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
+	import type { EntityBundle, Dish, Ingredient, EnrichedParty, PartyDish } from '$lib/types.js';
 
 	let { children, data }: LayoutProps = $props();
 	// One-time initialization (works in SSR and client): set only if store is empty
 	if (data.dishes && get(dishesBundleStore) == null) {
-		dishesBundleStore.set(data.dishes as any);
+		dishesBundleStore.set(data.dishes as EntityBundle<Dish>);
 	}
 	if (data.ingredients && get(ingredientsBundleStore) == null) {
-		ingredientsBundleStore.set(data.ingredients as any);
+		ingredientsBundleStore.set(data.ingredients as EntityBundle<Ingredient>);
 	}
 	if (data.parties && get(partiesBundleStore) == null) {
-		partiesBundleStore.set(data.parties as any);
+		partiesBundleStore.set(data.parties as EntityBundle<EnrichedParty>);
 	}
 	if (data.partyDishes && get(partyDishesBundleStore) == null) {
-		partyDishesBundleStore.set(data.partyDishes as any);
+		partyDishesBundleStore.set(data.partyDishes as EntityBundle<PartyDish>);
 	}
 </script>
 

@@ -4,41 +4,10 @@
 	import { PartyPopper, Soup, ClipboardList, Shrimp } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 
-	let isHidden = false;
-	let lastScrollY = 0;
-	let isTicking = false;
 	let appBarHeight = 64;
 	let appBarEl: HTMLElement;
 
-	function handleRafUpdate() {
-		const currentScrollY = window.scrollY || 0;
-		const deltaY = currentScrollY - lastScrollY;
-
-		const minDeltaToToggle = 4;
-		const topGuard = 32; // never hide near the very top
-
-		if (Math.abs(deltaY) > minDeltaToToggle) {
-			if (deltaY > 0 && currentScrollY > topGuard) {
-				isHidden = true; // scrolling down
-			} else {
-				isHidden = false; // scrolling up
-			}
-			lastScrollY = currentScrollY;
-		}
-
-		isTicking = false;
-	}
-
-	function onScroll() {
-		if (!isTicking) {
-			window.requestAnimationFrame(handleRafUpdate);
-			isTicking = true;
-		}
-	}
-
 	onMount(() => {
-		lastScrollY = window.scrollY || 0;
-		window.addEventListener('scroll', onScroll, { passive: true });
 		// Measure and track AppBar height so spacer matches exactly
 		const measure = () => {
 			if (appBarEl) appBarHeight = appBarEl.offsetHeight || appBarHeight;
@@ -46,12 +15,12 @@
 		measure();
 		const ro = new ResizeObserver(measure);
 		if (appBarEl) ro.observe(appBarEl);
-		return () => window.removeEventListener('scroll', onScroll);
+		return () => ro.disconnect();
 	});
 </script>
 
 <div class="appbar" style={`--appbar-height: ${appBarHeight}px`}>
-	<div class="appbar-inner" class:hidden={isHidden} bind:this={appBarEl}>
+	<div class="appbar-inner" bind:this={appBarEl}>
 		<AppBar>
 			{#snippet lead()}
 				<h3 class="text-2xl font-bold text-primary-500">
@@ -119,19 +88,8 @@
 	}
 
 	.appbar-inner {
-		transition: transform 200ms ease-in-out;
-		will-change: transform;
-	}
-
-	.appbar-inner.hidden {
-		transform: translateY(-100%);
-		pointer-events: none;
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.appbar-inner {
-			transition: none;
-		}
+		transition: none;
+		will-change: auto;
 	}
 
 	.appbar-spacer {

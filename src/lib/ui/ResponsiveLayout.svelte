@@ -8,8 +8,7 @@
 		right,
 		title,
 		leftTitle = 'Filters & sort',
-		containerClass = '',
-		scrollMode = 'container'
+		containerClass = ''
 	}: {
 		left?: Snippet;
 		content?: Snippet;
@@ -17,14 +16,13 @@
 		title?: Snippet;
 		leftTitle?: string;
 		containerClass?: string;
-		scrollMode?: 'container' | 'page';
 	} = $props();
 
 	// Bits UI Dialog manages its own open state via Trigger/Close
 </script>
 
-<div class="flex-1 px-4 py-6 {scrollMode === 'container' ? 'md:h-[100dvh]' : ''} {containerClass}">
-	<div class="md:flex md:gap-6 {scrollMode === 'container' ? 'md:h-[calc(100dvh-3rem)]' : ''}">
+<div class="flex-1 px-4 py-6 {containerClass}">
+	<div class="md:flex md:gap-6">
 		<Dialog.Root>
 			<div class="mb-4 md:hidden">
 				<Dialog.Trigger class="btn w-full preset-filled btn-lg">
@@ -57,26 +55,18 @@
 			</Dialog.Portal>
 		</Dialog.Root>
 
-		<aside
-			class="hidden md:block md:w-72 md:shrink-0 {scrollMode === 'container'
-				? 'md:h-full md:overflow-auto'
-				: ''}"
-		>
+		<aside class="hidden md:block md:w-72 md:shrink-0">
 			<div class="top-0 h-full border-r border-white/10 px-4">
 				{@render left!()}
 			</div>
 		</aside>
 
-		<section class="md:min-w-0 {scrollMode === 'container' ? 'md:h-full' : ''}">
+		<section class="md:min-w-0">
 			{@render content!()}
 		</section>
 
 		{#if right}
-			<aside
-				class="hidden md:shrink-0 lg:block lg:w-64 {scrollMode === 'container'
-					? 'md:h-full md:overflow-auto'
-					: ''}"
-			>
+			<aside class="hidden md:shrink-0 lg:block lg:w-64">
 				{@render right!()}
 			</aside>
 		{/if}

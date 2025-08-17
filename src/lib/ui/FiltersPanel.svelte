@@ -1,17 +1,7 @@
 <script lang="ts">
-	import SortControl from '$lib/ui/SortControl.svelte';
 	import type { Readable, Writable } from 'svelte/store';
+	import { SvelteSet } from 'svelte/reactivity';
 	import type { EntityBundle, Id } from '$lib/types.js';
-
-	const defaultSortOptions = [
-		{ value: 'name', label: 'Recipe' },
-		{ value: 'finalPrice', label: 'Final Price' },
-		{ value: 'finalServings', label: 'Final Servings' },
-		{ value: 'finalProfitPerServing', label: 'Profit / Serving' },
-		{ value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
-		{ value: 'upgradeCost', label: 'Upgrade Cost' },
-		{ value: 'ingredientCount', label: 'Ingredients' }
-	];
 
 	let {
 		bundle,
@@ -19,15 +9,13 @@
 		query = $bindable(''),
 		sortKey = $bindable<string>('finalProfitPerServing'),
 		sortDir = $bindable<'asc' | 'desc'>('desc'),
-		sortOptions,
 		searchPlaceholder
 	}: {
-		bundle: Readable<EntityBundle<any> | null>;
+		bundle: Readable<EntityBundle<{ id: Id; sort: Record<string, string | number | null> }> | null>;
 		filters: Writable<Record<string, Set<string>>>;
 		query?: string;
 		sortKey?: string;
 		sortDir?: 'asc' | 'desc';
-		sortOptions?: Array<{ value: string; label: string }>;
 		searchPlaceholder?: string;
 	} = $props();
 
@@ -38,7 +26,7 @@
 	function toggleFacet(facet: string, value: string, checked: boolean) {
 		filters.update((current: Record<string, Set<string>>) => {
 			const next: Record<string, Set<string>> = { ...current };
-			const set = new Set(next[facet] ?? []);
+			const set = new SvelteSet(next[facet] ?? []);
 			if (checked) set.add(value);
 			else set.delete(value);
 			if (set.size > 0) next[facet] = set;
@@ -112,7 +100,7 @@
 		</div>
 	</div>
 
-	{#each facetEntries as [facetName, facetIndex], i}
+	{#each facetEntries as [facetName, facetIndex] (facetName)}
 		<fieldset class="space-y-1">
 			<legend class="text-sm font-semibold">
 				<button
@@ -128,7 +116,7 @@
 			</legend>
 			{#if expanded[facetName]}
 				<div id={facetPanelId(facetName)} class="space-y-1">
-					{#each sortedFacetKeys[facetName] ?? [] as key}
+					{#each sortedFacetKeys[facetName] ?? [] as key (key)}
 						<label class="flex items-center gap-2 text-sm">
 							<input
 								type="checkbox"

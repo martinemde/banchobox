@@ -10,22 +10,25 @@
 	import PixelIcon from '../ui/PixelIcon.svelte';
 	import tasteImage from '$lib/images/ui/sort_taste.png';
 	import levelImage from '$lib/images/ui/sort_level.png';
+	import servingsImage from '$lib/images/ui/sort_servings.png';
 
 	let { dish } = $props<{ dish: Dish }>();
 
 	// Fixed width for thumbnail to match default card format
 	const thumbPx = 96;
-	const iconPx = 16;
+	const iconPx = 12;
 
 	// Lazy-load recipe panel when user first expands the accordion
-	let LazyRecipePanel: any = $state(null);
+	type RecipePanelComponent = typeof import('./RecipePanel.svelte').default;
+	let LazyRecipePanel: RecipePanelComponent | null = $state(null);
 	function ensureRecipePanelLoaded() {
 		if (!LazyRecipePanel) {
 			import('./RecipePanel.svelte').then((m) => (LazyRecipePanel = m.default));
 		}
 	}
 
-	let LazyPartyDishPanel: any = $state(null);
+	type PartyDishPanelComponent = typeof import('./PartyDishPanel.svelte').default;
+	let LazyPartyDishPanel: PartyDishPanelComponent | null = $state(null);
 	function ensurePartyDishPanelLoaded() {
 		if (!LazyPartyDishPanel) {
 			import('./PartyDishPanel.svelte').then((m) => (LazyPartyDishPanel = m.default));
@@ -53,8 +56,8 @@
 	// Controlled accordion value, trigger lazy load via onValueChange (Skeleton docs)
 	let value = $state<string[]>([]);
 
-	function onAccordionValueChange(e: any) {
-		const next = e.value as string[];
+	function onAccordionValueChange(e: { value: string[] }) {
+		const next = e.value;
 		value = next;
 		if (next?.includes('recipe')) ensureRecipePanelLoaded();
 		if (next?.some((v) => typeof v === 'string' && v.startsWith('party-')))
@@ -79,32 +82,6 @@
 						<TrackButton checked={isTracked} on:change={onTrackChange} />
 					{/if}
 				</div>
-
-				<div class="flex items-center gap-1 text-center">
-					<img
-						class="h-4 w-4 object-contain"
-						src={levelImage}
-						alt="Max Level"
-						loading="lazy"
-						decoding="async"
-						width={iconPx}
-						height={iconPx}
-					/>
-					<span class="font-semibold">{dish.maxLevel}</span>
-				</div>
-
-				<div class="flex items-center gap-1 text-center">
-					<img
-						class="h-4 w-4 object-contain"
-						src={tasteImage}
-						alt="Taste"
-						loading="lazy"
-						decoding="async"
-						width={iconPx}
-						height={iconPx}
-					/>
-					<span class="font-semibold">{dish.finalTaste}</span>
-				</div>
 			</div>
 
 			<div class="min-w-0 flex-1 space-y-4">
@@ -112,6 +89,49 @@
 					<div class="truncate text-base font-semibold">{dish.name}</div>
 					<div class="mt-0.5 truncate text-sm opacity-70">{dish.unlock || '—'}</div>
 				</header>
+
+				<div class="flex items-center gap-x-3 text-center">
+					<span class="opacity-70">Max:</span>
+
+					<span>
+						<img
+							class="inline-block h-4 w-4 object-contain align-text-bottom"
+							src={levelImage}
+							alt="Max Level"
+							loading="lazy"
+							decoding="async"
+							width={iconPx}
+							height={iconPx}
+						/>
+						<span>{dish.maxLevel}</span>
+					</span>
+
+					<span>
+						<img
+							class="inline-block h-4 w-4 object-contain align-text-bottom"
+							src={tasteImage}
+							alt="Taste"
+							loading="lazy"
+							decoding="async"
+							width={iconPx}
+							height={iconPx}
+						/>
+						<span>{dish.finalTaste}</span>
+					</span>
+
+					<span>
+						<img
+							class="inline-block h-4 w-4 object-contain align-text-bottom"
+							src={servingsImage}
+							alt="Servings"
+							loading="lazy"
+							decoding="async"
+							width={iconPx}
+							height={iconPx}
+						/>
+						<span>{dish.finalServings}</span>
+					</span>
+				</div>
 
 				<ProfitTable {dish} />
 			</div>

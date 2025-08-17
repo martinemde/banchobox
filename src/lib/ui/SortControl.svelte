@@ -44,7 +44,7 @@
 		onchange={handleSelectChange}
 		aria-label="Sort by"
 	>
-		{#each options as opt}
+		{#each options as opt (opt.value)}
 			<option value={opt.value}>{opt.label}</option>
 		{/each}
 	</select>

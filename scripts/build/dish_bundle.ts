@@ -7,7 +7,7 @@ export function buildDishesBundle(dishes: Dish[]): EntityBundle<Dish> {
 	// Facets - minimal set to start; structure is easy to extend
 	const facets: EntityBundle<Dish>['facets'] = {
 		DLC: {},
-		Unlock: {},
+		'Unlock Condition': {},
 		Ingredient: {}
 	};
 
@@ -18,9 +18,9 @@ export function buildDishesBundle(dishes: Dish[]): EntityBundle<Dish> {
 		const unlockVal = (d.unlock ?? '').toString();
 		if (unlockVal) {
 			if (unlockVal.startsWith('Staff ')) {
-				(facets['Unlock']['Staff Unlock'] ??= []).push(d.id);
+				(facets['Unlock Condition']['Staff Unlock'] ??= []).push(d.id);
 			} else {
-				(facets['Unlock'][unlockVal] ??= []).push(d.id);
+				(facets['Unlock Condition'][unlockVal] ??= []).push(d.id);
 			}
 		}
 

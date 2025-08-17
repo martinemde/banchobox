@@ -13,7 +13,7 @@
 </script>
 
 <div class="flex flex-wrap items-center gap-2 pr-10 text-xs opacity-80">
-	{#each items as row}
+	{#each items as row (row.type)}
 		<span class="inline-flex items-center gap-1">
 			<IngredientTypeCount type={row.type} count={row.count} size={16} />
 		</span>

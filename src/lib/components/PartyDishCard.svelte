@@ -16,17 +16,9 @@
 	// Fixed width for thumbnail and track button
 	const thumbPx = 96; // 96px (~size-24)
 
-	let ingredientSummaries = $derived(
-		dish.ingredients.map((ing: Dish['ingredients'][number]) => {
-			return {
-				count: ing.count,
-				type: ing.type
-			};
-		})
-	);
-
 	// Lazy-load recipe panel when user first expands the accordion
-	let LazyRecipePanel: any = $state(null);
+	type RecipePanelComponent = typeof import('./RecipePanel.svelte').default;
+	let LazyRecipePanel: RecipePanelComponent | null = $state(null);
 	function ensureRecipePanelLoaded() {
 		if (!LazyRecipePanel) {
 			import('./RecipePanel.svelte').then((m) => (LazyRecipePanel = m.default));

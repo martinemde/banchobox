@@ -3,6 +3,7 @@
 	import type { Readable } from 'svelte/store';
 
 	type SortDirection = 'asc' | 'desc';
+	type RowLike = { id: number };
 
 	let {
 		visible,
@@ -11,7 +12,7 @@
 		sortDir = $bindable<SortDirection>('asc'),
 		sortOptions = [] as Array<{ value: string; label: string }>
 	}: {
-		visible: Readable<any[]>;
+		visible: Readable<RowLike[]>;
 		entityLabel?: string;
 		sortKey?: string;
 		sortDir?: SortDirection;

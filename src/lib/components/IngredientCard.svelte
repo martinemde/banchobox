@@ -13,7 +13,8 @@
 	const thumbPx = 96;
 
 	// Lazy-load recipes table only when opened
-	let LazyRecipesTable: any = $state(null);
+	type RecipesTableComponent = typeof import('./IngredientRecipesTable.svelte').default;
+	let LazyRecipesTable: RecipesTableComponent | null = $state(null);
 	function ensureRecipesTableLoaded() {
 		if (!LazyRecipesTable) {
 			import('./IngredientRecipesTable.svelte').then((m) => (LazyRecipesTable = m.default));
@@ -22,8 +23,8 @@
 
 	// Controlled accordion value
 	let value = $state<string[]>([]);
-	function onAccordionValueChange(e: any) {
-		value = e?.value as string[];
+	function onAccordionValueChange(e: { value?: unknown }) {
+		value = (e?.value as string[]) ?? [];
 		if (Array.isArray(value) && value.includes('recipes')) ensureRecipesTableLoaded();
 	}
 
@@ -109,7 +110,7 @@
 				{#if ingredient.vendors != null && Object.keys(ingredient.vendors).length > 0}
 					<div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
 						<span>Buy:</span>
-						{#each Object.entries(ingredient.vendors) as [vendor, price]}
+						{#each Object.entries(ingredient.vendors) as [vendor, price] (vendor)}
 							<span>{formatNumber(price)} ({vendor})</span>
 						{/each}
 					</div>

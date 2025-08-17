@@ -35937,7 +35937,7 @@
 			"Potion Craft": [303, 304, 305],
 			"Ichiban DLC": [296, 295, 298, 297]
 		},
-		"Unlock": {
+		"Unlock Condition": {
 			"Boss": [24, 38, 48, 93, 123, 151, 173, 211, 212, 217, 240, 249, 256],
 			"Cooksta Bronze Rank": [1, 41, 179, 190],
 			"Cooksta Diamond Rank": [72, 95, 140, 169],

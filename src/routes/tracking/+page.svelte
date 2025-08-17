@@ -5,9 +5,11 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
-	const dishes = $derived(((data as any).dishesBundle?.rows ?? []) as Dish[]);
-	const ingredients = $derived(((data as any).ingredients?.rows ?? []) as Ingredient[]);
-	const dishById = $derived(new Map<Id, Dish>((dishes as Dish[]).map((d: Dish) => [d.id, d])));
+	const dishes = $derived((data.dishes as { rows: Dish[] } | undefined)?.rows ?? []);
+	const ingredients = $derived(
+		(data.ingredients as { rows: Ingredient[] } | undefined)?.rows ?? []
+	);
+	const dishById = $derived(new Map<Id, Dish>(dishes.map((d) => [d.id, d] as [Id, Dish])));
 
 	// Ingredients from tracked dishes
 	const ingredientIdsFromTrackedDishes = $derived(

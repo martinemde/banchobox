@@ -3,12 +3,11 @@
 
 // Minimal SvelteKit client globals for route component tests
 declare global {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	var __SVELTEKIT_PAYLOAD__: any | undefined;
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	interface Window {
-		__SVELTEKIT_PAYLOAD__?: any;
+		__SVELTEKIT_PAYLOAD__?: unknown;
 	}
+	// eslint-disable-next-line no-var
+	var __SVELTEKIT_PAYLOAD__: unknown | undefined;
 }
 
 if (typeof globalThis.__SVELTEKIT_PAYLOAD__ === 'undefined') {

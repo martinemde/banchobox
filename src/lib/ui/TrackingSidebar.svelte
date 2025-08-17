@@ -16,7 +16,7 @@
 	<p class="text-sm opacity-70">Nothing tracked yet.</p>
 {:else}
 	<ul class="space-y-2">
-		{#each tracked as t}
+		{#each tracked as t (t.id)}
 			<li class="rounded-lg border border-surface-500 p-2">
 				<div class="truncate text-sm font-medium">{t.name}</div>
 				<div class="mt-1 flex items-center justify-between text-xs opacity-70">

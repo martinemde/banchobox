@@ -7,19 +7,6 @@
 	import PartyGroup from '$lib/components/PartyGroup.svelte';
 
 	const { query, sortKey, sortDir, visible, filters, bundle } = partiesStores;
-	let dishSearch = $state('');
-
-	const dishSortOptions = [
-		{ value: 'dishName', label: 'Dish Name' },
-		{ value: 'partyPrice', label: 'Price' },
-		{ value: 'partyRevenue', label: 'Revenue' },
-		{ value: 'recipeCost', label: 'Recipe Cost' },
-		{ value: 'profit', label: 'Profit' },
-		{ value: 'profitPerServing', label: 'Profit / Serving' }
-	];
-
-	// handled by ResponsiveLayout
-	let filtersDialogRef: HTMLDialogElement | null = $state(null);
 </script>
 
 <svelte:head>

@@ -37,7 +37,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each ingredientRows as row}
+			{#each ingredientRows as row (row.name)}
 				<tr class="border-b border-surface-200-800">
 					<td class="w-8 pl-4">
 						<div class="relative" style="width: 32px; height: 32px">
