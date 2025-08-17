@@ -53,9 +53,8 @@
 			.filter((x: PartyDishMeta | null): x is PartyDishMeta => x !== null)
 	);
 
-	// Controlled accordion value, trigger lazy load via onValueChange (Skeleton docs)
+	// Controlled accordion value; use bind and react to changes
 	let value = $state<string[]>([]);
-
 	function onAccordionValueChange(e: { value: string[] }) {
 		const next = e.value;
 		value = next;

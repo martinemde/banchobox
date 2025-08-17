@@ -4,12 +4,16 @@
 
 	let { dish } = $props<{ dish: Dish }>();
 
-	let items = $derived(
-		dish.ingredients.map((ing: Dish['ingredients'][number]) => ({
-			type: ing.type,
-			count: ing.count
-		}))
-	);
+	let items = $derived.by(() => {
+		const byType = new Map<string, { type: string; count: number }>();
+		for (const ing of dish.ingredients) {
+			const key = ing.type as string;
+			const existing = byType.get(key);
+			if (existing) existing.count += ing.count;
+			else byType.set(key, { type: key, count: ing.count });
+		}
+		return Array.from(byType.values());
+	});
 </script>
 
 <div class="flex flex-wrap items-center gap-2 pr-10 text-xs opacity-80">
