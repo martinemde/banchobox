@@ -3,6 +3,7 @@
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
+	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 
 	// Data from stores
 	const dishes = $derived($dishesBundle?.rows ?? []);
@@ -22,12 +23,12 @@
 		const bonus = d.partyBonus ?? 1;
 		return finalPps * bonus;
 	}
-	const topPartyDishes = $derived(partyRows.toSorted((a, b) => computePartyProfitPerServing(b) - computePartyProfitPerServing(a)).slice(0, 3));
+	const selectedPartyDishes = $derived(partyRows.toSorted((a, b) => computePartyProfitPerServing(a) - computePartyProfitPerServing(b)).slice(0, 3));
 
 	// Aggregate ingredient needs for the demo's top dishes
 	const demoIngredientList: Array<[string, number]> = $derived((() => {
 		const map = new Map<string, number>();
-		for (const d of topPartyDishes) {
+		for (const d of selectedPartyDishes) {
 			for (const ing of d.ingredients ?? []) {
 				const key = ing.name as string;
 				map.set(key, (map.get(key) ?? 0) + (ing.count ?? 0));
@@ -68,30 +69,33 @@
 					<div class="grid grid-cols-3 gap-3">
 						<div class="stat">
 							<div class="label">Cooksta</div>
-							<div class="value text-primary-500">A</div>
+							<div class="value text-warning-500">Gold</div>
 						</div>
 						<div class="stat">
 							<div class="label">Menu</div>
-							<div class="value">{topPartyDishes.length} dishes</div>
+							<div class="value">{selectedPartyDishes.length} dishes</div>
 						</div>
 						<div class="stat">
 							<div class="label">Profit</div>
 							<div class="value">
-								{Math.round(topPartyDishes.reduce((s, d) => s + computePartyProfitPerServing(d), 0))}G
+								{Math.round(selectedPartyDishes.reduce((s, d) => s + computePartyProfitPerServing(d), 0))}G
 							</div>
 						</div>
 					</div>
 					<div class="mt-4">
 						<div class="mb-2 text-sm font-semibold">{selectedParty?.name ?? 'Party'} Bonus</div>
-						<div class="flex items-center gap-2">
-							{#each topPartyDishes as d}
+						<div class="flex items-start gap-2">
+							{#each selectedPartyDishes as d}
 								<div class="flex-1">
+									<div class="flex justify-between text-xs opacity-80">
+										<PixelIcon image={d.image} alt={d.name} uiScale={1.5} />
+									</div>
 									<div class="flex justify-between text-xs opacity-80">
 										<span>{d.name}</span>
 										<span>{Math.round(computePartyProfitPerServing(d))}G/serv</span>
 									</div>
 									<div class="h-2 rounded bg-surface-300">
-										<div class="h-2 rounded bg-primary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(topPartyDishes[0]) || 1)) * 100)}%`}></div>
+										<div class="h-2 rounded bg-primary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}></div>
 									</div>
 								</div>
 							{/each}
@@ -109,19 +113,19 @@
 	<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
 			<div class="title">Cooksta Rank</div>
-			<div class="value">A (example)</div>
+			<div class="value">Silver</div>
 		</div>
 		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
 			<div class="title">Story Progress</div>
-			<div class="value">Chapter 3 (example)</div>
+			<div class="value">Chapter 3</div>
 		</div>
 		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
 			<div class="title">Next Party</div>
-			<div class="value">{selectedParty?.name ?? '—'} (+{selectedParty?.bonus ?? 0}x)</div>
+			<div class="value">{selectedParty?.name ?? '—'} ({selectedParty?.bonus ?? 0}x bonus)</div>
 		</div>
 		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
 			<div class="title">DLCs</div>
-			<div class="value">Base + DLC (auto-detected)</div>
+			<div class="value">Pick your DLCs</div>
 		</div>
 	</div>
 </section>
@@ -134,14 +138,14 @@
 			<h3 class="mb-2 text-lg font-semibold">Profitability Analyzer</h3>
 			<p class="mb-4 text-sm opacity-80">Which dish actually makes you the most money?</p>
 			<div class="space-y-2">
-				{#each topPartyDishes as d}
+				{#each selectedPartyDishes as d}
 					<div>
 						<div class="flex justify-between text-xs opacity-80">
 							<span>{d.name}</span>
 							<span>{Math.round(computePartyProfitPerServing(d))}G/serv</span>
 						</div>
 						<div class="h-2 rounded bg-surface-300">
-							<div class="h-2 rounded bg-secondary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(topPartyDishes[0]) || 1)) * 100)}%`}></div>
+							<div class="h-2 rounded bg-secondary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}></div>
 						</div>
 					</div>
 				{/each}
@@ -162,7 +166,7 @@
 			<div class="rounded-lg border border-white/10 p-4 text-sm">
 				<div class="mb-2 font-semibold">Tonight’s Menu (preview)</div>
 				<ul class="space-y-1">
-					{#each topPartyDishes as d}
+					{#each selectedPartyDishes as d}
 						<li class="flex items-center justify-between">
 							<span>{d.name}</span>
 							<span class="opacity-70">+{Math.round(computePartyProfitPerServing(d))}G/serv</span>
@@ -199,12 +203,12 @@
 			</div>
 		{:else if demoStep === 2}
 			<div class="grid gap-4 md:grid-cols-3">
-				{#each topPartyDishes as d}
+				{#each selectedPartyDishes as d}
 					<div class="rounded-lg border border-white/10 p-4">
 						<div class="mb-1 text-sm font-semibold">{d.name}</div>
 						<div class="text-xs opacity-70">Profit: {Math.round(computePartyProfitPerServing(d))}G/serv</div>
 						<div class="mt-2 h-2 rounded bg-surface-300">
-							<div class="h-2 rounded bg-tertiary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(topPartyDishes[0]) || 1)) * 100)}%`}></div>
+							<div class="h-2 rounded bg-tertiary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}></div>
 						</div>
 					</div>
 				{/each}
@@ -245,7 +249,7 @@
 		<div class="rounded-lg border border-white/10 p-6 text-sm opacity-90">
 			No dishes tracked yet. Here’s a sample:
 			<ul class="mt-2 space-y-1">
-				{#each topPartyDishes as d}
+				{#each selectedPartyDishes as d}
 					<li class="flex items-center justify-between">
 						<span>{d.name}</span>
 						<span class="opacity-70">{Math.round(computePartyProfitPerServing(d))}G/serv</span>
@@ -264,16 +268,16 @@
 	<h2 class="mb-6 text-2xl font-bold">Loved by Divers</h2>
 	<div class="grid gap-4 md:grid-cols-3">
 		<div class="testimonial">
-			<p class="quote">“I never waste dives now — BanchoBox tells me exactly what to bring back.”</p>
+			<p class="quote">“I never feel lost during dives now — I'm not a completionist, so I don't want to spend hours every night. BanchoBox tells me exactly what to bring back.”</p>
 			<div class="who">— Sato, Chapter 4</div>
 		</div>
 		<div class="testimonial">
-			<p class="quote">“Profit finally clicks. My nights are smoother and way more profitable.”</p>
-			<div class="who">— Mei, Cooksta A</div>
+			<p class="quote">“I used to auto-supply a full menu, I was stuck at Gold. Now the restaurant is actually fun.”</p>
+			<div class="who">— Mei, Cooksta Gold</div>
 		</div>
 		<div class="testimonial">
-			<p class="quote">“Built by fans, for fans. It just understands Dave the Diver.”</p>
-			<div class="who">— Jin, Completionist</div>
+			<p class="quote">“Built by fans, for fans. A better way to play Dave the Diver.”</p>
+			<div class="who">— Martin, Completionist</div>
 		</div>
 	</div>
 </section>
@@ -287,7 +291,7 @@
 			<a class="link" href="/dishes">Dishes</a>
 			<a class="link" href="/ingredients">Ingredients</a>
 			<a class="link" href="/parties">Parties</a>
-			<span class="opacity-70 ml-auto">Bancho would approve.</span>
+			<span class="opacity-70 ml-auto">Help Dave help Bancho.</span>
 		</div>
 	</div>
 </section>
