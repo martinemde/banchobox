@@ -291,7 +291,7 @@
 			<a class="link" href="/dishes">Dishes</a>
 			<a class="link" href="/ingredients">Ingredients</a>
 			<a class="link" href="/parties">Parties</a>
-			<span class="opacity-70 ml-auto">Help Dave help Bancho.</span>
+			<span class="opacity-70 ml-auto">Help Dave help Bancho</span>
 		</div>
 	</div>
 </section>
