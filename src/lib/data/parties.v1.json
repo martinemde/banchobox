@@ -2,7 +2,6 @@
   "rows": [
     {
       "id": 1,
-      "order": 1,
       "name": "Jellyfish",
       "bonus": 2,
       "partyDishIds": [
@@ -20,15 +19,14 @@
       ],
       "search": "jellyfish 2x",
       "sort": {
+        "order": 1,
         "name": "jellyfish",
         "bonus": 2,
-        "dishCount": 11,
-        "order": 1
+        "dishCount": 11
       }
     },
     {
       "id": 2,
-      "order": 2,
       "name": "Tuna",
       "bonus": 3.5,
       "partyDishIds": [
@@ -47,15 +45,14 @@
       ],
       "search": "tuna 3.5x",
       "sort": {
+        "order": 2,
         "name": "tuna",
         "bonus": 3.5,
-        "dishCount": 12,
-        "order": 2
+        "dishCount": 12
       }
     },
     {
       "id": 3,
-      "order": 3,
       "name": "Marlin",
       "bonus": 2,
       "partyDishIds": [
@@ -67,15 +64,14 @@
       ],
       "search": "marlin 2x",
       "sort": {
+        "order": 3,
         "name": "marlin",
         "bonus": 2,
-        "dishCount": 5,
-        "order": 3
+        "dishCount": 5
       }
     },
     {
       "id": 4,
-      "order": 4,
       "name": "Shark",
       "bonus": 2,
       "partyDishIds": [
@@ -108,15 +104,14 @@
       ],
       "search": "shark 2x",
       "sort": {
+        "order": 4,
         "name": "shark",
         "bonus": 2,
-        "dishCount": 26,
-        "order": 4
+        "dishCount": 26
       }
     },
     {
       "id": 5,
-      "order": 5,
       "name": "Cucumber",
       "bonus": 2.5,
       "partyDishIds": [
@@ -131,15 +126,14 @@
       ],
       "search": "cucumber 2.5x",
       "sort": {
+        "order": 5,
         "name": "cucumber",
         "bonus": 2.5,
-        "dishCount": 8,
-        "order": 5
+        "dishCount": 8
       }
     },
     {
       "id": 6,
-      "order": 6,
       "name": "Curry",
       "bonus": 2,
       "partyDishIds": [
@@ -154,15 +148,14 @@
       ],
       "search": "curry 2x",
       "sort": {
+        "order": 6,
         "name": "curry",
         "bonus": 2,
-        "dishCount": 8,
-        "order": 6
+        "dishCount": 8
       }
     },
     {
       "id": 7,
-      "order": 7,
       "name": "Shrimp",
       "bonus": 2,
       "partyDishIds": [
@@ -179,15 +172,14 @@
       ],
       "search": "shrimp 2x",
       "sort": {
+        "order": 7,
         "name": "shrimp",
         "bonus": 2,
-        "dishCount": 10,
-        "order": 7
+        "dishCount": 10
       }
     },
     {
       "id": 8,
-      "order": 8,
       "name": "Lobster",
       "bonus": 2.5,
       "partyDishIds": [
@@ -213,17 +205,16 @@
       ],
       "search": "lobster 2.5x",
       "sort": {
+        "order": 8,
         "name": "lobster",
         "bonus": 2.5,
-        "dishCount": 19,
-        "order": 8
+        "dishCount": 19
       }
     }
   ],
   "byId": {
     "1": {
       "id": 1,
-      "order": 1,
       "name": "Jellyfish",
       "bonus": 2,
       "partyDishIds": [
@@ -241,15 +232,14 @@
       ],
       "search": "jellyfish 2x",
       "sort": {
+        "order": 1,
         "name": "jellyfish",
         "bonus": 2,
-        "dishCount": 11,
-        "order": 1
+        "dishCount": 11
       }
     },
     "2": {
       "id": 2,
-      "order": 2,
       "name": "Tuna",
       "bonus": 3.5,
       "partyDishIds": [
@@ -268,15 +258,14 @@
       ],
       "search": "tuna 3.5x",
       "sort": {
+        "order": 2,
         "name": "tuna",
         "bonus": 3.5,
-        "dishCount": 12,
-        "order": 2
+        "dishCount": 12
       }
     },
     "3": {
       "id": 3,
-      "order": 3,
       "name": "Marlin",
       "bonus": 2,
       "partyDishIds": [
@@ -288,15 +277,14 @@
       ],
       "search": "marlin 2x",
       "sort": {
+        "order": 3,
         "name": "marlin",
         "bonus": 2,
-        "dishCount": 5,
-        "order": 3
+        "dishCount": 5
       }
     },
     "4": {
       "id": 4,
-      "order": 4,
       "name": "Shark",
       "bonus": 2,
       "partyDishIds": [
@@ -329,15 +317,14 @@
       ],
       "search": "shark 2x",
       "sort": {
+        "order": 4,
         "name": "shark",
         "bonus": 2,
-        "dishCount": 26,
-        "order": 4
+        "dishCount": 26
       }
     },
     "5": {
       "id": 5,
-      "order": 5,
       "name": "Cucumber",
       "bonus": 2.5,
       "partyDishIds": [
@@ -352,15 +339,14 @@
       ],
       "search": "cucumber 2.5x",
       "sort": {
+        "order": 5,
         "name": "cucumber",
         "bonus": 2.5,
-        "dishCount": 8,
-        "order": 5
+        "dishCount": 8
       }
     },
     "6": {
       "id": 6,
-      "order": 6,
       "name": "Curry",
       "bonus": 2,
       "partyDishIds": [
@@ -375,15 +361,14 @@
       ],
       "search": "curry 2x",
       "sort": {
+        "order": 6,
         "name": "curry",
         "bonus": 2,
-        "dishCount": 8,
-        "order": 6
+        "dishCount": 8
       }
     },
     "7": {
       "id": 7,
-      "order": 7,
       "name": "Shrimp",
       "bonus": 2,
       "partyDishIds": [
@@ -400,15 +385,14 @@
       ],
       "search": "shrimp 2x",
       "sort": {
+        "order": 7,
         "name": "shrimp",
         "bonus": 2,
-        "dishCount": 10,
-        "order": 7
+        "dishCount": 10
       }
     },
     "8": {
       "id": 8,
-      "order": 8,
       "name": "Lobster",
       "bonus": 2.5,
       "partyDishIds": [
@@ -434,10 +418,10 @@
       ],
       "search": "lobster 2.5x",
       "sort": {
+        "order": 8,
         "name": "lobster",
         "bonus": 2.5,
-        "dishCount": 19,
-        "order": 8
+        "dishCount": 19
       }
     }
   },

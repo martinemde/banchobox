@@ -9,6 +9,34 @@ export interface EntityBundle<Row> {
 	facets: Facets;
 }
 
+// --------------------
+// Cooksta data types
+// --------------------
+
+export interface CookstaInputRow {
+	rank: string;
+	order: number;
+	customers: number;
+	customerNight: number;
+	partyCustomers: number;
+	followers: number;
+	recipes: number;
+	bestTaste: number;
+}
+
+export interface CookstaTier {
+	id: Id;
+	rank: string;
+	customers: number;
+	customerNight: number;
+	partyCustomers: number;
+	followers: number;
+	recipes: number;
+	bestTaste: number;
+	// Client-side helpers
+	sort: Record<'order', string | number>; // We only have one field, but we need to stay consistent.
+}
+
 export interface BasicDish {
 	id: Id;
 	name: string;
@@ -51,11 +79,20 @@ export interface BasicIngredient {
 	cost: number; // The replacement cost for the ingredient
 }
 
-export interface Party {
+export interface PartyInputRow {
 	id: Id;
 	name: string;
 	order: number;
 	bonus: number;
+}
+
+export interface Party {
+	id: Id;
+	name: string;
+	bonus: number;
+	partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
+	search: string;
+	sort: PartySort;
 }
 
 // Relationship entities
@@ -76,14 +113,14 @@ export interface DishParty {
 export interface Graph {
 	dishes: BasicDish[];
 	ingredients: BasicIngredient[];
-	parties: Party[];
+	parties: PartyInputRow[];
 	dishIngredients: DishIngredient[];
 	dishParties: DishParty[];
 
 	// Indexes for O(1) lookups
 	dishById: Map<Id, BasicDish>;
 	ingById: Map<Id, BasicIngredient>;
-	partyById: Map<Id, Party>;
+	partyById: Map<Id, PartyInputRow>;
 	ingByDishId: Map<Id, { ingredientId: Id; count: number }[]>;
 	dishesByIngredientId: Map<Id, { dishId: Id; count: number }[]>;
 	partiesByDishId: Map<Id, Id[]>;
@@ -128,12 +165,6 @@ export interface PartyDish extends Dish {
 	partyBonus: number; // party.bonus
 }
 
-export interface EnrichedParty extends Party {
-	partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
-	search: string;
-	sort: Record<PartySortKey, string | number>;
-}
-
 export interface Ingredient extends BasicIngredient {
 	usedIn: Array<{
 		dishId: Id;
@@ -159,7 +190,7 @@ export interface Ingredient extends BasicIngredient {
 export interface DataService {
 	dishes: Dish[];
 	ingredients: Ingredient[];
-	parties: EnrichedParty[];
+	parties: Party[];
 	partyDishes: PartyDish[];
 }
 
@@ -189,5 +220,10 @@ export type IngredientSortKey =
 	| 'buyOtto'
 	| 'usedForPartiesCount';
 
-// Sort keys for EnrichedParty.sort
-export type PartySortKey = 'order' | 'name' | 'bonus' | 'dishCount';
+// Sort keys for Party.sort
+export type PartySort = {
+	order: number;
+	name: string;
+	bonus: number;
+	dishCount: number;
+};

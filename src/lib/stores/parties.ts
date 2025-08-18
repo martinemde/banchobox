@@ -1,7 +1,7 @@
 import { createEntityStores } from './entityBundle.js';
-import type { EnrichedParty } from '$lib/types.js';
+import type { Party } from '$lib/types.js';
 
-export const partiesStores = createEntityStores<EnrichedParty>({
+export const partiesStores = createEntityStores<Party>({
 	sortKey: 'order',
 	sortDir: 'asc'
 });

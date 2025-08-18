@@ -7,7 +7,7 @@
 import type {
 	BasicDish,
 	BasicIngredient,
-	Party,
+	PartyInputRow,
 	DishIngredient,
 	DishParty,
 	Graph,
@@ -17,14 +17,14 @@ import type {
 export function buildGraph(
 	dishes: BasicDish[],
 	ingredients: BasicIngredient[],
-	parties: Party[],
+	parties: PartyInputRow[],
 	dishIngredients: DishIngredient[],
 	dishParties: DishParty[]
 ): Graph {
 	// Create basic maps
 	const dishById = new Map<Id, BasicDish>();
 	const ingById = new Map<Id, BasicIngredient>();
-	const partyById = new Map<Id, Party>();
+	const partyById = new Map<Id, PartyInputRow>();
 
 	// Populate basic maps
 	for (const dish of dishes) {

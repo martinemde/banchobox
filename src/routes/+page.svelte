@@ -8,7 +8,7 @@
 	// Data from stores
 	const dishes = $derived($dishesBundle?.rows ?? []);
 	const parties = $derived($partiesBundle?.rows ?? []);
-	const dishesByParty = $derived($dishesByPartyStore ?? {} as Record<number, { rows: any[] }>);
+	const dishesByParty = $derived($dishesByPartyStore ?? ({} as Record<number, { rows: any[] }>));
 
 	// Interactive demo state
 	let selectedPartyId = $state(1); // Jellyfish
@@ -23,19 +23,27 @@
 		const bonus = d.partyBonus ?? 1;
 		return finalPps * bonus;
 	}
-	const selectedPartyDishes = $derived(partyRows.toSorted((a, b) => computePartyProfitPerServing(a) - computePartyProfitPerServing(b)).slice(0, 3));
+	const selectedPartyDishes = $derived(
+		partyRows
+			.toSorted((a, b) => computePartyProfitPerServing(a) - computePartyProfitPerServing(b))
+			.slice(0, 3)
+	);
 
 	// Aggregate ingredient needs for the demo's top dishes
-	const demoIngredientList: Array<[string, number]> = $derived((() => {
-		const map = new Map<string, number>();
-		for (const d of selectedPartyDishes) {
-			for (const ing of d.ingredients ?? []) {
-				const key = ing.name as string;
-				map.set(key, (map.get(key) ?? 0) + (ing.count ?? 0));
+	const demoIngredientList: Array<[string, number]> = $derived(
+		(() => {
+			const map = new Map<string, number>();
+			for (const d of selectedPartyDishes) {
+				for (const ing of d.ingredients ?? []) {
+					const key = ing.name as string;
+					map.set(key, (map.get(key) ?? 0) + (ing.count ?? 0));
+				}
 			}
-		}
-		return [...map.entries()].toSorted((a, b) => b[1] - a[1]).slice(0, 6) as Array<[string, number]>;
-	})());
+			return [...map.entries()].toSorted((a, b) => b[1] - a[1]).slice(0, 6) as Array<
+				[string, number]
+			>;
+		})()
+	);
 
 	// Tracking preview
 	const tracked = $derived(dishes.filter((d) => $trackedDishIds.has(d.id)).slice(0, 3));
@@ -43,7 +51,10 @@
 
 <svelte:head>
 	<title>BanchoBox — Master Bancho’s Sushi Bar</title>
-	<meta name="description" content="Track ingredients, plan menus, and maximize profit in Dave the Diver with BanchoBox." />
+	<meta
+		name="description"
+		content="Track ingredients, plan menus, and maximize profit in Dave the Diver with BanchoBox."
+	/>
 </svelte:head>
 
 <!-- 1) Hero -->
@@ -51,19 +62,23 @@
 	<div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
 		<div class="grid items-center gap-10 md:grid-cols-2">
 			<div>
-				<h1 class="mb-4 text-4xl font-extrabold leading-tight text-primary-500 md:text-6xl">
+				<h1 class="mb-4 text-4xl leading-tight font-extrabold text-primary-500 md:text-6xl">
 					Chef Bancho’s Sushi Bar. Plan Dives. Perfect Dishes.
 				</h1>
 				<p class="mb-8 text-lg opacity-90 md:text-xl">
-					BanchoBox, a Dave the Diver companion app, takes the stress out of planning your sushi menu.<br>
-					Get dish and ingredient recommendations, track your progress, and find which dishes turn the best profit for your restaurant.
+					BanchoBox, a Dave the Diver companion app, takes the stress out of planning your sushi
+					menu.<br />
+					Get dish and ingredient recommendations, track your progress, and find which dishes turn the
+					best profit for your restaurant.
 				</p>
 				<a href="/tracking" class="btn preset-filled btn-lg">Start Tracking Your Sushi Bar</a>
 			</div>
 			<div>
-				<div class="variant-glass-surface card rounded-xl border border-white/10 bg-white/10 p-6 shadow-lg backdrop-blur">
+				<div
+					class="variant-glass-surface card rounded-xl border border-white/10 bg-white/10 p-6 shadow-lg backdrop-blur"
+				>
 					<div class="mb-4 flex items-center justify-between">
-						<div class="text-sm opacity-80">Tonight’s Outlook</div>
+						<div class="text-sm opacity-80">Tonight’s Menu</div>
 						<div class="text-xs opacity-60">Demo</div>
 					</div>
 					<div class="grid grid-cols-3 gap-3">
@@ -78,7 +93,9 @@
 						<div class="stat">
 							<div class="label">Profit</div>
 							<div class="value">
-								{Math.round(selectedPartyDishes.reduce((s, d) => s + computePartyProfitPerServing(d), 0))}G
+								{Math.round(
+									selectedPartyDishes.reduce((s, d) => s + computePartyProfitPerServing(d), 0)
+								)} / Serving
 							</div>
 						</div>
 					</div>
@@ -95,7 +112,10 @@
 										<span>{Math.round(computePartyProfitPerServing(d))}G/serv</span>
 									</div>
 									<div class="h-2 rounded bg-surface-300">
-										<div class="h-2 rounded bg-primary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}></div>
+										<div
+											class="h-2 rounded bg-primary-500"
+											style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}
+										></div>
 									</div>
 								</div>
 							{/each}
@@ -111,19 +131,19 @@
 <section class="mx-auto max-w-7xl px-4 py-14">
 	<h2 class="mb-6 text-2xl font-bold">What BanchoBox knows about your game</h2>
 	<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="title">Cooksta Rank</div>
 			<div class="value">Silver</div>
 		</div>
-		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="title">Story Progress</div>
 			<div class="value">Chapter 3</div>
 		</div>
-		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="title">Next Party</div>
 			<div class="value">{selectedParty?.name ?? '—'} ({selectedParty?.bonus ?? 0}x bonus)</div>
 		</div>
-		<div class="rounded-xl border border-white/10 p-4 variant-glass-surface">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="title">DLCs</div>
 			<div class="value">Pick your DLCs</div>
 		</div>
@@ -134,7 +154,7 @@
 <section class="mx-auto max-w-7xl px-4 py-14">
 	<h2 class="mb-6 text-2xl font-bold">The BanchoBox Advantage</h2>
 	<div class="grid gap-6 md:grid-cols-3">
-		<div class="rounded-xl border border-white/10 p-5 variant-glass-surface">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-5">
 			<h3 class="mb-2 text-lg font-semibold">Profitability Analyzer</h3>
 			<p class="mb-4 text-sm opacity-80">Which dish actually makes you the most money?</p>
 			<div class="space-y-2">
@@ -145,13 +165,16 @@
 							<span>{Math.round(computePartyProfitPerServing(d))}G/serv</span>
 						</div>
 						<div class="h-2 rounded bg-surface-300">
-							<div class="h-2 rounded bg-secondary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}></div>
+							<div
+								class="h-2 rounded bg-secondary-500"
+								style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}
+							></div>
 						</div>
 					</div>
 				{/each}
 			</div>
 		</div>
-		<div class="rounded-xl border border-white/10 p-5 variant-glass-surface">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-5">
 			<h3 class="mb-2 text-lg font-semibold">Dive Planner</h3>
 			<p class="mb-4 text-sm opacity-80">Know what ingredients to bring back before you dive.</p>
 			<ul class="list-inside list-disc text-sm opacity-90">
@@ -160,7 +183,7 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="rounded-xl border border-white/10 p-5 variant-glass-surface">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-5">
 			<h3 class="mb-2 text-lg font-semibold">Menu Optimizer</h3>
 			<p class="mb-4 text-sm opacity-80">Plan tonight’s menu and maximize Cooksta growth.</p>
 			<div class="rounded-lg border border-white/10 p-4 text-sm">
@@ -183,15 +206,21 @@
 	<h2 class="mb-6 text-2xl font-bold">Try it in 3 quick steps</h2>
 	<div class="variant-glass-surface card rounded-xl border border-white/10 bg-white/10 p-6">
 		<div class="mb-6 flex items-center gap-2 text-sm">
-			<button class="btn btn-sm" class:preset-filled={demoStep === 1} onclick={() => (demoStep = 1)}>1. Pick party</button>
-			<button class="btn btn-sm" class:preset-filled={demoStep === 2} onclick={() => (demoStep = 2)}>2. Compare dishes</button>
-			<button class="btn btn-sm" class:preset-filled={demoStep === 3} onclick={() => (demoStep = 3)}>3. Get ingredients</button>
+			<button class="btn btn-sm" class:preset-filled={demoStep === 1} onclick={() => (demoStep = 1)}
+				>1. Pick party</button
+			>
+			<button class="btn btn-sm" class:preset-filled={demoStep === 2} onclick={() => (demoStep = 2)}
+				>2. Compare dishes</button
+			>
+			<button class="btn btn-sm" class:preset-filled={demoStep === 3} onclick={() => (demoStep = 3)}
+				>3. Get ingredients</button
+			>
 		</div>
 		{#if demoStep === 1}
 			<div class="grid gap-3 sm:grid-cols-2 md:grid-cols-4">
 				{#each parties as p}
 					<button
-						class="rounded-lg border border-white/10 p-4 text-left variant-glass-surface transition"
+						class="variant-glass-surface rounded-lg border border-white/10 p-4 text-left transition"
 						class:ring-2={selectedPartyId === p.id}
 						class:ring-primary-500={selectedPartyId === p.id}
 						onclick={() => (selectedPartyId = p.id)}
@@ -206,9 +235,14 @@
 				{#each selectedPartyDishes as d}
 					<div class="rounded-lg border border-white/10 p-4">
 						<div class="mb-1 text-sm font-semibold">{d.name}</div>
-						<div class="text-xs opacity-70">Profit: {Math.round(computePartyProfitPerServing(d))}G/serv</div>
+						<div class="text-xs opacity-70">
+							Profit: {Math.round(computePartyProfitPerServing(d))}G/serv
+						</div>
 						<div class="mt-2 h-2 rounded bg-surface-300">
-							<div class="h-2 rounded bg-tertiary-500" style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}></div>
+							<div
+								class="h-2 rounded bg-tertiary-500"
+								style={`width: ${Math.min(100, (computePartyProfitPerServing(d) / (computePartyProfitPerServing(selectedPartyDishes[0]) || 1)) * 100)}%`}
+							></div>
 						</div>
 					</div>
 				{/each}
@@ -226,7 +260,9 @@
 						</li>
 					{/each}
 				</ul>
-				<div class="mt-4 text-xs opacity-70">This is what makes BanchoBox special — instant clarity on what’s worth your dive time.</div>
+				<div class="mt-4 text-xs opacity-70">
+					This is what makes BanchoBox special — instant clarity on what’s worth your dive time.
+				</div>
 			</div>
 		{/if}
 	</div>
@@ -240,8 +276,12 @@
 			{#each tracked as d}
 				<div class="rounded-lg border border-white/10 p-4">
 					<div class="mb-1 text-sm font-semibold">{d.name}</div>
-					<div class="text-xs opacity-70">Needs: {d.ingredients.map((i) => `${i.count}× ${i.name}`).join(', ')}</div>
-					<div class="mt-2 text-xs">Profit potential: {Math.round(d.finalProfitPerServing)}G/serv</div>
+					<div class="text-xs opacity-70">
+						Needs: {d.ingredients.map((i) => `${i.count}× ${i.name}`).join(', ')}
+					</div>
+					<div class="mt-2 text-xs">
+						Profit potential: {Math.round(d.finalProfitPerServing)}G/serv
+					</div>
 				</div>
 			{/each}
 		</div>
@@ -268,11 +308,17 @@
 	<h2 class="mb-6 text-2xl font-bold">Loved by Divers</h2>
 	<div class="grid gap-4 md:grid-cols-3">
 		<div class="testimonial">
-			<p class="quote">“I never feel lost during dives now — I'm not a completionist, so I don't want to spend hours every night. BanchoBox tells me exactly what to bring back.”</p>
+			<p class="quote">
+				“I never feel lost during dives now — I'm not a completionist, so I don't want to spend
+				hours every night. BanchoBox tells me exactly what to bring back.”
+			</p>
 			<div class="who">— Sato, Chapter 4</div>
 		</div>
 		<div class="testimonial">
-			<p class="quote">“I used to auto-supply a full menu, I was stuck at Gold. Now the restaurant is actually fun.”</p>
+			<p class="quote">
+				“I used to auto-supply a full menu, I was stuck at Gold. Now the restaurant is actually
+				fun.”
+			</p>
 			<div class="who">— Mei, Cooksta Gold</div>
 		</div>
 		<div class="testimonial">
@@ -291,7 +337,7 @@
 			<a class="link" href="/dishes">Dishes</a>
 			<a class="link" href="/ingredients">Ingredients</a>
 			<a class="link" href="/parties">Parties</a>
-			<span class="opacity-70 ml-auto">Help Dave help Bancho</span>
+			<span class="ml-auto opacity-70">Help Dave help Bancho</span>
 		</div>
 	</div>
 </section>
@@ -299,21 +345,47 @@
 <style>
 	.hero {
 		background:
-			linear-gradient(90deg, rgba(15,23,42,0.6) 0%, rgba(15,23,42,0.2) 100%),
-			radial-gradient(1200px 600px at 80% 10%, rgba(59,130,246,0.18), transparent),
-			radial-gradient(800px 400px at 10% 80%, rgba(236,72,153,0.12), transparent);
+			linear-gradient(90deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.2) 100%),
+			radial-gradient(1200px 600px at 80% 10%, rgba(59, 130, 246, 0.18), transparent),
+			radial-gradient(800px 400px at 10% 80%, rgba(236, 72, 153, 0.12), transparent);
 	}
 
-	.stat .label { font-size: 0.7rem; opacity: 0.7; }
-	.stat .value { font-weight: 700; }
+	.stat .label {
+		font-size: 0.7rem;
+		opacity: 0.7;
+	}
+	.stat .value {
+		font-weight: 700;
+	}
 
-	.title { font-size: 0.8rem; opacity: 0.7; }
-	.value { font-weight: 600; }
+	.title {
+		font-size: 0.8rem;
+		opacity: 0.7;
+	}
+	.value {
+		font-weight: 600;
+	}
 
-	.testimonial { border-radius: 0.75rem; border: 1px solid color-mix(in oklch, white 10%, transparent); padding: 1.25rem; background: color-mix(in oklch, white 10%, transparent); }
-	.testimonial .quote { font-size: 0.9rem; opacity: 0.9; }
-	.testimonial .who { margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.6; }
+	.testimonial {
+		border-radius: 0.75rem;
+		border: 1px solid color-mix(in oklch, white 10%, transparent);
+		padding: 1.25rem;
+		background: color-mix(in oklch, white 10%, transparent);
+	}
+	.testimonial .quote {
+		font-size: 0.9rem;
+		opacity: 0.9;
+	}
+	.testimonial .who {
+		margin-top: 0.5rem;
+		font-size: 0.75rem;
+		opacity: 0.6;
+	}
 
-	.link { opacity: 0.9; }
-	.link:hover { opacity: 1; }
+	.link {
+		opacity: 0.9;
+	}
+	.link:hover {
+		opacity: 1;
+	}
 </style>

@@ -1,30 +1,34 @@
 import type {
 	BasicDish,
 	BasicIngredient,
-	Party,
+	PartyInputRow,
 	DishIngredient,
 	DishParty,
 	Id,
 	PartyDish,
 	Dish,
 	Ingredient,
-	EnrichedParty,
+	PartyRecord,
 	EntityBundle,
-	PartyDishSortKey
+	PartyDishSortKey,
+	CookstaInputRow,
+	CookstaTier
 } from '../../src/lib/types.js';
 import { buildDishesBundle } from './dish_bundle.js';
 import { buildIngredientsBundle } from './ingredient_bundle.js';
 import { buildPartiesBundle } from './party_bundle.js';
 import { buildPartyDishesBundle } from './party_dish_bundle.js';
+import { buildCookstaBundle } from './cooksta_bundle.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
 export function enrichData(
 	basicDishes: BasicDish[],
 	basicIngredients: BasicIngredient[],
-	basicParties: Party[],
+	partyInputRows: PartyInputRow[],
 	dishIngredients: DishIngredient[],
-	dishParties: DishParty[]
+	dishParties: DishParty[],
+	cookstaInputRows: CookstaInputRow[]
 ) {
 	const partyDishes: PartyDish[] = [];
 	const partyDishesByPartyId = new Map<Id, PartyDish[]>();
@@ -77,7 +81,7 @@ export function enrichData(
 		const search = [dish.name, dish.dlc, dish.unlock, ...ingredientNames].map(normalize).join(' ');
 
 		for (const partyId of partyIds) {
-			const party = basicParties.find((p) => p.id === partyId);
+			const party = partyInputRows.find((p) => p.id === partyId);
 			if (!party) continue;
 
 			const partyPrice = dish.finalPrice * party.bonus;
@@ -189,7 +193,7 @@ export function enrichData(
 			for (const dp of dishParties) {
 				if (dp.dishId === u.dishId) {
 					partyIdSet.add(dp.partyId);
-					partyNames.add(basicParties.find((p) => p.id === dp.partyId)?.name ?? '');
+					partyNames.add(partyInputRows.find((p) => p.id === dp.partyId)?.name ?? '');
 				}
 			}
 		}
@@ -197,7 +201,9 @@ export function enrichData(
 			.map((u) => {
 				const dish = basicDishes.find((d) => d.id === u.dishId)!;
 				const partyIds = dishParties.filter((dp) => dp.dishId === u.dishId).map((dp) => dp.partyId);
-				const partyNames = partyIds.map((id) => basicParties.find((p) => p.id === id)?.name ?? '');
+				const partyNames = partyIds.map(
+					(id) => partyInputRows.find((p) => p.id === id)?.name ?? ''
+				);
 				return {
 					dishId: u.dishId,
 					dishName: dish.name,
@@ -263,36 +269,15 @@ export function enrichData(
 	});
 
 	const ingredientsBundle = buildIngredientsBundle(ingredients);
-
 	const partyDishesBundle = buildPartyDishesBundle(partyDishes);
+	const partiesBundle = buildPartiesBundle(partyInputRows, partyDishesByPartyId);
+	const cookstaBundle = buildCookstaBundle(cookstaInputRows);
 
-	const parties: EnrichedParty[] = basicParties.map((party) => {
-		const partyDishIds = (partyDishesByPartyId.get(party.id) ?? [])
-			.sort((a, b) => b.finalProfit - a.finalProfit)
-			.map((pd) => pd.id);
-
-		const enrichedParty: EnrichedParty = {
-			...party,
-			partyDishIds,
-			search: [party.name.toLowerCase(), `${party.bonus}x`].join(' '),
-			sort: {
-				name: party.name.toLowerCase(),
-				bonus: party.bonus,
-				dishCount: partyDishIds.length,
-				order: party.order
-			}
-		} as EnrichedParty;
-
-		return enrichedParty;
-	});
-
-	parties.sort((a, b) => a.order - b.order);
-	const partiesBundle = buildPartiesBundle(parties);
-
-	return { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle } as {
+	return { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle, cookstaBundle } as {
 		dishesBundle: EntityBundle<Dish>;
 		ingredientsBundle: EntityBundle<Ingredient>;
-		partiesBundle: EntityBundle<EnrichedParty>;
+		partiesBundle: EntityBundle<PartyRecord>;
 		partyDishesBundle: EntityBundle<PartyDish>;
+		cookstaBundle: EntityBundle<CookstaTier>;
 	};
 }

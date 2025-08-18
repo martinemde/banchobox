@@ -1,7 +1,7 @@
-rank,customers,customer_night,party_customers,followers,recipes,best_taste
-Coal,10,,,,,
-Bronze,15,10,,10,0,0
-Silver,21,14,,20,2,0
-Gold,28,18,,100,5,125
-Platinum,36,24,,200,19,250
-Diamond,45,30,20,720,32,375
+rank,order,customers,customer_night,party_customers,followers,recipes,best_taste
+Coal,0,10,0,0,0,0,0
+Bronze,1,15,10,7,10,0,0
+Silver,2,21,14,9,20,2,0
+Gold,3,28,18,12,100,5,125
+Platinum,4,36,24,16,200,19,250
+Diamond,5,45,30,20,720,32,375

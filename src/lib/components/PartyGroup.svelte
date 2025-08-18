@@ -1,10 +1,10 @@
 <script lang="ts">
 	import PartyDish from '$lib/components/PartyDishCard.svelte';
 	import { createPartyDishesStores } from '$lib/stores/partyDishes.js';
-	import type { EnrichedParty, Id, PartyDish as PartyDishRow } from '$lib/types.js';
+	import type { Party, Id, PartyDish as PartyDishRow } from '$lib/types.js';
 	import { bundle as dishesBundle } from '$lib/stores/dishes.js';
 
-	export let party: EnrichedParty;
+	export let party: Party;
 	export let subBundle: {
 		rows: PartyDishRow[];
 		byId: Record<Id, PartyDishRow>;

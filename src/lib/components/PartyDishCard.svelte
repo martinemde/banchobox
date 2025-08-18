@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Dish, PartyDish as PartyDishEntity, EnrichedParty } from '../types.js';
+	import type { Dish, PartyDish as PartyDishEntity, Party } from '../types.js';
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import TrackButton from './TrackButton.svelte';
 	import ProfitTable from './ProfitTable.svelte';
@@ -10,7 +10,7 @@
 	let { dish, partyDish, party } = $props<{
 		dish: Dish;
 		partyDish: PartyDishEntity; // Calculated values for this dish under the current party
-		party: EnrichedParty;
+		party: Party;
 	}>();
 
 	// Fixed width for thumbnail and track button

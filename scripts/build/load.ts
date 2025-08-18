@@ -6,10 +6,11 @@ import { z } from 'zod';
 import type {
 	BasicDish,
 	BasicIngredient,
-	Party,
+	PartyInputRow,
 	DishIngredient,
 	DishParty,
-	Id
+	Id,
+	CookstaInputRow
 } from '../../src/lib/types.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -59,7 +60,7 @@ const optionalString = z
 const optionalNumber = optionalString.transform((s) => (s ? Number(s) : null));
 const optionalBoolean = optionalString.transform((s) => (s ? boolFlag(s) : false));
 
-// Dishes CSV schema -> normalized row (camelCase)
+// dishes-data.csv schema -> normalized row
 const dishesRowSchema = z
 	.object({
 		id: intFromString('id'),
@@ -92,7 +93,7 @@ const dishesRowSchema = z
 		artisansFlames: row['artisans_flames'] as number | null
 	}));
 
-// Ingredients CSV schema -> normalized row (camelCase)
+// ingredients-data.csv schema -> normalized row
 const ingredientsRowSchema = z
 	.object({
 		id: intFromString('id'),
@@ -145,7 +146,7 @@ const ingredientsRowSchema = z
 		type: row['type']
 	}));
 
-// Parties CSV schema -> normalized row (camelCase)
+// parties-data.csv schema -> normalized row
 const partiesRowSchema = z
 	.object({
 		id: intFromString('id'),
@@ -160,7 +161,7 @@ const partiesRowSchema = z
 		bonus: row['bonus']
 	}));
 
-// Dish-Ingredients CSV schema -> normalized row (camelCase)
+// dish-ingredients-data.csv schema -> normalized row
 const dishIngredientsRowSchema = z
 	.object({
 		dish: z.string().transform((s) => s.trim()),
@@ -177,7 +178,7 @@ const dishIngredientsRowSchema = z
 		upgradeCount: row['upgrade_count']
 	}));
 
-// Party-Dishes CSV schema -> normalized row
+// party-dishes-data.csv schema -> normalized row
 const partyDishesRowSchema = z
 	.object({
 		party: z.string().transform((s) => s.trim()),
@@ -308,11 +309,11 @@ function loadParties() {
 	validateRequiredColumns(rawRecords, ['id', 'order', 'name', 'bonus'], 'parties-data.csv');
 	const normalized = parseTable(partiesCSV, partiesRowSchema, 'parties-data.csv');
 
-	const parties: Party[] = [];
+	const parties: PartyInputRow[] = [];
 	const partyNameToId = new Map<string, Id>();
 
 	normalized.forEach((row) => {
-		const party: Party = row as unknown as Party;
+		const party: PartyInputRow = row as unknown as PartyInputRow;
 		parties.push(party);
 		partyNameToId.set(row.name, row.id);
 	});
@@ -321,6 +322,60 @@ function loadParties() {
 	parties.sort((a, b) => a.order - b.order);
 
 	return { parties, partyNameToId };
+}
+
+// cooksta-data.csv schema -> normalized row
+const cookstaRowSchema = z
+	.object({
+		rank: z.string().transform((s) => s.trim()),
+		order: intFromString('order'),
+		customers: intFromString('customers'),
+		customer_night: intFromString('customer_night'),
+		party_customers: intFromString('party_customers'),
+		followers: intFromString('followers'),
+		recipes: intFromString('recipes'),
+		best_taste: intFromString('best_taste')
+	})
+	.transform((row) => ({
+		rank: row['rank'],
+		order: row['order'],
+		customers: row['customers'],
+		customerNight: row['customer_night'],
+		partyCustomers: row['party_customers'],
+		followers: row['followers'],
+		recipes: row['recipes'],
+		bestTaste: row['best_taste']
+	})) as z.ZodType<CookstaInputRow>;
+
+function loadCooksta() {
+	const cookstaCSV = readFileSync(join(__dirname, '..', '..', 'data', 'cooksta-data.csv'), 'utf-8');
+	const rows = parseCsv(cookstaCSV, {
+		columns: false,
+		skip_empty_lines: true,
+		trim: true,
+		relax_column_count: true
+	}) as string[][];
+	if (rows.length === 0) return { cooksta: [] as CookstaInputRow[] };
+	const records = parseCsv(cookstaCSV, {
+		columns: true,
+		skip_empty_lines: true,
+		trim: true,
+		relax_column_count: true
+	}) as Array<Record<string, string>>;
+	const out: CookstaInputRow[] = [];
+	for (let i = 0; i < records.length; i++) {
+		const rec = records[i];
+		const parsed = cookstaRowSchema.safeParse(rec);
+		if (!parsed.success) {
+			const issues = parsed.error.issues
+				.map((iss) => `${iss.path.join('.') || 'value'}: ${iss.message}`)
+				.join('; ');
+			const rowNum = i + 2;
+			throw new Error(`cooksta-data.csv row ${rowNum}: ${issues}`);
+		}
+		out.push(parsed.data);
+	}
+	return { cooksta: out };
 }
 
 function loadRelationships(
@@ -402,11 +457,12 @@ export function loadNormalizedData() {
 	const { dishes, dishNameToId } = loadDishes();
 	const { ingredients, ingredientNameToId } = loadIngredients();
 	const { parties, partyNameToId } = loadParties();
+	const { cooksta } = loadCooksta();
 	const { dishIngredients, dishParties } = loadRelationships(
 		dishNameToId,
 		ingredientNameToId,
 		partyNameToId
 	);
 
-	return { dishes, ingredients, parties, dishIngredients, dishParties };
+	return { dishes, ingredients, parties, dishIngredients, dishParties, cooksta };
 }

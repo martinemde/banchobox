@@ -16,8 +16,6 @@
 			.filter((d) => $trackedDishIds.has(d.id))
 			.map((d) => ({ id: d.id, name: d.name, profit: d.finalProfit }))
 	);
-
-	// Body scroll: no inner virtualization
 </script>
 
 <svelte:head>

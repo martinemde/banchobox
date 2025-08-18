@@ -58,7 +58,7 @@ function createDishLevelsStore(): DishLevelsStore {
 		let max = Math.max(1, Math.floor(maxLevel || 1));
 		// Synchronously read without subscription
 		let snapshot: LevelsMap | undefined;
-		store.update((value) => (snapshot = value, value));
+		store.update((value) => ((snapshot = value), value));
 		current = snapshot?.[dishId];
 		const fallback = Math.min(10, max);
 		return clampLevel(current ?? fallback, max);
