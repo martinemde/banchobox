@@ -51,10 +51,11 @@
 		<div class="grid items-center gap-10 md:grid-cols-2">
 			<div>
 				<h1 class="mb-4 text-4xl font-extrabold leading-tight text-primary-500 md:text-6xl">
-					Master Bancho’s Sushi Bar. Plan dives. Max profits.
+					Chef Bancho’s Sushi Bar. Plan Dives. Perfect Dishes.
 				</h1>
 				<p class="mb-8 text-lg opacity-90 md:text-xl">
-					BanchoBox helps you track ingredients, plan menus, and maximize profit in Dave the Diver.
+					BanchoBox, a Dave the Diver companion app, takes the stress out of planning your sushi menu.<br>
+					Get dish and ingredient recommendations, track your progress, and find which dishes turn the best profit for your restaurant.
 				</p>
 				<a href="/tracking" class="btn preset-filled btn-lg">Start Tracking Your Sushi Bar</a>
 			</div>
