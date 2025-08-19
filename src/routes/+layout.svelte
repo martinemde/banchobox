@@ -7,7 +7,15 @@
 	import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
 	import { bundle as partiesBundleStore } from '$lib/stores/parties';
 	import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
-	import type { EntityBundle, Dish, Ingredient, Party, PartyDish } from '$lib/types.js';
+	import { bundle as cookstaBundleStore } from '$lib/stores/cooksta';
+	import type {
+		EntityBundle,
+		Dish,
+		Ingredient,
+		Party,
+		PartyDish,
+		CookstaTier
+	} from '$lib/types.js';
 
 	let { children, data }: LayoutProps = $props();
 	// One-time initialization (works in SSR and client): set only if store is empty
@@ -22,6 +30,9 @@
 	}
 	if (data.partyDishes && get(partyDishesBundleStore) == null) {
 		partyDishesBundleStore.set(data.partyDishes as EntityBundle<PartyDish>);
+	}
+	if (data.cooksta && get(cookstaBundleStore) == null) {
+		cookstaBundleStore.set(data.cooksta as EntityBundle<CookstaTier>);
 	}
 </script>
 

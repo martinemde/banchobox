@@ -5,10 +5,16 @@
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 	import { SvelteMap } from 'svelte/reactivity';
+	import { selectedTier, selectedTierId, visible as cookstaVisible } from '$lib/stores/cooksta.js';
+	import type { PartyDish } from '$lib/types.js';
+	import artisansFlames from '$lib/images/ui/artisans_flames.png';
+	import tastyImage from '$lib/images/ui/tasty_big.png';
+	import chickenImage from '$lib/images/ui/chicken.png';
 
 	// Data from stores
 	const dishes = $derived($dishesBundle?.rows ?? []);
 	const parties = $derived($partiesBundle?.rows ?? []);
+
 	interface PartyDishRowShape {
 		id: number;
 		name: string;
@@ -30,9 +36,11 @@
 	const selectedParty = $derived(parties.find((p) => p.id === selectedPartyId));
 	const partyRows = $derived(dishesByParty[selectedPartyId]?.rows ?? []);
 	// Sort by party-adjusted profit per serving if available
-	function computePartyProfitPerServing(d: PartyDishRowShape): number {
-		const finalPps = d.finalProfitPerServing ?? d.sort?.finalProfitPerServing ?? 0;
-		const bonus = d.partyBonus ?? 1;
+	function computePartyProfitPerServing(d: PartyDishRowShape | PartyDish): number {
+		const sortVal = d?.sort?.finalProfitPerServing;
+		const finalPps =
+			d?.finalProfitPerServing ?? (typeof sortVal === 'string' ? Number(sortVal) : (sortVal ?? 0));
+		const bonus = d?.partyBonus ?? 1;
 		return finalPps * bonus;
 	}
 	const selectedPartyDishes = $derived(
@@ -56,6 +64,24 @@
 			>;
 		})()
 	);
+
+	// Cooksta derived stats and next tier
+	const cookstaTiers = $derived($cookstaVisible ?? []);
+	const cookstaCurrent = $derived($selectedTier);
+	const cookstaCurrentId = $derived($selectedTier?.id ?? null);
+	const normalCustomers = $derived(cookstaCurrent?.customers ?? 0);
+	const nightCustomers = $derived(cookstaCurrent?.customerNight ?? 0);
+	const partyTotalCustomers = $derived(cookstaCurrent?.customers ?? 0);
+	const partyGuests = $derived(cookstaCurrent?.partyCustomers ?? 0);
+	const partyRegulars = $derived(Math.max(0, partyTotalCustomers - partyGuests));
+
+	const tierIndex = $derived(
+		Math.max(
+			0,
+			cookstaTiers.findIndex((t) => t.id === cookstaCurrentId)
+		)
+	);
+	const nextTier = $derived(cookstaTiers[tierIndex + 1] ?? null);
 
 	// Tracking preview
 	const tracked = $derived(dishes.filter((d) => $trackedDishIds.has(d.id)).slice(0, 3));
@@ -144,22 +170,91 @@
 	<h2 class="mb-6 text-2xl font-bold">What BanchoBox knows about your game</h2>
 	<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
-			<div class="title">Cooksta Rank</div>
-			<div class="value">Silver</div>
+			<label class="label">
+				<div class="title label-text">Cooksta Rank</div>
+				<select class="ig-select" bind:value={$selectedTierId}>
+					{#each cookstaTiers as t (t.id)}
+						<option value={t.id}>{t.rank}</option>
+					{/each}
+				</select>
+			</label>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="title">Story Progress</div>
 			<div class="value">Chapter 3</div>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
-			<div class="title">Next Party</div>
-			<div class="value">{selectedParty?.name ?? '—'} ({selectedParty?.bonus ?? 0}x bonus)</div>
+			<label class="label">
+				<div class="title">Next Party</div>
+				<select class="ig-select" bind:value={selectedPartyId}>
+					{#each parties as p (p.id)}
+						<option value={p.id}>{p.name} ({p.bonus}&times; bonus)</option>
+					{/each}
+				</select>
+			</label>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="title">DLCs</div>
 			<div class="value">Pick your DLCs</div>
 		</div>
 	</div>
+
+	<!-- Cooksta breakdown -->
+	<div class="mt-6 grid gap-4 md:grid-cols-2">
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
+			<div class="mb-2 text-sm font-semibold">Customers</div>
+			<ul class="space-y-1 text-sm opacity-90">
+				<li>Normal night: {normalCustomers}</li>
+				<li>Night dive: {nightCustomers}</li>
+			</ul>
+		</div>
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
+			<div class="mb-2 text-sm font-semibold">Party night</div>
+			<ul class="space-y-1 text-sm opacity-90">
+				<li>Total customers: {partyTotalCustomers}</li>
+				<li>Regulars: {partyRegulars}</li>
+				<li>Party guests: {partyGuests}</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Advancement requirements -->
+	{#if nextTier}
+		<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
+			<div class="mb-2 text-sm font-semibold">Advance to {nextTier.rank}</div>
+			<div class="grid gap-3 text-sm sm:grid-cols-3">
+				<div>
+					<div class="opacity-70">Followers</div>
+					<div class="font-semibold">≥ {nextTier.followers}</div>
+				</div>
+				{#if nextTier.bestTaste > 0}
+					<div class="flex items-center gap-2">
+						<img
+							src={tastyImage}
+							alt="Taste Icon"
+							width="30"
+							height="30"
+							class="pixel"
+							aria-hidden="true"
+						/>
+						<div>
+							<div class="opacity-70">Best taste</div>
+							<div class="font-semibold">≥ {nextTier.bestTaste}</div>
+						</div>
+					</div>
+				{/if}
+				{#if nextTier.recipes > 0}
+					<div class="flex items-center gap-2">
+						<img src={artisansFlames} alt="Artisans Flames" width="30" height="30" class="pixel" />
+						<div>
+							<div class="leading-tight opacity-70">Research</div>
+							<div class="leading-tight font-semibold">{nextTier.recipes} recipes</div>
+						</div>
+					</div>
+				{/if}
+			</div>
+		</div>
+	{/if}
 </section>
 
 <!-- 3) Advantage -->
@@ -349,7 +444,17 @@
 			<a class="link" href="/dishes">Dishes</a>
 			<a class="link" href="/ingredients">Ingredients</a>
 			<a class="link" href="/parties">Parties</a>
-			<span class="ml-auto opacity-70">Help Dave help Bancho</span>
+			<span class="ml-auto flex items-center gap-2 opacity-70">
+				<span>Help Dave help Bancho</span>
+				<img
+					src={chickenImage}
+					alt="Chicken Icon"
+					width="40"
+					height="40"
+					class="pixel"
+					aria-hidden="true"
+				/>
+			</span>
 		</div>
 	</div>
 </section>

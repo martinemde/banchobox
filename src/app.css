@@ -42,7 +42,9 @@ h2 {
 }
 
 input,
-button {
+button,
+select,
+option {
 	font-size: inherit;
 	font-family: inherit;
 }

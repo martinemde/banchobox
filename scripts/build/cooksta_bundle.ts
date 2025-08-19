@@ -28,12 +28,5 @@ function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
 export function buildCookstaBundle(inputRows: CookstaInputRow[]): EntityBundle<CookstaTier> {
 	const rows = computeTiers(inputRows);
 	const byId = Object.fromEntries(rows.map((t) => [t.id, t])) as Record<Id, CookstaTier>;
-	const facets: EntityBundle<CookstaTier>['facets'] = {
-		Rank: {}
-	};
-	for (const t of rows) {
-		const key = t.rank;
-		(facets['Rank'][key] ??= []).push(t.id);
-	}
-	return { rows, byId, facets };
+	return { rows, byId, facets: {} };
 }
