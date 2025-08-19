@@ -37,6 +37,26 @@ export interface CookstaTier {
 	sort: Record<'order', string | number>; // We only have one field, but we need to stay consistent.
 }
 
+// --------------------
+// DLC data types
+// --------------------
+
+export interface DLCInputRow {
+	id: Id;
+	order: number;
+	name: string;
+}
+
+export interface DLC {
+	id: Id;
+	name: string;
+	search: string;
+	sort: {
+		order: number;
+		name: string;
+	};
+}
+
 export interface BasicDish {
 	id: Id;
 	name: string;

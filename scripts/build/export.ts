@@ -3,11 +3,12 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
 	Dish,
-	PartyRecord,
+	Party,
 	Ingredient,
 	PartyDish,
 	EntityBundle,
-	CookstaTier
+	CookstaTier,
+	DLC
 } from '../../src/lib/types.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -16,11 +17,19 @@ const __dirname = dirname(__filename);
 export function exportData(args: {
 	dishesBundle: EntityBundle<Dish>;
 	ingredientsBundle: EntityBundle<Ingredient>;
-	partiesBundle: EntityBundle<PartyRecord>;
+	partiesBundle: EntityBundle<Party>;
 	partyDishesBundle: EntityBundle<PartyDish>;
 	cookstaBundle: EntityBundle<CookstaTier>;
+	dlcBundle: EntityBundle<DLC>;
 }) {
-	const { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle, cookstaBundle } = args;
+	const {
+		dishesBundle,
+		ingredientsBundle,
+		partiesBundle,
+		partyDishesBundle,
+		cookstaBundle,
+		dlcBundle
+	} = args;
 	const outputDir = join(__dirname, '..', '..', 'src', 'lib', 'data');
 
 	mkdirSync(outputDir, { recursive: true });
@@ -39,11 +48,13 @@ export function exportData(args: {
 		JSON.stringify(partyDishesBundle, null, 2)
 	);
 	writeFileSync(join(outputDir, `cooksta.${version}.json`), JSON.stringify(cookstaBundle, null, 2));
+	writeFileSync(join(outputDir, `dlc.${version}.json`), JSON.stringify(dlcBundle, null, 2));
 
 	console.log(`${partiesBundle.rows.length}\tParties`);
 	console.log(`${partyDishesBundle.rows.length}\tParty-dishes`);
 	console.log(`${dishesBundle.rows.length}\tDishes`);
 	console.log(`${ingredientsBundle.rows.length}\tIngredients`);
 	console.log(`${cookstaBundle.rows.length}\tCooksta tiers`);
+	console.log(`${dlcBundle.rows.length}\tDLCs`);
 	console.log(`Data exported to /src/lib/data with version ${version}\n`);
 }

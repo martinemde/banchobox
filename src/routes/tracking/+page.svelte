@@ -26,7 +26,7 @@
 	<section class="plan">
 		<header class="mb-3">
 			<h1 class="text-xl font-semibold">Tracking</h1>
-			<p class="text-sm opacity-80">Your tracked dishes.</p>
+			<p class="text-sm opacity-80">Dishes that you are tracking.</p>
 		</header>
 
 		{#if trackedDishes.length === 0}

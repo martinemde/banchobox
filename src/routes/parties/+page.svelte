@@ -16,7 +16,7 @@
 	/>
 </svelte:head>
 
-<ResponsiveLayout leftTitle="Filters & sort" containerClass="parties" scrollMode="container">
+<ResponsiveLayout leftTitle="Filters & sort" containerClass="parties">
 	{#snippet left()}
 		<FiltersPanel
 			{bundle}
@@ -24,11 +24,6 @@
 			bind:query={$query}
 			bind:sortKey={$sortKey as string}
 			bind:sortDir={$sortDir}
-			sortOptions={[
-				{ value: 'name', label: 'Name' },
-				{ value: 'bonus', label: 'Bonus' },
-				{ value: 'dishCount', label: 'Dish Count' }
-			]}
 			searchPlaceholder="Search parties…"
 		/>
 	{/snippet}

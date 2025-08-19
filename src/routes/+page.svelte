@@ -1,15 +1,17 @@
 <script lang="ts">
+	import PixelIcon from '$lib/ui/PixelIcon.svelte';
+	import artisansFlames from '$lib/images/ui/artisans_flames.png';
+	import chickenImage from '$lib/images/ui/chicken.png';
+	import tastyImage from '$lib/images/ui/tasty_big.png';
+	import type { PartyDish } from '$lib/types.js';
+	import { SvelteMap } from 'svelte/reactivity';
+	import { SvelteSet } from 'svelte/reactivity';
 	import { bundle as dishesBundle } from '$lib/stores/dishes.js';
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
-	import { trackedDishIds } from '$lib/stores/tracking.js';
-	import PixelIcon from '$lib/ui/PixelIcon.svelte';
-	import { SvelteMap } from 'svelte/reactivity';
 	import { selectedTier, selectedTierId, visible as cookstaVisible } from '$lib/stores/cooksta.js';
-	import type { PartyDish } from '$lib/types.js';
-	import artisansFlames from '$lib/images/ui/artisans_flames.png';
-	import tastyImage from '$lib/images/ui/tasty_big.png';
-	import chickenImage from '$lib/images/ui/chicken.png';
+	import { trackedDishIds } from '$lib/stores/tracking.js';
+	import { visible as dlcVisible } from '$lib/stores/dlc.js';
 
 	// Data from stores
 	const dishes = $derived($dishesBundle?.rows ?? []);
@@ -85,6 +87,16 @@
 
 	// Tracking preview
 	const tracked = $derived(dishes.filter((d) => $trackedDishIds.has(d.id)).slice(0, 3));
+
+	// DLC demo selection state
+	const dlcs = $derived($dlcVisible ?? []);
+	let enabledDLCIds = $state(new Set<number>());
+	function toggleDLC(id: number, checked: boolean) {
+		const next = new SvelteSet(enabledDLCIds);
+		if (checked) next.add(id);
+		else next.delete(id);
+		enabledDLCIds = next;
+	}
 </script>
 
 <svelte:head>
@@ -195,7 +207,18 @@
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="title">DLCs</div>
-			<div class="value">Pick your DLCs</div>
+			<fieldset class="mt-2 space-y-1 text-sm">
+				{#each dlcs as d (d.id)}
+					<label class="flex items-center gap-2">
+						<input
+							type="checkbox"
+							checked={enabledDLCIds.has(d.id)}
+							onchange={(e) => toggleDLC(d.id, (e.currentTarget as HTMLInputElement).checked)}
+						/>
+						{d.name}
+					</label>
+				{/each}
+			</fieldset>
 		</div>
 	</div>
 

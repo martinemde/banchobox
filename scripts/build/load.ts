@@ -10,7 +10,8 @@ import type {
 	DishIngredient,
 	DishParty,
 	Id,
-	CookstaInputRow
+	CookstaInputRow,
+	DLCInputRow
 } from '../../src/lib/types.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -324,6 +325,31 @@ function loadParties() {
 	return { parties, partyNameToId };
 }
 
+// dlc-data.csv schema -> normalized row
+const dlcRowSchema = z
+	.object({
+		id: intFromString('id'),
+		order: intFromString('order'),
+		name: z.string().transform((s) => s.trim())
+	})
+	.transform((row) => ({
+		id: row['id'],
+		order: row['order'],
+		name: row['name']
+	})) as z.ZodType<DLCInputRow>;
+
+function loadDLCs() {
+	const dlcCSV = readFileSync(join(__dirname, '..', '..', 'data', 'dlc-data.csv'), 'utf-8');
+	const rawRecords = parseCsv(dlcCSV, {
+		columns: true,
+		skip_empty_lines: true,
+		trim: true
+	}) as Array<Record<string, string>>;
+	validateRequiredColumns(rawRecords, ['id', 'order', 'name'], 'dlc-data.csv');
+	const normalized = parseTable(dlcCSV, dlcRowSchema, 'dlc-data.csv');
+	return { dlcs: normalized };
+}
+
 // cooksta-data.csv schema -> normalized row
 const cookstaRowSchema = z
 	.object({
@@ -458,11 +484,12 @@ export function loadNormalizedData() {
 	const { ingredients, ingredientNameToId } = loadIngredients();
 	const { parties, partyNameToId } = loadParties();
 	const { cooksta } = loadCooksta();
+	const { dlcs } = loadDLCs();
 	const { dishIngredients, dishParties } = loadRelationships(
 		dishNameToId,
 		ingredientNameToId,
 		partyNameToId
 	);
 
-	return { dishes, ingredients, parties, dishIngredients, dishParties, cooksta };
+	return { dishes, ingredients, parties, dishIngredients, dishParties, cooksta, dlcs };
 }

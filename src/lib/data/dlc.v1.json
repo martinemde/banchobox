@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "name": "Dredge DLC",
+      "sort": {
+        "order": 1,
+        "name": "dredge dlc"
+      },
+      "search": "dredge dlc"
+    },
+    {
+      "id": 2,
+      "name": "Godzilla DLC",
+      "sort": {
+        "order": 2,
+        "name": "godzilla dlc"
+      },
+      "search": "godzilla dlc"
+    },
+    {
+      "id": 3,
+      "name": "Ichiban DLC",
+      "sort": {
+        "order": 3,
+        "name": "ichiban dlc"
+      },
+      "search": "ichiban dlc"
+    }
+  ],
+  "byId": {
+    "1": {
+      "id": 1,
+      "name": "Dredge DLC",
+      "sort": {
+        "order": 1,
+        "name": "dredge dlc"
+      },
+      "search": "dredge dlc"
+    },
+    "2": {
+      "id": 2,
+      "name": "Godzilla DLC",
+      "sort": {
+        "order": 2,
+        "name": "godzilla dlc"
+      },
+      "search": "godzilla dlc"
+    },
+    "3": {
+      "id": 3,
+      "name": "Ichiban DLC",
+      "sort": {
+        "order": 3,
+        "name": "ichiban dlc"
+      },
+      "search": "ichiban dlc"
+    }
+  },
+  "facets": {}
+}

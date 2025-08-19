@@ -8,17 +8,19 @@ import type {
 	PartyDish,
 	Dish,
 	Ingredient,
-	PartyRecord,
 	EntityBundle,
 	PartyDishSortKey,
 	CookstaInputRow,
-	CookstaTier
+	CookstaTier,
+	DLCInputRow,
+	DLC
 } from '../../src/lib/types.js';
 import { buildDishesBundle } from './dish_bundle.js';
 import { buildIngredientsBundle } from './ingredient_bundle.js';
 import { buildPartiesBundle } from './party_bundle.js';
 import { buildPartyDishesBundle } from './party_dish_bundle.js';
 import { buildCookstaBundle } from './cooksta_bundle.js';
+import { buildDLCBundle } from './dlc_bundle.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
@@ -28,7 +30,8 @@ export function enrichData(
 	partyInputRows: PartyInputRow[],
 	dishIngredients: DishIngredient[],
 	dishParties: DishParty[],
-	cookstaInputRows: CookstaInputRow[]
+	cookstaInputRows: CookstaInputRow[],
+	dlcInputRows: DLCInputRow[]
 ) {
 	const partyDishes: PartyDish[] = [];
 	const partyDishesByPartyId = new Map<Id, PartyDish[]>();
@@ -272,12 +275,21 @@ export function enrichData(
 	const partyDishesBundle = buildPartyDishesBundle(partyDishes);
 	const partiesBundle = buildPartiesBundle(partyInputRows, partyDishesByPartyId);
 	const cookstaBundle = buildCookstaBundle(cookstaInputRows);
+	const dlcBundle = buildDLCBundle(dlcInputRows);
 
-	return { dishesBundle, ingredientsBundle, partiesBundle, partyDishesBundle, cookstaBundle } as {
+	return {
+		dishesBundle,
+		ingredientsBundle,
+		partiesBundle,
+		partyDishesBundle,
+		cookstaBundle,
+		dlcBundle
+	} as {
 		dishesBundle: EntityBundle<Dish>;
 		ingredientsBundle: EntityBundle<Ingredient>;
-		partiesBundle: EntityBundle<PartyRecord>;
+		partiesBundle: EntityBundle<PartyInputRow>;
 		partyDishesBundle: EntityBundle<PartyDish>;
 		cookstaBundle: EntityBundle<CookstaTier>;
+		dlcBundle: EntityBundle<DLC>;
 	};
 }

@@ -8,13 +8,15 @@
 	import { bundle as partiesBundleStore } from '$lib/stores/parties';
 	import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
 	import { bundle as cookstaBundleStore } from '$lib/stores/cooksta';
+	import { bundle as dlcBundleStore } from '$lib/stores/dlc';
 	import type {
 		EntityBundle,
 		Dish,
 		Ingredient,
 		Party,
 		PartyDish,
-		CookstaTier
+		CookstaTier,
+		DLC
 	} from '$lib/types.js';
 
 	let { children, data }: LayoutProps = $props();
@@ -33,6 +35,9 @@
 	}
 	if (data.cooksta && get(cookstaBundleStore) == null) {
 		cookstaBundleStore.set(data.cooksta as EntityBundle<CookstaTier>);
+	}
+	if (data.dlc && get(dlcBundleStore) == null) {
+		dlcBundleStore.set(data.dlc as EntityBundle<DLC>);
 	}
 </script>
 
