@@ -1,11 +1,12 @@
 <script lang="ts">
 	import type { Dish } from '$lib/types.js';
 	import IngredientTypeCount from './IngredientTypeCount.svelte';
+	import { SvelteMap } from 'svelte/reactivity';
 
 	let { dish } = $props<{ dish: Dish }>();
 
 	let items = $derived.by(() => {
-		const byType = new Map<string, { type: string; count: number }>();
+		const byType = new SvelteMap<string, { type: string; count: number }>();
 		for (const ing of dish.ingredients) {
 			const key = ing.type as string;
 			const existing = byType.get(key);

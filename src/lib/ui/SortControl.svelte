@@ -11,7 +11,7 @@
 		options = [],
 		column = $bindable(''),
 		direction = $bindable<SortDirection>('asc')
-	} = $props();
+	} = $props<{ options?: SortOption[]; column?: string; direction?: SortDirection }>();
 
 	function toggleDirection() {
 		direction = direction === 'asc' ? 'desc' : 'asc';

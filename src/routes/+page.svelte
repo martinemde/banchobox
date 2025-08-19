@@ -4,11 +4,23 @@
 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
+	import { SvelteMap } from 'svelte/reactivity';
 
 	// Data from stores
 	const dishes = $derived($dishesBundle?.rows ?? []);
 	const parties = $derived($partiesBundle?.rows ?? []);
-	const dishesByParty = $derived($dishesByPartyStore ?? ({} as Record<number, { rows: any[] }>));
+	interface PartyDishRowShape {
+		id: number;
+		name: string;
+		image: string;
+		finalProfitPerServing?: number;
+		partyBonus?: number;
+		ingredients?: Array<{ name: string; count: number }>;
+		sort?: { finalProfitPerServing?: number };
+	}
+	const dishesByParty = $derived(
+		$dishesByPartyStore ?? ({} as Record<number, { rows: PartyDishRowShape[] }>)
+	);
 
 	// Interactive demo state
 	let selectedPartyId = $state(1); // Jellyfish
@@ -18,7 +30,7 @@
 	const selectedParty = $derived(parties.find((p) => p.id === selectedPartyId));
 	const partyRows = $derived(dishesByParty[selectedPartyId]?.rows ?? []);
 	// Sort by party-adjusted profit per serving if available
-	function computePartyProfitPerServing(d: any): number {
+	function computePartyProfitPerServing(d: PartyDishRowShape): number {
 		const finalPps = d.finalProfitPerServing ?? d.sort?.finalProfitPerServing ?? 0;
 		const bonus = d.partyBonus ?? 1;
 		return finalPps * bonus;
@@ -32,7 +44,7 @@
 	// Aggregate ingredient needs for the demo's top dishes
 	const demoIngredientList: Array<[string, number]> = $derived(
 		(() => {
-			const map = new Map<string, number>();
+			const map = new SvelteMap<string, number>();
 			for (const d of selectedPartyDishes) {
 				for (const ing of d.ingredients ?? []) {
 					const key = ing.name as string;
@@ -102,7 +114,7 @@
 					<div class="mt-4">
 						<div class="mb-2 text-sm font-semibold">{selectedParty?.name ?? 'Party'} Bonus</div>
 						<div class="flex items-start gap-2">
-							{#each selectedPartyDishes as d}
+							{#each selectedPartyDishes as d (d.id)}
 								<div class="flex-1">
 									<div class="flex justify-between text-xs opacity-80">
 										<PixelIcon image={d.image} alt={d.name} uiScale={1.5} />
@@ -158,7 +170,7 @@
 			<h3 class="mb-2 text-lg font-semibold">Profitability Analyzer</h3>
 			<p class="mb-4 text-sm opacity-80">Which dish actually makes you the most money?</p>
 			<div class="space-y-2">
-				{#each selectedPartyDishes as d}
+				{#each selectedPartyDishes as d (d.id)}
 					<div>
 						<div class="flex justify-between text-xs opacity-80">
 							<span>{d.name}</span>
@@ -178,7 +190,7 @@
 			<h3 class="mb-2 text-lg font-semibold">Dive Planner</h3>
 			<p class="mb-4 text-sm opacity-80">Know what ingredients to bring back before you dive.</p>
 			<ul class="list-inside list-disc text-sm opacity-90">
-				{#each demoIngredientList as [name, count]}
+				{#each demoIngredientList as [name, count] (name)}
 					<li>{count}× {name}</li>
 				{/each}
 			</ul>
@@ -189,7 +201,7 @@
 			<div class="rounded-lg border border-white/10 p-4 text-sm">
 				<div class="mb-2 font-semibold">Tonight’s Menu (preview)</div>
 				<ul class="space-y-1">
-					{#each selectedPartyDishes as d}
+					{#each selectedPartyDishes as d (d.id)}
 						<li class="flex items-center justify-between">
 							<span>{d.name}</span>
 							<span class="opacity-70">+{Math.round(computePartyProfitPerServing(d))}G/serv</span>
@@ -218,7 +230,7 @@
 		</div>
 		{#if demoStep === 1}
 			<div class="grid gap-3 sm:grid-cols-2 md:grid-cols-4">
-				{#each parties as p}
+				{#each parties as p (p.id)}
 					<button
 						class="variant-glass-surface rounded-lg border border-white/10 p-4 text-left transition"
 						class:ring-2={selectedPartyId === p.id}
@@ -232,7 +244,7 @@
 			</div>
 		{:else if demoStep === 2}
 			<div class="grid gap-4 md:grid-cols-3">
-				{#each selectedPartyDishes as d}
+				{#each selectedPartyDishes as d (d.id)}
 					<div class="rounded-lg border border-white/10 p-4">
 						<div class="mb-1 text-sm font-semibold">{d.name}</div>
 						<div class="text-xs opacity-70">
@@ -251,7 +263,7 @@
 			<div>
 				<div class="mb-3 text-sm font-semibold">BanchoBox Ingredient List</div>
 				<ul class="grid gap-2 sm:grid-cols-2 md:grid-cols-3">
-					{#each demoIngredientList as [name, count]}
+					{#each demoIngredientList as [name, count] (name)}
 						<li class="rounded border border-white/10 p-3 text-sm">
 							<div class="flex items-center justify-between">
 								<span>{name}</span>
@@ -273,7 +285,7 @@
 	<h2 class="mb-6 text-2xl font-bold">Tracking Preview</h2>
 	{#if tracked.length > 0}
 		<div class="grid gap-4 md:grid-cols-3">
-			{#each tracked as d}
+			{#each tracked as d (d.id)}
 				<div class="rounded-lg border border-white/10 p-4">
 					<div class="mb-1 text-sm font-semibold">{d.name}</div>
 					<div class="text-xs opacity-70">
@@ -289,7 +301,7 @@
 		<div class="rounded-lg border border-white/10 p-6 text-sm opacity-90">
 			No dishes tracked yet. Here’s a sample:
 			<ul class="mt-2 space-y-1">
-				{#each selectedPartyDishes as d}
+				{#each selectedPartyDishes as d (d.id)}
 					<li class="flex items-center justify-between">
 						<span>{d.name}</span>
 						<span class="opacity-70">{Math.round(computePartyProfitPerServing(d))}G/serv</span>

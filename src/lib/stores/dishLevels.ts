@@ -54,12 +54,14 @@ function createDishLevelsStore(): DishLevelsStore {
 	store.subscribe((levels) => writeToStorage(levels));
 
 	function getLevel(dishId: DishId, maxLevel: number): number {
-		let current: number | undefined;
-		let max = Math.max(1, Math.floor(maxLevel || 1));
+		const max = Math.max(1, Math.floor(maxLevel || 1));
 		// Synchronously read without subscription
-		let snapshot: LevelsMap | undefined;
-		store.update((value) => ((snapshot = value), value));
-		current = snapshot?.[dishId];
+		const snapshot = ((): LevelsMap => {
+			let snap!: LevelsMap;
+			store.update((value) => ((snap = value), value));
+			return snap;
+		})();
+		const current = snapshot?.[dishId];
 		const fallback = Math.min(10, max);
 		return clampLevel(current ?? fallback, max);
 	}

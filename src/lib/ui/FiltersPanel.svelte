@@ -100,7 +100,7 @@
 		</div>
 	</div>
 
-	{#each facetEntries as [facetName, facetIndex] (facetName)}
+	{#each facetEntries as [facetName] (facetName)}
 		<fieldset class="space-y-1">
 			<legend class="text-sm font-semibold">
 				<button

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import PartyDish from '$lib/components/PartyDishCard.svelte';
 	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
 	import { partiesStores } from '$lib/stores/parties';
