@@ -1,0 +1,5867 @@
+[
+  {
+    "id": 1,
+    "name": "Aurora Jellyfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 202,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 2,
+    "name": "Barbed Eel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 156,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 3,
+    "name": "Bloodskin Shark",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 1,
+    "kg": 11.5,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 106,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 4,
+    "name": "Bony Wreckfish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 1,
+    "kg": 8,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 136,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 5,
+    "name": "Bursting Anglerfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 150,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 6,
+    "name": "Concertina Barracuda",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 6.5,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 164,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 7,
+    "name": "Enthralled Stonefish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 8,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 165,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 8,
+    "name": "Fanged Cod",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 3.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 194,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 9,
+    "name": "Gazing Shark",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 1,
+    "kg": 11,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 104,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 10,
+    "name": "Gelatinous Stonefish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 7.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 191,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 11,
+    "name": "Gnashing Perch",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 4.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 179,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 12,
+    "name": "Grotesque Mackerel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 193,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 13,
+    "name": "Host Eel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 5.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 137,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 14,
+    "name": "Malignant Pincer",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 2.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 121,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 15,
+    "name": "Many Eyed Mackerel",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 2.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 172,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 16,
+    "name": "Parhelion Jellyfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 189,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 17,
+    "name": "Perished Loosejaw",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 188,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 18,
+    "name": "Radiant Squid",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 4.5,
+    "max_meats": 3,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 197,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 19,
+    "name": "Sallow Sailfish",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 1,
+    "kg": 9.5,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 116,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 20,
+    "name": "Savage Barracuda",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 7,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 174,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 21,
+    "name": "Scouring Bass",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 3.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 195,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 22,
+    "name": "Seizing Snailfish",
+    "source": "Jellyfish Basin",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 166,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 23,
+    "name": "Shattered Wreckfish",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 6.5,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 140,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 24,
+    "name": "Sprouting Eel",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 1,
+    "kg": 7,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 114,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 25,
+    "name": "Three-Headed Cod",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 173,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 26,
+    "name": "Translucent Sturgeon",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 1,
+    "kg": 8,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 105,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 27,
+    "name": "Tusked Grouper",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 178,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 28,
+    "name": "Voltaic Grouper",
+    "source": "Fog Coast",
+    "type": "Aberration",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 151,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 29,
+    "name": "Withered Ray",
+    "source": "Black Cliff",
+    "type": "Aberration",
+    "drone": 1,
+    "kg": 8.5,
+    "max_meats": 5,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 117,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 30,
+    "name": "Cerebral Crab",
+    "source": "Fog Coast",
+    "type": "Aberration Crab",
+    "drone": 0,
+    "kg": 2,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 152,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 31,
+    "name": "Cortex Decorator",
+    "source": "Black Cliff",
+    "type": "Aberration Crab",
+    "drone": 0,
+    "kg": 2.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 125,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 32,
+    "name": "Entangled Crab",
+    "source": "Jellyfish Basin",
+    "type": "Aberration Crab",
+    "drone": 0,
+    "kg": 2.5,
+    "max_meats": 3,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 153,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 33,
+    "name": "Imperious Lobster",
+    "source": "Jellyfish Basin",
+    "type": "Aberration Crab",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 119,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 34,
+    "name": "Splintered Crab",
+    "source": "Black Cliff",
+    "type": "Aberration Crab",
+    "drone": 0,
+    "kg": 3.5,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 181,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 35,
+    "name": "Clione Queen's Tentacle",
+    "source": "130-250m",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 146,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 36,
+    "name": "Goblin Shark's Fatty Meat",
+    "source": "130-250m",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 107,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 42,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Helicoprion Tail",
+    "source": "3rd Glacial Cave",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 85,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 40,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Klaus's Fin",
+    "source": "0-50m Night",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 103,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 41,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Kronosaurus Tongue",
+    "source": "Hydrothermal Vents",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 126,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 40,
+    "name": "Lusca Neck Meat",
+    "source": "50-130m Night",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 42,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 39,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Lusca Tentacle",
+    "source": "50-130m Night",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 99,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 42,
+    "name": "Mantis Shrimp Meat",
+    "source": "0-50m Night",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 133,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 43,
+    "name": "Phantom Jellyfish Meat",
+    "source": "Second Glacial Cave",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 92,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 20,
+    "usedForParties": [
+      1
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Truck Hermit Crab Legs",
+    "source": "0-50m Night",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 145,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 45,
+    "name": "Wolf Eel Tail Meat",
+    "source": "130-250m",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 144,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 46,
+    "name": "Yawie's Inner Flesh",
+    "source": "Divine Tree Control Room",
+    "type": "Boss",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 124,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 47,
+    "name": "American Lobster",
+    "source": "0-50m",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 3,
+    "cost": 43,
+    "usedIn": [
+      {
+        "dishId": 5,
+        "count": 2
+      },
+      {
+        "dishId": 177,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 22,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Blue Lobster",
+    "source": "0-50m Night",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 3,
+    "cost": 47,
+    "usedIn": [
+      {
+        "dishId": 159,
+        "count": 1
+      },
+      {
+        "dishId": 7,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": 21,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 49,
+    "name": "California Spiny Lobster",
+    "source": "50-130m",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1.5,
+    "max_meats": 3,
+    "cost": 22,
+    "usedIn": [
+      {
+        "dishId": 15,
+        "count": 2
+      },
+      {
+        "dishId": 222,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 27,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Crystal Lobster",
+    "source": "50-130m Night",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1.5,
+    "max_meats": 3,
+    "cost": 47,
+    "usedIn": [
+      {
+        "dishId": 14,
+        "count": 2
+      },
+      {
+        "dishId": 158,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 25,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Dollocaris Ingens",
+    "source": "Hydrothermal Vents",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1.5,
+    "max_meats": 3,
+    "cost": 45,
+    "usedIn": [
+      {
+        "dishId": 170,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 52,
+    "name": "Eastern Rock Lobster",
+    "source": "130-250m",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 2.5,
+    "max_meats": 3,
+    "cost": 47,
+    "usedIn": [
+      {
+        "dishId": 11,
+        "count": 2
+      },
+      {
+        "dishId": 161,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 24,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 53,
+    "name": "European Lobster",
+    "source": "0-50m",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 3,
+    "cost": 23,
+    "usedIn": [
+      {
+        "dishId": 13,
+        "count": 2
+      },
+      {
+        "dishId": 219,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 26,
+    "usedForParties": [
+      6,
+      8
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Fan Lobster",
+    "source": "50-130m Night",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 0.2,
+    "max_meats": 3,
+    "cost": 22,
+    "usedIn": [
+      {
+        "dishId": 221,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 55,
+    "name": "Horsehair Crab",
+    "source": "Glacial Area",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1.5,
+    "max_meats": 3,
+    "cost": 50,
+    "usedIn": [
+      {
+        "dishId": 50,
+        "count": 2
+      },
+      {
+        "dishId": 154,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 56,
+    "name": "Norway Lobster",
+    "source": "130-250m",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 0.2,
+    "max_meats": 3,
+    "cost": 25,
+    "usedIn": [
+      {
+        "dishId": 10,
+        "count": 2
+      },
+      {
+        "dishId": 215,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 23,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Red-banded Lobster",
+    "source": "0-50m Night",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 3,
+    "cost": 25,
+    "usedIn": [
+      {
+        "dishId": 216,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 58,
+    "name": "Snow Crab",
+    "source": "Glacial Area",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 2,
+    "max_meats": 3,
+    "cost": 40,
+    "usedIn": [
+      {
+        "dishId": 50,
+        "count": 2
+      },
+      {
+        "dishId": 184,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 59,
+    "name": "Tokummia Katalepsis",
+    "source": "Hydrothermal Vents",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 2,
+    "max_meats": 3,
+    "cost": 55,
+    "usedIn": [
+      {
+        "dishId": 5,
+        "count": 2
+      },
+      {
+        "dishId": 142,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 22,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Tropical Rock Lobster",
+    "source": "50-130m",
+    "type": "Crab trap",
+    "drone": 0,
+    "kg": 1.2,
+    "max_meats": 3,
+    "cost": 45,
+    "usedIn": [
+      {
+        "dishId": 5,
+        "count": 2
+      },
+      {
+        "dishId": 168,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 22,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Wasabi Sushi",
+    "type": "Default",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": null,
+    "usedIn": [
+      {
+        "dishId": 305,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 62,
+    "name": "Alaska Pollock",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 7,
+    "max_meats": 5,
+    "cost": 45,
+    "usedIn": [
+      {
+        "dishId": 169,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 63,
+    "name": "Allenypterus",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4,
+    "max_meats": 3,
+    "cost": 42,
+    "usedIn": [
+      {
+        "dishId": 180,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 64,
+    "name": "Anomalocaris",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4,
+    "max_meats": 3,
+    "cost": 75,
+    "usedIn": [
+      {
+        "dishId": 248,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 65,
+    "name": "Antarctic Octopus",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 7.5,
+    "max_meats": 5,
+    "cost": 40,
+    "usedIn": [
+      {
+        "dishId": 67,
+        "count": 3
+      },
+      {
+        "dishId": 185,
+        "count": 1
+      },
+      {
+        "dishId": 102,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 66,
+    "name": "Arctic Cod",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 32,
+    "usedIn": [
+      {
+        "dishId": 62,
+        "count": 3
+      },
+      {
+        "dishId": 205,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 67,
+    "name": "Arctic Telescope Fish",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 3,
+    "cost": 40,
+    "usedIn": [
+      {
+        "dishId": 183,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 68,
+    "name": "Atlantic Anglerfish",
+    "source": "Limestone Cave",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5.5,
+    "max_meats": 5,
+    "cost": 11,
+    "usedIn": [
+      {
+        "dishId": 253,
+        "count": 1
+      },
+      {
+        "dishId": 64,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 69,
+    "name": "Atlantic Bonito",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4,
+    "max_meats": 3,
+    "cost": 7,
+    "usedIn": [
+      {
+        "dishId": 37,
+        "count": 5
+      },
+      {
+        "dishId": 263,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 12,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Atlantic Mackerel",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3.5,
+    "max_meats": 3,
+    "cost": 7,
+    "usedIn": [
+      {
+        "dishId": 86,
+        "count": 5
+      },
+      {
+        "dishId": 49,
+        "count": 3
+      },
+      {
+        "dishId": 262,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 71,
+    "name": "Barrel Jellyfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 3,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 28,
+        "count": 5
+      },
+      {
+        "dishId": 275,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 17,
+    "usedForParties": [
+      1
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Barreleye",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 3,
+    "cost": 35,
+    "usedIn": [
+      {
+        "dishId": 15,
+        "count": 3
+      },
+      {
+        "dishId": 31,
+        "count": 1
+      },
+      {
+        "dishId": 220,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 27,
+    "usedForParties": [
+      8,
+      4
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Bigeye Scad",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.6,
+    "max_meats": 3,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 130,
+        "count": 5
+      },
+      {
+        "dishId": 270,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 74,
+    "name": "Bigeye Trevally",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 5,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 34,
+        "count": 5
+      },
+      {
+        "dishId": 266,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 7,
+    "usedForParties": [
+      5
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Black and White Snapper",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 5,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 286,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 76,
+    "name": "Blackfin Barracuda",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5.5,
+    "max_meats": 5,
+    "cost": 20,
+    "usedIn": [
+      {
+        "dishId": 63,
+        "count": 3
+      },
+      {
+        "dishId": 226,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 77,
+    "name": "Blacktip Shark Meat",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 2.5,
+    "max_meats": 5,
+    "cost": 20,
+    "usedIn": [
+      {
+        "dishId": 27,
+        "count": 3
+      },
+      {
+        "dishId": 227,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 35,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Blobfish",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 7.5,
+    "max_meats": 5,
+    "cost": 40,
+    "usedIn": [
+      {
+        "dishId": 97,
+        "count": 3
+      },
+      {
+        "dishId": 182,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 79,
+    "name": "Blood-Belly Comb Jelly",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 7,
+    "max_meats": 3,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 239,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 80,
+    "name": "Blue Tang",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.5,
+    "max_meats": 3,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 66,
+        "count": 3
+      },
+      {
+        "dishId": 294,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 81,
+    "name": "Bluefin Tuna Akami",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 8,
+    "max_meats": 5,
+    "cost": 27,
+    "usedIn": [
+      {
+        "dishId": 4,
+        "count": 3
+      },
+      {
+        "dishId": 115,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 53,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Bluefin Tuna Chutoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 8,
+    "max_meats": 5,
+    "cost": 32,
+    "usedIn": [
+      {
+        "dishId": 3,
+        "count": 3
+      },
+      {
+        "dishId": 108,
+        "count": 1
+      },
+      {
+        "dishId": 2,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 52,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Bluefin Tuna Ootoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": null,
+    "max_meats": 9,
+    "cost": 45,
+    "usedIn": [
+      {
+        "dishId": 44,
+        "count": 1
+      },
+      {
+        "dishId": 1,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 50,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Bluehead Tilefish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.2,
+    "max_meats": 2,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 278,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 85,
+    "name": "Bluespotted Stargazer",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": null,
+    "cost": 18,
+    "usedIn": [
+      {
+        "dishId": 80,
+        "count": 1
+      },
+      {
+        "dishId": 231,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 86,
+    "name": "Box Jellyfish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 18,
+    "usedIn": [
+      {
+        "dishId": 230,
+        "count": 1
+      },
+      {
+        "dishId": 36,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": 16,
+    "usedForParties": [
+      1
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Capelin",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.5,
+    "max_meats": 3,
+    "cost": 15,
+    "usedIn": [
+      {
+        "dishId": 33,
+        "count": 5
+      },
+      {
+        "dishId": 246,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 11,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Cardinalfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.2,
+    "max_meats": 3,
+    "cost": 1,
+    "usedIn": [
+      {
+        "dishId": 302,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 89,
+    "name": "Clearfin Lionfish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1.7,
+    "max_meats": 3,
+    "cost": 8,
+    "usedIn": [
+      {
+        "dishId": 63,
+        "count": 3
+      },
+      {
+        "dishId": 259,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 90,
+    "name": "Clown Frogfish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.3,
+    "max_meats": 3,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 25,
+        "count": 3
+      },
+      {
+        "dishId": 280,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 36,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Clownfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.2,
+    "max_meats": 2,
+    "cost": 1,
+    "usedIn": [
+      {
+        "dishId": 66,
+        "count": 3
+      },
+      {
+        "dishId": 303,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 92,
+    "name": "Comb Jelly",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 7,
+    "max_meats": 3,
+    "cost": 14,
+    "usedIn": [
+      {
+        "dishId": 43,
+        "count": 5
+      },
+      {
+        "dishId": 245,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 18,
+    "usedForParties": [
+      1
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Comber",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.2,
+    "max_meats": 2,
+    "cost": 1,
+    "usedIn": [
+      {
+        "dishId": 82,
+        "count": 5
+      },
+      {
+        "dishId": 304,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 94,
+    "name": "Cookiecutter Shark",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 25,
+    "usedIn": [
+      {
+        "dishId": 31,
+        "count": 1
+      },
+      {
+        "dishId": 214,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 38,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Copper Shark Meat",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 4,
+    "max_meats": 5,
+    "cost": 22,
+    "usedIn": [
+      {
+        "dishId": 27,
+        "count": 3
+      },
+      {
+        "dishId": 223,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 35,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Coral Trout",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 5,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 134,
+        "count": 3
+      },
+      {
+        "dishId": 95,
+        "count": 3
+      },
+      {
+        "dishId": 267,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 97,
+    "name": "Cuttlefish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4,
+    "max_meats": 3,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 72,
+        "count": 5
+      },
+      {
+        "dishId": 77,
+        "count": 3
+      },
+      {
+        "dishId": 265,
+        "count": 1
+      },
+      {
+        "dishId": 2,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 51,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Devil Scorpionfish",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 3,
+    "cost": 45,
+    "usedIn": [
+      {
+        "dishId": 167,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 99,
+    "name": "Drepanaspis Meat",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 8.5,
+    "max_meats": 5,
+    "cost": 50,
+    "usedIn": [
+      {
+        "dishId": 155,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 100,
+    "name": "Dumbo Octopus",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4,
+    "max_meats": 3,
+    "cost": 38,
+    "usedIn": [
+      {
+        "dishId": 56,
+        "count": 3
+      },
+      {
+        "dishId": 213,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 101,
+    "name": "Dunkleosteus Meat",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 19.5,
+    "max_meats": 5,
+    "cost": 70,
+    "usedIn": [
+      {
+        "dishId": 128,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 102,
+    "name": "Dusky Grouper",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 9,
+    "max_meats": 5,
+    "cost": 10,
+    "usedIn": [
+      {
+        "dishId": 75,
+        "count": 5
+      },
+      {
+        "dishId": 258,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 103,
+    "name": "Emperor Angelfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.4,
+    "max_meats": null,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 283,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 104,
+    "name": "Falcatus",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": 3,
+    "cost": 43,
+    "usedIn": [
+      {
+        "dishId": 18,
+        "count": 3
+      },
+      {
+        "dishId": 175,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 34,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Fangtooth",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 3,
+    "cost": 15,
+    "usedIn": [
+      {
+        "dishId": 59,
+        "count": 2
+      },
+      {
+        "dishId": 247,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 106,
+    "name": "Flame Angelfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.2,
+    "max_meats": null,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 298,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 107,
+    "name": "Fried Egg Jellyfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 3,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 28,
+        "count": 5
+      },
+      {
+        "dishId": 277,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 17,
+    "usedForParties": [
+      1
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Frilled Shark Meat",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 8.5,
+    "max_meats": 5,
+    "cost": 28,
+    "usedIn": [
+      {
+        "dishId": 211,
+        "count": 1
+      },
+      {
+        "dishId": 20,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 33,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Gelatinous Snailfish",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 2,
+    "max_meats": 3,
+    "cost": 28,
+    "usedIn": [
+      {
+        "dishId": 83,
+        "count": 3
+      },
+      {
+        "dishId": 212,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 110,
+    "name": "Giant Trevally Meat",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 5,
+    "max_meats": 5,
+    "cost": 10,
+    "usedIn": [
+      {
+        "dishId": 34,
+        "count": 5
+      },
+      {
+        "dishId": 256,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 7,
+    "usedForParties": [
+      5
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Golden King Crab",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 8,
+    "max_meats": 5,
+    "cost": 45,
+    "usedIn": [
+      {
+        "dishId": 50,
+        "count": 2
+      },
+      {
+        "dishId": 171,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 112,
+    "name": "Great Barracuda",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 7,
+    "max_meats": 5,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 52,
+        "count": 5
+      },
+      {
+        "dishId": 264,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 113,
+    "name": "Green Humphead Parrotfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 1.8,
+    "max_meats": 5,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 39,
+        "count": 5
+      },
+      {
+        "dishId": 273,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 13,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Greenland Shark Meat",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 20,
+    "max_meats": 5,
+    "cost": 62,
+    "usedIn": [
+      {
+        "dishId": 135,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 115,
+    "name": "Grey Triggerfish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3.5,
+    "max_meats": 5,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 271,
+        "count": 1
+      },
+      {
+        "dishId": 110,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 116,
+    "name": "Haddock",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": 5,
+    "cost": 37,
+    "usedIn": [
+      {
+        "dishId": 65,
+        "count": 3
+      },
+      {
+        "dishId": 196,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 117,
+    "name": "Hammerhead Meat",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 13,
+    "max_meats": 5,
+    "cost": 47,
+    "usedIn": [
+      {
+        "dishId": 160,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 118,
+    "name": "Harlequin Hind",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1.1,
+    "max_meats": 5,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 95,
+        "count": 3
+      },
+      {
+        "dishId": 268,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 119,
+    "name": "Humboldt Squid Meat",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 7.5,
+    "max_meats": 5,
+    "cost": 48,
+    "usedIn": [
+      {
+        "dishId": 17,
+        "count": 1
+      },
+      {
+        "dishId": 157,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 45,
+    "usedForParties": [
+      7
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Ice Fish",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5.5,
+    "max_meats": 3,
+    "cost": 32,
+    "usedIn": [
+      {
+        "dishId": 26,
+        "count": 3
+      },
+      {
+        "dishId": 206,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 9,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Lagoon Triggerfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.7,
+    "max_meats": 2,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 291,
+        "count": 1
+      },
+      {
+        "dishId": 110,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 122,
+    "name": "Long-Snouted Seahorse",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.5,
+    "max_meats": null,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 96,
+        "count": 3
+      },
+      {
+        "dishId": 68,
+        "count": 3
+      },
+      {
+        "dishId": 122,
+        "count": 3
+      },
+      {
+        "dishId": 254,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 123,
+    "name": "Longfin Batfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.8,
+    "max_meats": 5,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 70,
+        "count": 5
+      },
+      {
+        "dishId": 285,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 124,
+    "name": "Longnose Sawshark Meat",
+    "source": "50-130m Day or Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 6.5,
+    "max_meats": 5,
+    "cost": 12,
+    "usedIn": [
+      {
+        "dishId": 250,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 125,
+    "name": "Longspine Porcupinefish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3.5,
+    "max_meats": 3,
+    "cost": 26,
+    "usedIn": [
+      {
+        "dishId": 55,
+        "count": 3
+      },
+      {
+        "dishId": 132,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 126,
+    "name": "Longspine Squirrelfish",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.4,
+    "max_meats": 3,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 63,
+        "count": 3
+      },
+      {
+        "dishId": 288,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 127,
+    "name": "Lumpfish",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 40,
+    "usedIn": [
+      {
+        "dishId": 186,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 128,
+    "name": "Mackerel Scad",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.8,
+    "max_meats": 2,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 69,
+        "count": 5
+      },
+      {
+        "dishId": 279,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 129,
+    "name": "Mako Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 9,
+    "max_meats": 5,
+    "cost": 43,
+    "usedIn": [
+      {
+        "dishId": 201,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 130,
+    "name": "Marbled Electric Ray Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 3.5,
+    "max_meats": 5,
+    "cost": 30,
+    "usedIn": [
+      {
+        "dishId": 79,
+        "count": 3
+      },
+      {
+        "dishId": 209,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 131,
+    "name": "Marlin Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 7.5,
+    "max_meats": 5,
+    "cost": 45,
+    "usedIn": [
+      {
+        "dishId": 38,
+        "count": 3
+      },
+      {
+        "dishId": 118,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 30,
+    "usedForParties": [
+      3
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Mediterranean Parrotfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 2,
+    "max_meats": 5,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 87,
+        "count": 5
+      },
+      {
+        "dishId": 282,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 133,
+    "name": "Megalograptus",
+    "source": "Divine Tree Control Room",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 8,
+    "max_meats": 5,
+    "cost": 46,
+    "usedIn": [
+      {
+        "dishId": 163,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 134,
+    "name": "Megamouth Shark Meat",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 11.5,
+    "max_meats": 5,
+    "cost": 31,
+    "usedIn": [
+      {
+        "dishId": 204,
+        "count": 1
+      },
+      {
+        "dishId": 20,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 33,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Moray Eel",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 9,
+    "max_meats": null,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 129,
+        "count": 2
+      },
+      {
+        "dishId": 13,
+        "count": 2
+      },
+      {
+        "dishId": 240,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 26,
+    "usedForParties": [
+      6,
+      8
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Narrow-Barred Spanish Mackerel",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 9,
+    "max_meats": 5,
+    "cost": 10,
+    "usedIn": [
+      {
+        "dishId": 84,
+        "count": 5
+      },
+      {
+        "dishId": 257,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 137,
+    "name": "Narwhal Meat",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 9.5,
+    "max_meats": 5,
+    "cost": 46,
+    "usedIn": [
+      {
+        "dishId": 76,
+        "count": 3
+      },
+      {
+        "dishId": 162,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 138,
+    "name": "Orbicular Batfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.3,
+    "max_meats": 2,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 70,
+        "count": 5
+      },
+      {
+        "dishId": 296,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 139,
+    "name": "Ornate Wrasse",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.5,
+    "max_meats": 2,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 22,
+        "count": 5
+      },
+      {
+        "dishId": 289,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 10,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Pacific Fanfish",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 22,
+    "usedIn": [
+      {
+        "dishId": 224,
+        "count": 1
+      },
+      {
+        "dishId": 111,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 141,
+    "name": "Painted Comber",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.4,
+    "max_meats": 3,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 82,
+        "count": 5
+      },
+      {
+        "dishId": 272,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 142,
+    "name": "Peacock Squid",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3.5,
+    "max_meats": 3,
+    "cost": 36,
+    "usedIn": [
+      {
+        "dishId": 77,
+        "count": 3
+      },
+      {
+        "dishId": 61,
+        "count": 3
+      },
+      {
+        "dishId": 217,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 143,
+    "name": "Pelican Eel",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 8,
+    "max_meats": 5,
+    "cost": 60,
+    "usedIn": [
+      {
+        "dishId": 98,
+        "count": 3
+      },
+      {
+        "dishId": 139,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 144,
+    "name": "Pikaia",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4.5,
+    "max_meats": 3,
+    "cost": 38,
+    "usedIn": [
+      {
+        "dishId": 57,
+        "count": 3
+      },
+      {
+        "dishId": 190,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 145,
+    "name": "Polar Eelpout",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 3,
+    "cost": 30,
+    "usedIn": [
+      {
+        "dishId": 207,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 146,
+    "name": "Porbeagle Shark Meat",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 13.5,
+    "max_meats": 5,
+    "cost": 55,
+    "usedIn": [
+      {
+        "dishId": 29,
+        "count": 3
+      },
+      {
+        "dishId": 141,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 37,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Pyramid Butterflyfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.4,
+    "max_meats": 2,
+    "cost": 1,
+    "usedIn": [
+      {
+        "dishId": 66,
+        "count": 3
+      },
+      {
+        "dishId": 300,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 148,
+    "name": "Qingmendous",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": null,
+    "cost": 40,
+    "usedIn": [
+      {
+        "dishId": 187,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 149,
+    "name": "Rainbow Wrasse",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.6,
+    "max_meats": 2,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 22,
+        "count": 5
+      },
+      {
+        "dishId": 293,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 10,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Red Bream",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 3,
+    "cost": 12,
+    "usedIn": [
+      {
+        "dishId": 25,
+        "count": 3
+      },
+      {
+        "dishId": 252,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 36,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Red Lionfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1.5,
+    "max_meats": 3,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 81,
+        "count": 5
+      },
+      {
+        "dishId": 284,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 152,
+    "name": "Redtoothed Triggerfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 5,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 236,
+        "count": 2
+      },
+      {
+        "dishId": 287,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 153,
+    "name": "Rhinochimaeridae Meat",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 5,
+    "max_meats": 7,
+    "cost": 30,
+    "usedIn": [
+      {
+        "dishId": 25,
+        "count": 3
+      },
+      {
+        "dishId": 208,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 36,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Sailfish Meat",
+    "source": "Shipwreck Interior",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 9,
+    "max_meats": 5,
+    "cost": 65,
+    "usedIn": [
+      {
+        "dishId": 16,
+        "count": 3
+      },
+      {
+        "dishId": 94,
+        "count": 1
+      },
+      {
+        "dishId": 19,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 29,
+    "usedForParties": [
+      3
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Salema Porgy",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.4,
+    "max_meats": 3,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 297,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 156,
+    "name": "Sally Lightfoot Crab",
+    "source": "Shipwreck Interior",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4,
+    "max_meats": 5,
+    "cost": 18,
+    "usedIn": [
+      {
+        "dishId": 88,
+        "count": 2
+      },
+      {
+        "dishId": 244,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 157,
+    "name": "Salmon Snailfish",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 20,
+    "usedIn": [
+      {
+        "dishId": 83,
+        "count": 3
+      },
+      {
+        "dishId": 228,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 158,
+    "name": "Sea Goldie",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.3,
+    "max_meats": 2,
+    "cost": 1,
+    "usedIn": [
+      {
+        "dishId": 301,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 159,
+    "name": "Sea Toad",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 18,
+    "usedIn": [
+      {
+        "dishId": 30,
+        "count": 1
+      },
+      {
+        "dishId": 232,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 4,
+    "usedForParties": [
+      5
+    ]
+  },
+  {
+    "id": 160,
+    "name": "Sheepshead Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 1.8,
+    "max_meats": 5,
+    "cost": 10,
+    "usedIn": [
+      {
+        "dishId": 281,
+        "count": 1
+      },
+      {
+        "dishId": 101,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 161,
+    "name": "Small Spotted Dart",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.8,
+    "max_meats": 3,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 143,
+        "count": 3
+      },
+      {
+        "dishId": 290,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 162,
+    "name": "Snub-Nosed Spiny Eel",
+    "source": "3rd Glacial Cave",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 6.5,
+    "max_meats": 5,
+    "cost": 60,
+    "usedIn": [
+      {
+        "dishId": 54,
+        "count": 2
+      },
+      {
+        "dishId": 138,
+        "count": 1
+      },
+      {
+        "dishId": 109,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 163,
+    "name": "Spear Squid",
+    "source": "50-130m Night",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 4.6,
+    "max_meats": 3,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 53,
+        "count": 3
+      },
+      {
+        "dishId": 237,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 164,
+    "name": "Spider Crab",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 7.5,
+    "max_meats": 5,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 60,
+        "count": 1
+      },
+      {
+        "dishId": 23,
+        "count": 1
+      },
+      {
+        "dishId": 242,
+        "count": 1
+      },
+      {
+        "dishId": 21,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 8,
+    "usedForParties": [
+      6,
+      5
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Starry Puffer",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3,
+    "max_meats": 3,
+    "cost": 15,
+    "usedIn": [
+      {
+        "dishId": 55,
+        "count": 3
+      },
+      {
+        "dishId": 131,
+        "count": 3
+      },
+      {
+        "dishId": 123,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 166,
+    "name": "Starry Skate",
+    "source": "Glacial Area",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 5.5,
+    "max_meats": 5,
+    "cost": 44,
+    "usedIn": [
+      {
+        "dishId": 79,
+        "count": 3
+      },
+      {
+        "dishId": 176,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 167,
+    "name": "Stingray Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 3,
+    "max_meats": 5,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 79,
+        "count": 3
+      },
+      {
+        "dishId": 47,
+        "count": 3
+      },
+      {
+        "dishId": 238,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 168,
+    "name": "Striped Catfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.3,
+    "max_meats": null,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 89,
+        "count": 5
+      },
+      {
+        "dishId": 295,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 169,
+    "name": "Striped Red Mullet",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.7,
+    "max_meats": null,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 210,
+        "count": 3
+      },
+      {
+        "dishId": 274,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 170,
+    "name": "Threetooth Puffer",
+    "source": "130-250m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 5,
+    "max_meats": 3,
+    "cost": 23,
+    "usedIn": [
+      {
+        "dishId": 218,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 171,
+    "name": "Thresher Shark Meat",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 8.5,
+    "max_meats": 5,
+    "cost": 53,
+    "usedIn": [
+      {
+        "dishId": 149,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 172,
+    "name": "Tiger Shark Meat",
+    "source": "50-130m Day or Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 15,
+    "max_meats": 5,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 241,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 173,
+    "name": "Titan Triggerfish",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 3.8,
+    "max_meats": 5,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 95,
+        "count": 3
+      },
+      {
+        "dishId": 276,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 174,
+    "name": "Vampire Squid",
+    "source": "Glacial Passage",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": 5,
+    "cost": 41,
+    "usedIn": [
+      {
+        "dishId": 77,
+        "count": 3
+      },
+      {
+        "dishId": 31,
+        "count": 1
+      },
+      {
+        "dishId": 192,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 38,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 175,
+    "name": "White Spotted Jellyfish",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 3,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 46,
+        "count": 1
+      },
+      {
+        "dishId": 269,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 19,
+    "usedForParties": [
+      1
+    ]
+  },
+  {
+    "id": 176,
+    "name": "White Trevally",
+    "source": "50-130m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 6,
+    "max_meats": 5,
+    "cost": 7,
+    "usedIn": [
+      {
+        "dishId": 73,
+        "count": 5
+      },
+      {
+        "dishId": 203,
+        "count": 3
+      },
+      {
+        "dishId": 261,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 177,
+    "name": "Whitetip Reefshark Head",
+    "source": "0-50m Day and Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 2.5,
+    "max_meats": 1,
+    "cost": 40,
+    "usedIn": [
+      {
+        "dishId": 147,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 43,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 178,
+    "name": "Whitetip Reefshark Meat",
+    "source": "0-50m Day and Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 2.5,
+    "max_meats": 5,
+    "cost": 8,
+    "usedIn": [
+      {
+        "dishId": 260,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 179,
+    "name": "Xenacanthus Meat",
+    "source": "Hydrothermal Vents",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 5.5,
+    "max_meats": 5,
+    "cost": 53,
+    "usedIn": [
+      {
+        "dishId": 148,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 180,
+    "name": "Yellow Tang",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.4,
+    "max_meats": 2,
+    "cost": 1,
+    "usedIn": [
+      {
+        "dishId": 299,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 181,
+    "name": "Yellowback Fusilier",
+    "source": "0-50m",
+    "type": "Fish",
+    "drone": 0,
+    "kg": 0.8,
+    "max_meats": 2,
+    "cost": 2,
+    "usedIn": [
+      {
+        "dishId": 233,
+        "count": 3
+      },
+      {
+        "dishId": 292,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 182,
+    "name": "Yellowfin Tuna Akami",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 6,
+    "max_meats": 5,
+    "cost": 24,
+    "usedIn": [
+      {
+        "dishId": 12,
+        "count": 3
+      },
+      {
+        "dishId": 120,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 55,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 183,
+    "name": "Yellowfin Tuna Chutoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 6,
+    "max_meats": 5,
+    "cost": 30,
+    "usedIn": [
+      {
+        "dishId": 6,
+        "count": 3
+      },
+      {
+        "dishId": 112,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 54,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 184,
+    "name": "Yellowfin Tuna Ootoro",
+    "source": "0-130m",
+    "type": "Fish",
+    "drone": 1,
+    "kg": null,
+    "max_meats": 9,
+    "cost": 42,
+    "usedIn": [
+      {
+        "dishId": 48,
+        "count": 1
+      },
+      {
+        "dishId": 1,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 50,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 185,
+    "name": "Zebra Shark Meat",
+    "source": "0-50m Night",
+    "type": "Fish",
+    "drone": 1,
+    "kg": 10.5,
+    "max_meats": 5,
+    "cost": 42,
+    "usedIn": [
+      {
+        "dishId": 198,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 186,
+    "name": "Rainbow Cap",
+    "source": "Jango",
+    "type": "Jango",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 750,
+    "usedIn": [
+      {
+        "dishId": 111,
+        "count": 1
+      },
+      {
+        "dishId": 110,
+        "count": 1
+      },
+      {
+        "dishId": 109,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 187,
+    "name": "Truffle",
+    "source": "Jango",
+    "type": "Jango",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 650,
+    "usedIn": [
+      {
+        "dishId": 102,
+        "count": 1
+      },
+      {
+        "dishId": 7,
+        "count": 1
+      },
+      {
+        "dishId": 101,
+        "count": 1
+      },
+      {
+        "dishId": 19,
+        "count": 1
+      },
+      {
+        "dishId": 20,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 21,
+    "usedForParties": [
+      8,
+      3,
+      4
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Black Tiger Shrimp",
+    "source": "50-130m",
+    "type": "Net",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 5,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 40,
+        "count": 5
+      },
+      {
+        "dishId": 78,
+        "count": 3
+      },
+      {
+        "dishId": 41,
+        "count": 2
+      },
+      {
+        "dishId": 243,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 48,
+    "usedForParties": [
+      7
+    ]
+  },
+  {
+    "id": 189,
+    "name": "Chambered Nautilus",
+    "source": "130-250m",
+    "type": "Net",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 3,
+    "cost": 12,
+    "usedIn": [
+      {
+        "dishId": 251,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 190,
+    "name": "Clione",
+    "source": "130-250m",
+    "type": "Net",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 4,
+    "cost": 25,
+    "usedIn": [
+      {
+        "dishId": 255,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 191,
+    "name": "Seadragon",
+    "source": "Hydrothermal Vents",
+    "type": "Net",
+    "drone": 0,
+    "kg": 0.5,
+    "max_meats": 4,
+    "cost": 35,
+    "usedIn": [
+      {
+        "dishId": 199,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 192,
+    "name": "Waptia Fieldensis",
+    "source": "Hydrothermal Vents",
+    "type": "Net",
+    "drone": 0,
+    "kg": 0.4,
+    "max_meats": 5,
+    "cost": 34,
+    "usedIn": [
+      {
+        "dishId": 8,
+        "count": 3
+      },
+      {
+        "dishId": 200,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 1,
+    "usedForParties": [
+      5,
+      7
+    ]
+  },
+  {
+    "id": 193,
+    "name": "White Shrimp",
+    "source": "0-130m Day and Night",
+    "type": "Net",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 5,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 24,
+        "count": 3
+      },
+      {
+        "dishId": 17,
+        "count": 3
+      },
+      {
+        "dishId": 235,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 45,
+    "usedForParties": [
+      7
+    ]
+  },
+  {
+    "id": 194,
+    "name": "Whiteleg Shrimp",
+    "source": "0-50m",
+    "type": "Net",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": null,
+    "cost": 11,
+    "usedIn": [
+      {
+        "dishId": 45,
+        "count": 5
+      },
+      {
+        "dishId": 40,
+        "count": 5
+      },
+      {
+        "dishId": 78,
+        "count": 3
+      },
+      {
+        "dishId": 41,
+        "count": 2
+      },
+      {
+        "dishId": 249,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 48,
+    "usedForParties": [
+      7
+    ]
+  },
+  {
+    "id": 195,
+    "name": "Black Pepper",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 93,
+        "count": 1
+      },
+      {
+        "dishId": 88,
+        "count": 1
+      },
+      {
+        "dishId": 29,
+        "count": 1
+      },
+      {
+        "dishId": 81,
+        "count": 1
+      },
+      {
+        "dishId": 61,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 37,
+    "usedForParties": [
+      4
+    ]
+  },
+  {
+    "id": 196,
+    "name": "Black Vinegar",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 32,
+        "count": 1
+      },
+      {
+        "dishId": 87,
+        "count": 1
+      },
+      {
+        "dishId": 122,
+        "count": 1
+      },
+      {
+        "dishId": 98,
+        "count": 1
+      },
+      {
+        "dishId": 29,
+        "count": 1
+      },
+      {
+        "dishId": 234,
+        "count": 1
+      },
+      {
+        "dishId": 132,
+        "count": 1
+      },
+      {
+        "dishId": 8,
+        "count": 1
+      },
+      {
+        "dishId": 144,
+        "count": 1
+      },
+      {
+        "dishId": 145,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 1,
+    "usedForParties": [
+      5,
+      4,
+      7
+    ]
+  },
+  {
+    "id": 197,
+    "name": "Curry Block",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 22,
+        "count": 1
+      },
+      {
+        "dishId": 26,
+        "count": 1
+      },
+      {
+        "dishId": 37,
+        "count": 1
+      },
+      {
+        "dishId": 23,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 8,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Mayonnaise",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 7,
+    "usedIn": [
+      {
+        "dishId": 97,
+        "count": 1
+      },
+      {
+        "dishId": 45,
+        "count": 1
+      },
+      {
+        "dishId": 69,
+        "count": 1
+      },
+      {
+        "dishId": 12,
+        "count": 1
+      },
+      {
+        "dishId": 52,
+        "count": 1
+      },
+      {
+        "dishId": 56,
+        "count": 1
+      },
+      {
+        "dishId": 42,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 55,
+    "usedForParties": [
+      7,
+      2,
+      4
+    ]
+  },
+  {
+    "id": 199,
+    "name": "Miso",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 8,
+    "usedIn": [
+      {
+        "dishId": 18,
+        "count": 3
+      },
+      {
+        "dishId": 96,
+        "count": 1
+      },
+      {
+        "dishId": 76,
+        "count": 1
+      },
+      {
+        "dishId": 130,
+        "count": 1
+      },
+      {
+        "dishId": 51,
+        "count": 1
+      },
+      {
+        "dishId": 58,
+        "count": 1
+      },
+      {
+        "dishId": 43,
+        "count": 1
+      },
+      {
+        "dishId": 38,
+        "count": 1
+      },
+      {
+        "dishId": 146,
+        "count": 1
+      },
+      {
+        "dishId": 133,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 30,
+    "usedForParties": [
+      4,
+      1,
+      3
+    ]
+  },
+  {
+    "id": 200,
+    "name": "Olive Oil",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 41,
+        "count": 1
+      },
+      {
+        "dishId": 72,
+        "count": 1
+      },
+      {
+        "dishId": 45,
+        "count": 1
+      },
+      {
+        "dishId": 35,
+        "count": 1
+      },
+      {
+        "dishId": 27,
+        "count": 1
+      },
+      {
+        "dishId": 75,
+        "count": 1
+      },
+      {
+        "dishId": 78,
+        "count": 1
+      },
+      {
+        "dishId": 58,
+        "count": 1
+      },
+      {
+        "dishId": 65,
+        "count": 1
+      },
+      {
+        "dishId": 80,
+        "count": 1
+      },
+      {
+        "dishId": 40,
+        "count": 1
+      },
+      {
+        "dishId": 147,
+        "count": 1
+      },
+      {
+        "dishId": 13,
+        "count": 1
+      },
+      {
+        "dishId": 73,
+        "count": 1
+      },
+      {
+        "dishId": 10,
+        "count": 1
+      },
+      {
+        "dishId": 68,
+        "count": 1
+      },
+      {
+        "dishId": 59,
+        "count": 1
+      },
+      {
+        "dishId": 67,
+        "count": 1
+      },
+      {
+        "dishId": 122,
+        "count": 1
+      },
+      {
+        "dishId": 6,
+        "count": 1
+      },
+      {
+        "dishId": 81,
+        "count": 1
+      },
+      {
+        "dishId": 91,
+        "count": 1
+      },
+      {
+        "dishId": 85,
+        "count": 1
+      },
+      {
+        "dishId": 107,
+        "count": 1
+      },
+      {
+        "dishId": 99,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 54,
+    "usedForParties": [
+      7,
+      5,
+      4,
+      6,
+      8,
+      2
+    ]
+  },
+  {
+    "id": 201,
+    "name": "Salt",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 8,
+    "usedIn": [
+      {
+        "dishId": 77,
+        "count": 1
+      },
+      {
+        "dishId": 72,
+        "count": 1
+      },
+      {
+        "dishId": 46,
+        "count": 1
+      },
+      {
+        "dishId": 236,
+        "count": 1
+      },
+      {
+        "dishId": 75,
+        "count": 1
+      },
+      {
+        "dishId": 79,
+        "count": 1
+      },
+      {
+        "dishId": 144,
+        "count": 1
+      },
+      {
+        "dishId": 124,
+        "count": 1
+      },
+      {
+        "dishId": 107,
+        "count": 1
+      },
+      {
+        "dishId": 146,
+        "count": 1
+      },
+      {
+        "dishId": 99,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 42,
+    "usedForParties": [
+      1,
+      4
+    ]
+  },
+  {
+    "id": 202,
+    "name": "Sesame Seed",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 8,
+    "usedIn": [
+      {
+        "dishId": 90,
+        "count": 1
+      },
+      {
+        "dishId": 130,
+        "count": 1
+      },
+      {
+        "dishId": 4,
+        "count": 1
+      },
+      {
+        "dishId": 12,
+        "count": 1
+      },
+      {
+        "dishId": 3,
+        "count": 1
+      },
+      {
+        "dishId": 97,
+        "count": 1
+      },
+      {
+        "dishId": 42,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 53,
+    "usedForParties": [
+      2,
+      4
+    ]
+  },
+  {
+    "id": 203,
+    "name": "Soy Sauce",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 233,
+        "count": 1
+      },
+      {
+        "dishId": 49,
+        "count": 1
+      },
+      {
+        "dishId": 16,
+        "count": 1
+      },
+      {
+        "dishId": 131,
+        "count": 1
+      },
+      {
+        "dishId": 54,
+        "count": 1
+      },
+      {
+        "dishId": 203,
+        "count": 1
+      },
+      {
+        "dishId": 50,
+        "count": 1
+      },
+      {
+        "dishId": 24,
+        "count": 1
+      },
+      {
+        "dishId": 74,
+        "count": 1
+      },
+      {
+        "dishId": 73,
+        "count": 1
+      },
+      {
+        "dishId": 134,
+        "count": 1
+      },
+      {
+        "dishId": 143,
+        "count": 1
+      },
+      {
+        "dishId": 229,
+        "count": 1
+      },
+      {
+        "dishId": 109,
+        "count": 1
+      },
+      {
+        "dishId": 64,
+        "count": 1
+      },
+      {
+        "dishId": 42,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 29,
+    "usedForParties": [
+      3,
+      7,
+      4
+    ]
+  },
+  {
+    "id": 204,
+    "name": "Turmeric",
+    "source": "Dispatch & Cooking Pots",
+    "type": "Seasoning",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 129,
+        "count": 1
+      },
+      {
+        "dishId": 33,
+        "count": 1
+      },
+      {
+        "dishId": 13,
+        "count": 1
+      },
+      {
+        "dishId": 39,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 26,
+    "usedForParties": [
+      6,
+      8
+    ]
+  },
+  {
+    "id": 205,
+    "name": "Agar",
+    "source": "0-50m",
+    "type": "Sea Plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 3,
+    "usedIn": [
+      {
+        "dishId": 229,
+        "count": 3
+      },
+      {
+        "dishId": 98,
+        "count": 1
+      },
+      {
+        "dishId": 131,
+        "count": 1
+      },
+      {
+        "dishId": 92,
+        "count": 3
+      },
+      {
+        "dishId": 126,
+        "count": 3
+      },
+      {
+        "dishId": 133,
+        "count": 1
+      },
+      {
+        "dishId": 144,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 20,
+    "usedForParties": [
+      1
+    ]
+  },
+  {
+    "id": 206,
+    "name": "Buckbean",
+    "source": "Glacial Area",
+    "type": "Sea Plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 9,
+    "usedIn": [
+      {
+        "dishId": 18,
+        "count": 3
+      },
+      {
+        "dishId": 76,
+        "count": 2
+      },
+      {
+        "dishId": 9,
+        "count": 2
+      },
+      {
+        "dishId": 92,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 34,
+    "usedForParties": [
+      4,
+      5,
+      1
+    ]
+  },
+  {
+    "id": 207,
+    "name": "Sea Grape",
+    "source": "Limestone Cave",
+    "type": "Sea Plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 15,
+        "count": 2
+      },
+      {
+        "dishId": 74,
+        "count": 2
+      },
+      {
+        "dishId": 3,
+        "count": 2
+      },
+      {
+        "dishId": 68,
+        "count": 2
+      },
+      {
+        "dishId": 134,
+        "count": 1
+      },
+      {
+        "dishId": 127,
+        "count": 1
+      },
+      {
+        "dishId": 46,
+        "count": 1
+      },
+      {
+        "dishId": 36,
+        "count": 2
+      },
+      {
+        "dishId": 107,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 52,
+    "usedForParties": [
+      8,
+      2,
+      1,
+      4
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Black Coral",
+    "source": "Glacial Area",
+    "type": "Sea plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 8,
+    "usedIn": [
+      {
+        "dishId": 8,
+        "count": 3
+      },
+      {
+        "dishId": 28,
+        "count": 2
+      },
+      {
+        "dishId": 33,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 1,
+    "usedForParties": [
+      5,
+      7,
+      1,
+      6
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Bladderwrack",
+    "source": "Glacial Seaweed Cave",
+    "type": "Sea plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 10,
+    "usedIn": [
+      {
+        "dishId": 14,
+        "count": 2
+      },
+      {
+        "dishId": 59,
+        "count": 1
+      },
+      {
+        "dishId": 63,
+        "count": 1
+      },
+      {
+        "dishId": 55,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 25,
+    "usedForParties": [
+      8
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Hyalonema",
+    "source": "Glacial Seaweed Cave",
+    "type": "Sea plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 65,
+    "usedIn": [
+      {
+        "dishId": 1,
+        "count": 2
+      },
+      {
+        "dishId": 64,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": 50,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 211,
+    "name": "Kajime",
+    "source": "0-130m",
+    "type": "Sea plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 7,
+    "usedIn": [
+      {
+        "dishId": 234,
+        "count": 2
+      },
+      {
+        "dishId": 16,
+        "count": 2
+      },
+      {
+        "dishId": 54,
+        "count": 1
+      },
+      {
+        "dishId": 143,
+        "count": 1
+      },
+      {
+        "dishId": 102,
+        "count": 3
+      },
+      {
+        "dishId": 91,
+        "count": 2
+      },
+      {
+        "dishId": 145,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 29,
+    "usedForParties": [
+      3
+    ]
+  },
+  {
+    "id": 212,
+    "name": "Kelp",
+    "source": "50-130m",
+    "type": "Sea plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 6,
+    "usedIn": [
+      {
+        "dishId": 31,
+        "count": 3
+      },
+      {
+        "dishId": 71,
+        "count": 3
+      },
+      {
+        "dishId": 11,
+        "count": 2
+      },
+      {
+        "dishId": 203,
+        "count": 1
+      },
+      {
+        "dishId": 132,
+        "count": 1
+      },
+      {
+        "dishId": 210,
+        "count": 1
+      },
+      {
+        "dishId": 101,
+        "count": 3
+      },
+      {
+        "dishId": 111,
+        "count": 1
+      },
+      {
+        "dishId": 146,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 24,
+    "usedForParties": [
+      4,
+      8
+    ]
+  },
+  {
+    "id": 213,
+    "name": "Seaweed",
+    "source": "50-130m",
+    "type": "Sea plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 5,
+    "usedIn": [
+      {
+        "dishId": 71,
+        "count": 3
+      },
+      {
+        "dishId": 43,
+        "count": 3
+      },
+      {
+        "dishId": 18,
+        "count": 3
+      },
+      {
+        "dishId": 49,
+        "count": 1
+      },
+      {
+        "dishId": 110,
+        "count": 1
+      },
+      {
+        "dishId": 126,
+        "count": 3
+      },
+      {
+        "dishId": 85,
+        "count": 1
+      },
+      {
+        "dishId": 145,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 34,
+    "usedForParties": [
+      1,
+      4
+    ]
+  },
+  {
+    "id": 214,
+    "name": "Southern Bull Kelp",
+    "source": "Glacial Area",
+    "type": "Sea plant",
+    "drone": 0,
+    "kg": 0.1,
+    "max_meats": 1,
+    "cost": 8,
+    "usedIn": [
+      {
+        "dishId": 16,
+        "count": 2
+      },
+      {
+        "dishId": 57,
+        "count": 1
+      },
+      {
+        "dishId": 126,
+        "count": 3
+      },
+      {
+        "dishId": 85,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 29,
+    "usedForParties": [
+      3,
+      4
+    ]
+  },
+  {
+    "id": 215,
+    "name": "Green Sea Urchin",
+    "source": "0-50m Day and Night",
+    "type": "Urchin",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": 90,
+    "usedIn": [
+      {
+        "dishId": 36,
+        "count": 3
+      },
+      {
+        "dishId": 2,
+        "count": 3
+      },
+      {
+        "dishId": 9,
+        "count": 3
+      },
+      {
+        "dishId": 91,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": 51,
+    "usedForParties": [
+      1,
+      2,
+      5
+    ]
+  },
+  {
+    "id": 216,
+    "name": "Purple Sea Urchin",
+    "source": "0-50m Day or Night",
+    "type": "Urchin",
+    "drone": 0,
+    "kg": 1,
+    "max_meats": 1,
+    "cost": 20,
+    "usedIn": [
+      {
+        "dishId": 90,
+        "count": 2
+      },
+      {
+        "dishId": 225,
+        "count": 1
+      },
+      {
+        "dishId": 19,
+        "count": 3
+      },
+      {
+        "dishId": 91,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": 28,
+    "usedForParties": [
+      3
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Bean",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 20,
+    "usedIn": [
+      {
+        "dishId": 26,
+        "count": 2
+      },
+      {
+        "dishId": 60,
+        "count": 2
+      },
+      {
+        "dishId": 89,
+        "count": 2
+      },
+      {
+        "dishId": 83,
+        "count": 2
+      },
+      {
+        "dishId": 22,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 9,
+    "usedForParties": [
+      6
+    ]
+  },
+  {
+    "id": 218,
+    "name": "Buckwheat",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 18,
+    "usedIn": [
+      {
+        "dishId": 47,
+        "count": 3
+      },
+      {
+        "dishId": 53,
+        "count": 2
+      },
+      {
+        "dishId": 51,
+        "count": 2
+      },
+      {
+        "dishId": 49,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": null,
+    "usedForParties": []
+  },
+  {
+    "id": 219,
+    "name": "Carrot",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 25,
+    "usedIn": [
+      {
+        "dishId": 76,
+        "count": 2
+      },
+      {
+        "dishId": 87,
+        "count": 2
+      },
+      {
+        "dishId": 65,
+        "count": 2
+      },
+      {
+        "dishId": 37,
+        "count": 2
+      },
+      {
+        "dishId": 32,
+        "count": 1
+      },
+      {
+        "dishId": 53,
+        "count": 1
+      },
+      {
+        "dishId": 100,
+        "count": 1
+      },
+      {
+        "dishId": 35,
+        "count": 1
+      },
+      {
+        "dishId": 51,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 12,
+    "usedForParties": [
+      6,
+      5
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Cherry Tomato",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 17,
+    "usedIn": [
+      {
+        "dishId": 6,
+        "count": 3
+      },
+      {
+        "dishId": 75,
+        "count": 3
+      },
+      {
+        "dishId": 65,
+        "count": 2
+      },
+      {
+        "dishId": 62,
+        "count": 2
+      },
+      {
+        "dishId": 83,
+        "count": 2
+      },
+      {
+        "dishId": 68,
+        "count": 2
+      },
+      {
+        "dishId": 93,
+        "count": 2
+      },
+      {
+        "dishId": 52,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 54,
+    "usedForParties": [
+      2
+    ]
+  },
+  {
+    "id": 221,
+    "name": "Cucumber",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 20,
+    "usedIn": [
+      {
+        "dishId": 113,
+        "count": 3
+      },
+      {
+        "dishId": 8,
+        "count": 2
+      },
+      {
+        "dishId": 34,
+        "count": 2
+      },
+      {
+        "dishId": 32,
+        "count": 1
+      },
+      {
+        "dishId": 35,
+        "count": 1
+      },
+      {
+        "dishId": 21,
+        "count": 1
+      },
+      {
+        "dishId": 30,
+        "count": 1
+      },
+      {
+        "dishId": 9,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": 1,
+    "usedForParties": [
+      5,
+      7
+    ]
+  },
+  {
+    "id": 222,
+    "name": "Egg",
+    "source": "Chicken Farm",
+    "type": "Egg",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 15,
+    "usedIn": [
+      {
+        "dishId": 82,
+        "count": 2
+      },
+      {
+        "dishId": 84,
+        "count": 2
+      },
+      {
+        "dishId": 86,
+        "count": 2
+      },
+      {
+        "dishId": 61,
+        "count": 2
+      },
+      {
+        "dishId": 11,
+        "count": 2
+      },
+      {
+        "dishId": 24,
+        "count": 2
+      },
+      {
+        "dishId": 70,
+        "count": 2
+      },
+      {
+        "dishId": 4,
+        "count": 1
+      },
+      {
+        "dishId": 53,
+        "count": 1
+      },
+      {
+        "dishId": 45,
+        "count": 1
+      },
+      {
+        "dishId": 80,
+        "count": 1
+      },
+      {
+        "dishId": 55,
+        "count": 1
+      },
+      {
+        "dishId": 47,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 53,
+    "usedForParties": [
+      8,
+      7,
+      2
+    ]
+  },
+  {
+    "id": 223,
+    "name": "Eggplant",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 21,
+    "usedIn": [
+      {
+        "dishId": 78,
+        "count": 3
+      },
+      {
+        "dishId": 51,
+        "count": 2
+      },
+      {
+        "dishId": 32,
+        "count": 1
+      },
+      {
+        "dishId": 100,
+        "count": 1
+      },
+      {
+        "dishId": 58,
+        "count": 1
+      },
+      {
+        "dishId": 133,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 5,
+    "usedForParties": [
+      5
+    ]
+  },
+  {
+    "id": 224,
+    "name": "Garlic",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 19,
+    "usedIn": [
+      {
+        "dishId": 17,
+        "count": 3
+      },
+      {
+        "dishId": 84,
+        "count": 2
+      },
+      {
+        "dishId": 62,
+        "count": 2
+      },
+      {
+        "dishId": 28,
+        "count": 2
+      },
+      {
+        "dishId": 61,
+        "count": 2
+      },
+      {
+        "dishId": 38,
+        "count": 2
+      },
+      {
+        "dishId": 66,
+        "count": 2
+      },
+      {
+        "dishId": 58,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 45,
+    "usedForParties": [
+      7,
+      1,
+      3
+    ]
+  },
+  {
+    "id": 225,
+    "name": "Grade A Egg",
+    "source": "Chicken Farm",
+    "type": "Egg",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 90,
+    "usedIn": [
+      {
+        "dishId": 93,
+        "count": 2
+      },
+      {
+        "dishId": 71,
+        "count": 1
+      },
+      {
+        "dishId": 23,
+        "count": 1
+      },
+      {
+        "dishId": 88,
+        "count": 1
+      },
+      {
+        "dishId": 57,
+        "count": 1
+      },
+      {
+        "dishId": 74,
+        "count": 1
+      },
+      {
+        "dishId": 103,
+        "count": 3
+      }
+    ],
+    "bestPartyDishId": 8,
+    "usedForParties": [
+      6,
+      4
+    ]
+  },
+  {
+    "id": 226,
+    "name": "Habanero",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 16,
+    "usedIn": [
+      {
+        "dishId": 59,
+        "count": 2
+      },
+      {
+        "dishId": 3,
+        "count": 2
+      },
+      {
+        "dishId": 54,
+        "count": 2
+      },
+      {
+        "dishId": 10,
+        "count": 2
+      }
+    ],
+    "bestPartyDishId": 52,
+    "usedForParties": [
+      2,
+      8
+    ]
+  },
+  {
+    "id": 227,
+    "name": "Onion",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 20,
+    "usedIn": [
+      {
+        "dishId": 72,
+        "count": 3
+      },
+      {
+        "dishId": 73,
+        "count": 3
+      },
+      {
+        "dishId": 67,
+        "count": 2
+      },
+      {
+        "dishId": 39,
+        "count": 2
+      },
+      {
+        "dishId": 89,
+        "count": 2
+      },
+      {
+        "dishId": 35,
+        "count": 1
+      },
+      {
+        "dishId": 52,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 13,
+    "usedForParties": [
+      6,
+      5
+    ]
+  },
+  {
+    "id": 228,
+    "name": "Rice",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 15,
+    "usedIn": [
+      {
+        "dishId": 4,
+        "count": 3
+      },
+      {
+        "dishId": 12,
+        "count": 3
+      },
+      {
+        "dishId": 95,
+        "count": 3
+      },
+      {
+        "dishId": 74,
+        "count": 2
+      },
+      {
+        "dishId": 90,
+        "count": 2
+      },
+      {
+        "dishId": 24,
+        "count": 2
+      },
+      {
+        "dishId": 62,
+        "count": 2
+      },
+      {
+        "dishId": 84,
+        "count": 2
+      },
+      {
+        "dishId": 70,
+        "count": 2
+      },
+      {
+        "dishId": 60,
+        "count": 2
+      },
+      {
+        "dishId": 88,
+        "count": 2
+      },
+      {
+        "dishId": 14,
+        "count": 2
+      },
+      {
+        "dishId": 127,
+        "count": 1
+      },
+      {
+        "dishId": 100,
+        "count": 1
+      },
+      {
+        "dishId": 123,
+        "count": 1
+      },
+      {
+        "dishId": 41,
+        "count": 1
+      },
+      {
+        "dishId": 134,
+        "count": 1
+      },
+      {
+        "dishId": 111,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 53,
+    "usedForParties": [
+      2,
+      7,
+      8
+    ]
+  },
+  {
+    "id": 229,
+    "name": "Wheat",
+    "source": "Vegetable Farm",
+    "type": "Vegetable",
+    "drone": 0,
+    "kg": null,
+    "max_meats": null,
+    "cost": 19,
+    "usedIn": [
+      {
+        "dishId": 17,
+        "count": 3
+      },
+      {
+        "dishId": 56,
+        "count": 2
+      },
+      {
+        "dishId": 89,
+        "count": 2
+      },
+      {
+        "dishId": 82,
+        "count": 2
+      },
+      {
+        "dishId": 97,
+        "count": 2
+      },
+      {
+        "dishId": 86,
+        "count": 2
+      },
+      {
+        "dishId": 69,
+        "count": 2
+      },
+      {
+        "dishId": 40,
+        "count": 2
+      },
+      {
+        "dishId": 57,
+        "count": 2
+      },
+      {
+        "dishId": 96,
+        "count": 2
+      },
+      {
+        "dishId": 80,
+        "count": 1
+      },
+      {
+        "dishId": 81,
+        "count": 1
+      },
+      {
+        "dishId": 27,
+        "count": 1
+      }
+    ],
+    "bestPartyDishId": 45,
+    "usedForParties": [
+      7,
+      4
+    ]
+  }
+]
