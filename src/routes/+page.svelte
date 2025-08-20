@@ -104,7 +104,7 @@
 </script>
 
 <svelte:head>
-	<title>BanchoBox — Master Bancho’s Sushi Bar</title>
+	<title>BanchoBox — Dave the Diver Companion App</title>
 	<meta
 		name="description"
 		content="Track ingredients, plan menus, and maximize profit in Dave the Diver with BanchoBox."
