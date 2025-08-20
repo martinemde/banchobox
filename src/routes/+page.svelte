@@ -10,6 +10,7 @@
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
 	import { selectedTier, selectedTierId, visible as cookstaVisible } from '$lib/stores/cooksta.js';
+	import { selectedChapterId, visible as chaptersVisible } from '$lib/stores/chapters.js';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import { visible as dlcVisible } from '$lib/stores/dlc.js';
 
@@ -85,6 +86,9 @@
 	);
 	const nextTier = $derived(cookstaTiers[tierIndex + 1] ?? null);
 
+	// Chapters selection
+	const chapters = $derived($chaptersVisible ?? []);
+
 	// Tracking preview
 	const tracked = $derived(dishes.filter((d) => $trackedDishIds.has(d.id)).slice(0, 3));
 
@@ -134,7 +138,7 @@
 					<div class="grid grid-cols-3 gap-3">
 						<div class="stat">
 							<div class="label">Cooksta</div>
-							<div class="value text-warning-500">Gold</div>
+							<div class="value">{$selectedTier?.rank ?? ''}</div>
 						</div>
 						<div class="stat">
 							<div class="label">Menu</div>
@@ -192,8 +196,14 @@
 			</label>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
-			<div class="title">Story Progress</div>
-			<div class="value">Chapter 3</div>
+			<label class="label">
+				<div class="title label-text">Story Progress</div>
+				<select class="ig-select" bind:value={$selectedChapterId}>
+					{#each chapters as c (c.id)}
+						<option value={c.id}>{c.name}</option>
+					{/each}
+				</select>
+			</label>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<label class="label">

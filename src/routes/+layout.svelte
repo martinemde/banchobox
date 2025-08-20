@@ -9,6 +9,7 @@
 	import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
 	import { bundle as cookstaBundleStore } from '$lib/stores/cooksta';
 	import { bundle as dlcBundleStore } from '$lib/stores/dlc';
+	import { bundle as chaptersBundleStore } from '$lib/stores/chapters';
 	import type {
 		EntityBundle,
 		Dish,
@@ -38,6 +39,9 @@
 	}
 	if (data.dlc && get(dlcBundleStore) == null) {
 		dlcBundleStore.set(data.dlc as EntityBundle<DLC>);
+	}
+	if (data.chapters && get(chaptersBundleStore) == null) {
+		chaptersBundleStore.set(data.chapters as unknown as EntityBundle<import('$lib/types').Chapter>);
 	}
 </script>
 

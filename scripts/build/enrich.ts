@@ -2,6 +2,7 @@ import type {
 	BasicDish,
 	BasicIngredient,
 	PartyInputRow,
+	Party,
 	DishIngredient,
 	DishParty,
 	Id,
@@ -13,7 +14,9 @@ import type {
 	CookstaInputRow,
 	CookstaTier,
 	DLCInputRow,
-	DLC
+	DLC,
+	ChapterInputRow,
+	Chapter
 } from '../../src/lib/types.js';
 import { buildDishesBundle } from './dish_bundle.js';
 import { buildIngredientsBundle } from './ingredient_bundle.js';
@@ -21,6 +24,7 @@ import { buildPartiesBundle } from './party_bundle.js';
 import { buildPartyDishesBundle } from './party_dish_bundle.js';
 import { buildCookstaBundle } from './cooksta_bundle.js';
 import { buildDLCBundle } from './dlc_bundle.js';
+import { buildChapterBundle } from './chapter_bundle.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
@@ -31,7 +35,8 @@ export function enrichData(
 	dishIngredients: DishIngredient[],
 	dishParties: DishParty[],
 	cookstaInputRows: CookstaInputRow[],
-	dlcInputRows: DLCInputRow[]
+	dlcInputRows: DLCInputRow[],
+	chapterInputRows: ChapterInputRow[]
 ) {
 	const partyDishes: PartyDish[] = [];
 	const partyDishesByPartyId = new Map<Id, PartyDish[]>();
@@ -182,7 +187,6 @@ export function enrichData(
 
 		return enrichedDish;
 	});
-	const dishesBundle = buildDishesBundle(dishes);
 
 	// Enrich ingredients
 	const ingredients: Ingredient[] = basicIngredients.map((ingredient) => {
@@ -271,11 +275,13 @@ export function enrichData(
 		return finalIngredient;
 	});
 
-	const ingredientsBundle = buildIngredientsBundle(ingredients);
-	const partyDishesBundle = buildPartyDishesBundle(partyDishes);
-	const partiesBundle = buildPartiesBundle(partyInputRows, partyDishesByPartyId);
 	const cookstaBundle = buildCookstaBundle(cookstaInputRows);
 	const dlcBundle = buildDLCBundle(dlcInputRows);
+	const partiesBundle = buildPartiesBundle(partyInputRows, partyDishesByPartyId);
+	const chaptersBundle = buildChapterBundle(chapterInputRows);
+	const ingredientsBundle = buildIngredientsBundle(ingredients, chaptersBundle);
+	const dishesBundle = buildDishesBundle(dishes, chaptersBundle, ingredientsBundle);
+	const partyDishesBundle = buildPartyDishesBundle(partyDishes);
 
 	return {
 		dishesBundle,
@@ -283,13 +289,15 @@ export function enrichData(
 		partiesBundle,
 		partyDishesBundle,
 		cookstaBundle,
-		dlcBundle
+		dlcBundle,
+		chaptersBundle
 	} as {
 		dishesBundle: EntityBundle<Dish>;
 		ingredientsBundle: EntityBundle<Ingredient>;
-		partiesBundle: EntityBundle<PartyInputRow>;
+		partiesBundle: EntityBundle<Party>;
 		partyDishesBundle: EntityBundle<PartyDish>;
 		cookstaBundle: EntityBundle<CookstaTier>;
 		dlcBundle: EntityBundle<DLC>;
+		chaptersBundle: EntityBundle<Chapter>;
 	};
 }

@@ -1,306 +1,306 @@
-id,name,unlock,dlc,max_level,base_price,base_taste,base_servings,final_price,final_taste,final_servings,artisans_flames,image
-24,Blanched Lusca Tentacle,Boss,,1,1350,250,10,1350,250,10,1,blanched_lusca_tentacle.png
-38,Boiled Mantis Shrimp with Soy Paste,Boss,,1,650,150,10,650,150,10,1,boiled_mantis_shrimp_with_soy_paste.png
-48,Clione Queen Soup,Boss,,1,550,135,10,550,135,10,1,clione_queen_soup.png
-93,Goblin Shark Belly Roast,Boss,,1,600,135,10,600,135,10,1,goblin_shark_belly_roast.png
-123,Lusca Neck Tadaki,Boss,,1,1350,250,10,1350,250,10,1,lusca_neck_tadaki.png
-151,Phantom Jellyfish Jelly,Boss,,1,700,165,10,700,165,10,1,phantom_jellyfish_jelly.png
-173,Roasted Helicoprion Tail,Boss,,1,710,170,10,710,170,10,1,roasted_helicoprion_tail.png
-211,Steamed Kronosaurus Tongue,Boss,,1,724,180,10,724,180,10,1,steamed_kronosaurus_tongue.png
-212,Steamed Wolf Eel,Boss,,1,550,120,10,550,120,10,,steamed_wolf_eel.png
-217,Stir-Fried Hermit Crab and Seaweed,Boss,,1,550,150,10,550,150,10,1,stir-fried_hermit_crab_and_seaweed.png
-240,White Shark Omelet,Boss,,1,650,150,10,650,150,10,1,white_shark_omelet.png
-249,Yawie Steamed Meat,Boss,,1,750,180,10,750,180,10,1,yawie_steamed_meat.png
-256,Young Anomalocaris Sushi,Boss,,1,224,125,1,224,125,1,,young_anomalocaris_sushi.png
-1,Agar Tokoroten,Cooksta Bronze Rank,,10,51,68,5,189,266,7,3,agar_tokoroten.png
-41,Boiled Yellowback Fusilier,Cooksta Bronze Rank,,10,50,75,5,185,255,7,3,boiled_yellowback_fusilier.png
-179,Salt-grilled Redtoothed Triggerfish,Cooksta Bronze Rank,,10,48,70,4,178,241,6,3,salt-grilled_redtoothed_triggerfish.png
-190,Seasoned Kajime,Cooksta Bronze Rank,,10,50,65,4,185,245,6,3,seasoned_kajime.png
-72,Dumbo Takoyaki,Cooksta Diamond Rank,,10,420,156,6,1554,390,9,15,dumbo_takoyaki.png
-95,Great Barracuda Canape,Cooksta Diamond Rank,,10,425,147,4,1572,372,6,12,great_barracuda_canape.png
-140,Nasu Dengaku,Cooksta Diamond Rank,,10,415,155,3,1535,317,4,12,nasu_dengaku.png
-169,Rice with Great Spider Crab Meat,Cooksta Diamond Rank,,10,410,150,5,1517,330,7,,rice_with_great_spider_crab_meat.png
-18,Big-Eyed Scad and Soybean Paste Roast,Cooksta Gold Rank,,10,185,114,5,684,348,7,9,big-eyed_scad_and_soybean_paste_roast.png
-185,Seagrapes Special Sushi,Cooksta Gold Rank,,10,200,120,1,740,390,1,6,seagrapes_special_sushi.png
-214,Stellate Puffer Special Sushi,Cooksta Gold Rank,,10,220,115,1,814,340,1,6,stellate_puffer_special_sushi.png
-233,Trout Sea Grapes Ricebowl,Cooksta Gold Rank,,10,175,110,5,647,290,7,9,trout_sea_grapes_ricebowl.png
-11,Atlantic Bonito Curry,Cooksta Platinum Rank,,10,380,137,5,1406,389,7,12,atlantic_bonito_curry.png
-21,Black Vinegar Braised Parrotfish,Cooksta Platinum Rank,,10,385,136,4,1424,406,6,9,black_vinegar_braised_parrotfish.png
-112,Humphead Parrotfish Curry,Cooksta Platinum Rank,,10,375,140,4,1387,347,6,12,humphead_parrotfish_curry.png
-188,Seahorse Udon,Cooksta Platinum Rank,,10,375,128,3,1387,353,4,9,seahorse_udon.png
-134,Moray Eel Curry,Cooksta Silver Rank,,10,95,93,4,351,273,6,3,moray_eel_curry.png
-220,Striped Red Mullet Tangle Roll,Cooksta Silver Rank,,10,80,90,5,296,270,7,6,striped_red_mullet_tangle_roll.png
-243,White Trevally Kombu Ochazuke,Cooksta Silver Rank,,10,93,95,5,344,266,7,6,white_trevally_kombu_ochazuke.png
-66,Deep-Fried Vegetables,Cucumber Party,,10,312,153,2,1154,396,3,,deep-fried_vegetables.png
-97,Great Spider Crab and Cucumber Sushi,Cucumber Party,,10,324,160,1,1199,385,1,5,great_spider_crab_and_cucumber_sushi.png
-152,Pickled Vegetables,Cucumber Party,,10,316,157,2,1169,364,3,,pickled_vegetables.png
-181,Sea Toad and Cucumber Gunkan Sushi,Cucumber Party,,10,320,160,1,1184,367,1,5,sea_toad_and_cucumber_gunkan_sushi.png
-192,Seasoned Waptia Fieldensis,Cucumber Party,,10,425,150,5,1572,420,7,15,seasoned_waptia_fieldensis.png
-197,Skewered Cucumber,Cucumber Party,,10,320,160,1,1184,340,1,,skewered_cucumber.png
-230,Trevally Sandwich,Cucumber Party,,10,312,170,5,1154,260,7,5,trevally_sandwich.png
-258,Aurora Jellyfish Sushi,Dredge DLC,Dredge DLC,1,345,6,1,345,6,1,,aurora_jellyfish_sushi.png
-259,Barbed Eel Sushi,Dredge DLC,Dredge DLC,1,500,2,1,500,2,1,,barbed_eel_sushi.png
-260,Bloodskin Shark Sushi,Dredge DLC,Dredge DLC,1,1225,4,1,1225,4,1,,bloodskin_shark_sushi.png
-261,Bony Wreckfish Sushi,Dredge DLC,Dredge DLC,1,620,1,1,620,1,1,,bony_wreckfish_sushi.png
-262,Bursting Anglerfish Sushi,Dredge DLC,Dredge DLC,1,530,1,1,530,1,1,,bursting_anglerfish_sushi.png
-263,Cerebral Crab Sushi,Dredge DLC,Dredge DLC,1,515,2,1,515,2,1,,cerebral_crab_sushi.png
-264,Concertina Barracuda Sushi,Dredge DLC,Dredge DLC,1,470,1,1,470,1,1,,concertina_barracuda_sushi.png
-265,Cortex Decorator Sushi,Dredge DLC,Dredge DLC,1,740,2,1,740,2,1,,cortex_decorator_sushi.png
-266,Entangled Crab Sushi,Dredge DLC,Dredge DLC,1,510,2,1,510,2,1,,entangled_crab_sushi.png
-267,Enthralled Stonefish Sushi,Dredge DLC,Dredge DLC,1,465,1,1,465,1,1,,enthralled_stonefish_sushi.png
-268,Fanged Cod Sushi,Dredge DLC,Dredge DLC,1,380,6,1,380,6,1,,fanged_cod_sushi.png
-269,Gazing Shark Sushi,Dredge DLC,Dredge DLC,1,1250,3,1,1250,3,1,,gazing_shark_sushi.png
-270,Gelatinous Stonefish Sushi,Dredge DLC,Dredge DLC,1,385,6,1,385,6,1,,gelatinous_stonefish_sushi.png
-271,Gnashing Perch Sushi,Dredge DLC,Dredge DLC,1,420,1,1,420,1,1,,gnashing_perch_sushi.png
-272,Grotesque Mackerel Sushi,Dredge DLC,Dredge DLC,1,383,4,1,383,4,1,,grotesque_mackerel_sushi.png
-273,Host Eel Sushi,Dredge DLC,Dredge DLC,1,610,1,1,610,1,1,,host_eel_sushi.png
-274,Imperious Lobster Sushi,Dredge DLC,Dredge DLC,1,945,3,1,945,3,1,,imperious_lobster_sushi.png
-275,Malignant Pincer Sushi,Dredge DLC,Dredge DLC,1,880,3,1,880,3,1,,malignant_pincer_sushi.png
-276,Many Eyed Mackerel Sushi,Dredge DLC,Dredge DLC,1,453,1,1,453,1,1,,many_eyed_mackerel_sushi.png
-277,Parhelion Jellyfish Sushi,Dredge DLC,Dredge DLC,1,390,5,1,390,5,1,,parhelion_jellyfish_sushi.png
-278,Perished Loosejaw Sushi,Dredge DLC,Dredge DLC,1,395,1,1,395,1,1,,perished_loosejaw_sushi.png
-279,Radiant Squid Sushi,Dredge DLC,Dredge DLC,1,365,8,1,365,8,1,,radiant_squid_sushi.png
-280,Sallow Sailfish Sushi,Dredge DLC,Dredge DLC,1,1000,5,1,1000,5,1,,sallow_sailfish_sushi.png
-281,Savage Barracuda Sushi,Dredge DLC,Dredge DLC,1,440,1,1,440,1,1,,savage_barracuda_sushi.png
-282,Scouring Bass Sushi,Dredge DLC,Dredge DLC,1,375,1,1,375,1,1,,scouring_bass_sushi.png
-283,Seizing Snailfish Sushi,Dredge DLC,Dredge DLC,1,455,3,1,455,3,1,,seizing_snailfish_sushi.png
-284,Shattered Wreckfish Sushi,Dredge DLC,Dredge DLC,1,560,2,1,560,2,1,,shattered_wreckfish_sushi.png
-285,Splintered Crab Sushi,Dredge DLC,Dredge DLC,1,405,3,1,405,3,1,,splintered_crab_sushi.png
-286,Sprouting Eel Sushi,Dredge DLC,Dredge DLC,1,1040,4,1,1040,4,1,,sprouting_eel_sushi.png
-287,Three-Headed Cod Sushi,Dredge DLC,Dredge DLC,1,450,1,1,450,1,1,,three-headed_cod_sushi.png
-288,Translucent Sturgeon Sushi,Dredge DLC,Dredge DLC,1,1235,3,1,1235,3,1,,translucent_sturgeon_sushi.png
-289,Tusked Grouper Sushi,Dredge DLC,Dredge DLC,1,425,2,1,425,2,1,,tusked_grouper_sushi.png
-290,Voltaic Grouper,Dredge DLC,Dredge DLC,1,515,7,1,515,7,1,,voltaic_grouper.png
-291,Withered Ray Sushi,Dredge DLC,Dredge DLC,1,995,5,1,995,5,1,,withered_ray_sushi.png
-113,Hyalonema Tuna Sashimi,Glacial Seaweed Cave,,5,765,185,1,1683,265,1,15,hyalonema_tuna_sashimi.png
-210,Steamed Hyalonema Angler Fish,Glacial Seaweed Cave,,5,750,180,1,1650,248,1,12,steamed_hyalonema_angler_fish.png
-292,Deep Sea Kaiju Ramen,Godzilla DLC,Godzilla DLC,10,350,140,4,1295,410,6,,deep_sea_kaiju_ramen.png
-293,Ebirah Chasing Sashimi,Godzilla DLC,Godzilla DLC,10,340,130,6,1258,382,9,,ebirah_chasing_sashimi.png
-294,Godzilla vs. Ebirah Curry,Godzilla DLC,Godzilla DLC,10,370,140,6,1369,365,9,,godzilla_vs._ebirah_curry.png
-85,Fried Habanero Fangtooth,Jango Shop,,10,410,150,5,1517,420,7,,fried_habanero_fangtooth.png
-302,Green Sea Urchin & Cucumber Salad,Jango Shop,,5,700,150,2,1540,282,2,,green_sea_urchin_and_cucumber_salad.png
-102,Grilled Antarctic Octopus & Truffle,Jango Shop,,5,770,185,2,1694,338,2,,grilled_antarctic_octopus_and_truffle.png
-103,Grilled Eel with Habanero,Jango Shop,,10,425,155,6,1572,335,9,,grilled_eel_with_habanero.png
-118,Lobster Platter,Jango Shop,,10,435,195,4,1609,375,6,,lobster_platter.png
-133,Moonlight Bladderwrack Roll,Jango Shop,,10,405,135,6,1498,360,9,,moonlight_bladderwrack_roll.png
-158,Pufferfish Dumpling Soup,Jango Shop,,10,420,150,6,1554,420,9,,pufferfish_dumpling_soup.png
-303,Rainbow Cap Eel Skewers,Jango Shop,,5,730,195,2,1606,295,2,,rainbow_cap_eel_skewers.png
-304,Rainbow Cap Pacific Fanfish Ochazuke,Jango Shop,,5,710,190,2,1562,290,2,,rainbow_cap_pacific_fanfish_ochazuke.png
-204,Soy Sauce Marinated Crab,Jango Shop,,10,435,190,4,1609,505,6,,soy_sauce_marinated_crab.png
-234,Truffle Blue Lobster Tail Sushi,Jango Shop,,5,780,190,2,1716,282,2,,truffle_blue_lobster_tail_sushi.png
-235,Truffle Sailfish Tartare,Jango Shop,,5,785,195,2,1727,295,2,,truffle_sailfish_tartare.png
-236,Truffle Shark Sandwich,Jango Shop,,5,775,185,2,1705,273,2,,truffle_shark_sandwich.png
-79,Falcatus Soybean Paste Soup,Kronosaurus,,10,420,130,5,1554,382,7,15,falcatus_soybean_paste_soup.png
-153,Pikaia Ramen,Kronosaurus,,10,420,135,7,1554,360,10,15,pikaia_ramen.png
-60,Crystal Lobster Roll,Lobster Party,,10,370,170,6,1369,305,9,9,crystal_lobster_roll.png
-209,Steamed Eastern Rock Lobster & Egg,Lobster Party,,10,380,140,5,1406,455,7,9,steamed_eastern_rock_lobster_and_egg.png
-40,Boiled Sailfish and Seaweed,Marlin Party,,10,425,138,6,1572,300,9,5,boiled_sailfish_and_seaweed.png
-127,Marlin and Soybean Paste Roast,Marlin Party,,10,380,137,6,1406,272,9,5,marlin_and_soybean_paste_roast.png
-299,Chirashi Sushi,mxmtoon,,5,690,150,2,1518,274,2,1,chirashi_sushi.png
-300,Cold Jellyfish & Green Sea Urchin Salad,mxmtoon,,5,685,145,2,1507,277,2,9,cold_jellyfish_and_green_sea_urchin_salad.png
-301,Deep-fried Sea Urchin,mxmtoon,,5,690,155,2,1518,275,2,9,deep-fried_sea_urchin.png
-305,Rainbow Cap Triggerfish Fishcake,Mushroomer,,5,705,180,2,1551,268,2,,rainbow_cap_triggerfish_fishcake.png
-65,Deep-Fried Red Lionfish,Staff Level 10 (Cohh),,10,390,132,3,1443,366,4,12,deep-fried_red_lionfish.png
-172,Roasted Capelin,Staff Level 10 (Drae),,10,390,138,5,1443,345,7,12,roasted_capelin.png
-170,Rice with Purple Sea Urchin Sushi,Staff Level 10 (Raptor),,10,385,140,3,1424,320,4,12,rice_with_purple_sea_urchin_sushi.png
-59,Crimson Fish Roll,Staff Level 15 (Billy),,10,400,168,6,1480,258,9,15,crimson_fish_roll.png
-70,Dried Stingray,Staff Level 15 (Carolina),,10,400,180,8,1480,225,12,15,dried_stingray.png
-98,Great Spider Crab Curry,Staff Level 15 (Charlie),,10,400,155,6,1480,290,9,15,great_spider_crab_curry.png
-296,Spear Squid Soba Futomaki,Staff Level 15 (Chitose),Ichiban DLC,10,425,166,6,1572,292,9,15,spear_squid_soba_futomaki.png
-124,Mackerel Scad Hotdog,Staff Level 15 (Cohh),,10,400,160,4,1480,340,6,15,mackerel_scad_hotdog.png
-138,Narwhal Miso Soup,Staff Level 15 (Davina),,10,400,150,8,1480,420,12,15,narwhal_miso_soup.png
-114,Ice Fish Curry,Staff Level 15 (Drae),,10,400,155,6,1480,317,9,15,ice_fish_curry.png
-74,Dusky Grouper Steak,Staff Level 15 (El Nino),,10,400,148,5,1480,328,7,15,dusky_grouper_steak.png
-295,Eggplant Soba Oyaki,Staff Level 15 (Etsuko),Ichiban DLC,10,425,173,6,1572,236,9,15,eggplant_soba_oyaki.png
-298,Warm Atlantic Mackerel Soba,Staff Level 15 (Hamako),Ichiban DLC,10,425,170,6,1572,260,9,15,warm_atlantic_mackerel_soba.png
-194,Shark Karaage,Staff Level 15 (Itsuki),,10,400,155,6,1480,380,9,15,shark_karaage.png
-189,Seasoned Jellyfish,Staff Level 15 (James),,10,400,163,4,1480,298,6,15,seasoned_jellyfish.png
-247,Wrasse Curry,Staff Level 15 (Jandi),,10,400,150,4,1480,330,6,15,wrasse_curry.png
-171,Rice with White Shrimp Meat,Staff Level 15 (Kyoko),,10,400,148,6,1480,400,9,15,rice_with_white_shrimp_meat.png
-222,Three-Colored Squid Roast,Staff Level 15 (Liu),,10,400,155,8,1480,335,12,15,three-colored_squid_roast.png
-229,Trevally Nanbanzuke,Staff Level 15 (Maki),,10,400,145,5,1480,343,7,15,trevally_nanbanzuke.png
-117,Latok Omelet,Staff Level 15 (Masayoshi),,10,400,170,6,1480,260,9,15,latok_omelet.png
-17,Batfish Ricebowl,Staff Level 15 (Mitchell),,10,400,150,5,1480,447,7,15,batfish_ricebowl.png
-193,Seaweed Rolled Omelet,Staff Level 15 (Pai),,10,400,165,6,1480,300,9,15,seaweed_rolled_omelet.png
-86,Fried Onion Cuttlefish,Staff Level 15 (Raptor),,10,400,153,5,1480,360,7,15,fried_onion_cuttlefish.png
-39,Boiled Porbeagle Shark,Staff Level 15 (Raul),,10,400,143,5,1480,332,7,15,boiled_porbeagle_shark.png
-174,Roasted Tropical Fish and Garlic,Staff Level 15 (Tohoku),,10,400,173,6,1480,236,9,15,roasted_tropical_fish_and_garlic.png
-186,Seahorse Salad,Staff Level 15 (Yone),,10,400,160,4,1480,295,6,15,seahorse_salad.png
-64,Deep-Fried Eggplant Shrimp Meatballs,Staff Level 15 (Yusuke),,10,400,145,5,1480,460,7,15,deep-fried_eggplant_shrimp_meatballs.png
-198,Smallspotted Dart Kajime Soup,Staff Level 5 (any staff),,10,150,115,5,555,367,7,8,smallspotted_dart_kajime_soup.png
-213,Stellate Puffer Nicogori,Staff Level 5 (any staff),,10,180,120,5,666,381,7,8,stellate_puffer_nicogori.png
-88,Fried Seahorses,Staff Level 5 (Cohh),,10,220,110,3,814,363,4,8,fried_seahorses.png
-206,Special Fried Shrimp Sushi,Staff Level 5 (Drae),,10,380,110,1,1406,317,1,8,special_fried_shrimp_sushi.png
-36,Boiled and Deep-Fried White Shrimp,Staff Level 5 (Raptor),,10,225,105,7,832,330,10,8,boiled_and_deep-fried_white_shrimp.png
-246,Whole-Roasted Shark Head,Story,,10,75,70,5,277,295,7,3,whole-roasted_shark_head.png
-33,Bluefin Tuna Rice Bowl,Tuna Party,,10,360,130,6,1332,400,9,5,bluefin_tuna_rice_bowl.png
-107,Hawaiian Poke,Tuna Party,,10,265,123,6,980,348,9,5,hawaiian_poke.png
-255,Yellowfin Tuna Steak,Tuna Party,,10,305,125,6,1128,332,9,5,yellowfin_tuna_steak.png
-297,Stingray Sashimi Cold Noodles,VIP Bartender,Ichiban DLC,10,430,160,6,1591,331,9,,stingray_sashimi_cold_noodles.png
-53,Comber Sandwich,VIP British Chef,,10,390,150,4,1443,420,6,7,comber_sandwich.png
-63,Deep Fish Tempura,VIP British Chef,,10,395,140,5,1461,320,7,,deep_fish_tempura.png
-149,Pelican Eel Jelly,VIP British Chef,,10,373,151,6,1380,439,9,7,pelican_eel_jelly.png
-155,Plotosid Pie,VIP British Chef,,10,385,150,5,1424,420,7,7,plotosid_pie.png
-200,Smoked Atlantic Mackerel Scramble,VIP British Chef,,10,387,145,4,1431,460,6,7,smoked_atlantic_mackerel_scramble.png
-25,Blobfish Spring Roll,VIP Chinese Chef,,10,375,115,7,1387,322,10,7,blobfish_spring_roll.png
-87,Fried Rice with Sally Lightfoot Crab,VIP Chinese Chef,,10,385,125,7,1424,305,10,7,fried_rice_with_sally_lightfoot_crab.png
-89,Fried Tomato and Snailfish,VIP Chinese Chef,,10,390,110,8,1443,335,12,7,fried_tomato_and_snailfish.png
-132,Mianbao Xia,VIP Chinese Chef,,10,375,125,7,1387,305,10,7,mianbao_xia.png
-221,Sweet and Sour Stargazer,VIP Chinese Chef,,10,390,125,4,1443,395,6,,sweet_and_sour_stargazer.png
-228,Tomato Egg Soup,VIP Chinese Chef,,10,380,120,8,1406,309,12,7,tomato_egg_soup.png
-238,Vegetable Sushi,VIP DJ Sammy,,10,375,120,1,1387,390,1,,vegetable_sushi.png
-5,Antarctic Octopus Carpaccio,VIP Italian Chef,,10,405,120,5,1498,408,7,7,antarctic_octopus_carpaccio.png
-7,Arctic Cod Risotto,VIP Italian Chef,,10,408,125,6,1509,377,9,7,arctic_cod_risotto.png
-104,Haddock Acqua Pazza,VIP Italian Chef,,10,405,130,6,1498,400,9,7,haddock_acqua_pazza.png
-110,Humboldt Ink Pasta,VIP Italian Chef,,10,420,150,7,1554,375,10,,humboldt_ink_pasta.png
-136,Narrow-barred Spanish Mackerel Arancini,VIP Italian Chef,,10,390,130,5,1443,364,7,,narrow-barred_spanish_mackerel_arancini.png
-147,Peacock Squid Ripieni,VIP Italian Chef,,10,410,135,5,1517,360,7,7,peacock_squid_ripieni.png
-37,Boiled Asian Sheepshead Wrasse & Truffle,VIP Jango,,5,755,180,2,1661,280,2,,boiled_asian_sheepshead_wrasse_and_truffle.png
-109,Hot Pepper Tuna,VIP Jango,,10,395,170,5,1461,350,7,,hot_pepper_tuna.png
-216,Stir-fried Habanero Lobster,VIP Jango,,10,390,140,4,1443,320,6,7,stir-fried_habanero_lobster.png
-231,Tropical Fish Sushi Set,VIP Michael Bang,,10,375,130,6,1387,346,9,,tropical_fish_sushi_set.png
-184,Seagrapes Jellyfish Sushi,VIP Vincent,,10,225,100,1,832,280,1,,seagrapes_jellyfish_sushi.png
-2,Alaska Pollock Sushi,,,10,135,38,1,499,380,1,,alaska_pollock_sushi.png
-3,Allenypterus Sushi,,,10,125,36,1,462,360,1,,allenypterus_sushi.png
-4,American Lobster Sushi,,,10,129,29,1,477,290,1,,american_lobster_sushi.png
-6,Antarctic Octopus Sushi,,,10,120,36,1,444,360,1,,antarctic_octopus_sushi.png
-8,Arctic Cod Sushi,,,10,95,34,1,351,340,1,,arctic_cod_sushi.png
-9,Arctic Telescope Fish Sushi,,,10,120,35,1,444,350,1,,arctic_telescope_fish_sushi.png
-10,Atlantic Anglerfish Sushi,,,10,33,24,1,122,240,1,,atlantic_anglerfish_sushi.png
-12,Atlantic Bonito Sushi,,,10,21,18,1,77,180,1,,atlantic_bonito_sushi.png
-13,Atlantic Mackerel Sushi,,,10,21,19,1,77,190,1,,atlantic_mackerel_sushi.png
-14,B&W Snapper Sushi,,,10,9,15,1,33,150,1,,bandw_snapper_sushi.png
-15,Barrel Jellyfish Sushi,,,10,15,16,1,55,160,1,,barrel_jellyfish_sushi.png
-16,Barreleye Sushi,,,10,70,28,1,259,250,1,,barreleye_sushi.png
-19,Bigeye Scad Sushi,,,10,17,14,1,62,140,1,,bigeye_scad_sushi.png
-20,Bigeye Trevally Sushi,,,10,19,17,1,70,170,1,,bigeye_trevally_sushi.png
-22,Blackfin Barracuda Sushi,,,10,60,28,1,222,280,1,,blackfin_barracuda_sushi.png
-23,Blacktip Reefshark Sushi,,,10,60,27,1,222,270,1,,blacktip_reefshark_sushi.png
-26,Blobfish Sushi,,,10,120,31,1,444,310,1,,blobfish_sushi.png
-27,Blood-belly Comb Jelly Sushi,,,10,50,25,1,185,250,1,,blood-belly_comb_jelly_sushi.png
-28,Blue Lobster Sushi,,,10,141,32,1,521,320,1,,blue_lobster_sushi.png
-29,Blue Tang Sushi,,,10,6,11,1,22,110,1,,blue_tang_sushi.png
-30,Bluefin Tuna Akami Sushi,,,10,80,60,1,296,240,1,,bluefin_tuna_akami_sushi.png
-31,Bluefin Tuna Chutoro Sushi,,,10,95,61,1,351,241,1,,bluefin_tuna_chutoro_sushi.png
-32,Bluefin Tuna Ootoro Sushi,,,10,133,105,1,499,330,1,,bluefin_tuna_ootoro_sushi.png
-34,Bluehead Tilefish Sushi,,,10,15,14,1,55,140,1,,bluehead_tilefish_sushi.png
-35,Bluespotted Stargazer Sushi,,,10,55,28,1,203,380,1,,bluespotted_stargazer_sushi.png
-42,Box Jellyfish Sushi,,,10,55,27,1,203,270,1,,box_jellyfish_sushi.png
-43,California Spiny Lobster Sushi,,,10,66,28,1,244,280,1,,california_spiny_lobster_sushi.png
-44,Capelin Sushi,,,10,45,33,1,166,330,1,,capelin_sushi.png
-45,Cardinalfish Sushi,,,10,3,10,1,11,100,1,,cardinalfish_sushi.png
-46,Chambered Nautilus Sushi,,,10,35,22,1,129,220,1,,chambered_nautilus_sushi.png
-47,Clearfin Lionfish Sushi,,,10,24,25,1,88,250,1,,clearfin_lionfish_sushi.png
-49,Clione Sushi,,,10,35,22,1,129,220,1,,clione_sushi.png
-50,Clown Frogfish Sushi,,,10,15,15,1,55,150,1,,clown_frogfish_sushi.png
-51,Clownfish Sushi,,,10,2,12,1,7,120,1,,clownfish_sushi.png
-52,Comb Jelly Sushi,,,10,45,25,1,166,250,1,,comb_jelly_sushi.png
-54,Comber Sushi,,,10,2,14,1,7,140,1,,comber_sushi.png
-55,Cooked Whiteleg Shrimp Sushi,,,10,35,22,1,129,220,1,,cooked_whiteleg_shrimp_sushi.png
-56,Cookiecutter Shark Sushi,,,10,75,27,1,277,270,1,,cookiecutter_shark_sushi.png
-57,Copper Shark Sushi,,,10,65,28,1,240,280,1,,copper_shark_sushi.png
-58,Coral Trout Sushi,,,10,18,17,1,66,170,1,,coral_trout_sushi.png
-61,Crystal Lobster Sushi,,,10,141,34,1,521,340,1,,crystal_lobster_sushi.png
-62,Cuttlefish Sushi,,,10,20,20,1,74,200,1,,cuttlefish_sushi.png
-67,Devil Scorpionfish Sushi,,,10,135,35,1,499,350,1,,devil_scorpionfish_sushi.png
-68,Dollocaris Ingens Sushi,,,10,135,41,1,499,460,1,,dollocaris_ingens_sushi.png
-69,Drepanaspis Sushi,,,10,150,40,1,555,400,1,,drepanaspis_sushi.png
-71,Dumbo Octopus Sushi,,,10,80,33,1,296,330,1,,dumbo_octopus_sushi.png
-73,Dunkleosteus Sushi,,,10,210,42,1,777,420,1,,dunkleosteus_sushi.png
-75,Dusky Grouper Sushi,,,10,30,20,1,111,200,1,,dusky_grouper_sushi.png
-76,Eastern Rock Lobster Sushi,,,10,141,39,1,521,390,1,,eastern_rock_lobster_sushi.png
-77,Emperor Angelfish Sushi,,,10,10,15,1,37,150,1,,emperor_angelfish_sushi.png
-78,European Lobster Sushi,,,10,69,25,1,255,250,1,,european_lobster_sushi.png
-80,Falcatus Sushi,,,10,130,38,1,481,380,1,,falcatus_sushi.png
-81,Fan Lobster Sushi,,,10,66,30,1,244,300,1,,fan_lobster_sushi.png
-82,Fangtooth Sushi,,,10,45,26,1,166,260,1,,fangtooth_sushi.png
-83,Flame Angelfish Sushi,,,10,5,15,1,18,150,1,,flame_angelfish_sushi.png
-84,Fried Egg Jellyfish Sushi,,,10,15,16,1,55,160,1,,fried_egg_jellyfish_sushi.png
-90,Frilled Shark Sushi,,,10,85,28,1,314,280,1,,frilled_shark_sushi.png
-91,Gelatinous Snailfish Sushi,,,10,85,33,1,314,330,1,,gelatinous_snailfish_sushi.png
-92,Giant Trevally Sushi,,,10,30,25,1,111,250,1,,giant_trevally_sushi.png
-94,Golden King Crab Sushi,,,10,135,37,1,499,370,1,,golden_king_crab_sushi.png
-96,Great Barracuda Sushi,,,10,20,22,1,74,220,1,,great_barracuda_sushi.png
-99,Green Humphead Parrotfish Sushi,,,10,16,23,1,59,230,1,,green_humphead_parrotfish_sushi.png
-100,Greenland Shark Sushi,,,10,186,37,1,688,370,1,,greenland_shark_sushi.png
-101,Grey Triggerfish Sushi,,,10,17,17,1,62,170,1,,grey_triggerfish_sushi.png
-105,Haddock Sushi,,,10,110,34,1,407,340,1,,haddock_sushi.png
-106,Harlequin Hind Sushi,,,10,18,18,1,66,180,1,,harlequin_hind_sushi.png
-108,Horsehair Crab Sushi,,,10,150,45,1,555,450,1,,horsehair_crab_sushi.png
-111,Humboldt Squid Sushi,,,10,145,35,1,536,350,1,,humboldt_squid_sushi.png
-115,Ice Fish Sushi,,,10,95,32,1,351,320,1,,ice_fish_sushi.png
-116,Lagoon Triggerfish Sushi,,,10,7,12,1,25,120,1,,lagoon_triggerfish_sushi.png
-119,Longfin Batfish Sushi,,,10,10,13,1,37,130,1,,longfin_batfish_sushi.png
-120,Longnose Sawshark Sushi,,,10,35,29,1,129,290,1,,longnose_sawshark_sushi.png
-121,Longspine Squirrelfish Sushi,,,10,9,26,1,33,260,1,,longspine_squirrelfish_sushi.png
-122,Lumpfish Sushi,,,10,120,37,1,444,370,1,,lumpfish_sushi.png
-125,Mackerel Scad Sushi,,,10,15,15,1,55,150,1,,mackerel_scad_sushi.png
-126,Marbled Electric Ray Sushi,,,10,90,30,1,333,300,1,,marbled_electric_ray_sushi.png
-128,Marlin Sushi,,,10,135,37,1,499,370,1,,marlin_sushi.png
-129,Mediterranean Parrotfish Sushi,,,10,10,14,1,37,140,1,,mediterranean_parrotfish_sushi.png
-130,Megalograptus Sushi,,,10,140,40,1,518,400,1,,megalograptus_sushi.png
-131,Megamouth Shark Sushi,,,10,95,30,1,351,300,1,,megamouth_shark_sushi.png
-135,Moray Eel Sushi,,,10,50,25,1,185,250,1,,moray_eel_sushi.png
-137,Narrow-barred Spanish Mackerel Sushi,,,10,30,19,1,111,190,1,,narrow-barred_spanish_mackerel_sushi.png
-139,Narwhal Sushi,,,10,140,40,1,518,400,1,,narwhal_sushi.png
-141,Norimaki,,,10,1,1,1,1,1,1,,norimaki.png
-142,Norway Lobster Sushi,,,10,75,33,1,277,330,1,,norway_lobster_sushi.png
-143,Orbicular Batfish Fry,,,10,5,11,1,18,110,1,,orbicular_batfish_fry.png
-144,Ornate Wrasse Sushi,,,10,8,13,1,29,130,1,,ornate_wrasse_sushi.png
-145,Pacific Fanfish Sushi,,,10,65,24,1,240,240,1,,pacific_fanfish_sushi.png
-146,Painted Comber Sushi,,,10,17,14,1,62,140,1,,painted_comber_sushi.png
-148,Peacock Squid Sushi,,,10,75,29,1,277,290,1,,peacock_squid_sushi.png
-150,Pelican Eel Sushi,,,10,180,36,1,666,360,1,,pelican_eel_sushi.png
-154,Pikaia Sushi,,,10,115,36,1,425,360,1,,pikaia_sushi.png
-156,Polar Eelpout Sushi,,,10,90,32,1,333,320,1,,polar_eelpout_sushi.png
-157,Porbeagle Shark Sushi,,,10,165,38,1,610,380,1,,porbeagle_shark_sushi.png
-159,Purple Sea Urchin Sushi,,,10,60,27,1,222,270,1,,purple_sea_urchin_sushi.png
-160,Pyramid Butterflyfish Sushi,,,10,4,10,1,14,100,1,,pyramid_butterflyfish_sushi.png
-161,Qingmendous Sushi,,,10,120,38,1,444,380,1,,qingmendous_sushi.png
-162,Rainbow Wrasse Sushi,,,10,6,13,1,22,130,1,,rainbow_wrasse_sushi.png
-163,Raw Black Tiger Shrimp Sushi,,,10,50,24,1,185,240,1,,raw_black_tiger_shrimp_sushi.png
-164,Red bream Sushi,,,10,35,27,1,129,270,1,,red_bream_sushi.png
-165,Red Lionfish Sushi,,,10,10,20,1,37,200,1,,red_lionfish_sushi.png
-166,Red-banded Lobster Sushi,,,10,75,25,1,277,250,1,,red-banded_lobster_sushi.png
-167,Redtoothed Triggerfish Sushi,,,10,9,15,1,33,150,1,,redtoothed_triggerfish_sushi.png
-168,Rhinochimaeridae Sushi,,,10,90,29,1,333,290,1,,rhinochimaeridae_sushi.png
-175,Sailfish Sushi,,,10,195,40,1,721,400,1,,sailfish_sushi.png
-176,Salema Porgy Sushi,,,10,5,11,1,18,110,1,,salema_porgy_sushi.png
-177,Sally Lightfoot Crab Sushi,,,10,50,32,1,185,320,1,,sally_lightfoot_crab_sushi.png
-178,Salmon Snailfish Sushi,,,10,60,23,1,222,230,1,,salmon_snailfish_sushi.png
-180,Sea Goldie Sushi,,,10,3,13,1,11,130,1,,sea_goldie_sushi.png
-182,Sea Toad Sushi,,,10,55,23,1,203,230,1,,sea_toad_sushi.png
-183,Seadragon Onigiri,,,10,105,47,1,388,470,1,,seadragon_onigiri.png
-187,Seahorse Skewers,,,10,30,22,1,111,220,1,,seahorse_skewers.png
-191,Seasoned Long-spine Porcupinefish Skin,,,10,180,140,5,666,410,7,6,seasoned_long-spine_porcupinefish_skin.png
-195,Sheepshead Sushi,,,10,15,24,1,55,240,1,,sheepshead_sushi.png
-196,Shortfin Mako Sushi,,,10,105,36,1,388,360,1,,shortfin_mako_sushi.png
-199,Smallspotted Dart Sushi,,,10,8,12,1,29,120,1,,smallspotted_dart_sushi.png
-201,Smooth Hammerhead Sushi,,,10,141,39,1,521,390,1,,smooth_hammerhead_sushi.png
-202,Snow Crab Sushi,,,10,120,42,1,444,420,1,,snow_crab_sushi.png
-203,Snub-nosed Spiny Eel Sushi,,,10,180,39,1,666,390,1,,snub-nosed_spiny_eel_sushi.png
-205,Spear Squid Sushi,,,10,51,30,1,188,300,1,,spear_squid_sushi.png
-207,Spider Crab Sushi,,,10,50,29,1,185,290,1,,spider_crab_sushi.png
-208,Starry Skate Sushi,,,10,130,36,1,481,360,1,,starry_skate_sushi.png
-215,Stingray Sushi,,,10,51,26,1,188,260,1,,stingray_sushi.png
-218,Striped Catfish Sushi,,,10,5,26,1,18,260,1,,striped_catfish_sushi.png
-219,Striped Red Mullet Sushi,,,10,16,14,1,59,140,1,,striped_red_mullet_sushi.png
-223,Threetooth Puffer Sushi,,,10,70,25,1,259,250,1,,threetooth_puffer_sushi.png
-224,Thresher Shark Sushi,,,10,159,39,1,588,390,1,,thresher_shark_sushi.png
-225,Tiger Shark Sushi,,,10,50,29,1,185,290,1,,tiger_shark_sushi.png
-226,Titan Triggerfish Sushi,,,10,15,20,1,55,200,1,,titan_triggerfish_sushi.png
-227,Tokummia Katalepsis Sushi,,,10,165,46,1,610,460,1,,tokummia_katalepsis_sushi.png
-232,Tropical Rock Lobster Sushi,,,10,135,30,1,499,300,1,,tropical_rock_lobster_sushi.png
-237,Vampire Squid Sushi,,,10,115,34,1,425,340,1,,vampire_squid_sushi.png
-239,Waptia Sushi,,,10,103,40,1,381,400,1,,waptia_sushi.png
-241,White Shrimp Sushi,,,10,53,28,1,196,280,1,,white_shrimp_sushi.png
-242,White Spotted Jellyfish Sushi,,,10,18,18,1,66,180,1,,white_spotted_jellyfish_sushi.png
-244,White Trevally Sushi,,,10,22,19,1,81,190,1,,white_trevally_sushi.png
-245,Whitetip Reefshark Sushi,,,10,24,27,1,88,270,1,,whitetip_reefshark_sushi.png
-248,Xenacanthus Sushi,,,10,160,43,1,592,430,1,,xenacanthus_sushi.png
-250,Yellow Tang Sushi,,,10,4,10,1,14,100,1,,yellow_tang_sushi.png
-251,Yellowback Fusilier Sushi,,,10,7,12,1,25,120,1,,yellowback_fusilier_sushi.png
-252,Yellowfin Tuna Akami Sushi,,,10,73,55,1,270,235,1,,yellowfin_tuna_akami_sushi.png
-253,Yellowfin Tuna Chutoro Sushi,,,10,90,58,1,333,238,1,,yellowfin_tuna_chutoro_sushi.png
-254,Yellowfin Tuna Ootoro Sushi,,,10,125,90,1,462,315,1,,yellowfin_tuna_ootoro_sushi.png
-257,Zebra Shark Sushi,,,10,88,36,1,399,360,1,,zebra_shark_sushi.png
+id,name,unlock,chapter,cooksta_rank,dlc,max_level,base_price,base_taste,base_servings,final_price,final_taste,final_servings,artisans_flames,image
+258,Aurora Jellyfish Sushi,,5,,Dredge,1,345,6,1,345,6,1,,aurora_jellyfish_sushi.png
+259,Barbed Eel Sushi,,5,,Dredge,1,500,2,1,500,2,1,,barbed_eel_sushi.png
+260,Bloodskin Shark Sushi,,5,,Dredge,1,1225,4,1,1225,4,1,,bloodskin_shark_sushi.png
+261,Bony Wreckfish Sushi,,5,,Dredge,1,620,1,1,620,1,1,,bony_wreckfish_sushi.png
+262,Bursting Anglerfish Sushi,,5,,Dredge,1,530,1,1,530,1,1,,bursting_anglerfish_sushi.png
+263,Cerebral Crab Sushi,,6,,Dredge,1,515,2,1,515,2,1,,cerebral_crab_sushi.png
+264,Concertina Barracuda Sushi,,5,,Dredge,1,470,1,1,470,1,1,,concertina_barracuda_sushi.png
+265,Cortex Decorator Sushi,,6,,Dredge,1,740,2,1,740,2,1,,cortex_decorator_sushi.png
+266,Entangled Crab Sushi,,6,,Dredge,1,510,2,1,510,2,1,,entangled_crab_sushi.png
+267,Enthralled Stonefish Sushi,,5,,Dredge,1,465,1,1,465,1,1,,enthralled_stonefish_sushi.png
+268,Fanged Cod Sushi,,5,,Dredge,1,380,6,1,380,6,1,,fanged_cod_sushi.png
+269,Gazing Shark Sushi,,5,,Dredge,1,1250,3,1,1250,3,1,,gazing_shark_sushi.png
+270,Gelatinous Stonefish Sushi,,5,,Dredge,1,385,6,1,385,6,1,,gelatinous_stonefish_sushi.png
+271,Gnashing Perch Sushi,,5,,Dredge,1,420,1,1,420,1,1,,gnashing_perch_sushi.png
+272,Grotesque Mackerel Sushi,,5,,Dredge,1,383,4,1,383,4,1,,grotesque_mackerel_sushi.png
+273,Host Eel Sushi,,5,,Dredge,1,610,1,1,610,1,1,,host_eel_sushi.png
+274,Imperious Lobster Sushi,,6,,Dredge,1,945,3,1,945,3,1,,imperious_lobster_sushi.png
+275,Malignant Pincer Sushi,,5,,Dredge,1,880,3,1,880,3,1,,malignant_pincer_sushi.png
+276,Many Eyed Mackerel Sushi,,5,,Dredge,1,453,1,1,453,1,1,,many_eyed_mackerel_sushi.png
+277,Parhelion Jellyfish Sushi,,5,,Dredge,1,390,5,1,390,5,1,,parhelion_jellyfish_sushi.png
+278,Perished Loosejaw Sushi,,5,,Dredge,1,395,1,1,395,1,1,,perished_loosejaw_sushi.png
+279,Radiant Squid Sushi,,5,,Dredge,1,365,8,1,365,8,1,,radiant_squid_sushi.png
+280,Sallow Sailfish Sushi,,5,,Dredge,1,1000,5,1,1000,5,1,,sallow_sailfish_sushi.png
+281,Savage Barracuda Sushi,,5,,Dredge,1,440,1,1,440,1,1,,savage_barracuda_sushi.png
+282,Scouring Bass Sushi,,5,,Dredge,1,375,1,1,375,1,1,,scouring_bass_sushi.png
+283,Seizing Snailfish Sushi,,5,,Dredge,1,455,3,1,455,3,1,,seizing_snailfish_sushi.png
+284,Shattered Wreckfish Sushi,,5,,Dredge,1,560,2,1,560,2,1,,shattered_wreckfish_sushi.png
+285,Splintered Crab Sushi,,6,,Dredge,1,405,3,1,405,3,1,,splintered_crab_sushi.png
+286,Sprouting Eel Sushi,,5,,Dredge,1,1040,4,1,1040,4,1,,sprouting_eel_sushi.png
+287,Three-Headed Cod Sushi,,5,,Dredge,1,450,1,1,450,1,1,,three-headed_cod_sushi.png
+288,Translucent Sturgeon Sushi,,5,,Dredge,1,1235,3,1,1235,3,1,,translucent_sturgeon_sushi.png
+289,Tusked Grouper Sushi,,5,,Dredge,1,425,2,1,425,2,1,,tusked_grouper_sushi.png
+290,Voltaic Grouper,,5,,Dredge,1,515,7,1,515,7,1,,voltaic_grouper.png
+291,Withered Ray Sushi,,5,,Dredge,1,995,5,1,995,5,1,,withered_ray_sushi.png
+292,Deep Sea Kaiju Ramen,Defeat Ebirah,6,,Godzilla,10,350,140,4,1295,410,6,,deep_sea_kaiju_ramen.png
+293,Ebirah Chasing Sashimi,Defeat Ebirah,6,,Godzilla,10,340,130,6,1258,382,9,,ebirah_chasing_sashimi.png
+294,Godzilla vs. Ebirah Curry,Defeat Ebirah,6,,Godzilla,10,370,140,6,1369,365,9,,godzilla_vs._ebirah_curry.png
+296,Spear Squid Soba Futomaki,Staff Level 15 (Chitose),6,,Ichiban,10,425,166,6,1572,292,9,15,spear_squid_soba_futomaki.png
+295,Eggplant Soba Oyaki,Staff Level 15 (Etsuko),6,,Ichiban,10,425,173,6,1572,236,9,15,eggplant_soba_oyaki.png
+298,Warm Atlantic Mackerel Soba,Staff Level 15 (Hamako),6,,Ichiban,10,425,170,6,1572,260,9,15,warm_atlantic_mackerel_soba.png
+297,Stingray Sashimi Cold Noodles,VIP Bartender,6,,Ichiban,10,430,160,6,1591,331,9,,stingray_sashimi_cold_noodles.png
+24,Blanched Lusca Tentacle,Boss,7,,,1,1350,250,10,1350,250,10,1,blanched_lusca_tentacle.png
+38,Boiled Mantis Shrimp with Soy Paste,Boss,2,,,1,650,150,10,650,150,10,1,boiled_mantis_shrimp_with_soy_paste.png
+48,Clione Queen Soup,Boss,2,,,1,550,135,10,550,135,10,1,clione_queen_soup.png
+93,Goblin Shark Belly Roast,Boss,3,,,1,600,135,10,600,135,10,1,goblin_shark_belly_roast.png
+123,Lusca Neck Tadaki,Boss,7,,,1,1350,250,10,1350,250,10,1,lusca_neck_tadaki.png
+151,Phantom Jellyfish Jelly,Boss,6,,,1,700,165,10,700,165,10,1,phantom_jellyfish_jelly.png
+173,Roasted Helicoprion Tail,Boss,6,,,1,710,170,10,710,170,10,1,roasted_helicoprion_tail.png
+211,Steamed Kronosaurus Tongue,Boss,6,,,1,724,180,10,724,180,10,1,steamed_kronosaurus_tongue.png
+212,Steamed Wolf Eel,Boss,2,,,1,550,120,10,550,120,10,,steamed_wolf_eel.png
+217,Stir-Fried Hermit Crab and Seaweed,Boss,2,,,1,550,150,10,550,150,10,1,stir-fried_hermit_crab_and_seaweed.png
+240,White Shark Omelet,Boss,2,,,1,650,150,10,650,150,10,1,white_shark_omelet.png
+249,Yawie Steamed Meat,Boss,7,,,1,750,180,10,750,180,10,1,yawie_steamed_meat.png
+256,Young Anomalocaris Sushi,Boss,7,,,1,224,125,1,224,125,1,,young_anomalocaris_sushi.png
+1,Agar Tokoroten,Cooksta Bronze Rank,,Bronze,,10,51,68,5,189,266,7,3,agar_tokoroten.png
+41,Boiled Yellowback Fusilier,Cooksta Bronze Rank,,Bronze,,10,50,75,5,185,255,7,3,boiled_yellowback_fusilier.png
+179,Salt-grilled Redtoothed Triggerfish,Cooksta Bronze Rank,,Bronze,,10,48,70,4,178,241,6,3,salt-grilled_redtoothed_triggerfish.png
+190,Seasoned Kajime,Cooksta Bronze Rank,,Bronze,,10,50,65,4,185,245,6,3,seasoned_kajime.png
+72,Dumbo Takoyaki,Cooksta Diamond Rank,,Diamond,,10,420,156,6,1554,390,9,15,dumbo_takoyaki.png
+95,Great Barracuda Canape,Cooksta Diamond Rank,,Diamond,,10,425,147,4,1572,372,6,12,great_barracuda_canape.png
+140,Nasu Dengaku,Cooksta Diamond Rank,,Diamond,,10,415,155,3,1535,317,4,12,nasu_dengaku.png
+169,Rice with Great Spider Crab Meat,Cooksta Diamond Rank,,Diamond,,10,410,150,5,1517,330,7,,rice_with_great_spider_crab_meat.png
+18,Big-Eyed Scad and Soybean Paste Roast,Cooksta Gold Rank,,Gold,,10,185,114,5,684,348,7,9,big-eyed_scad_and_soybean_paste_roast.png
+185,Seagrapes Special Sushi,Cooksta Gold Rank,,Gold,,10,200,120,1,740,390,1,6,seagrapes_special_sushi.png
+214,Stellate Puffer Special Sushi,Cooksta Gold Rank,,Gold,,10,220,115,1,814,340,1,6,stellate_puffer_special_sushi.png
+233,Trout Sea Grapes Ricebowl,Cooksta Gold Rank,,Gold,,10,175,110,5,647,290,7,9,trout_sea_grapes_ricebowl.png
+11,Atlantic Bonito Curry,Cooksta Platinum Rank,,Platinum,,10,380,137,5,1406,389,7,12,atlantic_bonito_curry.png
+21,Black Vinegar Braised Parrotfish,Cooksta Platinum Rank,,Platinum,,10,385,136,4,1424,406,6,9,black_vinegar_braised_parrotfish.png
+112,Humphead Parrotfish Curry,Cooksta Platinum Rank,,Platinum,,10,375,140,4,1387,347,6,12,humphead_parrotfish_curry.png
+188,Seahorse Udon,Cooksta Platinum Rank,,Platinum,,10,375,128,3,1387,353,4,9,seahorse_udon.png
+134,Moray Eel Curry,Cooksta Silver Rank,,Silver,,10,95,93,4,351,273,6,3,moray_eel_curry.png
+220,Striped Red Mullet Tangle Roll,Cooksta Silver Rank,,Silver,,10,80,90,5,296,270,7,6,striped_red_mullet_tangle_roll.png
+243,White Trevally Kombu Ochazuke,Cooksta Silver Rank,,Silver,,10,93,95,5,344,266,7,6,white_trevally_kombu_ochazuke.png
+66,Deep-Fried Vegetables,Cucumber Party,2,,,10,312,153,2,1154,396,3,,deep-fried_vegetables.png
+97,Great Spider Crab and Cucumber Sushi,Cucumber Party,2,,,10,324,160,1,1199,385,1,5,great_spider_crab_and_cucumber_sushi.png
+152,Pickled Vegetables,Cucumber Party,2,,,10,316,157,2,1169,364,3,,pickled_vegetables.png
+181,Sea Toad and Cucumber Gunkan Sushi,Cucumber Party,2,,,10,320,160,1,1184,367,1,5,sea_toad_and_cucumber_gunkan_sushi.png
+192,Seasoned Waptia Fieldensis,Cucumber Party,2,,,10,425,150,5,1572,420,7,15,seasoned_waptia_fieldensis.png
+197,Skewered Cucumber,Cucumber Party,2,,,10,320,160,1,1184,340,1,,skewered_cucumber.png
+230,Trevally Sandwich,Cucumber Party,2,,,10,312,170,5,1154,260,7,5,trevally_sandwich.png
+113,Hyalonema Tuna Sashimi,Glacial Seaweed Cave,6,,,5,765,185,1,1683,265,1,15,hyalonema_tuna_sashimi.png
+210,Steamed Hyalonema Angler Fish,Glacial Seaweed Cave,6,,,5,750,180,1,1650,248,1,12,steamed_hyalonema_angler_fish.png
+85,Fried Habanero Fangtooth,Jango Shop,5,,,10,410,150,5,1517,420,7,,fried_habanero_fangtooth.png
+302,Green Sea Urchin & Cucumber Salad,Jango Shop,5,,,5,700,150,2,1540,282,2,,green_sea_urchin_and_cucumber_salad.png
+102,Grilled Antarctic Octopus & Truffle,Jango Shop,5,,,5,770,185,2,1694,338,2,,grilled_antarctic_octopus_and_truffle.png
+103,Grilled Eel with Habanero,Jango Shop,5,,,10,425,155,6,1572,335,9,,grilled_eel_with_habanero.png
+118,Lobster Platter,Jango Shop,5,,,10,435,195,4,1609,375,6,,lobster_platter.png
+133,Moonlight Bladderwrack Roll,Jango Shop,5,,,10,405,135,6,1498,360,9,,moonlight_bladderwrack_roll.png
+158,Pufferfish Dumpling Soup,Jango Shop,5,,,10,420,150,6,1554,420,9,,pufferfish_dumpling_soup.png
+303,Rainbow Cap Eel Skewers,Jango Shop,5,,,5,730,195,2,1606,295,2,,rainbow_cap_eel_skewers.png
+304,Rainbow Cap Pacific Fanfish Ochazuke,Jango Shop,5,,,5,710,190,2,1562,290,2,,rainbow_cap_pacific_fanfish_ochazuke.png
+204,Soy Sauce Marinated Crab,Jango Shop,5,,,10,435,190,4,1609,505,6,,soy_sauce_marinated_crab.png
+234,Truffle Blue Lobster Tail Sushi,Jango Shop,5,,,5,780,190,2,1716,282,2,,truffle_blue_lobster_tail_sushi.png
+235,Truffle Sailfish Tartare,Jango Shop,5,,,5,785,195,2,1727,295,2,,truffle_sailfish_tartare.png
+236,Truffle Shark Sandwich,Jango Shop,5,,,5,775,185,2,1705,273,2,,truffle_shark_sandwich.png
+79,Falcatus Soybean Paste Soup,Kronosaurus,,,,10,420,130,5,1554,382,7,15,falcatus_soybean_paste_soup.png
+153,Pikaia Ramen,Kronosaurus,,,,10,420,135,7,1554,360,10,15,pikaia_ramen.png
+60,Crystal Lobster Roll,Lobster Party,6,,,10,370,170,6,1369,305,9,9,crystal_lobster_roll.png
+209,Steamed Eastern Rock Lobster & Egg,Lobster Party,6,,,10,380,140,5,1406,455,7,9,steamed_eastern_rock_lobster_and_egg.png
+40,Boiled Sailfish and Seaweed,Marlin Party,,,,10,425,138,6,1572,300,9,5,boiled_sailfish_and_seaweed.png
+127,Marlin and Soybean Paste Roast,Marlin Party,,,,10,380,137,6,1406,272,9,5,marlin_and_soybean_paste_roast.png
+305,Rainbow Cap Triggerfish Fishcake,Mushroomer,,,,5,705,180,2,1551,268,2,,rainbow_cap_triggerfish_fishcake.png
+299,Chirashi Sushi,mxmtoon,2,,,5,690,150,2,1518,274,2,1,chirashi_sushi.png
+300,Cold Jellyfish & Green Sea Urchin Salad,mxmtoon,2,,,5,685,145,2,1507,277,2,9,cold_jellyfish_and_green_sea_urchin_salad.png
+301,Deep-fried Sea Urchin,mxmtoon,2,,,5,690,155,2,1518,275,2,9,deep-fried_sea_urchin.png
+65,Deep-Fried Red Lionfish,Staff Level 10 (Cohh),,,,10,390,132,3,1443,366,4,12,deep-fried_red_lionfish.png
+172,Roasted Capelin,Staff Level 10 (Drae),,,,10,390,138,5,1443,345,7,12,roasted_capelin.png
+170,Rice with Purple Sea Urchin Sushi,Staff Level 10 (Raptor),,,,10,385,140,3,1424,320,4,12,rice_with_purple_sea_urchin_sushi.png
+59,Crimson Fish Roll,Staff Level 15 (Billy),,,,10,400,168,6,1480,258,9,15,crimson_fish_roll.png
+70,Dried Stingray,Staff Level 15 (Carolina),,,,10,400,180,8,1480,225,12,15,dried_stingray.png
+98,Great Spider Crab Curry,Staff Level 15 (Charlie),,,,10,400,155,6,1480,290,9,15,great_spider_crab_curry.png
+124,Mackerel Scad Hotdog,Staff Level 15 (Cohh),,,,10,400,160,4,1480,340,6,15,mackerel_scad_hotdog.png
+138,Narwhal Miso Soup,Staff Level 15 (Davina),,,,10,400,150,8,1480,420,12,15,narwhal_miso_soup.png
+114,Ice Fish Curry,Staff Level 15 (Drae),,,,10,400,155,6,1480,317,9,15,ice_fish_curry.png
+74,Dusky Grouper Steak,Staff Level 15 (El Nino),,,,10,400,148,5,1480,328,7,15,dusky_grouper_steak.png
+194,Shark Karaage,Staff Level 15 (Itsuki),,,,10,400,155,6,1480,380,9,15,shark_karaage.png
+189,Seasoned Jellyfish,Staff Level 15 (James),,,,10,400,163,4,1480,298,6,15,seasoned_jellyfish.png
+247,Wrasse Curry,Staff Level 15 (Jandi),,,,10,400,150,4,1480,330,6,15,wrasse_curry.png
+171,Rice with White Shrimp Meat,Staff Level 15 (Kyoko),,,,10,400,148,6,1480,400,9,15,rice_with_white_shrimp_meat.png
+222,Three-Colored Squid Roast,Staff Level 15 (Liu),,,,10,400,155,8,1480,335,12,15,three-colored_squid_roast.png
+229,Trevally Nanbanzuke,Staff Level 15 (Maki),,,,10,400,145,5,1480,343,7,15,trevally_nanbanzuke.png
+117,Latok Omelet,Staff Level 15 (Masayoshi),,,,10,400,170,6,1480,260,9,15,latok_omelet.png
+17,Batfish Ricebowl,Staff Level 15 (Mitchell),,,,10,400,150,5,1480,447,7,15,batfish_ricebowl.png
+193,Seaweed Rolled Omelet,Staff Level 15 (Pai),,,,10,400,165,6,1480,300,9,15,seaweed_rolled_omelet.png
+86,Fried Onion Cuttlefish,Staff Level 15 (Raptor),,,,10,400,153,5,1480,360,7,15,fried_onion_cuttlefish.png
+39,Boiled Porbeagle Shark,Staff Level 15 (Raul),,,,10,400,143,5,1480,332,7,15,boiled_porbeagle_shark.png
+174,Roasted Tropical Fish and Garlic,Staff Level 15 (Tohoku),,,,10,400,173,6,1480,236,9,15,roasted_tropical_fish_and_garlic.png
+186,Seahorse Salad,Staff Level 15 (Yone),,,,10,400,160,4,1480,295,6,15,seahorse_salad.png
+64,Deep-Fried Eggplant Shrimp Meatballs,Staff Level 15 (Yusuke),,,,10,400,145,5,1480,460,7,15,deep-fried_eggplant_shrimp_meatballs.png
+198,Smallspotted Dart Kajime Soup,Staff Level 5 (any staff),,,,10,150,115,5,555,367,7,8,smallspotted_dart_kajime_soup.png
+213,Stellate Puffer Nicogori,Staff Level 5 (any staff),,,,10,180,120,5,666,381,7,8,stellate_puffer_nicogori.png
+88,Fried Seahorses,Staff Level 5 (Cohh),,,,10,220,110,3,814,363,4,8,fried_seahorses.png
+206,Special Fried Shrimp Sushi,Staff Level 5 (Drae),,,,10,380,110,1,1406,317,1,8,special_fried_shrimp_sushi.png
+36,Boiled and Deep-Fried White Shrimp,Staff Level 5 (Raptor),,,,10,225,105,7,832,330,10,8,boiled_and_deep-fried_white_shrimp.png
+246,Whole-Roasted Shark Head,Story,,,,10,75,70,5,277,295,7,3,whole-roasted_shark_head.png
+33,Bluefin Tuna Rice Bowl,Tuna Party,1,,,10,360,130,6,1332,400,9,5,bluefin_tuna_rice_bowl.png
+107,Hawaiian Poke,Tuna Party,1,,,10,265,123,6,980,348,9,5,hawaiian_poke.png
+255,Yellowfin Tuna Steak,Tuna Party,1,,,10,305,125,6,1128,332,9,5,yellowfin_tuna_steak.png
+53,Comber Sandwich,VIP British Chef,6,,,10,390,150,4,1443,420,6,7,comber_sandwich.png
+63,Deep Fish Tempura,VIP British Chef,6,,,10,395,140,5,1461,320,7,,deep_fish_tempura.png
+149,Pelican Eel Jelly,VIP British Chef,6,,,10,373,151,6,1380,439,9,7,pelican_eel_jelly.png
+155,Plotosid Pie,VIP British Chef,6,,,10,385,150,5,1424,420,7,7,plotosid_pie.png
+200,Smoked Atlantic Mackerel Scramble,VIP British Chef,6,,,10,387,145,4,1431,460,6,7,smoked_atlantic_mackerel_scramble.png
+25,Blobfish Spring Roll,VIP Chinese Chef,6,,,10,375,115,7,1387,322,10,7,blobfish_spring_roll.png
+87,Fried Rice with Sally Lightfoot Crab,VIP Chinese Chef,6,,,10,385,125,7,1424,305,10,7,fried_rice_with_sally_lightfoot_crab.png
+89,Fried Tomato and Snailfish,VIP Chinese Chef,6,,,10,390,110,8,1443,335,12,7,fried_tomato_and_snailfish.png
+132,Mianbao Xia,VIP Chinese Chef,6,,,10,375,125,7,1387,305,10,7,mianbao_xia.png
+221,Sweet and Sour Stargazer,VIP Chinese Chef,6,,,10,390,125,4,1443,395,6,,sweet_and_sour_stargazer.png
+228,Tomato Egg Soup,VIP Chinese Chef,6,,,10,380,120,8,1406,309,12,7,tomato_egg_soup.png
+238,Vegetable Sushi,VIP DJ Sammy,5,,,10,375,120,1,1387,390,1,,vegetable_sushi.png
+5,Antarctic Octopus Carpaccio,VIP Italian Chef,6,,,10,405,120,5,1498,408,7,7,antarctic_octopus_carpaccio.png
+7,Arctic Cod Risotto,VIP Italian Chef,6,,,10,408,125,6,1509,377,9,7,arctic_cod_risotto.png
+104,Haddock Acqua Pazza,VIP Italian Chef,6,,,10,405,130,6,1498,400,9,7,haddock_acqua_pazza.png
+110,Humboldt Ink Pasta,VIP Italian Chef,6,,,10,420,150,7,1554,375,10,,humboldt_ink_pasta.png
+136,Narrow-barred Spanish Mackerel Arancini,VIP Italian Chef,6,,,10,390,130,5,1443,364,7,,narrow-barred_spanish_mackerel_arancini.png
+147,Peacock Squid Ripieni,VIP Italian Chef,6,,,10,410,135,5,1517,360,7,7,peacock_squid_ripieni.png
+37,Boiled Asian Sheepshead Wrasse & Truffle,VIP Jango,5,,,5,755,180,2,1661,280,2,,boiled_asian_sheepshead_wrasse_and_truffle.png
+109,Hot Pepper Tuna,VIP Jango,5,,,10,395,170,5,1461,350,7,,hot_pepper_tuna.png
+216,Stir-fried Habanero Lobster,VIP Jango,5,,,10,390,140,4,1443,320,6,7,stir-fried_habanero_lobster.png
+231,Tropical Fish Sushi Set,VIP Michael Bang,3,,,10,375,130,6,1387,346,9,,tropical_fish_sushi_set.png
+184,Seagrapes Jellyfish Sushi,VIP Vincent,1,,,10,225,100,1,832,280,1,,seagrapes_jellyfish_sushi.png
+2,Alaska Pollock Sushi,,,,,10,135,38,1,499,380,1,,alaska_pollock_sushi.png
+3,Allenypterus Sushi,,,,,10,125,36,1,462,360,1,,allenypterus_sushi.png
+4,American Lobster Sushi,,,,,10,129,29,1,477,290,1,,american_lobster_sushi.png
+6,Antarctic Octopus Sushi,,,,,10,120,36,1,444,360,1,,antarctic_octopus_sushi.png
+8,Arctic Cod Sushi,,,,,10,95,34,1,351,340,1,,arctic_cod_sushi.png
+9,Arctic Telescope Fish Sushi,,,,,10,120,35,1,444,350,1,,arctic_telescope_fish_sushi.png
+10,Atlantic Anglerfish Sushi,,,,,10,33,24,1,122,240,1,,atlantic_anglerfish_sushi.png
+12,Atlantic Bonito Sushi,,,,,10,21,18,1,77,180,1,,atlantic_bonito_sushi.png
+13,Atlantic Mackerel Sushi,,,,,10,21,19,1,77,190,1,,atlantic_mackerel_sushi.png
+14,B&W Snapper Sushi,,,,,10,9,15,1,33,150,1,,bandw_snapper_sushi.png
+15,Barrel Jellyfish Sushi,,,,,10,15,16,1,55,160,1,,barrel_jellyfish_sushi.png
+16,Barreleye Sushi,,,,,10,70,28,1,259,250,1,,barreleye_sushi.png
+19,Bigeye Scad Sushi,,,,,10,17,14,1,62,140,1,,bigeye_scad_sushi.png
+20,Bigeye Trevally Sushi,,,,,10,19,17,1,70,170,1,,bigeye_trevally_sushi.png
+22,Blackfin Barracuda Sushi,,,,,10,60,28,1,222,280,1,,blackfin_barracuda_sushi.png
+23,Blacktip Reefshark Sushi,,,,,10,60,27,1,222,270,1,,blacktip_reefshark_sushi.png
+26,Blobfish Sushi,,,,,10,120,31,1,444,310,1,,blobfish_sushi.png
+27,Blood-belly Comb Jelly Sushi,,,,,10,50,25,1,185,250,1,,blood-belly_comb_jelly_sushi.png
+28,Blue Lobster Sushi,,,,,10,141,32,1,521,320,1,,blue_lobster_sushi.png
+29,Blue Tang Sushi,,,,,10,6,11,1,22,110,1,,blue_tang_sushi.png
+30,Bluefin Tuna Akami Sushi,,,,,10,80,60,1,296,240,1,,bluefin_tuna_akami_sushi.png
+31,Bluefin Tuna Chutoro Sushi,,,,,10,95,61,1,351,241,1,,bluefin_tuna_chutoro_sushi.png
+32,Bluefin Tuna Ootoro Sushi,,,,,10,133,105,1,499,330,1,,bluefin_tuna_ootoro_sushi.png
+34,Bluehead Tilefish Sushi,,,,,10,15,14,1,55,140,1,,bluehead_tilefish_sushi.png
+35,Bluespotted Stargazer Sushi,,,,,10,55,28,1,203,380,1,,bluespotted_stargazer_sushi.png
+42,Box Jellyfish Sushi,,,,,10,55,27,1,203,270,1,,box_jellyfish_sushi.png
+43,California Spiny Lobster Sushi,,,,,10,66,28,1,244,280,1,,california_spiny_lobster_sushi.png
+44,Capelin Sushi,,,,,10,45,33,1,166,330,1,,capelin_sushi.png
+45,Cardinalfish Sushi,,,,,10,3,10,1,11,100,1,,cardinalfish_sushi.png
+46,Chambered Nautilus Sushi,,,,,10,35,22,1,129,220,1,,chambered_nautilus_sushi.png
+47,Clearfin Lionfish Sushi,,,,,10,24,25,1,88,250,1,,clearfin_lionfish_sushi.png
+49,Clione Sushi,,,,,10,35,22,1,129,220,1,,clione_sushi.png
+50,Clown Frogfish Sushi,,,,,10,15,15,1,55,150,1,,clown_frogfish_sushi.png
+51,Clownfish Sushi,,,,,10,2,12,1,7,120,1,,clownfish_sushi.png
+52,Comb Jelly Sushi,,,,,10,45,25,1,166,250,1,,comb_jelly_sushi.png
+54,Comber Sushi,,,,,10,2,14,1,7,140,1,,comber_sushi.png
+55,Cooked Whiteleg Shrimp Sushi,,,,,10,35,22,1,129,220,1,,cooked_whiteleg_shrimp_sushi.png
+56,Cookiecutter Shark Sushi,,,,,10,75,27,1,277,270,1,,cookiecutter_shark_sushi.png
+57,Copper Shark Sushi,,,,,10,65,28,1,240,280,1,,copper_shark_sushi.png
+58,Coral Trout Sushi,,,,,10,18,17,1,66,170,1,,coral_trout_sushi.png
+61,Crystal Lobster Sushi,,,,,10,141,34,1,521,340,1,,crystal_lobster_sushi.png
+62,Cuttlefish Sushi,,,,,10,20,20,1,74,200,1,,cuttlefish_sushi.png
+67,Devil Scorpionfish Sushi,,,,,10,135,35,1,499,350,1,,devil_scorpionfish_sushi.png
+68,Dollocaris Ingens Sushi,,,,,10,135,41,1,499,460,1,,dollocaris_ingens_sushi.png
+69,Drepanaspis Sushi,,,,,10,150,40,1,555,400,1,,drepanaspis_sushi.png
+71,Dumbo Octopus Sushi,,,,,10,80,33,1,296,330,1,,dumbo_octopus_sushi.png
+73,Dunkleosteus Sushi,,,,,10,210,42,1,777,420,1,,dunkleosteus_sushi.png
+75,Dusky Grouper Sushi,,,,,10,30,20,1,111,200,1,,dusky_grouper_sushi.png
+76,Eastern Rock Lobster Sushi,,,,,10,141,39,1,521,390,1,,eastern_rock_lobster_sushi.png
+77,Emperor Angelfish Sushi,,,,,10,10,15,1,37,150,1,,emperor_angelfish_sushi.png
+78,European Lobster Sushi,,,,,10,69,25,1,255,250,1,,european_lobster_sushi.png
+80,Falcatus Sushi,,,,,10,130,38,1,481,380,1,,falcatus_sushi.png
+81,Fan Lobster Sushi,,,,,10,66,30,1,244,300,1,,fan_lobster_sushi.png
+82,Fangtooth Sushi,,,,,10,45,26,1,166,260,1,,fangtooth_sushi.png
+83,Flame Angelfish Sushi,,,,,10,5,15,1,18,150,1,,flame_angelfish_sushi.png
+84,Fried Egg Jellyfish Sushi,,,,,10,15,16,1,55,160,1,,fried_egg_jellyfish_sushi.png
+90,Frilled Shark Sushi,,,,,10,85,28,1,314,280,1,,frilled_shark_sushi.png
+91,Gelatinous Snailfish Sushi,,,,,10,85,33,1,314,330,1,,gelatinous_snailfish_sushi.png
+92,Giant Trevally Sushi,,,,,10,30,25,1,111,250,1,,giant_trevally_sushi.png
+94,Golden King Crab Sushi,,,,,10,135,37,1,499,370,1,,golden_king_crab_sushi.png
+96,Great Barracuda Sushi,,,,,10,20,22,1,74,220,1,,great_barracuda_sushi.png
+99,Green Humphead Parrotfish Sushi,,,,,10,16,23,1,59,230,1,,green_humphead_parrotfish_sushi.png
+100,Greenland Shark Sushi,,,,,10,186,37,1,688,370,1,,greenland_shark_sushi.png
+101,Grey Triggerfish Sushi,,,,,10,17,17,1,62,170,1,,grey_triggerfish_sushi.png
+105,Haddock Sushi,,,,,10,110,34,1,407,340,1,,haddock_sushi.png
+106,Harlequin Hind Sushi,,,,,10,18,18,1,66,180,1,,harlequin_hind_sushi.png
+108,Horsehair Crab Sushi,,,,,10,150,45,1,555,450,1,,horsehair_crab_sushi.png
+111,Humboldt Squid Sushi,,,,,10,145,35,1,536,350,1,,humboldt_squid_sushi.png
+115,Ice Fish Sushi,,,,,10,95,32,1,351,320,1,,ice_fish_sushi.png
+116,Lagoon Triggerfish Sushi,,,,,10,7,12,1,25,120,1,,lagoon_triggerfish_sushi.png
+119,Longfin Batfish Sushi,,,,,10,10,13,1,37,130,1,,longfin_batfish_sushi.png
+120,Longnose Sawshark Sushi,,,,,10,35,29,1,129,290,1,,longnose_sawshark_sushi.png
+121,Longspine Squirrelfish Sushi,,,,,10,9,26,1,33,260,1,,longspine_squirrelfish_sushi.png
+122,Lumpfish Sushi,,,,,10,120,37,1,444,370,1,,lumpfish_sushi.png
+125,Mackerel Scad Sushi,,,,,10,15,15,1,55,150,1,,mackerel_scad_sushi.png
+126,Marbled Electric Ray Sushi,,,,,10,90,30,1,333,300,1,,marbled_electric_ray_sushi.png
+128,Marlin Sushi,,,,,10,135,37,1,499,370,1,,marlin_sushi.png
+129,Mediterranean Parrotfish Sushi,,,,,10,10,14,1,37,140,1,,mediterranean_parrotfish_sushi.png
+130,Megalograptus Sushi,,,,,10,140,40,1,518,400,1,,megalograptus_sushi.png
+131,Megamouth Shark Sushi,,,,,10,95,30,1,351,300,1,,megamouth_shark_sushi.png
+135,Moray Eel Sushi,,,,,10,50,25,1,185,250,1,,moray_eel_sushi.png
+137,Narrow-barred Spanish Mackerel Sushi,,,,,10,30,19,1,111,190,1,,narrow-barred_spanish_mackerel_sushi.png
+139,Narwhal Sushi,,,,,10,140,40,1,518,400,1,,narwhal_sushi.png
+141,Norimaki,,,,,10,1,1,1,1,1,1,,norimaki.png
+142,Norway Lobster Sushi,,,,,10,75,33,1,277,330,1,,norway_lobster_sushi.png
+143,Orbicular Batfish Fry,,,,,10,5,11,1,18,110,1,,orbicular_batfish_fry.png
+144,Ornate Wrasse Sushi,,,,,10,8,13,1,29,130,1,,ornate_wrasse_sushi.png
+145,Pacific Fanfish Sushi,,,,,10,65,24,1,240,240,1,,pacific_fanfish_sushi.png
+146,Painted Comber Sushi,,,,,10,17,14,1,62,140,1,,painted_comber_sushi.png
+148,Peacock Squid Sushi,,,,,10,75,29,1,277,290,1,,peacock_squid_sushi.png
+150,Pelican Eel Sushi,,,,,10,180,36,1,666,360,1,,pelican_eel_sushi.png
+154,Pikaia Sushi,,,,,10,115,36,1,425,360,1,,pikaia_sushi.png
+156,Polar Eelpout Sushi,,,,,10,90,32,1,333,320,1,,polar_eelpout_sushi.png
+157,Porbeagle Shark Sushi,,,,,10,165,38,1,610,380,1,,porbeagle_shark_sushi.png
+159,Purple Sea Urchin Sushi,,,,,10,60,27,1,222,270,1,,purple_sea_urchin_sushi.png
+160,Pyramid Butterflyfish Sushi,,,,,10,4,10,1,14,100,1,,pyramid_butterflyfish_sushi.png
+161,Qingmendous Sushi,,,,,10,120,38,1,444,380,1,,qingmendous_sushi.png
+162,Rainbow Wrasse Sushi,,,,,10,6,13,1,22,130,1,,rainbow_wrasse_sushi.png
+163,Raw Black Tiger Shrimp Sushi,,,,,10,50,24,1,185,240,1,,raw_black_tiger_shrimp_sushi.png
+164,Red bream Sushi,,,,,10,35,27,1,129,270,1,,red_bream_sushi.png
+165,Red Lionfish Sushi,,,,,10,10,20,1,37,200,1,,red_lionfish_sushi.png
+166,Red-banded Lobster Sushi,,,,,10,75,25,1,277,250,1,,red-banded_lobster_sushi.png
+167,Redtoothed Triggerfish Sushi,,,,,10,9,15,1,33,150,1,,redtoothed_triggerfish_sushi.png
+168,Rhinochimaeridae Sushi,,,,,10,90,29,1,333,290,1,,rhinochimaeridae_sushi.png
+175,Sailfish Sushi,,,,,10,195,40,1,721,400,1,,sailfish_sushi.png
+176,Salema Porgy Sushi,,,,,10,5,11,1,18,110,1,,salema_porgy_sushi.png
+177,Sally Lightfoot Crab Sushi,,,,,10,50,32,1,185,320,1,,sally_lightfoot_crab_sushi.png
+178,Salmon Snailfish Sushi,,,,,10,60,23,1,222,230,1,,salmon_snailfish_sushi.png
+180,Sea Goldie Sushi,,,,,10,3,13,1,11,130,1,,sea_goldie_sushi.png
+182,Sea Toad Sushi,,,,,10,55,23,1,203,230,1,,sea_toad_sushi.png
+183,Seadragon Onigiri,,,,,10,105,47,1,388,470,1,,seadragon_onigiri.png
+187,Seahorse Skewers,,,,,10,30,22,1,111,220,1,,seahorse_skewers.png
+191,Seasoned Long-spine Porcupinefish Skin,,,,,10,180,140,5,666,410,7,6,seasoned_long-spine_porcupinefish_skin.png
+195,Sheepshead Sushi,,,,,10,15,24,1,55,240,1,,sheepshead_sushi.png
+196,Shortfin Mako Sushi,,,,,10,105,36,1,388,360,1,,shortfin_mako_sushi.png
+199,Smallspotted Dart Sushi,,,,,10,8,12,1,29,120,1,,smallspotted_dart_sushi.png
+201,Smooth Hammerhead Sushi,,,,,10,141,39,1,521,390,1,,smooth_hammerhead_sushi.png
+202,Snow Crab Sushi,,,,,10,120,42,1,444,420,1,,snow_crab_sushi.png
+203,Snub-nosed Spiny Eel Sushi,,,,,10,180,39,1,666,390,1,,snub-nosed_spiny_eel_sushi.png
+205,Spear Squid Sushi,,,,,10,51,30,1,188,300,1,,spear_squid_sushi.png
+207,Spider Crab Sushi,,,,,10,50,29,1,185,290,1,,spider_crab_sushi.png
+208,Starry Skate Sushi,,,,,10,130,36,1,481,360,1,,starry_skate_sushi.png
+215,Stingray Sushi,,,,,10,51,26,1,188,260,1,,stingray_sushi.png
+218,Striped Catfish Sushi,,,,,10,5,26,1,18,260,1,,striped_catfish_sushi.png
+219,Striped Red Mullet Sushi,,,,,10,16,14,1,59,140,1,,striped_red_mullet_sushi.png
+223,Threetooth Puffer Sushi,,,,,10,70,25,1,259,250,1,,threetooth_puffer_sushi.png
+224,Thresher Shark Sushi,,,,,10,159,39,1,588,390,1,,thresher_shark_sushi.png
+225,Tiger Shark Sushi,,,,,10,50,29,1,185,290,1,,tiger_shark_sushi.png
+226,Titan Triggerfish Sushi,,,,,10,15,20,1,55,200,1,,titan_triggerfish_sushi.png
+227,Tokummia Katalepsis Sushi,,,,,10,165,46,1,610,460,1,,tokummia_katalepsis_sushi.png
+232,Tropical Rock Lobster Sushi,,,,,10,135,30,1,499,300,1,,tropical_rock_lobster_sushi.png
+237,Vampire Squid Sushi,,,,,10,115,34,1,425,340,1,,vampire_squid_sushi.png
+239,Waptia Sushi,,,,,10,103,40,1,381,400,1,,waptia_sushi.png
+241,White Shrimp Sushi,,,,,10,53,28,1,196,280,1,,white_shrimp_sushi.png
+242,White Spotted Jellyfish Sushi,,,,,10,18,18,1,66,180,1,,white_spotted_jellyfish_sushi.png
+244,White Trevally Sushi,,,,,10,22,19,1,81,190,1,,white_trevally_sushi.png
+245,Whitetip Reefshark Sushi,,,,,10,24,27,1,88,270,1,,whitetip_reefshark_sushi.png
+248,Xenacanthus Sushi,,,,,10,160,43,1,592,430,1,,xenacanthus_sushi.png
+250,Yellow Tang Sushi,,,,,10,4,10,1,14,100,1,,yellow_tang_sushi.png
+251,Yellowback Fusilier Sushi,,,,,10,7,12,1,25,120,1,,yellowback_fusilier_sushi.png
+252,Yellowfin Tuna Akami Sushi,,,,,10,73,55,1,270,235,1,,yellowfin_tuna_akami_sushi.png
+253,Yellowfin Tuna Chutoro Sushi,,,,,10,90,58,1,333,238,1,,yellowfin_tuna_chutoro_sushi.png
+254,Yellowfin Tuna Ootoro Sushi,,,,,10,125,90,1,462,315,1,,yellowfin_tuna_ootoro_sushi.png
+257,Zebra Shark Sushi,,,,,10,88,36,1,399,360,1,,zebra_shark_sushi.png

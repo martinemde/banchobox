@@ -8,7 +8,8 @@ import {
 	PartyDish,
 	EntityBundle,
 	CookstaTier,
-	DLC
+	DLC,
+	Chapter
 } from '../../src/lib/types.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -21,6 +22,7 @@ export function exportData(args: {
 	partyDishesBundle: EntityBundle<PartyDish>;
 	cookstaBundle: EntityBundle<CookstaTier>;
 	dlcBundle: EntityBundle<DLC>;
+	chaptersBundle: EntityBundle<Chapter>;
 }) {
 	const {
 		dishesBundle,
@@ -28,7 +30,8 @@ export function exportData(args: {
 		partiesBundle,
 		partyDishesBundle,
 		cookstaBundle,
-		dlcBundle
+		dlcBundle,
+		chaptersBundle
 	} = args;
 	const outputDir = join(__dirname, '..', '..', 'src', 'lib', 'data');
 
@@ -49,6 +52,10 @@ export function exportData(args: {
 	);
 	writeFileSync(join(outputDir, `cooksta.${version}.json`), JSON.stringify(cookstaBundle, null, 2));
 	writeFileSync(join(outputDir, `dlc.${version}.json`), JSON.stringify(dlcBundle, null, 2));
+	writeFileSync(
+		join(outputDir, `chapters.${version}.json`),
+		JSON.stringify(chaptersBundle, null, 2)
+	);
 
 	console.log(`${partiesBundle.rows.length}\tParties`);
 	console.log(`${partyDishesBundle.rows.length}\tParty-dishes`);
@@ -56,5 +63,6 @@ export function exportData(args: {
 	console.log(`${ingredientsBundle.rows.length}\tIngredients`);
 	console.log(`${cookstaBundle.rows.length}\tCooksta tiers`);
 	console.log(`${dlcBundle.rows.length}\tDLCs`);
+	console.log(`${chaptersBundle.rows.length}\tChapters`);
 	console.log(`Data exported to /src/lib/data with version ${version}\n`);
 }

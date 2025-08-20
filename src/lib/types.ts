@@ -57,10 +57,33 @@ export interface DLC {
 	};
 }
 
+// --------------------
+// Chapter data types
+// --------------------
+
+export interface ChapterInputRow {
+	id: Id;
+	number: number;
+	name: string;
+	subtitle: string;
+}
+
+export interface Chapter {
+	id: Id;
+	number: number;
+	name: string;
+	subtitle: string;
+	search: string;
+	sort: {
+		order: number;
+	};
+}
+
 export interface BasicDish {
 	id: Id;
 	name: string;
 	image: string;
+	chapter?: number | null;
 	maxLevel: number;
 	basePrice: number;
 	baseTaste: number;
@@ -77,6 +100,7 @@ export interface BasicIngredient {
 	id: Id;
 	name: string;
 	image: string; // image filename
+	chapter?: number | null;
 	source: string;
 	type: string;
 	drone: boolean;

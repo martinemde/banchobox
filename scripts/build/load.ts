@@ -11,7 +11,8 @@ import type {
 	DishParty,
 	Id,
 	CookstaInputRow,
-	DLCInputRow
+	DLCInputRow,
+	ChapterInputRow
 } from '../../src/lib/types.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -59,6 +60,14 @@ const optionalString = z
 	.transform((s) => (s && s.trim() !== '' ? s.trim() : undefined));
 
 const optionalNumber = optionalString.transform((s) => (s ? Number(s) : null));
+const optionalIntSafe = z
+	.string()
+	.optional()
+	.transform((s) => {
+		if (!s || s.trim() === '') return null as number | null;
+		const n = Number(s.trim());
+		return Number.isFinite(n) && Number.isInteger(n) ? (n as number) : (null as number | null);
+	});
 const optionalBoolean = optionalString.transform((s) => (s ? boolFlag(s) : false));
 
 // dishes-data.csv schema -> normalized row
@@ -67,6 +76,7 @@ const dishesRowSchema = z
 		id: intFromString('id'),
 		name: z.string().transform((s) => s.trim()),
 		image: z.string().transform((s) => s.trim()),
+		chapter: optionalIntSafe,
 		max_level: intFromString('max_level'),
 		base_price: intFromString('base_price'),
 		base_taste: intFromString('base_taste'),
@@ -82,6 +92,7 @@ const dishesRowSchema = z
 		id: row['id'],
 		name: row['name'],
 		image: row['image'],
+		chapter: (row['chapter'] as number | null) ?? null,
 		maxLevel: row['max_level'],
 		basePrice: row['base_price'],
 		baseTaste: row['base_taste'],
@@ -98,6 +109,7 @@ const dishesRowSchema = z
 const ingredientsRowSchema = z
 	.object({
 		id: intFromString('id'),
+		chapter: optionalIntSafe,
 		aberration: optionalBoolean,
 		bugnet: optionalBoolean,
 		buy_jango: optionalNumber,
@@ -123,6 +135,7 @@ const ingredientsRowSchema = z
 	})
 	.transform((row) => ({
 		id: row['id'],
+		chapter: (row['chapter'] as number | null) ?? null,
 		aberration: row['aberration'],
 		bugnet: row['bugnet'],
 		buyJango: row['buy_jango'] as number | null,
@@ -245,6 +258,7 @@ function loadDishes() {
 		[
 			'id',
 			'name',
+			'chapter',
 			'max_level',
 			'base_price',
 			'base_taste',
@@ -284,7 +298,7 @@ function loadIngredients() {
 	}) as Array<Record<string, string>>;
 	validateRequiredColumns(
 		rawRecords,
-		['id', 'name', 'source', 'type', 'kg', 'max_meats', 'sell', 'day', 'night', 'fog'],
+		['id', 'name', 'chapter', 'source', 'type', 'kg', 'max_meats', 'sell', 'day', 'night', 'fog'],
 		'ingredients-data.csv'
 	);
 	const normalized = parseTable(ingredientsCSV, ingredientsRowSchema, 'ingredients-data.csv');
@@ -348,6 +362,36 @@ function loadDLCs() {
 	validateRequiredColumns(rawRecords, ['id', 'order', 'name'], 'dlc-data.csv');
 	const normalized = parseTable(dlcCSV, dlcRowSchema, 'dlc-data.csv');
 	return { dlcs: normalized };
+}
+
+// chapters-data.csv schema -> normalized row
+const chaptersRowSchema = z
+	.object({
+		id: intFromString('id'),
+		number: intFromString('number'),
+		name: z.string().transform((s) => s.trim()),
+		subtitle: z.string().transform((s) => s.trim())
+	})
+	.transform((row) => ({
+		id: row['id'],
+		number: row['number'],
+		name: row['name'],
+		subtitle: row['subtitle']
+	})) as z.ZodType<ChapterInputRow>;
+
+function loadChapters() {
+	const chaptersCSV = readFileSync(
+		join(__dirname, '..', '..', 'data', 'chapters-data.csv'),
+		'utf-8'
+	);
+	const rawRecords = parseCsv(chaptersCSV, {
+		columns: true,
+		skip_empty_lines: true,
+		trim: true
+	}) as Array<Record<string, string>>;
+	validateRequiredColumns(rawRecords, ['id', 'number', 'name', 'subtitle'], 'chapters-data.csv');
+	const normalized = parseTable(chaptersCSV, chaptersRowSchema, 'chapters-data.csv');
+	return { chapters: normalized };
 }
 
 // cooksta-data.csv schema -> normalized row
@@ -485,11 +529,12 @@ export function loadNormalizedData() {
 	const { parties, partyNameToId } = loadParties();
 	const { cooksta } = loadCooksta();
 	const { dlcs } = loadDLCs();
+	const { chapters } = loadChapters();
 	const { dishIngredients, dishParties } = loadRelationships(
 		dishNameToId,
 		ingredientNameToId,
 		partyNameToId
 	);
 
-	return { dishes, ingredients, parties, dishIngredients, dishParties, cooksta, dlcs };
+	return { dishes, ingredients, parties, dishIngredients, dishParties, cooksta, dlcs, chapters };
 }

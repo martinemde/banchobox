@@ -10,7 +10,7 @@ dirname(__filename); // ensure path derivation works if needed in submodules
 
 // Run the build process
 try {
-	const { dishes, ingredients, parties, dishIngredients, dishParties, cooksta, dlcs } =
+	const { dishes, ingredients, parties, dishIngredients, dishParties, cooksta, dlcs, chapters } =
 		loadNormalizedData();
 	const {
 		dishesBundle,
@@ -18,15 +18,26 @@ try {
 		partiesBundle,
 		partyDishesBundle,
 		cookstaBundle,
-		dlcBundle
-	} = enrichData(dishes, ingredients, parties, dishIngredients, dishParties, cooksta, dlcs);
+		dlcBundle,
+		chaptersBundle
+	} = enrichData(
+		dishes,
+		ingredients,
+		parties,
+		dishIngredients,
+		dishParties,
+		cooksta,
+		dlcs,
+		chapters
+	);
 	exportData({
 		dishesBundle,
 		ingredientsBundle,
 		partiesBundle,
 		partyDishesBundle,
 		cookstaBundle,
-		dlcBundle
+		dlcBundle,
+		chaptersBundle
 	});
 	console.log('Build completed successfully!');
 } catch (error) {

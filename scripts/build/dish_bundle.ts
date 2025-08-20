@@ -1,6 +1,10 @@
-import type { Dish, Id, EntityBundle } from '../../src/lib/types.js';
+import type { Dish, Id, EntityBundle, Chapter } from '../../src/lib/types.js';
 
-export function buildDishesBundle(dishes: Dish[]): EntityBundle<Dish> {
+export function buildDishesBundle(
+	dishes: Dish[],
+	chaptersBundle: EntityBundle<Chapter>,
+	ingredientsBundle: EntityBundle<Ingredient>
+): EntityBundle<Dish> {
 	// byId index for O(1) lookups
 	const byId = Object.fromEntries(dishes.map((d) => [d.id, d])) as Record<Id, Dish>;
 
@@ -8,8 +12,11 @@ export function buildDishesBundle(dishes: Dish[]): EntityBundle<Dish> {
 	const facets: EntityBundle<Dish>['facets'] = {
 		DLC: {},
 		'Unlock Condition': {},
-		Ingredient: {}
+		Ingredient: {},
+		Chapter: {}
 	};
+
+	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
 
 	for (const d of dishes) {
 		const dlcVal = (d.dlc ?? 'Base').toString();
@@ -27,6 +34,28 @@ export function buildDishesBundle(dishes: Dish[]): EntityBundle<Dish> {
 		for (const line of d.ingredients) {
 			const key = String(line.name);
 			(facets['Ingredient'][key] ??= []).push(d.id);
+		}
+
+		// Chapter facets - cumulative
+		let ch = d.chapter ?? 0;
+		// The dish chapter is the max of the chapter and the highest level of any ingredient
+		for (const line of d.ingredients) {
+			const ingredient = ingredientsBundle.byId[line.ingredientId];
+			if (
+				ingredient.chapter !== null &&
+				ingredient.chapter !== undefined &&
+				ingredient.chapter > ch
+			) {
+				ch = ingredient.chapter;
+			}
+		}
+
+		// Add the ingredient to every chapter including and after the dish's chapter
+		// Once the ingredient is available, it remains available in all later chapters.
+		if (ch != null && Number.isFinite(ch)) {
+			for (let n = ch; n <= maxChapter; n++) {
+				(facets['Chapter'][n.toString()] ??= []).push(d.id);
+			}
 		}
 	}
 

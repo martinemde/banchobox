@@ -8,7 +8,8 @@ import type {
 	Party,
 	PartyDish,
 	CookstaTier,
-	DLC
+	DLC,
+	Chapter
 } from '$lib/types.js';
 
 // Import JSON bundles from $lib so they are included in the SSR bundle and get type safety
@@ -18,6 +19,7 @@ import parties from '$lib/data/parties.v1.json';
 import partyDishes from '$lib/data/party-dishes.v1.json';
 import cooksta from '$lib/data/cooksta.v1.json';
 import dlc from '$lib/data/dlc.v1.json';
+import chapters from '$lib/data/chapters.v1.json';
 
 export const load: LayoutServerLoad = async () => {
 	const dishesBundle = dishes as unknown as EntityBundle<Dish>;
@@ -26,12 +28,14 @@ export const load: LayoutServerLoad = async () => {
 	const partyDishesBundle = partyDishes as unknown as EntityBundle<PartyDish>;
 	const cookstaBundle = cooksta as unknown as EntityBundle<CookstaTier>;
 	const dlcBundle = dlc as unknown as EntityBundle<DLC>;
+	const chaptersBundle = chapters as unknown as EntityBundle<Chapter>;
 	return {
 		dishes: dishesBundle,
 		ingredients: ingredientsBundle,
 		parties: partiesBundle,
 		partyDishes: partyDishesBundle,
 		cooksta: cookstaBundle,
-		dlc: dlcBundle
+		dlc: dlcBundle,
+		chapters: chaptersBundle
 	};
 };

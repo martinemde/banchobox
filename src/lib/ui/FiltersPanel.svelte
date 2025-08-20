@@ -19,11 +19,35 @@
 		searchPlaceholder?: string;
 	} = $props();
 	import { visible as cookstaVisible, selectedTierId, selectedTier } from '$lib/stores/cooksta';
+	import {
+		visible as chaptersVisible,
+		selectedChapterId,
+		selectedChapter
+	} from '$lib/stores/chapters';
 	import { visible as dlcVisible } from '$lib/stores/dlc';
 	const cookstaTiers = $derived($cookstaVisible ?? []);
+	const chapterRows = $derived($chaptersVisible ?? []);
 	const dlcRows = $derived($dlcVisible ?? []);
 	let editBancho = $state(false);
-	let enabledDlcIds = $state(new Set<number>());
+	let myBanchoExpanded = $state(true);
+	let enabledDlcIds = new SvelteSet<number>();
+	import { persist } from '$lib/utils/persisted.svelte';
+	persist(
+		'filtersPanel.myBanchoExpanded.v1',
+		() => myBanchoExpanded,
+		(v) => (myBanchoExpanded = v),
+		{ storage: 'local' }
+	);
+	persist(
+		'filtersPanel.enabledDlcIds.v1',
+		() => enabledDlcIds,
+		(v) => (enabledDlcIds = v),
+		{
+			storage: 'local',
+			serialize: (set) => JSON.stringify(Array.from(set.values())),
+			deserialize: (raw) => new SvelteSet<number>(JSON.parse(raw) as number[])
+		}
+	);
 	function toggleDlc(id: number, checked: boolean) {
 		const next = new SvelteSet(enabledDlcIds);
 		if (checked) next.add(id);
@@ -32,11 +56,25 @@
 	}
 
 	const hasDlcFacet = $derived(Boolean(($bundle?.facets ?? {})['DLC']));
+	const hasChapterFacet = $derived(Boolean(($bundle?.facets ?? {})['Chapter']));
 	$effect(() => {
 		if (!hasDlcFacet) return;
 		const allowed = new SvelteSet<string>(['Base']);
 		for (const d of dlcRows) if (enabledDlcIds.has(d.id)) allowed.add(d.name);
 		filters.update((current) => ({ ...(current ?? {}), DLC: allowed }));
+	});
+
+	// Automatically apply Chapter filter based on My Bancho selection; never render Chapter facet
+	$effect(() => {
+		if (!hasChapterFacet) return;
+		const number = $selectedChapter?.number;
+		filters.update((current) => {
+			const next = { ...(current ?? {}) } as Record<string, Set<string>>;
+			if (number !== null && number !== undefined)
+				next['Chapter'] = new SvelteSet<string>([number.toString()]);
+			else delete next['Chapter'];
+			return next;
+		});
 	});
 
 	function setsEqual<A>(a: Set<A> | null | undefined, b: Set<A> | null | undefined): boolean {
@@ -75,7 +113,9 @@
 
 	const effectivePlaceholder = searchPlaceholder ?? 'Search by name…';
 
-	const facetEntries = $derived(Object.entries($bundle?.facets ?? {}));
+	const facetEntries = $derived(
+		Object.entries($bundle?.facets ?? {}).filter(([facetName]) => facetName !== 'Chapter')
+	);
 	// Precompute sorted keys per facet to avoid sorting in template
 	const sortedFacetKeys: Record<string, string[]> = $derived(
 		Object.fromEntries(
@@ -94,51 +134,73 @@
 <div class="space-y-4">
 	<div class="rounded-lg border border-white/10 bg-primary-500/10 p-3">
 		<div class="mb-2 flex items-center justify-between text-sm font-semibold">
-			<div>My Bancho</div>
 			<button
-				class="text-xs font-normal opacity-80 hover:opacity-100"
-				onclick={() => (editBancho = !editBancho)}
+				class="flex items-center gap-2 opacity-90 hover:opacity-100"
+				onclick={() => (myBanchoExpanded = !myBanchoExpanded)}
+				aria-expanded={myBanchoExpanded}
+				aria-controls="my-bancho-panel"
 			>
-				{editBancho ? 'Done' : 'Edit'}
+				<span class="caret" data-expanded={myBanchoExpanded}></span>
+				<span>
+					{myBanchoExpanded
+						? 'My Bancho'
+						: `${$selectedTier?.rank ?? ''} - ${$selectedChapter?.name ?? ''}`}
+				</span>
 			</button>
+			{#if myBanchoExpanded}
+				<button
+					class="text-xs font-normal opacity-80 hover:opacity-100"
+					onclick={() => (editBancho = !editBancho)}
+				>
+					{editBancho ? 'Done' : 'Edit'}
+				</button>
+			{/if}
 		</div>
 
-		{#if editBancho}
-			<label class="label">
-				<div class="title">Cooksta</div>
-				<select class="ig-select" bind:value={$selectedTierId}>
-					{#each cookstaTiers as t (t.id)}
-						<option value={t.id}>{t.rank}</option>
-					{/each}
-				</select>
-			</label>
-			<div class="title mt-3">DLCs</div>
-			<fieldset class="mt-2 space-y-1 text-sm">
-				{#each dlcRows as d (d.id)}
-					<label class="flex items-center gap-2">
-						<input
-							type="checkbox"
-							checked={enabledDlcIds.has(d.id)}
-							onchange={(e) => toggleDlc(d.id, (e.currentTarget as HTMLInputElement).checked)}
-						/>
-						{d.name}
+		{#if myBanchoExpanded}
+			<div id="my-bancho-panel">
+				{#if editBancho}
+					<label class="label" aria-label="Cooksta">
+						<select class="ig-select" bind:value={$selectedTierId}>
+							{#each cookstaTiers as t (t.id)}
+								<option value={t.id}>Cooksta {t.rank}</option>
+							{/each}
+						</select>
 					</label>
-				{/each}
-			</fieldset>
-		{:else}
-			<div class="grid grid-cols-3 items-start gap-2 text-sm">
-				<div class="col-span-1 font-medium opacity-80">Cooksta</div>
-				<div class="col-span-2">{$selectedTier?.rank ?? ''}</div>
-				<div class="col-span-1 font-medium opacity-80">DLCs</div>
-				<div class="col-span-2 space-y-1">
-					{#if Array.from(enabledDlcIds).length === 0}
-						<span>&mdash;</span>
-					{:else}
-						{#each dlcRows.filter((d) => enabledDlcIds.has(d.id)) as d (d.id)}
-							<div>{d.name}</div>
+					<label class="label" aria-label="Chapter">
+						<select class="ig-select" bind:value={$selectedChapterId}>
+							{#each chapterRows as c (c.id)}
+								<option value={c.id}>{c.name}</option>
+							{/each}
+						</select>
+					</label>
+					<fieldset class="mt-2 space-y-1 pl-3 text-sm">
+						{#each dlcRows as d (d.id)}
+							<label class="flex items-center gap-2">
+								<input
+									type="checkbox"
+									checked={enabledDlcIds.has(d.id)}
+									onchange={(e) => toggleDlc(d.id, (e.currentTarget as HTMLInputElement).checked)}
+								/>
+								{d.name}
+							</label>
 						{/each}
-					{/if}
-				</div>
+					</fieldset>
+				{:else}
+					<div class="items-start text-sm">
+						<div class="p-1">Cooksta {$selectedTier?.rank ?? ''}</div>
+						<div class="p-1">{$selectedChapter?.name ?? ''}</div>
+						{#if Array.from(enabledDlcIds).length === 0}
+							<span>&mdash;</span>
+						{:else}
+							<ul class="list-inside list-disc space-y-1 p-1">
+								{#each dlcRows.filter((d) => enabledDlcIds.has(d.id)) as d (d.id)}
+									<li>{d.name} DLC</li>
+								{/each}
+							</ul>
+						{/if}
+					</div>
+				{/if}
 			</div>
 		{/if}
 	</div>
@@ -227,5 +289,18 @@
 	.clear-btn:hover {
 		opacity: 1;
 		color: rgb(var(--color-on-surface-token));
+	}
+
+	/* caret for collapsible header */
+	.caret {
+		width: 0;
+		height: 0;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 6px solid currentColor;
+		transition: transform 150ms ease;
+	}
+	.caret[data-expanded='true'] {
+		transform: rotate(90deg);
 	}
 </style>

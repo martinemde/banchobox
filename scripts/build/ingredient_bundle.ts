@@ -1,6 +1,9 @@
-import type { Ingredient, Id, EntityBundle } from '../../src/lib/types.js';
+import type { Ingredient, Id, EntityBundle, Chapter } from '../../src/lib/types.js';
 
-export function buildIngredientsBundle(ingredients: Ingredient[]): EntityBundle<Ingredient> {
+export function buildIngredientsBundle(
+	ingredients: Ingredient[],
+	chaptersBundle: EntityBundle<Chapter>
+): EntityBundle<Ingredient> {
 	const byId = Object.fromEntries(ingredients.map((i) => [i.id, i])) as Record<Id, Ingredient>;
 
 	// Minimal, useful facets (no hasIngredient)
@@ -11,8 +14,11 @@ export function buildIngredientsBundle(ingredients: Ingredient[]): EntityBundle<
 		Vendor: {}, // 'jango', 'otto' based on presence of buy price
 		Catch: {}, // 'crabtrap', 'bugnet', 'gloves' based on presence of capture flags
 		Aberration: {}, // 'yes' when ingredient.aberration === true
-		Farm: {} // 'gumo', 'otto'
+		Farm: {}, // 'gumo', 'otto'
+		Chapter: {}
 	};
+
+	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
 
 	for (const i of ingredients) {
 		if (i.source) (facets['Source'][i.source] ??= []).push(i.id);
@@ -38,6 +44,16 @@ export function buildIngredientsBundle(ingredients: Ingredient[]): EntityBundle<
 		if (i.gloves) (facets['Catch']['Gloves'] ??= []).push(i.id);
 		if (i.steelnet) (facets['Catch']['Steel Net'] ??= []).push(i.id);
 		if (i.harpoon) (facets['Catch']['Harpoon'] ??= []).push(i.id);
+
+		// Chapter facets - cumulative
+		const ch = i.chapter ?? null;
+		// Add the ingredient to every chapter up to the max chapter.
+		// Once the ingredient is available, it remains available in all later chapters.
+		if (ch != null && Number.isFinite(ch)) {
+			for (let n = ch; n <= maxChapter; n++) {
+				(facets['Chapter'][n.toString()] ??= []).push(i.id);
+			}
+		}
 	}
 
 	return { rows: ingredients, byId, facets };
