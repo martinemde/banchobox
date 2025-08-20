@@ -1,34 +1,35 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
+	import { Star } from '@lucide/svelte';
 
-	export let checked: boolean = false;
-	export let label: string = 'Track';
-	export let disabled: boolean = false;
-
-	const dispatch = createEventDispatcher<{ change: { checked: boolean } }>();
+	let {
+		checked = $bindable(false),
+		disabled = false,
+		onchange = undefined as undefined | ((checked: boolean) => void)
+	} = $props();
 
 	function toggle() {
 		if (disabled) return;
 		checked = !checked;
-		dispatch('change', { checked });
+		onchange?.(checked);
 	}
 </script>
 
 <button
 	type="button"
-	class="btn inline-flex w-full items-center justify-start preset-filled-surface-500"
+	class="badge-icon inline-flex items-center justify-center {checked
+		? 'preset-filled-secondary-500'
+		: 'preset-filled-surface-100-900'}"
+	title={checked ? 'Untrack' : 'Track'}
+	aria-label={checked ? 'Untrack' : 'Track'}
 	aria-pressed={checked}
 	{disabled}
-	on:click={toggle}
+	onclick={toggle}
 >
-	<input
-		type="checkbox"
-		bind:checked
-		tabindex="-1"
-		aria-hidden="true"
-		class="pointer-events-none checkbox size-4"
-	/>
-	<span class="text-sm">{label}</span>
+	{#if checked}
+		<Star size={24} fill="currentColor" class="text-on-surface-500" />
+	{:else}
+		<Star size={24} />
+	{/if}
 </button>
 
 <style>

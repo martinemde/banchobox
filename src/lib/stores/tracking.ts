@@ -61,3 +61,20 @@ function createTrackedIdsStore(storageKey: string): Writable<Set<number>> & {
 }
 
 export const trackedDishIds = createTrackedIdsStore('trackedDishIds.v1');
+
+export function bindTracked(dishId: number) {
+	let checked = $state(false);
+	// initialize from store
+	$effect(() => {
+		const unsub = trackedDishIds.subscribe((set) => {
+			checked = set.has(dishId);
+		});
+		return () => unsub();
+	});
+	// write-through on change
+	$effect(() => {
+		if (checked) trackedDishIds.track(dishId);
+		else trackedDishIds.untrack(dishId);
+	});
+	return { get: () => checked, set: (v: boolean) => (checked = v) };
+}

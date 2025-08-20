@@ -4,19 +4,17 @@
 	import ProfitTable from './ProfitTable.svelte';
 	import TrackButton from './TrackButton.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
-	import { PartyPopper } from '@lucide/svelte';
+	import { PartyPopper, Soup } from '@lucide/svelte';
 	import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
 	import RecipeSummaryIcons from './RecipeSummaryIcons.svelte';
 	import PixelIcon from '../ui/PixelIcon.svelte';
-	import tasteImage from '$lib/images/ui/sort_taste.png';
-	import levelImage from '$lib/images/ui/sort_level.png';
-	import servingsImage from '$lib/images/ui/sort_servings.png';
+	// import tasteIcon from '$lib/images/ui/sort_taste.png';
+	// import levelIcon from '$lib/images/ui/sort_level.png';
+	// import servingsIcon from '$lib/images/ui/sort_servings.png';
+	import servingsImage from '$lib/images/ui/servings.png';
+	import coinImage from '$lib/images/ui/coin.png';
 
 	let { dish } = $props<{ dish: Dish }>();
-
-	// Fixed width for thumbnail to match default card format
-	const thumbPx = 96;
-	const iconPx = 12;
 
 	// Lazy-load recipe panel when user first expands the accordion
 	type RecipePanelComponent = typeof import('./RecipePanel.svelte').default;
@@ -35,9 +33,8 @@
 		}
 	}
 
-	function onTrackChange(e: CustomEvent<{ checked: boolean }>) {
-		const nowChecked = e.detail.checked as boolean;
-		if (nowChecked) trackedDishIds.track(dish.id);
+	function onTrackChange(checked: boolean) {
+		if (checked) trackedDishIds.track(dish.id);
 		else trackedDishIds.untrack(dish.id);
 	}
 	// Minimize per-card memory by keeping only metadata for controls
@@ -62,6 +59,29 @@
 		if (next?.some((v) => typeof v === 'string' && v.startsWith('party-')))
 			ensurePartyDishPanelLoaded();
 	}
+
+	let servings = $derived(dish.finalServings);
+	let profitPerServing = $derived(dish.finalProfitPerServing);
+	let profitTotal = $derived(dish.finalProfit);
+
+	function formatNumber(value: number | null | undefined): string {
+		if (value == null || Number.isNaN(value)) return '—';
+		return new Intl.NumberFormat().format(Math.round(value));
+	}
+
+	// Two-way tracked binding via store
+	let tracked = $state(false);
+	$effect(() => {
+		const unsub = trackedDishIds.subscribe((set) => {
+			const v = set.has(dish.id);
+			if (tracked !== v) tracked = v;
+		});
+		return () => unsub();
+	});
+	$effect(() => {
+		if (tracked) trackedDishIds.track(dish.id);
+		else trackedDishIds.untrack(dish.id);
+	});
 </script>
 
 <article
@@ -73,13 +93,9 @@
 			<div class="inline-block">
 				<div class="relative grid place-items-center">
 					<PixelIcon image={dish.image} alt={dish.name} uiScale={1.5} />
-				</div>
-
-				<div class="mt-2" style="width: {thumbPx}px">
-					{#if dish?.id != null}
-						{@const isTracked = $trackedDishIds.has(dish.id)}
-						<TrackButton checked={isTracked} on:change={onTrackChange} />
-					{/if}
+					<div class="absolute -top-2 -left-2 z-10">
+						<TrackButton bind:checked={tracked} onchange={onTrackChange} />
+					</div>
 				</div>
 			</div>
 
@@ -89,13 +105,14 @@
 					<div class="mt-0.5 truncate text-sm opacity-70">{dish.unlock || '—'}</div>
 				</header>
 
+				<!--
 				<div class="flex items-center gap-x-3 text-center">
 					<span class="opacity-70">Max:</span>
 
 					<span>
 						<img
 							class="inline-block h-4 w-4 object-contain align-text-bottom"
-							src={levelImage}
+							src={levelIcon}
 							alt="Max Level"
 							loading="lazy"
 							decoding="async"
@@ -108,7 +125,7 @@
 					<span>
 						<img
 							class="inline-block h-4 w-4 object-contain align-text-bottom"
-							src={tasteImage}
+							src={tasteIcon}
 							alt="Taste"
 							loading="lazy"
 							decoding="async"
@@ -121,7 +138,7 @@
 					<span>
 						<img
 							class="inline-block h-4 w-4 object-contain align-text-bottom"
-							src={servingsImage}
+							src={servingsIcon}
 							alt="Servings"
 							loading="lazy"
 							decoding="async"
@@ -131,8 +148,7 @@
 						<span>{dish.finalServings}</span>
 					</span>
 				</div>
-
-				<ProfitTable {dish} />
+				-->
 			</div>
 		</div>
 	</section>
@@ -141,9 +157,51 @@
 	<section>
 		<Accordion {value} onValueChange={onAccordionValueChange} multiple collapsible>
 			<Accordion.Item
+				value="profit"
+				controlHover="hover:preset-filled-primary-900-100 hover:text-primary-200-800"
+			>
+				{#snippet lead()}
+					<img class="inline-block h-4 w-4 align-text-bottom" src={coinImage} alt="Price" />
+				{/snippet}
+
+				{#snippet control()}
+					<div class="items-baseline gap-x-2 font-semibold">
+						<div class="flex items-center gap-x-3 text-right tabular-nums">
+							<span>
+								{formatNumber(profitPerServing)}
+							</span>
+							<span class="whitespace-nowrap opacity-70">×</span>
+							<span class="whitespace-nowrap"
+								>{servings}
+								<img
+									class="inline-block h-4 w-4 align-text-bottom"
+									src={servingsImage}
+									alt="Servings"
+									loading="lazy"
+									decoding="async"
+									width={20}
+									height={20}
+								/>
+							</span>
+							<span class="whitespace-nowrap"> = </span>
+							<span class="whitespace-nowrap">{formatNumber(profitTotal)}</span>
+						</div>
+					</div>
+				{/snippet}
+
+				{#snippet panel()}
+					<ProfitTable {dish} />
+				{/snippet}
+			</Accordion.Item>
+
+			<Accordion.Item
 				value="recipe"
 				controlHover="hover:preset-filled-primary-900-100 hover:text-primary-200-800"
 			>
+				{#snippet lead()}
+					<Soup size={16} />
+				{/snippet}
+
 				{#snippet control()}
 					<RecipeSummaryIcons {dish} />
 				{/snippet}

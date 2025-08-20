@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Dish } from '$lib/types.js';
 	import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
+	import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
 	import PixelIcon from '../ui/PixelIcon.svelte';
 
 	let { dish } = $props<{ dish: Dish }>();
@@ -8,37 +9,27 @@
 	let ingredientRows = $derived(
 		dish.ingredients.map((ing: Dish['ingredients'][number]) => {
 			const icon = getIngredientTypeIcon(ing.type);
+			const ingredient = $ingredientsBundle?.byId[ing.ingredientId] ?? null;
+			if (!ingredient) return null;
 			return {
-				name: ing.name ?? `Ingredient #${ing.ingredientId}`,
+				name: ingredient.name,
+				source: ingredient.source,
+				day: ingredient.day,
+				night: ingredient.night,
+				fog: ingredient.fog,
 				count: ing.count,
-				upgradeCount: ing.upgradeCount,
-				unitCost: ing.unitCost,
-				lineCost: ing.lineCost,
-				image: ing.image,
+				image: ingredient.image,
 				icon
 			};
 		})
 	);
-
-	function formatNumber(value: number | null | undefined): string {
-		if (value == null || Number.isNaN(value)) return '—';
-		return new Intl.NumberFormat().format(Math.round(value));
-	}
 </script>
 
-<div class="-mx-4 mt-2 overflow-x-auto">
+<div class="-mx-4 overflow-x-auto">
 	<table class="w-full table-auto text-sm">
-		<thead class="bg-surface-200-800">
-			<tr>
-				<th class="p-2 pl-4 text-left" colspan="2">Ingredient</th>
-				<th class="p-2 text-left">Qty</th>
-				<th class="p-2 text-right">Cost</th>
-				<th class="p-2 text-right">Upgrade</th>
-			</tr>
-		</thead>
 		<tbody>
 			{#each ingredientRows as row (row.name)}
-				<tr class="border-b border-surface-200-800">
+				<tr class="border-t border-surface-200-800">
 					<td class="w-8 pl-4">
 						<div class="relative" style="width: 32px; height: 32px">
 							<PixelIcon image={row.image} alt={row.name} uiScale={0.5} />
@@ -55,21 +46,9 @@
 							<strong>{row.count}</strong>
 						{/if}
 					</td>
-					<td class="p-2 text-right tabular-nums">{formatNumber(row.lineCost)}</td>
-					<td class="p-2 pr-4 text-right tabular-nums">
-						{(row.upgradeCount ?? 0) > 0 ? row.upgradeCount : '—'}
-					</td>
+					<td class="p-2 pr-4 text-right tabular-nums">{row.source}</td>
 				</tr>
 			{/each}
 		</tbody>
-		<tfoot>
-			<tr class="bg-surface-200-800 font-semibold">
-				<td class="p-2 pl-4 text-xs uppercase" colspan="2">Recipe Cost</td>
-				<td class="p-2 text-left tabular-nums">{dish.ingredientCount}</td>
-				<td class="p-2 text-right tabular-nums">{formatNumber(dish.recipeCost)}</td>
-				<td class="p-2 pr-4 text-right tabular-nums">{formatNumber(dish.upgradeCost)}</td>
-				<td></td>
-			</tr>
-		</tfoot>
 	</table>
 </div>

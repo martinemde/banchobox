@@ -24,6 +24,24 @@
 			import('./RecipePanel.svelte').then((m) => (LazyRecipePanel = m.default));
 		}
 	}
+
+	function onTrackChange(checked: boolean) {
+		if (checked) trackedDishIds.track(dish.id);
+		else trackedDishIds.untrack(dish.id);
+	}
+	// Two-way tracked binding via store
+	let tracked = $state(false);
+	$effect(() => {
+		const unsub = trackedDishIds.subscribe((set) => {
+			const v = set.has(dish.id);
+			if (tracked !== v) tracked = v;
+		});
+		return () => unsub();
+	});
+	$effect(() => {
+		if (tracked) trackedDishIds.track(dish.id);
+		else trackedDishIds.untrack(dish.id);
+	});
 </script>
 
 <article
@@ -42,19 +60,9 @@
 						>{party?.bonus ?? ''}×</span
 					>
 					<PixelIcon image={dish.image} alt={dish.name} uiScale={1.5} />
-				</div>
-				<div class="mt-2" style="width: {thumbPx}px">
-					{#if dish?.id != null}
-						{@const isTracked = $trackedDishIds.has(dish.id)}
-						<TrackButton
-							checked={isTracked}
-							on:change={(e) => {
-								const nowChecked = e.detail.checked as boolean;
-								if (nowChecked) trackedDishIds.track(dish.id);
-								else trackedDishIds.untrack(dish.id);
-							}}
-						/>
-					{/if}
+					<div class="absolute -top-2 -left-2 z-10">
+						<TrackButton bind:checked={tracked} onchange={onTrackChange} />
+					</div>
 				</div>
 			</div>
 
