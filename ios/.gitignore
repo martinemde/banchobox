@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.pins
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Archives and symbols
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Firebase
+firebase-debug.log
+
+
