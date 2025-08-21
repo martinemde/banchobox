@@ -9,13 +9,6 @@
 		return new Intl.NumberFormat().format(Math.round(value as number));
 	}
 
-	const statItems = $derived([
-		['Cooking', staff.cookingStatMax] as const,
-		['Serving', staff.servingStatMax] as const,
-		['Procure', staff.procureStatMax] as const,
-		['Appeal', staff.appealStatMax] as const
-	]);
-
 	const skills = $derived([staff.skillLevel3, staff.skillLevel7].filter(Boolean) as string[]);
 </script>
 
@@ -45,14 +38,24 @@
 					</div>
 				{/if}
 
-				<div class="mt-1 grid grid-cols-2 gap-x-4 gap-y-1 text-sm sm:grid-cols-4">
-					{#each statItems as [label, val] (label)}
-						<div class="flex items-center justify-between gap-2">
-							<span class="opacity-70">{label} Max</span>
-							<span class="tabular-nums">{formatNumber(val)}</span>
-						</div>
-					{/each}
-				</div>
+				<table class="w-full text-sm">
+					<thead>
+						<tr>
+							<th class="text-right">Cooking</th>
+							<th class="text-right">Serving</th>
+							<th class="text-right">Procure</th>
+							<th class="text-right">Appeal</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="text-right tabular-nums">{formatNumber(staff.cookingStatMax)}</td>
+							<td class="text-right tabular-nums">{formatNumber(staff.servingStatMax)}</td>
+							<td class="text-right tabular-nums">{formatNumber(staff.procureStatMax)}</td>
+							<td class="text-right tabular-nums">{formatNumber(staff.appealStatMax)}</td>
+						</tr>
+					</tbody>
+				</table>
 
 				<div class="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
 					<div class="flex items-center justify-between gap-2">
