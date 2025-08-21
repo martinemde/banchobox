@@ -3,12 +3,15 @@
     {
       "id": 1,
       "rank": "Coal",
-      "customers": 10,
-      "customerNight": 0,
-      "partyCustomers": 0,
+      "customers": 12,
+      "customerNight": 8,
+      "partyCustomers": 6,
       "followers": 0,
       "recipes": 0,
       "bestTaste": 0,
+      "operatingCost": 0,
+      "kitchenStaff": 0,
+      "servingStaff": 1,
       "sort": {
         "order": 0
       }
@@ -16,12 +19,15 @@
     {
       "id": 2,
       "rank": "Bronze",
-      "customers": 15,
-      "customerNight": 10,
-      "partyCustomers": 7,
+      "customers": 19,
+      "customerNight": 12,
+      "partyCustomers": 10,
       "followers": 10,
       "recipes": 0,
       "bestTaste": 0,
+      "operatingCost": 19,
+      "kitchenStaff": 1,
+      "servingStaff": 1,
       "sort": {
         "order": 1
       }
@@ -29,12 +35,15 @@
     {
       "id": 3,
       "rank": "Silver",
-      "customers": 21,
-      "customerNight": 14,
-      "partyCustomers": 9,
+      "customers": 23,
+      "customerNight": 15,
+      "partyCustomers": 12,
       "followers": 20,
       "recipes": 2,
       "bestTaste": 0,
+      "operatingCost": 40,
+      "kitchenStaff": 1,
+      "servingStaff": 2,
       "sort": {
         "order": 2
       }
@@ -44,10 +53,13 @@
       "rank": "Gold",
       "customers": 28,
       "customerNight": 18,
-      "partyCustomers": 12,
+      "partyCustomers": 15,
       "followers": 100,
       "recipes": 5,
       "bestTaste": 125,
+      "operatingCost": 160,
+      "kitchenStaff": 2,
+      "servingStaff": 2,
       "sort": {
         "order": 3
       }
@@ -57,10 +69,13 @@
       "rank": "Platinum",
       "customers": 36,
       "customerNight": 24,
-      "partyCustomers": 16,
+      "partyCustomers": 20,
       "followers": 200,
       "recipes": 19,
       "bestTaste": 250,
+      "operatingCost": 750,
+      "kitchenStaff": 2,
+      "servingStaff": 2,
       "sort": {
         "order": 4
       }
@@ -70,10 +85,13 @@
       "rank": "Diamond",
       "customers": 45,
       "customerNight": 30,
-      "partyCustomers": 20,
+      "partyCustomers": 25,
       "followers": 720,
       "recipes": 32,
       "bestTaste": 375,
+      "operatingCost": 1250,
+      "kitchenStaff": 2,
+      "servingStaff": 2,
       "sort": {
         "order": 5
       }
@@ -83,12 +101,15 @@
     "1": {
       "id": 1,
       "rank": "Coal",
-      "customers": 10,
-      "customerNight": 0,
-      "partyCustomers": 0,
+      "customers": 12,
+      "customerNight": 8,
+      "partyCustomers": 6,
       "followers": 0,
       "recipes": 0,
       "bestTaste": 0,
+      "operatingCost": 0,
+      "kitchenStaff": 0,
+      "servingStaff": 1,
       "sort": {
         "order": 0
       }
@@ -96,12 +117,15 @@
     "2": {
       "id": 2,
       "rank": "Bronze",
-      "customers": 15,
-      "customerNight": 10,
-      "partyCustomers": 7,
+      "customers": 19,
+      "customerNight": 12,
+      "partyCustomers": 10,
       "followers": 10,
       "recipes": 0,
       "bestTaste": 0,
+      "operatingCost": 19,
+      "kitchenStaff": 1,
+      "servingStaff": 1,
       "sort": {
         "order": 1
       }
@@ -109,12 +133,15 @@
     "3": {
       "id": 3,
       "rank": "Silver",
-      "customers": 21,
-      "customerNight": 14,
-      "partyCustomers": 9,
+      "customers": 23,
+      "customerNight": 15,
+      "partyCustomers": 12,
       "followers": 20,
       "recipes": 2,
       "bestTaste": 0,
+      "operatingCost": 40,
+      "kitchenStaff": 1,
+      "servingStaff": 2,
       "sort": {
         "order": 2
       }
@@ -124,10 +151,13 @@
       "rank": "Gold",
       "customers": 28,
       "customerNight": 18,
-      "partyCustomers": 12,
+      "partyCustomers": 15,
       "followers": 100,
       "recipes": 5,
       "bestTaste": 125,
+      "operatingCost": 160,
+      "kitchenStaff": 2,
+      "servingStaff": 2,
       "sort": {
         "order": 3
       }
@@ -137,10 +167,13 @@
       "rank": "Platinum",
       "customers": 36,
       "customerNight": 24,
-      "partyCustomers": 16,
+      "partyCustomers": 20,
       "followers": 200,
       "recipes": 19,
       "bestTaste": 250,
+      "operatingCost": 750,
+      "kitchenStaff": 2,
+      "servingStaff": 2,
       "sort": {
         "order": 4
       }
@@ -150,10 +183,13 @@
       "rank": "Diamond",
       "customers": 45,
       "customerNight": 30,
-      "partyCustomers": 20,
+      "partyCustomers": 25,
       "followers": 720,
       "recipes": 32,
       "bestTaste": 375,
+      "operatingCost": 1250,
+      "kitchenStaff": 2,
+      "servingStaff": 2,
       "sort": {
         "order": 5
       }

@@ -17,10 +17,12 @@ export function thumbnailUrl(name: string): string | undefined {
 }
 
 export function rawImageUrlForFile(filename: string | null | undefined): string {
-	if (!filename) throw new Error('rawImageUrlForFile: filename is required');
+	const PLACEHOLDER =
+		'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AApMBgSijL7kAAAAASUVORK5CYII=';
+	if (!filename) return PLACEHOLDER;
 	const thumb = thumbnailByBasename[filename];
 	if (thumb) return thumb;
-	return `/images/${filename.includes('/') ? filename : `thumbnails/${filename}`}`;
+	return PLACEHOLDER;
 }
 
 export const thumbnailMap = thumbnailByBasename;

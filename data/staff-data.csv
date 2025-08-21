@@ -1,0 +1,25 @@
+id,name,hiring_fee,wage_base,raise,wage_max,skill_level3,cooking_bonus_level3,serving_bonus_level3,appeal_bonus_level3,skill_level7,cooking_bonus_level7,serving_bonus_level7,cooking_stat_base,serving_stat_base,procure_stat_base,appeal_stat_base,cooking_stat_increment,serving_stat_increment,procure_stat_increment,appeal_stat_increment,cooking_stat_max,serving_stat_max,procure_stat_max,appeal_stat_max,branch_stat_calc,seasonings_min_level20,seasonings_max_level20,seasonings_bonus,branch_rank_max,branch_popularity_max,branch_popularity_max_at_level,image
+1,Kyoko,0,14,9.1,186,Tip Master,0,0,0,Drink Serving,0,0,14,35,15,21,27,30,28,43,527,605,547,838,2768.4,6,7,0,9,5,17,Staff_01_Kyoko_Thumbnail.png
+2,Liu,125,14,9.1,186,Cleaning,0,0,0,Serving+,0,50,18,25,20,15,28,20,40,26,550,455,780,509,2446.7,8,9,0,9,5,19,Staff_02_Liu_Thumbnail.png
+3,Carolina,410,20,13,267,Wasabi Refill,0,0,0,Tip Master,0,0,70,75,12,12,29,18,42,23,621,417,810,449,2431.7,6,10,0,9,5,19,Staff_03_Calorina_Thumbnail.png
+4,Mitchell,258,28,18.2,373,Serving+,0,50,0,Drink Serving,0,0,8,20,10,88,21,38,1,47,407,792,29,981,2503.3,1,2,0,8,5,19,Staff_04_Mitchell_Thumbnail.png
+5,Yusuke,267,28,18.2,373,Cooking+,50,0,0,Ingredient Prep Expert,0,0,40,28,55,8,40,10,49,8,850,218,986,160,2262,7,11,0,9,4,,Staff_05_Yusuke_Thumbnail.png
+6,James,707,40,26,534,Ingredient Prep Master,0,0,0,Cooking+,50,0,85,35,45,60,35,10,23,11,800,225,482,269,1856.7,4,7,0,9,4,,Staff_06_James_Thumbnail.png
+7,Billy,562,40,26,534,Cleaning Master,0,0,0,Tip Master,0,0,28,134,30,6,20,31,23,15,408,723,467,291,1976.3,4,7,0,8,4,,Staff_07_Billy_Thumbnail.png
+8,Tohoku,1307,40,26,534,Cooking++,100,0,0,Cooking+,50,0,107,80,60,48,28,1,5,40,789,99,155,808,2093.4,2,4,0,9,4,,Staff_08_Tohoku_Thumbnail.png
+9,Yone,1464,60,39,801,Cooking++,100,0,0,Ingredient Prep Expert,0,0,155,40,100,12,34,6,15,6,901,154,385,126,1603.8,3,5,0,9,3,,Staff_09_Yone_Thumbnail.png
+10,El Nino,2327,60,39,801,Drinking Serving Master,0,0,0,Cleaning Master,0,0,12,188,83,81,6,42,18,3,126,986,425,138,1716.4,2,6,0,5,3,,Staff_10_Elnino_Thumbnail.png
+11,Jandi,302,20,13,267,Tip Master,0,0,0,Wasabi Refill,0,0,10,47,35,50,28,28,25,24,542,579,510,506,2288.8,3,7,0,9,4,,Staff_11_Jandi_Thumbnail.png
+12,Pai,467,20,13,267,Serving+,0,50,0,Cooking+,50,0,50,55,40,38,26,19,46,20,594,466,914,418,2517.4,8,11,0,9,5,18,Staff_12_Pai_Thumbnail.png
+13,Charlie,123,20,13,267,Cooking+,50,0,0,Ingredient Prep Expert,0,0,3,20,38,15,45,12,15,6,908,248,323,129,1646.7,3,5,0,9,3,,Staff_13_Charlie_Thumbnail.png
+14,Maki,0,0,0,0,Cooking++,100,0,0,Cooking+,50,0,100,14,1,1,45,1,1,1,1105,33,20,20,1184,1,3,0,9,2,,Staff_14_Maki_Thumbnail.png
+15,Cohh,1079,40,26,534,Cocktail Serving,0,0,0,Tip Master,0,0,113,2,112,45,13,48,2,33,360,914,150,672,2297.6,1,4,0,8,4,,Staff_15_CohhCarnage_Thumbnail.png
+16,Raptor,1150,55,35.75,734,Cocktail Serving,0,0,0,Wasabi Refill,0,0,19,150,10,99,15,40,40,5,304,910,770,194,2236.2,7,9,0,7,4,,Staff_16_Raptor_Thumbnail.png
+17,Drae,297,48,31.2,640,Cleaning,0,0,0,Cocktail Serving,0,0,60,19,58,3,44,44,32,39,896,855,666,744,3384.2,6,8,0,9,5,14,Staff_17_Drae_Thumbnail.png
+18,Raul,991,30,19.5,400,Master Drink Maker,0,0,0,Ingredient Prep Master,0,0,66,66,66,66,25,25,25,25,541,541,541,541,2326.3,5,7,0,9,5,20,Staff_18_Raul_Thumbnail.png
+19,Davina,143,25,16.25,333,Irresistible Charm,0,0,50,Dispatch Master,0,0,15,18,42,10,25,18,43,45,490,360,859,915,2898.5,9,10,2,9,5,16,Staff_19_Davina_Thumbnail.png
+20,Itsuki,4,45,29.25,600,Irresistible Charm,0,0,50,Drink Serving,0,0,1,1,1,1,23,49,33,48,438,932,628,963,3249.9,6,8,0,8,5,15,Staff_20_Itsuki_Thumbnail.png
+21,Masayoshi,551,38,24.7,507,Ingredient Prep Expert,0,0,0,Dispatch Master,0,0,45,25,35,93,39,12,41,15,786,253,814,378,2344.4,9,10,2,9,5,20,Staff_21_Masayoshi_Thumbnail.png
+22,Etsuko,1187,33,21.45,,Cleaning,0,0,0,Cocktail Serving,0,0,5,128,5,144,5,40,5,45,100,888,100,999,2386.7,2,3,0,5,5,,Staff_22_Etsuko_Thumbnail.png
+23,Chitose,2917,41,26.65,,Cooking+,50,0,0,Cooking++,100,0,99,99,99,99,33,33,33,33,876,726,726,726,3271.8,8,8,0,9,5,,Staff_23_Chitose_Thumbnail.png
+24,Hamako,215,50,32.5,,Drinking Serving Master,0,0,0,Cocktail Serving,0,0,23,4,8,77,32,44,40,33,631,840,768,704,3154.2,6,11,0,9,5,,Staff_24_Hamako_Thumbnail.png

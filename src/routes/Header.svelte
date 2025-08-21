@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
-	import { PartyPopper, Soup, ClipboardList, Shrimp, LayoutDashboard } from '@lucide/svelte';
+	import { PartyPopper, Soup, ClipboardList, Shrimp, LayoutDashboard, Users } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 
 	let isHidden = false;
@@ -94,6 +94,16 @@
 					>
 						<PartyPopper size={22} />
 						<span class="label hidden sm:inline">Parties</span>
+					</a>
+					<a
+						href="/staff"
+						class="nav-link"
+						class:active={$page.url.pathname === '/staff'}
+						data-sveltekit-preload-data="hover"
+						aria-label="Staff"
+					>
+						<Users size={22} />
+						<span class="label hidden sm:inline">Staff</span>
 					</a>
 					<a
 						href="/tracking"

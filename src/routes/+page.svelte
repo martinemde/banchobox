@@ -13,6 +13,7 @@
 	import { selectedChapterId, visible as chaptersVisible } from '$lib/stores/chapters.js';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import { visible as dlcVisible } from '$lib/stores/dlc.js';
+	import { bundle as staffBundle } from '$lib/stores/staff.js';
 
 	// Data from stores
 	const dishes = $derived($dishesBundle?.rows ?? []);
@@ -77,6 +78,9 @@
 	const partyTotalCustomers = $derived(cookstaCurrent?.customers ?? 0);
 	const partyGuests = $derived(cookstaCurrent?.partyCustomers ?? 0);
 	const partyRegulars = $derived(Math.max(0, partyTotalCustomers - partyGuests));
+	const operatingCost = $derived(cookstaCurrent?.operatingCost ?? 0);
+	const kitchenStaff = $derived(cookstaCurrent?.kitchenStaff ?? 0);
+	const servingStaff = $derived(cookstaCurrent?.servingStaff ?? 0);
 
 	const tierIndex = $derived(
 		Math.max(
@@ -101,6 +105,26 @@
 		else next.delete(id);
 		enabledDLCIds = next;
 	}
+
+	// Staff selection (limited by current Cooksta tier allowances)
+	const staffRows = $derived($staffBundle?.rows ?? []);
+	let selectedKitchenStaffIds = $state<Array<number | null>>([]);
+	let selectedServingStaffIds = $state<Array<number | null>>([]);
+	$effect(() => {
+		const ks = kitchenStaff;
+		const ss = servingStaff;
+		// Resize arrays while preserving existing choices
+		if (selectedKitchenStaffIds.length !== ks) {
+			const next = selectedKitchenStaffIds.slice(0, ks);
+			while (next.length < ks) next.push(null);
+			selectedKitchenStaffIds = next;
+		}
+		if (selectedServingStaffIds.length !== ss) {
+			const next = selectedServingStaffIds.slice(0, ss);
+			while (next.length < ss) next.push(null);
+			selectedServingStaffIds = next;
+		}
+	});
 </script>
 
 <svelte:head>
@@ -233,7 +257,7 @@
 	</div>
 
 	<!-- Cooksta breakdown -->
-	<div class="mt-6 grid gap-4 md:grid-cols-2">
+	<div class="mt-6 grid gap-4 md:grid-cols-3">
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="mb-2 text-sm font-semibold">Customers</div>
 			<ul class="space-y-1 text-sm opacity-90">
@@ -248,6 +272,53 @@
 				<li>Regulars: {partyRegulars}</li>
 				<li>Party guests: {partyGuests}</li>
 			</ul>
+		</div>
+		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
+			<div class="mb-2 text-sm font-semibold">Operating costs</div>
+			<ul class="space-y-1 text-sm opacity-90">
+				<li>Operating cost: {operatingCost}/night</li>
+				<li>Wages: TODO/night</li>
+				<li>Staff: {servingStaff} serving, {kitchenStaff} kitchen</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Staff selection -->
+	<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
+		<h3 class="mb-4 text-lg font-semibold">Staff</h3>
+		<div class="grid gap-6 md:grid-cols-2">
+			<div>
+				<div class="mb-2 text-sm font-semibold">Kitchen Staff ({kitchenStaff})</div>
+				<div class="space-y-2">
+					{#each Array.from({ length: kitchenStaff }, (_, i) => i) as idx (idx)}
+						<label class="flex items-center gap-2">
+							<span class="text-sm opacity-80">Slot {idx + 1}</span>
+							<select class="ig-select" bind:value={selectedKitchenStaffIds[idx]}>
+								<option value={null}>—</option>
+								{#each staffRows as s (s.id)}
+									<option value={s.id}>{s.name}</option>
+								{/each}
+							</select>
+						</label>
+					{/each}
+				</div>
+			</div>
+			<div>
+				<div class="mb-2 text-sm font-semibold">Serving Staff ({servingStaff})</div>
+				<div class="space-y-2">
+					{#each Array.from({ length: servingStaff }, (_, i) => i) as idx (idx)}
+						<label class="flex items-center gap-2">
+							<span class="text-sm opacity-80">Slot {idx + 1}</span>
+							<select class="ig-select" bind:value={selectedServingStaffIds[idx]}>
+								<option value={null}>—</option>
+								{#each staffRows as s (s.id)}
+									<option value={s.id}>{s.name}</option>
+								{/each}
+							</select>
+						</label>
+					{/each}
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -302,7 +373,7 @@
 					<div>
 						<div class="flex justify-between text-xs opacity-80">
 							<span>{d.name}</span>
-							<span>{Math.round(computePartyProfitPerServing(d))}G/serv</span>
+							<span>{Math.round(computePartyProfitPerServing(d))}/serv</span>
 						</div>
 						<div class="h-2 rounded bg-surface-300">
 							<div
@@ -332,7 +403,7 @@
 					{#each selectedPartyDishes as d (d.id)}
 						<li class="flex items-center justify-between">
 							<span>{d.name}</span>
-							<span class="opacity-70">+{Math.round(computePartyProfitPerServing(d))}G/serv</span>
+							<span class="opacity-70">+{Math.round(computePartyProfitPerServing(d))}/serv</span>
 						</li>
 					{/each}
 				</ul>
@@ -376,7 +447,7 @@
 					<div class="rounded-lg border border-white/10 p-4">
 						<div class="mb-1 text-sm font-semibold">{d.name}</div>
 						<div class="text-xs opacity-70">
-							Profit: {Math.round(computePartyProfitPerServing(d))}G/serv
+							Profit: {Math.round(computePartyProfitPerServing(d))}/serv
 						</div>
 						<div class="mt-2 h-2 rounded bg-surface-300">
 							<div
@@ -420,7 +491,7 @@
 						Needs: {d.ingredients.map((i) => `${i.count}× ${i.name}`).join(', ')}
 					</div>
 					<div class="mt-2 text-xs">
-						Profit potential: {Math.round(d.finalProfitPerServing)}G/serv
+						Profit potential: {Math.round(d.finalProfitPerServing)}/serv
 					</div>
 				</div>
 			{/each}
@@ -432,7 +503,7 @@
 				{#each selectedPartyDishes as d (d.id)}
 					<li class="flex items-center justify-between">
 						<span>{d.name}</span>
-						<span class="opacity-70">{Math.round(computePartyProfitPerServing(d))}G/serv</span>
+						<span class="opacity-70">{Math.round(computePartyProfitPerServing(d))}/serv</span>
 					</li>
 				{/each}
 			</ul>

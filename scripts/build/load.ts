@@ -12,7 +12,8 @@ import type {
 	Id,
 	CookstaInputRow,
 	DLCInputRow,
-	ChapterInputRow
+	ChapterInputRow,
+	StaffInputRow
 } from '../../src/lib/types.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -404,7 +405,10 @@ const cookstaRowSchema = z
 		party_customers: intFromString('party_customers'),
 		followers: intFromString('followers'),
 		recipes: intFromString('recipes'),
-		best_taste: intFromString('best_taste')
+		best_taste: intFromString('best_taste'),
+		operating_cost: intFromString('operating_cost'),
+		kitchen_staff: intFromString('kitchen_staff'),
+		serving_staff: intFromString('serving_staff')
 	})
 	.transform((row) => ({
 		rank: row['rank'],
@@ -414,7 +418,10 @@ const cookstaRowSchema = z
 		partyCustomers: row['party_customers'],
 		followers: row['followers'],
 		recipes: row['recipes'],
-		bestTaste: row['best_taste']
+		bestTaste: row['best_taste'],
+		operatingCost: row['operating_cost'],
+		kitchenStaff: row['kitchen_staff'],
+		servingStaff: row['serving_staff']
 	})) as z.ZodType<CookstaInputRow>;
 
 function loadCooksta() {
@@ -446,6 +453,130 @@ function loadCooksta() {
 		out.push(parsed.data);
 	}
 	return { cooksta: out };
+}
+
+// staff-data.csv schema -> normalized row
+const staffRowSchema = z
+	.object({
+		id: intFromString('id'),
+		name: z.string().transform((s) => s.trim()),
+		image: optionalString,
+		hiring_fee: optionalNumber,
+		wage_base: optionalNumber,
+		raise: optionalNumber,
+		wage_max: optionalNumber,
+		skill_level3: optionalString,
+		cooking_bonus_level3: optionalNumber,
+		serving_bonus_level3: optionalNumber,
+		appeal_bonus_level3: optionalNumber,
+		skill_level7: optionalString,
+		cooking_bonus_level7: optionalNumber,
+		serving_bonus_level7: optionalNumber,
+		cooking_stat_base: optionalNumber,
+		serving_stat_base: optionalNumber,
+		procure_stat_base: optionalNumber,
+		appeal_stat_base: optionalNumber,
+		cooking_stat_increment: optionalNumber,
+		serving_stat_increment: optionalNumber,
+		procure_stat_increment: optionalNumber,
+		appeal_stat_increment: optionalNumber,
+		cooking_stat_max: optionalNumber,
+		serving_stat_max: optionalNumber,
+		procure_stat_max: optionalNumber,
+		appeal_stat_max: optionalNumber,
+		branch_stat_calc: optionalNumber,
+		seasonings_min_level20: optionalNumber,
+		seasonings_max_level20: optionalNumber,
+		seasonings_bonus: optionalNumber,
+		branch_rank_max: optionalNumber,
+		branch_popularity_max: optionalNumber,
+		branch_popularity_max_at_level: optionalNumber
+	})
+	.transform((row) => ({
+		id: row['id'],
+		name: row['name'],
+		image: (row['image'] ?? null) as string | null,
+		hiringFee: row['hiring_fee'] as number | null,
+		wageBase: row['wage_base'] as number | null,
+		raise: row['raise'] as number | null,
+		wageMax: row['wage_max'] as number | null,
+		skillLevel3: (row['skill_level3'] ?? null) as string | null,
+		cookingBonusLevel3: row['cooking_bonus_level3'] as number | null,
+		servingBonusLevel3: row['serving_bonus_level3'] as number | null,
+		appealBonusLevel3: row['appeal_bonus_level3'] as number | null,
+		skillLevel7: (row['skill_level7'] ?? null) as string | null,
+		cookingBonusLevel7: row['cooking_bonus_level7'] as number | null,
+		servingBonusLevel7: row['serving_bonus_level7'] as number | null,
+		cookingStatBase: row['cooking_stat_base'] as number | null,
+		servingStatBase: row['serving_stat_base'] as number | null,
+		procureStatBase: row['procure_stat_base'] as number | null,
+		appealStatBase: row['appeal_stat_base'] as number | null,
+		cookingStatIncrement: row['cooking_stat_increment'] as number | null,
+		servingStatIncrement: row['serving_stat_increment'] as number | null,
+		procureStatIncrement: row['procure_stat_increment'] as number | null,
+		appealStatIncrement: row['appeal_stat_increment'] as number | null,
+		cookingStatMax: row['cooking_stat_max'] as number | null,
+		servingStatMax: row['serving_stat_max'] as number | null,
+		procureStatMax: row['procure_stat_max'] as number | null,
+		appealStatMax: row['appeal_stat_max'] as number | null,
+		branchStatCalc: row['branch_stat_calc'] as number | null,
+		seasoningsMinLevel20: row['seasonings_min_level20'] as number | null,
+		seasoningsMaxLevel20: row['seasonings_max_level20'] as number | null,
+		seasoningsBonus: row['seasonings_bonus'] as number | null,
+		branchRankMax: row['branch_rank_max'] as number | null,
+		branchPopularityMax: row['branch_popularity_max'] as number | null,
+		branchPopularityMaxAtLevel: row['branch_popularity_max_at_level'] as number | null
+	})) as z.ZodType<StaffInputRow>;
+
+function loadStaff() {
+	const staffCSV = readFileSync(join(__dirname, '..', '..', 'data', 'staff-data.csv'), 'utf-8');
+	const rawRecords = parseCsv(staffCSV, {
+		columns: true,
+		skip_empty_lines: true,
+		trim: true,
+		relax_column_count: true
+	}) as Array<Record<string, string>>;
+	validateRequiredColumns(
+		rawRecords,
+		[
+			'id',
+			'name',
+			'image',
+			'hiring_fee',
+			'wage_base',
+			'raise',
+			'wage_max',
+			'skill_level3',
+			'cooking_bonus_level3',
+			'serving_bonus_level3',
+			'appeal_bonus_level3',
+			'skill_level7',
+			'cooking_bonus_level7',
+			'serving_bonus_level7',
+			'cooking_stat_base',
+			'serving_stat_base',
+			'procure_stat_base',
+			'appeal_stat_base',
+			'cooking_stat_increment',
+			'serving_stat_increment',
+			'procure_stat_increment',
+			'appeal_stat_increment',
+			'cooking_stat_max',
+			'serving_stat_max',
+			'procure_stat_max',
+			'appeal_stat_max',
+			'branch_stat_calc',
+			'seasonings_min_level20',
+			'seasonings_max_level20',
+			'seasonings_bonus',
+			'branch_rank_max',
+			'branch_popularity_max',
+			'branch_popularity_max_at_level'
+		],
+		'staff-data.csv'
+	);
+	const normalized = parseTable(staffCSV, staffRowSchema, 'staff-data.csv');
+	return { staff: normalized };
 }
 
 function loadRelationships(
@@ -536,5 +667,17 @@ export function loadNormalizedData() {
 		partyNameToId
 	);
 
-	return { dishes, ingredients, parties, dishIngredients, dishParties, cooksta, dlcs, chapters };
+	const { staff } = loadStaff();
+
+	return {
+		dishes,
+		ingredients,
+		parties,
+		dishIngredients,
+		dishParties,
+		cooksta,
+		dlcs,
+		chapters,
+		staff
+	};
 }

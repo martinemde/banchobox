@@ -10,6 +10,7 @@
 	import { bundle as cookstaBundleStore } from '$lib/stores/cooksta';
 	import { bundle as dlcBundleStore } from '$lib/stores/dlc';
 	import { bundle as chaptersBundleStore } from '$lib/stores/chapters';
+	import { bundle as staffBundleStore } from '$lib/stores/staff';
 	import type {
 		EntityBundle,
 		Dish,
@@ -42,6 +43,9 @@
 	}
 	if (data.chapters && get(chaptersBundleStore) == null) {
 		chaptersBundleStore.set(data.chapters as unknown as EntityBundle<import('$lib/types').Chapter>);
+	}
+	if (data.staff && get(staffBundleStore) == null) {
+		staffBundleStore.set(data.staff as unknown as EntityBundle<import('$lib/types').Staff>);
 	}
 </script>
 

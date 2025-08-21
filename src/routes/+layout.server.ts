@@ -9,7 +9,8 @@ import type {
 	PartyDish,
 	CookstaTier,
 	DLC,
-	Chapter
+	Chapter,
+	Staff
 } from '$lib/types.js';
 
 // Import JSON bundles from $lib so they are included in the SSR bundle and get type safety
@@ -20,6 +21,7 @@ import partyDishes from '$lib/data/party-dishes.v1.json';
 import cooksta from '$lib/data/cooksta.v1.json';
 import dlc from '$lib/data/dlc.v1.json';
 import chapters from '$lib/data/chapters.v1.json';
+import staff from '$lib/data/staff.v1.json';
 
 export const load: LayoutServerLoad = async () => {
 	const dishesBundle = dishes as unknown as EntityBundle<Dish>;
@@ -29,6 +31,7 @@ export const load: LayoutServerLoad = async () => {
 	const cookstaBundle = cooksta as unknown as EntityBundle<CookstaTier>;
 	const dlcBundle = dlc as unknown as EntityBundle<DLC>;
 	const chaptersBundle = chapters as unknown as EntityBundle<Chapter>;
+	const staffBundle = staff as unknown as EntityBundle<Staff>;
 	return {
 		dishes: dishesBundle,
 		ingredients: ingredientsBundle,
@@ -36,6 +39,7 @@ export const load: LayoutServerLoad = async () => {
 		partyDishes: partyDishesBundle,
 		cooksta: cookstaBundle,
 		dlc: dlcBundle,
-		chapters: chaptersBundle
+		chapters: chaptersBundle,
+		staff: staffBundle
 	};
 };

@@ -18,6 +18,9 @@ function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
 				followers: row.followers,
 				recipes: row.recipes,
 				bestTaste: row.bestTaste,
+				operatingCost: row.operatingCost,
+				kitchenStaff: row.kitchenStaff,
+				servingStaff: row.servingStaff,
 				sort: { order: row.order }
 			};
 		})

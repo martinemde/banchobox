@@ -22,6 +22,9 @@ export interface CookstaInputRow {
 	followers: number;
 	recipes: number;
 	bestTaste: number;
+	operatingCost: number;
+	kitchenStaff: number;
+	servingStaff: number;
 }
 
 export interface CookstaTier {
@@ -33,6 +36,9 @@ export interface CookstaTier {
 	followers: number;
 	recipes: number;
 	bestTaste: number;
+	operatingCost: number;
+	kitchenStaff: number;
+	servingStaff: number;
 	// Client-side helpers
 	sort: Record<'order', string | number>; // We only have one field, but we need to stay consistent.
 }
@@ -271,3 +277,92 @@ export type PartySort = {
 	bonus: number;
 	dishCount: number;
 };
+
+// --------------------
+// Staff data types
+// --------------------
+
+export interface StaffInputRow {
+	id: Id;
+	name: string;
+	image: string;
+	hiringFee: number;
+	wageBase: number;
+	raise: number;
+	wageMax: number;
+	skillLevel3: string;
+	cookingBonusLevel3: number;
+	servingBonusLevel3: number;
+	appealBonusLevel3: number;
+	skillLevel7: string;
+	cookingBonusLevel7: number;
+	servingBonusLevel7: number;
+	cookingStatBase: number;
+	servingStatBase: number;
+	procureStatBase: number;
+	appealStatBase: number;
+	cookingStatIncrement: number;
+	servingStatIncrement: number;
+	procureStatIncrement: number;
+	appealStatIncrement: number;
+	cookingStatMax: number;
+	servingStatMax: number;
+	procureStatMax: number;
+	appealStatMax: number;
+	branchStatCalc: number;
+	seasoningsMinLevel20: number;
+	seasoningsMaxLevel20: number;
+	seasoningsBonus: number;
+	branchRankMax: number;
+	branchPopularityMax: number;
+	branchPopularityMaxAtLevel: number | null;
+}
+
+export type StaffSortKey =
+	| 'name'
+	| 'hiringFee'
+	| 'wageMax'
+	| 'cookingStatMax'
+	| 'servingStatMax'
+	| 'procureStatMax'
+	| 'appealStatMax'
+	| 'seasoningsMaxLevel20';
+
+export interface Staff {
+	id: Id;
+	name: string;
+	image: string;
+	hiringFee: number;
+	wageBase: number;
+	raise: number;
+	wageMax: number;
+	skillLevel3: string;
+	cookingBonusLevel3: number;
+	servingBonusLevel3: number;
+	appealBonusLevel3: number;
+	skillLevel7: string;
+	cookingBonusLevel7: number;
+	servingBonusLevel7: number;
+	cookingStatBase: number;
+	servingStatBase: number;
+	procureStatBase: number;
+	appealStatBase: number;
+	cookingStatIncrement: number;
+	servingStatIncrement: number;
+	procureStatIncrement: number;
+	appealStatIncrement: number;
+	cookingStatMax: number;
+	servingStatMax: number;
+	procureStatMax: number;
+	appealStatMax: number;
+	branchStatCalc: number;
+	seasoningsMinLevel20: number;
+	seasoningsMaxLevel20: number;
+	seasoningsBonus: number;
+	branchRankMax: number;
+	branchPopularityMax: number;
+	branchPopularityMaxAtLevel: number | null; // Not all staff can max the branch
+	// Client-side search & sort helpers
+	search: string; // normalized tokens (name, skills)
+	sort: Record<StaffSortKey, string | number>;
+}
