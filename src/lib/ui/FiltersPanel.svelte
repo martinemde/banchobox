@@ -144,7 +144,7 @@
 				<span>
 					{myBanchoExpanded
 						? 'My Bancho'
-						: `${$selectedTier?.rank ?? ''} - ${$selectedChapter?.name ?? ''}`}
+						: `${$selectedTier?.name ?? ''} - ${$selectedChapter?.name ?? ''}`}
 				</span>
 			</button>
 			{#if myBanchoExpanded}
@@ -163,7 +163,7 @@
 					<label class="label" aria-label="Cooksta">
 						<select class="ig-select" bind:value={$selectedTierId}>
 							{#each cookstaTiers as t (t.id)}
-								<option value={t.id}>Cooksta {t.rank}</option>
+								<option value={t.id}>Cooksta {t.name}</option>
 							{/each}
 						</select>
 					</label>
@@ -188,7 +188,7 @@
 					</fieldset>
 				{:else}
 					<div class="items-start text-sm">
-						<div class="p-1">Cooksta {$selectedTier?.rank ?? ''}</div>
+						<div class="p-1">Cooksta {$selectedTier?.name ?? ''}</div>
 						<div class="p-1">{$selectedChapter?.name ?? ''}</div>
 						{#if Array.from(enabledDlcIds).length === 0}
 							<span>&mdash;</span>

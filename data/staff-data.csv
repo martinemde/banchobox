@@ -20,6 +20,6 @@ id,name,hiring_fee,wage_base,raise,wage_max,skill_level3,cooking_bonus_level3,se
 19,Davina,143,25,16.25,333,Irresistible Charm,0,0,50,Dispatch Master,0,0,15,18,42,10,25,18,43,45,490,360,859,915,2898.5,9,10,2,9,5,16,Staff_19_Davina_Thumbnail.png
 20,Itsuki,4,45,29.25,600,Irresistible Charm,0,0,50,Drink Serving,0,0,1,1,1,1,23,49,33,48,438,932,628,963,3249.9,6,8,0,8,5,15,Staff_20_Itsuki_Thumbnail.png
 21,Masayoshi,551,38,24.7,507,Ingredient Prep Expert,0,0,0,Dispatch Master,0,0,45,25,35,93,39,12,41,15,786,253,814,378,2344.4,9,10,2,9,5,20,Staff_21_Masayoshi_Thumbnail.png
-22,Etsuko,1187,33,21.45,,Cleaning,0,0,0,Cocktail Serving,0,0,5,128,5,144,5,40,5,45,100,888,100,999,2386.7,2,3,0,5,5,,Staff_22_Etsuko_Thumbnail.png
-23,Chitose,2917,41,26.65,,Cooking+,50,0,0,Cooking++,100,0,99,99,99,99,33,33,33,33,876,726,726,726,3271.8,8,8,0,9,5,,Staff_23_Chitose_Thumbnail.png
-24,Hamako,215,50,32.5,,Drinking Serving Master,0,0,0,Cocktail Serving,0,0,23,4,8,77,32,44,40,33,631,840,768,704,3154.2,6,11,0,9,5,,Staff_24_Hamako_Thumbnail.png
+22,Etsuko,1187,33,21.45,432,Cleaning,0,0,0,Cocktail Serving,0,0,5,128,5,144,5,40,5,45,100,888,100,999,2386.7,2,3,0,5,5,,Staff_22_Etsuko_Thumbnail.png
+23,Chitose,2917,41,26.65,535,Cooking+,50,0,0,Cooking++,100,0,99,99,99,99,33,33,33,33,876,726,726,726,3271.8,8,8,0,9,5,,Staff_23_Chitose_Thumbnail.png
+24,Hamako,215,50,32.5,658,Drinking Serving Master,0,0,0,Cocktail Serving,0,0,23,4,8,77,32,44,40,33,631,840,768,704,3154.2,6,11,0,9,5,,Staff_24_Hamako_Thumbnail.png

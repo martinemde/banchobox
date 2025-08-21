@@ -2,7 +2,8 @@
   "rows": [
     {
       "id": 1,
-      "rank": "Coal",
+      "name": "Coal",
+      "rank": 0,
       "customers": 12,
       "customerNight": 8,
       "partyCustomers": 6,
@@ -18,7 +19,8 @@
     },
     {
       "id": 2,
-      "rank": "Bronze",
+      "name": "Bronze",
+      "rank": 1,
       "customers": 19,
       "customerNight": 12,
       "partyCustomers": 10,
@@ -34,7 +36,8 @@
     },
     {
       "id": 3,
-      "rank": "Silver",
+      "name": "Silver",
+      "rank": 2,
       "customers": 23,
       "customerNight": 15,
       "partyCustomers": 12,
@@ -50,7 +53,8 @@
     },
     {
       "id": 4,
-      "rank": "Gold",
+      "name": "Gold",
+      "rank": 3,
       "customers": 28,
       "customerNight": 18,
       "partyCustomers": 15,
@@ -66,7 +70,8 @@
     },
     {
       "id": 5,
-      "rank": "Platinum",
+      "name": "Platinum",
+      "rank": 4,
       "customers": 36,
       "customerNight": 24,
       "partyCustomers": 20,
@@ -82,7 +87,8 @@
     },
     {
       "id": 6,
-      "rank": "Diamond",
+      "name": "Diamond",
+      "rank": 5,
       "customers": 45,
       "customerNight": 30,
       "partyCustomers": 25,
@@ -100,7 +106,8 @@
   "byId": {
     "1": {
       "id": 1,
-      "rank": "Coal",
+      "name": "Coal",
+      "rank": 0,
       "customers": 12,
       "customerNight": 8,
       "partyCustomers": 6,
@@ -116,7 +123,8 @@
     },
     "2": {
       "id": 2,
-      "rank": "Bronze",
+      "name": "Bronze",
+      "rank": 1,
       "customers": 19,
       "customerNight": 12,
       "partyCustomers": 10,
@@ -132,7 +140,8 @@
     },
     "3": {
       "id": 3,
-      "rank": "Silver",
+      "name": "Silver",
+      "rank": 2,
       "customers": 23,
       "customerNight": 15,
       "partyCustomers": 12,
@@ -148,7 +157,8 @@
     },
     "4": {
       "id": 4,
-      "rank": "Gold",
+      "name": "Gold",
+      "rank": 3,
       "customers": 28,
       "customerNight": 18,
       "partyCustomers": 15,
@@ -164,7 +174,8 @@
     },
     "5": {
       "id": 5,
-      "rank": "Platinum",
+      "name": "Platinum",
+      "rank": 4,
       "customers": 36,
       "customerNight": 24,
       "partyCustomers": 20,
@@ -180,7 +191,8 @@
     },
     "6": {
       "id": 6,
-      "rank": "Diamond",
+      "name": "Diamond",
+      "rank": 5,
       "customers": 45,
       "customerNight": 30,
       "partyCustomers": 25,

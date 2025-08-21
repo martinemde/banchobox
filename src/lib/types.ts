@@ -14,8 +14,9 @@ export interface EntityBundle<Row> {
 // --------------------
 
 export interface CookstaInputRow {
-	rank: string;
-	order: number;
+	id: Id;
+	name: string;
+	rank: number;
 	customers: number;
 	customerNight: number;
 	partyCustomers: number;
@@ -29,7 +30,8 @@ export interface CookstaInputRow {
 
 export interface CookstaTier {
 	id: Id;
-	rank: string;
+	name: string;
+	rank: number;
 	customers: number;
 	customerNight: number;
 	partyCustomers: number;

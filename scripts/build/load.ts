@@ -401,8 +401,9 @@ function loadChapters() {
 // cooksta-data.csv schema -> normalized row
 const cookstaRowSchema = z
 	.object({
-		rank: z.string().transform((s) => s.trim()),
-		order: intFromString('order'),
+		id: intFromString('id'),
+		name: z.string().transform((s) => s.trim()),
+		rank: intFromString('rank'),
 		customers: intFromString('customers'),
 		customer_night: intFromString('customer_night'),
 		party_customers: intFromString('party_customers'),
@@ -414,8 +415,9 @@ const cookstaRowSchema = z
 		serving_staff: intFromString('serving_staff')
 	})
 	.transform((row) => ({
+		id: row['id'],
+		name: row['name'],
 		rank: row['rank'],
-		order: row['order'],
 		customers: row['customers'],
 		customerNight: row['customer_night'],
 		partyCustomers: row['party_customers'],

@@ -1,15 +1,25 @@
-import type { Dish, Id, EntityBundle, Chapter, Ingredient, Party } from '../../src/lib/types.js';
+import type {
+	Dish,
+	Id,
+	EntityBundle,
+	Chapter,
+	Ingredient,
+	Party,
+	CookstaTier
+} from '../../src/lib/types.js';
 
 export function buildDishesBundle({
 	dishes,
 	chaptersBundle,
 	ingredientsBundle,
-	partiesBundle
+	partiesBundle,
+	cookstaBundle
 }: {
 	dishes: Dish[];
 	chaptersBundle: EntityBundle<Chapter>;
 	ingredientsBundle: EntityBundle<Ingredient>;
 	partiesBundle: EntityBundle<Party>;
+	cookstaBundle: EntityBundle<CookstaTier>;
 }): EntityBundle<Dish> {
 	// byId index for O(1) lookups
 	const byId = Object.fromEntries(dishes.map((d) => [d.id, d])) as Record<Id, Dish>;
@@ -25,6 +35,8 @@ export function buildDishesBundle({
 	};
 
 	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
+	const maxCooksta = Math.max(...cookstaBundle.rows.map((c) => c.rank));
+	const minCooksta = Math.min(...cookstaBundle.rows.map((c) => c.rank));
 
 	for (const d of dishes) {
 		const dlcVal = (d.dlc ?? 'Base').toString();
@@ -64,10 +76,17 @@ export function buildDishesBundle({
 			(facets['Party'][party.name] ??= []).push(d.id);
 		}
 
-		// Cooksta facet (if present)
-		const cookstaVal = (d.cooksta ?? '').toString();
-		if (cookstaVal) {
-			(facets['Cooksta'][cookstaVal] ??= []).push(d.id);
+		// Add the dish to its cooksta unlock level and up
+		// If it doesn't have a cooksta, it's available in all tiers
+		if (d.cooksta !== null && d.cooksta !== undefined) {
+			const cookstaTier = cookstaBundle.rows.find((c) => c.name === d.cooksta)!;
+			for (let n = cookstaTier.rank; n <= maxCooksta; n++) {
+				(facets['Cooksta'][n.toString()] ??= []).push(d.id);
+			}
+		} else {
+			for (let n = minCooksta; n <= maxCooksta; n++) {
+				(facets['Cooksta'][n.toString()] ??= []).push(d.id);
+			}
 		}
 
 		// Add the ingredient to every chapter including and after the dish's chapter

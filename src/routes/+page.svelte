@@ -162,7 +162,7 @@
 					<div class="grid grid-cols-3 gap-3">
 						<div class="stat">
 							<div class="label">Cooksta</div>
-							<div class="value">{$selectedTier?.rank ?? ''}</div>
+							<div class="value">{$selectedTier?.name ?? ''}</div>
 						</div>
 						<div class="stat">
 							<div class="label">Menu</div>
@@ -214,7 +214,7 @@
 				<div class="title label-text">Cooksta Rank</div>
 				<select class="ig-select" bind:value={$selectedTierId}>
 					{#each cookstaTiers as t (t.id)}
-						<option value={t.id}>{t.rank}</option>
+						<option value={t.id}>{t.name}</option>
 					{/each}
 				</select>
 			</label>
@@ -325,7 +325,7 @@
 	<!-- Advancement requirements -->
 	{#if nextTier}
 		<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
-			<div class="mb-2 text-sm font-semibold">Advance to {nextTier.rank}</div>
+			<div class="mb-2 text-sm font-semibold">Advance to {nextTier.name}</div>
 			<div class="grid gap-3 text-sm sm:grid-cols-3">
 				<div>
 					<div class="opacity-70">Followers</div>

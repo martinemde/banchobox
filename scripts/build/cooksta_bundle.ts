@@ -6,11 +6,11 @@ import type { CookstaInputRow, CookstaTier, EntityBundle, Id } from '../../src/l
 
 function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
 	const tiers: CookstaTier[] = inputRows
-		.filter((r) => r.rank && r.rank.trim() !== '')
 		.map((row, idx) => {
 			const id: Id = idx + 1;
 			return {
 				id,
+				name: row.name,
 				rank: row.rank,
 				customers: row.customers,
 				customerNight: row.customerNight,
@@ -21,7 +21,7 @@ function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
 				operatingCost: row.operatingCost,
 				kitchenStaff: row.kitchenStaff,
 				servingStaff: row.servingStaff,
-				sort: { order: row.order }
+				sort: { order: row.rank }
 			};
 		})
 		.sort((a, b) => a.sort.order - b.sort.order);

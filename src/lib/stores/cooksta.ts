@@ -12,7 +12,7 @@ export const bundle = cookstaStores.bundle as Writable<EntityBundle<CookstaTier>
 export const visible = cookstaStores.visible as Readable<CookstaTier[]>;
 
 // Persisted selection of current Cooksta tier id
-const STORAGE_KEY = 'cookstaTierId.v1';
+const STORAGE_KEY = 'cookstaTierId.v2';
 
 function readSelected(): Id | null {
 	if (!browser) return null;
@@ -43,7 +43,14 @@ export const selectedTier = derived([bundle, selectedTierId], ([$bundle, $id]) =
 	if (!$bundle) return null as CookstaTier | null;
 	let tier = null;
 	if ($id != null) tier = $bundle.byId[$id] ?? null;
-	if (tier == null) tier = $bundle.rows![1];
+	if (tier == null) {
+		const rows = $bundle.rows ?? [];
+		tier =
+			rows.find((t) => t.rank === 1) ??
+			rows.find((t) => t.name?.toLowerCase() === 'bronze') ??
+			rows[0] ??
+			null;
+	}
 	return tier;
 });
 
@@ -52,7 +59,6 @@ bundle.subscribe(($bundle) => {
 	if (!$bundle) return;
 	if (get(selectedTierId) != null) return;
 	const rows = $bundle.rows ?? [];
-	const silver = rows.find((t) => t.rank?.toLowerCase() === 'silver');
-	const fallback = silver ?? rows.find((t) => t.rank?.toLowerCase() === 'gold') ?? rows[0] ?? null;
-	if (fallback) selectedTierId.set(fallback.id);
+	const bronze = rows.find((t) => t.rank === 1) ?? rows[0] ?? null;
+	if (bronze) selectedTierId.set(bronze.id);
 });
