@@ -9,6 +9,26 @@
 
 @plugin '@tailwindcss/typography';
 
+@theme {
+	--font-sans:
+		'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+:root,
+[data-theme] {
+	--theme-font-family: var(--font-sans);
+}
+
+/* Ensure base font cascades everywhere, including Skeleton heading utilities */
+html {
+	font-family: var(--font-sans);
+}
+
+:where(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
+	font-family: inherit !important;
+}
+
 body {
 	min-height: 100vh;
 	margin: 0;

@@ -57,7 +57,7 @@
 
 			<div class="min-w-0 flex-1 space-y-2">
 				<div class="flex items-center gap-2">
-					<h3 class="m-0 truncate h5 leading-none">{ingredient.name}</h3>
+					<h3 class="m-0 truncate text-lg leading-none font-semibold">{ingredient.name}</h3>
 				</div>
 
 				<div class="mt-1 flex flex-wrap items-center gap-1 *:text-sm">

@@ -284,9 +284,14 @@ export function enrichData(
 	const partiesBundle = buildPartiesBundle(partyInputRows, partyDishesByPartyId);
 	const chaptersBundle = buildChapterBundle(chapterInputRows);
 	const ingredientsBundle = buildIngredientsBundle(ingredients, chaptersBundle);
-	const dishesBundle = buildDishesBundle(dishes, chaptersBundle, ingredientsBundle);
 	const partyDishesBundle = buildPartyDishesBundle(partyDishes);
 	const staffBundle = buildStaffBundle(staffInputRows);
+	const dishesBundle = buildDishesBundle({
+		dishes,
+		chaptersBundle,
+		ingredientsBundle,
+		partiesBundle
+	});
 
 	return {
 		dishesBundle,

@@ -1,19 +1,27 @@
-import type { Dish, Id, EntityBundle, Chapter } from '../../src/lib/types.js';
+import type { Dish, Id, EntityBundle, Chapter, Ingredient, Party } from '../../src/lib/types.js';
 
-export function buildDishesBundle(
-	dishes: Dish[],
-	chaptersBundle: EntityBundle<Chapter>,
-	ingredientsBundle: EntityBundle<Ingredient>
-): EntityBundle<Dish> {
+export function buildDishesBundle({
+	dishes,
+	chaptersBundle,
+	ingredientsBundle,
+	partiesBundle
+}: {
+	dishes: Dish[];
+	chaptersBundle: EntityBundle<Chapter>;
+	ingredientsBundle: EntityBundle<Ingredient>;
+	partiesBundle: EntityBundle<Party>;
+}): EntityBundle<Dish> {
 	// byId index for O(1) lookups
 	const byId = Object.fromEntries(dishes.map((d) => [d.id, d])) as Record<Id, Dish>;
 
 	// Facets - minimal set to start; structure is easy to extend
 	const facets: EntityBundle<Dish>['facets'] = {
+		Chapter: {},
+		Cooksta: {},
 		DLC: {},
-		'Unlock Condition': {},
 		Ingredient: {},
-		Chapter: {}
+		Party: {},
+		'Unlock Condition': {}
 	};
 
 	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
@@ -48,6 +56,18 @@ export function buildDishesBundle(
 			) {
 				ch = ingredient.chapter;
 			}
+		}
+
+		// Party facet (if present)
+		for (const partyId of d.partyIds) {
+			const party = partiesBundle.byId[partyId];
+			(facets['Party'][party.name] ??= []).push(d.id);
+		}
+
+		// Cooksta facet (if present)
+		const cookstaVal = (d.cooksta ?? '').toString();
+		if (cookstaVal) {
+			(facets['Cooksta'][cookstaVal] ??= []).push(d.id);
 		}
 
 		// Add the ingredient to every chapter including and after the dish's chapter

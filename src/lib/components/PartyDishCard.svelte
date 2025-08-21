@@ -68,7 +68,7 @@
 
 			<div class="min-w-0 flex-1 space-y-4">
 				<header>
-					<div class="truncate text-base font-semibold">{dish.name}</div>
+					<div class="truncate text-lg leading-none font-semibold">{dish.name}</div>
 					{#if dish.unlock}
 						<div class="mt-0.5 truncate text-xs opacity-70">{dish.unlock}</div>
 					{/if}

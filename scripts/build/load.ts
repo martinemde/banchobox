@@ -86,6 +86,7 @@ const dishesRowSchema = z
 		final_taste: intFromString('final_taste'),
 		final_servings: intFromString('final_servings'),
 		unlock: optionalString,
+		cooksta: optionalString,
 		dlc: optionalString,
 		artisans_flames: optionalNumber
 	})
@@ -102,6 +103,7 @@ const dishesRowSchema = z
 		finalTaste: row['final_taste'],
 		finalServings: row['final_servings'],
 		unlock: row['unlock'] ?? null,
+		cooksta: row['cooksta'] ?? null,
 		dlc: row['dlc'] ?? null,
 		artisansFlames: row['artisans_flames'] as number | null
 	}));
@@ -268,6 +270,7 @@ function loadDishes() {
 			'final_taste',
 			'final_servings',
 			'unlock',
+			'cooksta',
 			'dlc',
 			'artisans_flames',
 			'image'

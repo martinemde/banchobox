@@ -99,6 +99,7 @@ export interface BasicDish {
 	finalServings: number;
 	unlock?: string | null;
 	dlc?: string | null;
+	cooksta?: string | null;
 	artisansFlames?: number | null;
 }
 

@@ -1,4 +1,4 @@
-id,name,unlock,chapter,cooksta_rank,dlc,max_level,base_price,base_taste,base_servings,final_price,final_taste,final_servings,artisans_flames,image
+id,name,unlock,chapter,cooksta,dlc,max_level,base_price,base_taste,base_servings,final_price,final_taste,final_servings,artisans_flames,image
 258,Aurora Jellyfish Sushi,,5,,Dredge,1,345,6,1,345,6,1,,aurora_jellyfish_sushi.png
 259,Barbed Eel Sushi,,5,,Dredge,1,500,2,1,500,2,1,,barbed_eel_sushi.png
 260,Bloodskin Shark Sushi,,5,,Dredge,1,1225,4,1,1225,4,1,,bloodskin_shark_sushi.png
@@ -72,13 +72,13 @@ id,name,unlock,chapter,cooksta_rank,dlc,max_level,base_price,base_taste,base_ser
 134,Moray Eel Curry,Cooksta Silver Rank,,Silver,,10,95,93,4,351,273,6,3,moray_eel_curry.png
 220,Striped Red Mullet Tangle Roll,Cooksta Silver Rank,,Silver,,10,80,90,5,296,270,7,6,striped_red_mullet_tangle_roll.png
 243,White Trevally Kombu Ochazuke,Cooksta Silver Rank,,Silver,,10,93,95,5,344,266,7,6,white_trevally_kombu_ochazuke.png
-66,Deep-Fried Vegetables,Cucumber Party,2,,,10,312,153,2,1154,396,3,,deep-fried_vegetables.png
-97,Great Spider Crab and Cucumber Sushi,Cucumber Party,2,,,10,324,160,1,1199,385,1,5,great_spider_crab_and_cucumber_sushi.png
-152,Pickled Vegetables,Cucumber Party,2,,,10,316,157,2,1169,364,3,,pickled_vegetables.png
-181,Sea Toad and Cucumber Gunkan Sushi,Cucumber Party,2,,,10,320,160,1,1184,367,1,5,sea_toad_and_cucumber_gunkan_sushi.png
-192,Seasoned Waptia Fieldensis,Cucumber Party,2,,,10,425,150,5,1572,420,7,15,seasoned_waptia_fieldensis.png
-197,Skewered Cucumber,Cucumber Party,2,,,10,320,160,1,1184,340,1,,skewered_cucumber.png
-230,Trevally Sandwich,Cucumber Party,2,,,10,312,170,5,1154,260,7,5,trevally_sandwich.png
+66,Deep-Fried Vegetables,Cucumber Party,2,Silver,,10,312,153,2,1154,396,3,,deep-fried_vegetables.png
+97,Great Spider Crab and Cucumber Sushi,Cucumber Party,2,Silver,,10,324,160,1,1199,385,1,5,great_spider_crab_and_cucumber_sushi.png
+152,Pickled Vegetables,Cucumber Party,2,Silver,,10,316,157,2,1169,364,3,,pickled_vegetables.png
+181,Sea Toad and Cucumber Gunkan Sushi,Cucumber Party,2,Silver,,10,320,160,1,1184,367,1,5,sea_toad_and_cucumber_gunkan_sushi.png
+192,Seasoned Waptia Fieldensis,Cucumber Party,6,Silver,,10,425,150,5,1572,420,7,15,seasoned_waptia_fieldensis.png
+197,Skewered Cucumber,Cucumber Party,2,Silver,,10,320,160,1,1184,340,1,,skewered_cucumber.png
+230,Trevally Sandwich,Cucumber Party,2,Silver,,10,312,170,5,1154,260,7,5,trevally_sandwich.png
 113,Hyalonema Tuna Sashimi,Glacial Seaweed Cave,6,,,5,765,185,1,1683,265,1,15,hyalonema_tuna_sashimi.png
 210,Steamed Hyalonema Angler Fish,Glacial Seaweed Cave,6,,,5,750,180,1,1650,248,1,12,steamed_hyalonema_angler_fish.png
 85,Fried Habanero Fangtooth,Jango Shop,5,,,10,410,150,5,1517,420,7,,fried_habanero_fangtooth.png
@@ -94,8 +94,8 @@ id,name,unlock,chapter,cooksta_rank,dlc,max_level,base_price,base_taste,base_ser
 234,Truffle Blue Lobster Tail Sushi,Jango Shop,5,,,5,780,190,2,1716,282,2,,truffle_blue_lobster_tail_sushi.png
 235,Truffle Sailfish Tartare,Jango Shop,5,,,5,785,195,2,1727,295,2,,truffle_sailfish_tartare.png
 236,Truffle Shark Sandwich,Jango Shop,5,,,5,775,185,2,1705,273,2,,truffle_shark_sandwich.png
-79,Falcatus Soybean Paste Soup,Kronosaurus,,,,10,420,130,5,1554,382,7,15,falcatus_soybean_paste_soup.png
-153,Pikaia Ramen,Kronosaurus,,,,10,420,135,7,1554,360,10,15,pikaia_ramen.png
+79,Falcatus Soybean Paste Soup,Kronosaurus,7,,,10,420,130,5,1554,382,7,15,falcatus_soybean_paste_soup.png
+153,Pikaia Ramen,Kronosaurus,7,,,10,420,135,7,1554,360,10,15,pikaia_ramen.png
 60,Crystal Lobster Roll,Lobster Party,6,,,10,370,170,6,1369,305,9,9,crystal_lobster_roll.png
 209,Steamed Eastern Rock Lobster & Egg,Lobster Party,6,,,10,380,140,5,1406,455,7,9,steamed_eastern_rock_lobster_and_egg.png
 40,Boiled Sailfish and Seaweed,Marlin Party,,,,10,425,138,6,1572,300,9,5,boiled_sailfish_and_seaweed.png
