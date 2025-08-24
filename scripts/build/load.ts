@@ -465,6 +465,7 @@ const staffRowSchema = z
 	.object({
 		id: intFromString('id'),
 		name: z.string().transform((s) => s.trim()),
+		dlc: optionalString,
 		image: optionalString,
 		hiring_fee: optionalNumber,
 		wage_base: optionalNumber,
@@ -500,6 +501,7 @@ const staffRowSchema = z
 	.transform((row) => ({
 		id: row['id'],
 		name: row['name'],
+		dlc: (row['dlc'] ?? null) as string | null,
 		image: (row['image'] ?? null) as string | null,
 		hiringFee: row['hiring_fee'] as number | null,
 		wageBase: row['wage_base'] as number | null,
@@ -546,6 +548,7 @@ function loadStaff() {
 		[
 			'id',
 			'name',
+			'dlc',
 			'image',
 			'hiring_fee',
 			'wage_base',

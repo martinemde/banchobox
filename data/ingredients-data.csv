@@ -28,11 +28,11 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 96,Green Sea Urchin,2,0-50m,,Blue Hole Shallows,Fish,,,,,,TRUE,,1.0,1,TRUE,TRUE,TRUE,5,,,,90,90,,green_sea_urchin.png
 113,Klaus's Fin,2,0-50m,,Blue Hole Shallows,Boss,,,,,,,,1.0,1,,TRUE,,99,,,,,0,,klaus_s_fin.png
 115,Lagoon Triggerfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.7,2,TRUE,,,1,,,,2,2,,lagoon_triggerfish.png
-116,Long-Snouted Seahorse,,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.5,0,TRUE,,,4,,,,2,2,,long-snouted_seahorse.png
+116,Long-Snouted Seahorse,2,0-50m,,Blue Hole Shallows,Fish,,,,,TRUE,,,0.5,0,TRUE,,,4,,,,2,2,,long-snouted_seahorse.png
 117,Longfin Batfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.8,5,TRUE,,,1,,,,3,3,,longfin_batfish.png
 119,Longspine Porcupinefish,2,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,3.5,3,,TRUE,,5,,,,26,26,,longspine_porcupinefish.png
 120,Longspine Squirrelfish,2,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.4,3,,TRUE,,5,,,,3,3,,longspine_squirrelfish.png
-125,Mako Meat,,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,,,,,,9.0,5,TRUE,,,8,,,,43,43,,shortfin_mako.png
+125,Mako Meat,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,,,,,,9.0,5,TRUE,,,8,,,,43,43,,shortfin_mako.png
 127,Mantis Shrimp Meat,2,0-50m,,Blue Hole Shallows,Boss,,,,,,,,1.0,1,,TRUE,,99,,,,,0,,mantis_shrimp_meat.png
 129,Marbled Electric Ray Meat,0,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,3.5,5,TRUE,,,6,,,,30,30,,marbled_electric_ray_meat.png
 130,Marlin Meat,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,7.5,5,TRUE,,,8,,,,45,45,,marlin.png
@@ -46,21 +46,21 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 161,Red Lionfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,1.5,3,TRUE,TRUE,,2,,,,3,3,,red_lionfish.png
 162,Red-banded Lobster,6,0-50m,,Blue Hole Shallows,Fish,,,,TRUE,,,,0.1,3,,TRUE,,5,,,,25,25,,red-banded_lobster.png
 163,Redtoothed Triggerfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,1.0,5,TRUE,,,1,,,,3,3,,redtoothed_triggerfish.png
-167,Salema Porgy,,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.4,3,TRUE,,,1,,,,2,2,,salema_porgy.png
+167,Salema Porgy,1,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.4,3,TRUE,,,1,,,,2,2,,salema_porgy.png
 174,Sea Goldie,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.3,2,TRUE,,,1,,,,1,1,,sea_goldie.png
-182,Sheepshead Meat,,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,1.8,5,TRUE,,,5,,,,10,10,,sheepshead.png
-183,Small Spotted Dart,,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.8,3,TRUE,,,1,,,,2,2,,small_spotted_dart.png
+182,Sheepshead Meat,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,1.8,5,TRUE,,,5,,,,10,10,,sheepshead.png
+183,Small Spotted Dart,1,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.8,3,TRUE,,,1,,,,2,2,,small_spotted_dart.png
 192,Starry Puffer,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,3.0,3,TRUE,TRUE,,3,,,,15,15,,starry_puffer.png
-194,Stingray Meat,,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,3.0,5,TRUE,,,6,,,,17,17,,stingray_meat.png
-195,Striped Catfish,,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.3,0,TRUE,,,5,,,,2,2,,striped_catfish.png
-199,Thresher Shark Meat,,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,,,,,,8.5,5,TRUE,,,9,,,,53,53,,thresher_shark.png
+194,Stingray Meat,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,3.0,5,TRUE,,,6,,,,17,17,,stingray_meat.png
+195,Striped Catfish,1,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.3,0,TRUE,,,5,,,,2,2,,striped_catfish.png
+199,Thresher Shark Meat,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,,,,,,8.5,5,TRUE,,,9,,,,53,53,,thresher_shark.png
 201,Titan Triggerfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,3.8,5,TRUE,TRUE,,2,,,,5,5,,titan_triggerfish.png
 205,Truck Hermit Crab Legs,2,0-50m,,Blue Hole Shallows,Boss,,,,,,,,1.0,1,,TRUE,,99,,,,,0,,truck_hermit_crab_legs.png
 216,Whiteleg Shrimp,2,0-50m,,Blue Hole Shallows,Fish,,,,,TRUE,,,0.1,0,TRUE,,,5,,,,11,11,,whiteleg_shrimp.png
 217,Whitetip Reefshark Head,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,2.5,1,TRUE,TRUE,,4,,,,40,40,,whitetip_reefshark_head.png
 218,Whitetip Reefshark Meat,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,2.5,5,TRUE,TRUE,,4,,,,8,8,,whitetip_reefshark_meat.png
 223,Yellow Tang,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.4,2,TRUE,,,1,,,,1,1,,yellow_tang.png
-224,Yellowback Fusilier,,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.8,2,TRUE,,,1,,,,2,2,,yellowback_fusilier.png
+224,Yellowback Fusilier,1,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.8,2,TRUE,,,1,,,,2,2,,yellowback_fusilier.png
 228,Zebra Shark Meat,2,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,10.5,5,,TRUE,,8,,,,42,42,,zebra_shark.png
 28,Blood-belly Comb Jellyfish,2,130-250m,,Blue Hole Depths,Fish,TRUE,,TRUE,,,,,7.0,3,TRUE,,,6,,,,17,17,,blood-belly_comb_jellyfish.png
 36,Bluespotted Stargazer,2,130-250m,,Blue Hole Depths,Fish,,,TRUE,,,TRUE,,5.0,0,TRUE,,,6,,,,18,18,,bluespotted_stargazer.png
@@ -115,7 +115,7 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 145,Painted Comber,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,0.4,3,TRUE,,,1,,,,6,6,,painted_comber.png
 178,Seaweed,1,50-130m,,Blue Hole Medium Depth,Sea plant,,,,,,,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,5,5,,seaweed.png
 188,Spear Squid,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,4.6,3,,TRUE,,5,,,,17,17,,spear_squid.png
-196,Striped Red Mullet,,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,0.7,0,TRUE,,,1,,,,5,5,,striped_red_mullet.png
+196,Striped Red Mullet,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,0.7,0,TRUE,,,1,,,,5,5,,striped_red_mullet.png
 200,Tiger Shark Meat,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,TRUE,,,,,,15.0,5,TRUE,TRUE,,6,,,,17,17,,tiger_shark_meat.png
 204,Tropical Rock Lobster,6,50-130m,,Blue Hole Medium Depth,Fish,,,,TRUE,,,,1.2,3,TRUE,,,8,,,,45,45,,tropical_rock_lobster.png
 214,White Spotted Jellyfish,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,1.0,3,TRUE,,,2,,,,6,6,,white_spotted_jellyfish.png
@@ -132,15 +132,15 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 203,Translucent Sturgeon,5,Black Cliff,,Black Cliff,Fish,TRUE,TRUE,TRUE,,,,TRUE,8.0,5,,,TRUE,9,,,,,0,Dredge,translucent_sturgeon.png
 219,Withered Ray,5,Black Cliff,,Black Cliff,Fish,TRUE,TRUE,,,,,TRUE,8.5,5,,,TRUE,9,,,,,0,Dredge,withered_ray.png
 21,Black Pepper,2,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,60,,6,6,,black_pepper.png
-23,Black Vinegar,,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,50,,5,5,,black_vinegar.png
+23,Black Vinegar,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,50,,5,5,,black_vinegar.png
 63,Curry Block,2,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,60,,6,6,,curry_block.png
-131,Mayonnaise,,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,70,,7,7,,mayonnaise.png
-135,Miso,,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,80,,8,8,,miso.png
+131,Mayonnaise,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,70,,7,7,,mayonnaise.png
+135,Miso,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,80,,8,8,,miso.png
 140,Olive Oil,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,60,,6,6,,olive_oil.png
 171,Salt,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,80,,8,8,,salt.png
-180,Sesame Seed,,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,80,,8,8,,sesame_seed.png
-187,Soy Sauce,,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,60,,6,6,,soy_sauce.png
-207,Turmeric,,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,50,,5,5,,turmeric.png
+180,Sesame Seed,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,80,,8,8,,sesame_seed.png
+187,Soy Sauce,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,60,,6,6,,soy_sauce.png
+207,Turmeric,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,50,,5,5,,turmeric.png
 133,Megalograptus,6,Divine Tree Control Room,,Divine Tree Control Room,Fish,TRUE,,TRUE,,,,,8.0,5,TRUE,,,9,,,,46,46,,megalograptus.png
 222,Yawie's Inner Flesh,7,Divine Tree Control Room,,Divine Tree Control Room,Boss,,,,,,,,1.0,1,,,,99,,,,,0,,yawie_s_inner_flesh.png
 13,Barbed Eel,5,Fog Coast,,Fog Coast,Fish,TRUE,,TRUE,,,,TRUE,6.0,,,,TRUE,7,,,,,0,Dredge,barbed_eel.png
@@ -196,8 +196,8 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 202,Tokummia Katalepsis,6,Hydrothermal Vents,,Hydrothermal Vents,Fish,,,,TRUE,,,,2.0,3,TRUE,,,9,,,,55,55,,tokummia_katalepsis.png
 211,Waptia Fieldensis,6,Hydrothermal Vents,,Hydrothermal Vents,Fish,,,,,TRUE,,,0.4,5,TRUE,,,9,,,,34,34,,waptia_fieldensis.png
 221,Xenacanthus Meat,6,Hydrothermal Vents,,Hydrothermal Vents,Fish,TRUE,TRUE,TRUE,,,,,5.5,5,TRUE,,,9,,,,53,53,,xenacanthus.png
-158,Rainbow Cap,,Jango,,,Jango,,,,,,,,,,,,,1,,750,,750,750,,rainbow_cap.png
-206,Truffle,,Jango,,,Jango,,,,,,,,,,,,,1,,650,,650,650,,truffle.png
+158,Rainbow Cap,5,Jango,,,Jango,,,,,,,,,,,,,1,,750,,750,750,,rainbow_cap.png
+206,Truffle,5,Jango,,,Jango,,,,,,,,,,,,,1,,650,,650,650,,truffle.png
 12,Aurora Jellyfish,5,Jellyfish Basin,,Jellyfish Basin,Fish,TRUE,,TRUE,,,,TRUE,5.0,5,,,TRUE,5,,,,,0,Dredge,aurora_jellyfish.png
 41,Bursting Anglerfish,5,Jellyfish Basin,,Jellyfish Basin,Fish,TRUE,,TRUE,,,,TRUE,6.0,5,,,TRUE,7,,,,,0,Dredge,bursting_anglerfish.png
 56,Concertina Barracuda,5,Jellyfish Basin,,Jellyfish Basin,Fish,TRUE,,TRUE,,,,TRUE,6.5,5,,,TRUE,8,,,,,0,Dredge,concertina_barracuda.png
@@ -214,16 +214,16 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 150,Phantom Jellyfish Meat,6,Second Glacial Cave,,Glacial Area,Boss,,,,,,,,1.0,1,TRUE,,,99,,,,,0,,phantom_jellyfish_meat.png
 166,Sailfish Meat,2,Shipwreck Interior,,Blue Hole Medium Depth,Fish,TRUE,TRUE,TRUE,,,,,9.0,5,TRUE,,,9,,,,65,65,,sailfish.png
 169,Sally Lightfoot Crab,2,Shipwreck Interior,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,4.0,5,TRUE,,,7,,,,18,18,,sally_lightfoot_crab.png
-16,Bean,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,170,200,20,20,,bean.png
-40,Buckwheat,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,,185,18,18,Ichiban,buckwheat.png
-45,Carrot,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,106,250,25,25,,carrot.png
-48,Cherry Tomato,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,148,175,17,17,,cherry_tomato.png
+16,Bean,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,170,200,20,20,,bean.png
+40,Buckwheat,6,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,,185,18,18,Ichiban,buckwheat.png
+45,Carrot,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,106,250,25,25,,carrot.png
+48,Cherry Tomato,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,148,175,17,17,,cherry_tomato.png
 62,Cucumber,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,,200,20,20,,cucumber.png
 72,Egg,5,Vegetable Farm,,,Egg,,,,,,,,,,,,,4,Otto,63,75,15,15,,egg.png
-73,Eggplant,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,178,210,21,21,,eggplant.png
-85,Garlic,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,161,190,19,19,,garlic.png
+73,Eggplant,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,178,210,21,21,,eggplant.png
+85,Garlic,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,161,190,19,19,,garlic.png
 93,Grade A Egg,5,Vegetable Farm,,,Egg,,,,,,,,,,,,,4,Otto,382,450,90,90,,grade_a_egg.png
-100,Habanero,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,153,180,16,16,,habanero.png
-141,Onion,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,170,200,20,20,,onion.png
-165,Rice,,Vegetable Farm,,,Rice,,,,,,,,,,,,,3,Otto,,,15,15,,rice.png
-212,Wheat,,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,161,190,19,19,,wheat.png
+100,Habanero,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,153,180,16,16,,habanero.png
+141,Onion,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,170,200,20,20,,onion.png
+165,Rice,3,Vegetable Farm,,,Rice,,,,,,,,,,,,,3,Otto,,,15,15,,rice.png
+212,Wheat,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,161,190,19,19,,wheat.png

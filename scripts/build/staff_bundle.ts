@@ -40,10 +40,14 @@ export function buildStaffBundle(inputRows: StaffInputRow[]): EntityBundle<Staff
 	const byId = Object.fromEntries(rows.map((s) => [s.id, s])) as Record<Id, Staff>;
 
 	const facets: EntityBundle<Staff>['facets'] = {
+		DLC: {},
 		Skill: {}
 	};
 
 	for (const r of rows) {
+		const dlc = (r.dlc ?? 'Base').toString();
+		(facets.DLC[dlc] ??= []).push(r.id);
+
 		const skills = [r.skillLevel3, r.skillLevel7].filter(Boolean) as string[];
 		for (const skill of skills) {
 			(facets['Skill'][skill] ??= []).push(r.id);
