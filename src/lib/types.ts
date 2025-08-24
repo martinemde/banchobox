@@ -91,7 +91,7 @@ export interface BasicDish {
 	id: Id;
 	name: string;
 	image: string;
-	chapter?: number | null;
+	chapter?: number;
 	maxLevel: number;
 	basePrice: number;
 	baseTaste: number;
@@ -99,17 +99,17 @@ export interface BasicDish {
 	finalPrice: number;
 	finalTaste: number;
 	finalServings: number;
-	unlock?: string | null;
-	dlc?: string | null;
-	cooksta?: string | null;
-	artisansFlames?: number | null;
+	unlock?: string;
+	dlc?: string;
+	cooksta?: string;
+	artisansFlames?: number;
 }
 
 export interface BasicIngredient {
 	id: Id;
 	name: string;
 	image: string; // image filename
-	chapter?: number | null;
+	chapter?: number;
 	source: string;
 	type: string;
 	drone: boolean;
@@ -119,16 +119,16 @@ export interface BasicIngredient {
 	bugnet: boolean;
 	gloves: boolean;
 	aberration: boolean;
-	kg?: number | null;
-	maxMeats?: number | null;
+	kg?: number;
+	maxMeats?: number;
 	day: boolean;
 	night: boolean;
 	fog: boolean;
 	rank: number;
 	farm?: string; // farm source like Gumo
-	sell?: number | null;
-	buyJango?: number | null; // Jango purchase price
-	buyOtto?: number | null; // Otto purchase price
+	sell?: number;
+	buyJango?: number; // Jango purchase price
+	buyOtto?: number; // Otto purchase price
 	cost: number; // The replacement cost for the ingredient
 }
 
@@ -233,10 +233,10 @@ export interface Ingredient extends BasicIngredient {
 	}>;
 	usedForParties: Id[];
 	sellPerKg?: number;
-	vendors?: Record<string, number> | null;
+	vendors?: Record<string, number>;
 	// Client-side search & sort helpers (precomputed at build time)
 	search: string; // normalized tokens (name, source, type, day/night/fog, drone)
-	sort: Record<IngredientSortKey, string | number | null>;
+	sort: Record<IngredientSortKey, string | number>;
 }
 
 // Data service interface
@@ -288,6 +288,7 @@ export type PartySort = {
 export interface StaffInputRow {
 	id: Id;
 	name: string;
+	dlc?: string;
 	image: string;
 	hiringFee: number;
 	wageBase: number;
@@ -318,7 +319,7 @@ export interface StaffInputRow {
 	seasoningsBonus: number;
 	branchRankMax: number;
 	branchPopularityMax: number;
-	branchPopularityMaxAtLevel: number | null;
+	branchPopularityMaxAtLevel?: number;
 }
 
 export type StaffSortKey =
@@ -334,6 +335,7 @@ export type StaffSortKey =
 export interface Staff {
 	id: Id;
 	name: string;
+	dlc?: string;
 	image: string;
 	hiringFee: number;
 	wageBase: number;
@@ -364,7 +366,7 @@ export interface Staff {
 	seasoningsBonus: number;
 	branchRankMax: number;
 	branchPopularityMax: number;
-	branchPopularityMaxAtLevel: number | null; // Not all staff can max the branch
+	branchPopularityMaxAtLevel?: number; // Not all staff can max the branch
 	// Client-side search & sort helpers
 	search: string; // normalized tokens (name, skills)
 	sort: Record<StaffSortKey, string | number>;
