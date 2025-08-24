@@ -5,7 +5,7 @@
 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
 	import PartyGroup from '$lib/components/PartyGroup.svelte';
 
-	const { query, sortKey, sortDir, visible, filters, bundle } = partiesStores;
+	const { query, sortKey, sortDir, visible, filters, bundle, baselineFilters } = partiesStores;
 </script>
 
 <svelte:head>
@@ -21,6 +21,7 @@
 		<FiltersPanel
 			{bundle}
 			{filters}
+			{baselineFilters}
 			bind:query={$query}
 			bind:sortKey={$sortKey as string}
 			bind:sortDir={$sortDir}

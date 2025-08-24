@@ -8,7 +8,8 @@ export interface EntityStores<
 	query: Writable<string>;
 	sortKey: Writable<string>;
 	sortDir: Writable<'asc' | 'desc'>;
-	filters: Writable<Record<string, Set<string>>>; // facet -> set of values
+	filters: Writable<Record<string, Set<string>>>; // user-added facet filters (excludes baseline)
+	baselineFilters: Writable<Record<string, Set<string>>>; // baseline constraints (e.g., DLC Base + My Bancho, Chapter)
 	visible: Readable<Row[]>;
 }
 
@@ -28,6 +29,7 @@ export function createEntityStores<
 	const sortKey = writable<string>(initial?.sortKey ?? 'name');
 	const sortDir = writable<'asc' | 'desc'>(initial?.sortDir ?? 'asc');
 	const filters = writable<Record<string, Set<string>>>(initial?.filters ?? {});
+	const baselineFilters = writable<Record<string, Set<string>>>({});
 
 	function compareValues(
 		a: string | number | null,
@@ -44,13 +46,17 @@ export function createEntityStores<
 	}
 
 	const visible = derived(
-		[bundle, query, sortKey, sortDir, filters],
-		([$bundle, $query, $sortKey, $sortDir, $filters]) => {
+		[bundle, query, sortKey, sortDir, filters, baselineFilters],
+		([$bundle, $query, $sortKey, $sortDir, $filters, $baseline]) => {
 			if (!$bundle) return [] as Row[];
 
-			// 1) facet filtering - OR within a facet, AND across facets
+			// 1) facet filtering - baseline first, then user filters
 			let candidateIds: Id[] | null = null;
-			const facetEntries = Object.entries($filters ?? {});
+			const allFilters: Record<string, Set<string>> = {
+				...($baseline ?? {}),
+				...($filters ?? {})
+			};
+			const facetEntries = Object.entries(allFilters);
 			for (const [facetName, values] of facetEntries) {
 				if (!values || values.size === 0) continue;
 				const facetIndex = $bundle.facets[facetName] ?? {};

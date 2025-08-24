@@ -6,6 +6,7 @@
 	let {
 		bundle,
 		filters,
+		baselineFilters,
 		query = $bindable(''),
 		sortKey = $bindable<string>('finalProfitPerServing'),
 		sortDir = $bindable<'asc' | 'desc'>('desc'),
@@ -13,62 +14,65 @@
 	}: {
 		bundle: Readable<EntityBundle<{ id: Id; sort: Record<string, string | number | null> }> | null>;
 		filters: Writable<Record<string, Set<string>>>;
+		baselineFilters: Writable<Record<string, Set<string>>>;
 		query?: string;
 		sortKey?: string;
 		sortDir?: 'asc' | 'desc';
 		searchPlaceholder?: string;
 	} = $props();
-	import { visible as cookstaVisible, selectedTierId, selectedTier } from '$lib/stores/cooksta';
-	import {
-		visible as chaptersVisible,
-		selectedChapterId,
-		selectedChapter
-	} from '$lib/stores/chapters';
+	import { selectedChapter } from '$lib/stores/chapters';
 	import { visible as dlcVisible } from '$lib/stores/dlc';
-	const cookstaTiers = $derived($cookstaVisible ?? []);
-	const chapterRows = $derived($chaptersVisible ?? []);
+	import MyBanchoPanel from '$lib/ui/MyBanchoPanel.svelte';
 	const dlcRows = $derived($dlcVisible ?? []);
-	let editBancho = $state(false);
-	let myBanchoExpanded = $state(true);
 	let enabledDlcIds = new SvelteSet<number>();
-	import { persist } from '$lib/utils/persisted.svelte';
-	persist(
-		'filtersPanel.myBanchoExpanded.v1',
-		() => myBanchoExpanded,
-		(v) => (myBanchoExpanded = v),
-		{ storage: 'local' }
-	);
-	persist(
-		'filtersPanel.enabledDlcIds.v1',
-		() => enabledDlcIds,
-		(v) => (enabledDlcIds = v),
-		{
-			storage: 'local',
-			serialize: (set) => JSON.stringify(Array.from(set.values())),
-			deserialize: (raw) => new SvelteSet<number>(JSON.parse(raw) as number[])
-		}
-	);
-	function toggleDlc(id: number, checked: boolean) {
-		const next = new SvelteSet(enabledDlcIds);
-		if (checked) next.add(id);
-		else next.delete(id);
-		enabledDlcIds = next;
-	}
 
+	// DLC handling aligned with My Bancho:
+	// - Default view shows Base + selected DLCs (if the bundle exposes a DLC facet)
+	// - If user/URL adds DLC filters, keep them if they are within allowed; otherwise clamp
+	// - Render DLC facet options only for allowed DLCs
 	const hasDlcFacet = $derived(Boolean(($bundle?.facets ?? {})['DLC']));
-	const hasChapterFacet = $derived(Boolean(($bundle?.facets ?? {})['Chapter']));
 	$effect(() => {
 		if (!hasDlcFacet) return;
+		const availableIndex = (($bundle?.facets ?? {})['DLC'] ?? {}) as Record<string, Id[]>;
+		const available = new SvelteSet<string>(Object.keys(availableIndex));
 		const allowed = new SvelteSet<string>(['Base']);
 		for (const d of dlcRows) if (enabledDlcIds.has(d.id)) allowed.add(d.name);
-		filters.update((current) => ({ ...(current ?? {}), DLC: allowed }));
+		const allowedAvailable = new SvelteSet<string>();
+		for (const v of allowed) if (available.has(v)) allowedAvailable.add(v);
+
+		// Write DLC baseline; do not include in user filters
+		baselineFilters.update((current) => ({ ...(current ?? {}), DLC: allowedAvailable }));
+
+		filters.update((current) => {
+			const next = { ...(current ?? {}) } as Record<string, Set<string>>;
+			const currentNames = next['DLC'];
+			if (!currentNames || currentNames.size === 0) {
+				// No explicit user DLC selections: rely on baseline only
+				delete next['DLC'];
+				return next;
+			}
+			let needsClamp = false;
+			for (const v of currentNames)
+				if (!allowedAvailable.has(v)) {
+					needsClamp = true;
+					break;
+				}
+			if (needsClamp) {
+				const clamped = new SvelteSet<string>();
+				for (const v of currentNames) if (allowedAvailable.has(v)) clamped.add(v);
+				if (clamped.size > 0) next['DLC'] = clamped;
+				else delete next['DLC'];
+			}
+			return next;
+		});
 	});
 
 	// Automatically apply Chapter filter based on My Bancho selection; never render Chapter facet
+	const hasChapterFacet = $derived(Boolean(($bundle?.facets ?? {})['Chapter']));
 	$effect(() => {
 		if (!hasChapterFacet) return;
 		const number = $selectedChapter?.number;
-		filters.update((current) => {
+		baselineFilters.update((current) => {
 			const next = { ...(current ?? {}) } as Record<string, Set<string>>;
 			if (number !== null && number !== undefined)
 				next['Chapter'] = new SvelteSet<string>([number.toString()]);
@@ -85,11 +89,12 @@
 		return true;
 	}
 
-	// Keep local DLC selection in sync if filters already have DLC constraint (e.g. from URL)
+	// One-way URL -> My Bancho sync on first load only; do not clobber persisted choices
 	$effect(() => {
 		if (!hasDlcFacet) return;
+		if ((enabledDlcIds?.size ?? 0) > 0) return;
 		const names = $filters?.['DLC'];
-		if (!names) return;
+		if (!names || names.size === 0) return;
 		const next = new SvelteSet<number>();
 		for (const d of dlcRows) if (names.has(d.name)) next.add(d.id);
 		if (!setsEqual(enabledDlcIds, next)) enabledDlcIds = next;
@@ -119,12 +124,24 @@
 	// Precompute sorted keys per facet to avoid sorting in template
 	const sortedFacetKeys: Record<string, string[]> = $derived(
 		Object.fromEntries(
-			facetEntries.map(([facetName, facetIndex]) => [
-				facetName,
-				Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b))
-			])
+			facetEntries
+				.filter(([facetName]) => facetName !== 'DLC')
+				.map(([facetName, facetIndex]) => [
+					facetName,
+					Object.keys(facetIndex as Record<string, Id[]>).sort((a, b) => a.localeCompare(b))
+				])
 		)
 	);
+	const sortedDlcKeysForDisplay: string[] = $derived(
+		Object.keys((($bundle?.facets ?? {})['DLC'] ?? {}) as Record<string, Id[]>)
+			.filter((key) => {
+				const allowed = new SvelteSet<string>(['Base']);
+				for (const d of dlcRows) if (enabledDlcIds.has(d.id)) allowed.add(d.name);
+				return allowed.has(key);
+			})
+			.sort((a, b) => a.localeCompare(b))
+	);
+	const showDlcFacet = $derived(sortedDlcKeysForDisplay.some((k) => k !== 'Base'));
 
 	function facetPanelId(name: string): string {
 		return 'facet-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
@@ -132,78 +149,7 @@
 </script>
 
 <div class="space-y-4">
-	<div class="rounded-lg border border-white/10 bg-primary-500/10 p-3">
-		<div class="mb-2 flex items-center justify-between text-sm font-semibold">
-			<button
-				class="flex items-center gap-2 opacity-90 hover:opacity-100"
-				onclick={() => (myBanchoExpanded = !myBanchoExpanded)}
-				aria-expanded={myBanchoExpanded}
-				aria-controls="my-bancho-panel"
-			>
-				<span class="caret" data-expanded={myBanchoExpanded}></span>
-				<span>
-					{myBanchoExpanded
-						? 'My Bancho'
-						: `${$selectedTier?.name ?? ''} - ${$selectedChapter?.name ?? ''}`}
-				</span>
-			</button>
-			{#if myBanchoExpanded}
-				<button
-					class="text-xs font-normal opacity-80 hover:opacity-100"
-					onclick={() => (editBancho = !editBancho)}
-				>
-					{editBancho ? 'Done' : 'Edit'}
-				</button>
-			{/if}
-		</div>
-
-		{#if myBanchoExpanded}
-			<div id="my-bancho-panel">
-				{#if editBancho}
-					<label class="label" aria-label="Cooksta">
-						<select class="ig-select" bind:value={$selectedTierId}>
-							{#each cookstaTiers as t (t.id)}
-								<option value={t.id}>Cooksta {t.name}</option>
-							{/each}
-						</select>
-					</label>
-					<label class="label" aria-label="Chapter">
-						<select class="ig-select" bind:value={$selectedChapterId}>
-							{#each chapterRows as c (c.id)}
-								<option value={c.id}>{c.name}</option>
-							{/each}
-						</select>
-					</label>
-					<fieldset class="mt-2 space-y-1 pl-3 text-sm">
-						{#each dlcRows as d (d.id)}
-							<label class="flex items-center gap-2">
-								<input
-									type="checkbox"
-									checked={enabledDlcIds.has(d.id)}
-									onchange={(e) => toggleDlc(d.id, (e.currentTarget as HTMLInputElement).checked)}
-								/>
-								{d.name}
-							</label>
-						{/each}
-					</fieldset>
-				{:else}
-					<div class="items-start text-sm">
-						<div class="p-1">Cooksta {$selectedTier?.name ?? ''}</div>
-						<div class="p-1">{$selectedChapter?.name ?? ''}</div>
-						{#if Array.from(enabledDlcIds).length === 0}
-							<span>&mdash;</span>
-						{:else}
-							<ul class="list-inside list-disc space-y-1 p-1">
-								{#each dlcRows.filter((d) => enabledDlcIds.has(d.id)) as d (d.id)}
-									<li>{d.name} DLC</li>
-								{/each}
-							</ul>
-						{/if}
-					</div>
-				{/if}
-			</div>
-		{/if}
-	</div>
+	<MyBanchoPanel bind:enabledDlcIds />
 	<div class="space-y-2">
 		<label class="text-sm font-semibold" for="filters-search">Search</label>
 		<div class="relative">
@@ -221,24 +167,42 @@
 	</div>
 
 	{#each facetEntries as [facetName] (facetName)}
-		<fieldset class="space-y-1">
-			<legend class="text-sm font-semibold">
-				<span>{facetName}</span>
-			</legend>
-			<div id={facetPanelId(facetName)} class="space-y-1">
-				{#each sortedFacetKeys[facetName] ?? [] as key (key)}
-					<label class="flex items-center gap-2 text-sm">
-						<input
-							type="checkbox"
-							checked={isChecked(facetName, key)}
-							onchange={(e) =>
-								toggleFacet(facetName, key, (e.currentTarget as HTMLInputElement).checked)}
-						/>
-						{key}
-					</label>
-				{/each}
-			</div>
-		</fieldset>
+		{#if facetName === 'DLC' && !showDlcFacet}
+			<!-- hide DLC facet when only Base is available -->
+		{:else}
+			<fieldset class="space-y-1">
+				<legend class="text-sm font-semibold">
+					<span>{facetName}</span>
+				</legend>
+				<div id={facetPanelId(facetName)} class="space-y-1">
+					{#if facetName === 'DLC'}
+						{#each sortedDlcKeysForDisplay as key (key)}
+							<label class="flex items-center gap-2 text-sm">
+								<input
+									type="checkbox"
+									checked={isChecked(facetName, key)}
+									onchange={(e) =>
+										toggleFacet(facetName, key, (e.currentTarget as HTMLInputElement).checked)}
+								/>
+								{key}
+							</label>
+						{/each}
+					{:else}
+						{#each sortedFacetKeys[facetName] ?? [] as key (key)}
+							<label class="flex items-center gap-2 text-sm">
+								<input
+									type="checkbox"
+									checked={isChecked(facetName, key)}
+									onchange={(e) =>
+										toggleFacet(facetName, key, (e.currentTarget as HTMLInputElement).checked)}
+								/>
+								{key}
+							</label>
+						{/each}
+					{/if}
+				</div>
+			</fieldset>
+		{/if}
 	{/each}
 </div>
 
@@ -289,18 +253,5 @@
 	.clear-btn:hover {
 		opacity: 1;
 		color: rgb(var(--color-on-surface-token));
-	}
-
-	/* caret for collapsible header */
-	.caret {
-		width: 0;
-		height: 0;
-		border-top: 5px solid transparent;
-		border-bottom: 5px solid transparent;
-		border-left: 6px solid currentColor;
-		transition: transform 150ms ease;
-	}
-	.caret[data-expanded='true'] {
-		transform: rotate(90deg);
 	}
 </style>

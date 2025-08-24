@@ -45,8 +45,8 @@ export const dishesByPartyStore = derived(bundle, ($bundle) => {
 		const byId: Record<Id, PartyDish> = Object.create(null) as Record<Id, PartyDish>;
 		for (const r of rows) {
 			byId[r.id] = r;
-			const dlc = (r.dlc ?? 'base').toString();
-			(facets.dlc[dlc] ??= []).push(r.id);
+			const dlc = (r.dlc ?? 'Base').toString();
+			(facets.DLC[dlc] ??= []).push(r.id);
 			const unlock = (r.unlock ?? '').toString();
 			if (unlock) (facets.unlock[unlock] ??= []).push(r.id);
 		}

@@ -6,7 +6,7 @@
 	import { staffStores } from '$lib/stores/staff';
 	import { syncToUrl } from '$lib/stores/urlSync';
 
-	const { query, sortKey, sortDir, visible, filters, bundle } = staffStores;
+	const { query, sortKey, sortDir, visible, filters, bundle, baselineFilters } = staffStores;
 	syncToUrl('staff', staffStores);
 
 	const sortOptions = [
@@ -34,6 +34,7 @@
 		<FiltersPanel
 			{bundle}
 			{filters}
+			{baselineFilters}
 			bind:query={$query}
 			bind:sortKey={$sortKey as string}
 			bind:sortDir={$sortDir}

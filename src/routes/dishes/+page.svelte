@@ -8,7 +8,7 @@
 	import TrackingSidebar from '$lib/ui/TrackingSidebar.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 
-	const { query, sortKey, sortDir, visible, filters } = dishesStores;
+	const { query, sortKey, sortDir, visible, filters, baselineFilters } = dishesStores;
 	syncToUrl('dishes', dishesStores);
 
 	const tracked = $derived(
@@ -31,6 +31,7 @@
 		<FiltersPanel
 			bundle={dishesStores.bundle}
 			{filters}
+			{baselineFilters}
 			bind:query={$query}
 			bind:sortKey={$sortKey as string}
 			bind:sortDir={$sortDir}
