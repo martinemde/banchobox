@@ -1,20 +1,14 @@
 # Bancho Box
 
-A comprehensive database application for **Dave the Diver**, built with modern web technologies to help players navigate the game's complex culinary system.
+A companion app for **Dave the Diver**, built to help players have fun managing the restaurant.
 
-**🌐 Visit the live application:** [banchobox.com](https://banchobox.com)
+**🌐 Visit the application:** [banchobox.com](https://banchobox.com)
 
 ## Features
 
-- **Complete dish database** with unlock conditions, pricing, and party bonuses (305 dishes)
-- **Comprehensive ingredient catalog** with sources and gathering information (228 ingredients)
-- **Party event listings** with associated dishes and bonus multipliers (8 parties)
-- **Dark/light theme support** for comfortable viewing
-- **Responsive design** for desktop and mobile devices
-
-## Technology Stack
-
-This application is built with [SvelteKit](https://svelte.dev/docs/kit) and styled with [Skeleton UI](https://skeleton.dev) for a modern, accessible user experience.
+- **Complete dish database** with unlock conditions, pricing, and party bonuses
+- **Comprehensive ingredient catalog** with sources and gathering information
+- **Party event listings** with associated dishes and bonus multipliers
 
 ## Development
 
@@ -56,13 +50,6 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-## Project Structure
-
-- `data/` - CSV files containing dishes, ingredients, parties, and relationships
-- `scripts/build-database.ts` - Data processing script that converts CSV to JSON
-- `src/lib/data/` - Generated JSON data files (created by `build:data`)
-- `src/routes/` - SvelteKit application pages and components
 
 ## Disclaimer
 
