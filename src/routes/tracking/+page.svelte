@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Dish } from '$lib/types.js';
-	import DishCard from '$lib/components/DishCard.svelte';
+	import DishCard from '../dishes/DishCard.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import type { PageProps } from './$types';
 

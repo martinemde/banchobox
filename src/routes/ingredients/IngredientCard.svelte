@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { Ingredient } from '../types.js';
+	import type { Ingredient } from '../../lib/types.js';
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
-	import TrackButton from './TrackButton.svelte';
+	import TrackButton from '../../lib/components/TrackButton.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
-	import PixelIcon from '../ui/PixelIcon.svelte';
+	import PixelIcon from '../../lib/ui/PixelIcon.svelte';
 	import { ChevronsUp, CloudFog, MapPin, Moon, Sun, Soup, Weight } from '@lucide/svelte';
 	import coinImage from '$lib/images/ui/coin.png';
 

@@ -4,18 +4,15 @@ alwaysApply: true
 
 This is a SvelteKit app using Svelte 5, TypeScript, Skeleton UI, Lucide icons.
 
-[SvelteKit Documentation](https://svelte.dev/llms-medium.txt)
-
-* Adhere to Svelte 5 best practices, using the newest features wherever possible.
-
-A little about the app:
-
-* Renders as a static site on CloudFlare
-* Ensure good performance on client side
-* Ensure good first page and navigation performance
-* Strive for clean uncomplicated views utilizing runes for state
-* Use components to control the size and complexity of views
-
-This site loads data from CSV and transforms it to static enriched JSON.
-
-Parties <- Party Dish -> Dishes <- DishIngredients -> Ingredients
+- Adhere to Svelte 5 best practices, using modern approaches whenever possible.
+- See [Svelte and SvelteKit Documentation](https://svelte.dev/llms-medium.txt)
+- Utilize Svelte 5 runes `$state` and good best practices
+- Ensure good client side performance
+- Ensure good first page and navigation performance
+- Strive for clean uncomplicated views
+- Use and create focused single responsibility components to control the size and complexity of components
+- The app renders as a static site on CloudFlare
+- The app loads data from CSV and transforms it to static JSON for loading into pages
+- Pages should take full advantage of existing Skeleton components and themes
+- See [Skeleton Documentation](https://skeleton.dev/llms-svelte.txt)
+- Skeleton's core features only require the use of [Tailwind CSS](https://tailwindcss.com/) providing full access to all design system features

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Dish from '$lib/components/DishCard.svelte';
+	import Dish from './DishCard.svelte';
 	import { dishesStores } from '$lib/stores/dishes';
 	import { syncToUrl } from '$lib/stores/urlSync';
 	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';

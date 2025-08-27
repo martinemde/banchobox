@@ -3,7 +3,7 @@
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
 	import { partiesStores } from '$lib/stores/parties';
 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
-	import PartyGroup from '$lib/components/PartyGroup.svelte';
+	import PartyGroup from './PartyGroup.svelte';
 
 	const { query, sortKey, sortDir, visible, filters, bundle, baselineFilters } = partiesStores;
 </script>

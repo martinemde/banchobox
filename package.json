@@ -59,6 +59,7 @@
 		"zod": "^4.0.16"
 	},
 	"dependencies": {
+		"@lucide/lab": "^0.1.2",
 		"bits-ui": "^2.9.3"
 	},
 	"lint-staged": {

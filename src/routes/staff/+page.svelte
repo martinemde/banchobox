@@ -1,5 +1,5 @@
 <script lang="ts">
-	import StaffCard from '$lib/components/StaffCard.svelte';
+	import StaffCard from './StaffCard.svelte';
 	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
 	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';

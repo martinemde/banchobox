@@ -1,5 +1,5 @@
 <script lang="ts">
-	import IngredientCard from '$lib/components/IngredientCard.svelte';
+	import IngredientCard from './IngredientCard.svelte';
 	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
 	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';

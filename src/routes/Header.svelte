@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
-	import { PartyPopper, Soup, ClipboardList, Shrimp, LayoutDashboard, Users } from '@lucide/svelte';
+	import { Icon, PartyPopper, Soup, ClipboardList, Shrimp, Users } from '@lucide/svelte';
+	import { sushi } from '@lucide/lab';
 	import { onMount } from 'svelte';
 
 	let isHidden = false;
@@ -57,8 +58,8 @@
 	<div class="appbar-inner" class:hidden={isHidden} bind:this={appBarEl}>
 		<AppBar>
 			{#snippet lead()}
-				<h3 class="flex items-center gap-2 text-2xl font-bold text-primary-500">
-					<LayoutDashboard size={22} />
+				<h3 class="flex items-center gap-1 text-2xl font-bold text-primary-500">
+					<Icon iconNode={sushi} size={22} />
 					<a href="/" class="no-underline">BanchoBox</a>
 				</h3>
 			{/snippet}
