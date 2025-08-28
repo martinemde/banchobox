@@ -4,7 +4,6 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "banchobox",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2025-08-26",
 	"compatibility_flags": [
@@ -17,17 +16,20 @@
 	"observability": {
 		"enabled": true
 	},
-  "route": {
-    "pattern": "banchobox.com",
-    "custom_domain": true
-  },
   "env": {
-    "staging": {
-      "name": "banchobox-staging",
+    "dev": {
+      "name": "banchobox-dev",
       "route": {
-        "pattern": "staging.banchobox.com",
+				"pattern": "dev.banchobox.com",
 				"custom_domain": true
       },
+		},
+		"prod": {
+			"name": "banchobox",
+			"route": {
+				"pattern": "banchobox.com",
+				"custom_domain": true
+			},
     }
   }
 
