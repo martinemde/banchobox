@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
-	import { Icon, PartyPopper, Soup, ClipboardList, Shrimp, Users } from '@lucide/svelte';
-	import { sushi } from '@lucide/lab';
+	import { PartyPopper, Soup, ClipboardList, Shrimp, Users } from '@lucide/svelte';
+	import BanchoIcon from '$lib/images/bancho.svg';
 	import { onMount } from 'svelte';
 
 	let isHidden = false;
@@ -59,7 +59,7 @@
 		<AppBar>
 			{#snippet lead()}
 				<h3 class="flex items-center gap-1 text-2xl font-bold text-primary-500">
-					<Icon iconNode={sushi} size={22} />
+					<img src={BanchoIcon} alt="BanchoBox" class="h-6 w-6" />
 					<a href="/" class="no-underline">BanchoBox</a>
 				</h3>
 			{/snippet}

@@ -149,7 +149,7 @@
 					Get dish and ingredient recommendations, track your progress, and find which dishes turn the
 					best profit for your restaurant.
 				</p>
-				<a href="/tracking" class="btn preset-filled btn-lg">Start Tracking Your Sushi Bar</a>
+				<a href="/dishes" class="btn preset-filled btn-lg">Start Tracking Your Sushi Bar</a>
 			</div>
 			<div>
 				<div
