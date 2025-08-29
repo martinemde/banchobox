@@ -12,7 +12,7 @@ export const bundle = cookstaStores.bundle as Writable<EntityBundle<CookstaTier>
 export const visible = cookstaStores.visible as Readable<CookstaTier[]>;
 
 // Persisted selection of current Cooksta tier id
-const STORAGE_KEY = 'cookstaTierId.v2';
+const STORAGE_KEY = 'cookstaTierId.v1';
 
 function readSelected(): Id | null {
 	if (!browser) return null;
@@ -43,22 +43,14 @@ export const selectedTier = derived([bundle, selectedTierId], ([$bundle, $id]) =
 	if (!$bundle) return null as CookstaTier | null;
 	let tier = null;
 	if ($id != null) tier = $bundle.byId[$id] ?? null;
-	if (tier == null) {
-		const rows = $bundle.rows ?? [];
-		tier =
-			rows.find((t) => t.rank === 1) ??
-			rows.find((t) => t.name?.toLowerCase() === 'bronze') ??
-			rows[0] ??
-			null;
-	}
+	if (tier == null) tier = $bundle.rows[0];
 	return tier;
 });
 
-// Initialize default selection to Silver (then Gold, then first) if none persisted
+// Initialize default selection to first tier if none persisted
 bundle.subscribe(($bundle) => {
 	if (!$bundle) return;
 	if (get(selectedTierId) != null) return;
-	const rows = $bundle.rows ?? [];
-	const bronze = rows.find((t) => t.rank === 1) ?? rows[0] ?? null;
-	if (bronze) selectedTierId.set(bronze.id);
+	const tier = $bundle.rows[0];
+	if (tier) selectedTierId.set(tier.id);
 });
