@@ -108,6 +108,7 @@ export function createEntityStores<
 		sortKey,
 		sortDir,
 		filters,
+		baselineFilters,
 		visible
 	};
 }
