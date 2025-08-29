@@ -14,10 +14,8 @@
 	);
 </script>
 
-<div class="flex flex-wrap items-center gap-2 pr-10 text-xs opacity-80">
+<div class="flex flex-wrap items-center gap-4 pr-10 text-xs opacity-80">
 	{#each items as row (row.key)}
-		<span class="inline-flex items-center gap-1">
-			<IngredientTypeCount type={row.type} count={row.count} size={16} />
-		</span>
+		<IngredientTypeCount type={row.type} count={row.count} size={16} />
 	{/each}
 </div>

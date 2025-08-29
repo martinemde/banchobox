@@ -19,7 +19,7 @@
 	const name = type.toLowerCase();
 </script>
 
-{#if name === 'crab trap'}
+{#if name === 'crab'}
 	<Icon iconNode={crab} {...iconProps} />
 {:else if name === 'boss'}
 	<Skull {...iconProps} />
@@ -29,7 +29,7 @@
 	<Fish {...iconProps} />
 {:else if name === 'jango'}
 	<Snowflake {...iconProps} />
-{:else if name === 'net'}
+{:else if name === 'shrimp'}
 	<Shrimp {...iconProps} />
 {:else if name === 'procure'}
 	<CookingPot {...iconProps} />

@@ -682,7 +682,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -1381,7 +1381,7 @@
           "count": 1,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 11,
           "upgradeCount": 221
@@ -1969,7 +1969,7 @@
           "count": 3,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -1979,7 +1979,7 @@
           "count": 3,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 33,
           "upgradeCount": 446
@@ -3452,7 +3452,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -4202,7 +4202,7 @@
           "count": 5,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 85,
           "upgradeCount": 670
@@ -4212,7 +4212,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -4658,7 +4658,7 @@
           "count": 1,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
@@ -4780,7 +4780,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -5357,7 +5357,7 @@
           "count": 3,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 34,
           "lineCost": 102,
           "upgradeCount": 446
@@ -5450,7 +5450,7 @@
           "count": 3,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 34,
           "lineCost": 102,
           "upgradeCount": 446
@@ -5807,7 +5807,7 @@
           "count": 2,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
@@ -5817,7 +5817,7 @@
           "count": 2,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 22,
           "upgradeCount": 333
@@ -6628,7 +6628,7 @@
           "count": 1,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
@@ -8031,7 +8031,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -8730,7 +8730,7 @@
           "count": 1,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 11,
           "upgradeCount": 221
@@ -9318,7 +9318,7 @@
           "count": 3,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -9328,7 +9328,7 @@
           "count": 3,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 33,
           "upgradeCount": 446
@@ -10801,7 +10801,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -11551,7 +11551,7 @@
           "count": 5,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 85,
           "upgradeCount": 670
@@ -11561,7 +11561,7 @@
           "count": 5,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 55,
           "upgradeCount": 670
@@ -12007,7 +12007,7 @@
           "count": 1,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
@@ -12129,7 +12129,7 @@
           "count": 3,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 51,
           "upgradeCount": 446
@@ -12706,7 +12706,7 @@
           "count": 3,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 34,
           "lineCost": 102,
           "upgradeCount": 446
@@ -12799,7 +12799,7 @@
           "count": 3,
           "name": "Waptia Fieldensis",
           "image": "waptia_fieldensis.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 34,
           "lineCost": 102,
           "upgradeCount": 446
@@ -13156,7 +13156,7 @@
           "count": 2,
           "name": "Black Tiger Shrimp",
           "image": "black_tiger_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 34,
           "upgradeCount": 333
@@ -13166,7 +13166,7 @@
           "count": 2,
           "name": "Whiteleg Shrimp",
           "image": "whiteleg_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 11,
           "lineCost": 22,
           "upgradeCount": 333
@@ -13977,7 +13977,7 @@
           "count": 1,
           "name": "White Shrimp",
           "image": "white_shrimp.png",
-          "type": "Fish",
+          "type": "Shrimp",
           "unitCost": 17,
           "lineCost": 17,
           "upgradeCount": 221
