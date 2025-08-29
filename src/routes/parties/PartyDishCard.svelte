@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { Dish, PartyDish as PartyDishEntity, Party } from '../../lib/types.js';
+	import type { Dish, PartyDish as PartyDishEntity, Party } from '$lib/types.js';
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
-	import TrackButton from '../../lib/components/TrackButton.svelte';
-	import ProfitTable from '../../lib/components/ProfitTable.svelte';
+	import TrackButton from '$lib/components/TrackButton.svelte';
+	import ProfitTable from '$lib/components/ProfitTable.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
-	import RecipeSummaryIcons from '../../lib/components/RecipeSummaryIcons.svelte';
-	import PixelIcon from '../../lib/ui/PixelIcon.svelte';
+	import RecipeSummaryIcons from '$lib/components/RecipeSummaryIcons.svelte';
+	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 
 	let { dish, partyDish, party } = $props<{
 		dish: Dish;
@@ -17,11 +17,11 @@
 	const thumbPx = 96; // 96px (~size-24)
 
 	// Lazy-load recipe panel when user first expands the accordion
-	type RecipePanelComponent = typeof import('../../lib/components/RecipePanel.svelte').default;
+	type RecipePanelComponent = typeof import('$lib/components/RecipePanel.svelte').default;
 	let LazyRecipePanel: RecipePanelComponent | null = $state(null);
 	function ensureRecipePanelLoaded() {
 		if (!LazyRecipePanel) {
-			import('../../lib/components/RecipePanel.svelte').then((m) => (LazyRecipePanel = m.default));
+			import('$lib/components/RecipePanel.svelte').then((m) => (LazyRecipePanel = m.default));
 		}
 	}
 

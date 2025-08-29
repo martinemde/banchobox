@@ -8,7 +8,7 @@ id,name,dlc,hiring_fee,wage_base,raise,wage_max,skill_level3,cooking_bonus_level
 7,Billy,,562,40,26,534,Cleaning Master,0,0,0,Tip Master,0,0,28,134,30,6,20,31,23,15,408,723,467,291,1976.3,4,7,0,8,4,,Staff_07_Billy_Thumbnail.png
 8,Tohoku,,1307,40,26,534,Cooking++,100,0,0,Cooking+,50,0,107,80,60,48,28,1,5,40,789,99,155,808,2093.4,2,4,0,9,4,,Staff_08_Tohoku_Thumbnail.png
 9,Yone,,1464,60,39,801,Cooking++,100,0,0,Ingredient Prep Expert,0,0,155,40,100,12,34,6,15,6,901,154,385,126,1603.8,3,5,0,9,3,,Staff_09_Yone_Thumbnail.png
-10,El Nino,,2327,60,39,801,Drinking Serving Master,0,0,0,Cleaning Master,0,0,12,188,83,81,6,42,18,3,126,986,425,138,1716.4,2,6,0,5,3,,Staff_10_Elnino_Thumbnail.png
+10,El Nino,,2327,60,39,801,Drink Serving Master,0,0,0,Cleaning Master,0,0,12,188,83,81,6,42,18,3,126,986,425,138,1716.4,2,6,0,5,3,,Staff_10_Elnino_Thumbnail.png
 11,Jandi,,302,20,13,267,Tip Master,0,0,0,Wasabi Refill,0,0,10,47,35,50,28,28,25,24,542,579,510,506,2288.8,3,7,0,9,4,,Staff_11_Jandi_Thumbnail.png
 12,Pai,,467,20,13,267,Serving+,0,50,0,Cooking+,50,0,50,55,40,38,26,19,46,20,594,466,914,418,2517.4,8,11,0,9,5,18,Staff_12_Pai_Thumbnail.png
 13,Charlie,,123,20,13,267,Cooking+,50,0,0,Ingredient Prep Expert,0,0,3,20,38,15,45,12,15,6,908,248,323,129,1646.7,3,5,0,9,3,,Staff_13_Charlie_Thumbnail.png
@@ -22,4 +22,4 @@ id,name,dlc,hiring_fee,wage_base,raise,wage_max,skill_level3,cooking_bonus_level
 21,Masayoshi,,551,38,24.7,507,Ingredient Prep Expert,0,0,0,Dispatch Master,0,0,45,25,35,93,39,12,41,15,786,253,814,378,2344.4,9,10,2,9,5,20,Staff_21_Masayoshi_Thumbnail.png
 22,Etsuko,Ichiban,1187,33,21.45,432,Cleaning,0,0,0,Cocktail Serving,0,0,5,128,5,144,5,40,5,45,100,888,100,999,2386.7,2,3,0,5,5,,Staff_22_Etsuko_Thumbnail.png
 23,Chitose,Ichiban,2917,41,26.65,535,Cooking+,50,0,0,Cooking++,100,0,99,99,99,99,33,33,33,33,876,726,726,726,3271.8,8,8,0,9,5,,Staff_23_Chitose_Thumbnail.png
-24,Hamako,Ichiban,215,50,32.5,658,Drinking Serving Master,0,0,0,Cocktail Serving,0,0,23,4,8,77,32,44,40,33,631,840,768,704,3154.2,6,11,0,9,5,,Staff_24_Hamako_Thumbnail.png
+24,Hamako,Ichiban,215,50,32.5,658,Drink Serving Master,0,0,0,Cocktail Serving,0,0,23,4,8,77,32,44,40,33,631,840,768,704,3154.2,6,11,0,9,5,,Staff_24_Hamako_Thumbnail.png

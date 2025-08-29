@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Dish } from '$lib/types.js';
-	import IngredientTypeCount from '../../routes/dishes/IngredientTypeCount.svelte';
+	import IngredientTypeCount from './IngredientTypeCount.svelte';
 
 	let { dish } = $props<{ dish: Dish }>();
 

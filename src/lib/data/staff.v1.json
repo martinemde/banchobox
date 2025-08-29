@@ -338,7 +338,7 @@
       "wageBase": 60,
       "raise": 39,
       "wageMax": 801,
-      "skillLevel3": "Drinking Serving Master",
+      "skillLevel3": "Drink Serving Master",
       "cookingBonusLevel3": 0,
       "servingBonusLevel3": 0,
       "appealBonusLevel3": 0,
@@ -364,7 +364,7 @@
       "branchRankMax": 5,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
-      "search": "el nino drinking serving master cleaning master",
+      "search": "el nino drink serving master cleaning master",
       "sort": {
         "name": "el nino",
         "hiringFee": 2327,
@@ -432,7 +432,7 @@
       "wageBase": 50,
       "raise": 32.5,
       "wageMax": 658,
-      "skillLevel3": "Drinking Serving Master",
+      "skillLevel3": "Drink Serving Master",
       "cookingBonusLevel3": 0,
       "servingBonusLevel3": 0,
       "appealBonusLevel3": 0,
@@ -458,7 +458,7 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
-      "search": "hamako drinking serving master cocktail serving",
+      "search": "hamako drink serving master cocktail serving",
       "sort": {
         "name": "hamako",
         "hiringFee": 215,
@@ -1562,7 +1562,7 @@
       "wageBase": 60,
       "raise": 39,
       "wageMax": 801,
-      "skillLevel3": "Drinking Serving Master",
+      "skillLevel3": "Drink Serving Master",
       "cookingBonusLevel3": 0,
       "servingBonusLevel3": 0,
       "appealBonusLevel3": 0,
@@ -1588,7 +1588,7 @@
       "branchRankMax": 5,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
-      "search": "el nino drinking serving master cleaning master",
+      "search": "el nino drink serving master cleaning master",
       "sort": {
         "name": "el nino",
         "hiringFee": 2327,
@@ -2220,7 +2220,7 @@
       "wageBase": 50,
       "raise": 32.5,
       "wageMax": 658,
-      "skillLevel3": "Drinking Serving Master",
+      "skillLevel3": "Drink Serving Master",
       "cookingBonusLevel3": 0,
       "servingBonusLevel3": 0,
       "appealBonusLevel3": 0,
@@ -2246,7 +2246,7 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
-      "search": "hamako drinking serving master cocktail serving",
+      "search": "hamako drink serving master cocktail serving",
       "sort": {
         "name": "hamako",
         "hiringFee": 215,
@@ -2348,7 +2348,7 @@
         22,
         2
       ],
-      "Drinking Serving Master": [
+      "Drink Serving Master": [
         10,
         24
       ],

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { Ingredient } from '../../lib/types.js';
+	import type { Ingredient } from '$lib/types.js';
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
-	import TrackButton from '../../lib/components/TrackButton.svelte';
+	import TrackButton from '$lib/components/TrackButton.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
-	import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
-	import PixelIcon from '../../lib/ui/PixelIcon.svelte';
+	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 	import { ChevronsUp, CloudFog, MapPin, Moon, Sun, Soup, Weight } from '@lucide/svelte';
 	import coinImage from '$lib/images/ui/coin.png';
+	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
 
 	let { ingredient }: { ingredient: Ingredient } = $props();
 
@@ -128,28 +128,13 @@
 					</button>
 				{/if}
 				{#if ingredient.type}
-					{@const TypeIcon = getIngredientTypeIcon(ingredient.type)}
-					{#if TypeIcon}
-						<button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
-							<TypeIcon size={24} class="opacity-80" />
-							<span
-								class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-black/80 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
-								>{ingredient.type}</span
-							>
-						</button>
-					{:else}
-						<button
-							type="button"
-							class="group relative inline-flex text-xs whitespace-nowrap opacity-80"
-							aria-label={ingredient.type}
+					<button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
+						<IngredientIcon type={ingredient.type} size={24} class="opacity-80" />
+						<span
+							class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-black/80 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
+							>{ingredient.type}</span
 						>
-							{ingredient.type}
-							<span
-								class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-black/80 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
-								>{ingredient.type}</span
-							>
-						</button>
-					{/if}
+					</button>
 				{/if}
 			</div>
 		</div>

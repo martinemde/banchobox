@@ -1,14 +1,13 @@
 <script lang="ts">
 	import type { Dish } from '$lib/types.js';
-	import { getIngredientTypeIcon } from '$lib/icons/ingredientType.js';
 	import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
-	import PixelIcon from '../ui/PixelIcon.svelte';
+	import PixelIcon from '$lib/ui/PixelIcon.svelte';
+	import IngredientTypeCount from '$lib/components/IngredientTypeCount.svelte';
 
 	let { dish } = $props<{ dish: Dish }>();
 
 	let ingredientRows = $derived(
 		dish.ingredients.map((ing: Dish['ingredients'][number]) => {
-			const icon = getIngredientTypeIcon(ing.type);
 			const ingredient = $ingredientsBundle?.byId[ing.ingredientId] ?? null;
 			if (!ingredient) return null;
 			return {
@@ -19,7 +18,7 @@
 				fog: ingredient.fog,
 				count: ing.count,
 				image: ingredient.image,
-				icon
+				type: ing.type
 			};
 		})
 	);
@@ -37,14 +36,7 @@
 					</td>
 					<td class="p-2">{row.name}</td>
 					<td class="gap-x-2 p-2 text-left tabular-nums">
-						{#if row.icon}
-							{@const Icon = row.icon}
-							<span class="inline-flex items-center gap-x-1">
-								<strong>{row.count}</strong><Icon size={16} class="opacity-70" />
-							</span>
-						{:else}
-							<strong>{row.count}</strong>
-						{/if}
+						<IngredientTypeCount type={row.type} count={row.count} size={16} />
 					</td>
 					<td class="p-2 pr-4 text-right tabular-nums">{row.source}</td>
 				</tr>

@@ -22,7 +22,7 @@
           "count": 1,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 43,
           "lineCost": 43,
           "upgradeCount": 221
@@ -347,7 +347,7 @@
           "count": 1,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -1097,7 +1097,7 @@
           "count": 1,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -1645,7 +1645,7 @@
           "count": 2,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -1726,7 +1726,7 @@
           "count": 1,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -2141,7 +2141,7 @@
           "count": 1,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -2222,7 +2222,7 @@
           "count": 2,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 22,
           "lineCost": 44,
           "upgradeCount": 333
@@ -2283,7 +2283,7 @@
           "count": 1,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 23,
           "lineCost": 23,
           "upgradeCount": 221
@@ -2496,7 +2496,7 @@
           "count": 1,
           "name": "Fan Lobster",
           "image": "fan_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -2770,7 +2770,7 @@
           "count": 2,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 23,
           "lineCost": 46,
           "upgradeCount": 333
@@ -2863,7 +2863,7 @@
           "count": 2,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 23,
           "lineCost": 46,
           "upgradeCount": 333
@@ -3766,7 +3766,7 @@
           "count": 2,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 43,
           "lineCost": 86,
           "upgradeCount": 333
@@ -3776,7 +3776,7 @@
           "count": 2,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 45,
           "lineCost": 90,
           "upgradeCount": 333
@@ -3786,7 +3786,7 @@
           "count": 2,
           "name": "Tokummia Katalepsis",
           "image": "tokummia_katalepsis.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 55,
           "lineCost": 110,
           "upgradeCount": 333
@@ -4364,7 +4364,7 @@
           "count": 1,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -4719,7 +4719,7 @@
           "count": 1,
           "name": "Red-banded Lobster",
           "image": "red-banded_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -5898,7 +5898,7 @@
           "count": 2,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -5979,7 +5979,7 @@
           "count": 2,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
@@ -6263,7 +6263,7 @@
           "count": 1,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 45,
           "lineCost": 45,
           "upgradeCount": 221
@@ -6324,7 +6324,7 @@
           "count": 2,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 35
@@ -7371,7 +7371,7 @@
           "count": 1,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 43,
           "lineCost": 43,
           "upgradeCount": 221
@@ -7696,7 +7696,7 @@
           "count": 1,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -8446,7 +8446,7 @@
           "count": 1,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -8994,7 +8994,7 @@
           "count": 2,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -9075,7 +9075,7 @@
           "count": 1,
           "name": "Crystal Lobster",
           "image": "crystal_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -9490,7 +9490,7 @@
           "count": 1,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 47,
           "upgradeCount": 221
@@ -9571,7 +9571,7 @@
           "count": 2,
           "name": "California Spiny Lobster",
           "image": "california_spiny_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 22,
           "lineCost": 44,
           "upgradeCount": 333
@@ -9632,7 +9632,7 @@
           "count": 1,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 23,
           "lineCost": 23,
           "upgradeCount": 221
@@ -9845,7 +9845,7 @@
           "count": 1,
           "name": "Fan Lobster",
           "image": "fan_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 22,
           "lineCost": 22,
           "upgradeCount": 221
@@ -10119,7 +10119,7 @@
           "count": 2,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 23,
           "lineCost": 46,
           "upgradeCount": 333
@@ -10212,7 +10212,7 @@
           "count": 2,
           "name": "European Lobster",
           "image": "european_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 23,
           "lineCost": 46,
           "upgradeCount": 333
@@ -11115,7 +11115,7 @@
           "count": 2,
           "name": "American Lobster",
           "image": "american_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 43,
           "lineCost": 86,
           "upgradeCount": 333
@@ -11125,7 +11125,7 @@
           "count": 2,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 45,
           "lineCost": 90,
           "upgradeCount": 333
@@ -11135,7 +11135,7 @@
           "count": 2,
           "name": "Tokummia Katalepsis",
           "image": "tokummia_katalepsis.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 55,
           "lineCost": 110,
           "upgradeCount": 333
@@ -11713,7 +11713,7 @@
           "count": 1,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -12068,7 +12068,7 @@
           "count": 1,
           "name": "Red-banded Lobster",
           "image": "red-banded_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 25,
           "lineCost": 25,
           "upgradeCount": 221
@@ -13247,7 +13247,7 @@
           "count": 2,
           "name": "Eastern Rock Lobster",
           "image": "eastern_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 333
@@ -13328,7 +13328,7 @@
           "count": 2,
           "name": "Norway Lobster",
           "image": "norway_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 25,
           "lineCost": 50,
           "upgradeCount": 333
@@ -13612,7 +13612,7 @@
           "count": 1,
           "name": "Tropical Rock Lobster",
           "image": "tropical_rock_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 45,
           "lineCost": 45,
           "upgradeCount": 221
@@ -13673,7 +13673,7 @@
           "count": 2,
           "name": "Blue Lobster",
           "image": "blue_lobster.png",
-          "type": "Fish",
+          "type": "Crab",
           "unitCost": 47,
           "lineCost": 94,
           "upgradeCount": 35

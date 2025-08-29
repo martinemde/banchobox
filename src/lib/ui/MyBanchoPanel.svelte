@@ -49,7 +49,7 @@
 		<button
 			class="flex items-center gap-2 opacity-90 hover:opacity-100"
 			type="button"
-			onclick={(myBanchoExpanded = !myBanchoExpanded)}
+			onclick={() => (myBanchoExpanded = !myBanchoExpanded)}
 			aria-expanded={myBanchoExpanded}
 			aria-controls="my-bancho-panel"
 		>
@@ -64,7 +64,7 @@
 			<button
 				class="text-xs font-normal opacity-80 hover:opacity-100"
 				type="button"
-				onclick={(editBancho = !editBancho)}
+				onclick={() => (editBancho = !editBancho)}
 			>
 				{editBancho ? 'Done' : 'Edit'}
 			</button>
