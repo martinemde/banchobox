@@ -10,7 +10,7 @@
 
 ### Reactivity and state
 
-- Use runes; prefer simple JS where possible.
+- Use runes; prefer simple TS where possible.
   - $state: deep reactive proxies for arrays/objects. Use direct mutation (e.g. arr.push).
   - $state.raw: for large immutable structures; update by reassignment only.
   - $state.snapshot(x): pass plain values to third-party APIs or `structuredClone`.
@@ -43,10 +43,6 @@
 - Use keyed each blocks when items can be reordered for correct DOM updates and animations.
 - Avoid unnecessary wrappers; prefer semantic markup.
 
-### Unsafe HTML
-
-- Use `{@html ...}` only with sanitized/escaped content. Never render untrusted strings. Enforce XSS hygiene.
-
 ### Context
 
 - Use `setContext/getContext` to avoid prop drilling. Wrap in typed helper functions for type safety.
@@ -74,7 +70,6 @@
   - `export const ssr = true | false`.
   - `export const csr = true | false`.
 - Static sites: enable prerender globally in the root `+layout.(server.)js` and disable selectively where dynamic rendering is required.
-- Avoid client JS for content-only pages with `csr = false`.
 
 ### Navigation and preloading
 
