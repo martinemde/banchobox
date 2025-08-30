@@ -1,13 +1,9 @@
 <script lang="ts">
 	import IngredientCard from './IngredientCard.svelte';
-	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
-	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
-	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';
+	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
 	import { ingredientsStores } from '$lib/stores/ingredients';
-	import { syncToUrl } from '$lib/stores/urlSync';
 
-	const { query, sortKey, sortDir, visible, filters, bundle, baselineFilters } = ingredientsStores;
-	syncToUrl('ingredients', ingredientsStores);
+	const { visible } = ingredientsStores;
 
 	const sortOptions = [
 		{ value: 'name', label: 'Name' },
@@ -26,29 +22,18 @@
 	/>
 </svelte:head>
 
-<ResponsiveLayout leftTitle="Filters & sort" containerClass="ingredients">
-	{#snippet left()}
-		<FiltersPanel
-			{bundle}
-			{filters}
-			{baselineFilters}
-			bind:query={$query}
-			searchPlaceholder="Search ingredients by name, source, type, time, drone…"
-		/>
-	{/snippet}
-
+<EntityBundlePage
+	stores={ingredientsStores}
+	urlKey="ingredients"
+	entityLabel="Ingredients"
+	entityLabelPlural="ingredients"
+	searchPlaceholder="Search ingredients by name, source, type, time, drone…"
+	{sortOptions}
+	containerClass="ingredients"
+>
 	{#snippet content()}
-		<div class="flex flex-col gap-4">
-			<ResultsHeader
-				{visible}
-				entityLabel="Ingredients"
-				bind:sortKey={$sortKey as string}
-				bind:sortDir={$sortDir}
-				{sortOptions}
-			/>
-			{#each $visible as ingredient (ingredient.id)}
-				<IngredientCard {ingredient} />
-			{/each}
-		</div>
+		{#each $visible as ingredient (ingredient.id)}
+			<IngredientCard {ingredient} />
+		{/each}
 	{/snippet}
-</ResponsiveLayout>
+</EntityBundlePage>

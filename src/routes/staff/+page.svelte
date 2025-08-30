@@ -1,13 +1,9 @@
 <script lang="ts">
 	import StaffCard from './StaffCard.svelte';
-	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
-	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
-	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';
+	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
 	import { staffStores } from '$lib/stores/staff';
-	import { syncToUrl } from '$lib/stores/urlSync';
 
-	const { query, sortKey, sortDir, visible, filters, bundle, baselineFilters } = staffStores;
-	syncToUrl('staff', staffStores);
+	const { visible } = staffStores;
 
 	const sortOptions = [
 		{ value: 'name', label: 'Name' },
@@ -29,31 +25,18 @@
 	<meta property="og:description" content="Staff stats and skills for Dave the Diver" />
 </svelte:head>
 
-<ResponsiveLayout leftTitle="Filters & sort" containerClass="staff">
-	{#snippet left()}
-		<FiltersPanel
-			{bundle}
-			{filters}
-			{baselineFilters}
-			bind:query={$query}
-			bind:sortKey={$sortKey as string}
-			bind:sortDir={$sortDir}
-			searchPlaceholder="Search staff by name or skill…"
-		/>
-	{/snippet}
-
+<EntityBundlePage
+	stores={staffStores}
+	urlKey="staff"
+	entityLabel="Staff"
+	entityLabelPlural="staff"
+	searchPlaceholder="Search staff by name or skill…"
+	{sortOptions}
+	containerClass="staff"
+>
 	{#snippet content()}
-		<div class="flex flex-col gap-4">
-			<ResultsHeader
-				{visible}
-				entityLabel="Staff"
-				bind:sortKey={$sortKey as string}
-				bind:sortDir={$sortDir}
-				{sortOptions}
-			/>
-			{#each $visible as staff (staff.id)}
-				<StaffCard {staff} />
-			{/each}
-		</div>
+		{#each $visible as staff (staff.id)}
+			<StaffCard {staff} />
+		{/each}
 	{/snippet}
-</ResponsiveLayout>
+</EntityBundlePage>

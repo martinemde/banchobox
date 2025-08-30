@@ -1,17 +1,10 @@
 <script lang="ts">
 	import Dish from './DishCard.svelte';
 	import { dishesStores } from '$lib/stores/dishes';
-	import { syncToUrl } from '$lib/stores/urlSync';
-	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
-	import HiddenItemsIndicator from '$lib/ui/HiddenItemsIndicator.svelte';
-	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
-	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';
-	import TrackingSidebar from '$lib/ui/TrackingSidebar.svelte';
+	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 
-	const { query, sortKey, sortDir, visible, visibleWithoutBaseline, filters, baselineFilters } =
-		dishesStores;
-	syncToUrl('dishes', dishesStores);
+	const { visible } = dishesStores;
 
 	const tracked = $derived(
 		$visible
@@ -19,8 +12,15 @@
 			.map((d) => ({ id: d.id, name: d.name, profit: d.finalProfit }))
 	);
 
-	let leftOpen = $state(false);
-	let myBanchoExpanded = $state(true);
+	const sortOptions = [
+		{ value: 'name', label: 'Recipe' },
+		{ value: 'finalPrice', label: 'Final Price' },
+		{ value: 'finalServings', label: 'Final Servings' },
+		{ value: 'finalProfitPerServing', label: 'Profit / Serving' },
+		{ value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
+		{ value: 'upgradeCost', label: 'Upgrade Cost' },
+		{ value: 'ingredientCount', label: 'Ingredients' }
+	];
 </script>
 
 <svelte:head>
@@ -31,54 +31,20 @@
 	/>
 </svelte:head>
 
-<ResponsiveLayout leftTitle="Filters & sort" containerClass="dishes" bind:leftOpen>
-	{#snippet left()}
-		<FiltersPanel
-			bundle={dishesStores.bundle}
-			{filters}
-			{baselineFilters}
-			bind:query={$query}
-			bind:myBanchoExpanded
-			searchPlaceholder="Search dishes by name, ingredient, DLC, unlock…"
-		/>
-	{/snippet}
-
+<EntityBundlePage
+	stores={dishesStores}
+	urlKey="dishes"
+	entityLabel="Dishes"
+	entityLabelPlural="dishes"
+	searchPlaceholder="Search dishes by name, ingredient, DLC, unlock…"
+	{sortOptions}
+	containerClass="dishes"
+	trackedItems={tracked}
+	onToggleTrack={(id) => trackedDishIds.toggle(id as unknown as number)}
+>
 	{#snippet content()}
-		<div class="flex flex-col gap-4">
-			<HiddenItemsIndicator
-				{visible}
-				{visibleWithoutBaseline}
-				entityLabel="dishes"
-				on:open-filters={() => {
-					leftOpen = true;
-					myBanchoExpanded = true;
-				}}
-			/>
-			<ResultsHeader
-				{visible}
-				entityLabel="Dishes"
-				bind:sortKey={$sortKey as string}
-				bind:sortDir={$sortDir}
-				sortOptions={[
-					{ value: 'name', label: 'Recipe' },
-					{ value: 'finalPrice', label: 'Final Price' },
-					{ value: 'finalServings', label: 'Final Servings' },
-					{ value: 'finalProfitPerServing', label: 'Profit / Serving' },
-					{ value: 'maxProfitPerServing', label: 'Max Profit / Serving' },
-					{ value: 'upgradeCost', label: 'Upgrade Cost' },
-					{ value: 'ingredientCount', label: 'Ingredients' }
-				]}
-			/>
-			{#each $visible as dish (dish.id)}
-				<Dish {dish} />
-			{/each}
-		</div>
+		{#each $visible as dish (dish.id)}
+			<Dish {dish} />
+		{/each}
 	{/snippet}
-
-	{#snippet right()}
-		<TrackingSidebar
-			{tracked}
-			on:toggleTrack={(e) => trackedDishIds.toggle(e.detail as unknown as number)}
-		/>
-	{/snippet}
-</ResponsiveLayout>
+</EntityBundlePage>

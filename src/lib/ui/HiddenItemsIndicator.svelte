@@ -41,7 +41,7 @@
 	>
 		<div class="text-center text-sm opacity-90">
 			{hiddenCount}
-			{entityLabel} hidden
+			{entityLabel} hidden by My Bancho settings
 		</div>
 	</div>
 {/if}

@@ -98,6 +98,7 @@
 						<span class="tabular-nums"
 							>{formatNumber((row.price * (party?.bonus ?? 1)) as number)}</span
 						>
+						m
 					</div>
 				{/each}
 			</div>

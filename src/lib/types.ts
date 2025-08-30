@@ -3,6 +3,16 @@ export type Id = number;
 
 export type Facets = Record<string, Record<string, Id[]>>;
 
+/**
+ * Base interface for entities that can be used with the Bundle system.
+ * All entities used in EntityBundlePage must extend this interface.
+ */
+export interface BundleEntity {
+	id: Id;
+	sort: Record<string, string | number | null>;
+	search?: string;
+}
+
 export interface EntityBundle<Row> {
 	rows: Row[];
 	byId: Record<Id, Row>;
