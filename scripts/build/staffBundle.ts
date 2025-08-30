@@ -1,4 +1,5 @@
-import type { EntityBundle, Id, Staff, StaffInputRow } from '../../src/lib/types.js';
+import type { EntityBundle, Id, Staff } from '../../src/lib/types.js';
+import type { StaffInputRow } from './types.js';
 
 function normalize(value: unknown): string {
 	return (value ?? '').toString().toLowerCase();

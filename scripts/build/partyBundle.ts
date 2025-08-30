@@ -1,4 +1,5 @@
-import type { PartyInputRow, Party, PartyDish, Id, EntityBundle } from '../../src/lib/types.js';
+import type { Party, PartyDish, Id, EntityBundle } from '../../src/lib/types.js';
+import type { PartyInputRow } from './types.js';
 
 function computeParties(
 	partyInputRows: PartyInputRow[],

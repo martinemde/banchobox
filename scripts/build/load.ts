@@ -4,17 +4,19 @@ import { fileURLToPath } from 'node:url';
 import { parse as parseCsv } from 'csv-parse/sync';
 import { z } from 'zod';
 import type {
-	BasicDish,
-	BasicIngredient,
-	PartyInputRow,
-	DishIngredient,
-	DishParty,
 	Id,
 	CookstaInputRow,
 	DLCInputRow,
 	ChapterInputRow,
 	StaffInputRow
 } from '../../src/lib/types.js';
+import type {
+	DishInputRow,
+	IngredientInputRow,
+	PartyInputRow,
+	DishIngredient,
+	DishParty
+} from './types.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -285,11 +287,11 @@ function loadDishes() {
 	);
 	const normalized = parseTable(dishesCSV, dishesRowSchema, 'dishes-data.csv');
 
-	const dishes: BasicDish[] = [];
+	const dishes: DishInputRow[] = [];
 	const dishNameToId = new Map<string, Id>();
 
 	normalized.forEach((row) => {
-		dishes.push(row as BasicDish);
+		dishes.push(row as DishInputRow);
 		dishNameToId.set(row.name, row.id);
 	});
 
@@ -313,11 +315,11 @@ function loadIngredients() {
 	);
 	const normalized = parseTable(ingredientsCSV, ingredientsRowSchema, 'ingredients-data.csv');
 
-	const ingredients: BasicIngredient[] = [];
+	const ingredients: IngredientInputRow[] = [];
 	const ingredientNameToId = new Map<string, Id>();
 
 	normalized.forEach((row) => {
-		ingredients.push(row as BasicIngredient);
+		ingredients.push(row as IngredientInputRow);
 		ingredientNameToId.set(row.name, row.id);
 	});
 

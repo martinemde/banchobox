@@ -1,4 +1,106 @@
 import type { Ingredient, Id, EntityBundle, Chapter } from '../../src/lib/types.js';
+import type {
+	DishInputRow,
+	IngredientInputRow,
+	PartyInputRow,
+	DishIngredient,
+	DishParty
+} from './types.js';
+
+const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
+
+export function prepareIngredients(
+	IngredientInputRows: IngredientInputRow[],
+	dishIngredients: DishIngredient[],
+	dishParties: DishParty[],
+	partyInputRows: PartyInputRow[],
+	DishInputRowes: DishInputRow[]
+): Ingredient[] {
+	const ingredients: Ingredient[] = IngredientInputRows.map((ingredient) => {
+		const usageLines = dishIngredients.filter((di) => di.ingredientId === ingredient.id);
+
+		const partyIdSet = new Set<Id>();
+		const partyNames = new Set<string>();
+		for (const u of usageLines) {
+			for (const dp of dishParties) {
+				if (dp.dishId === u.dishId) {
+					partyIdSet.add(dp.partyId);
+					partyNames.add(partyInputRows.find((p) => p.id === dp.partyId)?.name ?? '');
+				}
+			}
+		}
+		const usedIn = usageLines
+			.map((u) => {
+				const dish = DishInputRowes.find((d) => d.id === u.dishId)!;
+				const partyIds = dishParties.filter((dp) => dp.dishId === u.dishId).map((dp) => dp.partyId);
+				const partyNames = partyIds.map(
+					(id) => partyInputRows.find((p) => p.id === id)?.name ?? ''
+				);
+				return {
+					dishId: u.dishId,
+					dishName: dish.name,
+					dishImage: dish.image,
+					count: u.count,
+					upgradeCount: u.upgradeCount,
+					price: dish.finalPrice,
+					servings: dish.finalServings,
+					partyIds,
+					partyNames
+				};
+			})
+			.sort((a, b) => b.price - a.price);
+
+		const sell = ingredient.sell ?? null;
+		const meats = ingredient.maxMeats ?? null;
+		const kg = ingredient.kg ?? null;
+		let sellPerKg: number | undefined = undefined;
+		if (sell != null && meats != null && kg != null && kg !== 0) {
+			sellPerKg = (sell * meats) / kg;
+		}
+
+		const vendors = {} as Record<string, number>;
+		if (ingredient.buyOtto != null) vendors['Otto'] = ingredient.buyOtto;
+		if (ingredient.buyJango != null) vendors['Jango'] = ingredient.buyJango;
+
+		const buy = Object.values(vendors).reduce(
+			(min, v) => (v != null && v < min ? v : min),
+			Infinity
+		);
+
+		const search = [
+			ingredient.name,
+			ingredient.source,
+			ingredient.type,
+			...partyNames,
+			...(partyNames.size > 0 ? ['party'] : [])
+		]
+			.map(normalize)
+			.filter(Boolean)
+			.join(' ');
+
+		const sort = {
+			name: normalize(ingredient.name),
+			buy,
+			sell,
+			kg,
+			sellPerKg
+		} as const;
+
+		const finalIngredient: Ingredient = {
+			...ingredient,
+			usedIn,
+			usedForParties: Array.from(partyIdSet),
+			sellPerKg,
+			vendors,
+			search,
+			sort: sort as unknown as Ingredient['sort']
+		};
+
+		return finalIngredient;
+	});
+
+	return ingredients;
+}
 
 export function buildIngredientsBundle(
 	ingredients: Ingredient[],
