@@ -12,8 +12,8 @@ import type {
 	DishInputRow,
 	IngredientInputRow,
 	PartyInputRow,
-	DishIngredient,
-	DishParty
+	DishIngredientInputRow,
+	PartyDishInputRow
 } from './types.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
@@ -21,8 +21,8 @@ const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 export function prepareDishesAndPartyDishes(
 	DishInputRowes: DishInputRow[],
 	IngredientInputRows: IngredientInputRow[],
-	dishIngredients: DishIngredient[],
-	dishParties: DishParty[],
+	DishIngredientInputRows: DishIngredientInputRow[],
+	dishParties: PartyDishInputRow[],
 	partyInputRows: PartyInputRow[]
 ): {
 	dishes: Dish[];
@@ -34,7 +34,7 @@ export function prepareDishesAndPartyDishes(
 	let nextPartyDishId = 1;
 
 	const dishes: Dish[] = DishInputRowes.map((dish) => {
-		const dishIngLines = dishIngredients.filter((di) => di.dishId === dish.id);
+		const dishIngLines = DishIngredientInputRows.filter((di) => di.dishId === dish.id);
 
 		const ingredientLines = dishIngLines.map((di) => {
 			const ing = IngredientInputRows.find((i) => i.id === di.ingredientId)!;

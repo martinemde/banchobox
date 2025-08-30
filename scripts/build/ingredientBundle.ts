@@ -3,21 +3,21 @@ import type {
 	DishInputRow,
 	IngredientInputRow,
 	PartyInputRow,
-	DishIngredient,
-	DishParty
+	DishIngredientInputRow,
+	PartyDishInputRow
 } from './types.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
 export function prepareIngredients(
 	IngredientInputRows: IngredientInputRow[],
-	dishIngredients: DishIngredient[],
-	dishParties: DishParty[],
+	DishIngredientInputRows: DishIngredientInputRow[],
+	dishParties: PartyDishInputRow[],
 	partyInputRows: PartyInputRow[],
 	DishInputRowes: DishInputRow[]
 ): Ingredient[] {
 	const ingredients: Ingredient[] = IngredientInputRows.map((ingredient) => {
-		const usageLines = dishIngredients.filter((di) => di.ingredientId === ingredient.id);
+		const usageLines = DishIngredientInputRows.filter((di) => di.ingredientId === ingredient.id);
 
 		const partyIdSet = new Set<Id>();
 		const partyNames = new Set<string>();

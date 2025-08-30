@@ -14,8 +14,8 @@ import type {
 	DishInputRow,
 	IngredientInputRow,
 	PartyInputRow,
-	DishIngredient,
-	DishParty
+	DishIngredientInputRow,
+	PartyDishInputRow
 } from './types.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -185,7 +185,7 @@ const partiesRowSchema = z
 	}));
 
 // dish-ingredients-data.csv schema -> normalized row
-const dishIngredientsRowSchema = z
+const DishIngredientInputRowsRowSchema = z
 	.object({
 		dish: z.string().transform((s) => s.trim()),
 		count: intFromString('count'),
@@ -613,7 +613,7 @@ function loadRelationships(
 	validateRequiredColumns(rawPartyDishRecords, ['party', 'dish'], 'party-dishes-data.csv');
 	const partyDishRows = parseTable(partyDishesCSV, partyDishesRowSchema, 'party-dishes-data.csv');
 
-	const dishParties: DishParty[] = [];
+	const dishParties: PartyDishInputRow[] = [];
 	for (const row of partyDishRows) {
 		const partyId = partyNameToId.get(row.party);
 		const dishId = dishNameToId.get(row.dish);
@@ -628,11 +628,11 @@ function loadRelationships(
 	}
 
 	// Load dish-ingredient relationships
-	const dishIngredientsCSV = readFileSync(
+	const DishIngredientInputRowsCSV = readFileSync(
 		join(__dirname, '..', '..', 'data', 'dish-ingredients-data.csv'),
 		'utf-8'
 	);
-	const rawDishIngRecords = parseCsv(dishIngredientsCSV, {
+	const rawDishIngRecords = parseCsv(DishIngredientInputRowsCSV, {
 		columns: true,
 		skip_empty_lines: true,
 		trim: true
@@ -642,18 +642,18 @@ function loadRelationships(
 		['dish', 'count', 'ingredient', 'levels', 'upgrade_count'],
 		'dish-ingredients-data.csv'
 	);
-	const dishIngredientRows = parseTable(
-		dishIngredientsCSV,
-		dishIngredientsRowSchema,
+	const DishIngredientInputRowRows = parseTable(
+		DishIngredientInputRowsCSV,
+		DishIngredientInputRowsRowSchema,
 		'dish-ingredients-data.csv'
 	);
 
-	const dishIngredients: DishIngredient[] = [];
-	for (const row of dishIngredientRows) {
+	const DishIngredientInputRows: DishIngredientInputRow[] = [];
+	for (const row of DishIngredientInputRowRows) {
 		const dishId = dishNameToId.get(row.dish);
 		const ingredientId = ingredientNameToId.get(row.ingredient);
 		if (dishId && ingredientId) {
-			dishIngredients.push({
+			DishIngredientInputRows.push({
 				dishId: dishId,
 				ingredientId: ingredientId,
 				count: row.count,
@@ -667,7 +667,7 @@ function loadRelationships(
 		}
 	}
 
-	return { dishIngredients, dishParties };
+	return { DishIngredientInputRows, dishParties };
 }
 
 export function loadNormalizedData() {
@@ -677,7 +677,7 @@ export function loadNormalizedData() {
 	const { cooksta } = loadCooksta();
 	const { dlcs } = loadDLCs();
 	const { chapters } = loadChapters();
-	const { dishIngredients, dishParties } = loadRelationships(
+	const { DishIngredientInputRows, dishParties } = loadRelationships(
 		dishNameToId,
 		ingredientNameToId,
 		partyNameToId
@@ -689,7 +689,7 @@ export function loadNormalizedData() {
 		dishes,
 		ingredients,
 		parties,
-		dishIngredients,
+		DishIngredientInputRows,
 		dishParties,
 		cooksta,
 		dlcs,

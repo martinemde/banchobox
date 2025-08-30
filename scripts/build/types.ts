@@ -54,7 +54,7 @@ export interface PartyInputRow {
 	bonus: number;
 }
 
-export interface DishIngredient {
+export interface DishIngredientInputRow {
 	dishId: Id;
 	ingredientId: Id;
 	count: number;
@@ -62,7 +62,7 @@ export interface DishIngredient {
 	upgradeCount: number;
 }
 
-export interface DishParty {
+export interface PartyDishInputRow {
 	dishId: Id;
 	partyId: Id;
 }

@@ -22,7 +22,7 @@ function enrichData(
 	dishes,
 	ingredients,
 	parties,
-	dishIngredients,
+	DishIngredientInputRows,
 	dishParties,
 	cooksta,
 	dlcs,
@@ -35,7 +35,7 @@ function enrichData(
 
 	const preparedIngredients = prepareIngredients(
 		ingredients,
-		dishIngredients,
+		DishIngredientInputRows,
 		dishParties,
 		parties,
 		dishes
@@ -44,7 +44,13 @@ function enrichData(
 		dishes: preparedDishes,
 		partyDishes,
 		partyDishesByPartyId
-	} = prepareDishesAndPartyDishes(dishes, ingredients, dishIngredients, dishParties, parties);
+	} = prepareDishesAndPartyDishes(
+		dishes,
+		ingredients,
+		DishIngredientInputRows,
+		dishParties,
+		parties
+	);
 
 	const ingredientsBundle = buildIngredientsBundle(preparedIngredients, chaptersBundle);
 	const partiesBundle = buildPartiesBundle(parties, partyDishesByPartyId);
@@ -76,7 +82,7 @@ try {
 		dishes,
 		ingredients,
 		parties,
-		dishIngredients,
+		DishIngredientInputRows,
 		dishParties,
 		cooksta,
 		dlcs,
@@ -97,7 +103,7 @@ try {
 		dishes,
 		ingredients,
 		parties,
-		dishIngredients,
+		DishIngredientInputRows,
 		dishParties,
 		cooksta,
 		dlcs,

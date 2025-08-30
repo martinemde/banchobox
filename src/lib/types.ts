@@ -87,7 +87,22 @@ export interface Chapter {
 	};
 }
 
-export interface BasicDish {
+// Build-only Basic* and input-row types moved to scripts/build/types.ts
+
+export interface Party {
+	id: Id;
+	name: string;
+	bonus: number;
+	partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
+	search: string;
+	sort: PartySort;
+}
+
+// Relationship entities
+// Build-only relationship and graph types moved to scripts/build/types.ts
+
+// Precomputed data structures for JSON export
+export interface Dish {
 	id: Id;
 	name: string;
 	image: string;
@@ -105,85 +120,6 @@ export interface BasicDish {
 	artisansFlames?: number;
 	staff?: string;
 	staffLevel?: number;
-}
-
-export interface BasicIngredient {
-	id: Id;
-	name: string;
-	image: string; // image filename
-	chapter?: number;
-	source: string;
-	type: string;
-	drone: boolean;
-	harpoon: boolean;
-	steelnet: boolean;
-	crabtrap: boolean;
-	bugnet: boolean;
-	gloves: boolean;
-	aberration: boolean;
-	kg?: number;
-	maxMeats?: number;
-	day: boolean;
-	night: boolean;
-	fog: boolean;
-	rank: number;
-	farm?: string; // farm source like Gumo
-	sell?: number;
-	buyJango?: number; // Jango purchase price
-	buyOtto?: number; // Otto purchase price
-	cost: number; // The replacement cost for the ingredient
-}
-
-export interface PartyInputRow {
-	id: Id;
-	name: string;
-	order: number;
-	bonus: number;
-}
-
-export interface Party {
-	id: Id;
-	name: string;
-	bonus: number;
-	partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
-	search: string;
-	sort: PartySort;
-}
-
-// Relationship entities
-export interface DishIngredient {
-	dishId: Id;
-	ingredientId: Id;
-	count: number;
-	levels: number;
-	upgradeCount: number;
-}
-
-export interface DishParty {
-	dishId: Id;
-	partyId: Id;
-}
-
-// Graph structure for efficient lookups
-export interface Graph {
-	dishes: BasicDish[];
-	ingredients: BasicIngredient[];
-	parties: PartyInputRow[];
-	dishIngredients: DishIngredient[];
-	dishParties: DishParty[];
-
-	// Indexes for O(1) lookups
-	dishById: Map<Id, BasicDish>;
-	ingById: Map<Id, BasicIngredient>;
-	partyById: Map<Id, PartyInputRow>;
-	ingByDishId: Map<Id, { ingredientId: Id; count: number }[]>;
-	dishesByIngredientId: Map<Id, { dishId: Id; count: number }[]>;
-	partiesByDishId: Map<Id, Id[]>;
-	dishesByPartyId: Map<Id, Id[]>;
-}
-
-// Precomputed data structures for JSON export
-export interface Dish extends BasicDish {
 	ingredients: Array<{
 		ingredientId: Id;
 		count: number;
@@ -220,16 +156,39 @@ export interface PartyDish extends Dish {
 	partyBonus: number; // party.bonus
 }
 
-export interface Ingredient extends BasicIngredient {
+export interface Ingredient {
+	id: Id;
+	name: string;
+	image: string;
+	chapter?: number;
+	source: string;
+	type: string;
+	drone: boolean;
+	harpoon: boolean;
+	steelnet: boolean;
+	crabtrap: boolean;
+	bugnet: boolean;
+	gloves: boolean;
+	aberration: boolean;
+	kg?: number;
+	maxMeats?: number;
+	day: boolean;
+	night: boolean;
+	fog: boolean;
+	rank: number;
+	farm?: string;
+	sell?: number;
+	buyJango?: number;
+	buyOtto?: number;
+	cost: number;
 	usedIn: Array<{
 		dishId: Id;
+		partyIds: Id[];
 		dishName: string;
 		dishImage: string;
 		count: number;
 		upgradeCount: number;
-		level: number;
 		price: number;
-		revenue: number;
 		servings: number;
 		partyNames: string[];
 	}>;
@@ -286,43 +245,6 @@ export type PartySort = {
 // --------------------
 // Staff data types
 // --------------------
-
-export interface StaffInputRow {
-	id: Id;
-	name: string;
-	dlc?: string;
-	image: string;
-	hiringFee: number;
-	wageBase: number;
-	raise: number;
-	wageMax: number;
-	skillLevel3: string;
-	cookingBonusLevel3: number;
-	servingBonusLevel3: number;
-	appealBonusLevel3: number;
-	skillLevel7: string;
-	cookingBonusLevel7: number;
-	servingBonusLevel7: number;
-	cookingStatBase: number;
-	servingStatBase: number;
-	procureStatBase: number;
-	appealStatBase: number;
-	cookingStatIncrement: number;
-	servingStatIncrement: number;
-	procureStatIncrement: number;
-	appealStatIncrement: number;
-	cookingStatMax: number;
-	servingStatMax: number;
-	procureStatMax: number;
-	appealStatMax: number;
-	branchStatCalc: number;
-	seasoningsMinLevel20: number;
-	seasoningsMaxLevel20: number;
-	seasoningsBonus: number;
-	branchRankMax: number;
-	branchPopularityMax: number;
-	branchPopularityMaxAtLevel?: number;
-}
 
 export type StaffSortKey =
 	| 'name'
