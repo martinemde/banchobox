@@ -15,7 +15,11 @@
 </div>
 
 {#if tracked.length === 0}
-	<p class="text-sm opacity-70">Nothing tracked yet.</p>
+	<p class="text-sm opacity-70">
+		When you click the 'Star' button in the top left corner of a dish, the dish will be shown here
+		and a summary of its ingredients is available in Tracking. Use it to track the dishes you're
+		currently upgrading or need for a party.
+	</p>
 {:else}
 	<ul class="space-y-2">
 		{#each tracked as t (t.id)}
