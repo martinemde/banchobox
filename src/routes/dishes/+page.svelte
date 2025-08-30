@@ -3,12 +3,14 @@
 	import { dishesStores } from '$lib/stores/dishes';
 	import { syncToUrl } from '$lib/stores/urlSync';
 	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
+	import HiddenItemsIndicator from '$lib/ui/HiddenItemsIndicator.svelte';
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
 	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';
 	import TrackingSidebar from '$lib/ui/TrackingSidebar.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 
-	const { query, sortKey, sortDir, visible, filters, baselineFilters } = dishesStores;
+	const { query, sortKey, sortDir, visible, visibleWithoutBaseline, filters, baselineFilters } =
+		dishesStores;
 	syncToUrl('dishes', dishesStores);
 
 	const tracked = $derived(
@@ -56,6 +58,7 @@
 					{ value: 'ingredientCount', label: 'Ingredients' }
 				]}
 			/>
+			<HiddenItemsIndicator {visible} {visibleWithoutBaseline} entityLabel="dishes" />
 			{#each $visible as dish (dish.id)}
 				<Dish {dish} />
 			{/each}
