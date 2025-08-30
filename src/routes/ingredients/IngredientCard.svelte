@@ -140,8 +140,10 @@
 					{/snippet}
 
 					{#snippet control()}
-						<span class="text-xs tracking-wide uppercase opacity-80">Recipes</span>
-						<span class="text-xs tabular-nums opacity-80">{ingredient.usedIn.length}</span>
+						<span class="text-xs font-semibold tracking-wide uppercase">
+							{ingredient.usedIn.length}
+							{ingredient.usedIn.length > 1 ? 'Recipes' : 'Recipe'}
+						</span>
 					{/snippet}
 
 					{#snippet panel()}
