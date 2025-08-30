@@ -11,6 +11,7 @@ export interface EntityStores<
 	filters: Writable<Record<string, Set<string>>>; // user-added facet filters (excludes baseline)
 	baselineFilters: Writable<Record<string, Set<string>>>; // baseline constraints (e.g., DLC Base + My Bancho, Chapter)
 	visible: Readable<Row[]>;
+	visibleWithoutBaseline: Readable<Row[]>; // visible items without baseline filters (for hidden count)
 }
 
 export function createEntityStores<
@@ -45,60 +46,78 @@ export function createEntityStores<
 		return dir === 'asc' ? (a < b ? -1 : a > b ? 1 : 0) : b < a ? -1 : b > a ? 1 : 0;
 	}
 
+	function processFilters(
+		$bundle: EntityBundle<Row> | null,
+		$query: string,
+		$sortKey: string,
+		$sortDir: 'asc' | 'desc',
+		$filters: Record<string, Set<string>>,
+		$baseline?: Record<string, Set<string>>
+	): Row[] {
+		if (!$bundle) return [] as Row[];
+
+		// 1) facet filtering - baseline first, then user filters
+		let candidateIds: Id[] | null = null;
+		const allFilters: Record<string, Set<string>> = {
+			...($baseline ?? {}),
+			...($filters ?? {})
+		};
+		const facetEntries = Object.entries(allFilters);
+		for (const [facetName, values] of facetEntries) {
+			if (!values || values.size === 0) continue;
+			const facetIndex = $bundle.facets[facetName] ?? {};
+			// OR within facet
+			const orSet = new Set<Id>();
+			for (const val of values) {
+				const ids = facetIndex[val] ?? [];
+				for (const id of ids) orSet.add(id);
+			}
+			const orIds = Array.from(orSet);
+			if (candidateIds === null) {
+				candidateIds = orIds;
+			} else {
+				// AND across facets -> intersection
+				const next = new Set(orIds);
+				candidateIds = candidateIds.filter((id) => next.has(id));
+			}
+		}
+
+		// Map to rows
+		let rows: Row[] = candidateIds
+			? candidateIds.map((id) => $bundle.byId[id]).filter(Boolean)
+			: ($bundle.rows as Row[]);
+
+		// 2) Search filter
+		const q = ($query ?? '').trim().toLowerCase();
+		if (q.length > 0) {
+			rows = rows.filter((r) => (r.search ?? '').includes(q));
+		}
+
+		// 3) Sort
+		const key = $sortKey;
+		rows = [...rows].sort((a, b) => {
+			const aVal = a.sort[key] as string | number | null;
+			const bVal = b.sort[key] as string | number | null;
+			const cmp = compareValues(aVal, bVal, $sortDir);
+			if (cmp !== 0) return cmp;
+			// stable tie-breaker by id
+			return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
+		});
+
+		return rows;
+	}
+
 	const visible = derived(
 		[bundle, query, sortKey, sortDir, filters, baselineFilters],
 		([$bundle, $query, $sortKey, $sortDir, $filters, $baseline]) => {
-			if (!$bundle) return [] as Row[];
+			return processFilters($bundle, $query, $sortKey, $sortDir, $filters, $baseline);
+		}
+	);
 
-			// 1) facet filtering - baseline first, then user filters
-			let candidateIds: Id[] | null = null;
-			const allFilters: Record<string, Set<string>> = {
-				...($baseline ?? {}),
-				...($filters ?? {})
-			};
-			const facetEntries = Object.entries(allFilters);
-			for (const [facetName, values] of facetEntries) {
-				if (!values || values.size === 0) continue;
-				const facetIndex = $bundle.facets[facetName] ?? {};
-				// OR within facet
-				const orSet = new Set<Id>();
-				for (const val of values) {
-					const ids = facetIndex[val] ?? [];
-					for (const id of ids) orSet.add(id);
-				}
-				const orIds = Array.from(orSet);
-				if (candidateIds === null) {
-					candidateIds = orIds;
-				} else {
-					// AND across facets -> intersection
-					const next = new Set(orIds);
-					candidateIds = candidateIds.filter((id) => next.has(id));
-				}
-			}
-
-			// Map to rows
-			let rows: Row[] = candidateIds
-				? candidateIds.map((id) => $bundle.byId[id]).filter(Boolean)
-				: ($bundle.rows as Row[]);
-
-			// 2) Search filter
-			const q = ($query ?? '').trim().toLowerCase();
-			if (q.length > 0) {
-				rows = rows.filter((r) => (r.search ?? '').includes(q));
-			}
-
-			// 3) Sort
-			const key = $sortKey;
-			rows = [...rows].sort((a, b) => {
-				const aVal = a.sort[key] as string | number | null;
-				const bVal = b.sort[key] as string | number | null;
-				const cmp = compareValues(aVal, bVal, $sortDir);
-				if (cmp !== 0) return cmp;
-				// stable tie-breaker by id
-				return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
-			});
-
-			return rows;
+	const visibleWithoutBaseline = derived(
+		[bundle, query, sortKey, sortDir, filters],
+		([$bundle, $query, $sortKey, $sortDir, $filters]) => {
+			return processFilters($bundle, $query, $sortKey, $sortDir, $filters);
 		}
 	);
 
@@ -109,6 +128,7 @@ export function createEntityStores<
 		sortDir,
 		filters,
 		baselineFilters,
-		visible
+		visible,
+		visibleWithoutBaseline
 	};
 }
