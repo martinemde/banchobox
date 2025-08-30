@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
 	import { PartyPopper, Soup, ClipboardList, Shrimp, Users } from '@lucide/svelte';
 	import BanchoIcon from '$lib/images/bancho.svg';
 	import { onMount } from 'svelte';
+	import HeaderLink from './HeaderLink.svelte';
 
 	let isHidden = false;
 	let lastScrollY = 0;
@@ -52,8 +52,6 @@
 			ro.disconnect();
 		};
 	});
-
-	const iconSize = 22;
 </script>
 
 <div class="fixed top-0 right-0 left-0 z-[1000]" style={`--appbar-height: ${appBarHeight}px`}>
@@ -73,61 +71,11 @@
 
 			{#snippet trail()}
 				<nav class="flex items-center gap-0.5 sm:gap-1">
-					<a
-						href="/dishes"
-						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
-						class:!text-primary-500={$page.url.pathname === '/dishes'}
-						class:!bg-primary-50={$page.url.pathname === '/dishes'}
-						data-sveltekit-preload-data="hover"
-						aria-label="Dishes"
-					>
-						<Soup size={iconSize} />
-						<span class="label hidden md:inline">Dishes</span>
-					</a>
-					<a
-						href="/ingredients"
-						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
-						class:!text-primary-500={$page.url.pathname === '/ingredients'}
-						class:!bg-primary-50={$page.url.pathname === '/ingredients'}
-						data-sveltekit-preload-data="hover"
-						aria-label="Ingredients"
-					>
-						<Shrimp size={iconSize} />
-						<span class="label hidden md:inline">Ingredients</span>
-					</a>
-					<a
-						href="/parties"
-						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
-						class:!text-primary-500={$page.url.pathname === '/parties'}
-						class:!bg-primary-50={$page.url.pathname === '/parties'}
-						data-sveltekit-preload-data="hover"
-						aria-label="Parties"
-					>
-						<PartyPopper size={iconSize} />
-						<span class="label hidden md:inline">Parties</span>
-					</a>
-					<a
-						href="/staff"
-						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
-						class:!text-primary-500={$page.url.pathname === '/staff'}
-						class:!bg-primary-50={$page.url.pathname === '/staff'}
-						data-sveltekit-preload-data="hover"
-						aria-label="Staff"
-					>
-						<Users size={iconSize} />
-						<span class="label hidden md:inline">Staff</span>
-					</a>
-					<a
-						href="/tracking"
-						class="ml-auto inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
-						class:!text-primary-500={$page.url.pathname === '/tracking'}
-						class:!bg-primary-50={$page.url.pathname === '/tracking'}
-						data-sveltekit-preload-data="hover"
-						aria-label="Tracking"
-					>
-						<ClipboardList size={iconSize} />
-						<span class="label hidden md:inline">Tracking</span>
-					</a>
+					<HeaderLink href="/dishes" icon={Soup} label="Dishes" />
+					<HeaderLink href="/ingredients" icon={Shrimp} label="Ingredients" />
+					<HeaderLink href="/parties" icon={PartyPopper} label="Parties" />
+					<HeaderLink href="/staff" icon={Users} label="Staff" />
+					<HeaderLink href="/tracking" icon={ClipboardList} label="Tracking" class="ml-auto" />
 				</nav>
 			{/snippet}
 		</AppBar>
