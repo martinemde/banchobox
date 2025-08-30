@@ -18,14 +18,14 @@ import type {
 	StaffInputRow,
 	Staff
 } from '../../src/lib/types.js';
-import { buildDishesBundle } from './dish_bundle.js';
-import { buildIngredientsBundle } from './ingredient_bundle.js';
-import { buildPartiesBundle } from './party_bundle.js';
-import { buildPartyDishesBundle } from './party_dish_bundle.js';
-import { buildCookstaBundle } from './cooksta_bundle.js';
-import { buildDLCBundle } from './dlc_bundle.js';
-import { buildChapterBundle } from './chapter_bundle.js';
-import { buildStaffBundle } from './staff_bundle.js';
+import { buildDishesBundle } from './dishBundle.js';
+import { buildIngredientsBundle } from './ingredientBundle.js';
+import { buildPartiesBundle } from './partyBundle.js';
+import { buildPartyDishesBundle } from './partyDishBundle.js';
+import { buildCookstaBundle } from './cookstaBundle.js';
+import { buildDLCBundle } from './dlcBundle.js';
+import { buildChapterBundle } from './chapterBundle.js';
+import { buildStaffBundle } from './staffBundle.js';
 import { prepareDishesAndPartyDishes, prepareIngredients } from './prepare.js';
 
 export function enrichData(
