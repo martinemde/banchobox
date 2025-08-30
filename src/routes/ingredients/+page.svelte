@@ -33,8 +33,6 @@
 			{filters}
 			{baselineFilters}
 			bind:query={$query}
-			bind:sortKey={$sortKey as string}
-			bind:sortDir={$sortDir}
 			searchPlaceholder="Search ingredients by name, source, type, time, drone…"
 		/>
 	{/snippet}
