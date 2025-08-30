@@ -49,23 +49,10 @@
 	}
 </script>
 
-<div class="app">
+<div class="flex min-h-screen flex-col">
 	<Header />
 
-	<main>
+	<main class="w-full flex-1">
 		{@render children()}
 	</main>
 </div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		width: 100%;
-	}
-</style>

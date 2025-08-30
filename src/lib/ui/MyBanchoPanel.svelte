@@ -9,20 +9,24 @@
 	} from '$lib/stores/chapters';
 	import { visible as dlcVisible } from '$lib/stores/dlc';
 
-	let { enabledDlcIds = new SvelteSet<number>() }: { enabledDlcIds?: Set<number> } = $props();
+	let {
+		enabledDlcIds = new SvelteSet<number>(),
+		expanded = $bindable(true)
+	}: { enabledDlcIds?: Set<number>; expanded?: boolean } = $props();
 
 	const cookstaTiers = $derived($cookstaVisible ?? []);
 	const chapterRows = $derived($chaptersVisible ?? []);
 	const dlcRows = $derived($dlcVisible ?? []);
 
 	let editBancho = $state(false);
-	let myBanchoExpanded = $state(true);
 
 	persist(
 		'filtersPanel.myBanchoExpanded.v1',
-		() => myBanchoExpanded,
-		(v) => (myBanchoExpanded = v),
-		{ storage: 'local' }
+		() => expanded,
+		(v) => (expanded = v),
+		{
+			storage: 'local'
+		}
 	);
 	persist(
 		'filtersPanel.enabledDlcIds.v1',
@@ -49,18 +53,19 @@
 		<button
 			class="flex items-center gap-2 opacity-90 hover:opacity-100"
 			type="button"
-			onclick={() => (myBanchoExpanded = !myBanchoExpanded)}
-			aria-expanded={myBanchoExpanded}
+			onclick={() => (expanded = !expanded)}
+			aria-expanded={expanded}
 			aria-controls="my-bancho-panel"
 		>
-			<span class="caret" data-expanded={myBanchoExpanded}></span>
+			<span
+				class="h-0 w-0 border-t-[5px] border-b-[5px] border-l-[6px] border-t-transparent border-b-transparent border-l-current transition-transform duration-150 ease-linear"
+				class:rotate-90={expanded}
+			></span>
 			<span>
-				{myBanchoExpanded
-					? 'My Bancho'
-					: `${$selectedTier?.name ?? ''} - ${$selectedChapter?.name ?? ''}`}
+				{expanded ? 'My Bancho' : `${$selectedTier?.name ?? ''} - ${$selectedChapter?.name ?? ''}`}
 			</span>
 		</button>
-		{#if myBanchoExpanded}
+		{#if expanded}
 			<button
 				class="text-xs font-normal opacity-80 hover:opacity-100"
 				type="button"
@@ -71,7 +76,7 @@
 		{/if}
 	</div>
 
-	{#if myBanchoExpanded}
+	{#if expanded}
 		<div id="my-bancho-panel">
 			{#if editBancho}
 				<label class="label" aria-label="Cooksta">
@@ -118,18 +123,3 @@
 		</div>
 	{/if}
 </div>
-
-<style>
-	/* caret for collapsible header */
-	.caret {
-		width: 0;
-		height: 0;
-		border-top: 5px solid transparent;
-		border-bottom: 5px solid transparent;
-		border-left: 6px solid currentColor;
-		transition: transform 150ms ease;
-	}
-	.caret[data-expanded='true'] {
-		transform: rotate(90deg);
-	}
-</style>

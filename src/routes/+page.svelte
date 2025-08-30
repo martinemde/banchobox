@@ -136,7 +136,10 @@
 </svelte:head>
 
 <!-- 1) Hero -->
-<section class="hero relative overflow-hidden">
+<section
+	class="relative overflow-hidden"
+	style="background: linear-gradient(90deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.2) 100%), radial-gradient(1200px 600px at 80% 10%, rgba(59, 130, 246, 0.18), transparent), radial-gradient(800px 400px at 10% 80%, rgba(236, 72, 153, 0.12), transparent);"
+>
 	<div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
 		<div class="grid items-center gap-10 md:grid-cols-2">
 			<div>
@@ -160,17 +163,17 @@
 						<div class="text-xs opacity-60">Demo</div>
 					</div>
 					<div class="grid grid-cols-3 gap-3">
-						<div class="stat">
-							<div class="label">Cooksta</div>
-							<div class="value">{$selectedTier?.name ?? ''}</div>
+						<div>
+							<div class="text-[0.7rem] opacity-70">Cooksta</div>
+							<div class="font-bold">{$selectedTier?.name ?? ''}</div>
 						</div>
-						<div class="stat">
-							<div class="label">Menu</div>
-							<div class="value">{selectedPartyDishes.length} dishes</div>
+						<div>
+							<div class="text-[0.7rem] opacity-70">Menu</div>
+							<div class="font-bold">{selectedPartyDishes.length} dishes</div>
 						</div>
-						<div class="stat">
-							<div class="label">Profit</div>
-							<div class="value">
+						<div>
+							<div class="text-[0.7rem] opacity-70">Profit</div>
+							<div class="font-bold">
 								{Math.round(
 									selectedPartyDishes.reduce((s, d) => s + computePartyProfitPerServing(d), 0)
 								)} / Serving
@@ -211,7 +214,7 @@
 	<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<label class="label">
-				<div class="title label-text">Cooksta Rank</div>
+				<div class="label-text text-[0.8rem] opacity-70">Cooksta Rank</div>
 				<select class="ig-select" bind:value={$selectedTierId}>
 					{#each cookstaTiers as t (t.id)}
 						<option value={t.id}>{t.name}</option>
@@ -221,7 +224,7 @@
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<label class="label">
-				<div class="title label-text">Story Progress</div>
+				<div class="label-text text-[0.8rem] opacity-70">Story Progress</div>
 				<select class="ig-select" bind:value={$selectedChapterId}>
 					{#each chapters as c (c.id)}
 						<option value={c.id}>{c.name}</option>
@@ -231,7 +234,7 @@
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<label class="label">
-				<div class="title">Next Party</div>
+				<div class="text-[0.8rem] opacity-70">Next Party</div>
 				<select class="ig-select" bind:value={selectedPartyId}>
 					{#each parties as p (p.id)}
 						<option value={p.id}>{p.name} ({p.bonus}&times; bonus)</option>
@@ -240,7 +243,7 @@
 			</label>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
-			<div class="title">DLCs</div>
+			<div class="text-[0.8rem] opacity-70">DLCs</div>
 			<fieldset class="mt-2 space-y-1 text-sm">
 				{#each dlcs as d (d.id)}
 					<label class="flex items-center gap-2">
@@ -416,7 +419,7 @@
 <section class="mx-auto max-w-7xl px-4 py-14">
 	<h2 class="mb-6 text-2xl font-bold">Try it in 3 quick steps</h2>
 	<div class="variant-glass-surface card rounded-xl border border-white/10 bg-white/10 p-6">
-		<div class="mb-6 flex items-center gap-2 text-sm">
+		<div class="mb-6 flex flex-col items-center gap-2 text-sm sm:flex-row">
 			<button class="btn btn-sm" class:preset-filled={demoStep === 1} onclick={() => (demoStep = 1)}
 				>1. Pick party</button
 			>
@@ -518,23 +521,25 @@
 <section class="mx-auto max-w-7xl px-4 py-14">
 	<h2 class="mb-6 text-2xl font-bold">Loved by Divers</h2>
 	<div class="grid gap-4 md:grid-cols-3">
-		<div class="testimonial">
-			<p class="quote">
-				“I never feel lost during dives now — I'm not a completionist, so I don't want to spend
-				hours every night. BanchoBox tells me exactly what to bring back.”
+		<div class="rounded-xl border border-[rgb(255_255_255_/_10%)] bg-[rgb(255_255_255_/_10%)] p-5">
+			<p class="text-[0.9rem] opacity-90">
+				"I never feel lost during dives now — I'm not a completionist, so I don't want to spend
+				hours every night. BanchoBox tells me exactly what to bring back."
 			</p>
-			<div class="who">— Sato, Chapter 4</div>
+			<div class="mt-2 text-xs opacity-60">— Sato, Chapter 4</div>
 		</div>
-		<div class="testimonial">
-			<p class="quote">
-				“I used to auto-supply a full menu, I was stuck at Gold. Now the restaurant is actually
-				fun.”
+		<div class="rounded-xl border border-[rgb(255_255_255_/_10%)] bg-[rgb(255_255_255_/_10%)] p-5">
+			<p class="text-[0.9rem] opacity-90">
+				"I used to auto-supply a full menu, I was stuck at Gold. Now the restaurant is actually
+				fun."
 			</p>
-			<div class="who">— Mei, Cooksta Gold</div>
+			<div class="mt-2 text-xs opacity-60">— Mei, Cooksta Gold</div>
 		</div>
-		<div class="testimonial">
-			<p class="quote">“Built by fans, for fans. A better way to play Dave the Diver.”</p>
-			<div class="who">— Martin, Completionist</div>
+		<div class="rounded-xl border border-[rgb(255_255_255_/_10%)] bg-[rgb(255_255_255_/_10%)] p-5">
+			<p class="text-[0.9rem] opacity-90">
+				"Built by fans, for fans. A better way to play Dave the Diver."
+			</p>
+			<div class="mt-2 text-xs opacity-60">— Martin, Completionist</div>
 		</div>
 	</div>
 </section>
@@ -543,11 +548,11 @@
 <section class="mx-auto max-w-7xl px-4 pb-20">
 	<div class="rounded-lg border border-white/10 p-6">
 		<div class="flex flex-wrap items-center gap-4 text-sm">
-			<a class="link" href="/about">About</a>
-			<a class="link" href="/tracking">Tracking</a>
-			<a class="link" href="/dishes">Dishes</a>
-			<a class="link" href="/ingredients">Ingredients</a>
-			<a class="link" href="/parties">Parties</a>
+			<a class="opacity-90 hover:opacity-100" href="/about">About</a>
+			<a class="opacity-90 hover:opacity-100" href="/tracking">Tracking</a>
+			<a class="opacity-90 hover:opacity-100" href="/dishes">Dishes</a>
+			<a class="opacity-90 hover:opacity-100" href="/ingredients">Ingredients</a>
+			<a class="opacity-90 hover:opacity-100" href="/parties">Parties</a>
 			<span class="ml-auto flex items-center gap-2 opacity-70">
 				<span>Help Dave help Bancho</span>
 				<img
@@ -562,51 +567,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	.hero {
-		background:
-			linear-gradient(90deg, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.2) 100%),
-			radial-gradient(1200px 600px at 80% 10%, rgba(59, 130, 246, 0.18), transparent),
-			radial-gradient(800px 400px at 10% 80%, rgba(236, 72, 153, 0.12), transparent);
-	}
-
-	.stat .label {
-		font-size: 0.7rem;
-		opacity: 0.7;
-	}
-	.stat .value {
-		font-weight: 700;
-	}
-
-	.title {
-		font-size: 0.8rem;
-		opacity: 0.7;
-	}
-	.value {
-		font-weight: 600;
-	}
-
-	.testimonial {
-		border-radius: 0.75rem;
-		border: 1px solid color-mix(in oklch, white 10%, transparent);
-		padding: 1.25rem;
-		background: color-mix(in oklch, white 10%, transparent);
-	}
-	.testimonial .quote {
-		font-size: 0.9rem;
-		opacity: 0.9;
-	}
-	.testimonial .who {
-		margin-top: 0.5rem;
-		font-size: 0.75rem;
-		opacity: 0.6;
-	}
-
-	.link {
-		opacity: 0.9;
-	}
-	.link:hover {
-		opacity: 1;
-	}
-</style>

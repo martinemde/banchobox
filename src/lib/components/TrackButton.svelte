@@ -31,6 +31,3 @@
 		<Star size={24} />
 	{/if}
 </button>
-
-<style>
-</style>

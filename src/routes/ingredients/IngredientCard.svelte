@@ -1,16 +1,12 @@
 <script lang="ts">
 	import type { Ingredient } from '$lib/types.js';
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
-	import TrackButton from '$lib/components/TrackButton.svelte';
-	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 	import { ChevronsUp, CloudFog, MapPin, Moon, Sun, Soup, Weight } from '@lucide/svelte';
 	import coinImage from '$lib/images/ui/coin.png';
 	import IngredientIcon from '$lib/components/IngredientIcon.svelte';
 
 	let { ingredient }: { ingredient: Ingredient } = $props();
-
-	const thumbPx = 96;
 
 	// Lazy-load recipes table only when opened
 	type RecipesTableComponent = typeof import('./IngredientRecipesTable.svelte').default;
@@ -44,15 +40,6 @@
 				<div class="relative grid place-items-center">
 					<PixelIcon image={ingredient.image} alt={ingredient.name} uiScale={1.5} />
 				</div>
-
-				<div class="mt-2" style="width: {thumbPx}px">
-					{#if ingredient?.id != null}
-						{@const isTracked = (ingredient.usedIn ?? []).some((u) =>
-							$trackedDishIds.has(u.dishId)
-						)}
-						<TrackButton checked={isTracked} disabled={true} />
-					{/if}
-				</div>
 			</div>
 
 			<div class="min-w-0 flex-1 space-y-2">
@@ -60,9 +47,9 @@
 					<h3 class="m-0 truncate text-lg leading-none font-semibold">{ingredient.name}</h3>
 				</div>
 
-				<div class="mt-1 flex flex-wrap items-center gap-1 *:text-sm">
+				<div class="mt-1 flex flex-row items-center gap-1 *:text-sm">
 					<MapPin size={16} class="opacity-70" />
-					<span>{ingredient.source}</span>
+					<span class="truncate">{ingredient.source}</span>
 					{#if ingredient.day}
 						<span class="inline-flex items-center" title="during the day">
 							<Sun size={16} />
@@ -123,19 +110,19 @@
 						<ChevronsUp size={24} class="opacity-80" />
 						<span
 							class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-black/80 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
-							>Drone</span
 						>
+							Drone
+						</span>
 					</button>
 				{/if}
-				{#if ingredient.type}
-					<button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
-						<IngredientIcon type={ingredient.type} size={24} class="opacity-80" />
-						<span
-							class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-black/80 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
-							>{ingredient.type}</span
-						>
-					</button>
-				{/if}
+				<button type="button" class="group relative inline-flex" aria-label={ingredient.type}>
+					<IngredientIcon type={ingredient.type} size={24} class="opacity-80" />
+					<span
+						class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 rounded bg-black/80 px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
+					>
+						{ingredient.type}
+					</span>
+				</button>
 			</div>
 		</div>
 	</section>

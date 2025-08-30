@@ -22,7 +22,7 @@
 	<meta name="robots" content="noindex" />
 </svelte:head>
 
-<div class="container">
+<div class="mx-auto max-w-[1800px] p-4 lg:p-8">
 	<section class="plan">
 		<header class="mb-3">
 			<h1 class="text-xl font-semibold">Tracking</h1>
@@ -32,7 +32,7 @@
 		{#if trackedDishes.length === 0}
 			<div class="text-sm opacity-70">No tracked dishes yet. Track a dish to see items here.</div>
 		{:else}
-			<div class="card-list">
+			<div class="mt-4 flex flex-col gap-4">
 				{#each trackedDishes as dish (dish.id)}
 					<DishCard {dish} />
 				{/each}
@@ -40,24 +40,3 @@
 		{/if}
 	</section>
 </div>
-
-<style>
-	.container {
-		max-width: 1800px;
-		margin: 0 auto;
-		padding: 2rem;
-	}
-
-	.card-list {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		margin-top: 1rem;
-	}
-
-	@media (max-width: 1200px) {
-		.container {
-			padding: 1rem;
-		}
-	}
-</style>

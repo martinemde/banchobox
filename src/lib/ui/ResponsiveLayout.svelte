@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { Dialog } from 'bits-ui';
+	import { Modal } from '@skeletonlabs/skeleton-svelte';
 
 	let {
 		left,
@@ -8,7 +8,8 @@
 		right,
 		title,
 		leftTitle = 'Filters & sort',
-		containerClass = ''
+		containerClass = '',
+		leftOpen = $bindable(false)
 	}: {
 		left?: Snippet;
 		content?: Snippet;
@@ -16,44 +17,53 @@
 		title?: Snippet;
 		leftTitle?: string;
 		containerClass?: string;
+		leftOpen?: boolean;
 	} = $props();
-
-	// Bits UI Dialog manages its own open state via Trigger/Close
+	function closeDrawer() {
+		leftOpen = false;
+	}
 </script>
 
 <div class="flex-1 px-4 py-6 {containerClass}">
 	<div class="md:flex md:gap-6">
-		<Dialog.Root>
-			<div class="mb-4 md:hidden">
-				<Dialog.Trigger class="btn w-full preset-filled btn-lg">
+		<div class="mb-4 md:hidden">
+			<Modal
+				open={leftOpen}
+				onOpenChange={(e) => (leftOpen = e.open)}
+				triggerBase="btn w-full preset-filled btn-lg"
+				contentBase="bg-surface-100-900 p-4 space-y-4 shadow-xl w-[min(88vw,360px)] h-screen"
+				positionerJustify="justify-start"
+				positionerAlign=""
+				positionerPadding=""
+				transitionsPositionerIn={{ x: -360, duration: 200 }}
+				transitionsPositionerOut={{ x: -360, duration: 200 }}
+			>
+				{#snippet trigger()}
 					{#if title}
 						{@render title!()}
 					{:else}
 						{leftTitle}
 					{/if}
-				</Dialog.Trigger>
-			</div>
-			<Dialog.Portal>
-				<Dialog.Overlay class="fixed inset-0 z-40 bg-black/50 md:hidden" />
-				<Dialog.Content class="fixed top-0 left-0 z-50 md:hidden">
-					<div
-						class="drawer-panel variant-glass-surface h-dvh w-[min(92vw,360px)] overflow-auto card bg-surface-100-900 px-4 pt-20 pb-10"
-					>
-						<div class="mb-3 flex items-center justify-between">
-							<h3 class="text-lg font-semibold">
-								{#if title}
-									{@render title!()}
-								{:else}
-									{leftTitle}
-								{/if}
-							</h3>
-							<Dialog.Close class="btn preset-tonal btn-sm">Close</Dialog.Close>
-						</div>
+				{/snippet}
+				{#snippet content()}
+					<header class="mt-4 flex items-center justify-between">
+						<h3 class="text-lg font-semibold">
+							{#if title}
+								{@render title!()}
+							{:else}
+								{leftTitle}
+							{/if}
+						</h3>
+						<button type="button" class="btn preset-tonal btn-sm" onclick={closeDrawer}
+							>Close</button
+						>
+					</header>
+					<div class="h-full overflow-auto">
 						{@render left!()}
 					</div>
-				</Dialog.Content>
-			</Dialog.Portal>
-		</Dialog.Root>
+				{/snippet}
+			</Modal>
+		</div>
 
 		<aside class="hidden md:block md:w-72 md:shrink-0">
 			<div class="top-0 h-full border-r border-white/10 px-4">
@@ -72,10 +82,3 @@
 		{/if}
 	</div>
 </div>
-
-<style>
-	.drawer-panel {
-		margin: 0;
-		height: 100dvh;
-	}
-</style>

@@ -9,17 +9,15 @@
 		filters,
 		baselineFilters,
 		query = $bindable(''),
-		sortKey = $bindable<string>('finalProfitPerServing'),
-		sortDir = $bindable<'asc' | 'desc'>('desc'),
-		searchPlaceholder
+		searchPlaceholder,
+		myBanchoExpanded = $bindable(true)
 	}: {
 		bundle: Readable<EntityBundle<{ id: Id; sort: Record<string, string | number | null> }> | null>;
 		filters: Writable<Record<string, Set<string>>>;
 		baselineFilters: Writable<Record<string, Set<string>>>;
 		query?: string;
-		sortKey?: string;
-		sortDir?: 'asc' | 'desc';
 		searchPlaceholder?: string;
+		myBanchoExpanded?: boolean;
 	} = $props();
 	import { selectedChapter } from '$lib/stores/chapters';
 	import { visible as dlcVisible } from '$lib/stores/dlc';
@@ -177,7 +175,7 @@
 </script>
 
 <div class="space-y-4">
-	<MyBanchoPanel {enabledDlcIds} />
+	<MyBanchoPanel {enabledDlcIds} bind:expanded={myBanchoExpanded} />
 	<div class="space-y-2">
 		<label class="text-sm font-semibold" for="filters-search">Search</label>
 		<div class="relative">

@@ -33,6 +33,3 @@
 		{/each}
 	</div>
 </section>
-
-<style>
-</style>

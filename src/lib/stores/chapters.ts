@@ -43,7 +43,6 @@ export const selectedChapter = derived([bundle, selectedChapterId], ([$bundle, $
 	if (!$bundle) return null as Chapter | null;
 	let chapter = null as Chapter | null;
 	if ($id != null) chapter = $bundle.byId[$id] ?? null;
-	if (chapter == null) chapter = ($bundle.rows ?? []).find((c) => c.number === 3) ?? null;
 	if (chapter == null) chapter = ($bundle.rows ?? [])[0] ?? null;
 	return chapter;
 });
@@ -52,7 +51,6 @@ export const selectedChapter = derived([bundle, selectedChapterId], ([$bundle, $
 bundle.subscribe(($bundle) => {
 	if (!$bundle) return;
 	if (get(selectedChapterId) != null) return;
-	const rows = $bundle.rows ?? [];
-	const ch3 = rows.find((c) => c.number === 3) ?? rows[0] ?? null;
-	if (ch3) selectedChapterId.set(ch3.id);
+	const ch0 = ($bundle.rows ?? [])[0] ?? null;
+	if (ch0) selectedChapterId.set(ch0.id);
 });

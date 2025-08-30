@@ -52,69 +52,81 @@
 			ro.disconnect();
 		};
 	});
+
+	const iconSize = 22;
 </script>
 
-<div class="appbar" style={`--appbar-height: ${appBarHeight}px`}>
-	<div class="appbar-inner" class:hidden={isHidden} bind:this={appBarEl}>
+<div class="fixed top-0 right-0 left-0 z-[1000]" style={`--appbar-height: ${appBarHeight}px`}>
+	<div
+		class="transition-transform duration-200 ease-in-out will-change-transform motion-reduce:!transition-none sm:!transform-none sm:!transition-none sm:!will-change-auto"
+		class:[-translate-y-full]={isHidden}
+		class:[pointer-events-none]={isHidden}
+		bind:this={appBarEl}
+	>
 		<AppBar>
 			{#snippet lead()}
-				<h3 class="flex items-center gap-1 text-2xl font-bold text-primary-500">
+				<h3 class="flex items-center gap-1 font-bold text-primary-500">
 					<img src={BanchoIcon} alt="BanchoBox" class="h-6 w-6" />
-					<a href="/" class="no-underline">BanchoBox</a>
+					<a href="/" class="text-xl no-underline sm:text-2xl">BanchoBox</a>
 				</h3>
 			{/snippet}
 
 			{#snippet trail()}
-				<nav class="flex items-center gap-2">
+				<nav class="flex items-center gap-0.5 sm:gap-1">
 					<a
 						href="/dishes"
-						class="nav-link"
-						class:active={$page.url.pathname === '/dishes'}
+						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
+						class:!text-primary-500={$page.url.pathname === '/dishes'}
+						class:!bg-primary-50={$page.url.pathname === '/dishes'}
 						data-sveltekit-preload-data="hover"
 						aria-label="Dishes"
 					>
-						<Soup size={22} />
-						<span class="label hidden sm:inline">Dishes</span>
+						<Soup size={iconSize} />
+						<span class="label hidden md:inline">Dishes</span>
 					</a>
 					<a
 						href="/ingredients"
-						class="nav-link"
-						class:active={$page.url.pathname === '/ingredients'}
+						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
+						class:!text-primary-500={$page.url.pathname === '/ingredients'}
+						class:!bg-primary-50={$page.url.pathname === '/ingredients'}
 						data-sveltekit-preload-data="hover"
 						aria-label="Ingredients"
 					>
-						<Shrimp size={22} />
-						<span class="label hidden sm:inline">Ingredients</span>
+						<Shrimp size={iconSize} />
+						<span class="label hidden md:inline">Ingredients</span>
 					</a>
 					<a
 						href="/parties"
-						class="nav-link"
-						class:active={$page.url.pathname === '/parties'}
+						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
+						class:!text-primary-500={$page.url.pathname === '/parties'}
+						class:!bg-primary-50={$page.url.pathname === '/parties'}
 						data-sveltekit-preload-data="hover"
 						aria-label="Parties"
 					>
-						<PartyPopper size={22} />
-						<span class="label hidden sm:inline">Parties</span>
+						<PartyPopper size={iconSize} />
+						<span class="label hidden md:inline">Parties</span>
 					</a>
 					<a
 						href="/staff"
-						class="nav-link"
-						class:active={$page.url.pathname === '/staff'}
+						class="inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
+						class:!text-primary-500={$page.url.pathname === '/staff'}
+						class:!bg-primary-50={$page.url.pathname === '/staff'}
 						data-sveltekit-preload-data="hover"
 						aria-label="Staff"
 					>
-						<Users size={22} />
-						<span class="label hidden sm:inline">Staff</span>
+						<Users size={iconSize} />
+						<span class="label hidden md:inline">Staff</span>
 					</a>
 					<a
 						href="/tracking"
-						class="nav-link ml-auto"
-						class:active={$page.url.pathname === '/tracking'}
+						class="ml-auto inline-flex items-center gap-2 rounded-md p-2 text-sm font-medium text-surface-600 no-underline transition-colors duration-200 hover:bg-surface-100 hover:text-primary-500 sm:px-3"
+						class:!text-primary-500={$page.url.pathname === '/tracking'}
+						class:!bg-primary-50={$page.url.pathname === '/tracking'}
 						data-sveltekit-preload-data="hover"
 						aria-label="Tracking"
 					>
-						<ClipboardList size={22} />
-						<span class="label hidden sm:inline">Tracking</span>
+						<ClipboardList size={iconSize} />
+						<span class="label hidden md:inline">Tracking</span>
 					</a>
 				</nav>
 			{/snippet}
@@ -122,72 +134,4 @@
 	</div>
 </div>
 <!-- Permanent spacer to keep content position stable regardless of header visibility -->
-<div class="appbar-spacer" aria-hidden="true" style={`height: ${appBarHeight}px`}></div>
-
-<style>
-	.appbar {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 1000;
-	}
-
-	.appbar-inner {
-		transition: transform 200ms ease-in-out;
-		will-change: transform;
-	}
-
-	.appbar-inner.hidden {
-		transform: translateY(-100%);
-		pointer-events: none;
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.appbar-inner {
-			transition: none;
-		}
-	}
-
-	/* Only hide on mobile; for >= sm (640px) keep it always visible */
-	@media (min-width: 640px) {
-		.appbar-inner {
-			transform: none !important;
-			transition: none;
-			will-change: auto;
-		}
-		.appbar-inner.hidden {
-			transform: none !important;
-			pointer-events: auto;
-		}
-	}
-
-	.appbar-spacer {
-		height: var(--appbar-height, 64px);
-	}
-
-	.nav-link {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		padding: 0.5rem 0.75rem;
-		border-radius: 0.375rem;
-		font-size: 0.875rem;
-		font-weight: 500;
-		color: var(--color-surface-600);
-		text-decoration: none;
-		transition:
-			background-color 0.2s,
-			color 0.2s;
-	}
-
-	.nav-link:hover {
-		color: var(--color-primary-500);
-		background-color: var(--color-surface-100);
-	}
-
-	.nav-link.active {
-		color: var(--color-primary-500);
-		background-color: var(--color-primary-50);
-	}
-</style>
+<div aria-hidden="true" style={`height: ${appBarHeight}px`}></div>

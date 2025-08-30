@@ -54,7 +54,3 @@
 		</div>
 	{/snippet}
 </ResponsiveLayout>
-
-<style>
-	/* controls moved into FiltersPanel */
-</style>
