@@ -1,4 +1,12 @@
 id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,crabtrap,bugnet,gloves,aberration,kg,max_meats,day,night,fog,rank,farm,buy_jango,buy_otto,sell,cost,dlc,image
+22,Black Tiger Shrimp,2,50-130m,,Blue Hole Medium Depth,Shrimp,,,,,TRUE,,,0.1,5,TRUE,,,5,,,,17,17,,black_tiger_shrimp.png
+47,Chambered Nautilus,2,130-250m,,Blue Hole Depths,Shrimp,,,,,TRUE,,,1.0,3,TRUE,,,5,,,,12,12,,chambered_nautilus.png
+50,Clione,2,130-250m,,Blue Hole Depths,Shrimp,,,,,TRUE,,,0.1,4,TRUE,,,5,,,,25,25,,clione.png
+116,Long-Snouted Seahorse,2,0-50m,,Blue Hole Shallows,Shrimp,,,,,TRUE,,,0.5,0,TRUE,,,4,,,,2,2,,long-snouted_seahorse.png
+177,Seadragon,6,Hydrothermal Vents,,Hydrothermal Vents,Shrimp,,,,,TRUE,,,0.5,4,,,,8,,,,35,35,,weedy_seadragon.png
+211,Waptia Fieldensis,6,Hydrothermal Vents,,Hydrothermal Vents,Shrimp,,,,,TRUE,,,0.4,5,TRUE,,,9,,,,34,34,,waptia_fieldensis.png
+213,White Shrimp,2,0-130m,,Blue Hole Shallows;Blue Hole Medium Depth,Shrimp,,,,,TRUE,,,0.1,5,TRUE,TRUE,,7,,,,17,17,,white_shrimp.png
+216,Whiteleg Shrimp,2,0-50m,,Blue Hole Shallows,Shrimp,,,,,TRUE,,,0.1,0,TRUE,,,5,,,,11,11,,whiteleg_shrimp.png
 1,Agar,0,0-50m,,Blue Hole Shallows,Sea plant,,,,,,,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,3,3,,agar.png
 2,Alaska Pollock,6,Glacial Area,,Glacial Area,Fish,TRUE,,TRUE,,,,,7.0,5,TRUE,,,8,,,,45,45,,alaska_pollock.png
 3,Allenypterus,6,Hydrothermal Vents,,Hydrothermal Vents,Fish,TRUE,,TRUE,,,,,4.0,3,TRUE,,,9,,,,42,42,,allenypterus.png
@@ -20,7 +28,6 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 19,Black and White Snapper,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,1.0,5,TRUE,,,1,,,,3,3,,black_and_white_snapper.png
 20,Black Coral,6,Glacial Area,,Glacial Area,Sea plant,,,,,,,,0.1,1,TRUE,,,2,Gumo,,,8,8,,black_coral.png
 21,Black Pepper,2,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,60,,6,6,,black_pepper.png
-22,Black Tiger Shrimp,2,50-130m,,Blue Hole Medium Depth,Shrimp,,,,,TRUE,,,0.1,5,TRUE,,,5,,,,17,17,,black_tiger_shrimp.png
 23,Black Vinegar,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,50,,5,5,,black_vinegar.png
 24,Blackfin Barracuda,2,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,5.5,5,,TRUE,,5,,,,20,20,,blackfin_barracuda.png
 25,Blacktip Shark Meat,2,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,2.5,5,,TRUE,,6,,,,20,20,,blacktip_reefshark.png
@@ -45,10 +52,8 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 44,Cardinal Fish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.2,3,,,,1,,,,1,1,,cardinal_fish.png
 45,Carrot,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,106,250,25,25,,carrot.png
 46,Cerebral Crab,6,Fog Coast,,Fog Coast,Crab,,,,TRUE,,,TRUE,2.0,,,,TRUE,7,,,,,0,Dredge,cerebral_crab.png
-47,Chambered Nautilus,2,130-250m,,Blue Hole Depths,Shrimp,,,,,TRUE,,,1.0,3,TRUE,,,5,,,,12,12,,chambered_nautilus.png
 48,Cherry Tomato,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,148,175,17,17,,cherry_tomato.png
 49,Clearfin Lionfish,2,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,1.7,3,,TRUE,,4,,,,8,8,,clearfin_lionfish.png
-50,Clione,2,130-250m,,Blue Hole Depths,Shrimp,,,,,TRUE,,,0.1,4,TRUE,,,5,,,,25,25,,clione.png
 51,Clione Queen Tentacle,2,130-250m,,Blue Hole Depths,Boss,,,,,,,,1.0,1,,,,99,,,,,0,,clione_queen_tentacle.png
 52,Clown Frogfish,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,0.3,3,TRUE,,,1,,,,5,5,,clown_frogfish.png
 53,Clownfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.2,2,TRUE,,,1,,,,1,1,,clownfish.png
@@ -114,7 +119,6 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 113,Klaus's Fin,2,0-50m,,Blue Hole Shallows,Boss,,,,,,,,1.0,1,,TRUE,,99,,,,,0,,klaus_s_fin.png
 114,Kronosaurus Tongue,6,Hydrothermal Vents,,Hydrothermal Vents,Boss,,,,,,,,1.0,1,TRUE,,,99,,,,,0,,kronosaurus_tongue.png
 115,Lagoon Triggerfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.7,2,TRUE,,,1,,,,2,2,,lagoon_triggerfish.png
-116,Long-Snouted Seahorse,2,0-50m,,Blue Hole Shallows,Shrimp,,,,,TRUE,,,0.5,0,TRUE,,,4,,,,2,2,,long-snouted_seahorse.png
 117,Longfin Batfish,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.8,5,TRUE,,,1,,,,3,3,,longfin_batfish.png
 118,Longnose Sawshark Meat,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,TRUE,TRUE,,,,,6.5,5,TRUE,TRUE,,6,,,,12,12,,longnose_sawshark.png
 119,Longspine Porcupinefish,2,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,3.5,3,,TRUE,,5,,,,26,26,,longspine_porcupinefish.png
@@ -175,7 +179,6 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 174,Sea Goldie,0,0-50m,,Blue Hole Shallows,Fish,TRUE,,TRUE,,,,,0.3,2,TRUE,,,1,,,,1,1,,sea_goldie.png
 175,Sea Grape,1,Limestone Cave,,Blue Hole Medium Depth,Sea plant,,,,,,,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,6,6,,sea_grape.png
 176,Sea Toad,2,130-250m,,Blue Hole Depths,Fish,TRUE,,TRUE,,,,,5.0,3,TRUE,,,5,,,,18,18,,sea_toad.png
-177,Seadragon,6,Hydrothermal Vents,,Hydrothermal Vents,Shrimp,,,,,TRUE,,,0.5,4,,,,8,,,,35,35,,weedy_seadragon.png
 178,Seaweed,1,50-130m,,Blue Hole Medium Depth,Sea plant,,,,,,,,0.1,1,TRUE,TRUE,TRUE,2,Gumo,,,5,5,,seaweed.png
 179,Seizing Snailfish,5,Jellyfish Basin,,Jellyfish Basin,Fish,TRUE,,TRUE,,,,TRUE,5.0,3,,,TRUE,6,,,,,0,Dredge,seizing_snailfish.png
 180,Sesame Seed,1,Dispatch & Cooking Pots,0,all,Procure,,,,,,,,0.1,1,,,,1,,80,,8,8,,sesame_seed.png
@@ -209,12 +212,9 @@ id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,cra
 208,Tusked Grouper,5,Fog Coast,,Fog Coast,Fish,TRUE,,TRUE,,,,TRUE,5.0,,,,TRUE,6,,,,,0,Dredge,tusked_grouper.png
 209,Vampire Squid,5,Glacial Passage,,Glacial Passage,Fish,TRUE,,TRUE,,,,,6.0,5,TRUE,,,8,,,,41,41,,vampire_squid.png
 210,Voltaic Grouper,5,Fog Coast,,Fog Coast,Fish,TRUE,,TRUE,,,,TRUE,6.0,,,,TRUE,7,,,,,0,Dredge,voltaic_grouper.png
-211,Waptia Fieldensis,6,Hydrothermal Vents,,Hydrothermal Vents,Shrimp,,,,,TRUE,,,0.4,5,TRUE,,,9,,,,34,34,,waptia_fieldensis.png
 212,Wheat,5,Vegetable Farm,,,Vegetable,,,,,,,,,,,,,4,Otto,161,190,19,19,,wheat.png
-213,White Shrimp,2,0-130m,,Blue Hole Shallows;Blue Hole Medium Depth,Shrimp,,,,,TRUE,,,0.1,5,TRUE,TRUE,,7,,,,17,17,,white_shrimp.png
 214,White Spotted Jellyfish,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,1.0,3,TRUE,,,2,,,,6,6,,white_spotted_jellyfish.png
 215,White Trevally,1,50-130m,,Blue Hole Medium Depth,Fish,TRUE,,TRUE,,,,,6.0,5,TRUE,,,2,,,,7,7,,white_trevally.png
-216,Whiteleg Shrimp,2,0-50m,,Blue Hole Shallows,Shrimp,,,,,TRUE,,,0.1,0,TRUE,,,5,,,,11,11,,whiteleg_shrimp.png
 217,Whitetip Reefshark Head,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,2.5,1,TRUE,TRUE,,4,,,,40,40,,whitetip_reefshark_head.png
 218,Whitetip Reefshark Meat,1,0-50m,,Blue Hole Shallows,Fish,TRUE,TRUE,TRUE,,,,,2.5,5,TRUE,TRUE,,4,,,,8,8,,whitetip_reefshark_meat.png
 219,Withered Ray,5,Black Cliff,,Black Cliff,Fish,TRUE,TRUE,,,,,TRUE,8.5,5,,,TRUE,9,,,,,0,Dredge,withered_ray.png

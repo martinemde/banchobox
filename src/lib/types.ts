@@ -103,6 +103,8 @@ export interface BasicDish {
 	dlc?: string;
 	cooksta?: string;
 	artisansFlames?: number;
+	staff?: string;
+	staffLevel?: number;
 }
 
 export interface BasicIngredient {

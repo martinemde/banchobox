@@ -29,7 +29,6 @@ export function buildDishesBundle({
 		Chapter: {},
 		Cooksta: {},
 		DLC: {},
-		Ingredient: {},
 		Party: {},
 		'Unlock Condition': {}
 	};
@@ -46,15 +45,10 @@ export function buildDishesBundle({
 		const unlock = (d.unlock ?? '').toString();
 		if (unlock) {
 			if (unlock.startsWith('Staff ')) {
-				(facets['Unlock Condition']['Staff Unlock'] ??= []).push(d.id);
+				(facets['Unlock Condition']['Staff'] ??= []).push(d.id);
 			} else {
 				(facets['Unlock Condition'][unlock] ??= []).push(d.id);
 			}
-		}
-
-		for (const line of d.ingredients) {
-			const key = String(line.name);
-			(facets.Ingredient[key] ??= []).push(d.id);
 		}
 
 		// Chapter facets - cumulative

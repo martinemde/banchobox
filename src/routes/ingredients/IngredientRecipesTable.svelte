@@ -14,8 +14,6 @@
 			<tr>
 				<th class="p-2 pl-4 text-left" colspan="2">Recipe</th>
 				<th class="p-2 text-center">Qty</th>
-				<th class="p-2 text-center">Lvl</th>
-				<th class="p-2 text-center">Upgrade</th>
 				<th class="p-2 text-right">Price</th>
 				<th class="p-2 text-right">Serv</th>
 				<th class="p-2 text-right">Revenue</th>
@@ -32,8 +30,6 @@
 					</td>
 					<td class="p-2">{row.dishName}</td>
 					<td class="p-2 text-center tabular-nums">{row.count}</td>
-					<td class="p-2 text-center tabular-nums">{row.level ?? '—'}</td>
-					<td class="p-2 text-center tabular-nums">{row.upgradeCount ?? '—'}</td>
 					<td class="p-2 text-right tabular-nums">{formatNumber(row.price as number)}</td>
 					<td class="p-2 text-right tabular-nums">{row.servings ?? '—'}</td>
 					<td class="p-2 text-right tabular-nums">{formatNumber(row.revenue)}</td>

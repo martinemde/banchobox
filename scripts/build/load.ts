@@ -88,7 +88,9 @@ const dishesRowSchema = z
 		unlock: optionalString,
 		cooksta: optionalString,
 		dlc: optionalString,
-		artisans_flames: optionalNumber
+		artisans_flames: optionalNumber,
+		staff: optionalString,
+		staff_level: optionalNumber
 	})
 	.transform((row) => ({
 		id: row['id'],
@@ -105,7 +107,9 @@ const dishesRowSchema = z
 		unlock: row['unlock'] ?? null,
 		cooksta: row['cooksta'] ?? null,
 		dlc: row['dlc'] ?? null,
-		artisansFlames: row['artisans_flames'] as number | null
+		artisansFlames: row['artisans_flames'] as number | null,
+		staff: row['staff'] ?? null,
+		staffLevel: row['staff_level'] as number | null
 	}));
 
 // ingredients-data.csv schema -> normalized row
@@ -273,6 +277,8 @@ function loadDishes() {
 			'cooksta',
 			'dlc',
 			'artisans_flames',
+			'staff',
+			'staff_level',
 			'image'
 		],
 		'dishes-data.csv'

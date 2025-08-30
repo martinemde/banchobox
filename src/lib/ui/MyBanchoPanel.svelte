@@ -9,8 +9,7 @@
 	} from '$lib/stores/chapters';
 	import { visible as dlcVisible } from '$lib/stores/dlc';
 
-	let { enabledDlcIds = $bindable(new SvelteSet<number>()) }: { enabledDlcIds?: Set<number> } =
-		$props();
+	let { enabledDlcIds = new SvelteSet<number>() }: { enabledDlcIds?: Set<number> } = $props();
 
 	const cookstaTiers = $derived($cookstaVisible ?? []);
 	const chapterRows = $derived($chaptersVisible ?? []);
@@ -28,7 +27,10 @@
 	persist(
 		'filtersPanel.enabledDlcIds.v1',
 		() => enabledDlcIds,
-		(v) => (enabledDlcIds = v),
+		(v) => {
+			enabledDlcIds.clear();
+			for (const id of v) enabledDlcIds.add(id);
+		},
 		{
 			storage: 'local',
 			serialize: (set) => JSON.stringify(Array.from(set.values())),
@@ -37,10 +39,8 @@
 	);
 
 	function toggleDlc(id: number, checked: boolean) {
-		const next = new SvelteSet(enabledDlcIds);
-		if (checked) next.add(id);
-		else next.delete(id);
-		enabledDlcIds = next;
+		if (checked) enabledDlcIds.add(id);
+		else enabledDlcIds.delete(id);
 	}
 </script>
 

@@ -144,7 +144,10 @@
 	{#if ingredient.usedIn.length > 0}
 		<section class="border-t border-surface-200-800">
 			<Accordion {value} onValueChange={onAccordionValueChange} collapsible>
-				<Accordion.Item value="recipes">
+				<Accordion.Item
+					value="recipes"
+					controlHover="hover:preset-filled-primary-900-100 hover:text-primary-200-800"
+				>
 					{#snippet lead()}
 						<Soup size={16} />
 					{/snippet}

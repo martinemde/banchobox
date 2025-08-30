@@ -8,6 +8,7 @@
 	import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
 	import RecipeSummaryIcons from '$lib/components/RecipeSummaryIcons.svelte';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
+	import ArtisansFlamesCost from '$lib/components/ArtisansFlamesCost.svelte';
 	// import tasteIcon from '$lib/images/ui/sort_taste.png';
 	// import levelIcon from '$lib/images/ui/sort_level.png';
 	// import servingsIcon from '$lib/images/ui/sort_servings.png';
@@ -102,7 +103,14 @@
 			<div class="min-w-0 flex-1 space-y-4">
 				<header>
 					<div class="truncate text-lg leading-none font-semibold">{dish.name}</div>
-					<div class="mt-0.5 truncate text-sm opacity-70">{dish.unlock || '—'}</div>
+					<div class="text-md mt-1 flex items-center gap-2">
+						{#if dish.staff}
+							<span class="truncate opacity-70">{dish.staff} (Level {dish.staffLevel})</span>
+						{:else if dish.unlock}
+							<span class="truncate opacity-70">{dish.unlock}</span>
+						{/if}
+						<ArtisansFlamesCost cost={dish.artisansFlames} />
+					</div>
 				</header>
 
 				<!--
