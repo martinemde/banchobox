@@ -30,7 +30,7 @@
 					<tr>
 						<th class="truncate p-1 text-sm font-medium">{h.name}</th>
 						<td class="p-1 text-right text-sm tabular-nums">
-							{h.level ?? '20'}
+							<input type="number" class="input" value={h.level ?? '20'} />
 						</td>
 						<td class="p-1 text-right text-sm tabular-nums">
 							{h.wage.toLocaleString()}

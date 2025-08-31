@@ -55,7 +55,7 @@
         "servingStatMax": 723,
         "procureStatMax": 467,
         "appealStatMax": 291,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     {
@@ -111,7 +111,7 @@
         "servingStatMax": 417,
         "procureStatMax": 810,
         "appealStatMax": 449,
-        "seasoningsMaxLevel20": 10
+        "maxSeasonings": 10
       }
     },
     {
@@ -169,7 +169,7 @@
         "servingStatMax": 248,
         "procureStatMax": 323,
         "appealStatMax": 129,
-        "seasoningsMaxLevel20": 5
+        "maxSeasonings": 5
       }
     },
     {
@@ -225,7 +225,7 @@
         "servingStatMax": 726,
         "procureStatMax": 726,
         "appealStatMax": 726,
-        "seasoningsMaxLevel20": 8
+        "maxSeasonings": 8
       }
     },
     {
@@ -295,7 +295,7 @@
         "servingStatMax": 914,
         "procureStatMax": 150,
         "appealStatMax": 672,
-        "seasoningsMaxLevel20": 4
+        "maxSeasonings": 4
       }
     },
     {
@@ -351,7 +351,7 @@
         "servingStatMax": 360,
         "procureStatMax": 859,
         "appealStatMax": 915,
-        "seasoningsMaxLevel20": 12
+        "maxSeasonings": 12
       }
     },
     {
@@ -427,7 +427,7 @@
         "servingStatMax": 855,
         "procureStatMax": 666,
         "appealStatMax": 744,
-        "seasoningsMaxLevel20": 8
+        "maxSeasonings": 8
       }
     },
     {
@@ -483,7 +483,7 @@
         "servingStatMax": 986,
         "procureStatMax": 425,
         "appealStatMax": 138,
-        "seasoningsMaxLevel20": 6
+        "maxSeasonings": 6
       }
     },
     {
@@ -539,7 +539,7 @@
         "servingStatMax": 888,
         "procureStatMax": 100,
         "appealStatMax": 999,
-        "seasoningsMaxLevel20": 3
+        "maxSeasonings": 3
       }
     },
     {
@@ -595,7 +595,7 @@
         "servingStatMax": 840,
         "procureStatMax": 768,
         "appealStatMax": 704,
-        "seasoningsMaxLevel20": 11
+        "maxSeasonings": 11
       }
     },
     {
@@ -653,7 +653,7 @@
         "servingStatMax": 932,
         "procureStatMax": 628,
         "appealStatMax": 963,
-        "seasoningsMaxLevel20": 8
+        "maxSeasonings": 8
       }
     },
     {
@@ -711,7 +711,7 @@
         "servingStatMax": 225,
         "procureStatMax": 482,
         "appealStatMax": 269,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     {
@@ -769,7 +769,7 @@
         "servingStatMax": 579,
         "procureStatMax": 510,
         "appealStatMax": 506,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     {
@@ -827,7 +827,7 @@
         "servingStatMax": 605,
         "procureStatMax": 547,
         "appealStatMax": 838,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     {
@@ -883,7 +883,7 @@
         "servingStatMax": 455,
         "procureStatMax": 780,
         "appealStatMax": 509,
-        "seasoningsMaxLevel20": 9
+        "maxSeasonings": 9
       }
     },
     {
@@ -939,7 +939,7 @@
         "servingStatMax": 33,
         "procureStatMax": 20,
         "appealStatMax": 20,
-        "seasoningsMaxLevel20": 3
+        "maxSeasonings": 3
       }
     },
     {
@@ -995,7 +995,7 @@
         "servingStatMax": 253,
         "procureStatMax": 814,
         "appealStatMax": 378,
-        "seasoningsMaxLevel20": 12
+        "maxSeasonings": 12
       }
     },
     {
@@ -1051,7 +1051,7 @@
         "servingStatMax": 792,
         "procureStatMax": 29,
         "appealStatMax": 981,
-        "seasoningsMaxLevel20": 2
+        "maxSeasonings": 2
       }
     },
     {
@@ -1107,7 +1107,7 @@
         "servingStatMax": 466,
         "procureStatMax": 914,
         "appealStatMax": 418,
-        "seasoningsMaxLevel20": 11
+        "maxSeasonings": 11
       }
     },
     {
@@ -1179,7 +1179,7 @@
         "servingStatMax": 910,
         "procureStatMax": 770,
         "appealStatMax": 194,
-        "seasoningsMaxLevel20": 9
+        "maxSeasonings": 9
       }
     },
     {
@@ -1237,7 +1237,7 @@
         "servingStatMax": 541,
         "procureStatMax": 541,
         "appealStatMax": 541,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     {
@@ -1293,7 +1293,7 @@
         "servingStatMax": 99,
         "procureStatMax": 155,
         "appealStatMax": 808,
-        "seasoningsMaxLevel20": 4
+        "maxSeasonings": 4
       }
     },
     {
@@ -1349,7 +1349,7 @@
         "servingStatMax": 154,
         "procureStatMax": 385,
         "appealStatMax": 126,
-        "seasoningsMaxLevel20": 5
+        "maxSeasonings": 5
       }
     },
     {
@@ -1407,7 +1407,7 @@
         "servingStatMax": 218,
         "procureStatMax": 986,
         "appealStatMax": 160,
-        "seasoningsMaxLevel20": 11
+        "maxSeasonings": 11
       }
     }
   ],
@@ -1467,7 +1467,7 @@
         "servingStatMax": 605,
         "procureStatMax": 547,
         "appealStatMax": 838,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     "2": {
@@ -1523,7 +1523,7 @@
         "servingStatMax": 455,
         "procureStatMax": 780,
         "appealStatMax": 509,
-        "seasoningsMaxLevel20": 9
+        "maxSeasonings": 9
       }
     },
     "3": {
@@ -1579,7 +1579,7 @@
         "servingStatMax": 417,
         "procureStatMax": 810,
         "appealStatMax": 449,
-        "seasoningsMaxLevel20": 10
+        "maxSeasonings": 10
       }
     },
     "4": {
@@ -1635,7 +1635,7 @@
         "servingStatMax": 792,
         "procureStatMax": 29,
         "appealStatMax": 981,
-        "seasoningsMaxLevel20": 2
+        "maxSeasonings": 2
       }
     },
     "5": {
@@ -1693,7 +1693,7 @@
         "servingStatMax": 218,
         "procureStatMax": 986,
         "appealStatMax": 160,
-        "seasoningsMaxLevel20": 11
+        "maxSeasonings": 11
       }
     },
     "6": {
@@ -1751,7 +1751,7 @@
         "servingStatMax": 225,
         "procureStatMax": 482,
         "appealStatMax": 269,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     "7": {
@@ -1809,7 +1809,7 @@
         "servingStatMax": 723,
         "procureStatMax": 467,
         "appealStatMax": 291,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     "8": {
@@ -1865,7 +1865,7 @@
         "servingStatMax": 99,
         "procureStatMax": 155,
         "appealStatMax": 808,
-        "seasoningsMaxLevel20": 4
+        "maxSeasonings": 4
       }
     },
     "9": {
@@ -1921,7 +1921,7 @@
         "servingStatMax": 154,
         "procureStatMax": 385,
         "appealStatMax": 126,
-        "seasoningsMaxLevel20": 5
+        "maxSeasonings": 5
       }
     },
     "10": {
@@ -1977,7 +1977,7 @@
         "servingStatMax": 986,
         "procureStatMax": 425,
         "appealStatMax": 138,
-        "seasoningsMaxLevel20": 6
+        "maxSeasonings": 6
       }
     },
     "11": {
@@ -2035,7 +2035,7 @@
         "servingStatMax": 579,
         "procureStatMax": 510,
         "appealStatMax": 506,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     "12": {
@@ -2091,7 +2091,7 @@
         "servingStatMax": 466,
         "procureStatMax": 914,
         "appealStatMax": 418,
-        "seasoningsMaxLevel20": 11
+        "maxSeasonings": 11
       }
     },
     "13": {
@@ -2149,7 +2149,7 @@
         "servingStatMax": 248,
         "procureStatMax": 323,
         "appealStatMax": 129,
-        "seasoningsMaxLevel20": 5
+        "maxSeasonings": 5
       }
     },
     "14": {
@@ -2205,7 +2205,7 @@
         "servingStatMax": 33,
         "procureStatMax": 20,
         "appealStatMax": 20,
-        "seasoningsMaxLevel20": 3
+        "maxSeasonings": 3
       }
     },
     "15": {
@@ -2275,7 +2275,7 @@
         "servingStatMax": 914,
         "procureStatMax": 150,
         "appealStatMax": 672,
-        "seasoningsMaxLevel20": 4
+        "maxSeasonings": 4
       }
     },
     "16": {
@@ -2347,7 +2347,7 @@
         "servingStatMax": 910,
         "procureStatMax": 770,
         "appealStatMax": 194,
-        "seasoningsMaxLevel20": 9
+        "maxSeasonings": 9
       }
     },
     "17": {
@@ -2423,7 +2423,7 @@
         "servingStatMax": 855,
         "procureStatMax": 666,
         "appealStatMax": 744,
-        "seasoningsMaxLevel20": 8
+        "maxSeasonings": 8
       }
     },
     "18": {
@@ -2481,7 +2481,7 @@
         "servingStatMax": 541,
         "procureStatMax": 541,
         "appealStatMax": 541,
-        "seasoningsMaxLevel20": 7
+        "maxSeasonings": 7
       }
     },
     "19": {
@@ -2537,7 +2537,7 @@
         "servingStatMax": 360,
         "procureStatMax": 859,
         "appealStatMax": 915,
-        "seasoningsMaxLevel20": 12
+        "maxSeasonings": 12
       }
     },
     "20": {
@@ -2595,7 +2595,7 @@
         "servingStatMax": 932,
         "procureStatMax": 628,
         "appealStatMax": 963,
-        "seasoningsMaxLevel20": 8
+        "maxSeasonings": 8
       }
     },
     "21": {
@@ -2651,7 +2651,7 @@
         "servingStatMax": 253,
         "procureStatMax": 814,
         "appealStatMax": 378,
-        "seasoningsMaxLevel20": 12
+        "maxSeasonings": 12
       }
     },
     "22": {
@@ -2707,7 +2707,7 @@
         "servingStatMax": 888,
         "procureStatMax": 100,
         "appealStatMax": 999,
-        "seasoningsMaxLevel20": 3
+        "maxSeasonings": 3
       }
     },
     "23": {
@@ -2763,7 +2763,7 @@
         "servingStatMax": 726,
         "procureStatMax": 726,
         "appealStatMax": 726,
-        "seasoningsMaxLevel20": 8
+        "maxSeasonings": 8
       }
     },
     "24": {
@@ -2819,7 +2819,7 @@
         "servingStatMax": 840,
         "procureStatMax": 768,
         "appealStatMax": 704,
-        "seasoningsMaxLevel20": 11
+        "maxSeasonings": 11
       }
     }
   },

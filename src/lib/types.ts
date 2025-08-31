@@ -265,7 +265,7 @@ export type StaffSortKey =
 	| 'servingStatMax'
 	| 'procureStatMax'
 	| 'appealStatMax'
-	| 'seasoningsMaxLevel20';
+	| 'maxSeasonings';
 
 export interface Staff {
 	id: Id;

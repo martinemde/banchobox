@@ -21,7 +21,7 @@
 		{ value: 'servingStatMax', label: 'Serving Max' },
 		{ value: 'procureStatMax', label: 'Procure Max' },
 		{ value: 'appealStatMax', label: 'Appeal Max' },
-		{ value: 'seasoningsMaxLevel20', label: 'Max Seasonings Procured' }
+		{ value: 'maxSeasonings', label: 'Max Seasonings Procured' }
 	];
 </script>
 
