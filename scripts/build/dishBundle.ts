@@ -211,10 +211,10 @@ export function buildDishesBundle({
 
 	// Facets - minimal set to start; structure is easy to extend
 	const facets: EntityBundle<Dish>['facets'] = {
-		Chapter: {},
-		Cooksta: {},
-		DLC: {},
-		Party: {},
+		'Chapter': {},
+		'Cooksta': {},
+		'DLC': {},
+		'Party': {},
 		'Unlock Condition': {}
 	};
 

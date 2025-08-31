@@ -3,19 +3,14 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse as parseCsv } from 'csv-parse/sync';
 import { z } from 'zod';
+import type { Id, CookstaInputRow, DLCInputRow, ChapterInputRow } from '../../src/lib/types.js';
 import type {
-	Id,
-	CookstaInputRow,
-	DLCInputRow,
-	ChapterInputRow,
-	StaffInputRow
-} from '../../src/lib/types.js';
-import type {
+	DishIngredientInputRow,
 	DishInputRow,
 	IngredientInputRow,
+	PartyDishInputRow,
 	PartyInputRow,
-	DishIngredientInputRow,
-	PartyDishInputRow
+	StaffInputRow
 } from './types.js';
 
 const __filename = fileURLToPath(import.meta.url);

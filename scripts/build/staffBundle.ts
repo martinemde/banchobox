@@ -77,16 +77,16 @@ export function buildStaffBundle(inputRows: StaffInputRow[], dishes: Dish[]): En
 	const facets: EntityBundle<Staff>['facets'] = {
 		DLC: {},
 		Skill: {
-			Cleaning: [],
+			'Cleaning': [],
 			'Cocktail Serving': [],
-			Cooking: [],
-			'Dispatch Master': [],
+			'Cooking': [],
+			'Dispatch': [],
 			'Drink Serving': [],
 			'Ingredient Prep': [],
 			'Irresistible Charm': [],
 			'Master Drink Maker': [],
-			Serving: [],
-			Tips: [],
+			'Serving': [],
+			'Tip Master': [],
 			'Wasabi Refill': []
 		}
 	};
@@ -98,16 +98,16 @@ export function buildStaffBundle(inputRows: StaffInputRow[], dishes: Dish[]): En
 		const skills = [r.skillLevel3, r.skillLevel7].filter(Boolean) as string[];
 		for (const skill of skills) {
 			if (skill.includes('Cocktail Serving')) facets.Skill['Cocktail Serving'].push(r.id);
-			if (skill.includes('Cooking+')) facets.Skill.Cooking.push(r.id);
-			if (skill.includes('Dispatch')) facets.Skill['Dispatch Master'].push(r.id);
+			if (skill.includes('Cooking+')) facets.Skill['Cooking'].push(r.id);
+			if (skill.includes('Dispatch')) facets.Skill['Dispatch'].push(r.id);
 			if (skill.includes('Drink Serving')) facets.Skill['Drink Serving'].push(r.id);
 			if (skill.includes('Ingredient Prep')) facets.Skill['Ingredient Prep'].push(r.id);
 			if (skill.includes('Irresistible Charm')) facets.Skill['Irresistible Charm'].push(r.id);
 			if (skill.includes('Master Drink Maker')) facets.Skill['Master Drink Maker'].push(r.id);
-			if (skill.includes('Serving+')) facets.Skill.Serving.push(r.id);
-			if (skill.includes('Tip')) facets.Skill.Tips.push(r.id);
+			if (skill.includes('Serving+')) facets.Skill['Serving'].push(r.id);
+			if (skill.includes('Tip Master')) facets.Skill['Tip Master'].push(r.id);
 			if (skill.includes('Wasabi Refill')) facets.Skill['Wasabi Refill'].push(r.id);
-			if (skill.includes('Cleaning')) facets.Skill.Cleaning.push(r.id);
+			if (skill.includes('Cleaning')) facets.Skill['Cleaning'].push(r.id);
 		}
 	}
 
