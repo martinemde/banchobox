@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from './Header.svelte';
+	import AnchorHandler from '$lib/ui/AnchorHandler.svelte';
 	import '../app.css';
 	import type { LayoutProps } from './$types';
 	import { get } from 'svelte/store';
@@ -51,6 +52,7 @@
 
 <div class="flex min-h-screen flex-col">
 	<Header />
+	<AnchorHandler />
 
 	<main class="w-full flex-1">
 		{@render children()}

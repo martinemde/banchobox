@@ -142,17 +142,15 @@
 >
 	<div class="mx-auto max-w-7xl px-4 py-16 md:py-24">
 		<div class="grid items-center gap-10 md:grid-cols-2">
-			<div>
+			<div class="text-center">
 				<h1 class="mb-4 text-4xl leading-tight font-extrabold text-primary-500 md:text-6xl">
-					Chef Bancho’s Sushi Bar. Plan Dives. Perfect Dishes.
+					Chef Bancho’s Sushi Bar
 				</h1>
 				<p class="mb-8 text-lg opacity-90 md:text-xl">
-					BanchoBox, a Dave the Diver companion app, takes the stress out of planning your sushi
-					menu.<br />
-					Get dish and ingredient recommendations, track your progress, and find which dishes turn the
-					best profit for your restaurant.
+					BanchoBox takes the stress out of planning your Dave the Diver sushi menu with help
+					picking dishes and finding ingredients.
 				</p>
-				<a href="/dishes" class="btn preset-filled btn-lg">Start Tracking Your Sushi Bar</a>
+				<a href="/dishes" class="btn preset-filled btn-lg">Plan Your Menu</a>
 			</div>
 			<div>
 				<div
@@ -160,7 +158,7 @@
 				>
 					<div class="mb-4 flex items-center justify-between">
 						<div class="text-sm opacity-80">Tonight’s Menu</div>
-						<div class="text-xs opacity-60">Demo</div>
+						<div class="text-xs opacity-60">Cooksta {$selectedTier?.name ?? ''}</div>
 					</div>
 					<div class="grid grid-cols-3 gap-3">
 						<div>

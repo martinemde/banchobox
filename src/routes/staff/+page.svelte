@@ -13,7 +13,7 @@
 		{ value: 'servingStatMax', label: 'Serving Max' },
 		{ value: 'procureStatMax', label: 'Procure Max' },
 		{ value: 'appealStatMax', label: 'Appeal Max' },
-		{ value: 'seasoningsMaxLevel20', label: 'Procure Max (Seasonings L20)' }
+		{ value: 'seasoningsMaxLevel20', label: 'Max Seasonings Procured' }
 	];
 </script>
 
@@ -30,7 +30,7 @@
 	urlKey="staff"
 	entityLabel="Staff"
 	entityLabelPlural="staff"
-	searchPlaceholder="Search staff by name or skill…"
+	searchPlaceholder="Search by name or skills…"
 	{sortOptions}
 	containerClass="staff"
 >

@@ -55,7 +55,7 @@ function enrichData(
 	const ingredientsBundle = buildIngredientsBundle(preparedIngredients, chaptersBundle);
 	const partiesBundle = buildPartiesBundle(parties, partyDishesByPartyId);
 	const partyDishesBundle = buildPartyDishesBundle(partyDishes);
-	const staffBundle = buildStaffBundle(staff);
+	const staffBundle = buildStaffBundle(staff, preparedDishes);
 	const dishesBundle = buildDishesBundle({
 		dishes: preparedDishes,
 		chaptersBundle,

@@ -86,6 +86,7 @@
 </script>
 
 <article
+	id="dish-{dish.id}"
 	class="max-w-100 min-w-40 divide-y divide-surface-200-800 card border border-surface-200-800 preset-filled-surface-100-900"
 >
 	<!-- Section 1: Overview -->
@@ -105,7 +106,15 @@
 					<div class="truncate text-lg leading-none font-semibold">{dish.name}</div>
 					<div class="text-md mt-1 flex items-center gap-2">
 						{#if dish.staff}
-							<span class="truncate opacity-70">{dish.staff} (Level {dish.staffLevel})</span>
+							<span class="truncate opacity-70">
+								<a
+									href="/staff#staff-{dish.staff.replace(' ', '-')}"
+									class="text-primary-500 transition-colors hover:text-primary-600 hover:underline"
+								>
+									{dish.staff}
+								</a>
+								(Level {dish.staffLevel})
+							</span>
 						{:else if dish.unlock}
 							<span class="truncate opacity-70">{dish.unlock}</span>
 						{/if}

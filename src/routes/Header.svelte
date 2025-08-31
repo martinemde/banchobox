@@ -65,7 +65,7 @@
 			{#snippet lead()}
 				<h3 class="flex items-center gap-1 font-bold text-primary-500">
 					<img src={BanchoIcon} alt="BanchoBox" class="h-6 w-6" />
-					<a href="/" class="text-xl no-underline sm:text-2xl">BanchoBox</a>
+					<a href="/" class="text-xl sm:text-2xl">BanchoBox</a>
 				</h3>
 			{/snippet}
 

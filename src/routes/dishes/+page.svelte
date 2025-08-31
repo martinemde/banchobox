@@ -13,7 +13,7 @@
 	);
 
 	const sortOptions = [
-		{ value: 'name', label: 'Recipe' },
+		{ value: 'name', label: 'Name' },
 		{ value: 'finalPrice', label: 'Final Price' },
 		{ value: 'finalServings', label: 'Final Servings' },
 		{ value: 'finalProfitPerServing', label: 'Profit / Serving' },

@@ -35,6 +35,17 @@
       "branchRankMax": 8,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 59,
+          "staffLevel": 15,
+          "partyIds": [
+            4
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "billy cleaning master tip master",
       "sort": {
         "name": "billy",
@@ -82,6 +93,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 19,
+      "dishes": [
+        {
+          "dishId": 70,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 12,
+          "price": 1480
+        }
+      ],
       "search": "carolina wasabi refill tip master",
       "sort": {
         "name": "carolina",
@@ -129,6 +149,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 98,
+          "staffLevel": 15,
+          "partyIds": [
+            6
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "charlie cooking+ ingredient prep expert",
       "sort": {
         "name": "charlie",
@@ -176,6 +207,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 296,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1572
+        }
+      ],
       "search": "chitose cooking+ cooking++",
       "sort": {
         "name": "chitose",
@@ -223,6 +263,29 @@
       "branchRankMax": 8,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 88,
+          "staffLevel": 5,
+          "partyIds": [],
+          "servings": 4,
+          "price": 814
+        },
+        {
+          "dishId": 65,
+          "staffLevel": 10,
+          "partyIds": [],
+          "servings": 4,
+          "price": 1443
+        },
+        {
+          "dishId": 124,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "cohh cocktail serving tip master",
       "sort": {
         "name": "cohh",
@@ -270,6 +333,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 16,
+      "dishes": [
+        {
+          "dishId": 138,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 12,
+          "price": 1480
+        }
+      ],
       "search": "davina irresistible charm dispatch master",
       "sort": {
         "name": "davina",
@@ -279,7 +351,7 @@
         "servingStatMax": 360,
         "procureStatMax": 859,
         "appealStatMax": 915,
-        "seasoningsMaxLevel20": 10
+        "seasoningsMaxLevel20": 12
       }
     },
     {
@@ -317,6 +389,35 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 14,
+      "dishes": [
+        {
+          "dishId": 206,
+          "staffLevel": 5,
+          "partyIds": [
+            7
+          ],
+          "servings": 1,
+          "price": 1406
+        },
+        {
+          "dishId": 172,
+          "staffLevel": 10,
+          "partyIds": [
+            6
+          ],
+          "servings": 7,
+          "price": 1443
+        },
+        {
+          "dishId": 114,
+          "staffLevel": 15,
+          "partyIds": [
+            6
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "drae cleaning cocktail serving",
       "sort": {
         "name": "drae",
@@ -364,6 +465,15 @@
       "branchRankMax": 5,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 74,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "el nino drink serving master cleaning master",
       "sort": {
         "name": "el nino",
@@ -411,6 +521,15 @@
       "branchRankMax": 5,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 295,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1572
+        }
+      ],
       "search": "etsuko cleaning cocktail serving",
       "sort": {
         "name": "etsuko",
@@ -458,6 +577,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 298,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1572
+        }
+      ],
       "search": "hamako drink serving master cocktail serving",
       "sort": {
         "name": "hamako",
@@ -505,6 +633,17 @@
       "branchRankMax": 8,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 15,
+      "dishes": [
+        {
+          "dishId": 194,
+          "staffLevel": 15,
+          "partyIds": [
+            4
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "itsuki irresistible charm drink serving",
       "sort": {
         "name": "itsuki",
@@ -552,6 +691,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 189,
+          "staffLevel": 15,
+          "partyIds": [
+            1
+          ],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "james ingredient prep master cooking+",
       "sort": {
         "name": "james",
@@ -599,6 +749,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 247,
+          "staffLevel": 15,
+          "partyIds": [
+            6
+          ],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "jandi tip master wasabi refill",
       "sort": {
         "name": "jandi",
@@ -646,6 +807,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 17,
+      "dishes": [
+        {
+          "dishId": 171,
+          "staffLevel": 15,
+          "partyIds": [
+            7
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "kyoko tip master drink serving",
       "sort": {
         "name": "kyoko",
@@ -693,6 +865,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 19,
+      "dishes": [
+        {
+          "dishId": 222,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 12,
+          "price": 1480
+        }
+      ],
       "search": "liu cleaning serving+",
       "sort": {
         "name": "liu",
@@ -740,6 +921,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 2,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 229,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "maki cooking++ cooking+",
       "sort": {
         "name": "maki",
@@ -787,6 +977,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 20,
+      "dishes": [
+        {
+          "dishId": 117,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "masayoshi ingredient prep expert dispatch master",
       "sort": {
         "name": "masayoshi",
@@ -796,7 +995,7 @@
         "servingStatMax": 253,
         "procureStatMax": 814,
         "appealStatMax": 378,
-        "seasoningsMaxLevel20": 10
+        "seasoningsMaxLevel20": 12
       }
     },
     {
@@ -834,6 +1033,15 @@
       "branchRankMax": 8,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 19,
+      "dishes": [
+        {
+          "dishId": 17,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "mitchell serving+ drink serving",
       "sort": {
         "name": "mitchell",
@@ -881,6 +1089,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 18,
+      "dishes": [
+        {
+          "dishId": 193,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "pai serving+ cooking+",
       "sort": {
         "name": "pai",
@@ -928,6 +1145,31 @@
       "branchRankMax": 7,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 36,
+          "staffLevel": 5,
+          "partyIds": [
+            7
+          ],
+          "servings": 10,
+          "price": 832
+        },
+        {
+          "dishId": 170,
+          "staffLevel": 10,
+          "partyIds": [],
+          "servings": 4,
+          "price": 1424
+        },
+        {
+          "dishId": 86,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "raptor cocktail serving wasabi refill",
       "sort": {
         "name": "raptor",
@@ -975,6 +1217,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 20,
+      "dishes": [
+        {
+          "dishId": 39,
+          "staffLevel": 15,
+          "partyIds": [
+            4
+          ],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "raul master drink maker ingredient prep master",
       "sort": {
         "name": "raul",
@@ -1022,6 +1275,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 174,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "tohoku cooking++ cooking+",
       "sort": {
         "name": "tohoku",
@@ -1069,6 +1331,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 186,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "yone cooking++ ingredient prep expert",
       "sort": {
         "name": "yone",
@@ -1116,6 +1387,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 64,
+          "staffLevel": 15,
+          "partyIds": [
+            7
+          ],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "yusuke cooking+ ingredient prep expert",
       "sort": {
         "name": "yusuke",
@@ -1165,6 +1447,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 17,
+      "dishes": [
+        {
+          "dishId": 171,
+          "staffLevel": 15,
+          "partyIds": [
+            7
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "kyoko tip master drink serving",
       "sort": {
         "name": "kyoko",
@@ -1212,6 +1505,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 19,
+      "dishes": [
+        {
+          "dishId": 222,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 12,
+          "price": 1480
+        }
+      ],
       "search": "liu cleaning serving+",
       "sort": {
         "name": "liu",
@@ -1259,6 +1561,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 19,
+      "dishes": [
+        {
+          "dishId": 70,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 12,
+          "price": 1480
+        }
+      ],
       "search": "carolina wasabi refill tip master",
       "sort": {
         "name": "carolina",
@@ -1306,6 +1617,15 @@
       "branchRankMax": 8,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 19,
+      "dishes": [
+        {
+          "dishId": 17,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "mitchell serving+ drink serving",
       "sort": {
         "name": "mitchell",
@@ -1353,6 +1673,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 64,
+          "staffLevel": 15,
+          "partyIds": [
+            7
+          ],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "yusuke cooking+ ingredient prep expert",
       "sort": {
         "name": "yusuke",
@@ -1400,6 +1731,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 189,
+          "staffLevel": 15,
+          "partyIds": [
+            1
+          ],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "james ingredient prep master cooking+",
       "sort": {
         "name": "james",
@@ -1447,6 +1789,17 @@
       "branchRankMax": 8,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 59,
+          "staffLevel": 15,
+          "partyIds": [
+            4
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "billy cleaning master tip master",
       "sort": {
         "name": "billy",
@@ -1494,6 +1847,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 174,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "tohoku cooking++ cooking+",
       "sort": {
         "name": "tohoku",
@@ -1541,6 +1903,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 186,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "yone cooking++ ingredient prep expert",
       "sort": {
         "name": "yone",
@@ -1588,6 +1959,15 @@
       "branchRankMax": 5,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 74,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "el nino drink serving master cleaning master",
       "sort": {
         "name": "el nino",
@@ -1635,6 +2015,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 247,
+          "staffLevel": 15,
+          "partyIds": [
+            6
+          ],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "jandi tip master wasabi refill",
       "sort": {
         "name": "jandi",
@@ -1682,6 +2073,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 18,
+      "dishes": [
+        {
+          "dishId": 193,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "pai serving+ cooking+",
       "sort": {
         "name": "pai",
@@ -1729,6 +2129,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 3,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 98,
+          "staffLevel": 15,
+          "partyIds": [
+            6
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "charlie cooking+ ingredient prep expert",
       "sort": {
         "name": "charlie",
@@ -1776,6 +2187,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 2,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 229,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "maki cooking++ cooking+",
       "sort": {
         "name": "maki",
@@ -1823,6 +2243,29 @@
       "branchRankMax": 8,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 88,
+          "staffLevel": 5,
+          "partyIds": [],
+          "servings": 4,
+          "price": 814
+        },
+        {
+          "dishId": 65,
+          "staffLevel": 10,
+          "partyIds": [],
+          "servings": 4,
+          "price": 1443
+        },
+        {
+          "dishId": 124,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 6,
+          "price": 1480
+        }
+      ],
       "search": "cohh cocktail serving tip master",
       "sort": {
         "name": "cohh",
@@ -1870,6 +2313,31 @@
       "branchRankMax": 7,
       "branchPopularityMax": 4,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 36,
+          "staffLevel": 5,
+          "partyIds": [
+            7
+          ],
+          "servings": 10,
+          "price": 832
+        },
+        {
+          "dishId": 170,
+          "staffLevel": 10,
+          "partyIds": [],
+          "servings": 4,
+          "price": 1424
+        },
+        {
+          "dishId": 86,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "raptor cocktail serving wasabi refill",
       "sort": {
         "name": "raptor",
@@ -1917,6 +2385,35 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 14,
+      "dishes": [
+        {
+          "dishId": 206,
+          "staffLevel": 5,
+          "partyIds": [
+            7
+          ],
+          "servings": 1,
+          "price": 1406
+        },
+        {
+          "dishId": 172,
+          "staffLevel": 10,
+          "partyIds": [
+            6
+          ],
+          "servings": 7,
+          "price": 1443
+        },
+        {
+          "dishId": 114,
+          "staffLevel": 15,
+          "partyIds": [
+            6
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "drae cleaning cocktail serving",
       "sort": {
         "name": "drae",
@@ -1964,6 +2461,17 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 20,
+      "dishes": [
+        {
+          "dishId": 39,
+          "staffLevel": 15,
+          "partyIds": [
+            4
+          ],
+          "servings": 7,
+          "price": 1480
+        }
+      ],
       "search": "raul master drink maker ingredient prep master",
       "sort": {
         "name": "raul",
@@ -2011,6 +2519,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 16,
+      "dishes": [
+        {
+          "dishId": 138,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 12,
+          "price": 1480
+        }
+      ],
       "search": "davina irresistible charm dispatch master",
       "sort": {
         "name": "davina",
@@ -2020,7 +2537,7 @@
         "servingStatMax": 360,
         "procureStatMax": 859,
         "appealStatMax": 915,
-        "seasoningsMaxLevel20": 10
+        "seasoningsMaxLevel20": 12
       }
     },
     "20": {
@@ -2058,6 +2575,17 @@
       "branchRankMax": 8,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 15,
+      "dishes": [
+        {
+          "dishId": 194,
+          "staffLevel": 15,
+          "partyIds": [
+            4
+          ],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "itsuki irresistible charm drink serving",
       "sort": {
         "name": "itsuki",
@@ -2105,6 +2633,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": 20,
+      "dishes": [
+        {
+          "dishId": 117,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1480
+        }
+      ],
       "search": "masayoshi ingredient prep expert dispatch master",
       "sort": {
         "name": "masayoshi",
@@ -2114,7 +2651,7 @@
         "servingStatMax": 253,
         "procureStatMax": 814,
         "appealStatMax": 378,
-        "seasoningsMaxLevel20": 10
+        "seasoningsMaxLevel20": 12
       }
     },
     "22": {
@@ -2152,6 +2689,15 @@
       "branchRankMax": 5,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 295,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1572
+        }
+      ],
       "search": "etsuko cleaning cocktail serving",
       "sort": {
         "name": "etsuko",
@@ -2199,6 +2745,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 296,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1572
+        }
+      ],
       "search": "chitose cooking+ cooking++",
       "sort": {
         "name": "chitose",
@@ -2246,6 +2801,15 @@
       "branchRankMax": 9,
       "branchPopularityMax": 5,
       "branchPopularityMaxAtLevel": null,
+      "dishes": [
+        {
+          "dishId": 298,
+          "staffLevel": 15,
+          "partyIds": [],
+          "servings": 9,
+          "price": 1572
+        }
+      ],
       "search": "hamako drink serving master cocktail serving",
       "sort": {
         "name": "hamako",
@@ -2291,11 +2855,62 @@
       ]
     },
     "Skill": {
-      "Cleaning Master": [
+      "Cleaning": [
         7,
-        10
+        17,
+        10,
+        22,
+        2
       ],
-      "Tip Master": [
+      "Cocktail Serving": [
+        15,
+        17,
+        22,
+        24,
+        16
+      ],
+      "Cooking": [
+        13,
+        23,
+        6,
+        14,
+        12,
+        8,
+        9,
+        5
+      ],
+      "Dispatch Master": [
+        19,
+        21
+      ],
+      "Drink Serving": [
+        10,
+        24,
+        20,
+        1,
+        4
+      ],
+      "Ingredient Prep": [
+        13,
+        6,
+        21,
+        18,
+        9,
+        5
+      ],
+      "Irresistible Charm": [
+        19,
+        20
+      ],
+      "Master Drink Maker": [
+        18
+      ],
+      "Serving": [
+        2,
+        4,
+        12
+      ],
+      "Tips": [
         7,
         3,
         15,
@@ -2306,68 +2921,6 @@
         3,
         11,
         16
-      ],
-      "Cooking+": [
-        13,
-        23,
-        6,
-        14,
-        12,
-        8,
-        5
-      ],
-      "Ingredient Prep Expert": [
-        13,
-        21,
-        9,
-        5
-      ],
-      "Cooking++": [
-        23,
-        14,
-        8,
-        9
-      ],
-      "Cocktail Serving": [
-        15,
-        17,
-        22,
-        24,
-        16
-      ],
-      "Irresistible Charm": [
-        19,
-        20
-      ],
-      "Dispatch Master": [
-        19,
-        21
-      ],
-      "Cleaning": [
-        17,
-        22,
-        2
-      ],
-      "Drink Serving Master": [
-        10,
-        24
-      ],
-      "Drink Serving": [
-        20,
-        1,
-        4
-      ],
-      "Ingredient Prep Master": [
-        6,
-        18
-      ],
-      "Serving+": [
-        2,
-        4,
-        12
-      ],
-      "Master Drink Maker": [
-        18
       ]
     }
   }

@@ -11,6 +11,7 @@
 			const ingredient = $ingredientsBundle?.byId[ing.ingredientId] ?? null;
 			if (!ingredient) return null;
 			return {
+				id: ing.ingredientId,
 				name: ingredient.name,
 				source: ingredient.source,
 				day: ingredient.day,
@@ -34,7 +35,14 @@
 							<PixelIcon image={row.image} alt={row.name} uiScale={0.5} />
 						</div>
 					</td>
-					<td class="p-2">{row.name}</td>
+					<td class="p-2">
+						<a
+							href="/ingredients#ingredient-{row.id}"
+							class="text-primary-500 transition-colors hover:text-primary-600 hover:underline"
+						>
+							{row.name}
+						</a>
+					</td>
 					<td class="gap-x-2 p-2 text-left tabular-nums">
 						<IngredientTypeCount type={row.type} count={row.count} size={16} />
 					</td>

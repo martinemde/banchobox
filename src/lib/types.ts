@@ -301,6 +301,15 @@ export interface Staff {
 	branchRankMax: number;
 	branchPopularityMax: number;
 	branchPopularityMaxAtLevel?: number; // Not all staff can max the branch
+	// Dish data
+	dishes: Array<{
+		dishId: Id;
+		staffLevel: number;
+		partyIds: Id[];
+		// Denormalized fields to render recipes without loading dish bundle
+		servings: number;
+		price: number;
+	}>;
 	// Client-side search & sort helpers
 	search: string; // normalized tokens (name, skills)
 	sort: Record<StaffSortKey, string | number>;

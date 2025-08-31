@@ -33,11 +33,10 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	font-family:
-		'Roboto',
+		Roboto,
 		system-ui,
 		-apple-system,
 		'Segoe UI',
-		Roboto,
 		Helvetica,
 		Arial,
 		'Apple Color Emoji',
@@ -56,10 +55,6 @@ p {
 
 a {
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 h1 {
@@ -93,4 +88,32 @@ button:focus:not(:focus-visible) {
 img.pixel {
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
+}
+
+/* Smooth scrolling for anchor navigation */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Highlight targeted elements with a ring */
+:target {
+	animation: anchor-highlight 2s ease-in-out;
+	outline: 2px solid rgb(var(--color-primary-500));
+	outline-offset: 4px;
+	border-radius: 8px;
+}
+
+@keyframes anchor-highlight {
+	0% {
+		outline-color: rgb(var(--color-primary-500));
+		outline-width: 4px;
+	}
+	50% {
+		outline-color: rgb(var(--color-primary-400));
+		outline-width: 3px;
+	}
+	100% {
+		outline-color: rgb(var(--color-primary-500));
+		outline-width: 2px;
+	}
 }

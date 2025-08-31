@@ -1,32 +1,41 @@
 <script lang="ts">
+	import type { Staff } from '$lib/types.js';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
-	import type { Ingredient } from '$lib/types.js';
-	import IngredientTypeCount from '$lib/components/IngredientTypeCount.svelte';
 	import coinImage from '$lib/images/ui/coin.png';
 	import servingsImage from '$lib/images/ui/servings.png';
 	import { bundle as dishesBundle } from '$lib/stores/dishes.js';
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
 
-	let {
-		ingredient,
-		formatNumber
-	}: { ingredient: Ingredient; formatNumber: (n: number | null | undefined) => string } = $props();
+	let { staff }: { staff: Staff } = $props();
 
-	let usedIn = $derived(
-		ingredient.usedIn.map((u) => {
-			const dish = $dishesBundle?.byId[u.dishId] ?? null;
-			return {
-				...u,
-				dishName: dish?.name ?? '',
-				dishImage: dish?.image ?? '',
-				parties: u.partyIds.map((partyId) => $partiesBundle?.byId[partyId] ?? null)
-			};
-		})
+	function formatNumber(value: number | null | undefined): string {
+		if (value == null || Number.isNaN(value as number)) return '—';
+		return new Intl.NumberFormat().format(Math.round(value as number));
+	}
+
+	let dishes = $derived(
+		staff.dishes.map(
+			(u: {
+				dishId: number;
+				staffLevel: number;
+				partyIds: number[];
+				servings: number;
+				price: number;
+			}) => {
+				const dish = $dishesBundle?.byId[u.dishId] ?? null;
+				return {
+					...u,
+					dishName: dish?.name ?? '',
+					dishImage: dish?.image ?? '',
+					parties: u.partyIds.map((partyId: number) => $partiesBundle?.byId[partyId] ?? null)
+				};
+			}
+		)
 	);
 </script>
 
 <div class="-mx-4">
-	{#each usedIn as row (row.dishId)}
+	{#each dishes as row (row.dishId)}
 		<div class="flex w-full gap-x-3 border-t border-surface-200-800 px-4 py-2">
 			<!-- Image - fixed width on left -->
 			<div class="flex w-16 flex-shrink-0 items-center">
@@ -47,7 +56,7 @@
 					</a>
 				</div>
 				<div class="flex flex-shrink-0 items-start justify-start">
-					<IngredientTypeCount type={ingredient.type} count={row.count} size={16} />
+					Level {row.staffLevel}
 				</div>
 
 				<!-- Servings row (spans first two columns) -->

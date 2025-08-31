@@ -1,15 +1,62 @@
 <script lang="ts">
 	import type { Staff } from '$lib/types.js';
+	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
+	import { persist } from '$lib/utils/persisted.svelte.js';
+	import { Soup } from '@lucide/svelte';
+	import { SvelteSet } from 'svelte/reactivity';
 
 	let { staff }: { staff: Staff } = $props();
+
+	// Lazy-load recipes table only when opened
+	type RecipesTableComponent = typeof import('./StaffRecipesTable.svelte').default;
+	let LazyRecipesTable: RecipesTableComponent | null = $state(null);
+	function ensureRecipesTableLoaded() {
+		if (!LazyRecipesTable) {
+			import('./StaffRecipesTable.svelte').then((m) => (LazyRecipesTable = m.default));
+		}
+	}
+
+	// Controlled accordion value
+	let value = $state<string[]>([]);
+	function onAccordionValueChange(e: { value?: unknown }) {
+		value = (e?.value as string[]) ?? [];
+		if (Array.isArray(value) && value.includes('recipes')) ensureRecipesTableLoaded();
+	}
+
+	// Track hired staff using localStorage
+	let hiredStaffIds = new SvelteSet<number>();
+
+	persist(
+		'hiredStaff.v1',
+		() => hiredStaffIds,
+		(v) => {
+			hiredStaffIds.clear();
+			for (const id of v) hiredStaffIds.add(id);
+		},
+		{
+			storage: 'local',
+			serialize: (set) => JSON.stringify(Array.from(set.values())),
+			deserialize: (raw) => new SvelteSet<number>(JSON.parse(raw) as number[])
+		}
+	);
 
 	function formatNumber(value: number | null | undefined): string {
 		if (value == null || Number.isNaN(value as number)) return '—';
 		return new Intl.NumberFormat().format(Math.round(value as number));
 	}
 
+	function toggleHired() {
+		if (hiredStaffIds.has(staff.id)) {
+			hiredStaffIds.delete(staff.id);
+		} else {
+			hiredStaffIds.add(staff.id);
+		}
+		// SvelteSet automatically triggers reactivity, no need to reassign
+	}
+
 	const skills = $derived([staff.skillLevel3, staff.skillLevel7].filter(Boolean) as string[]);
+	const isHired = $derived(hiredStaffIds.has(staff.id));
 </script>
 
 <article
@@ -18,11 +65,18 @@
 	<section class="p-4">
 		<div class="flex items-start gap-4">
 			<div class="inline-block">
-				{#if staff.image}
-					<div class="relative grid place-items-center">
-						<PixelIcon image={staff.image} alt={staff.name} uiScale={1} tile={96} />
-					</div>
-				{/if}
+				<div class="relative grid place-items-center">
+					<PixelIcon image={staff.image} alt={staff.name} uiScale={1} tile={96} />
+				</div>
+				<button
+					type="button"
+					onclick={toggleHired}
+					class="mt-2 btn w-24 rounded px-2 py-1 text-xs font-medium transition-colors {isHired
+						? 'preset-filled-tertiary-500'
+						: 'preset-filled-surface-500'}"
+				>
+					{isHired ? 'Hired' : 'Hire'}
+				</button>
 			</div>
 
 			<div class="min-w-0 flex-1 space-y-2">
@@ -33,7 +87,7 @@
 				{#if skills.length > 0}
 					<div class="mt-1 flex flex-wrap items-center gap-2 text-sm opacity-90">
 						{#each skills as s (s)}
-							<span class="rounded bg-primary-500/10 px-2 py-0.5">{s}</span>
+							<span class="badge preset-filled-tertiary-100-900 px-2 py-0.5">{s}</span>
 						{/each}
 					</div>
 				{/if}
@@ -67,11 +121,40 @@
 						<span class="tabular-nums">{formatNumber(staff.wageMax)}</span>
 					</div>
 					<div class="flex items-center justify-between gap-2">
-						<span class="opacity-70">Procure Max (Seasonings L20)</span>
-						<span class="tabular-nums">{formatNumber(staff.seasoningsMaxLevel20)}</span>
+						<span class="opacity-70">Procure Max</span>
+						<span class="tabular-nums">{formatNumber(staff.seasoningsMaxLevel20)} (@ Lv.20)</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- Section 2: Recipes using this staff member -->
+	{#if staff.dishes.length > 0}
+		<section class="border-t border-surface-200-800">
+			<Accordion {value} onValueChange={onAccordionValueChange} collapsible>
+				<Accordion.Item
+					value="recipes"
+					controlHover="hover:preset-filled-primary-900-100 hover:text-primary-200-800"
+				>
+					{#snippet lead()}
+						<Soup size={16} />
+					{/snippet}
+
+					{#snippet control()}
+						<span class="text-xs font-semibold tracking-wide uppercase">
+							{staff.dishes.length}
+							{staff.dishes.length > 1 ? 'Recipes' : 'Recipe'}
+						</span>
+					{/snippet}
+
+					{#snippet panel()}
+						{#if value.includes('recipes') && LazyRecipesTable}
+							<LazyRecipesTable {staff} />
+						{/if}
+					{/snippet}
+				</Accordion.Item>
+			</Accordion>
+		</section>
+	{/if}
 </article>
