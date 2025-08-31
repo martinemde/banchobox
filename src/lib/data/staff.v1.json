@@ -2854,7 +2854,7 @@
         24
       ]
     },
-    "Skill": {
+    "Skills": {
       "Cleaning": [
         7,
         17,
@@ -2879,7 +2879,7 @@
         9,
         5
       ],
-      "Dispatch Master": [
+      "Dispatch": [
         19,
         21
       ],
@@ -2910,7 +2910,7 @@
         4,
         12
       ],
-      "Tips": [
+      "Tip Master": [
         7,
         3,
         15,
