@@ -109,7 +109,7 @@
 							<span class="truncate opacity-70">
 								<a
 									href="/staff#staff-{dish.staff.replace(' ', '-')}"
-									class="text-primary-500 transition-colors hover:text-primary-600 hover:underline"
+									class="text-primary-800-200 transition-colors hover:text-primary-600-400 hover:underline"
 								>
 									{dish.staff}
 								</a>

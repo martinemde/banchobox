@@ -2,9 +2,8 @@
 	import type { Staff } from '$lib/types.js';
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
-	import { persist } from '$lib/utils/persisted.svelte.js';
 	import { Soup } from '@lucide/svelte';
-	import { SvelteSet } from 'svelte/reactivity';
+	import { hiredStaffIds } from '$lib/stores/hiredStaff.js';
 
 	let { staff }: { staff: Staff } = $props();
 
@@ -24,22 +23,8 @@
 		if (Array.isArray(value) && value.includes('recipes')) ensureRecipesTableLoaded();
 	}
 
-	// Track hired staff using localStorage
-	let hiredStaffIds = new SvelteSet<number>();
-
-	persist(
-		'hiredStaff.v1',
-		() => hiredStaffIds,
-		(v) => {
-			hiredStaffIds.clear();
-			for (const id of v) hiredStaffIds.add(id);
-		},
-		{
-			storage: 'local',
-			serialize: (set) => JSON.stringify(Array.from(set.values())),
-			deserialize: (raw) => new SvelteSet<number>(JSON.parse(raw) as number[])
-		}
-	);
+	// Track hired staff using centralized store
+	const isHired = $derived($hiredStaffIds && $hiredStaffIds.has(staff.id));
 
 	function formatNumber(value: number | null | undefined): string {
 		if (value == null || Number.isNaN(value as number)) return '—';
@@ -47,16 +32,10 @@
 	}
 
 	function toggleHired() {
-		if (hiredStaffIds.has(staff.id)) {
-			hiredStaffIds.delete(staff.id);
-		} else {
-			hiredStaffIds.add(staff.id);
-		}
-		// SvelteSet automatically triggers reactivity, no need to reassign
+		hiredStaffIds.toggle(staff.id);
 	}
 
 	const skills = $derived([staff.skillLevel3, staff.skillLevel7].filter(Boolean) as string[]);
-	const isHired = $derived(hiredStaffIds.has(staff.id));
 </script>
 
 <article
