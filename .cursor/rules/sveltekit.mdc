@@ -4,6 +4,8 @@ alwaysApply: true
 
 This is a SvelteKit app using Svelte 5, TypeScript, Skeleton UI, Lucide icons, and bun packaging.
 
+## Rules
+
 - Adhere to Svelte 5 best practices, using modern approaches whenever possible.
 - See [Svelte and SvelteKit Documentation](https://svelte.dev/llms-medium.txt)
 - Utilize Svelte 5 runes `$state` and good best practices
@@ -16,4 +18,10 @@ This is a SvelteKit app using Svelte 5, TypeScript, Skeleton UI, Lucide icons, a
 - Pages should take full advantage of existing Skeleton components and themes
 - See [Skeleton Documentation](https://skeleton.dev/llms-svelte.txt)
 - Skeleton's core features only require the use of [Tailwind CSS](https://tailwindcss.com/) providing full access to all design system features
-- Use `bun` and `bunx` to run npm-like commands
+
+## Terminal execution:
+
+- Invoke CLIs by name (bun, bunx); do NOT hardcode absolute paths like /opt/homebrew/bin/_ or /usr/local/bin/_.
+- Prefer bun/bunx for scripts and generators (e.g., `bun run`, `bunx`).
+- Only use project relative paths for file arguments.
+- If `bun` is not found, stop and ask rather than switching to npm/npx automatically.
