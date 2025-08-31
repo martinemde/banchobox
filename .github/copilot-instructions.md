@@ -6,32 +6,32 @@ Always reference these instructions first and fallback to search or bash command
 
 **Prerequisites and Setup:**
 
-- Ensure Node.js is installed (project uses Node.js with npm)
+- Ensure Node.js is installed (project uses Node.js with bun)
 - Clone the repository and navigate to the project root
 
 **Building and Running the Application:**
 
-- `npm install` -- Install all dependencies (takes 60-90 seconds). NEVER CANCEL.
-- `npm run build:data` -- Build the CSV data into JSON bundles (takes <1 second). NEVER CANCEL.
-- `npm run dev` -- Start development server (automatically runs build:data first, takes 2-5 seconds). Server runs in background, exit with Ctrl+C.
-- `npm run dev -- --open` -- Start development server and open in browser. Server runs in background, exit with Ctrl+C.
-- `npm run build` -- Create production build (takes 25-30 seconds). NEVER CANCEL. Set timeout to 60+ minutes. NOTE: Currently fails due to broken internal link.
-- `npm run preview` -- Preview production build locally. Server runs in background, exit with Ctrl+C.
+- `bun install` -- Install all dependencies (takes 60-90 seconds). NEVER CANCEL.
+- `bun run build:data` -- Build the CSV data into JSON bundles (takes <1 second). NEVER CANCEL.
+- `bun run dev` -- Start development server (automatically runs build:data first, takes 2-5 seconds). Server runs in background, exit with Ctrl+C.
+- `bun run dev -- --open` -- Start development server and open in browser. Server runs in background, exit with Ctrl+C.
+- `bun run build` -- Create production build (takes 25-30 seconds). NEVER CANCEL. Set timeout to 60+ minutes. NOTE: Currently fails due to broken internal link.
+- `bun run preview` -- Preview production build locally. Server runs in background, exit with Ctrl+C.
 
 **Testing:**
 
-- `npm run test:e2e` -- Run Playwright end-to-end tests (takes 30-60 seconds when working). NEVER CANCEL. Set timeout to 90+ minutes.
+- `bun run test:e2e` -- Run Playwright end-to-end tests (takes 30-60 seconds when working). NEVER CANCEL. Set timeout to 90+ minutes.
   - NOTE: Currently fails due to broken internal link (#staff-Hamako)
-  - Requires Playwright browsers: run `npx playwright install` first
-- `npm run test:unit` -- Run Vitest unit tests (requires Playwright browsers installed)
-- `npm run test` -- BROKEN: References missing script. Use `npm run test:e2e` instead.
+  - Requires Playwright browsers: run `bunx playwright install` first
+- `bun run test:unit` -- Run Vitest unit tests (requires Playwright browsers installed)
+- `bun run test` -- BROKEN: References missing script. Use `bun run test:e2e` instead.
 - Tests validate all main pages render correctly with expected content
 
 **Code Quality:**
 
-- `npm run lint` -- Run ESLint (takes 15-30 seconds)
-- `npm run format` -- Run Prettier to format code (takes 5-10 seconds)
-- ALWAYS run `npm run lint` and `npm run format` before committing changes to maintain code quality
+- `bun run lint` -- Run ESLint (takes 15-30 seconds)
+- `bun run format` -- Run Prettier to format code (takes 5-10 seconds)
+- ALWAYS run `bun run lint` and `bun run format` before committing changes to maintain code quality
 
 ## Validation Scenarios
 
@@ -39,7 +39,7 @@ Always reference these instructions first and fallback to search or bash command
 
 **Core Application Functionality:**
 
-1. Run `npm run dev` and verify the application starts on http://localhost:5173
+1. Run `bun run dev` and verify the application starts on http://localhost:5173
 2. Navigate to each main section and verify content loads:
    - **Home page**: Displays welcome content and navigation ✅ VERIFIED WORKING
    - **Dishes page**: Shows recipe database with filtering, search, and pricing information ✅ VERIFIED WORKING
@@ -49,7 +49,7 @@ Always reference these instructions first and fallback to search or bash command
 
 **Data Validation:**
 
-- Verify that `npm run build:data` successfully processes CSV files from `data/` directory
+- Verify that `bun run build:data` successfully processes CSV files from `data/` directory
 - Check that generated JSON files appear in `src/lib/data/`
 - Confirm dish data includes pricing, ingredients, party associations, and unlock conditions
 - Validate ingredient data shows sources, costs, and recipe usage
@@ -89,7 +89,7 @@ All major user flows have been validated manually in browser:
 
 **Configuration:**
 
-- `package.json` -- Project dependencies and npm scripts
+- `package.json` -- Project dependencies and bun scripts
 - `svelte.config.js` -- SvelteKit configuration
 - `eslint.config.js` -- ESLint configuration
 - `playwright.config.ts` -- End-to-end test configuration
@@ -128,18 +128,18 @@ All major user flows have been validated manually in browser:
 **Development Workflow:**
 
 ```bash
-npm install                     # Install dependencies (60-90 seconds)
-npm run dev                     # Start development with auto-rebuild (2-5 seconds)
-npm run build:data             # Rebuild data only (<1 second)
-npm run lint && npm run format  # Code quality checks (20-40 seconds total)
-npm run test:e2e               # Run tests (currently broken due to #staff-Hamako link)
-npm run build                  # Production build (currently fails due to broken link)
+bun install                     # Install dependencies (60-90 seconds)
+bun run dev                     # Start development with auto-rebuild (2-5 seconds)
+bun run build:data             # Rebuild data only (<1 second)
+bun run lint && bun run format  # Code quality checks (20-40 seconds total)
+bun run test:e2e               # Run tests (currently broken due to #staff-Hamako link)
+bun run build                  # Production build (currently fails due to broken link)
 ```
 
 **Debugging Data Issues:**
 
 - Check CSV files in `data/` directory for format issues
-- Review console output from `npm run build:data` for validation errors
+- Review console output from `bun run build:data` for validation errors
 - Verify generated JSON files in `src/lib/data/` contain expected data
 - Run TypeScript compiler to catch type issues
 
@@ -148,13 +148,13 @@ npm run build                  # Production build (currently fails due to broken
 **CRITICAL ISSUES TO BE AWARE OF:**
 
 1. **Broken Internal Link**: There's a broken link to `#staff-Hamako` that causes:
-   - Production builds (`npm run build`) to fail during prerendering
-   - End-to-end tests (`npm run test:e2e`) to fail
+   - Production builds (`bun run build`) to fail during prerendering
+   - End-to-end tests (`bun run test:e2e`) to fail
    - This does NOT affect development server or manual testing
 
 2. **Test Script Issues**:
-   - `npm run test` references missing `test:integration` script - use `npm run test:e2e` instead
-   - Unit tests require Playwright browsers: run `npx playwright install` first
+   - `bun run test` references missing `test:integration` script - use `bun run test:e2e` instead
+   - Unit tests require Playwright browsers: run `bunx playwright install` first
 
 3. **Application Functionality**: Despite build/test issues, all core functionality works perfectly in development mode
 
