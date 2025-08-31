@@ -11,23 +11,27 @@ Always reference these instructions first and fallback to search or bash command
 
 **Building and Running the Application:**
 
-- `npm install` -- Install all dependencies (takes 30-60 seconds)
-- `npm run build:data` -- Build the CSV data into JSON bundles (takes 5-10 seconds). NEVER CANCEL.
-- `npm run dev` -- Start development server (automatically runs build:data first, takes 10-15 seconds). Server runs in background, exit with Ctrl+C.
+- `npm install` -- Install all dependencies (takes 60-90 seconds). NEVER CANCEL.
+- `npm run build:data` -- Build the CSV data into JSON bundles (takes <1 second). NEVER CANCEL.
+- `npm run dev` -- Start development server (automatically runs build:data first, takes 2-5 seconds). Server runs in background, exit with Ctrl+C.
 - `npm run dev -- --open` -- Start development server and open in browser. Server runs in background, exit with Ctrl+C.
-- `npm run build` -- Create production build (takes 30-45 seconds). NEVER CANCEL. Set timeout to 60+ minutes.
+- `npm run build` -- Create production build (takes 25-30 seconds). NEVER CANCEL. Set timeout to 60+ minutes. NOTE: Currently fails due to broken internal link.
 - `npm run preview` -- Preview production build locally. Server runs in background, exit with Ctrl+C.
 
 **Testing:**
 
-- `npm run test` -- Run Playwright end-to-end tests (takes 30-60 seconds). NEVER CANCEL. Set timeout to 90+ minutes.
+- `npm run test:e2e` -- Run Playwright end-to-end tests (takes 30-60 seconds when working). NEVER CANCEL. Set timeout to 90+ minutes.
+  - NOTE: Currently fails due to broken internal link (#staff-Hamako)
+  - Requires Playwright browsers: run `npx playwright install` first
+- `npm run test:unit` -- Run Vitest unit tests (requires Playwright browsers installed)
+- `npm run test` -- BROKEN: References missing script. Use `npm run test:e2e` instead.
 - Tests validate all main pages render correctly with expected content
 
 **Code Quality:**
 
-- `npm run lint` -- Run ESLint (takes 5-10 seconds)
+- `npm run lint` -- Run ESLint (takes 15-30 seconds)
 - `npm run format` -- Run Prettier to format code (takes 5-10 seconds)
-- ALWAYS run `npm run lint` and `npm run format` before committing changes or the CI (.github/workflows/build.yml) will fail
+- ALWAYS run `npm run lint` and `npm run format` before committing changes to maintain code quality
 
 ## Validation Scenarios
 
@@ -37,11 +41,11 @@ Always reference these instructions first and fallback to search or bash command
 
 1. Run `npm run dev` and verify the application starts on http://localhost:5173
 2. Navigate to each main section and verify content loads:
-   - **Home page**: Displays welcome content and navigation
-   - **Dishes page**: Shows recipe database with filtering, search, and pricing information
-   - **Ingredients page**: Displays ingredient database with costs, sources, and usage counts
-   - **Parties page**: Shows party events with dish lists, bonuses, and profit calculations
-   - **Tracking page**: Provides ingredient tracking for selected dishes
+   - **Home page**: Displays welcome content and navigation ✅ VERIFIED WORKING
+   - **Dishes page**: Shows recipe database with filtering, search, and pricing information ✅ VERIFIED WORKING
+   - **Ingredients page**: Displays ingredient database with costs, sources, and usage counts ✅ VERIFIED WORKING
+   - **Parties page**: Shows party events with dish lists, bonuses, and profit calculations ✅ VERIFIED WORKING
+   - **Tracking page**: Provides ingredient tracking for selected dishes ✅ VERIFIED WORKING
 
 **Data Validation:**
 
@@ -52,9 +56,21 @@ Always reference these instructions first and fallback to search or bash command
 
 **Search and Filtering:**
 
-- Test search functionality works across dishes and ingredients
-- Verify filtering by categories, unlock conditions, and other criteria
-- Confirm party-specific dish filtering and bonus calculations
+- Test search functionality works across dishes and ingredients ✅ VERIFIED WORKING
+- Verify filtering by categories, unlock conditions, and other criteria ✅ VERIFIED WORKING
+- Confirm party-specific dish filtering and bonus calculations ✅ VERIFIED WORKING
+
+**Browser Testing Validation (Completed):**
+
+All major user flows have been validated manually in browser:
+
+- ✅ Navigation between all main sections works correctly
+- ✅ Search and filtering functionality operational
+- ✅ Dish cards display pricing and ingredient information
+- ✅ Ingredient cards show sources, costs, and recipe usage
+- ✅ Party listings display correctly with proper sorting
+- ✅ Tracking interface loads and functions as expected
+- ✅ Application responsive design works across different viewports
 
 ## Important Files and Structure
 
@@ -112,12 +128,12 @@ Always reference these instructions first and fallback to search or bash command
 **Development Workflow:**
 
 ```bash
-npm install
-npm run dev                    # Start development with auto-rebuild
-npm run build:data            # Rebuild data only
-npm run lint && npm run format # Code quality checks
-npm run test                  # Run tests
-npm run build                 # Production build
+npm install                     # Install dependencies (60-90 seconds)
+npm run dev                     # Start development with auto-rebuild (2-5 seconds)
+npm run build:data             # Rebuild data only (<1 second)
+npm run lint && npm run format  # Code quality checks (20-40 seconds total)
+npm run test:e2e               # Run tests (currently broken due to #staff-Hamako link)
+npm run build                  # Production build (currently fails due to broken link)
 ```
 
 **Debugging Data Issues:**
@@ -126,6 +142,21 @@ npm run build                 # Production build
 - Review console output from `npm run build:data` for validation errors
 - Verify generated JSON files in `src/lib/data/` contain expected data
 - Run TypeScript compiler to catch type issues
+
+## Known Issues
+
+**CRITICAL ISSUES TO BE AWARE OF:**
+
+1. **Broken Internal Link**: There's a broken link to `#staff-Hamako` that causes:
+   - Production builds (`npm run build`) to fail during prerendering
+   - End-to-end tests (`npm run test:e2e`) to fail
+   - This does NOT affect development server or manual testing
+
+2. **Test Script Issues**:
+   - `npm run test` references missing `test:integration` script - use `npm run test:e2e` instead
+   - Unit tests require Playwright browsers: run `npx playwright install` first
+
+3. **Application Functionality**: Despite build/test issues, all core functionality works perfectly in development mode
 
 ## Performance Notes
 
