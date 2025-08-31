@@ -39,6 +39,7 @@
 </script>
 
 <article
+	id="staff-{staff.id}"
 	class="divide-y divide-surface-200-800 card border-[1px] border-surface-200-800 preset-filled-surface-100-900 card-hover"
 >
 	<section class="p-4">

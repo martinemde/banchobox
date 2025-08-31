@@ -13,7 +13,8 @@ import type {
 	IngredientInputRow,
 	PartyInputRow,
 	DishIngredientInputRow,
-	PartyDishInputRow
+	PartyDishInputRow,
+	StaffInputRow
 } from './types.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
@@ -23,7 +24,8 @@ export function prepareDishesAndPartyDishes(
 	IngredientInputRows: IngredientInputRow[],
 	DishIngredientInputRows: DishIngredientInputRow[],
 	dishParties: PartyDishInputRow[],
-	partyInputRows: PartyInputRow[]
+	partyInputRows: PartyInputRow[],
+	staffInputRows: StaffInputRow[]
 ): {
 	dishes: Dish[];
 	partyDishes: PartyDish[];
@@ -32,6 +34,14 @@ export function prepareDishesAndPartyDishes(
 	const partyDishes: PartyDish[] = [];
 	const partyDishesByPartyId = new Map<Id, PartyDish[]>();
 	let nextPartyDishId = 1;
+
+	// Create staff name to ID mapping for staff ID lookups
+	const staffNameToId = new Map<string, Id>();
+	for (const staff of staffInputRows) {
+		if (staff.name && staff.name.trim() !== '') {
+			staffNameToId.set(staff.name, staff.id);
+		}
+	}
 
 	const dishes: Dish[] = DishInputRowes.map((dish) => {
 		const dishIngLines = DishIngredientInputRows.filter((di) => di.dishId === dish.id);
@@ -156,8 +166,12 @@ export function prepareDishesAndPartyDishes(
 			ingredientCount
 		} as const;
 
+		const staffId =
+			dish.staff && dish.staff !== 'Any staff' ? staffNameToId.get(dish.staff) || null : null;
+
 		const enrichedDish: Dish = {
 			...dish,
+			staffId,
 			ingredients: ingredientLines,
 			recipeCost,
 			partyDishIds: localPartyDishIds,

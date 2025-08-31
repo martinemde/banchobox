@@ -49,7 +49,8 @@ function enrichData(
 		ingredients,
 		DishIngredientInputRows,
 		dishParties,
-		parties
+		parties,
+		staff
 	);
 
 	const ingredientsBundle = buildIngredientsBundle(preparedIngredients, chaptersBundle);

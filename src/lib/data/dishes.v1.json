@@ -18,6 +18,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 123,
@@ -91,6 +92,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 127,
@@ -178,6 +180,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 51,
@@ -261,6 +264,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 175,
@@ -348,6 +352,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 122,
@@ -435,6 +440,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 39,
@@ -512,6 +518,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 178,
@@ -599,6 +606,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 186,
@@ -682,6 +690,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 171,
@@ -765,6 +774,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 205,
@@ -848,6 +858,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -915,6 +926,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 222,
@@ -982,6 +994,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 5,
@@ -1035,6 +1048,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 1,
@@ -1098,6 +1112,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 224,
@@ -1161,6 +1176,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 163,
@@ -1224,6 +1240,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 111,
@@ -1287,6 +1304,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 68,
@@ -1360,6 +1378,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 94,
@@ -1443,6 +1462,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 73,
@@ -1526,6 +1546,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 16,
@@ -1599,6 +1620,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 17,
@@ -1672,6 +1694,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -1735,6 +1758,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 192,
@@ -1798,6 +1822,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 59,
@@ -1881,6 +1906,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 10,
@@ -1958,6 +1984,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 132,
@@ -2031,6 +2058,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 95,
@@ -2108,6 +2136,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -2181,6 +2210,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 136,
@@ -2248,6 +2278,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 196,
@@ -2311,6 +2342,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 215,
@@ -2384,6 +2416,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 140,
@@ -2471,6 +2504,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -2538,6 +2572,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 45,
@@ -2625,6 +2660,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 176,
@@ -2692,6 +2728,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 20,
@@ -2781,6 +2818,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -2838,6 +2876,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 18,
@@ -2915,6 +2954,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -2992,6 +3032,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 15,
@@ -3069,6 +3110,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -3158,6 +3200,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -3235,6 +3278,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 9,
@@ -3308,6 +3352,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 100,
@@ -3391,6 +3436,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -3468,6 +3514,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 111,
@@ -3541,6 +3588,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 185,
@@ -3624,6 +3672,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -3701,6 +3750,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 49,
@@ -3784,6 +3834,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 192,
@@ -3867,6 +3918,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 185,
@@ -3940,6 +3992,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 144,
@@ -4023,6 +4076,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 184,
@@ -4106,6 +4160,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -4173,6 +4228,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -4250,6 +4306,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -4327,6 +4384,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 135,
@@ -4414,6 +4472,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 151,
@@ -4497,6 +4556,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -4574,6 +4634,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -4651,6 +4712,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -4738,6 +4800,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -4815,6 +4878,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 115,
@@ -4898,6 +4962,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -4975,6 +5040,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -5052,6 +5118,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 111,
@@ -5135,6 +5202,7 @@
       "artisansFlames": 12,
       "staff": "Cohh",
       "staffLevel": 10,
+      "staffId": 15,
       "ingredients": [
         {
           "ingredientId": 161,
@@ -5218,6 +5286,7 @@
       "artisansFlames": 12,
       "staff": "Drae",
       "staffLevel": 10,
+      "staffId": 17,
       "ingredients": [
         {
           "ingredientId": 43,
@@ -5295,6 +5364,7 @@
       "artisansFlames": 12,
       "staff": "Raptor",
       "staffLevel": 10,
+      "staffId": 16,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -5368,6 +5438,7 @@
       "artisansFlames": 15,
       "staff": "Billy",
       "staffLevel": 15,
+      "staffId": 7,
       "ingredients": [
         {
           "ingredientId": 164,
@@ -5445,6 +5516,7 @@
       "artisansFlames": 15,
       "staff": "Carolina",
       "staffLevel": 15,
+      "staffId": 3,
       "ingredients": [
         {
           "ingredientId": 194,
@@ -5528,6 +5600,7 @@
       "artisansFlames": 15,
       "staff": "Charlie",
       "staffLevel": 15,
+      "staffId": 13,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -5605,6 +5678,7 @@
       "artisansFlames": 15,
       "staff": "Chitose",
       "staffLevel": 15,
+      "staffId": 23,
       "ingredients": [
         {
           "ingredientId": 188,
@@ -5688,6 +5762,7 @@
       "artisansFlames": 15,
       "staff": "Cohh",
       "staffLevel": 15,
+      "staffId": 15,
       "ingredients": [
         {
           "ingredientId": 124,
@@ -5761,6 +5836,7 @@
       "artisansFlames": 15,
       "staff": "Davina",
       "staffLevel": 15,
+      "staffId": 19,
       "ingredients": [
         {
           "ingredientId": 138,
@@ -5844,6 +5920,7 @@
       "artisansFlames": 15,
       "staff": "Drae",
       "staffLevel": 15,
+      "staffId": 17,
       "ingredients": [
         {
           "ingredientId": 109,
@@ -5921,6 +5998,7 @@
       "artisansFlames": 15,
       "staff": "El Nino",
       "staffLevel": 15,
+      "staffId": 10,
       "ingredients": [
         {
           "ingredientId": 70,
@@ -6004,6 +6082,7 @@
       "artisansFlames": 15,
       "staff": "Etsuko",
       "staffLevel": 15,
+      "staffId": 22,
       "ingredients": [
         {
           "ingredientId": 40,
@@ -6087,6 +6166,7 @@
       "artisansFlames": 15,
       "staff": "Hamako",
       "staffLevel": 15,
+      "staffId": 24,
       "ingredients": [
         {
           "ingredientId": 11,
@@ -6170,6 +6250,7 @@
       "artisansFlames": 15,
       "staff": "Itsuki",
       "staffLevel": 15,
+      "staffId": 20,
       "ingredients": [
         {
           "ingredientId": 25,
@@ -6257,6 +6338,7 @@
       "artisansFlames": 15,
       "staff": "James",
       "staffLevel": 15,
+      "staffId": 6,
       "ingredients": [
         {
           "ingredientId": 83,
@@ -6344,6 +6426,7 @@
       "artisansFlames": 15,
       "staff": "Jandi",
       "staffLevel": 15,
+      "staffId": 11,
       "ingredients": [
         {
           "ingredientId": 143,
@@ -6431,6 +6514,7 @@
       "artisansFlames": 15,
       "staff": "Kyoko",
       "staffLevel": 15,
+      "staffId": 1,
       "ingredients": [
         {
           "ingredientId": 213,
@@ -6518,6 +6602,7 @@
       "artisansFlames": 15,
       "staff": "Liu",
       "staffLevel": 15,
+      "staffId": 2,
       "ingredients": [
         {
           "ingredientId": 147,
@@ -6601,6 +6686,7 @@
       "artisansFlames": 15,
       "staff": "Maki",
       "staffLevel": 15,
+      "staffId": 14,
       "ingredients": [
         {
           "ingredientId": 215,
@@ -6684,6 +6770,7 @@
       "artisansFlames": 15,
       "staff": "Masayoshi",
       "staffLevel": 15,
+      "staffId": 21,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -6767,6 +6854,7 @@
       "artisansFlames": 15,
       "staff": "Mitchell",
       "staffLevel": 15,
+      "staffId": 4,
       "ingredients": [
         {
           "ingredientId": 117,
@@ -6850,6 +6938,7 @@
       "artisansFlames": 15,
       "staff": "Pai",
       "staffLevel": 15,
+      "staffId": 12,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -6923,6 +7012,7 @@
       "artisansFlames": 15,
       "staff": "Raptor",
       "staffLevel": 15,
+      "staffId": 16,
       "ingredients": [
         {
           "ingredientId": 64,
@@ -7006,6 +7096,7 @@
       "artisansFlames": 15,
       "staff": "Raul",
       "staffLevel": 15,
+      "staffId": 18,
       "ingredients": [
         {
           "ingredientId": 153,
@@ -7083,6 +7174,7 @@
       "artisansFlames": 15,
       "staff": "Tohoku",
       "staffLevel": 15,
+      "staffId": 8,
       "ingredients": [
         {
           "ingredientId": 155,
@@ -7166,6 +7258,7 @@
       "artisansFlames": 15,
       "staff": "Yone",
       "staffLevel": 15,
+      "staffId": 9,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -7249,6 +7342,7 @@
       "artisansFlames": 15,
       "staff": "Yusuke",
       "staffLevel": 15,
+      "staffId": 5,
       "ingredients": [
         {
           "ingredientId": 73,
@@ -7336,6 +7430,7 @@
       "artisansFlames": 8,
       "staff": "Any staff",
       "staffLevel": 5,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 183,
@@ -7409,6 +7504,7 @@
       "artisansFlames": 8,
       "staff": "Any staff",
       "staffLevel": 5,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 192,
@@ -7482,6 +7578,7 @@
       "artisansFlames": 8,
       "staff": "Cohh",
       "staffLevel": 5,
+      "staffId": 15,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -7555,6 +7652,7 @@
       "artisansFlames": 8,
       "staff": "Drae",
       "staffLevel": 5,
+      "staffId": 17,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -7642,6 +7740,7 @@
       "artisansFlames": 8,
       "staff": "Raptor",
       "staffLevel": 5,
+      "staffId": 16,
       "ingredients": [
         {
           "ingredientId": 216,
@@ -7729,6 +7828,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 217,
@@ -7796,6 +7896,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -7883,6 +7984,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -7970,6 +8072,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 48,
@@ -8047,6 +8150,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 40,
@@ -8120,6 +8224,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 145,
@@ -8203,6 +8308,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -8290,6 +8396,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 148,
@@ -8363,6 +8470,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 195,
@@ -8446,6 +8554,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 11,
@@ -8519,6 +8628,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 27,
@@ -8602,6 +8712,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 169,
@@ -8685,6 +8796,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 87,
@@ -8768,6 +8880,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -8855,6 +8968,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 36,
@@ -8938,6 +9052,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -9011,6 +9126,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 45,
@@ -9084,6 +9200,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 6,
@@ -9157,6 +9274,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 7,
@@ -9240,6 +9358,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 101,
@@ -9323,6 +9442,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 85,
@@ -9410,6 +9530,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 137,
@@ -9493,6 +9614,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 147,
@@ -9576,6 +9698,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -9649,6 +9772,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -9736,6 +9860,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -9813,6 +9938,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 103,
@@ -9896,6 +10022,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -9973,6 +10100,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 2,
@@ -10026,6 +10154,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 3,
@@ -10079,6 +10208,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -10136,6 +10266,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 6,
@@ -10189,6 +10320,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 7,
@@ -10242,6 +10374,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 8,
@@ -10295,6 +10428,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 9,
@@ -10348,6 +10482,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 10,
@@ -10401,6 +10536,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 11,
@@ -10454,6 +10590,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 12,
@@ -10507,6 +10644,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 19,
@@ -10560,6 +10698,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 13,
@@ -10613,6 +10752,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 14,
@@ -10670,6 +10810,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 15,
@@ -10723,6 +10864,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 17,
@@ -10776,6 +10918,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 18,
@@ -10829,6 +10972,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 24,
@@ -10882,6 +11026,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 25,
@@ -10939,6 +11084,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 27,
@@ -10992,6 +11138,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 28,
@@ -11049,6 +11196,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 29,
@@ -11102,6 +11250,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -11159,6 +11308,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 31,
@@ -11212,6 +11362,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 32,
@@ -11269,6 +11420,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -11326,6 +11478,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -11383,6 +11536,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 35,
@@ -11436,6 +11590,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 36,
@@ -11489,6 +11644,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 37,
@@ -11542,6 +11698,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 38,
@@ -11599,6 +11756,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 41,
@@ -11652,6 +11810,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 42,
@@ -11709,6 +11868,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 43,
@@ -11762,6 +11922,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 44,
@@ -11815,6 +11976,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 46,
@@ -11868,6 +12030,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 47,
@@ -11921,6 +12084,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 49,
@@ -11974,6 +12138,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 50,
@@ -12027,6 +12192,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 52,
@@ -12080,6 +12246,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 53,
@@ -12133,6 +12300,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -12190,6 +12358,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 55,
@@ -12243,6 +12412,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 56,
@@ -12296,6 +12466,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 216,
@@ -12353,6 +12524,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 57,
@@ -12410,6 +12582,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 58,
@@ -12467,6 +12640,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 59,
@@ -12520,6 +12694,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 60,
@@ -12573,6 +12748,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -12630,6 +12806,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 64,
@@ -12683,6 +12860,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 65,
@@ -12736,6 +12914,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 66,
@@ -12789,6 +12968,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 67,
@@ -12842,6 +13022,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 68,
@@ -12895,6 +13076,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 69,
@@ -12948,6 +13130,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 70,
@@ -13001,6 +13184,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -13058,6 +13242,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 74,
@@ -13111,6 +13296,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 75,
@@ -13164,6 +13350,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 76,
@@ -13217,6 +13404,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -13274,6 +13462,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 78,
@@ -13331,6 +13520,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 79,
@@ -13388,6 +13578,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 80,
@@ -13441,6 +13632,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 81,
@@ -13494,6 +13686,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 82,
@@ -13547,6 +13740,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 83,
@@ -13604,6 +13798,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 84,
@@ -13661,6 +13856,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 86,
@@ -13714,6 +13910,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 87,
@@ -13767,6 +13964,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 88,
@@ -13820,6 +14018,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 89,
@@ -13873,6 +14072,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 90,
@@ -13926,6 +14126,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 92,
@@ -13979,6 +14180,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 94,
@@ -14032,6 +14234,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 95,
@@ -14085,6 +14288,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 97,
@@ -14142,6 +14346,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 98,
@@ -14195,6 +14400,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 99,
@@ -14248,6 +14454,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 101,
@@ -14301,6 +14508,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 103,
@@ -14354,6 +14562,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 105,
@@ -14407,6 +14616,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 106,
@@ -14460,6 +14670,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 107,
@@ -14513,6 +14724,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 109,
@@ -14566,6 +14778,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 110,
@@ -14619,6 +14832,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 115,
@@ -14672,6 +14886,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 117,
@@ -14725,6 +14940,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 118,
@@ -14782,6 +14998,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 120,
@@ -14835,6 +15052,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 121,
@@ -14888,6 +15106,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 124,
@@ -14941,6 +15160,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 126,
@@ -14994,6 +15214,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 128,
@@ -15047,6 +15268,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 129,
@@ -15100,6 +15322,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -15157,6 +15380,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 132,
@@ -15210,6 +15434,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 133,
@@ -15263,6 +15488,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -15320,6 +15546,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 136,
@@ -15373,6 +15600,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 137,
@@ -15426,6 +15654,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 138,
@@ -15479,6 +15708,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [],
       "recipeCost": 0,
       "partyDishIds": [],
@@ -15521,6 +15751,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -15578,6 +15809,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 142,
@@ -15631,6 +15863,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 143,
@@ -15684,6 +15917,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 144,
@@ -15737,6 +15971,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 145,
@@ -15790,6 +16025,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 146,
@@ -15843,6 +16079,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 147,
@@ -15896,6 +16133,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 148,
@@ -15949,6 +16187,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 149,
@@ -16002,6 +16241,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 151,
@@ -16055,6 +16295,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 152,
@@ -16108,6 +16349,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 153,
@@ -16165,6 +16407,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 154,
@@ -16218,6 +16461,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 155,
@@ -16271,6 +16515,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 156,
@@ -16324,6 +16569,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 157,
@@ -16377,6 +16623,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 159,
@@ -16430,6 +16677,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -16487,6 +16735,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 160,
@@ -16540,6 +16789,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 161,
@@ -16593,6 +16843,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 162,
@@ -16650,6 +16901,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 163,
@@ -16703,6 +16955,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 164,
@@ -16756,6 +17009,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -16813,6 +17067,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 167,
@@ -16866,6 +17121,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 168,
@@ -16919,6 +17175,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 169,
@@ -16972,6 +17229,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 170,
@@ -17025,6 +17283,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 172,
@@ -17078,6 +17337,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 173,
@@ -17131,6 +17391,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 174,
@@ -17184,6 +17445,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 176,
@@ -17237,6 +17499,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 177,
@@ -17290,6 +17553,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -17343,6 +17607,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 119,
@@ -17416,6 +17681,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 179,
@@ -17469,6 +17735,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 181,
@@ -17522,6 +17789,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 182,
@@ -17575,6 +17843,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 125,
@@ -17632,6 +17901,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 183,
@@ -17685,6 +17955,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 102,
@@ -17742,6 +18013,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 184,
@@ -17795,6 +18067,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 185,
@@ -17848,6 +18121,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 188,
@@ -17901,6 +18175,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 189,
@@ -17954,6 +18229,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 190,
@@ -18007,6 +18283,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 191,
@@ -18060,6 +18337,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 193,
@@ -18113,6 +18391,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 194,
@@ -18166,6 +18445,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 195,
@@ -18219,6 +18499,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 196,
@@ -18272,6 +18553,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 197,
@@ -18325,6 +18607,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 198,
@@ -18378,6 +18661,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 199,
@@ -18435,6 +18719,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 200,
@@ -18492,6 +18777,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 201,
@@ -18545,6 +18831,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 202,
@@ -18598,6 +18885,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 203,
@@ -18651,6 +18939,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 204,
@@ -18708,6 +18997,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 208,
@@ -18761,6 +19051,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 209,
@@ -18814,6 +19105,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 210,
@@ -18867,6 +19159,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 211,
@@ -18920,6 +19213,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 213,
@@ -18977,6 +19271,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -19034,6 +19329,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 215,
@@ -19087,6 +19383,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 218,
@@ -19144,6 +19441,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 219,
@@ -19197,6 +19495,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 221,
@@ -19250,6 +19549,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 223,
@@ -19303,6 +19603,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 224,
@@ -19356,6 +19657,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -19413,6 +19715,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 226,
@@ -19470,6 +19773,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 227,
@@ -19527,6 +19831,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 228,
@@ -19586,6 +19891,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 1,
@@ -19649,6 +19955,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 2,
@@ -19702,6 +20009,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 3,
@@ -19755,6 +20063,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -19812,6 +20121,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 6,
@@ -19885,6 +20195,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 6,
@@ -19938,6 +20249,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 7,
@@ -20021,6 +20333,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 7,
@@ -20074,6 +20387,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 8,
@@ -20127,6 +20441,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 9,
@@ -20180,6 +20495,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 10,
@@ -20257,6 +20573,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 10,
@@ -20310,6 +20627,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 11,
@@ -20363,6 +20681,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 19,
@@ -20416,6 +20735,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 14,
@@ -20473,6 +20793,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 15,
@@ -20526,6 +20847,7 @@
       "artisansFlames": 15,
       "staff": "Mitchell",
       "staffLevel": 15,
+      "staffId": 4,
       "ingredients": [
         {
           "ingredientId": 117,
@@ -20609,6 +20931,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 17,
@@ -20682,6 +21005,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 17,
@@ -20735,6 +21059,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 18,
@@ -20788,6 +21113,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 132,
@@ -20861,6 +21187,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 24,
@@ -20914,6 +21241,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 25,
@@ -20971,6 +21299,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 123,
@@ -21044,6 +21373,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 27,
@@ -21127,6 +21457,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 27,
@@ -21180,6 +21511,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 28,
@@ -21237,6 +21569,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -21294,6 +21627,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 31,
@@ -21347,6 +21681,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 32,
@@ -21404,6 +21739,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -21461,6 +21797,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -21518,6 +21855,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -21605,6 +21943,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 35,
@@ -21658,6 +21997,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 36,
@@ -21711,6 +22051,7 @@
       "artisansFlames": 8,
       "staff": "Raptor",
       "staffLevel": 5,
+      "staffId": 16,
       "ingredients": [
         {
           "ingredientId": 216,
@@ -21798,6 +22139,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -21871,6 +22213,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 127,
@@ -21958,6 +22301,7 @@
       "artisansFlames": 15,
       "staff": "Raul",
       "staffLevel": 15,
+      "staffId": 18,
       "ingredients": [
         {
           "ingredientId": 153,
@@ -22035,6 +22379,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -22122,6 +22467,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 224,
@@ -22185,6 +22531,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 38,
@@ -22242,6 +22589,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 42,
@@ -22299,6 +22647,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 43,
@@ -22352,6 +22701,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 44,
@@ -22405,6 +22755,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 47,
@@ -22458,6 +22809,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 49,
@@ -22511,6 +22863,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 51,
@@ -22594,6 +22947,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 50,
@@ -22647,6 +23001,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 52,
@@ -22700,6 +23055,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 53,
@@ -22753,6 +23109,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -22810,6 +23167,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 145,
@@ -22893,6 +23251,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 55,
@@ -22946,6 +23305,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 216,
@@ -23003,6 +23363,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 57,
@@ -23060,6 +23421,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 58,
@@ -23117,6 +23479,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 59,
@@ -23170,6 +23533,7 @@
       "artisansFlames": 15,
       "staff": "Billy",
       "staffLevel": 15,
+      "staffId": 7,
       "ingredients": [
         {
           "ingredientId": 164,
@@ -23247,6 +23611,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -23324,6 +23689,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -23381,6 +23747,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 64,
@@ -23434,6 +23801,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -23521,6 +23889,7 @@
       "artisansFlames": 15,
       "staff": "Yusuke",
       "staffLevel": 15,
+      "staffId": 5,
       "ingredients": [
         {
           "ingredientId": 73,
@@ -23608,6 +23977,7 @@
       "artisansFlames": 12,
       "staff": "Cohh",
       "staffLevel": 10,
+      "staffId": 15,
       "ingredients": [
         {
           "ingredientId": 161,
@@ -23691,6 +24061,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 140,
@@ -23778,6 +24149,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 65,
@@ -23831,6 +24203,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 66,
@@ -23884,6 +24257,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 67,
@@ -23937,6 +24311,7 @@
       "artisansFlames": 15,
       "staff": "Carolina",
       "staffLevel": 15,
+      "staffId": 3,
       "ingredients": [
         {
           "ingredientId": 194,
@@ -24020,6 +24395,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 68,
@@ -24073,6 +24449,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 68,
@@ -24146,6 +24523,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 69,
@@ -24199,6 +24577,7 @@
       "artisansFlames": 15,
       "staff": "El Nino",
       "staffLevel": 15,
+      "staffId": 10,
       "ingredients": [
         {
           "ingredientId": 70,
@@ -24282,6 +24661,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 70,
@@ -24335,6 +24715,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -24392,6 +24773,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 74,
@@ -24445,6 +24827,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -24502,6 +24885,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 135,
@@ -24589,6 +24973,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 78,
@@ -24646,6 +25031,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 79,
@@ -24703,6 +25089,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 81,
@@ -24756,6 +25143,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 82,
@@ -24809,6 +25197,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 83,
@@ -24866,6 +25255,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 100,
@@ -24949,6 +25339,7 @@
       "artisansFlames": 15,
       "staff": "Raptor",
       "staffLevel": 15,
+      "staffId": 16,
       "ingredients": [
         {
           "ingredientId": 64,
@@ -25032,6 +25423,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 169,
@@ -25115,6 +25507,7 @@
       "artisansFlames": 8,
       "staff": "Cohh",
       "staffLevel": 5,
+      "staffId": 15,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -25188,6 +25581,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 87,
@@ -25271,6 +25665,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 84,
@@ -25328,6 +25723,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 87,
@@ -25381,6 +25777,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 89,
@@ -25434,6 +25831,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 175,
@@ -25521,6 +25919,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 92,
@@ -25574,6 +25973,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 94,
@@ -25657,6 +26057,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 94,
@@ -25710,6 +26111,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -25777,6 +26179,7 @@
       "artisansFlames": 15,
       "staff": "Charlie",
       "staffLevel": 15,
+      "staffId": 13,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -25854,6 +26257,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 95,
@@ -25907,6 +26311,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 97,
@@ -25964,6 +26369,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 98,
@@ -26017,6 +26423,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 111,
@@ -26090,6 +26497,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 185,
@@ -26173,6 +26581,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 101,
@@ -26256,6 +26665,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 101,
@@ -26309,6 +26719,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 103,
@@ -26362,6 +26773,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -26449,6 +26861,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 105,
@@ -26502,6 +26915,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -26589,6 +27003,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 85,
@@ -26676,6 +27091,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 107,
@@ -26729,6 +27145,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 95,
@@ -26806,6 +27223,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -26883,6 +27301,7 @@
       "artisansFlames": 15,
       "staff": "Drae",
       "staffLevel": 15,
+      "staffId": 17,
       "ingredients": [
         {
           "ingredientId": 109,
@@ -26960,6 +27379,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 109,
@@ -27013,6 +27433,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 115,
@@ -27066,6 +27487,7 @@
       "artisansFlames": 15,
       "staff": "Masayoshi",
       "staffLevel": 15,
+      "staffId": 21,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -27149,6 +27571,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -27226,6 +27649,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 117,
@@ -27279,6 +27703,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 118,
@@ -27336,6 +27761,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 120,
@@ -27389,6 +27815,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 121,
@@ -27442,6 +27869,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 122,
@@ -27529,6 +27957,7 @@
       "artisansFlames": 15,
       "staff": "Cohh",
       "staffLevel": 15,
+      "staffId": 15,
       "ingredients": [
         {
           "ingredientId": 124,
@@ -27602,6 +28031,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 124,
@@ -27655,6 +28085,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 129,
@@ -27708,6 +28139,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -27785,6 +28217,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -27842,6 +28275,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 132,
@@ -27895,6 +28329,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 133,
@@ -27948,6 +28383,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -28005,6 +28441,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -28092,6 +28529,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 49,
@@ -28175,6 +28613,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 136,
@@ -28242,6 +28681,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 136,
@@ -28295,6 +28735,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 137,
@@ -28378,6 +28819,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 137,
@@ -28431,6 +28873,7 @@
       "artisansFlames": 15,
       "staff": "Davina",
       "staffLevel": 15,
+      "staffId": 19,
       "ingredients": [
         {
           "ingredientId": 138,
@@ -28514,6 +28957,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 138,
@@ -28567,6 +29011,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 73,
@@ -28650,6 +29095,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [],
       "recipeCost": 0,
       "partyDishIds": [],
@@ -28692,6 +29138,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -28749,6 +29196,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 142,
@@ -28802,6 +29250,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 143,
@@ -28855,6 +29304,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 144,
@@ -28908,6 +29358,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 145,
@@ -28961,6 +29412,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 147,
@@ -29044,6 +29496,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 147,
@@ -29097,6 +29550,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 148,
@@ -29170,6 +29624,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 148,
@@ -29223,6 +29678,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 39,
@@ -29300,6 +29756,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 45,
@@ -29387,6 +29844,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 151,
@@ -29470,6 +29928,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 151,
@@ -29523,6 +29982,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 195,
@@ -29606,6 +30066,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 152,
@@ -29659,6 +30120,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 153,
@@ -29716,6 +30178,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 192,
@@ -29799,6 +30262,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 154,
@@ -29852,6 +30316,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 155,
@@ -29905,6 +30370,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 156,
@@ -29958,6 +30424,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 159,
@@ -30011,6 +30478,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -30068,6 +30536,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 160,
@@ -30121,6 +30590,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 161,
@@ -30174,6 +30644,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 162,
@@ -30231,6 +30702,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 163,
@@ -30284,6 +30756,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 164,
@@ -30337,6 +30810,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 16,
@@ -30410,6 +30884,7 @@
       "artisansFlames": 12,
       "staff": "Raptor",
       "staffLevel": 10,
+      "staffId": 16,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -30483,6 +30958,7 @@
       "artisansFlames": 15,
       "staff": "Kyoko",
       "staffLevel": 15,
+      "staffId": 1,
       "ingredients": [
         {
           "ingredientId": 213,
@@ -30570,6 +31046,7 @@
       "artisansFlames": 12,
       "staff": "Drae",
       "staffLevel": 10,
+      "staffId": 17,
       "ingredients": [
         {
           "ingredientId": 43,
@@ -30647,6 +31124,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 178,
@@ -30734,6 +31212,7 @@
       "artisansFlames": 15,
       "staff": "Tohoku",
       "staffLevel": 15,
+      "staffId": 8,
       "ingredients": [
         {
           "ingredientId": 155,
@@ -30817,6 +31296,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -30874,6 +31354,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 167,
@@ -30927,6 +31408,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 169,
@@ -30980,6 +31462,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 170,
@@ -31033,6 +31516,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 163,
@@ -31096,6 +31580,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 174,
@@ -31149,6 +31634,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 176,
@@ -31216,6 +31702,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 176,
@@ -31269,6 +31756,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 177,
@@ -31322,6 +31810,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -31399,6 +31888,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -31462,6 +31952,7 @@
       "artisansFlames": 15,
       "staff": "Yone",
       "staffLevel": 15,
+      "staffId": 9,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -31545,6 +32036,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -31598,6 +32090,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 116,
@@ -31671,6 +32164,7 @@
       "artisansFlames": 15,
       "staff": "James",
       "staffLevel": 15,
+      "staffId": 6,
       "ingredients": [
         {
           "ingredientId": 83,
@@ -31758,6 +32252,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 111,
@@ -31821,6 +32316,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 119,
@@ -31894,6 +32390,7 @@
       "artisansFlames": 15,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 20,
@@ -31983,6 +32480,7 @@
       "artisansFlames": 15,
       "staff": "Pai",
       "staffLevel": 15,
+      "staffId": 12,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -32056,6 +32554,7 @@
       "artisansFlames": 15,
       "staff": "Itsuki",
       "staffLevel": 15,
+      "staffId": 20,
       "ingredients": [
         {
           "ingredientId": 25,
@@ -32143,6 +32642,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 182,
@@ -32196,6 +32696,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 125,
@@ -32253,6 +32754,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -32310,6 +32812,7 @@
       "artisansFlames": 8,
       "staff": "Any staff",
       "staffLevel": 5,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 183,
@@ -32383,6 +32886,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 183,
@@ -32436,6 +32940,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 11,
@@ -32509,6 +33014,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 102,
@@ -32566,6 +33072,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 184,
@@ -32619,6 +33126,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 185,
@@ -32672,6 +33180,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 184,
@@ -32755,6 +33264,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 188,
@@ -32808,6 +33318,7 @@
       "artisansFlames": 8,
       "staff": "Drae",
       "staffLevel": 5,
+      "staffId": 17,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -32895,6 +33406,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 189,
@@ -32948,6 +33460,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 193,
@@ -33001,6 +33514,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -33078,6 +33592,7 @@
       "artisansFlames": 12,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 9,
@@ -33151,6 +33666,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 186,
@@ -33234,6 +33750,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 171,
@@ -33317,6 +33834,7 @@
       "artisansFlames": 8,
       "staff": "Any staff",
       "staffLevel": 5,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 192,
@@ -33390,6 +33908,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 192,
@@ -33453,6 +33972,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 194,
@@ -33506,6 +34026,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -33583,6 +34104,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 205,
@@ -33666,6 +34188,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 195,
@@ -33719,6 +34242,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 196,
@@ -33772,6 +34296,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 196,
@@ -33835,6 +34360,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 36,
@@ -33918,6 +34444,7 @@
       "artisansFlames": 15,
       "staff": "Liu",
       "staffLevel": 15,
+      "staffId": 2,
       "ingredients": [
         {
           "ingredientId": 147,
@@ -34001,6 +34528,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 198,
@@ -34054,6 +34582,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 199,
@@ -34111,6 +34640,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 200,
@@ -34168,6 +34698,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 201,
@@ -34221,6 +34752,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 202,
@@ -34274,6 +34806,7 @@
       "artisansFlames": 7,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -34347,6 +34880,7 @@
       "artisansFlames": 15,
       "staff": "Maki",
       "staffLevel": 15,
+      "staffId": 14,
       "ingredients": [
         {
           "ingredientId": 215,
@@ -34430,6 +34964,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 18,
@@ -34507,6 +35042,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 103,
@@ -34590,6 +35126,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 204,
@@ -34647,6 +35184,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 59,
@@ -34730,6 +35268,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -34797,6 +35336,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -34874,6 +35414,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -34951,6 +35492,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 209,
@@ -35004,6 +35546,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 45,
@@ -35077,6 +35620,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 211,
@@ -35130,6 +35674,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -35197,6 +35742,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 213,
@@ -35254,6 +35800,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -35311,6 +35858,7 @@
       "artisansFlames": 6,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 215,
@@ -35384,6 +35932,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 215,
@@ -35437,6 +35986,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 218,
@@ -35494,6 +36044,7 @@
       "artisansFlames": 3,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 217,
@@ -35561,6 +36112,7 @@
       "artisansFlames": 15,
       "staff": "Jandi",
       "staffLevel": 15,
+      "staffId": 11,
       "ingredients": [
         {
           "ingredientId": 143,
@@ -35648,6 +36200,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 221,
@@ -35701,6 +36254,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 222,
@@ -35768,6 +36322,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 223,
@@ -35821,6 +36376,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 224,
@@ -35874,6 +36430,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -35931,6 +36488,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 226,
@@ -35988,6 +36546,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 227,
@@ -36045,6 +36604,7 @@
       "artisansFlames": 5,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 48,
@@ -36122,6 +36682,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 5,
@@ -36175,6 +36736,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 228,
@@ -36232,6 +36794,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 12,
@@ -36285,6 +36848,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 13,
@@ -36338,6 +36902,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 29,
@@ -36391,6 +36956,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 37,
@@ -36444,6 +37010,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 41,
@@ -36497,6 +37064,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 46,
@@ -36550,6 +37118,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 56,
@@ -36603,6 +37172,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 60,
@@ -36656,6 +37226,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 75,
@@ -36709,6 +37280,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 76,
@@ -36762,6 +37334,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 80,
@@ -36815,6 +37388,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 86,
@@ -36868,6 +37442,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 88,
@@ -36921,6 +37496,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 90,
@@ -36974,6 +37550,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 99,
@@ -37027,6 +37604,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 106,
@@ -37080,6 +37658,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 110,
@@ -37133,6 +37712,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 126,
@@ -37186,6 +37766,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 128,
@@ -37239,6 +37820,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 146,
@@ -37292,6 +37874,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 149,
@@ -37345,6 +37928,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 157,
@@ -37398,6 +37982,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 168,
@@ -37451,6 +38036,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 172,
@@ -37504,6 +38090,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 173,
@@ -37557,6 +38144,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 179,
@@ -37610,6 +38198,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 181,
@@ -37663,6 +38252,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 190,
@@ -37716,6 +38306,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 191,
@@ -37769,6 +38360,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 197,
@@ -37822,6 +38414,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 203,
@@ -37875,6 +38468,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 208,
@@ -37928,6 +38522,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 210,
@@ -37981,6 +38576,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 219,
@@ -38034,6 +38630,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -38111,6 +38708,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 15,
@@ -38188,6 +38786,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -38277,6 +38876,7 @@
       "artisansFlames": 15,
       "staff": "Etsuko",
       "staffLevel": 15,
+      "staffId": 22,
       "ingredients": [
         {
           "ingredientId": 40,
@@ -38360,6 +38960,7 @@
       "artisansFlames": 15,
       "staff": "Chitose",
       "staffLevel": 15,
+      "staffId": 23,
       "ingredients": [
         {
           "ingredientId": 188,
@@ -38443,6 +39044,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 40,
@@ -38516,6 +39118,7 @@
       "artisansFlames": 15,
       "staff": "Hamako",
       "staffLevel": 15,
+      "staffId": 24,
       "ingredients": [
         {
           "ingredientId": 11,
@@ -38599,6 +39202,7 @@
       "artisansFlames": 1,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -38676,6 +39280,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -38753,6 +39358,7 @@
       "artisansFlames": 9,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 111,
@@ -38836,6 +39442,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -38913,6 +39520,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 185,
@@ -38986,6 +39594,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 144,
@@ -39069,6 +39678,7 @@
       "artisansFlames": null,
       "staff": null,
       "staffLevel": null,
+      "staffId": null,
       "ingredients": [
         {
           "ingredientId": 115,

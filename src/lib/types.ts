@@ -129,6 +129,7 @@ export interface Dish {
 	cooksta?: string;
 	artisansFlames?: number;
 	staff?: string;
+	staffId?: Id;
 	staffLevel?: number;
 	ingredients: Array<{
 		ingredientId: Id;

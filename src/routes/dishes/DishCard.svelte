@@ -107,12 +107,16 @@
 					<div class="text-md mt-1 flex items-center gap-2">
 						{#if dish.staff}
 							<span class="truncate opacity-70">
-								<a
-									href="/staff#staff-{dish.staff.replace(' ', '-')}"
-									class="text-primary-800-200 transition-colors hover:text-primary-600-400 hover:underline"
-								>
+								{#if dish.staff === 'Any staff' || !dish.staffId}
 									{dish.staff}
-								</a>
+								{:else}
+									<a
+										href="/staff#staff-{dish.staffId}"
+										class="text-primary-800-200 transition-colors hover:text-primary-600-400 hover:underline"
+									>
+										{dish.staff}
+									</a>
+								{/if}
 								(Level {dish.staffLevel})
 							</span>
 						{:else if dish.unlock}
