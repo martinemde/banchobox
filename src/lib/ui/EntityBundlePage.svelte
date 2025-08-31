@@ -31,6 +31,8 @@
 		// Optional tracking support
 		trackedItems = undefined,
 		onToggleTrack = undefined,
+		// Optional right sidebar support
+		rightSidebar = undefined,
 		// Content to render
 		content
 	}: {
@@ -44,6 +46,8 @@
 		// Optional tracking support
 		trackedItems?: TrackedItem[];
 		onToggleTrack?: (id: Id) => void;
+		// Optional right sidebar support
+		rightSidebar?: Snippet;
 		// Content to render
 		content: Snippet;
 	} = $props();
@@ -66,8 +70,9 @@
 	let leftOpen = $state(false);
 	let myBanchoExpanded = $state(true);
 
-	// Show tracking sidebar if tracking is enabled
+	// Show sidebars
 	const showTrackingSidebar = $derived(Boolean(trackedItems && onToggleTrack));
+	const showRightSidebar = $derived(showTrackingSidebar || Boolean(rightSidebar));
 </script>
 
 {#snippet leftSnippet()}
@@ -106,6 +111,8 @@
 {#snippet rightSnippet()}
 	{#if showTrackingSidebar}
 		<TrackingSidebar tracked={trackedItems} on:toggleTrack={(e) => onToggleTrack?.(e.detail)} />
+	{:else if rightSidebar}
+		{@render rightSidebar()}
 	{/if}
 {/snippet}
 
@@ -115,5 +122,5 @@
 	bind:leftOpen
 	left={leftSnippet}
 	content={contentSnippet}
-	right={showTrackingSidebar ? rightSnippet : undefined}
+	right={showRightSidebar ? rightSnippet : undefined}
 ></ResponsiveLayout>

@@ -2,8 +2,16 @@
 	import StaffCard from './StaffCard.svelte';
 	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
 	import { staffStores } from '$lib/stores/staff';
+	import { hiredStaffIds } from '$lib/stores/hiredStaff.js';
+	import HiredStaffSidebar from '$lib/ui/HiredStaffSidebar.svelte';
 
 	const { visible } = staffStores;
+
+	const hired = $derived(
+		$visible
+			.filter((s) => $hiredStaffIds.has(s.id))
+			.map((s) => ({ id: s.id, name: s.name, wage: s.wageMax }))
+	);
 
 	const sortOptions = [
 		{ value: 'name', label: 'Name' },
@@ -38,5 +46,9 @@
 		{#each $visible as staff (staff.id)}
 			<StaffCard {staff} />
 		{/each}
+	{/snippet}
+
+	{#snippet rightSidebar()}
+		<HiredStaffSidebar {hired} on:toggleHire={(e) => hiredStaffIds.toggle(e.detail)} />
 	{/snippet}
 </EntityBundlePage>
