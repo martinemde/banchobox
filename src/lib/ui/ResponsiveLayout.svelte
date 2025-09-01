@@ -24,9 +24,11 @@
 	}
 </script>
 
-<div class="flex-1 px-4 py-6 {containerClass}">
-	<div class="md:flex md:gap-6">
-		<div class="mb-4 md:hidden">
+<div
+	class="mx-auto max-w-md flex-1 px-4 py-6 sm:max-w-3xl md:max-w-3xl lg:max-w-5xl {containerClass}"
+>
+	<div class="sm:flex sm:gap-4">
+		<div class="mb-4 sm:hidden">
 			<Modal
 				open={leftOpen}
 				onOpenChange={(e) => (leftOpen = e.open)}
@@ -65,18 +67,18 @@
 			</Modal>
 		</div>
 
-		<aside class="hidden md:block md:w-72 md:shrink-0">
-			<div class="top-0 h-full border-r border-white/10 px-4">
+		<aside class="hidden max-w-72 min-w-36 sm:block">
+			<div class="top-0 h-full border-r border-white/10 pr-4">
 				{@render left!()}
 			</div>
 		</aside>
 
-		<section class="md:min-w-0">
+		<section class="sm:min-w-0">
 			{@render content!()}
 		</section>
 
 		{#if right}
-			<aside class="hidden md:shrink-0 lg:block lg:w-64">
+			<aside class="hidden lg:block lg:w-64 lg:shrink-0">
 				{@render right!()}
 			</aside>
 		{/if}
