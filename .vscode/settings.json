@@ -25,5 +25,6 @@
 	"[markdown]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"svelte.enable-ts-plugin": true
+	"svelte.enable-ts-plugin": true,
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
