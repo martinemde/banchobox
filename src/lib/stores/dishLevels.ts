@@ -1,24 +1,25 @@
-import { browser } from '$app/environment';
-import { writable, type Writable } from 'svelte/store';
+import { persistedLocalState } from '$lib/utils/persisted.svelte';
 
 type DishId = number;
-
 type LevelsMap = Record<DishId, number>;
 
-const STORAGE_KEY = 'dishLevels.v1';
+function clampLevel(level: number, maxLevel: number): number {
+	const max = Math.max(1, Math.floor(maxLevel || 1));
+	return Math.min(Math.max(Math.floor(level || 1), 1), max);
+}
 
-function readFromStorage(): LevelsMap {
-	if (!browser) return {};
+// Custom deserializer to ensure proper number validation
+function deserializeLevels(raw: string): LevelsMap {
 	try {
-		const raw = localStorage.getItem(STORAGE_KEY);
-		if (!raw) return {};
 		const parsed = JSON.parse(raw) as unknown;
 		if (parsed && typeof parsed === 'object') {
 			const out: LevelsMap = {};
 			for (const [k, v] of Object.entries(parsed as Record<string, unknown>)) {
 				const id = Number(k);
 				const level = Number(v);
-				if (Number.isFinite(id) && Number.isFinite(level)) out[id] = Math.max(1, Math.floor(level));
+				if (Number.isFinite(id) && Number.isFinite(level)) {
+					out[id] = Math.max(1, Math.floor(level));
+				}
 			}
 			return out;
 		}
@@ -28,53 +29,38 @@ function readFromStorage(): LevelsMap {
 	}
 }
 
-function writeToStorage(levels: LevelsMap): void {
-	if (!browser) return;
-	try {
-		localStorage.setItem(STORAGE_KEY, JSON.stringify(levels));
-	} catch {
-		// ignore
+// Simplified dish levels store using the improved persistence utility
+const dishLevelsStore = persistedLocalState<LevelsMap>(
+	'dishLevels',
+	{},
+	{
+		version: 'v1',
+		deserialize: deserializeLevels
 	}
-}
+);
 
-function clampLevel(level: number, maxLevel: number): number {
-	const max = Math.max(1, Math.floor(maxLevel || 1));
-	return Math.min(Math.max(Math.floor(level || 1), 1), max);
-}
-
-export type DishLevelsStore = Writable<LevelsMap> & {
+export type DishLevelsStore = {
+	get: () => LevelsMap;
+	set: (value: LevelsMap) => void;
 	getLevel: (dishId: DishId, maxLevel: number) => number;
 	setLevel: (dishId: DishId, level: number) => void;
 };
 
-function createDishLevelsStore(): DishLevelsStore {
-	const initial = readFromStorage();
-	const store = writable<LevelsMap>(initial);
+// Enhanced methods for the dish levels store
+export const dishLevels: DishLevelsStore = {
+	...dishLevelsStore,
 
-	store.subscribe((levels) => writeToStorage(levels));
-
-	function getLevel(dishId: DishId, maxLevel: number): number {
+	getLevel(dishId: DishId, maxLevel: number): number {
 		const max = Math.max(1, Math.floor(maxLevel || 1));
-		// Synchronously read without subscription
-		const snapshot = ((): LevelsMap => {
-			let snap!: LevelsMap;
-			store.update((value) => ((snap = value), value));
-			return snap;
-		})();
-		const current = snapshot?.[dishId];
+		const current = dishLevelsStore.get()[dishId];
 		const fallback = Math.min(10, max);
 		return clampLevel(current ?? fallback, max);
+	},
+
+	setLevel(dishId: DishId, level: number) {
+		const current = dishLevelsStore.get();
+		const next: LevelsMap = { ...current };
+		next[dishId] = Math.max(1, Math.floor(level || 1));
+		dishLevelsStore.set(next); // This will trigger persistence
 	}
-
-	function setLevel(dishId: DishId, level: number) {
-		store.update((current) => {
-			const next: LevelsMap = { ...current };
-			next[dishId] = Math.max(1, Math.floor(level || 1));
-			return next;
-		});
-	}
-
-	return Object.assign(store, { getLevel, setLevel });
-}
-
-export const dishLevels = createDishLevelsStore();
+};

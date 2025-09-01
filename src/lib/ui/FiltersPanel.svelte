@@ -21,7 +21,7 @@
 	} = $props();
 	import { selectedChapter } from '$lib/stores/chapters';
 	import { visible as dlcVisible } from '$lib/stores/dlc';
-	import MyBanchoPanel from '$lib/ui/MyBanchoPanel.svelte';
+	import MyBanchoPanel from '$lib/components/MyBanchoPanel.svelte';
 	const dlcRows = $derived($dlcVisible ?? []);
 	let enabledDlcIds = new SvelteSet<number>();
 

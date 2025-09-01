@@ -6,7 +6,7 @@
 	import HiddenItemsIndicator from '$lib/ui/HiddenItemsIndicator.svelte';
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
 	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';
-	import TrackingSidebar from '$lib/ui/TrackingSidebar.svelte';
+	import TrackingSidebar from '$lib/components/TrackingSidebar.svelte';
 	import type { Id, BundleEntity } from '$lib/types';
 
 	type SortOption = {

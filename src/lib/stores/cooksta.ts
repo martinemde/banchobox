@@ -1,6 +1,7 @@
 import { createEntityStores } from './entityBundle.js';
 import type { CookstaTier, EntityBundle, Id } from '$lib/types.js';
 import { derived, writable, type Readable, type Writable, get } from 'svelte/store';
+import { persistedLocalState } from '$lib/utils/persisted.svelte';
 import { browser } from '$app/environment';
 
 export const cookstaStores = createEntityStores<CookstaTier>({
@@ -11,46 +12,56 @@ export const cookstaStores = createEntityStores<CookstaTier>({
 export const bundle = cookstaStores.bundle as Writable<EntityBundle<CookstaTier> | null>;
 export const visible = cookstaStores.visible as Readable<CookstaTier[]>;
 
-// Persisted selection of current Cooksta tier id
-const STORAGE_KEY = 'cookstaTierId.v1';
+// Use the improved persistence utility instead of manual localStorage
+const selectedTierIdStore = persistedLocalState<Id | null>('cookstaTierId', null, {
+	version: 'v1'
+});
 
-function readSelected(): Id | null {
-	if (!browser) return null;
-	try {
-		const raw = localStorage.getItem(STORAGE_KEY);
-		if (!raw) return null;
-		const n = Number(JSON.parse(raw));
-		return Number.isFinite(n) ? (n as Id) : null;
-	} catch {
-		return null;
-	}
+// Create a proper Svelte store that wraps the persisted state
+const selectedTierIdStoreCompat = writable<Id | null>(selectedTierIdStore.get());
+
+// Sync the store with persisted state changes in browser
+if (browser) {
+	$effect(() => {
+		selectedTierIdStoreCompat.set(selectedTierIdStore.get());
+	});
 }
 
-function writeSelected(id: Id | null): void {
-	if (!browser) return;
-	try {
-		if (id == null) localStorage.removeItem(STORAGE_KEY);
-		else localStorage.setItem(STORAGE_KEY, JSON.stringify(id));
-	} catch {
-		// ignore
-	}
-}
+// Sync persisted state with store changes
+selectedTierIdStoreCompat.subscribe((value) => {
+	selectedTierIdStore.set(value);
+});
 
-export const selectedTierId = writable<Id | null>(readSelected());
-selectedTierId.subscribe((v) => writeSelected(v));
+export const selectedTierId = selectedTierIdStoreCompat;
 
-export const selectedTier = derived([bundle, selectedTierId], ([$bundle, $id]) => {
+export const selectedTier = derived([bundle, selectedTierId], ([$bundle, $selectedId]) => {
 	if (!$bundle) return null as CookstaTier | null;
-	let tier = null;
-	if ($id != null) tier = $bundle.byId[$id] ?? null;
-	if (tier == null) tier = $bundle.rows[0];
+
+	let tier = null as CookstaTier | null;
+
+	if ($selectedId != null) {
+		tier = $bundle.byId[$selectedId] ?? null;
+	}
+
+	if (tier == null) {
+		tier = $bundle.rows[0] ?? null;
+	}
+
 	return tier;
 });
 
-// Initialize default selection to first tier if none persisted
-bundle.subscribe(($bundle) => {
-	if (!$bundle) return;
-	if (get(selectedTierId) != null) return;
-	const tier = $bundle.rows[0];
-	if (tier) selectedTierId.set(tier.id);
-});
+// Initialize default selection to first tier if none selected
+if (browser) {
+	$effect(() => {
+		const $bundle = get(bundle);
+		if (!$bundle) return;
+
+		const currentSelection = selectedTierIdStore.get();
+		if (currentSelection != null) return;
+
+		const firstTier = $bundle.rows[0] ?? null;
+		if (firstTier) {
+			selectedTierIdStore.set(firstTier.id);
+		}
+	});
+}

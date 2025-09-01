@@ -1,38 +1,33 @@
 import { writable, type Writable } from 'svelte/store';
+import { persistedLocalState } from '$lib/utils/persisted.svelte';
 import { browser } from '$app/environment';
 
-function readFromStorage(storageKey: string): number[] {
-	if (!browser) return [];
-	try {
-		const raw = localStorage.getItem(storageKey);
-		if (!raw) return [];
-		const parsed = JSON.parse(raw);
-		if (Array.isArray(parsed)) return parsed.filter((n) => Number.isFinite(n));
-		return [];
-	} catch {
-		return [];
-	}
-}
+// Internal persisted state
+const persistedState = persistedLocalState('hiredStaff', new Set<number>(), {
+	version: 'v1',
+	serialize: (set) => JSON.stringify(Array.from(set)),
+	deserialize: (raw) => new Set<number>(JSON.parse(raw) as number[])
+});
 
-function writeToStorage(storageKey: string, ids: Set<number>): void {
-	if (!browser) return;
-	try {
-		localStorage.setItem(storageKey, JSON.stringify([...ids]));
-	} catch {
-		// ignore
-	}
-}
-
-function createHiredStaffIdsStore(storageKey: string): Writable<Set<number>> & {
+// Create a Svelte store that wraps the persisted state for backward compatibility
+function createHiredStaffIdsStore(): Writable<Set<number>> & {
 	hire: (id: number) => void;
 	unhire: (id: number) => void;
 	toggle: (id: number) => void;
 } {
-	const initial = new Set<number>(readFromStorage(storageKey));
-	const store = writable<Set<number>>(initial);
+	const store = writable<Set<number>>(persistedState.get());
 
-	// Persist on changes
-	store.subscribe((ids) => writeToStorage(storageKey, ids));
+	// Sync persisted state to store when persisted state changes
+	if (browser) {
+		$effect(() => {
+			store.set(persistedState.get());
+		});
+	}
+
+	// Sync store to persisted state when store changes
+	store.subscribe((value) => {
+		persistedState.set(value);
+	});
 
 	function withClone(updateFn: (next: Set<number>) => void) {
 		store.update((current) => {
@@ -60,10 +55,12 @@ function createHiredStaffIdsStore(storageKey: string): Writable<Set<number>> & {
 	return Object.assign(store, { hire, unhire, toggle });
 }
 
-export const hiredStaffIds = createHiredStaffIdsStore('hiredStaff.v1');
+export const hiredStaffIds = createHiredStaffIdsStore();
 
+// Backward compatible binding function
 export function bindHired(staffId: number) {
 	let checked = $state(false);
+
 	// initialize from store
 	$effect(() => {
 		const unsub = hiredStaffIds.subscribe((set) => {
@@ -71,10 +68,12 @@ export function bindHired(staffId: number) {
 		});
 		return () => unsub();
 	});
+
 	// write-through on change
 	$effect(() => {
 		if (checked) hiredStaffIds.hire(staffId);
 		else hiredStaffIds.unhire(staffId);
 	});
+
 	return { get: () => checked, set: (v: boolean) => (checked = v) };
 }

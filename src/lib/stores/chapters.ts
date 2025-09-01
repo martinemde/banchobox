@@ -1,6 +1,7 @@
 import { createEntityStores } from './entityBundle.js';
 import type { Chapter, EntityBundle, Id } from '$lib/types.js';
 import { derived, writable, type Readable, type Writable, get } from 'svelte/store';
+import { persistedLocalState } from '$lib/utils/persisted.svelte';
 import { browser } from '$app/environment';
 
 export const chaptersStores = createEntityStores<Chapter>({
@@ -11,46 +12,56 @@ export const chaptersStores = createEntityStores<Chapter>({
 export const bundle = chaptersStores.bundle as Writable<EntityBundle<Chapter> | null>;
 export const visible = chaptersStores.visible as Readable<Chapter[]>;
 
-// Persisted selection of current story chapter id
-const STORAGE_KEY = 'storyChapterId.v1';
+// Use the improved persistence utility instead of manual localStorage
+const selectedChapterIdStore = persistedLocalState<Id | null>('storyChapterId', null, {
+	version: 'v1'
+});
 
-function readSelected(): Id | null {
-	if (!browser) return null;
-	try {
-		const raw = localStorage.getItem(STORAGE_KEY);
-		if (!raw) return null;
-		const n = Number(JSON.parse(raw));
-		return Number.isFinite(n) ? (n as Id) : null;
-	} catch {
-		return null;
-	}
+// Create a proper Svelte store that wraps the persisted state
+const selectedChapterIdStoreCompat = writable<Id | null>(selectedChapterIdStore.get());
+
+// Sync the store with persisted state changes in browser
+if (browser) {
+	$effect(() => {
+		selectedChapterIdStoreCompat.set(selectedChapterIdStore.get());
+	});
 }
 
-function writeSelected(id: Id | null): void {
-	if (!browser) return;
-	try {
-		if (id == null) localStorage.removeItem(STORAGE_KEY);
-		else localStorage.setItem(STORAGE_KEY, JSON.stringify(id));
-	} catch {
-		// ignore
-	}
-}
+// Sync persisted state with store changes
+selectedChapterIdStoreCompat.subscribe((value) => {
+	selectedChapterIdStore.set(value);
+});
 
-export const selectedChapterId = writable<Id | null>(readSelected());
-selectedChapterId.subscribe((v) => writeSelected(v));
+export const selectedChapterId = selectedChapterIdStoreCompat;
 
-export const selectedChapter = derived([bundle, selectedChapterId], ([$bundle, $id]) => {
+export const selectedChapter = derived([bundle, selectedChapterId], ([$bundle, $selectedId]) => {
 	if (!$bundle) return null as Chapter | null;
+
 	let chapter = null as Chapter | null;
-	if ($id != null) chapter = $bundle.byId[$id] ?? null;
-	if (chapter == null) chapter = ($bundle.rows ?? [])[0] ?? null;
+
+	if ($selectedId != null) {
+		chapter = $bundle.byId[$selectedId] ?? null;
+	}
+
+	if (chapter == null) {
+		chapter = ($bundle.rows ?? [])[0] ?? null;
+	}
+
 	return chapter;
 });
 
-// Initialize default selection to Chapter 3 if present, then first
-bundle.subscribe(($bundle) => {
-	if (!$bundle) return;
-	if (get(selectedChapterId) != null) return;
-	const ch0 = ($bundle.rows ?? [])[0] ?? null;
-	if (ch0) selectedChapterId.set(ch0.id);
-});
+// Initialize default selection to first chapter if none selected
+if (browser) {
+	$effect(() => {
+		const $bundle = get(bundle);
+		if (!$bundle) return;
+
+		const currentSelection = selectedChapterIdStore.get();
+		if (currentSelection != null) return;
+
+		const firstChapter = ($bundle.rows ?? [])[0] ?? null;
+		if (firstChapter) {
+			selectedChapterIdStore.set(firstChapter.id);
+		}
+	});
+}

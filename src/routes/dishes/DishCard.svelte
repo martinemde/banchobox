@@ -87,7 +87,7 @@
 
 <article
 	id="dish-{dish.id}"
-	class="min-w-40 divide-y divide-surface-200-800 card border border-surface-200-800 preset-filled-surface-100-900"
+	class="min-w-40 divide-y divide-surface-200-800 card border border-surface-200-800 preset-filled-surface-100-900 card-hover"
 >
 	<!-- Section 1: Overview -->
 	<section class="p-4">

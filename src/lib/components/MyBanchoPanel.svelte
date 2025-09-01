@@ -21,22 +21,22 @@
 	let editBancho = $state(false);
 
 	persist(
-		'filtersPanel.myBanchoExpanded.v1',
+		'filtersPanel.myBanchoExpanded',
 		() => expanded,
 		(v) => (expanded = v),
 		{
-			storage: 'local'
+			version: 'v1'
 		}
 	);
 	persist(
-		'filtersPanel.enabledDlcIds.v1',
+		'filtersPanel.enabledDlcIds',
 		() => enabledDlcIds,
 		(v) => {
 			enabledDlcIds.clear();
 			for (const id of v) enabledDlcIds.add(id);
 		},
 		{
-			storage: 'local',
+			version: 'v1',
 			serialize: (set) => JSON.stringify(Array.from(set.values())),
 			deserialize: (raw) => new SvelteSet<number>(JSON.parse(raw) as number[])
 		}
