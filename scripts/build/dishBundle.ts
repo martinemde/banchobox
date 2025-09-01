@@ -1,3 +1,4 @@
+import { z } from 'zod';
 import type {
 	Dish,
 	Id,
@@ -16,8 +17,72 @@ import type {
 	PartyDishInputRow,
 	StaffInputRow
 } from './types.js';
+import {
+	intFromString,
+	optionalString,
+	optionalNumber,
+	optionalIntSafe,
+	loadCsvFile,
+	parseTable
+} from './load.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
+
+// dishes-data.csv schema -> normalized row
+const dishRowSchema = z
+	.object({
+		id: intFromString('id'),
+		name: z.string().transform((s) => s.trim()),
+		image: z.string().transform((s) => s.trim()),
+		chapter: optionalIntSafe,
+		max_level: intFromString('max_level'),
+		base_price: intFromString('base_price'),
+		base_taste: intFromString('base_taste'),
+		base_servings: intFromString('base_servings'),
+		final_price: intFromString('final_price'),
+		final_taste: intFromString('final_taste'),
+		final_servings: intFromString('final_servings'),
+		unlock: optionalString,
+		cooksta: optionalString,
+		dlc: optionalString,
+		artisans_flames: optionalNumber,
+		staff: optionalString,
+		staff_level: optionalNumber
+	})
+	.transform((row) => ({
+		id: row['id'],
+		name: row['name'],
+		image: row['image'],
+		chapter: (row['chapter'] as number | null) ?? null,
+		maxLevel: row['max_level'],
+		basePrice: row['base_price'],
+		baseTaste: row['base_taste'],
+		baseServings: row['base_servings'],
+		finalPrice: row['final_price'],
+		finalTaste: row['final_taste'],
+		finalServings: row['final_servings'],
+		unlock: row['unlock'] ?? null,
+		cooksta: row['cooksta'] ?? null,
+		dlc: row['dlc'] ?? null,
+		artisansFlames: row['artisans_flames'] as number | null,
+		staff: row['staff'] ?? null,
+		staffLevel: row['staff_level'] as number | null
+	}));
+
+export function loadDishes() {
+	const dishesCSV = loadCsvFile('dishes-data.csv');
+	const normalized = parseTable(dishesCSV, dishRowSchema, 'dishes-data.csv');
+
+	const dishes: DishInputRow[] = [];
+	const dishNameToId = new Map<string, Id>();
+
+	normalized.forEach((row) => {
+		dishes.push(row as DishInputRow);
+		dishNameToId.set(row.name, row.id);
+	});
+
+	return { dishes, dishNameToId };
+}
 
 export function prepareDishesAndPartyDishes(
 	DishInputRowes: DishInputRow[],
@@ -167,7 +232,7 @@ export function prepareDishesAndPartyDishes(
 		} as const;
 
 		const staffId =
-			dish.staff && dish.staff !== 'Any staff' ? staffNameToId.get(dish.staff) || null : null;
+			dish.staff && dish.staff !== 'Any staff' ? staffNameToId.get(dish.staff) : undefined;
 
 		const enrichedDish: Dish = {
 			...dish,

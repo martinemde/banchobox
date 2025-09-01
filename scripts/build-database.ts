@@ -1,18 +1,21 @@
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import process from 'node:process';
-import { loadNormalizedData } from './build/load.js';
+
 import { exportData } from './build/export.js';
-import { buildDishesBundle } from './build/dishBundle.js';
-import { buildIngredientsBundle } from './build/ingredientBundle.js';
-import { buildPartiesBundle } from './build/partyBundle.js';
-import { buildPartyDishesBundle } from './build/partyDishBundle.js';
-import { buildCookstaBundle } from './build/cookstaBundle.js';
-import { buildDLCBundle } from './build/dlcBundle.js';
-import { buildChapterBundle } from './build/chapterBundle.js';
-import { buildStaffBundle } from './build/staffBundle.js';
-import { prepareDishesAndPartyDishes } from './build/dishBundle.js';
-import { prepareIngredients } from './build/ingredientBundle.js';
+import { buildDishesBundle, loadDishes, prepareDishesAndPartyDishes } from './build/dishBundle.js';
+import {
+	buildIngredientsBundle,
+	loadIngredients,
+	prepareIngredients
+} from './build/ingredientBundle.js';
+import { buildPartiesBundle, loadParties } from './build/partyBundle.js';
+import { buildPartyDishesBundle, loadPartyDishes } from './build/partyDishBundle.js';
+import { loadDishIngredients } from './build/dishIngredientBundle.js';
+import { buildCookstaBundle, loadCooksta } from './build/cookstaBundle.js';
+import { buildDLCBundle, loadDLCs } from './build/dlcBundle.js';
+import { buildChapterBundle, loadChapters } from './build/chapterBundle.js';
+import { buildStaffBundle, loadStaff } from './build/staffBundle.js';
 
 const __filename = fileURLToPath(import.meta.url);
 dirname(__filename); // ensure path derivation works if needed in submodules
@@ -79,17 +82,15 @@ function enrichData(
 
 // Run the build process
 try {
-	const {
-		dishes,
-		ingredients,
-		parties,
-		DishIngredientInputRows,
-		dishParties,
-		cooksta,
-		dlcs,
-		chapters,
-		staff
-	} = loadNormalizedData();
+	const { dishes, dishNameToId } = loadDishes();
+	const { ingredients, ingredientNameToId } = loadIngredients();
+	const { parties, partyNameToId } = loadParties();
+	const { cooksta } = loadCooksta();
+	const { dlcs } = loadDLCs();
+	const { chapters } = loadChapters();
+	const { staff } = loadStaff();
+	const { DishIngredientInputRows } = loadDishIngredients(dishNameToId, ingredientNameToId);
+	const { dishParties } = loadPartyDishes(dishNameToId, partyNameToId);
 
 	const {
 		dishesBundle,

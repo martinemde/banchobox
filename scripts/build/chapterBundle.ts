@@ -1,4 +1,27 @@
+import { z } from 'zod';
 import type { ChapterInputRow, Chapter, EntityBundle, Id } from '../../src/lib/types.js';
+import { intFromString, loadCsvFile, parseTable } from './load.js';
+
+// chapters-data.csv schema -> normalized row
+const chapterRowSchema = z
+	.object({
+		id: intFromString('id'),
+		number: intFromString('number'),
+		name: z.string().transform((s) => s.trim()),
+		subtitle: z.string().transform((s) => s.trim())
+	})
+	.transform((row) => ({
+		id: row['id'],
+		number: row['number'],
+		name: row['name'],
+		subtitle: row['subtitle']
+	})) as z.ZodType<ChapterInputRow>;
+
+export function loadChapters() {
+	const chaptersCSV = loadCsvFile('chapters-data.csv');
+	const normalized = parseTable(chaptersCSV, chapterRowSchema, 'chapters-data.csv');
+	return { chapters: normalized };
+}
 
 function computeChapters(inputRows: ChapterInputRow[]): Chapter[] {
 	const rows: Chapter[] = inputRows

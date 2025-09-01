@@ -1,5 +1,41 @@
+import { z } from 'zod';
 import type { Party, PartyDish, Id, EntityBundle } from '../../src/lib/types.js';
 import type { PartyInputRow } from './types.js';
+import { intFromString, floatFromString, loadCsvFile, parseTable } from './load.js';
+
+// parties-data.csv schema -> normalized row
+const partyRowSchema = z
+	.object({
+		id: intFromString('id'),
+		order: intFromString('order'),
+		name: z.string().transform((s) => s.trim()),
+		bonus: floatFromString('bonus')
+	})
+	.transform((row) => ({
+		id: row['id'],
+		order: row['order'],
+		name: row['name'],
+		bonus: row['bonus']
+	}));
+
+export function loadParties() {
+	const partiesCSV = loadCsvFile('parties-data.csv');
+	const normalized = parseTable(partiesCSV, partyRowSchema, 'parties-data.csv');
+
+	const parties: PartyInputRow[] = [];
+	const partyNameToId = new Map<string, Id>();
+
+	normalized.forEach((row) => {
+		const party: PartyInputRow = row as unknown as PartyInputRow;
+		parties.push(party);
+		partyNameToId.set(row.name, row.id);
+	});
+
+	// Sort parties by order to ensure static ordering
+	parties.sort((a, b) => a.order - b.order);
+
+	return { parties, partyNameToId };
+}
 
 function computeParties(
 	partyInputRows: PartyInputRow[],

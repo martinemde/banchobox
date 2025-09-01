@@ -1,4 +1,25 @@
+import { z } from 'zod';
 import type { DLCInputRow, DLC, EntityBundle, Id } from '../../src/lib/types.js';
+import { intFromString, loadCsvFile, parseTable } from './load.js';
+
+// dlc-data.csv schema -> normalized row
+const dlcRowSchema = z
+	.object({
+		id: intFromString('id'),
+		order: intFromString('order'),
+		name: z.string().transform((s) => s.trim())
+	})
+	.transform((row) => ({
+		id: row['id'],
+		order: row['order'],
+		name: row['name']
+	})) as z.ZodType<DLCInputRow>;
+
+export function loadDLCs() {
+	const dlcCSV = loadCsvFile('dlc-data.csv');
+	const normalized = parseTable(dlcCSV, dlcRowSchema, 'dlc-data.csv');
+	return { dlcs: normalized };
+}
 
 function computeDLCs(inputRows: DLCInputRow[]): DLC[] {
 	const rows: DLC[] = inputRows

@@ -1,4 +1,40 @@
+import { z } from 'zod';
 import type { Id, PartyDish, EntityBundle } from '../../src/lib/types.js';
+import type { PartyDishInputRow } from './types.js';
+import { loadCsvFile, parseTable } from './load.js';
+
+// party-dishes-data.csv schema -> normalized row
+const partyDishRowSchema = z
+	.object({
+		party: z.string().transform((s) => s.trim()),
+		dish: z.string().transform((s) => s.trim())
+	})
+	.transform((row) => ({
+		party: row['party'],
+		dish: row['dish']
+	}));
+
+export function loadPartyDishes(dishNameToId: Map<string, Id>, partyNameToId: Map<string, Id>) {
+	// Load party-dish relationships
+	const partyDishesCSV = loadCsvFile('party-dishes-data.csv');
+	const partyDishRows = parseTable(partyDishesCSV, partyDishRowSchema, 'party-dishes-data.csv');
+
+	const dishParties: PartyDishInputRow[] = [];
+	for (const row of partyDishRows) {
+		const partyId = partyNameToId.get(row.party);
+		const dishId = dishNameToId.get(row.dish);
+		if (partyId && dishId) {
+			dishParties.push({
+				dishId: dishId,
+				partyId: partyId
+			});
+		} else {
+			console.warn(`\x1b[31mCould not find party "${row.party}" or dish "${row.dish}"\x1b[0m`);
+		}
+	}
+
+	return { dishParties };
+}
 
 export function buildPartyDishesBundle(partyDishes: PartyDish[]): EntityBundle<PartyDish> {
 	const byId = Object.fromEntries(partyDishes.map((pd) => [pd.id, pd])) as Record<Id, PartyDish>;

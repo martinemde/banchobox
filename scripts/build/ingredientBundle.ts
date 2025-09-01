@@ -1,3 +1,4 @@
+import { z } from 'zod';
 import type { Ingredient, Id, EntityBundle, Chapter } from '../../src/lib/types.js';
 import type {
 	DishInputRow,
@@ -6,8 +7,87 @@ import type {
 	DishIngredientInputRow,
 	PartyDishInputRow
 } from './types.js';
+import {
+	intFromString,
+	optionalString,
+	optionalNumber,
+	optionalIntSafe,
+	optionalBoolean,
+	loadCsvFile,
+	parseTable
+} from './load.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
+
+// ingredients-data.csv schema -> normalized row
+const ingredientRowSchema = z
+	.object({
+		id: intFromString('id'),
+		chapter: optionalIntSafe,
+		aberration: optionalBoolean,
+		bugnet: optionalBoolean,
+		buy_jango: optionalNumber,
+		buy_otto: optionalNumber,
+		cost: intFromString('cost'), // The replacement cost for the ingredient
+		crabtrap: optionalBoolean,
+		day: optionalBoolean,
+		drone: optionalBoolean,
+		farm: optionalString,
+		fog: optionalBoolean,
+		gloves: optionalBoolean,
+		harpoon: optionalBoolean,
+		image: z.string().transform((s) => s.trim()),
+		kg: optionalNumber,
+		max_meats: optionalNumber,
+		name: z.string().transform((s) => s.trim()),
+		night: optionalBoolean,
+		rank: intFromString('rank'),
+		sell: optionalNumber,
+		source: z.string().transform((s) => s.trim()),
+		steelnet: optionalBoolean,
+		type: z.string().transform((s) => s.trim())
+	})
+	.transform((row) => ({
+		id: row['id'],
+		chapter: (row['chapter'] as number | null) ?? null,
+		aberration: row['aberration'],
+		bugnet: row['bugnet'],
+		buyJango: row['buy_jango'] as number | null,
+		buyOtto: row['buy_otto'] as number | null,
+		cost: row['cost'],
+		crabtrap: row['crabtrap'],
+		day: row['day'],
+		drone: row['drone'],
+		farm: row['farm'] ?? null,
+		fog: row['fog'],
+		gloves: row['gloves'],
+		harpoon: row['harpoon'],
+		image: row['image'],
+		kg: row['kg'] as number | null,
+		maxMeats: row['max_meats'] as number | null,
+		name: row['name'],
+		night: row['night'],
+		rank: row['rank'],
+		sell: row['sell'] as number | null,
+		source: row['source'],
+		steelnet: row['steelnet'],
+		type: row['type']
+	}));
+
+export function loadIngredients() {
+	const ingredientsCSV = loadCsvFile('ingredients-data.csv');
+	const normalized = parseTable(ingredientsCSV, ingredientRowSchema, 'ingredients-data.csv');
+
+	const ingredients: IngredientInputRow[] = [];
+	const ingredientNameToId = new Map<string, Id>();
+
+	normalized.forEach((row) => {
+		ingredients.push(row as IngredientInputRow);
+		ingredientNameToId.set(row.name, row.id);
+	});
+
+	return { ingredients, ingredientNameToId };
+}
 
 // Helpers: data lookups and transforms for prepareIngredients
 function getUsageLinesForIngredient(
