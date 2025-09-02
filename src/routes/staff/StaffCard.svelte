@@ -100,7 +100,7 @@
 						<span class="opacity-70">Wage Max</span>
 						<span class="tabular-nums">{formatNumber(staff.wageMax)}</span>
 					</div>
-					<div class="flex items-center justify-between gap-2">
+					<div class="col-span-2 flex items-center justify-between gap-2">
 						<span class="opacity-70">Procure Max</span>
 						<span class="tabular-nums">{formatNumber(staff.seasoningsMaxLevel20)} (@ Lv.20)</span>
 					</div>
