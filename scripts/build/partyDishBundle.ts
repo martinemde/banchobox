@@ -1,25 +1,25 @@
 import { z } from 'zod';
 import type { Id, PartyDish, EntityBundle } from '../../src/lib/types.js';
-import type { PartyDishInputRow } from './types.js';
+import type { PartyDishJoinRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
 
+interface PartyDishInputRow {
+	dish: string;
+	party: string;
+}
+
 // party-dishes-data.csv schema -> normalized row
-const partyDishRowSchema = z
-	.object({
-		party: z.string().transform((s) => s.trim()),
-		dish: z.string().transform((s) => s.trim())
-	})
-	.transform((row) => ({
-		party: row['party'],
-		dish: row['dish']
-	}));
+const partyDishRowSchema = z.object({
+	party: z.string().trim(),
+	dish: z.string().trim()
+}) as z.ZodType<PartyDishInputRow>;
 
 export function loadPartyDishes(dishNameToId: Map<string, Id>, partyNameToId: Map<string, Id>) {
 	// Load party-dish relationships
 	const partyDishesCSV = loadCsvFile('party-dishes-data.csv');
 	const partyDishRows = parseTable(partyDishesCSV, partyDishRowSchema, 'party-dishes-data.csv');
 
-	const dishParties: PartyDishInputRow[] = [];
+	const dishParties: PartyDishJoinRow[] = [];
 	for (const row of partyDishRows) {
 		const partyId = partyNameToId.get(row.party);
 		const dishId = dishNameToId.get(row.dish);

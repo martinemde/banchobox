@@ -1,4 +1,4 @@
-id,name,chapter,source,required_depth,depth_name,type,harpoon,drone,steelnet,crabtrap,bugnet,gloves,aberration,kg,max_meats,day,night,fog,rank,farm,buy_jango,buy_otto,sell,cost,dlc,image
+id,name,chapter,source,requiredDepth,depthName,type,harpoon,drone,steelnet,crabtrap,bugnet,gloves,aberration,kg,maxMeats,day,night,fog,rank,farm,buyJango,buyOtto,sell,cost,dlc,image
 22,Black Tiger Shrimp,2,50-130m,,Blue Hole Medium Depth,Shrimp,,,,,TRUE,,,0.1,5,TRUE,,,5,,,,17,17,,black_tiger_shrimp.png
 47,Chambered Nautilus,2,130-250m,,Blue Hole Depths,Shrimp,,,,,TRUE,,,1.0,3,TRUE,,,5,,,,12,12,,chambered_nautilus.png
 50,Clione,2,130-250m,,Blue Hole Depths,Shrimp,,,,,TRUE,,,0.1,4,TRUE,,,5,,,,25,25,,clione.png

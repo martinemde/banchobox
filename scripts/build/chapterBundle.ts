@@ -1,21 +1,14 @@
 import { z } from 'zod';
 import type { ChapterInputRow, Chapter, EntityBundle, Id } from '../../src/lib/types.js';
-import { intFromString, loadCsvFile, parseTable } from './load.js';
+import { loadCsvFile, parseTable } from './load.js';
 
 // chapters-data.csv schema -> normalized row
-const chapterRowSchema = z
-	.object({
-		id: intFromString('id'),
-		number: intFromString('number'),
-		name: z.string().transform((s) => s.trim()),
-		subtitle: z.string().transform((s) => s.trim())
-	})
-	.transform((row) => ({
-		id: row['id'],
-		number: row['number'],
-		name: row['name'],
-		subtitle: row['subtitle']
-	})) as z.ZodType<ChapterInputRow>;
+const chapterRowSchema = z.object({
+	id: z.coerce.number().int().positive(),
+	number: z.coerce.number().int().nonnegative(),
+	name: z.string().trim(),
+	subtitle: z.string().trim()
+}) as z.ZodType<ChapterInputRow>;
 
 export function loadChapters() {
 	const chaptersCSV = loadCsvFile('chapters-data.csv');
@@ -46,13 +39,5 @@ function computeChapters(inputRows: ChapterInputRow[]): Chapter[] {
 export function buildChapterBundle(inputRows: ChapterInputRow[]): EntityBundle<Chapter> {
 	const rows = computeChapters(inputRows);
 	const byId = Object.fromEntries(rows.map((r) => [r.id, r])) as Record<Id, Chapter>;
-	const facets: EntityBundle<Chapter>['facets'] = {
-		number: {}
-	};
-
-	for (const r of rows) {
-		(facets['number'][r.number] ??= []).push(r.id);
-	}
-
-	return { rows, byId, facets };
+	return { rows, byId, facets: {} };
 }

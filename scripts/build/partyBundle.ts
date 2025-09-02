@@ -1,22 +1,15 @@
 import { z } from 'zod';
 import type { Party, PartyDish, Id, EntityBundle } from '../../src/lib/types.js';
 import type { PartyInputRow } from './types.js';
-import { intFromString, floatFromString, loadCsvFile, parseTable } from './load.js';
+import { loadCsvFile, parseTable } from './load.js';
 
 // parties-data.csv schema -> normalized row
-const partyRowSchema = z
-	.object({
-		id: intFromString('id'),
-		order: intFromString('order'),
-		name: z.string().transform((s) => s.trim()),
-		bonus: floatFromString('bonus')
-	})
-	.transform((row) => ({
-		id: row['id'],
-		order: row['order'],
-		name: row['name'],
-		bonus: row['bonus']
-	}));
+const partyRowSchema = z.object({
+	id: z.coerce.number().int().positive(),
+	order: z.coerce.number().int().nonnegative(),
+	name: z.string().trim(),
+	bonus: z.coerce.number().nonnegative()
+}) as z.ZodType<PartyInputRow>;
 
 export function loadParties() {
 	const partiesCSV = loadCsvFile('parties-data.csv');

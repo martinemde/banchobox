@@ -138,9 +138,9 @@ export interface Dish {
 		name: string;
 		image: string; // image filename
 		type: string; // semantic type; used to select icon
-		unitCost: number | null;
+		unitCost?: number;
 		lineCost: number;
-		upgradeCount: number | null;
+		upgradeCount?: number;
 	}>;
 	recipeCost: number;
 	partyDishIds: Id[]; // References to PartyDish entities

@@ -55,6 +55,14 @@ export interface PartyInputRow {
 }
 
 export interface DishIngredientInputRow {
+	dish: string;
+	ingredient: string;
+	count: number;
+	levels: number;
+	upgradeCount: number;
+}
+
+export interface DishIngredientJoinRow {
 	dishId: Id;
 	ingredientId: Id;
 	count: number;
@@ -62,7 +70,7 @@ export interface DishIngredientInputRow {
 	upgradeCount: number;
 }
 
-export interface PartyDishInputRow {
+export interface PartyDishJoinRow {
 	dishId: Id;
 	partyId: Id;
 }

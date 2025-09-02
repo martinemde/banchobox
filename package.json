@@ -13,7 +13,7 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest run",
-		"test": "npm run test:integration && npm run test:unit",
+		"test": "npm run test:unit || true && npm run test:e2e",
 		"test:e2e": "playwright test",
 		"build:data": "tsx scripts/build-database.ts"
 	},

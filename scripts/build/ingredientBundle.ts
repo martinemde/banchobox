@@ -4,75 +4,47 @@ import type {
 	DishInputRow,
 	IngredientInputRow,
 	PartyInputRow,
-	DishIngredientInputRow,
-	PartyDishInputRow
+	PartyDishJoinRow,
+	DishIngredientJoinRow
 } from './types.js';
 import {
-	intFromString,
-	optionalString,
-	optionalNumber,
-	optionalIntSafe,
 	optionalBoolean,
+	optionalNumber,
+	optionalString,
 	loadCsvFile,
 	parseTable
 } from './load.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
+// Converts the string "TRUE" to true and "FALSE" to false
 // ingredients-data.csv schema -> normalized row
-const ingredientRowSchema = z
-	.object({
-		id: intFromString('id'),
-		chapter: optionalIntSafe,
-		aberration: optionalBoolean,
-		bugnet: optionalBoolean,
-		buy_jango: optionalNumber,
-		buy_otto: optionalNumber,
-		cost: intFromString('cost'), // The replacement cost for the ingredient
-		crabtrap: optionalBoolean,
-		day: optionalBoolean,
-		drone: optionalBoolean,
-		farm: optionalString,
-		fog: optionalBoolean,
-		gloves: optionalBoolean,
-		harpoon: optionalBoolean,
-		image: z.string().transform((s) => s.trim()),
-		kg: optionalNumber,
-		max_meats: optionalNumber,
-		name: z.string().transform((s) => s.trim()),
-		night: optionalBoolean,
-		rank: intFromString('rank'),
-		sell: optionalNumber,
-		source: z.string().transform((s) => s.trim()),
-		steelnet: optionalBoolean,
-		type: z.string().transform((s) => s.trim())
-	})
-	.transform((row) => ({
-		id: row['id'],
-		chapter: (row['chapter'] as number | null) ?? null,
-		aberration: row['aberration'],
-		bugnet: row['bugnet'],
-		buyJango: row['buy_jango'] as number | null,
-		buyOtto: row['buy_otto'] as number | null,
-		cost: row['cost'],
-		crabtrap: row['crabtrap'],
-		day: row['day'],
-		drone: row['drone'],
-		farm: row['farm'] ?? null,
-		fog: row['fog'],
-		gloves: row['gloves'],
-		harpoon: row['harpoon'],
-		image: row['image'],
-		kg: row['kg'] as number | null,
-		maxMeats: row['max_meats'] as number | null,
-		name: row['name'],
-		night: row['night'],
-		rank: row['rank'],
-		sell: row['sell'] as number | null,
-		source: row['source'],
-		steelnet: row['steelnet'],
-		type: row['type']
-	}));
+const ingredientRowSchema = z.object({
+	id: z.coerce.number().int().positive(),
+	chapter: optionalNumber,
+	aberration: optionalBoolean,
+	bugnet: optionalBoolean,
+	buyJango: optionalNumber, // null or number but not zero
+	buyOtto: optionalNumber, // null or number but not zero
+	cost: z.coerce.number().int().nonnegative(), // The replacement cost for the ingredient
+	crabtrap: optionalBoolean,
+	day: optionalBoolean,
+	drone: optionalBoolean,
+	farm: optionalString,
+	fog: optionalBoolean,
+	gloves: optionalBoolean,
+	harpoon: optionalBoolean,
+	image: z.string().trim(),
+	kg: optionalNumber,
+	maxMeats: optionalNumber,
+	name: z.string().trim(),
+	night: optionalBoolean,
+	rank: z.coerce.number().int().nonnegative(),
+	sell: optionalNumber,
+	source: z.string().trim(),
+	steelnet: optionalBoolean,
+	type: z.string().trim()
+});
 
 export function loadIngredients() {
 	const ingredientsCSV = loadCsvFile('ingredients-data.csv');
@@ -90,11 +62,8 @@ export function loadIngredients() {
 }
 
 // Helpers: data lookups and transforms for prepareIngredients
-function getUsageLinesForIngredient(
-	ingredientId: Id,
-	allDishIngredientRows: DishIngredientInputRow[]
-) {
-	return allDishIngredientRows.filter((di) => di.ingredientId === ingredientId);
+function getUsageLinesForIngredient(ingredientId: Id, allDishIngredients: DishIngredientJoinRow[]) {
+	return allDishIngredients.filter((di) => di.ingredientId === ingredientId);
 }
 
 function buildPartyIdToNameMap(partyInputRows: PartyInputRow[]): Map<Id, string> {
@@ -105,7 +74,7 @@ function buildDishIdToDishMap(dishes: DishInputRow[]): Map<Id, DishInputRow> {
 	return new Map(dishes.map((d) => [d.id, d]));
 }
 
-function buildDishIdToPartyIdsMap(dishParties: PartyDishInputRow[]): Map<Id, Id[]> {
+function buildDishIdToPartyIdsMap(dishParties: PartyDishJoinRow[]): Map<Id, Id[]> {
 	const map = new Map<Id, Id[]>();
 	for (const dp of dishParties) {
 		(map.get(dp.dishId) ?? map.set(dp.dishId, []).get(dp.dishId)!).push(dp.partyId);
@@ -114,8 +83,8 @@ function buildDishIdToPartyIdsMap(dishParties: PartyDishInputRow[]): Map<Id, Id[
 }
 
 function collectPartySets(
-	usageLines: DishIngredientInputRow[],
-	dishParties: PartyDishInputRow[],
+	usageLines: DishIngredientJoinRow[],
+	dishParties: PartyDishJoinRow[],
 	partyIdToName: Map<Id, string>
 ) {
 	const partyIdSet = new Set<Id>();
@@ -136,7 +105,7 @@ function getPartyNamesForDish(partyIds: Id[], partyIdToName: Map<Id, string>): s
 }
 
 function buildUsedIn(
-	usageLines: DishIngredientInputRow[],
+	usageLines: DishIngredientJoinRow[],
 	dishIdToDish: Map<Id, DishInputRow>,
 	dishIdToPartyIds: Map<Id, Id[]>,
 	partyIdToName: Map<Id, string>
@@ -178,8 +147,9 @@ function buildVendors(ingredient: IngredientInputRow): Record<string, number> {
 	return vendors;
 }
 
-function computeMinBuyFromVendors(vendors: Record<string, number>): number {
-	return Object.values(vendors).reduce((min, v) => (v != null && v < min ? v : min), Infinity);
+function computeMinBuyFromVendors(vendors: Record<string, number>): number | undefined {
+	const values = Object.values(vendors).filter((v) => v != undefined);
+	return values.length > 0 ? Math.min(...values) : undefined;
 }
 
 function buildIngredientSearchIndex(
@@ -200,14 +170,14 @@ function buildIngredientSearchIndex(
 
 function buildIngredientSort(
 	ingredient: IngredientInputRow,
-	buy: number,
+	buy: number | undefined,
 	sellPerKg: number | undefined
 ): Ingredient['sort'] {
 	const sort = {
 		name: normalize(ingredient.name),
-		buy,
-		sell: ingredient.sell ?? null,
-		kg: ingredient.kg ?? null,
+		buy: buy ?? undefined,
+		sell: ingredient.sell ?? undefined,
+		kg: ingredient.kg ?? undefined,
 		sellPerKg
 	} as const;
 	return sort as unknown as Ingredient['sort'];
@@ -215,8 +185,8 @@ function buildIngredientSort(
 
 export function prepareIngredients(
 	IngredientInputRows: IngredientInputRow[],
-	DishIngredientInputRows: DishIngredientInputRow[],
-	dishParties: PartyDishInputRow[],
+	dishIngredients: DishIngredientJoinRow[],
+	dishParties: PartyDishJoinRow[],
 	partyInputRows: PartyInputRow[],
 	DishInputRowes: DishInputRow[]
 ): Ingredient[] {
@@ -225,7 +195,7 @@ export function prepareIngredients(
 	const dishIdToPartyIds = buildDishIdToPartyIdsMap(dishParties);
 
 	const ingredients: Ingredient[] = IngredientInputRows.map((ingredient) => {
-		const usageLines = getUsageLinesForIngredient(ingredient.id, DishIngredientInputRows);
+		const usageLines = getUsageLinesForIngredient(ingredient.id, dishIngredients);
 
 		const { partyIdSet, partyNames } = collectPartySets(usageLines, dishParties, partyIdToName);
 

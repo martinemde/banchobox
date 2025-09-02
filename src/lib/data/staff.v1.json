@@ -3,7 +3,7 @@
     {
       "id": 7,
       "name": "Billy",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_07_Billy_Thumbnail.png",
       "hiringFee": 562,
       "wageBase": 40,
@@ -34,7 +34,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 8,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 59,
@@ -61,7 +60,7 @@
     {
       "id": 3,
       "name": "Carolina",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_03_Calorina_Thumbnail.png",
       "hiringFee": 410,
       "wageBase": 20,
@@ -117,7 +116,7 @@
     {
       "id": 13,
       "name": "Charlie",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_13_Charlie_Thumbnail.png",
       "hiringFee": 123,
       "wageBase": 20,
@@ -148,7 +147,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 3,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 98,
@@ -206,7 +204,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 5,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 296,
@@ -231,7 +228,7 @@
     {
       "id": 15,
       "name": "Cohh",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_15_CohhCarnage_Thumbnail.png",
       "hiringFee": 1079,
       "wageBase": 40,
@@ -262,7 +259,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 8,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 88,
@@ -301,7 +297,7 @@
     {
       "id": 19,
       "name": "Davina",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_19_Davina_Thumbnail.png",
       "hiringFee": 143,
       "wageBase": 25,
@@ -357,7 +353,7 @@
     {
       "id": 17,
       "name": "Drae",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_17_Drae_Thumbnail.png",
       "hiringFee": 297,
       "wageBase": 48,
@@ -433,7 +429,7 @@
     {
       "id": 10,
       "name": "El Nino",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_10_Elnino_Thumbnail.png",
       "hiringFee": 2327,
       "wageBase": 60,
@@ -464,7 +460,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 5,
       "branchPopularityMax": 3,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 74,
@@ -520,7 +515,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 5,
       "branchPopularityMax": 5,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 295,
@@ -576,7 +570,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 5,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 298,
@@ -601,7 +594,7 @@
     {
       "id": 20,
       "name": "Itsuki",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_20_Itsuki_Thumbnail.png",
       "hiringFee": 4,
       "wageBase": 45,
@@ -659,7 +652,7 @@
     {
       "id": 6,
       "name": "James",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_06_James_Thumbnail.png",
       "hiringFee": 707,
       "wageBase": 40,
@@ -690,7 +683,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 189,
@@ -717,7 +709,7 @@
     {
       "id": 11,
       "name": "Jandi",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_11_Jandi_Thumbnail.png",
       "hiringFee": 302,
       "wageBase": 20,
@@ -748,7 +740,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 247,
@@ -775,7 +766,7 @@
     {
       "id": 1,
       "name": "Kyoko",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_01_Kyoko_Thumbnail.png",
       "hiringFee": 0,
       "wageBase": 14,
@@ -833,7 +824,7 @@
     {
       "id": 2,
       "name": "Liu",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_02_Liu_Thumbnail.png",
       "hiringFee": 125,
       "wageBase": 14,
@@ -889,7 +880,7 @@
     {
       "id": 14,
       "name": "Maki",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_14_Maki_Thumbnail.png",
       "hiringFee": 0,
       "wageBase": 0,
@@ -920,7 +911,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 2,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 229,
@@ -945,7 +935,7 @@
     {
       "id": 21,
       "name": "Masayoshi",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_21_Masayoshi_Thumbnail.png",
       "hiringFee": 551,
       "wageBase": 38,
@@ -1001,7 +991,7 @@
     {
       "id": 4,
       "name": "Mitchell",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_04_Mitchell_Thumbnail.png",
       "hiringFee": 258,
       "wageBase": 28,
@@ -1057,7 +1047,7 @@
     {
       "id": 12,
       "name": "Pai",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_12_Pai_Thumbnail.png",
       "hiringFee": 467,
       "wageBase": 20,
@@ -1113,7 +1103,7 @@
     {
       "id": 16,
       "name": "Raptor",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_16_Raptor_Thumbnail.png",
       "hiringFee": 1150,
       "wageBase": 55,
@@ -1144,7 +1134,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 7,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 36,
@@ -1185,7 +1174,7 @@
     {
       "id": 18,
       "name": "Raul",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_18_Raul_Thumbnail.png",
       "hiringFee": 991,
       "wageBase": 30,
@@ -1243,7 +1232,7 @@
     {
       "id": 8,
       "name": "Tohoku",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_08_Tohoku_Thumbnail.png",
       "hiringFee": 1307,
       "wageBase": 40,
@@ -1274,7 +1263,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 174,
@@ -1299,7 +1287,7 @@
     {
       "id": 9,
       "name": "Yone",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_09_Yone_Thumbnail.png",
       "hiringFee": 1464,
       "wageBase": 60,
@@ -1330,7 +1318,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 3,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 186,
@@ -1355,7 +1342,7 @@
     {
       "id": 5,
       "name": "Yusuke",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_05_Yusuke_Thumbnail.png",
       "hiringFee": 267,
       "wageBase": 28,
@@ -1386,7 +1373,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 64,
@@ -1415,7 +1401,7 @@
     "1": {
       "id": 1,
       "name": "Kyoko",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_01_Kyoko_Thumbnail.png",
       "hiringFee": 0,
       "wageBase": 14,
@@ -1473,7 +1459,7 @@
     "2": {
       "id": 2,
       "name": "Liu",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_02_Liu_Thumbnail.png",
       "hiringFee": 125,
       "wageBase": 14,
@@ -1529,7 +1515,7 @@
     "3": {
       "id": 3,
       "name": "Carolina",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_03_Calorina_Thumbnail.png",
       "hiringFee": 410,
       "wageBase": 20,
@@ -1585,7 +1571,7 @@
     "4": {
       "id": 4,
       "name": "Mitchell",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_04_Mitchell_Thumbnail.png",
       "hiringFee": 258,
       "wageBase": 28,
@@ -1641,7 +1627,7 @@
     "5": {
       "id": 5,
       "name": "Yusuke",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_05_Yusuke_Thumbnail.png",
       "hiringFee": 267,
       "wageBase": 28,
@@ -1672,7 +1658,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 64,
@@ -1699,7 +1684,7 @@
     "6": {
       "id": 6,
       "name": "James",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_06_James_Thumbnail.png",
       "hiringFee": 707,
       "wageBase": 40,
@@ -1730,7 +1715,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 189,
@@ -1757,7 +1741,7 @@
     "7": {
       "id": 7,
       "name": "Billy",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_07_Billy_Thumbnail.png",
       "hiringFee": 562,
       "wageBase": 40,
@@ -1788,7 +1772,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 8,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 59,
@@ -1815,7 +1798,7 @@
     "8": {
       "id": 8,
       "name": "Tohoku",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_08_Tohoku_Thumbnail.png",
       "hiringFee": 1307,
       "wageBase": 40,
@@ -1846,7 +1829,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 174,
@@ -1871,7 +1853,7 @@
     "9": {
       "id": 9,
       "name": "Yone",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_09_Yone_Thumbnail.png",
       "hiringFee": 1464,
       "wageBase": 60,
@@ -1902,7 +1884,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 3,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 186,
@@ -1927,7 +1908,7 @@
     "10": {
       "id": 10,
       "name": "El Nino",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_10_Elnino_Thumbnail.png",
       "hiringFee": 2327,
       "wageBase": 60,
@@ -1958,7 +1939,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 5,
       "branchPopularityMax": 3,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 74,
@@ -1983,7 +1963,7 @@
     "11": {
       "id": 11,
       "name": "Jandi",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_11_Jandi_Thumbnail.png",
       "hiringFee": 302,
       "wageBase": 20,
@@ -2014,7 +1994,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 247,
@@ -2041,7 +2020,7 @@
     "12": {
       "id": 12,
       "name": "Pai",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_12_Pai_Thumbnail.png",
       "hiringFee": 467,
       "wageBase": 20,
@@ -2097,7 +2076,7 @@
     "13": {
       "id": 13,
       "name": "Charlie",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_13_Charlie_Thumbnail.png",
       "hiringFee": 123,
       "wageBase": 20,
@@ -2128,7 +2107,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 3,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 98,
@@ -2155,7 +2133,7 @@
     "14": {
       "id": 14,
       "name": "Maki",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_14_Maki_Thumbnail.png",
       "hiringFee": 0,
       "wageBase": 0,
@@ -2186,7 +2164,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 2,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 229,
@@ -2211,7 +2188,7 @@
     "15": {
       "id": 15,
       "name": "Cohh",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_15_CohhCarnage_Thumbnail.png",
       "hiringFee": 1079,
       "wageBase": 40,
@@ -2242,7 +2219,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 8,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 88,
@@ -2281,7 +2257,7 @@
     "16": {
       "id": 16,
       "name": "Raptor",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_16_Raptor_Thumbnail.png",
       "hiringFee": 1150,
       "wageBase": 55,
@@ -2312,7 +2288,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 7,
       "branchPopularityMax": 4,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 36,
@@ -2353,7 +2328,7 @@
     "17": {
       "id": 17,
       "name": "Drae",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_17_Drae_Thumbnail.png",
       "hiringFee": 297,
       "wageBase": 48,
@@ -2429,7 +2404,7 @@
     "18": {
       "id": 18,
       "name": "Raul",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_18_Raul_Thumbnail.png",
       "hiringFee": 991,
       "wageBase": 30,
@@ -2487,7 +2462,7 @@
     "19": {
       "id": 19,
       "name": "Davina",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_19_Davina_Thumbnail.png",
       "hiringFee": 143,
       "wageBase": 25,
@@ -2543,7 +2518,7 @@
     "20": {
       "id": 20,
       "name": "Itsuki",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_20_Itsuki_Thumbnail.png",
       "hiringFee": 4,
       "wageBase": 45,
@@ -2601,7 +2576,7 @@
     "21": {
       "id": 21,
       "name": "Masayoshi",
-      "dlc": null,
+      "dlc": "",
       "image": "Staff_21_Masayoshi_Thumbnail.png",
       "hiringFee": 551,
       "wageBase": 38,
@@ -2688,7 +2663,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 5,
       "branchPopularityMax": 5,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 295,
@@ -2744,7 +2718,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 5,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 296,
@@ -2800,7 +2773,6 @@
       "seasoningsBonus": 0,
       "branchRankMax": 9,
       "branchPopularityMax": 5,
-      "branchPopularityMaxAtLevel": null,
       "dishes": [
         {
           "dishId": 298,
@@ -2825,7 +2797,7 @@
   },
   "facets": {
     "DLC": {
-      "Base": [
+      "": [
         7,
         3,
         13,

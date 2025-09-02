@@ -1,19 +1,13 @@
 import { z } from 'zod';
 import type { DLCInputRow, DLC, EntityBundle, Id } from '../../src/lib/types.js';
-import { intFromString, loadCsvFile, parseTable } from './load.js';
+import { loadCsvFile, parseTable } from './load.js';
 
 // dlc-data.csv schema -> normalized row
-const dlcRowSchema = z
-	.object({
-		id: intFromString('id'),
-		order: intFromString('order'),
-		name: z.string().transform((s) => s.trim())
-	})
-	.transform((row) => ({
-		id: row['id'],
-		order: row['order'],
-		name: row['name']
-	})) as z.ZodType<DLCInputRow>;
+const dlcRowSchema = z.object({
+	id: z.coerce.number().int().positive(),
+	order: z.coerce.number().int().nonnegative(),
+	name: z.string().trim()
+}) as z.ZodType<DLCInputRow>;
 
 export function loadDLCs() {
 	const dlcCSV = loadCsvFile('dlc-data.csv');
@@ -43,6 +37,5 @@ function computeDLCs(inputRows: DLCInputRow[]): DLC[] {
 export function buildDLCBundle(inputRows: DLCInputRow[]): EntityBundle<DLC> {
 	const rows = computeDLCs(inputRows);
 	const byId = Object.fromEntries(rows.map((r) => [r.id, r])) as Record<Id, DLC>;
-	const facets: EntityBundle<DLC>['facets'] = {};
-	return { rows, byId, facets };
+	return { rows, byId, facets: {} };
 }

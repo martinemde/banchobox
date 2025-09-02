@@ -1,4 +1,4 @@
-id,name,rank,customers,customer_night,party_customers,followers,recipes,best_taste,operating_cost,kitchen_staff,serving_staff
+id,name,rank,customers,customerNight,partyCustomers,followers,recipes,bestTaste,operatingCost,kitchenStaff,servingStaff
 1,Coal,0,12,8,6,0,0,0,0,0,1
 2,Bronze,1,19,12,10,10,0,0,19,1,1
 3,Silver,2,23,15,12,20,2,0,40,1,2

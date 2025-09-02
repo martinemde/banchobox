@@ -13,61 +13,34 @@ import type {
 	DishInputRow,
 	IngredientInputRow,
 	PartyInputRow,
-	DishIngredientInputRow,
-	PartyDishInputRow,
+	DishIngredientJoinRow,
+	PartyDishJoinRow,
 	StaffInputRow
 } from './types.js';
-import {
-	intFromString,
-	optionalString,
-	optionalNumber,
-	optionalIntSafe,
-	loadCsvFile,
-	parseTable
-} from './load.js';
+import { loadCsvFile, optionalNonNegativeInt, optionalString, parseTable } from './load.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
 // dishes-data.csv schema -> normalized row
-const dishRowSchema = z
-	.object({
-		id: intFromString('id'),
-		name: z.string().transform((s) => s.trim()),
-		image: z.string().transform((s) => s.trim()),
-		chapter: optionalIntSafe,
-		max_level: intFromString('max_level'),
-		base_price: intFromString('base_price'),
-		base_taste: intFromString('base_taste'),
-		base_servings: intFromString('base_servings'),
-		final_price: intFromString('final_price'),
-		final_taste: intFromString('final_taste'),
-		final_servings: intFromString('final_servings'),
-		unlock: optionalString,
-		cooksta: optionalString,
-		dlc: optionalString,
-		artisans_flames: optionalNumber,
-		staff: optionalString,
-		staff_level: optionalNumber
-	})
-	.transform((row) => ({
-		id: row['id'],
-		name: row['name'],
-		image: row['image'],
-		chapter: (row['chapter'] as number | null) ?? null,
-		maxLevel: row['max_level'],
-		basePrice: row['base_price'],
-		baseTaste: row['base_taste'],
-		baseServings: row['base_servings'],
-		finalPrice: row['final_price'],
-		finalTaste: row['final_taste'],
-		finalServings: row['final_servings'],
-		unlock: row['unlock'] ?? null,
-		cooksta: row['cooksta'] ?? null,
-		dlc: row['dlc'] ?? null,
-		artisansFlames: row['artisans_flames'] as number | null,
-		staff: row['staff'] ?? null,
-		staffLevel: row['staff_level'] as number | null
-	}));
+const dishRowSchema = z.object({
+	id: z.coerce.number().int().positive(),
+	name: z.string().transform((s) => s.trim()),
+	image: z.string().transform((s) => s.trim()),
+	chapter: optionalNonNegativeInt,
+	maxLevel: z.coerce.number().int().nonnegative(),
+	basePrice: z.coerce.number().int().nonnegative(),
+	baseTaste: z.coerce.number().int().nonnegative(),
+	baseServings: z.coerce.number().int().nonnegative(),
+	finalPrice: z.coerce.number().int().nonnegative(),
+	finalTaste: z.coerce.number().int().nonnegative(),
+	finalServings: z.coerce.number().int().nonnegative(),
+	unlock: optionalString,
+	cooksta: optionalString,
+	dlc: optionalString,
+	artisansFlames: optionalNonNegativeInt,
+	staff: optionalString,
+	staffLevel: optionalNonNegativeInt
+}) satisfies z.ZodType<DishInputRow>;
 
 export function loadDishes() {
 	const dishesCSV = loadCsvFile('dishes-data.csv');
@@ -87,8 +60,8 @@ export function loadDishes() {
 export function prepareDishesAndPartyDishes(
 	DishInputRowes: DishInputRow[],
 	IngredientInputRows: IngredientInputRow[],
-	DishIngredientInputRows: DishIngredientInputRow[],
-	dishParties: PartyDishInputRow[],
+	dishIngredients: DishIngredientJoinRow[],
+	dishParties: PartyDishJoinRow[],
 	partyInputRows: PartyInputRow[],
 	staffInputRows: StaffInputRow[]
 ): {
@@ -109,7 +82,7 @@ export function prepareDishesAndPartyDishes(
 	}
 
 	const dishes: Dish[] = DishInputRowes.map((dish) => {
-		const dishIngLines = DishIngredientInputRows.filter((di) => di.dishId === dish.id);
+		const dishIngLines = dishIngredients.filter((di) => di.dishId === dish.id);
 
 		const ingredientLines = dishIngLines.map((di) => {
 			const ing = IngredientInputRows.find((i) => i.id === di.ingredientId)!;
@@ -323,7 +296,7 @@ export function buildDishesBundle({
 
 		// Add the dish to its cooksta unlock level and up
 		// If it doesn't have a cooksta, it's available in all tiers
-		if (d.cooksta !== null && d.cooksta !== undefined) {
+		if (d.cooksta !== null && d.cooksta !== undefined && d.cooksta.trim() !== '') {
 			const cookstaTier = cookstaBundle.rows.find((c) => c.name === d.cooksta)!;
 			for (let n = cookstaTier.rank; n <= maxCooksta; n++) {
 				(facets.Cooksta[cookstaNameByRank[n]] ??= []).push(d.id);

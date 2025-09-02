@@ -25,7 +25,7 @@ function enrichData(
 	dishes,
 	ingredients,
 	parties,
-	DishIngredientInputRows,
+	dishIngredients,
 	dishParties,
 	cooksta,
 	dlcs,
@@ -38,7 +38,7 @@ function enrichData(
 
 	const preparedIngredients = prepareIngredients(
 		ingredients,
-		DishIngredientInputRows,
+		dishIngredients,
 		dishParties,
 		parties,
 		dishes
@@ -50,7 +50,7 @@ function enrichData(
 	} = prepareDishesAndPartyDishes(
 		dishes,
 		ingredients,
-		DishIngredientInputRows,
+		dishIngredients,
 		dishParties,
 		parties,
 		staff
@@ -89,7 +89,7 @@ try {
 	const { dlcs } = loadDLCs();
 	const { chapters } = loadChapters();
 	const { staff } = loadStaff();
-	const { DishIngredientInputRows } = loadDishIngredients(dishNameToId, ingredientNameToId);
+	const { dishIngredients } = loadDishIngredients(dishNameToId, ingredientNameToId);
 	const { dishParties } = loadPartyDishes(dishNameToId, partyNameToId);
 
 	const {
@@ -105,7 +105,7 @@ try {
 		dishes,
 		ingredients,
 		parties,
-		DishIngredientInputRows,
+		dishIngredients,
 		dishParties,
 		cooksta,
 		dlcs,

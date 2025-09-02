@@ -1,24 +1,16 @@
 import { z } from 'zod';
 import type { Id } from '../../src/lib/types.js';
-import type { DishIngredientInputRow } from './types.js';
-import { intFromString, loadCsvFile, parseTable } from './load.js';
+import type { DishIngredientInputRow, DishIngredientJoinRow } from './types.js';
+import { loadCsvFile, parseTable } from './load.js';
 
 // dish-ingredients-data.csv schema -> normalized row
-const dishIngredientRowSchema = z
-	.object({
-		dish: z.string().transform((s) => s.trim()),
-		count: intFromString('count'),
-		ingredient: z.string().transform((s) => s.trim()),
-		levels: intFromString('levels'),
-		upgrade_count: intFromString('upgrade_count')
-	})
-	.transform((row) => ({
-		dish: row['dish'],
-		ingredient: row['ingredient'],
-		count: row['count'],
-		levels: row['levels'],
-		upgradeCount: row['upgrade_count']
-	}));
+const dishIngredientRowSchema = z.object({
+	dish: z.string().trim(),
+	ingredient: z.string().trim(),
+	count: z.coerce.number().int().positive(),
+	levels: z.coerce.number().int().nonnegative(),
+	upgradeCount: z.coerce.number().int().nonnegative()
+}) as z.ZodType<DishIngredientInputRow>;
 
 export function loadDishIngredients(
 	dishNameToId: Map<string, Id>,
@@ -32,12 +24,12 @@ export function loadDishIngredients(
 		'dish-ingredients-data.csv'
 	);
 
-	const DishIngredientInputRows: DishIngredientInputRow[] = [];
+	const dishIngredients: DishIngredientJoinRow[] = [];
 	for (const row of dishIngredientRows) {
 		const dishId = dishNameToId.get(row.dish);
 		const ingredientId = ingredientNameToId.get(row.ingredient);
 		if (dishId && ingredientId) {
-			DishIngredientInputRows.push({
+			dishIngredients.push({
 				dishId: dishId,
 				ingredientId: ingredientId,
 				count: row.count,
@@ -51,5 +43,5 @@ export function loadDishIngredients(
 		}
 	}
 
-	return { DishIngredientInputRows };
+	return { dishIngredients };
 }

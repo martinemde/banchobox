@@ -13,11 +13,7 @@
       "finalTaste": 150,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 127,
@@ -106,11 +102,7 @@
       "finalTaste": 135,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 175,
@@ -199,11 +191,7 @@
       "finalTaste": 250,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 122,
@@ -292,11 +280,7 @@
       "finalTaste": 165,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 39,
@@ -375,11 +359,7 @@
       "finalTaste": 170,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 178,
@@ -468,11 +448,7 @@
       "finalTaste": 150,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -541,11 +517,7 @@
       "finalTaste": 180,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 222,
@@ -605,7 +577,6 @@
       "id": 8,
       "name": "Atlantic Bonito Curry",
       "image": "atlantic_bonito_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 380,
       "baseTaste": 137,
@@ -615,10 +586,7 @@
       "finalServings": 7,
       "unlock": "Cooksta Platinum Rank",
       "cooksta": "Platinum",
-      "dlc": null,
       "artisansFlames": 12,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 10,
@@ -688,7 +656,6 @@
       "id": 9,
       "name": "Humphead Parrotfish Curry",
       "image": "humphead_parrotfish_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 375,
       "baseTaste": 140,
@@ -698,10 +665,7 @@
       "finalServings": 6,
       "unlock": "Cooksta Platinum Rank",
       "cooksta": "Platinum",
-      "dlc": null,
       "artisansFlames": 12,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 95,
@@ -771,7 +735,6 @@
       "id": 10,
       "name": "Moray Eel Curry",
       "image": "moray_eel_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 95,
       "baseTaste": 93,
@@ -781,10 +744,7 @@
       "finalServings": 6,
       "unlock": "Cooksta Silver Rank",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 3,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 136,
@@ -854,10 +814,6 @@
       "finalServings": 3,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 140,
@@ -947,10 +903,7 @@
       "finalServings": 1,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -1020,10 +973,6 @@
       "finalServings": 3,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 45,
@@ -1113,10 +1062,7 @@
       "finalServings": 1,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 176,
@@ -1186,10 +1132,7 @@
       "finalServings": 7,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 20,
@@ -1281,10 +1224,7 @@
       "finalServings": 7,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 20,
@@ -1376,10 +1316,6 @@
       "finalServings": 1,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -1439,10 +1375,7 @@
       "finalServings": 7,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 18,
@@ -1521,11 +1454,7 @@
       "finalTaste": 410,
       "finalServings": 6,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -1604,11 +1533,7 @@
       "finalTaste": 382,
       "finalServings": 9,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 15,
@@ -1687,11 +1612,7 @@
       "finalTaste": 365,
       "finalServings": 9,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -1782,11 +1703,7 @@
       "finalTaste": 365,
       "finalServings": 9,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -1877,11 +1794,7 @@
       "finalTaste": 265,
       "finalServings": 1,
       "unlock": "Glacial Seaweed Cave",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -1960,11 +1873,6 @@
       "finalTaste": 282,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -2043,11 +1951,6 @@
       "finalTaste": 375,
       "finalServings": 6,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -2126,11 +2029,6 @@
       "finalTaste": 282,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -2199,11 +2097,6 @@
       "finalTaste": 295,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -2282,11 +2175,6 @@
       "finalTaste": 273,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -2365,11 +2253,7 @@
       "finalTaste": 382,
       "finalServings": 7,
       "unlock": "Defeat Kronosaurus",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 135,
@@ -2458,11 +2342,7 @@
       "finalTaste": 305,
       "finalServings": 9,
       "unlock": "Lobster Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 9,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -2541,11 +2421,7 @@
       "finalTaste": 455,
       "finalServings": 7,
       "unlock": "Lobster Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 9,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -2615,7 +2491,6 @@
       "id": 32,
       "name": "Boiled Sailfish and Seaweed",
       "image": "boiled_sailfish_and_seaweed.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 425,
       "baseTaste": 138,
@@ -2624,11 +2499,7 @@
       "finalTaste": 300,
       "finalServings": 9,
       "unlock": "Marlin Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -2708,7 +2579,6 @@
       "id": 33,
       "name": "Marlin and Soybean Paste Roast",
       "image": "marlin_and_soybean_paste_roast.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 380,
       "baseTaste": 137,
@@ -2717,11 +2587,7 @@
       "finalTaste": 272,
       "finalServings": 9,
       "unlock": "Marlin Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -2800,11 +2666,7 @@
       "finalTaste": 274,
       "finalServings": 2,
       "unlock": "mxmtoon",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -2883,11 +2745,7 @@
       "finalTaste": 277,
       "finalServings": 2,
       "unlock": "mxmtoon",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 9,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -2957,7 +2815,6 @@
       "id": 36,
       "name": "Roasted Capelin",
       "image": "roasted_capelin.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 390,
       "baseTaste": 138,
@@ -2966,8 +2823,6 @@
       "finalTaste": 345,
       "finalServings": 7,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 12,
       "staff": "Drae",
       "staffLevel": 10,
@@ -3040,7 +2895,6 @@
       "id": 37,
       "name": "Crimson Fish Roll",
       "image": "crimson_fish_roll.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 168,
@@ -3049,8 +2903,6 @@
       "finalTaste": 258,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Billy",
       "staffLevel": 15,
@@ -3123,7 +2975,6 @@
       "id": 38,
       "name": "Great Spider Crab Curry",
       "image": "great_spider_crab_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 155,
@@ -3132,8 +2983,6 @@
       "finalTaste": 290,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Charlie",
       "staffLevel": 15,
@@ -3206,7 +3055,6 @@
       "id": 39,
       "name": "Ice Fish Curry",
       "image": "ice_fish_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 155,
@@ -3215,8 +3063,6 @@
       "finalTaste": 317,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Drae",
       "staffLevel": 15,
@@ -3289,7 +3135,6 @@
       "id": 40,
       "name": "Shark Karaage",
       "image": "shark_karaage.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 155,
@@ -3298,8 +3143,6 @@
       "finalTaste": 380,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Itsuki",
       "staffLevel": 15,
@@ -3382,7 +3225,6 @@
       "id": 41,
       "name": "Seasoned Jellyfish",
       "image": "seasoned_jellyfish.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 163,
@@ -3391,8 +3233,6 @@
       "finalTaste": 298,
       "finalServings": 6,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "James",
       "staffLevel": 15,
@@ -3475,7 +3315,6 @@
       "id": 42,
       "name": "Wrasse Curry",
       "image": "wrasse_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 150,
@@ -3484,8 +3323,6 @@
       "finalTaste": 330,
       "finalServings": 6,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Jandi",
       "staffLevel": 15,
@@ -3568,7 +3405,6 @@
       "id": 43,
       "name": "Rice with White Shrimp Meat",
       "image": "rice_with_white_shrimp_meat.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 148,
@@ -3577,8 +3413,6 @@
       "finalTaste": 400,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Kyoko",
       "staffLevel": 15,
@@ -3661,7 +3495,6 @@
       "id": 44,
       "name": "Boiled Porbeagle Shark",
       "image": "boiled_porbeagle_shark.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 143,
@@ -3670,8 +3503,6 @@
       "finalTaste": 332,
       "finalServings": 7,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Raul",
       "staffLevel": 15,
@@ -3744,7 +3575,6 @@
       "id": 45,
       "name": "Deep-Fried Eggplant Shrimp Meatballs",
       "image": "deep-fried_eggplant_shrimp_meatballs.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 145,
@@ -3753,8 +3583,6 @@
       "finalTaste": 460,
       "finalServings": 7,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Yusuke",
       "staffLevel": 15,
@@ -3837,7 +3665,6 @@
       "id": 46,
       "name": "Special Fried Shrimp Sushi",
       "image": "special_fried_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 380,
       "baseTaste": 110,
@@ -3846,8 +3673,6 @@
       "finalTaste": 317,
       "finalServings": 1,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 8,
       "staff": "Drae",
       "staffLevel": 5,
@@ -3930,7 +3755,6 @@
       "id": 47,
       "name": "Boiled and Deep-Fried White Shrimp",
       "image": "boiled_and_deep-fried_white_shrimp.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 225,
       "baseTaste": 105,
@@ -3939,8 +3763,6 @@
       "finalTaste": 330,
       "finalServings": 10,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 8,
       "staff": "Raptor",
       "staffLevel": 5,
@@ -4023,7 +3845,6 @@
       "id": 48,
       "name": "Whole-Roasted Shark Head",
       "image": "whole-roasted_shark_head.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 70,
@@ -4032,11 +3853,7 @@
       "finalTaste": 295,
       "finalServings": 7,
       "unlock": "Yoshie",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 3,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 217,
@@ -4105,11 +3922,7 @@
       "finalTaste": 400,
       "finalServings": 9,
       "unlock": "Tuna Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -4198,11 +4011,7 @@
       "finalTaste": 348,
       "finalServings": 9,
       "unlock": "Tuna Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -4291,11 +4100,7 @@
       "finalTaste": 332,
       "finalServings": 9,
       "unlock": "Tuna Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 48,
@@ -4374,11 +4179,6 @@
       "finalTaste": 320,
       "finalServings": 7,
       "unlock": "VIP British Chef",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -4467,11 +4267,7 @@
       "finalTaste": 305,
       "finalServings": 10,
       "unlock": "VIP Chinese Chef",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 7,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -4560,11 +4356,6 @@
       "finalTaste": 375,
       "finalServings": 10,
       "unlock": "VIP Italian Chef",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 85,
@@ -4653,11 +4444,6 @@
       "finalTaste": 350,
       "finalServings": 7,
       "unlock": "VIP Jango",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -4746,11 +4532,7 @@
       "finalTaste": 320,
       "finalServings": 6,
       "unlock": "VIP Jango",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 7,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -4829,11 +4611,6 @@
       "finalTaste": 280,
       "finalServings": 1,
       "unlock": "VIP Vincent",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -4903,7 +4680,6 @@
       "id": 58,
       "name": "American Lobster Sushi",
       "image": "american_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 129,
       "baseTaste": 29,
@@ -4911,12 +4687,6 @@
       "finalPrice": 1192.5,
       "finalTaste": 290,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -4966,7 +4736,6 @@
       "id": 59,
       "name": "Barrel Jellyfish Sushi",
       "image": "barrel_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 15,
       "baseTaste": 16,
@@ -4974,12 +4743,6 @@
       "finalPrice": 110,
       "finalTaste": 160,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 14,
@@ -5029,7 +4792,6 @@
       "id": 60,
       "name": "Blacktip Reefshark Sushi",
       "image": "blacktip_reefshark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 60,
       "baseTaste": 27,
@@ -5037,12 +4799,6 @@
       "finalPrice": 444,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 25,
@@ -5092,7 +4848,6 @@
       "id": 61,
       "name": "Blood-belly Comb Jelly Sushi",
       "image": "blood-belly_comb_jelly_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 50,
       "baseTaste": 25,
@@ -5100,12 +4855,6 @@
       "finalPrice": 370,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 28,
@@ -5155,7 +4904,6 @@
       "id": 62,
       "name": "Blue Lobster Sushi",
       "image": "blue_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 32,
@@ -5163,12 +4911,6 @@
       "finalPrice": 1302.5,
       "finalTaste": 320,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -5218,7 +4960,6 @@
       "id": 63,
       "name": "Bluefin Tuna Akami Sushi",
       "image": "bluefin_tuna_akami_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 80,
       "baseTaste": 60,
@@ -5226,12 +4967,6 @@
       "finalPrice": 1036,
       "finalTaste": 240,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 32,
@@ -5281,7 +5016,6 @@
       "id": 64,
       "name": "Bluefin Tuna Chutoro Sushi",
       "image": "bluefin_tuna_chutoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 95,
       "baseTaste": 61,
@@ -5289,12 +5023,6 @@
       "finalPrice": 1228.5,
       "finalTaste": 241,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -5344,7 +5072,6 @@
       "id": 65,
       "name": "Bluefin Tuna Ootoro Sushi",
       "image": "bluefin_tuna_ootoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 133,
       "baseTaste": 105,
@@ -5352,12 +5079,6 @@
       "finalPrice": 1746.5,
       "finalTaste": 330,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -5407,7 +5128,6 @@
       "id": 66,
       "name": "Box Jellyfish Sushi",
       "image": "box_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 55,
       "baseTaste": 27,
@@ -5415,12 +5135,6 @@
       "finalPrice": 406,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 38,
@@ -5470,7 +5184,6 @@
       "id": 67,
       "name": "California Spiny Lobster Sushi",
       "image": "california_spiny_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 66,
       "baseTaste": 28,
@@ -5478,12 +5191,6 @@
       "finalPrice": 610,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 42,
@@ -5533,7 +5240,6 @@
       "id": 68,
       "name": "Comb Jelly Sushi",
       "image": "comb_jelly_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 45,
       "baseTaste": 25,
@@ -5541,12 +5247,6 @@
       "finalPrice": 332,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -5596,7 +5296,6 @@
       "id": 69,
       "name": "Cooked Whiteleg Shrimp Sushi",
       "image": "cooked_whiteleg_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 35,
       "baseTaste": 22,
@@ -5604,12 +5303,6 @@
       "finalPrice": 258,
       "finalTaste": 220,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 216,
@@ -5659,7 +5352,6 @@
       "id": 70,
       "name": "Cookiecutter Shark Sushi",
       "image": "cookiecutter_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 27,
@@ -5667,12 +5359,6 @@
       "finalPrice": 554,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 57,
@@ -5722,7 +5408,6 @@
       "id": 71,
       "name": "Copper Shark Sushi",
       "image": "copper_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 65,
       "baseTaste": 28,
@@ -5730,12 +5415,6 @@
       "finalPrice": 480,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 58,
@@ -5785,7 +5464,6 @@
       "id": 72,
       "name": "Crystal Lobster Sushi",
       "image": "crystal_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 34,
@@ -5793,12 +5471,6 @@
       "finalPrice": 1302.5,
       "finalTaste": 340,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -5848,7 +5520,6 @@
       "id": 73,
       "name": "Eastern Rock Lobster Sushi",
       "image": "eastern_rock_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 39,
@@ -5856,12 +5527,6 @@
       "finalPrice": 1302.5,
       "finalTaste": 390,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -5911,7 +5576,6 @@
       "id": 74,
       "name": "European Lobster Sushi",
       "image": "european_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 69,
       "baseTaste": 25,
@@ -5919,12 +5583,6 @@
       "finalPrice": 637.5,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -5974,7 +5632,6 @@
       "id": 75,
       "name": "Falcatus Sushi",
       "image": "falcatus_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 130,
       "baseTaste": 38,
@@ -5982,12 +5639,6 @@
       "finalPrice": 962,
       "finalTaste": 380,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 78,
@@ -6037,7 +5688,6 @@
       "id": 76,
       "name": "Fan Lobster Sushi",
       "image": "fan_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 66,
       "baseTaste": 30,
@@ -6045,12 +5695,6 @@
       "finalPrice": 610,
       "finalTaste": 300,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 79,
@@ -6100,7 +5744,6 @@
       "id": 77,
       "name": "Fried Egg Jellyfish Sushi",
       "image": "fried_egg_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 15,
       "baseTaste": 16,
@@ -6108,12 +5751,6 @@
       "finalPrice": 110,
       "finalTaste": 160,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 83,
@@ -6163,7 +5800,6 @@
       "id": 78,
       "name": "Frilled Shark Sushi",
       "image": "frilled_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 85,
       "baseTaste": 28,
@@ -6171,12 +5807,6 @@
       "finalPrice": 628,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 84,
@@ -6226,7 +5856,6 @@
       "id": 79,
       "name": "Greenland Shark Sushi",
       "image": "greenland_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 186,
       "baseTaste": 37,
@@ -6234,12 +5863,6 @@
       "finalPrice": 1376,
       "finalTaste": 370,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 97,
@@ -6289,7 +5912,6 @@
       "id": 80,
       "name": "Longnose Sawshark Sushi",
       "image": "longnose_sawshark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 35,
       "baseTaste": 29,
@@ -6297,12 +5919,6 @@
       "finalPrice": 258,
       "finalTaste": 290,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 118,
@@ -6352,7 +5968,6 @@
       "id": 81,
       "name": "Marlin Sushi",
       "image": "marlin_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 135,
       "baseTaste": 37,
@@ -6360,12 +5975,6 @@
       "finalPrice": 998,
       "finalTaste": 370,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -6415,7 +6024,6 @@
       "id": 82,
       "name": "Megamouth Shark Sushi",
       "image": "megamouth_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 95,
       "baseTaste": 30,
@@ -6423,12 +6031,6 @@
       "finalPrice": 702,
       "finalTaste": 300,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -6478,7 +6080,6 @@
       "id": 83,
       "name": "Norway Lobster Sushi",
       "image": "norway_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 33,
@@ -6486,12 +6087,6 @@
       "finalPrice": 692.5,
       "finalTaste": 330,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -6541,7 +6136,6 @@
       "id": 84,
       "name": "Porbeagle Shark Sushi",
       "image": "porbeagle_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 165,
       "baseTaste": 38,
@@ -6549,12 +6143,6 @@
       "finalPrice": 1220,
       "finalTaste": 380,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 153,
@@ -6604,7 +6192,6 @@
       "id": 85,
       "name": "Raw Black Tiger Shrimp Sushi",
       "image": "raw_black_tiger_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 50,
       "baseTaste": 24,
@@ -6612,12 +6199,6 @@
       "finalPrice": 370,
       "finalTaste": 240,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -6667,7 +6248,6 @@
       "id": 86,
       "name": "Red-banded Lobster Sushi",
       "image": "red-banded_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 25,
@@ -6675,12 +6255,6 @@
       "finalPrice": 692.5,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 162,
@@ -6730,7 +6304,6 @@
       "id": 87,
       "name": "Sailfish Sushi",
       "image": "sailfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 195,
       "baseTaste": 40,
@@ -6738,12 +6311,6 @@
       "finalPrice": 1442,
       "finalTaste": 400,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -6793,7 +6360,6 @@
       "id": 88,
       "name": "Shortfin Mako Sushi",
       "image": "shortfin_mako_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 105,
       "baseTaste": 36,
@@ -6801,12 +6367,6 @@
       "finalPrice": 776,
       "finalTaste": 360,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 125,
@@ -6856,7 +6416,6 @@
       "id": 89,
       "name": "Smooth Hammerhead Sushi",
       "image": "smooth_hammerhead_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 39,
@@ -6864,12 +6423,6 @@
       "finalPrice": 1042,
       "finalTaste": 390,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 102,
@@ -6919,7 +6472,6 @@
       "id": 90,
       "name": "Thresher Shark Sushi",
       "image": "thresher_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 159,
       "baseTaste": 39,
@@ -6927,12 +6479,6 @@
       "finalPrice": 1176,
       "finalTaste": 390,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 199,
@@ -6982,7 +6528,6 @@
       "id": 91,
       "name": "Tiger Shark Sushi",
       "image": "tiger_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 50,
       "baseTaste": 29,
@@ -6990,12 +6535,6 @@
       "finalPrice": 370,
       "finalTaste": 290,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 200,
@@ -7045,7 +6584,6 @@
       "id": 92,
       "name": "Tropical Rock Lobster Sushi",
       "image": "tropical_rock_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 135,
       "baseTaste": 30,
@@ -7053,12 +6591,6 @@
       "finalPrice": 1247.5,
       "finalTaste": 300,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 204,
@@ -7108,7 +6640,6 @@
       "id": 93,
       "name": "White Shrimp Sushi",
       "image": "white_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 53,
       "baseTaste": 28,
@@ -7116,12 +6647,6 @@
       "finalPrice": 392,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 213,
@@ -7171,7 +6696,6 @@
       "id": 94,
       "name": "White Spotted Jellyfish Sushi",
       "image": "white_spotted_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 18,
       "baseTaste": 18,
@@ -7179,12 +6703,6 @@
       "finalPrice": 132,
       "finalTaste": 180,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -7234,7 +6752,6 @@
       "id": 95,
       "name": "Whitetip Reefshark Sushi",
       "image": "whitetip_reefshark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 24,
       "baseTaste": 27,
@@ -7242,12 +6759,6 @@
       "finalPrice": 176,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 218,
@@ -7297,7 +6808,6 @@
       "id": 96,
       "name": "Yellowfin Tuna Akami Sushi",
       "image": "yellowfin_tuna_akami_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 73,
       "baseTaste": 55,
@@ -7305,12 +6815,6 @@
       "finalPrice": 945,
       "finalTaste": 235,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -7360,7 +6864,6 @@
       "id": 97,
       "name": "Yellowfin Tuna Chutoro Sushi",
       "image": "yellowfin_tuna_chutoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 90,
       "baseTaste": 58,
@@ -7368,12 +6871,6 @@
       "finalPrice": 1165.5,
       "finalTaste": 238,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 226,
@@ -7423,7 +6920,6 @@
       "id": 98,
       "name": "Yellowfin Tuna Ootoro Sushi",
       "image": "yellowfin_tuna_ootoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 125,
       "baseTaste": 90,
@@ -7431,12 +6927,6 @@
       "finalPrice": 1617,
       "finalTaste": 315,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 227,
@@ -7486,7 +6976,6 @@
       "id": 99,
       "name": "Zebra Shark Sushi",
       "image": "zebra_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 88,
       "baseTaste": 36,
@@ -7494,12 +6983,6 @@
       "finalPrice": 798,
       "finalTaste": 360,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 228,
@@ -7560,11 +7043,7 @@
       "finalTaste": 150,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 127,
@@ -7653,11 +7132,7 @@
       "finalTaste": 135,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 175,
@@ -7746,11 +7221,7 @@
       "finalTaste": 250,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 122,
@@ -7839,11 +7310,7 @@
       "finalTaste": 165,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 39,
@@ -7922,11 +7389,7 @@
       "finalTaste": 170,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 178,
@@ -8015,11 +7478,7 @@
       "finalTaste": 150,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 93,
@@ -8088,11 +7547,7 @@
       "finalTaste": 180,
       "finalServings": 10,
       "unlock": "Boss",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 222,
@@ -8152,7 +7607,6 @@
       "id": 8,
       "name": "Atlantic Bonito Curry",
       "image": "atlantic_bonito_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 380,
       "baseTaste": 137,
@@ -8162,10 +7616,7 @@
       "finalServings": 7,
       "unlock": "Cooksta Platinum Rank",
       "cooksta": "Platinum",
-      "dlc": null,
       "artisansFlames": 12,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 10,
@@ -8235,7 +7686,6 @@
       "id": 9,
       "name": "Humphead Parrotfish Curry",
       "image": "humphead_parrotfish_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 375,
       "baseTaste": 140,
@@ -8245,10 +7695,7 @@
       "finalServings": 6,
       "unlock": "Cooksta Platinum Rank",
       "cooksta": "Platinum",
-      "dlc": null,
       "artisansFlames": 12,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 95,
@@ -8318,7 +7765,6 @@
       "id": 10,
       "name": "Moray Eel Curry",
       "image": "moray_eel_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 95,
       "baseTaste": 93,
@@ -8328,10 +7774,7 @@
       "finalServings": 6,
       "unlock": "Cooksta Silver Rank",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 3,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 136,
@@ -8401,10 +7844,6 @@
       "finalServings": 3,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 140,
@@ -8494,10 +7933,7 @@
       "finalServings": 1,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -8567,10 +8003,6 @@
       "finalServings": 3,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 45,
@@ -8660,10 +8092,7 @@
       "finalServings": 1,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 176,
@@ -8733,10 +8162,7 @@
       "finalServings": 7,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 20,
@@ -8828,10 +8254,7 @@
       "finalServings": 7,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 20,
@@ -8923,10 +8346,6 @@
       "finalServings": 1,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 62,
@@ -8986,10 +8405,7 @@
       "finalServings": 7,
       "unlock": "Cucumber Party",
       "cooksta": "Silver",
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 18,
@@ -9068,11 +8484,7 @@
       "finalTaste": 410,
       "finalServings": 6,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -9151,11 +8563,7 @@
       "finalTaste": 382,
       "finalServings": 9,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 15,
@@ -9234,11 +8642,7 @@
       "finalTaste": 365,
       "finalServings": 9,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -9329,11 +8733,7 @@
       "finalTaste": 365,
       "finalServings": 9,
       "unlock": "Defeat Ebirah",
-      "cooksta": null,
       "dlc": "Godzilla",
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -9424,11 +8824,7 @@
       "finalTaste": 265,
       "finalServings": 1,
       "unlock": "Glacial Seaweed Cave",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -9507,11 +8903,6 @@
       "finalTaste": 282,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -9590,11 +8981,6 @@
       "finalTaste": 375,
       "finalServings": 6,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -9673,11 +9059,6 @@
       "finalTaste": 282,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -9746,11 +9127,6 @@
       "finalTaste": 295,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -9829,11 +9205,6 @@
       "finalTaste": 273,
       "finalServings": 2,
       "unlock": "Jango Shop",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -9912,11 +9283,7 @@
       "finalTaste": 382,
       "finalServings": 7,
       "unlock": "Defeat Kronosaurus",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 135,
@@ -10005,11 +9372,7 @@
       "finalTaste": 305,
       "finalServings": 9,
       "unlock": "Lobster Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 9,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -10088,11 +9451,7 @@
       "finalTaste": 455,
       "finalServings": 7,
       "unlock": "Lobster Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 9,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -10162,7 +9521,6 @@
       "id": 32,
       "name": "Boiled Sailfish and Seaweed",
       "image": "boiled_sailfish_and_seaweed.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 425,
       "baseTaste": 138,
@@ -10171,11 +9529,7 @@
       "finalTaste": 300,
       "finalServings": 9,
       "unlock": "Marlin Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -10255,7 +9609,6 @@
       "id": 33,
       "name": "Marlin and Soybean Paste Roast",
       "image": "marlin_and_soybean_paste_roast.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 380,
       "baseTaste": 137,
@@ -10264,11 +9617,7 @@
       "finalTaste": 272,
       "finalServings": 9,
       "unlock": "Marlin Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -10347,11 +9696,7 @@
       "finalTaste": 274,
       "finalServings": 2,
       "unlock": "mxmtoon",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 1,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -10430,11 +9775,7 @@
       "finalTaste": 277,
       "finalServings": 2,
       "unlock": "mxmtoon",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 9,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 96,
@@ -10504,7 +9845,6 @@
       "id": 36,
       "name": "Roasted Capelin",
       "image": "roasted_capelin.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 390,
       "baseTaste": 138,
@@ -10513,8 +9853,6 @@
       "finalTaste": 345,
       "finalServings": 7,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 12,
       "staff": "Drae",
       "staffLevel": 10,
@@ -10587,7 +9925,6 @@
       "id": 37,
       "name": "Crimson Fish Roll",
       "image": "crimson_fish_roll.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 168,
@@ -10596,8 +9933,6 @@
       "finalTaste": 258,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Billy",
       "staffLevel": 15,
@@ -10670,7 +10005,6 @@
       "id": 38,
       "name": "Great Spider Crab Curry",
       "image": "great_spider_crab_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 155,
@@ -10679,8 +10013,6 @@
       "finalTaste": 290,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Charlie",
       "staffLevel": 15,
@@ -10753,7 +10085,6 @@
       "id": 39,
       "name": "Ice Fish Curry",
       "image": "ice_fish_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 155,
@@ -10762,8 +10093,6 @@
       "finalTaste": 317,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Drae",
       "staffLevel": 15,
@@ -10836,7 +10165,6 @@
       "id": 40,
       "name": "Shark Karaage",
       "image": "shark_karaage.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 155,
@@ -10845,8 +10173,6 @@
       "finalTaste": 380,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Itsuki",
       "staffLevel": 15,
@@ -10929,7 +10255,6 @@
       "id": 41,
       "name": "Seasoned Jellyfish",
       "image": "seasoned_jellyfish.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 163,
@@ -10938,8 +10263,6 @@
       "finalTaste": 298,
       "finalServings": 6,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "James",
       "staffLevel": 15,
@@ -11022,7 +10345,6 @@
       "id": 42,
       "name": "Wrasse Curry",
       "image": "wrasse_curry.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 150,
@@ -11031,8 +10353,6 @@
       "finalTaste": 330,
       "finalServings": 6,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Jandi",
       "staffLevel": 15,
@@ -11115,7 +10435,6 @@
       "id": 43,
       "name": "Rice with White Shrimp Meat",
       "image": "rice_with_white_shrimp_meat.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 148,
@@ -11124,8 +10443,6 @@
       "finalTaste": 400,
       "finalServings": 9,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Kyoko",
       "staffLevel": 15,
@@ -11208,7 +10525,6 @@
       "id": 44,
       "name": "Boiled Porbeagle Shark",
       "image": "boiled_porbeagle_shark.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 143,
@@ -11217,8 +10533,6 @@
       "finalTaste": 332,
       "finalServings": 7,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Raul",
       "staffLevel": 15,
@@ -11291,7 +10605,6 @@
       "id": 45,
       "name": "Deep-Fried Eggplant Shrimp Meatballs",
       "image": "deep-fried_eggplant_shrimp_meatballs.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 400,
       "baseTaste": 145,
@@ -11300,8 +10613,6 @@
       "finalTaste": 460,
       "finalServings": 7,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 15,
       "staff": "Yusuke",
       "staffLevel": 15,
@@ -11384,7 +10695,6 @@
       "id": 46,
       "name": "Special Fried Shrimp Sushi",
       "image": "special_fried_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 380,
       "baseTaste": 110,
@@ -11393,8 +10703,6 @@
       "finalTaste": 317,
       "finalServings": 1,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 8,
       "staff": "Drae",
       "staffLevel": 5,
@@ -11477,7 +10785,6 @@
       "id": 47,
       "name": "Boiled and Deep-Fried White Shrimp",
       "image": "boiled_and_deep-fried_white_shrimp.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 225,
       "baseTaste": 105,
@@ -11486,8 +10793,6 @@
       "finalTaste": 330,
       "finalServings": 10,
       "unlock": "Staff Level",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 8,
       "staff": "Raptor",
       "staffLevel": 5,
@@ -11570,7 +10875,6 @@
       "id": 48,
       "name": "Whole-Roasted Shark Head",
       "image": "whole-roasted_shark_head.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 70,
@@ -11579,11 +10883,7 @@
       "finalTaste": 295,
       "finalServings": 7,
       "unlock": "Yoshie",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 3,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 217,
@@ -11652,11 +10952,7 @@
       "finalTaste": 400,
       "finalServings": 9,
       "unlock": "Tuna Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 165,
@@ -11745,11 +11041,7 @@
       "finalTaste": 348,
       "finalServings": 9,
       "unlock": "Tuna Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -11838,11 +11130,7 @@
       "finalTaste": 332,
       "finalServings": 9,
       "unlock": "Tuna Party",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 5,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 48,
@@ -11921,11 +11209,6 @@
       "finalTaste": 320,
       "finalServings": 7,
       "unlock": "VIP British Chef",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 112,
@@ -12014,11 +11297,7 @@
       "finalTaste": 305,
       "finalServings": 10,
       "unlock": "VIP Chinese Chef",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 7,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -12107,11 +11386,6 @@
       "finalTaste": 375,
       "finalServings": 10,
       "unlock": "VIP Italian Chef",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 85,
@@ -12200,11 +11474,6 @@
       "finalTaste": 350,
       "finalServings": 7,
       "unlock": "VIP Jango",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -12293,11 +11562,7 @@
       "finalTaste": 320,
       "finalServings": 6,
       "unlock": "VIP Jango",
-      "cooksta": null,
-      "dlc": null,
       "artisansFlames": 7,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -12376,11 +11641,6 @@
       "finalTaste": 280,
       "finalServings": 1,
       "unlock": "VIP Vincent",
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -12450,7 +11710,6 @@
       "id": 58,
       "name": "American Lobster Sushi",
       "image": "american_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 129,
       "baseTaste": 29,
@@ -12458,12 +11717,6 @@
       "finalPrice": 1192.5,
       "finalTaste": 290,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 4,
@@ -12513,7 +11766,6 @@
       "id": 59,
       "name": "Barrel Jellyfish Sushi",
       "image": "barrel_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 15,
       "baseTaste": 16,
@@ -12521,12 +11773,6 @@
       "finalPrice": 110,
       "finalTaste": 160,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 14,
@@ -12576,7 +11822,6 @@
       "id": 60,
       "name": "Blacktip Reefshark Sushi",
       "image": "blacktip_reefshark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 60,
       "baseTaste": 27,
@@ -12584,12 +11829,6 @@
       "finalPrice": 444,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 25,
@@ -12639,7 +11878,6 @@
       "id": 61,
       "name": "Blood-belly Comb Jelly Sushi",
       "image": "blood-belly_comb_jelly_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 50,
       "baseTaste": 25,
@@ -12647,12 +11885,6 @@
       "finalPrice": 370,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 28,
@@ -12702,7 +11934,6 @@
       "id": 62,
       "name": "Blue Lobster Sushi",
       "image": "blue_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 32,
@@ -12710,12 +11941,6 @@
       "finalPrice": 1302.5,
       "finalTaste": 320,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 30,
@@ -12765,7 +11990,6 @@
       "id": 63,
       "name": "Bluefin Tuna Akami Sushi",
       "image": "bluefin_tuna_akami_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 80,
       "baseTaste": 60,
@@ -12773,12 +11997,6 @@
       "finalPrice": 1036,
       "finalTaste": 240,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 32,
@@ -12828,7 +12046,6 @@
       "id": 64,
       "name": "Bluefin Tuna Chutoro Sushi",
       "image": "bluefin_tuna_chutoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 95,
       "baseTaste": 61,
@@ -12836,12 +12053,6 @@
       "finalPrice": 1228.5,
       "finalTaste": 241,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 33,
@@ -12891,7 +12102,6 @@
       "id": 65,
       "name": "Bluefin Tuna Ootoro Sushi",
       "image": "bluefin_tuna_ootoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 133,
       "baseTaste": 105,
@@ -12899,12 +12109,6 @@
       "finalPrice": 1746.5,
       "finalTaste": 330,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 34,
@@ -12954,7 +12158,6 @@
       "id": 66,
       "name": "Box Jellyfish Sushi",
       "image": "box_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 55,
       "baseTaste": 27,
@@ -12962,12 +12165,6 @@
       "finalPrice": 406,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 38,
@@ -13017,7 +12214,6 @@
       "id": 67,
       "name": "California Spiny Lobster Sushi",
       "image": "california_spiny_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 66,
       "baseTaste": 28,
@@ -13025,12 +12221,6 @@
       "finalPrice": 610,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 42,
@@ -13080,7 +12270,6 @@
       "id": 68,
       "name": "Comb Jelly Sushi",
       "image": "comb_jelly_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 45,
       "baseTaste": 25,
@@ -13088,12 +12277,6 @@
       "finalPrice": 332,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 54,
@@ -13143,7 +12326,6 @@
       "id": 69,
       "name": "Cooked Whiteleg Shrimp Sushi",
       "image": "cooked_whiteleg_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 35,
       "baseTaste": 22,
@@ -13151,12 +12333,6 @@
       "finalPrice": 258,
       "finalTaste": 220,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 216,
@@ -13206,7 +12382,6 @@
       "id": 70,
       "name": "Cookiecutter Shark Sushi",
       "image": "cookiecutter_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 27,
@@ -13214,12 +12389,6 @@
       "finalPrice": 554,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 57,
@@ -13269,7 +12438,6 @@
       "id": 71,
       "name": "Copper Shark Sushi",
       "image": "copper_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 65,
       "baseTaste": 28,
@@ -13277,12 +12445,6 @@
       "finalPrice": 480,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 58,
@@ -13332,7 +12494,6 @@
       "id": 72,
       "name": "Crystal Lobster Sushi",
       "image": "crystal_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 34,
@@ -13340,12 +12501,6 @@
       "finalPrice": 1302.5,
       "finalTaste": 340,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 61,
@@ -13395,7 +12550,6 @@
       "id": 73,
       "name": "Eastern Rock Lobster Sushi",
       "image": "eastern_rock_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 39,
@@ -13403,12 +12557,6 @@
       "finalPrice": 1302.5,
       "finalTaste": 390,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 71,
@@ -13458,7 +12606,6 @@
       "id": 74,
       "name": "European Lobster Sushi",
       "image": "european_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 69,
       "baseTaste": 25,
@@ -13466,12 +12613,6 @@
       "finalPrice": 637.5,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 77,
@@ -13521,7 +12662,6 @@
       "id": 75,
       "name": "Falcatus Sushi",
       "image": "falcatus_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 130,
       "baseTaste": 38,
@@ -13529,12 +12669,6 @@
       "finalPrice": 962,
       "finalTaste": 380,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 78,
@@ -13584,7 +12718,6 @@
       "id": 76,
       "name": "Fan Lobster Sushi",
       "image": "fan_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 66,
       "baseTaste": 30,
@@ -13592,12 +12725,6 @@
       "finalPrice": 610,
       "finalTaste": 300,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 79,
@@ -13647,7 +12774,6 @@
       "id": 77,
       "name": "Fried Egg Jellyfish Sushi",
       "image": "fried_egg_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 15,
       "baseTaste": 16,
@@ -13655,12 +12781,6 @@
       "finalPrice": 110,
       "finalTaste": 160,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 83,
@@ -13710,7 +12830,6 @@
       "id": 78,
       "name": "Frilled Shark Sushi",
       "image": "frilled_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 85,
       "baseTaste": 28,
@@ -13718,12 +12837,6 @@
       "finalPrice": 628,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 84,
@@ -13773,7 +12886,6 @@
       "id": 79,
       "name": "Greenland Shark Sushi",
       "image": "greenland_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 186,
       "baseTaste": 37,
@@ -13781,12 +12893,6 @@
       "finalPrice": 1376,
       "finalTaste": 370,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 97,
@@ -13836,7 +12942,6 @@
       "id": 80,
       "name": "Longnose Sawshark Sushi",
       "image": "longnose_sawshark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 35,
       "baseTaste": 29,
@@ -13844,12 +12949,6 @@
       "finalPrice": 258,
       "finalTaste": 290,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 118,
@@ -13899,7 +12998,6 @@
       "id": 81,
       "name": "Marlin Sushi",
       "image": "marlin_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 135,
       "baseTaste": 37,
@@ -13907,12 +13005,6 @@
       "finalPrice": 998,
       "finalTaste": 370,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 130,
@@ -13962,7 +13054,6 @@
       "id": 82,
       "name": "Megamouth Shark Sushi",
       "image": "megamouth_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 95,
       "baseTaste": 30,
@@ -13970,12 +13061,6 @@
       "finalPrice": 702,
       "finalTaste": 300,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 134,
@@ -14025,7 +13110,6 @@
       "id": 83,
       "name": "Norway Lobster Sushi",
       "image": "norway_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 33,
@@ -14033,12 +13117,6 @@
       "finalPrice": 692.5,
       "finalTaste": 330,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 139,
@@ -14088,7 +13166,6 @@
       "id": 84,
       "name": "Porbeagle Shark Sushi",
       "image": "porbeagle_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 165,
       "baseTaste": 38,
@@ -14096,12 +13173,6 @@
       "finalPrice": 1220,
       "finalTaste": 380,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 153,
@@ -14151,7 +13222,6 @@
       "id": 85,
       "name": "Raw Black Tiger Shrimp Sushi",
       "image": "raw_black_tiger_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 50,
       "baseTaste": 24,
@@ -14159,12 +13229,6 @@
       "finalPrice": 370,
       "finalTaste": 240,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 22,
@@ -14214,7 +13278,6 @@
       "id": 86,
       "name": "Red-banded Lobster Sushi",
       "image": "red-banded_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 75,
       "baseTaste": 25,
@@ -14222,12 +13285,6 @@
       "finalPrice": 692.5,
       "finalTaste": 250,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 162,
@@ -14277,7 +13334,6 @@
       "id": 87,
       "name": "Sailfish Sushi",
       "image": "sailfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 195,
       "baseTaste": 40,
@@ -14285,12 +13341,6 @@
       "finalPrice": 1442,
       "finalTaste": 400,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 166,
@@ -14340,7 +13390,6 @@
       "id": 88,
       "name": "Shortfin Mako Sushi",
       "image": "shortfin_mako_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 105,
       "baseTaste": 36,
@@ -14348,12 +13397,6 @@
       "finalPrice": 776,
       "finalTaste": 360,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 125,
@@ -14403,7 +13446,6 @@
       "id": 89,
       "name": "Smooth Hammerhead Sushi",
       "image": "smooth_hammerhead_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 141,
       "baseTaste": 39,
@@ -14411,12 +13453,6 @@
       "finalPrice": 1042,
       "finalTaste": 390,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 102,
@@ -14466,7 +13502,6 @@
       "id": 90,
       "name": "Thresher Shark Sushi",
       "image": "thresher_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 159,
       "baseTaste": 39,
@@ -14474,12 +13509,6 @@
       "finalPrice": 1176,
       "finalTaste": 390,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 199,
@@ -14529,7 +13558,6 @@
       "id": 91,
       "name": "Tiger Shark Sushi",
       "image": "tiger_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 50,
       "baseTaste": 29,
@@ -14537,12 +13565,6 @@
       "finalPrice": 370,
       "finalTaste": 290,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 200,
@@ -14592,7 +13614,6 @@
       "id": 92,
       "name": "Tropical Rock Lobster Sushi",
       "image": "tropical_rock_lobster_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 135,
       "baseTaste": 30,
@@ -14600,12 +13621,6 @@
       "finalPrice": 1247.5,
       "finalTaste": 300,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 204,
@@ -14655,7 +13670,6 @@
       "id": 93,
       "name": "White Shrimp Sushi",
       "image": "white_shrimp_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 53,
       "baseTaste": 28,
@@ -14663,12 +13677,6 @@
       "finalPrice": 392,
       "finalTaste": 280,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 213,
@@ -14718,7 +13726,6 @@
       "id": 94,
       "name": "White Spotted Jellyfish Sushi",
       "image": "white_spotted_jellyfish_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 18,
       "baseTaste": 18,
@@ -14726,12 +13733,6 @@
       "finalPrice": 132,
       "finalTaste": 180,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 214,
@@ -14781,7 +13782,6 @@
       "id": 95,
       "name": "Whitetip Reefshark Sushi",
       "image": "whitetip_reefshark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 24,
       "baseTaste": 27,
@@ -14789,12 +13789,6 @@
       "finalPrice": 176,
       "finalTaste": 270,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 218,
@@ -14844,7 +13838,6 @@
       "id": 96,
       "name": "Yellowfin Tuna Akami Sushi",
       "image": "yellowfin_tuna_akami_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 73,
       "baseTaste": 55,
@@ -14852,12 +13845,6 @@
       "finalPrice": 945,
       "finalTaste": 235,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 225,
@@ -14907,7 +13894,6 @@
       "id": 97,
       "name": "Yellowfin Tuna Chutoro Sushi",
       "image": "yellowfin_tuna_chutoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 90,
       "baseTaste": 58,
@@ -14915,12 +13901,6 @@
       "finalPrice": 1165.5,
       "finalTaste": 238,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 226,
@@ -14970,7 +13950,6 @@
       "id": 98,
       "name": "Yellowfin Tuna Ootoro Sushi",
       "image": "yellowfin_tuna_ootoro_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 125,
       "baseTaste": 90,
@@ -14978,12 +13957,6 @@
       "finalPrice": 1617,
       "finalTaste": 315,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 227,
@@ -15033,7 +14006,6 @@
       "id": 99,
       "name": "Zebra Shark Sushi",
       "image": "zebra_shark_sushi.png",
-      "chapter": null,
       "maxLevel": 10,
       "basePrice": 88,
       "baseTaste": 36,
@@ -15041,12 +14013,6 @@
       "finalPrice": 798,
       "finalTaste": 360,
       "finalServings": 1,
-      "unlock": null,
-      "cooksta": null,
-      "dlc": null,
-      "artisansFlames": null,
-      "staff": null,
-      "staffLevel": null,
       "ingredients": [
         {
           "ingredientId": 228,

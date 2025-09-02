@@ -1,4 +1,4 @@
-id,name,unlock,staff,staff_level,chapter,cooksta,dlc,max_level,base_price,base_taste,base_servings,final_price,final_taste,final_servings,artisans_flames,image
+id,name,unlock,staff,staffLevel,chapter,cooksta,dlc,maxLevel,basePrice,baseTaste,baseServings,finalPrice,finalTaste,finalServings,artisansFlames,image
 24,Blanched Lusca Tentacle,Boss,,,7,,,1,1350,250,10,1350,250,10,1,blanched_lusca_tentacle.png
 38,Boiled Mantis Shrimp with Soy Paste,Boss,,,2,,,1,650,150,10,650,150,10,1,boiled_mantis_shrimp_with_soy_paste.png
 48,Clione Queen Soup,Boss,,,2,,,1,550,135,10,550,135,10,1,clione_queen_soup.png
