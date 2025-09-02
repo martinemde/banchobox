@@ -19,7 +19,9 @@
 		Party,
 		PartyDish,
 		CookstaTier,
-		DLC
+		DLC,
+		Chapter,
+		Staff
 	} from '$lib/types.js';
 
 	let { children, data }: LayoutProps = $props();
@@ -43,10 +45,10 @@
 		dlcBundleStore.set(data.dlc as EntityBundle<DLC>);
 	}
 	if (data.chapters && get(chaptersBundleStore) == null) {
-		chaptersBundleStore.set(data.chapters as unknown as EntityBundle<import('$lib/types').Chapter>);
+		chaptersBundleStore.set(data.chapters as EntityBundle<Chapter>);
 	}
 	if (data.staff && get(staffBundleStore) == null) {
-		staffBundleStore.set(data.staff as unknown as EntityBundle<import('$lib/types').Staff>);
+		staffBundleStore.set(data.staff as EntityBundle<Staff>);
 	}
 </script>
 
