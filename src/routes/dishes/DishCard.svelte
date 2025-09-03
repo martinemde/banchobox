@@ -9,9 +9,9 @@
 	import RecipeSummaryIcons from '$lib/components/RecipeSummaryIcons.svelte';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 	import ArtisansFlamesCost from '$lib/components/ArtisansFlamesCost.svelte';
-	// import tasteIcon from '$lib/images/ui/sort_taste.png';
-	// import levelIcon from '$lib/images/ui/sort_level.png';
-	// import servingsIcon from '$lib/images/ui/sort_servings.png';
+	import tasteIcon from '$lib/images/ui/sort_taste.png';
+	import levelIcon from '$lib/images/ui/sort_level.png';
+	import servingsIcon from '$lib/images/ui/sort_servings.png';
 	import servingsImage from '$lib/images/ui/servings.png';
 	import coinImage from '$lib/images/ui/coin.png';
 
@@ -83,6 +83,8 @@
 		if (tracked) trackedDishIds.track(dish.id);
 		else trackedDishIds.untrack(dish.id);
 	});
+
+	const iconPx = 20;
 </script>
 
 <article
@@ -101,10 +103,10 @@
 				</div>
 			</div>
 
-			<div class="min-w-0 flex-1 space-y-4">
+			<div class="min-w-0 flex-1 space-y-2">
 				<header>
-					<div class="truncate text-lg leading-none font-semibold">{dish.name}</div>
-					<div class="text-md mt-1 flex items-center gap-2">
+					<div class="mb-2 truncate text-lg leading-none font-semibold">{dish.name}</div>
+					<div class="text-md flex items-center gap-2">
 						{#if dish.staff}
 							<span class="truncate opacity-70">
 								{#if dish.staff === 'Any staff' || !dish.staffId}
@@ -126,15 +128,12 @@
 					</div>
 				</header>
 
-				<!--
 				<div class="flex items-center gap-x-3 text-center">
-					<span class="opacity-70">Max:</span>
-
-					<span>
+					<span class="badge rounded-full preset-filled-surface-50-950 pr-2 pl-1">
 						<img
-							class="inline-block h-4 w-4 object-contain align-text-bottom"
+							class="align-text-baseline h-4 w-4"
 							src={levelIcon}
-							alt="Max Level"
+							alt="Level"
 							loading="lazy"
 							decoding="async"
 							width={iconPx}
@@ -143,9 +142,9 @@
 						<span>{dish.maxLevel}</span>
 					</span>
 
-					<span>
+					<span class="badge rounded-full preset-filled-surface-50-950 pr-2 pl-1">
 						<img
-							class="inline-block h-4 w-4 object-contain align-text-bottom"
+							class="align-text-center inline-block h-4 w-4 object-contain"
 							src={tasteIcon}
 							alt="Taste"
 							loading="lazy"
@@ -156,7 +155,7 @@
 						<span>{dish.finalTaste}</span>
 					</span>
 
-					<span>
+					<span class="badge rounded-full preset-filled-surface-50-950 pr-2 pl-1">
 						<img
 							class="inline-block h-4 w-4 object-contain align-text-bottom"
 							src={servingsIcon}
@@ -169,7 +168,6 @@
 						<span>{dish.finalServings}</span>
 					</span>
 				</div>
-				-->
 			</div>
 		</div>
 	</section>
