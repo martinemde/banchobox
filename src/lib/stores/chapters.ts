@@ -44,7 +44,11 @@ export const selectedChapter = derived([bundle, selectedChapterId], ([$bundle, $
 	}
 
 	if (chapter == null) {
-		chapter = ($bundle.rows ?? [])[0] ?? null;
+		// Get first chapter from sorted IDs
+		const firstSortedIds = Object.values($bundle.sortedIds)[0];
+		if (firstSortedIds && firstSortedIds.length > 0) {
+			chapter = $bundle.byId[firstSortedIds[0]] ?? null;
+		}
 	}
 
 	return chapter;
@@ -59,9 +63,12 @@ if (browser) {
 		const currentSelection = selectedChapterIdStore.get();
 		if (currentSelection != null) return;
 
-		const firstChapter = ($bundle.rows ?? [])[0] ?? null;
-		if (firstChapter) {
-			selectedChapterIdStore.set(firstChapter.id);
+		const firstSortedIds = Object.values($bundle.sortedIds)[0];
+		if (firstSortedIds && firstSortedIds.length > 0) {
+			const firstChapter = $bundle.byId[firstSortedIds[0]] ?? null;
+			if (firstChapter) {
+				selectedChapterIdStore.set(firstChapter.id);
+			}
 		}
 	});
 }

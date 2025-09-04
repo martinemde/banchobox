@@ -61,13 +61,23 @@ export function exportData(args: {
 	);
 	writeFileSync(join(outputDir, `staff.${version}.json`), JSON.stringify(staffBundle, null, 2));
 
-	console.log(`${partiesBundle.rows.length}\tParties`);
-	console.log(`${partyDishesBundle.rows.length}\tParty-dishes`);
-	console.log(`${dishesBundle.rows.length}\tDishes`);
-	console.log(`${ingredientsBundle.rows.length}\tIngredients`);
-	console.log(`${cookstaBundle.rows.length}\tCooksta tiers`);
-	console.log(`${dlcBundle.rows.length}\tDLCs`);
-	console.log(`${chaptersBundle.rows.length}\tChapters`);
-	console.log(`${staffBundle.rows.length}\tStaff`);
+	// Helper function to count items in bundle (supports both old and new format)
+	const getItemCount = (bundle: any): number => {
+		if (bundle.sortedIds) {
+			// New format: count from byId
+			return Object.keys(bundle.byId).length;
+		}
+		// Old format: count from rows
+		return bundle.rows?.length || 0;
+	};
+
+	console.log(`${getItemCount(partiesBundle)}\tParties`);
+	console.log(`${getItemCount(partyDishesBundle)}\tParty-dishes`);
+	console.log(`${getItemCount(dishesBundle)}\tDishes`);
+	console.log(`${getItemCount(ingredientsBundle)}\tIngredients`);
+	console.log(`${getItemCount(cookstaBundle)}\tCooksta tiers`);
+	console.log(`${getItemCount(dlcBundle)}\tDLCs`);
+	console.log(`${getItemCount(chaptersBundle)}\tChapters`);
+	console.log(`${getItemCount(staffBundle)}\tStaff`);
 	console.log(`Data exported to /src/lib/data with version ${version}\n`);
 }

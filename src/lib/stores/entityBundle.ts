@@ -46,6 +46,41 @@ export function createEntityStores<
 		return dir === 'asc' ? (a < b ? -1 : a > b ? 1 : 0) : b < a ? -1 : b > a ? 1 : 0;
 	}
 
+	function isPrecomputedSort(
+		bundle: EntityBundle<Row>,
+		sortKey: string,
+		sortDir: 'asc' | 'desc'
+	): boolean {
+		const sortedIds = bundle.sortedIds;
+		const key = `${sortKey}_${sortDir}`;
+		return sortedIds && key in sortedIds;
+	}
+
+	function getDefaultRows(
+		bundle: EntityBundle<Row>,
+		sortKey: string,
+		sortDir: 'asc' | 'desc'
+	): Row[] {
+		const sortedIds = bundle.sortedIds;
+		const key = `${sortKey}_${sortDir}`;
+
+		// Use precomputed sort if available
+		if (sortedIds && key in sortedIds) {
+			return sortedIds[key].map((id) => bundle.byId[id]).filter(Boolean);
+		}
+
+		// Fallback: use first available sorted array or all IDs
+		if (sortedIds) {
+			const firstSortKey = Object.keys(sortedIds)[0];
+			if (firstSortKey && sortedIds[firstSortKey]) {
+				return sortedIds[firstSortKey].map((id) => bundle.byId[id]).filter(Boolean);
+			}
+		}
+
+		// Final fallback: create array from all byId entries
+		return Object.values(bundle.byId);
+	}
+
 	function processFilters(
 		$bundle: EntityBundle<Row> | null,
 		$query: string,
@@ -85,7 +120,7 @@ export function createEntityStores<
 		// Map to rows
 		let rows: Row[] = candidateIds
 			? candidateIds.map((id) => $bundle.byId[id]).filter(Boolean)
-			: ($bundle.rows as Row[]);
+			: getDefaultRows($bundle, $sortKey, $sortDir);
 
 		// 2) Search filter
 		const q = ($query ?? '').trim().toLowerCase();
@@ -93,16 +128,18 @@ export function createEntityStores<
 			rows = rows.filter((r) => (r.search ?? '').includes(q));
 		}
 
-		// 3) Sort
-		const key = $sortKey;
-		rows = [...rows].sort((a, b) => {
-			const aVal = a.sort[key] as string | number | null;
-			const bVal = b.sort[key] as string | number | null;
-			const cmp = compareValues(aVal, bVal, $sortDir);
-			if (cmp !== 0) return cmp;
-			// stable tie-breaker by id
-			return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
-		});
+		// 3) Sort (only if we don't already have a precomputed sort or if candidateIds is specified)
+		if (candidateIds || !isPrecomputedSort($bundle, $sortKey, $sortDir)) {
+			const key = $sortKey;
+			rows = [...rows].sort((a, b) => {
+				const aVal = a.sort[key] as string | number | null;
+				const bVal = b.sort[key] as string | number | null;
+				const cmp = compareValues(aVal, bVal, $sortDir);
+				if (cmp !== 0) return cmp;
+				// stable tie-breaker by id
+				return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
+			});
+		}
 
 		return rows;
 	}
