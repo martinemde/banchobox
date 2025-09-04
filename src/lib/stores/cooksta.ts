@@ -44,7 +44,11 @@ export const selectedTier = derived([bundle, selectedTierId], ([$bundle, $select
 	}
 
 	if (tier == null) {
-		tier = $bundle.rows[0] ?? null;
+		// Get first tier from sorted IDs
+		const firstSortedIds = Object.values($bundle.sortedIds)[0];
+		if (firstSortedIds && firstSortedIds.length > 0) {
+			tier = $bundle.byId[firstSortedIds[0]] ?? null;
+		}
 	}
 
 	return tier;
@@ -59,9 +63,12 @@ if (browser) {
 		const currentSelection = selectedTierIdStore.get();
 		if (currentSelection != null) return;
 
-		const firstTier = $bundle.rows[0] ?? null;
-		if (firstTier) {
-			selectedTierIdStore.set(firstTier.id);
+		const firstSortedIds = Object.values($bundle.sortedIds)[0];
+		if (firstSortedIds && firstSortedIds.length > 0) {
+			const firstTier = $bundle.byId[firstSortedIds[0]] ?? null;
+			if (firstTier) {
+				selectedTierIdStore.set(firstTier.id);
+			}
 		}
 	});
 }
