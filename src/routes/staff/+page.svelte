@@ -2,14 +2,14 @@
 	import StaffCard from './StaffCard.svelte';
 	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
 	import { staffStores } from '$lib/stores/staff';
-	import { hiredStaffIds } from '$lib/stores/hiredStaff.js';
+	import { myBanchoStore } from '$lib/stores/myBancho.svelte';
 	import HiredStaffSidebar from '$lib/ui/HiredStaffSidebar.svelte';
 
 	const { visible } = staffStores;
 
 	const hired = $derived(
 		$visible
-			.filter((s) => $hiredStaffIds.has(s.id))
+			.filter((s) => myBanchoStore.hiredStaffIds.includes(s.id))
 			.map((s) => ({ id: s.id, name: s.name, wage: s.wageMax }))
 	);
 
@@ -49,6 +49,18 @@
 	{/snippet}
 
 	{#snippet rightSidebar()}
-		<HiredStaffSidebar {hired} on:toggleHire={(e) => hiredStaffIds.toggle(e.detail)} />
+		<HiredStaffSidebar
+			{hired}
+			on:toggleHire={(e) => {
+				const staffId = e.detail;
+				if (myBanchoStore.hiredStaffIds.includes(staffId)) {
+					myBanchoStore.hiredStaffIds = myBanchoStore.hiredStaffIds.filter((id) => id !== staffId);
+				} else {
+					if (!myBanchoStore.hiredStaffIds.includes(staffId)) {
+						myBanchoStore.hiredStaffIds = [...myBanchoStore.hiredStaffIds, staffId];
+					}
+				}
+			}}
+		/>
 	{/snippet}
 </EntityBundlePage>

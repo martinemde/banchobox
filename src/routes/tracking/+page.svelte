@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Dish } from '$lib/types.js';
 	import DishCard from '../dishes/DishCard.svelte';
-	import { trackedDishIds } from '$lib/stores/tracking.js';
+	import { trackedDishIds } from '$lib/stores/tracking.svelte';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -10,7 +10,7 @@
 	// Dishes that are currently tracked
 	const trackedDishes = $derived(
 		dishes
-			.filter((d) => $trackedDishIds.has(d.id))
+			.filter((d) => trackedDishIds.includes(d.id))
 			// Stable, readable order: by name
 			.toSorted((a, b) => a.name.localeCompare(b.name))
 	);

@@ -1,105 +1,83 @@
 <script lang="ts">
-	import { SvelteSet } from 'svelte/reactivity';
-	import { persist } from '$lib/utils/persisted.svelte';
-	import { visible as cookstaVisible, selectedTierId, selectedTier } from '$lib/stores/cooksta';
 	import {
-		visible as chaptersVisible,
-		selectedChapterId,
-		selectedChapter
-	} from '$lib/stores/chapters';
-	import { visible as dlcVisible } from '$lib/stores/dlc';
+		allCookstaTiers,
+		getSelectedCookstaTier,
+		myBanchoStore,
+		allChapters,
+		getSelectedChapter,
+		allDLCs,
+		isDLCEnabled,
+		enabledDLCs,
+		toggleDLC
+	} from '$lib/stores/myBancho.svelte';
 
-	let {
-		enabledDlcIds = new SvelteSet<number>(),
-		expanded = $bindable(true)
-	}: { enabledDlcIds?: Set<number>; expanded?: boolean } = $props();
+	let { expanded = $bindable(false) }: { expanded?: boolean } = $props();
 
-	const cookstaTiers = $derived($cookstaVisible ?? []);
-	const chapterRows = $derived($chaptersVisible ?? []);
-	const dlcRows = $derived($dlcVisible ?? []);
-
-	let editBancho = $state(false);
-
-	persist(
-		'filtersPanel.myBanchoExpanded',
-		() => expanded,
-		(v) => (expanded = v),
-		{
-			version: 'v1'
-		}
-	);
-	persist(
-		'filtersPanel.enabledDlcIds',
-		() => enabledDlcIds,
-		(v) => {
-			enabledDlcIds.clear();
-			for (const id of v) enabledDlcIds.add(id);
-		},
-		{
-			version: 'v1',
-			serialize: (set) => JSON.stringify(Array.from(set.values())),
-			deserialize: (raw) => new SvelteSet<number>(JSON.parse(raw) as number[])
-		}
-	);
-
-	function toggleDlc(id: number, checked: boolean) {
-		if (checked) enabledDlcIds.add(id);
-		else enabledDlcIds.delete(id);
-	}
+	let enabledDLCNames = $derived(enabledDLCs().map((d) => d.name));
 </script>
 
 <div class="rounded-lg border border-white/10 bg-primary-500/10 p-3">
-	<div class="mb-2 flex items-center justify-between text-sm font-semibold">
+	<div class="text-sm font-semibold">
 		<button
-			class="flex items-center gap-2 opacity-90 hover:opacity-100"
+			class="relative w-full items-start gap-2 opacity-90 hover:opacity-100"
 			type="button"
 			onclick={() => (expanded = !expanded)}
 			aria-expanded={expanded}
 			aria-controls="my-bancho-panel"
 		>
-			<span
-				class="h-0 w-0 border-t-[5px] border-b-[5px] border-l-[6px] border-t-transparent border-b-transparent border-l-current transition-transform duration-150 ease-linear"
-				class:rotate-90={expanded}
-			></span>
-			<span>
-				{expanded ? 'My Bancho' : `${$selectedTier?.name ?? ''} - ${$selectedChapter?.name ?? ''}`}
-			</span>
+			<div class="absolute top-0 right-0 flex-shrink-0 font-normal opacity-80 hover:opacity-100">
+				{expanded ? 'Done' : 'Edit'}
+			</div>
+			<div class="justify-start truncate text-left">
+				{#if expanded}
+					My Bancho
+				{:else}
+					{getSelectedChapter().name}
+					- {getSelectedCookstaTier()?.name ?? ''}
+					{#if enabledDLCNames.length > 0}
+						<span class="block font-normal">
+							{enabledDLCNames.join(', ')}
+						</span>
+					{/if}
+				{/if}
+			</div>
 		</button>
-		{#if expanded}
-			<button
-				class="text-xs font-normal opacity-80 hover:opacity-100"
-				type="button"
-				onclick={() => (editBancho = !editBancho)}
-			>
-				{editBancho ? 'Done' : 'Edit'}
-			</button>
-		{/if}
 	</div>
 
 	{#if expanded}
 		<div id="my-bancho-panel">
-			{#if editBancho}
+			{#if expanded}
 				<label class="label" aria-label="Cooksta">
-					<select class="ig-select" bind:value={$selectedTierId}>
-						{#each cookstaTiers as t (t.id)}
-							<option value={t.id}>Cooksta {t.name}</option>
+					<select
+						class="ig-select"
+						value={myBanchoStore.selectedCookstaTierId}
+						onchange={(e) =>
+							(myBanchoStore.selectedCookstaTierId = Number((e.target as HTMLSelectElement).value))}
+					>
+						{#each allCookstaTiers as cookstaTier (cookstaTier.id)}
+							<option value={cookstaTier.id}>Cooksta {cookstaTier.name}</option>
 						{/each}
 					</select>
 				</label>
 				<label class="label" aria-label="Chapter">
-					<select class="ig-select" bind:value={$selectedChapterId}>
-						{#each chapterRows as c (c.id)}
-							<option value={c.id}>{c.name}</option>
+					<select
+						class="ig-select"
+						value={myBanchoStore.selectedChapterId}
+						onchange={(e) =>
+							(myBanchoStore.selectedChapterId = Number((e.target as HTMLSelectElement).value))}
+					>
+						{#each allChapters as chapter (chapter.id)}
+							<option value={chapter.id}>{chapter.name}</option>
 						{/each}
 					</select>
 				</label>
 				<fieldset class="mt-2 space-y-1 pl-3 text-sm">
-					{#each dlcRows as d (d.id)}
+					{#each allDLCs as d (d.id)}
 						<label class="flex items-center gap-2">
 							<input
 								type="checkbox"
-								checked={enabledDlcIds.has(d.id)}
-								onchange={(e) => toggleDlc(d.id, (e.currentTarget as HTMLInputElement).checked)}
+								checked={isDLCEnabled(d.id)}
+								onchange={(e) => toggleDLC(d.id, (e.currentTarget as HTMLInputElement).checked)}
 							/>
 							{d.name}
 						</label>
@@ -107,17 +85,13 @@
 				</fieldset>
 			{:else}
 				<div class="items-start text-sm">
-					<div class="p-1">Cooksta {$selectedTier?.name ?? ''}</div>
-					<div class="p-1">{$selectedChapter?.name ?? ''}</div>
-					{#if Array.from(enabledDlcIds).length === 0}
-						<span>&mdash;</span>
-					{:else}
-						<ul class="list-inside list-disc space-y-1 p-1">
-							{#each dlcRows.filter((d) => enabledDlcIds.has(d.id)) as d (d.id)}
-								<li>{d.name} DLC</li>
-							{/each}
-						</ul>
-					{/if}
+					<div class="p-1">Cooksta {getSelectedCookstaTier().name ?? ''}</div>
+					<div class="p-1">{getSelectedChapter().name ?? ''}</div>
+					<ul class="list-inside list-disc space-y-1 p-1">
+						{#each allDLCs.filter((d) => isDLCEnabled(d.id)) as d (d.id)}
+							<li>{d.name} DLC</li>
+						{/each}
+					</ul>
 				</div>
 			{/if}
 		</div>

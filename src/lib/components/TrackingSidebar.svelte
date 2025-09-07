@@ -1,10 +1,15 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-	let { tracked = $bindable<Array<{ id: number; name: string; profit: number }>>([]) } = $props();
-	const dispatch = createEventDispatcher<{ toggleTrack: number }>();
-	function emit(id: number) {
-		dispatch('toggleTrack', id);
-	}
+	import { toggleTrackedDish, trackedDishIds } from '$lib/stores/tracking.svelte';
+	import { bundle } from '$lib/stores/dishes';
+
+	// Get all tracked dishes from the store, regardless of filtering
+	const tracked = $derived(
+		$bundle
+			? $bundle.rows
+					.filter((dish) => trackedDishIds.includes(dish.id))
+					.map((dish) => ({ id: dish.id, name: dish.name, profit: dish.finalProfit }))
+			: []
+	);
 </script>
 
 <div class="flex items-center justify-between">
@@ -27,7 +32,7 @@
 				<div class="truncate text-sm font-medium">{t.name}</div>
 				<div class="mt-1 flex items-center justify-between text-xs opacity-70">
 					<span>Profit {t.profit.toLocaleString()}</span>
-					<button class="underline" onclick={() => emit(t.id)}>Remove</button>
+					<button class="underline" onclick={() => toggleTrackedDish(t.id, false)}>Remove</button>
 				</div>
 			</li>
 		{/each}

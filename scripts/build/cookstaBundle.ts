@@ -30,10 +30,9 @@ export function loadCooksta() {
 
 function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
 	const tiers: CookstaTier[] = inputRows
-		.map((row, idx) => {
-			const id: Id = idx + 1;
+		.map((row) => {
 			return {
-				id,
+				id: row.id,
 				name: row.name,
 				rank: row.rank,
 				customers: row.customers,

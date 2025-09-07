@@ -3,7 +3,7 @@
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 	import { Soup } from '@lucide/svelte';
-	import { hiredStaffIds } from '$lib/stores/hiredStaff.js';
+	import { myBanchoStore } from '$lib/stores/myBancho.svelte';
 
 	let { staff }: { staff: Staff } = $props();
 
@@ -24,7 +24,7 @@
 	}
 
 	// Track hired staff using centralized store
-	const isHired = $derived($hiredStaffIds && $hiredStaffIds.has(staff.id));
+	const isHired = $derived(myBanchoStore.hiredStaffIds.includes(staff.id));
 
 	function formatNumber(value: number | null | undefined): string {
 		if (value == null || Number.isNaN(value as number)) return '—';
@@ -32,7 +32,13 @@
 	}
 
 	function toggleHired() {
-		hiredStaffIds.toggle(staff.id);
+		if (isHired) {
+			myBanchoStore.hiredStaffIds = myBanchoStore.hiredStaffIds.filter((id) => id !== staff.id);
+		} else {
+			if (!myBanchoStore.hiredStaffIds.includes(staff.id)) {
+				myBanchoStore.hiredStaffIds = [...myBanchoStore.hiredStaffIds, staff.id];
+			}
+		}
 	}
 
 	const skills = $derived([staff.skillLevel3, staff.skillLevel7].filter(Boolean) as string[]);

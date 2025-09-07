@@ -5,14 +5,19 @@
 	import tastyImage from '$lib/images/ui/tasty_big.png';
 	import type { PartyDish } from '$lib/types.js';
 	import { SvelteMap } from 'svelte/reactivity';
-	import { SvelteSet } from 'svelte/reactivity';
 	import { bundle as dishesBundle } from '$lib/stores/dishes.js';
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
-	import { selectedTier, selectedTierId, visible as cookstaVisible } from '$lib/stores/cooksta.js';
-	import { selectedChapterId, visible as chaptersVisible } from '$lib/stores/chapters.js';
-	import { trackedDishIds } from '$lib/stores/tracking.js';
-	import { visible as dlcVisible } from '$lib/stores/dlc.js';
+	import {
+		getSelectedCookstaTier,
+		allChapters,
+		myBanchoStore,
+		allCookstaTiers,
+		allDLCs,
+		isDLCEnabled,
+		toggleDLC
+	} from '$lib/stores/myBancho.svelte';
+	import { trackedDishIds } from '$lib/stores/tracking.svelte';
 	import { bundle as staffBundle } from '$lib/stores/staff.js';
 
 	// Data from stores
@@ -70,41 +75,27 @@
 	);
 
 	// Cooksta derived stats and next tier
-	const cookstaTiers = $derived($cookstaVisible ?? []);
-	const cookstaCurrent = $derived($selectedTier);
-	const cookstaCurrentId = $derived($selectedTier?.id ?? null);
-	const normalCustomers = $derived(cookstaCurrent?.customers ?? 0);
-	const nightCustomers = $derived(cookstaCurrent?.customerNight ?? 0);
-	const partyTotalCustomers = $derived(cookstaCurrent?.customers ?? 0);
-	const partyGuests = $derived(cookstaCurrent?.partyCustomers ?? 0);
+	const normalCustomers = $derived(getSelectedCookstaTier()?.customers ?? 0);
+	const nightCustomers = $derived(getSelectedCookstaTier()?.customerNight ?? 0);
+	const partyTotalCustomers = $derived(getSelectedCookstaTier()?.customers ?? 0);
+	const partyGuests = $derived(getSelectedCookstaTier()?.partyCustomers ?? 0);
 	const partyRegulars = $derived(Math.max(0, partyTotalCustomers - partyGuests));
-	const operatingCost = $derived(cookstaCurrent?.operatingCost ?? 0);
-	const kitchenStaff = $derived(cookstaCurrent?.kitchenStaff ?? 0);
-	const servingStaff = $derived(cookstaCurrent?.servingStaff ?? 0);
+	const operatingCost = $derived(getSelectedCookstaTier()?.operatingCost ?? 0);
+	const kitchenStaff = $derived(getSelectedCookstaTier()?.kitchenStaff ?? 0);
+	const servingStaff = $derived(getSelectedCookstaTier()?.servingStaff ?? 0);
 
-	const tierIndex = $derived(
+	const cookstaTierIndex = $derived(
 		Math.max(
 			0,
-			cookstaTiers.findIndex((t) => t.id === cookstaCurrentId)
+			allCookstaTiers.findIndex(
+				(cookstaTier) => cookstaTier.id === myBanchoStore.selectedCookstaTierId
+			)
 		)
 	);
-	const nextTier = $derived(cookstaTiers[tierIndex + 1] ?? null);
-
-	// Chapters selection
-	const chapters = $derived($chaptersVisible ?? []);
+	const nextCookstaTier = $derived(allCookstaTiers[cookstaTierIndex + 1] ?? null);
 
 	// Tracking preview
-	const tracked = $derived(dishes.filter((d) => $trackedDishIds.has(d.id)).slice(0, 3));
-
-	// DLC demo selection state
-	const dlcs = $derived($dlcVisible ?? []);
-	let enabledDLCIds = $state(new Set<number>());
-	function toggleDLC(id: number, checked: boolean) {
-		const next = new SvelteSet(enabledDLCIds);
-		if (checked) next.add(id);
-		else next.delete(id);
-		enabledDLCIds = next;
-	}
+	const tracked = $derived(dishes.filter((d) => trackedDishIds.includes(d.id)).slice(0, 3));
 
 	// Staff selection (limited by current Cooksta tier allowances)
 	const staffRows = $derived($staffBundle?.rows ?? []);
@@ -158,12 +149,12 @@
 				>
 					<div class="mb-4 flex items-center justify-between">
 						<div class="text-sm opacity-80">Tonight’s Menu</div>
-						<div class="text-xs opacity-60">Cooksta {$selectedTier?.name ?? ''}</div>
+						<div class="text-xs opacity-60">Cooksta {getSelectedCookstaTier()?.name ?? ''}</div>
 					</div>
 					<div class="grid grid-cols-3 gap-3">
 						<div>
 							<div class="text-[0.7rem] opacity-70">Cooksta</div>
-							<div class="font-bold">{$selectedTier?.name ?? ''}</div>
+							<div class="font-bold">{getSelectedCookstaTier()?.name ?? ''}</div>
 						</div>
 						<div>
 							<div class="text-[0.7rem] opacity-70">Menu</div>
@@ -213,9 +204,13 @@
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<label class="label">
 				<div class="label-text text-[0.8rem] opacity-70">Cooksta Rank</div>
-				<select class="ig-select" bind:value={$selectedTierId}>
-					{#each cookstaTiers as t (t.id)}
-						<option value={t.id}>{t.name}</option>
+				<select
+					class="ig-select"
+					value={myBanchoStore.selectedCookstaTierId}
+					onchange={(e) => (myBanchoStore.selectedCookstaTierId = Number(e.currentTarget.value))}
+				>
+					{#each allCookstaTiers as cookstaTier (cookstaTier.id)}
+						<option value={cookstaTier.id}>{cookstaTier.name}</option>
 					{/each}
 				</select>
 			</label>
@@ -223,8 +218,12 @@
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<label class="label">
 				<div class="label-text text-[0.8rem] opacity-70">Story Progress</div>
-				<select class="ig-select" bind:value={$selectedChapterId}>
-					{#each chapters as c (c.id)}
+				<select
+					class="ig-select"
+					value={myBanchoStore.selectedChapterId}
+					onchange={(e) => (myBanchoStore.selectedChapterId = Number(e.currentTarget.value))}
+				>
+					{#each allChapters as c (c.id)}
 						<option value={c.id}>{c.name}</option>
 					{/each}
 				</select>
@@ -243,11 +242,11 @@
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="text-[0.8rem] opacity-70">DLCs</div>
 			<fieldset class="mt-2 space-y-1 text-sm">
-				{#each dlcs as d (d.id)}
+				{#each allDLCs as d (d.id)}
 					<label class="flex items-center gap-2">
 						<input
 							type="checkbox"
-							checked={enabledDLCIds.has(d.id)}
+							checked={isDLCEnabled(d.id)}
 							onchange={(e) => toggleDLC(d.id, (e.currentTarget as HTMLInputElement).checked)}
 						/>
 						{d.name}
@@ -324,15 +323,15 @@
 	</div>
 
 	<!-- Advancement requirements -->
-	{#if nextTier}
+	{#if nextCookstaTier}
 		<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
-			<div class="mb-2 text-sm font-semibold">Advance to {nextTier.name}</div>
+			<div class="mb-2 text-sm font-semibold">Advance to {nextCookstaTier.name}</div>
 			<div class="grid gap-3 text-sm sm:grid-cols-3">
 				<div>
 					<div class="opacity-70">Followers</div>
-					<div class="font-semibold">≥ {nextTier.followers}</div>
+					<div class="font-semibold">≥ {nextCookstaTier.followers}</div>
 				</div>
-				{#if nextTier.bestTaste > 0}
+				{#if nextCookstaTier.bestTaste > 0}
 					<div class="flex items-center gap-2">
 						<img
 							src={tastyImage}
@@ -344,16 +343,16 @@
 						/>
 						<div>
 							<div class="opacity-70">Best taste</div>
-							<div class="font-semibold">≥ {nextTier.bestTaste}</div>
+							<div class="font-semibold">≥ {nextCookstaTier.bestTaste}</div>
 						</div>
 					</div>
 				{/if}
-				{#if nextTier.recipes > 0}
+				{#if nextCookstaTier.recipes > 0}
 					<div class="flex items-center gap-2">
 						<img src={artisansFlames} alt="Artisans Flames" width="30" height="30" class="pixel" />
 						<div>
 							<div class="leading-tight opacity-70">Research</div>
-							<div class="leading-tight font-semibold">{nextTier.recipes} recipes</div>
+							<div class="leading-tight font-semibold">{nextCookstaTier.recipes} recipes</div>
 						</div>
 					</div>
 				{/if}

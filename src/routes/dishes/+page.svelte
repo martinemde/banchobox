@@ -2,15 +2,8 @@
 	import Dish from './DishCard.svelte';
 	import { dishesStores } from '$lib/stores/dishes';
 	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
-	import { trackedDishIds } from '$lib/stores/tracking.js';
 
 	const { visible } = dishesStores;
-
-	const tracked = $derived(
-		$visible
-			.filter((d) => $trackedDishIds.has(d.id))
-			.map((d) => ({ id: d.id, name: d.name, profit: d.finalProfit }))
-	);
 
 	const sortOptions = [
 		{ value: 'name', label: 'Name' },
@@ -39,8 +32,7 @@
 	searchPlaceholder="Search dishes by name, ingredient, DLC, unlock…"
 	{sortOptions}
 	containerClass="dishes"
-	trackedItems={tracked}
-	onToggleTrack={(id) => trackedDishIds.toggle(id as unknown as number)}
+	showTracking={true}
 >
 	{#snippet content()}
 		{#each $visible as dish (dish.id)}

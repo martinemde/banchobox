@@ -7,17 +7,11 @@
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
 	import ResultsHeader from '$lib/ui/ResultsHeader.svelte';
 	import TrackingSidebar from '$lib/components/TrackingSidebar.svelte';
-	import type { Id, BundleEntity } from '$lib/types';
+	import type { BundleEntity } from '$lib/types';
 
 	type SortOption = {
 		value: string;
 		label: string;
-	};
-
-	type TrackedItem = {
-		id: Id;
-		name: string;
-		profit?: number;
 	};
 
 	let {
@@ -29,8 +23,7 @@
 		sortOptions,
 		containerClass = '',
 		// Optional tracking support
-		trackedItems = undefined,
-		onToggleTrack = undefined,
+		showTracking = false,
 		// Optional right sidebar support
 		rightSidebar = undefined,
 		// Content to render
@@ -44,8 +37,7 @@
 		sortOptions: SortOption[];
 		containerClass?: string;
 		// Optional tracking support
-		trackedItems?: TrackedItem[];
-		onToggleTrack?: (id: Id) => void;
+		showTracking?: boolean;
 		// Optional right sidebar support
 		rightSidebar?: Snippet;
 		// Content to render
@@ -71,7 +63,7 @@
 	let myBanchoExpanded = $state(true);
 
 	// Show sidebars
-	const showTrackingSidebar = $derived(Boolean(trackedItems && onToggleTrack));
+	const showTrackingSidebar = $derived(showTracking);
 	const showRightSidebar = $derived(showTrackingSidebar || Boolean(rightSidebar));
 </script>
 
@@ -110,7 +102,7 @@
 
 {#snippet rightSnippet()}
 	{#if showTrackingSidebar}
-		<TrackingSidebar tracked={trackedItems} on:toggleTrack={(e) => onToggleTrack?.(e.detail)} />
+		<TrackingSidebar />
 	{:else if rightSidebar}
 		{@render rightSidebar()}
 	{/if}

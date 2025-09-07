@@ -3,7 +3,7 @@
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import ProfitTable from '$lib/components/ProfitTable.svelte';
 	import TrackButton from '$lib/components/TrackButton.svelte';
-	import { trackedDishIds } from '$lib/stores/tracking.js';
+	import { trackedDishIds, toggleTrackedDish } from '$lib/stores/tracking.svelte';
 	import { PartyPopper, Soup } from '@lucide/svelte';
 	import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
 	import RecipeSummaryIcons from '$lib/components/RecipeSummaryIcons.svelte';
@@ -35,8 +35,7 @@
 	}
 
 	function onTrackChange(checked: boolean) {
-		if (checked) trackedDishIds.track(dish.id);
-		else trackedDishIds.untrack(dish.id);
+		toggleTrackedDish(dish.id, checked);
 	}
 	// Minimize per-card memory by keeping only metadata for controls
 	type PartyDishMeta = { id: Id; partyId: Id; partyName: string; partyBonus: number };
@@ -71,17 +70,10 @@
 	}
 
 	// Two-way tracked binding via store
-	let tracked = $state(false);
+	let tracked = $derived(trackedDishIds.includes(dish.id));
 	$effect(() => {
-		const unsub = trackedDishIds.subscribe((set) => {
-			const v = set.has(dish.id);
-			if (tracked !== v) tracked = v;
-		});
-		return () => unsub();
-	});
-	$effect(() => {
-		if (tracked) trackedDishIds.track(dish.id);
-		else trackedDishIds.untrack(dish.id);
+		const tracked = trackedDishIds.includes(dish.id);
+		toggleTrackedDish(dish.id, tracked);
 	});
 
 	const iconPx = 20;

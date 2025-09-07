@@ -133,7 +133,7 @@ describe('staffBundle', () => {
 					partyIds: [],
 					finalServings: 5,
 					finalPrice: 50
-				} as Dish
+				} as unknown as Dish
 			];
 		});
 
@@ -304,10 +304,10 @@ describe('staffBundle', () => {
 			bundle.rows.forEach((staff) => {
 				// The staffBundle code uses: const dlc = (r.dlc ?? 'Base').toString();
 				// But since empty string is truthy, it becomes the empty string, not 'Base'
-				const expectedDlc = (staff.dlc ?? 'Base').toString();
+				const expectedDLC = (staff.dlc ?? 'Base').toString();
 
 				// Make sure the category exists before checking
-				expect(bundle.facets.DLC).toHaveProperty(expectedDlc);
+				expect(bundle.facets.DLC).toHaveProperty(expectedDLC);
 				expect(bundle.facets.DLC[expectedDlc]).toContain(staff.id);
 			});
 
