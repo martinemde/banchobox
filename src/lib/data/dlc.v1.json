@@ -28,6 +28,15 @@
       "search": "ichiban"
     }
   ],
+  "sorted": {
+    "order": {
+      "asc": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
   "byId": {
     "1": {
       "id": 1,

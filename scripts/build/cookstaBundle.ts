@@ -56,9 +56,11 @@ export function buildCookstaBundle(inputRows: CookstaInputRow[]): EntityBundle<C
 	const byId = Object.fromEntries(rows.map((t) => [t.id, t])) as Record<Id, CookstaTier>;
 
 	// Generate basic sorted IDs
-	const sortedIds: Record<string, Id[]> = {
-		order_asc: rows.map((t) => t.id)
+	const sorted = {
+		order: {
+			asc: rows.map((t) => t.id)
+		}
 	};
 
-	return { rows, sortedIds, byId, facets: {} };
+	return { rows, sorted, byId, facets: {} };
 }

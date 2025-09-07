@@ -241,11 +241,13 @@ export function buildIngredientsBundle(
 	}
 
 	// Generate basic sorted IDs
-	const sortedIds: Record<string, Id[]> = {
-		name_asc: ingredients.map((i) => i.id)
+	const sorted = {
+		name: {
+			asc: ingredients.map((i) => i.id)
+		}
 	};
 
-	return { rows: ingredients, sortedIds, byId, facets };
+	return { rows: ingredients, sorted, byId, facets };
 }
 
 // Helpers: facet building for buildIngredientsBundle

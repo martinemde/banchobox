@@ -39,9 +39,11 @@ export function buildDLCBundle(inputRows: DLCInputRow[]): EntityBundle<DLC> {
 	const byId = Object.fromEntries(rows.map((r) => [r.id, r])) as Record<Id, DLC>;
 
 	// Generate basic sorted IDs
-	const sortedIds: Record<string, Id[]> = {
-		order_asc: rows.map((r) => r.id)
+	const sorted = {
+		order: {
+			asc: rows.map((r) => r.id)
+		}
 	};
 
-	return { rows, sortedIds, byId, facets: {} };
+	return { rows, sorted, byId, facets: {} };
 }

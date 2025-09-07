@@ -63,8 +63,8 @@ export function exportData(args: {
 
 	// Helper function to count items in bundle (supports both old and new format)
 	const getItemCount = (bundle: EntityBundle<unknown>): number => {
-		if (bundle.sortedIds) {
-			// New format: count from byId
+		if (bundle.sorted) {
+			// New format: count from byId (works with both flat and nested sorted structures)
 			return Object.keys(bundle.byId).length;
 		}
 		// Old format: count from rows

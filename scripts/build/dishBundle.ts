@@ -258,10 +258,16 @@ export function buildDishesBundle({
 
 	// Helper function to get rows from either new or old bundle format
 	const getRows = <T>(bundle: EntityBundle<T>): T[] => {
-		if ('sortedIds' in bundle && bundle.sortedIds) {
-			const firstSortedIds = Object.values(bundle.sortedIds)[0];
-			if (firstSortedIds && firstSortedIds.length > 0) {
-				return firstSortedIds.map((id) => bundle.byId[id]).filter(Boolean);
+		if ('sorted' in bundle && bundle.sorted) {
+			// Try to get the first available sorted list
+			for (const sortKey of Object.keys(bundle.sorted)) {
+				const directions = bundle.sorted[sortKey];
+				if (directions && typeof directions === 'object') {
+					const firstDirection = Object.values(directions)[0];
+					if (Array.isArray(firstDirection) && firstDirection.length > 0) {
+						return firstDirection.map((id) => bundle.byId[id]).filter(Boolean);
+					}
+				}
 			}
 		}
 		// Fallback to rows if available (backward compatibility)
@@ -330,7 +336,7 @@ export function buildDishesBundle({
 	}
 
 	// Generate precomputed sort orders for common sort keys
-	const sortedIds: Record<string, Id[]> = {};
+	const sorted: Record<string, Record<string, Id[]>> = {};
 
 	const sortKeys: Array<{ key: string; direction: 'asc' | 'desc' }> = [
 		{ key: 'name', direction: 'asc' },
@@ -343,7 +349,7 @@ export function buildDishesBundle({
 	];
 
 	for (const { key, direction } of sortKeys) {
-		const sorted = [...dishes].sort((a, b) => {
+		const sortedDishes = [...dishes].sort((a, b) => {
 			const aVal = a.sort[key] as string | number | null;
 			const bVal = b.sort[key] as string | number | null;
 
@@ -374,12 +380,13 @@ export function buildDishesBundle({
 			return a.id - b.id;
 		});
 
-		sortedIds[`${key}_${direction}`] = sorted.map((d) => d.id);
+		if (!sorted[key]) sorted[key] = {};
+		sorted[key][direction] = sortedDishes.map((d) => d.id);
 	}
 
 	return {
 		rows: dishes, // Keep for backward compatibility during transition
-		sortedIds,
+		sorted,
 		byId,
 		facets
 	};

@@ -87,7 +87,7 @@ const mockDishes: Dish[] = [
 
 const mockChaptersBundle: EntityBundle<Chapter> = {
 	rows: [{ id: 1, number: 1, name: 'Chapter 1', subtitle: 'Test', search: '', sort: { order: 1 } }],
-	sortedIds: { order_asc: [1] },
+	sorted: { order: { asc: [1] } },
 	byId: {
 		1: { id: 1, number: 1, name: 'Chapter 1', subtitle: 'Test', search: '', sort: { order: 1 } }
 	},
@@ -96,14 +96,14 @@ const mockChaptersBundle: EntityBundle<Chapter> = {
 
 const mockIngredientsBundle: EntityBundle<Ingredient> = {
 	rows: [],
-	sortedIds: {},
+	sorted: {},
 	byId: {},
 	facets: {}
 };
 
 const mockPartiesBundle: EntityBundle<Party> = {
 	rows: [],
-	sortedIds: {},
+	sorted: {},
 	byId: {},
 	facets: {}
 };
@@ -126,7 +126,7 @@ const mockCookstaBundle: EntityBundle<CookstaTier> = {
 			sort: { order: 1 }
 		}
 	],
-	sortedIds: { order_asc: [1] },
+	sorted: { order: { asc: [1] } },
 	byId: {
 		1: {
 			id: 1,
@@ -148,7 +148,7 @@ const mockCookstaBundle: EntityBundle<CookstaTier> = {
 };
 
 describe('buildDishesBundle', () => {
-	it('should create bundle with both rows and sortedIds', () => {
+	it('should create bundle with both rows and sorted', () => {
 		const bundle = buildDishesBundle({
 			dishes: mockDishes,
 			chaptersBundle: mockChaptersBundle,
@@ -157,14 +157,14 @@ describe('buildDishesBundle', () => {
 			cookstaBundle: mockCookstaBundle
 		});
 
-		// Check structure - should have both rows and sortedIds during transition
+		// Check structure - should have both rows and sorted during transition
 		expect(bundle).toHaveProperty('rows');
-		expect(bundle).toHaveProperty('sortedIds');
+		expect(bundle).toHaveProperty('sorted');
 		expect(bundle).toHaveProperty('byId');
 		expect(bundle).toHaveProperty('facets');
 	});
 
-	it('should create correct sortedIds arrays', () => {
+	it('should create correct sorted arrays', () => {
 		const bundle = buildDishesBundle({
 			dishes: mockDishes,
 			chaptersBundle: mockChaptersBundle,
@@ -173,18 +173,21 @@ describe('buildDishesBundle', () => {
 			cookstaBundle: mockCookstaBundle
 		});
 
-		// Check that sortedIds has expected keys
-		expect(bundle.sortedIds).toHaveProperty('name_asc');
-		expect(bundle.sortedIds).toHaveProperty('finalProfitPerServing_desc');
-		expect(bundle.sortedIds).toHaveProperty('finalPrice_desc');
+		// Check that sorted has expected keys with nested structure
+		expect(bundle.sorted).toHaveProperty('name');
+		expect(bundle.sorted).toHaveProperty('finalProfitPerServing');
+		expect(bundle.sorted).toHaveProperty('finalPrice');
+		expect(bundle.sorted.name).toHaveProperty('asc');
+		expect(bundle.sorted.finalProfitPerServing).toHaveProperty('desc');
+		expect(bundle.sorted.finalPrice).toHaveProperty('desc');
 
 		// Check sorting correctness
-		const nameAsc = bundle.sortedIds.name_asc;
+		const nameAsc = bundle.sorted.name.asc;
 		expect(nameAsc).toHaveLength(2);
 		expect(nameAsc[0]).toBe(1); // "Test Dish A" comes first
 		expect(nameAsc[1]).toBe(2); // "Test Dish B" comes second
 
-		const profitDesc = bundle.sortedIds.finalProfitPerServing_desc;
+		const profitDesc = bundle.sorted.finalProfitPerServing.desc;
 		expect(profitDesc).toHaveLength(2);
 		expect(profitDesc[0]).toBe(2); // Dish B has higher profit (193)
 		expect(profitDesc[1]).toBe(1); // Dish A has lower profit (95)

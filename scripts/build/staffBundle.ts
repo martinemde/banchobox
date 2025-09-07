@@ -167,7 +167,7 @@ function initEmptyFacets(): EntityBundle<Staff>['facets'] {
 
 // Add a single staff member to the facets
 function addStaffToFacets(facets: EntityBundle<Staff>['facets'], r: Staff): void {
-	const dlc = (r.dlc ?? 'Base').toString();
+	const dlc = !r.dlc || r.dlc.trim() === '' ? 'Base' : r.dlc.toString();
 	(facets.DLC[dlc] ??= []).push(r.id);
 
 	const skills = [r.skillLevel3, r.skillLevel7].filter(Boolean) as string[];
@@ -196,9 +196,11 @@ export function buildStaffBundle(inputRows: StaffInputRow[], dishes: Dish[]): En
 	const facets = computeFacets(rows);
 
 	// Generate basic sorted IDs
-	const sortedIds: Record<string, Id[]> = {
-		name_asc: rows.map((s) => s.id)
+	const sorted = {
+		name: {
+			asc: rows.map((s) => s.id)
+		}
 	};
 
-	return { rows, sortedIds, byId, facets };
+	return { rows, sorted, byId, facets };
 }

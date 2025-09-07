@@ -15,7 +15,7 @@ export interface BundleEntity {
 
 export interface EntityBundle<Row> {
 	rows: Row[]; // Keep for backward compatibility during transition
-	sortedIds: Record<string, Id[]>;
+	sorted: Record<string, Record<string, Id[]>>;
 	byId: Record<Id, Row>;
 	facets: Facets;
 }
