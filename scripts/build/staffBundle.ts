@@ -195,5 +195,10 @@ export function buildStaffBundle(inputRows: StaffInputRow[], dishes: Dish[]): En
 	const byId = Object.fromEntries(rows.map((s) => [s.id, s])) as Record<Id, Staff>;
 	const facets = computeFacets(rows);
 
-	return { rows, byId, facets };
+	// Generate basic sorted IDs
+	const sortedIds: Record<string, Id[]> = {
+		name_asc: rows.map((s) => s.id)
+	};
+
+	return { rows, sortedIds, byId, facets };
 }

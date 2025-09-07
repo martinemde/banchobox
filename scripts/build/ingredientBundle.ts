@@ -240,7 +240,12 @@ export function buildIngredientsBundle(
 		addCumulativeChapterFacetEntries(facets, ingredient, maxChapter);
 	}
 
-	return { rows: ingredients, byId, facets };
+	// Generate basic sorted IDs
+	const sortedIds: Record<string, Id[]> = {
+		name_asc: ingredients.map((i) => i.id)
+	};
+
+	return { rows: ingredients, sortedIds, byId, facets };
 }
 
 // Helpers: facet building for buildIngredientsBundle
@@ -258,7 +263,9 @@ function initializeIngredientFacets(): EntityBundle<Ingredient>['facets'] {
 }
 
 function computeMaxChapter(chaptersBundle: EntityBundle<Chapter>): number {
-	return Math.max(...chaptersBundle.rows.map((c) => c.number));
+	// Use rows if available, otherwise use byId
+	const chapters = chaptersBundle.rows || Object.values(chaptersBundle.byId);
+	return Math.max(...chapters.map((c) => c.number));
 }
 
 function addIngredientFacetEntries(

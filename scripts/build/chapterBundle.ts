@@ -39,5 +39,11 @@ function computeChapters(inputRows: ChapterInputRow[]): Chapter[] {
 export function buildChapterBundle(inputRows: ChapterInputRow[]): EntityBundle<Chapter> {
 	const rows = computeChapters(inputRows);
 	const byId = Object.fromEntries(rows.map((r) => [r.id, r])) as Record<Id, Chapter>;
-	return { rows, byId, facets: {} };
+
+	// Generate basic sorted IDs
+	const sortedIds: Record<string, Id[]> = {
+		order_asc: rows.map((r) => r.id)
+	};
+
+	return { rows, sortedIds, byId, facets: {} };
 }

@@ -60,8 +60,14 @@ export function buildPartyDishesBundle(partyDishes: PartyDish[]): EntityBundle<P
 		if (unlock) (facets.Unlock[unlock] ??= []).push(pd.id);
 	}
 
+	// Generate basic sorted IDs
+	const sortedIds: Record<string, Id[]> = {
+		name_asc: partyDishes.map((pd) => pd.id)
+	};
+
 	return {
 		rows: partyDishes,
+		sortedIds,
 		byId,
 		facets
 	};

@@ -71,8 +71,14 @@ export function buildPartiesBundle(
 		// Placeholders for future party-level facets
 	};
 
+	// Generate basic sorted IDs
+	const sortedIds: Record<string, Id[]> = {
+		order_asc: parties.map((p) => p.id)
+	};
+
 	return {
 		rows: parties,
+		sortedIds,
 		byId,
 		facets: partyFacets
 	};

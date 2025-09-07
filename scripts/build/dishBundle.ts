@@ -256,10 +256,22 @@ export function buildDishesBundle({
 		'Unlock Condition': {}
 	};
 
-	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
-	const maxCooksta = Math.max(...cookstaBundle.rows.map((c) => c.rank));
-	const minCooksta = Math.min(...cookstaBundle.rows.map((c) => c.rank));
-	const cookstaNameByRank = Object.fromEntries(cookstaBundle.rows.map((c) => [c.rank, c.name]));
+	// Helper function to get rows from either new or old bundle format
+	const getRows = <T>(bundle: EntityBundle<T>): T[] => {
+		if ('sortedIds' in bundle && bundle.sortedIds) {
+			const firstSortedIds = Object.values(bundle.sortedIds)[0];
+			if (firstSortedIds && firstSortedIds.length > 0) {
+				return firstSortedIds.map((id) => bundle.byId[id]).filter(Boolean);
+			}
+		}
+		// Fallback to rows if available (backward compatibility)
+		return bundle.rows || Object.values(bundle.byId);
+	};
+
+	const maxChapter = Math.max(...getRows(chaptersBundle).map((c) => c.number));
+	const maxCooksta = Math.max(...getRows(cookstaBundle).map((c) => c.rank));
+	const minCooksta = Math.min(...getRows(cookstaBundle).map((c) => c.rank));
+	const cookstaNameByRank = Object.fromEntries(getRows(cookstaBundle).map((c) => [c.rank, c.name]));
 
 	for (const d of dishes) {
 		const dlc = (d.dlc ?? 'Base').toString();
@@ -297,7 +309,7 @@ export function buildDishesBundle({
 		// Add the dish to its cooksta unlock level and up
 		// If it doesn't have a cooksta, it's available in all tiers
 		if (d.cooksta !== null && d.cooksta !== undefined && d.cooksta.trim() !== '') {
-			const cookstaTier = cookstaBundle.rows.find((c) => c.name === d.cooksta)!;
+			const cookstaTier = getRows(cookstaBundle).find((c) => c.name === d.cooksta)!;
 			for (let n = cookstaTier.rank; n <= maxCooksta; n++) {
 				(facets.Cooksta[cookstaNameByRank[n]] ??= []).push(d.id);
 			}
@@ -317,8 +329,57 @@ export function buildDishesBundle({
 		}
 	}
 
+	// Generate precomputed sort orders for common sort keys
+	const sortedIds: Record<string, Id[]> = {};
+
+	const sortKeys: Array<{ key: string; direction: 'asc' | 'desc' }> = [
+		{ key: 'name', direction: 'asc' },
+		{ key: 'finalPrice', direction: 'desc' },
+		{ key: 'finalServings', direction: 'desc' },
+		{ key: 'finalProfitPerServing', direction: 'desc' },
+		{ key: 'maxProfitPerServing', direction: 'desc' },
+		{ key: 'upgradeCost', direction: 'asc' },
+		{ key: 'ingredientCount', direction: 'asc' }
+	];
+
+	for (const { key, direction } of sortKeys) {
+		const sorted = [...dishes].sort((a, b) => {
+			const aVal = a.sort[key] as string | number | null;
+			const bVal = b.sort[key] as string | number | null;
+
+			if (aVal == null && bVal == null) return 0;
+			if (aVal == null) return direction === 'asc' ? -1 : 1;
+			if (bVal == null) return direction === 'asc' ? 1 : -1;
+
+			if (typeof aVal === 'string' && typeof bVal === 'string') {
+				const cmp = direction === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+				if (cmp !== 0) return cmp;
+			} else {
+				const cmp =
+					direction === 'asc'
+						? aVal < bVal
+							? -1
+							: aVal > bVal
+								? 1
+								: 0
+						: bVal < aVal
+							? -1
+							: bVal > aVal
+								? 1
+								: 0;
+				if (cmp !== 0) return cmp;
+			}
+
+			// Stable tie-breaker by id
+			return a.id - b.id;
+		});
+
+		sortedIds[`${key}_${direction}`] = sorted.map((d) => d.id);
+	}
+
 	return {
-		rows: dishes,
+		rows: dishes, // Keep for backward compatibility during transition
+		sortedIds,
 		byId,
 		facets
 	};

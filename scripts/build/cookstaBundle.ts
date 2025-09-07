@@ -54,5 +54,11 @@ function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
 export function buildCookstaBundle(inputRows: CookstaInputRow[]): EntityBundle<CookstaTier> {
 	const rows = computeTiers(inputRows);
 	const byId = Object.fromEntries(rows.map((t) => [t.id, t])) as Record<Id, CookstaTier>;
-	return { rows, byId, facets: {} };
+
+	// Generate basic sorted IDs
+	const sortedIds: Record<string, Id[]> = {
+		order_asc: rows.map((t) => t.id)
+	};
+
+	return { rows, sortedIds, byId, facets: {} };
 }
