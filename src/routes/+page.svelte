@@ -11,7 +11,10 @@
 	import {
 		getSelectedCookstaTier,
 		allChapters,
-		myBanchoStore,
+		selectedChapterId,
+		selectedCookstaTierId,
+		setSelectedChapter,
+		setSelectedCookstaTier,
 		allCookstaTiers,
 		allDLCs,
 		isDLCEnabled,
@@ -87,9 +90,7 @@
 	const cookstaTierIndex = $derived(
 		Math.max(
 			0,
-			allCookstaTiers.findIndex(
-				(cookstaTier) => cookstaTier.id === myBanchoStore.selectedCookstaTierId
-			)
+			allCookstaTiers.findIndex((cookstaTier) => cookstaTier.id === selectedCookstaTierId)
 		)
 	);
 	const nextCookstaTier = $derived(allCookstaTiers[cookstaTierIndex + 1] ?? null);
@@ -206,8 +207,8 @@
 				<div class="label-text text-[0.8rem] opacity-70">Cooksta Rank</div>
 				<select
 					class="ig-select"
-					value={myBanchoStore.selectedCookstaTierId}
-					onchange={(e) => (myBanchoStore.selectedCookstaTierId = Number(e.currentTarget.value))}
+					value={selectedCookstaTierId}
+					onchange={(e) => setSelectedCookstaTier(Number(e.currentTarget.value))}
 				>
 					{#each allCookstaTiers as cookstaTier (cookstaTier.id)}
 						<option value={cookstaTier.id}>{cookstaTier.name}</option>
@@ -220,8 +221,8 @@
 				<div class="label-text text-[0.8rem] opacity-70">Story Progress</div>
 				<select
 					class="ig-select"
-					value={myBanchoStore.selectedChapterId}
-					onchange={(e) => (myBanchoStore.selectedChapterId = Number(e.currentTarget.value))}
+					value={selectedChapterId}
+					onchange={(e) => setSelectedChapter(Number(e.currentTarget.value))}
 				>
 					{#each allChapters as c (c.id)}
 						<option value={c.id}>{c.name}</option>

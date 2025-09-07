@@ -6,7 +6,7 @@ const trackedDishIdsStore = new LocalStore<Id[]>('trackedDishIds.v1', []);
 export const trackedDishIds = trackedDishIdsStore.value;
 
 // Toggle tracked dish
-export function toggleTrackedDish(dishId: Id, tracked: boolean | undefined) {
+export function toggleTrackedDish(dishId: Id, tracked?: boolean) {
 	const currentIds = trackedDishIdsStore.value;
 	if (tracked === undefined) {
 		tracked = !currentIds.includes(dishId);

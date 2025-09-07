@@ -2,6 +2,7 @@ import type { Chapter, CookstaTier, DLC, EntityBundle, Id } from '$lib/types.js'
 import chaptersData from '$lib/data/chapters.v1.json';
 import cookstaData from '$lib/data/cooksta.v1.json';
 import dlcData from '$lib/data/dlc.v1.json';
+import { LocalStore } from '$lib/utils/LocalStore.svelte.js';
 
 // Load static data bundles
 const chaptersBundleData: EntityBundle<Chapter> = chaptersData as EntityBundle<Chapter>;
@@ -14,18 +15,23 @@ export const allCookstaTiers = cookstaBundleData.rows;
 export const allDLCs = dlcBundleData.rows;
 
 // -----------------------------
-// Simple Reactive State Store
+// Persisted Reactive State Stores
 // -----------------------------
 
-class MyBanchoStore {
-	selectedChapterId = $state<Id | null>(allChapters[0].id);
-	selectedCookstaTierId = $state<Id | null>(allCookstaTiers[0].id);
-	enabledDLCIds = $state<Id[]>([]);
-	hiredStaffIds = $state<number[]>([]);
-}
+// Internal persisted state stores
+const selectedChapterIdStore = new LocalStore<Id | null>('selectedChapterId.v1', allChapters[0].id);
+const selectedCookstaTierIdStore = new LocalStore<Id | null>(
+	'selectedCookstaTierId.v1',
+	allCookstaTiers[0].id
+);
+const enabledDLCIdsStore = new LocalStore<Id[]>('enabledDLCIds.v1', []);
+const hiredStaffIdsStore = new LocalStore<number[]>('hiredStaffIds.v1', []);
 
-// Export single store instance
-export const myBanchoStore = new MyBanchoStore();
+// Export reactive values
+export const selectedChapterId = selectedChapterIdStore.value;
+export const selectedCookstaTierId = selectedCookstaTierIdStore.value;
+export const enabledDLCIds = enabledDLCIdsStore.value;
+export const hiredStaffIds = hiredStaffIdsStore.value;
 
 // -----------------------------
 // Accessor Functions (return actual objects)
@@ -33,8 +39,8 @@ export const myBanchoStore = new MyBanchoStore();
 
 // Get current selected chapter object
 export function getSelectedChapter(): Chapter {
-	if (myBanchoStore.selectedChapterId != null) {
-		return chaptersBundleData.byId[myBanchoStore.selectedChapterId];
+	if (selectedChapterId != null) {
+		return chaptersBundleData.byId[selectedChapterId];
 	} else {
 		return allChapters[0];
 	}
@@ -42,39 +48,46 @@ export function getSelectedChapter(): Chapter {
 
 // Get current selected cooksta tier object
 export function getSelectedCookstaTier(): CookstaTier {
-	if (myBanchoStore.selectedCookstaTierId != null) {
-		return cookstaBundleData.byId[myBanchoStore.selectedCookstaTierId];
+	if (selectedCookstaTierId != null) {
+		return cookstaBundleData.byId[selectedCookstaTierId];
 	} else {
 		return allCookstaTiers[0];
 	}
 }
 
-export const enabledDLCs = () => allDLCs.filter((d) => myBanchoStore.enabledDLCIds.includes(d.id));
+export const enabledDLCs = () => allDLCs.filter((d) => enabledDLCIds.includes(d.id));
 
 // Check if DLC is enabled
 export const isDLCEnabled = (id: number) => {
-	return myBanchoStore.enabledDLCIds.includes(id);
+	return enabledDLCIds.includes(id);
 };
 
 // Helper functions for common operations
 export function toggleHiredStaff(staffId: number, hired: boolean) {
 	if (hired) {
-		if (!myBanchoStore.hiredStaffIds.includes(staffId)) {
-			myBanchoStore.hiredStaffIds = [...myBanchoStore.hiredStaffIds, staffId];
+		if (!hiredStaffIds.includes(staffId)) {
+			hiredStaffIdsStore.value = [...hiredStaffIds, staffId];
 		}
 	} else {
-		myBanchoStore.hiredStaffIds = myBanchoStore.hiredStaffIds.filter((id) => id !== staffId);
+		hiredStaffIdsStore.value = hiredStaffIds.filter((id) => id !== staffId);
 	}
 }
 
 export function toggleDLC(id: number, enabled: boolean) {
 	if (enabled) {
-		if (!myBanchoStore.enabledDLCIds.includes(id)) {
-			myBanchoStore.enabledDLCIds = [...myBanchoStore.enabledDLCIds, id];
+		if (!enabledDLCIds.includes(id)) {
+			enabledDLCIdsStore.value = [...enabledDLCIds, id];
 		}
 	} else {
-		myBanchoStore.enabledDLCIds = myBanchoStore.enabledDLCIds.filter(
-			(existingId) => existingId !== id
-		);
+		enabledDLCIdsStore.value = enabledDLCIds.filter((existingId) => existingId !== id);
 	}
+}
+
+// Helper functions to update selected chapter and cooksta tier
+export function setSelectedChapter(chapterId: Id | null) {
+	selectedChapterIdStore.value = chapterId;
+}
+
+export function setSelectedCookstaTier(cookstaTierId: Id | null) {
+	selectedCookstaTierIdStore.value = cookstaTierId;
 }
