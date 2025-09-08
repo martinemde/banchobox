@@ -22,10 +22,11 @@
 	} from '$lib/stores/myBancho.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.svelte';
 	import { bundle as staffBundle } from '$lib/stores/staff.js';
+	import { getSortedRows } from '$lib/stores/entityBundle.js';
 
 	// Data from stores
-	const dishes = $derived($dishesBundle?.rows ?? []);
-	const parties = $derived($partiesBundle?.rows ?? []);
+	const dishes = $derived(getSortedRows($dishesBundle));
+	const parties = $derived(getSortedRows($partiesBundle));
 
 	interface PartyDishRowShape {
 		id: number;
@@ -99,7 +100,7 @@
 	const tracked = $derived(dishes.filter((d) => trackedDishIds.includes(d.id)).slice(0, 3));
 
 	// Staff selection (limited by current Cooksta tier allowances)
-	const staffRows = $derived($staffBundle?.rows ?? []);
+	const staffRows = $derived(getSortedRows($staffBundle));
 	let selectedKitchenStaffIds = $state<Array<number | null>>([]);
 	let selectedServingStaffIds = $state<Array<number | null>>([]);
 	$effect(() => {

@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { toggleTrackedDish, trackedDishIds } from '$lib/stores/tracking.svelte';
 	import { bundle } from '$lib/stores/dishes';
+	import { getSortedRows } from '$lib/stores/entityBundle';
 
 	// Get all tracked dishes from the store, regardless of filtering
 	const tracked = $derived(
 		$bundle
-			? $bundle.rows
+			? getSortedRows($bundle)
 					.filter((dish) => trackedDishIds.includes(dish.id))
 					.map((dish) => ({ id: dish.id, name: dish.name, profit: dish.finalProfit }))
 			: []

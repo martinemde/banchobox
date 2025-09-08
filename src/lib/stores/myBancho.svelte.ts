@@ -3,6 +3,7 @@ import chaptersData from '$lib/data/chapters.v1.json';
 import cookstaData from '$lib/data/cooksta.v1.json';
 import dlcData from '$lib/data/dlc.v1.json';
 import { LocalStore } from '$lib/utils/LocalStore.svelte.js';
+import { getSortedRows } from './entityBundle.js';
 
 // Load static data bundles
 const chaptersBundleData: EntityBundle<Chapter> = chaptersData as EntityBundle<Chapter>;
@@ -10,9 +11,9 @@ const cookstaBundleData: EntityBundle<CookstaTier> = cookstaData as EntityBundle
 const dlcBundleData: EntityBundle<DLC> = dlcData as EntityBundle<DLC>;
 
 // All static data exports
-export const allChapters = chaptersBundleData.rows;
-export const allCookstaTiers = cookstaBundleData.rows;
-export const allDLCs = dlcBundleData.rows;
+export const allChapters = getSortedRows(chaptersBundleData);
+export const allCookstaTiers = getSortedRows(cookstaBundleData);
+export const allDLCs = getSortedRows(dlcBundleData);
 
 // -----------------------------
 // Persisted Reactive State Stores

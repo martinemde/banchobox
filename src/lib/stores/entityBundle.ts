@@ -1,6 +1,64 @@
 import { derived, writable, type Readable, type Writable } from 'svelte/store';
 import type { Id, EntityBundle } from '$lib/types.js';
 
+/**
+ * Internal function to get base rows from sorted structure
+ * Used within reactive contexts to avoid circular dependencies
+ */
+function getBaseRows<Row extends { id: Id }>(
+	bundle: EntityBundle<Row> | null,
+	sortKey: string,
+	sortDir: 'asc' | 'desc'
+): Row[] {
+	if (!bundle) return [];
+
+	// Get the sorted ids for this key and direction
+	const sortedIds = bundle.sorted[sortKey]?.[sortDir];
+	if (!sortedIds) {
+		// Fallback to opposite direction if requested direction not available
+		const fallbackDir = sortDir === 'asc' ? 'desc' : 'asc';
+		const fallbackIds = bundle.sorted[sortKey]?.[fallbackDir];
+		if (fallbackIds) {
+			// Reverse the fallback to match requested direction
+			return [...fallbackIds]
+				.reverse()
+				.map((id) => bundle.byId[id])
+				.filter(Boolean);
+		}
+		// If no sorted data exists for this key, return empty array
+		return [];
+	}
+
+	// Convert ids to rows
+	return sortedIds.map((id) => bundle.byId[id]).filter(Boolean);
+}
+
+/**
+ * Get sorted rows from a bundle using the sorted structure
+ * Public API for external use
+ */
+export function getSortedRows<Row extends { id: Id }>(
+	bundle: EntityBundle<Row> | null,
+	sortKey?: string,
+	sortDir?: 'asc' | 'desc'
+): Row[] {
+	if (!bundle) return [];
+
+	// If no sortKey specified, use the first available sort key
+	if (!sortKey) {
+		const firstSortKey = Object.keys(bundle.sorted)[0];
+		if (!firstSortKey) return []; // No sorted data available
+		sortKey = firstSortKey;
+	}
+
+	// Default to 'asc' if no direction specified
+	if (!sortDir) {
+		sortDir = 'asc';
+	}
+
+	return getBaseRows(bundle, sortKey, sortDir);
+}
+
 export interface EntityStores<
 	Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }
 > {
@@ -82,10 +140,10 @@ export function createEntityStores<
 			}
 		}
 
-		// Map to rows
+		// Map to rows - get base rows from sorted structure or fallback
 		let rows: Row[] = candidateIds
 			? candidateIds.map((id) => $bundle.byId[id]).filter(Boolean)
-			: ($bundle.rows as Row[]);
+			: getBaseRows($bundle, $sortKey, $sortDir);
 
 		// 2) Search filter
 		const q = ($query ?? '').trim().toLowerCase();
@@ -93,16 +151,19 @@ export function createEntityStores<
 			rows = rows.filter((r) => (r.search ?? '').includes(q));
 		}
 
-		// 3) Sort
-		const key = $sortKey;
-		rows = [...rows].sort((a, b) => {
-			const aVal = a.sort[key] as string | number | null;
-			const bVal = b.sort[key] as string | number | null;
-			const cmp = compareValues(aVal, bVal, $sortDir);
-			if (cmp !== 0) return cmp;
-			// stable tie-breaker by id
-			return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
-		});
+		// 3) Sort - only needed if we have candidateIds (filtered results)
+		// When no filters are applied, getSortedRows already returns sorted data
+		if (candidateIds) {
+			const key = $sortKey;
+			rows = [...rows].sort((a, b) => {
+				const aVal = a.sort[key] as string | number | null;
+				const bVal = b.sort[key] as string | number | null;
+				const cmp = compareValues(aVal, bVal, $sortDir);
+				if (cmp !== 0) return cmp;
+				// stable tie-breaker by id
+				return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
+			});
+		}
 
 		return rows;
 	}

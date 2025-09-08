@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { Dish } from '$lib/types.js';
 	import DishCard from '../dishes/DishCard.svelte';
 	import { trackedDishIds } from '$lib/stores/tracking.svelte';
 	import type { PageProps } from './$types';
+	import { getSortedRows } from '$lib/stores/entityBundle';
 
 	let { data }: PageProps = $props();
-	const dishes = $derived((data.dishes as { rows: Dish[] } | undefined)?.rows ?? []);
+	const dishes = $derived(getSortedRows(data.dishes ?? null));
 
 	// Dishes that are currently tracked
 	const trackedDishes = $derived(
