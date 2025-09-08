@@ -137,10 +137,10 @@ describe('staffBundle', () => {
 			];
 		});
 
-		it('should create a complete bundle with rows, byId, and facets', () => {
+		it('should create a complete bundle with sorted, byId, and facets', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
-			expect(bundle).toHaveProperty('rows');
+			expect(bundle).toHaveProperty('sorted');
 			expect(bundle).toHaveProperty('byId');
 			expect(bundle).toHaveProperty('facets');
 		});
@@ -148,44 +148,46 @@ describe('staffBundle', () => {
 		it('should transform input rows into Staff objects with computed fields', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
-			expect(bundle.rows.length).toBeGreaterThan(0);
+			const staff = Object.values(bundle.byId);
+			expect(staff.length).toBeGreaterThan(0);
 
-			bundle.rows.forEach((staff) => {
+			staff.forEach((staffMember) => {
 				// Should have all original fields
-				expect(staff).toHaveProperty('id');
-				expect(staff).toHaveProperty('name');
-				expect(staff).toHaveProperty('hiringFee');
-				expect(staff).toHaveProperty('skillLevel3');
-				expect(staff).toHaveProperty('skillLevel7');
+				expect(staffMember).toHaveProperty('id');
+				expect(staffMember).toHaveProperty('name');
+				expect(staffMember).toHaveProperty('hiringFee');
+				expect(staffMember).toHaveProperty('skillLevel3');
+				expect(staffMember).toHaveProperty('skillLevel7');
 
 				// Should have computed fields
-				expect(staff).toHaveProperty('dishes');
-				expect(staff).toHaveProperty('search');
-				expect(staff).toHaveProperty('sort');
+				expect(staffMember).toHaveProperty('dishes');
+				expect(staffMember).toHaveProperty('search');
+				expect(staffMember).toHaveProperty('sort');
 
 				// Validate dishes array
-				expect(Array.isArray(staff.dishes)).toBe(true);
+				expect(Array.isArray(staffMember.dishes)).toBe(true);
 
 				// Validate search field (includes name and skills)
-				expect(typeof staff.search).toBe('string');
-				expect(staff.search.includes(staff.name.toLowerCase())).toBe(true);
-				expect(staff.search.includes(staff.skillLevel3.toLowerCase())).toBe(true);
-				expect(staff.search.includes(staff.skillLevel7.toLowerCase())).toBe(true);
+				expect(typeof staffMember.search).toBe('string');
+				expect(staffMember.search.includes(staffMember.name.toLowerCase())).toBe(true);
+				expect(staffMember.search.includes(staffMember.skillLevel3.toLowerCase())).toBe(true);
+				expect(staffMember.search.includes(staffMember.skillLevel7.toLowerCase())).toBe(true);
 
 				// Validate sort object
-				expect(staff.sort).toHaveProperty('name');
-				expect(staff.sort).toHaveProperty('hiringFee');
-				expect(staff.sort).toHaveProperty('wageMax');
-				expect(staff.sort).toHaveProperty('maxSeasonings');
-				expect(staff.sort.name).toBe(staff.name.toLowerCase());
+				expect(staffMember.sort).toHaveProperty('name');
+				expect(staffMember.sort).toHaveProperty('hiringFee');
+				expect(staffMember.sort).toHaveProperty('wageMax');
+				expect(staffMember.sort).toHaveProperty('maxSeasonings');
+				expect(staffMember.sort.name).toBe(staffMember.name.toLowerCase());
 			});
 		});
 
 		it('should correctly associate dishes with staff members', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
-			const kyoko = bundle.rows.find((s) => s.name === 'Kyoko');
-			const liu = bundle.rows.find((s) => s.name === 'Liu');
+			const staff = Object.values(bundle.byId);
+			const kyoko = staff.find((s) => s.name === 'Kyoko');
+			const liu = staff.find((s) => s.name === 'Liu');
 
 			expect(kyoko).toBeDefined();
 			expect(liu).toBeDefined();
@@ -231,19 +233,22 @@ describe('staffBundle', () => {
 			const bundle = buildStaffBundle(inputWithEmpty, mockDishes);
 
 			// Should filter out empty names
-			expect(bundle.rows.every((s) => s.name.trim() !== '')).toBe(true);
-			expect(bundle.rows.find((s) => s.id === 999)).toBeUndefined();
-			expect(bundle.rows.find((s) => s.id === 1000)).toBeUndefined();
+			const staff = Object.values(bundle.byId);
+			expect(staff.every((s) => s.name.trim() !== '')).toBe(true);
+			expect(staff.find((s) => s.id === 999)).toBeUndefined();
+			expect(staff.find((s) => s.id === 1000)).toBeUndefined();
 		});
 
 		it('should create correct byId mapping', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
+			const staff = Object.values(bundle.byId);
+
 			// Should have entry for each staff member
-			expect(Object.keys(bundle.byId).length).toBe(bundle.rows.length);
+			expect(Object.keys(bundle.byId).length).toBe(staff.length);
 
 			// Test specific mappings
-			const firstStaff = bundle.rows[0];
+			const firstStaff = staff[0];
 			expect(bundle.byId[firstStaff.id]).toBeDefined();
 			expect(bundle.byId[firstStaff.id].name).toBe(firstStaff.name);
 
@@ -258,9 +263,11 @@ describe('staffBundle', () => {
 		it('should sort staff by name in ascending order', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
-			const names = bundle.rows.map((s) => s.sort.name);
-			const sortedNames = [...names].sort();
-			expect(names).toEqual(sortedNames);
+			// Get staff in sorted order using the sorted IDs
+			const sortedStaff = bundle.sorted.name.asc.map((id) => bundle.byId[id]);
+			const names = sortedStaff.map((s) => s.sort.name);
+			const expectedSortedNames = [...names].sort();
+			expect(names).toEqual(expectedSortedNames);
 		});
 
 		it('should create correct facets structure', () => {
@@ -301,14 +308,15 @@ describe('staffBundle', () => {
 			expect(dlcCategories.length).toBeGreaterThan(0);
 
 			// Verify staff are correctly categorized
-			bundle.rows.forEach((staff) => {
-				// The staffBundle code uses: const dlc = (r.dlc ?? 'Base').toString();
-				// But since empty string is truthy, it becomes the empty string, not 'Base'
-				const expectedDLC = (staff.dlc ?? 'Base').toString();
+			const staff = Object.values(bundle.byId);
+			staff.forEach((staffMember) => {
+				// The staffBundle code uses: const dlc = !r.dlc || r.dlc.trim() === '' ? 'Base' : r.dlc.toString();
+				const expectedDLC =
+					!staffMember.dlc || staffMember.dlc.trim() === '' ? 'Base' : staffMember.dlc.toString();
 
 				// Make sure the category exists before checking
 				expect(bundle.facets.DLC).toHaveProperty(expectedDLC);
-				expect(bundle.facets.DLC[expectedDlc]).toContain(staff.id);
+				expect(bundle.facets.DLC[expectedDLC]).toContain(staffMember.id);
 			});
 
 			// Should have some category for staff
@@ -319,8 +327,9 @@ describe('staffBundle', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
 			// Test known skills from our sample data
-			const kyoko = bundle.rows.find((s) => s.name === 'Kyoko');
-			const liu = bundle.rows.find((s) => s.name === 'Liu');
+			const staff = Object.values(bundle.byId);
+			const kyoko = staff.find((s) => s.name === 'Kyoko');
+			const liu = staff.find((s) => s.name === 'Liu');
 
 			if (kyoko) {
 				// Kyoko has "Tip Master" and "Drink Serving"
@@ -350,7 +359,7 @@ describe('staffBundle', () => {
 			} as StaffInputRow;
 
 			const bundle = buildStaffBundle([dispatchMasterStaff], []);
-			const staff = bundle.rows[0];
+			const staff = Object.values(bundle.byId)[0];
 
 			// Should add +2 to maxSeasonings for Dispatch Master
 			expect(staff.sort.maxSeasonings).toBe(7); // 5 + 2
@@ -359,7 +368,8 @@ describe('staffBundle', () => {
 		it('should validate specific staff properties from real data', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
-			const kyoko = bundle.rows.find((s) => s.name === 'Kyoko');
+			const staff = Object.values(bundle.byId);
+			const kyoko = staff.find((s) => s.name === 'Kyoko');
 			if (kyoko) {
 				expect(kyoko.hiringFee).toBe(0);
 				expect(kyoko.skillLevel3).toBe('Tip Master');

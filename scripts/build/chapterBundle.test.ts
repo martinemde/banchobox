@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { loadChapters, buildChapterBundle } from './chapterBundle.js';
-import type { ChapterInputRow } from '../../src/lib/types.js';
+import type { ChapterInputRow } from './types.js';
 
 describe('chapterBundle', () => {
 	describe('buildChapterBundle', () => {
@@ -11,10 +11,10 @@ describe('chapterBundle', () => {
 			inputRows = chapters;
 		});
 
-		it('should create a complete bundle with rows, byId, and facets', () => {
+		it('should create a complete bundle with sorted, byId, and facets', () => {
 			const bundle = buildChapterBundle(inputRows);
 
-			expect(bundle).toHaveProperty('rows');
+			expect(bundle).toHaveProperty('sorted');
 			expect(bundle).toHaveProperty('byId');
 			expect(bundle).toHaveProperty('facets');
 		});
@@ -22,9 +22,10 @@ describe('chapterBundle', () => {
 		it('should transform input rows into Chapter objects with computed fields', () => {
 			const bundle = buildChapterBundle(inputRows);
 
-			expect(bundle.rows).toHaveLength(9);
+			const chapters = Object.values(bundle.byId);
+			expect(chapters).toHaveLength(9);
 
-			bundle.rows.forEach((chapter) => {
+			chapters.forEach((chapter) => {
 				// Should have all original fields
 				expect(chapter).toHaveProperty('id');
 				expect(chapter).toHaveProperty('number');
@@ -33,17 +34,12 @@ describe('chapterBundle', () => {
 
 				// Should have computed fields
 				expect(chapter).toHaveProperty('search');
-				expect(chapter).toHaveProperty('sort');
 
 				// Validate search field (lowercased name + subtitle)
 				expect(typeof chapter.search).toBe('string');
 				expect(chapter.search).toBe(
 					[chapter.name, chapter.subtitle].map((s) => s.toLowerCase()).join(' ')
 				);
-
-				// Validate sort object
-				expect(chapter.sort).toHaveProperty('order');
-				expect(chapter.sort.order).toBe(chapter.number);
 			});
 		});
 
@@ -62,7 +58,6 @@ describe('chapterBundle', () => {
 			// Each entry should be a complete Chapter object
 			Object.values(bundle.byId).forEach((chapter) => {
 				expect(chapter).toHaveProperty('search');
-				expect(chapter).toHaveProperty('sort');
 			});
 		});
 	});

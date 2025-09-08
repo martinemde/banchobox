@@ -111,3 +111,31 @@ export interface StaffInputRow {
 	branchPopularityMax: number;
 	branchPopularityMaxAtLevel?: number;
 }
+
+export interface CookstaInputRow {
+	id: Id;
+	name: string;
+	rank: number;
+	customers: number;
+	customerNight: number;
+	partyCustomers: number;
+	followers: number;
+	recipes: number;
+	bestTaste: number;
+	operatingCost: number;
+	kitchenStaff: number;
+	servingStaff: number;
+}
+
+export interface ChapterInputRow {
+	id: Id;
+	number: number;
+	name: string;
+	subtitle: string;
+}
+
+export interface DLCInputRow {
+	id: Id;
+	order: number;
+	name: string;
+}

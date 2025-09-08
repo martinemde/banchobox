@@ -63,12 +63,11 @@ export function buildPartyDishesBundle(partyDishes: PartyDish[]): EntityBundle<P
 	// Generate basic sorted IDs
 	const sorted = {
 		name: {
-			asc: partyDishes.map((pd) => pd.id)
+			asc: partyDishes.sort((a, b) => a.name.localeCompare(b.name)).map((pd) => pd.id)
 		}
 	};
 
 	return {
-		rows: partyDishes,
 		sorted,
 		byId,
 		facets

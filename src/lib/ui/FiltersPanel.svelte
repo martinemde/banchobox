@@ -14,7 +14,7 @@
 		searchPlaceholder,
 		myBanchoExpanded = $bindable(true)
 	}: {
-		bundle: Readable<EntityBundle<{ id: Id; sort: Record<string, string | number | null> }> | null>;
+		bundle: Readable<EntityBundle<{ id: Id }> | null>;
 		filters: Writable<Record<string, Set<string>>>;
 		baselineFilters: Writable<Record<string, Set<string>>>;
 		query?: string;

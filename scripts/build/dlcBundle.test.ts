@@ -11,10 +11,10 @@ describe('dlcBundle', () => {
 			inputRows = dlcs;
 		});
 
-		it('should create a complete bundle with rows, byId, and facets', () => {
+		it('should create a complete bundle with sorted, byId, and facets', () => {
 			const bundle = buildDLCBundle(inputRows);
 
-			expect(bundle).toHaveProperty('rows');
+			expect(bundle).toHaveProperty('sorted');
 			expect(bundle).toHaveProperty('byId');
 			expect(bundle).toHaveProperty('facets');
 		});
@@ -22,9 +22,10 @@ describe('dlcBundle', () => {
 		it('should transform input rows into DLC objects with computed fields', () => {
 			const bundle = buildDLCBundle(inputRows);
 
-			expect(bundle.rows).toHaveLength(3);
+			const dlcs = Object.values(bundle.byId);
+			expect(dlcs).toHaveLength(3);
 
-			bundle.rows.forEach((dlc) => {
+			dlcs.forEach((dlc) => {
 				// Should have all original fields
 				expect(dlc).toHaveProperty('id');
 				expect(dlc).toHaveProperty('name');

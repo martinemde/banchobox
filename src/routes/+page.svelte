@@ -50,7 +50,7 @@
 	const partyRows = $derived(dishesByParty[selectedPartyId]?.rows ?? []);
 	// Sort by party-adjusted profit per serving if available
 	function computePartyProfitPerServing(d: PartyDishRowShape | PartyDish): number {
-		const sortVal = d?.sort?.finalProfitPerServing;
+		const sortVal = d.finalProfitPerServing;
 		const finalPps =
 			d?.finalProfitPerServing ?? (typeof sortVal === 'string' ? Number(sortVal) : (sortVal ?? 0));
 		const bonus = d?.partyBonus ?? 1;

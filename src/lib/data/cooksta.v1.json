@@ -1,108 +1,4 @@
 {
-  "rows": [
-    {
-      "id": 1,
-      "name": "Coal",
-      "rank": 0,
-      "customers": 12,
-      "customerNight": 8,
-      "partyCustomers": 6,
-      "followers": 0,
-      "recipes": 0,
-      "bestTaste": 0,
-      "operatingCost": 0,
-      "kitchenStaff": 0,
-      "servingStaff": 1,
-      "sort": {
-        "order": 0
-      }
-    },
-    {
-      "id": 2,
-      "name": "Bronze",
-      "rank": 1,
-      "customers": 19,
-      "customerNight": 12,
-      "partyCustomers": 10,
-      "followers": 10,
-      "recipes": 0,
-      "bestTaste": 0,
-      "operatingCost": 19,
-      "kitchenStaff": 1,
-      "servingStaff": 1,
-      "sort": {
-        "order": 1
-      }
-    },
-    {
-      "id": 3,
-      "name": "Silver",
-      "rank": 2,
-      "customers": 23,
-      "customerNight": 15,
-      "partyCustomers": 12,
-      "followers": 20,
-      "recipes": 2,
-      "bestTaste": 0,
-      "operatingCost": 40,
-      "kitchenStaff": 1,
-      "servingStaff": 2,
-      "sort": {
-        "order": 2
-      }
-    },
-    {
-      "id": 4,
-      "name": "Gold",
-      "rank": 3,
-      "customers": 28,
-      "customerNight": 18,
-      "partyCustomers": 15,
-      "followers": 100,
-      "recipes": 5,
-      "bestTaste": 125,
-      "operatingCost": 160,
-      "kitchenStaff": 2,
-      "servingStaff": 2,
-      "sort": {
-        "order": 3
-      }
-    },
-    {
-      "id": 5,
-      "name": "Platinum",
-      "rank": 4,
-      "customers": 36,
-      "customerNight": 24,
-      "partyCustomers": 20,
-      "followers": 200,
-      "recipes": 19,
-      "bestTaste": 250,
-      "operatingCost": 750,
-      "kitchenStaff": 2,
-      "servingStaff": 2,
-      "sort": {
-        "order": 4
-      }
-    },
-    {
-      "id": 6,
-      "name": "Diamond",
-      "rank": 5,
-      "customers": 45,
-      "customerNight": 30,
-      "partyCustomers": 25,
-      "followers": 720,
-      "recipes": 32,
-      "bestTaste": 375,
-      "operatingCost": 1250,
-      "kitchenStaff": 2,
-      "servingStaff": 2,
-      "sort": {
-        "order": 5
-      }
-    }
-  ],
   "sorted": {
     "order": {
       "asc": [
@@ -128,10 +24,7 @@
       "bestTaste": 0,
       "operatingCost": 0,
       "kitchenStaff": 0,
-      "servingStaff": 1,
-      "sort": {
-        "order": 0
-      }
+      "servingStaff": 1
     },
     "2": {
       "id": 2,
@@ -145,10 +38,7 @@
       "bestTaste": 0,
       "operatingCost": 19,
       "kitchenStaff": 1,
-      "servingStaff": 1,
-      "sort": {
-        "order": 1
-      }
+      "servingStaff": 1
     },
     "3": {
       "id": 3,
@@ -162,10 +52,7 @@
       "bestTaste": 0,
       "operatingCost": 40,
       "kitchenStaff": 1,
-      "servingStaff": 2,
-      "sort": {
-        "order": 2
-      }
+      "servingStaff": 2
     },
     "4": {
       "id": 4,
@@ -179,10 +66,7 @@
       "bestTaste": 125,
       "operatingCost": 160,
       "kitchenStaff": 2,
-      "servingStaff": 2,
-      "sort": {
-        "order": 3
-      }
+      "servingStaff": 2
     },
     "5": {
       "id": 5,
@@ -196,10 +80,7 @@
       "bestTaste": 250,
       "operatingCost": 750,
       "kitchenStaff": 2,
-      "servingStaff": 2,
-      "sort": {
-        "order": 4
-      }
+      "servingStaff": 2
     },
     "6": {
       "id": 6,
@@ -213,10 +94,7 @@
       "bestTaste": 375,
       "operatingCost": 1250,
       "kitchenStaff": 2,
-      "servingStaff": 2,
-      "sort": {
-        "order": 5
-      }
+      "servingStaff": 2
     }
   },
   "facets": {}

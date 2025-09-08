@@ -33,19 +33,7 @@ const mockDishes: Dish[] = [
 		maxProfitPerServing: 95,
 		upgradeCost: 0,
 		ingredientCount: 0,
-		search: 'test dish a',
-		sort: {
-			name: 'test dish a',
-			finalPrice: 100,
-			finalServings: 2,
-			finalRevenue: 200,
-			finalProfit: 190,
-			finalProfitPerServing: 95,
-			maxProfitPerServing: 95,
-			recipeCost: 10,
-			upgradeCost: 0,
-			ingredientCount: 0
-		}
+		search: 'test dish a'
 	},
 	{
 		id: 2,
@@ -69,63 +57,31 @@ const mockDishes: Dish[] = [
 		maxProfitPerServing: 193,
 		upgradeCost: 0,
 		ingredientCount: 0,
-		search: 'test dish b',
-		sort: {
-			name: 'test dish b',
-			finalPrice: 200,
-			finalServings: 3,
-			finalRevenue: 600,
-			finalProfit: 580,
-			finalProfitPerServing: 193,
-			maxProfitPerServing: 193,
-			recipeCost: 20,
-			upgradeCost: 0,
-			ingredientCount: 0
-		}
+		search: 'test dish b'
 	}
 ];
 
 const mockChaptersBundle: EntityBundle<Chapter> = {
-	rows: [{ id: 1, number: 1, name: 'Chapter 1', subtitle: 'Test', search: '', sort: { order: 1 } }],
 	sorted: { order: { asc: [1] } },
 	byId: {
-		1: { id: 1, number: 1, name: 'Chapter 1', subtitle: 'Test', search: '', sort: { order: 1 } }
+		1: { id: 1, number: 1, name: 'Chapter 1', subtitle: 'Test', search: '' }
 	},
 	facets: {}
 };
 
 const mockIngredientsBundle: EntityBundle<Ingredient> = {
-	rows: [],
 	sorted: {},
 	byId: {},
 	facets: {}
 };
 
 const mockPartiesBundle: EntityBundle<Party> = {
-	rows: [],
 	sorted: {},
 	byId: {},
 	facets: {}
 };
 
 const mockCookstaBundle: EntityBundle<CookstaTier> = {
-	rows: [
-		{
-			id: 1,
-			name: 'Bronze',
-			rank: 1,
-			customers: 10,
-			customerNight: 5,
-			partyCustomers: 15,
-			followers: 100,
-			recipes: 5,
-			bestTaste: 100,
-			operatingCost: 50,
-			kitchenStaff: 2,
-			servingStaff: 2,
-			sort: { order: 1 }
-		}
-	],
 	sorted: { order: { asc: [1] } },
 	byId: {
 		1: {
@@ -140,15 +96,14 @@ const mockCookstaBundle: EntityBundle<CookstaTier> = {
 			bestTaste: 100,
 			operatingCost: 50,
 			kitchenStaff: 2,
-			servingStaff: 2,
-			sort: { order: 1 }
+			servingStaff: 2
 		}
 	},
 	facets: {}
 };
 
 describe('buildDishesBundle', () => {
-	it('should create bundle with both rows and sorted', () => {
+	it('should create bundle with sorted, byId, and facets', () => {
 		const bundle = buildDishesBundle({
 			dishes: mockDishes,
 			chaptersBundle: mockChaptersBundle,
@@ -157,8 +112,7 @@ describe('buildDishesBundle', () => {
 			cookstaBundle: mockCookstaBundle
 		});
 
-		// Check structure - should have both rows and sorted during transition
-		expect(bundle).toHaveProperty('rows');
+		// Check structure
 		expect(bundle).toHaveProperty('sorted');
 		expect(bundle).toHaveProperty('byId');
 		expect(bundle).toHaveProperty('facets');
@@ -221,5 +175,43 @@ describe('buildDishesBundle', () => {
 		expect(bundle.facets).toHaveProperty('DLC');
 		expect(bundle.facets).toHaveProperty('Party');
 		expect(bundle.facets).toHaveProperty('Unlock Condition');
+	});
+
+	it('should have all expected sort keys with correct directions', () => {
+		const bundle = buildDishesBundle({
+			dishes: mockDishes,
+			chaptersBundle: mockChaptersBundle,
+			ingredientsBundle: mockIngredientsBundle,
+			partiesBundle: mockPartiesBundle,
+			cookstaBundle: mockCookstaBundle
+		});
+
+		// Expected sort keys and their directions
+		const expectedSorts = [
+			{ key: 'name', direction: 'asc' },
+			{ key: 'finalPrice', direction: 'desc' },
+			{ key: 'finalServings', direction: 'desc' },
+			{ key: 'finalProfitPerServing', direction: 'desc' },
+			{ key: 'maxProfitPerServing', direction: 'desc' },
+			{ key: 'upgradeCost', direction: 'asc' },
+			{ key: 'ingredientCount', direction: 'asc' }
+		];
+
+		// Verify each expected sort key exists with the correct direction
+		for (const { key, direction } of expectedSorts) {
+			expect(bundle.sorted).toHaveProperty(key);
+			expect(bundle.sorted[key]).toHaveProperty(direction);
+			expect(Array.isArray(bundle.sorted[key][direction])).toBe(true);
+			expect(bundle.sorted[key][direction]).toHaveLength(mockDishes.length);
+
+			// Verify all IDs are present
+			const sortedIds = bundle.sorted[key][direction];
+			const expectedIds = mockDishes.map((d) => d.id).sort((a, b) => a - b);
+			const actualIds = [...sortedIds].sort((a, b) => a - b);
+			expect(actualIds).toEqual(expectedIds);
+		}
+
+		// Verify we have exactly the expected number of sort keys (no more, no less)
+		expect(Object.keys(bundle.sorted)).toHaveLength(expectedSorts.length);
 	});
 });

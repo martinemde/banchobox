@@ -130,10 +130,10 @@ describe('cookstaBundle', () => {
 			inputRows = cooksta;
 		});
 
-		it('should create a complete bundle with rows, byId, and facets', () => {
+		it('should create a complete bundle with sorted, byId, and facets', () => {
 			const bundle = buildCookstaBundle(inputRows);
 
-			expect(bundle).toHaveProperty('rows');
+			expect(bundle).toHaveProperty('sorted');
 			expect(bundle).toHaveProperty('byId');
 			expect(bundle).toHaveProperty('facets');
 		});
@@ -141,9 +141,10 @@ describe('cookstaBundle', () => {
 		it('should transform input rows into CookstaTier objects with computed fields', () => {
 			const bundle = buildCookstaBundle(inputRows);
 
-			expect(bundle.rows).toHaveLength(6);
+			const tiers = Object.values(bundle.byId);
+			expect(tiers).toHaveLength(6);
 
-			bundle.rows.forEach((tier, idx) => {
+			tiers.forEach((tier) => {
 				// Should have all original fields
 				expect(tier).toHaveProperty('id');
 				expect(tier).toHaveProperty('name');
@@ -165,8 +166,8 @@ describe('cookstaBundle', () => {
 				expect(tier.sort).toHaveProperty('order');
 				expect(tier.sort.order).toBe(tier.rank);
 
-				// ID should be sequential (idx + 1)
-				expect(tier.id).toBe(idx + 1);
+				// ID should be positive
+				expect(tier.id).toBeGreaterThan(0);
 			});
 		});
 
@@ -197,20 +198,22 @@ describe('cookstaBundle', () => {
 			});
 		});
 
-		it('should sort tiers by rank in ascending order', () => {
+		it('should have tiers sorted by rank in the sorted array', () => {
 			const bundle = buildCookstaBundle(inputRows);
 
-			const ranks = bundle.rows.map((t) => t.rank);
+			// Get tiers in sorted order using the sorted IDs
+			const sortedTiers = bundle.sorted.order.asc.map((id) => bundle.byId[id]);
+			const ranks = sortedTiers.map((t) => t.rank);
 			const sortedRanks = [...ranks].sort((a, b) => a - b);
 			expect(ranks).toEqual(sortedRanks);
 
 			// Verify specific order
-			expect(bundle.rows[0].name).toBe('Coal'); // rank: 0
-			expect(bundle.rows[1].name).toBe('Bronze'); // rank: 1
-			expect(bundle.rows[2].name).toBe('Silver'); // rank: 2
-			expect(bundle.rows[3].name).toBe('Gold'); // rank: 3
-			expect(bundle.rows[4].name).toBe('Platinum'); // rank: 4
-			expect(bundle.rows[5].name).toBe('Diamond'); // rank: 5
+			expect(sortedTiers[0].name).toBe('Coal'); // rank: 0
+			expect(sortedTiers[1].name).toBe('Bronze'); // rank: 1
+			expect(sortedTiers[2].name).toBe('Silver'); // rank: 2
+			expect(sortedTiers[3].name).toBe('Gold'); // rank: 3
+			expect(sortedTiers[4].name).toBe('Platinum'); // rank: 4
+			expect(sortedTiers[5].name).toBe('Diamond'); // rank: 5
 		});
 
 		it('should have empty facets object', () => {

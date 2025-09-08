@@ -247,7 +247,7 @@ export function buildIngredientsBundle(
 		}
 	};
 
-	return { rows: ingredients, sorted, byId, facets };
+	return { sorted, byId, facets };
 }
 
 // Helpers: facet building for buildIngredientsBundle
@@ -265,8 +265,7 @@ function initializeIngredientFacets(): EntityBundle<Ingredient>['facets'] {
 }
 
 function computeMaxChapter(chaptersBundle: EntityBundle<Chapter>): number {
-	// Use rows if available, otherwise use byId
-	const chapters = chaptersBundle.rows || Object.values(chaptersBundle.byId);
+	const chapters = Object.values(chaptersBundle.byId);
 	return Math.max(...chapters.map((c) => c.number));
 }
 

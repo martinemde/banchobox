@@ -1,5 +1,6 @@
 import { z } from 'zod';
-import type { DLCInputRow, DLC, EntityBundle, Id } from '../../src/lib/types.js';
+import type { DLC, EntityBundle, Id } from '../../src/lib/types.js';
+import type { DLCInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
 
 // dlc-data.csv schema -> normalized row
@@ -22,15 +23,10 @@ function computeDLCs(inputRows: DLCInputRow[]): DLC[] {
 			const dlc: DLC = {
 				id: row.id,
 				name: row.name,
-				sort: {
-					order: row.order,
-					name: row.name.toLowerCase()
-				},
 				search: row.name.toLowerCase()
 			} as DLC;
 			return dlc;
-		})
-		.sort((a, b) => a.sort.order - b.sort.order);
+		});
 	return rows;
 }
 
@@ -41,9 +37,9 @@ export function buildDLCBundle(inputRows: DLCInputRow[]): EntityBundle<DLC> {
 	// Generate basic sorted IDs
 	const sorted = {
 		order: {
-			asc: rows.map((r) => r.id)
+			asc: rows.sort((a, b) => a.id - b.id).map((r) => r.id)
 		}
 	};
 
-	return { rows, sorted, byId, facets: {} };
+	return { sorted, byId, facets: {} };
 }

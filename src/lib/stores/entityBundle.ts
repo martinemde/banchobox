@@ -59,9 +59,7 @@ export function getSortedRows<Row extends { id: Id }>(
 	return getBaseRows(bundle, sortKey, sortDir);
 }
 
-export interface EntityStores<
-	Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }
-> {
+export interface EntityStores<Row extends { id: Id; search?: string }> {
 	bundle: Writable<EntityBundle<Row> | null>;
 	query: Writable<string>;
 	sortKey: Writable<string>;
@@ -72,9 +70,7 @@ export interface EntityStores<
 	visibleWithoutBaseline: Readable<Row[]>; // visible items without baseline filters (for hidden count)
 }
 
-export function createEntityStores<
-	Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }
->(
+export function createEntityStores<Row extends { id: Id; search?: string }>(
 	initial?: Partial<{
 		bundle: EntityBundle<Row> | null;
 		query: string;

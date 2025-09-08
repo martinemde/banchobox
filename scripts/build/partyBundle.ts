@@ -44,13 +44,7 @@ function computeParties(
 			name: row.name,
 			bonus: row.bonus,
 			partyDishIds,
-			search: [row.name.toLowerCase(), `${row.bonus}x`].join(' '),
-			sort: {
-				order: row.order,
-				name: row.name.toLowerCase(),
-				bonus: row.bonus,
-				dishCount: partyDishIds.length
-			}
+			search: [row.name.toLowerCase(), `${row.bonus}x`].join(' ')
 		} as Party;
 
 		return enrichedParty;
@@ -79,7 +73,6 @@ export function buildPartiesBundle(
 	};
 
 	return {
-		rows: parties,
 		sorted,
 		byId,
 		facets: partyFacets

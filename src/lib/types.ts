@@ -9,7 +9,6 @@ export type Facets = Record<string, Record<string, Id[]>>;
  */
 export interface BundleEntity {
 	id: Id;
-	sort: Record<string, string | number | null>;
 	search?: string;
 }
 
@@ -22,21 +21,6 @@ export interface EntityBundle<Row> {
 // --------------------
 // Cooksta data types
 // --------------------
-
-export interface CookstaInputRow {
-	id: Id;
-	name: string;
-	rank: number;
-	customers: number;
-	customerNight: number;
-	partyCustomers: number;
-	followers: number;
-	recipes: number;
-	bestTaste: number;
-	operatingCost: number;
-	kitchenStaff: number;
-	servingStaff: number;
-}
 
 export interface CookstaTier {
 	id: Id;
@@ -51,40 +35,21 @@ export interface CookstaTier {
 	operatingCost: number;
 	kitchenStaff: number;
 	servingStaff: number;
-	// Client-side helpers
-	sort: Record<'order', string | number>; // We only have one field, but we need to stay consistent.
 }
 
 // --------------------
 // DLC data types
 // --------------------
 
-export interface DLCInputRow {
-	id: Id;
-	order: number;
-	name: string;
-}
-
 export interface DLC {
 	id: Id;
 	name: string;
 	search: string;
-	sort: {
-		order: number;
-		name: string;
-	};
 }
 
 // --------------------
 // Chapter data types
 // --------------------
-
-export interface ChapterInputRow {
-	id: Id;
-	number: number;
-	name: string;
-	subtitle: string;
-}
 
 export interface Chapter {
 	id: Id;
@@ -92,12 +57,7 @@ export interface Chapter {
 	name: string;
 	subtitle: string;
 	search: string;
-	sort: {
-		order: number;
-	};
 }
-
-// Build-only Basic* and input-row types moved to scripts/build/types.ts
 
 export interface Party {
 	id: Id;
@@ -105,7 +65,6 @@ export interface Party {
 	bonus: number;
 	partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
 	search: string;
-	sort: PartySort;
 }
 
 // Relationship entities
@@ -154,9 +113,8 @@ export interface Dish {
 	upgradeCost: number; // sum of (unitCost * upgradeCount) for all ingredients
 	ingredientCount: number; // total count of all ingredients
 
-	// Client-side search & sort helpers (precomputed at build time)
+	// Client-side search helpers (precomputed at build time)
 	search: string; // normalized tokens (name, dlc, unlock, ingredient names)
-	sort: Record<DishSortKey, string | number>;
 }
 
 // PartyDish entity - first-class representation of party-dish relationships
@@ -206,9 +164,8 @@ export interface Ingredient {
 	usedForParties: Id[];
 	sellPerKg?: number;
 	vendors?: Record<string, number>;
-	// Client-side search & sort helpers (precomputed at build time)
+	// Client-side search helpers (precomputed at build time)
 	search: string; // normalized tokens (name, source, type, day/night/fog, drone)
-	sort: Record<IngredientSortKey, string | number>;
 }
 
 // Data service interface
@@ -311,7 +268,5 @@ export interface Staff {
 		servings: number;
 		price: number;
 	}>;
-	// Client-side search & sort helpers
 	search: string; // normalized tokens (name, skills)
-	sort: Record<StaffSortKey, string | number>;
 }

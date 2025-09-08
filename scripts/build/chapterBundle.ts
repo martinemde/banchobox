@@ -1,5 +1,6 @@
 import { z } from 'zod';
-import type { ChapterInputRow, Chapter, EntityBundle, Id } from '../../src/lib/types.js';
+import type { Chapter, EntityBundle, Id } from '../../src/lib/types.js';
+import type { ChapterInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
 
 // chapters-data.csv schema -> normalized row
@@ -25,14 +26,10 @@ function computeChapters(inputRows: ChapterInputRow[]): Chapter[] {
 				number: row.number,
 				name: row.name,
 				subtitle: row.subtitle,
-				search: [row.name, row.subtitle].map((s) => s.toLowerCase()).join(' '),
-				sort: {
-					order: row.number
-				}
+				search: [row.name, row.subtitle].map((s) => s.toLowerCase()).join(' ')
 			} as Chapter;
 			return chapter;
-		})
-		.sort((a, b) => a.sort.order - b.sort.order);
+		});
 	return rows;
 }
 
@@ -43,9 +40,9 @@ export function buildChapterBundle(inputRows: ChapterInputRow[]): EntityBundle<C
 	// Generate basic sorted IDs
 	const sorted = {
 		order: {
-			asc: rows.map((r) => r.id)
+			asc: rows.sort((a, b) => a.number - b.number).map((r) => r.id)
 		}
 	};
 
-	return { rows, sorted, byId, facets: {} };
+	return { sorted, byId, facets: {} };
 }

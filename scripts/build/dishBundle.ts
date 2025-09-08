@@ -143,21 +143,6 @@ export function prepareDishesAndPartyDishes(
 				.filter(Boolean)
 				.join(' ');
 
-			const pdSort = {
-				name: normalize(dish.name),
-				finalPrice: partyPrice,
-				finalServings: dish.finalServings,
-				finalRevenue: partyRevenue,
-				finalProfit: partyProfit,
-				finalProfitPerServing: partyProfitPerServing,
-				maxProfitPerServing: partyProfitPerServing,
-				recipeCost,
-				upgradeCost,
-				ingredientCount,
-				partyBonus: party.bonus,
-				partyName: party.name
-			} as const;
-
 			const pd: PartyDish = {
 				...dish,
 				id: nextPartyDishId++,
@@ -173,7 +158,6 @@ export function prepareDishesAndPartyDishes(
 				upgradeCost,
 				ingredientCount,
 				search: pdSearch,
-				sort: pdSort,
 				partyId,
 				dishId: dish.id,
 				partyName: party.name,
@@ -190,19 +174,6 @@ export function prepareDishesAndPartyDishes(
 			partyDishesByPartyId.get(pd.partyId)!.push(pd);
 		}
 		partyDishes.push(...localPartyDishes);
-
-		const sort = {
-			name: normalize(dish.name),
-			finalPrice: dish.finalPrice,
-			finalServings: dish.finalServings,
-			finalRevenue,
-			finalProfit,
-			finalProfitPerServing,
-			maxProfitPerServing,
-			recipeCost,
-			upgradeCost,
-			ingredientCount
-		} as const;
 
 		const staffId =
 			dish.staff && dish.staff !== 'Any staff' ? staffNameToId.get(dish.staff) : undefined;
@@ -221,8 +192,7 @@ export function prepareDishesAndPartyDishes(
 			upgradeCost,
 			ingredientCount,
 			image: dish.image,
-			search,
-			sort
+			search
 		};
 
 		return enrichedDish;
@@ -270,8 +240,7 @@ export function buildDishesBundle({
 				}
 			}
 		}
-		// Fallback to rows if available (backward compatibility)
-		return bundle.rows || Object.values(bundle.byId);
+		return Object.values(bundle.byId);
 	};
 
 	const maxChapter = Math.max(...getRows(chaptersBundle).map((c) => c.number));
@@ -338,20 +307,15 @@ export function buildDishesBundle({
 	// Generate precomputed sort orders for common sort keys
 	const sorted: Record<string, Record<string, Id[]>> = {};
 
-	const sortKeys: Array<{ key: string; direction: 'asc' | 'desc' }> = [
-		{ key: 'name', direction: 'asc' },
-		{ key: 'finalPrice', direction: 'desc' },
-		{ key: 'finalServings', direction: 'desc' },
-		{ key: 'finalProfitPerServing', direction: 'desc' },
-		{ key: 'maxProfitPerServing', direction: 'desc' },
-		{ key: 'upgradeCost', direction: 'asc' },
-		{ key: 'ingredientCount', direction: 'asc' }
-	];
-
-	for (const { key, direction } of sortKeys) {
-		const sortedDishes = [...dishes].sort((a, b) => {
-			const aVal = a.sort[key] as string | number | null;
-			const bVal = b.sort[key] as string | number | null;
+	// Helper function to sort rows by a given key and direction
+	const sortRows = (
+		dishes: Dish[],
+		direction: 'asc' | 'desc',
+		accessor: (item: Dish) => string | number | null
+	) => {
+		const sortedItems = [...dishes].sort((a, b) => {
+			const aVal = accessor(a);
+			const bVal = accessor(b);
 
 			if (aVal == null && bVal == null) return 0;
 			if (aVal == null) return direction === 'asc' ? -1 : 1;
@@ -380,12 +344,18 @@ export function buildDishesBundle({
 			return a.id - b.id;
 		});
 
-		if (!sorted[key]) sorted[key] = {};
-		sorted[key][direction] = sortedDishes.map((d) => d.id);
-	}
+		return { [direction]: sortedItems.map((d) => d.id) };
+	};
+
+	sorted['name'] = sortRows(dishes, 'asc', (a) => a.name);
+	sorted['finalPrice'] = sortRows(dishes, 'desc', (a) => a.finalPrice);
+	sorted['finalServings'] = sortRows(dishes, 'desc', (a) => a.finalServings);
+	sorted['finalProfitPerServing'] = sortRows(dishes, 'desc', (a) => a.finalProfitPerServing);
+	sorted['maxProfitPerServing'] = sortRows(dishes, 'desc', (a) => a.maxProfitPerServing);
+	sorted['upgradeCost'] = sortRows(dishes, 'asc', (a) => a.upgradeCost);
+	sorted['ingredientCount'] = sortRows(dishes, 'asc', (a) => a.ingredientCount);
 
 	return {
-		rows: dishes, // Keep for backward compatibility during transition
 		sorted,
 		byId,
 		facets

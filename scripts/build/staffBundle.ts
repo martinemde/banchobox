@@ -91,20 +91,21 @@ function buildSearchIndex(name: string, skills: string[]): string {
 }
 
 // Build the sort object for a staff row
-function buildSortFromRow(row: StaffInputRow, skills: string[]): Staff['sort'] {
-	let maxSeasonings = row.seasoningsMaxLevel20;
-	if (skills.includes('Dispatch Master')) maxSeasonings = maxSeasonings + 2;
-	return {
-		name: normalize(row.name),
-		hiringFee: row.hiringFee,
-		wageMax: row.wageMax,
-		cookingStatMax: row.cookingStatMax,
-		servingStatMax: row.servingStatMax,
-		procureStatMax: row.procureStatMax,
-		appealStatMax: row.appealStatMax,
-		maxSeasonings
-	};
-}
+// TODO: Reuse this to create the "sorted" objects
+// function buildSortFromRow(row: StaffInputRow, skills: string[]): Staff['sort'] {
+// 	let maxSeasonings = row.seasoningsMaxLevel20;
+// 	if (skills.includes('Dispatch Master')) maxSeasonings = maxSeasonings + 2;
+// 	return {
+// 		name: normalize(row.name),
+// 		hiringFee: row.hiringFee,
+// 		wageMax: row.wageMax,
+// 		cookingStatMax: row.cookingStatMax,
+// 		servingStatMax: row.servingStatMax,
+// 		procureStatMax: row.procureStatMax,
+// 		appealStatMax: row.appealStatMax,
+// 		maxSeasonings
+// 	};
+// }
 
 // Retrieve and sort dishes unlocked by a given staff member
 function getSortedDishesForStaff(map: Map<string, Array<StaffDish>>, staffName: string) {
@@ -120,7 +121,6 @@ function computeStaff(inputRows: StaffInputRow[], dishes: Dish[]): Staff[] {
 		.map((row) => {
 			const skills = extractSkillsFromInput(row);
 			const search = buildSearchIndex(row.name, skills);
-			const sort: Staff['sort'] = buildSortFromRow(row, skills);
 			const staffDishes = getSortedDishesForStaff(dishesUnlockedByStaff, row.name);
 			const staff: Staff = {
 				...row,
@@ -131,7 +131,7 @@ function computeStaff(inputRows: StaffInputRow[], dishes: Dish[]): Staff[] {
 
 			return staff;
 		})
-		.sort((a, b) => (a.sort.name as string).localeCompare(b.sort.name as string));
+		.sort((a, b) => (a.name as string).localeCompare(b.name as string));
 	return rows;
 }
 
@@ -202,5 +202,5 @@ export function buildStaffBundle(inputRows: StaffInputRow[], dishes: Dish[]): En
 		}
 	};
 
-	return { rows, sorted, byId, facets };
+	return { sorted, byId, facets };
 }

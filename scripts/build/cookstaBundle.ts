@@ -1,5 +1,6 @@
 import { z } from 'zod';
-import type { CookstaInputRow, CookstaTier, EntityBundle, Id } from '../../src/lib/types.js';
+import type { CookstaTier, EntityBundle, Id } from '../../src/lib/types.js';
+import type { CookstaInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
 
 // cooksta-data.csv schema
@@ -29,25 +30,22 @@ export function loadCooksta() {
 // context to avoid recomputation during a single build run.
 
 function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
-	const tiers: CookstaTier[] = inputRows
-		.map((row) => {
-			return {
-				id: row.id,
-				name: row.name,
-				rank: row.rank,
-				customers: row.customers,
-				customerNight: row.customerNight,
-				partyCustomers: row.partyCustomers,
-				followers: row.followers,
-				recipes: row.recipes,
-				bestTaste: row.bestTaste,
-				operatingCost: row.operatingCost,
-				kitchenStaff: row.kitchenStaff,
-				servingStaff: row.servingStaff,
-				sort: { order: row.rank }
-			};
-		})
-		.sort((a, b) => a.sort.order - b.sort.order);
+	const tiers: CookstaTier[] = inputRows.map((row) => {
+		return {
+			id: row.id,
+			name: row.name,
+			rank: row.rank,
+			customers: row.customers,
+			customerNight: row.customerNight,
+			partyCustomers: row.partyCustomers,
+			followers: row.followers,
+			recipes: row.recipes,
+			bestTaste: row.bestTaste,
+			operatingCost: row.operatingCost,
+			kitchenStaff: row.kitchenStaff,
+			servingStaff: row.servingStaff
+		};
+	});
 	return tiers;
 }
 
@@ -58,9 +56,9 @@ export function buildCookstaBundle(inputRows: CookstaInputRow[]): EntityBundle<C
 	// Generate basic sorted IDs
 	const sorted = {
 		order: {
-			asc: rows.map((t) => t.id)
+			asc: rows.sort((a, b) => a.rank - b.rank).map((t) => t.id)
 		}
 	};
 
-	return { rows, sorted, byId, facets: {} };
+	return { sorted, byId, facets: {} };
 }
