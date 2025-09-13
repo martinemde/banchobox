@@ -17,22 +17,26 @@ Visit the live application at: **[banchobox.com](https://banchobox.com)**
 ## Tech Stack
 
 ### Core Framework
+
 - **SvelteKit** - Full-stack framework (using Svelte 5 with runes)
 - **TypeScript** - Type-safe development
 - **Vite** - Build tool and dev server
 
 ### UI & Styling
+
 - **Skeleton** (`@skeletonlabs/skeleton-svelte`) - Design system and UI components
 - **Lucide Icons** (`@lucide/svelte`) - Icon library
 - **TailwindCSS** - Utility-first CSS framework
 - **bits-ui** - Headless UI component primitives
 
 ### Data & State Management
+
 - **Svelte 5 Reactivity** - Built-in state management with `$state`, `$derived`, and `$effect`
 - **Zod** - Schema validation for CSV data parsing
 - **csv-parse** - CSV data processing
 
 ### Development Tools
+
 - **Bun** - Package manager and runtime (see below)
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
@@ -42,6 +46,7 @@ Visit the live application at: **[banchobox.com](https://banchobox.com)**
 - **Playwright** - E2E testing
 
 ### Deployment
+
 - **Cloudflare Pages** - Hosting platform (using `@sveltejs/adapter-cloudflare`)
 
 ## Package Manager: BUN ONLY
@@ -154,6 +159,7 @@ bun run test
 ## Key Features
 
 ### State Management
+
 - **Cooksta Store**: Tracks restaurant tier and capabilities
 - **Chapter Store**: Manages story progression
 - **Dish Tracking Store**: Persists user-selected dishes
@@ -161,9 +167,11 @@ bun run test
 - **Staff Store**: Manages hired staff and assignments
 
 ### Persistent Storage
+
 User preferences and tracking data are persisted to localStorage for a seamless experience across sessions.
 
 ### Responsive Design
+
 Built with Skeleton's responsive components and TailwindCSS utilities for mobile-first design.
 
 ## Deployment
