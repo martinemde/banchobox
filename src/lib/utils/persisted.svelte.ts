@@ -14,6 +14,7 @@ function createStorageKey(key: string, version?: string): string {
 export type PersistedStore<T> = {
 	get: () => T;
 	set: (value: T) => void;
+	update: (fn: (value: T) => T) => void;
 	subscribe: (run: (value: T) => void) => () => void;
 };
 
@@ -51,6 +52,7 @@ export function persistedState<T>(
 	let state = persisted !== undefined ? persisted : initialValue;
 
 	// Track subscribers for store contract
+	// eslint-disable-next-line svelte/prefer-svelte-reactivity -- Using plain Set for internal subscriber tracking
 	const subscribers = new Set<(value: T) => void>();
 
 	// Notify all subscribers when state changes
@@ -84,6 +86,12 @@ export function persistedState<T>(
 			state = value;
 			// Write to storage and notify subscribers
 			writeToStorage(value);
+			notifySubscribers();
+		},
+		update: (fn: (value: T) => T) => {
+			state = fn(state);
+			// Write to storage and notify subscribers
+			writeToStorage(state);
 			notifySubscribers();
 		},
 		subscribe: (run: (value: T) => void) => {
