@@ -4,6 +4,7 @@
 	import BanchoIcon from '$lib/images/bancho.svg';
 	import { onMount } from 'svelte';
 	import HeaderLink from './HeaderLink.svelte';
+	import { resolve } from '$app/paths';
 
 	let isHidden = false;
 	let lastScrollY = 0;
@@ -65,17 +66,22 @@
 			{#snippet lead()}
 				<h3 class="flex items-center gap-1 font-bold text-primary-500">
 					<img src={BanchoIcon} alt="BanchoBox" class="h-6 w-6" />
-					<a href="/" class="text-xl sm:text-2xl">BanchoBox</a>
+					<a href={resolve('/')} class="text-xl sm:text-2xl">BanchoBox</a>
 				</h3>
 			{/snippet}
 
 			{#snippet trail()}
 				<nav class="flex items-center gap-0.5 sm:gap-1">
-					<HeaderLink href="/dishes" icon={Soup} label="Dishes" />
-					<HeaderLink href="/ingredients" icon={Shrimp} label="Ingredients" />
-					<HeaderLink href="/parties" icon={PartyPopper} label="Parties" />
-					<HeaderLink href="/staff" icon={Users} label="Staff" />
-					<HeaderLink href="/tracking" icon={ClipboardList} label="Tracking" class="ml-auto" />
+					<HeaderLink href={resolve('/dishes')} icon={Soup} label="Dishes" />
+					<HeaderLink href={resolve('/ingredients')} icon={Shrimp} label="Ingredients" />
+					<HeaderLink href={resolve('/parties')} icon={PartyPopper} label="Parties" />
+					<HeaderLink href={resolve('/staff')} icon={Users} label="Staff" />
+					<HeaderLink
+						href={resolve('/tracking')}
+						icon={ClipboardList}
+						label="Tracking"
+						class="ml-auto"
+					/>
 				</nav>
 			{/snippet}
 		</AppBar>

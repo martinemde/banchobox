@@ -23,6 +23,7 @@
 	import { trackedDishIds } from '$lib/stores/tracking.svelte';
 	import { bundle as staffBundle } from '$lib/stores/staff.js';
 	import { getSortedRows } from '$lib/stores/entityBundle.js';
+	import { resolve } from '$app/paths';
 
 	// Data from stores
 	const dishes = $derived(getSortedRows($dishesBundle));
@@ -143,7 +144,7 @@
 					BanchoBox takes the stress out of planning your Dave the Diver sushi menu with help
 					picking dishes and finding ingredients.
 				</p>
-				<a href="/dishes" class="btn preset-filled btn-lg">Plan Your Menu</a>
+				<a href={resolve('/dishes')} class="btn preset-filled btn-lg">Plan Your Menu</a>
 			</div>
 			<div>
 				<div
@@ -512,7 +513,8 @@
 		</div>
 	{/if}
 	<div class="mt-4">
-		<a href="/tracking" class="btn preset-filled btn-lg">See your full tracking page →</a>
+		<a href={resolve('/tracking')} class="btn preset-filled btn-lg">See your full tracking page →</a
+		>
 	</div>
 </section>
 
@@ -547,11 +549,11 @@
 <section class="mx-auto max-w-7xl px-4 pb-20">
 	<div class="rounded-lg border border-white/10 p-6">
 		<div class="flex flex-wrap items-center gap-4 text-sm">
-			<a class="opacity-90 hover:opacity-100" href="/about">About</a>
-			<a class="opacity-90 hover:opacity-100" href="/tracking">Tracking</a>
-			<a class="opacity-90 hover:opacity-100" href="/dishes">Dishes</a>
-			<a class="opacity-90 hover:opacity-100" href="/ingredients">Ingredients</a>
-			<a class="opacity-90 hover:opacity-100" href="/parties">Parties</a>
+			<a class="opacity-90 hover:opacity-100" href={resolve('/about')}>About</a>
+			<a class="opacity-90 hover:opacity-100" href={resolve('/tracking')}>Tracking</a>
+			<a class="opacity-90 hover:opacity-100" href={resolve('/dishes')}>Dishes</a>
+			<a class="opacity-90 hover:opacity-100" href={resolve('/ingredients')}>Ingredients</a>
+			<a class="opacity-90 hover:opacity-100" href={resolve('/parties')}>Parties</a>
 			<span class="ml-auto flex items-center gap-2 opacity-70">
 				<span>Help Dave help Bancho</span>
 				<img

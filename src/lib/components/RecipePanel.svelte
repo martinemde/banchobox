@@ -3,6 +3,7 @@
 	import { bundle as ingredientsBundle } from '$lib/stores/ingredients.js';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 	import IngredientTypeCount from '$lib/components/IngredientTypeCount.svelte';
+	import { resolve } from '$app/paths';
 
 	let { dish } = $props<{ dish: Dish }>();
 
@@ -37,7 +38,7 @@
 					</td>
 					<td class="p-2">
 						<a
-							href="/ingredients#ingredient-{row.id}"
+							href={resolve(`/ingredients#ingredient-${row.id}`)}
 							class="text-primary-500 transition-colors hover:text-primary-600 hover:underline"
 						>
 							{row.name}

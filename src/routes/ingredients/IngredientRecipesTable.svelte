@@ -6,6 +6,7 @@
 	import servingsImage from '$lib/images/ui/servings.png';
 	import { bundle as dishesBundle } from '$lib/stores/dishes.js';
 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
+	import { resolve } from '$app/paths';
 
 	let {
 		ingredient,
@@ -40,7 +41,7 @@
 				<!-- Dish Name row -->
 				<div class="col-span-3 flex min-w-0 items-center">
 					<a
-						href="/dishes#dish-{row.dishId}"
+						href={resolve(`/dishes#dish-${row.dishId}`)}
 						class="truncate text-primary-500 transition-colors hover:text-primary-600 hover:underline"
 					>
 						{row.dishName}

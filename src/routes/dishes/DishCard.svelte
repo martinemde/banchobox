@@ -14,6 +14,7 @@
 	import servingsIcon from '$lib/images/ui/sort_servings.png';
 	import servingsImage from '$lib/images/ui/servings.png';
 	import coinImage from '$lib/images/ui/coin.png';
+	import { resolve } from '$app/paths';
 
 	let { dish } = $props<{ dish: Dish }>();
 
@@ -102,7 +103,7 @@
 									{dish.staff}
 								{:else}
 									<a
-										href="/staff#staff-{dish.staffId}"
+										href={resolve(`/staff#staff-${dish.staffId}`)}
 										class="text-primary-800-200 transition-colors hover:text-primary-600-400 hover:underline"
 									>
 										{dish.staff}
