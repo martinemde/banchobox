@@ -4,6 +4,8 @@
 	import BanchoIcon from '$lib/images/bancho.svg';
 	import { onMount } from 'svelte';
 	import HeaderLink from './HeaderLink.svelte';
+	import LanguageSwitcher from '$lib/i18n/LanguageSwitcher.svelte';
+	import { t } from '$lib/i18n/index.js';
 
 	let isHidden = false;
 	let lastScrollY = 0;
@@ -65,17 +67,23 @@
 			{#snippet lead()}
 				<h3 class="flex items-center gap-1 font-bold text-primary-500">
 					<img src={BanchoIcon} alt="BanchoBox" class="h-6 w-6" />
-					<a href="/" class="text-xl sm:text-2xl">BanchoBox</a>
+					<a href="/" class="text-xl sm:text-2xl">{$t('header.title')}</a>
 				</h3>
 			{/snippet}
 
 			{#snippet trail()}
 				<nav class="flex items-center gap-0.5 sm:gap-1">
-					<HeaderLink href="/dishes" icon={Soup} label="Dishes" />
-					<HeaderLink href="/ingredients" icon={Shrimp} label="Ingredients" />
-					<HeaderLink href="/parties" icon={PartyPopper} label="Parties" />
-					<HeaderLink href="/staff" icon={Users} label="Staff" />
-					<HeaderLink href="/tracking" icon={ClipboardList} label="Tracking" class="ml-auto" />
+					<HeaderLink href="/dishes" icon={Soup} label={$t('header.dishes')} />
+					<HeaderLink href="/ingredients" icon={Shrimp} label={$t('header.ingredients')} />
+					<HeaderLink href="/parties" icon={PartyPopper} label={$t('header.parties')} />
+					<HeaderLink href="/staff" icon={Users} label={$t('header.staff')} />
+					<HeaderLink
+						href="/tracking"
+						icon={ClipboardList}
+						label={$t('header.tracking')}
+						class="ml-auto"
+					/>
+					<LanguageSwitcher />
 				</nav>
 			{/snippet}
 		</AppBar>

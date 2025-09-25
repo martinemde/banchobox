@@ -14,6 +14,7 @@
 	import { trackedDishIds } from '$lib/stores/tracking.js';
 	import { visible as dlcVisible } from '$lib/stores/dlc.js';
 	import { bundle as staffBundle } from '$lib/stores/staff.js';
+	import { t } from '$lib/i18n/index.js';
 
 	// Data from stores
 	const dishes = $derived($dishesBundle?.rows ?? []);
@@ -144,13 +145,12 @@
 		<div class="grid items-center gap-10 md:grid-cols-2">
 			<div class="text-center">
 				<h1 class="mb-4 text-4xl leading-tight font-extrabold text-primary-500 md:text-6xl">
-					Chef Bancho’s Sushi Bar
+					{$t('home.title')}
 				</h1>
 				<p class="mb-8 text-lg opacity-90 md:text-xl">
-					BanchoBox takes the stress out of planning your Dave the Diver sushi menu with help
-					picking dishes and finding ingredients.
+					{$t('home.subtitle')}
 				</p>
-				<a href="/dishes" class="btn preset-filled btn-lg">Plan Your Menu</a>
+				<a href="/dishes" class="btn preset-filled btn-lg">{$t('home.plan_menu')}</a>
 			</div>
 			<div>
 				<div
@@ -262,12 +262,12 @@
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
 			<div class="mb-2 text-sm font-semibold">Customers</div>
 			<ul class="space-y-1 text-sm opacity-90">
-				<li>Normal night: {normalCustomers}</li>
-				<li>Night dive: {nightCustomers}</li>
+				<li>{$t('home.normal_night')}: {normalCustomers}</li>
+				<li>{$t('home.night_dive')}: {nightCustomers}</li>
 			</ul>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
-			<div class="mb-2 text-sm font-semibold">Party night</div>
+			<div class="mb-2 text-sm font-semibold">{$t('home.party_night')}</div>
 			<ul class="space-y-1 text-sm opacity-90">
 				<li>Total customers: {partyTotalCustomers}</li>
 				<li>Regulars: {partyRegulars}</li>
@@ -275,91 +275,99 @@
 			</ul>
 		</div>
 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
-			<div class="mb-2 text-sm font-semibold">Operating costs</div>
-			<ul class="space-y-1 text-sm opacity-90">
-				<li>Operating cost: {operatingCost}/night</li>
-				<li>Wages: TODO/night</li>
-				<li>Staff: {servingStaff} serving, {kitchenStaff} kitchen</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Staff selection -->
-	<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
-		<h3 class="mb-4 text-lg font-semibold">Staff</h3>
-		<div class="grid gap-6 md:grid-cols-2">
-			<div>
-				<div class="mb-2 text-sm font-semibold">Kitchen Staff ({kitchenStaff})</div>
-				<div class="space-y-2">
-					{#each Array.from({ length: kitchenStaff }, (_, i) => i) as idx (idx)}
-						<label class="flex items-center gap-2">
-							<span class="text-sm opacity-80">Slot {idx + 1}</span>
-							<select class="ig-select" bind:value={selectedKitchenStaffIds[idx]}>
-								<option value={null}>—</option>
-								{#each staffRows as s (s.id)}
-									<option value={s.id}>{s.name}</option>
-								{/each}
-							</select>
-						</label>
-					{/each}
-				</div>
-			</div>
-			<div>
-				<div class="mb-2 text-sm font-semibold">Serving Staff ({servingStaff})</div>
-				<div class="space-y-2">
-					{#each Array.from({ length: servingStaff }, (_, i) => i) as idx (idx)}
-						<label class="flex items-center gap-2">
-							<span class="text-sm opacity-80">Slot {idx + 1}</span>
-							<select class="ig-select" bind:value={selectedServingStaffIds[idx]}>
-								<option value={null}>—</option>
-								{#each staffRows as s (s.id)}
-									<option value={s.id}>{s.name}</option>
-								{/each}
-							</select>
-						</label>
-					{/each}
-				</div>
+			<div class="mb-2 text-sm font-semibold">
+				{$t('home.operating_costs')}/div>
+				<ul class="space-y-1 text-sm opacity-90">
+					<li>{$t('home.operating_cost')}: {operatingCost}/night</li>
+					<li>Wages: TODO/night</li>
+					<li>Staff: {servingStaff} serving, {kitchenStaff} kitchen</li>
+				</ul>
 			</div>
 		</div>
-	</div>
 
-	<!-- Advancement requirements -->
-	{#if nextTier}
+		<!-- Staff selection -->
 		<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
-			<div class="mb-2 text-sm font-semibold">Advance to {nextTier.name}</div>
-			<div class="grid gap-3 text-sm sm:grid-cols-3">
+			<h3 class="mb-4 text-lg font-semibold">Staff</h3>
+			<div class="grid gap-6 md:grid-cols-2">
 				<div>
-					<div class="opacity-70">Followers</div>
-					<div class="font-semibold">≥ {nextTier.followers}</div>
+					<div class="mb-2 text-sm font-semibold">{$t('home.kitchen_staff')} ({kitchenStaff})</div>
+					<div class="space-y-2">
+						{#each Array.from({ length: kitchenStaff }, (_, i) => i) as idx (idx)}
+							<label class="flex items-center gap-2">
+								<span class="text-sm opacity-80">Slot {idx + 1}</span>
+								<select class="ig-select" bind:value={selectedKitchenStaffIds[idx]}>
+									<option value={null}>—</option>
+									{#each staffRows as s (s.id)}
+										<option value={s.id}>{s.name}</option>
+									{/each}
+								</select>
+							</label>
+						{/each}
+					</div>
 				</div>
-				{#if nextTier.bestTaste > 0}
-					<div class="flex items-center gap-2">
-						<img
-							src={tastyImage}
-							alt="Taste Icon"
-							width="30"
-							height="30"
-							class="pixel"
-							aria-hidden="true"
-						/>
-						<div>
-							<div class="opacity-70">Best taste</div>
-							<div class="font-semibold">≥ {nextTier.bestTaste}</div>
-						</div>
+				<div>
+					<div class="mb-2 text-sm font-semibold">{$t('home.serving_staff')} ({servingStaff})</div>
+					<div class="space-y-2">
+						{#each Array.from({ length: servingStaff }, (_, i) => i) as idx (idx)}
+							<label class="flex items-center gap-2">
+								<span class="text-sm opacity-80">Slot {idx + 1}</span>
+								<select class="ig-select" bind:value={selectedServingStaffIds[idx]}>
+									<option value={null}>—</option>
+									{#each staffRows as s (s.id)}
+										<option value={s.id}>{s.name}</option>
+									{/each}
+								</select>
+							</label>
+						{/each}
 					</div>
-				{/if}
-				{#if nextTier.recipes > 0}
-					<div class="flex items-center gap-2">
-						<img src={artisansFlames} alt="Artisans Flames" width="30" height="30" class="pixel" />
-						<div>
-							<div class="leading-tight opacity-70">Research</div>
-							<div class="leading-tight font-semibold">{nextTier.recipes} recipes</div>
-						</div>
-					</div>
-				{/if}
+				</div>
 			</div>
 		</div>
-	{/if}
+
+		<!-- Advancement requirements -->
+		{#if nextTier}
+			<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
+				<div class="mb-2 text-sm font-semibold">Advance to {nextTier.name}</div>
+				<div class="grid gap-3 text-sm sm:grid-cols-3">
+					<div>
+						<div class="opacity-70">Followers</div>
+						<div class="font-semibold">≥ {nextTier.followers}</div>
+					</div>
+					{#if nextTier.bestTaste > 0}
+						<div class="flex items-center gap-2">
+							<img
+								src={tastyImage}
+								alt="Taste Icon"
+								width="30"
+								height="30"
+								class="pixel"
+								aria-hidden="true"
+							/>
+							<div>
+								<div class="opacity-70">Best taste</div>
+								<div class="font-semibold">≥ {nextTier.bestTaste}</div>
+							</div>
+						</div>
+					{/if}
+					{#if nextTier.recipes > 0}
+						<div class="flex items-center gap-2">
+							<img
+								src={artisansFlames}
+								alt="Artisans Flames"
+								width="30"
+								height="30"
+								class="pixel"
+							/>
+							<div>
+								<div class="leading-tight opacity-70">Research</div>
+								<div class="leading-tight font-semibold">{nextTier.recipes} recipes</div>
+							</div>
+						</div>
+					{/if}
+				</div>
+			</div>
+		{/if}
+	</div>
 </section>
 
 <!-- 3) Advantage -->

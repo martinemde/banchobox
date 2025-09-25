@@ -9,6 +9,7 @@ A companion app for **Dave the Diver**, built to help players have fun managing 
 - **Complete dish database** with unlock conditions, pricing, and party bonuses
 - **Comprehensive ingredient catalog** with sources and gathering information
 - **Party event listings** with associated dishes and bonus multipliers
+- **Internationalization support** with English and Spanish languages, ready for community translations
 
 ## Development
 
@@ -50,6 +51,57 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
+
+## Internationalization
+
+BanchoBox supports multiple languages to serve the global Dave the Diver community:
+
+### Supported Languages
+
+- **English** (default)
+- **Spanish** (Español)
+
+### For Contributors
+
+The internationalization system uses Svelte stores for reactive translations:
+
+**Translation Files:**
+
+- `src/lib/i18n/translations/en.json` - English
+- `src/lib/i18n/translations/es.json` - Spanish
+
+**Adding New Languages:**
+
+1. Create a new translation file in `src/lib/i18n/translations/[language-code].json`
+2. Add the language to `supportedLanguages` in `src/lib/i18n/index.ts`
+3. Update the `Language` type definition
+
+**Translation Keys:**
+Use nested keys for organization:
+
+```json
+{
+	"header": {
+		"dishes": "Dishes",
+		"ingredients": "Ingredients"
+	},
+	"home": {
+		"title": "Chef Bancho's Sushi Bar"
+	}
+}
+```
+
+**Usage in Components:**
+
+```svelte
+<script>
+	import { t } from '$lib/i18n/index.js';
+</script>
+
+<h1>{$t('home.title')}</h1><p>{$t('common.loading')}</p>
+```
+
+The language preference is automatically saved to localStorage and persists across sessions.
 
 ## Disclaimer
 
