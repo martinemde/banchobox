@@ -72,7 +72,6 @@
 
 	// Two-way tracked binding via store
 	let tracked = $derived(trackedDishIds.includes(dish.id));
-	$effect(() => toggleTrackedDish(dish.id));
 
 	const iconPx = 20;
 </script>
