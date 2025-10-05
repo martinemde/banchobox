@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { Chapter, EntityBundle, Id } from '../../src/lib/types.js';
 import type { ChapterInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 // chapters-data.csv schema -> normalized row
 const chapterRowSchema = z.object({
@@ -39,9 +40,7 @@ export function buildChapterBundle(inputRows: ChapterInputRow[]): EntityBundle<C
 
 	// Generate basic sorted IDs
 	const sorted = {
-		order: {
-			asc: rows.sort((a, b) => a.number - b.number).map((r) => r.id)
-		}
+		order: computeSortedIds(rows, 'asc', (r) => r.number)
 	};
 
 	return { sorted, byId, facets: {} };

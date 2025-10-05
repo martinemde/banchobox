@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { DLC, EntityBundle, Id } from '../../src/lib/types.js';
 import type { DLCInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 // dlc-data.csv schema -> normalized row
 const dlcRowSchema = z.object({
@@ -36,9 +37,7 @@ export function buildDLCBundle(inputRows: DLCInputRow[]): EntityBundle<DLC> {
 
 	// Generate basic sorted IDs
 	const sorted = {
-		order: {
-			asc: rows.sort((a, b) => a.id - b.id).map((r) => r.id)
-		}
+		order: computeSortedIds(rows, 'asc', (r) => r.id)
 	};
 
 	return { sorted, byId, facets: {} };

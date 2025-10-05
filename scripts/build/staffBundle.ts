@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { EntityBundle, Id, Staff, Dish } from '../../src/lib/types.js';
 import type { StaffInputRow } from './types.js';
 import { loadCsvFile, parseTable, optionalNumber } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 // staff-data.csv schema -> normalized row
 const staffRowSchema = z.object({
@@ -90,23 +91,6 @@ function buildSearchIndex(name: string, skills: string[]): string {
 	return [name, ...skills].map(normalize).join(' ');
 }
 
-// Build the sort object for a staff row
-// TODO: Reuse this to create the "sorted" objects
-// function buildSortFromRow(row: StaffInputRow, skills: string[]): Staff['sort'] {
-// 	let maxSeasonings = row.seasoningsMaxLevel20;
-// 	if (skills.includes('Dispatch Master')) maxSeasonings = maxSeasonings + 2;
-// 	return {
-// 		name: normalize(row.name),
-// 		hiringFee: row.hiringFee,
-// 		wageMax: row.wageMax,
-// 		cookingStatMax: row.cookingStatMax,
-// 		servingStatMax: row.servingStatMax,
-// 		procureStatMax: row.procureStatMax,
-// 		appealStatMax: row.appealStatMax,
-// 		maxSeasonings
-// 	};
-// }
-
 // Retrieve and sort dishes unlocked by a given staff member
 function getSortedDishesForStaff(map: Map<string, Array<StaffDish>>, staffName: string) {
 	const staffDishes = map.get(staffName) || [];
@@ -125,8 +109,7 @@ function computeStaff(inputRows: StaffInputRow[], dishes: Dish[]): Staff[] {
 			const staff: Staff = {
 				...row,
 				dishes: staffDishes,
-				search,
-				sort
+				search
 			};
 
 			return staff;
@@ -143,6 +126,27 @@ function computeFacets(rows: Staff[]): EntityBundle<Staff>['facets'] {
 	}
 
 	return facets;
+}
+
+// Build the sort object for a staff row
+function computeSorted(rows: StaffInputRow[]) {
+	return {
+		name: computeSortedIds(rows, 'asc', (row) => normalize(row.name)),
+		hiringFee: computeSortedIds(rows, 'asc', (row) => row.hiringFee),
+		wageMax: computeSortedIds(rows, 'desc', (row) => row.wageMax),
+		cookingStatMax: computeSortedIds(rows, 'desc', (row) => row.cookingStatMax),
+		servingStatMax: computeSortedIds(rows, 'desc', (row) => row.servingStatMax),
+		procureStatMax: computeSortedIds(rows, 'desc', (row) => row.procureStatMax),
+		appealStatMax: computeSortedIds(rows, 'desc', (row) => row.appealStatMax),
+		maxSeasonings: computeSortedIds(rows, 'desc', (row) => {
+			const skills = extractSkillsFromInput(row);
+			if (skills.some((skill) => skill.includes('Dispatch Master'))) {
+				return row.seasoningsMaxLevel20;
+			} else {
+				return row.seasoningsMinLevel20;
+			}
+		})
+	};
 }
 
 // Initialize an empty facets structure
@@ -196,11 +200,7 @@ export function buildStaffBundle(inputRows: StaffInputRow[], dishes: Dish[]): En
 	const facets = computeFacets(rows);
 
 	// Generate basic sorted IDs
-	const sorted = {
-		name: {
-			asc: rows.map((s) => s.id)
-		}
-	};
+	const sorted = computeSorted(rows);
 
 	return { sorted, byId, facets };
 }

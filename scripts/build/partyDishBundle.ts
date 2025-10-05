@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { Id, PartyDish, EntityBundle } from '../../src/lib/types.js';
 import type { PartyDishJoinRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 interface PartyDishInputRow {
 	dish: string;
@@ -62,9 +63,7 @@ export function buildPartyDishesBundle(partyDishes: PartyDish[]): EntityBundle<P
 
 	// Generate basic sorted IDs
 	const sorted = {
-		name: {
-			asc: partyDishes.sort((a, b) => a.name.localeCompare(b.name)).map((pd) => pd.id)
-		}
+		name: computeSortedIds(partyDishes, 'asc', (pd) => pd.name)
 	};
 
 	return {

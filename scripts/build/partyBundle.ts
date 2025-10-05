@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { Party, PartyDish, Id, EntityBundle } from '../../src/lib/types.js';
 import type { PartyInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 // parties-data.csv schema -> normalized row
 const partyRowSchema = z.object({
@@ -50,7 +51,6 @@ function computeParties(
 		return enrichedParty;
 	});
 
-	parties.sort((a, b) => a.sort.order - b.sort.order);
 	return parties;
 }
 
@@ -67,9 +67,7 @@ export function buildPartiesBundle(
 
 	// Generate basic sorted IDs
 	const sorted = {
-		order: {
-			asc: parties.map((p) => p.id)
-		}
+		order: computeSortedIds(parties, 'asc', (p) => p.id)
 	};
 
 	return {

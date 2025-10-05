@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { loadCooksta, buildCookstaBundle } from './cookstaBundle.js';
-import type { CookstaInputRow } from '../../src/lib/types.js';
+import type { CookstaInputRow } from './types.js';
 
 describe('cookstaBundle', () => {
 	describe('loadCooksta', () => {
@@ -159,12 +159,7 @@ describe('cookstaBundle', () => {
 				expect(tier).toHaveProperty('kitchenStaff');
 				expect(tier).toHaveProperty('servingStaff');
 
-				// Should have computed fields
-				expect(tier).toHaveProperty('sort');
-
-				// Validate sort object
-				expect(tier.sort).toHaveProperty('order');
-				expect(tier.sort.order).toBe(tier.rank);
+				// Computed fields are at bundle level, not on individual tiers
 
 				// ID should be positive
 				expect(tier.id).toBeGreaterThan(0);
@@ -192,7 +187,6 @@ describe('cookstaBundle', () => {
 
 			// Each entry should be a complete CookstaTier object
 			Object.values(bundle.byId).forEach((tier) => {
-				expect(tier).toHaveProperty('sort');
 				expect(tier).toHaveProperty('customers');
 				expect(tier).toHaveProperty('operatingCost');
 			});

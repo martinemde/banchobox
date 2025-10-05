@@ -18,6 +18,7 @@ import type {
 	StaffInputRow
 } from './types.js';
 import { loadCsvFile, optionalNonNegativeInt, optionalString, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
@@ -305,55 +306,15 @@ export function buildDishesBundle({
 	}
 
 	// Generate precomputed sort orders for common sort keys
-	const sorted: Record<string, Record<string, Id[]>> = {};
-
-	// Helper function to sort rows by a given key and direction
-	const sortRows = (
-		dishes: Dish[],
-		direction: 'asc' | 'desc',
-		accessor: (item: Dish) => string | number | null
-	) => {
-		const sortedItems = [...dishes].sort((a, b) => {
-			const aVal = accessor(a);
-			const bVal = accessor(b);
-
-			if (aVal == null && bVal == null) return 0;
-			if (aVal == null) return direction === 'asc' ? -1 : 1;
-			if (bVal == null) return direction === 'asc' ? 1 : -1;
-
-			if (typeof aVal === 'string' && typeof bVal === 'string') {
-				const cmp = direction === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
-				if (cmp !== 0) return cmp;
-			} else {
-				const cmp =
-					direction === 'asc'
-						? aVal < bVal
-							? -1
-							: aVal > bVal
-								? 1
-								: 0
-						: bVal < aVal
-							? -1
-							: bVal > aVal
-								? 1
-								: 0;
-				if (cmp !== 0) return cmp;
-			}
-
-			// Stable tie-breaker by id
-			return a.id - b.id;
-		});
-
-		return { [direction]: sortedItems.map((d) => d.id) };
+	const sorted = {
+		name: computeSortedIds(dishes, 'asc', (d) => d.name),
+		finalPrice: computeSortedIds(dishes, 'desc', (d) => d.finalPrice),
+		finalServings: computeSortedIds(dishes, 'desc', (d) => d.finalServings),
+		finalProfitPerServing: computeSortedIds(dishes, 'desc', (d) => d.finalProfitPerServing),
+		maxProfitPerServing: computeSortedIds(dishes, 'desc', (d) => d.maxProfitPerServing),
+		upgradeCost: computeSortedIds(dishes, 'asc', (d) => d.upgradeCost),
+		ingredientCount: computeSortedIds(dishes, 'asc', (d) => d.ingredientCount)
 	};
-
-	sorted['name'] = sortRows(dishes, 'asc', (a) => a.name);
-	sorted['finalPrice'] = sortRows(dishes, 'desc', (a) => a.finalPrice);
-	sorted['finalServings'] = sortRows(dishes, 'desc', (a) => a.finalServings);
-	sorted['finalProfitPerServing'] = sortRows(dishes, 'desc', (a) => a.finalProfitPerServing);
-	sorted['maxProfitPerServing'] = sortRows(dishes, 'desc', (a) => a.maxProfitPerServing);
-	sorted['upgradeCost'] = sortRows(dishes, 'asc', (a) => a.upgradeCost);
-	sorted['ingredientCount'] = sortRows(dishes, 'asc', (a) => a.ingredientCount);
 
 	return {
 		sorted,

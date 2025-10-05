@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import type { Ingredient, Id, EntityBundle, Chapter } from '../../src/lib/types.js';
+import { computeSortedIds } from './utils.js';
 import type {
 	DishInputRow,
 	IngredientInputRow,
@@ -147,11 +148,6 @@ function buildVendors(ingredient: IngredientInputRow): Record<string, number> {
 	return vendors;
 }
 
-function computeMinBuyFromVendors(vendors: Record<string, number>): number | undefined {
-	const values = Object.values(vendors).filter((v) => v != undefined);
-	return values.length > 0 ? Math.min(...values) : undefined;
-}
-
 function buildIngredientSearchIndex(
 	ingredient: IngredientInputRow,
 	partyNames: Set<string>
@@ -166,21 +162,6 @@ function buildIngredientSearchIndex(
 		.map(normalize)
 		.filter(Boolean)
 		.join(' ');
-}
-
-function buildIngredientSort(
-	ingredient: IngredientInputRow,
-	buy: number | undefined,
-	sellPerKg: number | undefined
-): Ingredient['sort'] {
-	const sort = {
-		name: normalize(ingredient.name),
-		buy: buy ?? undefined,
-		sell: ingredient.sell ?? undefined,
-		kg: ingredient.kg ?? undefined,
-		sellPerKg
-	} as const;
-	return sort as unknown as Ingredient['sort'];
 }
 
 export function prepareIngredients(
@@ -204,11 +185,8 @@ export function prepareIngredients(
 		const sellPerKg = computeSellPerKg(ingredient);
 
 		const vendors = buildVendors(ingredient);
-		const buy = computeMinBuyFromVendors(vendors);
 
 		const search = buildIngredientSearchIndex(ingredient, partyNames);
-
-		const sort = buildIngredientSort(ingredient, buy, sellPerKg);
 
 		const finalIngredient: Ingredient = {
 			...ingredient,
@@ -216,8 +194,7 @@ export function prepareIngredients(
 			usedForParties: Array.from(partyIdSet),
 			sellPerKg,
 			vendors,
-			search,
-			sort
+			search
 		};
 
 		return finalIngredient;
@@ -240,11 +217,16 @@ export function buildIngredientsBundle(
 		addCumulativeChapterFacetEntries(facets, ingredient, maxChapter);
 	}
 
-	// Generate basic sorted IDs
+	// Generate sorted IDs for common sort keys
 	const sorted = {
-		name: {
-			asc: ingredients.map((i) => i.id)
-		}
+		name: computeSortedIds(ingredients, 'asc', (i) => i.name),
+		buy: computeSortedIds(ingredients, 'asc', (i) => {
+			const vendors = Object.values(i.vendors).filter((v) => v != undefined);
+			return vendors.length > 0 ? Math.min(...vendors) : null;
+		}),
+		sell: computeSortedIds(ingredients, 'desc', (i) => i.sell ?? null),
+		kg: computeSortedIds(ingredients, 'desc', (i) => i.kg ?? null),
+		sellPerKg: computeSortedIds(ingredients, 'desc', (i) => i.sellPerKg ?? null)
 	};
 
 	return { sorted, byId, facets };

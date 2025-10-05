@@ -5,6 +5,9 @@ yarn.lock
 bun.lock
 bun.lockb
 
+# Dependencies
+node_modules
+
 # Miscellaneous
 /static/
 /src/lib/data/

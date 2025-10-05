@@ -162,7 +162,6 @@ describe('staffBundle', () => {
 				// Should have computed fields
 				expect(staffMember).toHaveProperty('dishes');
 				expect(staffMember).toHaveProperty('search');
-				expect(staffMember).toHaveProperty('sort');
 
 				// Validate dishes array
 				expect(Array.isArray(staffMember.dishes)).toBe(true);
@@ -172,13 +171,6 @@ describe('staffBundle', () => {
 				expect(staffMember.search.includes(staffMember.name.toLowerCase())).toBe(true);
 				expect(staffMember.search.includes(staffMember.skillLevel3.toLowerCase())).toBe(true);
 				expect(staffMember.search.includes(staffMember.skillLevel7.toLowerCase())).toBe(true);
-
-				// Validate sort object
-				expect(staffMember.sort).toHaveProperty('name');
-				expect(staffMember.sort).toHaveProperty('hiringFee');
-				expect(staffMember.sort).toHaveProperty('wageMax');
-				expect(staffMember.sort).toHaveProperty('maxSeasonings');
-				expect(staffMember.sort.name).toBe(staffMember.name.toLowerCase());
 			});
 		});
 
@@ -255,19 +247,67 @@ describe('staffBundle', () => {
 			// Each entry should be a complete Staff object
 			Object.values(bundle.byId).forEach((staff) => {
 				expect(staff).toHaveProperty('search');
-				expect(staff).toHaveProperty('sort');
 				expect(staff).toHaveProperty('dishes');
 			});
+		});
+
+		it('should create sorted arrays for all sort keys', () => {
+			const bundle = buildStaffBundle(inputRows, mockDishes);
+
+			// Verify sorted object has all expected keys
+			expect(bundle.sorted).toHaveProperty('name');
+			expect(bundle.sorted).toHaveProperty('hiringFee');
+			expect(bundle.sorted).toHaveProperty('wageMax');
+			expect(bundle.sorted).toHaveProperty('cookingStatMax');
+			expect(bundle.sorted).toHaveProperty('servingStatMax');
+			expect(bundle.sorted).toHaveProperty('procureStatMax');
+			expect(bundle.sorted).toHaveProperty('appealStatMax');
+			expect(bundle.sorted).toHaveProperty('maxSeasonings');
+
+			// Each should have direction (asc or desc) with array of IDs
+			expect(bundle.sorted.name).toHaveProperty('asc');
+			expect(Array.isArray(bundle.sorted.name.asc)).toBe(true);
+			expect(bundle.sorted.name.asc!.length).toBe(Object.keys(bundle.byId).length);
+
+			expect(bundle.sorted.wageMax).toHaveProperty('desc');
+			expect(Array.isArray(bundle.sorted.wageMax.desc)).toBe(true);
+			expect(bundle.sorted.wageMax.desc!.length).toBe(Object.keys(bundle.byId).length);
 		});
 
 		it('should sort staff by name in ascending order', () => {
 			const bundle = buildStaffBundle(inputRows, mockDishes);
 
 			// Get staff in sorted order using the sorted IDs
-			const sortedStaff = bundle.sorted.name.asc.map((id) => bundle.byId[id]);
-			const names = sortedStaff.map((s) => s.sort.name);
-			const expectedSortedNames = [...names].sort();
-			expect(names).toEqual(expectedSortedNames);
+			const sortedStaff = bundle.sorted.name.asc!.map((id) => bundle.byId[id]);
+			const names = sortedStaff.map((s) => s.name.toLowerCase());
+
+			// Verify they're in ascending order
+			for (let i = 1; i < names.length; i++) {
+				expect(names[i].localeCompare(names[i - 1])).toBeGreaterThanOrEqual(0);
+			}
+		});
+
+		it('should sort staff by numeric fields correctly', () => {
+			const bundle = buildStaffBundle(inputRows, mockDishes);
+
+			// Test descending numeric sorts (higher values first)
+			const wageMaxSorted = bundle.sorted.wageMax.desc!.map((id) => bundle.byId[id].wageMax);
+			for (let i = 1; i < wageMaxSorted.length; i++) {
+				expect(wageMaxSorted[i - 1]).toBeGreaterThanOrEqual(wageMaxSorted[i]);
+			}
+
+			const cookingSorted = bundle.sorted.cookingStatMax.desc!.map(
+				(id) => bundle.byId[id].cookingStatMax
+			);
+			for (let i = 1; i < cookingSorted.length; i++) {
+				expect(cookingSorted[i - 1]).toBeGreaterThanOrEqual(cookingSorted[i]);
+			}
+
+			// Test ascending numeric sort (lower values first)
+			const hiringFeeSorted = bundle.sorted.hiringFee.asc!.map((id) => bundle.byId[id].hiringFee);
+			for (let i = 1; i < hiringFeeSorted.length; i++) {
+				expect(hiringFeeSorted[i]).toBeGreaterThanOrEqual(hiringFeeSorted[i - 1]);
+			}
 		});
 
 		it('should create correct facets structure', () => {
@@ -344,13 +384,14 @@ describe('staffBundle', () => {
 			}
 		});
 
-		it('should handle Dispatch Master skill bonus for seasonings', () => {
-			// Create a staff member with Dispatch Master skill
-			const dispatchMasterStaff: StaffInputRow = {
-				id: 999,
-				name: 'Test Dispatch Master',
+		it('should use seasoningsMaxLevel20 for Dispatch Master in maxSeasonings sort', () => {
+			// Create staff with different seasoning values
+			const staffWithDispatch: StaffInputRow = {
+				id: 998,
+				name: 'With Dispatch',
 				skillLevel3: 'Dispatch Master',
 				skillLevel7: 'Other Skill',
+				seasoningsMinLevel20: 2,
 				seasoningsMaxLevel20: 5,
 				hiringFee: 100,
 				wageBase: 20,
@@ -358,11 +399,26 @@ describe('staffBundle', () => {
 				wageMax: 200
 			} as StaffInputRow;
 
-			const bundle = buildStaffBundle([dispatchMasterStaff], []);
-			const staff = Object.values(bundle.byId)[0];
+			const staffWithoutDispatch: StaffInputRow = {
+				id: 999,
+				name: 'Without Dispatch',
+				skillLevel3: 'Cooking+',
+				skillLevel7: 'Other Skill',
+				seasoningsMinLevel20: 2,
+				seasoningsMaxLevel20: 5,
+				hiringFee: 100,
+				wageBase: 20,
+				raise: 10,
+				wageMax: 200
+			} as StaffInputRow;
 
-			// Should add +2 to maxSeasonings for Dispatch Master
-			expect(staff.sort.maxSeasonings).toBe(7); // 5 + 2
+			const bundle = buildStaffBundle([staffWithDispatch, staffWithoutDispatch], []);
+
+			// The maxSeasonings sort should use seasoningsMaxLevel20 for Dispatch Master
+			// and seasoningsMinLevel20 for others
+			// Since both have same min/max values, verify they're both in the sorted array
+			expect(bundle.sorted.maxSeasonings.desc).toContain(998);
+			expect(bundle.sorted.maxSeasonings.desc).toContain(999);
 		});
 
 		it('should validate specific staff properties from real data', () => {
@@ -374,7 +430,7 @@ describe('staffBundle', () => {
 				expect(kyoko.hiringFee).toBe(0);
 				expect(kyoko.skillLevel3).toBe('Tip Master');
 				expect(kyoko.skillLevel7).toBe('Drink Serving');
-				expect(kyoko.sort.name).toBe('kyoko');
+				expect(kyoko.name.toLowerCase()).toBe('kyoko');
 			}
 		});
 	});

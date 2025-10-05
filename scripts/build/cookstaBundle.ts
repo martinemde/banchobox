@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { CookstaTier, EntityBundle, Id } from '../../src/lib/types.js';
 import type { CookstaInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 // cooksta-data.csv schema
 const cookstaRowSchema = z.object({
@@ -55,9 +56,7 @@ export function buildCookstaBundle(inputRows: CookstaInputRow[]): EntityBundle<C
 
 	// Generate basic sorted IDs
 	const sorted = {
-		order: {
-			asc: rows.sort((a, b) => a.rank - b.rank).map((t) => t.id)
-		}
+		order: computeSortedIds(rows, 'asc', (t) => t.rank)
 	};
 
 	return { sorted, byId, facets: {} };

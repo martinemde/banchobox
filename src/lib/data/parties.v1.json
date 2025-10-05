@@ -31,13 +31,7 @@
         59,
         77
       ],
-      "search": "jellyfish 2x",
-      "sort": {
-        "order": 1,
-        "name": "jellyfish",
-        "bonus": 2,
-        "dishCount": 11
-      }
+      "search": "jellyfish 2x"
     },
     "2": {
       "id": 2,
@@ -57,13 +51,7 @@
         63,
         96
       ],
-      "search": "tuna 3.5x",
-      "sort": {
-        "order": 2,
-        "name": "tuna",
-        "bonus": 3.5,
-        "dishCount": 12
-      }
+      "search": "tuna 3.5x"
     },
     "3": {
       "id": 3,
@@ -76,13 +64,7 @@
         87,
         81
       ],
-      "search": "marlin 2x",
-      "sort": {
-        "order": 3,
-        "name": "marlin",
-        "bonus": 2,
-        "dishCount": 5
-      }
+      "search": "marlin 2x"
     },
     "4": {
       "id": 4,
@@ -116,13 +98,7 @@
         80,
         95
       ],
-      "search": "shark 2x",
-      "sort": {
-        "order": 4,
-        "name": "shark",
-        "bonus": 2,
-        "dishCount": 26
-      }
+      "search": "shark 2x"
     },
     "5": {
       "id": 5,
@@ -138,13 +114,7 @@
         14,
         17
       ],
-      "search": "cucumber 2.5x",
-      "sort": {
-        "order": 5,
-        "name": "cucumber",
-        "bonus": 2.5,
-        "dishCount": 8
-      }
+      "search": "cucumber 2.5x"
     },
     "6": {
       "id": 6,
@@ -160,13 +130,7 @@
         9,
         10
       ],
-      "search": "curry 2x",
-      "sort": {
-        "order": 6,
-        "name": "curry",
-        "bonus": 2,
-        "dishCount": 8
-      }
+      "search": "curry 2x"
     },
     "7": {
       "id": 7,
@@ -184,13 +148,7 @@
         85,
         69
       ],
-      "search": "shrimp 2x",
-      "sort": {
-        "order": 7,
-        "name": "shrimp",
-        "bonus": 2,
-        "dishCount": 10
-      }
+      "search": "shrimp 2x"
     },
     "8": {
       "id": 8,
@@ -217,13 +175,7 @@
         67,
         76
       ],
-      "search": "lobster 2.5x",
-      "sort": {
-        "order": 8,
-        "name": "lobster",
-        "bonus": 2.5,
-        "dishCount": 19
-      }
+      "search": "lobster 2.5x"
     }
   },
   "facets": {}

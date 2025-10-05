@@ -2,14 +2,6 @@
   "sorted": {
     "name": {
       "asc": [
-        22,
-        47,
-        50,
-        116,
-        177,
-        211,
-        213,
-        216,
         1,
         2,
         3,
@@ -31,6 +23,7 @@
         19,
         20,
         21,
+        22,
         23,
         24,
         25,
@@ -55,8 +48,10 @@
         44,
         45,
         46,
+        47,
         48,
         49,
+        50,
         51,
         52,
         53,
@@ -122,6 +117,7 @@
         113,
         114,
         115,
+        116,
         117,
         118,
         119,
@@ -182,6 +178,7 @@
         174,
         175,
         176,
+        177,
         178,
         179,
         180,
@@ -215,7 +212,218 @@
         208,
         209,
         210,
+        211,
         212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228
+      ]
+    },
+    "buy": {
+      "asc": [
+        22,
+        47,
+        50,
+        116,
+        177,
+        211,
+        213,
+        216,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        46,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        132,
+        133,
+        134,
+        136,
+        137,
+        138,
+        139,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        172,
+        173,
+        174,
+        175,
+        176,
+        178,
+        179,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        208,
+        209,
+        210,
         214,
         215,
         217,
@@ -229,7 +437,727 @@
         225,
         226,
         227,
-        228
+        228,
+        23,
+        207,
+        21,
+        63,
+        140,
+        187,
+        72,
+        131,
+        135,
+        171,
+        180,
+        45,
+        48,
+        100,
+        85,
+        212,
+        16,
+        141,
+        73,
+        40,
+        62,
+        93,
+        206,
+        158
+      ]
+    },
+    "sell": {
+      "desc": [
+        158,
+        206,
+        93,
+        96,
+        5,
+        69,
+        108,
+        166,
+        97,
+        148,
+        185,
+        153,
+        202,
+        199,
+        221,
+        67,
+        105,
+        107,
+        30,
+        61,
+        71,
+        102,
+        133,
+        138,
+        2,
+        34,
+        65,
+        66,
+        92,
+        130,
+        204,
+        193,
+        4,
+        78,
+        125,
+        3,
+        227,
+        228,
+        209,
+        6,
+        8,
+        27,
+        121,
+        156,
+        184,
+        217,
+        68,
+        151,
+        101,
+        147,
+        15,
+        177,
+        211,
+        7,
+        33,
+        109,
+        134,
+        129,
+        152,
+        164,
+        226,
+        84,
+        87,
+        32,
+        119,
+        45,
+        50,
+        57,
+        139,
+        162,
+        225,
+        77,
+        198,
+        42,
+        58,
+        79,
+        144,
+        73,
+        16,
+        24,
+        25,
+        62,
+        141,
+        154,
+        170,
+        85,
+        212,
+        36,
+        38,
+        40,
+        169,
+        176,
+        22,
+        28,
+        48,
+        136,
+        188,
+        189,
+        194,
+        200,
+        213,
+        100,
+        43,
+        72,
+        81,
+        165,
+        192,
+        54,
+        47,
+        118,
+        160,
+        9,
+        216,
+        26,
+        70,
+        89,
+        137,
+        182,
+        39,
+        20,
+        49,
+        135,
+        171,
+        180,
+        186,
+        218,
+        10,
+        11,
+        111,
+        131,
+        215,
+        17,
+        18,
+        21,
+        59,
+        63,
+        64,
+        94,
+        98,
+        103,
+        112,
+        140,
+        145,
+        175,
+        187,
+        214,
+        14,
+        23,
+        35,
+        52,
+        83,
+        95,
+        124,
+        178,
+        196,
+        201,
+        207,
+        1,
+        19,
+        74,
+        117,
+        120,
+        132,
+        161,
+        163,
+        31,
+        82,
+        115,
+        116,
+        142,
+        143,
+        159,
+        167,
+        183,
+        195,
+        224,
+        44,
+        53,
+        55,
+        155,
+        174,
+        223,
+        12,
+        13,
+        29,
+        37,
+        41,
+        46,
+        51,
+        56,
+        60,
+        75,
+        76,
+        80,
+        86,
+        88,
+        90,
+        91,
+        99,
+        104,
+        106,
+        110,
+        113,
+        114,
+        122,
+        123,
+        126,
+        127,
+        128,
+        146,
+        149,
+        150,
+        157,
+        168,
+        172,
+        173,
+        179,
+        181,
+        190,
+        191,
+        197,
+        203,
+        205,
+        208,
+        210,
+        219,
+        220,
+        222
+      ]
+    },
+    "kg": {
+      "desc": [
+        97,
+        69,
+        200,
+        153,
+        102,
+        29,
+        134,
+        86,
+        228,
+        138,
+        168,
+        70,
+        125,
+        136,
+        137,
+        166,
+        67,
+        84,
+        199,
+        219,
+        32,
+        33,
+        37,
+        76,
+        92,
+        133,
+        148,
+        203,
+        6,
+        27,
+        88,
+        107,
+        130,
+        189,
+        2,
+        28,
+        54,
+        94,
+        172,
+        191,
+        56,
+        118,
+        181,
+        185,
+        13,
+        41,
+        78,
+        101,
+        156,
+        197,
+        209,
+        210,
+        215,
+        225,
+        226,
+        9,
+        24,
+        106,
+        109,
+        193,
+        221,
+        7,
+        12,
+        36,
+        38,
+        57,
+        89,
+        121,
+        144,
+        146,
+        164,
+        170,
+        176,
+        179,
+        198,
+        208,
+        188,
+        90,
+        151,
+        157,
+        3,
+        5,
+        10,
+        58,
+        64,
+        68,
+        169,
+        201,
+        11,
+        80,
+        98,
+        119,
+        129,
+        147,
+        173,
+        190,
+        8,
+        15,
+        18,
+        59,
+        65,
+        81,
+        99,
+        110,
+        149,
+        152,
+        160,
+        192,
+        194,
+        25,
+        60,
+        71,
+        75,
+        126,
+        128,
+        217,
+        218,
+        46,
+        87,
+        132,
+        184,
+        202,
+        95,
+        182,
+        49,
+        42,
+        61,
+        66,
+        105,
+        161,
+        204,
+        103,
+        4,
+        14,
+        19,
+        30,
+        47,
+        51,
+        77,
+        83,
+        91,
+        96,
+        104,
+        113,
+        114,
+        122,
+        123,
+        127,
+        150,
+        154,
+        163,
+        205,
+        214,
+        220,
+        222,
+        117,
+        124,
+        183,
+        224,
+        115,
+        196,
+        17,
+        159,
+        31,
+        43,
+        116,
+        143,
+        177,
+        74,
+        120,
+        145,
+        155,
+        167,
+        211,
+        223,
+        52,
+        142,
+        174,
+        195,
+        35,
+        44,
+        53,
+        55,
+        79,
+        82,
+        139,
+        1,
+        20,
+        21,
+        22,
+        23,
+        26,
+        39,
+        50,
+        63,
+        108,
+        111,
+        112,
+        131,
+        135,
+        140,
+        162,
+        171,
+        175,
+        178,
+        180,
+        186,
+        187,
+        207,
+        213,
+        216,
+        16,
+        34,
+        40,
+        45,
+        48,
+        62,
+        72,
+        73,
+        85,
+        93,
+        100,
+        141,
+        158,
+        165,
+        206,
+        212,
+        227
+      ]
+    },
+    "sellPerKg": {
+      "desc": [
+        50,
+        22,
+        213,
+        162,
+        108,
+        211,
+        139,
+        79,
+        177,
+        30,
+        4,
+        204,
+        26,
+        105,
+        61,
+        39,
+        43,
+        66,
+        96,
+        202,
+        20,
+        135,
+        171,
+        180,
+        186,
+        111,
+        131,
+        77,
+        21,
+        63,
+        112,
+        140,
+        175,
+        184,
+        187,
+        71,
+        5,
+        23,
+        35,
+        52,
+        178,
+        207,
+        221,
+        185,
+        65,
+        145,
+        42,
+        129,
+        87,
+        164,
+        8,
+        25,
+        193,
+        148,
+        166,
+        47,
+        15,
+        209,
+        2,
+        107,
+        3,
+        199,
+        147,
+        101,
+        1,
+        17,
+        130,
+        152,
+        67,
+        133,
+        68,
+        194,
+        92,
+        182,
+        58,
+        103,
+        6,
+        27,
+        151,
+        226,
+        138,
+        121,
+        125,
+        120,
+        169,
+        119,
+        78,
+        153,
+        33,
+        154,
+        225,
+        228,
+        7,
+        117,
+        24,
+        102,
+        214,
+        69,
+        109,
+        32,
+        84,
+        217,
+        218,
+        97,
+        14,
+        19,
+        44,
+        57,
+        81,
+        83,
+        163,
+        167,
+        192,
+        49,
+        95,
+        198,
+        134,
+        142,
+        144,
+        124,
+        31,
+        160,
+        170,
+        189,
+        188,
+        38,
+        176,
+        9,
+        18,
+        53,
+        55,
+        59,
+        89,
+        118,
+        98,
+        143,
+        132,
+        183,
+        28,
+        159,
+        174,
+        201,
+        11,
+        54,
+        161,
+        215,
+        115,
+        200,
+        70,
+        137,
+        10,
+        155,
+        223,
+        224,
+        64,
+        94,
+        36,
+        74,
+        82,
+        116,
+        136,
+        156,
+        195,
+        196,
+        216,
+        12,
+        13,
+        16,
+        29,
+        34,
+        37,
+        40,
+        41,
+        45,
+        46,
+        48,
+        51,
+        56,
+        60,
+        62,
+        72,
+        73,
+        75,
+        76,
+        80,
+        85,
+        86,
+        88,
+        90,
+        91,
+        93,
+        99,
+        100,
+        104,
+        106,
+        110,
+        113,
+        114,
+        122,
+        123,
+        126,
+        127,
+        128,
+        141,
+        146,
+        149,
+        150,
+        157,
+        158,
+        165,
+        168,
+        172,
+        173,
+        179,
+        181,
+        190,
+        191,
+        197,
+        203,
+        205,
+        206,
+        208,
+        210,
+        212,
+        219,
+        220,
+        222,
+        227
       ]
     }
   },
@@ -350,13 +1278,7 @@
       ],
       "sellPerKg": 30,
       "vendors": {},
-      "search": "agar 0-50m sea plant jellyfish lobster party",
-      "sort": {
-        "name": "agar",
-        "sell": 3,
-        "kg": 0.1,
-        "sellPerKg": 30
-      }
+      "search": "agar 0-50m sea plant jellyfish lobster party"
     },
     "2": {
       "id": 2,
@@ -396,13 +1318,7 @@
       "usedForParties": [],
       "sellPerKg": 32.142857142857146,
       "vendors": {},
-      "search": "alaska pollock glacial area fish",
-      "sort": {
-        "name": "alaska pollock",
-        "sell": 45,
-        "kg": 7,
-        "sellPerKg": 32.142857142857146
-      }
+      "search": "alaska pollock glacial area fish"
     },
     "3": {
       "id": 3,
@@ -442,13 +1358,7 @@
       "usedForParties": [],
       "sellPerKg": 31.5,
       "vendors": {},
-      "search": "allenypterus hydrothermal vents fish",
-      "sort": {
-        "name": "allenypterus",
-        "sell": 42,
-        "kg": 4,
-        "sellPerKg": 31.5
-      }
+      "search": "allenypterus hydrothermal vents fish"
     },
     "4": {
       "id": 4,
@@ -509,13 +1419,7 @@
       ],
       "sellPerKg": 129,
       "vendors": {},
-      "search": "american lobster 0-50m crab lobster party",
-      "sort": {
-        "name": "american lobster",
-        "sell": 43,
-        "kg": 1,
-        "sellPerKg": 129
-      }
+      "search": "american lobster 0-50m crab lobster party"
     },
     "5": {
       "id": 5,
@@ -555,13 +1459,7 @@
       "usedForParties": [],
       "sellPerKg": 56.25,
       "vendors": {},
-      "search": "anomalocaris hydrothermal vents crab",
-      "sort": {
-        "name": "anomalocaris",
-        "sell": 75,
-        "kg": 4,
-        "sellPerKg": 56.25
-      }
+      "search": "anomalocaris hydrothermal vents crab"
     },
     "6": {
       "id": 6,
@@ -623,13 +1521,7 @@
       "usedForParties": [],
       "sellPerKg": 26.666666666666668,
       "vendors": {},
-      "search": "antarctic octopus glacial area fish",
-      "sort": {
-        "name": "antarctic octopus",
-        "sell": 40,
-        "kg": 7.5,
-        "sellPerKg": 26.666666666666668
-      }
+      "search": "antarctic octopus glacial area fish"
     },
     "7": {
       "id": 7,
@@ -680,13 +1572,7 @@
       "usedForParties": [],
       "sellPerKg": 19.2,
       "vendors": {},
-      "search": "arctic cod glacial area fish",
-      "sort": {
-        "name": "arctic cod",
-        "sell": 32,
-        "kg": 5,
-        "sellPerKg": 19.2
-      }
+      "search": "arctic cod glacial area fish"
     },
     "8": {
       "id": 8,
@@ -726,13 +1612,7 @@
       "usedForParties": [],
       "sellPerKg": 40,
       "vendors": {},
-      "search": "arctic telescope fish glacial area fish",
-      "sort": {
-        "name": "arctic telescope fish",
-        "sell": 40,
-        "kg": 3,
-        "sellPerKg": 40
-      }
+      "search": "arctic telescope fish glacial area fish"
     },
     "9": {
       "id": 9,
@@ -783,13 +1663,7 @@
       "usedForParties": [],
       "sellPerKg": 10,
       "vendors": {},
-      "search": "atlantic anglerfish limestone cave fish",
-      "sort": {
-        "name": "atlantic anglerfish",
-        "sell": 11,
-        "kg": 5.5,
-        "sellPerKg": 10
-      }
+      "search": "atlantic anglerfish limestone cave fish"
     },
     "10": {
       "id": 10,
@@ -846,13 +1720,7 @@
       ],
       "sellPerKg": 5.25,
       "vendors": {},
-      "search": "atlantic bonito 50-130m fish curry party",
-      "sort": {
-        "name": "atlantic bonito",
-        "sell": 7,
-        "kg": 4,
-        "sellPerKg": 5.25
-      }
+      "search": "atlantic bonito 50-130m fish curry party"
     },
     "11": {
       "id": 11,
@@ -914,13 +1782,7 @@
       "usedForParties": [],
       "sellPerKg": 6,
       "vendors": {},
-      "search": "atlantic mackerel 50-130m fish",
-      "sort": {
-        "name": "atlantic mackerel",
-        "sell": 7,
-        "kg": 3.5,
-        "sellPerKg": 6
-      }
+      "search": "atlantic mackerel 50-130m fish"
     },
     "12": {
       "id": 12,
@@ -958,11 +1820,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "aurora jellyfish jellyfish basin fish",
-      "sort": {
-        "name": "aurora jellyfish",
-        "kg": 5
-      }
+      "search": "aurora jellyfish jellyfish basin fish"
     },
     "13": {
       "id": 13,
@@ -999,11 +1857,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "barbed eel fog coast fish",
-      "sort": {
-        "name": "barbed eel",
-        "kg": 6
-      }
+      "search": "barbed eel fog coast fish"
     },
     "14": {
       "id": 14,
@@ -1064,13 +1918,7 @@
       ],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "barrel jellyfish 0-50m fish jellyfish party",
-      "sort": {
-        "name": "barrel jellyfish",
-        "sell": 5,
-        "kg": 1,
-        "sellPerKg": 15
-      }
+      "search": "barrel jellyfish 0-50m fish jellyfish party"
     },
     "15": {
       "id": 15,
@@ -1143,13 +1991,7 @@
       ],
       "sellPerKg": 35,
       "vendors": {},
-      "search": "barreleye glacial passage fish lobster shark party",
-      "sort": {
-        "name": "barreleye",
-        "sell": 35,
-        "kg": 3,
-        "sellPerKg": 35
-      }
+      "search": "barreleye glacial passage fish lobster shark party"
     },
     "16": {
       "id": 16,
@@ -1246,12 +2088,7 @@
         "Otto": 200,
         "Jango": 170
       },
-      "search": "bean vegetable farm vegetable curry party",
-      "sort": {
-        "name": "bean",
-        "buy": 170,
-        "sell": 20
-      }
+      "search": "bean vegetable farm vegetable curry party"
     },
     "17": {
       "id": 17,
@@ -1302,13 +2139,7 @@
       "usedForParties": [],
       "sellPerKg": 30,
       "vendors": {},
-      "search": "bigeye scad 50-130m fish",
-      "sort": {
-        "name": "bigeye scad",
-        "sell": 6,
-        "kg": 0.6,
-        "sellPerKg": 30
-      }
+      "search": "bigeye scad 50-130m fish"
     },
     "18": {
       "id": 18,
@@ -1365,13 +2196,7 @@
       ],
       "sellPerKg": 10,
       "vendors": {},
-      "search": "bigeye trevally 50-130m fish cucumber party",
-      "sort": {
-        "name": "bigeye trevally",
-        "sell": 6,
-        "kg": 3,
-        "sellPerKg": 10
-      }
+      "search": "bigeye trevally 50-130m fish cucumber party"
     },
     "19": {
       "id": 19,
@@ -1411,13 +2236,7 @@
       "usedForParties": [],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "black and white snapper 0-50m fish",
-      "sort": {
-        "name": "black and white snapper",
-        "sell": 3,
-        "kg": 1,
-        "sellPerKg": 15
-      }
+      "search": "black and white snapper 0-50m fish"
     },
     "20": {
       "id": 20,
@@ -1499,13 +2318,7 @@
       ],
       "sellPerKg": 80,
       "vendors": {},
-      "search": "black coral glacial area sea plant cucumber shrimp jellyfish curry party",
-      "sort": {
-        "name": "black coral",
-        "sell": 8,
-        "kg": 0.1,
-        "sellPerKg": 80
-      }
+      "search": "black coral glacial area sea plant cucumber shrimp jellyfish curry party"
     },
     "21": {
       "id": 21,
@@ -1598,14 +2411,7 @@
       "vendors": {
         "Jango": 60
       },
-      "search": "black pepper dispatch & cooking pots procure shark party",
-      "sort": {
-        "name": "black pepper",
-        "buy": 60,
-        "sell": 6,
-        "kg": 0.1,
-        "sellPerKg": 60
-      }
+      "search": "black pepper dispatch & cooking pots procure shark party"
     },
     "22": {
       "id": 22,
@@ -1696,13 +2502,7 @@
       ],
       "sellPerKg": 850,
       "vendors": {},
-      "search": "black tiger shrimp 50-130m shrimp shrimp party",
-      "sort": {
-        "name": "black tiger shrimp",
-        "sell": 17,
-        "kg": 0.1,
-        "sellPerKg": 850
-      }
+      "search": "black tiger shrimp 50-130m shrimp shrimp party"
     },
     "23": {
       "id": 23,
@@ -1862,14 +2662,7 @@
       "vendors": {
         "Jango": 50
       },
-      "search": "black vinegar dispatch & cooking pots procure cucumber shark shrimp party",
-      "sort": {
-        "name": "black vinegar",
-        "buy": 50,
-        "sell": 5,
-        "kg": 0.1,
-        "sellPerKg": 50
-      }
+      "search": "black vinegar dispatch & cooking pots procure cucumber shark shrimp party"
     },
     "24": {
       "id": 24,
@@ -1920,13 +2713,7 @@
       "usedForParties": [],
       "sellPerKg": 18.181818181818183,
       "vendors": {},
-      "search": "blackfin barracuda 50-130m fish",
-      "sort": {
-        "name": "blackfin barracuda",
-        "sell": 20,
-        "kg": 5.5,
-        "sellPerKg": 18.181818181818183
-      }
+      "search": "blackfin barracuda 50-130m fish"
     },
     "25": {
       "id": 25,
@@ -1987,13 +2774,7 @@
       ],
       "sellPerKg": 40,
       "vendors": {},
-      "search": "blacktip shark meat 0-50m fish shark party",
-      "sort": {
-        "name": "blacktip shark meat",
-        "sell": 20,
-        "kg": 2.5,
-        "sellPerKg": 40
-      }
+      "search": "blacktip shark meat 0-50m fish shark party"
     },
     "26": {
       "id": 26,
@@ -2073,13 +2854,7 @@
       ],
       "sellPerKg": 100,
       "vendors": {},
-      "search": "bladderwrack glacial seaweed cave sea plant lobster party",
-      "sort": {
-        "name": "bladderwrack",
-        "sell": 10,
-        "kg": 0.1,
-        "sellPerKg": 100
-      }
+      "search": "bladderwrack glacial seaweed cave sea plant lobster party"
     },
     "27": {
       "id": 27,
@@ -2130,13 +2905,7 @@
       "usedForParties": [],
       "sellPerKg": 26.666666666666668,
       "vendors": {},
-      "search": "blobfish glacial passage fish",
-      "sort": {
-        "name": "blobfish",
-        "sell": 40,
-        "kg": 7.5,
-        "sellPerKg": 26.666666666666668
-      }
+      "search": "blobfish glacial passage fish"
     },
     "28": {
       "id": 28,
@@ -2182,13 +2951,7 @@
       ],
       "sellPerKg": 7.285714285714286,
       "vendors": {},
-      "search": "blood-belly comb jellyfish 130-250m fish jellyfish party",
-      "sort": {
-        "name": "blood-belly comb jellyfish",
-        "sell": 17,
-        "kg": 7,
-        "sellPerKg": 7.285714285714286
-      }
+      "search": "blood-belly comb jellyfish 130-250m fish jellyfish party"
     },
     "29": {
       "id": 29,
@@ -2226,11 +2989,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "bloodskin shark fog coast fish",
-      "sort": {
-        "name": "bloodskin shark",
-        "kg": 11.5
-      }
+      "search": "bloodskin shark fog coast fish"
     },
     "30": {
       "id": 30,
@@ -2291,13 +3050,7 @@
       ],
       "sellPerKg": 141,
       "vendors": {},
-      "search": "blue lobster 0-50m crab lobster party",
-      "sort": {
-        "name": "blue lobster",
-        "sell": 47,
-        "kg": 1,
-        "sellPerKg": 141
-      }
+      "search": "blue lobster 0-50m crab lobster party"
     },
     "31": {
       "id": 31,
@@ -2348,13 +3101,7 @@
       "usedForParties": [],
       "sellPerKg": 12,
       "vendors": {},
-      "search": "blue tang 0-50m fish",
-      "sort": {
-        "name": "blue tang",
-        "sell": 2,
-        "kg": 0.5,
-        "sellPerKg": 12
-      }
+      "search": "blue tang 0-50m fish"
     },
     "32": {
       "id": 32,
@@ -2415,13 +3162,7 @@
       ],
       "sellPerKg": 16.875,
       "vendors": {},
-      "search": "bluefin tuna akami 0-130m fish tuna party",
-      "sort": {
-        "name": "bluefin tuna akami",
-        "sell": 27,
-        "kg": 8,
-        "sellPerKg": 16.875
-      }
+      "search": "bluefin tuna akami 0-130m fish tuna party"
     },
     "33": {
       "id": 33,
@@ -2497,13 +3238,7 @@
       ],
       "sellPerKg": 20,
       "vendors": {},
-      "search": "bluefin tuna chutoro 0-130m fish tuna party",
-      "sort": {
-        "name": "bluefin tuna chutoro",
-        "sell": 32,
-        "kg": 8,
-        "sellPerKg": 20
-      }
+      "search": "bluefin tuna chutoro 0-130m fish tuna party"
     },
     "34": {
       "id": 34,
@@ -2562,11 +3297,7 @@
         2
       ],
       "vendors": {},
-      "search": "bluefin tuna ootoro 0-130m fish tuna party",
-      "sort": {
-        "name": "bluefin tuna ootoro",
-        "sell": 45
-      }
+      "search": "bluefin tuna ootoro 0-130m fish tuna party"
     },
     "35": {
       "id": 35,
@@ -2606,13 +3337,7 @@
       "usedForParties": [],
       "sellPerKg": 50,
       "vendors": {},
-      "search": "bluehead tilefish 50-130m fish",
-      "sort": {
-        "name": "bluehead tilefish",
-        "sell": 5,
-        "kg": 0.2,
-        "sellPerKg": 50
-      }
+      "search": "bluehead tilefish 50-130m fish"
     },
     "36": {
       "id": 36,
@@ -2663,13 +3388,7 @@
       "usedForParties": [],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "bluespotted stargazer 130-250m fish",
-      "sort": {
-        "name": "bluespotted stargazer",
-        "sell": 18,
-        "kg": 5,
-        "sellPerKg": 0
-      }
+      "search": "bluespotted stargazer 130-250m fish"
     },
     "37": {
       "id": 37,
@@ -2706,11 +3425,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "bony wreckfish black cliff fish",
-      "sort": {
-        "name": "bony wreckfish",
-        "kg": 8
-      }
+      "search": "bony wreckfish black cliff fish"
     },
     "38": {
       "id": 38,
@@ -2771,13 +3486,7 @@
       ],
       "sellPerKg": 10.8,
       "vendors": {},
-      "search": "box jellyfish 0-50m fish jellyfish party",
-      "sort": {
-        "name": "box jellyfish",
-        "sell": 18,
-        "kg": 5,
-        "sellPerKg": 10.8
-      }
+      "search": "box jellyfish 0-50m fish jellyfish party"
     },
     "39": {
       "id": 39,
@@ -2867,13 +3576,7 @@
       ],
       "sellPerKg": 90,
       "vendors": {},
-      "search": "buckbean glacial area sea plant shark cucumber jellyfish party",
-      "sort": {
-        "name": "buckbean",
-        "sell": 9,
-        "kg": 0.1,
-        "sellPerKg": 90
-      }
+      "search": "buckbean glacial area sea plant shark cucumber jellyfish party"
     },
     "40": {
       "id": 40,
@@ -2947,12 +3650,7 @@
       "vendors": {
         "Otto": 185
       },
-      "search": "buckwheat vegetable farm vegetable",
-      "sort": {
-        "name": "buckwheat",
-        "buy": 185,
-        "sell": 18
-      }
+      "search": "buckwheat vegetable farm vegetable"
     },
     "41": {
       "id": 41,
@@ -2990,11 +3688,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "bursting anglerfish jellyfish basin fish",
-      "sort": {
-        "name": "bursting anglerfish",
-        "kg": 6
-      }
+      "search": "bursting anglerfish jellyfish basin fish"
     },
     "42": {
       "id": 42,
@@ -3055,13 +3749,7 @@
       ],
       "sellPerKg": 44,
       "vendors": {},
-      "search": "california spiny lobster 50-130m crab lobster party",
-      "sort": {
-        "name": "california spiny lobster",
-        "sell": 22,
-        "kg": 1.5,
-        "sellPerKg": 44
-      }
+      "search": "california spiny lobster 50-130m crab lobster party"
     },
     "43": {
       "id": 43,
@@ -3118,13 +3806,7 @@
       ],
       "sellPerKg": 90,
       "vendors": {},
-      "search": "capelin glacial area fish curry party",
-      "sort": {
-        "name": "capelin",
-        "sell": 15,
-        "kg": 0.5,
-        "sellPerKg": 90
-      }
+      "search": "capelin glacial area fish curry party"
     },
     "44": {
       "id": 44,
@@ -3164,13 +3846,7 @@
       "usedForParties": [],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "cardinal fish 0-50m fish",
-      "sort": {
-        "name": "cardinal fish",
-        "sell": 1,
-        "kg": 0.2,
-        "sellPerKg": 15
-      }
+      "search": "cardinal fish 0-50m fish"
     },
     "45": {
       "id": 45,
@@ -3316,12 +3992,7 @@
         "Otto": 250,
         "Jango": 106
       },
-      "search": "carrot vegetable farm vegetable curry cucumber party",
-      "sort": {
-        "name": "carrot",
-        "buy": 106,
-        "sell": 25
-      }
+      "search": "carrot vegetable farm vegetable curry cucumber party"
     },
     "46": {
       "id": 46,
@@ -3358,11 +4029,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "cerebral crab fog coast crab",
-      "sort": {
-        "name": "cerebral crab",
-        "kg": 2
-      }
+      "search": "cerebral crab fog coast crab"
     },
     "47": {
       "id": 47,
@@ -3402,13 +4069,7 @@
       "usedForParties": [],
       "sellPerKg": 36,
       "vendors": {},
-      "search": "chambered nautilus 130-250m shrimp",
-      "sort": {
-        "name": "chambered nautilus",
-        "sell": 12,
-        "kg": 1,
-        "sellPerKg": 36
-      }
+      "search": "chambered nautilus 130-250m shrimp"
     },
     "48": {
       "id": 48,
@@ -3534,12 +4195,7 @@
         "Otto": 175,
         "Jango": 148
       },
-      "search": "cherry tomato vegetable farm vegetable tuna party",
-      "sort": {
-        "name": "cherry tomato",
-        "buy": 148,
-        "sell": 17
-      }
+      "search": "cherry tomato vegetable farm vegetable tuna party"
     },
     "49": {
       "id": 49,
@@ -3590,13 +4246,7 @@
       "usedForParties": [],
       "sellPerKg": 14.117647058823529,
       "vendors": {},
-      "search": "clearfin lionfish 0-50m fish",
-      "sort": {
-        "name": "clearfin lionfish",
-        "sell": 8,
-        "kg": 1.7,
-        "sellPerKg": 14.117647058823529
-      }
+      "search": "clearfin lionfish 0-50m fish"
     },
     "50": {
       "id": 50,
@@ -3636,13 +4286,7 @@
       "usedForParties": [],
       "sellPerKg": 1000,
       "vendors": {},
-      "search": "clione 130-250m shrimp",
-      "sort": {
-        "name": "clione",
-        "sell": 25,
-        "kg": 0.1,
-        "sellPerKg": 1000
-      }
+      "search": "clione 130-250m shrimp"
     },
     "51": {
       "id": 51,
@@ -3680,11 +4324,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "clione queen tentacle 130-250m boss",
-      "sort": {
-        "name": "clione queen tentacle",
-        "kg": 1
-      }
+      "search": "clione queen tentacle 130-250m boss"
     },
     "52": {
       "id": 52,
@@ -3741,13 +4381,7 @@
       ],
       "sellPerKg": 50,
       "vendors": {},
-      "search": "clown frogfish 50-130m fish shark party",
-      "sort": {
-        "name": "clown frogfish",
-        "sell": 5,
-        "kg": 0.3,
-        "sellPerKg": 50
-      }
+      "search": "clown frogfish 50-130m fish shark party"
     },
     "53": {
       "id": 53,
@@ -3798,13 +4432,7 @@
       "usedForParties": [],
       "sellPerKg": 10,
       "vendors": {},
-      "search": "clownfish 0-50m fish",
-      "sort": {
-        "name": "clownfish",
-        "sell": 1,
-        "kg": 0.2,
-        "sellPerKg": 10
-      }
+      "search": "clownfish 0-50m fish"
     },
     "54": {
       "id": 54,
@@ -3865,13 +4493,7 @@
       ],
       "sellPerKg": 6,
       "vendors": {},
-      "search": "comb jelly 130-250m fish jellyfish party",
-      "sort": {
-        "name": "comb jelly",
-        "sell": 14,
-        "kg": 7,
-        "sellPerKg": 6
-      }
+      "search": "comb jelly 130-250m fish jellyfish party"
     },
     "55": {
       "id": 55,
@@ -3922,13 +4544,7 @@
       "usedForParties": [],
       "sellPerKg": 10,
       "vendors": {},
-      "search": "comber 0-50m fish",
-      "sort": {
-        "name": "comber",
-        "sell": 1,
-        "kg": 0.2,
-        "sellPerKg": 10
-      }
+      "search": "comber 0-50m fish"
     },
     "56": {
       "id": 56,
@@ -3966,11 +4582,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "concertina barracuda jellyfish basin fish",
-      "sort": {
-        "name": "concertina barracuda",
-        "kg": 6.5
-      }
+      "search": "concertina barracuda jellyfish basin fish"
     },
     "57": {
       "id": 57,
@@ -4031,13 +4643,7 @@
       ],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "cookiecutter shark 130-250m fish shark party",
-      "sort": {
-        "name": "cookiecutter shark",
-        "sell": 25,
-        "kg": 5,
-        "sellPerKg": 15
-      }
+      "search": "cookiecutter shark 130-250m fish shark party"
     },
     "58": {
       "id": 58,
@@ -4098,13 +4704,7 @@
       ],
       "sellPerKg": 27.5,
       "vendors": {},
-      "search": "copper shark meat 0-50m fish shark party",
-      "sort": {
-        "name": "copper shark meat",
-        "sell": 22,
-        "kg": 4,
-        "sellPerKg": 27.5
-      }
+      "search": "copper shark meat 0-50m fish shark party"
     },
     "59": {
       "id": 59,
@@ -4166,13 +4766,7 @@
       "usedForParties": [],
       "sellPerKg": 10,
       "vendors": {},
-      "search": "coral trout 50-130m fish",
-      "sort": {
-        "name": "coral trout",
-        "sell": 6,
-        "kg": 3,
-        "sellPerKg": 10
-      }
+      "search": "coral trout 50-130m fish"
     },
     "60": {
       "id": 60,
@@ -4209,11 +4803,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "cortex decorator black cliff crab",
-      "sort": {
-        "name": "cortex decorator",
-        "kg": 2.5
-      }
+      "search": "cortex decorator black cliff crab"
     },
     "61": {
       "id": 61,
@@ -4274,13 +4864,7 @@
       ],
       "sellPerKg": 94,
       "vendors": {},
-      "search": "crystal lobster 50-130m crab lobster party",
-      "sort": {
-        "name": "crystal lobster",
-        "sell": 47,
-        "kg": 1.5,
-        "sellPerKg": 94
-      }
+      "search": "crystal lobster 50-130m crab lobster party"
     },
     "62": {
       "id": 62,
@@ -4434,12 +5018,7 @@
       "vendors": {
         "Otto": 200
       },
-      "search": "cucumber vegetable farm vegetable cucumber shrimp party",
-      "sort": {
-        "name": "cucumber",
-        "buy": 200,
-        "sell": 20
-      }
+      "search": "cucumber vegetable farm vegetable cucumber shrimp party"
     },
     "63": {
       "id": 63,
@@ -4533,14 +5112,7 @@
       "vendors": {
         "Jango": 60
       },
-      "search": "curry block dispatch & cooking pots procure curry party",
-      "sort": {
-        "name": "curry block",
-        "buy": 60,
-        "sell": 6,
-        "kg": 0.1,
-        "sellPerKg": 60
-      }
+      "search": "curry block dispatch & cooking pots procure curry party"
     },
     "64": {
       "id": 64,
@@ -4619,13 +5191,7 @@
       ],
       "sellPerKg": 4.5,
       "vendors": {},
-      "search": "cuttlefish 50-130m fish tuna party",
-      "sort": {
-        "name": "cuttlefish",
-        "sell": 6,
-        "kg": 4,
-        "sellPerKg": 4.5
-      }
+      "search": "cuttlefish 50-130m fish tuna party"
     },
     "65": {
       "id": 65,
@@ -4665,13 +5231,7 @@
       "usedForParties": [],
       "sellPerKg": 45,
       "vendors": {},
-      "search": "devil scorpionfish 50-130m fish",
-      "sort": {
-        "name": "devil scorpionfish",
-        "sell": 45,
-        "kg": 3,
-        "sellPerKg": 45
-      }
+      "search": "devil scorpionfish 50-130m fish"
     },
     "66": {
       "id": 66,
@@ -4711,13 +5271,7 @@
       "usedForParties": [],
       "sellPerKg": 90,
       "vendors": {},
-      "search": "dollocaris ingens hydrothermal vents crab",
-      "sort": {
-        "name": "dollocaris ingens",
-        "sell": 45,
-        "kg": 1.5,
-        "sellPerKg": 90
-      }
+      "search": "dollocaris ingens hydrothermal vents crab"
     },
     "67": {
       "id": 67,
@@ -4757,13 +5311,7 @@
       "usedForParties": [],
       "sellPerKg": 29.41176470588235,
       "vendors": {},
-      "search": "drepanaspis meat hydrothermal vents fish",
-      "sort": {
-        "name": "drepanaspis meat",
-        "sell": 50,
-        "kg": 8.5,
-        "sellPerKg": 29.41176470588235
-      }
+      "search": "drepanaspis meat hydrothermal vents fish"
     },
     "68": {
       "id": 68,
@@ -4814,13 +5362,7 @@
       "usedForParties": [],
       "sellPerKg": 28.5,
       "vendors": {},
-      "search": "dumbo octopus glacial passage fish",
-      "sort": {
-        "name": "dumbo octopus",
-        "sell": 38,
-        "kg": 4,
-        "sellPerKg": 28.5
-      }
+      "search": "dumbo octopus glacial passage fish"
     },
     "69": {
       "id": 69,
@@ -4860,13 +5402,7 @@
       "usedForParties": [],
       "sellPerKg": 17.94871794871795,
       "vendors": {},
-      "search": "dunkleosteus meat hydrothermal vents fish",
-      "sort": {
-        "name": "dunkleosteus meat",
-        "sell": 70,
-        "kg": 19.5,
-        "sellPerKg": 17.94871794871795
-      }
+      "search": "dunkleosteus meat hydrothermal vents fish"
     },
     "70": {
       "id": 70,
@@ -4917,13 +5453,7 @@
       "usedForParties": [],
       "sellPerKg": 5.555555555555555,
       "vendors": {},
-      "search": "dusky grouper 50-130m fish",
-      "sort": {
-        "name": "dusky grouper",
-        "sell": 10,
-        "kg": 9,
-        "sellPerKg": 5.555555555555555
-      }
+      "search": "dusky grouper 50-130m fish"
     },
     "71": {
       "id": 71,
@@ -4984,13 +5514,7 @@
       ],
       "sellPerKg": 56.4,
       "vendors": {},
-      "search": "eastern rock lobster 130-250m crab lobster party",
-      "sort": {
-        "name": "eastern rock lobster",
-        "sell": 47,
-        "kg": 2.5,
-        "sellPerKg": 56.4
-      }
+      "search": "eastern rock lobster 130-250m crab lobster party"
     },
     "72": {
       "id": 72,
@@ -5185,12 +5709,7 @@
         "Otto": 75,
         "Jango": 63
       },
-      "search": "egg vegetable farm egg lobster shrimp tuna party",
-      "sort": {
-        "name": "egg",
-        "buy": 63,
-        "sell": 15
-      }
+      "search": "egg vegetable farm egg lobster shrimp tuna party"
     },
     "73": {
       "id": 73,
@@ -5304,12 +5823,7 @@
         "Otto": 210,
         "Jango": 178
       },
-      "search": "eggplant vegetable farm vegetable shrimp cucumber lobster party",
-      "sort": {
-        "name": "eggplant",
-        "buy": 178,
-        "sell": 21
-      }
+      "search": "eggplant vegetable farm vegetable shrimp cucumber lobster party"
     },
     "74": {
       "id": 74,
@@ -5349,13 +5863,7 @@
       "usedForParties": [],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "emperor angelfish 0-50m fish",
-      "sort": {
-        "name": "emperor angelfish",
-        "sell": 3,
-        "kg": 0.4,
-        "sellPerKg": 0
-      }
+      "search": "emperor angelfish 0-50m fish"
     },
     "75": {
       "id": 75,
@@ -5393,11 +5901,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "entangled crab jellyfish basin crab",
-      "sort": {
-        "name": "entangled crab",
-        "kg": 2.5
-      }
+      "search": "entangled crab jellyfish basin crab"
     },
     "76": {
       "id": 76,
@@ -5434,11 +5938,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "enthralled stonefish black cliff fish",
-      "sort": {
-        "name": "enthralled stonefish",
-        "kg": 8
-      }
+      "search": "enthralled stonefish black cliff fish"
     },
     "77": {
       "id": 77,
@@ -5502,13 +6002,7 @@
       ],
       "sellPerKg": 69,
       "vendors": {},
-      "search": "european lobster 0-50m crab curry lobster party",
-      "sort": {
-        "name": "european lobster",
-        "sell": 23,
-        "kg": 1,
-        "sellPerKg": 69
-      }
+      "search": "european lobster 0-50m crab curry lobster party"
     },
     "78": {
       "id": 78,
@@ -5569,13 +6063,7 @@
       ],
       "sellPerKg": 21.5,
       "vendors": {},
-      "search": "falcatus hydrothermal vents fish shark party",
-      "sort": {
-        "name": "falcatus",
-        "sell": 43,
-        "kg": 6,
-        "sellPerKg": 21.5
-      }
+      "search": "falcatus hydrothermal vents fish shark party"
     },
     "79": {
       "id": 79,
@@ -5621,13 +6109,7 @@
       ],
       "sellPerKg": 330,
       "vendors": {},
-      "search": "fan lobster 50-130m crab lobster party",
-      "sort": {
-        "name": "fan lobster",
-        "sell": 22,
-        "kg": 0.2,
-        "sellPerKg": 330
-      }
+      "search": "fan lobster 50-130m crab lobster party"
     },
     "80": {
       "id": 80,
@@ -5664,11 +6146,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "fanged cod fog coast fish",
-      "sort": {
-        "name": "fanged cod",
-        "kg": 3.5
-      }
+      "search": "fanged cod fog coast fish"
     },
     "81": {
       "id": 81,
@@ -5719,13 +6197,7 @@
       "usedForParties": [],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "fangtooth 130-250m fish",
-      "sort": {
-        "name": "fangtooth",
-        "sell": 15,
-        "kg": 3,
-        "sellPerKg": 15
-      }
+      "search": "fangtooth 130-250m fish"
     },
     "82": {
       "id": 82,
@@ -5765,13 +6237,7 @@
       "usedForParties": [],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "flame angelfish 0-50m fish",
-      "sort": {
-        "name": "flame angelfish",
-        "sell": 2,
-        "kg": 0.2,
-        "sellPerKg": 0
-      }
+      "search": "flame angelfish 0-50m fish"
     },
     "83": {
       "id": 83,
@@ -5832,13 +6298,7 @@
       ],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "fried egg jellyfish 0-50m fish jellyfish party",
-      "sort": {
-        "name": "fried egg jellyfish",
-        "sell": 5,
-        "kg": 1,
-        "sellPerKg": 15
-      }
+      "search": "fried egg jellyfish 0-50m fish jellyfish party"
     },
     "84": {
       "id": 84,
@@ -5899,13 +6359,7 @@
       ],
       "sellPerKg": 16.470588235294116,
       "vendors": {},
-      "search": "frilled shark meat 130-250m fish shark party",
-      "sort": {
-        "name": "frilled shark meat",
-        "sell": 28,
-        "kg": 8.5,
-        "sellPerKg": 16.470588235294116
-      }
+      "search": "frilled shark meat 130-250m fish shark party"
     },
     "85": {
       "id": 85,
@@ -6041,12 +6495,7 @@
         "Otto": 190,
         "Jango": 161
       },
-      "search": "garlic vegetable farm vegetable shrimp jellyfish marlin party",
-      "sort": {
-        "name": "garlic",
-        "buy": 161,
-        "sell": 19
-      }
+      "search": "garlic vegetable farm vegetable shrimp jellyfish marlin party"
     },
     "86": {
       "id": 86,
@@ -6084,11 +6533,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "gazing shark jellyfish basin fish",
-      "sort": {
-        "name": "gazing shark",
-        "kg": 11
-      }
+      "search": "gazing shark jellyfish basin fish"
     },
     "87": {
       "id": 87,
@@ -6139,13 +6584,7 @@
       "usedForParties": [],
       "sellPerKg": 42,
       "vendors": {},
-      "search": "gelatinous snailfish glacial area fish",
-      "sort": {
-        "name": "gelatinous snailfish",
-        "sell": 28,
-        "kg": 2,
-        "sellPerKg": 42
-      }
+      "search": "gelatinous snailfish glacial area fish"
     },
     "88": {
       "id": 88,
@@ -6182,11 +6621,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "gelatinous stonefish black cliff fish",
-      "sort": {
-        "name": "gelatinous stonefish",
-        "kg": 7.5
-      }
+      "search": "gelatinous stonefish black cliff fish"
     },
     "89": {
       "id": 89,
@@ -6243,13 +6678,7 @@
       ],
       "sellPerKg": 10,
       "vendors": {},
-      "search": "giant trevally meat 50-130m fish cucumber party",
-      "sort": {
-        "name": "giant trevally meat",
-        "sell": 10,
-        "kg": 5,
-        "sellPerKg": 10
-      }
+      "search": "giant trevally meat 50-130m fish cucumber party"
     },
     "90": {
       "id": 90,
@@ -6286,11 +6715,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "gnashing perch black cliff fish",
-      "sort": {
-        "name": "gnashing perch",
-        "kg": 4.5
-      }
+      "search": "gnashing perch black cliff fish"
     },
     "91": {
       "id": 91,
@@ -6334,11 +6759,7 @@
         4
       ],
       "vendors": {},
-      "search": "goblin shark's fatty meat 130-250m boss shark party",
-      "sort": {
-        "name": "goblin shark's fatty meat",
-        "kg": 1
-      }
+      "search": "goblin shark's fatty meat 130-250m boss shark party"
     },
     "92": {
       "id": 92,
@@ -6389,13 +6810,7 @@
       "usedForParties": [],
       "sellPerKg": 28.125,
       "vendors": {},
-      "search": "golden king crab glacial area fish",
-      "sort": {
-        "name": "golden king crab",
-        "sell": 45,
-        "kg": 8,
-        "sellPerKg": 28.125
-      }
+      "search": "golden king crab glacial area fish"
     },
     "93": {
       "id": 93,
@@ -6515,12 +6930,7 @@
         "Otto": 450,
         "Jango": 382
       },
-      "search": "grade a egg vegetable farm egg curry shark party",
-      "sort": {
-        "name": "grade a egg",
-        "buy": 382,
-        "sell": 90
-      }
+      "search": "grade a egg vegetable farm egg curry shark party"
     },
     "94": {
       "id": 94,
@@ -6571,13 +6981,7 @@
       "usedForParties": [],
       "sellPerKg": 4.285714285714286,
       "vendors": {},
-      "search": "great barracuda 50-130m fish",
-      "sort": {
-        "name": "great barracuda",
-        "sell": 6,
-        "kg": 7,
-        "sellPerKg": 4.285714285714286
-      }
+      "search": "great barracuda 50-130m fish"
     },
     "95": {
       "id": 95,
@@ -6634,13 +7038,7 @@
       ],
       "sellPerKg": 13.88888888888889,
       "vendors": {},
-      "search": "green humphead parrotfish 0-50m fish curry party",
-      "sort": {
-        "name": "green humphead parrotfish",
-        "sell": 5,
-        "kg": 1.8,
-        "sellPerKg": 13.88888888888889
-      }
+      "search": "green humphead parrotfish 0-50m fish curry party"
     },
     "96": {
       "id": 96,
@@ -6729,13 +7127,7 @@
       ],
       "sellPerKg": 90,
       "vendors": {},
-      "search": "green sea urchin 0-50m fish jellyfish tuna cucumber party",
-      "sort": {
-        "name": "green sea urchin",
-        "sell": 90,
-        "kg": 1,
-        "sellPerKg": 90
-      }
+      "search": "green sea urchin 0-50m fish jellyfish tuna cucumber party"
     },
     "97": {
       "id": 97,
@@ -6781,13 +7173,7 @@
       ],
       "sellPerKg": 15.5,
       "vendors": {},
-      "search": "greenland shark meat glacial area fish shark party",
-      "sort": {
-        "name": "greenland shark meat",
-        "sell": 62,
-        "kg": 20,
-        "sellPerKg": 15.5
-      }
+      "search": "greenland shark meat glacial area fish shark party"
     },
     "98": {
       "id": 98,
@@ -6838,13 +7224,7 @@
       "usedForParties": [],
       "sellPerKg": 8.571428571428571,
       "vendors": {},
-      "search": "grey triggerfish 50-130m fish",
-      "sort": {
-        "name": "grey triggerfish",
-        "sell": 6,
-        "kg": 3.5,
-        "sellPerKg": 8.571428571428571
-      }
+      "search": "grey triggerfish 50-130m fish"
     },
     "99": {
       "id": 99,
@@ -6881,11 +7261,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "grotesque mackerel fog coast fish",
-      "sort": {
-        "name": "grotesque mackerel",
-        "kg": 3
-      }
+      "search": "grotesque mackerel fog coast fish"
     },
     "100": {
       "id": 100,
@@ -6972,12 +7348,7 @@
         "Otto": 180,
         "Jango": 153
       },
-      "search": "habanero vegetable farm vegetable tuna lobster party",
-      "sort": {
-        "name": "habanero",
-        "buy": 153,
-        "sell": 16
-      }
+      "search": "habanero vegetable farm vegetable tuna lobster party"
     },
     "101": {
       "id": 101,
@@ -7028,13 +7399,7 @@
       "usedForParties": [],
       "sellPerKg": 30.833333333333332,
       "vendors": {},
-      "search": "haddock glacial area fish",
-      "sort": {
-        "name": "haddock",
-        "sell": 37,
-        "kg": 6,
-        "sellPerKg": 30.833333333333332
-      }
+      "search": "haddock glacial area fish"
     },
     "102": {
       "id": 102,
@@ -7080,13 +7445,7 @@
       ],
       "sellPerKg": 18.076923076923077,
       "vendors": {},
-      "search": "hammerhead meat 50-130m fish shark party",
-      "sort": {
-        "name": "hammerhead meat",
-        "sell": 47,
-        "kg": 13,
-        "sellPerKg": 18.076923076923077
-      }
+      "search": "hammerhead meat 50-130m fish shark party"
     },
     "103": {
       "id": 103,
@@ -7137,13 +7496,7 @@
       "usedForParties": [],
       "sellPerKg": 27.27272727272727,
       "vendors": {},
-      "search": "harlequin hind 50-130m fish",
-      "sort": {
-        "name": "harlequin hind",
-        "sell": 6,
-        "kg": 1.1,
-        "sellPerKg": 27.27272727272727
-      }
+      "search": "harlequin hind 50-130m fish"
     },
     "104": {
       "id": 104,
@@ -7187,11 +7540,7 @@
         4
       ],
       "vendors": {},
-      "search": "helicoprion tail 3rd glacial cave boss shark party",
-      "sort": {
-        "name": "helicoprion tail",
-        "kg": 1
-      }
+      "search": "helicoprion tail 3rd glacial cave boss shark party"
     },
     "105": {
       "id": 105,
@@ -7242,13 +7591,7 @@
       "usedForParties": [],
       "sellPerKg": 100,
       "vendors": {},
-      "search": "horsehair crab glacial area crab",
-      "sort": {
-        "name": "horsehair crab",
-        "sell": 50,
-        "kg": 1.5,
-        "sellPerKg": 100
-      }
+      "search": "horsehair crab glacial area crab"
     },
     "106": {
       "id": 106,
@@ -7285,11 +7628,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "host eel fog coast fish",
-      "sort": {
-        "name": "host eel",
-        "kg": 5.5
-      }
+      "search": "host eel fog coast fish"
     },
     "107": {
       "id": 107,
@@ -7346,13 +7685,7 @@
       ],
       "sellPerKg": 32,
       "vendors": {},
-      "search": "humboldt squid meat 50-130m fish shrimp party",
-      "sort": {
-        "name": "humboldt squid meat",
-        "sell": 48,
-        "kg": 7.5,
-        "sellPerKg": 32
-      }
+      "search": "humboldt squid meat 50-130m fish shrimp party"
     },
     "108": {
       "id": 108,
@@ -7410,13 +7743,7 @@
       ],
       "sellPerKg": 650,
       "vendors": {},
-      "search": "hyalonema glacial seaweed cave sea plant tuna party",
-      "sort": {
-        "name": "hyalonema",
-        "sell": 65,
-        "kg": 0.1,
-        "sellPerKg": 650
-      }
+      "search": "hyalonema glacial seaweed cave sea plant tuna party"
     },
     "109": {
       "id": 109,
@@ -7473,13 +7800,7 @@
       ],
       "sellPerKg": 17.454545454545453,
       "vendors": {},
-      "search": "ice fish glacial area fish curry party",
-      "sort": {
-        "name": "ice fish",
-        "sell": 32,
-        "kg": 5.5,
-        "sellPerKg": 17.454545454545453
-      }
+      "search": "ice fish glacial area fish curry party"
     },
     "110": {
       "id": 110,
@@ -7516,11 +7837,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "imperious lobster jellyfish basin crab",
-      "sort": {
-        "name": "imperious lobster",
-        "kg": 3
-      }
+      "search": "imperious lobster jellyfish basin crab"
     },
     "111": {
       "id": 111,
@@ -7633,13 +7950,7 @@
       ],
       "sellPerKg": 70,
       "vendors": {},
-      "search": "kajime 0-130m sea plant marlin party",
-      "sort": {
-        "name": "kajime",
-        "sell": 7,
-        "kg": 0.1,
-        "sellPerKg": 70
-      }
+      "search": "kajime 0-130m sea plant marlin party"
     },
     "112": {
       "id": 112,
@@ -7779,13 +8090,7 @@
       ],
       "sellPerKg": 60,
       "vendors": {},
-      "search": "kelp 50-130m sea plant shark lobster party",
-      "sort": {
-        "name": "kelp",
-        "sell": 6,
-        "kg": 0.1,
-        "sellPerKg": 60
-      }
+      "search": "kelp 50-130m sea plant shark lobster party"
     },
     "113": {
       "id": 113,
@@ -7829,11 +8134,7 @@
         4
       ],
       "vendors": {},
-      "search": "klaus's fin 0-50m boss shark party",
-      "sort": {
-        "name": "klaus's fin",
-        "kg": 1
-      }
+      "search": "klaus's fin 0-50m boss shark party"
     },
     "114": {
       "id": 114,
@@ -7871,11 +8172,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "kronosaurus tongue hydrothermal vents boss",
-      "sort": {
-        "name": "kronosaurus tongue",
-        "kg": 1
-      }
+      "search": "kronosaurus tongue hydrothermal vents boss"
     },
     "115": {
       "id": 115,
@@ -7926,13 +8223,7 @@
       "usedForParties": [],
       "sellPerKg": 5.714285714285714,
       "vendors": {},
-      "search": "lagoon triggerfish 0-50m fish",
-      "sort": {
-        "name": "lagoon triggerfish",
-        "sell": 2,
-        "kg": 0.7,
-        "sellPerKg": 5.714285714285714
-      }
+      "search": "lagoon triggerfish 0-50m fish"
     },
     "116": {
       "id": 116,
@@ -8005,13 +8296,7 @@
       "usedForParties": [],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "long-snouted seahorse 0-50m shrimp",
-      "sort": {
-        "name": "long-snouted seahorse",
-        "sell": 2,
-        "kg": 0.5,
-        "sellPerKg": 0
-      }
+      "search": "long-snouted seahorse 0-50m shrimp"
     },
     "117": {
       "id": 117,
@@ -8062,13 +8347,7 @@
       "usedForParties": [],
       "sellPerKg": 18.75,
       "vendors": {},
-      "search": "longfin batfish 0-50m fish",
-      "sort": {
-        "name": "longfin batfish",
-        "sell": 3,
-        "kg": 0.8,
-        "sellPerKg": 18.75
-      }
+      "search": "longfin batfish 0-50m fish"
     },
     "118": {
       "id": 118,
@@ -8114,13 +8393,7 @@
       ],
       "sellPerKg": 9.23076923076923,
       "vendors": {},
-      "search": "longnose sawshark meat 50-130m fish shark party",
-      "sort": {
-        "name": "longnose sawshark meat",
-        "sell": 12,
-        "kg": 6.5,
-        "sellPerKg": 9.23076923076923
-      }
+      "search": "longnose sawshark meat 50-130m fish shark party"
     },
     "119": {
       "id": 119,
@@ -8171,13 +8444,7 @@
       "usedForParties": [],
       "sellPerKg": 22.285714285714285,
       "vendors": {},
-      "search": "longspine porcupinefish 0-50m fish",
-      "sort": {
-        "name": "longspine porcupinefish",
-        "sell": 26,
-        "kg": 3.5,
-        "sellPerKg": 22.285714285714285
-      }
+      "search": "longspine porcupinefish 0-50m fish"
     },
     "120": {
       "id": 120,
@@ -8228,13 +8495,7 @@
       "usedForParties": [],
       "sellPerKg": 22.5,
       "vendors": {},
-      "search": "longspine squirrelfish 0-50m fish",
-      "sort": {
-        "name": "longspine squirrelfish",
-        "sell": 3,
-        "kg": 0.4,
-        "sellPerKg": 22.5
-      }
+      "search": "longspine squirrelfish 0-50m fish"
     },
     "121": {
       "id": 121,
@@ -8274,13 +8535,7 @@
       "usedForParties": [],
       "sellPerKg": 24,
       "vendors": {},
-      "search": "lumpfish hydrothermal vents fish",
-      "sort": {
-        "name": "lumpfish",
-        "sell": 40,
-        "kg": 5,
-        "sellPerKg": 24
-      }
+      "search": "lumpfish hydrothermal vents fish"
     },
     "122": {
       "id": 122,
@@ -8324,11 +8579,7 @@
         4
       ],
       "vendors": {},
-      "search": "lusca neck meat 50-130m boss shark party",
-      "sort": {
-        "name": "lusca neck meat",
-        "kg": 1
-      }
+      "search": "lusca neck meat 50-130m boss shark party"
     },
     "123": {
       "id": 123,
@@ -8366,11 +8617,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "lusca tentacle 50-130m boss",
-      "sort": {
-        "name": "lusca tentacle",
-        "kg": 1
-      }
+      "search": "lusca tentacle 50-130m boss"
     },
     "124": {
       "id": 124,
@@ -8421,13 +8668,7 @@
       "usedForParties": [],
       "sellPerKg": 12.5,
       "vendors": {},
-      "search": "mackerel scad 50-130m fish",
-      "sort": {
-        "name": "mackerel scad",
-        "sell": 5,
-        "kg": 0.8,
-        "sellPerKg": 12.5
-      }
+      "search": "mackerel scad 50-130m fish"
     },
     "125": {
       "id": 125,
@@ -8473,13 +8714,7 @@
       ],
       "sellPerKg": 23.88888888888889,
       "vendors": {},
-      "search": "mako meat 0-50m fish shark party",
-      "sort": {
-        "name": "mako meat",
-        "sell": 43,
-        "kg": 9,
-        "sellPerKg": 23.88888888888889
-      }
+      "search": "mako meat 0-50m fish shark party"
     },
     "126": {
       "id": 126,
@@ -8516,11 +8751,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "malignant pincer fog coast fish",
-      "sort": {
-        "name": "malignant pincer",
-        "kg": 2.5
-      }
+      "search": "malignant pincer fog coast fish"
     },
     "127": {
       "id": 127,
@@ -8564,11 +8795,7 @@
         8
       ],
       "vendors": {},
-      "search": "mantis shrimp meat 0-50m boss lobster party",
-      "sort": {
-        "name": "mantis shrimp meat",
-        "kg": 1
-      }
+      "search": "mantis shrimp meat 0-50m boss lobster party"
     },
     "128": {
       "id": 128,
@@ -8605,11 +8832,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "many eyed mackerel fog coast fish",
-      "sort": {
-        "name": "many eyed mackerel",
-        "kg": 2.5
-      }
+      "search": "many eyed mackerel fog coast fish"
     },
     "129": {
       "id": 129,
@@ -8660,13 +8883,7 @@
       "usedForParties": [],
       "sellPerKg": 42.857142857142854,
       "vendors": {},
-      "search": "marbled electric ray meat 0-50m fish",
-      "sort": {
-        "name": "marbled electric ray meat",
-        "sell": 30,
-        "kg": 3.5,
-        "sellPerKg": 42.857142857142854
-      }
+      "search": "marbled electric ray meat 0-50m fish"
     },
     "130": {
       "id": 130,
@@ -8727,13 +8944,7 @@
       ],
       "sellPerKg": 30,
       "vendors": {},
-      "search": "marlin meat 0-50m fish marlin party",
-      "sort": {
-        "name": "marlin meat",
-        "sell": 45,
-        "kg": 7.5,
-        "sellPerKg": 30
-      }
+      "search": "marlin meat 0-50m fish marlin party"
     },
     "131": {
       "id": 131,
@@ -8858,14 +9069,7 @@
       "vendors": {
         "Jango": 70
       },
-      "search": "mayonnaise dispatch & cooking pots procure shrimp tuna shark party",
-      "sort": {
-        "name": "mayonnaise",
-        "buy": 70,
-        "sell": 7,
-        "kg": 0.1,
-        "sellPerKg": 70
-      }
+      "search": "mayonnaise dispatch & cooking pots procure shrimp tuna shark party"
     },
     "132": {
       "id": 132,
@@ -8916,13 +9120,7 @@
       "usedForParties": [],
       "sellPerKg": 7.5,
       "vendors": {},
-      "search": "mediterranean parrotfish 0-50m fish",
-      "sort": {
-        "name": "mediterranean parrotfish",
-        "sell": 3,
-        "kg": 2,
-        "sellPerKg": 7.5
-      }
+      "search": "mediterranean parrotfish 0-50m fish"
     },
     "133": {
       "id": 133,
@@ -8962,13 +9160,7 @@
       "usedForParties": [],
       "sellPerKg": 28.75,
       "vendors": {},
-      "search": "megalograptus divine tree control room fish",
-      "sort": {
-        "name": "megalograptus",
-        "sell": 46,
-        "kg": 8,
-        "sellPerKg": 28.75
-      }
+      "search": "megalograptus divine tree control room fish"
     },
     "134": {
       "id": 134,
@@ -9029,13 +9221,7 @@
       ],
       "sellPerKg": 13.478260869565217,
       "vendors": {},
-      "search": "megamouth shark meat 130-250m fish shark party",
-      "sort": {
-        "name": "megamouth shark meat",
-        "sell": 31,
-        "kg": 11.5,
-        "sellPerKg": 13.478260869565217
-      }
+      "search": "megamouth shark meat 130-250m fish shark party"
     },
     "135": {
       "id": 135,
@@ -9198,14 +9384,7 @@
       "vendors": {
         "Jango": 80
       },
-      "search": "miso dispatch & cooking pots procure shark jellyfish marlin lobster party",
-      "sort": {
-        "name": "miso",
-        "buy": 80,
-        "sell": 8,
-        "kg": 0.1,
-        "sellPerKg": 80
-      }
+      "search": "miso dispatch & cooking pots procure shark jellyfish marlin lobster party"
     },
     "136": {
       "id": 136,
@@ -9280,13 +9459,7 @@
       ],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "moray eel 0-50m fish curry lobster party",
-      "sort": {
-        "name": "moray eel",
-        "sell": 17,
-        "kg": 9,
-        "sellPerKg": 0
-      }
+      "search": "moray eel 0-50m fish curry lobster party"
     },
     "137": {
       "id": 137,
@@ -9337,13 +9510,7 @@
       "usedForParties": [],
       "sellPerKg": 5.555555555555555,
       "vendors": {},
-      "search": "narrow-barred spanish mackerel 50-130m fish",
-      "sort": {
-        "name": "narrow-barred spanish mackerel",
-        "sell": 10,
-        "kg": 9,
-        "sellPerKg": 5.555555555555555
-      }
+      "search": "narrow-barred spanish mackerel 50-130m fish"
     },
     "138": {
       "id": 138,
@@ -9394,13 +9561,7 @@
       "usedForParties": [],
       "sellPerKg": 24.210526315789473,
       "vendors": {},
-      "search": "narwhal meat glacial area fish",
-      "sort": {
-        "name": "narwhal meat",
-        "sell": 46,
-        "kg": 9.5,
-        "sellPerKg": 24.210526315789473
-      }
+      "search": "narwhal meat glacial area fish"
     },
     "139": {
       "id": 139,
@@ -9461,13 +9622,7 @@
       ],
       "sellPerKg": 375,
       "vendors": {},
-      "search": "norway lobster 130-250m crab lobster party",
-      "sort": {
-        "name": "norway lobster",
-        "sell": 25,
-        "kg": 0.2,
-        "sellPerKg": 375
-      }
+      "search": "norway lobster 130-250m crab lobster party"
     },
     "140": {
       "id": 140,
@@ -9831,14 +9986,7 @@
       "vendors": {
         "Jango": 60
       },
-      "search": "olive oil dispatch & cooking pots procure shrimp cucumber shark curry lobster tuna party",
-      "sort": {
-        "name": "olive oil",
-        "buy": 60,
-        "sell": 6,
-        "kg": 0.1,
-        "sellPerKg": 60
-      }
+      "search": "olive oil dispatch & cooking pots procure shrimp cucumber shark curry lobster tuna party"
     },
     "141": {
       "id": 141,
@@ -9958,12 +10106,7 @@
         "Otto": 200,
         "Jango": 170
       },
-      "search": "onion vegetable farm vegetable curry cucumber party",
-      "sort": {
-        "name": "onion",
-        "buy": 170,
-        "sell": 20
-      }
+      "search": "onion vegetable farm vegetable curry cucumber party"
     },
     "142": {
       "id": 142,
@@ -10014,13 +10157,7 @@
       "usedForParties": [],
       "sellPerKg": 13.333333333333334,
       "vendors": {},
-      "search": "orbicular batfish 0-50m fish",
-      "sort": {
-        "name": "orbicular batfish",
-        "sell": 2,
-        "kg": 0.3,
-        "sellPerKg": 13.333333333333334
-      }
+      "search": "orbicular batfish 0-50m fish"
     },
     "143": {
       "id": 143,
@@ -10077,13 +10214,7 @@
       ],
       "sellPerKg": 8,
       "vendors": {},
-      "search": "ornate wrasse 0-50m fish curry party",
-      "sort": {
-        "name": "ornate wrasse",
-        "sell": 2,
-        "kg": 0.5,
-        "sellPerKg": 8
-      }
+      "search": "ornate wrasse 0-50m fish curry party"
     },
     "144": {
       "id": 144,
@@ -10134,13 +10265,7 @@
       "usedForParties": [],
       "sellPerKg": 13.2,
       "vendors": {},
-      "search": "pacific fanfish 130-250m fish",
-      "sort": {
-        "name": "pacific fanfish",
-        "sell": 22,
-        "kg": 5,
-        "sellPerKg": 13.2
-      }
+      "search": "pacific fanfish 130-250m fish"
     },
     "145": {
       "id": 145,
@@ -10191,13 +10316,7 @@
       "usedForParties": [],
       "sellPerKg": 45,
       "vendors": {},
-      "search": "painted comber 50-130m fish",
-      "sort": {
-        "name": "painted comber",
-        "sell": 6,
-        "kg": 0.4,
-        "sellPerKg": 45
-      }
+      "search": "painted comber 50-130m fish"
     },
     "146": {
       "id": 146,
@@ -10235,11 +10354,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "parhelion jellyfish jellyfish basin fish",
-      "sort": {
-        "name": "parhelion jellyfish",
-        "kg": 5
-      }
+      "search": "parhelion jellyfish jellyfish basin fish"
     },
     "147": {
       "id": 147,
@@ -10301,13 +10416,7 @@
       "usedForParties": [],
       "sellPerKg": 30.857142857142858,
       "vendors": {},
-      "search": "peacock squid glacial passage fish",
-      "sort": {
-        "name": "peacock squid",
-        "sell": 36,
-        "kg": 3.5,
-        "sellPerKg": 30.857142857142858
-      }
+      "search": "peacock squid glacial passage fish"
     },
     "148": {
       "id": 148,
@@ -10358,13 +10467,7 @@
       "usedForParties": [],
       "sellPerKg": 37.5,
       "vendors": {},
-      "search": "pelican eel glacial passage fish",
-      "sort": {
-        "name": "pelican eel",
-        "sell": 60,
-        "kg": 8,
-        "sellPerKg": 37.5
-      }
+      "search": "pelican eel glacial passage fish"
     },
     "149": {
       "id": 149,
@@ -10402,11 +10505,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "perished loosejaw jellyfish basin fish",
-      "sort": {
-        "name": "perished loosejaw",
-        "kg": 3
-      }
+      "search": "perished loosejaw jellyfish basin fish"
     },
     "150": {
       "id": 150,
@@ -10450,11 +10549,7 @@
         1
       ],
       "vendors": {},
-      "search": "phantom jellyfish meat second glacial cave boss jellyfish party",
-      "sort": {
-        "name": "phantom jellyfish meat",
-        "kg": 1
-      }
+      "search": "phantom jellyfish meat second glacial cave boss jellyfish party"
     },
     "151": {
       "id": 151,
@@ -10505,13 +10600,7 @@
       "usedForParties": [],
       "sellPerKg": 25.333333333333332,
       "vendors": {},
-      "search": "pikaia hydrothermal vents fish",
-      "sort": {
-        "name": "pikaia",
-        "sell": 38,
-        "kg": 4.5,
-        "sellPerKg": 25.333333333333332
-      }
+      "search": "pikaia hydrothermal vents fish"
     },
     "152": {
       "id": 152,
@@ -10551,13 +10640,7 @@
       "usedForParties": [],
       "sellPerKg": 30,
       "vendors": {},
-      "search": "polar eelpout glacial area fish",
-      "sort": {
-        "name": "polar eelpout",
-        "sell": 30,
-        "kg": 3,
-        "sellPerKg": 30
-      }
+      "search": "polar eelpout glacial area fish"
     },
     "153": {
       "id": 153,
@@ -10618,13 +10701,7 @@
       ],
       "sellPerKg": 20.37037037037037,
       "vendors": {},
-      "search": "porbeagle shark meat glacial area fish shark party",
-      "sort": {
-        "name": "porbeagle shark meat",
-        "sell": 55,
-        "kg": 13.5,
-        "sellPerKg": 20.37037037037037
-      }
+      "search": "porbeagle shark meat glacial area fish shark party"
     },
     "154": {
       "id": 154,
@@ -10703,13 +10780,7 @@
       ],
       "sellPerKg": 20,
       "vendors": {},
-      "search": "purple sea urchin 0-50m fish marlin party",
-      "sort": {
-        "name": "purple sea urchin",
-        "sell": 20,
-        "kg": 1,
-        "sellPerKg": 20
-      }
+      "search": "purple sea urchin 0-50m fish marlin party"
     },
     "155": {
       "id": 155,
@@ -10760,13 +10831,7 @@
       "usedForParties": [],
       "sellPerKg": 5,
       "vendors": {},
-      "search": "pyramid butterflyfish 0-50m fish",
-      "sort": {
-        "name": "pyramid butterflyfish",
-        "sell": 1,
-        "kg": 0.4,
-        "sellPerKg": 5
-      }
+      "search": "pyramid butterflyfish 0-50m fish"
     },
     "156": {
       "id": 156,
@@ -10806,13 +10871,7 @@
       "usedForParties": [],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "qingmendous hydrothermal vents fish",
-      "sort": {
-        "name": "qingmendous",
-        "sell": 40,
-        "kg": 6,
-        "sellPerKg": 0
-      }
+      "search": "qingmendous hydrothermal vents fish"
     },
     "157": {
       "id": 157,
@@ -10850,11 +10909,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "radiant squid jellyfish basin fish",
-      "sort": {
-        "name": "radiant squid",
-        "kg": 4.5
-      }
+      "search": "radiant squid jellyfish basin fish"
     },
     "158": {
       "id": 158,
@@ -10916,12 +10971,7 @@
       "vendors": {
         "Jango": 750
       },
-      "search": "rainbow cap jango jango",
-      "sort": {
-        "name": "rainbow cap",
-        "buy": 750,
-        "sell": 750
-      }
+      "search": "rainbow cap jango jango"
     },
     "159": {
       "id": 159,
@@ -10978,13 +11028,7 @@
       ],
       "sellPerKg": 6.666666666666667,
       "vendors": {},
-      "search": "rainbow wrasse 0-50m fish curry party",
-      "sort": {
-        "name": "rainbow wrasse",
-        "sell": 2,
-        "kg": 0.6,
-        "sellPerKg": 6.666666666666667
-      }
+      "search": "rainbow wrasse 0-50m fish curry party"
     },
     "160": {
       "id": 160,
@@ -11041,13 +11085,7 @@
       ],
       "sellPerKg": 12,
       "vendors": {},
-      "search": "red bream 130-250m fish shark party",
-      "sort": {
-        "name": "red bream",
-        "sell": 12,
-        "kg": 3,
-        "sellPerKg": 12
-      }
+      "search": "red bream 130-250m fish shark party"
     },
     "161": {
       "id": 161,
@@ -11098,13 +11136,7 @@
       "usedForParties": [],
       "sellPerKg": 6,
       "vendors": {},
-      "search": "red lionfish 0-50m fish",
-      "sort": {
-        "name": "red lionfish",
-        "sell": 3,
-        "kg": 1.5,
-        "sellPerKg": 6
-      }
+      "search": "red lionfish 0-50m fish"
     },
     "162": {
       "id": 162,
@@ -11150,13 +11182,7 @@
       ],
       "sellPerKg": 750,
       "vendors": {},
-      "search": "red-banded lobster 0-50m crab lobster party",
-      "sort": {
-        "name": "red-banded lobster",
-        "sell": 25,
-        "kg": 0.1,
-        "sellPerKg": 750
-      }
+      "search": "red-banded lobster 0-50m crab lobster party"
     },
     "163": {
       "id": 163,
@@ -11207,13 +11233,7 @@
       "usedForParties": [],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "redtoothed triggerfish 0-50m fish",
-      "sort": {
-        "name": "redtoothed triggerfish",
-        "sell": 3,
-        "kg": 1,
-        "sellPerKg": 15
-      }
+      "search": "redtoothed triggerfish 0-50m fish"
     },
     "164": {
       "id": 164,
@@ -11270,13 +11290,7 @@
       ],
       "sellPerKg": 42,
       "vendors": {},
-      "search": "rhinochimaeridae meat 130-250m fish shark party",
-      "sort": {
-        "name": "rhinochimaeridae meat",
-        "sell": 30,
-        "kg": 5,
-        "sellPerKg": 42
-      }
+      "search": "rhinochimaeridae meat 130-250m fish shark party"
     },
     "165": {
       "id": 165,
@@ -11525,11 +11539,7 @@
         8
       ],
       "vendors": {},
-      "search": "rice vegetable farm rice tuna shrimp lobster party",
-      "sort": {
-        "name": "rice",
-        "sell": 15
-      }
+      "search": "rice vegetable farm rice tuna shrimp lobster party"
     },
     "166": {
       "id": 166,
@@ -11605,13 +11615,7 @@
       ],
       "sellPerKg": 36.111111111111114,
       "vendors": {},
-      "search": "sailfish meat shipwreck interior fish marlin party",
-      "sort": {
-        "name": "sailfish meat",
-        "sell": 65,
-        "kg": 9,
-        "sellPerKg": 36.111111111111114
-      }
+      "search": "sailfish meat shipwreck interior fish marlin party"
     },
     "167": {
       "id": 167,
@@ -11651,13 +11655,7 @@
       "usedForParties": [],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "salema porgy 0-50m fish",
-      "sort": {
-        "name": "salema porgy",
-        "sell": 2,
-        "kg": 0.4,
-        "sellPerKg": 15
-      }
+      "search": "salema porgy 0-50m fish"
     },
     "168": {
       "id": 168,
@@ -11695,11 +11693,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "sallow sailfish fog coast fish",
-      "sort": {
-        "name": "sallow sailfish",
-        "kg": 9.5
-      }
+      "search": "sallow sailfish fog coast fish"
     },
     "169": {
       "id": 169,
@@ -11750,13 +11744,7 @@
       "usedForParties": [],
       "sellPerKg": 22.5,
       "vendors": {},
-      "search": "sally lightfoot crab shipwreck interior fish",
-      "sort": {
-        "name": "sally lightfoot crab",
-        "sell": 18,
-        "kg": 4,
-        "sellPerKg": 22.5
-      }
+      "search": "sally lightfoot crab shipwreck interior fish"
     },
     "170": {
       "id": 170,
@@ -11807,13 +11795,7 @@
       "usedForParties": [],
       "sellPerKg": 12,
       "vendors": {},
-      "search": "salmon snailfish 130-250m fish",
-      "sort": {
-        "name": "salmon snailfish",
-        "sell": 20,
-        "kg": 5,
-        "sellPerKg": 12
-      }
+      "search": "salmon snailfish 130-250m fish"
     },
     "171": {
       "id": 171,
@@ -11982,14 +11964,7 @@
       "vendors": {
         "Jango": 80
       },
-      "search": "salt dispatch & cooking pots procure jellyfish lobster shark party",
-      "sort": {
-        "name": "salt",
-        "buy": 80,
-        "sell": 8,
-        "kg": 0.1,
-        "sellPerKg": 80
-      }
+      "search": "salt dispatch & cooking pots procure jellyfish lobster shark party"
     },
     "172": {
       "id": 172,
@@ -12027,11 +12002,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "savage barracuda jellyfish basin fish",
-      "sort": {
-        "name": "savage barracuda",
-        "kg": 7
-      }
+      "search": "savage barracuda jellyfish basin fish"
     },
     "173": {
       "id": 173,
@@ -12068,11 +12039,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "scouring bass black cliff fish",
-      "sort": {
-        "name": "scouring bass",
-        "kg": 3.5
-      }
+      "search": "scouring bass black cliff fish"
     },
     "174": {
       "id": 174,
@@ -12112,13 +12079,7 @@
       "usedForParties": [],
       "sellPerKg": 6.666666666666667,
       "vendors": {},
-      "search": "sea goldie 0-50m fish",
-      "sort": {
-        "name": "sea goldie",
-        "sell": 1,
-        "kg": 0.3,
-        "sellPerKg": 6.666666666666667
-      }
+      "search": "sea goldie 0-50m fish"
     },
     "175": {
       "id": 175,
@@ -12272,13 +12233,7 @@
       ],
       "sellPerKg": 60,
       "vendors": {},
-      "search": "sea grape limestone cave sea plant lobster tuna jellyfish shark party",
-      "sort": {
-        "name": "sea grape",
-        "sell": 6,
-        "kg": 0.1,
-        "sellPerKg": 60
-      }
+      "search": "sea grape limestone cave sea plant lobster tuna jellyfish shark party"
     },
     "176": {
       "id": 176,
@@ -12335,13 +12290,7 @@
       ],
       "sellPerKg": 10.8,
       "vendors": {},
-      "search": "sea toad 130-250m fish cucumber party",
-      "sort": {
-        "name": "sea toad",
-        "sell": 18,
-        "kg": 5,
-        "sellPerKg": 10.8
-      }
+      "search": "sea toad 130-250m fish cucumber party"
     },
     "177": {
       "id": 177,
@@ -12381,13 +12330,7 @@
       "usedForParties": [],
       "sellPerKg": 280,
       "vendors": {},
-      "search": "seadragon hydrothermal vents shrimp",
-      "sort": {
-        "name": "seadragon",
-        "sell": 35,
-        "kg": 0.5,
-        "sellPerKg": 280
-      }
+      "search": "seadragon hydrothermal vents shrimp"
     },
     "178": {
       "id": 178,
@@ -12520,13 +12463,7 @@
       ],
       "sellPerKg": 50,
       "vendors": {},
-      "search": "seaweed 50-130m sea plant jellyfish shark party",
-      "sort": {
-        "name": "seaweed",
-        "sell": 5,
-        "kg": 0.1,
-        "sellPerKg": 50
-      }
+      "search": "seaweed 50-130m sea plant jellyfish shark party"
     },
     "179": {
       "id": 179,
@@ -12564,11 +12501,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "seizing snailfish jellyfish basin fish",
-      "sort": {
-        "name": "seizing snailfish",
-        "kg": 5
-      }
+      "search": "seizing snailfish jellyfish basin fish"
     },
     "180": {
       "id": 180,
@@ -12696,14 +12629,7 @@
       "vendors": {
         "Jango": 80
       },
-      "search": "sesame seed dispatch & cooking pots procure tuna shark party",
-      "sort": {
-        "name": "sesame seed",
-        "buy": 80,
-        "sell": 8,
-        "kg": 0.1,
-        "sellPerKg": 80
-      }
+      "search": "sesame seed dispatch & cooking pots procure tuna shark party"
     },
     "181": {
       "id": 181,
@@ -12741,11 +12667,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "shattered wreckfish black cliff fish",
-      "sort": {
-        "name": "shattered wreckfish",
-        "kg": 6.5
-      }
+      "search": "shattered wreckfish black cliff fish"
     },
     "182": {
       "id": 182,
@@ -12796,13 +12718,7 @@
       "usedForParties": [],
       "sellPerKg": 27.77777777777778,
       "vendors": {},
-      "search": "sheepshead meat 0-50m fish",
-      "sort": {
-        "name": "sheepshead meat",
-        "sell": 10,
-        "kg": 1.8,
-        "sellPerKg": 27.77777777777778
-      }
+      "search": "sheepshead meat 0-50m fish"
     },
     "183": {
       "id": 183,
@@ -12853,13 +12769,7 @@
       "usedForParties": [],
       "sellPerKg": 7.5,
       "vendors": {},
-      "search": "small spotted dart 0-50m fish",
-      "sort": {
-        "name": "small spotted dart",
-        "sell": 2,
-        "kg": 0.8,
-        "sellPerKg": 7.5
-      }
+      "search": "small spotted dart 0-50m fish"
     },
     "184": {
       "id": 184,
@@ -12910,13 +12820,7 @@
       "usedForParties": [],
       "sellPerKg": 60,
       "vendors": {},
-      "search": "snow crab glacial area crab",
-      "sort": {
-        "name": "snow crab",
-        "sell": 40,
-        "kg": 2,
-        "sellPerKg": 60
-      }
+      "search": "snow crab glacial area crab"
     },
     "185": {
       "id": 185,
@@ -12978,13 +12882,7 @@
       "usedForParties": [],
       "sellPerKg": 46.15384615384615,
       "vendors": {},
-      "search": "snub-nosed spiny eel 3rd glacial cave fish",
-      "sort": {
-        "name": "snub-nosed spiny eel",
-        "sell": 60,
-        "kg": 6.5,
-        "sellPerKg": 46.15384615384615
-      }
+      "search": "snub-nosed spiny eel 3rd glacial cave fish"
     },
     "186": {
       "id": 186,
@@ -13069,13 +12967,7 @@
       ],
       "sellPerKg": 80,
       "vendors": {},
-      "search": "southern bull kelp glacial area sea plant marlin shark party",
-      "sort": {
-        "name": "southern bull kelp",
-        "sell": 8,
-        "kg": 0.1,
-        "sellPerKg": 80
-      }
+      "search": "southern bull kelp glacial area sea plant marlin shark party"
     },
     "187": {
       "id": 187,
@@ -13299,14 +13191,7 @@
       "vendors": {
         "Jango": 60
       },
-      "search": "soy sauce dispatch & cooking pots procure marlin shrimp shark party",
-      "sort": {
-        "name": "soy sauce",
-        "buy": 60,
-        "sell": 6,
-        "kg": 0.1,
-        "sellPerKg": 60
-      }
+      "search": "soy sauce dispatch & cooking pots procure marlin shrimp shark party"
     },
     "188": {
       "id": 188,
@@ -13357,13 +13242,7 @@
       "usedForParties": [],
       "sellPerKg": 11.08695652173913,
       "vendors": {},
-      "search": "spear squid 50-130m fish",
-      "sort": {
-        "name": "spear squid",
-        "sell": 17,
-        "kg": 4.6,
-        "sellPerKg": 11.08695652173913
-      }
+      "search": "spear squid 50-130m fish"
     },
     "189": {
       "id": 189,
@@ -13447,13 +13326,7 @@
       ],
       "sellPerKg": 11.333333333333334,
       "vendors": {},
-      "search": "spider crab 130-250m fish curry cucumber party",
-      "sort": {
-        "name": "spider crab",
-        "sell": 17,
-        "kg": 7.5,
-        "sellPerKg": 11.333333333333334
-      }
+      "search": "spider crab 130-250m fish curry cucumber party"
     },
     "190": {
       "id": 190,
@@ -13490,11 +13363,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "splintered crab black cliff crab",
-      "sort": {
-        "name": "splintered crab",
-        "kg": 3.5
-      }
+      "search": "splintered crab black cliff crab"
     },
     "191": {
       "id": 191,
@@ -13532,11 +13401,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "sprouting eel black cliff fish",
-      "sort": {
-        "name": "sprouting eel",
-        "kg": 7
-      }
+      "search": "sprouting eel black cliff fish"
     },
     "192": {
       "id": 192,
@@ -13598,13 +13463,7 @@
       "usedForParties": [],
       "sellPerKg": 15,
       "vendors": {},
-      "search": "starry puffer 0-50m fish",
-      "sort": {
-        "name": "starry puffer",
-        "sell": 15,
-        "kg": 3,
-        "sellPerKg": 15
-      }
+      "search": "starry puffer 0-50m fish"
     },
     "193": {
       "id": 193,
@@ -13655,13 +13514,7 @@
       "usedForParties": [],
       "sellPerKg": 40,
       "vendors": {},
-      "search": "starry skate glacial area fish",
-      "sort": {
-        "name": "starry skate",
-        "sell": 44,
-        "kg": 5.5,
-        "sellPerKg": 40
-      }
+      "search": "starry skate glacial area fish"
     },
     "194": {
       "id": 194,
@@ -13723,13 +13576,7 @@
       "usedForParties": [],
       "sellPerKg": 28.333333333333332,
       "vendors": {},
-      "search": "stingray meat 0-50m fish",
-      "sort": {
-        "name": "stingray meat",
-        "sell": 17,
-        "kg": 3,
-        "sellPerKg": 28.333333333333332
-      }
+      "search": "stingray meat 0-50m fish"
     },
     "195": {
       "id": 195,
@@ -13780,13 +13627,7 @@
       "usedForParties": [],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "striped catfish 0-50m fish",
-      "sort": {
-        "name": "striped catfish",
-        "sell": 2,
-        "kg": 0.3,
-        "sellPerKg": 0
-      }
+      "search": "striped catfish 0-50m fish"
     },
     "196": {
       "id": 196,
@@ -13837,13 +13678,7 @@
       "usedForParties": [],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "striped red mullet 50-130m fish",
-      "sort": {
-        "name": "striped red mullet",
-        "sell": 5,
-        "kg": 0.7,
-        "sellPerKg": 0
-      }
+      "search": "striped red mullet 50-130m fish"
     },
     "197": {
       "id": 197,
@@ -13880,11 +13715,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "three-headed cod fog coast fish",
-      "sort": {
-        "name": "three-headed cod",
-        "kg": 6
-      }
+      "search": "three-headed cod fog coast fish"
     },
     "198": {
       "id": 198,
@@ -13924,13 +13755,7 @@
       "usedForParties": [],
       "sellPerKg": 13.8,
       "vendors": {},
-      "search": "threetooth puffer 130-250m fish",
-      "sort": {
-        "name": "threetooth puffer",
-        "sell": 23,
-        "kg": 5,
-        "sellPerKg": 13.8
-      }
+      "search": "threetooth puffer 130-250m fish"
     },
     "199": {
       "id": 199,
@@ -13976,13 +13801,7 @@
       ],
       "sellPerKg": 31.176470588235293,
       "vendors": {},
-      "search": "thresher shark meat 0-50m fish shark party",
-      "sort": {
-        "name": "thresher shark meat",
-        "sell": 53,
-        "kg": 8.5,
-        "sellPerKg": 31.176470588235293
-      }
+      "search": "thresher shark meat 0-50m fish shark party"
     },
     "200": {
       "id": 200,
@@ -14028,13 +13847,7 @@
       ],
       "sellPerKg": 5.666666666666667,
       "vendors": {},
-      "search": "tiger shark meat 50-130m fish shark party",
-      "sort": {
-        "name": "tiger shark meat",
-        "sell": 17,
-        "kg": 15,
-        "sellPerKg": 5.666666666666667
-      }
+      "search": "tiger shark meat 50-130m fish shark party"
     },
     "201": {
       "id": 201,
@@ -14085,13 +13898,7 @@
       "usedForParties": [],
       "sellPerKg": 6.578947368421053,
       "vendors": {},
-      "search": "titan triggerfish 0-50m fish",
-      "sort": {
-        "name": "titan triggerfish",
-        "sell": 5,
-        "kg": 3.8,
-        "sellPerKg": 6.578947368421053
-      }
+      "search": "titan triggerfish 0-50m fish"
     },
     "202": {
       "id": 202,
@@ -14148,13 +13955,7 @@
       ],
       "sellPerKg": 82.5,
       "vendors": {},
-      "search": "tokummia katalepsis hydrothermal vents crab lobster party",
-      "sort": {
-        "name": "tokummia katalepsis",
-        "sell": 55,
-        "kg": 2,
-        "sellPerKg": 82.5
-      }
+      "search": "tokummia katalepsis hydrothermal vents crab lobster party"
     },
     "203": {
       "id": 203,
@@ -14192,11 +13993,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "translucent sturgeon black cliff fish",
-      "sort": {
-        "name": "translucent sturgeon",
-        "kg": 8
-      }
+      "search": "translucent sturgeon black cliff fish"
     },
     "204": {
       "id": 204,
@@ -14257,13 +14054,7 @@
       ],
       "sellPerKg": 112.5,
       "vendors": {},
-      "search": "tropical rock lobster 50-130m crab lobster party",
-      "sort": {
-        "name": "tropical rock lobster",
-        "sell": 45,
-        "kg": 1.2,
-        "sellPerKg": 112.5
-      }
+      "search": "tropical rock lobster 50-130m crab lobster party"
     },
     "205": {
       "id": 205,
@@ -14301,11 +14092,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "truck hermit crab legs 0-50m boss",
-      "sort": {
-        "name": "truck hermit crab legs",
-        "kg": 1
-      }
+      "search": "truck hermit crab legs 0-50m boss"
     },
     "206": {
       "id": 206,
@@ -14405,12 +14192,7 @@
       "vendors": {
         "Jango": 650
       },
-      "search": "truffle jango jango lobster marlin shark party",
-      "sort": {
-        "name": "truffle",
-        "buy": 650,
-        "sell": 650
-      }
+      "search": "truffle jango jango lobster marlin shark party"
     },
     "207": {
       "id": 207,
@@ -14507,14 +14289,7 @@
       "vendors": {
         "Jango": 50
       },
-      "search": "turmeric dispatch & cooking pots procure curry lobster party",
-      "sort": {
-        "name": "turmeric",
-        "buy": 50,
-        "sell": 5,
-        "kg": 0.1,
-        "sellPerKg": 50
-      }
+      "search": "turmeric dispatch & cooking pots procure curry lobster party"
     },
     "208": {
       "id": 208,
@@ -14551,11 +14326,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "tusked grouper fog coast fish",
-      "sort": {
-        "name": "tusked grouper",
-        "kg": 5
-      }
+      "search": "tusked grouper fog coast fish"
     },
     "209": {
       "id": 209,
@@ -14623,13 +14394,7 @@
       ],
       "sellPerKg": 34.166666666666664,
       "vendors": {},
-      "search": "vampire squid glacial passage fish shark party",
-      "sort": {
-        "name": "vampire squid",
-        "sell": 41,
-        "kg": 6,
-        "sellPerKg": 34.166666666666664
-      }
+      "search": "vampire squid glacial passage fish shark party"
     },
     "210": {
       "id": 210,
@@ -14666,11 +14431,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "voltaic grouper fog coast fish",
-      "sort": {
-        "name": "voltaic grouper",
-        "kg": 6
-      }
+      "search": "voltaic grouper fog coast fish"
     },
     "211": {
       "id": 211,
@@ -14730,13 +14491,7 @@
       ],
       "sellPerKg": 425,
       "vendors": {},
-      "search": "waptia fieldensis hydrothermal vents shrimp cucumber shrimp party",
-      "sort": {
-        "name": "waptia fieldensis",
-        "sell": 34,
-        "kg": 0.4,
-        "sellPerKg": 425
-      }
+      "search": "waptia fieldensis hydrothermal vents shrimp cucumber shrimp party"
     },
     "212": {
       "id": 212,
@@ -14926,12 +14681,7 @@
         "Otto": 190,
         "Jango": 161
       },
-      "search": "wheat vegetable farm vegetable shrimp shark party",
-      "sort": {
-        "name": "wheat",
-        "buy": 161,
-        "sell": 19
-      }
+      "search": "wheat vegetable farm vegetable shrimp shark party"
     },
     "213": {
       "id": 213,
@@ -15007,13 +14757,7 @@
       ],
       "sellPerKg": 850,
       "vendors": {},
-      "search": "white shrimp 0-130m shrimp shrimp party",
-      "sort": {
-        "name": "white shrimp",
-        "sell": 17,
-        "kg": 0.1,
-        "sellPerKg": 850
-      }
+      "search": "white shrimp 0-130m shrimp shrimp party"
     },
     "214": {
       "id": 214,
@@ -15074,13 +14818,7 @@
       ],
       "sellPerKg": 18,
       "vendors": {},
-      "search": "white spotted jellyfish 50-130m fish jellyfish party",
-      "sort": {
-        "name": "white spotted jellyfish",
-        "sell": 6,
-        "kg": 1,
-        "sellPerKg": 18
-      }
+      "search": "white spotted jellyfish 50-130m fish jellyfish party"
     },
     "215": {
       "id": 215,
@@ -15142,13 +14880,7 @@
       "usedForParties": [],
       "sellPerKg": 5.833333333333333,
       "vendors": {},
-      "search": "white trevally 50-130m fish",
-      "sort": {
-        "name": "white trevally",
-        "sell": 7,
-        "kg": 6,
-        "sellPerKg": 5.833333333333333
-      }
+      "search": "white trevally 50-130m fish"
     },
     "216": {
       "id": 216,
@@ -15254,13 +14986,7 @@
       ],
       "sellPerKg": 0,
       "vendors": {},
-      "search": "whiteleg shrimp 0-50m shrimp shrimp party",
-      "sort": {
-        "name": "whiteleg shrimp",
-        "sell": 11,
-        "kg": 0.1,
-        "sellPerKg": 0
-      }
+      "search": "whiteleg shrimp 0-50m shrimp shrimp party"
     },
     "217": {
       "id": 217,
@@ -15306,13 +15032,7 @@
       ],
       "sellPerKg": 16,
       "vendors": {},
-      "search": "whitetip reefshark head 0-50m fish shark party",
-      "sort": {
-        "name": "whitetip reefshark head",
-        "sell": 40,
-        "kg": 2.5,
-        "sellPerKg": 16
-      }
+      "search": "whitetip reefshark head 0-50m fish shark party"
     },
     "218": {
       "id": 218,
@@ -15358,13 +15078,7 @@
       ],
       "sellPerKg": 16,
       "vendors": {},
-      "search": "whitetip reefshark meat 0-50m fish shark party",
-      "sort": {
-        "name": "whitetip reefshark meat",
-        "sell": 8,
-        "kg": 2.5,
-        "sellPerKg": 16
-      }
+      "search": "whitetip reefshark meat 0-50m fish shark party"
     },
     "219": {
       "id": 219,
@@ -15402,11 +15116,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "withered ray black cliff fish",
-      "sort": {
-        "name": "withered ray",
-        "kg": 8.5
-      }
+      "search": "withered ray black cliff fish"
     },
     "220": {
       "id": 220,
@@ -15444,11 +15154,7 @@
       ],
       "usedForParties": [],
       "vendors": {},
-      "search": "wolf eel tail meat 130-250m boss",
-      "sort": {
-        "name": "wolf eel tail meat",
-        "kg": 1
-      }
+      "search": "wolf eel tail meat 130-250m boss"
     },
     "221": {
       "id": 221,
@@ -15488,13 +15194,7 @@
       "usedForParties": [],
       "sellPerKg": 48.18181818181818,
       "vendors": {},
-      "search": "xenacanthus meat hydrothermal vents fish",
-      "sort": {
-        "name": "xenacanthus meat",
-        "sell": 53,
-        "kg": 5.5,
-        "sellPerKg": 48.18181818181818
-      }
+      "search": "xenacanthus meat hydrothermal vents fish"
     },
     "222": {
       "id": 222,
@@ -15538,11 +15238,7 @@
         8
       ],
       "vendors": {},
-      "search": "yawie's inner flesh divine tree control room boss lobster party",
-      "sort": {
-        "name": "yawie's inner flesh",
-        "kg": 1
-      }
+      "search": "yawie's inner flesh divine tree control room boss lobster party"
     },
     "223": {
       "id": 223,
@@ -15582,13 +15278,7 @@
       "usedForParties": [],
       "sellPerKg": 5,
       "vendors": {},
-      "search": "yellow tang 0-50m fish",
-      "sort": {
-        "name": "yellow tang",
-        "sell": 1,
-        "kg": 0.4,
-        "sellPerKg": 5
-      }
+      "search": "yellow tang 0-50m fish"
     },
     "224": {
       "id": 224,
@@ -15639,13 +15329,7 @@
       "usedForParties": [],
       "sellPerKg": 5,
       "vendors": {},
-      "search": "yellowback fusilier 0-50m fish",
-      "sort": {
-        "name": "yellowback fusilier",
-        "sell": 2,
-        "kg": 0.8,
-        "sellPerKg": 5
-      }
+      "search": "yellowback fusilier 0-50m fish"
     },
     "225": {
       "id": 225,
@@ -15706,13 +15390,7 @@
       ],
       "sellPerKg": 20,
       "vendors": {},
-      "search": "yellowfin tuna akami 0-130m fish tuna party",
-      "sort": {
-        "name": "yellowfin tuna akami",
-        "sell": 24,
-        "kg": 6,
-        "sellPerKg": 20
-      }
+      "search": "yellowfin tuna akami 0-130m fish tuna party"
     },
     "226": {
       "id": 226,
@@ -15773,13 +15451,7 @@
       ],
       "sellPerKg": 25,
       "vendors": {},
-      "search": "yellowfin tuna chutoro 0-130m fish tuna party",
-      "sort": {
-        "name": "yellowfin tuna chutoro",
-        "sell": 30,
-        "kg": 6,
-        "sellPerKg": 25
-      }
+      "search": "yellowfin tuna chutoro 0-130m fish tuna party"
     },
     "227": {
       "id": 227,
@@ -15838,11 +15510,7 @@
         2
       ],
       "vendors": {},
-      "search": "yellowfin tuna ootoro 0-130m fish tuna party",
-      "sort": {
-        "name": "yellowfin tuna ootoro",
-        "sell": 42
-      }
+      "search": "yellowfin tuna ootoro 0-130m fish tuna party"
     },
     "228": {
       "id": 228,
@@ -15888,13 +15556,7 @@
       ],
       "sellPerKg": 20,
       "vendors": {},
-      "search": "zebra shark meat 0-50m fish shark party",
-      "sort": {
-        "name": "zebra shark meat",
-        "sell": 42,
-        "kg": 10.5,
-        "sellPerKg": 20
-      }
+      "search": "zebra shark meat 0-50m fish shark party"
     }
   },
   "facets": {
