@@ -29,16 +29,8 @@ export function computeSortedIds<T extends { id: Id }>(
 			// Compare numbers
 			const cmp =
 				direction === 'asc'
-					? aVal < bVal
-						? -1
-						: aVal > bVal
-							? 1
-							: 0
-					: bVal < aVal
-						? -1
-						: bVal > aVal
-							? 1
-							: 0;
+					? (aVal as number) - (bVal as number)
+					: (bVal as number) - (aVal as number);
 			if (cmp !== 0) return cmp;
 		}
 
