@@ -9,6 +9,7 @@
 		rows: PartyDishRow[];
 		byId: Record<Id, PartyDishRow>;
 		facets: Record<string, Record<string, Id[]>>;
+		sorted: Record<string, Record<'asc' | 'desc', Id[]>>;
 	};
 
 	const stores = createPartyDishesStores(subBundle);

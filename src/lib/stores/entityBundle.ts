@@ -86,18 +86,32 @@ export function createEntityStores<Row extends { id: Id; search?: string }>(
 	const filters = writable<Record<string, Set<string>>>(initial?.filters ?? {});
 	const baselineFilters = writable<Record<string, Set<string>>>({});
 
-	function compareValues(
-		a: string | number | null,
-		b: string | number | null,
-		dir: 'asc' | 'desc'
-	): number {
-		if (a == null && b == null) return 0;
-		if (a == null) return dir === 'asc' ? -1 : 1;
-		if (b == null) return dir === 'asc' ? 1 : -1;
-		if (typeof a === 'string' && typeof b === 'string') {
-			return dir === 'asc' ? a.localeCompare(b) : b.localeCompare(a);
+	/**
+	 * Sort filtered IDs according to the pre-sorted order in the bundle
+	 */
+	function sortByPrecomputedOrder(
+		ids: Id[],
+		bundle: EntityBundle<Row>,
+		sortKey: string,
+		sortDir: 'asc' | 'desc'
+	): Id[] {
+		// Get the pre-sorted ID array
+		const sortedIds = bundle.sorted[sortKey]?.[sortDir];
+		if (!sortedIds) {
+			// Try opposite direction and reverse
+			const fallbackDir = sortDir === 'asc' ? 'desc' : 'asc';
+			const fallbackIds = bundle.sorted[sortKey]?.[fallbackDir];
+			if (fallbackIds) {
+				const idSet = new Set(ids);
+				return [...fallbackIds].reverse().filter((id) => idSet.has(id));
+			}
+			// No sorted data available, return as-is
+			return ids;
 		}
-		return dir === 'asc' ? (a < b ? -1 : a > b ? 1 : 0) : b < a ? -1 : b > a ? 1 : 0;
+
+		// Filter the pre-sorted array to only include our candidate IDs
+		const idSet = new Set(ids);
+		return sortedIds.filter((id) => idSet.has(id));
 	}
 
 	function processFilters(
@@ -136,29 +150,31 @@ export function createEntityStores<Row extends { id: Id; search?: string }>(
 			}
 		}
 
-		// Map to rows - get base rows from sorted structure or fallback
-		let rows: Row[] = candidateIds
-			? candidateIds.map((id) => $bundle.byId[id]).filter(Boolean)
-			: getBaseRows($bundle, $sortKey, $sortDir);
+		// 2) Get sorted IDs (either filtered or all)
+		let sortedIds: Id[];
+		if (candidateIds) {
+			// Sort the filtered IDs according to pre-sorted order
+			sortedIds = sortByPrecomputedOrder(candidateIds, $bundle, $sortKey, $sortDir);
+		} else {
+			// Use pre-sorted array directly
+			const preSorted = $bundle.sorted[$sortKey]?.[$sortDir];
+			if (preSorted) {
+				sortedIds = preSorted;
+			} else {
+				// Try opposite direction and reverse
+				const fallbackDir = $sortDir === 'asc' ? 'desc' : 'asc';
+				const fallbackIds = $bundle.sorted[$sortKey]?.[fallbackDir];
+				sortedIds = fallbackIds ? [...fallbackIds].reverse() : [];
+			}
+		}
 
-		// 2) Search filter
+		// 3) Map to rows
+		let rows: Row[] = sortedIds.map((id) => $bundle.byId[id]).filter(Boolean);
+
+		// 4) Search filter
 		const q = ($query ?? '').trim().toLowerCase();
 		if (q.length > 0) {
 			rows = rows.filter((r) => (r.search ?? '').includes(q));
-		}
-
-		// 3) Sort - only needed if we have candidateIds (filtered results)
-		// When no filters are applied, getSortedRows already returns sorted data
-		if (candidateIds) {
-			const key = $sortKey;
-			rows = [...rows].sort((a, b) => {
-				const aVal = a.sort[key] as string | number | null;
-				const bVal = b.sort[key] as string | number | null;
-				const cmp = compareValues(aVal, bVal, $sortDir);
-				if (cmp !== 0) return cmp;
-				// stable tie-breaker by id
-				return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
-			});
 		}
 
 		return rows;

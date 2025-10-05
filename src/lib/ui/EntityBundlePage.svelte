@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import type { EntityStores } from '$lib/stores/entityBundle';
-	import { syncToUrl } from '$lib/stores/urlSync';
+	import { urlParamStore, urlFiltersStore } from '$lib/url/state';
 	import FiltersPanel from '$lib/ui/FiltersPanel.svelte';
 	import HiddenItemsIndicator from '$lib/ui/HiddenItemsIndicator.svelte';
 	import ResponsiveLayout from '$lib/ui/ResponsiveLayout.svelte';
@@ -45,18 +45,33 @@
 	} = $props();
 
 	const {
-		query,
-		sortKey,
-		sortDir,
+		query: domainQuery,
+		sortKey: domainSortKey,
+		sortDir: domainSortDir,
+		filters: domainFilters,
 		visible,
 		visibleWithoutBaseline,
-		filters,
 		baselineFilters,
 		bundle
 	} = stores;
 
-	// Sync to URL
-	syncToUrl(urlKey, stores);
+	// URL-backed stores (single source of truth)
+	const urlQuery = urlParamStore(urlKey, 'q', { default: '' });
+	const urlSortKey = urlParamStore('', 'sortKey', { default: 'name' });
+	const urlSortDir = urlParamStore<'asc' | 'desc'>('', 'sortDir', {
+		default: 'asc',
+		decode: (s) => (s === 'desc' ? 'desc' : 'asc'),
+		encode: (v) => (v === 'desc' ? 'desc' : 'asc')
+	});
+	const urlFilters = urlFiltersStore(urlKey);
+
+	// One-way sync: URL → domain stores (to drive derived visible)
+	$effect(() => {
+		domainQuery.set($urlQuery);
+		domainSortKey.set($urlSortKey);
+		domainSortDir.set($urlSortDir);
+		domainFilters.set($urlFilters);
+	});
 
 	// State for responsive layout
 	let leftOpen = $state(false);
@@ -70,9 +85,9 @@
 {#snippet leftSnippet()}
 	<FiltersPanel
 		{bundle}
-		{filters}
+		filters={urlFilters}
 		{baselineFilters}
-		bind:query={$query}
+		bind:query={$urlQuery}
 		bind:myBanchoExpanded
 		{searchPlaceholder}
 	/>
@@ -92,8 +107,8 @@
 		<ResultsHeader
 			{visible}
 			{entityLabel}
-			bind:sortKey={$sortKey}
-			bind:sortDir={$sortDir}
+			bind:sortKey={$urlSortKey}
+			bind:sortDir={$urlSortDir}
 			{sortOptions}
 		/>
 		{@render content?.()}

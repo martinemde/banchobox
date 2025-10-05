@@ -6,6 +6,11 @@
 	import { getSelectedChapter, allDLCs, isDLCEnabled } from '$lib/stores/myBancho.svelte';
 	import MyBanchoPanel from '$lib/components/MyBanchoPanel.svelte';
 
+	type FiltersStore = {
+		subscribe: (fn: (value: Record<string, Set<string>>) => void) => () => void;
+		update: (fn: (value: Record<string, Set<string>>) => Record<string, Set<string>>) => void;
+	};
+
 	let {
 		bundle,
 		filters,
@@ -15,7 +20,7 @@
 		myBanchoExpanded = $bindable(true)
 	}: {
 		bundle: Readable<EntityBundle<{ id: Id }> | null>;
-		filters: Writable<Record<string, Set<string>>>;
+		filters: FiltersStore;
 		baselineFilters: Writable<Record<string, Set<string>>>;
 		query?: string;
 		searchPlaceholder?: string;
@@ -23,55 +28,43 @@
 	} = $props();
 
 	// DLC handling aligned with My Bancho:
-	// - Default view shows Base + selected DLCs (if the bundle exposes a DLC facet)
-	// - If user/URL adds DLC filters, keep them if they are within allowed; otherwise clamp
+	// - Default view shows Base + selected DLCs (baseline filters, not in URL)
+	// - User can override via URL filters (facet checkboxes)
 	// - Render DLC facet options only for allowed DLCs
-	const hasDLCFacet = $derived(Boolean(($bundle?.facets ?? {})['DLC']));
+	// NOTE: These effects depend on MyBancho state ONLY, not on $bundle, to avoid loops
 	$effect(() => {
-		if (!hasDLCFacet) return;
-		const availableIndex = (($bundle?.facets ?? {})['DLC'] ?? {}) as Record<string, Id[]>;
-		const available = new SvelteSet<string>(Object.keys(availableIndex));
 		const allowed = new SvelteSet<string>(['Base']);
 		for (const d of allDLCs) if (isDLCEnabled(d.id)) allowed.add(d.name);
-		const allowedAvailable = new SvelteSet<string>();
-		for (const v of allowed) if (available.has(v)) allowedAvailable.add(v);
 
-		// Write DLC baseline; do not include in user filters
-		baselineFilters.update((current) => ({ ...(current ?? {}), DLC: allowedAvailable }));
-
-		filters.update((current) => {
-			const next = { ...(current ?? {}) } as Record<string, Set<string>>;
-			const currentNames = next['DLC'];
-			if (!currentNames || currentNames.size === 0) {
-				// No explicit user DLC selections: rely on baseline only
-				delete next['DLC'];
-				return next;
-			}
-			let needsClamp = false;
-			for (const v of currentNames)
-				if (!allowedAvailable.has(v)) {
-					needsClamp = true;
-					break;
+		baselineFilters.update((current) => {
+			const currentDLC = current?.DLC;
+			if (currentDLC && currentDLC.size === allowed.size) {
+				let same = true;
+				for (const v of allowed) {
+					if (!currentDLC.has(v)) {
+						same = false;
+						break;
+					}
 				}
-			if (needsClamp) {
-				const clamped = new SvelteSet<string>();
-				for (const v of currentNames) if (allowedAvailable.has(v)) clamped.add(v);
-				if (clamped.size > 0) next['DLC'] = clamped;
-				else delete next['DLC'];
+				if (same) return current;
 			}
-			return next;
+			return { ...(current ?? {}), DLC: allowed };
 		});
 	});
 
 	// Automatically apply Chapter filter based on My Bancho selection; never render Chapter facet
-	const hasChapterFacet = $derived(Boolean(($bundle?.facets ?? {})['Chapter']));
 	$effect(() => {
-		if (!hasChapterFacet) return;
 		const number = getSelectedChapter().number;
+		const chapterStr = number !== null && number !== undefined ? number.toString() : null;
+
 		baselineFilters.update((current) => {
+			const currentChapter = current?.Chapter;
+			const currentChapterStr = currentChapter ? Array.from(currentChapter)[0] : null;
+
+			if (currentChapterStr === chapterStr) return current;
+
 			const next = { ...(current ?? {}) } as Record<string, Set<string>>;
-			if (number !== null && number !== undefined)
-				next['Chapter'] = new SvelteSet<string>([number.toString()]);
+			if (chapterStr) next['Chapter'] = new SvelteSet<string>([chapterStr]);
 			else delete next['Chapter'];
 			return next;
 		});

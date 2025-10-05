@@ -22,7 +22,7 @@ export function toggleTrackedDish(dishId: Id, tracked?: boolean) {
 export function trackDish(dishId: Id) {
 	const currentIds = trackedDishIdsStore.value;
 	if (!currentIds.includes(dishId)) {
-		currentIds.push(dishId);
+		trackedDishIdsStore.value = [...currentIds, dishId];
 	}
 }
 
@@ -30,6 +30,6 @@ export function trackDish(dishId: Id) {
 export function untrackDish(dishId: Id) {
 	const currentIds = trackedDishIdsStore.value;
 	if (currentIds.includes(dishId)) {
-		currentIds.splice(currentIds.indexOf(dishId), 1);
+		trackedDishIdsStore.value = currentIds.filter((id) => id !== dishId);
 	}
 }

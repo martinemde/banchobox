@@ -15,6 +15,7 @@ export type PartiesDishSubBundle = {
 	rows: PartyDish[];
 	byId: Record<Id, PartyDish>;
 	facets: Record<string, Record<string, Id[]>>;
+	sorted: Record<string, Record<'asc' | 'desc', Id[]>>;
 };
 
 export function createPartyDishesStores(subBundle: PartiesDishSubBundle) {
@@ -43,6 +44,7 @@ export const dishesByPartyStore = derived(bundle, ($bundle) => {
 		// Build light facets for this sub-bundle
 		const facets: Record<string, Record<string, Id[]>> = { dlc: {}, unlock: {} };
 		const byId: Record<Id, PartyDish> = Object.create(null) as Record<Id, PartyDish>;
+		const pdIdSet = new Set(pdIds);
 		for (const r of rows) {
 			byId[r.id] = r;
 			const dlc = (r.dlc ?? 'Base').toString();
@@ -50,8 +52,16 @@ export const dishesByPartyStore = derived(bundle, ($bundle) => {
 			const unlock = (r.unlock ?? '').toString();
 			if (unlock) (facets.unlock[unlock] ??= []).push(r.id);
 		}
+		// Build sorted structure by filtering parent bundle's sorted arrays
+		const sorted: Record<string, Record<'asc' | 'desc', Id[]>> = {};
+		for (const [sortKey, directions] of Object.entries($bundle.sorted)) {
+			sorted[sortKey] = { asc: [], desc: [] };
+			for (const [dir, ids] of Object.entries(directions)) {
+				sorted[sortKey][dir as 'asc' | 'desc'] = ids.filter((id) => pdIdSet.has(id));
+			}
+		}
 		const pid = Number(partyKey) as Id;
-		map[pid] = { rows, byId, facets };
+		map[pid] = { rows, byId, facets, sorted };
 	}
 	return map;
 });
