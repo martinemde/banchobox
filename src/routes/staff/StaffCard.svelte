@@ -3,7 +3,7 @@
 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
 	import { Soup } from '@lucide/svelte';
-	import { hiredStaffIds, toggleHiredStaff } from '$lib/stores/myBancho.svelte';
+	import { hiredStaffIdsStore, toggleHiredStaff } from '$lib/stores/myBancho.svelte';
 
 	let { staff }: { staff: Staff } = $props();
 
@@ -24,7 +24,7 @@
 	}
 
 	// Track hired staff using centralized store
-	const isHired = $derived(hiredStaffIds.includes(staff.id));
+	const isHired = $derived(hiredStaffIdsStore.value.includes(staff.id));
 
 	function formatNumber(value: number | null | undefined): string {
 		if (value == null || Number.isNaN(value as number)) return '—';

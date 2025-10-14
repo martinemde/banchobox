@@ -134,10 +134,10 @@ function computeSorted(rows: StaffInputRow[]) {
 		name: computeSortedIds(rows, 'asc', (row) => normalize(row.name)),
 		hiringFee: computeSortedIds(rows, 'asc', (row) => row.hiringFee),
 		wageMax: computeSortedIds(rows, 'desc', (row) => row.wageMax),
-		cookingStatMax: computeSortedIds(rows, 'desc', (row) => row.cookingStatMax),
-		servingStatMax: computeSortedIds(rows, 'desc', (row) => row.servingStatMax),
-		procureStatMax: computeSortedIds(rows, 'desc', (row) => row.procureStatMax),
-		appealStatMax: computeSortedIds(rows, 'desc', (row) => row.appealStatMax),
+		cookingMax: computeSortedIds(rows, 'desc', (row) => row.cookingStatMax),
+		servingMax: computeSortedIds(rows, 'desc', (row) => row.servingStatMax),
+		procureMax: computeSortedIds(rows, 'desc', (row) => row.procureStatMax),
+		appealMax: computeSortedIds(rows, 'desc', (row) => row.appealStatMax),
 		maxSeasonings: computeSortedIds(rows, 'desc', (row) => {
 			const skills = extractSkillsFromInput(row);
 			if (skills.some((skill) => skill.includes('Dispatch Master'))) {

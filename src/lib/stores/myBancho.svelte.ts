@@ -19,20 +19,17 @@ export const allDLCs = getSortedRows(dlcBundleData);
 // Persisted Reactive State Stores
 // -----------------------------
 
-// Internal persisted state stores
-const selectedChapterIdStore = new LocalStore<Id | null>('selectedChapterId.v1', allChapters[0].id);
-const selectedCookstaTierIdStore = new LocalStore<Id | null>(
+// Export persisted state stores
+export const selectedChapterIdStore = new LocalStore<Id | null>(
+	'selectedChapterId.v1',
+	allChapters[0].id
+);
+export const selectedCookstaTierIdStore = new LocalStore<Id | null>(
 	'selectedCookstaTierId.v1',
 	allCookstaTiers[0].id
 );
-const enabledDLCIdsStore = new LocalStore<Id[]>('enabledDLCIds.v1', []);
-const hiredStaffIdsStore = new LocalStore<number[]>('hiredStaffIds.v1', []);
-
-// Export reactive values
-export const selectedChapterId = selectedChapterIdStore.value;
-export const selectedCookstaTierId = selectedCookstaTierIdStore.value;
-export const enabledDLCIds = enabledDLCIdsStore.value;
-export const hiredStaffIds = hiredStaffIdsStore.value;
+export const enabledDLCIdsStore = new LocalStore<Id[]>('enabledDLCIds.v1', []);
+export const hiredStaffIdsStore = new LocalStore<number[]>('hiredStaffIds.v1', []);
 
 // -----------------------------
 // Accessor Functions (return actual objects)
@@ -40,8 +37,8 @@ export const hiredStaffIds = hiredStaffIdsStore.value;
 
 // Get current selected chapter object
 export function getSelectedChapter(): Chapter {
-	if (selectedChapterId != null) {
-		return chaptersBundleData.byId[selectedChapterId];
+	if (selectedChapterIdStore.value != null) {
+		return chaptersBundleData.byId[selectedChapterIdStore.value];
 	} else {
 		return allChapters[0];
 	}
@@ -49,46 +46,37 @@ export function getSelectedChapter(): Chapter {
 
 // Get current selected cooksta tier object
 export function getSelectedCookstaTier(): CookstaTier {
-	if (selectedCookstaTierId != null) {
-		return cookstaBundleData.byId[selectedCookstaTierId];
+	if (selectedCookstaTierIdStore.value != null) {
+		return cookstaBundleData.byId[selectedCookstaTierIdStore.value];
 	} else {
 		return allCookstaTiers[0];
 	}
 }
 
-export const enabledDLCs = () => allDLCs.filter((d) => enabledDLCIds.includes(d.id));
+export const enabledDLCs = () => allDLCs.filter((d) => enabledDLCIdsStore.value.includes(d.id));
 
 // Check if DLC is enabled
 export const isDLCEnabled = (id: number) => {
-	return enabledDLCIds.includes(id);
+	return enabledDLCIdsStore.value.includes(id);
 };
 
 // Helper functions for common operations
 export function toggleHiredStaff(staffId: number, hired: boolean) {
 	if (hired) {
-		if (!hiredStaffIds.includes(staffId)) {
-			hiredStaffIdsStore.value = [...hiredStaffIds, staffId];
+		if (!hiredStaffIdsStore.value.includes(staffId)) {
+			hiredStaffIdsStore.value = [...hiredStaffIdsStore.value, staffId];
 		}
 	} else {
-		hiredStaffIdsStore.value = hiredStaffIds.filter((id) => id !== staffId);
+		hiredStaffIdsStore.value = hiredStaffIdsStore.value.filter((id) => id !== staffId);
 	}
 }
 
 export function toggleDLC(id: number, enabled: boolean) {
 	if (enabled) {
-		if (!enabledDLCIds.includes(id)) {
-			enabledDLCIdsStore.value = [...enabledDLCIds, id];
+		if (!enabledDLCIdsStore.value.includes(id)) {
+			enabledDLCIdsStore.value = [...enabledDLCIdsStore.value, id];
 		}
 	} else {
-		enabledDLCIdsStore.value = enabledDLCIds.filter((existingId) => existingId !== id);
+		enabledDLCIdsStore.value = enabledDLCIdsStore.value.filter((existingId) => existingId !== id);
 	}
-}
-
-// Helper functions to update selected chapter and cooksta tier
-export function setSelectedChapter(chapterId: Id | null) {
-	selectedChapterIdStore.value = chapterId;
-}
-
-export function setSelectedCookstaTier(cookstaTierId: Id | null) {
-	selectedCookstaTierIdStore.value = cookstaTierId;
 }

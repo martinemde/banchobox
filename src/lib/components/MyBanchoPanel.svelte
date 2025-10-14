@@ -2,10 +2,8 @@
 	import {
 		allCookstaTiers,
 		getSelectedCookstaTier,
-		selectedChapterId,
-		selectedCookstaTierId,
-		setSelectedChapter,
-		setSelectedCookstaTier,
+		selectedChapterIdStore,
+		selectedCookstaTierIdStore,
 		allChapters,
 		getSelectedChapter,
 		allDLCs,
@@ -53,8 +51,9 @@
 				<label class="label" aria-label="Cooksta">
 					<select
 						class="ig-select"
-						value={selectedCookstaTierId}
-						onchange={(e) => setSelectedCookstaTier(Number((e.target as HTMLSelectElement).value))}
+						value={selectedCookstaTierIdStore.value}
+						onchange={(e) =>
+							(selectedCookstaTierIdStore.value = Number((e.target as HTMLSelectElement).value))}
 					>
 						{#each allCookstaTiers as cookstaTier (cookstaTier.id)}
 							<option value={cookstaTier.id}>Cooksta {cookstaTier.name}</option>
@@ -64,8 +63,9 @@
 				<label class="label" aria-label="Chapter">
 					<select
 						class="ig-select"
-						value={selectedChapterId}
-						onchange={(e) => setSelectedChapter(Number((e.target as HTMLSelectElement).value))}
+						value={selectedChapterIdStore.value}
+						onchange={(e) =>
+							(selectedChapterIdStore.value = Number((e.target as HTMLSelectElement).value))}
 					>
 						{#each allChapters as chapter (chapter.id)}
 							<option value={chapter.id}>{chapter.name}</option>

@@ -84,7 +84,7 @@
         14
       ]
     },
-    "cookingStatMax": {
+    "cookingMax": {
       "desc": [
         14,
         13,
@@ -112,7 +112,7 @@
         22
       ]
     },
-    "servingStatMax": {
+    "servingMax": {
       "desc": [
         10,
         20,
@@ -140,7 +140,7 @@
         14
       ]
     },
-    "procureStatMax": {
+    "procureMax": {
       "desc": [
         5,
         12,
@@ -168,7 +168,7 @@
         14
       ]
     },
-    "appealStatMax": {
+    "appealMax": {
       "desc": [
         22,
         4,
