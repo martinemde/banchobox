@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "name": "Dredge",
+      "sort": {
+        "order": 1,
+        "name": "dredge"
+      },
+      "search": "dredge"
+    },
+    {
+      "id": 2,
+      "name": "Godzilla",
+      "sort": {
+        "order": 2,
+        "name": "godzilla"
+      },
+      "search": "godzilla"
+    },
+    {
+      "id": 3,
+      "name": "Ichiban",
+      "sort": {
+        "order": 3,
+        "name": "ichiban"
+      },
+      "search": "ichiban"
+    }
+  ],
+  "byId": {
+    "1": {
+      "id": 1,
+      "name": "Dredge",
+      "sort": {
+        "order": 1,
+        "name": "dredge"
+      },
+      "search": "dredge"
+    },
+    "2": {
+      "id": 2,
+      "name": "Godzilla",
+      "sort": {
+        "order": 2,
+        "name": "godzilla"
+      },
+      "search": "godzilla"
+    },
+    "3": {
+      "id": 3,
+      "name": "Ichiban",
+      "sort": {
+        "order": 3,
+        "name": "ichiban"
+      },
+      "search": "ichiban"
+    }
+  },
+  "facets": {}
+}
