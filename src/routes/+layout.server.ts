@@ -17,8 +17,7 @@ import type {
 import manifest from '$lib/data/manifest.json';
 
 // Import JSON bundles from $lib so they are included in the SSR bundle and get type safety
-// (keeping these for gradual migration - ingredients will be loaded via fetch)
-import dishes from '$lib/data/dishes.v1.json';
+// (keeping these for gradual migration - ingredients and dishes will be loaded via fetch)
 import parties from '$lib/data/parties.v1.json';
 import partyDishes from '$lib/data/party-dishes.v1.json';
 import cooksta from '$lib/data/cooksta.v1.json';
@@ -27,12 +26,14 @@ import chapters from '$lib/data/chapters.v1.json';
 import staff from '$lib/data/staff.v1.json';
 
 export const load: LayoutServerLoad = async ({ fetch }) => {
-	// Load ingredients from the hashed static file using fetch
+	// Load ingredients and dishes from the hashed static files using fetch
 	const ingredientsResponse = await fetch(manifest.ingredients);
 	const ingredientsBundle = (await ingredientsResponse.json()) as EntityBundle<Ingredient>;
 
+	const dishesResponse = await fetch(manifest.dishes);
+	const dishesBundle = (await dishesResponse.json()) as EntityBundle<Dish>;
+
 	// Keep other bundles as direct imports for now (gradual migration)
-	const dishesBundle = dishes as unknown as EntityBundle<Dish>;
 	const partiesBundle = parties as unknown as EntityBundle<Party>;
 	const partyDishesBundle = partyDishes as unknown as EntityBundle<PartyDish>;
 	const cookstaBundle = cooksta as unknown as EntityBundle<CookstaTier>;
