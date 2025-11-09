@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import {
 	Dish,
 	Party,
@@ -15,6 +16,10 @@ import {
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+function generateHash(content: string): string {
+	return createHash('sha256').update(content).digest('hex').slice(0, 8);
+}
 
 export function exportData(args: {
 	dishesBundle: EntityBundle<Dish>;
@@ -36,38 +41,60 @@ export function exportData(args: {
 		chaptersBundle,
 		staffBundle
 	} = args;
-	const outputDir = join(__dirname, '..', '..', 'src', 'lib', 'data');
 
-	mkdirSync(outputDir, { recursive: true });
+	// Setup output directories
+	const srcOutputDir = join(__dirname, '..', '..', 'src', 'lib', 'data');
+	const staticOutputDir = join(__dirname, '..', '..', 'static', 'data');
+
+	mkdirSync(srcOutputDir, { recursive: true });
+	mkdirSync(staticOutputDir, { recursive: true });
 
 	const version = 'v1';
 
-	// Overwrite v1 files with bundled forms where applicable
-	writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));
-	writeFileSync(
-		join(outputDir, `ingredients.${version}.json`),
-		JSON.stringify(ingredientsBundle, null, 2)
-	);
-	writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(partiesBundle, null, 2));
-	writeFileSync(
-		join(outputDir, `party-dishes.${version}.json`),
-		JSON.stringify(partyDishesBundle, null, 2)
-	);
-	writeFileSync(join(outputDir, `cooksta.${version}.json`), JSON.stringify(cookstaBundle, null, 2));
-	writeFileSync(join(outputDir, `dlc.${version}.json`), JSON.stringify(dlcBundle, null, 2));
-	writeFileSync(
-		join(outputDir, `chapters.${version}.json`),
-		JSON.stringify(chaptersBundle, null, 2)
-	);
-	writeFileSync(join(outputDir, `staff.${version}.json`), JSON.stringify(staffBundle, null, 2));
+	// Helper to write both versions of a file
+	const manifest: Record<string, string> = {};
 
-	console.log(`${partiesBundle.rows.length}\tParties`);
-	console.log(`${partyDishesBundle.rows.length}\tParty-dishes`);
-	console.log(`${dishesBundle.rows.length}\tDishes`);
-	console.log(`${ingredientsBundle.rows.length}\tIngredients`);
-	console.log(`${cookstaBundle.rows.length}\tCooksta tiers`);
-	console.log(`${dlcBundle.rows.length}\tDLCs`);
-	console.log(`${chaptersBundle.rows.length}\tChapters`);
-	console.log(`${staffBundle.rows.length}\tStaff`);
-	console.log(`Data exported to /src/lib/data with version ${version}\n`);
+	function writeBundle<T>(name: string, bundle: EntityBundle<T>) {
+		const content = JSON.stringify(bundle, null, 2);
+		const hash = generateHash(content);
+		const hashedFilename = `${name}.${hash}.json`;
+		const versionedFilename = `${name}.${version}.json`;
+
+		// Write to src/lib/data (for gradual migration - current imports)
+		writeFileSync(join(srcOutputDir, versionedFilename), content);
+
+		// Write to static/data with hash (for new fetch-based loading)
+		writeFileSync(join(staticOutputDir, hashedFilename), content);
+
+		// Add to manifest
+		manifest[name] = `/data/${hashedFilename}`;
+
+		return bundle.rows.length;
+	}
+
+	// Write all bundles
+	const partiesCount = writeBundle('parties', partiesBundle);
+	const partyDishesCount = writeBundle('party-dishes', partyDishesBundle);
+	const dishesCount = writeBundle('dishes', dishesBundle);
+	const ingredientsCount = writeBundle('ingredients', ingredientsBundle);
+	const cookstaCount = writeBundle('cooksta', cookstaBundle);
+	const dlcCount = writeBundle('dlc', dlcBundle);
+	const chaptersCount = writeBundle('chapters', chaptersBundle);
+	const staffCount = writeBundle('staff', staffBundle);
+
+	// Write manifest to src directory for import
+	const manifestPath = join(srcOutputDir, 'manifest.json');
+	writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+
+	console.log(`${partiesCount}\tParties`);
+	console.log(`${partyDishesCount}\tParty-dishes`);
+	console.log(`${dishesCount}\tDishes`);
+	console.log(`${ingredientsCount}\tIngredients`);
+	console.log(`${cookstaCount}\tCooksta tiers`);
+	console.log(`${dlcCount}\tDLCs`);
+	console.log(`${chaptersCount}\tChapters`);
+	console.log(`${staffCount}\tStaff`);
+	console.log(`Data exported to /src/lib/data with version ${version}`);
+	console.log(`Hashed files exported to /static/data`);
+	console.log(`Manifest written to ${manifestPath}\n`);
 }
