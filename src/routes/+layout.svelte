@@ -25,31 +25,34 @@
 	} from '$lib/types.js';
 
 	let { children, data }: LayoutProps = $props();
-	// One-time initialization (works in SSR and client): set only if store is empty
-	if (data.dishes && get(dishesBundleStore) == null) {
-		dishesBundleStore.set(data.dishes as EntityBundle<Dish>);
-	}
-	if (data.ingredients && get(ingredientsBundleStore) == null) {
-		ingredientsBundleStore.set(data.ingredients as EntityBundle<Ingredient>);
-	}
-	if (data.parties && get(partiesBundleStore) == null) {
-		partiesBundleStore.set(data.parties as EntityBundle<Party>);
-	}
-	if (data.partyDishes && get(partyDishesBundleStore) == null) {
-		partyDishesBundleStore.set(data.partyDishes as EntityBundle<PartyDish>);
-	}
-	if (data.cooksta && get(cookstaBundleStore) == null) {
-		cookstaBundleStore.set(data.cooksta as EntityBundle<CookstaTier>);
-	}
-	if (data.dlc && get(dlcBundleStore) == null) {
-		dlcBundleStore.set(data.dlc as EntityBundle<DLC>);
-	}
-	if (data.chapters && get(chaptersBundleStore) == null) {
-		chaptersBundleStore.set(data.chapters as EntityBundle<Chapter>);
-	}
-	if (data.staff && get(staffBundleStore) == null) {
-		staffBundleStore.set(data.staff as EntityBundle<Staff>);
-	}
+
+	// Initialize stores in an effect to ensure proper hydration
+	$effect(() => {
+		if (data.dishes && get(dishesBundleStore) == null) {
+			dishesBundleStore.set(data.dishes as EntityBundle<Dish>);
+		}
+		if (data.ingredients && get(ingredientsBundleStore) == null) {
+			ingredientsBundleStore.set(data.ingredients as EntityBundle<Ingredient>);
+		}
+		if (data.parties && get(partiesBundleStore) == null) {
+			partiesBundleStore.set(data.parties as EntityBundle<Party>);
+		}
+		if (data.partyDishes && get(partyDishesBundleStore) == null) {
+			partyDishesBundleStore.set(data.partyDishes as EntityBundle<PartyDish>);
+		}
+		if (data.cooksta && get(cookstaBundleStore) == null) {
+			cookstaBundleStore.set(data.cooksta as EntityBundle<CookstaTier>);
+		}
+		if (data.dlc && get(dlcBundleStore) == null) {
+			dlcBundleStore.set(data.dlc as EntityBundle<DLC>);
+		}
+		if (data.chapters && get(chaptersBundleStore) == null) {
+			chaptersBundleStore.set(data.chapters as EntityBundle<Chapter>);
+		}
+		if (data.staff && get(staffBundleStore) == null) {
+			staffBundleStore.set(data.staff as EntityBundle<Staff>);
+		}
+	});
 </script>
 
 <div class="flex min-h-screen flex-col">
