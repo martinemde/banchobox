@@ -12,11 +12,17 @@ function createStorageKey(key: string, version?: string): string {
 	return version ? `${key}.${version}` : key;
 }
 
+export type PersistedStore<T> = {
+	get: () => T;
+	set: (value: T) => void;
+	subscribe: (run: (value: T) => void) => () => void;
+};
+
 export function persistedState<T>(
 	key: string,
 	initialValue: T,
 	options?: PersistOptions<T>
-): { get: () => T; set: (value: T) => void } {
+): PersistedStore<T> {
 	const storageKey = createStorageKey(key, options?.version);
 	let initialized = false;
 
@@ -79,9 +85,25 @@ export function persistedState<T>(
 		});
 	}
 
+	// Track subscribers for store contract
+	const subscribers = new Set<(value: T) => void>();
+
+	// Watch state and notify all subscribers when it changes
+	if (browser) {
+		$effect(() => {
+			const currentValue = state;
+			subscribers.forEach((fn) => fn(currentValue));
+		});
+	}
+
 	return {
 		get: () => state,
-		set: (value: T) => (state = value)
+		set: (value: T) => (state = value),
+		subscribe: (run: (value: T) => void) => {
+			subscribers.add(run);
+			run(state); // Call immediately with current value (Svelte store contract)
+			return () => subscribers.delete(run);
+		}
 	};
 }
 
@@ -162,7 +184,7 @@ export function persistedLocalState<T>(
 	key: string,
 	initialValue: T,
 	options?: PersistOptions<T>
-): { get: () => T; set: (value: T) => void } {
+): PersistedStore<T> {
 	return persistedState(key, initialValue, {
 		...options,
 		version: options?.version ?? 'v1' // Default versioning

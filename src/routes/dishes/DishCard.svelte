@@ -70,18 +70,17 @@
 		return new Intl.NumberFormat().format(Math.round(value));
 	}
 
-	// Two-way tracked binding via store
+	// One-way reactive state from store - reads from store for display
+	// Writes happen only through onTrackChange handler (user action)
 	let tracked = $state(false);
+	let initialized = false;
+
 	$effect(() => {
 		const unsub = trackedDishIds.subscribe((set) => {
-			const v = set.has(dish.id);
-			if (tracked !== v) tracked = v;
+			tracked = set.has(dish.id);
+			initialized = true;
 		});
 		return () => unsub();
-	});
-	$effect(() => {
-		if (tracked) trackedDishIds.track(dish.id);
-		else trackedDishIds.untrack(dish.id);
 	});
 </script>
 
