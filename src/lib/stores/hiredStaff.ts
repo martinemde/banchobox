@@ -1,40 +1,24 @@
-import { writable, type Writable } from 'svelte/store';
+import type { Writable } from 'svelte/store';
 import { persistedLocalState } from '$lib/utils/persisted.svelte';
-import { browser } from '$app/environment';
 
-// Internal persisted state
-const persistedState = persistedLocalState('hiredStaff', new Set<number>(), {
+// Create a persisted store that directly implements the store contract
+const baseStore = persistedLocalState('hiredStaff', new Set<number>(), {
 	version: 'v1',
 	serialize: (set) => JSON.stringify(Array.from(set)),
 	deserialize: (raw) => new Set<number>(JSON.parse(raw) as number[])
 });
 
-// Create a Svelte store that wraps the persisted state for backward compatibility
+// Extend with helper methods
 function createHiredStaffIdsStore(): Writable<Set<number>> & {
 	hire: (id: number) => void;
 	unhire: (id: number) => void;
 	toggle: (id: number) => void;
 } {
-	const store = writable<Set<number>>(persistedState.get());
-
-	// Sync persisted state to store when persisted state changes
-	if (browser) {
-		$effect(() => {
-			store.set(persistedState.get());
-		});
-	}
-
-	// Sync store to persisted state when store changes
-	store.subscribe((value) => {
-		persistedState.set(value);
-	});
-
 	function withClone(updateFn: (next: Set<number>) => void) {
-		store.update((current) => {
-			const next = new Set(current);
-			updateFn(next);
-			return next;
-		});
+		const current = baseStore.get();
+		const next = new Set(current);
+		updateFn(next);
+		baseStore.set(next);
 	}
 
 	function hire(id: number) {
@@ -52,25 +36,29 @@ function createHiredStaffIdsStore(): Writable<Set<number>> & {
 		});
 	}
 
-	return Object.assign(store, { hire, unhire, toggle });
+	return Object.assign(baseStore, { hire, unhire, toggle });
 }
 
 export const hiredStaffIds = createHiredStaffIdsStore();
 
 // Backward compatible binding function
+// Creates a two-way binding between a local state and the store
 export function bindHired(staffId: number) {
 	let checked = $state(false);
+	let initialized = false;
 
-	// initialize from store
+	// Initialize from store and track changes
 	$effect(() => {
 		const unsub = hiredStaffIds.subscribe((set) => {
 			checked = set.has(staffId);
+			initialized = true;
 		});
 		return () => unsub();
 	});
 
-	// write-through on change
+	// Write changes back to store (skip first run to avoid loops)
 	$effect(() => {
+		if (!initialized) return;
 		if (checked) hiredStaffIds.hire(staffId);
 		else hiredStaffIds.unhire(staffId);
 	});
