@@ -1,8 +1,7 @@
 import { createEntityStores } from './entityBundle.js';
 import type { Chapter, EntityBundle, Id } from '$lib/types.js';
-import { derived, type Readable, type Writable, get } from 'svelte/store';
+import { derived, type Readable, type Writable } from 'svelte/store';
 import { persistedLocalState } from '$lib/utils/persisted.svelte';
-import { browser } from '$app/environment';
 
 export const chaptersStores = createEntityStores<Chapter>({
 	sortKey: 'order',
@@ -32,19 +31,3 @@ export const selectedChapter = derived([bundle, selectedChapterId], ([$bundle, $
 
 	return chapter;
 });
-
-// Initialize default selection to first chapter if none selected
-if (browser) {
-	$effect(() => {
-		const $bundle = get(bundle);
-		if (!$bundle) return;
-
-		const currentSelection = selectedChapterId.get();
-		if (currentSelection != null) return;
-
-		const firstChapter = ($bundle.rows ?? [])[0] ?? null;
-		if (firstChapter) {
-			selectedChapterId.set(firstChapter.id);
-		}
-	});
-}

@@ -85,7 +85,14 @@ selectedTierId: PersistedStore<Id | null>      // Cooksta tier
 selectedChapterId: PersistedStore<Id | null>   // Story chapter
 ```
 
-**Key Point:** Persisted stores implement the Svelte store contract directly (subscribe, get, set). No circular syncing between persisted state and stores.
+**Implementation Details:**
+- Uses plain JavaScript variables (not `$state`) to avoid top-level effects
+- Implements Svelte store contract: `subscribe()`, `get()`, `set()`
+- Subscribers are notified directly via callback when `set()` is called
+- Storage sync happens via direct `addEventListener` (not `$effect`)
+- No circular dependencies or effect orphan errors
+
+**Key Point:** Persisted stores implement the Svelte store contract directly (subscribe, get, set). No circular syncing between persisted state and stores. No top-level effects.
 
 ---
 
@@ -255,6 +262,32 @@ function onClick() {
 }
 ```
 
+### ❌ DON'T: Top-Level Effects
+```typescript
+// BAD - Effect created at module level (outside component)
+if (browser) {
+  $effect(() => {
+    // This causes effect_orphan error
+    someStore.set(computeValue());
+  });
+}
+```
+
+### ✅ DO: Plain Functions or Component Effects
+```typescript
+// GOOD - Use plain functions for module-level logic
+function notifySubscribers() {
+  subscribers.forEach(fn => fn(value));
+}
+
+// Or move effect into a component
+// In MyComponent.svelte:
+$effect(() => {
+  // Effects only work inside components
+  someStore.set(computeValue());
+});
+```
+
 ---
 
 ## 9. Effect Dependencies
@@ -305,6 +338,12 @@ $effect(() => {
 
 ## Debugging Tips
 
+### If you see `effect_orphan` error:
+1. Check for `$effect()` calls at module level (outside components)
+2. Move effects into component files (`.svelte`)
+3. Or replace with plain functions for module-level logic
+4. Remember: Effects MUST be created inside component context
+
 ### If you see infinite loops:
 1. Check for circular `$effect` dependencies
 2. Look for store subscriptions that write back to stores
@@ -320,3 +359,4 @@ $effect(() => {
 1. Check localStorage in browser DevTools
 2. Verify persisted store implements subscribe/get/set
 3. Ensure no circular sync between persisted and non-persisted stores
+4. Ensure persisted stores use plain variables, not `$state`

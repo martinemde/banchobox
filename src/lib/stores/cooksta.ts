@@ -1,8 +1,7 @@
 import { createEntityStores } from './entityBundle.js';
 import type { CookstaTier, EntityBundle, Id } from '$lib/types.js';
-import { derived, type Readable, type Writable, get } from 'svelte/store';
+import { derived, type Readable, type Writable } from 'svelte/store';
 import { persistedLocalState } from '$lib/utils/persisted.svelte';
-import { browser } from '$app/environment';
 
 export const cookstaStores = createEntityStores<CookstaTier>({
 	sortKey: 'order',
@@ -32,19 +31,3 @@ export const selectedTier = derived([bundle, selectedTierId], ([$bundle, $select
 
 	return tier;
 });
-
-// Initialize default selection to first tier if none selected
-if (browser) {
-	$effect(() => {
-		const $bundle = get(bundle);
-		if (!$bundle) return;
-
-		const currentSelection = selectedTierId.get();
-		if (currentSelection != null) return;
-
-		const firstTier = $bundle.rows[0] ?? null;
-		if (firstTier) {
-			selectedTierId.set(firstTier.id);
-		}
-	});
-}

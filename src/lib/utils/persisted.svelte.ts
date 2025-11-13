@@ -1,5 +1,4 @@
 import { browser } from '$app/environment';
-import { untrack } from 'svelte';
 
 export type PersistOptions<T> = {
 	serialize?: (value: T) => string;
@@ -24,7 +23,6 @@ export function persistedState<T>(
 	options?: PersistOptions<T>
 ): PersistedStore<T> {
 	const storageKey = createStorageKey(key, options?.version);
-	let initialized = false;
 
 	function readFromStorage(): T | undefined {
 		if (!browser) return undefined;
@@ -48,57 +46,46 @@ export function persistedState<T>(
 	}
 
 	// Initialize state with value from storage or initial value
+	// Use plain variable instead of $state since we're managing reactivity through subscribers
 	const persisted = browser ? readFromStorage() : undefined;
-	let state = $state(persisted !== undefined ? persisted : initialValue);
-
-	// Only write to storage when state changes after initialization
-	$effect(() => {
-		if (!browser) return;
-		if (!initialized) {
-			initialized = true;
-			return; // Skip first run to avoid writing initial value back
-		}
-		writeToStorage(state);
-	});
-
-	// Tab synchronization with proper cleanup
-	if (browser && (options?.syncTabs ?? true)) {
-		$effect(() => {
-			function onStorage(e: StorageEvent) {
-				if (e.storageArea !== localStorage) return;
-				if (e.key !== storageKey) return;
-				if (e.newValue == null) return;
-				try {
-					// Use untrack to avoid triggering the write effect
-					untrack(() => {
-						state = options?.deserialize
-							? options.deserialize(e.newValue!)
-							: (JSON.parse(e.newValue!) as T);
-					});
-				} catch {
-					/* noop */
-				}
-			}
-
-			addEventListener('storage', onStorage);
-			return () => removeEventListener('storage', onStorage);
-		});
-	}
+	let state = persisted !== undefined ? persisted : initialValue;
 
 	// Track subscribers for store contract
 	const subscribers = new Set<(value: T) => void>();
 
-	// Watch state and notify all subscribers when it changes
-	if (browser) {
-		$effect(() => {
-			const currentValue = state;
-			subscribers.forEach((fn) => fn(currentValue));
-		});
+	// Notify all subscribers when state changes
+	function notifySubscribers() {
+		subscribers.forEach((fn) => fn(state));
+	}
+
+	// Tab synchronization - set up storage listener directly (not in an effect)
+	if (browser && (options?.syncTabs ?? true)) {
+		function onStorage(e: StorageEvent) {
+			if (e.storageArea !== localStorage) return;
+			if (e.key !== storageKey) return;
+			if (e.newValue == null) return;
+			try {
+				state = options?.deserialize
+					? options.deserialize(e.newValue!)
+					: (JSON.parse(e.newValue!) as T);
+				// Notify subscribers of the change from storage event
+				notifySubscribers();
+			} catch {
+				/* noop */
+			}
+		}
+
+		addEventListener('storage', onStorage);
 	}
 
 	return {
 		get: () => state,
-		set: (value: T) => (state = value),
+		set: (value: T) => {
+			state = value;
+			// Write to storage and notify subscribers
+			writeToStorage(value);
+			notifySubscribers();
+		},
 		subscribe: (run: (value: T) => void) => {
 			subscribers.add(run);
 			run(state); // Call immediately with current value (Svelte store contract)
