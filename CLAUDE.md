@@ -17,22 +17,26 @@ Visit the live application at: **[banchobox.com](https://banchobox.com)**
 ## Tech Stack
 
 ### Core Framework
+
 - **SvelteKit** - Full-stack framework (using Svelte 5 with runes)
 - **TypeScript** - Type-safe development
 - **Vite** - Build tool and dev server
 
 ### UI & Styling
+
 - **Skeleton** (`@skeletonlabs/skeleton-svelte`) - Design system and UI components
 - **Lucide Icons** (`@lucide/svelte`) - Icon library
 - **TailwindCSS** - Utility-first CSS framework
 - **bits-ui** - Headless UI component primitives
 
 ### Data & State Management
+
 - **Svelte 5 Reactivity** - Built-in state management with `$state`, `$derived`, and `$effect`
 - **Zod** - Schema validation for CSV data parsing
 - **csv-parse** - CSV data processing
 
 ### Development Tools
+
 - **Bun** - Package manager and runtime (see below)
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
@@ -42,7 +46,15 @@ Visit the live application at: **[banchobox.com](https://banchobox.com)**
 - **Playwright** - E2E testing
 
 ### Deployment
+
 - **Cloudflare Pages** - Hosting platform (using `@sveltejs/adapter-cloudflare`)
+
+### Error Tracking & Monitoring
+
+- **Sentry** (`@sentry/sveltekit`) - Exception tracking and performance monitoring
+  - Free tier: 5,000 errors/month
+  - Features: Error tracking, session replay, performance tracing
+  - Integration: Client and server-side error capture
 
 ## Package Manager: BUN ONLY
 
@@ -154,6 +166,7 @@ bun run test
 ## Key Features
 
 ### State Management
+
 - **Cooksta Store**: Tracks restaurant tier and capabilities
 - **Chapter Store**: Manages story progression
 - **Dish Tracking Store**: Persists user-selected dishes
@@ -161,9 +174,11 @@ bun run test
 - **Staff Store**: Manages hired staff and assignments
 
 ### Persistent Storage
+
 User preferences and tracking data are persisted to localStorage for a seamless experience across sessions.
 
 ### Responsive Design
+
 Built with Skeleton's responsive components and TailwindCSS utilities for mobile-first design.
 
 ## Deployment
@@ -179,6 +194,58 @@ bun run preview
 ```
 
 The production build uses `@sveltejs/adapter-cloudflare` for optimal performance on Cloudflare's edge network.
+
+## Error Tracking with Sentry
+
+BanchoBox uses Sentry for exception tracking and performance monitoring. This helps catch and debug errors in production.
+
+### Setup
+
+1. **Create a Sentry account** at [sentry.io](https://sentry.io) (free tier: 5,000 errors/month)
+
+2. **Create a new SvelteKit project** in Sentry
+
+3. **Copy environment variables** from `.env.example` to `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Configure your DSN** in `.env`:
+   - Get your DSN from: Sentry → Settings → Projects → [Your Project] → Client Keys (DSN)
+   - Set `PUBLIC_SENTRY_DSN` with your project's DSN
+
+5. **(Optional) Configure source maps upload** for better stack traces:
+   - Create an auth token: Sentry → Settings → Account → API → Auth Tokens
+   - Set `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, and `SENTRY_PROJECT` in `.env`
+   - Source maps will be uploaded automatically during production builds
+
+### Testing Error Tracking
+
+Visit `/test-error` in development to trigger a test error and verify Sentry is capturing exceptions:
+
+```bash
+bun run dev
+# Navigate to http://localhost:5173/test-error
+```
+
+**Note:** Remember to remove the `/test-error` route before production deployment.
+
+### Configuration Files
+
+- `src/hooks.client.ts` - Client-side error tracking and session replay
+- `src/hooks.server.ts` - Server-side error tracking for Cloudflare Workers
+- `src/instrumentation.server.ts` - Server initialization with SvelteKit instrumentation
+- `svelte.config.js` - Enables experimental instrumentation and tracing
+- `vite.config.ts` - Sentry plugin for automatic source maps upload
+- `wrangler.jsonc` - Cloudflare compatibility flags and version metadata
+
+### Features Enabled
+
+- **Error Tracking**: Automatic capture of unhandled exceptions
+- **Session Replay**: Visual replay of user sessions when errors occur (10% sample rate)
+- **Performance Tracing**: Transaction and span tracking (100% in development)
+- **Source Maps**: Uploaded automatically for readable stack traces
 
 ## Disclaimer
 
