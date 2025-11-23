@@ -17,22 +17,26 @@ Visit the live application at: **[banchobox.com](https://banchobox.com)**
 ## Tech Stack
 
 ### Core Framework
+
 - **SvelteKit** - Full-stack framework (using Svelte 5 with runes)
 - **TypeScript** - Type-safe development
 - **Vite** - Build tool and dev server
 
 ### UI & Styling
+
 - **Skeleton** (`@skeletonlabs/skeleton-svelte`) - Design system and UI components
 - **Lucide Icons** (`@lucide/svelte`) - Icon library
 - **TailwindCSS** - Utility-first CSS framework
 - **bits-ui** - Headless UI component primitives
 
 ### Data & State Management
+
 - **Svelte 5 Reactivity** - Built-in state management with `$state`, `$derived`, and `$effect`
 - **Zod** - Schema validation for CSV data parsing
 - **csv-parse** - CSV data processing
 
 ### Development Tools
+
 - **Bun** - Package manager and runtime (see below)
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
@@ -41,7 +45,12 @@ Visit the live application at: **[banchobox.com](https://banchobox.com)**
 - **Vitest** - Unit testing
 - **Playwright** - E2E testing
 
+### Error Tracking & Monitoring
+
+- **Honeybadger.io** (`@honeybadger-io/js`) - Exception tracking and error monitoring for both client and server-side errors
+
 ### Deployment
+
 - **Cloudflare Pages** - Hosting platform (using `@sveltejs/adapter-cloudflare`)
 
 ## Package Manager: BUN ONLY
@@ -154,6 +163,7 @@ bun run test
 ## Key Features
 
 ### State Management
+
 - **Cooksta Store**: Tracks restaurant tier and capabilities
 - **Chapter Store**: Manages story progression
 - **Dish Tracking Store**: Persists user-selected dishes
@@ -161,9 +171,11 @@ bun run test
 - **Staff Store**: Manages hired staff and assignments
 
 ### Persistent Storage
+
 User preferences and tracking data are persisted to localStorage for a seamless experience across sessions.
 
 ### Responsive Design
+
 Built with Skeleton's responsive components and TailwindCSS utilities for mobile-first design.
 
 ## Deployment
@@ -179,6 +191,49 @@ bun run preview
 ```
 
 The production build uses `@sveltejs/adapter-cloudflare` for optimal performance on Cloudflare's edge network.
+
+## Error Tracking with Honeybadger
+
+The application uses Honeybadger.io for exception tracking and error monitoring in both development and production environments.
+
+### Setup
+
+1. Sign up for a free account at [Honeybadger.io](https://app.honeybadger.io)
+2. Create a new project and get your API key
+3. Copy `.env.example` to `.env` and add your Honeybadger API key:
+
+```bash
+cp .env.example .env
+# Edit .env and add your API key
+```
+
+4. Configure environment variables:
+
+```bash
+# .env
+PUBLIC_HONEYBADGER_API_KEY=your_api_key_here
+PUBLIC_HONEYBADGER_ENVIRONMENT=development  # or production
+HONEYBADGER_API_KEY=your_api_key_here
+HONEYBADGER_ENVIRONMENT=development
+```
+
+### Features
+
+- **Automatic error tracking**: Both client-side and server-side errors are automatically reported
+- **Breadcrumbs**: HTTP requests and user actions are tracked for debugging context
+- **Environment-aware**: Different environments (dev, staging, production) are tracked separately
+- **Error filtering**: 4xx errors (like 404s) are not reported, only server errors (5xx)
+
+### For Cloudflare Pages Deployment
+
+Add the environment variables in the Cloudflare Pages dashboard:
+
+- `PUBLIC_HONEYBADGER_API_KEY`
+- `PUBLIC_HONEYBADGER_ENVIRONMENT` (set to "production")
+- `HONEYBADGER_API_KEY`
+- `HONEYBADGER_ENVIRONMENT` (set to "production")
+
+Optionally, you can also set `PUBLIC_HONEYBADGER_REVISION` and `HONEYBADGER_REVISION` to the git commit hash for better error tracking across deployments.
 
 ## Disclaimer
 
