@@ -18,6 +18,7 @@ import type {
 	StaffInputRow
 } from './types.js';
 import { loadCsvFile, optionalNonNegativeInt, optionalString, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
@@ -143,21 +144,6 @@ export function prepareDishesAndPartyDishes(
 				.filter(Boolean)
 				.join(' ');
 
-			const pdSort = {
-				name: normalize(dish.name),
-				finalPrice: partyPrice,
-				finalServings: dish.finalServings,
-				finalRevenue: partyRevenue,
-				finalProfit: partyProfit,
-				finalProfitPerServing: partyProfitPerServing,
-				maxProfitPerServing: partyProfitPerServing,
-				recipeCost,
-				upgradeCost,
-				ingredientCount,
-				partyBonus: party.bonus,
-				partyName: party.name
-			} as const;
-
 			const pd: PartyDish = {
 				...dish,
 				id: nextPartyDishId++,
@@ -173,7 +159,6 @@ export function prepareDishesAndPartyDishes(
 				upgradeCost,
 				ingredientCount,
 				search: pdSearch,
-				sort: pdSort,
 				partyId,
 				dishId: dish.id,
 				partyName: party.name,
@@ -190,19 +175,6 @@ export function prepareDishesAndPartyDishes(
 			partyDishesByPartyId.get(pd.partyId)!.push(pd);
 		}
 		partyDishes.push(...localPartyDishes);
-
-		const sort = {
-			name: normalize(dish.name),
-			finalPrice: dish.finalPrice,
-			finalServings: dish.finalServings,
-			finalRevenue,
-			finalProfit,
-			finalProfitPerServing,
-			maxProfitPerServing,
-			recipeCost,
-			upgradeCost,
-			ingredientCount
-		} as const;
 
 		const staffId =
 			dish.staff && dish.staff !== 'Any staff' ? staffNameToId.get(dish.staff) : undefined;
@@ -221,8 +193,7 @@ export function prepareDishesAndPartyDishes(
 			upgradeCost,
 			ingredientCount,
 			image: dish.image,
-			search,
-			sort
+			search
 		};
 
 		return enrichedDish;
@@ -256,10 +227,13 @@ export function buildDishesBundle({
 		'Unlock Condition': {}
 	};
 
-	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
-	const maxCooksta = Math.max(...cookstaBundle.rows.map((c) => c.rank));
-	const minCooksta = Math.min(...cookstaBundle.rows.map((c) => c.rank));
-	const cookstaNameByRank = Object.fromEntries(cookstaBundle.rows.map((c) => [c.rank, c.name]));
+	const chapters = Object.values(chaptersBundle.byId);
+	const maxChapter = Math.max(...chapters.map((c) => c.number));
+
+	const cookstaTiers = Object.values(cookstaBundle.byId);
+	const maxCooksta = Math.max(...cookstaTiers.map((c) => c.rank));
+	const minCooksta = Math.min(...cookstaTiers.map((c) => c.rank));
+	const cookstaNameByRank = Object.fromEntries(cookstaTiers.map((c) => [c.rank, c.name]));
 
 	for (const d of dishes) {
 		const dlc = (d.dlc ?? 'Base').toString();
@@ -317,8 +291,41 @@ export function buildDishesBundle({
 		}
 	}
 
+	// Generate precomputed sort orders for common sort keys
+	const sorted = {
+		default: 'finalProfitPerServing',
+		name: {
+			asc: computeSortedIds(dishes, 'asc', (d) => d.name),
+			display: 'Name'
+		},
+		finalPrice: {
+			desc: computeSortedIds(dishes, 'desc', (d) => d.finalPrice),
+			display: 'Price'
+		},
+		finalServings: {
+			desc: computeSortedIds(dishes, 'desc', (d) => d.finalServings),
+			display: 'Servings'
+		},
+		finalProfitPerServing: {
+			desc: computeSortedIds(dishes, 'desc', (d) => d.finalProfitPerServing),
+			display: 'Profit/Serving'
+		},
+		maxProfitPerServing: {
+			desc: computeSortedIds(dishes, 'desc', (d) => d.maxProfitPerServing),
+			display: 'Max Profit/Serving'
+		},
+		upgradeCost: {
+			asc: computeSortedIds(dishes, 'asc', (d) => d.upgradeCost),
+			display: 'Upgrade Cost'
+		},
+		ingredientCount: {
+			asc: computeSortedIds(dishes, 'asc', (d) => d.ingredientCount),
+			display: 'Ingredients'
+		}
+	};
+
 	return {
-		rows: dishes,
+		sorted,
 		byId,
 		facets
 	};
