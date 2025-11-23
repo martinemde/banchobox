@@ -233,16 +233,16 @@ export function prepareDishesAndPartyDishes(
 
 export function buildDishesBundle({
 	dishes,
-	chaptersBundle,
+	chapters,
 	ingredientsBundle,
 	partiesBundle,
-	cookstaBundle
+	cookstaTiers
 }: {
 	dishes: Dish[];
-	chaptersBundle: EntityBundle<Chapter>;
+	chapters: Chapter[];
 	ingredientsBundle: EntityBundle<Ingredient>;
 	partiesBundle: EntityBundle<Party>;
-	cookstaBundle: EntityBundle<CookstaTier>;
+	cookstaTiers: CookstaTier[];
 }): EntityBundle<Dish> {
 	// byId index for O(1) lookups
 	const byId = Object.fromEntries(dishes.map((d) => [d.id, d])) as Record<Id, Dish>;
@@ -256,10 +256,10 @@ export function buildDishesBundle({
 		'Unlock Condition': {}
 	};
 
-	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
-	const maxCooksta = Math.max(...cookstaBundle.rows.map((c) => c.rank));
-	const minCooksta = Math.min(...cookstaBundle.rows.map((c) => c.rank));
-	const cookstaNameByRank = Object.fromEntries(cookstaBundle.rows.map((c) => [c.rank, c.name]));
+	const maxChapter = Math.max(...chapters.map((c) => c.number));
+	const maxCooksta = Math.max(...cookstaTiers.map((c) => c.rank));
+	const minCooksta = Math.min(...cookstaTiers.map((c) => c.rank));
+	const cookstaNameByRank = Object.fromEntries(cookstaTiers.map((c) => [c.rank, c.name]));
 
 	for (const d of dishes) {
 		const dlc = (d.dlc ?? 'Base').toString();
@@ -297,7 +297,7 @@ export function buildDishesBundle({
 		// Add the dish to its cooksta unlock level and up
 		// If it doesn't have a cooksta, it's available in all tiers
 		if (d.cooksta !== null && d.cooksta !== undefined && d.cooksta.trim() !== '') {
-			const cookstaTier = cookstaBundle.rows.find((c) => c.name === d.cooksta)!;
+			const cookstaTier = cookstaTiers.find((c) => c.name === d.cooksta)!;
 			for (let n = cookstaTier.rank; n <= maxCooksta; n++) {
 				(facets.Cooksta[cookstaNameByRank[n]] ??= []).push(d.id);
 			}

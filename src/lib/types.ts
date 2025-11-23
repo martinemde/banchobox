@@ -51,8 +51,6 @@ export interface CookstaTier {
 	operatingCost: number;
 	kitchenStaff: number;
 	servingStaff: number;
-	// Client-side helpers
-	sort: Record<'order', string | number>; // We only have one field, but we need to stay consistent.
 }
 
 // --------------------
@@ -68,11 +66,6 @@ export interface DLCInputRow {
 export interface DLC {
 	id: Id;
 	name: string;
-	search: string;
-	sort: {
-		order: number;
-		name: string;
-	};
 }
 
 // --------------------
@@ -91,10 +84,6 @@ export interface Chapter {
 	number: number;
 	name: string;
 	subtitle: string;
-	search: string;
-	sort: {
-		order: number;
-	};
 }
 
 // Build-only Basic* and input-row types moved to scripts/build/types.ts

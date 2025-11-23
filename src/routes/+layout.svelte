@@ -7,9 +7,9 @@
 	import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
 	import { bundle as partiesBundleStore } from '$lib/stores/parties';
 	import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
-	import { bundle as cookstaBundleStore } from '$lib/stores/cooksta';
-	import { bundle as dlcBundleStore } from '$lib/stores/dlc';
-	import { bundle as chaptersBundleStore } from '$lib/stores/chapters';
+	import { cookstaTiers } from '$lib/stores/cooksta';
+	import { dlcs } from '$lib/stores/dlc';
+	import { chapters } from '$lib/stores/chapters';
 	import { bundle as staffBundleStore } from '$lib/stores/staff';
 	import type {
 		EntityBundle,
@@ -34,9 +34,9 @@
 		ingredientsBundleStore.set(data.ingredients as EntityBundle<Ingredient>);
 		partiesBundleStore.set(data.parties as EntityBundle<Party>);
 		partyDishesBundleStore.set(data.partyDishes as EntityBundle<PartyDish>);
-		cookstaBundleStore.set(data.cooksta as EntityBundle<CookstaTier>);
-		dlcBundleStore.set(data.dlc as EntityBundle<DLC>);
-		chaptersBundleStore.set(data.chapters as EntityBundle<Chapter>);
+		cookstaTiers.set(data.cooksta as CookstaTier[]);
+		dlcs.set(data.dlc as DLC[]);
+		chapters.set(data.chapters as Chapter[]);
 		staffBundleStore.set(data.staff as EntityBundle<Staff>);
 	});
 </script>

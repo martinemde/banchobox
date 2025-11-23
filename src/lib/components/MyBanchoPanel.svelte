@@ -1,22 +1,18 @@
 <script lang="ts">
 	import { SvelteSet } from 'svelte/reactivity';
 	import { persist } from '$lib/utils/persisted.svelte';
-	import { visible as cookstaVisible, selectedTierId, selectedTier } from '$lib/stores/cooksta';
-	import {
-		visible as chaptersVisible,
-		selectedChapterId,
-		selectedChapter
-	} from '$lib/stores/chapters';
-	import { visible as dlcVisible } from '$lib/stores/dlc';
+	import { cookstaTiers, selectedTierId, selectedTier } from '$lib/stores/cooksta';
+	import { chapters, selectedChapterId, selectedChapter } from '$lib/stores/chapters';
+	import { dlcs } from '$lib/stores/dlc';
 
 	let {
 		enabledDlcIds = new SvelteSet<number>(),
 		expanded = $bindable(true)
 	}: { enabledDlcIds?: Set<number>; expanded?: boolean } = $props();
 
-	const cookstaTiers = $derived($cookstaVisible ?? []);
-	const chapterRows = $derived($chaptersVisible ?? []);
-	const dlcRows = $derived($dlcVisible ?? []);
+	const cookstaTiersList = $derived($cookstaTiers ?? []);
+	const chaptersList = $derived($chapters ?? []);
+	const dlcList = $derived($dlcs ?? []);
 
 	let editBancho = $state(false);
 
@@ -81,20 +77,20 @@
 			{#if editBancho}
 				<label class="label" aria-label="Cooksta">
 					<select class="ig-select" bind:value={$selectedTierId}>
-						{#each cookstaTiers as t (t.id)}
+						{#each cookstaTiersList as t (t.id)}
 							<option value={t.id}>Cooksta {t.name}</option>
 						{/each}
 					</select>
 				</label>
 				<label class="label" aria-label="Chapter">
 					<select class="ig-select" bind:value={$selectedChapterId}>
-						{#each chapterRows as c (c.id)}
+						{#each chaptersList as c (c.id)}
 							<option value={c.id}>{c.name}</option>
 						{/each}
 					</select>
 				</label>
 				<fieldset class="mt-2 space-y-1 pl-3 text-sm">
-					{#each dlcRows as d (d.id)}
+					{#each dlcList as d (d.id)}
 						<label class="flex items-center gap-2">
 							<input
 								type="checkbox"
@@ -113,7 +109,7 @@
 						<span>&mdash;</span>
 					{:else}
 						<ul class="list-inside list-disc space-y-1 p-1">
-							{#each dlcRows.filter((d) => enabledDlcIds.has(d.id)) as d (d.id)}
+							{#each dlcList.filter((d) => enabledDlcIds.has(d.id)) as d (d.id)}
 								<li>{d.name} DLC</li>
 							{/each}
 						</ul>

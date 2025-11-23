@@ -26,9 +26,9 @@ export function exportData(args: {
 	ingredientsBundle: EntityBundle<Ingredient>;
 	partiesBundle: EntityBundle<Party>;
 	partyDishesBundle: EntityBundle<PartyDish>;
-	cookstaBundle: EntityBundle<CookstaTier>;
-	dlcBundle: EntityBundle<DLC>;
-	chaptersBundle: EntityBundle<Chapter>;
+	cookstaTiers: CookstaTier[];
+	dlcData: DLC[];
+	chaptersData: Chapter[];
 	staffBundle: EntityBundle<Staff>;
 }) {
 	const {
@@ -36,9 +36,9 @@ export function exportData(args: {
 		ingredientsBundle,
 		partiesBundle,
 		partyDishesBundle,
-		cookstaBundle,
-		dlcBundle,
-		chaptersBundle,
+		cookstaTiers,
+		dlcData,
+		chaptersData,
 		staffBundle
 	} = args;
 
@@ -72,14 +72,32 @@ export function exportData(args: {
 		return bundle.rows.length;
 	}
 
+	function writeArray<T>(name: string, data: T[]) {
+		const content = JSON.stringify(data, null, 2);
+		const hash = generateHash(content);
+		const hashedFilename = `${name}.${hash}.json`;
+		const versionedFilename = `${name}.${version}.json`;
+
+		// Write to src/lib/data (for gradual migration - current imports)
+		writeFileSync(join(srcOutputDir, versionedFilename), content);
+
+		// Write to static/data with hash (for new fetch-based loading)
+		writeFileSync(join(staticOutputDir, hashedFilename), content);
+
+		// Add to manifest
+		manifest[name] = `/data/${hashedFilename}`;
+
+		return data.length;
+	}
+
 	// Write all bundles
 	const partiesCount = writeBundle('parties', partiesBundle);
 	const partyDishesCount = writeBundle('party-dishes', partyDishesBundle);
 	const dishesCount = writeBundle('dishes', dishesBundle);
 	const ingredientsCount = writeBundle('ingredients', ingredientsBundle);
-	const cookstaCount = writeBundle('cooksta', cookstaBundle);
-	const dlcCount = writeBundle('dlc', dlcBundle);
-	const chaptersCount = writeBundle('chapters', chaptersBundle);
+	const cookstaCount = writeArray('cooksta', cookstaTiers);
+	const dlcCount = writeArray('dlc', dlcData);
+	const chaptersCount = writeArray('chapters', chaptersData);
 	const staffCount = writeBundle('staff', staffBundle);
 
 	// Write manifest to src directory for import

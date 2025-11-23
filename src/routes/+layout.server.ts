@@ -36,9 +36,9 @@ export const load: LayoutServerLoad = async ({ fetch }) => {
 	// Keep other bundles as direct imports for now (gradual migration)
 	const partiesBundle = parties as unknown as EntityBundle<Party>;
 	const partyDishesBundle = partyDishes as unknown as EntityBundle<PartyDish>;
-	const cookstaBundle = cooksta as unknown as EntityBundle<CookstaTier>;
-	const dlcBundle = dlc as unknown as EntityBundle<DLC>;
-	const chaptersBundle = chapters as unknown as EntityBundle<Chapter>;
+	const cookstaTiers = cooksta as unknown as CookstaTier[];
+	const dlcData = dlc as unknown as DLC[];
+	const chaptersData = chapters as unknown as Chapter[];
 	const staffBundle = staff as unknown as EntityBundle<Staff>;
 
 	return {
@@ -46,9 +46,9 @@ export const load: LayoutServerLoad = async ({ fetch }) => {
 		ingredients: ingredientsBundle,
 		parties: partiesBundle,
 		partyDishes: partyDishesBundle,
-		cooksta: cookstaBundle,
-		dlc: dlcBundle,
-		chapters: chaptersBundle,
+		cooksta: cookstaTiers,
+		dlc: dlcData,
+		chapters: chaptersData,
 		staff: staffBundle
 	};
 };

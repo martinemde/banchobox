@@ -228,12 +228,12 @@ export function prepareIngredients(
 
 export function buildIngredientsBundle(
 	ingredients: Ingredient[],
-	chaptersBundle: EntityBundle<Chapter>
+	chapters: Chapter[]
 ): EntityBundle<Ingredient> {
 	const byId = Object.fromEntries(ingredients.map((i) => [i.id, i])) as Record<Id, Ingredient>;
 
 	const facets = initializeIngredientFacets();
-	const maxChapter = computeMaxChapter(chaptersBundle);
+	const maxChapter = computeMaxChapter(chapters);
 
 	for (const ingredient of ingredients) {
 		addIngredientFacetEntries(facets, ingredient);
@@ -257,8 +257,8 @@ function initializeIngredientFacets(): EntityBundle<Ingredient>['facets'] {
 	};
 }
 
-function computeMaxChapter(chaptersBundle: EntityBundle<Chapter>): number {
-	return Math.max(...chaptersBundle.rows.map((c) => c.number));
+function computeMaxChapter(chapters: Chapter[]): number {
+	return Math.max(...chapters.map((c) => c.number));
 }
 
 function addIngredientFacetEntries(
