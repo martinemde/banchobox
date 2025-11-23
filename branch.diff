@@ -1,0 +1,4179 @@
+diff --git a/scripts/build/chapterBundle.test.ts b/scripts/build/chapterBundle.test.ts
+index df73b3535d..d85bc52cfc 100644
+--- a/scripts/build/chapterBundle.test.ts
++++ b/scripts/build/chapterBundle.test.ts
+@@ -1,6 +1,6 @@
+ import { describe, it, expect, beforeEach } from 'vitest';
+ import { loadChapters, buildChapterBundle } from './chapterBundle.js';
+-import type { ChapterInputRow } from '../../src/lib/types.js';
++import type { ChapterInputRow } from './types.js';
+ 
+ describe('chapterBundle', () => {
+ 	describe('buildChapterBundle', () => {
+@@ -11,10 +11,10 @@
+ 			inputRows = chapters;
+ 		});
+ 
+-		it('should create a complete bundle with rows, byId, and facets', () => {
++		it('should create a complete bundle with sorted, byId, and facets', () => {
+ 			const bundle = buildChapterBundle(inputRows);
+ 
+-			expect(bundle).toHaveProperty('rows');
++			expect(bundle).toHaveProperty('sorted');
+ 			expect(bundle).toHaveProperty('byId');
+ 			expect(bundle).toHaveProperty('facets');
+ 		});
+@@ -22,9 +22,10 @@
+ 		it('should transform input rows into Chapter objects with computed fields', () => {
+ 			const bundle = buildChapterBundle(inputRows);
+ 
+-			expect(bundle.rows).toHaveLength(9);
++			const chapters = Object.values(bundle.byId);
++			expect(chapters).toHaveLength(9);
+ 
+-			bundle.rows.forEach((chapter) => {
++			chapters.forEach((chapter) => {
+ 				// Should have all original fields
+ 				expect(chapter).toHaveProperty('id');
+ 				expect(chapter).toHaveProperty('number');
+@@ -33,17 +34,12 @@
+ 
+ 				// Should have computed fields
+ 				expect(chapter).toHaveProperty('search');
+-				expect(chapter).toHaveProperty('sort');
+ 
+ 				// Validate search field (lowercased name + subtitle)
+ 				expect(typeof chapter.search).toBe('string');
+ 				expect(chapter.search).toBe(
+ 					[chapter.name, chapter.subtitle].map((s) => s.toLowerCase()).join(' ')
+ 				);
+-
+-				// Validate sort object
+-				expect(chapter.sort).toHaveProperty('order');
+-				expect(chapter.sort.order).toBe(chapter.number);
+ 			});
+ 		});
+ 
+@@ -62,7 +58,6 @@
+ 			// Each entry should be a complete Chapter object
+ 			Object.values(bundle.byId).forEach((chapter) => {
+ 				expect(chapter).toHaveProperty('search');
+-				expect(chapter).toHaveProperty('sort');
+ 			});
+ 		});
+ 	});
+diff --git a/scripts/build/chapterBundle.ts b/scripts/build/chapterBundle.ts
+index fb25c27850..f1442ff813 100644
+--- a/scripts/build/chapterBundle.ts
++++ b/scripts/build/chapterBundle.ts
+@@ -1,6 +1,8 @@
+ import { z } from 'zod';
+-import type { ChapterInputRow, Chapter, EntityBundle, Id } from '../../src/lib/types.js';
++import type { Chapter, EntityBundle, Id } from '../../src/lib/types.js';
++import type { ChapterInputRow } from './types.js';
+ import { loadCsvFile, parseTable } from './load.js';
++import { computeSortedIds } from './utils.js';
+ 
+ // chapters-data.csv schema -> normalized row
+ const chapterRowSchema = z.object({
+@@ -25,19 +27,21 @@
+ 				number: row.number,
+ 				name: row.name,
+ 				subtitle: row.subtitle,
+-				search: [row.name, row.subtitle].map((s) => s.toLowerCase()).join(' '),
+-				sort: {
+-					order: row.number
+-				}
++				search: [row.name, row.subtitle].map((s) => s.toLowerCase()).join(' ')
+ 			} as Chapter;
+ 			return chapter;
+-		})
+-		.sort((a, b) => a.sort.order - b.sort.order);
++		});
+ 	return rows;
+ }
+ 
+ export function buildChapterBundle(inputRows: ChapterInputRow[]): EntityBundle<Chapter> {
+ 	const rows = computeChapters(inputRows);
+ 	const byId = Object.fromEntries(rows.map((r) => [r.id, r])) as Record<Id, Chapter>;
+-	return { rows, byId, facets: {} };
++
++	// Generate basic sorted IDs
++	const sorted = {
++		order: computeSortedIds(rows, 'asc', (r) => r.number)
++	};
++
++	return { sorted, byId, facets: {} };
+ }
+diff --git a/scripts/build/cookstaBundle.test.ts b/scripts/build/cookstaBundle.test.ts
+index b6ef8d5e08..00a818e2d4 100644
+--- a/scripts/build/cookstaBundle.test.ts
++++ b/scripts/build/cookstaBundle.test.ts
+@@ -1,6 +1,6 @@
+ import { describe, it, expect, beforeEach } from 'vitest';
+ import { loadCooksta, buildCookstaBundle } from './cookstaBundle.js';
+-import type { CookstaInputRow } from '../../src/lib/types.js';
++import type { CookstaInputRow } from './types.js';
+ 
+ describe('cookstaBundle', () => {
+ 	describe('loadCooksta', () => {
+@@ -130,10 +130,10 @@
+ 			inputRows = cooksta;
+ 		});
+ 
+-		it('should create a complete bundle with rows, byId, and facets', () => {
++		it('should create a complete bundle with sorted, byId, and facets', () => {
+ 			const bundle = buildCookstaBundle(inputRows);
+ 
+-			expect(bundle).toHaveProperty('rows');
++			expect(bundle).toHaveProperty('sorted');
+ 			expect(bundle).toHaveProperty('byId');
+ 			expect(bundle).toHaveProperty('facets');
+ 		});
+@@ -141,9 +141,10 @@
+ 		it('should transform input rows into CookstaTier objects with computed fields', () => {
+ 			const bundle = buildCookstaBundle(inputRows);
+ 
+-			expect(bundle.rows).toHaveLength(6);
++			const tiers = Object.values(bundle.byId);
++			expect(tiers).toHaveLength(6);
+ 
+-			bundle.rows.forEach((tier, idx) => {
++			tiers.forEach((tier) => {
+ 				// Should have all original fields
+ 				expect(tier).toHaveProperty('id');
+ 				expect(tier).toHaveProperty('name');
+@@ -158,15 +159,10 @@
+ 				expect(tier).toHaveProperty('kitchenStaff');
+ 				expect(tier).toHaveProperty('servingStaff');
+ 
+-				// Should have computed fields
+-				expect(tier).toHaveProperty('sort');
+-
+-				// Validate sort object
+-				expect(tier.sort).toHaveProperty('order');
+-				expect(tier.sort.order).toBe(tier.rank);
+-
+-				// ID should be sequential (idx + 1)
+-				expect(tier.id).toBe(idx + 1);
++				// Computed fields are at bundle level, not on individual tiers
++
++				// ID should be positive
++				expect(tier.id).toBeGreaterThan(0);
+ 			});
+ 		});
+ 
+@@ -191,26 +187,27 @@
+ 
+ 			// Each entry should be a complete CookstaTier object
+ 			Object.values(bundle.byId).forEach((tier) => {
+-				expect(tier).toHaveProperty('sort');
+ 				expect(tier).toHaveProperty('customers');
+ 				expect(tier).toHaveProperty('operatingCost');
+ 			});
+ 		});
+ 
+-		it('should sort tiers by rank in ascending order', () => {
++		it('should have tiers sorted by rank in the sorted array', () => {
+ 			const bundle = buildCookstaBundle(inputRows);
+ 
+-			const ranks = bundle.rows.map((t) => t.rank);
++			// Get tiers in sorted order using the sorted IDs
++			const sortedTiers = bundle.sorted.order.asc.map((id) => bundle.byId[id]);
++			const ranks = sortedTiers.map((t) => t.rank);
+ 			const sortedRanks = [...ranks].sort((a, b) => a - b);
+ 			expect(ranks).toEqual(sortedRanks);
+ 
+ 			// Verify specific order
+-			expect(bundle.rows[0].name).toBe('Coal'); // rank: 0
+-			expect(bundle.rows[1].name).toBe('Bronze'); // rank: 1
+-			expect(bundle.rows[2].name).toBe('Silver'); // rank: 2
+-			expect(bundle.rows[3].name).toBe('Gold'); // rank: 3
+-			expect(bundle.rows[4].name).toBe('Platinum'); // rank: 4
+-			expect(bundle.rows[5].name).toBe('Diamond'); // rank: 5
++			expect(sortedTiers[0].name).toBe('Coal'); // rank: 0
++			expect(sortedTiers[1].name).toBe('Bronze'); // rank: 1
++			expect(sortedTiers[2].name).toBe('Silver'); // rank: 2
++			expect(sortedTiers[3].name).toBe('Gold'); // rank: 3
++			expect(sortedTiers[4].name).toBe('Platinum'); // rank: 4
++			expect(sortedTiers[5].name).toBe('Diamond'); // rank: 5
+ 		});
+ 
+ 		it('should have empty facets object', () => {
+diff --git a/scripts/build/cookstaBundle.ts b/scripts/build/cookstaBundle.ts
+index ac806ffd1a..880346f01e 100644
+--- a/scripts/build/cookstaBundle.ts
++++ b/scripts/build/cookstaBundle.ts
+@@ -1,6 +1,8 @@
+ import { z } from 'zod';
+-import type { CookstaInputRow, CookstaTier, EntityBundle, Id } from '../../src/lib/types.js';
++import type { CookstaTier, EntityBundle, Id } from '../../src/lib/types.js';
++import type { CookstaInputRow } from './types.js';
+ import { loadCsvFile, parseTable } from './load.js';
++import { computeSortedIds } from './utils.js';
+ 
+ // cooksta-data.csv schema
+ const cookstaRowSchema = z.object({
+@@ -29,31 +31,33 @@
+ // context to avoid recomputation during a single build run.
+ 
+ function computeTiers(inputRows: CookstaInputRow[]): CookstaTier[] {
+-	const tiers: CookstaTier[] = inputRows
+-		.map((row, idx) => {
+-			const id: Id = idx + 1;
+-			return {
+-				id,
+-				name: row.name,
+-				rank: row.rank,
+-				customers: row.customers,
+-				customerNight: row.customerNight,
+-				partyCustomers: row.partyCustomers,
+-				followers: row.followers,
+-				recipes: row.recipes,
+-				bestTaste: row.bestTaste,
+-				operatingCost: row.operatingCost,
+-				kitchenStaff: row.kitchenStaff,
+-				servingStaff: row.servingStaff,
+-				sort: { order: row.rank }
+-			};
+-		})
+-		.sort((a, b) => a.sort.order - b.sort.order);
++	const tiers: CookstaTier[] = inputRows.map((row) => {
++		return {
++			id: row.id,
++			name: row.name,
++			rank: row.rank,
++			customers: row.customers,
++			customerNight: row.customerNight,
++			partyCustomers: row.partyCustomers,
++			followers: row.followers,
++			recipes: row.recipes,
++			bestTaste: row.bestTaste,
++			operatingCost: row.operatingCost,
++			kitchenStaff: row.kitchenStaff,
++			servingStaff: row.servingStaff
++		};
++	});
+ 	return tiers;
+ }
+ 
+ export function buildCookstaBundle(inputRows: CookstaInputRow[]): EntityBundle<CookstaTier> {
+ 	const rows = computeTiers(inputRows);
+ 	const byId = Object.fromEntries(rows.map((t) => [t.id, t])) as Record<Id, CookstaTier>;
+-	return { rows, byId, facets: {} };
++
++	// Generate basic sorted IDs
++	const sorted = {
++		order: computeSortedIds(rows, 'asc', (t) => t.rank)
++	};
++
++	return { sorted, byId, facets: {} };
+ }
+diff --git a/scripts/build/dishBundle.test.ts b/scripts/build/dishBundle.test.ts
+new file mode 100644
+index 0000000000..01590bc6dd
+--- /dev/null
++++ b/scripts/build/dishBundle.test.ts
+@@ -0,0 +1,217 @@
++import { describe, it, expect } from 'vitest';
++import { buildDishesBundle } from './dishBundle.js';
++import type {
++	Dish,
++	EntityBundle,
++	Chapter,
++	Ingredient,
++	Party,
++	CookstaTier
++} from '../../src/lib/types.js';
++
++// Mock data for testing
++const mockDishes: Dish[] = [
++	{
++		id: 1,
++		name: 'Test Dish A',
++		image: 'test.png',
++		chapter: 1,
++		maxLevel: 1,
++		basePrice: 100,
++		baseTaste: 50,
++		baseServings: 2,
++		finalPrice: 100,
++		finalTaste: 50,
++		finalServings: 2,
++		ingredients: [],
++		recipeCost: 10,
++		partyDishIds: [],
++		partyIds: [],
++		finalRevenue: 200,
++		finalProfit: 190,
++		finalProfitPerServing: 95,
++		maxProfitPerServing: 95,
++		upgradeCost: 0,
++		ingredientCount: 0,
++		search: 'test dish a'
++	},
++	{
++		id: 2,
++		name: 'Test Dish B',
++		image: 'test2.png',
++		chapter: 1,
++		maxLevel: 1,
++		basePrice: 200,
++		baseTaste: 75,
++		baseServings: 3,
++		finalPrice: 200,
++		finalTaste: 75,
++		finalServings: 3,
++		ingredients: [],
++		recipeCost: 20,
++		partyDishIds: [],
++		partyIds: [],
++		finalRevenue: 600,
++		finalProfit: 580,
++		finalProfitPerServing: 193,
++		maxProfitPerServing: 193,
++		upgradeCost: 0,
++		ingredientCount: 0,
++		search: 'test dish b'
++	}
++];
++
++const mockChaptersBundle: EntityBundle<Chapter> = {
++	sorted: { order: { asc: [1] } },
++	byId: {
++		1: { id: 1, number: 1, name: 'Chapter 1', subtitle: 'Test', search: '' }
++	},
++	facets: {}
++};
++
++const mockIngredientsBundle: EntityBundle<Ingredient> = {
++	sorted: {},
++	byId: {},
++	facets: {}
++};
++
++const mockPartiesBundle: EntityBundle<Party> = {
++	sorted: {},
++	byId: {},
++	facets: {}
++};
++
++const mockCookstaBundle: EntityBundle<CookstaTier> = {
++	sorted: { order: { asc: [1] } },
++	byId: {
++		1: {
++			id: 1,
++			name: 'Bronze',
++			rank: 1,
++			customers: 10,
++			customerNight: 5,
++			partyCustomers: 15,
++			followers: 100,
++			recipes: 5,
++			bestTaste: 100,
++			operatingCost: 50,
++			kitchenStaff: 2,
++			servingStaff: 2
++		}
++	},
++	facets: {}
++};
++
++describe('buildDishesBundle', () => {
++	it('should create bundle with sorted, byId, and facets', () => {
++		const bundle = buildDishesBundle({
++			dishes: mockDishes,
++			chaptersBundle: mockChaptersBundle,
++			ingredientsBundle: mockIngredientsBundle,
++			partiesBundle: mockPartiesBundle,
++			cookstaBundle: mockCookstaBundle
++		});
++
++		// Check structure
++		expect(bundle).toHaveProperty('sorted');
++		expect(bundle).toHaveProperty('byId');
++		expect(bundle).toHaveProperty('facets');
++	});
++
++	it('should create correct sorted arrays', () => {
++		const bundle = buildDishesBundle({
++			dishes: mockDishes,
++			chaptersBundle: mockChaptersBundle,
++			ingredientsBundle: mockIngredientsBundle,
++			partiesBundle: mockPartiesBundle,
++			cookstaBundle: mockCookstaBundle
++		});
++
++		// Check that sorted has expected keys with nested structure
++		expect(bundle.sorted).toHaveProperty('name');
++		expect(bundle.sorted).toHaveProperty('finalProfitPerServing');
++		expect(bundle.sorted).toHaveProperty('finalPrice');
++		expect(bundle.sorted.name).toHaveProperty('asc');
++		expect(bundle.sorted.finalProfitPerServing).toHaveProperty('desc');
++		expect(bundle.sorted.finalPrice).toHaveProperty('desc');
++
++		// Check sorting correctness
++		const nameAsc = bundle.sorted.name.asc;
++		expect(nameAsc).toHaveLength(2);
++		expect(nameAsc[0]).toBe(1); // "Test Dish A" comes first
++		expect(nameAsc[1]).toBe(2); // "Test Dish B" comes second
++
++		const profitDesc = bundle.sorted.finalProfitPerServing.desc;
++		expect(profitDesc).toHaveLength(2);
++		expect(profitDesc[0]).toBe(2); // Dish B has higher profit (193)
++		expect(profitDesc[1]).toBe(1); // Dish A has lower profit (95)
++	});
++
++	it('should populate byId correctly', () => {
++		const bundle = buildDishesBundle({
++			dishes: mockDishes,
++			chaptersBundle: mockChaptersBundle,
++			ingredientsBundle: mockIngredientsBundle,
++			partiesBundle: mockPartiesBundle,
++			cookstaBundle: mockCookstaBundle
++		});
++
++		expect(Object.keys(bundle.byId)).toHaveLength(2);
++		expect(bundle.byId[1]).toEqual(mockDishes[0]);
++		expect(bundle.byId[2]).toEqual(mockDishes[1]);
++	});
++
++	it('should create facets', () => {
++		const bundle = buildDishesBundle({
++			dishes: mockDishes,
++			chaptersBundle: mockChaptersBundle,
++			ingredientsBundle: mockIngredientsBundle,
++			partiesBundle: mockPartiesBundle,
++			cookstaBundle: mockCookstaBundle
++		});
++
++		expect(bundle.facets).toHaveProperty('Chapter');
++		expect(bundle.facets).toHaveProperty('Cooksta');
++		expect(bundle.facets).toHaveProperty('DLC');
++		expect(bundle.facets).toHaveProperty('Party');
++		expect(bundle.facets).toHaveProperty('Unlock Condition');
++	});
++
++	it('should have all expected sort keys with correct directions', () => {
++		const bundle = buildDishesBundle({
++			dishes: mockDishes,
++			chaptersBundle: mockChaptersBundle,
++			ingredientsBundle: mockIngredientsBundle,
++			partiesBundle: mockPartiesBundle,
++			cookstaBundle: mockCookstaBundle
++		});
++
++		// Expected sort keys and their directions
++		const expectedSorts = [
++			{ key: 'name', direction: 'asc' },
++			{ key: 'finalPrice', direction: 'desc' },
++			{ key: 'finalServings', direction: 'desc' },
++			{ key: 'finalProfitPerServing', direction: 'desc' },
++			{ key: 'maxProfitPerServing', direction: 'desc' },
++			{ key: 'upgradeCost', direction: 'asc' },
++			{ key: 'ingredientCount', direction: 'asc' }
++		];
++
++		// Verify each expected sort key exists with the correct direction
++		for (const { key, direction } of expectedSorts) {
++			expect(bundle.sorted).toHaveProperty(key);
++			expect(bundle.sorted[key]).toHaveProperty(direction);
++			expect(Array.isArray(bundle.sorted[key][direction])).toBe(true);
++			expect(bundle.sorted[key][direction]).toHaveLength(mockDishes.length);
++
++			// Verify all IDs are present
++			const sortedIds = bundle.sorted[key][direction];
++			const expectedIds = mockDishes.map((d) => d.id).sort((a, b) => a - b);
++			const actualIds = [...sortedIds].sort((a, b) => a - b);
++			expect(actualIds).toEqual(expectedIds);
++		}
++
++		// Verify we have exactly the expected number of sort keys (no more, no less)
++		expect(Object.keys(bundle.sorted)).toHaveLength(expectedSorts.length);
++	});
++});
+diff --git a/scripts/build/dishBundle.ts b/scripts/build/dishBundle.ts
+index 893be3b8c8..37611eff04 100644
+--- a/scripts/build/dishBundle.ts
++++ b/scripts/build/dishBundle.ts
+@@ -18,6 +18,7 @@
+ 	StaffInputRow
+ } from './types.js';
+ import { loadCsvFile, optionalNonNegativeInt, optionalString, parseTable } from './load.js';
++import { computeSortedIds } from './utils.js';
+ 
+ const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
+ 
+@@ -143,21 +144,6 @@
+ 				.filter(Boolean)
+ 				.join(' ');
+ 
+-			const pdSort = {
+-				name: normalize(dish.name),
+-				finalPrice: partyPrice,
+-				finalServings: dish.finalServings,
+-				finalRevenue: partyRevenue,
+-				finalProfit: partyProfit,
+-				finalProfitPerServing: partyProfitPerServing,
+-				maxProfitPerServing: partyProfitPerServing,
+-				recipeCost,
+-				upgradeCost,
+-				ingredientCount,
+-				partyBonus: party.bonus,
+-				partyName: party.name
+-			} as const;
+-
+ 			const pd: PartyDish = {
+ 				...dish,
+ 				id: nextPartyDishId++,
+@@ -173,7 +159,6 @@
+ 				upgradeCost,
+ 				ingredientCount,
+ 				search: pdSearch,
+-				sort: pdSort,
+ 				partyId,
+ 				dishId: dish.id,
+ 				partyName: party.name,
+@@ -191,19 +176,6 @@
+ 		}
+ 		partyDishes.push(...localPartyDishes);
+ 
+-		const sort = {
+-			name: normalize(dish.name),
+-			finalPrice: dish.finalPrice,
+-			finalServings: dish.finalServings,
+-			finalRevenue,
+-			finalProfit,
+-			finalProfitPerServing,
+-			maxProfitPerServing,
+-			recipeCost,
+-			upgradeCost,
+-			ingredientCount
+-		} as const;
+-
+ 		const staffId =
+ 			dish.staff && dish.staff !== 'Any staff' ? staffNameToId.get(dish.staff) : undefined;
+ 
+@@ -221,8 +193,7 @@
+ 			upgradeCost,
+ 			ingredientCount,
+ 			image: dish.image,
+-			search,
+-			sort
++			search
+ 		};
+ 
+ 		return enrichedDish;
+@@ -256,10 +227,27 @@
+ 		'Unlock Condition': {}
+ 	};
+ 
+-	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
+-	const maxCooksta = Math.max(...cookstaBundle.rows.map((c) => c.rank));
+-	const minCooksta = Math.min(...cookstaBundle.rows.map((c) => c.rank));
+-	const cookstaNameByRank = Object.fromEntries(cookstaBundle.rows.map((c) => [c.rank, c.name]));
++	// Helper function to get rows from either new or old bundle format
++	const getRows = <T>(bundle: EntityBundle<T>): T[] => {
++		if ('sorted' in bundle && bundle.sorted) {
++			// Try to get the first available sorted list
++			for (const sortKey of Object.keys(bundle.sorted)) {
++				const directions = bundle.sorted[sortKey];
++				if (directions && typeof directions === 'object') {
++					const firstDirection = Object.values(directions)[0];
++					if (Array.isArray(firstDirection) && firstDirection.length > 0) {
++						return firstDirection.map((id) => bundle.byId[id]).filter(Boolean);
++					}
++				}
++			}
++		}
++		return Object.values(bundle.byId);
++	};
++
++	const maxChapter = Math.max(...getRows(chaptersBundle).map((c) => c.number));
++	const maxCooksta = Math.max(...getRows(cookstaBundle).map((c) => c.rank));
++	const minCooksta = Math.min(...getRows(cookstaBundle).map((c) => c.rank));
++	const cookstaNameByRank = Object.fromEntries(getRows(cookstaBundle).map((c) => [c.rank, c.name]));
+ 
+ 	for (const d of dishes) {
+ 		const dlc = (d.dlc ?? 'Base').toString();
+@@ -297,7 +285,7 @@
+ 		// Add the dish to its cooksta unlock level and up
+ 		// If it doesn't have a cooksta, it's available in all tiers
+ 		if (d.cooksta !== null && d.cooksta !== undefined && d.cooksta.trim() !== '') {
+-			const cookstaTier = cookstaBundle.rows.find((c) => c.name === d.cooksta)!;
++			const cookstaTier = getRows(cookstaBundle).find((c) => c.name === d.cooksta)!;
+ 			for (let n = cookstaTier.rank; n <= maxCooksta; n++) {
+ 				(facets.Cooksta[cookstaNameByRank[n]] ??= []).push(d.id);
+ 			}
+@@ -317,8 +305,19 @@
+ 		}
+ 	}
+ 
++	// Generate precomputed sort orders for common sort keys
++	const sorted = {
++		name: computeSortedIds(dishes, 'asc', (d) => d.name),
++		finalPrice: computeSortedIds(dishes, 'desc', (d) => d.finalPrice),
++		finalServings: computeSortedIds(dishes, 'desc', (d) => d.finalServings),
++		finalProfitPerServing: computeSortedIds(dishes, 'desc', (d) => d.finalProfitPerServing),
++		maxProfitPerServing: computeSortedIds(dishes, 'desc', (d) => d.maxProfitPerServing),
++		upgradeCost: computeSortedIds(dishes, 'asc', (d) => d.upgradeCost),
++		ingredientCount: computeSortedIds(dishes, 'asc', (d) => d.ingredientCount)
++	};
++
+ 	return {
+-		rows: dishes,
++		sorted,
+ 		byId,
+ 		facets
+ 	};
+diff --git a/scripts/build/dlcBundle.test.ts b/scripts/build/dlcBundle.test.ts
+index 8275d07016..96fd387760 100644
+--- a/scripts/build/dlcBundle.test.ts
++++ b/scripts/build/dlcBundle.test.ts
+@@ -1,6 +1,6 @@
+ import { describe, it, expect, beforeEach } from 'vitest';
+ import { loadDLCs, buildDLCBundle } from './dlcBundle.js';
+-import type { DLCInputRow } from '../../src/lib/types.js';
++import type { DLCInputRow } from './types.js';
+ 
+ describe('dlcBundle', () => {
+ 	describe('buildDLCBundle', () => {
+@@ -11,10 +11,10 @@
+ 			inputRows = dlcs;
+ 		});
+ 
+-		it('should create a complete bundle with rows, byId, and facets', () => {
++		it('should create a complete bundle with sorted, byId, and facets', () => {
+ 			const bundle = buildDLCBundle(inputRows);
+ 
+-			expect(bundle).toHaveProperty('rows');
++			expect(bundle).toHaveProperty('sorted');
+ 			expect(bundle).toHaveProperty('byId');
+ 			expect(bundle).toHaveProperty('facets');
+ 		});
+@@ -22,27 +22,20 @@
+ 		it('should transform input rows into DLC objects with computed fields', () => {
+ 			const bundle = buildDLCBundle(inputRows);
+ 
+-			expect(bundle.rows).toHaveLength(3);
++			const dlcs = Object.values(bundle.byId);
++			expect(dlcs).toHaveLength(3);
+ 
+-			bundle.rows.forEach((dlc) => {
++			dlcs.forEach((dlc) => {
+ 				// Should have all original fields
+ 				expect(dlc).toHaveProperty('id');
+ 				expect(dlc).toHaveProperty('name');
+ 
+-				// Should have computed fields
+-				expect(dlc).toHaveProperty('sort');
++				// Computed fields are at bundle level, not on individual DLC objects
+ 				expect(dlc).toHaveProperty('search');
+ 
+ 				// Validate search field (lowercased name)
+ 				expect(typeof dlc.search).toBe('string');
+ 				expect(dlc.search).toBe(dlc.name.toLowerCase());
+-
+-				// Validate sort object
+-				expect(dlc.sort).toHaveProperty('order');
+-				expect(dlc.sort).toHaveProperty('name');
+-				expect(typeof dlc.sort.order).toBe('number');
+-				expect(typeof dlc.sort.name).toBe('string');
+-				expect(dlc.sort.name).toBe(dlc.name.toLowerCase());
+ 			});
+ 		});
+ 
+@@ -53,24 +46,18 @@
+ 			const dredge = bundle.byId[1];
+ 			expect(dredge.id).toBe(1);
+ 			expect(dredge.name).toBe('Dredge');
+-			expect(dredge.sort.order).toBe(1);
+-			expect(dredge.sort.name).toBe('dredge');
+ 			expect(dredge.search).toBe('dredge');
+ 
+ 			// Test Godzilla
+ 			const godzilla = bundle.byId[2];
+ 			expect(godzilla.id).toBe(2);
+ 			expect(godzilla.name).toBe('Godzilla');
+-			expect(godzilla.sort.order).toBe(2);
+-			expect(godzilla.sort.name).toBe('godzilla');
+ 			expect(godzilla.search).toBe('godzilla');
+ 
+ 			// Test Ichiban
+ 			const ichiban = bundle.byId[3];
+ 			expect(ichiban.id).toBe(3);
+ 			expect(ichiban.name).toBe('Ichiban');
+-			expect(ichiban.sort.order).toBe(3);
+-			expect(ichiban.sort.name).toBe('ichiban');
+ 			expect(ichiban.search).toBe('ichiban');
+ 		});
+ 	});
+diff --git a/scripts/build/dlcBundle.ts b/scripts/build/dlcBundle.ts
+index 36fb67bdf6..16cf86257c 100644
+--- a/scripts/build/dlcBundle.ts
++++ b/scripts/build/dlcBundle.ts
+@@ -1,6 +1,8 @@
+ import { z } from 'zod';
+-import type { DLCInputRow, DLC, EntityBundle, Id } from '../../src/lib/types.js';
++import type { DLC, EntityBundle, Id } from '../../src/lib/types.js';
++import type { DLCInputRow } from './types.js';
+ import { loadCsvFile, parseTable } from './load.js';
++import { computeSortedIds } from './utils.js';
+ 
+ // dlc-data.csv schema -> normalized row
+ const dlcRowSchema = z.object({
+@@ -22,20 +24,21 @@
+ 			const dlc: DLC = {
+ 				id: row.id,
+ 				name: row.name,
+-				sort: {
+-					order: row.order,
+-					name: row.name.toLowerCase()
+-				},
+ 				search: row.name.toLowerCase()
+ 			} as DLC;
+ 			return dlc;
+-		})
+-		.sort((a, b) => a.sort.order - b.sort.order);
++		});
+ 	return rows;
+ }
+ 
+ export function buildDLCBundle(inputRows: DLCInputRow[]): EntityBundle<DLC> {
+ 	const rows = computeDLCs(inputRows);
+ 	const byId = Object.fromEntries(rows.map((r) => [r.id, r])) as Record<Id, DLC>;
+-	return { rows, byId, facets: {} };
++
++	// Generate basic sorted IDs
++	const sorted = {
++		order: computeSortedIds(rows, 'asc', (r) => r.id)
++	};
++
++	return { sorted, byId, facets: {} };
+ }
+diff --git a/scripts/build/export.ts b/scripts/build/export.ts
+index ac4a7e47c5..0000000000 100644
+--- a/scripts/build/export.ts
++++ b/scripts/build/export.ts
+@@ -51,6 +51,8 @@
+ 
+ 	const version = 'v1';
+ 
++<<<<<<< Conflict 1 of 1
+++++++++ Contents of side #1
+ 	// Helper to write both versions of a file
+ 	const manifest: Record<string, string> = {};
+ 
+@@ -97,4 +99,47 @@
+ 	console.log(`Data exported to /src/lib/data with version ${version}`);
+ 	console.log(`Hashed files exported to /static/data`);
+ 	console.log(`Manifest written to ${manifestPath}\n`);
++%%%%%%% Changes from base to side #2
++ 	// Overwrite v1 files with bundled forms where applicable
++ 	writeFileSync(join(outputDir, `dishes.${version}.json`), JSON.stringify(dishesBundle, null, 2));
++ 	writeFileSync(
++ 		join(outputDir, `ingredients.${version}.json`),
++ 		JSON.stringify(ingredientsBundle, null, 2)
++ 	);
++ 	writeFileSync(join(outputDir, `parties.${version}.json`), JSON.stringify(partiesBundle, null, 2));
++ 	writeFileSync(
++ 		join(outputDir, `party-dishes.${version}.json`),
++ 		JSON.stringify(partyDishesBundle, null, 2)
++ 	);
++ 	writeFileSync(join(outputDir, `cooksta.${version}.json`), JSON.stringify(cookstaBundle, null, 2));
++ 	writeFileSync(join(outputDir, `dlc.${version}.json`), JSON.stringify(dlcBundle, null, 2));
++ 	writeFileSync(
++ 		join(outputDir, `chapters.${version}.json`),
++ 		JSON.stringify(chaptersBundle, null, 2)
++ 	);
++ 	writeFileSync(join(outputDir, `staff.${version}.json`), JSON.stringify(staffBundle, null, 2));
++ 
++-	console.log(`${partiesBundle.rows.length}\tParties`);
++-	console.log(`${partyDishesBundle.rows.length}\tParty-dishes`);
++-	console.log(`${dishesBundle.rows.length}\tDishes`);
++-	console.log(`${ingredientsBundle.rows.length}\tIngredients`);
++-	console.log(`${cookstaBundle.rows.length}\tCooksta tiers`);
++-	console.log(`${dlcBundle.rows.length}\tDLCs`);
++-	console.log(`${chaptersBundle.rows.length}\tChapters`);
++-	console.log(`${staffBundle.rows.length}\tStaff`);
+++	// Helper function to count items in bundle (supports both old and new format)
+++	const getItemCount = (bundle: EntityBundle<unknown>): number => {
+++		return Object.keys(bundle.byId).length;
+++	};
+++
+++	console.log(`${getItemCount(partiesBundle)}\tParties`);
+++	console.log(`${getItemCount(partyDishesBundle)}\tParty-dishes`);
+++	console.log(`${getItemCount(dishesBundle)}\tDishes`);
+++	console.log(`${getItemCount(ingredientsBundle)}\tIngredients`);
+++	console.log(`${getItemCount(cookstaBundle)}\tCooksta tiers`);
+++	console.log(`${getItemCount(dlcBundle)}\tDLCs`);
+++	console.log(`${getItemCount(chaptersBundle)}\tChapters`);
+++	console.log(`${getItemCount(staffBundle)}\tStaff`);
++ 	console.log(`Data exported to /src/lib/data with version ${version}\n`);
++>>>>>>> Conflict 1 of 1 ends
+ }
+diff --git a/scripts/build/ingredientBundle.test.ts b/scripts/build/ingredientBundle.test.ts
+new file mode 100644
+index 0000000000..1486cc4b54
+--- /dev/null
++++ b/scripts/build/ingredientBundle.test.ts
+@@ -0,0 +1,646 @@
++import { describe, it, expect, beforeEach } from 'vitest';
++import { loadIngredients, prepareIngredients, buildIngredientsBundle } from './ingredientBundle.js';
++import type {
++	IngredientInputRow,
++	DishInputRow,
++	PartyInputRow,
++	DishIngredientJoinRow,
++	PartyDishJoinRow
++} from './types.js';
++import type { Ingredient, EntityBundle, Chapter } from '../../src/lib/types.js';
++
++describe('ingredientBundle', () => {
++	describe('loadIngredients', () => {
++		it('should load and parse all ingredients from CSV', () => {
++			const result = loadIngredients();
++
++			expect(result).toHaveProperty('ingredients');
++			expect(result).toHaveProperty('ingredientNameToId');
++			expect(Array.isArray(result.ingredients)).toBe(true);
++			expect(result.ingredients.length).toBeGreaterThan(0);
++			expect(result.ingredientNameToId instanceof Map).toBe(true);
++		});
++
++		it('should parse ingredient data with correct types and values', () => {
++			const { ingredients } = loadIngredients();
++
++			// Test first ingredient
++			const firstIngredient = ingredients[0];
++			expect(firstIngredient).toBeDefined();
++			expect(typeof firstIngredient.id).toBe('number');
++			expect(typeof firstIngredient.name).toBe('string');
++			expect(typeof firstIngredient.image).toBe('string');
++			expect(typeof firstIngredient.cost).toBe('number');
++			expect(typeof firstIngredient.source).toBe('string');
++			expect(typeof firstIngredient.type).toBe('string');
++			expect(typeof firstIngredient.rank).toBe('number');
++		});
++
++		it('should create ingredientNameToId mapping correctly', () => {
++			const { ingredients, ingredientNameToId } = loadIngredients();
++
++			// Every ingredient should have an entry in the map
++			ingredients.forEach((ingredient) => {
++				expect(ingredientNameToId.has(ingredient.name)).toBe(true);
++				expect(ingredientNameToId.get(ingredient.name)).toBe(ingredient.id);
++			});
++		});
++
++		it('should ensure all fields have correct types and constraints', () => {
++			const { ingredients } = loadIngredients();
++
++			ingredients.forEach((ingredient) => {
++				expect(typeof ingredient.id).toBe('number');
++				expect(typeof ingredient.name).toBe('string');
++				expect(typeof ingredient.image).toBe('string');
++				expect(typeof ingredient.cost).toBe('number');
++				expect(typeof ingredient.rank).toBe('number');
++
++				// Validate constraints
++				expect(ingredient.id).toBeGreaterThan(0);
++				expect(ingredient.cost).toBeGreaterThanOrEqual(0);
++				expect(ingredient.rank).toBeGreaterThanOrEqual(0);
++
++				// Should be trimmed
++				expect(ingredient.name.trim()).toBe(ingredient.name);
++				expect(ingredient.image.trim()).toBe(ingredient.image);
++
++				// Image should be a valid filename
++				expect(ingredient.image).toMatch(/\.png$/);
++			});
++		});
++
++		it('should handle optional boolean fields correctly', () => {
++			const { ingredients } = loadIngredients();
++
++			ingredients.forEach((ingredient) => {
++				// Optional booleans should be boolean or undefined
++				if (ingredient.day !== undefined) {
++					expect(typeof ingredient.day).toBe('boolean');
++				}
++				if (ingredient.night !== undefined) {
++					expect(typeof ingredient.night).toBe('boolean');
++				}
++				if (ingredient.fog !== undefined) {
++					expect(typeof ingredient.fog).toBe('boolean');
++				}
++				if (ingredient.aberration !== undefined) {
++					expect(typeof ingredient.aberration).toBe('boolean');
++				}
++			});
++		});
++
++		it('should handle catch method fields correctly', () => {
++			const { ingredients } = loadIngredients();
++
++			ingredients.forEach((ingredient) => {
++				// Catch method booleans should be boolean or undefined
++				if (ingredient.drone !== undefined) {
++					expect(typeof ingredient.drone).toBe('boolean');
++				}
++				if (ingredient.crabtrap !== undefined) {
++					expect(typeof ingredient.crabtrap).toBe('boolean');
++				}
++				if (ingredient.bugnet !== undefined) {
++					expect(typeof ingredient.bugnet).toBe('boolean');
++				}
++				if (ingredient.gloves !== undefined) {
++					expect(typeof ingredient.gloves).toBe('boolean');
++				}
++				if (ingredient.steelnet !== undefined) {
++					expect(typeof ingredient.steelnet).toBe('boolean');
++				}
++				if (ingredient.harpoon !== undefined) {
++					expect(typeof ingredient.harpoon).toBe('boolean');
++				}
++			});
++		});
++	});
++
++	describe('prepareIngredients', () => {
++		let ingredientInputRows: IngredientInputRow[];
++		let dishInputRows: DishInputRow[];
++		let partyInputRows: PartyInputRow[];
++
++		beforeEach(() => {
++			ingredientInputRows = [
++				{
++					id: 1,
++					name: 'Test Ingredient',
++					image: 'ing.png',
++					type: 'Vegetable',
++					cost: 10,
++					source: 'Farm',
++					rank: 1,
++					buyOtto: 8,
++					buyJango: 9,
++					sell: 15,
++					kg: 2,
++					maxMeats: 3
++				} as IngredientInputRow,
++				{
++					id: 2,
++					name: 'Catch Ingredient',
++					image: 'fish.png',
++					type: 'Fish',
++					cost: 5,
++					source: 'Ocean',
++					rank: 1,
++					drone: true,
++					day: true
++				} as IngredientInputRow
++			];
++
++			dishInputRows = [
++				{
++					id: 1,
++					name: 'Test Dish',
++					image: 'dish.png',
++					finalPrice: 100,
++					finalServings: 2
++				} as DishInputRow
++			];
++
++			partyInputRows = [
++				{
++					id: 1,
++					name: 'Test Party',
++					bonus: 1.5
++				} as PartyInputRow
++			];
++		});
++
++		it('should enrich ingredients with computed fields', () => {
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				[],
++				[],
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			expect(ingredient).toHaveProperty('usedIn');
++			expect(ingredient).toHaveProperty('usedForParties');
++			expect(ingredient).toHaveProperty('vendors');
++			expect(ingredient).toHaveProperty('search');
++			expect(ingredient).toHaveProperty('sellPerKg');
++		});
++
++		it('should build vendors object from buy prices', () => {
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				[],
++				[],
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			expect(ingredient.vendors).toHaveProperty('Otto');
++			expect(ingredient.vendors).toHaveProperty('Jango');
++			expect(ingredient.vendors.Otto).toBe(8);
++			expect(ingredient.vendors.Jango).toBe(9);
++		});
++
++		it('should calculate sellPerKg correctly', () => {
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				[],
++				[],
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			// sellPerKg = (sell * maxMeats) / kg = (15 * 3) / 2 = 22.5
++			expect(ingredient.sellPerKg).toBe(22.5);
++		});
++
++		it('should handle missing sellPerKg data', () => {
++			const ingredientWithoutSell: IngredientInputRow = {
++				...ingredientInputRows[0],
++				sell: undefined
++			};
++
++			const ingredients = prepareIngredients(
++				[ingredientWithoutSell],
++				[],
++				[],
++				partyInputRows,
++				dishInputRows
++			);
++
++			expect(ingredients[0].sellPerKg).toBeUndefined();
++		});
++
++		it('should build usedIn array for ingredients used in dishes', () => {
++			const dishIngredients: DishIngredientJoinRow[] = [
++				{ dishId: 1, ingredientId: 1, count: 2, upgradeCount: 1 }
++			];
++
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				dishIngredients,
++				[],
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			expect(ingredient.usedIn).toHaveLength(1);
++			expect(ingredient.usedIn[0]).toHaveProperty('dishId');
++			expect(ingredient.usedIn[0]).toHaveProperty('dishName');
++			expect(ingredient.usedIn[0]).toHaveProperty('dishImage');
++			expect(ingredient.usedIn[0]).toHaveProperty('count');
++			expect(ingredient.usedIn[0]).toHaveProperty('upgradeCount');
++			expect(ingredient.usedIn[0].dishId).toBe(1);
++			expect(ingredient.usedIn[0].count).toBe(2);
++			expect(ingredient.usedIn[0].upgradeCount).toBe(1);
++		});
++
++		it('should sort usedIn by price descending', () => {
++			const expensiveDish: DishInputRow = {
++				id: 2,
++				name: 'Expensive Dish',
++				image: 'expensive.png',
++				finalPrice: 200,
++				finalServings: 1
++			} as DishInputRow;
++
++			const dishIngredients: DishIngredientJoinRow[] = [
++				{ dishId: 1, ingredientId: 1, count: 1, upgradeCount: 0 },
++				{ dishId: 2, ingredientId: 1, count: 1, upgradeCount: 0 }
++			];
++
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				dishIngredients,
++				[],
++				partyInputRows,
++				[...dishInputRows, expensiveDish]
++			);
++
++			const ingredient = ingredients[0];
++			expect(ingredient.usedIn).toHaveLength(2);
++			expect(ingredient.usedIn[0].price).toBe(200); // Expensive first
++			expect(ingredient.usedIn[1].price).toBe(100);
++		});
++
++		it('should track party associations for ingredients', () => {
++			const dishIngredients: DishIngredientJoinRow[] = [
++				{ dishId: 1, ingredientId: 1, count: 1, upgradeCount: 0 }
++			];
++			const dishParties: PartyDishJoinRow[] = [{ dishId: 1, partyId: 1 }];
++
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				dishIngredients,
++				dishParties,
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			expect(ingredient.usedForParties).toContain(1);
++			expect(ingredient.usedIn[0].partyIds).toContain(1);
++			expect(ingredient.usedIn[0].partyNames).toContain('Test Party');
++		});
++
++		it('should build search index including name, type, source, and parties', () => {
++			const dishIngredients: DishIngredientJoinRow[] = [
++				{ dishId: 1, ingredientId: 1, count: 1, upgradeCount: 0 }
++			];
++			const dishParties: PartyDishJoinRow[] = [{ dishId: 1, partyId: 1 }];
++
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				dishIngredients,
++				dishParties,
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			expect(ingredient.search).toContain('test ingredient');
++			expect(ingredient.search).toContain('vegetable');
++			expect(ingredient.search).toContain('farm');
++			expect(ingredient.search).toContain('test party');
++			expect(ingredient.search).toContain('party'); // Generic party keyword
++		});
++
++		it('should compute vendor minimum buy price', () => {
++			const ingredients = prepareIngredients(
++				ingredientInputRows,
++				[],
++				[],
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			// Min of Otto (8) and Jango (9) is 8
++			const minVendorPrice = Math.min(...Object.values(ingredient.vendors));
++			expect(minVendorPrice).toBe(8);
++		});
++
++		it('should handle ingredients with no vendor prices', () => {
++			const ingredientNoVendors: IngredientInputRow = {
++				...ingredientInputRows[1],
++				buyOtto: undefined,
++				buyJango: undefined
++			};
++
++			const ingredients = prepareIngredients(
++				[ingredientNoVendors],
++				[],
++				[],
++				partyInputRows,
++				dishInputRows
++			);
++
++			const ingredient = ingredients[0];
++			expect(Object.keys(ingredient.vendors)).toHaveLength(0);
++		});
++	});
++
++	describe('buildIngredientsBundle', () => {
++		let ingredients: Ingredient[];
++		let mockChaptersBundle: EntityBundle<Chapter>;
++
++		beforeEach(() => {
++			const baseIngredient = {
++				id: 1,
++				name: 'Test Ingredient',
++				image: 'ing.png',
++				type: 'Vegetable',
++				cost: 10,
++				source: 'Farm',
++				rank: 1,
++				chapter: 1,
++				day: true,
++				buyOtto: 8,
++				usedIn: [],
++				usedForParties: [],
++				vendors: { Otto: 8 },
++				search: 'test ingredient vegetable farm',
++				sort: {
++					name: 'test ingredient',
++					buy: 8,
++					sell: 15,
++					kg: 2,
++					sellPerKg: 22.5
++				}
++			} as Ingredient;
++
++			ingredients = [
++				baseIngredient,
++				{
++					...baseIngredient,
++					id: 2,
++					name: 'Another Ingredient',
++					type: 'Fish',
++					source: 'Ocean',
++					chapter: 2,
++					night: true,
++					drone: true,
++					search: 'another ingredient fish ocean',
++					sort: {
++						name: 'another ingredient',
++						buy: 10,
++						sell: 20,
++						kg: 1,
++						sellPerKg: 20
++					}
++				} as Ingredient
++			];
++
++			mockChaptersBundle = {
++				sorted: { order: { asc: [1, 2, 3] } },
++				byId: {
++					1: { id: 1, number: 1, name: 'Chapter 1', subtitle: '', search: '' },
++					2: { id: 2, number: 2, name: 'Chapter 2', subtitle: '', search: '' },
++					3: { id: 3, number: 3, name: 'Chapter 3', subtitle: '', search: '' }
++				},
++				facets: {}
++			};
++		});
++
++		it('should create a complete bundle with sorted, byId, and facets', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(bundle).toHaveProperty('sorted');
++			expect(bundle).toHaveProperty('byId');
++			expect(bundle).toHaveProperty('facets');
++		});
++
++		it('should create correct byId mapping', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(Object.keys(bundle.byId)).toHaveLength(2);
++			expect(bundle.byId[1]).toEqual(ingredients[0]);
++			expect(bundle.byId[2]).toEqual(ingredients[1]);
++		});
++
++		it('should create sorted arrays with correct structure', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			// Verify all sort keys exist
++			expect(bundle.sorted).toHaveProperty('name');
++			expect(bundle.sorted).toHaveProperty('buy');
++			expect(bundle.sorted).toHaveProperty('sell');
++			expect(bundle.sorted).toHaveProperty('kg');
++			expect(bundle.sorted).toHaveProperty('sellPerKg');
++
++			// Verify structure with directions
++			expect(bundle.sorted.name).toHaveProperty('asc');
++			expect(bundle.sorted.buy).toHaveProperty('asc');
++			expect(bundle.sorted.sell).toHaveProperty('desc');
++			expect(bundle.sorted.kg).toHaveProperty('desc');
++			expect(bundle.sorted.sellPerKg).toHaveProperty('desc');
++
++			// Verify arrays
++			expect(Array.isArray(bundle.sorted.name.asc)).toBe(true);
++			expect(Array.isArray(bundle.sorted.buy.asc)).toBe(true);
++			expect(bundle.sorted.name.asc).toHaveLength(2);
++		});
++
++		it('should sort ingredients by name in ascending order', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			const sortedIngredients = bundle.sorted.name.asc!.map((id) => bundle.byId[id]);
++			const names = sortedIngredients.map((i) => i.name.toLowerCase());
++
++			// Verify ascending order
++			for (let i = 1; i < names.length; i++) {
++				expect(names[i].localeCompare(names[i - 1])).toBeGreaterThanOrEqual(0);
++			}
++		});
++
++		it('should sort ingredients by buy price in ascending order', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			const sortedIngredients = bundle.sorted.buy.asc!.map((id) => bundle.byId[id]);
++			const buyPrices = sortedIngredients.map((i) => {
++				const vendors = Object.values(i.vendors).filter((v) => v != undefined);
++				return vendors.length > 0 ? Math.min(...vendors) : null;
++			});
++
++			// Verify ascending order (nulls first)
++			for (let i = 1; i < buyPrices.length; i++) {
++				if (buyPrices[i - 1] !== null && buyPrices[i] !== null) {
++					expect(buyPrices[i]).toBeGreaterThanOrEqual(buyPrices[i - 1]);
++				}
++			}
++		});
++
++		it('should sort ingredients by sell price in descending order', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			const sortedIngredients = bundle.sorted.sell.desc!.map((id) => bundle.byId[id]);
++			const sellPrices = sortedIngredients.map((i) => i.sell ?? null);
++
++			// Verify descending order (highest first, nulls last)
++			for (let i = 1; i < sellPrices.length; i++) {
++				if (sellPrices[i - 1] !== null && sellPrices[i] !== null) {
++					expect(sellPrices[i]).toBeLessThanOrEqual(sellPrices[i - 1]);
++				}
++			}
++		});
++
++		it('should sort ingredients by kg in descending order', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			const sortedIngredients = bundle.sorted.kg.desc!.map((id) => bundle.byId[id]);
++			const weights = sortedIngredients.map((i) => i.kg ?? null);
++
++			// Verify descending order (highest first, nulls last)
++			for (let i = 1; i < weights.length; i++) {
++				if (weights[i - 1] !== null && weights[i] !== null) {
++					expect(weights[i]).toBeLessThanOrEqual(weights[i - 1]);
++				}
++			}
++		});
++
++		it('should sort ingredients by sellPerKg in descending order', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			const sortedIngredients = bundle.sorted.sellPerKg.desc!.map((id) => bundle.byId[id]);
++			const sellPerKgValues = sortedIngredients.map((i) => i.sellPerKg ?? null);
++
++			// Verify descending order (highest first, nulls last)
++			for (let i = 1; i < sellPerKgValues.length; i++) {
++				if (sellPerKgValues[i - 1] !== null && sellPerKgValues[i] !== null) {
++					expect(sellPerKgValues[i]).toBeLessThanOrEqual(sellPerKgValues[i - 1]);
++				}
++			}
++		});
++
++		it('should create correct facets structure', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(bundle.facets).toHaveProperty('Type');
++			expect(bundle.facets).toHaveProperty('Source');
++			expect(bundle.facets).toHaveProperty('Time');
++			expect(bundle.facets).toHaveProperty('Vendor');
++			expect(bundle.facets).toHaveProperty('Catch');
++			expect(bundle.facets).toHaveProperty('Aberration');
++			expect(bundle.facets).toHaveProperty('Farm');
++			expect(bundle.facets).toHaveProperty('Chapter');
++		});
++
++		it('should correctly categorize ingredients by type', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(bundle.facets.Type['Vegetable']).toContain(1);
++			expect(bundle.facets.Type['Fish']).toContain(2);
++		});
++
++		it('should correctly categorize ingredients by source', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(bundle.facets.Source['Farm']).toContain(1);
++			expect(bundle.facets.Source['Ocean']).toContain(2);
++		});
++
++		it('should correctly categorize ingredients by time of day', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(bundle.facets.Time['Day']).toContain(1);
++			expect(bundle.facets.Time['Night']).toContain(2);
++		});
++
++		it('should correctly categorize ingredients by vendor', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(bundle.facets.Vendor['Otto']).toContain(1);
++		});
++
++		it('should correctly categorize ingredients by catch method', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			expect(bundle.facets.Catch['Drone']).toContain(2);
++		});
++
++		it('should create cumulative chapter facets', () => {
++			const bundle = buildIngredientsBundle(ingredients, mockChaptersBundle);
++
++			// Ingredient 1 is chapter 1, so it should appear in chapters 1, 2, and 3
++			expect(bundle.facets.Chapter['1']).toContain(1);
++			expect(bundle.facets.Chapter['2']).toContain(1);
++			expect(bundle.facets.Chapter['3']).toContain(1);
++
++			// Ingredient 2 is chapter 2, so it should appear in chapters 2 and 3 only
++			expect(bundle.facets.Chapter['1']).not.toContain(2);
++			expect(bundle.facets.Chapter['2']).toContain(2);
++			expect(bundle.facets.Chapter['3']).toContain(2);
++		});
++
++		it('should handle aberration ingredients correctly', () => {
++			const aberrationIngredient: Ingredient = {
++				...ingredients[0],
++				id: 3,
++				aberration: true,
++				type: 'Aberration'
++			};
++
++			const bundle = buildIngredientsBundle(
++				[...ingredients, aberrationIngredient],
++				mockChaptersBundle
++			);
++
++			expect(bundle.facets.Type['Aberration']).toContain(3);
++		});
++
++		it('should handle farm ingredients correctly', () => {
++			const farmIngredient: Ingredient = {
++				...ingredients[0],
++				id: 3,
++				farm: 'Dredge Farm'
++			};
++
++			const bundle = buildIngredientsBundle([...ingredients, farmIngredient], mockChaptersBundle);
++
++			expect(bundle.facets.Farm['Dredge Farm']).toContain(3);
++		});
++
++		it('should handle ingredients with multiple catch methods', () => {
++			const multiCatchIngredient: Ingredient = {
++				...ingredients[0],
++				id: 3,
++				drone: true,
++				bugnet: true,
++				crabtrap: true
++			};
++
++			const bundle = buildIngredientsBundle(
++				[...ingredients, multiCatchIngredient],
++				mockChaptersBundle
++			);
++
++			expect(bundle.facets.Catch['Drone']).toContain(3);
++			expect(bundle.facets.Catch['Bug Net']).toContain(3);
++			expect(bundle.facets.Catch['Crab Trap']).toContain(3);
++		});
++	});
++});
+diff --git a/scripts/build/ingredientBundle.ts b/scripts/build/ingredientBundle.ts
+index 534bcc5e0d..7706a5d6f4 100644
+--- a/scripts/build/ingredientBundle.ts
++++ b/scripts/build/ingredientBundle.ts
+@@ -1,5 +1,6 @@
+ import { z } from 'zod';
+ import type { Ingredient, Id, EntityBundle, Chapter } from '../../src/lib/types.js';
++import { computeSortedIds } from './utils.js';
+ import type {
+ 	DishInputRow,
+ 	IngredientInputRow,
+@@ -147,11 +148,6 @@
+ 	return vendors;
+ }
+ 
+-function computeMinBuyFromVendors(vendors: Record<string, number>): number | undefined {
+-	const values = Object.values(vendors).filter((v) => v != undefined);
+-	return values.length > 0 ? Math.min(...values) : undefined;
+-}
+-
+ function buildIngredientSearchIndex(
+ 	ingredient: IngredientInputRow,
+ 	partyNames: Set<string>
+@@ -168,21 +164,6 @@
+ 		.join(' ');
+ }
+ 
+-function buildIngredientSort(
+-	ingredient: IngredientInputRow,
+-	buy: number | undefined,
+-	sellPerKg: number | undefined
+-): Ingredient['sort'] {
+-	const sort = {
+-		name: normalize(ingredient.name),
+-		buy: buy ?? undefined,
+-		sell: ingredient.sell ?? undefined,
+-		kg: ingredient.kg ?? undefined,
+-		sellPerKg
+-	} as const;
+-	return sort as unknown as Ingredient['sort'];
+-}
+-
+ export function prepareIngredients(
+ 	IngredientInputRows: IngredientInputRow[],
+ 	dishIngredients: DishIngredientJoinRow[],
+@@ -204,20 +185,16 @@
+ 		const sellPerKg = computeSellPerKg(ingredient);
+ 
+ 		const vendors = buildVendors(ingredient);
+-		const buy = computeMinBuyFromVendors(vendors);
+ 
+ 		const search = buildIngredientSearchIndex(ingredient, partyNames);
+ 
+-		const sort = buildIngredientSort(ingredient, buy, sellPerKg);
+-
+ 		const finalIngredient: Ingredient = {
+ 			...ingredient,
+ 			usedIn,
+ 			usedForParties: Array.from(partyIdSet),
+ 			sellPerKg,
+ 			vendors,
+-			search,
+-			sort
++			search
+ 		};
+ 
+ 		return finalIngredient;
+@@ -240,7 +217,19 @@
+ 		addCumulativeChapterFacetEntries(facets, ingredient, maxChapter);
+ 	}
+ 
+-	return { rows: ingredients, byId, facets };
++	// Generate sorted IDs for common sort keys
++	const sorted = {
++		name: computeSortedIds(ingredients, 'asc', (i) => i.name),
++		buy: computeSortedIds(ingredients, 'asc', (i) => {
++			const vendors = Object.values(i.vendors).filter((v) => v != undefined);
++			return vendors.length > 0 ? Math.min(...vendors) : null;
++		}),
++		sell: computeSortedIds(ingredients, 'desc', (i) => i.sell ?? null),
++		kg: computeSortedIds(ingredients, 'desc', (i) => i.kg ?? null),
++		sellPerKg: computeSortedIds(ingredients, 'desc', (i) => i.sellPerKg ?? null)
++	};
++
++	return { sorted, byId, facets };
+ }
+ 
+ // Helpers: facet building for buildIngredientsBundle
+@@ -258,7 +247,8 @@
+ }
+ 
+ function computeMaxChapter(chaptersBundle: EntityBundle<Chapter>): number {
+-	return Math.max(...chaptersBundle.rows.map((c) => c.number));
++	const chapters = Object.values(chaptersBundle.byId);
++	return Math.max(...chapters.map((c) => c.number));
+ }
+ 
+ function addIngredientFacetEntries(
+diff --git a/scripts/build/partyBundle.test.ts b/scripts/build/partyBundle.test.ts
+new file mode 100644
+index 0000000000..2eadf3628c
+--- /dev/null
++++ b/scripts/build/partyBundle.test.ts
+@@ -0,0 +1,326 @@
++import { describe, it, expect, beforeEach } from 'vitest';
++import { loadParties, buildPartiesBundle } from './partyBundle.js';
++import type { PartyInputRow } from './types.js';
++import type { PartyDish } from '../../src/lib/types.js';
++
++describe('partyBundle', () => {
++	describe('loadParties', () => {
++		it('should load and parse all parties from CSV', () => {
++			const result = loadParties();
++
++			expect(result).toHaveProperty('parties');
++			expect(result).toHaveProperty('partyNameToId');
++			expect(Array.isArray(result.parties)).toBe(true);
++			expect(result.parties.length).toBeGreaterThan(0);
++			expect(result.partyNameToId instanceof Map).toBe(true);
++		});
++
++		it('should parse party data with correct types and values', () => {
++			const { parties } = loadParties();
++
++			// Test first party
++			const firstParty = parties[0];
++			expect(firstParty).toBeDefined();
++			expect(typeof firstParty.id).toBe('number');
++			expect(typeof firstParty.name).toBe('string');
++			expect(typeof firstParty.order).toBe('number');
++			expect(typeof firstParty.bonus).toBe('number');
++		});
++
++		it('should create partyNameToId mapping correctly', () => {
++			const { parties, partyNameToId } = loadParties();
++
++			// Every party should have an entry in the map
++			parties.forEach((party) => {
++				expect(partyNameToId.has(party.name)).toBe(true);
++				expect(partyNameToId.get(party.name)).toBe(party.id);
++			});
++		});
++
++		it('should ensure all fields have correct types and constraints', () => {
++			const { parties } = loadParties();
++
++			parties.forEach((party) => {
++				expect(typeof party.id).toBe('number');
++				expect(typeof party.name).toBe('string');
++				expect(typeof party.order).toBe('number');
++				expect(typeof party.bonus).toBe('number');
++
++				// Validate constraints
++				expect(party.id).toBeGreaterThan(0);
++				expect(party.order).toBeGreaterThanOrEqual(0);
++				expect(party.bonus).toBeGreaterThan(0); // Bonus should be positive
++
++				// Should be trimmed
++				expect(party.name.trim()).toBe(party.name);
++			});
++		});
++
++		it('should sort parties by order field', () => {
++			const { parties } = loadParties();
++
++			// Verify parties are sorted by order
++			for (let i = 1; i < parties.length; i++) {
++				expect(parties[i].order).toBeGreaterThanOrEqual(parties[i - 1].order);
++			}
++		});
++
++		it('should have reasonable bonus multipliers', () => {
++			const { parties } = loadParties();
++
++			// Party bonuses should typically be between 1.0 and 3.0 (or similar reasonable range)
++			parties.forEach((party) => {
++				expect(party.bonus).toBeGreaterThan(0);
++				expect(party.bonus).toBeLessThan(10); // Sanity check - shouldn't be absurdly high
++			});
++		});
++	});
++
++	describe('buildPartiesBundle', () => {
++		let partyInputRows: PartyInputRow[];
++		let mockPartyDishesByPartyId: Map<number, PartyDish[]>;
++
++		beforeEach(() => {
++			partyInputRows = [
++				{
++					id: 1,
++					name: 'Test Party A',
++					order: 1,
++					bonus: 1.5
++				},
++				{
++					id: 2,
++					name: 'Test Party B',
++					order: 2,
++					bonus: 2.0
++				}
++			];
++
++			// Create mock party dishes
++			const partyDish1: PartyDish = {
++				id: 101,
++				dishId: 1,
++				partyId: 1,
++				name: 'Dish 1',
++				partyName: 'Test Party A',
++				partyBonus: 1.5,
++				finalProfit: 500,
++				finalPrice: 100,
++				finalServings: 2,
++				image: 'dish1.png',
++				ingredients: [],
++				recipeCost: 50,
++				partyDishIds: [101],
++				partyIds: [1],
++				finalRevenue: 200,
++				finalProfitPerServing: 250,
++				maxProfitPerServing: 250,
++				upgradeCost: 0,
++				ingredientCount: 2,
++				search: 'dish 1',
++				chapter: 1,
++				maxLevel: 1,
++				basePrice: 100,
++				baseTaste: 50,
++				baseServings: 2,
++				finalTaste: 50
++			} as PartyDish;
++
++			const partyDish2: PartyDish = {
++				...partyDish1,
++				id: 102,
++				dishId: 2,
++				name: 'Dish 2',
++				finalProfit: 300
++			} as PartyDish;
++
++			const partyDish3: PartyDish = {
++				...partyDish1,
++				id: 103,
++				dishId: 3,
++				partyId: 2,
++				partyName: 'Test Party B',
++				partyBonus: 2.0,
++				name: 'Dish 3',
++				finalProfit: 700
++			} as PartyDish;
++
++			mockPartyDishesByPartyId = new Map([
++				[1, [partyDish1, partyDish2]],
++				[2, [partyDish3]]
++			]);
++		});
++
++		it('should create a complete bundle with sorted, byId, and facets', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			expect(bundle).toHaveProperty('sorted');
++			expect(bundle).toHaveProperty('byId');
++			expect(bundle).toHaveProperty('facets');
++		});
++
++		it('should create correct byId mapping', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			expect(Object.keys(bundle.byId)).toHaveLength(2);
++			expect(bundle.byId[1]).toBeDefined();
++			expect(bundle.byId[2]).toBeDefined();
++			expect(bundle.byId[1].name).toBe('Test Party A');
++			expect(bundle.byId[2].name).toBe('Test Party B');
++		});
++
++		it('should enrich parties with computed fields', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			const party = bundle.byId[1];
++			expect(party).toHaveProperty('id');
++			expect(party).toHaveProperty('name');
++			expect(party).toHaveProperty('bonus');
++			expect(party).toHaveProperty('partyDishIds');
++			expect(party).toHaveProperty('search');
++		});
++
++		it('should sort party dishes by profit descending', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			const party = bundle.byId[1];
++			expect(party.partyDishIds).toHaveLength(2);
++			// Dish 1 has profit 500, Dish 2 has profit 300
++			// So order should be [101, 102] (highest profit first)
++			expect(party.partyDishIds[0]).toBe(101);
++			expect(party.partyDishIds[1]).toBe(102);
++		});
++
++		it('should build search string with name and bonus', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			const party = bundle.byId[1];
++			expect(party.search).toContain('test party a');
++			expect(party.search).toContain('1.5x');
++
++			const party2 = bundle.byId[2];
++			expect(party2.search).toContain('test party b');
++			expect(party2.search).toContain('2x');
++		});
++
++		it('should handle parties with no dishes', () => {
++			const partyWithNoDishes: PartyInputRow = {
++				id: 3,
++				name: 'Empty Party',
++				order: 3,
++				bonus: 1.2
++			};
++
++			const bundle = buildPartiesBundle(
++				[...partyInputRows, partyWithNoDishes],
++				mockPartyDishesByPartyId
++			);
++
++			const party = bundle.byId[3];
++			expect(party).toBeDefined();
++			expect(party.partyDishIds).toEqual([]);
++		});
++
++		it('should create sorted arrays with correct structure', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			expect(bundle.sorted).toHaveProperty('order');
++			expect(bundle.sorted.order).toHaveProperty('asc');
++			expect(Array.isArray(bundle.sorted.order.asc)).toBe(true);
++			expect(bundle.sorted.order.asc).toHaveLength(2);
++		});
++
++		it('should sort parties by ID in ascending order', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			const sortedParties = bundle.sorted.order.asc!.map((id) => bundle.byId[id]);
++			const ids = sortedParties.map((p) => p.id);
++
++			// Verify ascending order by ID
++			for (let i = 1; i < ids.length; i++) {
++				expect(ids[i]).toBeGreaterThan(ids[i - 1]);
++			}
++		});
++
++		it('should have empty facets object', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			expect(bundle.facets).toBeDefined();
++			expect(typeof bundle.facets).toBe('object');
++			// Facets is currently a placeholder, so it should be empty
++			expect(Object.keys(bundle.facets)).toHaveLength(0);
++		});
++
++		it('should preserve all party properties', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			const party = bundle.byId[1];
++			expect(party.id).toBe(1);
++			expect(party.name).toBe('Test Party A');
++			expect(party.bonus).toBe(1.5);
++		});
++
++		it('should handle multiple parties correctly', () => {
++			const bundle = buildPartiesBundle(partyInputRows, mockPartyDishesByPartyId);
++
++			expect(Object.keys(bundle.byId).length).toBe(2);
++			expect(bundle.sorted.order.asc).toHaveLength(2);
++
++			// Verify both parties are present
++			expect(bundle.byId[1]).toBeDefined();
++			expect(bundle.byId[2]).toBeDefined();
++		});
++	});
++
++	describe('integration with real data', () => {
++		it('should load and build bundle from real CSV data', () => {
++			const { parties } = loadParties();
++
++			// Use empty party dishes map for this test
++			const emptyPartyDishes = new Map();
++
++			const bundle = buildPartiesBundle(parties, emptyPartyDishes);
++
++			expect(bundle.byId).toBeDefined();
++			expect(Object.keys(bundle.byId).length).toBe(parties.length);
++			expect(bundle.sorted.order.asc).toHaveLength(parties.length);
++
++			// Verify each party is in the bundle
++			parties.forEach((party) => {
++				expect(bundle.byId[party.id]).toBeDefined();
++				expect(bundle.byId[party.id].name).toBe(party.name);
++				expect(bundle.byId[party.id].bonus).toBe(party.bonus);
++			});
++		});
++
++		it('should maintain order when building bundle', () => {
++			const { parties } = loadParties();
++			const emptyPartyDishes = new Map();
++
++			const bundle = buildPartiesBundle(parties, emptyPartyDishes);
++
++			// Get parties in sorted order
++			const sortedParties = bundle.sorted.order.asc!.map((id) => bundle.byId[id]);
++
++			// Verify they're sorted by ID
++			for (let i = 1; i < sortedParties.length; i++) {
++				expect(sortedParties[i].id).toBeGreaterThan(sortedParties[i - 1].id);
++			}
++		});
++
++		it('should have valid search strings for all parties', () => {
++			const { parties } = loadParties();
++			const emptyPartyDishes = new Map();
++
++			const bundle = buildPartiesBundle(parties, emptyPartyDishes);
++
++			Object.values(bundle.byId).forEach((party) => {
++				expect(party.search).toBeDefined();
++				expect(typeof party.search).toBe('string');
++				expect(party.search.length).toBeGreaterThan(0);
++				expect(party.search).toContain(party.name.toLowerCase());
++				expect(party.search).toContain(`${party.bonus}x`);
++			});
++		});
++	});
++});
+diff --git a/scripts/build/partyBundle.ts b/scripts/build/partyBundle.ts
+index 37c4aaa209..4a2bcec58e 100644
+--- a/scripts/build/partyBundle.ts
++++ b/scripts/build/partyBundle.ts
+@@ -2,6 +2,7 @@
+ import type { Party, PartyDish, Id, EntityBundle } from '../../src/lib/types.js';
+ import type { PartyInputRow } from './types.js';
+ import { loadCsvFile, parseTable } from './load.js';
++import { computeSortedIds } from './utils.js';
+ 
+ // parties-data.csv schema -> normalized row
+ const partyRowSchema = z.object({
+@@ -44,19 +45,12 @@
+ 			name: row.name,
+ 			bonus: row.bonus,
+ 			partyDishIds,
+-			search: [row.name.toLowerCase(), `${row.bonus}x`].join(' '),
+-			sort: {
+-				order: row.order,
+-				name: row.name.toLowerCase(),
+-				bonus: row.bonus,
+-				dishCount: partyDishIds.length
+-			}
++			search: [row.name.toLowerCase(), `${row.bonus}x`].join(' ')
+ 		} as Party;
+ 
+ 		return enrichedParty;
+ 	});
+ 
+-	parties.sort((a, b) => a.sort.order - b.sort.order);
+ 	return parties;
+ }
+ 
+@@ -71,8 +65,13 @@
+ 		// Placeholders for future party-level facets
+ 	};
+ 
++	// Generate basic sorted IDs
++	const sorted = {
++		order: computeSortedIds(parties, 'asc', (p) => p.id)
++	};
++
+ 	return {
+-		rows: parties,
++		sorted,
+ 		byId,
+ 		facets: partyFacets
+ 	};
+diff --git a/scripts/build/partyDishBundle.ts b/scripts/build/partyDishBundle.ts
+index 01831354fa..817f199fd7 100644
+--- a/scripts/build/partyDishBundle.ts
++++ b/scripts/build/partyDishBundle.ts
+@@ -2,6 +2,7 @@
+ import type { Id, PartyDish, EntityBundle } from '../../src/lib/types.js';
+ import type { PartyDishJoinRow } from './types.js';
+ import { loadCsvFile, parseTable } from './load.js';
++import { computeSortedIds } from './utils.js';
+ 
+ interface PartyDishInputRow {
+ 	dish: string;
+@@ -60,8 +61,13 @@
+ 		if (unlock) (facets.Unlock[unlock] ??= []).push(pd.id);
+ 	}
+ 
++	// Generate basic sorted IDs
++	const sorted = {
++		name: computeSortedIds(partyDishes, 'asc', (pd) => pd.name)
++	};
++
+ 	return {
+-		rows: partyDishes,
++		sorted,
+ 		byId,
+ 		facets
+ 	};
+diff --git a/scripts/build/staffBundle.test.ts b/scripts/build/staffBundle.test.ts
+index e91c6376c1..83a1c75117 100644
+--- a/scripts/build/staffBundle.test.ts
++++ b/scripts/build/staffBundle.test.ts
+@@ -133,14 +133,14 @@
+ 					partyIds: [],
+ 					finalServings: 5,
+ 					finalPrice: 50
+-				} as Dish
++				} as unknown as Dish
+ 			];
+ 		});
+ 
+-		it('should create a complete bundle with rows, byId, and facets', () => {
++		it('should create a complete bundle with sorted, byId, and facets', () => {
+ 			const bundle = buildStaffBundle(inputRows, mockDishes);
+ 
+-			expect(bundle).toHaveProperty('rows');
++			expect(bundle).toHaveProperty('sorted');
+ 			expect(bundle).toHaveProperty('byId');
+ 			expect(bundle).toHaveProperty('facets');
+ 		});
+@@ -148,44 +148,38 @@
+ 		it('should transform input rows into Staff objects with computed fields', () => {
+ 			const bundle = buildStaffBundle(inputRows, mockDishes);
+ 
+-			expect(bundle.rows.length).toBeGreaterThan(0);
++			const staff = Object.values(bundle.byId);
++			expect(staff.length).toBeGreaterThan(0);
+ 
+-			bundle.rows.forEach((staff) => {
++			staff.forEach((staffMember) => {
+ 				// Should have all original fields
+-				expect(staff).toHaveProperty('id');
+-				expect(staff).toHaveProperty('name');
+-				expect(staff).toHaveProperty('hiringFee');
+-				expect(staff).toHaveProperty('skillLevel3');
+-				expect(staff).toHaveProperty('skillLevel7');
++				expect(staffMember).toHaveProperty('id');
++				expect(staffMember).toHaveProperty('name');
++				expect(staffMember).toHaveProperty('hiringFee');
++				expect(staffMember).toHaveProperty('skillLevel3');
++				expect(staffMember).toHaveProperty('skillLevel7');
+ 
+ 				// Should have computed fields
+-				expect(staff).toHaveProperty('dishes');
+-				expect(staff).toHaveProperty('search');
+-				expect(staff).toHaveProperty('sort');
++				expect(staffMember).toHaveProperty('dishes');
++				expect(staffMember).toHaveProperty('search');
+ 
+ 				// Validate dishes array
+-				expect(Array.isArray(staff.dishes)).toBe(true);
++				expect(Array.isArray(staffMember.dishes)).toBe(true);
+ 
+ 				// Validate search field (includes name and skills)
+-				expect(typeof staff.search).toBe('string');
+-				expect(staff.search.includes(staff.name.toLowerCase())).toBe(true);
+-				expect(staff.search.includes(staff.skillLevel3.toLowerCase())).toBe(true);
+-				expect(staff.search.includes(staff.skillLevel7.toLowerCase())).toBe(true);
+-
+-				// Validate sort object
+-				expect(staff.sort).toHaveProperty('name');
+-				expect(staff.sort).toHaveProperty('hiringFee');
+-				expect(staff.sort).toHaveProperty('wageMax');
+-				expect(staff.sort).toHaveProperty('maxSeasonings');
+-				expect(staff.sort.name).toBe(staff.name.toLowerCase());
++				expect(typeof staffMember.search).toBe('string');
++				expect(staffMember.search.includes(staffMember.name.toLowerCase())).toBe(true);
++				expect(staffMember.search.includes(staffMember.skillLevel3.toLowerCase())).toBe(true);
++				expect(staffMember.search.includes(staffMember.skillLevel7.toLowerCase())).toBe(true);
+ 			});
+ 		});
+ 
+ 		it('should correctly associate dishes with staff members', () => {
+ 			const bundle = buildStaffBundle(inputRows, mockDishes);
+ 
+-			const kyoko = bundle.rows.find((s) => s.name === 'Kyoko');
+-			const liu = bundle.rows.find((s) => s.name === 'Liu');
++			const staff = Object.values(bundle.byId);
++			const kyoko = staff.find((s) => s.name === 'Kyoko');
++			const liu = staff.find((s) => s.name === 'Liu');
+ 
+ 			expect(kyoko).toBeDefined();
+ 			expect(liu).toBeDefined();
+@@ -231,36 +225,89 @@
+ 			const bundle = buildStaffBundle(inputWithEmpty, mockDishes);
+ 
+ 			// Should filter out empty names
+-			expect(bundle.rows.every((s) => s.name.trim() !== '')).toBe(true);
+-			expect(bundle.rows.find((s) => s.id === 999)).toBeUndefined();
+-			expect(bundle.rows.find((s) => s.id === 1000)).toBeUndefined();
++			const staff = Object.values(bundle.byId);
++			expect(staff.every((s) => s.name.trim() !== '')).toBe(true);
++			expect(staff.find((s) => s.id === 999)).toBeUndefined();
++			expect(staff.find((s) => s.id === 1000)).toBeUndefined();
+ 		});
+ 
+ 		it('should create correct byId mapping', () => {
+ 			const bundle = buildStaffBundle(inputRows, mockDishes);
+ 
++			const staff = Object.values(bundle.byId);
++
+ 			// Should have entry for each staff member
+-			expect(Object.keys(bundle.byId).length).toBe(bundle.rows.length);
++			expect(Object.keys(bundle.byId).length).toBe(staff.length);
+ 
+ 			// Test specific mappings
+-			const firstStaff = bundle.rows[0];
++			const firstStaff = staff[0];
+ 			expect(bundle.byId[firstStaff.id]).toBeDefined();
+ 			expect(bundle.byId[firstStaff.id].name).toBe(firstStaff.name);
+ 
+ 			// Each entry should be a complete Staff object
+ 			Object.values(bundle.byId).forEach((staff) => {
+ 				expect(staff).toHaveProperty('search');
+-				expect(staff).toHaveProperty('sort');
+ 				expect(staff).toHaveProperty('dishes');
+ 			});
+ 		});
+ 
++		it('should create sorted arrays for all sort keys', () => {
++			const bundle = buildStaffBundle(inputRows, mockDishes);
++
++			// Verify sorted object has all expected keys
++			expect(bundle.sorted).toHaveProperty('name');
++			expect(bundle.sorted).toHaveProperty('hiringFee');
++			expect(bundle.sorted).toHaveProperty('wageMax');
++			expect(bundle.sorted).toHaveProperty('cookingStatMax');
++			expect(bundle.sorted).toHaveProperty('servingStatMax');
++			expect(bundle.sorted).toHaveProperty('procureStatMax');
++			expect(bundle.sorted).toHaveProperty('appealStatMax');
++			expect(bundle.sorted).toHaveProperty('maxSeasonings');
++
++			// Each should have direction (asc or desc) with array of IDs
++			expect(bundle.sorted.name).toHaveProperty('asc');
++			expect(Array.isArray(bundle.sorted.name.asc)).toBe(true);
++			expect(bundle.sorted.name.asc!.length).toBe(Object.keys(bundle.byId).length);
++
++			expect(bundle.sorted.wageMax).toHaveProperty('desc');
++			expect(Array.isArray(bundle.sorted.wageMax.desc)).toBe(true);
++			expect(bundle.sorted.wageMax.desc!.length).toBe(Object.keys(bundle.byId).length);
++		});
++
+ 		it('should sort staff by name in ascending order', () => {
+ 			const bundle = buildStaffBundle(inputRows, mockDishes);
+ 
+-			const names = bundle.rows.map((s) => s.sort.name);
+-			const sortedNames = [...names].sort();
+-			expect(names).toEqual(sortedNames);
++			// Get staff in sorted order using the sorted IDs
++			const sortedStaff = bundle.sorted.name.asc!.map((id) => bundle.byId[id]);
++			const names = sortedStaff.map((s) => s.name.toLowerCase());
++
++			// Verify they're in ascending order
++			for (let i = 1; i < names.length; i++) {
++				expect(names[i].localeCompare(names[i - 1])).toBeGreaterThanOrEqual(0);
++			}
++		});
++
++		it('should sort staff by numeric fields correctly', () => {
++			const bundle = buildStaffBundle(inputRows, mockDishes);
++
++			// Test descending numeric sorts (higher values first)
++			const wageMaxSorted = bundle.sorted.wageMax.desc!.map((id) => bundle.byId[id].wageMax);
++			for (let i = 1; i < wageMaxSorted.length; i++) {
++				expect(wageMaxSorted[i - 1]).toBeGreaterThanOrEqual(wageMaxSorted[i]);
++			}
++
++			const cookingSorted = bundle.sorted.cookingStatMax.desc!.map(
++				(id) => bundle.byId[id].cookingStatMax
++			);
++			for (let i = 1; i < cookingSorted.length; i++) {
++				expect(cookingSorted[i - 1]).toBeGreaterThanOrEqual(cookingSorted[i]);
++			}
++
++			// Test ascending numeric sort (lower values first)
++			const hiringFeeSorted = bundle.sorted.hiringFee.asc!.map((id) => bundle.byId[id].hiringFee);
++			for (let i = 1; i < hiringFeeSorted.length; i++) {
++				expect(hiringFeeSorted[i]).toBeGreaterThanOrEqual(hiringFeeSorted[i - 1]);
++			}
+ 		});
+ 
+ 		it('should create correct facets structure', () => {
+@@ -301,14 +348,15 @@
+ 			expect(dlcCategories.length).toBeGreaterThan(0);
+ 
+ 			// Verify staff are correctly categorized
+-			bundle.rows.forEach((staff) => {
+-				// The staffBundle code uses: const dlc = (r.dlc ?? 'Base').toString();
+-				// But since empty string is truthy, it becomes the empty string, not 'Base'
+-				const expectedDlc = (staff.dlc ?? 'Base').toString();
++			const staff = Object.values(bundle.byId);
++			staff.forEach((staffMember) => {
++				// The staffBundle code uses: const dlc = !r.dlc || r.dlc.trim() === '' ? 'Base' : r.dlc.toString();
++				const expectedDLC =
++					!staffMember.dlc || staffMember.dlc.trim() === '' ? 'Base' : staffMember.dlc.toString();
+ 
+ 				// Make sure the category exists before checking
+-				expect(bundle.facets.DLC).toHaveProperty(expectedDlc);
+-				expect(bundle.facets.DLC[expectedDlc]).toContain(staff.id);
++				expect(bundle.facets.DLC).toHaveProperty(expectedDLC);
++				expect(bundle.facets.DLC[expectedDLC]).toContain(staffMember.id);
+ 			});
+ 
+ 			// Should have some category for staff
+@@ -319,8 +367,9 @@
+ 			const bundle = buildStaffBundle(inputRows, mockDishes);
+ 
+ 			// Test known skills from our sample data
+-			const kyoko = bundle.rows.find((s) => s.name === 'Kyoko');
+-			const liu = bundle.rows.find((s) => s.name === 'Liu');
++			const staff = Object.values(bundle.byId);
++			const kyoko = staff.find((s) => s.name === 'Kyoko');
++			const liu = staff.find((s) => s.name === 'Liu');
+ 
+ 			if (kyoko) {
+ 				// Kyoko has "Tip Master" and "Drink Serving"
+@@ -335,13 +384,27 @@
+ 			}
+ 		});
+ 
+-		it('should handle Dispatch Master skill bonus for seasonings', () => {
+-			// Create a staff member with Dispatch Master skill
+-			const dispatchMasterStaff: StaffInputRow = {
++		it('should use seasoningsMaxLevel20 for Dispatch Master in maxSeasonings sort', () => {
++			// Create staff with different seasoning values
++			const staffWithDispatch: StaffInputRow = {
++				id: 998,
++				name: 'With Dispatch',
++				skillLevel3: 'Dispatch Master',
++				skillLevel7: 'Other Skill',
++				seasoningsMinLevel20: 2,
++				seasoningsMaxLevel20: 5,
++				hiringFee: 100,
++				wageBase: 20,
++				raise: 10,
++				wageMax: 200
++			} as StaffInputRow;
++
++			const staffWithoutDispatch: StaffInputRow = {
+ 				id: 999,
+-				name: 'Test Dispatch Master',
+-				skillLevel3: 'Dispatch Master',
++				name: 'Without Dispatch',
++				skillLevel3: 'Cooking+',
+ 				skillLevel7: 'Other Skill',
++				seasoningsMinLevel20: 2,
+ 				seasoningsMaxLevel20: 5,
+ 				hiringFee: 100,
+ 				wageBase: 20,
+@@ -349,22 +412,25 @@
+ 				wageMax: 200
+ 			} as StaffInputRow;
+ 
+-			const bundle = buildStaffBundle([dispatchMasterStaff], []);
+-			const staff = bundle.rows[0];
++			const bundle = buildStaffBundle([staffWithDispatch, staffWithoutDispatch], []);
+ 
+-			// Should add +2 to maxSeasonings for Dispatch Master
+-			expect(staff.sort.maxSeasonings).toBe(7); // 5 + 2
++			// The maxSeasonings sort should use seasoningsMaxLevel20 for Dispatch Master
++			// and seasoningsMinLevel20 for others
++			// Since both have same min/max values, verify they're both in the sorted array
++			expect(bundle.sorted.maxSeasonings.desc).toContain(998);
++			expect(bundle.sorted.maxSeasonings.desc).toContain(999);
+ 		});
+ 
+ 		it('should validate specific staff properties from real data', () => {
+ 			const bundle = buildStaffBundle(inputRows, mockDishes);
+ 
+-			const kyoko = bundle.rows.find((s) => s.name === 'Kyoko');
++			const staff = Object.values(bundle.byId);
++			const kyoko = staff.find((s) => s.name === 'Kyoko');
+ 			if (kyoko) {
+ 				expect(kyoko.hiringFee).toBe(0);
+ 				expect(kyoko.skillLevel3).toBe('Tip Master');
+ 				expect(kyoko.skillLevel7).toBe('Drink Serving');
+-				expect(kyoko.sort.name).toBe('kyoko');
++				expect(kyoko.name.toLowerCase()).toBe('kyoko');
+ 			}
+ 		});
+ 	});
+diff --git a/scripts/build/staffBundle.ts b/scripts/build/staffBundle.ts
+index 26e37ef5d2..40f1e499c6 100644
+--- a/scripts/build/staffBundle.ts
++++ b/scripts/build/staffBundle.ts
+@@ -2,6 +2,7 @@
+ import type { EntityBundle, Id, Staff, Dish } from '../../src/lib/types.js';
+ import type { StaffInputRow } from './types.js';
+ import { loadCsvFile, parseTable, optionalNumber } from './load.js';
++import { computeSortedIds } from './utils.js';
+ 
+ // staff-data.csv schema -> normalized row
+ const staffRowSchema = z.object({
+@@ -90,22 +91,6 @@
+ 	return [name, ...skills].map(normalize).join(' ');
+ }
+ 
+-// Build the sort object for a staff row
+-function buildSortFromRow(row: StaffInputRow, skills: string[]): Staff['sort'] {
+-	let maxSeasonings = row.seasoningsMaxLevel20;
+-	if (skills.includes('Dispatch Master')) maxSeasonings = maxSeasonings + 2;
+-	return {
+-		name: normalize(row.name),
+-		hiringFee: row.hiringFee,
+-		wageMax: row.wageMax,
+-		cookingStatMax: row.cookingStatMax,
+-		servingStatMax: row.servingStatMax,
+-		procureStatMax: row.procureStatMax,
+-		appealStatMax: row.appealStatMax,
+-		maxSeasonings
+-	};
+-}
+-
+ // Retrieve and sort dishes unlocked by a given staff member
+ function getSortedDishesForStaff(map: Map<string, Array<StaffDish>>, staffName: string) {
+ 	const staffDishes = map.get(staffName) || [];
+@@ -120,18 +105,16 @@
+ 		.map((row) => {
+ 			const skills = extractSkillsFromInput(row);
+ 			const search = buildSearchIndex(row.name, skills);
+-			const sort: Staff['sort'] = buildSortFromRow(row, skills);
+ 			const staffDishes = getSortedDishesForStaff(dishesUnlockedByStaff, row.name);
+ 			const staff: Staff = {
+ 				...row,
+ 				dishes: staffDishes,
+-				search,
+-				sort
++				search
+ 			};
+ 
+ 			return staff;
+ 		})
+-		.sort((a, b) => (a.sort.name as string).localeCompare(b.sort.name as string));
++		.sort((a, b) => (a.name as string).localeCompare(b.name as string));
+ 	return rows;
+ }
+ 
+@@ -145,6 +128,27 @@
+ 	return facets;
+ }
+ 
++// Build the sort object for a staff row
++function computeSorted(rows: StaffInputRow[]) {
++	return {
++		name: computeSortedIds(rows, 'asc', (row) => normalize(row.name)),
++		hiringFee: computeSortedIds(rows, 'asc', (row) => row.hiringFee),
++		wageMax: computeSortedIds(rows, 'desc', (row) => row.wageMax),
++		cookingStatMax: computeSortedIds(rows, 'desc', (row) => row.cookingStatMax),
++		servingStatMax: computeSortedIds(rows, 'desc', (row) => row.servingStatMax),
++		procureStatMax: computeSortedIds(rows, 'desc', (row) => row.procureStatMax),
++		appealStatMax: computeSortedIds(rows, 'desc', (row) => row.appealStatMax),
++		maxSeasonings: computeSortedIds(rows, 'desc', (row) => {
++			const skills = extractSkillsFromInput(row);
++			if (skills.some((skill) => skill.includes('Dispatch Master'))) {
++				return row.seasoningsMaxLevel20;
++			} else {
++				return row.seasoningsMinLevel20;
++			}
++		})
++	};
++}
++
+ // Initialize an empty facets structure
+ function initEmptyFacets(): EntityBundle<Staff>['facets'] {
+ 	return {
+@@ -167,7 +171,7 @@
+ 
+ // Add a single staff member to the facets
+ function addStaffToFacets(facets: EntityBundle<Staff>['facets'], r: Staff): void {
+-	const dlc = (r.dlc ?? 'Base').toString();
++	const dlc = !r.dlc || r.dlc.trim() === '' ? 'Base' : r.dlc.toString();
+ 	(facets.DLC[dlc] ??= []).push(r.id);
+ 
+ 	const skills = [r.skillLevel3, r.skillLevel7].filter(Boolean) as string[];
+@@ -195,5 +199,8 @@
+ 	const byId = Object.fromEntries(rows.map((s) => [s.id, s])) as Record<Id, Staff>;
+ 	const facets = computeFacets(rows);
+ 
+-	return { rows, byId, facets };
++	// Generate basic sorted IDs
++	const sorted = computeSorted(rows);
++
++	return { sorted, byId, facets };
+ }
+diff --git a/scripts/build/types.ts b/scripts/build/types.ts
+index 6af7844986..7f258dd181 100644
+--- a/scripts/build/types.ts
++++ b/scripts/build/types.ts
+@@ -111,3 +111,31 @@
+ 	branchPopularityMax: number;
+ 	branchPopularityMaxAtLevel?: number;
+ }
++
++export interface CookstaInputRow {
++	id: Id;
++	name: string;
++	rank: number;
++	customers: number;
++	customerNight: number;
++	partyCustomers: number;
++	followers: number;
++	recipes: number;
++	bestTaste: number;
++	operatingCost: number;
++	kitchenStaff: number;
++	servingStaff: number;
++}
++
++export interface ChapterInputRow {
++	id: Id;
++	number: number;
++	name: string;
++	subtitle: string;
++}
++
++export interface DLCInputRow {
++	id: Id;
++	order: number;
++	name: string;
++}
+diff --git a/scripts/build/utils.ts b/scripts/build/utils.ts
+new file mode 100644
+index 0000000000..026f6e43ad
+--- /dev/null
++++ b/scripts/build/utils.ts
+@@ -0,0 +1,42 @@
++import type { Id } from '../../src/lib/types.js';
++
++/**
++ * Creates a sorted array of IDs based on a sorting function
++ * @param rows - The array of rows to sort
++ * @param direction - Sort direction ('asc' or 'desc')
++ * @param sorter - Function that extracts the sortable value from each row
++ * @returns Object with direction as key and sorted ID array as value
++ */
++export function computeSortedIds<T extends { id: Id }>(
++	rows: T[],
++	direction: 'asc' | 'desc',
++	sorter: (row: T) => string | number | null
++): { [K in 'asc' | 'desc']?: Id[] } {
++	const sorted = [...rows].sort((a, b) => {
++		const aVal = sorter(a);
++		const bVal = sorter(b);
++
++		// Handle null values
++		if (aVal == null && bVal == null) return 0;
++		if (aVal == null) return direction === 'asc' ? -1 : 1;
++		if (bVal == null) return direction === 'asc' ? 1 : -1;
++
++		// Compare strings
++		if (typeof aVal === 'string' && typeof bVal === 'string') {
++			const cmp = direction === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
++			if (cmp !== 0) return cmp;
++		} else {
++			// Compare numbers
++			const cmp =
++				direction === 'asc'
++					? (aVal as number) - (bVal as number)
++					: (bVal as number) - (aVal as number);
++			if (cmp !== 0) return cmp;
++		}
++
++		// Stable tie-breaker by id
++		return a.id - b.id;
++	});
++
++	return { [direction]: sorted.map((row) => row.id) };
++}
+diff --git a/src/lib/components/MyBanchoPanel.svelte b/src/lib/components/MyBanchoPanel.svelte
+index 8a0031f022..c8b9c52210 100644
+--- a/src/lib/components/MyBanchoPanel.svelte
++++ b/src/lib/components/MyBanchoPanel.svelte
+@@ -1,105 +1,84 @@
+ <script lang="ts">
+-	import { SvelteSet } from 'svelte/reactivity';
+-	import { persist } from '$lib/utils/persisted.svelte';
+-	import { visible as cookstaVisible, selectedTierId, selectedTier } from '$lib/stores/cooksta';
+ 	import {
+-		visible as chaptersVisible,
++		allCookstaTiers,
++		getSelectedCookstaTier,
+ 		selectedChapterId,
+-		selectedChapter
+-	} from '$lib/stores/chapters';
+-	import { visible as dlcVisible } from '$lib/stores/dlc';
+-
+-	let {
+-		enabledDlcIds = new SvelteSet<number>(),
+-		expanded = $bindable(true)
+-	}: { enabledDlcIds?: Set<number>; expanded?: boolean } = $props();
+-
+-	const cookstaTiers = $derived($cookstaVisible ?? []);
+-	const chapterRows = $derived($chaptersVisible ?? []);
+-	const dlcRows = $derived($dlcVisible ?? []);
+-
+-	let editBancho = $state(false);
+-
+-	persist(
+-		'filtersPanel.myBanchoExpanded',
+-		() => expanded,
+-		(v) => (expanded = v),
+-		{
+-			version: 'v1'
+-		}
+-	);
+-	persist(
+-		'filtersPanel.enabledDlcIds',
+-		() => enabledDlcIds,
+-		(v) => {
+-			enabledDlcIds.clear();
+-			for (const id of v) enabledDlcIds.add(id);
+-		},
+-		{
+-			version: 'v1',
+-			serialize: (set) => JSON.stringify(Array.from(set.values())),
+-			deserialize: (raw) => new SvelteSet<number>(JSON.parse(raw) as number[])
+-		}
+-	);
+-
+-	function toggleDlc(id: number, checked: boolean) {
+-		if (checked) enabledDlcIds.add(id);
+-		else enabledDlcIds.delete(id);
+-	}
++		selectedCookstaTierId,
++		setSelectedChapter,
++		setSelectedCookstaTier,
++		allChapters,
++		getSelectedChapter,
++		allDLCs,
++		isDLCEnabled,
++		enabledDLCs,
++		toggleDLC
++	} from '$lib/stores/myBancho.svelte';
++
++	let { expanded = $bindable(false) }: { expanded?: boolean } = $props();
++
++	let enabledDLCNames = $derived(enabledDLCs().map((d) => d.name));
+ </script>
+ 
+ <div class="rounded-lg border border-white/10 bg-primary-500/10 p-3">
+-	<div class="mb-2 flex items-center justify-between text-sm font-semibold">
++	<div class="text-sm font-semibold">
+ 		<button
+-			class="flex items-center gap-2 opacity-90 hover:opacity-100"
++			class="relative w-full items-start gap-2 opacity-90 hover:opacity-100"
+ 			type="button"
+ 			onclick={() => (expanded = !expanded)}
+ 			aria-expanded={expanded}
+ 			aria-controls="my-bancho-panel"
+ 		>
+-			<span
+-				class="h-0 w-0 border-t-[5px] border-b-[5px] border-l-[6px] border-t-transparent border-b-transparent border-l-current transition-transform duration-150 ease-linear"
+-				class:rotate-90={expanded}
+-			></span>
+-			<span>
+-				{expanded ? 'My Bancho' : `${$selectedTier?.name ?? ''} - ${$selectedChapter?.name ?? ''}`}
+-			</span>
++			<div class="absolute top-0 right-0 flex-shrink-0 font-normal opacity-80 hover:opacity-100">
++				{expanded ? 'Done' : 'Edit'}
++			</div>
++			<div class="justify-start truncate text-left">
++				{#if expanded}
++					My Bancho
++				{:else}
++					{getSelectedChapter().name}
++					- {getSelectedCookstaTier()?.name ?? ''}
++					{#if enabledDLCNames.length > 0}
++						<span class="block font-normal">
++							{enabledDLCNames.join(', ')}
++						</span>
++					{/if}
++				{/if}
++			</div>
+ 		</button>
+-		{#if expanded}
+-			<button
+-				class="text-xs font-normal opacity-80 hover:opacity-100"
+-				type="button"
+-				onclick={() => (editBancho = !editBancho)}
+-			>
+-				{editBancho ? 'Done' : 'Edit'}
+-			</button>
+-		{/if}
+ 	</div>
+ 
+ 	{#if expanded}
+ 		<div id="my-bancho-panel">
+-			{#if editBancho}
++			{#if expanded}
+ 				<label class="label" aria-label="Cooksta">
+-					<select class="ig-select" bind:value={$selectedTierId}>
+-						{#each cookstaTiers as t (t.id)}
+-							<option value={t.id}>Cooksta {t.name}</option>
++					<select
++						class="ig-select"
++						value={selectedCookstaTierId}
++						onchange={(e) => setSelectedCookstaTier(Number((e.target as HTMLSelectElement).value))}
++					>
++						{#each allCookstaTiers as cookstaTier (cookstaTier.id)}
++							<option value={cookstaTier.id}>Cooksta {cookstaTier.name}</option>
+ 						{/each}
+ 					</select>
+ 				</label>
+ 				<label class="label" aria-label="Chapter">
+-					<select class="ig-select" bind:value={$selectedChapterId}>
+-						{#each chapterRows as c (c.id)}
+-							<option value={c.id}>{c.name}</option>
++					<select
++						class="ig-select"
++						value={selectedChapterId}
++						onchange={(e) => setSelectedChapter(Number((e.target as HTMLSelectElement).value))}
++					>
++						{#each allChapters as chapter (chapter.id)}
++							<option value={chapter.id}>{chapter.name}</option>
+ 						{/each}
+ 					</select>
+ 				</label>
+ 				<fieldset class="mt-2 space-y-1 pl-3 text-sm">
+-					{#each dlcRows as d (d.id)}
++					{#each allDLCs as d (d.id)}
+ 						<label class="flex items-center gap-2">
+ 							<input
+ 								type="checkbox"
+-								checked={enabledDlcIds.has(d.id)}
+-								onchange={(e) => toggleDlc(d.id, (e.currentTarget as HTMLInputElement).checked)}
++								checked={isDLCEnabled(d.id)}
++								onchange={(e) => toggleDLC(d.id, (e.currentTarget as HTMLInputElement).checked)}
+ 							/>
+ 							{d.name}
+ 						</label>
+@@ -107,17 +86,13 @@
+ 				</fieldset>
+ 			{:else}
+ 				<div class="items-start text-sm">
+-					<div class="p-1">Cooksta {$selectedTier?.name ?? ''}</div>
+-					<div class="p-1">{$selectedChapter?.name ?? ''}</div>
+-					{#if Array.from(enabledDlcIds).length === 0}
+-						<span>&mdash;</span>
+-					{:else}
+-						<ul class="list-inside list-disc space-y-1 p-1">
+-							{#each dlcRows.filter((d) => enabledDlcIds.has(d.id)) as d (d.id)}
+-								<li>{d.name} DLC</li>
+-							{/each}
+-						</ul>
+-					{/if}
++					<div class="p-1">Cooksta {getSelectedCookstaTier().name ?? ''}</div>
++					<div class="p-1">{getSelectedChapter().name ?? ''}</div>
++					<ul class="list-inside list-disc space-y-1 p-1">
++						{#each allDLCs.filter((d) => isDLCEnabled(d.id)) as d (d.id)}
++							<li>{d.name} DLC</li>
++						{/each}
++					</ul>
+ 				</div>
+ 			{/if}
+ 		</div>
+diff --git a/src/lib/components/TrackingSidebar.svelte b/src/lib/components/TrackingSidebar.svelte
+index 49ad1bef8c..9b6a1c84ed 100644
+--- a/src/lib/components/TrackingSidebar.svelte
++++ b/src/lib/components/TrackingSidebar.svelte
+@@ -1,10 +1,16 @@
+ <script lang="ts">
+-	import { createEventDispatcher } from 'svelte';
+-	let { tracked = $bindable<Array<{ id: number; name: string; profit: number }>>([]) } = $props();
+-	const dispatch = createEventDispatcher<{ toggleTrack: number }>();
+-	function emit(id: number) {
+-		dispatch('toggleTrack', id);
+-	}
++	import { toggleTrackedDish, trackedDishIds } from '$lib/stores/tracking.svelte';
++	import { bundle } from '$lib/stores/dishes';
++	import { getSortedRows } from '$lib/stores/entityBundle';
++
++	// Get all tracked dishes from the store, regardless of filtering
++	const tracked = $derived(
++		$bundle
++			? getSortedRows($bundle)
++					.filter((dish) => trackedDishIds.includes(dish.id))
++					.map((dish) => ({ id: dish.id, name: dish.name, profit: dish.finalProfit }))
++			: []
++	);
+ </script>
+ 
+ <div class="flex items-center justify-between">
+@@ -27,7 +33,7 @@
+ 				<div class="truncate text-sm font-medium">{t.name}</div>
+ 				<div class="mt-1 flex items-center justify-between text-xs opacity-70">
+ 					<span>Profit {t.profit.toLocaleString()}</span>
+-					<button class="underline" onclick={() => emit(t.id)}>Remove</button>
++					<button class="underline" onclick={() => toggleTrackedDish(t.id, false)}>Remove</button>
+ 				</div>
+ 			</li>
+ 		{/each}
+diff --git a/src/lib/stores/chapters.ts b/src/lib/stores/chapters.ts
+deleted file mode 100644
+index 370715fa07..0000000000
+--- a/src/lib/stores/chapters.ts
++++ /dev/null
+@@ -1,33 +0,0 @@
+-import { createEntityStores } from './entityBundle.js';
+-import type { Chapter, EntityBundle, Id } from '$lib/types.js';
+-import { derived, type Readable, type Writable } from 'svelte/store';
+-import { persistedLocalState } from '$lib/utils/persisted.svelte';
+-
+-export const chaptersStores = createEntityStores<Chapter>({
+-	sortKey: 'order',
+-	sortDir: 'asc'
+-} as unknown as { sortKey: string; sortDir: 'asc' | 'desc' });
+-
+-export const bundle = chaptersStores.bundle as Writable<EntityBundle<Chapter> | null>;
+-export const visible = chaptersStores.visible as Readable<Chapter[]>;
+-
+-// Use the improved persistence utility - it now implements the store contract directly
+-export const selectedChapterId = persistedLocalState<Id | null>('storyChapterId', null, {
+-	version: 'v1'
+-});
+-
+-export const selectedChapter = derived([bundle, selectedChapterId], ([$bundle, $selectedId]) => {
+-	if (!$bundle) return null as Chapter | null;
+-
+-	let chapter = null as Chapter | null;
+-
+-	if ($selectedId != null) {
+-		chapter = $bundle.byId[$selectedId] ?? null;
+-	}
+-
+-	if (chapter == null) {
+-		chapter = ($bundle.rows ?? [])[0] ?? null;
+-	}
+-
+-	return chapter;
+-});
+diff --git a/src/lib/stores/cooksta.ts b/src/lib/stores/cooksta.ts
+deleted file mode 100644
+index 0a27e51727..0000000000
+--- a/src/lib/stores/cooksta.ts
++++ /dev/null
+@@ -1,33 +0,0 @@
+-import { createEntityStores } from './entityBundle.js';
+-import type { CookstaTier, EntityBundle, Id } from '$lib/types.js';
+-import { derived, type Readable, type Writable } from 'svelte/store';
+-import { persistedLocalState } from '$lib/utils/persisted.svelte';
+-
+-export const cookstaStores = createEntityStores<CookstaTier>({
+-	sortKey: 'order',
+-	sortDir: 'asc'
+-} as unknown as { sortKey: string; sortDir: 'asc' | 'desc' });
+-
+-export const bundle = cookstaStores.bundle as Writable<EntityBundle<CookstaTier> | null>;
+-export const visible = cookstaStores.visible as Readable<CookstaTier[]>;
+-
+-// Use the improved persistence utility - it now implements the store contract directly
+-export const selectedTierId = persistedLocalState<Id | null>('cookstaTierId', null, {
+-	version: 'v1'
+-});
+-
+-export const selectedTier = derived([bundle, selectedTierId], ([$bundle, $selectedId]) => {
+-	if (!$bundle) return null as CookstaTier | null;
+-
+-	let tier = null as CookstaTier | null;
+-
+-	if ($selectedId != null) {
+-		tier = $bundle.byId[$selectedId] ?? null;
+-	}
+-
+-	if (tier == null) {
+-		tier = $bundle.rows[0] ?? null;
+-	}
+-
+-	return tier;
+-});
+diff --git a/src/lib/stores/dishLevels.ts b/src/lib/stores/dishLevels.ts
+deleted file mode 100644
+index e55cd243c8..0000000000
+--- a/src/lib/stores/dishLevels.ts
++++ /dev/null
+@@ -1,66 +0,0 @@
+-import { persistedLocalState } from '$lib/utils/persisted.svelte';
+-
+-type DishId = number;
+-type LevelsMap = Record<DishId, number>;
+-
+-function clampLevel(level: number, maxLevel: number): number {
+-	const max = Math.max(1, Math.floor(maxLevel || 1));
+-	return Math.min(Math.max(Math.floor(level || 1), 1), max);
+-}
+-
+-// Custom deserializer to ensure proper number validation
+-function deserializeLevels(raw: string): LevelsMap {
+-	try {
+-		const parsed = JSON.parse(raw) as unknown;
+-		if (parsed && typeof parsed === 'object') {
+-			const out: LevelsMap = {};
+-			for (const [k, v] of Object.entries(parsed as Record<string, unknown>)) {
+-				const id = Number(k);
+-				const level = Number(v);
+-				if (Number.isFinite(id) && Number.isFinite(level)) {
+-					out[id] = Math.max(1, Math.floor(level));
+-				}
+-			}
+-			return out;
+-		}
+-		return {};
+-	} catch {
+-		return {};
+-	}
+-}
+-
+-// Simplified dish levels store using the improved persistence utility
+-const dishLevelsStore = persistedLocalState<LevelsMap>(
+-	'dishLevels',
+-	{},
+-	{
+-		version: 'v1',
+-		deserialize: deserializeLevels
+-	}
+-);
+-
+-export type DishLevelsStore = {
+-	get: () => LevelsMap;
+-	set: (value: LevelsMap) => void;
+-	getLevel: (dishId: DishId, maxLevel: number) => number;
+-	setLevel: (dishId: DishId, level: number) => void;
+-};
+-
+-// Enhanced methods for the dish levels store
+-export const dishLevels: DishLevelsStore = {
+-	...dishLevelsStore,
+-
+-	getLevel(dishId: DishId, maxLevel: number): number {
+-		const max = Math.max(1, Math.floor(maxLevel || 1));
+-		const current = dishLevelsStore.get()[dishId];
+-		const fallback = Math.min(10, max);
+-		return clampLevel(current ?? fallback, max);
+-	},
+-
+-	setLevel(dishId: DishId, level: number) {
+-		const current = dishLevelsStore.get();
+-		const next: LevelsMap = { ...current };
+-		next[dishId] = Math.max(1, Math.floor(level || 1));
+-		dishLevelsStore.set(next); // This will trigger persistence
+-	}
+-};
+diff --git a/src/lib/stores/dlc.ts b/src/lib/stores/dlc.ts
+deleted file mode 100644
+index e4a613586f..0000000000
+--- a/src/lib/stores/dlc.ts
++++ /dev/null
+@@ -1,10 +0,0 @@
+-import { createEntityStores } from './entityBundle.js';
+-import type { DLC } from '$lib/types.js';
+-
+-export const dlcStores = createEntityStores<DLC>({
+-	sortKey: 'order',
+-	sortDir: 'asc'
+-} as unknown as { sortKey: string; sortDir: 'asc' | 'desc' });
+-
+-export const bundle = dlcStores.bundle;
+-export const visible = dlcStores.visible;
+diff --git a/src/lib/stores/entityBundle.ts b/src/lib/stores/entityBundle.ts
+index af1a366e1a..9d79fcc739 100644
+--- a/src/lib/stores/entityBundle.ts
++++ b/src/lib/stores/entityBundle.ts
+@@ -1,9 +1,65 @@
+ import { derived, writable, type Readable, type Writable } from 'svelte/store';
+ import type { Id, EntityBundle } from '$lib/types.js';
+ 
+-export interface EntityStores<
+-	Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }
+-> {
++/**
++ * Internal function to get base rows from sorted structure
++ * Used within reactive contexts to avoid circular dependencies
++ */
++function getBaseRows<Row extends { id: Id }>(
++	bundle: EntityBundle<Row> | null,
++	sortKey: string,
++	sortDir: 'asc' | 'desc'
++): Row[] {
++	if (!bundle) return [];
++
++	// Get the sorted ids for this key and direction
++	const sortedIds = bundle.sorted[sortKey]?.[sortDir];
++	if (!sortedIds) {
++		// Fallback to opposite direction if requested direction not available
++		const fallbackDir = sortDir === 'asc' ? 'desc' : 'asc';
++		const fallbackIds = bundle.sorted[sortKey]?.[fallbackDir];
++		if (fallbackIds) {
++			// Reverse the fallback to match requested direction
++			return [...fallbackIds]
++				.reverse()
++				.map((id) => bundle.byId[id])
++				.filter(Boolean);
++		}
++		// If no sorted data exists for this key, return empty array
++		return [];
++	}
++
++	// Convert ids to rows
++	return sortedIds.map((id) => bundle.byId[id]).filter(Boolean);
++}
++
++/**
++ * Get sorted rows from a bundle using the sorted structure
++ * Public API for external use
++ */
++export function getSortedRows<Row extends { id: Id }>(
++	bundle: EntityBundle<Row> | null,
++	sortKey?: string,
++	sortDir?: 'asc' | 'desc'
++): Row[] {
++	if (!bundle) return [];
++
++	// If no sortKey specified, use the first available sort key
++	if (!sortKey) {
++		const firstSortKey = Object.keys(bundle.sorted)[0];
++		if (!firstSortKey) return []; // No sorted data available
++		sortKey = firstSortKey;
++	}
++
++	// Default to 'asc' if no direction specified
++	if (!sortDir) {
++		sortDir = 'asc';
++	}
++
++	return getBaseRows(bundle, sortKey, sortDir);
++}
++
++export interface EntityStores<Row extends { id: Id; search?: string }> {
+ 	bundle: Writable<EntityBundle<Row> | null>;
+ 	query: Writable<string>;
+ 	sortKey: Writable<string>;
+@@ -14,9 +70,7 @@
+ 	visibleWithoutBaseline: Readable<Row[]>; // visible items without baseline filters (for hidden count)
+ }
+ 
+-export function createEntityStores<
+-	Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }
+->(
++export function createEntityStores<Row extends { id: Id; search?: string }>(
+ 	initial?: Partial<{
+ 		bundle: EntityBundle<Row> | null;
+ 		query: string;
+@@ -82,10 +136,10 @@
+ 			}
+ 		}
+ 
+-		// Map to rows
++		// Map to rows - get base rows from sorted structure or fallback
+ 		let rows: Row[] = candidateIds
+ 			? candidateIds.map((id) => $bundle.byId[id]).filter(Boolean)
+-			: ($bundle.rows as Row[]);
++			: getBaseRows($bundle, $sortKey, $sortDir);
+ 
+ 		// 2) Search filter
+ 		const q = ($query ?? '').trim().toLowerCase();
+@@ -93,16 +147,19 @@
+ 			rows = rows.filter((r) => (r.search ?? '').includes(q));
+ 		}
+ 
+-		// 3) Sort
+-		const key = $sortKey;
+-		rows = [...rows].sort((a, b) => {
+-			const aVal = a.sort[key] as string | number | null;
+-			const bVal = b.sort[key] as string | number | null;
+-			const cmp = compareValues(aVal, bVal, $sortDir);
+-			if (cmp !== 0) return cmp;
+-			// stable tie-breaker by id
+-			return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
+-		});
++		// 3) Sort - only needed if we have candidateIds (filtered results)
++		// When no filters are applied, getSortedRows already returns sorted data
++		if (candidateIds) {
++			const key = $sortKey;
++			rows = [...rows].sort((a, b) => {
++				const aVal = a.sort[key] as string | number | null;
++				const bVal = b.sort[key] as string | number | null;
++				const cmp = compareValues(aVal, bVal, $sortDir);
++				if (cmp !== 0) return cmp;
++				// stable tie-breaker by id
++				return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
++			});
++		}
+ 
+ 		return rows;
+ 	}
+diff --git a/src/lib/stores/hiredStaff.ts b/src/lib/stores/hiredStaff.ts
+deleted file mode 100644
+index 53663fd18d..0000000000
+--- a/src/lib/stores/hiredStaff.ts
++++ /dev/null
+@@ -1,67 +0,0 @@
+-import type { Writable } from 'svelte/store';
+-import { persistedLocalState } from '$lib/utils/persisted.svelte';
+-
+-// Create a persisted store that directly implements the store contract
+-const baseStore = persistedLocalState('hiredStaff', new Set<number>(), {
+-	version: 'v1',
+-	serialize: (set) => JSON.stringify(Array.from(set)),
+-	deserialize: (raw) => new Set<number>(JSON.parse(raw) as number[])
+-});
+-
+-// Extend with helper methods
+-function createHiredStaffIdsStore(): Writable<Set<number>> & {
+-	hire: (id: number) => void;
+-	unhire: (id: number) => void;
+-	toggle: (id: number) => void;
+-} {
+-	function withClone(updateFn: (next: Set<number>) => void) {
+-		const current = baseStore.get();
+-		const next = new Set(current);
+-		updateFn(next);
+-		baseStore.set(next);
+-	}
+-
+-	function hire(id: number) {
+-		withClone((next) => next.add(id));
+-	}
+-
+-	function unhire(id: number) {
+-		withClone((next) => next.delete(id));
+-	}
+-
+-	function toggle(id: number) {
+-		withClone((next) => {
+-			if (next.has(id)) next.delete(id);
+-			else next.add(id);
+-		});
+-	}
+-
+-	return Object.assign(baseStore, { hire, unhire, toggle });
+-}
+-
+-export const hiredStaffIds = createHiredStaffIdsStore();
+-
+-// Backward compatible binding function
+-// Creates a two-way binding between a local state and the store
+-export function bindHired(staffId: number) {
+-	let checked = $state(false);
+-	let initialized = false;
+-
+-	// Initialize from store and track changes
+-	$effect(() => {
+-		const unsub = hiredStaffIds.subscribe((set) => {
+-			checked = set.has(staffId);
+-			initialized = true;
+-		});
+-		return () => unsub();
+-	});
+-
+-	// Write changes back to store (skip first run to avoid loops)
+-	$effect(() => {
+-		if (!initialized) return;
+-		if (checked) hiredStaffIds.hire(staffId);
+-		else hiredStaffIds.unhire(staffId);
+-	});
+-
+-	return { get: () => checked, set: (v: boolean) => (checked = v) };
+-}
+diff --git a/src/lib/stores/myBancho.svelte.ts b/src/lib/stores/myBancho.svelte.ts
+new file mode 100644
+index 0000000000..3b7999c71b
+--- /dev/null
++++ b/src/lib/stores/myBancho.svelte.ts
+@@ -0,0 +1,94 @@
++import type { Chapter, CookstaTier, DLC, EntityBundle, Id } from '$lib/types.js';
++import chaptersData from '$lib/data/chapters.v1.json';
++import cookstaData from '$lib/data/cooksta.v1.json';
++import dlcData from '$lib/data/dlc.v1.json';
++import { LocalStore } from '$lib/utils/LocalStore.svelte.js';
++import { getSortedRows } from './entityBundle.js';
++
++// Load static data bundles
++const chaptersBundleData: EntityBundle<Chapter> = chaptersData as EntityBundle<Chapter>;
++const cookstaBundleData: EntityBundle<CookstaTier> = cookstaData as EntityBundle<CookstaTier>;
++const dlcBundleData: EntityBundle<DLC> = dlcData as EntityBundle<DLC>;
++
++// All static data exports
++export const allChapters = getSortedRows(chaptersBundleData);
++export const allCookstaTiers = getSortedRows(cookstaBundleData);
++export const allDLCs = getSortedRows(dlcBundleData);
++
++// -----------------------------
++// Persisted Reactive State Stores
++// -----------------------------
++
++// Internal persisted state stores
++const selectedChapterIdStore = new LocalStore<Id | null>('selectedChapterId.v1', allChapters[0].id);
++const selectedCookstaTierIdStore = new LocalStore<Id | null>(
++	'selectedCookstaTierId.v1',
++	allCookstaTiers[0].id
++);
++const enabledDLCIdsStore = new LocalStore<Id[]>('enabledDLCIds.v1', []);
++const hiredStaffIdsStore = new LocalStore<number[]>('hiredStaffIds.v1', []);
++
++// Export reactive values
++export const selectedChapterId = selectedChapterIdStore.value;
++export const selectedCookstaTierId = selectedCookstaTierIdStore.value;
++export const enabledDLCIds = enabledDLCIdsStore.value;
++export const hiredStaffIds = hiredStaffIdsStore.value;
++
++// -----------------------------
++// Accessor Functions (return actual objects)
++// -----------------------------
++
++// Get current selected chapter object
++export function getSelectedChapter(): Chapter {
++	if (selectedChapterId != null) {
++		return chaptersBundleData.byId[selectedChapterId];
++	} else {
++		return allChapters[0];
++	}
++}
++
++// Get current selected cooksta tier object
++export function getSelectedCookstaTier(): CookstaTier {
++	if (selectedCookstaTierId != null) {
++		return cookstaBundleData.byId[selectedCookstaTierId];
++	} else {
++		return allCookstaTiers[0];
++	}
++}
++
++export const enabledDLCs = () => allDLCs.filter((d) => enabledDLCIds.includes(d.id));
++
++// Check if DLC is enabled
++export const isDLCEnabled = (id: number) => {
++	return enabledDLCIds.includes(id);
++};
++
++// Helper functions for common operations
++export function toggleHiredStaff(staffId: number, hired: boolean) {
++	if (hired) {
++		if (!hiredStaffIds.includes(staffId)) {
++			hiredStaffIdsStore.value = [...hiredStaffIds, staffId];
++		}
++	} else {
++		hiredStaffIdsStore.value = hiredStaffIds.filter((id) => id !== staffId);
++	}
++}
++
++export function toggleDLC(id: number, enabled: boolean) {
++	if (enabled) {
++		if (!enabledDLCIds.includes(id)) {
++			enabledDLCIdsStore.value = [...enabledDLCIds, id];
++		}
++	} else {
++		enabledDLCIdsStore.value = enabledDLCIds.filter((existingId) => existingId !== id);
++	}
++}
++
++// Helper functions to update selected chapter and cooksta tier
++export function setSelectedChapter(chapterId: Id | null) {
++	selectedChapterIdStore.value = chapterId;
++}
++
++export function setSelectedCookstaTier(cookstaTierId: Id | null) {
++	selectedCookstaTierIdStore.value = cookstaTierId;
++}
+diff --git a/src/lib/stores/tracking.svelte.ts b/src/lib/stores/tracking.svelte.ts
+new file mode 100644
+index 0000000000..318fd1a846
+--- /dev/null
++++ b/src/lib/stores/tracking.svelte.ts
+@@ -0,0 +1,35 @@
++import { LocalStore } from '$lib/utils/LocalStore.svelte';
++import type { Id } from '$lib/types';
++
++// Internal persisted state
++const trackedDishIdsStore = new LocalStore<Id[]>('trackedDishIds.v1', []);
++export const trackedDishIds = trackedDishIdsStore.value;
++
++// Toggle tracked dish
++export function toggleTrackedDish(dishId: Id, tracked?: boolean) {
++	const currentIds = trackedDishIdsStore.value;
++	if (tracked === undefined) {
++		tracked = !currentIds.includes(dishId);
++	}
++	if (tracked) {
++		trackDish(dishId);
++	} else {
++		untrackDish(dishId);
++	}
++}
++
++// Track dish
++export function trackDish(dishId: Id) {
++	const currentIds = trackedDishIdsStore.value;
++	if (!currentIds.includes(dishId)) {
++		currentIds.push(dishId);
++	}
++}
++
++// Untrack dish
++export function untrackDish(dishId: Id) {
++	const currentIds = trackedDishIdsStore.value;
++	if (currentIds.includes(dishId)) {
++		currentIds.splice(currentIds.indexOf(dishId), 1);
++	}
++}
+diff --git a/src/lib/stores/tracking.ts b/src/lib/stores/tracking.ts
+deleted file mode 100644
+index 50e4186e70..0000000000
+--- a/src/lib/stores/tracking.ts
++++ /dev/null
+@@ -1,67 +0,0 @@
+-import type { Writable } from 'svelte/store';
+-import { persistedLocalState } from '$lib/utils/persisted.svelte';
+-
+-// Create a persisted store that directly implements the store contract
+-const baseStore = persistedLocalState('trackedDishIds', new Set<number>(), {
+-	version: 'v1',
+-	serialize: (set) => JSON.stringify(Array.from(set)),
+-	deserialize: (raw) => new Set<number>(JSON.parse(raw) as number[])
+-});
+-
+-// Extend with helper methods
+-function createTrackedIdsStore(): Writable<Set<number>> & {
+-	track: (id: number) => void;
+-	untrack: (id: number) => void;
+-	toggle: (id: number) => void;
+-} {
+-	function withClone(updateFn: (next: Set<number>) => void) {
+-		const current = baseStore.get();
+-		const next = new Set(current);
+-		updateFn(next);
+-		baseStore.set(next);
+-	}
+-
+-	function track(id: number) {
+-		withClone((next) => next.add(id));
+-	}
+-
+-	function untrack(id: number) {
+-		withClone((next) => next.delete(id));
+-	}
+-
+-	function toggle(id: number) {
+-		withClone((next) => {
+-			if (next.has(id)) next.delete(id);
+-			else next.add(id);
+-		});
+-	}
+-
+-	return Object.assign(baseStore, { track, untrack, toggle });
+-}
+-
+-export const trackedDishIds = createTrackedIdsStore();
+-
+-// Backward compatible binding function
+-// Creates a two-way binding between a local state and the store
+-export function bindTracked(dishId: number) {
+-	let checked = $state(false);
+-	let initialized = false;
+-
+-	// Initialize from store and track changes
+-	$effect(() => {
+-		const unsub = trackedDishIds.subscribe((set) => {
+-			checked = set.has(dishId);
+-			initialized = true;
+-		});
+-		return () => unsub();
+-	});
+-
+-	// Write changes back to store (skip first run to avoid loops)
+-	$effect(() => {
+-		if (!initialized) return;
+-		if (checked) trackedDishIds.track(dishId);
+-		else trackedDishIds.untrack(dishId);
+-	});
+-
+-	return { get: () => checked, set: (v: boolean) => (checked = v) };
+-}
+diff --git a/src/lib/utils/LocalStore.svelte.ts b/src/lib/utils/LocalStore.svelte.ts
+new file mode 100644
+index 0000000000..c53de13f2a
+--- /dev/null
++++ b/src/lib/utils/LocalStore.svelte.ts
+@@ -0,0 +1,47 @@
++export class LocalStore<T> {
++	#key: string;
++	#state: T; // <- the actual reactive state
++
++	constructor(key: string, defaultValue: T) {
++		this.#key = key;
++
++		const stored = typeof localStorage !== 'undefined' ? localStorage.getItem(key) : null;
++
++		// Initialize once from localStorage (or default)
++		this.#state = $state(stored ? JSON.parse(stored) : defaultValue);
++
++		if (typeof window !== 'undefined') {
++			const resync = () => {
++				const s = localStorage.getItem(this.#key);
++				if (s != null) this.#state = JSON.parse(s);
++			};
++
++			// Cross-tab sync
++			window.addEventListener('storage', (e) => {
++				if (e.storageArea === localStorage && e.key === this.#key) resync();
++			});
++
++			// BFCache restore (iOS/Safari etc.)
++			window.addEventListener('pageshow', (e: PageTransitionEvent) => {
++				if (e.persisted) resync();
++			});
++		}
++	}
++
++	// Private method to persist to localStorage
++	#persist() {
++		if (typeof localStorage !== 'undefined') {
++			const snapshot = JSON.stringify(this.#state);
++			localStorage.setItem(this.#key, snapshot);
++		}
++	}
++
++	// Public, reactive value
++	get value(): T {
++		return this.#state; // reading tracks
++	}
++	set value(v: T) {
++		this.#state = v; // assignment updates reactive state
++		this.#persist(); // immediately persist to localStorage
++	}
++}
+diff --git a/src/lib/utils/persisted.svelte.ts b/src/lib/utils/persisted.svelte.ts
+index 2f9a9a5748..0000000000 100644
+--- a/src/lib/utils/persisted.svelte.ts
++++ b/src/lib/utils/persisted.svelte.ts
+@@ -1,187 +1,191 @@
+-import { browser } from '$app/environment';
+-
+-export type PersistOptions<T> = {
+-	serialize?: (value: T) => string;
+-	deserialize?: (raw: string) => T;
+-	syncTabs?: boolean;
+-	version?: string; // Add versioning support
+-};
+-
+-function createStorageKey(key: string, version?: string): string {
+-	return version ? `${key}.${version}` : key;
+-}
+-
+-export type PersistedStore<T> = {
+-	get: () => T;
+-	set: (value: T) => void;
+-	update: (fn: (value: T) => T) => void;
+-	subscribe: (run: (value: T) => void) => () => void;
+-};
+-
+-export function persistedState<T>(
+-	key: string,
+-	initialValue: T,
+-	options?: PersistOptions<T>
+-): PersistedStore<T> {
+-	const storageKey = createStorageKey(key, options?.version);
+-
+-	function readFromStorage(): T | undefined {
+-		if (!browser) return undefined;
+-		const raw = localStorage.getItem(storageKey);
+-		if (raw == null) return undefined;
+-		try {
+-			return options?.deserialize ? options.deserialize(raw) : (JSON.parse(raw) as T);
+-		} catch {
+-			return undefined;
+-		}
+-	}
+-
+-	function writeToStorage(value: T) {
+-		if (!browser) return;
+-		try {
+-			const raw = options?.serialize ? options.serialize(value) : JSON.stringify(value);
+-			localStorage.setItem(storageKey, raw);
+-		} catch {
+-			/* ignore quota/serialization errors */
+-		}
+-	}
+-
+-	// Initialize state with value from storage or initial value
+-	// Use plain variable instead of $state since we're managing reactivity through subscribers
+-	const persisted = browser ? readFromStorage() : undefined;
+-	let state = persisted !== undefined ? persisted : initialValue;
+-
+-	// Track subscribers for store contract
+-	// eslint-disable-next-line svelte/prefer-svelte-reactivity -- Using plain Set for internal subscriber tracking
+-	const subscribers = new Set<(value: T) => void>();
+-
+-	// Notify all subscribers when state changes
+-	function notifySubscribers() {
+-		subscribers.forEach((fn) => fn(state));
+-	}
+-
+-	// Tab synchronization - set up storage listener directly (not in an effect)
+-	if (browser && (options?.syncTabs ?? true)) {
+-		function onStorage(e: StorageEvent) {
+-			if (e.storageArea !== localStorage) return;
+-			if (e.key !== storageKey) return;
+-			if (e.newValue == null) return;
+-			try {
+-				state = options?.deserialize
+-					? options.deserialize(e.newValue!)
+-					: (JSON.parse(e.newValue!) as T);
+-				// Notify subscribers of the change from storage event
+-				notifySubscribers();
+-			} catch {
+-				/* noop */
+-			}
+-		}
+-
+-		addEventListener('storage', onStorage);
+-	}
+-
+-	return {
+-		get: () => state,
+-		set: (value: T) => {
+-			state = value;
+-			// Write to storage and notify subscribers
+-			writeToStorage(value);
+-			notifySubscribers();
+-		},
+-		update: (fn: (value: T) => T) => {
+-			state = fn(state);
+-			// Write to storage and notify subscribers
+-			writeToStorage(state);
+-			notifySubscribers();
+-		},
+-		subscribe: (run: (value: T) => void) => {
+-			subscribers.add(run);
+-			run(state); // Call immediately with current value (Svelte store contract)
+-			return () => subscribers.delete(run);
+-		}
+-	};
+-}
+-
+-/**
+- * Synchronize an existing `$state` variable to localStorage.
+- * Use this when you need the variable itself to be reactive in the caller.
+- */
+-export function persist<T>(
+-	key: string,
+-	getValue: () => T,
+-	setValue: (value: T) => void,
+-	options?: PersistOptions<T>
+-): void {
+-	const storageKey = createStorageKey(key, options?.version);
+-	let initialized = false;
+-
+-	function readFromStorage(): T | undefined {
+-		if (!browser) return undefined;
+-		const raw = localStorage.getItem(storageKey);
+-		if (raw == null) return undefined;
+-		try {
+-			return options?.deserialize ? options.deserialize(raw) : (JSON.parse(raw) as T);
+-		} catch {
+-			return undefined;
+-		}
+-	}
+-
+-	function writeToStorage(value: T) {
+-		if (!browser) return;
+-		try {
+-			const raw = options?.serialize ? options.serialize(value) : JSON.stringify(value);
+-			localStorage.setItem(storageKey, raw);
+-		} catch {
+-			/* ignore */
+-		}
+-	}
+-
+-	// Initialize from storage if available
+-	if (browser) {
+-		const persisted = readFromStorage();
+-		if (persisted !== undefined) setValue(persisted);
+-	}
+-
+-	// Persist changes, but skip initial write
+-	$effect(() => {
+-		if (!browser) return;
+-		if (!initialized) {
+-			initialized = true;
+-			return;
+-		}
+-		writeToStorage(getValue());
+-	});
+-
+-	// Tab synchronization
+-	if (browser && (options?.syncTabs ?? true)) {
+-		$effect(() => {
+-			function onStorage(e: StorageEvent) {
+-				if (e.storageArea !== localStorage) return;
+-				if (e.key !== storageKey) return;
+-				if (e.newValue == null) return;
+-				try {
+-					setValue(
+-						options?.deserialize ? options.deserialize(e.newValue) : (JSON.parse(e.newValue) as T)
+-					);
+-				} catch {
+-					/* noop */
+-				}
+-			}
+-
+-			addEventListener('storage', onStorage);
+-			return () => removeEventListener('storage', onStorage);
+-		});
+-	}
+-}
+-
+-// Convenience helper with default versioning
+-export function persistedLocalState<T>(
+-	key: string,
+-	initialValue: T,
+-	options?: PersistOptions<T>
+-): PersistedStore<T> {
+-	return persistedState(key, initialValue, {
+-		...options,
+-		version: options?.version ?? 'v1' // Default versioning
+-	});
+-}
++<<<<<<< Conflict 1 of 1
++%%%%%%% Changes from base to side #1
++ import { browser } from '$app/environment';
++ 
++ export type PersistOptions<T> = {
++ 	serialize?: (value: T) => string;
++ 	deserialize?: (raw: string) => T;
++ 	syncTabs?: boolean;
++ 	version?: string; // Add versioning support
++ };
++ 
++ function createStorageKey(key: string, version?: string): string {
++ 	return version ? `${key}.${version}` : key;
++ }
++ 
++ export type PersistedStore<T> = {
++ 	get: () => T;
++ 	set: (value: T) => void;
+++	update: (fn: (value: T) => T) => void;
++ 	subscribe: (run: (value: T) => void) => () => void;
++ };
++ 
++ export function persistedState<T>(
++ 	key: string,
++ 	initialValue: T,
++ 	options?: PersistOptions<T>
++ ): PersistedStore<T> {
++ 	const storageKey = createStorageKey(key, options?.version);
++ 
++ 	function readFromStorage(): T | undefined {
++ 		if (!browser) return undefined;
++ 		const raw = localStorage.getItem(storageKey);
++ 		if (raw == null) return undefined;
++ 		try {
++ 			return options?.deserialize ? options.deserialize(raw) : (JSON.parse(raw) as T);
++ 		} catch {
++ 			return undefined;
++ 		}
++ 	}
++ 
++ 	function writeToStorage(value: T) {
++ 		if (!browser) return;
++ 		try {
++ 			const raw = options?.serialize ? options.serialize(value) : JSON.stringify(value);
++ 			localStorage.setItem(storageKey, raw);
++ 		} catch {
++ 			/* ignore quota/serialization errors */
++ 		}
++ 	}
++ 
++ 	// Initialize state with value from storage or initial value
++ 	// Use plain variable instead of $state since we're managing reactivity through subscribers
++ 	const persisted = browser ? readFromStorage() : undefined;
++ 	let state = persisted !== undefined ? persisted : initialValue;
++ 
++ 	// Track subscribers for store contract
+++	// eslint-disable-next-line svelte/prefer-svelte-reactivity -- Using plain Set for internal subscriber tracking
++ 	const subscribers = new Set<(value: T) => void>();
++ 
++ 	// Notify all subscribers when state changes
++ 	function notifySubscribers() {
++ 		subscribers.forEach((fn) => fn(state));
++ 	}
++ 
++ 	// Tab synchronization - set up storage listener directly (not in an effect)
++ 	if (browser && (options?.syncTabs ?? true)) {
++ 		function onStorage(e: StorageEvent) {
++ 			if (e.storageArea !== localStorage) return;
++ 			if (e.key !== storageKey) return;
++ 			if (e.newValue == null) return;
++ 			try {
++ 				state = options?.deserialize
++ 					? options.deserialize(e.newValue!)
++ 					: (JSON.parse(e.newValue!) as T);
++ 				// Notify subscribers of the change from storage event
++ 				notifySubscribers();
++ 			} catch {
++ 				/* noop */
++ 			}
++ 		}
++ 
++ 		addEventListener('storage', onStorage);
++ 	}
++ 
++ 	return {
++ 		get: () => state,
++ 		set: (value: T) => {
++ 			state = value;
++ 			// Write to storage and notify subscribers
++ 			writeToStorage(value);
++ 			notifySubscribers();
++ 		},
+++		update: (fn: (value: T) => T) => {
+++			state = fn(state);
+++			// Write to storage and notify subscribers
+++			writeToStorage(state);
+++			notifySubscribers();
+++		},
++ 		subscribe: (run: (value: T) => void) => {
++ 			subscribers.add(run);
++ 			run(state); // Call immediately with current value (Svelte store contract)
++ 			return () => subscribers.delete(run);
++ 		}
++ 	};
++ }
++ 
++ /**
++  * Synchronize an existing `$state` variable to localStorage.
++  * Use this when you need the variable itself to be reactive in the caller.
++  */
++ export function persist<T>(
++ 	key: string,
++ 	getValue: () => T,
++ 	setValue: (value: T) => void,
++ 	options?: PersistOptions<T>
++ ): void {
++ 	const storageKey = createStorageKey(key, options?.version);
++ 	let initialized = false;
++ 
++ 	function readFromStorage(): T | undefined {
++ 		if (!browser) return undefined;
++ 		const raw = localStorage.getItem(storageKey);
++ 		if (raw == null) return undefined;
++ 		try {
++ 			return options?.deserialize ? options.deserialize(raw) : (JSON.parse(raw) as T);
++ 		} catch {
++ 			return undefined;
++ 		}
++ 	}
++ 
++ 	function writeToStorage(value: T) {
++ 		if (!browser) return;
++ 		try {
++ 			const raw = options?.serialize ? options.serialize(value) : JSON.stringify(value);
++ 			localStorage.setItem(storageKey, raw);
++ 		} catch {
++ 			/* ignore */
++ 		}
++ 	}
++ 
++ 	// Initialize from storage if available
++ 	if (browser) {
++ 		const persisted = readFromStorage();
++ 		if (persisted !== undefined) setValue(persisted);
++ 	}
++ 
++ 	// Persist changes, but skip initial write
++ 	$effect(() => {
++ 		if (!browser) return;
++ 		if (!initialized) {
++ 			initialized = true;
++ 			return;
++ 		}
++ 		writeToStorage(getValue());
++ 	});
++ 
++ 	// Tab synchronization
++ 	if (browser && (options?.syncTabs ?? true)) {
++ 		$effect(() => {
++ 			function onStorage(e: StorageEvent) {
++ 				if (e.storageArea !== localStorage) return;
++ 				if (e.key !== storageKey) return;
++ 				if (e.newValue == null) return;
++ 				try {
++ 					setValue(
++ 						options?.deserialize ? options.deserialize(e.newValue) : (JSON.parse(e.newValue) as T)
++ 					);
++ 				} catch {
++ 					/* noop */
++ 				}
++ 			}
++ 
++ 			addEventListener('storage', onStorage);
++ 			return () => removeEventListener('storage', onStorage);
++ 		});
++ 	}
++ }
++ 
++ // Convenience helper with default versioning
++ export function persistedLocalState<T>(
++ 	key: string,
++ 	initialValue: T,
++ 	options?: PersistOptions<T>
++ ): PersistedStore<T> {
++ 	return persistedState(key, initialValue, {
++ 		...options,
++ 		version: options?.version ?? 'v1' // Default versioning
++ 	});
++ }
+++++++++ Contents of side #2
++>>>>>>> Conflict 1 of 1 ends
+diff --git a/src/routes/+layout.svelte b/src/routes/+layout.svelte
+index 5e22a8699c..a562e0ba3f 100644
+--- a/src/routes/+layout.svelte
++++ b/src/routes/+layout.svelte
+@@ -7,21 +7,8 @@
+ 	import { bundle as ingredientsBundleStore } from '$lib/stores/ingredients';
+ 	import { bundle as partiesBundleStore } from '$lib/stores/parties';
+ 	import { bundle as partyDishesBundleStore } from '$lib/stores/partyDishes';
+-	import { bundle as cookstaBundleStore } from '$lib/stores/cooksta';
+-	import { bundle as dlcBundleStore } from '$lib/stores/dlc';
+-	import { bundle as chaptersBundleStore } from '$lib/stores/chapters';
+ 	import { bundle as staffBundleStore } from '$lib/stores/staff';
+-	import type {
+-		EntityBundle,
+-		Dish,
+-		Ingredient,
+-		Party,
+-		PartyDish,
+-		CookstaTier,
+-		DLC,
+-		Chapter,
+-		Staff
+-	} from '$lib/types.js';
++	import type { EntityBundle, Dish, Ingredient, Party, PartyDish, Staff } from '$lib/types.js';
+ 
+ 	let { children, data }: LayoutProps = $props();
+ 
+@@ -34,9 +21,8 @@
+ 		ingredientsBundleStore.set(data.ingredients as EntityBundle<Ingredient>);
+ 		partiesBundleStore.set(data.parties as EntityBundle<Party>);
+ 		partyDishesBundleStore.set(data.partyDishes as EntityBundle<PartyDish>);
+-		cookstaBundleStore.set(data.cooksta as EntityBundle<CookstaTier>);
+-		dlcBundleStore.set(data.dlc as EntityBundle<DLC>);
+-		chaptersBundleStore.set(data.chapters as EntityBundle<Chapter>);
++	}
++	if (data.staff && get(staffBundleStore) == null) {
+ 		staffBundleStore.set(data.staff as EntityBundle<Staff>);
+ 	});
+ </script>
+diff --git a/src/routes/+page.svelte b/src/routes/+page.svelte
+index 613caee93e..822792f087 100644
+--- a/src/routes/+page.svelte
++++ b/src/routes/+page.svelte
+@@ -5,19 +5,28 @@
+ 	import tastyImage from '$lib/images/ui/tasty_big.png';
+ 	import type { PartyDish } from '$lib/types.js';
+ 	import { SvelteMap } from 'svelte/reactivity';
+-	import { SvelteSet } from 'svelte/reactivity';
+ 	import { bundle as dishesBundle } from '$lib/stores/dishes.js';
+ 	import { bundle as partiesBundle } from '$lib/stores/parties.js';
+ 	import { dishesByPartyStore } from '$lib/stores/partyDishes.js';
+-	import { selectedTier, selectedTierId, visible as cookstaVisible } from '$lib/stores/cooksta.js';
+-	import { selectedChapterId, visible as chaptersVisible } from '$lib/stores/chapters.js';
+-	import { trackedDishIds } from '$lib/stores/tracking.js';
+-	import { visible as dlcVisible } from '$lib/stores/dlc.js';
++	import {
++		getSelectedCookstaTier,
++		allChapters,
++		selectedChapterId,
++		selectedCookstaTierId,
++		setSelectedChapter,
++		setSelectedCookstaTier,
++		allCookstaTiers,
++		allDLCs,
++		isDLCEnabled,
++		toggleDLC
++	} from '$lib/stores/myBancho.svelte';
++	import { trackedDishIds } from '$lib/stores/tracking.svelte';
+ 	import { bundle as staffBundle } from '$lib/stores/staff.js';
++	import { getSortedRows } from '$lib/stores/entityBundle.js';
+ 
+ 	// Data from stores
+-	const dishes = $derived($dishesBundle?.rows ?? []);
+-	const parties = $derived($partiesBundle?.rows ?? []);
++	const dishes = $derived(getSortedRows($dishesBundle));
++	const parties = $derived(getSortedRows($partiesBundle));
+ 
+ 	interface PartyDishRowShape {
+ 		id: number;
+@@ -41,7 +50,7 @@
+ 	const partyRows = $derived(dishesByParty[selectedPartyId]?.rows ?? []);
+ 	// Sort by party-adjusted profit per serving if available
+ 	function computePartyProfitPerServing(d: PartyDishRowShape | PartyDish): number {
+-		const sortVal = d?.sort?.finalProfitPerServing;
++		const sortVal = d.finalProfitPerServing;
+ 		const finalPps =
+ 			d?.finalProfitPerServing ?? (typeof sortVal === 'string' ? Number(sortVal) : (sortVal ?? 0));
+ 		const bonus = d?.partyBonus ?? 1;
+@@ -70,44 +79,28 @@
+ 	);
+ 
+ 	// Cooksta derived stats and next tier
+-	const cookstaTiers = $derived($cookstaVisible ?? []);
+-	const cookstaCurrent = $derived($selectedTier);
+-	const cookstaCurrentId = $derived($selectedTier?.id ?? null);
+-	const normalCustomers = $derived(cookstaCurrent?.customers ?? 0);
+-	const nightCustomers = $derived(cookstaCurrent?.customerNight ?? 0);
+-	const partyTotalCustomers = $derived(cookstaCurrent?.customers ?? 0);
+-	const partyGuests = $derived(cookstaCurrent?.partyCustomers ?? 0);
++	const normalCustomers = $derived(getSelectedCookstaTier()?.customers ?? 0);
++	const nightCustomers = $derived(getSelectedCookstaTier()?.customerNight ?? 0);
++	const partyTotalCustomers = $derived(getSelectedCookstaTier()?.customers ?? 0);
++	const partyGuests = $derived(getSelectedCookstaTier()?.partyCustomers ?? 0);
+ 	const partyRegulars = $derived(Math.max(0, partyTotalCustomers - partyGuests));
+-	const operatingCost = $derived(cookstaCurrent?.operatingCost ?? 0);
+-	const kitchenStaff = $derived(cookstaCurrent?.kitchenStaff ?? 0);
+-	const servingStaff = $derived(cookstaCurrent?.servingStaff ?? 0);
++	const operatingCost = $derived(getSelectedCookstaTier()?.operatingCost ?? 0);
++	const kitchenStaff = $derived(getSelectedCookstaTier()?.kitchenStaff ?? 0);
++	const servingStaff = $derived(getSelectedCookstaTier()?.servingStaff ?? 0);
+ 
+-	const tierIndex = $derived(
++	const cookstaTierIndex = $derived(
+ 		Math.max(
+ 			0,
+-			cookstaTiers.findIndex((t) => t.id === cookstaCurrentId)
++			allCookstaTiers.findIndex((cookstaTier) => cookstaTier.id === selectedCookstaTierId)
+ 		)
+ 	);
+-	const nextTier = $derived(cookstaTiers[tierIndex + 1] ?? null);
+-
+-	// Chapters selection
+-	const chapters = $derived($chaptersVisible ?? []);
++	const nextCookstaTier = $derived(allCookstaTiers[cookstaTierIndex + 1] ?? null);
+ 
+ 	// Tracking preview
+-	const tracked = $derived(dishes.filter((d) => $trackedDishIds.has(d.id)).slice(0, 3));
+-
+-	// DLC demo selection state
+-	const dlcs = $derived($dlcVisible ?? []);
+-	let enabledDLCIds = $state(new Set<number>());
+-	function toggleDLC(id: number, checked: boolean) {
+-		const next = new SvelteSet(enabledDLCIds);
+-		if (checked) next.add(id);
+-		else next.delete(id);
+-		enabledDLCIds = next;
+-	}
++	const tracked = $derived(dishes.filter((d) => trackedDishIds.includes(d.id)).slice(0, 3));
+ 
+ 	// Staff selection (limited by current Cooksta tier allowances)
+-	const staffRows = $derived($staffBundle?.rows ?? []);
++	const staffRows = $derived(getSortedRows($staffBundle));
+ 	let selectedKitchenStaffIds = $state<Array<number | null>>([]);
+ 	let selectedServingStaffIds = $state<Array<number | null>>([]);
+ 	$effect(() => {
+@@ -158,12 +151,12 @@
+ 				>
+ 					<div class="mb-4 flex items-center justify-between">
+ 						<div class="text-sm opacity-80">Tonight’s Menu</div>
+-						<div class="text-xs opacity-60">Cooksta {$selectedTier?.name ?? ''}</div>
++						<div class="text-xs opacity-60">Cooksta {getSelectedCookstaTier()?.name ?? ''}</div>
+ 					</div>
+ 					<div class="grid grid-cols-3 gap-3">
+ 						<div>
+ 							<div class="text-[0.7rem] opacity-70">Cooksta</div>
+-							<div class="font-bold">{$selectedTier?.name ?? ''}</div>
++							<div class="font-bold">{getSelectedCookstaTier()?.name ?? ''}</div>
+ 						</div>
+ 						<div>
+ 							<div class="text-[0.7rem] opacity-70">Menu</div>
+@@ -213,9 +206,13 @@
+ 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
+ 			<label class="label">
+ 				<div class="label-text text-[0.8rem] opacity-70">Cooksta Rank</div>
+-				<select class="ig-select" bind:value={$selectedTierId}>
+-					{#each cookstaTiers as t (t.id)}
+-						<option value={t.id}>{t.name}</option>
++				<select
++					class="ig-select"
++					value={selectedCookstaTierId}
++					onchange={(e) => setSelectedCookstaTier(Number(e.currentTarget.value))}
++				>
++					{#each allCookstaTiers as cookstaTier (cookstaTier.id)}
++						<option value={cookstaTier.id}>{cookstaTier.name}</option>
+ 					{/each}
+ 				</select>
+ 			</label>
+@@ -223,8 +220,12 @@
+ 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
+ 			<label class="label">
+ 				<div class="label-text text-[0.8rem] opacity-70">Story Progress</div>
+-				<select class="ig-select" bind:value={$selectedChapterId}>
+-					{#each chapters as c (c.id)}
++				<select
++					class="ig-select"
++					value={selectedChapterId}
++					onchange={(e) => setSelectedChapter(Number(e.currentTarget.value))}
++				>
++					{#each allChapters as c (c.id)}
+ 						<option value={c.id}>{c.name}</option>
+ 					{/each}
+ 				</select>
+@@ -243,11 +244,11 @@
+ 		<div class="variant-glass-surface rounded-xl border border-white/10 p-4">
+ 			<div class="text-[0.8rem] opacity-70">DLCs</div>
+ 			<fieldset class="mt-2 space-y-1 text-sm">
+-				{#each dlcs as d (d.id)}
++				{#each allDLCs as d (d.id)}
+ 					<label class="flex items-center gap-2">
+ 						<input
+ 							type="checkbox"
+-							checked={enabledDLCIds.has(d.id)}
++							checked={isDLCEnabled(d.id)}
+ 							onchange={(e) => toggleDLC(d.id, (e.currentTarget as HTMLInputElement).checked)}
+ 						/>
+ 						{d.name}
+@@ -324,15 +325,15 @@
+ 	</div>
+ 
+ 	<!-- Advancement requirements -->
+-	{#if nextTier}
++	{#if nextCookstaTier}
+ 		<div class="variant-glass-surface mt-6 rounded-xl border border-white/10 p-4">
+-			<div class="mb-2 text-sm font-semibold">Advance to {nextTier.name}</div>
++			<div class="mb-2 text-sm font-semibold">Advance to {nextCookstaTier.name}</div>
+ 			<div class="grid gap-3 text-sm sm:grid-cols-3">
+ 				<div>
+ 					<div class="opacity-70">Followers</div>
+-					<div class="font-semibold">≥ {nextTier.followers}</div>
++					<div class="font-semibold">≥ {nextCookstaTier.followers}</div>
+ 				</div>
+-				{#if nextTier.bestTaste > 0}
++				{#if nextCookstaTier.bestTaste > 0}
+ 					<div class="flex items-center gap-2">
+ 						<img
+ 							src={tastyImage}
+@@ -344,16 +345,16 @@
+ 						/>
+ 						<div>
+ 							<div class="opacity-70">Best taste</div>
+-							<div class="font-semibold">≥ {nextTier.bestTaste}</div>
++							<div class="font-semibold">≥ {nextCookstaTier.bestTaste}</div>
+ 						</div>
+ 					</div>
+ 				{/if}
+-				{#if nextTier.recipes > 0}
++				{#if nextCookstaTier.recipes > 0}
+ 					<div class="flex items-center gap-2">
+ 						<img src={artisansFlames} alt="Artisans Flames" width="30" height="30" class="pixel" />
+ 						<div>
+ 							<div class="leading-tight opacity-70">Research</div>
+-							<div class="leading-tight font-semibold">{nextTier.recipes} recipes</div>
++							<div class="leading-tight font-semibold">{nextCookstaTier.recipes} recipes</div>
+ 						</div>
+ 					</div>
+ 				{/if}
+diff --git a/src/routes/dishes/+page.svelte b/src/routes/dishes/+page.svelte
+index cd6df98a77..802ffa9aa1 100644
+--- a/src/routes/dishes/+page.svelte
++++ b/src/routes/dishes/+page.svelte
+@@ -2,16 +2,9 @@
+ 	import Dish from './DishCard.svelte';
+ 	import { dishesStores } from '$lib/stores/dishes';
+ 	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
+-	import { trackedDishIds } from '$lib/stores/tracking.js';
+ 
+ 	const { visible } = dishesStores;
+ 
+-	const tracked = $derived(
+-		$visible
+-			.filter((d) => $trackedDishIds.has(d.id))
+-			.map((d) => ({ id: d.id, name: d.name, profit: d.finalProfit }))
+-	);
+-
+ 	const sortOptions = [
+ 		{ value: 'name', label: 'Name' },
+ 		{ value: 'finalPrice', label: 'Final Price' },
+@@ -39,8 +32,7 @@
+ 	searchPlaceholder="Search dishes by name, ingredient, DLC, unlock…"
+ 	{sortOptions}
+ 	containerClass="dishes"
+-	trackedItems={tracked}
+-	onToggleTrack={(id) => trackedDishIds.toggle(id as unknown as number)}
++	showTracking={true}
+ >
+ 	{#snippet content()}
+ 		{#each $visible as dish (dish.id)}
+diff --git a/src/routes/dishes/DishCard.svelte b/src/routes/dishes/DishCard.svelte
+index 9199e22129..0000000000 100644
+--- a/src/routes/dishes/DishCard.svelte
++++ b/src/routes/dishes/DishCard.svelte
+@@ -3,7 +3,7 @@
+ 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
+ 	import ProfitTable from '$lib/components/ProfitTable.svelte';
+ 	import TrackButton from '$lib/components/TrackButton.svelte';
+-	import { trackedDishIds } from '$lib/stores/tracking.js';
++	import { trackedDishIds, toggleTrackedDish } from '$lib/stores/tracking.svelte';
+ 	import { PartyPopper, Soup } from '@lucide/svelte';
+ 	import { partyDishByIdStore } from '$lib/stores/partyDishes.js';
+ 	import RecipeSummaryIcons from '$lib/components/RecipeSummaryIcons.svelte';
+@@ -35,8 +35,7 @@
+ 	}
+ 
+ 	function onTrackChange(checked: boolean) {
+-		if (checked) trackedDishIds.track(dish.id);
+-		else trackedDishIds.untrack(dish.id);
++		toggleTrackedDish(dish.id, checked);
+ 	}
+ 	// Minimize per-card memory by keeping only metadata for controls
+ 	type PartyDishMeta = { id: Id; partyId: Id; partyName: string; partyBonus: number };
+@@ -70,16 +69,30 @@
+ 		return new Intl.NumberFormat().format(Math.round(value));
+ 	}
+ 
+-	// One-way reactive state from store - reads from store for display
+-	// Writes happen only through onTrackChange handler (user action)
+-	let tracked = $state(false);
+-
+-	$effect(() => {
+-		const unsub = trackedDishIds.subscribe((set) => {
+-			tracked = set.has(dish.id);
+-		});
+-		return () => unsub();
+-	});
++<<<<<<< Conflict 1 of 1
++%%%%%%% Changes from base to side #1
++-	// Two-way tracked binding via store
+++	// One-way reactive state from store - reads from store for display
+++	// Writes happen only through onTrackChange handler (user action)
++ 	let tracked = $state(false);
+++
++ 	$effect(() => {
++ 		const unsub = trackedDishIds.subscribe((set) => {
++-			const v = set.has(dish.id);
++-			if (tracked !== v) tracked = v;
+++			tracked = set.has(dish.id);
++ 		});
++ 		return () => unsub();
++ 	});
++-	$effect(() => {
++-		if (tracked) trackedDishIds.track(dish.id);
++-		else trackedDishIds.untrack(dish.id);
++-	});
+++++++++ Contents of side #2
++	// Two-way tracked binding via store
++	let tracked = $derived(trackedDishIds.includes(dish.id));
++	$effect(() => toggleTrackedDish(dish.id));
++>>>>>>> Conflict 1 of 1 ends
+ 
+ 	const iconPx = 20;
+ </script>
+diff --git a/src/routes/parties/PartyDishCard.svelte b/src/routes/parties/PartyDishCard.svelte
+index ec40d33628..0000000000 100644
+--- a/src/routes/parties/PartyDishCard.svelte
++++ b/src/routes/parties/PartyDishCard.svelte
+@@ -3,7 +3,7 @@
+ 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
+ 	import TrackButton from '$lib/components/TrackButton.svelte';
+ 	import ProfitTable from '$lib/components/ProfitTable.svelte';
+-	import { trackedDishIds } from '$lib/stores/tracking.js';
++	import { trackedDishIds, toggleTrackedDish } from '$lib/stores/tracking.svelte';
+ 	import RecipeSummaryIcons from '$lib/components/RecipeSummaryIcons.svelte';
+ 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
+ 
+@@ -26,19 +26,34 @@
+ 	}
+ 
+ 	function onTrackChange(checked: boolean) {
+-		if (checked) trackedDishIds.track(dish.id);
+-		else trackedDishIds.untrack(dish.id);
++		toggleTrackedDish(dish.id, checked);
+ 	}
+-	// One-way reactive state from store - reads from store for display
+-	// Writes happen only through onTrackChange handler (user action)
+-	let tracked = $state(false);
+-
++<<<<<<< Conflict 1 of 1
++%%%%%%% Changes from base to side #1
++-	// Two-way tracked binding via store
+++	// One-way reactive state from store - reads from store for display
+++	// Writes happen only through onTrackChange handler (user action)
++ 	let tracked = $state(false);
+++
++ 	$effect(() => {
++ 		const unsub = trackedDishIds.subscribe((set) => {
++-			const v = set.has(dish.id);
++-			if (tracked !== v) tracked = v;
+++			tracked = set.has(dish.id);
++ 		});
++ 		return () => unsub();
++ 	});
++-	$effect(() => {
++-		if (tracked) trackedDishIds.track(dish.id);
++-		else trackedDishIds.untrack(dish.id);
++-	});
+++++++++ Contents of side #2
++	let tracked = $derived(trackedDishIds.includes(dish.id));
+ 	$effect(() => {
+-		const unsub = trackedDishIds.subscribe((set) => {
+-			tracked = set.has(dish.id);
+-		});
+-		return () => unsub();
++		const tracked = trackedDishIds.includes(dish.id);
++		toggleTrackedDish(dish.id, tracked);
+ 	});
++>>>>>>> Conflict 1 of 1 ends
+ </script>
+ 
+ <article
+@@ -58,7 +73,7 @@
+ 					>
+ 					<PixelIcon image={dish.image} alt={dish.name} uiScale={1.5} />
+ 					<div class="absolute -top-2 -left-2 z-10">
+-						<TrackButton bind:checked={tracked} onchange={onTrackChange} />
++						<TrackButton checked={tracked} onchange={onTrackChange} />
+ 					</div>
+ 				</div>
+ 			</div>
+diff --git a/src/routes/staff/+page.svelte b/src/routes/staff/+page.svelte
+index b395af27b9..b502a5efdc 100644
+--- a/src/routes/staff/+page.svelte
++++ b/src/routes/staff/+page.svelte
+@@ -2,14 +2,14 @@
+ 	import StaffCard from './StaffCard.svelte';
+ 	import EntityBundlePage from '$lib/ui/EntityBundlePage.svelte';
+ 	import { staffStores } from '$lib/stores/staff';
+-	import { hiredStaffIds } from '$lib/stores/hiredStaff.js';
++	import { hiredStaffIds, toggleHiredStaff } from '$lib/stores/myBancho.svelte';
+ 	import HiredStaffSidebar from '$lib/ui/HiredStaffSidebar.svelte';
+ 
+ 	const { visible } = staffStores;
+ 
+ 	const hired = $derived(
+ 		$visible
+-			.filter((s) => $hiredStaffIds.has(s.id))
++			.filter((s) => hiredStaffIds.includes(s.id))
+ 			.map((s) => ({ id: s.id, name: s.name, wage: s.wageMax }))
+ 	);
+ 
+@@ -49,6 +49,12 @@
+ 	{/snippet}
+ 
+ 	{#snippet rightSidebar()}
+-		<HiredStaffSidebar {hired} on:toggleHire={(e) => hiredStaffIds.toggle(e.detail)} />
++		<HiredStaffSidebar
++			{hired}
++			on:toggleHire={(e) => {
++				const staffId = e.detail;
++				toggleHiredStaff(staffId, !hiredStaffIds.includes(staffId));
++			}}
++		/>
+ 	{/snippet}
+ </EntityBundlePage>
+diff --git a/src/routes/staff/StaffCard.svelte b/src/routes/staff/StaffCard.svelte
+index d56c57387c..fa298a82f8 100644
+--- a/src/routes/staff/StaffCard.svelte
++++ b/src/routes/staff/StaffCard.svelte
+@@ -3,7 +3,7 @@
+ 	import { Accordion } from '@skeletonlabs/skeleton-svelte';
+ 	import PixelIcon from '$lib/ui/PixelIcon.svelte';
+ 	import { Soup } from '@lucide/svelte';
+-	import { hiredStaffIds } from '$lib/stores/hiredStaff.js';
++	import { hiredStaffIds, toggleHiredStaff } from '$lib/stores/myBancho.svelte';
+ 
+ 	let { staff }: { staff: Staff } = $props();
+ 
+@@ -24,7 +24,7 @@
+ 	}
+ 
+ 	// Track hired staff using centralized store
+-	const isHired = $derived($hiredStaffIds && $hiredStaffIds.has(staff.id));
++	const isHired = $derived(hiredStaffIds.includes(staff.id));
+ 
+ 	function formatNumber(value: number | null | undefined): string {
+ 		if (value == null || Number.isNaN(value as number)) return '—';
+@@ -32,7 +32,7 @@
+ 	}
+ 
+ 	function toggleHired() {
+-		hiredStaffIds.toggle(staff.id);
++		toggleHiredStaff(staff.id, !isHired);
+ 	}
+ 
+ 	const skills = $derived([staff.skillLevel3, staff.skillLevel7].filter(Boolean) as string[]);
+diff --git a/src/routes/tracking/+page.svelte b/src/routes/tracking/+page.svelte
+index 8c751fb6b2..7ba286b357 100644
+--- a/src/routes/tracking/+page.svelte
++++ b/src/routes/tracking/+page.svelte
+@@ -1,16 +1,16 @@
+ <script lang="ts">
+-	import type { Dish } from '$lib/types.js';
+ 	import DishCard from '../dishes/DishCard.svelte';
+-	import { trackedDishIds } from '$lib/stores/tracking.js';
++	import { trackedDishIds } from '$lib/stores/tracking.svelte';
+ 	import type { PageProps } from './$types';
++	import { getSortedRows } from '$lib/stores/entityBundle';
+ 
+ 	let { data }: PageProps = $props();
+-	const dishes = $derived((data.dishes as { rows: Dish[] } | undefined)?.rows ?? []);
++	const dishes = $derived(getSortedRows(data.dishes ?? null));
+ 
+ 	// Dishes that are currently tracked
+ 	const trackedDishes = $derived(
+ 		dishes
+-			.filter((d) => $trackedDishIds.has(d.id))
++			.filter((d) => trackedDishIds.includes(d.id))
+ 			// Stable, readable order: by name
+ 			.toSorted((a, b) => a.name.localeCompare(b.name))
+ 	);

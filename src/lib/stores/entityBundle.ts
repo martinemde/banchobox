@@ -1,8 +1,34 @@
 import { derived, writable, type Readable, type Writable } from 'svelte/store';
 import type { Id, EntityBundle } from '$lib/types.js';
 
+/**
+ * Get rows from a bundle in the specified sort order.
+ * Falls back to default sort if no key/direction specified.
+ */
+export function getRows<T extends { id: Id }>(
+	bundle: EntityBundle<T>,
+	sortKey?: string,
+	direction?: 'asc' | 'desc'
+): T[] {
+	const key = sortKey ?? bundle.sorted.default;
+	const sortDef = bundle.sorted[key];
+
+	if (typeof sortDef === 'string') {
+		throw new Error(`Invalid sort key: ${key}`);
+	}
+
+	const dir = direction ?? (sortDef.asc ? 'asc' : 'desc');
+	const ids = sortDef[dir];
+
+	if (!ids) {
+		throw new Error(`No ${dir} sort order for key: ${key}`);
+	}
+
+	return ids.map(id => bundle.byId[id]);
+}
+
 export interface EntityStores<
-	Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }
+	Row extends { id: Id; search?: string }
 > {
 	bundle: Writable<EntityBundle<Row> | null>;
 	query: Writable<string>;
@@ -15,7 +41,7 @@ export interface EntityStores<
 }
 
 export function createEntityStores<
-	Row extends { id: Id; sort: Record<string, string | number | null>; search?: string }
+	Row extends { id: Id; search?: string }
 >(
 	initial?: Partial<{
 		bundle: EntityBundle<Row> | null;
@@ -32,20 +58,6 @@ export function createEntityStores<
 	const filters = writable<Record<string, Set<string>>>(initial?.filters ?? {});
 	const baselineFilters = writable<Record<string, Set<string>>>({});
 
-	function compareValues(
-		a: string | number | null,
-		b: string | number | null,
-		dir: 'asc' | 'desc'
-	): number {
-		if (a == null && b == null) return 0;
-		if (a == null) return dir === 'asc' ? -1 : 1;
-		if (b == null) return dir === 'asc' ? 1 : -1;
-		if (typeof a === 'string' && typeof b === 'string') {
-			return dir === 'asc' ? a.localeCompare(b) : b.localeCompare(a);
-		}
-		return dir === 'asc' ? (a < b ? -1 : a > b ? 1 : 0) : b < a ? -1 : b > a ? 1 : 0;
-	}
-
 	function processFilters(
 		$bundle: EntityBundle<Row> | null,
 		$query: string,
@@ -56,8 +68,11 @@ export function createEntityStores<
 	): Row[] {
 		if (!$bundle) return [] as Row[];
 
-		// 1) facet filtering - baseline first, then user filters
-		let candidateIds: Id[] | null = null;
+		// 1) Get pre-sorted IDs from bundle
+		const sortedIds = getRows($bundle, $sortKey, $sortDir).map(r => r.id);
+
+		// 2) facet filtering - baseline first, then user filters
+		let candidateIds: Set<Id> | null = null;
 		const allFilters: Record<string, Set<string>> = {
 			...($baseline ?? {}),
 			...($filters ?? {})
@@ -72,37 +87,27 @@ export function createEntityStores<
 				const ids = facetIndex[val] ?? [];
 				for (const id of ids) orSet.add(id);
 			}
-			const orIds = Array.from(orSet);
 			if (candidateIds === null) {
-				candidateIds = orIds;
+				candidateIds = orSet;
 			} else {
 				// AND across facets -> intersection
-				const next = new Set(orIds);
-				candidateIds = candidateIds.filter((id) => next.has(id));
+				candidateIds = new Set([...candidateIds].filter((id) => orSet.has(id)));
 			}
 		}
 
-		// Map to rows
-		let rows: Row[] = candidateIds
-			? candidateIds.map((id) => $bundle.byId[id]).filter(Boolean)
-			: ($bundle.rows as Row[]);
+		// 3) Filter sorted IDs by facets (preserve sort order)
+		const filteredIds = candidateIds
+			? sortedIds.filter((id) => candidateIds!.has(id))
+			: sortedIds;
 
-		// 2) Search filter
+		// 4) Map to rows
+		let rows: Row[] = filteredIds.map((id) => $bundle.byId[id]).filter(Boolean);
+
+		// 5) Search filter
 		const q = ($query ?? '').trim().toLowerCase();
 		if (q.length > 0) {
 			rows = rows.filter((r) => (r.search ?? '').includes(q));
 		}
-
-		// 3) Sort
-		const key = $sortKey;
-		rows = [...rows].sort((a, b) => {
-			const aVal = a.sort[key] as string | number | null;
-			const bVal = b.sort[key] as string | number | null;
-			const cmp = compareValues(aVal, bVal, $sortDir);
-			if (cmp !== 0) return cmp;
-			// stable tie-breaker by id
-			return compareValues(a.id as unknown as number, b.id as unknown as number, 'asc');
-		});
 
 		return rows;
 	}

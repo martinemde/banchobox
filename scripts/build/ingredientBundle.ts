@@ -14,6 +14,7 @@ import {
 	loadCsvFile,
 	parseTable
 } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 const normalize = (v: unknown) => (v ?? '').toString().toLowerCase();
 
@@ -147,11 +148,6 @@ function buildVendors(ingredient: IngredientInputRow): Record<string, number> {
 	return vendors;
 }
 
-function computeMinBuyFromVendors(vendors: Record<string, number>): number | undefined {
-	const values = Object.values(vendors).filter((v) => v != undefined);
-	return values.length > 0 ? Math.min(...values) : undefined;
-}
-
 function buildIngredientSearchIndex(
 	ingredient: IngredientInputRow,
 	partyNames: Set<string>
@@ -166,21 +162,6 @@ function buildIngredientSearchIndex(
 		.map(normalize)
 		.filter(Boolean)
 		.join(' ');
-}
-
-function buildIngredientSort(
-	ingredient: IngredientInputRow,
-	buy: number | undefined,
-	sellPerKg: number | undefined
-): Ingredient['sort'] {
-	const sort = {
-		name: normalize(ingredient.name),
-		buy: buy ?? undefined,
-		sell: ingredient.sell ?? undefined,
-		kg: ingredient.kg ?? undefined,
-		sellPerKg
-	} as const;
-	return sort as unknown as Ingredient['sort'];
 }
 
 export function prepareIngredients(
@@ -204,11 +185,8 @@ export function prepareIngredients(
 		const sellPerKg = computeSellPerKg(ingredient);
 
 		const vendors = buildVendors(ingredient);
-		const buy = computeMinBuyFromVendors(vendors);
 
 		const search = buildIngredientSearchIndex(ingredient, partyNames);
-
-		const sort = buildIngredientSort(ingredient, buy, sellPerKg);
 
 		const finalIngredient: Ingredient = {
 			...ingredient,
@@ -216,8 +194,7 @@ export function prepareIngredients(
 			usedForParties: Array.from(partyIdSet),
 			sellPerKg,
 			vendors,
-			search,
-			sort
+			search
 		};
 
 		return finalIngredient;
@@ -240,7 +217,35 @@ export function buildIngredientsBundle(
 		addCumulativeChapterFacetEntries(facets, ingredient, maxChapter);
 	}
 
-	return { rows: ingredients, byId, facets };
+	// Generate sorted IDs for common sort keys
+	const sorted = {
+		default: 'name',
+		name: {
+			asc: computeSortedIds(ingredients, 'asc', (i) => i.name),
+			display: 'Name'
+		},
+		buy: {
+			asc: computeSortedIds(ingredients, 'asc', (i) => {
+				const vendors = Object.values(i.vendors ?? {}).filter((v) => v != undefined);
+				return vendors.length > 0 ? Math.min(...vendors) : null;
+			}),
+			display: 'Buy Price'
+		},
+		sell: {
+			desc: computeSortedIds(ingredients, 'desc', (i) => i.sell ?? null),
+			display: 'Sell Price'
+		},
+		kg: {
+			desc: computeSortedIds(ingredients, 'desc', (i) => i.kg ?? null),
+			display: 'Weight'
+		},
+		sellPerKg: {
+			desc: computeSortedIds(ingredients, 'desc', (i) => i.sellPerKg ?? null),
+			display: 'Value/kg'
+		}
+	};
+
+	return { sorted, byId, facets };
 }
 
 // Helpers: facet building for buildIngredientsBundle
@@ -258,7 +263,8 @@ function initializeIngredientFacets(): EntityBundle<Ingredient>['facets'] {
 }
 
 function computeMaxChapter(chaptersBundle: EntityBundle<Chapter>): number {
-	return Math.max(...chaptersBundle.rows.map((c) => c.number));
+	const chapters = Object.values(chaptersBundle.byId);
+	return Math.max(...chapters.map((c) => c.number));
 }
 
 function addIngredientFacetEntries(

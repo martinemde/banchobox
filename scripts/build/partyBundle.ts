@@ -2,6 +2,7 @@ import { z } from 'zod';
 import type { Party, PartyDish, Id, EntityBundle } from '../../src/lib/types.js';
 import type { PartyInputRow } from './types.js';
 import { loadCsvFile, parseTable } from './load.js';
+import { computeSortedIds } from './utils.js';
 
 // parties-data.csv schema -> normalized row
 const partyRowSchema = z.object({
@@ -44,19 +45,12 @@ function computeParties(
 			name: row.name,
 			bonus: row.bonus,
 			partyDishIds,
-			search: [row.name.toLowerCase(), `${row.bonus}x`].join(' '),
-			sort: {
-				order: row.order,
-				name: row.name.toLowerCase(),
-				bonus: row.bonus,
-				dishCount: partyDishIds.length
-			}
+			search: [row.name.toLowerCase(), `${row.bonus}x`].join(' ')
 		} as Party;
 
 		return enrichedParty;
 	});
 
-	parties.sort((a, b) => a.sort.order - b.sort.order);
 	return parties;
 }
 
@@ -71,8 +65,17 @@ export function buildPartiesBundle(
 		// Placeholders for future party-level facets
 	};
 
+	// Generate sorted IDs
+	const sorted = {
+		default: 'order',
+		order: {
+			asc: computeSortedIds(parties, 'asc', (p) => p.id),
+			display: 'Order'
+		}
+	};
+
 	return {
-		rows: parties,
+		sorted,
 		byId,
 		facets: partyFacets
 	};

@@ -9,12 +9,20 @@ export type Facets = Record<string, Record<string, Id[]>>;
  */
 export interface BundleEntity {
 	id: Id;
-	sort: Record<string, string | number | null>;
 	search?: string;
 }
 
+export interface SortedIds {
+	asc?: Id[];
+	desc?: Id[];
+	display: string;
+}
+
 export interface EntityBundle<Row> {
-	rows: Row[];
+	sorted: {
+		default: string;
+		[sortKey: string]: SortedIds | string; // string type for 'default' key
+	};
 	byId: Record<Id, Row>;
 	facets: Facets;
 }
@@ -105,7 +113,6 @@ export interface Party {
 	bonus: number;
 	partyDishIds: Id[]; // References to PartyDish entities, sorted by profit descending
 	search: string;
-	sort: PartySort;
 }
 
 // Relationship entities
@@ -154,9 +161,8 @@ export interface Dish {
 	upgradeCost: number; // sum of (unitCost * upgradeCount) for all ingredients
 	ingredientCount: number; // total count of all ingredients
 
-	// Client-side search & sort helpers (precomputed at build time)
+	// Client-side search helper (precomputed at build time)
 	search: string; // normalized tokens (name, dlc, unlock, ingredient names)
-	sort: Record<DishSortKey, string | number>;
 }
 
 // PartyDish entity - first-class representation of party-dish relationships
@@ -206,9 +212,8 @@ export interface Ingredient {
 	usedForParties: Id[];
 	sellPerKg?: number;
 	vendors?: Record<string, number>;
-	// Client-side search & sort helpers (precomputed at build time)
+	// Client-side search helper (precomputed at build time)
 	search: string; // normalized tokens (name, source, type, day/night/fog, drone)
-	sort: Record<IngredientSortKey, string | number>;
 }
 
 // Data service interface
@@ -244,14 +249,6 @@ export type IngredientSortKey =
 	| 'buyJango'
 	| 'buyOtto'
 	| 'usedForPartiesCount';
-
-// Sort keys for Party.sort
-export type PartySort = {
-	order: number;
-	name: string;
-	bonus: number;
-	dishCount: number;
-};
 
 // --------------------
 // Staff data types
@@ -311,7 +308,6 @@ export interface Staff {
 		servings: number;
 		price: number;
 	}>;
-	// Client-side search & sort helpers
+	// Client-side search helper
 	search: string; // normalized tokens (name, skills)
-	sort: Record<StaffSortKey, string | number>;
 }
