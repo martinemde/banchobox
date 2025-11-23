@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { loadChapters, buildChapterBundle } from './chapterBundle.js';
+import { loadChapters, buildChapters } from './chapterBundle.js';
 import type { ChapterInputRow } from '../../src/lib/types.js';
 
 describe('chapterBundle', () => {
-	describe('buildChapterBundle', () => {
+	describe('buildChapters', () => {
 		let inputRows: ChapterInputRow[];
 
 		beforeEach(() => {
@@ -11,59 +11,54 @@ describe('chapterBundle', () => {
 			inputRows = chapters;
 		});
 
-		it('should create a complete bundle with rows, byId, and facets', () => {
-			const bundle = buildChapterBundle(inputRows);
+		it('should create a sorted array of chapters', () => {
+			const chapters = buildChapters(inputRows);
 
-			expect(bundle).toHaveProperty('rows');
-			expect(bundle).toHaveProperty('byId');
-			expect(bundle).toHaveProperty('facets');
+			expect(Array.isArray(chapters)).toBe(true);
+			expect(chapters).toHaveLength(9);
 		});
 
-		it('should transform input rows into Chapter objects with computed fields', () => {
-			const bundle = buildChapterBundle(inputRows);
+		it('should transform input rows into Chapter objects', () => {
+			const chapters = buildChapters(inputRows);
 
-			expect(bundle.rows).toHaveLength(9);
+			expect(chapters).toHaveLength(9);
 
-			bundle.rows.forEach((chapter) => {
-				// Should have all original fields
+			chapters.forEach((chapter) => {
+				// Should have all required fields
 				expect(chapter).toHaveProperty('id');
 				expect(chapter).toHaveProperty('number');
 				expect(chapter).toHaveProperty('name');
 				expect(chapter).toHaveProperty('subtitle');
 
-				// Should have computed fields
-				expect(chapter).toHaveProperty('search');
-				expect(chapter).toHaveProperty('sort');
-
-				// Validate search field (lowercased name + subtitle)
-				expect(typeof chapter.search).toBe('string');
-				expect(chapter.search).toBe(
-					[chapter.name, chapter.subtitle].map((s) => s.toLowerCase()).join(' ')
-				);
-
-				// Validate sort object
-				expect(chapter.sort).toHaveProperty('order');
-				expect(chapter.sort.order).toBe(chapter.number);
+				// Should NOT have computed sort or search fields
+				expect(chapter).not.toHaveProperty('search');
+				expect(chapter).not.toHaveProperty('sort');
 			});
 		});
 
-		it('should create correct byId mapping', () => {
-			const bundle = buildChapterBundle(inputRows);
+		it('should allow looking up chapters by id', () => {
+			const chapters = buildChapters(inputRows);
 
-			// Should have entry for each chapter
-			expect(Object.keys(bundle.byId)).toHaveLength(9);
+			// Test specific chapter lookups
+			const prologue = chapters.find((c) => c.id === 10);
+			expect(prologue).toBeDefined();
+			expect(prologue?.name).toBe('Prologue');
 
-			// Test specific mappings
-			expect(bundle.byId[10]).toBeDefined();
-			expect(bundle.byId[10].name).toBe('Prologue');
-			expect(bundle.byId[13].name).toBe('Chapter 3');
-			expect(bundle.byId[18].name).toBe('Epilogue');
+			const chapter3 = chapters.find((c) => c.id === 13);
+			expect(chapter3).toBeDefined();
+			expect(chapter3?.name).toBe('Chapter 3');
 
-			// Each entry should be a complete Chapter object
-			Object.values(bundle.byId).forEach((chapter) => {
-				expect(chapter).toHaveProperty('search');
-				expect(chapter).toHaveProperty('sort');
-			});
+			const epilogue = chapters.find((c) => c.id === 18);
+			expect(epilogue).toBeDefined();
+			expect(epilogue?.name).toBe('Epilogue');
+		});
+
+		it('should sort chapters by number in ascending order', () => {
+			const chapters = buildChapters(inputRows);
+
+			const numbers = chapters.map((c) => c.number);
+			const sortedNumbers = [...numbers].sort((a, b) => a - b);
+			expect(numbers).toEqual(sortedNumbers);
 		});
 	});
 });

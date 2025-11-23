@@ -1,9 +1,9 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { loadDLCs, buildDLCBundle } from './dlcBundle.js';
+import { loadDLCs, buildDLCs } from './dlcBundle.js';
 import type { DLCInputRow } from '../../src/lib/types.js';
 
 describe('dlcBundle', () => {
-	describe('buildDLCBundle', () => {
+	describe('buildDLCs', () => {
 		let inputRows: DLCInputRow[];
 
 		beforeEach(() => {
@@ -11,67 +11,58 @@ describe('dlcBundle', () => {
 			inputRows = dlcs;
 		});
 
-		it('should create a complete bundle with rows, byId, and facets', () => {
-			const bundle = buildDLCBundle(inputRows);
+		it('should create a sorted array of DLCs', () => {
+			const dlcs = buildDLCs(inputRows);
 
-			expect(bundle).toHaveProperty('rows');
-			expect(bundle).toHaveProperty('byId');
-			expect(bundle).toHaveProperty('facets');
+			expect(Array.isArray(dlcs)).toBe(true);
+			expect(dlcs).toHaveLength(3);
 		});
 
-		it('should transform input rows into DLC objects with computed fields', () => {
-			const bundle = buildDLCBundle(inputRows);
+		it('should transform input rows into DLC objects', () => {
+			const dlcs = buildDLCs(inputRows);
 
-			expect(bundle.rows).toHaveLength(3);
+			expect(dlcs).toHaveLength(3);
 
-			bundle.rows.forEach((dlc) => {
-				// Should have all original fields
+			dlcs.forEach((dlc) => {
+				// Should have all required fields
 				expect(dlc).toHaveProperty('id');
 				expect(dlc).toHaveProperty('name');
 
-				// Should have computed fields
-				expect(dlc).toHaveProperty('sort');
-				expect(dlc).toHaveProperty('search');
-
-				// Validate search field (lowercased name)
-				expect(typeof dlc.search).toBe('string');
-				expect(dlc.search).toBe(dlc.name.toLowerCase());
-
-				// Validate sort object
-				expect(dlc.sort).toHaveProperty('order');
-				expect(dlc.sort).toHaveProperty('name');
-				expect(typeof dlc.sort.order).toBe('number');
-				expect(typeof dlc.sort.name).toBe('string');
-				expect(dlc.sort.name).toBe(dlc.name.toLowerCase());
+				// Should NOT have computed sort or search fields
+				expect(dlc).not.toHaveProperty('sort');
+				expect(dlc).not.toHaveProperty('search');
 			});
 		});
 
 		it('should validate specific DLC properties', () => {
-			const bundle = buildDLCBundle(inputRows);
+			const dlcs = buildDLCs(inputRows);
 
 			// Test Dredge
-			const dredge = bundle.byId[1];
-			expect(dredge.id).toBe(1);
-			expect(dredge.name).toBe('Dredge');
-			expect(dredge.sort.order).toBe(1);
-			expect(dredge.sort.name).toBe('dredge');
-			expect(dredge.search).toBe('dredge');
+			const dredge = dlcs.find((d) => d.id === 1);
+			expect(dredge).toBeDefined();
+			expect(dredge?.id).toBe(1);
+			expect(dredge?.name).toBe('Dredge');
 
 			// Test Godzilla
-			const godzilla = bundle.byId[2];
-			expect(godzilla.id).toBe(2);
-			expect(godzilla.name).toBe('Godzilla');
-			expect(godzilla.sort.order).toBe(2);
-			expect(godzilla.sort.name).toBe('godzilla');
-			expect(godzilla.search).toBe('godzilla');
+			const godzilla = dlcs.find((d) => d.id === 2);
+			expect(godzilla).toBeDefined();
+			expect(godzilla?.id).toBe(2);
+			expect(godzilla?.name).toBe('Godzilla');
 
 			// Test Ichiban
-			const ichiban = bundle.byId[3];
-			expect(ichiban.id).toBe(3);
-			expect(ichiban.name).toBe('Ichiban');
-			expect(ichiban.sort.order).toBe(3);
-			expect(ichiban.sort.name).toBe('ichiban');
-			expect(ichiban.search).toBe('ichiban');
+			const ichiban = dlcs.find((d) => d.id === 3);
+			expect(ichiban).toBeDefined();
+			expect(ichiban?.id).toBe(3);
+			expect(ichiban?.name).toBe('Ichiban');
+		});
+
+		it('should sort DLCs by order field', () => {
+			const dlcs = buildDLCs(inputRows);
+
+			// Verify the DLCs are in the expected order
+			expect(dlcs[0].name).toBe('Dredge');
+			expect(dlcs[1].name).toBe('Godzilla');
+			expect(dlcs[2].name).toBe('Ichiban');
 		});
 	});
 });

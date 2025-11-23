@@ -12,9 +12,9 @@ import {
 import { buildPartiesBundle, loadParties } from './build/partyBundle.js';
 import { buildPartyDishesBundle, loadPartyDishes } from './build/partyDishBundle.js';
 import { loadDishIngredients } from './build/dishIngredientBundle.js';
-import { buildCookstaBundle, loadCooksta } from './build/cookstaBundle.js';
-import { buildDLCBundle, loadDLCs } from './build/dlcBundle.js';
-import { buildChapterBundle, loadChapters } from './build/chapterBundle.js';
+import { buildCookstaTiers, loadCooksta } from './build/cookstaBundle.js';
+import { buildDLCs, loadDLCs } from './build/dlcBundle.js';
+import { buildChapters, loadChapters } from './build/chapterBundle.js';
 import { buildStaffBundle, loadStaff } from './build/staffBundle.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -32,9 +32,9 @@ function enrichData(
 	chapters,
 	staff
 ) {
-	const cookstaBundle = buildCookstaBundle(cooksta);
-	const dlcBundle = buildDLCBundle(dlcs);
-	const chaptersBundle = buildChapterBundle(chapters);
+	const cookstaTiers = buildCookstaTiers(cooksta);
+	const dlcData = buildDLCs(dlcs);
+	const chaptersData = buildChapters(chapters);
 
 	const preparedIngredients = prepareIngredients(
 		ingredients,
@@ -56,16 +56,16 @@ function enrichData(
 		staff
 	);
 
-	const ingredientsBundle = buildIngredientsBundle(preparedIngredients, chaptersBundle);
+	const ingredientsBundle = buildIngredientsBundle(preparedIngredients, chaptersData);
 	const partiesBundle = buildPartiesBundle(parties, partyDishesByPartyId);
 	const partyDishesBundle = buildPartyDishesBundle(partyDishes);
 	const staffBundle = buildStaffBundle(staff, preparedDishes);
 	const dishesBundle = buildDishesBundle({
 		dishes: preparedDishes,
-		chaptersBundle,
+		chapters: chaptersData,
 		ingredientsBundle,
 		partiesBundle,
-		cookstaBundle
+		cookstaTiers
 	});
 
 	return {
@@ -73,9 +73,9 @@ function enrichData(
 		ingredientsBundle,
 		partiesBundle,
 		partyDishesBundle,
-		cookstaBundle,
-		dlcBundle,
-		chaptersBundle,
+		cookstaTiers,
+		dlcData,
+		chaptersData,
 		staffBundle
 	};
 }
@@ -97,9 +97,9 @@ try {
 		ingredientsBundle,
 		partiesBundle,
 		partyDishesBundle,
-		cookstaBundle,
-		dlcBundle,
-		chaptersBundle,
+		cookstaTiers,
+		dlcData,
+		chaptersData,
 		staffBundle
 	} = enrichData(
 		dishes,
@@ -118,9 +118,9 @@ try {
 		ingredientsBundle,
 		partiesBundle,
 		partyDishesBundle,
-		cookstaBundle,
-		dlcBundle,
-		chaptersBundle,
+		cookstaTiers,
+		dlcData,
+		chaptersData,
 		staffBundle
 	});
 

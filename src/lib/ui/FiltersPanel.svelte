@@ -20,9 +20,9 @@
 		myBanchoExpanded?: boolean;
 	} = $props();
 	import { selectedChapter } from '$lib/stores/chapters';
-	import { visible as dlcVisible } from '$lib/stores/dlc';
+	import { dlcs } from '$lib/stores/dlc';
 	import MyBanchoPanel from '$lib/components/MyBanchoPanel.svelte';
-	const dlcRows = $derived($dlcVisible ?? []);
+	const dlcRows = $derived($dlcs ?? []);
 	let enabledDlcIds = new SvelteSet<number>();
 
 	// DLC handling aligned with My Bancho:

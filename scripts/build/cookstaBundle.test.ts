@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { loadCooksta, buildCookstaBundle } from './cookstaBundle.js';
+import { loadCooksta, buildCookstaTiers } from './cookstaBundle.js';
 import type { CookstaInputRow } from '../../src/lib/types.js';
 
 describe('cookstaBundle', () => {
@@ -122,7 +122,7 @@ describe('cookstaBundle', () => {
 		});
 	});
 
-	describe('buildCookstaBundle', () => {
+	describe('buildCookstaTiers', () => {
 		let inputRows: CookstaInputRow[];
 
 		beforeEach(() => {
@@ -130,21 +130,20 @@ describe('cookstaBundle', () => {
 			inputRows = cooksta;
 		});
 
-		it('should create a complete bundle with rows, byId, and facets', () => {
-			const bundle = buildCookstaBundle(inputRows);
+		it('should create a sorted array of tiers', () => {
+			const tiers = buildCookstaTiers(inputRows);
 
-			expect(bundle).toHaveProperty('rows');
-			expect(bundle).toHaveProperty('byId');
-			expect(bundle).toHaveProperty('facets');
+			expect(Array.isArray(tiers)).toBe(true);
+			expect(tiers).toHaveLength(6);
 		});
 
-		it('should transform input rows into CookstaTier objects with computed fields', () => {
-			const bundle = buildCookstaBundle(inputRows);
+		it('should transform input rows into CookstaTier objects', () => {
+			const tiers = buildCookstaTiers(inputRows);
 
-			expect(bundle.rows).toHaveLength(6);
+			expect(tiers).toHaveLength(6);
 
-			bundle.rows.forEach((tier, idx) => {
-				// Should have all original fields
+			tiers.forEach((tier) => {
+				// Should have all required fields
 				expect(tier).toHaveProperty('id');
 				expect(tier).toHaveProperty('name');
 				expect(tier).toHaveProperty('rank');
@@ -158,73 +157,54 @@ describe('cookstaBundle', () => {
 				expect(tier).toHaveProperty('kitchenStaff');
 				expect(tier).toHaveProperty('servingStaff');
 
-				// Should have computed fields
-				expect(tier).toHaveProperty('sort');
-
-				// Validate sort object
-				expect(tier.sort).toHaveProperty('order');
-				expect(tier.sort.order).toBe(tier.rank);
-
-				// ID should be sequential (idx + 1)
-				expect(tier.id).toBe(idx + 1);
+				// Should NOT have computed sort or search fields
+				expect(tier).not.toHaveProperty('sort');
+				expect(tier).not.toHaveProperty('search');
 			});
 		});
 
-		it('should create correct byId mapping', () => {
-			const bundle = buildCookstaBundle(inputRows);
+		it('should allow looking up tiers by id', () => {
+			const tiers = buildCookstaTiers(inputRows);
 
-			// Should have entry for each tier
-			expect(Object.keys(bundle.byId)).toHaveLength(6);
+			// Test specific tier lookups
+			const coal = tiers.find((t) => t.id === 1);
+			expect(coal).toBeDefined();
+			expect(coal?.name).toBe('Coal');
+			expect(coal?.rank).toBe(0);
 
-			// Test specific mappings
-			expect(bundle.byId[1]).toBeDefined();
-			expect(bundle.byId[1].name).toBe('Coal');
-			expect(bundle.byId[1].rank).toBe(0);
+			const silver = tiers.find((t) => t.id === 3);
+			expect(silver).toBeDefined();
+			expect(silver?.name).toBe('Silver');
+			expect(silver?.rank).toBe(2);
 
-			expect(bundle.byId[3]).toBeDefined();
-			expect(bundle.byId[3].name).toBe('Silver');
-			expect(bundle.byId[3].rank).toBe(2);
-
-			expect(bundle.byId[6]).toBeDefined();
-			expect(bundle.byId[6].name).toBe('Diamond');
-			expect(bundle.byId[6].rank).toBe(5);
-
-			// Each entry should be a complete CookstaTier object
-			Object.values(bundle.byId).forEach((tier) => {
-				expect(tier).toHaveProperty('sort');
-				expect(tier).toHaveProperty('customers');
-				expect(tier).toHaveProperty('operatingCost');
-			});
+			const diamond = tiers.find((t) => t.id === 6);
+			expect(diamond).toBeDefined();
+			expect(diamond?.name).toBe('Diamond');
+			expect(diamond?.rank).toBe(5);
 		});
 
 		it('should sort tiers by rank in ascending order', () => {
-			const bundle = buildCookstaBundle(inputRows);
+			const tiers = buildCookstaTiers(inputRows);
 
-			const ranks = bundle.rows.map((t) => t.rank);
+			const ranks = tiers.map((t) => t.rank);
 			const sortedRanks = [...ranks].sort((a, b) => a - b);
 			expect(ranks).toEqual(sortedRanks);
 
 			// Verify specific order
-			expect(bundle.rows[0].name).toBe('Coal'); // rank: 0
-			expect(bundle.rows[1].name).toBe('Bronze'); // rank: 1
-			expect(bundle.rows[2].name).toBe('Silver'); // rank: 2
-			expect(bundle.rows[3].name).toBe('Gold'); // rank: 3
-			expect(bundle.rows[4].name).toBe('Platinum'); // rank: 4
-			expect(bundle.rows[5].name).toBe('Diamond'); // rank: 5
-		});
-
-		it('should have empty facets object', () => {
-			const bundle = buildCookstaBundle(inputRows);
-
-			expect(bundle.facets).toEqual({});
+			expect(tiers[0].name).toBe('Coal'); // rank: 0
+			expect(tiers[1].name).toBe('Bronze'); // rank: 1
+			expect(tiers[2].name).toBe('Silver'); // rank: 2
+			expect(tiers[3].name).toBe('Gold'); // rank: 3
+			expect(tiers[4].name).toBe('Platinum'); // rank: 4
+			expect(tiers[5].name).toBe('Diamond'); // rank: 5
 		});
 
 		it('should validate specific tier progression values', () => {
-			const bundle = buildCookstaBundle(inputRows);
+			const tiers = buildCookstaTiers(inputRows);
 
 			// Test that values generally increase with rank (with some exceptions)
-			const coal = bundle.byId[1];
-			const diamond = bundle.byId[6];
+			const coal = tiers.find((t) => t.id === 1)!;
+			const diamond = tiers.find((t) => t.id === 6)!;
 
 			expect(diamond.customers).toBeGreaterThan(coal.customers);
 			expect(diamond.followers).toBeGreaterThan(coal.followers);
