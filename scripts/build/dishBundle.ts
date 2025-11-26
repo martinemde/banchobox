@@ -256,10 +256,12 @@ export function buildDishesBundle({
 		'Unlock Condition': {}
 	};
 
-	const maxChapter = Math.max(...chaptersBundle.rows.map((c) => c.number));
-	const maxCooksta = Math.max(...cookstaBundle.rows.map((c) => c.rank));
-	const minCooksta = Math.min(...cookstaBundle.rows.map((c) => c.rank));
-	const cookstaNameByRank = Object.fromEntries(cookstaBundle.rows.map((c) => [c.rank, c.name]));
+	const maxChapter = Math.max(...Object.values(chaptersBundle.byId).map((c) => c.number));
+	const maxCooksta = Math.max(...Object.values(cookstaBundle.byId).map((c) => c.rank));
+	const minCooksta = Math.min(...Object.values(cookstaBundle.byId).map((c) => c.rank));
+	const cookstaNameByRank = Object.fromEntries(
+		Object.values(cookstaBundle.byId).map((c) => [c.rank, c.name])
+	);
 
 	for (const d of dishes) {
 		const dlc = (d.dlc ?? 'Base').toString();
@@ -297,7 +299,7 @@ export function buildDishesBundle({
 		// Add the dish to its cooksta unlock level and up
 		// If it doesn't have a cooksta, it's available in all tiers
 		if (d.cooksta !== null && d.cooksta !== undefined && d.cooksta.trim() !== '') {
-			const cookstaTier = cookstaBundle.rows.find((c) => c.name === d.cooksta)!;
+			const cookstaTier = Object.values(cookstaBundle.byId).find((c) => c.name === d.cooksta)!;
 			for (let n = cookstaTier.rank; n <= maxCooksta; n++) {
 				(facets.Cooksta[cookstaNameByRank[n]] ??= []).push(d.id);
 			}
