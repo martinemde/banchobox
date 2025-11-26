@@ -258,7 +258,7 @@ function initializeIngredientFacets(): EntityBundle<Ingredient>['facets'] {
 }
 
 function computeMaxChapter(chaptersBundle: EntityBundle<Chapter>): number {
-	return Math.max(...chaptersBundle.rows.map((c) => c.number));
+	return Math.max(...Object.values(chaptersBundle.byId).map((c) => c.number));
 }
 
 function addIngredientFacetEntries(
