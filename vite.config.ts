@@ -1,8 +1,7 @@
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { sentrySvelteKit } from '@sentry/sveltekit';
-import { defineConfig } from 'vite';
-import type { UserConfig } from 'vitest/config';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
 	plugins: [
@@ -15,7 +14,8 @@ export default defineConfig({
 		}),
 		tailwindcss(),
 		sveltekit()
-	],
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	] as any,
 	test: {
 		expect: { requireAssertions: true },
 		projects: [
@@ -46,4 +46,4 @@ export default defineConfig({
 			}
 		]
 	}
-} as UserConfig);
+});

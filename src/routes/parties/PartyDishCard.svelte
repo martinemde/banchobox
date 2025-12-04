@@ -32,12 +32,10 @@
 	// One-way reactive state from store - reads from store for display
 	// Writes happen only through onTrackChange handler (user action)
 	let tracked = $state(false);
-	let initialized = false;
 
 	$effect(() => {
 		const unsub = trackedDishIds.subscribe((set) => {
 			tracked = set.has(dish.id);
-			initialized = true;
 		});
 		return () => unsub();
 	});
