@@ -1,10 +1,21 @@
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { sentrySvelteKit } from '@sentry/sveltekit';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	plugins: [tailwindcss(), sveltekit()] as any,
+	plugins: [
+		sentrySvelteKit({
+			sourceMapsUploadOptions: {
+				org: process.env.SENTRY_ORG,
+				project: process.env.SENTRY_PROJECT,
+				authToken: process.env.SENTRY_AUTH_TOKEN
+			}
+		}),
+		tailwindcss(),
+		sveltekit()
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	] as any,
 	test: {
 		expect: { requireAssertions: true },
 		projects: [

@@ -49,6 +49,13 @@ Visit the live application at: **[banchobox.com](https://banchobox.com)**
 
 - **Cloudflare Pages** - Hosting platform (using `@sveltejs/adapter-cloudflare`)
 
+### Error Tracking & Monitoring
+
+- **Sentry** (`@sentry/sveltekit`) - Exception tracking and performance monitoring
+  - Free tier: 5,000 errors/month
+  - Features: Error tracking, session replay, performance tracing
+  - Integration: Client and server-side error capture
+
 ## Package Manager: BUN ONLY
 
 **IMPORTANT**: This project uses **Bun** as the package manager and runtime.
@@ -187,6 +194,58 @@ bun run preview
 ```
 
 The production build uses `@sveltejs/adapter-cloudflare` for optimal performance on Cloudflare's edge network.
+
+## Error Tracking with Sentry
+
+BanchoBox uses Sentry for exception tracking and performance monitoring. This helps catch and debug errors in production.
+
+### Setup
+
+1. **Create a Sentry account** at [sentry.io](https://sentry.io) (free tier: 5,000 errors/month)
+
+2. **Create a new SvelteKit project** in Sentry
+
+3. **Copy environment variables** from `.env.example` to `.env`:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Configure your DSN** in `.env`:
+   - Get your DSN from: Sentry → Settings → Projects → [Your Project] → Client Keys (DSN)
+   - Set `PUBLIC_SENTRY_DSN` with your project's DSN
+
+5. **(Optional) Configure source maps upload** for better stack traces:
+   - Create an auth token: Sentry → Settings → Account → API → Auth Tokens
+   - Set `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, and `SENTRY_PROJECT` in `.env`
+   - Source maps will be uploaded automatically during production builds
+
+### Testing Error Tracking
+
+Visit `/test-error` in development to trigger a test error and verify Sentry is capturing exceptions:
+
+```bash
+bun run dev
+# Navigate to http://localhost:5173/test-error
+```
+
+**Note:** Remember to remove the `/test-error` route before production deployment.
+
+### Configuration Files
+
+- `src/hooks.client.ts` - Client-side error tracking and session replay
+- `src/hooks.server.ts` - Server-side error tracking for Cloudflare Workers
+- `src/instrumentation.server.ts` - Server initialization with SvelteKit instrumentation
+- `svelte.config.js` - Enables experimental instrumentation and tracing
+- `vite.config.ts` - Sentry plugin for automatic source maps upload
+- `wrangler.jsonc` - Cloudflare compatibility flags and version metadata
+
+### Features Enabled
+
+- **Error Tracking**: Automatic capture of unhandled exceptions
+- **Session Replay**: Visual replay of user sessions when errors occur (10% sample rate)
+- **Performance Tracing**: Transaction and span tracking (100% in development)
+- **Source Maps**: Uploaded automatically for readable stack traces
 
 ## Disclaimer
 
